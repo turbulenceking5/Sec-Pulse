@@ -132,6 +132,22 @@ nav svg{width:24px;height:24px}
 #install-hint{display:none}
 table{width:100%;border-collapse:collapse;font-size:13px}
 td{padding:6px 4px;border-bottom:1px solid var(--border);vertical-align:top}
+/* exam countdown, why-ranked, mutes, optional news fields */
+.exam-card{gap:14px;width:100%;text-align:left}
+.exam-days{flex:none;text-align:center;min-width:64px;border-right:1px solid var(--border);padding-right:12px}
+.exam-days b{display:block;font-size:26px;line-height:1.1;color:var(--accent);font-variant-numeric:tabular-nums}
+.exam-days span{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px}
+button.pill{font-size:12px}
+.pill.unmute{white-space:normal;text-align:left;max-width:100%}
+.why{cursor:pointer}
+.tags.why{background:none;border:0;padding:0;text-align:left}
+.also-btn{background:none;border:0;padding:0;margin-top:8px;font-size:12.5px;color:var(--accent)}
+.also-list{margin:6px 0 0;padding-left:18px;font-size:13px}
+.also-list li{margin-bottom:4px;overflow-wrap:anywhere}
+.linkish{background:none;border:0;padding:0;color:var(--accent);font-size:inherit}
+.field{width:100%;min-width:0;background:var(--surface2);border:1px solid var(--border);border-radius:12px;padding:9px 12px;color:var(--text);font:inherit;color-scheme:dark}
+.wrap{flex-wrap:wrap}
+.mute-note{margin:-4px 0 10px}
 code{background:var(--surface2);padding:1px 6px;border-radius:6px;font-size:13px;word-break:break-all}
 </style>
 </head>
@@ -156,6 +172,7 @@ code{background:var(--surface2);padding:1px 6px;border-radius:6px;font-size:13px
       <div class="stat"><b id="st-due">0</b><span>cards due</span></div>
       <div class="stat"><b id="st-lessons">0</b><span>lessons done</span></div>
     </div>
+    <div id="brief-exam" style="margin-top:10px"></div>
     <h2>Top for you</h2>
     <div id="brief-top"><div class="empty">Loading news…</div></div>
     <div class="row small muted" id="brief-glance" style="flex-wrap:wrap;gap:6px"></div>
@@ -182,6 +199,7 @@ code{background:var(--surface2);padding:1px 6px;border-radius:6px;font-size:13px
       <button class="btn primary grow" id="quick-quiz">Quick quiz · 10</button>
       <button class="btn grow" id="practice-exam">Practice exam · 30</button>
     </div>
+    <button class="btn block" id="review-quiz" style="margin-top:8px">Review mistakes</button>
     <div id="domains"></div>
   </section>
 
@@ -211,7 +229,8 @@ code{background:var(--surface2);padding:1px 6px;border-radius:6px;font-size:13px
 /* ---------- storage (per-device, wrapped so private mode never breaks the app) ---------- */
 const store = {
   get(k, d){ try{ const v = localStorage.getItem('sp_'+k); return v === null ? d : JSON.parse(v); }catch(e){ return d; } },
-  set(k, v){ try{ localStorage.setItem('sp_'+k, JSON.stringify(v)); }catch(e){} }
+  set(k, v){ try{ localStorage.setItem('sp_'+k, JSON.stringify(v)); }catch(e){} },
+  del(k){ try{ localStorage.removeItem('sp_'+k); }catch(e){} }
 };
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -272,21 +291,33 @@ function rank(i){ return i.score - Math.max(0, (Date.now() - Date.parse(i.publis
 const HOT = new Set(['Actively exploited', 'KEV', 'Ransomware']);
 const RE = new Set(['Real estate', 'BEC / payment fraud']);
 
+// Optional fields the pipeline may add: epss (0-1) and also ([{source, url}]). Render only when valid.
+const isUrl = u => typeof u === 'string' && /^https?:\/\//i.test(u);
+function epssOf(i){ return typeof i.epss === 'number' && isFinite(i.epss) && i.epss >= 0 && i.epss <= 1 ? i.epss : null; }
+function epssPct(e){ const p = e * 100; return p < 1 ? '<1%' : Math.round(p) + '%'; }
+function hostOf(u){ try{ return new URL(u).hostname; }catch(e){ return u; } }
+function alsoOf(i){ return Array.isArray(i.also) ? i.also.filter(a => a && isUrl(a.url)) : []; }
 function newsCard(i){
   const read = store.get('read', []).includes(i.id);
   const saved = !!store.get('saved', {})[i.id];
   const tags = i.tags.filter(t => t !== 'Australia').slice(0, 4)
     .map(t => `<span class="tag ${HOT.has(t) ? 'hot' : RE.has(t) ? 're' : ''}">${esc(t)}</span>`).join('');
+  const epss = epssOf(i), also = alsoOf(i);
   return `<div class="card news-item ${read ? 'read' : ''}" data-id="${esc(i.id)}">
     <div class="news-meta">${read ? '' : '<span class="dot"></span>'}
       ${i.region === 'AU' ? '<span class="pill au">AU</span>' : ''}
-      <span>${esc(i.source)}</span><span>· ${ago(i.published)}</span></div>
+      <span>${esc(i.source)}</span><span>· ${ago(i.published)}</span>
+      ${epss !== null ? `<span class="pill ${epss >= 0.5 ? 'danger' : ''} epss" title="EPSS: estimated chance of exploitation in the next 30 days">EPSS ${epssPct(epss)}</span>` : ''}
+      <button class="pill why score" aria-label="Why this ranked">score ${esc(i.score ?? 0)}</button></div>
     <a class="news-title" href="${esc(i.link)}" target="_blank" rel="noopener noreferrer">${esc(i.title)}</a>
     ${i.summary ? `<p class="news-sum">${esc(i.summary)}</p>` : ''}
-    ${tags ? `<div class="tags">${tags}</div>` : ''}
+    ${tags ? `<button class="tags why" aria-label="Why this ranked">${tags}</button>` : ''}
+    ${also.length ? `<button class="also-btn">+${also.length} more source${also.length === 1 ? '' : 's'}</button>
+      <ul class="also-list" hidden>${also.map(a => `<li><a href="${esc(a.url)}" target="_blank" rel="noopener noreferrer">${esc(a.source || hostOf(a.url))}</a></li>`).join('')}</ul>` : ''}
     <button class="save-btn ${saved ? 'on' : ''}" aria-label="Save">${saved ? '★' : '☆'}</button>
   </div>`;
 }
+const findItem = id => NEWS.items.find(x => x.id === id) || store.get('saved', {})[id];
 function wireNewsList(root){
   root.querySelectorAll('.news-item').forEach(el => {
     const id = el.dataset.id;
@@ -304,6 +335,81 @@ function wireNewsList(root){
       e.currentTarget.textContent = saved[id] ? '★' : '☆';
       toast(saved[id] ? 'Saved' : 'Removed from saved');
     });
+    el.querySelectorAll('.why').forEach(w => w.onclick = () => openWhy(id));
+    const ab = el.querySelector('.also-btn');
+    if (ab) ab.onclick = () => { const ul = el.querySelector('.also-list'); ul.hidden = !ul.hidden; };
+  });
+}
+
+/* ---------- mutes: hide a source or tag from Brief + News (never from Saved) ---------- */
+function getMuted(){
+  const m = store.get('muted', {}) || {};
+  return {sources: Array.isArray(m.sources) ? m.sources : [], tags: Array.isArray(m.tags) ? m.tags : []};
+}
+function isMuted(i, m = getMuted()){ return m.sources.includes(i.source) || (i.tags || []).some(t => m.tags.includes(t)); }
+function toggleMute(kind, val){
+  const m = getMuted(), list = m[kind], k = list.indexOf(val);
+  if (k >= 0) list.splice(k, 1); else list.push(val);
+  store.set('muted', m);
+  return k < 0; // true = now muted
+}
+
+/* ---------- "why this ranked": rebuild the fetcher's score from scripts/sources.json ---------- */
+let SOURCES_CFG = null;
+async function loadSourcesCfg(){
+  if (SOURCES_CFG) return SOURCES_CFG;
+  try{ const r = await fetch('scripts/sources.json?_=' + Date.now()); if (r.ok) SOURCES_CFG = await r.json(); }catch(e){}
+  return SOURCES_CFG;
+}
+// Mirrors score() in fetch_news.py: source weight + each matched group (weight, +1 if in the headline) + 2 if Australian.
+function explainScore(i, cfg){
+  const rows = [], matched = new Set();
+  const hay = (' ' + i.title + ' ' + (i.summary || '') + ' ').toLowerCase(), head = (' ' + i.title + ' ').toLowerCase();
+  const src = (cfg.sources || []).find(s => s.name === i.feed);
+  rows.push({label: 'Source weight · ' + (i.feed || i.source), pts: src ? (src.weight || 0) : 0});
+  (cfg.keywords || []).forEach(g => {
+    const hits = (g.terms || []).filter(t => hay.includes(t));
+    if (!hits.length) return;
+    const inTitle = g.terms.some(t => head.includes(t));
+    rows.push({label: g.tag, pts: (g.weight || 0) + (inTitle ? 1 : 0), terms: hits, inTitle});
+    matched.add(g.tag);
+  });
+  if (i.region === 'AU') rows.push({label: 'Australian story bonus', pts: 2});
+  const fromFeed = (i.tags || []).filter(t => !matched.has(t) && !(t === 'Australia' && i.region === 'AU'));
+  return {rows, fromFeed, total: rows.reduce((a, r) => a + r.pts, 0)};
+}
+async function openWhy(id){
+  const i = findItem(id); if (!i) return;
+  const cfg = await loadSourcesCfg();
+  const m = getMuted();
+  let body;
+  if (cfg){
+    const ex = explainScore(i, cfg);
+    body = `<table>${ex.rows.map(r => `<tr><td>${esc(r.label)}${r.terms ? `<div class="small muted">matched ${r.terms.map(t => `<code>${esc(t.trim())}</code>`).join(' ')}${r.inTitle ? ' · +1 in headline' : ''}</div>` : ''}</td>
+        <td style="text-align:right;white-space:nowrap">+${r.pts}</td></tr>`).join('')}
+      ${ex.fromFeed.map(t => `<tr><td>${esc(t)}<div class="small muted">tagged by the feed itself (e.g. CISA KEV)</div></td><td style="text-align:right">+0</td></tr>`).join('')}
+      <tr><td><b>Score</b></td><td style="text-align:right"><b>${esc(i.score)}</b></td></tr></table>
+      ${ex.total !== i.score ? `<p class="small muted" style="margin-bottom:0">Rebuilt in the app from the current keyword list, which adds up to ${ex.total}. The difference comes from keyword or scoring changes since this story was fetched.</p>` : ''}`;
+  } else {
+    body = `<p class="small muted" style="margin-top:0">Couldn't load the keyword list (offline?). Matched groups:</p>
+      <div class="tags">${(i.tags || []).map(t => `<span class="tag">${esc(t)}</span>`).join('') || '<span class="muted small">none</span>'}</div>`;
+  }
+  const hrs = Math.max(0, (Date.now() - Date.parse(i.published)) / 36e5);
+  const muteBtn = (kind, val, label) => { const on = m[kind].includes(val);
+    return `<button class="btn mute-btn" data-k="${kind}" data-v="${esc(val)}" data-l="${esc(label)}">${on ? 'Unmute' : 'Mute'} ${esc(label)}</button>`; };
+  openSheet('Why this ranked', `
+    <div class="small muted">${esc(i.source)} · ${ago(i.published)}</div>
+    <h3 style="margin:6px 0 10px;font-size:18px">${esc(i.title)}</h3>
+    <h2>Score breakdown</h2><div class="card small">${body}</div>
+    <p class="small muted">Rank now = score − hours old ÷ 12 = ${esc(i.score)} − ${(hrs / 12).toFixed(1)} = <b>${rank(i).toFixed(1)}</b>. For you shows score 5+ from the last 7 days.</p>
+    <h2>Mute</h2><div class="card small">
+      <p style="margin-top:0" class="muted">Muted stories are hidden from Brief and News (not Saved). Undo any time in Settings.</p>
+      <div class="row wrap" style="gap:8px">${muteBtn('sources', i.source, 'source: ' + i.source)}
+        ${(i.tags || []).map(t => muteBtn('tags', t, 'tag: ' + t)).join('')}</div></div>`);
+  $('#sheet-body').querySelectorAll('.mute-btn').forEach(b => b.onclick = () => {
+    const on = toggleMute(b.dataset.k, b.dataset.v);
+    b.textContent = (on ? 'Unmute ' : 'Mute ') + b.dataset.l;
+    toast(on ? 'Muted - hidden from Brief and News' : 'Unmuted');
   });
 }
 
@@ -315,12 +421,43 @@ function renderStats(){
   const nb = $('#nav-due'); nb.hidden = !due; nb.textContent = due;
   $('#st-lessons').textContent = CYSA ? Object.keys(store.get('lessons', {})).length + '/' + CYSA.lessons.length : '0';
 }
+/* ---------- exam countdown: days left (Brisbane dates) + a simple daily target ---------- */
+function examDate(){ const d = store.get('examDate', null); return typeof d === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(d) ? d : null; }
+const fmtKey = (key, o) => new Intl.DateTimeFormat('en-AU', {timeZone: 'UTC', ...o}).format(new Date(key + 'T00:00:00Z'));
+function renderExam(){
+  const el = $('#brief-exam');
+  if (!CYSA){ el.innerHTML = ''; return; }
+  const d = examDate();
+  if (!d){
+    el.innerHTML = `<button class="linkish small" id="exam-set">Set your exam date for a countdown and daily target →</button>`;
+    $('#exam-set').onclick = () => openSettings('exam-date');
+    return;
+  }
+  const days = ordinal(d) - ordinal(todayKey());
+  const done = store.get('lessons', {}), left = CYSA.lessons.filter(l => !done[l.id]).length;
+  const due = dueCards().length, weak = weakQuestions().length;
+  const pl = (n, w) => n + ' ' + w + (n === 1 ? '' : 's');
+  let big, label, target;
+  if (days < 0){ big = '✓'; label = 'passed'; target = 'Exam date has passed. Update it in Settings.'; }
+  else {
+    big = days; label = days === 1 ? 'day left' : 'days left';
+    const extras = [due ? pl(due, 'card') + ' due' : '', weak ? 'review ' + pl(Math.min(10, weak), 'mistake') : ''].filter(Boolean);
+    target = days === 0 ? 'Exam day - good luck! Light review only.'
+      : left ? `Today: ${pl(Math.ceil(left / days), 'lesson')}${extras.length ? ' · ' + extras.join(' · ') : ''}<div class="muted">${pl(left, 'lesson')} left over ${pl(days, 'day')}</div>`
+      : `All lessons done. Today: a practice exam${extras.length ? ' · ' + extras.join(' · ') : ''}`;
+  }
+  el.innerHTML = `<button class="card row exam-card" id="exam-card"><div class="exam-days"><b>${big}</b><span>${label}</span></div>
+    <div class="grow small"><div style="font-weight:600">${esc(CYSA.exam.code)} exam · ${fmtKey(d, {weekday: 'short', day: 'numeric', month: 'short', year: 'numeric'})}</div>
+    <div>${target}</div></div></button>`;
+  $('#exam-card').onclick = () => openSettings('exam-date');
+}
 function renderBrief(){
   const h = brisHour();
   $('#greet').textContent = h < 12 ? 'Good morning' : h < 17 ? 'Good afternoon' : 'Good evening';
   $('#today-date').textContent = new Intl.DateTimeFormat('en-AU', {timeZone: TZ, weekday: 'long', day: 'numeric', month: 'long'}).format(new Date()) + ' · Brisbane';
   const within = hrs => NEWS.items.filter(i => Date.now() - Date.parse(i.published) < hrs * 36e5);
-  let pool = within(30); if (pool.length < 5) pool = within(72);
+  const muted = getMuted(), fresh = hrs => within(hrs).filter(i => !isMuted(i, muted));
+  let pool = fresh(30); if (pool.length < 5) pool = fresh(72);
   const top = pool.sort((a, b) => rank(b) - rank(a)).slice(0, 5);
   const el = $('#brief-top');
   el.innerHTML = top.length ? top.map(newsCard).join('') : '<div class="empty">No news yet - it updates every few hours.</div>';
@@ -346,6 +483,7 @@ function renderBrief(){
     const q = qs[(ordinal(t) * 7) % qs.length];
     renderQuiz($('#brief-qotd'), [q], {single: true});
   }
+  renderExam();
   renderStats();
 }
 
@@ -370,11 +508,15 @@ function renderNews(){
     list.sort((a, b) => Date.parse(b.published) - Date.parse(a.published));
   }
   if (q) list = list.filter(i => (i.title + ' ' + i.summary + ' ' + i.source + ' ' + i.tags.join(' ')).toLowerCase().includes(q));
+  let hidden = 0;
+  if (newsFilter !== 'saved'){ const m = getMuted(), n = list.length; list = list.filter(i => !isMuted(i, m)); hidden = n - list.length; }
+  const note = hidden ? `<div class="small muted mute-note">${hidden} hidden by mutes · <button class="linkish" id="manage-mutes">Manage</button></div>` : '';
   const el = $('#news-list');
-  if (!list.length){ el.innerHTML = `<div class="empty">${newsFilter === 'saved' ? 'Nothing saved yet - tap ☆ on a story.' : 'No matching stories.'}</div>`; return; }
-  el.innerHTML = list.slice(0, newsLimit).map(newsCard).join('') +
+  const wireNote = () => { const b = $('#manage-mutes'); if (b) b.onclick = () => openSettings(); };
+  if (!list.length){ el.innerHTML = note + `<div class="empty">${newsFilter === 'saved' ? 'Nothing saved yet - tap ☆ on a story.' : 'No matching stories.'}</div>`; wireNote(); return; }
+  el.innerHTML = note + list.slice(0, newsLimit).map(newsCard).join('') +
     (list.length > newsLimit ? `<button class="btn block" id="more">Show more (${list.length - newsLimit})</button>` : '');
-  wireNewsList(el);
+  wireNewsList(el); wireNote();
   const more = $('#more'); if (more) more.onclick = () => { newsLimit += 40; renderNews(); };
 }
 $('#news-search').addEventListener('input', () => { newsLimit = 40; renderNews(); });
@@ -385,7 +527,24 @@ function recordAnswer(q, correct){
   s.answered++; if (correct) s.correct++;
   const d = s.byDomain[q.domain] || (s.byDomain[q.domain] = {a: 0, c: 0});
   d.a++; if (correct) d.c++;
-  store.set('qstats', s); markActivity();
+  store.set('qstats', s);
+  if (q.qid){
+    // Per-question history for "Review mistakes". ok = was the latest answer right.
+    let h = store.get('qhist', {}); if (!h || typeof h !== 'object' || Array.isArray(h)) h = {};
+    const r = h[q.qid] || {right: 0, wrong: 0};
+    if (correct) r.right++; else r.wrong++;
+    r.last = todayKey(); r.ok = !!correct; h[q.qid] = r;
+    store.set('qhist', h);
+  }
+  markActivity();
+}
+// Questions to review: latest answer wrong, or wrong more often than right. Latest-wrong first, then most net misses, then most recent.
+function weakQuestions(){
+  if (!CYSA) return [];
+  const h = store.get('qhist', {}) || {};
+  return ALL_Q().filter(q => { const r = h[q.qid]; return r && r.wrong > 0 && (!r.ok || r.wrong > r.right); })
+    .sort((a, b) => { const x = h[a.qid], y = h[b.qid];
+      return (!!x.ok - !!y.ok) || ((y.wrong - y.right) - (x.wrong - x.right)) || String(y.last || '').localeCompare(String(x.last || '')); });
 }
 function renderQuiz(root, questions, opts = {}){
   let idx = 0, correct = 0;
@@ -435,6 +594,8 @@ function renderLearn(){
   $('#exam-sub').textContent = `${n} of ${CYSA.lessons.length} lessons · ${qs.answered} question${qs.answered === 1 ? '' : 's'} answered`;
   $('#exam-acc').textContent = qs.answered ? Math.round(qs.correct / qs.answered * 100) + '% accuracy' : 'No quizzes yet';
   $('#exam-bar').style.width = (n / CYSA.lessons.length * 100) + '%';
+  const nw = weakQuestions().length;
+  $('#review-quiz').textContent = 'Review mistakes' + (nw ? ' · ' + nw : '');
   $('#domains').innerHTML = CYSA.domains.map(d => {
     const ls = CYSA.lessons.filter(l => l.domain === d.id), dd = qs.byDomain[d.id];
     const nd = ls.filter(l => done[l.id]).length;
@@ -455,7 +616,7 @@ function openSheet(title, html){
   $('#sheet-title').textContent = title; $('#sheet-body').innerHTML = html;
   $('#sheet').classList.add('open'); $('#sheet').scrollTop = 0; document.body.style.overflow = 'hidden';
 }
-function closeSheet(){ $('#sheet').classList.remove('open'); document.body.style.overflow = ''; renderLearn(); renderBrief(); }
+function closeSheet(){ $('#sheet').classList.remove('open'); document.body.style.overflow = ''; renderLearn(); renderBrief(); renderNews(); }
 $('#sheet-close').onclick = closeSheet;
 
 function openLesson(id){
@@ -498,6 +659,20 @@ function startQuiz(n, weighted){
     const h = store.get('quizHistory', []); h.push({date: todayKey(), c, t, type: weighted ? 'exam' : 'quick'}); store.set('quizHistory', h.slice(-100));
   }});
 }
+function startReview(){
+  const weak = weakQuestions();
+  if (!weak.length){
+    openSheet('Review mistakes', `<div class="card empty" id="review-empty"><div style="font-weight:700;color:var(--text)">Nothing to review yet</div>
+      <div class="small" style="margin-top:6px">Questions you get wrong in quizzes, lessons and the question of the day land here. Get one right more often than wrong and it drops off.</div></div>`);
+    return;
+  }
+  openSheet('Review mistakes', `<div class="card" id="big-quiz"></div>
+    <p class="small muted">${weak.length} question${weak.length === 1 ? '' : 's'} to review, most recent misses first (up to 10 per round). A question drops off once you get it right more often than wrong.</p>`);
+  renderQuiz($('#big-quiz'), shuffle(weak.slice(0, 10)), {onDone: (c, t) => {
+    const h = store.get('quizHistory', []); h.push({date: todayKey(), c, t, type: 'review'}); store.set('quizHistory', h.slice(-100));
+  }});
+}
+$('#review-quiz').onclick = startReview;
 $('#quick-quiz').onclick = () => startQuiz(10, false);
 $('#practice-exam').onclick = () => startQuiz(30, true);
 
@@ -555,9 +730,27 @@ function grade(c, g){
 }
 
 /* ---------- Settings ---------- */
-function openSettings(){
+function renderMuteList(){
+  const el = $('#mute-list'); if (!el) return;
+  const m = getMuted();
+  const items = m.sources.map(v => ['sources', v, 'Source']).concat(m.tags.map(v => ['tags', v, 'Tag']));
+  el.innerHTML = items.length ? `<div class="row wrap" style="gap:6px">${items.map(([k, v, l]) =>
+      `<button class="pill unmute" data-k="${k}" data-v="${esc(v)}" aria-label="Unmute ${esc(v)}">${l}: ${esc(v)} ✕</button>`).join('')}</div>
+      <p class="muted" style="margin-bottom:0">Tap one to unmute it.</p>`
+    : '<span class="muted">Nothing muted. Tap a story\'s score or tags to mute its source or a tag.</span>';
+  el.querySelectorAll('.unmute').forEach(b => b.onclick = () => { toggleMute(b.dataset.k, b.dataset.v); renderMuteList(); toast('Unmuted'); });
+}
+function openSettings(focus){
   const rows = NEWS.sources.map(s => `<tr><td>${s.ok ? '✅' : '⚠️'}</td><td>${esc(s.name)}${s.error ? `<div class="small muted">${esc(s.error)}</div>` : ''}</td><td style="text-align:right">${s.count}</td></tr>`).join('');
   openSheet('Settings', `
+    <h2>Exam date</h2>
+    <div class="card small">
+      <div class="row" style="gap:8px"><input type="date" class="field grow" id="exam-date" value="${esc(examDate() || '')}" aria-label="Exam date">
+        <button class="btn" id="exam-clear">Clear</button></div>
+      <p class="muted" style="margin-bottom:0">Shows a countdown and a suggested daily target on the Brief (Brisbane dates).</p>
+    </div>
+    <h2>Muted sources and tags</h2>
+    <div class="card small" id="mute-list"></div>
     <h2>Morning brief notification</h2>
     <div class="card small">
       <p style="margin-top:0">Every morning at about 6:30am Brisbane time, a GitHub Action sends your top 5 stories plus today's CySA+ lesson to the free <b>ntfy</b> app.</p>
@@ -584,6 +777,14 @@ function openSettings(){
     </div>
     <h2>About</h2>
     <p class="small muted">Sec-Pulse is a personal, unofficial study and news tool. Not affiliated with CompTIA, ASD or any employer. Headlines link to their original publishers.</p>`);
+  renderMuteList();
+  $('#exam-date').onchange = e => {
+    const v = e.target.value;
+    if (/^\d{4}-\d{2}-\d{2}$/.test(v)){ store.set('examDate', v); toast('Exam date saved'); }
+    else if (!v){ store.del('examDate'); toast('Exam date cleared'); }
+  };
+  $('#exam-clear').onclick = () => { $('#exam-date').value = ''; store.del('examDate'); toast('Exam date cleared'); };
+  if (focus === 'exam-date') $('#exam-date').scrollIntoView({block: 'center'});
   $('#export').onclick = () => {
     const data = {};
     try{ for (let i = 0; i < localStorage.length; i++){ const k = localStorage.key(i); if (k.startsWith('sp_')) data[k] = localStorage.getItem(k); } }catch(e){}
@@ -606,7 +807,7 @@ function openSettings(){
     } else { b.dataset.armed = '1'; b.textContent = 'Tap again to erase all progress'; }
   };
 }
-$('#settings-btn').onclick = openSettings;
+$('#settings-btn').onclick = () => openSettings();
 $('#refresh-btn').onclick = () => loadNews(true);
 
 /* ---------- navigation ---------- */

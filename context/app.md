@@ -12,7 +12,8 @@ One self-contained HTML file: inline `<style>` and `<script>`, no framework, no 
 
 ### Brief
 - Greeting by Brisbane hour, date, and three stats: day streak, cards due, lessons done.
-- **Top for you**: 5 highest-`rank()` items from the last 30h (falls back to 72h if fewer than 5).
+- **Exam countdown** (`renderExam()`): with `sp_examDate` set, a card shows days left (`ordinal(exam) - ordinal(today)`, both Brisbane dates) and a suggested target for today: `ceil(unfinished lessons / days left)` lessons, plus cards due and up to 10 review-mistakes questions. All lessons done → suggests a practice exam. Day 0 → "Exam day"; past date → asks to update it. With no date, a small link opens Settings at the date field. Tapping the card does the same.
+- **Top for you**: 5 highest-`rank()` items from the last 30h (falls back to 72h if fewer than 5), excluding muted sources/tags.
 - Pills: items in 24h, Australian count, actively-exploited count, feeds OK.
 - **Today's CySA+ lesson**: same pick as the notification (see [morning-brief.md](morning-brief.md)).
 - **Question of the day**: `ALL_Q()[(ordinal(today) * 7) % n]`. Each answer counts toward stats. It re-renders whenever the Brief re-renders (e.g. returning to the app), so it can be answered more than once a day.
@@ -32,12 +33,21 @@ Filter chips (the last choice is remembered in `sp_filter`):
 
 Search filters on title + summary + source + tags. The list paginates 40 at a time ("Show more"). Opening a story marks it read (dimmed, unread dot removed); ☆ saves it.
 
+**Why this ranked** (`openWhy()` / `explainScore()`): each card shows a `score N` pill; tapping it or the tag row opens a sheet with the score breakdown. news.json items don't store which terms matched, so the app fetches `scripts/sources.json` (lazily, once) and re-runs `fetch_news.py`'s `score()` logic client-side: source weight (by `feed` name) + each keyword group whose terms appear in title/summary (weight, +1 if in the headline, matched terms listed) + 2 if `region == "AU"`. Tags not explained by a keyword match (e.g. KEV's `Actively exploited`/`KEV`) show as "tagged by the feed itself, +0". If the rebuilt total differs from the stored `score` (keywords edited since the fetch), a note says so. Offline / fetch failure falls back to listing the tags. **If `score()` in `fetch_news.py` changes, update `explainScore()` to match** (it's display-only; `rank()` is untouched).
+
+**Mute** (`sp_muted`): the Why sheet has Mute/Unmute buttons for the story's `source` (the outlet name shown on the card, not the `feed`) and each of its tags. Muted items are filtered out of Brief's Top for you and every News filter except ★ Saved; News shows "N hidden by mutes · Manage" when anything was filtered. Settings lists mutes as tappable pills to unmute.
+
+**Optional fields** (forward-compatible; rendered only if present and valid):
+- `epss` (number 0–1): a pill `EPSS 97%` in the meta row (`<1%` below 1%), red at ≥ 50%.
+- `also` (array of `{source, url}`): a "+N more sources" toggle under the summary expanding to links. Entries whose `url` isn't `http(s)://` are dropped; a missing `source` falls back to the URL's hostname.
+
 Tag colours: red (`hot`) for Actively exploited / KEV / Ransomware, teal (`re`) for Real estate / BEC. The `Australia` tag is hidden on cards because the AU pill already shows it.
 
 ### Learn
 - Exam card: lessons done / total, overall quiz accuracy, progress bar.
 - **Quick quiz**: 10 random questions from all lessons.
 - **Practice exam**: 30 questions spread across domains by exam weight (33/30/20/17% → 10/9/6/5 questions). Results go to `sp_quizHistory`.
+- **Review mistakes** (`startReview()` / `weakQuestions()`): up to 10 questions from `sp_qhist` whose latest answer was wrong or that have been missed more often than answered right. Ordered latest-wrong first, then most net misses, then most recent; the picked 10 are shuffled. A question drops off once right outnumbers wrong and the latest answer was right. The button shows the count; with no history it opens an empty-state card. Results go to `sp_quizHistory` with `type: "review"`. Question IDs (`<lesson id>#<index>`) that no longer exist in cysa.json are ignored.
 - Lessons grouped by domain, with ✓ when done and the lesson-quiz score.
 - **Lesson sheet**: summary, key points, Exam tip box (teal), On the job box (amber), a 3-question quiz. Finishing the quiz or tapping **Mark as complete** marks the lesson done.
 
@@ -50,34 +60,37 @@ Leitner spaced repetition:
 - The nav badge shows the number of due cards.
 
 ### Settings sheet
-ntfy setup steps (with a random topic suggestion), feed health table, Export / Import / Reset progress, About.
+Exam date (`<input type="date">` + Clear, saved on change to `sp_examDate`), muted sources/tags (tap to unmute), ntfy setup steps (with a random topic suggestion), feed health table, Export / Import / Reset progress, About. `openSettings('exam-date')` scrolls to the date field.
 
 ## Quiz engine: `renderQuiz(root, questions, opts)`
 - One question at a time. **Option order is shuffled on every render**, so the `answer` index in the JSON can be anything.
 - After answering: correct/incorrect highlight, explanation, Next / See result.
 - `opts.single`: no Next button (question of the day).
 - `opts.onDone(correct, total)`: called after the result screen.
-- Every answer → `recordAnswer()` updates `sp_qstats` (overall and per-domain) and the streak.
+- Every answer → `recordAnswer()` updates `sp_qstats` (overall and per-domain), `sp_qhist` (per question, when the question has a `qid`, which all three quiz entry points set) and the streak.
 - Result messages: ≥80% "Exam-ready territory", ≥65% "Close", else "Keep going". These are rough guides; the real exam is scaled 100–900, with 750 to pass.
 
 ## Streak
 Any study activity (answering a question, completing a lesson, grading a card) on a Brisbane calendar day calls `markActivity()`. Consecutive days increment the streak, and a missed day resets it to 1. The streak is shown as 0 once more than one day has passed since the last activity.
 
 ## localStorage keys
-All keys are prefixed `sp_` (Export, Import and Reset rely on the prefix). Every access goes through `store.get`/`store.set`, which wrap `JSON.parse`/`stringify` in try/catch so private browsing can't crash the app.
+All keys are prefixed `sp_` (Export, Import and Reset rely on the prefix). Every access goes through `store.get`/`store.set`/`store.del`, which wrap `JSON.parse`/`stringify` in try/catch so private browsing can't crash the app.
 
 | Key | Shape | Purpose |
 |---|---|---|
 | `sp_streak` | `{last: "YYYY-MM-DD", count, best}` | Day streak |
 | `sp_lessons` | `{"1.5": {date, score}}` | Completed lessons |
 | `sp_qstats` | `{answered, correct, byDomain: {"1": {a, c}}}` | Quiz accuracy |
-| `sp_quizHistory` | `[{date, c, t, type: "quick"\|"exam"}]` (last 100) | Quiz results |
+| `sp_qhist` | `{"1.5#0": {right, wrong, last: "YYYY-MM-DD", ok}}` | Per-question history for Review mistakes (`ok` = latest answer correct) |
+| `sp_quizHistory` | `[{date, c, t, type: "quick"\|"exam"\|"review"}]` (last 100) | Quiz results |
 | `sp_cards` | `{"c01": {box, due: "YYYY-MM-DD"}}` | Flashcard schedule |
 | `sp_newToday` | `{date, n}` | New cards introduced today |
 | `sp_read` | `[id, …]` (last 1,500) | Read stories |
 | `sp_saved` | `{id: item}` | Saved stories (full item copy) |
 | `sp_filter` | `"foryou"` etc. | Last news filter |
 | `sp_hintDismissed` | `true` | iOS install hint dismissed |
+| `sp_examDate` | `"YYYY-MM-DD"` (Brisbane date) | Exam countdown; removed when cleared |
+| `sp_muted` | `{sources: [name, …], tags: [tag, …]}` | Muted news sources/tags |
 
 **Never rename a key or change its shape without a migration.** Existing progress on the phone would silently reset.
 
