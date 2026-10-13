@@ -1,0 +1,35 @@
+{
+  "_comment": "Edit this file to change what Sec-Pulse watches. 'region': AU = Australian publisher (always gets the local bonus), auto = search results that only count as AU if the story mentions Australia, Global = no bonus. 'requireMatch' drops items with no security keyword. 'weight' is added to every item from that source. 'max' caps items kept per fetch. Keep keywords GENERIC - this repo is public, so never list your employer's actual vendors, tools or internal systems here.",
+  "sources": [
+    {"name": "ACSC Alerts", "url": "https://www.cyber.gov.au/rss/alerts", "region": "AU", "weight": 4, "max": 20},
+    {"name": "ACSC Advisories", "url": "https://www.cyber.gov.au/rss/advisories", "region": "AU", "weight": 4, "max": 20},
+    {"name": "ACSC (via Google News)", "url": "https://news.google.com/rss/search?q=site:cyber.gov.au+when:7d&hl=en-AU&gl=AU&ceid=AU:en", "region": "AU", "weight": 3, "max": 15},
+    {"name": "AU breach news", "url": "https://news.google.com/rss/search?q=Australia+(data+breach+OR+cyber+attack+OR+ransomware)+when:3d&hl=en-AU&gl=AU&ceid=AU:en", "region": "auto", "requireMatch": true, "weight": 2, "max": 25},
+    {"name": "Real estate cyber news", "url": "https://news.google.com/rss/search?q=(%22real+estate%22+OR+conveyancing+OR+%22property+settlement%22)+(cyber+OR+scam+OR+breach+OR+hack)+when:7d&hl=en-AU&gl=AU&ceid=AU:en", "region": "auto", "requireMatch": true, "weight": 3, "max": 15},
+    {"name": "OAIC / Privacy news", "url": "https://news.google.com/rss/search?q=(OAIC+OR+%22Privacy+Act%22+OR+%22notifiable+data+breach%22)+when:7d&hl=en-AU&gl=AU&ceid=AU:en", "region": "auto", "requireMatch": true, "weight": 2, "max": 10},
+    {"name": "iTnews Security", "url": "https://www.itnews.com.au/RSS/rss.ashx?type=Category&ID=37", "region": "AU", "weight": 1, "max": 20},
+    {"name": "CISA KEV", "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json", "type": "kev", "region": "Global", "weight": 2, "max": 30},
+    {"name": "BleepingComputer", "url": "https://www.bleepingcomputer.com/feed/", "region": "Global", "weight": 0, "max": 25},
+    {"name": "The Hacker News", "url": "https://feeds.feedburner.com/TheHackersNews", "region": "Global", "weight": 0, "max": 25},
+    {"name": "Krebs on Security", "url": "https://krebsonsecurity.com/feed/", "region": "Global", "weight": 1, "max": 10},
+    {"name": "SANS ISC", "url": "https://isc.sans.edu/rssfeed_full.xml", "region": "Global", "weight": 1, "max": 15},
+    {"name": "Microsoft Security Blog", "url": "https://www.microsoft.com/en-us/security/blog/feed/", "region": "Global", "weight": 1, "max": 10},
+    {"name": "SecurityWeek", "url": "https://www.securityweek.com/feed/", "region": "Global", "weight": 0, "max": 20},
+    {"name": "Dark Reading", "url": "https://www.darkreading.com/rss.xml", "region": "Global", "weight": 0, "max": 15}
+  ],
+  "keywords": [
+    {"tag": "Real estate", "weight": 6, "terms": ["real estate", "realestate", "property manag", "conveyanc", "property settlement", "pexa", "proptech", "rental", "tenant", "landlord", "mortgage", "home buyer", "homebuyer"]},
+    {"tag": "Australia", "weight": 4, "terms": ["australia", "australian", "acsc", "asd's", "cyber.gov.au", "oaic", "brisbane", "queensland", "sydney", "melbourne", "perth", "adelaide", "new zealand", "privacy act", "scamwatch", "essential eight", "medibank", "optus", "qantas"]},
+    {"tag": "BEC / payment fraud", "weight": 5, "terms": ["business email compromise", "bec ", "invoice fraud", "payment redirection", "payment diversion", "wire fraud", "fake invoice", "bank detail", "email compromise"]},
+    {"tag": "Actively exploited", "weight": 4, "terms": ["actively exploited", "exploited in the wild", "in the wild", "zero-day", "0-day", "zero day", "known exploited"]},
+    {"tag": "Phishing", "weight": 3, "terms": ["phishing", "smishing", "vishing", "credential harvest", "adversary-in-the-middle", "aitm", "mfa fatigue", "mfa bombing", "qr code", "quishing", "lure"]},
+    {"tag": "Microsoft 365", "weight": 3, "terms": ["microsoft 365", "m365", "office 365", "entra", "azure ad", "exchange online", "outlook", "sharepoint", "onedrive", "microsoft teams", "intune", "defender"]},
+    {"tag": "Ransomware", "weight": 3, "terms": ["ransomware", "extortion", "lockbit", "akira", "qilin", "scattered spider", "shinyhunters", "play ransomware", "medusa"]},
+    {"tag": "Data breach", "weight": 3, "terms": ["data breach", "breach", "leaked", "data leak", "stolen data", "exposed", "notifiable"]},
+    {"tag": "Identity", "weight": 2, "terms": ["mfa", "multi-factor", "credential", "password", "session token", "oauth", "infostealer", "stealer", "okta", "sso", "passkey"]},
+    {"tag": "Edge devices", "weight": 2, "terms": ["fortinet", "fortigate", "ivanti", "citrix", "netscaler", "palo alto", "pan-os", "cisco", "sonicwall", "vpn", "firewall"]},
+    {"tag": "Vulnerability", "weight": 1, "terms": ["cve-", "vulnerability", "remote code execution", "rce", "patch", "security update", "privilege escalation"]},
+    {"tag": "SaaS / cloud", "weight": 2, "terms": ["salesforce", "google workspace", "saas", "aws", "azure", "cloud service", "third-party", "supply chain"]},
+    {"tag": "AI threats", "weight": 1, "terms": ["deepfake", "voice clone", "ai-generated", "generative ai", "llm", "prompt injection"]}
+  ]
+}

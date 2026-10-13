@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sec-Pulse</title>
+<meta name="description" content="Personal cyber security news brief and CySA+ study app">
+<meta name="theme-color" content="#0b1220">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Sec-Pulse">
+<link rel="manifest" href="manifest.json?v=1">
+<link rel="apple-touch-icon" href="assets/icons/icon-180.png?v=1">
+<link rel="icon" href="assets/icons/icon-192.png?v=1">
+<style>
+:root{
+  --bg:#0b1220; --surface:#121c2e; --surface2:#17243a; --border:#22314a;
+  --text:#e6edf7; --muted:#8da2c0; --accent:#38e1c8; --accent-dim:rgba(56,225,200,.14);
+  --warn:#f5b84b; --danger:#ff6b6b; --ok:#5ad08a; --au:#f5b84b;
+  --radius:14px; --nav-h:62px;
+}
+[hidden]{display:none!important}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;background:var(--bg);color:var(--text);font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+body{padding-bottom:calc(var(--nav-h) + env(safe-area-inset-bottom) + 12px);min-height:100vh}
+button{font:inherit;color:inherit;cursor:pointer}
+a{color:var(--accent)}
+header{position:sticky;top:0;z-index:20;background:rgba(11,18,32,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--border);padding:calc(10px + env(safe-area-inset-top)) 16px 10px;display:flex;align-items:center;gap:10px}
+header h1{font-size:18px;margin:0;letter-spacing:.3px;flex:1;display:flex;align-items:center;gap:8px}
+header h1 img{width:26px;height:26px;border-radius:7px}
+#updated{font-size:12px;color:var(--muted)}
+.icon-btn{background:none;border:0;padding:6px;border-radius:10px;color:var(--muted);display:flex}
+.icon-btn:active{background:var(--surface2)}
+main{max-width:720px;margin:0 auto;padding:14px 16px}
+.view{display:none}.view.active{display:block}
+h2{font-size:13px;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin:22px 0 10px;font-weight:600}
+h2:first-child{margin-top:4px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:14px;margin-bottom:10px}
+.row{display:flex;align-items:center;gap:10px}
+.grow{flex:1;min-width:0}
+.muted{color:var(--muted)}.small{font-size:13px}
+.pill{display:inline-flex;align-items:center;gap:5px;background:var(--surface2);border:1px solid var(--border);border-radius:999px;padding:3px 10px;font-size:12px;color:var(--muted);white-space:nowrap}
+.pill.accent{color:var(--accent);border-color:rgba(56,225,200,.4);background:var(--accent-dim)}
+.pill.au{color:var(--au);border-color:rgba(245,184,75,.45);background:rgba(245,184,75,.1)}
+.pill.danger{color:var(--danger);border-color:rgba(255,107,107,.45);background:rgba(255,107,107,.1)}
+.btn{background:var(--surface2);border:1px solid var(--border);border-radius:12px;padding:10px 14px;font-weight:600}
+.btn.primary{background:var(--accent);color:#06221d;border-color:var(--accent)}
+.btn.block{width:100%;display:block;text-align:center}
+.btn:disabled{opacity:.45}
+.greet{font-size:22px;font-weight:700;margin:2px 0 2px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
+.stat{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:10px;text-align:center}
+.stat b{display:block;font-size:22px;line-height:1.2}
+.stat span{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px}
+
+/* news */
+.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;margin:0 -16px;padding-left:16px;padding-right:16px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;background:var(--surface);border:1px solid var(--border);border-radius:999px;padding:6px 13px;font-size:13px;color:var(--muted)}
+.chip.on{background:var(--accent-dim);border-color:var(--accent);color:var(--accent)}
+.search{width:100%;margin:10px 0 12px;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:10px 12px;color:var(--text);font:inherit}
+.news-item{position:relative}
+.news-item.read{opacity:.62}
+.news-meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font-size:12px;color:var(--muted);margin-bottom:5px}
+.news-title{font-weight:600;font-size:15.5px;line-height:1.35;text-decoration:none;color:var(--text);display:block}
+.news-sum{font-size:13.5px;color:var(--muted);margin:6px 0 0;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
+.tag{font-size:11px;padding:2px 8px;border-radius:6px;background:var(--surface2);color:var(--muted);border:1px solid var(--border)}
+.tag.hot{color:var(--danger);border-color:rgba(255,107,107,.4)}
+.tag.re{color:var(--accent);border-color:rgba(56,225,200,.4)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--accent);flex:none}
+.save-btn{position:absolute;top:10px;right:8px;background:none;border:0;padding:6px;color:var(--muted)}
+.save-btn.on{color:var(--warn)}
+.news-item .news-meta{padding-right:30px}
+.score{font-variant-numeric:tabular-nums}
+.empty{text-align:center;color:var(--muted);padding:30px 10px}
+
+/* learn */
+.bar{height:6px;background:var(--surface2);border-radius:99px;overflow:hidden;margin-top:8px}
+.bar i{display:block;height:100%;background:var(--accent);border-radius:99px}
+.lesson-row{display:flex;align-items:center;gap:12px;padding:12px 4px;border-bottom:1px solid var(--border);width:100%;background:none;border-left:0;border-right:0;border-top:0;text-align:left}
+.lesson-row:last-child{border-bottom:0}
+.check{width:22px;height:22px;border-radius:50%;border:2px solid var(--border);flex:none;display:flex;align-items:center;justify-content:center;font-size:13px}
+.check.done{background:var(--accent);border-color:var(--accent);color:#06221d}
+.lesson-id{font-variant-numeric:tabular-nums;color:var(--muted);font-size:13px;width:28px;flex:none}
+.box{border-radius:12px;padding:12px;margin:12px 0;font-size:14px}
+.box.tip{background:var(--accent-dim);border:1px solid rgba(56,225,200,.35)}
+.box.job{background:rgba(245,184,75,.08);border:1px solid rgba(245,184,75,.35)}
+.box b{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.6px;margin-bottom:4px}
+.box.tip b{color:var(--accent)}.box.job b{color:var(--warn)}
+.points{padding-left:18px;margin:8px 0}.points li{margin-bottom:8px}
+
+/* quiz */
+.q-text{font-weight:600;margin:4px 0 12px}
+.opt{display:block;width:100%;text-align:left;background:var(--surface2);border:1px solid var(--border);border-radius:12px;padding:11px 12px;margin-bottom:8px}
+.opt.correct{border-color:var(--ok);background:rgba(90,208,138,.12)}
+.opt.wrong{border-color:var(--danger);background:rgba(255,107,107,.12)}
+.opt:disabled{cursor:default;color:var(--text)}
+.explain{font-size:13.5px;color:var(--muted);margin:4px 0 12px}
+.q-progress{font-size:12px;color:var(--muted);margin-bottom:6px}
+
+/* cards */
+.flash{min-height:220px;display:flex;flex-direction:column;justify-content:center;text-align:center;padding:24px 18px}
+.flash .front{font-size:21px;font-weight:700}
+.flash .back{font-size:15.5px;margin-top:16px;color:var(--text);border-top:1px solid var(--border);padding-top:16px}
+.grade{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.grade .btn{padding:12px 6px}
+.boxes{display:flex;gap:6px;margin-top:10px}
+.boxes div{flex:1;text-align:center;background:var(--surface2);border-radius:8px;padding:6px 0;font-size:12px;color:var(--muted)}
+.boxes b{display:block;color:var(--text);font-size:15px}
+
+/* nav */
+nav{position:fixed;left:0;right:0;bottom:0;z-index:30;background:rgba(11,18,32,.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  border-top:1px solid var(--border);display:flex;padding:6px 6px calc(6px + env(safe-area-inset-bottom))}
+nav button{flex:1;background:none;border:0;display:flex;flex-direction:column;align-items:center;gap:2px;font-size:11px;color:var(--muted);padding:4px 0;position:relative}
+nav button.on{color:var(--accent)}
+nav svg{width:24px;height:24px}
+.badge{position:absolute;top:0;left:calc(50% + 6px);background:var(--danger);color:#fff;font-size:10px;font-weight:700;border-radius:99px;padding:0 5px;min-width:16px;line-height:16px}
+
+/* sheet */
+#sheet{position:fixed;inset:0;z-index:50;background:var(--bg);overflow-y:auto;display:none;-webkit-overflow-scrolling:touch}
+#sheet.open{display:block}
+#sheet-head{position:sticky;top:0;background:rgba(11,18,32,.95);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--border);
+  padding:calc(10px + env(safe-area-inset-top)) 12px 10px;display:flex;align-items:center;gap:8px;z-index:2}
+#sheet-title{font-weight:700;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#sheet-body{max-width:720px;margin:0 auto;padding:16px 16px calc(40px + env(safe-area-inset-bottom))}
+#toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(var(--nav-h) + env(safe-area-inset-bottom) + 16px);background:var(--surface2);border:1px solid var(--accent);
+  color:var(--text);padding:9px 16px;border-radius:12px;z-index:80;font-size:14px;opacity:0;transition:opacity .2s;pointer-events:none;max-width:calc(100% - 32px)}
+#toast.show{opacity:1}
+#install-hint{display:none}
+table{width:100%;border-collapse:collapse;font-size:13px}
+td{padding:6px 4px;border-bottom:1px solid var(--border);vertical-align:top}
+code{background:var(--surface2);padding:1px 6px;border-radius:6px;font-size:13px;word-break:break-all}
+</style>
+</head>
+<body>
+<header>
+  <h1><img src="assets/icons/icon-192.png?v=1" alt="">Sec-Pulse</h1>
+  <span id="updated"></span>
+  <button class="icon-btn" id="refresh-btn" aria-label="Refresh news"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg></button>
+  <button class="icon-btn" id="settings-btn" aria-label="Settings"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg></button>
+</header>
+
+<main>
+  <section class="view active" id="view-brief">
+    <div class="card" id="install-hint">
+      <div class="row"><div class="grow small">Install: tap <b>Share</b> then <b>Add to Home Screen</b> to use Sec-Pulse like an app.</div>
+      <button class="icon-btn" id="install-dismiss" aria-label="Dismiss">✕</button></div>
+    </div>
+    <div class="greet" id="greet">G'day</div>
+    <div class="muted small" id="today-date"></div>
+    <div class="stats">
+      <div class="stat"><b id="st-streak">0</b><span>day streak</span></div>
+      <div class="stat"><b id="st-due">0</b><span>cards due</span></div>
+      <div class="stat"><b id="st-lessons">0</b><span>lessons done</span></div>
+    </div>
+    <h2>Top for you</h2>
+    <div id="brief-top"><div class="empty">Loading news…</div></div>
+    <div class="row small muted" id="brief-glance" style="flex-wrap:wrap;gap:6px"></div>
+    <h2>Today's CySA+ lesson</h2>
+    <div id="brief-lesson"></div>
+    <h2>Question of the day</h2>
+    <div class="card" id="brief-qotd"></div>
+  </section>
+
+  <section class="view" id="view-news">
+    <div class="chips" id="news-filters"></div>
+    <input class="search" id="news-search" type="search" placeholder="Search headlines, sources, tags…" autocomplete="off">
+    <div id="news-list"></div>
+  </section>
+
+  <section class="view" id="view-learn">
+    <div class="card">
+      <div class="row"><div class="grow"><div style="font-weight:700;font-size:17px" id="exam-name"></div>
+        <div class="small muted" id="exam-sub"></div></div>
+        <span class="pill accent" id="exam-acc"></span></div>
+      <div class="bar"><i id="exam-bar" style="width:0"></i></div>
+    </div>
+    <div class="row" style="gap:8px">
+      <button class="btn primary grow" id="quick-quiz">Quick quiz · 10</button>
+      <button class="btn grow" id="practice-exam">Practice exam · 30</button>
+    </div>
+    <div id="domains"></div>
+  </section>
+
+  <section class="view" id="view-cards">
+    <div id="cards-area"></div>
+  </section>
+</main>
+
+<nav>
+  <button data-view="brief" class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg>Brief</button>
+  <button data-view="news"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8M15 18h-5M10 6h8v4h-8z"/></svg>News</button>
+  <button data-view="learn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>Learn</button>
+  <button data-view="cards"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v12"/></svg>Cards<span class="badge" id="nav-due" hidden></span></button>
+</nav>
+
+<div id="sheet" role="dialog" aria-modal="true">
+  <div id="sheet-head">
+    <button class="icon-btn" id="sheet-close" aria-label="Close"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+    <div id="sheet-title"></div>
+  </div>
+  <div id="sheet-body"></div>
+</div>
+<div id="toast"></div>
+
+<script>
+'use strict';
+/* ---------- storage (per-device, wrapped so private mode never breaks the app) ---------- */
+const store = {
+  get(k, d){ try{ const v = localStorage.getItem('sp_'+k); return v === null ? d : JSON.parse(v); }catch(e){ return d; } },
+  set(k, v){ try{ localStorage.setItem('sp_'+k, JSON.stringify(v)); }catch(e){} }
+};
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function toast(msg){ const t = $('#toast'); t.textContent = msg; t.classList.add('show'); clearTimeout(t._h); t._h = setTimeout(() => t.classList.remove('show'), 2200); }
+
+/* ---------- dates: everything keyed to Brisbane time (no daylight saving) ---------- */
+const TZ = 'Australia/Brisbane';
+function todayKey(d = new Date()){ return new Intl.DateTimeFormat('en-CA', {timeZone: TZ}).format(d); }
+function addDays(key, n){ const d = new Date(key + 'T00:00:00Z'); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); }
+// Same as Python's date.toordinal(), so the app and the morning notification pick the same lesson.
+function ordinal(key){ return Math.floor(Date.parse(key + 'T00:00:00Z') / 864e5) + 719163; }
+function brisHour(){ return +new Intl.DateTimeFormat('en-AU', {timeZone: TZ, hour: 'numeric', hourCycle: 'h23'}).format(new Date()); }
+function ago(iso){
+  const m = Math.max(0, (Date.now() - Date.parse(iso)) / 6e4);
+  if (m < 60) return Math.round(m) + 'm ago';
+  if (m < 1440) return Math.round(m / 60) + 'h ago';
+  return Math.round(m / 1440) + 'd ago';
+}
+function shuffle(a){ a = a.slice(); for (let i = a.length - 1; i > 0; i--){ const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+
+/* ---------- streak: any study activity on a Brisbane calendar day counts ---------- */
+function markActivity(){
+  const t = todayKey(), s = store.get('streak', {last: null, count: 0, best: 0});
+  if (s.last === t) return;
+  s.count = s.last === addDays(t, -1) ? s.count + 1 : 1;
+  s.best = Math.max(s.best || 0, s.count); s.last = t;
+  store.set('streak', s); renderStats();
+}
+function currentStreak(){
+  const s = store.get('streak', {last: null, count: 0}), t = todayKey();
+  return (s.last === t || s.last === addDays(t, -1)) ? s.count : 0;
+}
+
+/* ---------- data ---------- */
+let NEWS = {items: [], sources: [], generated: null};
+let CYSA = null;
+const ALL_Q = () => CYSA.lessons.flatMap(l => l.quiz.map((q, i) => ({...q, domain: l.domain, lesson: l.id, qid: l.id + '#' + i})));
+
+async function loadNews(manual){
+  try{
+    const r = await fetch('data/news.json?_=' + Date.now());
+    if (!r.ok) throw new Error(r.status);
+    NEWS = await r.json();
+    if (manual) toast('News refreshed');
+  }catch(e){
+    if (manual) toast('Offline - showing saved news');
+  }
+  $('#updated').textContent = NEWS.generated ? 'updated ' + ago(NEWS.generated) : '';
+  renderBrief(); renderNews();
+}
+async function loadCysa(){
+  const r = await fetch('data/cysa.json?_=' + Date.now());
+  CYSA = await r.json();
+}
+
+/* ---------- ranking: keyword relevance minus age (same formula as send_brief.py) ---------- */
+function rank(i){ return i.score - Math.max(0, (Date.now() - Date.parse(i.published)) / 36e5) / 12; }
+const HOT = new Set(['Actively exploited', 'KEV', 'Ransomware']);
+const RE = new Set(['Real estate', 'BEC / payment fraud']);
+
+function newsCard(i){
+  const read = store.get('read', []).includes(i.id);
+  const saved = !!store.get('saved', {})[i.id];
+  const tags = i.tags.filter(t => t !== 'Australia').slice(0, 4)
+    .map(t => `<span class="tag ${HOT.has(t) ? 'hot' : RE.has(t) ? 're' : ''}">${esc(t)}</span>`).join('');
+  return `<div class="card news-item ${read ? 'read' : ''}" data-id="${esc(i.id)}">
+    <div class="news-meta">${read ? '' : '<span class="dot"></span>'}
+      ${i.region === 'AU' ? '<span class="pill au">AU</span>' : ''}
+      <span>${esc(i.source)}</span><span>· ${ago(i.published)}</span></div>
+    <a class="news-title" href="${esc(i.link)}" target="_blank" rel="noopener noreferrer">${esc(i.title)}</a>
+    ${i.summary ? `<p class="news-sum">${esc(i.summary)}</p>` : ''}
+    ${tags ? `<div class="tags">${tags}</div>` : ''}
+    <button class="save-btn ${saved ? 'on' : ''}" aria-label="Save">${saved ? '★' : '☆'}</button>
+  </div>`;
+}
+function wireNewsList(root){
+  root.querySelectorAll('.news-item').forEach(el => {
+    const id = el.dataset.id;
+    el.querySelector('.news-title').addEventListener('click', () => {
+      const read = store.get('read', []);
+      if (!read.includes(id)){ read.push(id); store.set('read', read.slice(-1500)); }
+      el.classList.add('read'); el.querySelector('.dot')?.remove();
+    });
+    el.querySelector('.save-btn').addEventListener('click', e => {
+      const saved = store.get('saved', {});
+      if (saved[id]) delete saved[id];
+      else saved[id] = NEWS.items.find(x => x.id === id) || Object.values(saved).find(x => x.id === id);
+      store.set('saved', saved);
+      e.currentTarget.classList.toggle('on', !!saved[id]);
+      e.currentTarget.textContent = saved[id] ? '★' : '☆';
+      toast(saved[id] ? 'Saved' : 'Removed from saved');
+    });
+  });
+}
+
+/* ---------- Brief ---------- */
+function renderStats(){
+  $('#st-streak').textContent = currentStreak();
+  const due = CYSA ? dueCards().length : 0;
+  $('#st-due').textContent = due;
+  const nb = $('#nav-due'); nb.hidden = !due; nb.textContent = due;
+  $('#st-lessons').textContent = CYSA ? Object.keys(store.get('lessons', {})).length + '/' + CYSA.lessons.length : '0';
+}
+function renderBrief(){
+  const h = brisHour();
+  $('#greet').textContent = h < 12 ? 'Good morning' : h < 17 ? 'Good afternoon' : 'Good evening';
+  $('#today-date').textContent = new Intl.DateTimeFormat('en-AU', {timeZone: TZ, weekday: 'long', day: 'numeric', month: 'long'}).format(new Date()) + ' · Brisbane';
+  const within = hrs => NEWS.items.filter(i => Date.now() - Date.parse(i.published) < hrs * 36e5);
+  let pool = within(30); if (pool.length < 5) pool = within(72);
+  const top = pool.sort((a, b) => rank(b) - rank(a)).slice(0, 5);
+  const el = $('#brief-top');
+  el.innerHTML = top.length ? top.map(newsCard).join('') : '<div class="empty">No news yet - it updates every few hours.</div>';
+  wireNewsList(el);
+  const d1 = within(24);
+  const ok = NEWS.sources.filter(s => s.ok).length;
+  $('#brief-glance').innerHTML = NEWS.generated ? `<span class="pill">${d1.length} items in 24h</span>
+    <span class="pill au">${d1.filter(i => i.region === 'AU').length} Australian</span>
+    <span class="pill danger">${d1.filter(i => i.tags.includes('Actively exploited')).length} actively exploited</span>
+    <span class="pill">${ok}/${NEWS.sources.length} feeds OK</span>` : '';
+  if (CYSA){
+    const t = todayKey();
+    const lesson = CYSA.lessons[ordinal(t) % CYSA.lessons.length];
+    const dom = CYSA.domains.find(d => d.id === lesson.domain);
+    const done = store.get('lessons', {})[lesson.id];
+    $('#brief-lesson').innerHTML = `<button class="card" style="width:100%;text-align:left" id="today-lesson">
+      <div class="row"><div class="grow"><div class="small muted">Domain ${dom.id} · ${esc(dom.name)}</div>
+      <div style="font-weight:700;font-size:16px">${esc(lesson.id)} ${esc(lesson.title)}</div>
+      <div class="small muted" style="margin-top:4px">${esc(lesson.summary.slice(0, 120))}…</div></div>
+      ${done ? '<span class="pill accent">Done ✓</span>' : '<span class="pill accent">Start →</span>'}</div></button>`;
+    $('#today-lesson').onclick = () => openLesson(lesson.id);
+    const qs = ALL_Q();
+    const q = qs[(ordinal(t) * 7) % qs.length];
+    renderQuiz($('#brief-qotd'), [q], {single: true});
+  }
+  renderStats();
+}
+
+/* ---------- News ---------- */
+const FILTERS = [
+  ['foryou', 'For you'], ['latest', 'Latest'], ['au', '🇦🇺 Australia'], ['exploited', 'Exploited'],
+  ['realestate', 'Real estate & BEC'], ['m365', 'Microsoft 365'], ['saved', '★ Saved']
+];
+let newsFilter = store.get('filter', 'foryou'), newsLimit = 40;
+function renderNews(){
+  $('#news-filters').innerHTML = FILTERS.map(([k, l]) => `<button class="chip ${k === newsFilter ? 'on' : ''}" data-f="${k}">${l}</button>`).join('');
+  $('#news-filters').querySelectorAll('.chip').forEach(c => c.onclick = () => { newsFilter = c.dataset.f; store.set('filter', newsFilter); newsLimit = 40; renderNews(); });
+  const q = $('#news-search').value.trim().toLowerCase();
+  let list = newsFilter === 'saved' ? Object.values(store.get('saved', {})).filter(Boolean) : NEWS.items.slice();
+  const has = t => i => i.tags.includes(t);
+  if (newsFilter === 'foryou') list = list.filter(i => i.score >= 5 && Date.now() - Date.parse(i.published) < 7 * 864e5).sort((a, b) => rank(b) - rank(a));
+  else {
+    if (newsFilter === 'au') list = list.filter(i => i.region === 'AU');
+    if (newsFilter === 'exploited') list = list.filter(i => has('Actively exploited')(i) || has('KEV')(i));
+    if (newsFilter === 'realestate') list = list.filter(i => has('Real estate')(i) || has('BEC / payment fraud')(i));
+    if (newsFilter === 'm365') list = list.filter(has('Microsoft 365'));
+    list.sort((a, b) => Date.parse(b.published) - Date.parse(a.published));
+  }
+  if (q) list = list.filter(i => (i.title + ' ' + i.summary + ' ' + i.source + ' ' + i.tags.join(' ')).toLowerCase().includes(q));
+  const el = $('#news-list');
+  if (!list.length){ el.innerHTML = `<div class="empty">${newsFilter === 'saved' ? 'Nothing saved yet - tap ☆ on a story.' : 'No matching stories.'}</div>`; return; }
+  el.innerHTML = list.slice(0, newsLimit).map(newsCard).join('') +
+    (list.length > newsLimit ? `<button class="btn block" id="more">Show more (${list.length - newsLimit})</button>` : '');
+  wireNewsList(el);
+  const more = $('#more'); if (more) more.onclick = () => { newsLimit += 40; renderNews(); };
+}
+$('#news-search').addEventListener('input', () => { newsLimit = 40; renderNews(); });
+
+/* ---------- Quiz engine ---------- */
+function recordAnswer(q, correct){
+  const s = store.get('qstats', {answered: 0, correct: 0, byDomain: {}});
+  s.answered++; if (correct) s.correct++;
+  const d = s.byDomain[q.domain] || (s.byDomain[q.domain] = {a: 0, c: 0});
+  d.a++; if (correct) d.c++;
+  store.set('qstats', s); markActivity();
+}
+function renderQuiz(root, questions, opts = {}){
+  let idx = 0, correct = 0;
+  const show = () => {
+    const q = questions[idx];
+    const order = shuffle(q.options.map((o, i) => i)); // options are shuffled every time
+    root.innerHTML = `${questions.length > 1 ? `<div class="q-progress">Question ${idx + 1} of ${questions.length}${q.lesson ? ' · lesson ' + esc(q.lesson) : ''}</div>` : ''}
+      <div class="q-text">${esc(q.q)}</div>
+      ${order.map(i => `<button class="opt" data-i="${i}">${esc(q.options[i])}</button>`).join('')}
+      <div class="explain" hidden></div><div class="q-next"></div>`;
+    root.querySelectorAll('.opt').forEach(b => b.onclick = () => {
+      const pick = +b.dataset.i, ok = pick === q.answer;
+      if (ok) correct++;
+      recordAnswer(q, ok);
+      root.querySelectorAll('.opt').forEach(o => {
+        o.disabled = true;
+        if (+o.dataset.i === q.answer) o.classList.add('correct');
+        else if (+o.dataset.i === pick) o.classList.add('wrong');
+      });
+      const ex = root.querySelector('.explain'); ex.hidden = false;
+      ex.innerHTML = `<b style="color:${ok ? 'var(--ok)' : 'var(--danger)'}">${ok ? 'Correct.' : 'Not quite.'}</b> ${esc(q.explain)}`;
+      if (opts.single) return;
+      const last = idx === questions.length - 1;
+      const nb = document.createElement('button');
+      nb.className = 'btn primary block'; nb.textContent = last ? 'See result' : 'Next';
+      nb.onclick = () => { if (last) finish(); else { idx++; show(); } };
+      root.querySelector('.q-next').appendChild(nb);
+    });
+  };
+  const finish = () => {
+    const pct = Math.round(correct / questions.length * 100);
+    // Rough guide only: CySA+ is scaled 100-900, pass 750. ~80%+ on practice sets is a good sign.
+    const msg = pct >= 80 ? 'Exam-ready territory on this set.' : pct >= 65 ? 'Close - review the misses.' : 'Keep going - revisit the lessons for the domains you missed.';
+    root.innerHTML = `<div style="text-align:center;padding:10px 0"><div style="font-size:40px;font-weight:800;color:var(--accent)">${pct}%</div>
+      <div>${correct} of ${questions.length} correct</div><div class="muted small" style="margin-top:6px">${msg}</div></div>`;
+    opts.onDone && opts.onDone(correct, questions.length);
+  };
+  show();
+}
+
+/* ---------- Learn ---------- */
+function renderLearn(){
+  if (!CYSA) return;
+  const done = store.get('lessons', {}), qs = store.get('qstats', {answered: 0, correct: 0, byDomain: {}});
+  $('#exam-name').textContent = CYSA.exam.name + ' (' + CYSA.exam.code + ')';
+  const n = Object.keys(done).length;
+  $('#exam-sub').textContent = `${n} of ${CYSA.lessons.length} lessons · ${qs.answered} question${qs.answered === 1 ? '' : 's'} answered`;
+  $('#exam-acc').textContent = qs.answered ? Math.round(qs.correct / qs.answered * 100) + '% accuracy' : 'No quizzes yet';
+  $('#exam-bar').style.width = (n / CYSA.lessons.length * 100) + '%';
+  $('#domains').innerHTML = CYSA.domains.map(d => {
+    const ls = CYSA.lessons.filter(l => l.domain === d.id), dd = qs.byDomain[d.id];
+    const nd = ls.filter(l => done[l.id]).length;
+    return `<h2 class="row"><span class="grow">Domain ${d.id} · ${esc(d.name)}</span><span>${d.weight}%</span></h2>
+      <div class="card" style="padding:4px 12px">
+        <div class="small muted" style="padding:8px 4px 0">${nd}/${ls.length} lessons${dd ? ' · ' + Math.round(dd.c / dd.a * 100) + '% correct (' + dd.a + ' answered)' : ''}</div>
+        ${ls.map(l => `<button class="lesson-row" data-l="${esc(l.id)}">
+          <span class="check ${done[l.id] ? 'done' : ''}">${done[l.id] ? '✓' : ''}</span>
+          <span class="lesson-id">${esc(l.id)}</span>
+          <span class="grow">${esc(l.title)}</span>
+          ${done[l.id] && done[l.id].score != null ? `<span class="pill">${done[l.id].score}/${l.quiz.length}</span>` : ''}
+        </button>`).join('')}
+      </div>`;
+  }).join('') + `<p class="small muted" style="margin-top:16px">${esc(CYSA.exam.note)}</p>`;
+  $('#domains').querySelectorAll('.lesson-row').forEach(b => b.onclick = () => openLesson(b.dataset.l));
+}
+function openSheet(title, html){
+  $('#sheet-title').textContent = title; $('#sheet-body').innerHTML = html;
+  $('#sheet').classList.add('open'); $('#sheet').scrollTop = 0; document.body.style.overflow = 'hidden';
+}
+function closeSheet(){ $('#sheet').classList.remove('open'); document.body.style.overflow = ''; renderLearn(); renderBrief(); }
+$('#sheet-close').onclick = closeSheet;
+
+function openLesson(id){
+  const l = CYSA.lessons.find(x => x.id === id), d = CYSA.domains.find(x => x.id === l.domain);
+  openSheet(l.id + ' ' + l.title, `
+    <div class="small muted">Domain ${d.id} · ${esc(d.name)} (${d.weight}% of exam)</div>
+    <h3 style="margin:6px 0 10px;font-size:21px">${esc(l.title)}</h3>
+    <p>${esc(l.summary)}</p>
+    <h2>Key points</h2><ul class="points">${l.points.map(p => `<li>${esc(p)}</li>`).join('')}</ul>
+    <div class="box tip"><b>Exam tip</b>${esc(l.examTip)}</div>
+    <div class="box job"><b>On the job</b>${esc(l.onTheJob)}</div>
+    <h2>Check yourself</h2><div class="card" id="lesson-quiz"></div>
+    <button class="btn block" id="mark-done" style="margin-top:6px">Mark as complete</button>`);
+  const quizQs = l.quiz.map((q, i) => ({...q, domain: l.domain, qid: l.id + '#' + i}));
+  const complete = score => {
+    const done = store.get('lessons', {});
+    done[l.id] = {date: todayKey(), score: score ?? (done[l.id] && done[l.id].score) ?? null};
+    store.set('lessons', done); markActivity();
+    $('#mark-done').textContent = 'Completed ✓'; $('#mark-done').disabled = true;
+  };
+  renderQuiz($('#lesson-quiz'), quizQs, {onDone: c => { complete(c); toast('Lesson complete'); }});
+  if (store.get('lessons', {})[l.id]){ $('#mark-done').textContent = 'Completed ✓'; $('#mark-done').disabled = true; }
+  $('#mark-done').onclick = () => { complete(); toast('Lesson complete'); };
+}
+function startQuiz(n, weighted){
+  const all = ALL_Q();
+  let picked;
+  if (weighted){
+    // Spread questions across domains by exam weight.
+    picked = [];
+    CYSA.domains.forEach(d => {
+      const k = Math.round(n * d.weight / 100);
+      picked.push(...shuffle(all.filter(q => q.domain === d.id)).slice(0, k));
+    });
+    picked = shuffle(picked);
+  } else picked = shuffle(all).slice(0, n);
+  openSheet(weighted ? 'Practice exam' : 'Quick quiz', `<div class="card" id="big-quiz"></div>
+    <p class="small muted">The real exam is scored 100-900 with 750 to pass, and includes performance-based questions. Treat this as a knowledge check, not a score predictor.</p>`);
+  renderQuiz($('#big-quiz'), picked, {onDone: (c, t) => {
+    const h = store.get('quizHistory', []); h.push({date: todayKey(), c, t, type: weighted ? 'exam' : 'quick'}); store.set('quizHistory', h.slice(-100));
+  }});
+}
+$('#quick-quiz').onclick = () => startQuiz(10, false);
+$('#practice-exam').onclick = () => startQuiz(30, true);
+
+/* ---------- Flashcards: Leitner boxes 1-5 ---------- */
+const INTERVALS = [0, 1, 3, 7, 14, 30]; // days until next review, by box
+const NEW_PER_DAY = 8;
+function dueCards(){
+  const st = store.get('cards', {}), t = todayKey();
+  const due = CYSA.cards.filter(c => st[c.id] && st[c.id].due <= t);
+  const nd = store.get('newToday', {date: null, n: 0});
+  const newLeft = Math.max(0, NEW_PER_DAY - (nd.date === t ? nd.n : 0));
+  return due.concat(CYSA.cards.filter(c => !st[c.id]).slice(0, newLeft));
+}
+let cardQueue = null;
+function renderCards(){
+  if (!CYSA) return;
+  const area = $('#cards-area');
+  if (!cardQueue) cardQueue = shuffle(dueCards());
+  const st = store.get('cards', {});
+  const boxes = [1, 2, 3, 4, 5].map(b => CYSA.cards.filter(c => st[c.id] && st[c.id].box === b).length);
+  const unseen = CYSA.cards.filter(c => !st[c.id]).length;
+  const summary = `<div class="boxes">${boxes.map((n, i) => `<div><b>${n}</b>box ${i + 1}</div>`).join('')}<div><b>${unseen}</b>new</div></div>
+    <p class="small muted">New cards: ${NEW_PER_DAY}/day. Again → box 1 (see it again today). Good → next box. Easy → skip a box. Box 5 cards come back every 30 days.</p>`;
+  if (!cardQueue.length){
+    area.innerHTML = `<div class="card flash"><div class="front">All caught up ✓</div><div class="muted" style="margin-top:8px">Come back tomorrow for more cards.</div></div>
+      <button class="btn block" id="cram">Cram 10 random cards (doesn't affect schedule)</button>${summary}`;
+    $('#cram').onclick = () => { cardQueue = shuffle(CYSA.cards).slice(0, 10).map(c => ({...c, cram: true})); renderCards(); };
+    renderStats(); return;
+  }
+  const c = cardQueue[0], dom = CYSA.domains.find(d => d.id === c.domain);
+  area.innerHTML = `<div class="row small muted" style="margin-bottom:8px"><span class="grow">${cardQueue.length} left${c.cram ? ' · cram' : ''}</span><span>Domain ${dom.id} · ${esc(dom.name)}</span></div>
+    <div class="card flash" id="flash"><div class="front">${esc(c.front)}</div><div class="back" hidden>${esc(c.back)}</div></div>
+    <button class="btn primary block" id="reveal">Show answer</button>
+    <div class="grade" id="grade" hidden>
+      <button class="btn" data-g="again" style="color:var(--danger)">Again</button>
+      <button class="btn" data-g="good">Good</button>
+      <button class="btn" data-g="easy" style="color:var(--accent)">Easy</button>
+    </div>${summary}`;
+  const reveal = () => { $('#flash .back').hidden = false; $('#reveal').hidden = true; $('#grade').hidden = false; };
+  $('#reveal').onclick = reveal; $('#flash').onclick = reveal;
+  $('#grade').querySelectorAll('button').forEach(b => b.onclick = () => grade(c, b.dataset.g));
+}
+function grade(c, g){
+  cardQueue.shift();
+  if (!c.cram){
+    const st = store.get('cards', {}), t = todayKey();
+    if (!st[c.id]){ const nd = store.get('newToday', {date: null, n: 0}); store.set('newToday', {date: t, n: nd.date === t ? nd.n + 1 : 1}); }
+    const prev = st[c.id] ? st[c.id].box : 0;
+    const box = g === 'again' ? 1 : Math.min(5, Math.max(1, prev + (g === 'easy' ? 2 : 1)));
+    st[c.id] = {box, due: g === 'again' ? t : addDays(t, INTERVALS[box])};
+    store.set('cards', st);
+    if (g === 'again') cardQueue.push(c);
+  } else if (g === 'again') cardQueue.push(c);
+  markActivity(); renderCards(); renderStats();
+}
+
+/* ---------- Settings ---------- */
+function openSettings(){
+  const rows = NEWS.sources.map(s => `<tr><td>${s.ok ? '✅' : '⚠️'}</td><td>${esc(s.name)}${s.error ? `<div class="small muted">${esc(s.error)}</div>` : ''}</td><td style="text-align:right">${s.count}</td></tr>`).join('');
+  openSheet('Settings', `
+    <h2>Morning brief notification</h2>
+    <div class="card small">
+      <p style="margin-top:0">Every morning at about 6:30am Brisbane time, a GitHub Action sends your top 5 stories plus today's CySA+ lesson to the free <b>ntfy</b> app.</p>
+      <ol style="padding-left:18px;margin:0">
+        <li>Install <b>ntfy</b> from the App Store or Google Play.</li>
+        <li>Pick a long, unguessable topic name, e.g. <code>secpulse-${Math.random().toString(36).slice(2, 10)}${Math.random().toString(36).slice(2, 8)}</code></li>
+        <li>In ntfy, tap <b>+</b> and subscribe to that topic.</li>
+        <li>On GitHub: repo <b>Settings → Secrets and variables → Actions → New repository secret</b>, name <code>NTFY_TOPIC</code>, value = your topic.</li>
+        <li>Test it: <b>Actions → Morning brief → Run workflow</b>.</li>
+      </ol>
+      <p class="muted" style="margin-bottom:0">Anyone who knows a ntfy topic name can read it, so keep it secret and long.</p>
+    </div>
+    <h2>Feed health</h2>
+    <div class="card"><div class="small muted" style="margin-bottom:6px">Last fetch ${NEWS.generated ? ago(NEWS.generated) : 'never'} · refreshes every 3 hours</div>
+      <table>${rows || '<tr><td>No data yet</td></tr>'}</table></div>
+    <h2>Your progress</h2>
+    <div class="card small">
+      <p style="margin-top:0">Progress is stored only on this device. Export a backup before clearing Safari data or switching phones.</p>
+      <div class="row" style="gap:8px;flex-wrap:wrap">
+        <button class="btn" id="export">Export backup</button>
+        <label class="btn" style="font-weight:600">Import backup<input type="file" id="import" accept="application/json" hidden></label>
+        <button class="btn" id="reset" style="color:var(--danger)">Reset…</button>
+      </div>
+    </div>
+    <h2>About</h2>
+    <p class="small muted">Sec-Pulse is a personal, unofficial study and news tool. Not affiliated with CompTIA, ASD or any employer. Headlines link to their original publishers.</p>`);
+  $('#export').onclick = () => {
+    const data = {};
+    try{ for (let i = 0; i < localStorage.length; i++){ const k = localStorage.key(i); if (k.startsWith('sp_')) data[k] = localStorage.getItem(k); } }catch(e){}
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob([JSON.stringify(data)], {type: 'application/json'}));
+    a.download = 'sec-pulse-backup-' + todayKey() + '.json'; a.click();
+  };
+  $('#import').onchange = async e => {
+    try{
+      const data = JSON.parse(await e.target.files[0].text());
+      Object.entries(data).forEach(([k, v]) => { if (k.startsWith('sp_')) localStorage.setItem(k, v); });
+      toast('Backup restored'); cardQueue = null; closeSheet(); renderCards();
+    }catch(err){ toast('That file is not a Sec-Pulse backup'); }
+  };
+  $('#reset').onclick = e => {
+    const b = e.currentTarget;
+    if (b.dataset.armed){
+      try{ Object.keys(localStorage).filter(k => k.startsWith('sp_')).forEach(k => localStorage.removeItem(k)); }catch(err){}
+      toast('Progress reset'); cardQueue = null; closeSheet(); renderCards();
+    } else { b.dataset.armed = '1'; b.textContent = 'Tap again to erase all progress'; }
+  };
+}
+$('#settings-btn').onclick = openSettings;
+$('#refresh-btn').onclick = () => loadNews(true);
+
+/* ---------- navigation ---------- */
+function show(view){
+  document.querySelectorAll('.view').forEach(v => v.classList.toggle('active', v.id === 'view-' + view));
+  document.querySelectorAll('nav button').forEach(b => b.classList.toggle('on', b.dataset.view === view));
+  if (view === 'learn') renderLearn();
+  if (view === 'cards') renderCards();
+  if (view === 'news') renderNews();
+  window.scrollTo(0, 0);
+  try{ history.replaceState(null, '', '#' + view); }catch(e){}
+}
+document.querySelectorAll('nav button').forEach(b => b.onclick = () => show(b.dataset.view));
+
+/* ---------- install hint (iOS Safari only, until dismissed) ---------- */
+const standalone = matchMedia('(display-mode: standalone)').matches || navigator.standalone;
+if (!standalone && /iphone|ipad|ipod/i.test(navigator.userAgent) && !store.get('hintDismissed', false)) $('#install-hint').style.display = 'block';
+$('#install-dismiss').onclick = () => { store.set('hintDismissed', true); $('#install-hint').style.display = 'none'; };
+
+/* ---------- boot ---------- */
+(async () => {
+  try{ await loadCysa(); }catch(e){ toast('Could not load study content'); }
+  await loadNews(false);
+  renderLearn();
+  const start = location.hash.slice(1);
+  if (['brief', 'news', 'learn', 'cards'].includes(start)) show(start);
+})();
+// Re-check for fresh news whenever the app comes back to the foreground.
+document.addEventListener('visibilitychange', () => { if (!document.hidden) loadNews(false); });
+if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
+</script>
+</body>
+</html>

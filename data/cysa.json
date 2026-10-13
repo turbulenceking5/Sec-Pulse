@@ -1,0 +1,477 @@
+{
+  "exam": {
+    "name": "CompTIA CySA+",
+    "code": "CS0-003",
+    "note": "Domains and weights follow the CS0-003 exam objectives. Check comptia.org for the current exam version before booking. Lessons marked AU bonus are not exam content - they cover Australian context you will use on the job."
+  },
+  "domains": [
+    {"id": 1, "name": "Security Operations", "weight": 33},
+    {"id": 2, "name": "Vulnerability Management", "weight": 30},
+    {"id": 3, "name": "Incident Response & Management", "weight": 20},
+    {"id": 4, "name": "Reporting & Communication", "weight": 17}
+  ],
+  "lessons": [
+    {
+      "id": "1.1", "domain": 1, "title": "Architecture concepts for analysts",
+      "summary": "You cannot spot abnormal until you know what normal looks like in your environment. CySA+ expects you to understand how logging, segmentation, identity and encryption shape what an analyst can see and defend.",
+      "points": [
+        "Log ingestion: time synchronisation (NTP) is essential - without consistent timestamps you cannot correlate events across systems. Know your log retention and what each source actually records.",
+        "OS concepts: Windows Registry, file structure, system processes, hardening baselines. Configuration drift from a hardened baseline is itself an indicator.",
+        "Infrastructure: serverless, virtualisation and containers change where logs live and how long assets exist.",
+        "Network architecture: on-premises vs cloud vs hybrid, segmentation, Zero Trust (never trust, always verify; verify every request), SASE (network + security delivered from the cloud), SDN.",
+        "Identity and access management: MFA, SSO, federation, Privileged Access Management (PAM), Passwordless, Cloud Access Security Broker (CASB).",
+        "Encryption: PKI, SSL/TLS inspection. Data loss prevention (DLP) and protecting PII and cardholder data."
+      ],
+      "examTip": "When a question asks how to correlate events from several devices and the timestamps disagree, the answer is almost always time synchronisation (NTP).",
+      "onTheJob": "Write down your org's 'normal': typical login countries, admin hours, standard software. That baseline turns a vague alert into a fast decision.",
+      "quiz": [
+        {"q": "An analyst cannot build an accurate timeline because firewall and server logs show the same event minutes apart. What should be fixed first?", "options": ["Increase log retention", "Configure NTP on all devices", "Enable TLS inspection", "Deploy a CASB"], "answer": 1, "explain": "Consistent time across sources (NTP) is the prerequisite for correlation and timelines."},
+        {"q": "Which principle best describes Zero Trust?", "options": ["Trust devices on the internal network", "Encrypt everything at rest", "Continuously verify every access request regardless of location", "Block all inbound traffic"], "answer": 2, "explain": "Zero Trust removes implicit trust based on network location and verifies each request."},
+        {"q": "A company wants visibility and policy control over employee use of cloud SaaS apps. Which tool fits best?", "options": ["CASB", "NAC", "HIDS", "SOAR"], "answer": 0, "explain": "A Cloud Access Security Broker sits between users and cloud services to enforce policy and give visibility."}
+      ]
+    },
+    {
+      "id": "1.2", "domain": 1, "title": "Indicators of malicious activity: network",
+      "summary": "Network indicators are patterns in traffic that suggest compromise. The exam gives you a scenario or a log snippet and asks which indicator it shows.",
+      "points": [
+        "Bandwidth consumption: unexpected spikes, especially outbound, can mean exfiltration.",
+        "Beaconing: regular, periodic callbacks to the same host (e.g. every 60 seconds with small jitter) - classic command-and-control (C2).",
+        "Irregular peer-to-peer communication: workstations talking directly to each other (SMB, RDP) can mean lateral movement.",
+        "Rogue devices on the network: unknown MAC addresses, unauthorised access points.",
+        "Scans and sweeps: one source touching many ports (port scan) or many hosts (sweep).",
+        "Unusual traffic spikes and activity on unexpected ports: e.g. HTTP on a non-standard port, or DNS traffic that is far too large (possible DNS tunnelling)."
+      ],
+      "examTip": "Regular interval + small payload + same destination = beaconing. Large outbound volume to a new destination = exfiltration.",
+      "onTheJob": "Long, random-looking subdomains in DNS queries (e.g. a8f3k2...example.com) at high volume are a strong DNS tunnelling signal.",
+      "quiz": [
+        {"q": "A host connects to the same external IP every 300 seconds, sending about 200 bytes each time. What is this most likely?", "options": ["Data exfiltration", "C2 beaconing", "A port scan", "Normal Windows Update traffic"], "answer": 1, "explain": "Small, regular, periodic connections to one destination are typical beaconing."},
+        {"q": "Which observation most strongly suggests lateral movement?", "options": ["A workstation making SMB connections to many other workstations", "A spike in inbound web traffic", "DNS queries to a known CDN", "Users browsing during lunch"], "answer": 0, "explain": "Workstation-to-workstation SMB/RDP is unusual peer-to-peer traffic often linked to lateral movement."},
+        {"q": "An analyst sees a very high volume of DNS queries with long random subdomains to one domain. What should they suspect?", "options": ["DNS cache poisoning", "DNS tunnelling", "DDoS amplification", "Domain fronting"], "answer": 1, "explain": "Encoding data in subdomain labels is the signature of DNS tunnelling."}
+      ]
+    },
+    {
+      "id": "1.3", "domain": 1, "title": "Indicators of malicious activity: host and application",
+      "summary": "Host and application indicators show up on endpoints and in app logs. Many map directly to MITRE ATT&CK persistence and privilege escalation techniques.",
+      "points": [
+        "Host: unexpected processor or memory spikes, drive capacity changes, unauthorised software, malicious processes, unauthorised changes, privilege changes, data exfiltration, abnormal OS process behaviour, file system changes, registry changes, unauthorised scheduled tasks.",
+        "Persistence spots to know: Run/RunOnce registry keys, scheduled tasks, services, startup folders, WMI subscriptions.",
+        "Application: anomalous activity, introduction of new accounts, unexpected output, unexpected outbound communication, service interruption, application logs.",
+        "Social engineering and obfuscated links are also listed indicators - think phishing and URL shorteners.",
+        "Living off the land: attackers use built-in tools (PowerShell, certutil, rundll32, wmic) so 'legitimate binary doing odd things' is a key pattern.",
+        "Parent-child process anomalies, e.g. winword.exe spawning powershell.exe, are high-fidelity detections."
+      ],
+      "examTip": "A new local admin account or a new scheduled task created at 3am on a server is a host-based persistence indicator.",
+      "onTheJob": "In M365 environments, a new inbox rule that moves or deletes emails containing 'invoice' or 'payment' is a top BEC indicator - check for it on every compromised mailbox.",
+      "quiz": [
+        {"q": "Which process relationship is most suspicious?", "options": ["explorer.exe launching chrome.exe", "winword.exe launching powershell.exe", "services.exe launching svchost.exe", "userinit.exe launching explorer.exe"], "answer": 1, "explain": "Office applications spawning scripting engines is a classic malicious macro pattern."},
+        {"q": "An attacker adds a value under HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run. What are they trying to achieve?", "options": ["Privilege escalation", "Persistence", "Exfiltration", "Defence evasion by log clearing"], "answer": 1, "explain": "Run keys execute at logon, giving persistence."},
+        {"q": "Using certutil.exe to download a payload is an example of what?", "options": ["Fileless ransomware", "Living off the land", "Typosquatting", "Watering hole attack"], "answer": 1, "explain": "Abusing trusted, built-in binaries is 'living off the land' (LOLBins)."}
+      ]
+    },
+    {
+      "id": "1.4", "domain": 1, "title": "Analyst tools: SIEM, SOAR, EDR and friends",
+      "summary": "CySA+ tests whether you know which tool answers which question. Match the tool to the job.",
+      "points": [
+        "SIEM: aggregates and correlates logs, alerts on rules. SOAR: automates response with playbooks and integrations.",
+        "EDR: endpoint telemetry, process trees, isolation. XDR extends this across email, identity and cloud.",
+        "Packet capture: Wireshark (GUI analysis) and tcpdump (command-line capture). Full packet capture shows payloads; NetFlow shows only metadata (who talked to whom, how much).",
+        "DNS and IP reputation: WHOIS, AbuseIPDB. File analysis: VirusTotal, strings, hashing (SHA-256) to identify known samples.",
+        "Sandboxing: detonate suspicious files in an isolated environment (e.g. Joe Sandbox, Cuckoo) to observe behaviour.",
+        "Common techniques: pattern recognition, interpreting suspicious commands, email analysis, file analysis, user behaviour analysis (UEBA)."
+      ],
+      "examTip": "Need to know exactly what was in a conversation? Packet capture. Need to know who talked to whom over a month cheaply? NetFlow.",
+      "onTheJob": "Before uploading a file to a public sandbox or VirusTotal, check that it does not contain company or customer data - uploads can be visible to others. Search by hash first.",
+      "quiz": [
+        {"q": "Which tool automates response steps such as disabling an account and opening a ticket when an alert fires?", "options": ["SIEM", "SOAR", "IDS", "NetFlow collector"], "answer": 1, "explain": "SOAR orchestrates and automates response playbooks across tools."},
+        {"q": "An analyst needs to see the actual payload of an HTTP request. Which data source is required?", "options": ["NetFlow", "Firewall allow logs", "Full packet capture", "DHCP logs"], "answer": 2, "explain": "Only full packet capture contains payload contents."},
+        {"q": "Why should an analyst search VirusTotal by hash before uploading a suspicious document?", "options": ["Hashes are faster to type", "Uploading may expose sensitive content to third parties", "VirusTotal does not accept documents", "Hash search also cleans the file"], "answer": 1, "explain": "Uploaded files can be shared with researchers and vendors; hash lookups reveal nothing new."}
+      ]
+    },
+    {
+      "id": "1.5", "domain": 1, "title": "Email analysis: headers, SPF, DKIM, DMARC",
+      "summary": "Email is the number one initial access vector, and in real estate it is the front line of payment redirection fraud. Know how to read headers and the three email authentication standards.",
+      "points": [
+        "SPF: a DNS TXT record listing which servers may send mail for a domain. Checks the envelope sender (Return-Path).",
+        "DKIM: a cryptographic signature added by the sending server; the receiver verifies it with a public key published in DNS. Proves the message was not altered and came from the domain's infrastructure.",
+        "DMARC: tells receivers what to do when SPF/DKIM fail AND requires alignment with the visible From domain. Policies: p=none (monitor), p=quarantine, p=reject. Also provides reporting.",
+        "Headers: read Received lines bottom-up to trace the path. Compare From, Reply-To and Return-Path - a mismatched Reply-To is a classic BEC trick.",
+        "Look-alike domains: examp1e.com vs example.com style typosquats, extra hyphens, different TLDs. Display-name spoofing shows a trusted name with an unrelated address.",
+        "Embedded links: hover/decode to see the true destination; watch for URL shorteners and QR codes (quishing)."
+      ],
+      "examTip": "SPF = who may send. DKIM = message integrity and signing domain. DMARC = policy + alignment + reporting. DMARC needs SPF or DKIM to pass AND align.",
+      "onTheJob": "For a payment-change request, the authentication results can all pass if the sender's real mailbox was compromised. Verification must be out-of-band: call a known number from your records, never a number in the email.",
+      "quiz": [
+        {"q": "Which record tells receiving mail servers to reject messages that fail authentication checks?", "options": ["SPF", "DKIM", "DMARC", "MX"], "answer": 2, "explain": "DMARC publishes the policy (none/quarantine/reject) applied when checks fail."},
+        {"q": "When tracing an email's path, how should Received headers be read?", "options": ["Top to bottom", "Bottom to top", "Only the first one matters", "Alphabetically by server"], "answer": 1, "explain": "Each server prepends a Received header, so the oldest hop is at the bottom."},
+        {"q": "A vendor email passes SPF, DKIM and DMARC but asks to change bank details. What is the best next step?", "options": ["Process it since authentication passed", "Reply to the email to confirm", "Call the vendor on a number already on file", "Forward it to the vendor's other address"], "answer": 2, "explain": "A genuinely compromised mailbox passes all checks; verify out-of-band using known contact details."}
+      ]
+    },
+    {
+      "id": "1.6", "domain": 1, "title": "Threat intelligence and threat hunting",
+      "summary": "Threat intel turns raw data about adversaries into decisions. Threat hunting is the proactive search for threats that existing alerts missed.",
+      "points": [
+        "Threat actor types: APT/nation-state, organised crime, hacktivists, insider threats (intentional and unintentional), script kiddies, supply chain.",
+        "Intel types: strategic (big picture, for leaders), operational (campaigns, TTPs), tactical (IoCs like IPs and hashes).",
+        "Collection sources: open source (OSINT, social media, blogs, CERTs like ACSC), closed source (paid feeds, ISACs, information sharing communities).",
+        "Intel quality: timeliness, relevance, accuracy, and confidence levels.",
+        "Sharing standards: STIX (the language/format for describing threat intel) and TAXII (the transport protocol for exchanging it).",
+        "Threat hunting: start with a hypothesis (e.g. 'an attacker is using stolen session tokens'), focus on likely targets, use IoCs and IoAs, active defence such as honeypots."
+      ],
+      "examTip": "STIX = what (structure). TAXII = how (transport). IoC = evidence something happened. IoA = behaviour showing an attack in progress.",
+      "onTheJob": "Subscribe to ACSC partnership alerts if your org is eligible - Australian-specific intel is usually more relevant than global feeds.",
+      "quiz": [
+        {"q": "Which standard is used to transport threat intelligence between organisations?", "options": ["STIX", "TAXII", "OpenIOC", "YARA"], "answer": 1, "explain": "TAXII is the transport protocol; STIX is the data format."},
+        {"q": "A hunt begins with 'Attackers may be abusing OAuth app consent in our tenant.' This is an example of what?", "options": ["A hypothesis", "An IoC", "A playbook", "A risk register entry"], "answer": 0, "explain": "Threat hunting is hypothesis-driven."},
+        {"q": "A board briefing about which threat actors target the property sector is which type of intelligence?", "options": ["Tactical", "Operational", "Strategic", "Technical"], "answer": 2, "explain": "High-level, decision-making intel for leadership is strategic."}
+      ]
+    },
+    {
+      "id": "1.7", "domain": 1, "title": "Frameworks: ATT&CK, Kill Chain, Diamond Model",
+      "summary": "Frameworks give you a shared vocabulary to describe attacks, find gaps in detection and communicate clearly.",
+      "points": [
+        "MITRE ATT&CK: a knowledge base of adversary tactics (the why - e.g. Persistence) and techniques (the how - e.g. T1053 Scheduled Task). Used to map detections and find coverage gaps.",
+        "Lockheed Martin Cyber Kill Chain: Reconnaissance, Weaponisation, Delivery, Exploitation, Installation, Command & Control, Actions on Objectives. Break any link to stop the attack.",
+        "Diamond Model of Intrusion Analysis: every event has four core features - Adversary, Capability, Infrastructure, Victim - plus meta-features. Good for pivoting between related events.",
+        "Unified Kill Chain: combines Kill Chain and ATT&CK into a fuller attack lifecycle.",
+        "OSSTMM (Open Source Security Testing Methodology Manual) and OWASP Testing Guide: methodologies for security testing.",
+        "Australian context: the ASD Essential Eight maturity model is the local baseline most auditors ask about."
+      ],
+      "examTip": "Diamond Model = four corners (Adversary, Capability, Infrastructure, Victim). Kill Chain = seven ordered stages. ATT&CK = matrix of tactics and techniques.",
+      "onTheJob": "Tag your incident tickets with ATT&CK technique IDs. After a few months you will see which techniques hit you most and where detections are thin.",
+      "quiz": [
+        {"q": "Which model analyses intrusions using adversary, capability, infrastructure and victim?", "options": ["Cyber Kill Chain", "Diamond Model", "MITRE ATT&CK", "STRIDE"], "answer": 1, "explain": "Those are the four core features of the Diamond Model."},
+        {"q": "In the Cyber Kill Chain, which stage comes immediately after Delivery?", "options": ["Installation", "Weaponisation", "Exploitation", "Command & Control"], "answer": 2, "explain": "Recon, Weaponisation, Delivery, Exploitation, Installation, C2, Actions on Objectives."},
+        {"q": "In MITRE ATT&CK, 'Credential Access' is an example of a:", "options": ["Technique", "Tactic", "Procedure", "Mitigation"], "answer": 1, "explain": "Tactics are the adversary's goals (columns); techniques are how they achieve them."}
+      ]
+    },
+    {
+      "id": "1.8", "domain": 1, "title": "Process improvement and automation",
+      "summary": "A good SOC reduces repetitive work so analysts spend time on judgement. CySA+ covers automation, standardisation and basic scripting literacy.",
+      "points": [
+        "Standardise processes: playbooks and runbooks make response consistent and measurable.",
+        "Automate where it is safe: enrichment (IP reputation, user lookup), ticket creation, low-risk containment. Keep a human in the loop for high-impact actions.",
+        "Team coordination and single pane of glass: fewer consoles, shared context.",
+        "Scripting literacy: read basic Python, PowerShell and Bash; understand JSON and XML data formats and regular expressions for parsing logs.",
+        "APIs and webhooks connect tools; SOAR uses them to orchestrate.",
+        "Efficiency also means tuning: reducing false positives improves detection by reducing alert fatigue."
+      ],
+      "examTip": "If a question describes analysts doing the same enrichment steps on every alert, the answer is automation/SOAR, not hiring more analysts.",
+      "onTheJob": "Learn enough KQL (Kusto) to query Defender and Sentinel - it is the fastest skill upgrade for an M365 shop.",
+      "quiz": [
+        {"q": "Which regex matches an IPv4-looking string most simply?", "options": ["\\d+\\.\\d+\\.\\d+\\.\\d+", "[a-z]+@[a-z]+", "^\\s*$", "\\w{32}"], "answer": 0, "explain": "Four groups of digits separated by literal dots. (It does not validate 0-255, but finds candidates.)"},
+        {"q": "What is the best reason to keep a human approval step before automatically disabling an executive's account?", "options": ["Automation cannot disable accounts", "The business impact of a false positive is high", "Regulations ban automation", "It is faster"], "answer": 1, "explain": "High-impact actions need human judgement to avoid costly false-positive disruption."},
+        {"q": "Which data format uses key-value pairs in braces and is common in API responses?", "options": ["CSV", "JSON", "YAML only", "Syslog"], "answer": 1, "explain": "JSON is the standard API format."}
+      ]
+    },
+    {
+      "id": "2.1", "domain": 2, "title": "Asset discovery and vulnerability scanning",
+      "summary": "You cannot protect what you do not know about. Vulnerability management starts with accurate asset inventory, then scanning designed around the environment.",
+      "points": [
+        "Asset discovery: map scanning, device fingerprinting, CMDB. Unknown assets are often the vulnerable ones.",
+        "Credentialed vs non-credentialed: credentialed scans log in and see patch levels and configuration (more accurate, fewer false positives). Non-credentialed shows the attacker's outside view.",
+        "Agent-based vs agentless: agents suit laptops that leave the network; agentless needs network reach.",
+        "Internal vs external scans; active vs passive (passive listens to traffic, no load on targets).",
+        "Special considerations: scan scheduling, operations impact, sensitivity levels, segmentation, regulatory requirements (e.g. PCI DSS needs quarterly external ASV scans).",
+        "OT/ICS and fragile legacy systems: use passive monitoring or careful, low-intensity scans."
+      ],
+      "examTip": "Fewer false positives and accurate patch levels = credentialed scan. Testing what an outside attacker sees = external non-credentialed scan.",
+      "onTheJob": "Distributed offices often have forgotten devices (old NAS boxes, printers, routers). Cross-check scan results against your asset list and chase every unknown.",
+      "quiz": [
+        {"q": "Which scan type gives the most accurate view of missing patches on Windows servers?", "options": ["External non-credentialed", "Credentialed", "Passive", "Ping sweep"], "answer": 1, "explain": "Credentialed scans can read installed software and patch levels directly."},
+        {"q": "Laptops are rarely on the corporate network. Which approach ensures they are still assessed?", "options": ["Agentless scanning", "Agent-based scanning", "External scanning", "Passive scanning"], "answer": 1, "explain": "Agents report in from wherever the device is."},
+        {"q": "A fragile legacy control system crashes when actively scanned. What is the best alternative?", "options": ["Scan more aggressively at night", "Passive vulnerability monitoring", "Disable the IDS", "Skip assessment entirely"], "answer": 1, "explain": "Passive monitoring identifies software and versions from traffic without touching the device."}
+      ]
+    },
+    {
+      "id": "2.2", "domain": 2, "title": "Reading scan output and CVSS",
+      "summary": "Scanners produce noise. The analyst's job is to validate findings and prioritise by real risk, not just by score.",
+      "points": [
+        "CVSS v3.1 base metrics: Attack Vector (Network, Adjacent, Local, Physical), Attack Complexity (Low/High), Privileges Required (None/Low/High), User Interaction (None/Required), Scope (Unchanged/Changed), Confidentiality/Integrity/Availability impact (None/Low/High).",
+        "Severity bands: 0.1-3.9 Low, 4.0-6.9 Medium, 7.0-8.9 High, 9.0-10.0 Critical.",
+        "Validate: true positive, false positive (reported but not there), true negative, false negative (there but missed - the dangerous one).",
+        "Prioritise with context: exploitability (is it in CISA KEV? is there a public exploit? EPSS score), asset value, exposure to the internet, compensating controls.",
+        "Tools: Nmap (discovery, ports, versions), Nessus / OpenVAS / Qualys (vuln scanners), Burp Suite and OWASP ZAP (web proxies), Nikto (web server scanner), Arachni.",
+        "Cloud: Scout Suite, Prowler, Pacu for cloud configuration assessment. Debuggers and multipurpose tools like Metasploit appear too."
+      ],
+      "examTip": "AV:N/AC:L/PR:N/UI:N = remotely exploitable, easy, no privileges, no user interaction - the worst combination. Prioritise these on internet-facing systems.",
+      "onTheJob": "Use the CISA KEV items in the News tab: if a scanner finding matches a KEV entry, it jumps the queue regardless of CVSS.",
+      "quiz": [
+        {"q": "Which CVSS metric value makes a vulnerability exploitable remotely over the internet?", "options": ["AV:L", "AV:P", "AV:N", "AV:A"], "answer": 2, "explain": "Attack Vector: Network means exploitable remotely."},
+        {"q": "Which result is most dangerous for an organisation?", "options": ["False positive", "False negative", "True negative", "True positive"], "answer": 1, "explain": "A false negative is a real vulnerability the scanner missed, so nobody fixes it."},
+        {"q": "A CVSS 6.5 vulnerability is in CISA KEV and on an internet-facing VPN. A CVSS 9.1 issue is on an isolated test server. Which first?", "options": ["The 9.1, higher score always wins", "The 6.5 VPN issue", "Both together next quarter", "Neither - accept risk"], "answer": 1, "explain": "Known exploitation plus internet exposure outweighs a raw base score."}
+      ]
+    },
+    {
+      "id": "2.3", "domain": 2, "title": "Common vulnerability types",
+      "summary": "You need to recognise vulnerability classes from a snippet of log, URL or code and know the core fix for each.",
+      "points": [
+        "Injection: SQL injection (' OR 1=1 --), command injection, LDAP injection. Fix: parameterised queries, input validation.",
+        "Cross-site scripting (XSS): reflected, stored, DOM-based. Fix: output encoding, Content Security Policy.",
+        "CSRF: tricks a logged-in user's browser into making a request. Fix: anti-CSRF tokens, SameSite cookies.",
+        "SSRF: makes the server fetch a URL the attacker chooses - often internal metadata services (169.254.169.254 in cloud).",
+        "Directory/path traversal (../../etc/passwd), local and remote file inclusion. Buffer overflows, race conditions, insecure deserialisation, broken access control (IDOR), security misconfiguration, use of components with known vulnerabilities, cryptographic failures.",
+        "OWASP Top 10 is the standard web reference; broken access control is #1 in the 2021 list."
+      ],
+      "examTip": "<script> in a URL parameter = XSS. ' OR 1=1 = SQL injection. ../ sequences = traversal. 169.254.169.254 = SSRF against cloud metadata.",
+      "onTheJob": "Most real-world breaches use boring classes - misconfiguration, known vulnerable components, and broken access control - more than exotic exploits.",
+      "quiz": [
+        {"q": "A web log shows GET /download?file=../../../../etc/passwd. What is being attempted?", "options": ["SQL injection", "Directory traversal", "XSS", "CSRF"], "answer": 1, "explain": "../ sequences attempt to escape the intended directory."},
+        {"q": "Which control best prevents SQL injection?", "options": ["Output encoding", "Parameterised queries", "SameSite cookies", "TLS 1.3"], "answer": 1, "explain": "Parameterised queries separate code from data."},
+        {"q": "Changing /account?id=1001 to id=1002 shows another customer's data. What is this?", "options": ["SSRF", "Insecure direct object reference / broken access control", "Race condition", "Buffer overflow"], "answer": 1, "explain": "The server fails to check the user is authorised for that object (IDOR)."}
+      ]
+    },
+    {
+      "id": "2.4", "domain": 2, "title": "Controls, mitigation and risk",
+      "summary": "Not everything can be patched immediately. CySA+ tests control types, compensating controls and the risk management responses.",
+      "points": [
+        "Control categories: managerial (policies, risk assessments), operational (people-run: training, guards), technical (firewalls, encryption).",
+        "Control functions: preventive, detective, corrective, deterrent, compensating, responsive.",
+        "Compensating control: an alternative that reduces risk when the primary control is not possible (e.g. isolate an unpatchable system on its own VLAN).",
+        "Risk responses: accept, transfer (insurance, contracts), avoid (stop the activity), mitigate (reduce likelihood or impact).",
+        "Patching and configuration management: testing, maintenance windows, exceptions with expiry dates and owner sign-off.",
+        "Inhibitors to remediation: MOUs, SLAs, organisational governance, business process interruption, degrading functionality, legacy and proprietary systems."
+      ],
+      "examTip": "Cyber insurance = transfer. Retiring a risky service = avoid. Signing off a known risk = accept. Patching = mitigate.",
+      "onTheJob": "Every risk acceptance should have an owner, a reason and a review date. Untracked 'temporary' exceptions are how old vulnerabilities survive for years.",
+      "quiz": [
+        {"q": "A legacy app server cannot be patched, so it is moved to an isolated VLAN with strict ACLs. This is a:", "options": ["Deterrent control", "Compensating control", "Corrective control", "Managerial control"], "answer": 1, "explain": "An alternative control that reduces risk when the primary fix is unavailable."},
+        {"q": "Buying cyber insurance is which risk response?", "options": ["Accept", "Avoid", "Transfer", "Mitigate"], "answer": 2, "explain": "Insurance transfers financial impact to a third party."},
+        {"q": "Security awareness training is categorised as which control type?", "options": ["Technical", "Operational", "Physical", "Compensating"], "answer": 1, "explain": "It is implemented by people rather than technology, so operational."}
+      ]
+    },
+    {
+      "id": "2.5", "domain": 2, "title": "Attack surface, SDLC and threat modelling",
+      "summary": "Reducing attack surface and building security into software development prevents vulnerabilities rather than chasing them later.",
+      "points": [
+        "Attack surface management: edge discovery, passive discovery, security controls testing, penetration testing and adversary emulation, bug bounties, attack surface reduction.",
+        "Secure SDLC: requirements, design, coding, testing, deployment, maintenance - security at every stage ('shift left').",
+        "Testing: SAST (static, source code), DAST (dynamic, running app), IAST (instrumented), fuzzing, SCA (software composition analysis for third-party libraries).",
+        "Threat modelling: identify assets, threats, and mitigations at design time. STRIDE: Spoofing, Tampering, Repudiation, Information disclosure, Denial of service, Elevation of privilege.",
+        "Secure coding: input validation, output encoding, session management, authentication, data protection, parameterised queries.",
+        "Supply chain: SBOMs (software bill of materials) show what components a product contains."
+      ],
+      "examTip": "SAST = source code, no execution. DAST = running app, black-box. SCA = third-party libraries and their CVEs.",
+      "onTheJob": "Your external attack surface includes SaaS tenants and marketing sites built by agencies. Many breaches start on a forgotten subdomain.",
+      "quiz": [
+        {"q": "Which testing approach analyses source code without executing it?", "options": ["DAST", "Fuzzing", "SAST", "Pen testing"], "answer": 2, "explain": "Static Application Security Testing reads code at rest."},
+        {"q": "In STRIDE, what does the R stand for?", "options": ["Ransomware", "Repudiation", "Reconnaissance", "Replay"], "answer": 1, "explain": "Repudiation: denying an action occurred, addressed with logging and non-repudiation."},
+        {"q": "Which tool type identifies known vulnerable open-source libraries in an application?", "options": ["SCA", "DAST", "WAF", "IDS"], "answer": 0, "explain": "Software Composition Analysis checks dependencies against vulnerability databases."}
+      ]
+    },
+    {
+      "id": "2.6", "domain": 2, "title": "AU bonus: the Essential Eight",
+      "summary": "ASD's Essential Eight is the baseline Australian organisations are measured against. It is not CySA+ exam content, but you will be asked about it at work constantly.",
+      "points": [
+        "1. Patch applications - especially internet-facing ones, fast (within 48 hours when an exploit exists, at higher maturity).",
+        "2. Patch operating systems - same idea for OS and firmware; replace unsupported versions.",
+        "3. Multi-factor authentication - phishing-resistant MFA is expected at higher maturity levels.",
+        "4. Restrict administrative privileges - least privilege, separate admin accounts, no admin browsing or email.",
+        "5. Application control - only approved executables, scripts and installers can run.",
+        "6. Restrict Microsoft Office macros. 7. User application hardening (e.g. block ads/Java in browsers, disable risky features). 8. Regular backups - tested, and protected from modification or deletion.",
+        "Maturity levels 0-3: ML1 resists commodity attacks, ML2 moderately skilled targeted attacks, ML3 skilled adversaries. Aim for the same level across all eight."
+      ],
+      "examTip": "Not on CySA+, but maps neatly to exam ideas: application control is preventive, backups are corrective, and patching is mitigation.",
+      "onTheJob": "Learn which maturity level your organisation is targeting and where the gaps are - it frames almost every improvement conversation with management.",
+      "quiz": [
+        {"q": "Which Essential Eight strategy prevents unapproved executables from running?", "options": ["Patch applications", "Application control", "User application hardening", "Restrict admin privileges"], "answer": 1, "explain": "Application control allow-lists approved code."},
+        {"q": "Essential Eight Maturity Level 1 is designed to resist which adversaries?", "options": ["Nation-state APTs", "Opportunistic attackers using commodity tradecraft", "Insiders only", "No adversary - it is documentation only"], "answer": 1, "explain": "ML1 targets widely available tools and opportunistic attacks."},
+        {"q": "What makes backups effective against ransomware under the Essential Eight?", "options": ["Storing them on the same file server", "Protecting them from modification/deletion and testing restores", "Taking them annually", "Encrypting them with the same admin account"], "answer": 1, "explain": "Backups must survive the attacker and be proven restorable."}
+      ]
+    },
+    {
+      "id": "3.1", "domain": 3, "title": "The incident response lifecycle",
+      "summary": "CySA+ follows the NIST SP 800-61 style lifecycle. Know the phases, their order, and what belongs in each.",
+      "points": [
+        "Preparation: IR plan, playbooks, tools, training, tabletop exercises, contact lists, legal and comms arrangements.",
+        "Detection and analysis: identify, validate and scope the incident; determine severity and impact.",
+        "Containment, eradication and recovery: stop spread, remove the threat, restore and validate systems.",
+        "Post-incident activity: lessons learned, root cause analysis, evidence retention, update plans and controls.",
+        "The process is a cycle: lessons learned feed back into preparation.",
+        "Attack methodology frameworks (Kill Chain, ATT&CK, Diamond) help you scope and describe what happened."
+      ],
+      "examTip": "If a question asks when to hold a lessons-learned meeting: post-incident. When to build playbooks and run tabletops: preparation.",
+      "onTheJob": "Know who to call before you need them: IT lead, legal, privacy officer, insurer's breach hotline, and how to reach ACSC (1300 CYBER1).",
+      "quiz": [
+        {"q": "Running a tabletop exercise belongs to which phase?", "options": ["Detection & analysis", "Preparation", "Containment", "Post-incident"], "answer": 1, "explain": "Exercises prepare the team before real incidents."},
+        {"q": "What should happen with lessons-learned outputs?", "options": ["Filed and closed", "Fed back into preparation (plans, controls, training)", "Sent only to auditors", "Deleted after 30 days"], "answer": 1, "explain": "IR is a cycle; improvements feed preparation."},
+        {"q": "Determining how many hosts are affected and the incident's severity happens in:", "options": ["Preparation", "Detection & analysis", "Eradication", "Recovery"], "answer": 1, "explain": "Scoping and severity are part of analysis."}
+      ]
+    },
+    {
+      "id": "3.2", "domain": 3, "title": "Detection, analysis and evidence handling",
+      "summary": "Good analysis is built on good evidence. Collect it in the right order, preserve it properly and document everything.",
+      "points": [
+        "Order of volatility (most to least volatile): CPU registers/cache, RAM and running processes, network state, temporary files, disk, remote logs, archival/backup media.",
+        "Chain of custody: who collected the evidence, when, how it was stored and every transfer - required for legal use.",
+        "Integrity: hash evidence images (SHA-256) at collection and verify later. Use write blockers for disks.",
+        "Legal hold: preserve relevant data once litigation is reasonably anticipated.",
+        "Data and log analysis: build a timeline, scope with IoCs, check for related accounts and hosts.",
+        "Severity and impact: consider data sensitivity, number of systems, recoverability, business criticality."
+      ],
+      "examTip": "Always capture memory before powering off a system - shutting down destroys RAM evidence (running processes, network connections, keys).",
+      "onTheJob": "For cloud and M365 incidents your 'disk image' is often the unified audit log and sign-in logs. Export them early - retention limits can delete evidence.",
+      "quiz": [
+        {"q": "Which should be collected first from a live compromised host?", "options": ["Hard disk image", "System RAM", "Backup tapes", "Firewall logs from last year"], "answer": 1, "explain": "RAM is far more volatile than disk."},
+        {"q": "What proves evidence has not been altered since collection?", "options": ["Chain of custody form alone", "Matching cryptographic hashes", "Storing it on a USB stick", "Taking screenshots"], "answer": 1, "explain": "Matching hashes demonstrate integrity; chain of custody documents handling."},
+        {"q": "Legal counsel expects a lawsuit about an incident. What should be issued?", "options": ["A legal hold", "An NDA", "A purge order", "A DMARC policy"], "answer": 0, "explain": "A legal hold preserves potentially relevant data."}
+      ]
+    },
+    {
+      "id": "3.3", "domain": 3, "title": "Containment, eradication and recovery",
+      "summary": "Containment buys time, eradication removes the attacker, and recovery restores normal operations safely.",
+      "points": [
+        "Containment: isolation (EDR isolate, pull from network), segmentation, blocking IoCs, disabling accounts, revoking sessions/tokens.",
+        "Balance: containing too early can tip off an attacker; too late lets them spread. Consider monitoring for scope first when safe.",
+        "Eradication: remove malware and persistence, reimage rather than 'clean', reset credentials (including service accounts and krbtgt twice for domain compromise).",
+        "Recovery: restore from known-good backups, patch the root cause, monitor closely for re-infection.",
+        "Sanitisation of media: clear, purge, destroy. Validate restored systems before returning to production.",
+        "Compensating controls and scope reduction can apply while a full fix is in progress."
+      ],
+      "examTip": "Reimaging is more reliable than cleaning. For account compromise, resetting the password is not enough - also revoke sessions and remove attacker-added MFA methods and rules.",
+      "onTheJob": "M365 account compromise checklist: reset password, revoke sessions, review MFA methods, remove malicious inbox rules and forwarding, check OAuth app consents, review sent items, notify likely recipients.",
+      "quiz": [
+        {"q": "After resetting a compromised user's password, the attacker still has access. What was most likely missed?", "options": ["Revoking existing sessions/tokens", "Changing the user's display name", "Running a disk defrag", "Updating DNS"], "answer": 0, "explain": "Existing session tokens can remain valid until revoked."},
+        {"q": "Why is reimaging preferred over cleaning malware from a host?", "options": ["It is faster to type", "It removes hidden persistence you might miss", "It preserves evidence", "It avoids needing backups"], "answer": 1, "explain": "You cannot be sure cleaning found everything; reimaging returns a known-good state."},
+        {"q": "Isolating an infected laptop from the network is which step?", "options": ["Eradication", "Containment", "Recovery", "Preparation"], "answer": 1, "explain": "Isolation limits spread - containment."}
+      ]
+    },
+    {
+      "id": "3.4", "domain": 3, "title": "AU bonus: BEC and payment redirection playbook",
+      "summary": "Payment redirection fraud is one of the biggest cyber risks for Australian real estate: attackers impersonate agents, vendors or conveyancers to divert deposits, rent or settlement funds. Speed matters - banks can sometimes recall funds if alerted quickly.",
+      "points": [
+        "How it works: compromise or spoof a mailbox, watch conversations, then send 'updated bank details' at the moment money is about to move.",
+        "Immediate actions: contact the sending bank's fraud team at once to attempt a recall, report via ReportCyber (cyber.gov.au), and preserve the emails with full headers.",
+        "Mailbox triage: sign-in logs (odd locations, impossible travel, legacy auth), new inbox rules, forwarding to external addresses, OAuth app consents, sent items and deleted items.",
+        "Scope: who else received messages from the compromised account? Warn them quickly.",
+        "Prevention: out-of-band verification of all bank detail changes using known numbers, phishing-resistant MFA, conditional access, external email tagging, DMARC at p=reject, and staff training on settlement-time scams.",
+        "Privacy: a compromised mailbox often contains personal information - assess against the Notifiable Data Breaches scheme (see 4.2)."
+      ],
+      "examTip": "Maps to CySA+ Domain 3: containment = revoke sessions and remove rules; eradication = remove attacker MFA/OAuth apps; recovery = monitor the mailbox; post-incident = training and verification process changes.",
+      "onTheJob": "Write a one-page 'bank detail change' procedure for agents and property managers. The best control here is a phone call, not a product.",
+      "quiz": [
+        {"q": "A client has just transferred a deposit to fraudulent bank details. What is the most time-critical action?", "options": ["Reimage the agent's laptop", "Contact the bank's fraud team to attempt a recall", "Update the DMARC policy", "Schedule a lessons-learned meeting"], "answer": 1, "explain": "Fund recovery chances drop sharply with time."},
+        {"q": "Which mailbox artefact most commonly reveals a BEC attacker hiding replies?", "options": ["Calendar colour settings", "Inbox rules moving or deleting messages", "Signature changes", "Out-of-office message"], "answer": 1, "explain": "Attackers create rules to hide replies and warnings from the real user."},
+        {"q": "Which control best stops payment redirection even if a mailbox is compromised?", "options": ["SPF", "Antivirus", "Out-of-band verification of bank detail changes", "Longer passwords"], "answer": 2, "explain": "A call to a known number defeats the attacker regardless of email compromise."}
+      ]
+    },
+    {
+      "id": "3.5", "domain": 3, "title": "Preparation and post-incident activity",
+      "summary": "The work before and after an incident decides how bad the next one is.",
+      "points": [
+        "Preparation: incident response plan, playbooks per scenario (ransomware, BEC, data breach), tools, training, documentation, contact lists.",
+        "Tabletop exercises: talk-through scenarios with stakeholders to test the plan without touching systems.",
+        "Business continuity (BC) and disaster recovery (DR): RTO (how fast must it be restored) and RPO (how much data loss is tolerable).",
+        "Post-incident: forensic analysis, root cause analysis, lessons learned, updating the plan and controls.",
+        "Root cause analysis looks for the underlying failure (e.g. no MFA on legacy auth), not just the immediate trigger.",
+        "Retention: keep incident evidence and records according to legal and policy requirements."
+      ],
+      "examTip": "RTO = time to restore. RPO = acceptable data loss window (drives backup frequency).",
+      "onTheJob": "Run a 30-minute BEC tabletop with a branch manager and finance. It finds process gaps faster than any audit.",
+      "quiz": [
+        {"q": "Backups run every 4 hours. What does this most directly support?", "options": ["An RTO of 4 hours", "An RPO of 4 hours", "MTTD of 4 hours", "An SLA of 4 hours"], "answer": 1, "explain": "Backup frequency determines maximum data loss: RPO."},
+        {"q": "A discussion-based walk-through of a ransomware scenario with executives is a:", "options": ["Penetration test", "Tabletop exercise", "Red team engagement", "Full interruption test"], "answer": 1, "explain": "Tabletop exercises are discussion-based."},
+        {"q": "Root cause analysis primarily aims to:", "options": ["Assign blame", "Identify the underlying failure so it does not recur", "Estimate insurance payouts", "Close the ticket quickly"], "answer": 1, "explain": "RCA targets the underlying cause to prevent recurrence."}
+      ]
+    },
+    {
+      "id": "4.1", "domain": 4, "title": "Vulnerability reporting and metrics",
+      "summary": "Vulnerability management only works if the right people see the right information and act on it. Metrics show whether it is working.",
+      "points": [
+        "Reports should include: vulnerabilities found, affected hosts, risk score, mitigation, recurrence, prioritisation.",
+        "Compliance reports vs action plans: one shows status for auditors, the other drives remediation (configuration management, patching, compensating controls, awareness, changing business requirements).",
+        "Inhibitors to remediation: MOUs, SLAs, organisational governance, business process interruption, degrading functionality, legacy systems, proprietary systems.",
+        "Metrics and KPIs: trends, top 10 lists, critical vulnerabilities and zero-days, SLO/SLA compliance.",
+        "Stakeholder identification and communication: tailor detail to the audience - executives want risk and trend, admins want hosts and fixes.",
+        "Track mean time to remediate by severity and how many findings exceed their SLA."
+      ],
+      "examTip": "If remediation is blocked because a vendor contract forbids changes to an appliance, the inhibitor is an SLA/MOU or proprietary system - expect a compensating control as the answer.",
+      "onTheJob": "Executives respond to trends: 'critical vulnerabilities older than 30 days dropped from 42 to 9 this quarter' beats a 200-page scan export.",
+      "quiz": [
+        {"q": "A vendor-managed system cannot be patched without voiding support. This is an inhibitor caused by:", "options": ["Organisational governance", "A proprietary system / vendor agreement", "Business process interruption", "Degrading functionality"], "answer": 1, "explain": "Vendor-controlled proprietary systems often restrict changes."},
+        {"q": "Which audience needs host-level remediation detail?", "options": ["Board", "System administrators", "Marketing", "External auditors only"], "answer": 1, "explain": "Admins need specific hosts and fixes; executives need risk summaries."},
+        {"q": "What does tracking 'percentage of critical findings fixed within SLA' measure?", "options": ["Detection capability", "Remediation performance", "Threat intel quality", "Phishing susceptibility"], "answer": 1, "explain": "It measures how well remediation meets agreed timelines."}
+      ]
+    },
+    {
+      "id": "4.2", "domain": 4, "title": "Incident reporting and communication",
+      "summary": "During an incident, communication can do as much damage or good as the technical response. Know who needs to hear what, and what the law requires in Australia.",
+      "points": [
+        "Stakeholders: legal, executives, HR (insider cases), public relations, customers, regulators, law enforcement. Use pre-approved comms channels; assume email may be compromised.",
+        "Incident report contents: executive summary, who/what/when/where/why, recommendations, timeline, impact, scope, evidence.",
+        "Metrics: mean time to detect (MTTD), mean time to respond (MTTR), mean time to remediate, alert volume.",
+        "Root cause and lessons learned feed the final report.",
+        "AU: Notifiable Data Breaches scheme (Privacy Act) - if an eligible data breach is likely to result in serious harm, notify the OAIC and affected individuals as soon as practicable; a suspected breach must be assessed within 30 days.",
+        "AU: under the Cyber Security Act 2024, businesses with annual turnover above $3 million must report ransomware or extortion payments to ASD within 72 hours."
+      ],
+      "examTip": "The executive summary goes first and is written for non-technical readers: what happened, impact, what is being done, what decisions are needed.",
+      "onTheJob": "Never speculate about attribution or data loss to customers or media - route statements through legal and comms. Facts, actions, next update time.",
+      "quiz": [
+        {"q": "Which metric measures how long it takes on average to notice an incident?", "options": ["MTTR", "MTTD", "RPO", "RTO"], "answer": 1, "explain": "Mean Time To Detect."},
+        {"q": "Who should approve external statements during a breach?", "options": ["The first analyst on shift", "Legal and communications/PR", "The attacker's negotiator", "Any branch manager"], "answer": 1, "explain": "External communication has legal and reputational consequences."},
+        {"q": "Under Australia's NDB scheme, how long does an organisation have to assess a suspected eligible data breach?", "options": ["72 hours", "7 days", "30 days", "90 days"], "answer": 2, "explain": "A reasonable and expeditious assessment within 30 days; notify as soon as practicable once confirmed."}
+      ]
+    }
+  ],
+  "cards": [
+    {"id": "c01", "domain": 1, "front": "Beaconing", "back": "Regular, periodic outbound connections (often with jitter) from a compromised host to C2 infrastructure."},
+    {"id": "c02", "domain": 1, "front": "SPF", "back": "Sender Policy Framework - DNS TXT record listing servers authorised to send mail for a domain (checks envelope sender)."},
+    {"id": "c03", "domain": 1, "front": "DKIM", "back": "DomainKeys Identified Mail - cryptographic signature on email, verified with a public key in DNS. Proves integrity and signing domain."},
+    {"id": "c04", "domain": 1, "front": "DMARC", "back": "Policy (none/quarantine/reject) for mail failing SPF/DKIM, requires alignment with the From domain, and provides reporting."},
+    {"id": "c05", "domain": 1, "front": "STIX vs TAXII", "back": "STIX = structured language/format for threat intel. TAXII = transport protocol for sharing it."},
+    {"id": "c06", "domain": 1, "front": "Diamond Model", "back": "Intrusion analysis model with four core features: Adversary, Capability, Infrastructure, Victim."},
+    {"id": "c07", "domain": 1, "front": "Cyber Kill Chain (7 stages)", "back": "Recon, Weaponisation, Delivery, Exploitation, Installation, Command & Control, Actions on Objectives."},
+    {"id": "c08", "domain": 1, "front": "Tactic vs technique (ATT&CK)", "back": "Tactic = adversary's goal (why, e.g. Persistence). Technique = how they achieve it (e.g. Scheduled Task T1053)."},
+    {"id": "c09", "domain": 1, "front": "IoC vs IoA", "back": "Indicator of Compromise = evidence an attack happened (hash, IP). Indicator of Attack = behaviour showing an attack in progress."},
+    {"id": "c10", "domain": 1, "front": "SIEM vs SOAR", "back": "SIEM collects, correlates and alerts on logs. SOAR automates and orchestrates response with playbooks."},
+    {"id": "c11", "domain": 1, "front": "NetFlow vs packet capture", "back": "NetFlow = metadata (who, when, how much). Full packet capture = complete payload contents."},
+    {"id": "c12", "domain": 1, "front": "Living off the land (LOLBins)", "back": "Abusing legitimate built-in tools (PowerShell, certutil, wmic, rundll32) to avoid detection."},
+    {"id": "c13", "domain": 1, "front": "DNS tunnelling sign", "back": "High volume of DNS queries with long, random-looking subdomains to one domain; oversized TXT responses."},
+    {"id": "c14", "domain": 1, "front": "Zero Trust", "back": "No implicit trust from network location; continuously verify identity, device and context for every request."},
+    {"id": "c15", "domain": 1, "front": "SASE", "back": "Secure Access Service Edge - networking (SD-WAN) and security (SWG, CASB, ZTNA, FWaaS) delivered from the cloud."},
+    {"id": "c16", "domain": 1, "front": "CASB", "back": "Cloud Access Security Broker - visibility and policy enforcement between users and cloud services."},
+    {"id": "c17", "domain": 1, "front": "Strategic / operational / tactical intel", "back": "Strategic = big-picture for leaders. Operational = campaigns and TTPs. Tactical = specific IoCs."},
+    {"id": "c18", "domain": 1, "front": "UEBA", "back": "User and Entity Behaviour Analytics - baselines normal behaviour and flags anomalies (e.g. impossible travel)."},
+    {"id": "c19", "domain": 1, "front": "Impossible travel", "back": "Sign-ins from locations too far apart for the time between them - suggests stolen credentials or tokens."},
+    {"id": "c20", "domain": 1, "front": "AiTM phishing", "back": "Adversary-in-the-middle: a proxy phishing page relays the real login and steals the session cookie, bypassing standard MFA."},
+    {"id": "c21", "domain": 2, "front": "Credentialed scan", "back": "Logs into targets to read patch levels and configs - more accurate, fewer false positives."},
+    {"id": "c22", "domain": 2, "front": "False negative", "back": "A real vulnerability or attack that the tool failed to detect - the most dangerous result."},
+    {"id": "c23", "domain": 2, "front": "CVSS severity bands (v3)", "back": "Low 0.1-3.9, Medium 4.0-6.9, High 7.0-8.9, Critical 9.0-10.0."},
+    {"id": "c24", "domain": 2, "front": "CVSS Attack Vector values", "back": "Network, Adjacent, Local, Physical (N is worst - remotely exploitable)."},
+    {"id": "c25", "domain": 2, "front": "CISA KEV", "back": "Known Exploited Vulnerabilities catalogue - CVEs confirmed exploited in the wild. Prioritise these."},
+    {"id": "c26", "domain": 2, "front": "EPSS", "back": "Exploit Prediction Scoring System - probability a CVE will be exploited in the next 30 days."},
+    {"id": "c27", "domain": 2, "front": "Compensating control", "back": "An alternative control that reduces risk when the primary control cannot be implemented."},
+    {"id": "c28", "domain": 2, "front": "Four risk responses", "back": "Accept, Transfer (e.g. insurance), Avoid (stop the activity), Mitigate (reduce likelihood/impact)."},
+    {"id": "c29", "domain": 2, "front": "Control categories", "back": "Managerial (policy), Operational (people), Technical (technology)."},
+    {"id": "c30", "domain": 2, "front": "SAST vs DAST", "back": "SAST analyses source code without running it. DAST tests the running application from outside."},
+    {"id": "c31", "domain": 2, "front": "SCA", "back": "Software Composition Analysis - finds known-vulnerable third-party/open-source components."},
+    {"id": "c32", "domain": 2, "front": "STRIDE", "back": "Spoofing, Tampering, Repudiation, Information disclosure, Denial of service, Elevation of privilege."},
+    {"id": "c33", "domain": 2, "front": "SSRF", "back": "Server-Side Request Forgery - making the server fetch attacker-chosen URLs, e.g. cloud metadata at 169.254.169.254."},
+    {"id": "c34", "domain": 2, "front": "CSRF", "back": "Cross-Site Request Forgery - forces a logged-in user's browser to send an unwanted request. Fix: anti-CSRF tokens, SameSite cookies."},
+    {"id": "c35", "domain": 2, "front": "XSS types", "back": "Reflected (in the request), Stored (saved on the server), DOM-based (client-side script). Fix: output encoding, CSP."},
+    {"id": "c36", "domain": 2, "front": "IDOR", "back": "Insecure Direct Object Reference - changing an ID in a request accesses another user's data (broken access control)."},
+    {"id": "c37", "domain": 2, "front": "Agent-based scanning", "back": "Software on the host reports vulnerabilities - good for laptops off the corporate network."},
+    {"id": "c38", "domain": 2, "front": "Passive vulnerability scanning", "back": "Infers software and vulns from observed traffic - no load on fragile systems."},
+    {"id": "c39", "domain": 2, "front": "Nmap -sS", "back": "TCP SYN (half-open) scan - sends SYN, doesn't complete the handshake. Default for privileged users."},
+    {"id": "c40", "domain": 2, "front": "Nmap -sV / -O", "back": "-sV = service/version detection. -O = operating system detection."},
+    {"id": "c41", "domain": 2, "front": "Essential Eight (list)", "back": "Patch apps, patch OS, MFA, restrict admin privileges, application control, restrict Office macros, user app hardening, regular backups."},
+    {"id": "c42", "domain": 2, "front": "SBOM", "back": "Software Bill of Materials - inventory of components in a piece of software, for supply-chain risk."},
+    {"id": "c43", "domain": 3, "front": "NIST IR phases", "back": "Preparation; Detection & Analysis; Containment, Eradication & Recovery; Post-Incident Activity."},
+    {"id": "c44", "domain": 3, "front": "Order of volatility", "back": "Registers/cache → RAM → network state/processes → temp files → disk → remote logs → archives/backups."},
+    {"id": "c45", "domain": 3, "front": "Chain of custody", "back": "Documented record of who handled evidence, when, and how - required for legal admissibility."},
+    {"id": "c46", "domain": 3, "front": "Legal hold", "back": "Instruction to preserve relevant data when litigation is reasonably anticipated."},
+    {"id": "c47", "domain": 3, "front": "RTO vs RPO", "back": "RTO = maximum time to restore service. RPO = maximum acceptable data loss (time since last good backup)."},
+    {"id": "c48", "domain": 3, "front": "Tabletop exercise", "back": "Discussion-based walk-through of an incident scenario to test plans and roles."},
+    {"id": "c49", "domain": 3, "front": "Sanitisation methods", "back": "Clear (logical overwrite), Purge (stronger, e.g. crypto erase/degauss), Destroy (physical)."},
+    {"id": "c50", "domain": 3, "front": "M365 compromise: beyond password reset", "back": "Revoke sessions, review MFA methods, remove inbox rules/forwarding, check OAuth consents, review sent items."},
+    {"id": "c51", "domain": 3, "front": "Root cause analysis", "back": "Identifying the underlying failure that allowed an incident, so it doesn't recur."},
+    {"id": "c52", "domain": 3, "front": "Containment vs eradication", "back": "Containment limits spread (isolate, block). Eradication removes the threat (malware, persistence, attacker access)."},
+    {"id": "c53", "domain": 3, "front": "ReportCyber", "back": "ASD/ACSC's online reporting service for cybercrime and incidents in Australia (cyber.gov.au). Hotline 1300 CYBER1."},
+    {"id": "c54", "domain": 3, "front": "Payment redirection fraud: first move", "back": "Contact the sending bank's fraud team immediately to attempt a recall, then report and preserve evidence."},
+    {"id": "c55", "domain": 4, "front": "MTTD / MTTR", "back": "Mean Time To Detect / Mean Time To Respond (or Remediate) - core SOC performance metrics."},
+    {"id": "c56", "domain": 4, "front": "Inhibitors to remediation", "back": "MOUs, SLAs, organisational governance, business process interruption, degrading functionality, legacy and proprietary systems."},
+    {"id": "c57", "domain": 4, "front": "Executive summary", "back": "Non-technical first section: what happened, impact, actions taken, decisions needed."},
+    {"id": "c58", "domain": 4, "front": "NDB scheme", "back": "Australia's Notifiable Data Breaches scheme: notify OAIC and affected individuals of eligible breaches likely to cause serious harm; assess suspected breaches within 30 days."},
+    {"id": "c59", "domain": 4, "front": "Ransomware payment reporting (AU)", "back": "Cyber Security Act 2024: businesses with turnover above $3M must report ransomware/extortion payments to ASD within 72 hours."},
+    {"id": "c60", "domain": 4, "front": "SLA vs MOU", "back": "SLA = contractual service levels (can restrict maintenance windows). MOU = less formal agreement of intent between parties."}
+  ]
+}
