@@ -410,6 +410,66 @@
         {"q": "Who should approve external statements during a breach?", "options": ["The first analyst on shift", "Legal and communications/PR", "The attacker's negotiator", "Any branch manager"], "answer": 1, "explain": "External communication has legal and reputational consequences."},
         {"q": "Under Australia's NDB scheme, how long does an organisation have to assess a suspected eligible data breach?", "options": ["72 hours", "7 days", "30 days", "90 days"], "answer": 2, "explain": "A reasonable and expeditious assessment within 30 days; notify as soon as practicable once confirmed."}
       ]
+    },
+    {
+      "id": "4.3", "domain": 4, "title": "Security metrics and KPIs",
+      "summary": "Metrics turn SOC and vulnerability work into evidence leaders can act on. Know what each one measures, where its clock starts and stops, and how it can mislead.",
+      "points": [
+        "Mean time to detect (MTTD): average time from when an incident starts (or first malicious activity) to when it is detected.",
+        "Mean time to respond (MTTR): average time from detection to the start of response or containment. Mean time to remediate is longer: detection (or discovery of a vulnerability) until the fix is complete.",
+        "Dwell time: how long an attacker was present before detection, usually measured from initial compromise to detection. Lower MTTD drives lower dwell time.",
+        "Alert volume on its own says little. Pair it with the true positive rate: rising alerts with flat confirmed incidents means tuning is needed, not more staff.",
+        "Vulnerability KPIs: percentage of findings fixed within SLA by severity, vulnerability age, open criticals over time, recurrence of previously fixed findings.",
+        "Averages hide outliers. One server open for 400 days can wreck a mean; report the median too and list the exceptions separately.",
+        "A KPI measures performance against a target (e.g. 95% of criticals patched within 14 days). A metric is just a measurement. Trends over time beat single snapshots."
+      ],
+      "examTip": "Detect = how long until we noticed. Respond = how long from noticing to acting. Remediate = how long until it is actually fixed. Read where the question's clock starts and stops.",
+      "onTheJob": "Pick a handful of metrics and report them the same way every month: MTTD, MTTR, criticals past SLA, and phishing reports. Consistent definitions matter more than clever dashboards.",
+      "quiz": [
+        {"q": "Logs show an attacker first accessed a mailbox on 1 March. The SOC detected the activity on 21 March and contained it on 22 March. What was the dwell time?", "options": ["20 days", "1 day", "21 days", "It cannot be measured until eradication is complete"], "answer": 0, "explain": "Dwell time runs from initial compromise to detection: 1 to 21 March is 20 days. The 1 day from detection to containment is response time."},
+        {"q": "Over three months, SIEM alert volume has tripled while the number of confirmed incidents has stayed flat. What is the best next step?", "options": ["Tune or retire noisy detection rules to cut false positives", "Hire more analysts to keep up with the alert queue", "Report the higher alert volume to executives as improved detection", "Disable correlation rules and rely on EDR alerts only"], "answer": 0, "explain": "More alerts without more true positives means a falling true positive rate. Tuning reduces alert fatigue; reporting volume as success is misleading."},
+        {"q": "An executive asks whether the SOC has become faster at acting on incidents once they are spotted. Which metric answers this most directly?", "options": ["Mean time to respond", "Mean time to detect", "Dwell time", "Alert volume"], "answer": 0, "explain": "MTTR starts at detection. MTTD and dwell time measure how long it took to notice, not how fast the team acted afterwards."}
+      ]
+    },
+    {
+      "id": "4.4", "domain": 4, "title": "Stakeholder communication and escalation",
+      "summary": "The same incident needs a different message for the board, the sysadmins, legal and the regulator. Escalating at the right time, through the right channel, is part of the response.",
+      "points": [
+        "Escalation follows the incident response plan: a severity matrix and criteria (data involved, systems affected, spread) decide who is told and how quickly. Re-assess severity as facts change.",
+        "Executives and the board: business impact, current risk, what is being done, cost and the decisions needed from them. No raw technical detail.",
+        "Technical teams: indicators, affected hosts and accounts, exact actions and deadlines.",
+        "Legal: involve early. They advise on notification obligations, evidence preservation, legal hold and keeping advice privileged. Regulator notifications are usually made through or with legal.",
+        "HR is involved in insider cases; PR/communications handles customers and media; law enforcement involvement is a decision made with legal and management.",
+        "Use out-of-band channels (phone, pre-arranged secure chat) when email or chat may be compromised, and share on a need-to-know basis so a suspect or attacker is not tipped off.",
+        "Set an update cadence: state facts, actions and the time of the next update. Separate confirmed facts from assumptions and never speculate about attribution or data loss."
+      ],
+      "examTip": "When a question asks what to tell executives, choose impact, risk and decisions needed. When it asks how to communicate while systems may be compromised, choose an out-of-band channel.",
+      "onTheJob": "Keep a printed or offline contact list for the IR team, legal, insurer and key managers. If the mail tenant is compromised, that list is how the response starts.",
+      "quiz": [
+        {"q": "An analyst finds evidence that an attacker has full access to the organisation's email tenant. How should the analyst notify the incident response team?", "options": ["By phone or a pre-arranged out-of-band channel", "By email to the IT distribution list", "By posting in the company-wide chat channel", "By raising a normal-priority helpdesk ticket"], "answer": 0, "explain": "If email is compromised, the attacker may read the notification. Out-of-band communication keeps the response hidden from them."},
+        {"q": "An alert first triaged as a low-severity phishing report is now confirmed as an account compromise with access to customer records. What should happen next?", "options": ["Reclassify the severity and escalate according to the IR plan's escalation criteria", "Keep the original severity so the ticket metrics stay consistent", "Wait for the weekly security report to inform management", "Email all affected customers immediately before scoping is complete"], "answer": 0, "explain": "Severity is re-assessed as facts change, and escalation criteria (such as personal data being involved) trigger notification of the right people. Customer notification follows scoping and legal advice."},
+        {"q": "The analyst is preparing a ten-minute briefing for the board during an active ransomware incident. What should it focus on?", "options": ["Business impact, current status and the decisions needed from the board", "The full list of indicators of compromise so the board can verify scope", "A minute-by-minute log of every analyst action so far", "The likely threat actor group, even though attribution is not yet confirmed"], "answer": 0, "explain": "Executives need impact, risk and decisions. IoCs and detailed logs are for technical teams, and unconfirmed attribution should never be presented as fact."}
+      ]
+    },
+    {
+      "id": "4.5", "domain": 4, "title": "Writing an incident report",
+      "summary": "The incident report is the permanent record of what happened and what will change. It is read by executives, auditors, insurers and sometimes lawyers, so it has to be accurate, clear and evidence-based.",
+      "points": [
+        "Typical structure: executive summary, incident details (who, what, when, where, why), timeline, scope and impact, evidence, root cause, recommendations, lessons learned.",
+        "Executive summary first, written last: a short, non-technical overview of what happened, the impact, the current status and the decisions or investment needed.",
+        "Timeline: normalise every timestamp to one time zone (often UTC) and state it. Cite the source of each entry (firewall, EDR, mailbox audit log).",
+        "Scope and impact: systems, accounts and data affected, business disruption, and whether personal information was involved. Label confirmed facts separately from assumptions.",
+        "Evidence: what was collected, file hashes and references to chain of custody records, kept separate from the narrative.",
+        "Root cause is the underlying control failure (e.g. legacy authentication bypassed MFA), not the trigger (a user clicked a link). Techniques such as the 5 Whys help.",
+        "Recommendations are specific and trackable: action, owner, due date and how completion will be verified. Lessons learned are held soon after the incident and stay blameless."
+      ],
+      "examTip": "If the report is going to non-technical readers, the executive summary is the key section. If the question asks how to stop recurrence, look for root cause and actionable recommendations.",
+      "onTheJob": "Keep a running timeline in the ticket from the first alert. Rebuilding times from memory a week later is slow and error-prone, and the report will be read by the insurer.",
+      "quiz": [
+        {"q": "While building an incident timeline, an analyst has firewall logs in UTC, endpoint logs in Australian Eastern Standard Time and cloud audit logs in UTC. What should the analyst do?", "options": ["Normalise all timestamps to one time zone and state it in the report", "Keep each source's native timestamps so the evidence is unaltered", "Order events by the time the SIEM ingested them", "Round all events to the nearest hour to simplify the timeline"], "answer": 0, "explain": "Mixed time zones make the sequence of events wrong. The original logs stay preserved as evidence; the report's timeline uses one stated time zone. Ingestion time is not event time."},
+        {"q": "A user entered credentials on a phishing page. The attacker then signed in to webmail using a legacy protocol that does not support MFA. What is the best root cause statement?", "options": ["Legacy authentication was left enabled, allowing sign-in without MFA", "The user clicked a link in a phishing email", "The attacker used a sophisticated phishing kit", "The email gateway failed to block the message"], "answer": 0, "explain": "Root cause is the underlying control failure that let the incident happen. Phishing clicks are expected; the missing control (MFA enforced on every sign-in path) is what allowed the compromise."},
+        {"q": "Which recommendation is best suited for an incident report?", "options": ["Disable legacy authentication for all mailboxes by 30 June; owner: messaging team; verify with sign-in logs", "Improve the organisation's overall security awareness", "Purchase a next-generation firewall", "Staff should be more careful with email in future"], "answer": 0, "explain": "Good recommendations are specific, tied to the root cause, and have an owner, a due date and a way to verify completion."}
+      ]
     }
   ],
   "cards": [
@@ -472,6 +532,39 @@
     {"id": "c57", "domain": 4, "front": "Executive summary", "back": "Non-technical first section: what happened, impact, actions taken, decisions needed."},
     {"id": "c58", "domain": 4, "front": "NDB scheme", "back": "Australia's Notifiable Data Breaches scheme: notify OAIC and affected individuals of eligible breaches likely to cause serious harm; assess suspected breaches within 30 days."},
     {"id": "c59", "domain": 4, "front": "Ransomware payment reporting (AU)", "back": "Cyber Security Act 2024: businesses with turnover above $3M must report ransomware/extortion payments to ASD within 72 hours."},
-    {"id": "c60", "domain": 4, "front": "SLA vs MOU", "back": "SLA = contractual service levels (can restrict maintenance windows). MOU = less formal agreement of intent between parties."}
+    {"id": "c60", "domain": 4, "front": "SLA vs MOU", "back": "SLA = contractual service levels (can restrict maintenance windows). MOU = less formal agreement of intent between parties."},
+    {"id": "c61", "domain": 2, "front": "Nmap -sT", "back": "TCP connect scan - completes the full three-way handshake using the OS. Default when the user lacks raw packet privileges; noisier and more likely to be logged than -sS."},
+    {"id": "c62", "domain": 2, "front": "Nmap -sU", "back": "UDP scan. No response = open|filtered; ICMP port unreachable (type 3, code 3) = closed. Slow, so often limited to key ports (53, 161, 123)."},
+    {"id": "c63", "domain": 2, "front": "Nmap -p- / -p / -F", "back": "-p- scans all 65535 ports. -p 22,80,443 or -p 1-1024 sets specific ports. -F scans the top 100. With no option, Nmap scans the 1000 most common ports."},
+    {"id": "c64", "domain": 2, "front": "Nmap -Pn", "back": "Skips host discovery and treats every target as online. Use when hosts block ping/ICMP and would otherwise be reported as down."},
+    {"id": "c65", "domain": 2, "front": "Nmap -sn", "back": "Host discovery (ping sweep) only - finds live hosts without port scanning. Formerly -sP."},
+    {"id": "c66", "domain": 2, "front": "Nmap -A", "back": "Aggressive option: OS detection (-O), version detection (-sV), default script scan (-sC) and traceroute in one flag. Very noisy."},
+    {"id": "c67", "domain": 2, "front": "Nmap -T0 to -T5", "back": "Timing templates: T0 paranoid, T1 sneaky, T2 polite, T3 normal (default), T4 aggressive (common on fast reliable networks), T5 insane. Lower = slower and stealthier."},
+    {"id": "c68", "domain": 2, "front": "Nmap -sC / --script", "back": "Runs Nmap Scripting Engine (NSE) scripts. -sC = the default script set; --script vuln (or a named script) runs a chosen category or script."},
+    {"id": "c69", "domain": 2, "front": "Nmap -oA / -oN / -oX / -oG", "back": "Output formats: -oN normal, -oX XML (for import into other tools), -oG grepable. -oA <name> writes all three at once."},
+    {"id": "c70", "domain": 2, "front": "Nmap port states", "back": "open = service accepting connections. closed = reachable but nothing listening (RST). filtered = a firewall blocks probes, so Nmap cannot tell. Also unfiltered, open|filtered, closed|filtered."},
+    {"id": "c71", "domain": 1, "front": "Port 22 / 23", "back": "22/TCP = SSH (also SFTP and SCP), encrypted remote shell. 23/TCP = Telnet, cleartext - credentials can be sniffed; replace with SSH."},
+    {"id": "c72", "domain": 1, "front": "Port 25 (and 587 / 465)", "back": "25/TCP = SMTP server-to-server mail relay. 587 = mail submission from clients (STARTTLS). 465 = SMTP over implicit TLS. Outbound 25 from a workstation can indicate spam malware."},
+    {"id": "c73", "domain": 1, "front": "Port 53", "back": "DNS. UDP for most queries; TCP for zone transfers (AXFR) and large responses. Unexpected TCP 53 or a zone transfer to an outside host is suspicious."},
+    {"id": "c74", "domain": 1, "front": "Port 88", "back": "Kerberos (TCP/UDP) - authentication on Active Directory domain controllers."},
+    {"id": "c75", "domain": 1, "front": "Port 135", "back": "Microsoft RPC endpoint mapper (TCP). Used by DCOM and WMI; common in Windows lateral movement. Should not be exposed to the internet."},
+    {"id": "c76", "domain": 1, "front": "Ports 139 / 445", "back": "139/TCP = NetBIOS Session Service (SMB over NetBIOS). 445/TCP = SMB directly over TCP. File sharing, PsExec-style lateral movement, and worms such as WannaCry. Never expose to the internet."},
+    {"id": "c77", "domain": 1, "front": "Ports 389 / 636", "back": "389 = LDAP (directory queries, cleartext unless upgraded with StartTLS). 636 = LDAPS (LDAP over TLS). Global catalog uses 3268/3269."},
+    {"id": "c78", "domain": 1, "front": "Port 443 (and 80)", "back": "443/TCP = HTTPS (HTTP over TLS). 80/TCP = HTTP, cleartext. Much C2 traffic hides in 443 because it blends in and is rarely blocked."},
+    {"id": "c79", "domain": 1, "front": "Port 3389", "back": "RDP (Remote Desktop Protocol). Internet-exposed RDP is a leading ransomware entry point; put it behind a VPN or gateway with MFA."},
+    {"id": "c80", "domain": 1, "front": "Ports 1433 / 3306", "back": "1433/TCP = Microsoft SQL Server (1434/UDP = SQL Browser). 3306/TCP = MySQL/MariaDB. Databases should not be reachable from the internet."},
+    {"id": "c81", "domain": 1, "front": "Ports 5985 / 5986", "back": "WinRM: 5985 = HTTP, 5986 = HTTPS. Used by PowerShell Remoting; watch for unexpected use as a lateral movement channel."},
+    {"id": "c82", "domain": 1, "front": "Event ID 4624", "back": "Security log: an account successfully logged on. Check the Logon Type, source IP/workstation and account name."},
+    {"id": "c83", "domain": 1, "front": "4624 logon types", "back": "2 interactive (console), 3 network (SMB share), 4 batch (scheduled task), 5 service, 7 unlock, 8 network cleartext, 9 new credentials (runas /netonly), 10 remote interactive (RDP), 11 cached interactive."},
+    {"id": "c84", "domain": 1, "front": "Event ID 4625", "back": "An account failed to log on. Many from one source = brute force; one password across many accounts = password spraying. Sub-status 0xC000006A = bad password, 0xC0000064 = user does not exist."},
+    {"id": "c85", "domain": 1, "front": "Event ID 4634 / 4647", "back": "4634 = an account was logged off (session ended). 4647 = user-initiated logoff. Pair with 4624 (matching Logon ID) to work out session length."},
+    {"id": "c86", "domain": 1, "front": "Event ID 4648", "back": "A logon was attempted using explicit credentials (e.g. runas, or a tool given another account's credentials). Logged on the source machine; useful for spotting lateral movement."},
+    {"id": "c87", "domain": 1, "front": "Event ID 4672", "back": "Special privileges assigned to new logon - an admin-equivalent account (e.g. SeDebugPrivilege) logged on. Unexpected accounts here deserve a look."},
+    {"id": "c88", "domain": 1, "front": "Event ID 4688", "back": "A new process has been created. Shows the process and its parent; command-line capture must be enabled by policy ('Include command line in process creation events')."},
+    {"id": "c89", "domain": 1, "front": "Event ID 4697 / 7045", "back": "A service was installed. 4697 is in the Security log (needs auditing enabled); 7045 is in the System log from the Service Control Manager. Common sign of PsExec and persistence."},
+    {"id": "c90", "domain": 1, "front": "Event ID 4720", "back": "A user account was created. An account created outside the normal provisioning process can be attacker persistence."},
+    {"id": "c91", "domain": 1, "front": "Event ID 4732", "back": "A member was added to a security-enabled local group (e.g. local Administrators). Domain global group adds = 4728; universal group adds = 4756."},
+    {"id": "c92", "domain": 1, "front": "Event ID 4740", "back": "A user account was locked out. For domain accounts it is logged on the domain controller; the Caller Computer Name shows where the bad attempts came from."},
+    {"id": "c93", "domain": 1, "front": "Event ID 1102", "back": "The Security audit log was cleared. A classic anti-forensics indicator - always investigate. (System log cleared = event 104.)"}
   ]
 }

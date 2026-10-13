@@ -6,13 +6,13 @@ All CySA+ lessons, quiz questions and flashcards live in one hand-written JSON f
 
 | Domain | Exam weight | Lessons | Questions | Cards |
 |---|---|---|---|---|
-| 1 Security Operations | 33% | 1.1–1.8 (8) | 24 | 20 |
-| 2 Vulnerability Management | 30% | 2.1–2.6 (6, incl. 2.6 AU bonus) | 18 | 22 |
+| 1 Security Operations | 33% | 1.1–1.8 (8) | 24 | 43 |
+| 2 Vulnerability Management | 30% | 2.1–2.6 (6, incl. 2.6 AU bonus) | 18 | 32 |
 | 3 Incident Response & Management | 20% | 3.1–3.5 (5, incl. 3.4 AU bonus) | 15 | 12 |
-| 4 Reporting & Communication | 17% | 4.1–4.2 (2) | 6 | 6 |
-| **Total** | | **21** | **63** | **60** |
+| 4 Reporting & Communication | 17% | 4.1–4.5 (5) | 15 | 6 |
+| **Total** | | **24** | **72** | **93** |
 
-Domain 4 is the thinnest. It's a good place to add content first (see [roadmap.md](roadmap.md)).
+Domain 4 now has 5 lessons (4.3 metrics/KPIs, 4.4 stakeholder communication and escalation, 4.5 writing an incident report) but is still light on flashcards; Domain 3 is the next thinnest (see [roadmap.md](roadmap.md)). Cards c61–c93 cover tools and ports: Nmap flags (c61–c70, domain 2), common ports (c71–c81, domain 1) and Windows Security/System event IDs (c82–c93, domain 1).
 
 **AU bonus** lessons (2.6 Essential Eight, 3.4 BEC/payment redirection playbook, plus the Australian points in 4.2) are not CySA+ exam content. They're there for the user's actual job. Their titles start with "AU bonus:" and their exam tip explains how they map back to exam concepts.
 
@@ -74,6 +74,7 @@ This is exam prep, so wrong facts are worse than missing ones. When adding or ed
 | Cyber Security Act 2024: ransomware/extortion payment report to ASD within 72h, turnover > $3M | 4.2, card c59 | Oct 2026 |
 | ACSC hotline 1300 CYBER1, ReportCyber at cyber.gov.au | 3.1, 3.4, card c53 | Oct 2026 |
 | Essential Eight list and maturity level descriptions | 2.6, card c41 | Oct 2026 |
+| Windows event ID meanings and 4624 logon types | cards c82–c93 | Oct 2026 |
 | OWASP Top 10 (2021): broken access control #1 | 2.3 | Oct 2026 (OWASP may publish a newer list) |
 
 Update the "Last checked" column when you re-verify.
