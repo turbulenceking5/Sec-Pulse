@@ -703,12 +703,13 @@ function cardKeys(c){ return (c.front.match(/-{1,2}[A-Za-z][\w-]*|\b\d{2,5}\b|\b
 function maskBack(c){
   return cardKeys(c).reduce((s, k) => s.replace(new RegExp('(^|[^\\w-])' + k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '(?![\\w-])', 'g'), '$1___'), c.back);
 }
-// Three wrong answers: same family first (Nmap flags, ports, event IDs), then same domain, then anything.
-function cardFamily(c){ const m = c.front.match(/^(Nmap|Ports?|Event ID|\d{4} logon)\b/); return m ? m[1].replace(/s$/, '') : null; }
+// Three wrong answers from the same topic group (cysa.json `group`, e.g. frameworks, ports, event IDs), so options look alike.
+// Fallbacks (only if a group is too small): same domain but not another group's ports/flags/IDs, then anything.
+const ID_GROUPS = ['nmap', 'port', 'event-id'];
 function cardOptions(c){
-  const fam = cardFamily(c), others = shuffle(CYSA.cards.filter(o => o.id !== c.id && o.back !== c.back));
+  const others = shuffle(CYSA.cards.filter(o => o.id !== c.id && o.back !== c.back));
   const picks = [];
-  for (const pool of [others.filter(o => fam && cardFamily(o) === fam), others.filter(o => o.domain === c.domain), others])
+  for (const pool of [others.filter(o => c.group && o.group === c.group), others.filter(o => o.domain === c.domain && !ID_GROUPS.includes(o.group)), others])
     for (const o of pool) if (picks.length < 3 && !picks.includes(o)) picks.push(o);
   return shuffle([c, ...picks]);
 }

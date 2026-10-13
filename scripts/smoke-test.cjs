@@ -97,6 +97,7 @@ const fs = require('fs');
   await page.click('nav button[data-view=cards]');
   check(await page.locator('#flash .opt').count() === 4, 'Flashcard shows 4 answer options');
   const cardId = await page.getAttribute('#flash', 'data-card');
+  check(await page.evaluate(() => { const g = id => CYSA.cards.find(c => c.id === id).group; const ids = [...document.querySelectorAll('#flash .opt')].map(b => b.dataset.id); return ids.every(id => g(id) === g(ids[0])); }), 'Flashcard options share one topic group');
   await page.click(`#flash .opt:not([data-id="${cardId}"])`); // answer wrong on purpose
   check(await page.locator('#flash .opt.wrong').count() === 1 && await page.locator('#flash .opt.correct').count() === 1, 'Wrong card answer is marked');
   await page.click('#card-next-btn');

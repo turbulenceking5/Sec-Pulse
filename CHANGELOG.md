@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-10-13: Better flashcard answers
+- Flashcard wrong answers now come from the same topic as the card (e.g. Cyber Kill Chain is mixed with Diamond Model, STRIDE and NIST IR phases), instead of unrelated ports or event IDs that gave the answer away.
+
 ## 2026-10-13: Study tools and smarter news
 - **Flashcards are now multiple choice.** Pick the matching answer from 4 options (wrong answers come from similar cards, with port numbers and flags blanked so you can't match by number). Cards you get wrong are remembered: they come back later in the round, and **Review missed cards** re-asks them until you've got them right more often than wrong. Getting a previously-missed card right shows "Improved!".
 - **Exam countdown**: set your exam date in Settings to see days left and a daily target on the Brief.

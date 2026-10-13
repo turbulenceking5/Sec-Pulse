@@ -41,7 +41,7 @@ Domain 4 now has 5 lessons (4.3 metrics/KPIs, 4.4 stakeholder communication and 
       ]
     }
   ],
-  "cards": [{"id": "c01", "domain": 1, "front": "term", "back": "definition"}]
+  "cards": [{"id": "c01", "domain": 1, "group": "detection", "front": "term", "back": "definition"}]  // group: see Rules
 }
 ```
 
@@ -53,11 +53,12 @@ Domain 4 now has 5 lessons (4.3 metrics/KPIs, 4.4 stakeholder communication and 
   - New flashcards are introduced in array order (8/day). Append new cards at the end so they arrive after the existing deck.
 - **Exactly 4 options per question.** The app assumes it, and so does the CySA+ format.
 - **Don't worry about answer position.** Options are shuffled on every render, so `answer` can always be 0 if that's easier to write.
+- **Every card needs a `group`, and every group needs at least 4 cards.** The other 3 multiple-choice answers are drawn from the card's group, so a group should hold cards whose backs look alike (same shape and topic). Current groups: `models` (frameworks and lists), `tooling` (SIEM/SOAR, Zero Trust, SASE, CASB, UEBA), `email-identity`, `detection`, `vuln-mgmt`, `appsec`, `ir`, `reporting`, `nmap`, `port`, `event-id`. Reuse one where it fits; a new group needs 4+ cards.
 - **Plain text only.** Everything is HTML-escaped on render: no markdown, no HTML tags. Use `\\` for a literal backslash in JSON (e.g. registry paths and regex).
 - **Generic examples only.** The repo is public. Use `example.com`, `examp1e.com` style look-alikes, and generic org descriptions. Never use the employer's real domain, systems or incident details.
 - **Validate after editing:**
   ```bash
-  python3 -c "import json;d=json.load(open('data/cysa.json'));qs=[q for l in d['lessons'] for q in l['quiz']];assert all(len(q['options'])==4 and 0<=q['answer']<4 for q in qs);print(len(d['lessons']),'lessons',len(qs),'questions',len(d['cards']),'cards')"
+  python3 -c "import json;d=json.load(open('data/cysa.json'));qs=[q for l in d['lessons'] for q in l['quiz']];assert all(len(q['options'])==4 and 0<=q['answer']<4 for q in qs);import collections;g=collections.Counter(c['group'] for c in d['cards']);assert min(g.values())>=4,g;print(len(d['lessons']),'lessons',len(qs),'questions',len(d['cards']),'cards')"
   ```
 
 ## Accuracy
