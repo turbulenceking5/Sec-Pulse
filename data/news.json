@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-13T00:54:26Z",
+ "generated": "2026-10-13T00:55:22Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -22,14 +22,14 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 7,
+   "count": 6,
    "error": null
   },
   {
    "name": "Real estate cyber news",
-   "ok": false,
-   "count": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "count": 2,
+   "error": null
   },
   {
    "name": "OAIC / Privacy news",
@@ -76,7 +76,7 @@
   {
    "name": "Microsoft Security Blog",
    "ok": true,
-   "count": 8,
+   "count": 10,
    "error": null
   },
   {
@@ -1113,6 +1113,18 @@
    ]
   },
   {
+   "id": "2c6533f22f44",
+   "title": "Post-quantum authentication: Why organizations should start testing certificate ecosystems now",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/10/08/post-quantum-authentication-why-organizations-should-start-testing-certificate-ecosystems-now/",
+   "source": "Microsoft Security Blog",
+   "feed": "Microsoft Security Blog",
+   "region": "Global",
+   "published": "2026-10-08T20:44:28Z",
+   "summary": "Prepare for post-quantum authentication by testing certificate ecosystems now. Learn how Microsoft’s PQC TLS Pilot Program helps advance future readiness. The post Post-quantum authentication: Why organizations should start testing certificate ecosystems now appeared first on Microsoft Security…",
+   "score": 1,
+   "tags": []
+  },
+  {
    "id": "f5568cb9bcb2",
    "title": "'AgentCorruption' Puts AWS Environments at Risk With Single Prompt",
    "link": "https://www.darkreading.com/cloud-security/agentcorruption-aws-environments-at-risk-single-prompt",
@@ -1232,6 +1244,20 @@
    "summary": "Dark Reading is about to begin a new decade in its storied history, and we have some breaking news of our own to share.",
    "score": 0,
    "tags": []
+  },
+  {
+   "id": "7be8e9d548f4",
+   "title": "Junos OS 23.4R1 for MX10004 and MX10008",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNYUdGa1pmVzBBd2RDazNxMXFWOTZOazVSQy05THNIQ3NhR2k2cU01bkIyZzlUY0p3WDBlVDMya2o1U2NrTkI1QUFMVjItMjRlcl9SVDBLenFhRXNXU0hxOEw1ZjRIb1ZPTjFhcHJjUnByc250WXJIZDdYQWNsODhRbWRGZ0tuaDhuX0JBZU1kWkwxMHJ5dkhmVnctR0h2aGJJVGt5aXNzUldsbm1WZlBSakdrLW0?oc=5",
+   "source": "Australian Cyber Security",
+   "feed": "ACSC (via Google News)",
+   "region": "AU",
+   "published": "2026-10-08T10:35:42Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "Australia"
+   ]
   },
   {
    "id": "ecdf7113631f",
@@ -1363,6 +1389,21 @@
    "score": 3,
    "tags": [
     "Australia"
+   ]
+  },
+  {
+   "id": "13ead4d40341",
+   "title": "3 lessons from frontier AI vulnerability research",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/10/07/3-lessons-from-frontier-ai-vulnerability-research/",
+   "source": "Microsoft Security Blog",
+   "feed": "Microsoft Security Blog",
+   "region": "Global",
+   "published": "2026-10-07T16:00:00Z",
+   "summary": "Read how How Microsoft Security's FORGE Lab is scaling vulnerability research from Windows to the Linux kernel. The post 3 lessons from frontier AI vulnerability research appeared first on Microsoft Security Blog .",
+   "score": 6,
+   "tags": [
+    "Identity",
+    "Vulnerability"
    ]
   },
   {
@@ -1533,6 +1574,20 @@
    "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
    "score": 1,
    "tags": []
+  },
+  {
+   "id": "7ccedc646e57",
+   "title": "CISO perspectives on managing vulnerability risks in the age of AI",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/10/06/ciso-perspectives-on-managing-vulnerability-risks-in-the-age-of-ai/",
+   "source": "Microsoft Security Blog",
+   "feed": "Microsoft Security Blog",
+   "region": "Global",
+   "published": "2026-10-06T16:00:00Z",
+   "summary": "Learn how CISOs can mitigate cybersecurity risks and increase resilience in the age of AI-powered vulnerability management. The post CISO perspectives on managing vulnerability risks in the age of AI appeared first on Microsoft Security Blog .",
+   "score": 3,
+   "tags": [
+    "Vulnerability"
+   ]
   },
   {
    "id": "0ec27457214b",
