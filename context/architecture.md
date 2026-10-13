@@ -52,7 +52,8 @@ There's no shared module system between the Python scripts and the browser JS, s
 
 | Rule | Python | JavaScript (`index.html`) |
 |---|---|---|
-| Ranking: `score - age_hours / 12` | `send_brief.py` `rank()` | `rank()` |
+| Ranking: `score - age_hours / 12` | `send_brief.py` `rank()` (also imported by `fetch_news.py` to pick a cluster's primary story, so a break in `send_brief.py` breaks the fetch too) | `rank()` |
+| Score breakdown: source weight + keyword groups (+1 in title) + 2 for AU + 2 for non-KEV EPSS ≥ 0.5 | `fetch_news.py` `score()` / `add_epss()` | `explainScore()` (display only) |
 | Lesson of the day: `lessons[ordinal(today_brisbane) % len]` | `send_brief.py` (`date.toordinal()`) | `ordinal()` (Unix days + 719163) |
 | Timezone: Australia/Brisbane, UTC+10, no daylight saving | `BRISBANE` constant | `TZ` constant |
 

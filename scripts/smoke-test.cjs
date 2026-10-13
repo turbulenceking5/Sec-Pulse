@@ -95,10 +95,16 @@ const fs = require('fs');
   await page.click('#sheet-close');
 
   await page.click('nav button[data-view=cards]');
-  check(await page.locator('#grade').isHidden(), 'Grade buttons hidden before reveal');
-  await page.click('#reveal');
-  check(await page.locator('#reveal').isHidden() && !(await page.locator('#grade').isHidden()), 'Reveal swaps buttons');
-  await page.click('#grade [data-g=good]');
+  check(await page.locator('#flash .opt').count() === 4, 'Flashcard shows 4 answer options');
+  const cardId = await page.getAttribute('#flash', 'data-card');
+  await page.click(`#flash .opt:not([data-id="${cardId}"])`); // answer wrong on purpose
+  check(await page.locator('#flash .opt.wrong').count() === 1 && await page.locator('#flash .opt.correct').count() === 1, 'Wrong card answer is marked');
+  await page.click('#card-next-btn');
+  check((await page.textContent('#card-review')).includes('· 1'), 'Missed card is remembered');
+  await page.click('#card-review');
+  check(await page.getAttribute('#flash', 'data-card') === cardId && (await page.textContent('#flash')).includes('Missed 1×'), 'Missed-card review re-asks it');
+  await page.click(`#flash .opt[data-id="${cardId}"]`);
+  check((await page.textContent('#flash .explain')).includes('Improved'), 'Getting a missed card right shows improvement');
   await page.screenshot({ path: 'shots/cards.png' });
 
   await page.click('#settings-btn');

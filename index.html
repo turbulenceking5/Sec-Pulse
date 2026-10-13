@@ -103,7 +103,8 @@ h2:first-child{margin-top:4px}
 
 /* cards */
 .flash{min-height:220px;display:flex;flex-direction:column;justify-content:center;text-align:center;padding:24px 18px}
-.flash .front{font-size:21px;font-weight:700}
+.flash .front,.flash-front{font-size:21px;font-weight:700}
+.flash-front{text-align:center;padding:6px 0 2px}
 .flash .back{font-size:15.5px;margin-top:16px;color:var(--text);border-top:1px solid var(--border);padding-top:16px}
 .grade{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
 .grade .btn{padding:12px 6px}
@@ -375,6 +376,8 @@ function explainScore(i, cfg){
     matched.add(g.tag);
   });
   if (i.region === 'AU') rows.push({label: 'Australian story bonus', pts: 2});
+  // Mirrors EPSS_BUMP in fetch_news.py: +2 for non-KEV items with EPSS >= 50% (applied when the story was first fetched).
+  if (epssOf(i) !== null && i.epss >= 0.5 && !(i.tags || []).includes('KEV')) rows.push({label: 'High EPSS bonus (' + epssPct(i.epss) + ')', pts: 2});
   const fromFeed = (i.tags || []).filter(t => !matched.has(t) && !(t === 'Australia' && i.region === 'AU'));
   return {rows, fromFeed, total: rows.reduce((a, r) => a + r.pts, 0)};
 }
@@ -435,13 +438,13 @@ function renderExam(){
   }
   const days = ordinal(d) - ordinal(todayKey());
   const done = store.get('lessons', {}), left = CYSA.lessons.filter(l => !done[l.id]).length;
-  const due = dueCards().length, weak = weakQuestions().length;
+  const due = dueCards().length, weak = weakQuestions().length, missed = missedCards().length;
   const pl = (n, w) => n + ' ' + w + (n === 1 ? '' : 's');
   let big, label, target;
   if (days < 0){ big = '✓'; label = 'passed'; target = 'Exam date has passed. Update it in Settings.'; }
   else {
     big = days; label = days === 1 ? 'day left' : 'days left';
-    const extras = [due ? pl(due, 'card') + ' due' : '', weak ? 'review ' + pl(Math.min(10, weak), 'mistake') : ''].filter(Boolean);
+    const extras = [due ? pl(due, 'card') + ' due' : '', weak ? 'review ' + pl(Math.min(10, weak), 'mistake') : '', missed ? 'redo ' + pl(Math.min(10, missed), 'missed card') : ''].filter(Boolean);
     target = days === 0 ? 'Exam day - good luck! Light review only.'
       : left ? `Today: ${pl(Math.ceil(left / days), 'lesson')}${extras.length ? ' · ' + extras.join(' · ') : ''}<div class="muted">${pl(left, 'lesson')} left over ${pl(days, 'day')}</div>`
       : `All lessons done. Today: a practice exam${extras.length ? ' · ' + extras.join(' · ') : ''}`;
@@ -676,7 +679,7 @@ $('#review-quiz').onclick = startReview;
 $('#quick-quiz').onclick = () => startQuiz(10, false);
 $('#practice-exam').onclick = () => startQuiz(30, true);
 
-/* ---------- Flashcards: Leitner boxes 1-5 ---------- */
+/* ---------- Flashcards: multiple choice + Leitner boxes 1-5 ---------- */
 const INTERVALS = [0, 1, 3, 7, 14, 30]; // days until next review, by box
 const NEW_PER_DAY = 8;
 function dueCards(){
@@ -686,47 +689,101 @@ function dueCards(){
   const newLeft = Math.max(0, NEW_PER_DAY - (nd.date === t ? nd.n : 0));
   return due.concat(CYSA.cards.filter(c => !st[c.id]).slice(0, newLeft));
 }
-let cardQueue = null;
+function cardHist(){ const h = store.get('cardhist', {}); return h && typeof h === 'object' && !Array.isArray(h) ? h : {}; }
+// Cards to revisit: latest answer wrong, or wrong more often than right. Same rule as weakQuestions().
+function missedCards(){
+  if (!CYSA) return [];
+  const h = cardHist();
+  return CYSA.cards.filter(c => { const r = h[c.id]; return r && r.wrong > 0 && (!r.ok || r.wrong > r.right); })
+    .sort((a, b) => { const x = h[a.id], y = h[b.id];
+      return (!!x.ok - !!y.ok) || ((y.wrong - y.right) - (x.wrong - x.right)) || String(y.last || '').localeCompare(String(x.last || '')); });
+}
+// Hide a card's own identifiers (ports, flags, event IDs, acronyms) in its answer text, so options can't be matched by number.
+function cardKeys(c){ return (c.front.match(/-{1,2}[A-Za-z][\w-]*|\b\d{2,5}\b|\b[A-Z]{2,}\b/g) || []).filter(k => k !== 'ID').sort((a, b) => b.length - a.length); }
+function maskBack(c){
+  return cardKeys(c).reduce((s, k) => s.replace(new RegExp('(^|[^\\w-])' + k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '(?![\\w-])', 'g'), '$1___'), c.back);
+}
+// Three wrong answers: same family first (Nmap flags, ports, event IDs), then same domain, then anything.
+function cardFamily(c){ const m = c.front.match(/^(Nmap|Ports?|Event ID|\d{4} logon)\b/); return m ? m[1].replace(/s$/, '') : null; }
+function cardOptions(c){
+  const fam = cardFamily(c), others = shuffle(CYSA.cards.filter(o => o.id !== c.id && o.back !== c.back));
+  const picks = [];
+  for (const pool of [others.filter(o => fam && cardFamily(o) === fam), others.filter(o => o.domain === c.domain), others])
+    for (const o of pool) if (picks.length < 3 && !picks.includes(o)) picks.push(o);
+  return shuffle([c, ...picks]);
+}
+let cardQueue = null, cardShown = null, cardRound = null;
+function startCardRound(cards, mode){ cardQueue = cards.map(c => ({...c, mode})); cardShown = null; cardRound = mode; renderCards(); }
 function renderCards(){
   if (!CYSA) return;
   const area = $('#cards-area');
-  if (!cardQueue) cardQueue = shuffle(dueCards());
-  const st = store.get('cards', {});
+  // A review/cram round that's finished hands back to the scheduled queue.
+  if (cardRound && cardQueue && !cardQueue.length){ toast(cardRound === 'review' ? 'Missed-card review done' : 'Cram done'); cardRound = null; cardQueue = null; }
+  if (!cardQueue) cardQueue = shuffle(dueCards()).map(c => ({...c}));
+  const st = store.get('cards', {}), missed = missedCards().length;
   const boxes = [1, 2, 3, 4, 5].map(b => CYSA.cards.filter(c => st[c.id] && st[c.id].box === b).length);
   const unseen = CYSA.cards.filter(c => !st[c.id]).length;
+  const reviewBtn = `<button class="btn block" id="card-review">Review missed cards${missed ? ' · ' + missed : ''}</button>`;
   const summary = `<div class="boxes">${boxes.map((n, i) => `<div><b>${n}</b>box ${i + 1}</div>`).join('')}<div><b>${unseen}</b>new</div></div>
-    <p class="small muted">New cards: ${NEW_PER_DAY}/day. Again → box 1 (see it again today). Good → next box. Easy → skip a box. Box 5 cards come back every 30 days.</p>`;
+    <p class="small muted">New cards: ${NEW_PER_DAY}/day. Pick the answer: right → next box, wrong → box 1 and you'll be asked again later in the round. Missed cards stay in "Review missed cards" until you get them right more often than wrong. Box 5 cards come back every 30 days.</p>`;
+  const wireReview = () => { $('#card-review').onclick = () => {
+    const m = missedCards();
+    if (!m.length){ toast('No missed cards yet'); return; }
+    startCardRound(shuffle(m.slice(0, 10)), 'review');
+  }; };
   if (!cardQueue.length){
     area.innerHTML = `<div class="card flash"><div class="front">All caught up ✓</div><div class="muted" style="margin-top:8px">Come back tomorrow for more cards.</div></div>
-      <button class="btn block" id="cram">Cram 10 random cards (doesn't affect schedule)</button>${summary}`;
-    $('#cram').onclick = () => { cardQueue = shuffle(CYSA.cards).slice(0, 10).map(c => ({...c, cram: true})); renderCards(); };
-    renderStats(); return;
+      ${reviewBtn}<button class="btn block" id="cram" style="margin-top:8px">Cram 10 random cards (doesn't affect schedule)</button>${summary}`;
+    $('#cram').onclick = () => startCardRound(shuffle(CYSA.cards).slice(0, 10), 'cram');
+    wireReview(); renderStats(); return;
   }
-  const c = cardQueue[0], dom = CYSA.domains.find(d => d.id === c.domain);
-  area.innerHTML = `<div class="row small muted" style="margin-bottom:8px"><span class="grow">${cardQueue.length} left${c.cram ? ' · cram' : ''}</span><span>Domain ${dom.id} · ${esc(dom.name)}</span></div>
-    <div class="card flash" id="flash"><div class="front">${esc(c.front)}</div><div class="back" hidden>${esc(c.back)}</div></div>
-    <button class="btn primary block" id="reveal">Show answer</button>
-    <div class="grade" id="grade" hidden>
-      <button class="btn" data-g="again" style="color:var(--danger)">Again</button>
-      <button class="btn" data-g="good">Good</button>
-      <button class="btn" data-g="easy" style="color:var(--accent)">Easy</button>
-    </div>${summary}`;
-  const reveal = () => { $('#flash .back').hidden = false; $('#reveal').hidden = true; $('#grade').hidden = false; };
-  $('#reveal').onclick = reveal; $('#flash').onclick = reveal;
-  $('#grade').querySelectorAll('button').forEach(b => b.onclick = () => grade(c, b.dataset.g));
+  const c = cardQueue[0], dom = CYSA.domains.find(d => d.id === c.domain), h = cardHist()[c.id];
+  // Keep the same options if we re-render the same card (e.g. switching tabs mid-card).
+  if (!cardShown || cardShown.id !== c.id || cardShown.q !== c) cardShown = {id: c.id, q: c, opts: cardOptions(c)};
+  const label = c.mode === 'review' ? ' · missed cards' : c.mode === 'cram' ? ' · cram' : '';
+  const past = h && h.wrong ? `<div class="small muted" style="margin-top:8px">Missed ${h.wrong}× before${h.ok ? '' : ' · last time wrong'}</div>` : '';
+  area.innerHTML = `<div class="row small muted" style="margin-bottom:8px"><span class="grow">${cardQueue.length} left${label}</span><span>Domain ${dom.id} · ${esc(dom.name)}</span></div>
+    <div class="card" id="flash" data-card="${esc(c.id)}"><div class="flash-front">${esc(c.front)}</div>${past}
+      <div class="small muted" style="margin:10px 0 8px">Pick the matching answer</div>
+      ${cardShown.opts.map(o => `<button class="opt" data-id="${esc(o.id)}">${esc(maskBack(o))}</button>`).join('')}
+      <div class="explain" hidden></div></div>
+    <div id="card-next"></div>
+    ${c.mode === 'review' ? '' : reviewBtn}${summary}`;
+  if (c.mode !== 'review') wireReview();
+  area.querySelectorAll('#flash .opt').forEach(b => b.onclick = () => {
+    const ok = b.dataset.id === c.id;
+    area.querySelectorAll('#flash .opt').forEach(o => {
+      o.disabled = true;
+      if (o.dataset.id === c.id) o.classList.add('correct'); else if (o === b) o.classList.add('wrong');
+    });
+    const improved = ok && h && h.wrong > 0 && !h.ok;
+    const ex = $('#flash .explain'); ex.hidden = false;
+    ex.innerHTML = `<b style="color:${ok ? 'var(--ok)' : 'var(--danger)'}">${ok ? (improved ? 'Improved! ✓' : 'Correct.') : 'Not quite.'}</b> ${esc(c.back)}`
+      + (ok ? '' : `<div class="small" style="margin-top:6px">Saved to your missed cards - you'll see it again${c.retried ? ' next time' : ' later in this round'}.</div>`);
+    answerCard(c, ok);
+    const nb = document.createElement('button');
+    nb.className = 'btn primary block'; nb.id = 'card-next-btn'; nb.textContent = cardQueue.length ? 'Next card' : 'Done';
+    nb.onclick = renderCards;
+    $('#card-next').appendChild(nb);
+  });
 }
-function grade(c, g){
+function answerCard(c, ok){
   cardQueue.shift();
-  if (!c.cram){
-    const st = store.get('cards', {}), t = todayKey();
+  const h = cardHist(), t = todayKey(), r = h[c.id] || {right: 0, wrong: 0};
+  if (ok) r.right++; else r.wrong++;
+  r.last = t; r.ok = ok; h[c.id] = r;
+  store.set('cardhist', h);
+  if (!c.mode){
+    const st = store.get('cards', {});
     if (!st[c.id]){ const nd = store.get('newToday', {date: null, n: 0}); store.set('newToday', {date: t, n: nd.date === t ? nd.n + 1 : 1}); }
     const prev = st[c.id] ? st[c.id].box : 0;
-    const box = g === 'again' ? 1 : Math.min(5, Math.max(1, prev + (g === 'easy' ? 2 : 1)));
-    st[c.id] = {box, due: g === 'again' ? t : addDays(t, INTERVALS[box])};
+    const box = ok ? Math.min(5, Math.max(1, prev + 1)) : 1;
+    st[c.id] = {box, due: ok ? addDays(t, INTERVALS[box]) : t};
     store.set('cards', st);
-    if (g === 'again') cardQueue.push(c);
-  } else if (g === 'again') cardQueue.push(c);
-  markActivity(); renderCards(); renderStats();
+  }
+  // Wrong: ask once more at the end of this round (fresh options), then it waits in "Review missed cards".
+  if (!ok && !c.retried) cardQueue.push({...c, retried: true});
+  markActivity(); renderStats();
 }
 
 /* ---------- Settings ---------- */
@@ -796,14 +853,14 @@ function openSettings(focus){
     try{
       const data = JSON.parse(await e.target.files[0].text());
       Object.entries(data).forEach(([k, v]) => { if (k.startsWith('sp_')) localStorage.setItem(k, v); });
-      toast('Backup restored'); cardQueue = null; closeSheet(); renderCards();
+      toast('Backup restored'); cardQueue = null; cardRound = null; closeSheet(); renderCards();
     }catch(err){ toast('That file is not a Sec-Pulse backup'); }
   };
   $('#reset').onclick = e => {
     const b = e.currentTarget;
     if (b.dataset.armed){
       try{ Object.keys(localStorage).filter(k => k.startsWith('sp_')).forEach(k => localStorage.removeItem(k)); }catch(err){}
-      toast('Progress reset'); cardQueue = null; closeSheet(); renderCards();
+      toast('Progress reset'); cardQueue = null; cardRound = null; closeSheet(); renderCards();
     } else { b.dataset.armed = '1'; b.textContent = 'Tap again to erase all progress'; }
   };
 }

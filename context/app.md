@@ -33,7 +33,7 @@ Filter chips (the last choice is remembered in `sp_filter`):
 
 Search filters on title + summary + source + tags. The list paginates 40 at a time ("Show more"). Opening a story marks it read (dimmed, unread dot removed); ☆ saves it.
 
-**Why this ranked** (`openWhy()` / `explainScore()`): each card shows a `score N` pill; tapping it or the tag row opens a sheet with the score breakdown. news.json items don't store which terms matched, so the app fetches `scripts/sources.json` (lazily, once) and re-runs `fetch_news.py`'s `score()` logic client-side: source weight (by `feed` name) + each keyword group whose terms appear in title/summary (weight, +1 if in the headline, matched terms listed) + 2 if `region == "AU"`. Tags not explained by a keyword match (e.g. KEV's `Actively exploited`/`KEV`) show as "tagged by the feed itself, +0". If the rebuilt total differs from the stored `score` (keywords edited since the fetch), a note says so. Offline / fetch failure falls back to listing the tags. **If `score()` in `fetch_news.py` changes, update `explainScore()` to match** (it's display-only; `rank()` is untouched).
+**Why this ranked** (`openWhy()` / `explainScore()`): each card shows a `score N` pill; tapping it or the tag row opens a sheet with the score breakdown. news.json items don't store which terms matched, so the app fetches `scripts/sources.json` (lazily, once) and re-runs `fetch_news.py`'s `score()` logic client-side: source weight (by `feed` name) + each keyword group whose terms appear in title/summary (weight, +1 if in the headline, matched terms listed) + 2 if `region == "AU"`. Tags not explained by a keyword match (e.g. KEV's `Actively exploited`/`KEV`) show as "tagged by the feed itself, +0". If the rebuilt total differs from the stored `score` (keywords edited since the fetch), a note says so. Offline / fetch failure falls back to listing the tags. **If `score()` or the EPSS bump in `fetch_news.py` changes, update `explainScore()` to match** (it's display-only; `rank()` is untouched).
 
 **Mute** (`sp_muted`): the Why sheet has Mute/Unmute buttons for the story's `source` (the outlet name shown on the card, not the `feed`) and each of its tags. Muted items are filtered out of Brief's Top for you and every News filter except ★ Saved; News shows "N hidden by mutes · Manage" when anything was filtered. Settings lists mutes as tappable pills to unmute.
 
@@ -52,11 +52,12 @@ Tag colours: red (`hot`) for Actively exploited / KEV / Ransomware, teal (`re`) 
 - **Lesson sheet**: summary, key points, Exam tip box (teal), On the job box (amber), a 3-question quiz. Finishing the quiz or tapping **Mark as complete** marks the lesson done.
 
 ### Cards
-Leitner spaced repetition:
-- Boxes 1–5 with review intervals `[_, 1, 3, 7, 14, 30]` days (`INTERVALS[box]`).
-- **Again** → box 1, due today (goes back to the end of the current queue). **Good** → box +1. **Easy** → box +2. Capped at 5.
+Multiple choice on top of Leitner spaced repetition:
+- Each card shows its `front` and 4 answers: its own `back` plus 3 other cards' backs (`cardOptions()`). Distractors come from the same family first (Nmap flags, ports, event IDs, logon types: `cardFamily()`), then the same domain, then anywhere. `maskBack()` blanks each option's own identifiers (port numbers, flags, event IDs, acronyms from its front) as `___`, so an option can't be matched just by spotting the number. The full, unmasked back shows as the explanation after answering.
+- Boxes 1-5 with review intervals `[_, 1, 3, 7, 14, 30]` days (`INTERVALS[box]`). **Right** → box +1. **Wrong** → box 1, due today, and re-asked once at the end of the current round (with fresh options).
+- **Missed cards** (`sp_cardhist`, `missedCards()`): every answer (scheduled, cram or review) is recorded per card. A card counts as missed while its latest answer was wrong or it's been wrong more often than right (the same rule as Review mistakes). **Review missed cards · N** runs up to 10 of them without touching the schedule. The card shows "Missed N× before"; getting a previously-missed card right shows **Improved! ✓**. The Brief's exam target includes missed cards.
 - **8 new cards per day** (`NEW_PER_DAY`), tracked in `sp_newToday`. Cards are introduced in `cysa.json` order.
-- When caught up: a **Cram 10** button reviews random cards without touching the schedule.
+- When caught up: a **Cram 10** button runs random cards without touching the schedule. Finishing a review or cram round returns to the scheduled queue.
 - The nav badge shows the number of due cards.
 
 ### Settings sheet
@@ -85,6 +86,7 @@ All keys are prefixed `sp_` (Export, Import and Reset rely on the prefix). Every
 | `sp_quizHistory` | `[{date, c, t, type: "quick"\|"exam"\|"review"}]` (last 100) | Quiz results |
 | `sp_cards` | `{"c01": {box, due: "YYYY-MM-DD"}}` | Flashcard schedule |
 | `sp_newToday` | `{date, n}` | New cards introduced today |
+| `sp_cardhist` | `{"c01": {right, wrong, last: "YYYY-MM-DD", ok}}` | Per-card answer history for Review missed cards (`ok` = latest answer right) |
 | `sp_read` | `[id, …]` (last 1,500) | Read stories |
 | `sp_saved` | `{id: item}` | Saved stories (full item copy) |
 | `sp_filter` | `"foryou"` etc. | Last news filter |
