@@ -7,8 +7,10 @@ How headlines get from publishers into `data/news.json`.
 1. `.github/workflows/fetch-news.yml` runs at minute 17 of every 3rd hour UTC (or on demand via **Run workflow**).
 2. `scripts/fetch_news.py` reads `scripts/sources.json` and fetches all sources in parallel (8 threads, 30s timeout each).
 3. Each source is parsed (RSS, Atom, or the CISA KEV JSON), capped to its `max` newest items, scored and tagged.
-4. Fresh items are merged with the previous `news.json` (so stories survive until they age out), de-duplicated, sorted newest-first, capped at 400.
-5. The workflow commits `data/news.json` only if it changed, pulling and rebasing first so it can't collide with the morning-brief workflow (both share the `news-data` concurrency group anyway).
+4. Fresh items are merged with the previous `news.json` (so stories survive until they age out) and de-duplicated by link/identical title.
+5. Items naming a CVE are enriched with an **EPSS** probability from FIRST's public API (see [EPSS enrichment](#epss-enrichment)).
+6. Reports of the same story from different outlets are **clustered** into one item (see [Story clustering](#story-clustering)), then everything is sorted newest-first and capped at 400.
+7. The workflow commits `data/news.json` only if it changed, pulling and rebasing first so it can't collide with the morning-brief workflow (both share the `news-data` concurrency group anyway).
 
 Standard library only, so there's no `pip install` step and nothing to pin.
 
@@ -49,11 +51,13 @@ For each item, `score = source.weight + Σ (group.weight + title_bonus)` over ev
 - **title_bonus** is +1 when the group also matches the title (headline mentions are stronger signals).
 - Each matching group adds its `tag` to the item's `tags`.
 - KEV items get `Actively exploited` + `KEV` tags up front (and `Ransomware` if CISA marks known ransomware use).
+- **EPSS bump**: +2 (`EPSS_BUMP`) for a **non-KEV** item whose `epss` is ≥ 0.5 (`EPSS_BUMP_AT`, roughly the top 1-2% of all CVEs). KEV entries are excluded because they already carry the exploited signal, and old CVEs newly added to KEV score ~0.99 almost by definition, so bumping them would double-count. Only applied when an item is (re)scored from a fresh fetch, so stored items are never bumped twice.
+- The keyword groups that matched are stored in the item's `why` (in `sources.json` order), for a "why this ranked" view. `why` doesn't include the source `weight`, the +2 Australian-publisher bonus, the title bonus, the EPSS bump, or the KEV extra tags.
 
 Typical scores: 0–3 generic, 5–8 relevant, 10+ very relevant (e.g. real estate + BEC + Australia). The app's **For you** filter shows items scoring ≥ 5 from the last 7 days.
 
 ### Ranking (done in the app and in `send_brief.py`, not stored)
-`rank = score - age_in_hours / 12`, so a story loses 2 points per day. A score-10 story from yesterday ties with a score-8 story from right now.
+`rank = score - age_in_hours / 12`, so a story loses 2 points per day. A score-10 story from yesterday ties with a score-8 story from right now. `fetch_news.py` also uses it (imported from `send_brief.py`, not copied) to pick each cluster's primary.
 
 ### Tuning tips
 - A story type keeps showing up that you don't care about: lower that group's weight or remove the noisy term.
@@ -79,7 +83,12 @@ Typical scores: 0–3 generic, 5–8 relevant, 10+ very relevant (e.g. real esta
       "published": "2026-10-12T18:04:00Z",
       "summary": "…",                       // plain text, ≤ 300 chars, "" for Google News
       "score": 10,
-      "tags": ["Real estate", "BEC / payment fraud"]
+      "tags": ["Real estate", "BEC / payment fraud"],
+      "why": ["Real estate", "BEC / payment fraud"],  // keyword groups that matched (may be [])
+      "epss": 0.9412,                       // OPTIONAL: 0-1 EPSS probability (max over the item's CVEs)
+      "also": [                             // OPTIONAL: same story from other outlets (≤ 10)
+        {"source": "The Hacker News", "url": "https://…"}
+      ]
     }
   ]
 }
@@ -87,8 +96,35 @@ Typical scores: 0–3 generic, 5–8 relevant, 10+ very relevant (e.g. real esta
 
 Retention: 14 days (`KEEP_DAYS`), max 400 items (`MAX_ITEMS`).
 
+Optional fields are **absent** (not `null`/`[]`) when they don't apply: `epss` only on items with a CVE that EPSS has scored, `also` only on cluster primaries. `why` is always present (backfilled for items stored before it existed).
+
 ### De-duplication
-An item is skipped if its `id` (link hash) **or** its normalised title (lowercase alphanumerics, first 80 chars) was already seen. Fresh items are processed before stored ones, so the freshest copy wins. This catches the same story syndicated by two publishers with identical headlines, but not reworded headlines.
+An item is skipped if its `id` (link hash) **or** its normalised title (lowercase alphanumerics, first 80 chars) was already seen. Fresh items are processed before stored ones, so the freshest copy wins. When a skipped copy is an identical headline from a *different* publisher, it's recorded in the kept item's `also` instead of vanishing; a skipped stored copy's `also` and `epss` are carried over to the fresh copy too. Reworded headlines are handled by clustering, below.
+
+## EPSS enrichment
+[EPSS](https://www.first.org/epss/) is FIRST's daily estimate of the probability a CVE is exploited in the next 30 days.
+
+- **Which CVEs**: `item_cves()` takes the CVE IDs in the title; if there are none, those in the summary, but only if it names at most two (a roundup listing a dozen CVEs isn't *about* any of them).
+- **Lookup**: one GET to `https://api.first.org/data/v1/epss?cve=CVE-…,CVE-…` per 50 CVEs (`EPSS_BATCH`), 15s timeout, at most 300 CVEs per run (newest items first). All items in the merged list are re-looked-up each run, since EPSS changes daily.
+- **`epss`** = the highest probability among the item's CVEs, rounded to 4 dp. A CVE too new for EPSS gets no field.
+- **Failure**: recorded as a `FIRST EPSS` row in `sources[]` (`ok: false`, error text, `count` = CVEs scored), exactly like a broken feed, and the run carries on. Items keep the `epss` they had from the last good run, so the score bump doesn't flicker. The first failed batch stops the lookup (the rest would only time out too).
+- On success the `FIRST EPSS` row has `ok: true` and `count` = number of CVEs scored (0 with no CVEs to look up, and no request made).
+
+## Story clustering
+`cluster()` folds the same story from several outlets into one item. It runs over the whole merged list each run (≈1s for 400 items). The highest-`rank` report stays as the item; the others become `{"source", "url"}` entries in its `also` and are removed from `items`. Because stored primaries keep their `also`, a cluster survives after the duplicates drop off their feeds.
+
+It's deliberately conservative (a missed merge costs a duplicate line; a false merge hides a story). Two items can only merge if they're from **different publishers** (`source`) and **neither is a CISA KEV entry** (KEV rows are distinct records and feed the brief's KEV count). Then either:
+
+- **Same CVE**: they share a CVE from `item_cves()` and were published within 7 days. Two items naming *different* CVEs never merge by title.
+- **Similar titles**, published within 72h. Titles are tokenised (lowercase, stopwords dropped, light plural stemming, a few synonyms such as flaw/bug/vulnerability → `vuln`, exploited → `exploit`, cyber-attack → `attack`). They need:
+  - at least **3 shared words**,
+  - at least **2 shared distinctive words**: not in the `GENERIC` headline-template list (attack, breach, ransomware, million, FBI, critical, …) and appearing in at most `max(3, n/50)` titles. Short numbers and years don't count;
+  - an IDF-weighted overlap (shared weight ÷ the shorter title's weight, generic words at half weight) of at least `CLUSTER_SIM` = 0.35.
+
+  So "Ivanti EPMM flaw exploited" vs "Ivanti Connect Secure flaw exploited", or "Acme hit by ransomware attack" vs "Globex hit by ransomware attack", stay separate.
+- A new item joins the cluster whose primary **or existing member** it matches best, so a third outlet matching only the second report still joins.
+
+Tested against two weeks of real items squeezed into one 72h window (no false merges; caught e.g. SonicWall ×3, Ledger implant ×2, AhsayCBS ×2), plus synthetic near-miss pairs. Known acceptable merge: a follow-up on the same incident within 72h ("Acme hit by ransomware" / "Acme names new CISO after ransomware attack") joins the original. If it ever merges wrongly, raise `CLUSTER_SIM` or add the offending word to `GENERIC`.
 
 ## Parsing details
 - XML namespaces are stripped, so `<dc:date>`, `<content:encoded>` and Atom elements are found by local name.
@@ -98,7 +134,7 @@ An item is skipped if its `id` (link hash) **or** its normalised title (lowercas
 - Titles shorter than 12 chars or starting with `-` are dropped (Google News occasionally emits a bare publisher name).
 
 ## Error handling
-Each source runs in its own `try/except`. A failure is recorded in `sources[]` with `ok: false` and the error text, and the run continues. A feed that parses but contains **zero entries** is treated as an error (`feed returned no entries`), so silent breakage still shows up in feed health. The workflow itself only fails if Python crashes outright or the push fails.
+Each source runs in its own `try/except`, and so does the EPSS lookup (its health row is `FIRST EPSS`). A failure is recorded in `sources[]` with `ok: false` and the error text, and the run continues. A feed that parses but contains **zero entries** is treated as an error (`feed returned no entries`), so silent breakage still shows up in feed health. The workflow itself only fails if Python crashes outright or the push fails.
 
 ## Known feed issues
 

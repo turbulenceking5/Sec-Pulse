@@ -18,7 +18,7 @@ GitHub's cron is best-effort: runs are often 5–30 minutes late at busy times, 
 ```
 Title: Sec-Pulse brief - Tue 13 Oct
 
-• 🇦🇺 <title> (<source>)        ← top 5 by rank, from the last 30 hours
+• 🇦🇺 <title> (<source> +2)     ← top 5 by rank, from the last 30 hours
 • …
 
 Last 30h: 41 items, 3 Australian, 0 new CISA KEV entries.
@@ -27,6 +27,7 @@ CySA+ focus: 2.2 Reading scan output and CVSS
 
 - **Top 5**: items published in the last 30h, sorted by `score - age_hours/12` (same `rank()` as the app). 30h rather than 24h covers late-evening overseas stories. The app's own Brief tab widens to 72h if fewer than 5 items are found; the notification does not.
 - 🇦🇺 marks `region == "AU"` items.
+- Because `fetch_news.py` clusters the same story from several outlets into one item (see [news-pipeline.md](news-pipeline.md#story-clustering)), the top 5 are 5 different stories. `+N` after the source is the number of other outlets folded into that item's `also`; it's omitted when there are none. "Last 30h: N items" counts clustered stories, not raw reports.
 - **CySA+ focus**: `lessons[today.toordinal() % len(lessons)]` using Brisbane's date. The app computes the same index, so "Today's CySA+ lesson" on the Brief tab matches the notification.
 - If nothing is recent: `• Quiet night - no new high-relevance items.`
 

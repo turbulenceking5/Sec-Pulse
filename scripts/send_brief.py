@@ -45,7 +45,10 @@ def main():
     lines = []
     for i in top:
         flag = "🇦🇺 " if i["region"] == "AU" else ""
-        lines.append(f"• {flag}{i['title']} ({i['source']})")
+        # fetch_news.py folds other outlets' reports of the same story into `also`,
+        # so the top 5 are 5 different stories; show how widely each was covered.
+        more = f" +{len(i['also'])}" if i.get("also") else ""
+        lines.append(f"• {flag}{i['title']} ({i['source']}{more})")
     if not lines:
         lines.append("• Quiet night - no new high-relevance items.")
     lines.append("")
