@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-10-13: No more paywalls
+- Stories from paywalled outlets (e.g. Newcastle Herald, The Australian, SMH/The Age/AFR, WSJ, FT, Bloomberg) are no longer included, and don't appear in "+N more sources" either. The list lives in `scripts/sources.json` (`paywalled`).
+
 ## 2026-10-13: Analyst rank, What's new and fixes
 - **Level up as you study.** Quiz answers, flashcards, lessons and reading news now earn XP. Climb from Trainee Analyst through SOC Analyst, Incident Responder and Threat Hunter to Cyber Legend, with a skill bar per exam domain plus Threat Intel from news. Tap the rank card on the Brief for your profile. Progress you'd already made counts: it's converted to XP the first time you open the app.
 - **What's new and Roadmap** buttons at the top of Settings.

@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-13T19:18:53Z",
+ "generated": "2026-10-13T23:01:16Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,31 +28,31 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 7,
+   "count": 6,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 7,
+   "count": 3,
    "error": null
   },
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 1,
+   "count": 2,
    "error": null
   },
   {
    "name": "iTnews Security",
    "ok": true,
-   "count": 0,
+   "count": 1,
    "error": null
   },
   {
    "name": "CISA KEV",
    "ok": true,
-   "count": 12,
+   "count": 13,
    "error": null
   },
   {
@@ -100,11 +100,181 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 16,
+   "count": 17,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "ff21bb8aab01",
+   "title": "OpenAI engineer arrested for allegedly planting spy device in office",
+   "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-engineer-arrested-for-allegedly-planting-spy-device-in-office/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-13T22:33:02Z",
+   "summary": "A Saudi OpenAI engineer has been arrested for allegedly planting a hidden recording device in an executive conference room at the company's San Francisco offices to secretly record sensitive conversations. [...]",
+   "score": 2,
+   "tags": [
+    "Edge devices"
+   ],
+   "why": [
+    "Edge devices"
+   ]
+  },
+  {
+   "id": "841edbc362ab",
+   "title": "Zero-Days Lurk in Microsoft's Overgrown October Patch Tuesday",
+   "link": "https://www.darkreading.com/vulnerabilities-threats/zero-days-microsoft-october-patch-tuesday",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-13T22:29:57Z",
+   "summary": "The scary surprises for the largest security update ever include security bypasses and unauthenticated RCEs.",
+   "score": 7,
+   "tags": [
+    "Actively exploited",
+    "Vulnerability"
+   ],
+   "why": [
+    "Actively exploited",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "5d5d52d490fe",
+   "title": "Ghostscript flaw lets hackers hijack servers via PDF uploads",
+   "link": "https://www.bleepingcomputer.com/news/security/ghostscript-flaw-lets-hackers-hijack-servers-via-pdf-uploads/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-13T21:33:26Z",
+   "summary": "A critical heap buffer overflow vulnerability (CVE-2026-39919) in the Ghostscript interpreter and rendering engine could allow remote code execution through specially crafted PDF files. [...]",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0078
+  },
+  {
+   "id": "c237a5931a63",
+   "title": "North Korea Phishes Ukrainians for War Intel",
+   "link": "https://www.darkreading.com/cyberattacks-data-breaches/north-korea-phishes-ukrainians-war-intel",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-13T21:24:45Z",
+   "summary": "The Democratic People's Republic of Korea (DPRK) is trying to get insight into its own war effort in Ukraine, through simple reply-baiting phishing attacks.",
+   "score": 3,
+   "tags": [
+    "Phishing"
+   ],
+   "why": [
+    "Phishing"
+   ]
+  },
+  {
+   "id": "1a0763123a1d",
+   "title": "Anthropic warns self-replicating AI could spread to your smart devices",
+   "link": "https://www.bleepingcomputer.com/news/security/anthropic-warns-self-replicating-ai-could-spread-to-your-smart-devices/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-13T21:16:34Z",
+   "summary": "Anthropic is warning that small AI models could soon be able to self-replicate across consumer IoT devices, from Android TV boxes to smart ovens, creating distributed botnets capable of running AI workloads without relying on data centers. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "a240599f4fed",
+   "title": "Anthropic Finds Ingredients for Future AI Worms",
+   "link": "https://www.darkreading.com/perimeter/anthropic-ingredients-future-ai-worms",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-13T20:35:23Z",
+   "summary": "Anthropic's latest study combined IoT and network tests to explore AI self-replication, which researchers said would be \"challenging\" to shut down.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "8fde15def237",
+   "title": "AI limiting workers' wage bargaining power",
+   "link": "https://www.itnews.com.au/news/ai-limiting-workers-wage-bargaining-power-629622?utm_source=feed&utm_medium=rss&utm_campaign=iTnews+Business+feed",
+   "source": "iTnews Security",
+   "feed": "iTnews Security",
+   "region": "AU",
+   "published": "2026-10-13T20:32:00Z",
+   "summary": "Central bank's chief economist says.",
+   "score": 6,
+   "tags": [
+    "Microsoft 365",
+    "Australia"
+   ],
+   "why": [
+    "Microsoft 365"
+   ]
+  },
+  {
+   "id": "21edffe12082",
+   "title": "Microsoft October 2026 Patch Tuesday fixes 1,411 flaws, 3 zero-days",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-october-2026-patch-tuesday-fixes-1-411-flaws-3-zero-days/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-13T19:56:09Z",
+   "summary": "Today is Microsoft's October 2026 Patch Tuesday, with security updates addressing a record-breaking 1,411 flaws, including one actively exploited and two publicly disclosed zero-day vulnerabilities. [...]",
+   "score": 10,
+   "tags": [
+    "Actively exploited",
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Actively exploited",
+    "Vulnerability",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "04ab1973266f",
+   "title": "Microsoft releases Windows 10 KB5126657 extended security update",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-10-kb5126657-extended-security-update/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-13T19:47:30Z",
+   "summary": "Microsoft released the Windows 10 KB5126657 extended security update, which includes this month's record-breaking October 2026 Patch Tuesday fixes and a few bug fixes and changes. [...]",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "5cec7a9f83e5",
+   "title": "October 2026 Microsoft Patch Tuesday, (Tue, Oct 13th)",
+   "link": "https://isc.sans.edu/diary/rss/33422",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-10-13T19:25:52Z",
+   "summary": "Microsoft today released patches for 1,417 vulnerabilities. 76 of these vulnerabilities are rated critical, with 7 critical vulnerabiilties requiring no customer actions. One vulnerability was disclosed before today&#;x26;#;39;s patch Tuesday, and one is already exploited.",
+   "score": 3,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
   {
    "id": "52ba0cd2583e",
    "title": "PSG coach Luis Enrique says Man City deserved trophies, despite financial breach ruling | Hindustan Times",
@@ -171,23 +341,6 @@
    ],
    "why": [
     "Ransomware"
-   ]
-  },
-  {
-   "id": "d590a8c728e3",
-   "title": "First-home buyer devastated by 'sophisticated' property deposit scam",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPMHNvQVIzQTJDV1o2VkxwNmQxbEh5MW9wQ1BaMk4tZDVKTVFnak5qcWFPTjVUNVFyUzM3ZkZjMlVsTEdiZ29LTGE5T2EyZ2g0SVFoT0w2T3puZ2ZYRjdjSnpFeWFONXU2Y3IxVHFBVnR5b1lJbHZRMnZXSXdpVUd3SGhMY0RHWmFiQVhKTXh2cjhJWm9OaXcyc0oxT2Y3dW9HSlpLVklUWEpSb3RE?oc=5",
-   "source": "Newcastle Herald",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-13T18:30:01Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
    ]
   },
   {
@@ -311,6 +464,23 @@
    ]
   },
   {
+   "id": "b00b704df037",
+   "title": "Why digital ID could lower identity fraud risk in conveyancing",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOV1pGVDFSX2tyT3ZBVmQxdzh4Nkp0aHg1c2FXc2tlUkVsZjQzWUR3Wk9xYnFZc1ZHNXU4aUpud2RaWkhVQlNxRFJrZ0h2cE1CZ3QtakcwOGNjNzQ0ZlR2VzN3UWVyZGE3MHpnczhHbFBkd1N5dmM2ZzBOMjJtYWhrMjVBX3NNYjdZSlFseXAwd29ZekJ3SnhMbEZnTXJoMTNEQ1FUbWVON2VuZ0RiQ0JrbllwWnc0VWxSVmUw?oc=5",
+   "source": "Lawyers Weekly",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-13T17:00:05Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
    "id": "19a292ee3783",
    "title": "Google Partially Reverses Chrome Bug Bounty Cuts",
    "link": "https://www.securityweek.com/google-partially-reverses-chrome-bug-bounty-cuts/",
@@ -351,6 +521,23 @@
    ],
    "why": [
     "Real estate"
+   ]
+  },
+  {
+   "id": "3770e65c491f",
+   "title": "GitHub Tightens npm Publishing After Flaw Left 1,500+ Packages Vulnerable to Hijacking",
+   "link": "https://thehackernews.com/2026/10/github-tightens-npm-publishing-after.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-13T16:18:18Z",
+   "summary": "GitHub has taken the step of expiring unvalidated npm trusted publishing configurations 48 hours after creation after researchers found that it was possible for an attacker to push new versions of a different user's package without having to steal their credentials. \"Your configuration becomes…",
+   "score": 2,
+   "tags": [
+    "Identity"
+   ],
+   "why": [
+    "Identity"
    ]
   },
   {
@@ -707,6 +894,23 @@
    ]
   },
   {
+   "id": "e4ff1a4e534d",
+   "title": "Data Breaches That Have Happened This Year (2026 Update)",
+   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1QZkRBeUR5Y19DcGJvaGwxa3Z5MWdGTTlzSEhxcDdtNU1PZ0s0VDkxaW9KRnJTZWNUb295S0RqQmtSVGtwTUo2RlRLVlpFMkxZZmRaTkZnZGc0cVE?oc=5",
+   "source": "Tech.co",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-13T03:30:21Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
    "id": "7dd6d3ef0e59",
    "title": "ISC Stormcast For Tuesday, October 13th, 2026 https://isc.sans.edu/podcastdetail/10134, (Tue, Oct 13th)",
    "link": "https://isc.sans.edu/diary/rss/33418",
@@ -805,6 +1009,25 @@
    ],
    "why": [
     "Edge devices",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "f8e6abe81cc5",
+   "title": "CVE-2026-96951: Microsoft Windows — Microsoft Windows Command Injection Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-96951",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-10-13T00:00:00Z",
+   "summary": "Microsoft Windows Shell contains a command injection vulnerability that allows an unauthorized attacker to bypass a security feature over a network. CISA remediation due 2026-10-16.",
+   "score": 4,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
+   ],
+   "why": [
     "Vulnerability"
    ]
   },
@@ -1309,6 +1532,25 @@
     "Vulnerability"
    ],
    "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "14c9a4ebac6a",
+   "title": "AI notetaker tools in Australian workforces: The hidden legal risks organisations cannot ignore",
+   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNelBjU1hQdThEdTZwT2JBaWFfMXlKclFQNEdnRHcteEdaWXI4azAxV280T0Jwa0pVejRDQjBvMVhHZWxOU1N4a0p2YmlZeTJNRWJIM0dUaGZSYng3TkUxeDl0a2RmMFJLeXdjT0liT2JJczhsamNjV1g4RFplQ2pQSDJBMk1hM2g3X25N?oc=5",
+   "source": "Lexology",
+   "feed": "OAIC / Privacy news",
+   "region": "AU",
+   "published": "2026-10-12T07:00:00Z",
+   "summary": "",
+   "score": 11,
+   "tags": [
+    "Australia",
+    "Vulnerability"
+   ],
+   "why": [
+    "Australia",
     "Vulnerability"
    ]
   },

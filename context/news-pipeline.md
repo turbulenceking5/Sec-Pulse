@@ -50,6 +50,9 @@ For search feeds that surface evergreen web pages rather than news. Google News 
 
 `passes_filters()` applies `exclude`, `minTitleWords` and `requireMatch`, both to fresh items and to items kept from the previous `news.json`. So tightening a source's filters removes already-stored junk on the next run instead of leaving it for up to 14 days.
 
+### `paywalled`
+A top-level list of publisher names (as Google News shows them in the `<source>` element / the card's source line; case-insensitive). Google News searches surface whatever outlet ran a story, including hard-paywalled ones (ACM regionals like the Newcastle Herald, News Corp mastheads, Nine's SMH/Age/AFR, WSJ, FT, Bloomberg...). `main()` drops those items from fresh results and from stored history, and strips them from `also` lists after clustering. To block another outlet, add its exact displayed name. For a quick personal-only fix, Mute the source in the app instead.
+
 ## Scoring
 
 For each item, `score = source.weight + Σ (group.weight + title_bonus)` over every keyword group whose terms appear in the title or summary, plus 2 if the item is Australian.

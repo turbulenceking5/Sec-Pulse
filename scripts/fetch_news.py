@@ -415,21 +415,27 @@ def main():
         except (ValueError, OSError):
             previous = []
 
+    # Paywalled publishers (mostly surfaced by Google News searches) are dropped everywhere.
+    paywalled = {n.lower() for n in cfg.get("paywalled", [])}
+
+    def free(it):
+        return it.get("source", "").lower() not in paywalled
+
     health, fresh = [], []
     with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
         futures = [pool.submit(run_source, s, keywords) for s in cfg["sources"]]
         for fut in futures:
             name, items, err = fut.result()
             health.append({"name": name, "ok": err is None, "count": len(items), "error": err})
-            fresh.extend(items)
+            fresh.extend(it for it in items if free(it))
             print(f"{'OK ' if err is None else 'ERR'} {name}: {len(items)} {err or ''}", file=sys.stderr)
 
     # Fresh copies win over older stored ones; keep older items until they age out.
     # A skipped copy's `also` list is carried over, and an identical headline from
     # a different publisher is recorded in `also` rather than silently dropped.
     src_by_name = {s["name"]: s for s in cfg["sources"]}
-    previous = [it for it in previous
-                if passes_filters(src_by_name.get(it.get("feed"), {}), it["title"], it.get("tags", []))]
+    previous = [it for it in previous if free(it)
+                and passes_filters(src_by_name.get(it.get("feed"), {}), it["title"], it.get("tags", []))]
     merged, by_id, by_title = [], {}, {}
     for it in fresh + previous:
         key_t = norm_title(it["title"])
@@ -458,6 +464,11 @@ def main():
 
     before = len(merged)
     merged = cluster(merged)
+    for it in merged:
+        if "also" in it:
+            it["also"] = [a for a in it["also"] if free(a)]
+            if not it["also"]:
+                del it["also"]
     merged.sort(key=lambda i: i["published"], reverse=True)
     print(f"Clustered {before - len(merged)} duplicate reports into {sum(1 for i in merged if i.get('also'))} stories",
           file=sys.stderr)
