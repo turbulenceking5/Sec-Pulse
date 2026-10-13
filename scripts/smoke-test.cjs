@@ -110,9 +110,44 @@ const fs = require('fs');
 
   await page.click('#settings-btn');
   check(await page.locator('#sheet table tr').count() > 0, 'Settings shows feed health');
+  await page.fill('#course-url', 'https://www.udemy.com/user/example/');
+  await page.dispatchEvent('#course-url', 'change');
+  await page.click('#open-changelog');
+  await page.waitForSelector('#sheet-body .md h3', { timeout: 5000 }).catch(() => {});
+  check(await page.locator('#sheet-body .md h3').count() > 0, "What's new renders CHANGELOG.md");
+  await page.click('#sheet-close');
+  await page.click('#settings-btn');
+  await page.click('#open-roadmap');
+  await page.waitForSelector('#sheet-body .md li.todo', { timeout: 5000 }).catch(() => {});
+  check(await page.locator('#sheet-body .md li.todo').count() > 0, 'Roadmap renders with checkboxes');
+  await page.screenshot({ path: 'shots/roadmap.png' });
   await page.click('#sheet-close');
 
+  // Udemy link shows on Learn; lessons link to a YouTube search.
+  await page.click('nav button[data-view=learn]');
+  check((await page.getAttribute('#course-link a', 'href')) === 'https://www.udemy.com/user/example/', 'Udemy link shows on Learn');
+  await page.click('.lesson-row >> nth=1');
+  check((await page.getAttribute('#sheet-body .links a >> nth=0', 'href')).startsWith('https://www.youtube.com/results?search_query='), 'Lesson links to a YouTube search');
+  await page.click('#sheet-close');
+
+  // XP: earned from the activity above, shown as a rank card, with a profile sheet.
   await page.click('nav button[data-view=brief]');
+  const xp = await page.evaluate(() => JSON.parse(localStorage.getItem('sp_xp')));
+  check(xp && xp.total > 0 && xp.bySkill && Object.keys(xp.bySkill).length > 0, 'XP is earned and split by skill');
+  check((await page.textContent('#rank-card')).includes('Lv'), 'Brief shows the analyst rank card');
+  await page.click('#rank-card');
+  check((await page.textContent('#sheet-title')) === 'Analyst profile' && await page.locator('.skill').count() === 5, 'Analyst profile shows 5 skills');
+  await page.screenshot({ path: 'shots/profile.png' });
+  await page.click('#sheet-close');
+  // The same question twice in a day earns XP only once.
+  const twice = await page.evaluate(() => { const seen = getXP().today.q; const q = ALL_Q().find(x => !seen.includes(x.qid)); const a = recordAnswer(q, true), b = recordAnswer(q, true); return [a, b]; });
+  check(twice[0] === 10 && twice[1] === 0, 'A question earns XP once per day');
+
+  // Refresh: spins, then reports instead of silently re-rendering.
+  await page.click('#refresh-btn');
+  await page.waitForTimeout(900);
+  check(/new stor|Up to date|Offline/.test(await page.textContent('#toast')), 'Refresh reports what it found');
+
   check(await page.textContent('#st-streak') === '1', 'Streak is 1 after activity');
   check(!(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth)), 'No horizontal scroll');
   check(errors.length === 0, 'No console/page errors' + (errors.length ? ': ' + errors.join(' | ') : ''));

@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-13T01:02:11Z",
+ "generated": "2026-10-13T09:24:46Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -16,19 +16,25 @@
   {
    "name": "ACSC (via Google News)",
    "ok": true,
-   "count": 15,
+   "count": 2,
+   "error": null
+  },
+  {
+   "name": "ASD / ACSC in the news",
+   "ok": true,
+   "count": 3,
    "error": null
   },
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 6,
+   "count": 5,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 2,
+   "count": 5,
    "error": null
   },
   {
@@ -40,7 +46,7 @@
   {
    "name": "iTnews Security",
    "ok": true,
-   "count": 5,
+   "count": 0,
    "error": null
   },
   {
@@ -90,9 +96,175 @@
    "ok": true,
    "count": 15,
    "error": null
+  },
+  {
+   "name": "FIRST EPSS",
+   "ok": true,
+   "count": 17,
+   "error": null
   }
  ],
  "items": [
+  {
+   "id": "339f93492eef",
+   "title": "Two Critical MarkLogic Flaws Could Give Delegated Managers Persistent Admin Control",
+   "link": "https://thehackernews.com/2026/10/two-critical-marklogic-flaws-could-give.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-13T08:44:01Z",
+   "summary": "Two of 31 newly disclosed flaws in Progress Software's MarkLogic Server database could let an account given only some management privileges take administrator control of the server, the company says. Progress published all 31 on October 12 and scored five of them critical. Fixes have been…",
+   "score": 3,
+   "tags": [
+    "SaaS / cloud"
+   ],
+   "why": [
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "e7916ed60e97",
+   "title": "GitLab Patches CVSS 10.0 Flaw That Could Let Unauthenticated Users Run Server Code",
+   "link": "https://thehackernews.com/2026/10/gitlab-patches-cvss-100-flaw-that-could.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-13T08:43:37Z",
+   "summary": "GitLab has released patches for a maximum-severity security flaw impacting its Community Edition (CE) and Enterprise Edition (EE) software that could result in arbitrary code execution. \"GitLab has remediated an issue that, under certain conditions, could have allowed an unauthenticated user to…",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "1608d9df78e7",
+   "title": "Refrigeration Controller Hack Spoils Food Across European Supermarkets",
+   "link": "https://www.securityweek.com/refrigeration-controller-hack-spoils-food-across-european-supermarkets/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-13T08:28:51Z",
+   "summary": "A cyberattack targeted refrigeration controllers, setting refrigerators and freezers across hundreds of supermarkets to defrost. The post Refrigeration Controller Hack Spoils Food Across European Supermarkets appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "035b1023e28d",
+   "title": "PIPC chief Song Kyung-hee toughens Korea data-breach sanctions, targets AI era - CHOSUNBIZ",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQU3hIWUtSZFBnRUt4aENMUjg4LXpObHBGRkprc1VCZGZZRnRFWmt6c3d4OUwwZVRsS2o0S1VsQ0JoRTJQXzEyT3hETnpvTUFuQ01zV0dndmhsUW54aFBjV1VCQWJlcHRsTVpIOF9WNHplSlZ0M0ZQYktMRDl6NW1yWkx4UTBMUmREcXRLZURB0gGOAUFVX3lxTFBTeEhZS1JkUGdFS3hoQ0xSODgtek5scEZGSmtzVUJkZllGdEVaa3pzd3g5TDBlVGxLajRLVWxDQmhFMlBfMTJPeEROem9NQW5DTXNXR2d2aGxRbnhoUGNXVUJBYmVwdGxNWkg4X1Y0emVKVnQzRlBiS0xEOXo1bXJaTHhRMExSZERxdEtlREE?oc=5",
+   "source": "Chosunbiz",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-13T07:28:00Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "032ab673110e",
+   "title": "‘Hands off': CJP's Saurav Das, Ashutosh Ranka breach Jantar Mantar, detained | WATCH | India News",
+   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOdVdxdEVMdlQzTW9DRXktNjNiZktrNGhpMVNJZzBNU3NxNHVXeUR2MC1QbVJhYWRwbUhUUDQ2YmMtV2d1eF9zVkJHRjlicmtoTi1XVmRndERYWHZlczBERThYOHlFU1ZKQ1JGYlVucHhyRjM5eUNyNWpOdjNZTzdvTTFPVVVXbVl5eno0elhPTlRWSTRybll6VlV2dXFTYTdmYzh1RW5mRDd1elkxeDlKT1QwNElmVzg1VWxkdkRMcWxXYVVqVDA3NWhUbzhCa2xfeEtDUjkyNUFKNjNXOUxSNGxlMNIB6AFBVV95cUxPVjVzTFg4QUJhZklpUHAtX0xEV3NibjgxSWs1MGNUMENXSWZ1RHlMdUpyR1lVUmp2NWlQWnlKMmcta2l2QVhZcmFudXNvdGJRU09fUTNHLTl1aDdmY3FSdXdGS1NNTGd3aEZCMnZNaWtFcXBkN1gtUnJZaFNnemlyQXlQUmRsYmdieEYtamdmRG1DRk53SnZSb2hBdlJReEMxckxZZkhuLTR4QnJHRlZiNmk4N0dMN0hYVUtJRXBfaXlVcnJoalF6NFA3YkVraUVTQ3JHYzkxWDhBMmNyTVV3Q1lUTnJwWXdo?oc=5",
+   "source": "Hindustan Times",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-13T07:03:44Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "585594f86cc8",
+   "title": "Low-Cost Android Phones Ship With Preinstalled Malware That Turns Them Into Residential Proxies",
+   "link": "https://thehackernews.com/2026/10/low-cost-android-phones-ship-with.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-13T06:00:11Z",
+   "summary": "Low-cost Android smartphones have been shipped with malicious software baked into the device firmware, allowing bad actors to covertly install apps, conduct ad fraud, and turn devices into residential proxies. The activity, which targets Android devices built on MediaTek platforms across several…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "ef39b2419395",
+   "title": "Cisco report flags organisational friction as a key barrier to AI-driven cyber defence in Australia",
+   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPcTE4cXZWUDRtVHV5NnBvNi01N3Q3OU0tb21fbUp1SUdBX29xUGR1NXpsRzBFaEVtYVlvZjlGSGtUZV84eVpDU0FOMVBZc2p3Q2lNYl9CSWU0ZHg3ajhaX1JfNENZalVxbUpTbVVyWFd5Yno0N2szaVBLTzU3dkVkeWp5cnEzV21BNWRVODdQRUR4bV9SanBfSkJjWFpZckZqWDFCaEdBU2tQOU1zbkRzakVxX08xQzBxUUxFZkw5b1lzOVVkcmo1SnlFS3lycHAybUt2Mi1LVGh0N1VGeE9HVA?oc=5",
+   "source": "Australian Cyber Security Magazine",
+   "feed": "AU breach news",
+   "region": "AU",
+   "published": "2026-10-13T04:39:35Z",
+   "summary": "",
+   "score": 12,
+   "tags": [
+    "Australia",
+    "Edge devices"
+   ],
+   "why": [
+    "Australia",
+    "Edge devices"
+   ]
+  },
+  {
+   "id": "7dd6d3ef0e59",
+   "title": "ISC Stormcast For Tuesday, October 13th, 2026 https://isc.sans.edu/podcastdetail/10134, (Tue, Oct 13th)",
+   "link": "https://isc.sans.edu/diary/rss/33418",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-10-13T02:00:02Z",
+   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "dcb3f0d69e8b",
+   "title": "Icon falls victim to data breach",
+   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5ZU2YtMGFtMWE2VGxNYlpFYmt1VEk0Zm55Zl9xaVdGQ1l2Ym45c3BQYWMzWExVQ1Z4S0d3Y2pUcTNBbkxITllOSnFoUjZQaEJBLThPNEgtb3R4NWxVYnpvZWlpS0ltMGVk?oc=5",
+   "source": "Australian Journal of Pharmacy",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-13T01:50:14Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "7dd50f3e50e9",
+   "title": "One in 10 Victorian auctions in doubt as tough new laws start",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQV1pzVTZtbkxLc0xDejhndDRVdFc2c1hVbUJBZlFFWVVObGQtZXJkbXAtU0doZEJyU0lXcUljVl9nRkN0QWtacE5pbDY2Y0ZxVzdtb2NsdUhIRFp1OWJsUW5RY2NxZER1NUlUWjNPVWQ3dVBTTzZnQXo3ZlVGWGxWcWs2YlBQcjNUbHRoMGhEMEx0cmRxOXFoWUE4dXlIZw?oc=5",
+   "source": "Real Estate",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-13T00:59:40Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "SaaS / cloud"
+   ],
+   "why": [
+    "SaaS / cloud"
+   ]
+  },
   {
    "id": "284537ac6899",
    "title": "Govt agencies taking three months to report data breaches",
@@ -105,48 +277,25 @@
    "score": 6,
    "tags": [
     "Data breach"
+   ],
+   "why": [
+    "Data breach"
    ]
   },
   {
-   "id": "7dd50f3e50e9",
-   "title": "One in 10 Victorian auctions in doubt as tough new laws start",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQV1pzVTZtbkxLc0xDejhndDRVdFc2c1hVbUJBZlFFWVVObGQtZXJkbXAtU0doZEJyU0lXcUljVl9nRkN0QWtacE5pbDY2Y0ZxVzdtb2NsdUhIRFp1OWJsUW5RY2NxZER1NUlUWjNPVWQ3dVBTTzZnQXo3ZlVGWGxWcWs2YlBQcjNUbHRoMGhEMEx0cmRxOXFoWUE4dXlIZw?oc=5",
-   "source": "Real Estate",
+   "id": "6fda9a3fdd58",
+   "title": "Fake AUSTRAC officials, WhatsApp scams: Agencies targeted as AML/CTF enforcement ramps up",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNN09LdlZTODNZbXJITWZwYlFjUXU5VkN6VjRLODl6RkNYZUdLNnUzM0M3aC1uYzlMSGZVSWZPQmdPRmhxdDNUb09zOXpGQTMyVHRhYkg3bWNVZjU4WFFmSDJ5LXVkUVNoNGdzRzgzaGtSOVVJWG5mSU1OelljQlllaWtIbmVwUjJCWlN5NUNEM3lJdkxOUU5fTTBaLXZUemhYSTRyV0hPSnhPYWFxZUgwOHI1dXBjZ3ZwTGhNWThyUTJpa1VrQ0Zv?oc=5",
+   "source": "Cyber Daily",
    "feed": "Real estate cyber news",
    "region": "Global",
-   "published": "2026-10-12T22:10:37Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "8adbc34f8676",
-   "title": "Report Cyber",
-   "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBUR0dYeWdsdFVBM251WGo1aktxeTlCbU5zSFRnbi1oLWxZWnQwTk5SVzByWlA4WWszR3puM0E2NTlrbFJKSGc?oc=5",
-   "source": "Australian Cyber Security",
-   "feed": "ACSC (via Google News)",
-   "region": "AU",
-   "published": "2026-10-12T22:03:01Z",
+   "published": "2026-10-13T00:06:50Z",
    "summary": "",
    "score": 5,
    "tags": [
-    "Australia"
-   ]
-  },
-  {
-   "id": "6512ad6a9c13",
-   "title": "Maximum-Severity SSRF Flaw in SonicWall SMA Devices Under Attack",
-   "link": "https://www.darkreading.com/vulnerabilities-threats/max-severity-ssrf-flaw-sonicwall-sma-devices-under-attack",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-12T21:42:42Z",
-   "summary": "Attackers are currently targeting a critical vulnerability in SMA 1000 appliances, putting SonicWall customers in a familiar yet unenviable position.",
-   "score": 4,
-   "tags": [
-    "Edge devices",
+    "Vulnerability"
+   ],
+   "why": [
     "Vulnerability"
    ]
   },
@@ -161,6 +310,9 @@
    "summary": "",
    "score": 6,
    "tags": [
+    "Data breach"
+   ],
+   "why": [
     "Data breach"
    ]
   },
@@ -177,6 +329,10 @@
    "tags": [
     "Data breach",
     "Identity"
+   ],
+   "why": [
+    "Data breach",
+    "Identity"
    ]
   },
   {
@@ -189,7 +345,26 @@
    "published": "2026-10-12T20:13:52Z",
    "summary": "Norway's Data Protection Authority (Datatilsynet) has fined Microsoft-owned advertising company Xandr NOK 92 million ($9.6M) for unlawfully processing and sharing sensitive data belonging to Grindr users in the country. [...]",
    "score": 0,
-   "tags": []
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "2bf942dfdae5",
+   "title": "The new phishing trick aimed at the AI reading your inbox",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOVEk0QS1obE55clJyUnp4N2xfT3o2N1lLT0lWZ01OcFB1aEM3WlREVFk4dFhTLWtjcWdIZjg1ZUg2MFA4SHBVdkR3TUtDUHJiRDFvcTg3TldmcGhTNmkxOEJPd2N3ZjduQU1zaHo5VVJON2E4SDQzUEMyb3Vpc3U5aU1tX2I0cDJzajRtcW5XUnItYTh2?oc=5",
+   "source": "Dynamic Business",
+   "feed": "ASD / ACSC in the news",
+   "region": "AU",
+   "published": "2026-10-12T20:02:06Z",
+   "summary": "",
+   "score": 9,
+   "tags": [
+    "Phishing",
+    "Australia"
+   ],
+   "why": [
+    "Phishing"
+   ]
   },
   {
    "id": "4dcee3405aba",
@@ -202,6 +377,9 @@
    "summary": "Edward Dubrovsky, a longtime cybersecurity executive, was arrested and charged in Pennsylvania last week under conspiracy to extort money.",
    "score": 4,
    "tags": [
+    "Ransomware"
+   ],
+   "why": [
     "Ransomware"
    ]
   },
@@ -217,6 +395,9 @@
    "score": 2,
    "tags": [
     "SaaS / cloud"
+   ],
+   "why": [
+    "SaaS / cloud"
    ]
   },
   {
@@ -231,6 +412,9 @@
    "score": 4,
    "tags": [
     "Data breach"
+   ],
+   "why": [
+    "Data breach"
    ]
   },
   {
@@ -240,10 +424,13 @@
    "source": "HousingWire",
    "feed": "Real estate cyber news",
    "region": "Global",
-   "published": "2026-10-12T18:31:19Z",
+   "published": "2026-10-12T18:28:08Z",
    "summary": "",
    "score": 10,
    "tags": [
+    "Real estate"
+   ],
+   "why": [
     "Real estate"
    ]
   },
@@ -258,6 +445,9 @@
    "summary": "The proliferation of enterprise apps and the centrality of cloud identity providers requires an identity security rethink.",
    "score": 3,
    "tags": [
+    "Microsoft 365"
+   ],
+   "why": [
     "Microsoft 365"
    ]
   },
@@ -274,6 +464,10 @@
    "tags": [
     "Ransomware",
     "Data breach"
+   ],
+   "why": [
+    "Ransomware",
+    "Data breach"
    ]
   },
   {
@@ -286,7 +480,14 @@
    "published": "2026-10-12T16:27:23Z",
    "summary": "Ledger has confirmed that some of its devices distributed through Southeast Asian reseller CryptoBilis were compromised with a hardware implant that drained users' cryptocurrency wallets. [...]",
    "score": 0,
-   "tags": []
+   "tags": [],
+   "why": [],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/ledger-finds-unauthorized-hardware.html"
+    }
+   ]
   },
   {
    "id": "782eca2d8fc0",
@@ -300,20 +501,19 @@
    "score": 6,
    "tags": [
     "Data breach"
-   ]
-  },
-  {
-   "id": "57a4584f81b9",
-   "title": "Web hardening",
-   "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBldWViMEt0UW5JM0h3anl3ZEV5R1lNUG9HUWlmNEcya0dEUkdSaHByXzA4Q2dMSEtJUnpscGJmMTdhWTVHdmhRM05odTNIYlk?oc=5",
-   "source": "Australian Cyber Security",
-   "feed": "ACSC (via Google News)",
-   "region": "AU",
-   "published": "2026-10-12T15:27:33Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "Australia"
+   ],
+   "why": [
+    "Data breach"
+   ],
+   "also": [
+    {
+     "source": "BBC",
+     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5BVzFodUpGU2dHVGdvMzFqTTdZNmVsQXctREZkMVg0dmNPZXJZaDVidmlna19nM25WWW5BSU52TlJ3TWtTNHNOczNEZEhFc1dLNDdpMEZVV1JDYlk?oc=5"
+    },
+    {
+     "source": "Daily Mirror",
+     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPY205MnNsMTlpQUIzemxhWEZMVldiX0hzdTF1Y1p1QUpnZW4wT2QwclVNS0RMUk1taHhHZjlQai04YjNsdnJpVDZwbl9mU3FWMUNJRkdSWTlfME4xdTBGTkNYVk16aE16TENoTUVFVHh3cHN2Y3p3Zl9FRXk4QjRLRk82YWdOWU93aTNUVS1vSzVkcHBmcndFc0RKONIBoAFBVV95cUxPcmMzV2ZUclRvZVdBMWhSdFEtRk5GdDJiejBzQ2VnRUlvTmNicGxNUWRvek5pY0t4aE83YU5NSGItdGlheFYtdVZBcHdVMkQwSG1wdGIyY3ZyeUd3YnRxM3JMNFdPQnM1Y2xFYlJsZlUyb2xXSzJ3M2RLdEM0SVNncGptbXlMTkpyYi1jcV9qcldaRUVxQ1JsZVp2WG9TUDdo?oc=5"
+    }
    ]
   },
   {
@@ -328,6 +528,15 @@
    "score": 4,
    "tags": [
     "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/attackers-heat-french-supermarket.html"
+    }
    ]
   },
   {
@@ -340,7 +549,8 @@
    "published": "2026-10-12T15:23:34Z",
    "summary": "Attackers remotely defrosted refrigerators at multiple French supermarket chains overnight in a cyberattack that reportedly targeted Danfoss refrigeration controllers. [...]",
    "score": 0,
-   "tags": []
+   "tags": [],
+   "why": []
   },
   {
    "id": "6e33620606a0",
@@ -355,20 +565,10 @@
    "tags": [
     "Actively exploited",
     "Ransomware"
-   ]
-  },
-  {
-   "id": "9f4e73d3a33f",
-   "title": "AI minister warns it is 'likely' UK's cyber defences will be breached",
-   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5BVzFodUpGU2dHVGdvMzFqTTdZNmVsQXctREZkMVg0dmNPZXJZaDVidmlna19nM25WWW5BSU52TlJ3TWtTNHNOczNEZEhFc1dLNDdpMEZVV1JDYlk?oc=5",
-   "source": "BBC",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-12T15:03:42Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
+   ],
+   "why": [
+    "Actively exploited",
+    "Ransomware"
    ]
   },
   {
@@ -381,21 +581,8 @@
    "published": "2026-10-12T14:25:00Z",
    "summary": "The all-stock deal brings Elisity’s least-privilege access technology into IonQ’s security portfolio. The post IonQ to Acquire Zero Trust Firm Elisity for Up to $1.3 Billion appeared first on SecurityWeek .",
    "score": 0,
-   "tags": []
-  },
-  {
-   "id": "cdf115e88033",
-   "title": "AI minister warns it's 'likely, if not inevitable' UK cyber defences will be breached",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPY205MnNsMTlpQUIzemxhWEZMVldiX0hzdTF1Y1p1QUpnZW4wT2QwclVNS0RMUk1taHhHZjlQai04YjNsdnJpVDZwbl9mU3FWMUNJRkdSWTlfME4xdTBGTkNYVk16aE16TENoTUVFVHh3cHN2Y3p3Zl9FRXk4QjRLRk82YWdOWU93aTNUVS1vSzVkcHBmcndFc0RKONIBoAFBVV95cUxPcmMzV2ZUclRvZVdBMWhSdFEtRk5GdDJiejBzQ2VnRUlvTmNicGxNUWRvek5pY0t4aE83YU5NSGItdGlheFYtdVZBcHdVMkQwSG1wdGIyY3ZyeUd3YnRxM3JMNFdPQnM1Y2xFYlJsZlUyb2xXSzJ3M2RLdEM0SVNncGptbXlMTkpyYi1jcV9qcldaRUVxQ1JsZVp2WG9TUDdo?oc=5",
-   "source": "Daily Mirror",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-12T14:20:00Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ]
+   "tags": [],
+   "why": []
   },
   {
    "id": "7a7fbf93e11c",
@@ -407,7 +594,8 @@
    "published": "2026-10-12T14:00:10Z",
    "summary": "A new Windows malware loader called AvisLoader uses encrypted peer-to-peer communications to make command-and-control infrastructure harder to disrupt. Varonis researchers explain how the malware uses ClickFix delivery, shortcut-based persistence, and remote command execution capabilities. [...]",
    "score": 0,
-   "tags": []
+   "tags": [],
+   "why": []
   },
   {
    "id": "8bf2f9414a62",
@@ -419,7 +607,8 @@
    "published": "2026-10-12T13:51:07Z",
    "summary": "Retail giant Ahold Delhaize, one of the world's largest food retail chains, confirmed today that it had to take some systems offline in response to a \"cybersecurity incident\" affecting its network. [...]",
    "score": 0,
-   "tags": []
+   "tags": [],
+   "why": []
   },
   {
    "id": "5ffff8d173ed",
@@ -434,6 +623,17 @@
    "tags": [
     "Actively exploited",
     "Vulnerability"
+   ],
+   "why": [
+    "Actively exploited",
+    "Vulnerability"
+   ],
+   "epss": 0.0031,
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/attackers-exploit-cvss-100-bricksforge.html"
+    }
    ]
   },
   {
@@ -448,6 +648,9 @@
    "score": 2,
    "tags": [
     "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
    ]
   },
   {
@@ -460,7 +663,8 @@
    "published": "2026-10-12T12:30:58Z",
    "summary": "Fahmida Y Rashid will keep the momentum going as she leads Dark Reading.",
    "score": 0,
-   "tags": []
+   "tags": [],
+   "why": []
   },
   {
    "id": "89310c4a866b",
@@ -472,7 +676,8 @@
    "published": "2026-10-12T11:58:39Z",
    "summary": "The outage hit the main Ubuntu and Canonical websites, including the Ubuntu blog and developer portal. The post Canonical Websites Disrupted in Second DDoS Attack This Year appeared first on SecurityWeek .",
    "score": 0,
-   "tags": []
+   "tags": [],
+   "why": []
   },
   {
    "id": "fb25f61ae291",
@@ -486,6 +691,9 @@
    "score": 1,
    "tags": [
     "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
    ]
   },
   {
@@ -498,7 +706,8 @@
    "published": "2026-10-12T11:55:00Z",
    "summary": "The personal AI agents rollout is going about as smoothly as expected: Amazon now blocks Meta's Muse because it doesn't identify itself as a bot while browsing; Instinct keeps raising privacy concerns; and the horror stories from pretty much every personal AI agent keep piling up. Regardless, the…",
    "score": 0,
-   "tags": []
+   "tags": [],
+   "why": []
   },
   {
    "id": "876fc8d20364",
@@ -510,19 +719,8 @@
    "published": "2026-10-12T11:24:50Z",
    "summary": "Oleg Korniev was a leader of YMCO, a sophisticated network of money mules that helped hackers move funds outside the US. The post Mastermind of 15,000-Mule Cybercrime Laundering Network Pleads Guilty in US appeared first on SecurityWeek .",
    "score": 0,
-   "tags": []
-  },
-  {
-   "id": "7be825a80966",
-   "title": "Ledger Finds Unauthorized Hardware Implant in CryptoBilis-Sold Wallet Amid Fund Theft Reports",
-   "link": "https://thehackernews.com/2026/10/ledger-finds-unauthorized-hardware.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-12T11:21:48Z",
-   "summary": "Cryptocurrency hardware maker Ledger has temporarily paused sales of its products via CryptoBilis following reports of stolen funds linked to devices sold by the reseller. On Friday, the company said it was investigating reports of loss of funds from users in Southeast Asia who had purchased…",
-   "score": 0,
-   "tags": []
+   "tags": [],
+   "why": []
   },
   {
    "id": "34f9e6caf0ef",
@@ -535,6 +733,9 @@
    "summary": "Hackers stole patients’ personal information, including names, addresses, email addresses, dates of birth, and phone numbers. The post iRhythm Data Breach Impacts at Least 360,000 People appeared first on SecurityWeek .",
    "score": 4,
    "tags": [
+    "Data breach"
+   ],
+   "why": [
     "Data breach"
    ]
   },
@@ -551,6 +752,21 @@
    "tags": [
     "Edge devices",
     "Vulnerability"
+   ],
+   "why": [
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "epss": 0.0048,
+   "also": [
+    {
+     "source": "Dark Reading",
+     "url": "https://www.darkreading.com/vulnerabilities-threats/max-severity-ssrf-flaw-sonicwall-sma-devices-under-attack"
+    },
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/critical-sonicwall-vulnerability-exploited-days-after-disclosure/"
+    }
    ]
   },
   {
@@ -565,50 +781,9 @@
    "score": 4,
    "tags": [
     "Ransomware"
-   ]
-  },
-  {
-   "id": "59ee50a25917",
-   "title": "Rubrik, Inc. Security Cloud - Private and Cloud Data Management v2.4.12-p3-81 and v9.2.3-p3-29515",
-   "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNMFN3NTUtQU0yX1duQWhib3U3dHk4SWstdmJLZEp4VU5Db2VrRVo5cW53NjVkaTN0LVJneWVmYzJQYUxIZ3NQLS1oeGw4NnpVU0hnNHRZS1YwSmZEUWx0dEpUNHpaWl9NQzFkU3RnNjBPMTQ2dmJDVlQxOXJERU96WlBfYXlPUkFlLUpqTHpXY3J0bWJ0TDVIMWR0OUxBbTNXdjNCUDJaLVVJRnh2RWlscEdLS1VnYWhHM0MzbExQNlpucV9DUkJxZ0hUYUNLcjk4TlMtZjE4eVc1LUdUNXQ3Q1k3RF9kM0lKNEdSem52eVhnOE1RbEQxZw?oc=5",
-   "source": "Australian Cyber Security",
-   "feed": "ACSC (via Google News)",
-   "region": "AU",
-   "published": "2026-10-12T09:14:22Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "Australia"
-   ]
-  },
-  {
-   "id": "815b7a94646f",
-   "title": "Attackers Exploit CVSS 10.0 Bricksforge WordPress Flaw Enabling Unauthenticated RCE",
-   "link": "https://thehackernews.com/2026/10/attackers-exploit-cvss-100-bricksforge.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-12T09:02:14Z",
-   "summary": "A maximum-severity security flaw impacting the Bricksforge plugin for WordPress has come under active exploitation in the wild, according to Patchstack. The critical vulnerability in question is CVE-2026-85097 (CVSS score: 10.0), which allows unauthenticated attackers to upload and execute…",
-   "score": 6,
-   "tags": [
-    "Actively exploited",
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "83b16840c468",
-   "title": "Critical SonicWall Vulnerability Exploited Days After Disclosure",
-   "link": "https://www.securityweek.com/critical-sonicwall-vulnerability-exploited-days-after-disclosure/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-12T08:36:01Z",
-   "summary": "CVE-2026-102255 is a pre-authenticated SSRF flaw that could allow attackers to perform unauthorized operations. The post Critical SonicWall Vulnerability Exploited Days After Disclosure appeared first on SecurityWeek .",
-   "score": 5,
-   "tags": [
-    "Edge devices",
-    "Vulnerability"
+   ],
+   "why": [
+    "Ransomware"
    ]
   },
   {
@@ -621,7 +796,8 @@
    "published": "2026-10-12T07:53:28Z",
    "summary": "Beginning February 2027, all newly issued certificates will have a 64-day validity period by default. The post Let’s Encrypt Cuts Default Certificate Validity to 64 Days Ahead of 45-Day Switch appeared first on SecurityWeek .",
    "score": 0,
-   "tags": []
+   "tags": [],
+   "why": []
   },
   {
    "id": "d261b6b9e669",
@@ -635,6 +811,9 @@
    "score": 1,
    "tags": [
     "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
    ]
   },
   {
@@ -647,20 +826,27 @@
    "published": "2026-10-12T02:00:03Z",
    "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
    "score": 1,
-   "tags": []
+   "tags": [],
+   "why": []
   },
   {
-   "id": "c2ecc899a5fd",
-   "title": "Personal information | CGA",
-   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBJOWppNmMzY3pBM0xGQlJGQWUxeGxEWFAxV191VFdxRjRjTlExb29ncVpuOFI4emRyWDJPZUZOTGQ4cHZvQjV3TVFnS2dRZFNFWXJDS3R1UUY0U21YT0NpbHlVMEs?oc=5",
-   "source": "Australian Cyber Security",
-   "feed": "ACSC (via Google News)",
+   "id": "1ec74a9a3546",
+   "title": "Act Now! Aussie cyber agency updates Citrix NetScaler critical alert to include brand new vulnerability",
+   "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOb0ZBUU1JU2hGVjMxNkdBQWVwM3BhLVozR0dvSFNtb0lMaDJHYXZ3RW1IN2hrdjgyUnJESVF3eEpzYXB6NGk3dFpEc1U4YkdFYS1SS1E0Tm9KWl9oNWExbzNWajdxeDNuRVRudnBMc18ya3NvRGg1d0ZLWFV1ZzBQYllnMGYzZmVtTGhlSDVJS0t5a2tBcnNHSWFGcWlLYzJPMzQ4RXE1SVgzU3ZnN1pHTkw1emRwX2VOSEY4b3hGTGphdlJHbHh0b3hLcGxFeGFqUVFGZmVYSkxVbzhYTEZ4bG9wU01lUFFJZVU4Q05n?oc=5",
+   "source": "Cyber Daily",
+   "feed": "ASD / ACSC in the news",
    "region": "AU",
-   "published": "2026-10-11T23:10:26Z",
+   "published": "2026-10-12T00:58:00Z",
    "summary": "",
-   "score": 5,
+   "score": 10,
    "tags": [
+    "Edge devices",
+    "Vulnerability",
     "Australia"
+   ],
+   "why": [
+    "Edge devices",
+    "Vulnerability"
    ]
   },
   {
@@ -675,6 +861,9 @@
    "score": 3,
    "tags": [
     "Data breach"
+   ],
+   "why": [
+    "Data breach"
    ]
   },
   {
@@ -687,7 +876,8 @@
    "published": "2026-10-11T04:24:34Z",
    "summary": "Cybersecurity researchers have disclosed details of a previously unseen variant of the DarkSword iOS exploit kit called P7 DarkSword. \"Compared with the variants we usually observe, P7 reduces its on-device footprint, adds on-device keychain and crypto-wallet theft, and adds two way C2…",
    "score": 0,
-   "tags": []
+   "tags": [],
+   "why": []
   },
   {
    "id": "5d6a58b64149",
@@ -701,6 +891,9 @@
    "score": 4,
    "tags": [
     "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
    ]
   },
   {
@@ -713,7 +906,8 @@
    "published": "2026-10-10T14:16:17Z",
    "summary": "The cyberattacks that shook the South Korean financial sector earlier this month were launched by a Chinese hacker using the ARTEX AI penetration testing suite and Claude agents. [...]",
    "score": 0,
-   "tags": []
+   "tags": [],
+   "why": []
   },
   {
    "id": "bc479026f826",
@@ -727,20 +921,9 @@
    "score": 3,
    "tags": [
     "Data breach"
-   ]
-  },
-  {
-   "id": "4f95732c4969",
-   "title": "The Third-Party Agent Problem: Why Security Built for AI You Chose Misses the Agents You Didn't",
-   "link": "https://thehackernews.com/2026/10/the-third-party-agent-problem-why.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-10T11:00:00Z",
-   "summary": "In environments studied for the 2026 State of Agent Security Report, roughly 1,280 third-party products now embed AI. About 282 of them sit behind single sign-on. The other thousand are invisible to identity infrastructure by default, not because anyone hid them, but because an identity stack can…",
-   "score": 3,
-   "tags": [
-    "SaaS / cloud"
+   ],
+   "why": [
+    "Data breach"
    ]
   },
   {
@@ -756,6 +939,27 @@
    "tags": [
     "Ransomware",
     "Identity"
+   ],
+   "why": [
+    "Ransomware",
+    "Identity"
+   ]
+  },
+  {
+   "id": "4f95732c4969",
+   "title": "The Third-Party Agent Problem: Why Security Built for AI You Chose Misses the Agents You Didn't",
+   "link": "https://thehackernews.com/2026/10/the-third-party-agent-problem-why.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-10T11:00:00Z",
+   "summary": "In environments studied for the 2026 State of Agent Security Report, roughly 1,280 third-party products now embed AI. About 282 of them sit behind single sign-on. The other thousand are invisible to identity infrastructure by default, not because anyone hid them, but because an identity stack can…",
+   "score": 3,
+   "tags": [
+    "SaaS / cloud"
+   ],
+   "why": [
+    "SaaS / cloud"
    ]
   },
   {
@@ -770,6 +974,9 @@
    "score": 3,
    "tags": [
     "SaaS / cloud"
+   ],
+   "why": [
+    "SaaS / cloud"
    ]
   },
   {
@@ -782,7 +989,8 @@
    "published": "2026-10-10T09:11:34Z",
    "summary": "The Traffic Light Protocol (TLP)[ 1 ], which is now in its second incarnation, is a wonderful standard that enables one to easily communicate whether information may be shared further (and if so, how far).",
    "score": 1,
-   "tags": []
+   "tags": [],
+   "why": []
   },
   {
    "id": "7f5dd566b2dd",
@@ -797,6 +1005,10 @@
    "tags": [
     "Ransomware",
     "Vulnerability"
+   ],
+   "why": [
+    "Ransomware",
+    "Vulnerability"
    ]
   },
   {
@@ -809,7 +1021,8 @@
    "published": "2026-10-09T21:07:46Z",
    "summary": "The ChatGPT maker said the researchers \"violated clear policies on handling sensitive information.” The post OpenAI Fires 3 Safety Researchers in Dispute Over AI Risks appeared first on SecurityWeek .",
    "score": 0,
-   "tags": []
+   "tags": [],
+   "why": []
   },
   {
    "id": "edcc711b1e7a",
@@ -824,6 +1037,10 @@
    "tags": [
     "Data breach",
     "SaaS / cloud"
+   ],
+   "why": [
+    "Data breach",
+    "SaaS / cloud"
    ]
   },
   {
@@ -836,7 +1053,8 @@
    "published": "2026-10-09T20:31:37Z",
    "summary": "Hackers are abusing legitimate Bing search-result redirects as click URLs in Google search ads to direct users to fake Claude installers that deliver ClickFix attacks. [...]",
    "score": 0,
-   "tags": []
+   "tags": [],
+   "why": []
   },
   {
    "id": "7a7f58a87f0e",
@@ -848,7 +1066,8 @@
    "published": "2026-10-09T19:26:26Z",
    "summary": "Welcome to another gangbuster year for strategic M&A activity in cyber, with 117 deals announced in the latest quarter. What's different: Many of the buyers are not your typical cybersecurity firms.",
    "score": 0,
-   "tags": []
+   "tags": [],
+   "why": []
   },
   {
    "id": "fbb467666674",
@@ -861,6 +1080,10 @@
    "summary": "Cybersecurity researchers have disclosed details of an ongoing credential-theft campaign that has compromised two high-profile open-source maintainer accounts to push a malicious workflow into over 340 repositories. \"Using the account of Takashi Kitao, author of the 18,400-star game engine pyxel,…",
    "score": 4,
    "tags": [
+    "Identity",
+    "Vulnerability"
+   ],
+   "why": [
     "Identity",
     "Vulnerability"
    ]
@@ -878,6 +1101,10 @@
    "tags": [
     "Ransomware",
     "Data breach"
+   ],
+   "why": [
+    "Ransomware",
+    "Data breach"
    ]
   },
   {
@@ -891,6 +1118,9 @@
    "summary": "In this video conversation, Dark Reading editors discuss some of the news they didn't get a chance to cover, from the arrest of a suspected ShinyHunters operative to the compromise of a Pentagon-run data center.",
    "score": 4,
    "tags": [
+    "Ransomware"
+   ],
+   "why": [
     "Ransomware"
    ]
   },
@@ -907,7 +1137,18 @@
    "tags": [
     "Vulnerability",
     "SaaS / cloud"
-   ]
+   ],
+   "why": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/attackers-exploit-ahsaycbs-flaws-to.html"
+    }
+   ],
+   "epss": 0.0038
   },
   {
    "id": "3a2f3756dccc",
@@ -919,7 +1160,8 @@
    "published": "2026-10-09T16:25:05Z",
    "summary": "Those closest to executives must match their security postures because the weakest link in a family can become the entry point for attacks.",
    "score": 0,
-   "tags": []
+   "tags": [],
+   "why": []
   },
   {
    "id": "55864660cd86",
@@ -931,7 +1173,8 @@
    "published": "2026-10-09T13:22:53Z",
    "summary": "Four more U.S. states sued router maker TP-Link Systems on October 6, bringing the total to five, with Texas filing a suit in February. Florida, Iowa, Montana and Nebraska allege the California company misled buyers about how secure its routers are and how separate it is from China. TP-Link denies…",
    "score": 0,
-   "tags": []
+   "tags": [],
+   "why": []
   },
   {
    "id": "90f8d938cf4b",
@@ -944,6 +1187,9 @@
    "summary": "As AI agents gain authority over business systems, attackers can manipulate them like business email compromise (BEC) victims.",
    "score": 6,
    "tags": [
+    "BEC / payment fraud"
+   ],
+   "why": [
     "BEC / payment fraud"
    ]
   },
@@ -959,6 +1205,9 @@
    "score": 1,
    "tags": [
     "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
    ]
   },
   {
@@ -973,21 +1222,9 @@
    "score": 2,
    "tags": [
     "Vulnerability"
-   ]
-  },
-  {
-   "id": "2ce4fb4e00ce",
-   "title": "Attackers Exploit AhsayCBS Flaws to Deploy XMRig Miners Disguised as Microsoft Edge",
-   "link": "https://thehackernews.com/2026/10/attackers-exploit-ahsaycbs-flaws-to.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-09T12:47:26Z",
-   "summary": "Threat actors have been observed exploiting two recently disclosed flaws in the AhsayCBS backup utility to seize control of affected devices and deploy web shells and XMRig cryptocurrency miners. Details of the flaws are below - CVE-2026-105133 (CVSS v4 score: 5.5) - An improper authentication…",
-   "score": 4,
-   "tags": [
-    "Vulnerability",
-    "SaaS / cloud"
+   ],
+   "why": [
+    "Vulnerability"
    ]
   },
   {
@@ -999,12 +1236,18 @@
    "region": "Global",
    "published": "2026-10-09T12:21:51Z",
    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added five security flaws to its Known Exploited Vulnerabilities (KEV) catalog, following their abuse by a China-linked threat actor known as Flax Typhoon. The vulnerabilities in question are listed below - CVE-2015-3306…",
-   "score": 8,
+   "score": 10,
    "tags": [
     "Actively exploited",
     "Vulnerability",
     "SaaS / cloud"
-   ]
+   ],
+   "why": [
+    "Actively exploited",
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "epss": 0.995
   },
   {
    "id": "8f5724899730",
@@ -1018,7 +1261,8 @@
    "score": 5,
    "tags": [
     "Australia"
-   ]
+   ],
+   "why": []
   },
   {
    "id": "b7ae45cc2528",
@@ -1030,7 +1274,8 @@
    "published": "2026-10-09T11:30:00Z",
    "summary": "As enterprises race to deploy autonomous AI agents to accelerate business, a new report reveals they are tethered to security architectures built for a different era. The \"Horizons of Identity Security\" report from SailPoint highlights a critical “velocity paradox,” in which organizations invest…",
    "score": 0,
-   "tags": []
+   "tags": [],
+   "why": []
   },
   {
    "id": "d32c756e311a",
@@ -1042,7 +1287,8 @@
    "published": "2026-10-09T09:03:24Z",
    "summary": "A bug in GoBalance, a tool many dark-web sites use to stay reachable during attacks, lets anyone work out the secret key that controls a site's .onion address using only public information, and then take that address over. Searchlight Cyber, which disclosed the flaw on October 8, says an attacker…",
    "score": 0,
-   "tags": []
+   "tags": [],
+   "why": []
   },
   {
    "id": "e3f3090fc550",
@@ -1055,6 +1301,10 @@
    "summary": "Three research teams broke into Google's Pixel 10 on October 8 at Pwn2Own Ireland, a hacking contest in Cork whose rules require every target to be fully patched. The contest pays researchers to show working exploits and passes the flaws to the vendors. One of the three Pixel exploits earned…",
    "score": 4,
    "tags": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "why": [
     "Vulnerability",
     "SaaS / cloud"
    ]
@@ -1072,7 +1322,12 @@
    "tags": [
     "Edge devices",
     "Vulnerability"
-   ]
+   ],
+   "why": [
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "epss": 0.0047
   },
   {
    "id": "a02aff11f228",
@@ -1084,7 +1339,8 @@
    "published": "2026-10-09T07:52:03Z",
    "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
    "score": 1,
-   "tags": []
+   "tags": [],
+   "why": []
   },
   {
    "id": "5448277fa97e",
@@ -1096,21 +1352,8 @@
    "published": "2026-10-09T06:39:29Z",
    "summary": "The U.S. Federal Bureau of Investigation (FBI) and Department of Justice (DoJ) have announced the disruption of malicious tools used by a China-linked advanced persistent threat group known as Flax Typhoon. To that end, the agencies seized several domains and blocked access to platforms that were…",
    "score": 0,
-   "tags": []
-  },
-  {
-   "id": "788aabb23b50",
-   "title": "US freezes Microsoft, Adobe, Infosys green-card applications",
-   "link": "https://www.itnews.com.au/news/us-freezes-microsoft-adobe-infosys-green-card-applications-629526?utm_source=feed&utm_medium=rss&utm_campaign=iTnews+Business+feed",
-   "source": "iTnews Security",
-   "feed": "iTnews Security",
-   "region": "AU",
-   "published": "2026-10-08T20:52:00Z",
-   "summary": "Over alleged fraud.",
-   "score": 3,
-   "tags": [
-    "Australia"
-   ]
+   "tags": [],
+   "why": []
   },
   {
    "id": "2c6533f22f44",
@@ -1122,7 +1365,8 @@
    "published": "2026-10-08T20:44:28Z",
    "summary": "Prepare for post-quantum authentication by testing certificate ecosystems now. Learn how Microsoft’s PQC TLS Pilot Program helps advance future readiness. The post Post-quantum authentication: Why organizations should start testing certificate ecosystems now appeared first on Microsoft Security…",
    "score": 1,
-   "tags": []
+   "tags": [],
+   "why": []
   },
   {
    "id": "f5568cb9bcb2",
@@ -1137,6 +1381,10 @@
    "tags": [
     "Vulnerability",
     "SaaS / cloud"
+   ],
+   "why": [
+    "Vulnerability",
+    "SaaS / cloud"
    ]
   },
   {
@@ -1149,7 +1397,8 @@
    "published": "2026-10-08T19:08:16Z",
    "summary": "The first cybercriminal to ever make the FBI's \"10 Most Wanted Fugitives\" list allegedly infused Tren de Aragua's violent criminal operations with cash.",
    "score": 0,
-   "tags": []
+   "tags": [],
+   "why": []
   },
   {
    "id": "ffc305faa6ee",
@@ -1163,6 +1412,9 @@
    "score": 1,
    "tags": [
     "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
    ]
   },
   {
@@ -1175,7 +1427,8 @@
    "published": "2026-10-08T18:01:50Z",
    "summary": "Cyber-espionage actor UAC-0099 has been steadily refining its flagship dropper in campaigns targeting Ukrainian organizations.",
    "score": 0,
-   "tags": []
+   "tags": [],
+   "why": []
   },
   {
    "id": "f8595042a198",
@@ -1190,6 +1443,10 @@
    "tags": [
     "Ransomware",
     "Data breach"
+   ],
+   "why": [
+    "Ransomware",
+    "Data breach"
    ]
   },
   {
@@ -1202,7 +1459,8 @@
    "published": "2026-10-08T16:52:53Z",
    "summary": "We just did a major update to FOR577 and added a lot of new material on day 5 about investigating AI usage in incident response. In the new material we dicsuss 8&#;x26;#;xc2;&#;x26;#;xa0;of the most popular AI coding assistants and&#;x26;#;xc2;&#;x26;#;xa0;agents including Claude Code, Codex,…",
    "score": 1,
-   "tags": []
+   "tags": [],
+   "why": []
   },
   {
    "id": "e23311ff0ce1",
@@ -1215,6 +1473,10 @@
    "summary": "Attackers behind a string of personal data leaks at Japanese organizations have abused APIs for mobile apps and targeted known software flaws, the JPCERT Coordination Center (JPCERT/CC) said. The Tokyo-based center, which takes incident reports, based its October 8, 2026 alert on those reports and…",
    "score": 6,
    "tags": [
+    "Data breach",
+    "SaaS / cloud"
+   ],
+   "why": [
     "Data breach",
     "SaaS / cloud"
    ]
@@ -1231,6 +1493,9 @@
    "score": 2,
    "tags": [
     "Identity"
+   ],
+   "why": [
+    "Identity"
    ]
   },
   {
@@ -1243,21 +1508,8 @@
    "published": "2026-10-08T12:00:00Z",
    "summary": "Dark Reading is about to begin a new decade in its storied history, and we have some breaking news of our own to share.",
    "score": 0,
-   "tags": []
-  },
-  {
-   "id": "7be8e9d548f4",
-   "title": "Junos OS 23.4R1 for MX10004 and MX10008",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNYUdGa1pmVzBBd2RDazNxMXFWOTZOazVSQy05THNIQ3NhR2k2cU01bkIyZzlUY0p3WDBlVDMya2o1U2NrTkI1QUFMVjItMjRlcl9SVDBLenFhRXNXU0hxOEw1ZjRIb1ZPTjFhcHJjUnByc250WXJIZDdYQWNsODhRbWRGZ0tuaDhuX0JBZU1kWkwxMHJ5dkhmVnctR0h2aGJJVGt5aXNzUldsbm1WZlBSakdrLW0?oc=5",
-   "source": "Australian Cyber Security",
-   "feed": "ACSC (via Google News)",
-   "region": "AU",
-   "published": "2026-10-08T10:35:42Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "Australia"
-   ]
+   "tags": [],
+   "why": []
   },
   {
    "id": "ecdf7113631f",
@@ -1269,7 +1521,8 @@
    "published": "2026-10-08T02:00:02Z",
    "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
    "score": 1,
-   "tags": []
+   "tags": [],
+   "why": []
   },
   {
    "id": "b77403a9e73a",
@@ -1285,7 +1538,11 @@
     "Actively exploited",
     "KEV",
     "Vulnerability"
-   ]
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.9941
   },
   {
    "id": "f2ac269646f7",
@@ -1301,7 +1558,11 @@
     "Actively exploited",
     "KEV",
     "Vulnerability"
-   ]
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.9605
   },
   {
    "id": "4d11b5836627",
@@ -1317,7 +1578,11 @@
     "Actively exploited",
     "KEV",
     "Vulnerability"
-   ]
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0361
   },
   {
    "id": "e0620a025838",
@@ -1333,7 +1598,11 @@
     "Actively exploited",
     "KEV",
     "Vulnerability"
-   ]
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.1935
   },
   {
    "id": "74cde892ff7f",
@@ -1349,7 +1618,11 @@
     "Actively exploited",
     "KEV",
     "Vulnerability"
-   ]
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.995
   },
   {
    "id": "e63549e2e04b",
@@ -1363,6 +1636,9 @@
    "score": 5,
    "tags": [
     "Australia"
+   ],
+   "why": [
+    "Australia"
    ]
   },
   {
@@ -1375,21 +1651,8 @@
    "published": "2026-10-07T21:25:13Z",
    "summary": "The Citizen Lab's Ron Deibert warns the US government is pushing for pervasive surveillance and says certain technology executives are all too happy to help.",
    "score": 0,
-   "tags": []
-  },
-  {
-   "id": "79fd50450108",
-   "title": "CSIRO finds permanent CISO",
-   "link": "https://www.itnews.com.au/news/csiro-finds-permanent-ciso-629495?utm_source=feed&utm_medium=rss&utm_campaign=iTnews+Business+feed",
-   "source": "iTnews Security",
-   "feed": "iTnews Security",
-   "region": "AU",
-   "published": "2026-10-07T20:57:00Z",
-   "summary": "To replace Jamie Rossato, who left earlier this year.",
-   "score": 3,
-   "tags": [
-    "Australia"
-   ]
+   "tags": [],
+   "why": []
   },
   {
    "id": "13ead4d40341",
@@ -1402,6 +1665,10 @@
    "summary": "Read how How Microsoft Security's FORGE Lab is scaling vulnerability research from Windows to the Linux kernel. The post 3 lessons from frontier AI vulnerability research appeared first on Microsoft Security Blog .",
    "score": 6,
    "tags": [
+    "Identity",
+    "Vulnerability"
+   ],
+   "why": [
     "Identity",
     "Vulnerability"
    ]
@@ -1418,7 +1685,11 @@
    "score": 3,
    "tags": [
     "Vulnerability"
-   ]
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0278
   },
   {
    "id": "4d0ab1e7dd59",
@@ -1432,135 +1703,29 @@
    "score": 5,
    "tags": [
     "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
    ]
   },
   {
-   "id": "0104268d6633",
-   "title": "Personal cyber security handbook",
-   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9maUZqbnlERGxleVFhZ2t1ek1KUDQ1RTdtTU1iNTF6eVJxVzByRG1rNFE3WkpSY1dFOXREV2xFRUptRklNcEMtWkRyTlFHakZwa0tScFlCSTdjSGZkQVd6NE9pYjhacTR6Mm44a013SGR3aVhLclIzdA?oc=5",
-   "source": "Australian Cyber Security",
-   "feed": "ACSC (via Google News)",
+   "id": "5c8b6dedbd3c",
+   "title": "Unpatched server behind Vic student data breach",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOcEs1UTgyYWRrM0twT3dkcHkyZzRDbWZ2d0p0alNsQ1RvaG0yUjhFODJKR3ZrSUt6QUgxOXZGWEZrMkQ3b2NnLWpNWDRjNlNaMjRYSkVzMjU2aDdSNGpFNVJJcDE4S1NMVDRIa09nME1PclQzRWM5N2tld2MtbXFNUGNmc3U2N0hwRFVNNDhn?oc=5",
+   "source": "iTnews",
+   "feed": "ASD / ACSC in the news",
    "region": "AU",
-   "published": "2026-10-07T12:00:00Z",
+   "published": "2026-10-07T07:25:00Z",
    "summary": "",
-   "score": 5,
+   "score": 11,
    "tags": [
+    "Data breach",
+    "Vulnerability",
     "Australia"
-   ]
-  },
-  {
-   "id": "8a26570eac43",
-   "title": "Use unique and strong passwords",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQVXRmZmN6c2xSSm1xc2dOUWo5NnFCRzZNVFNmMEpHQkhaOUgwbHdrd0QtcWxYM0NQN192SjRrd2ZLUHVmd0tNeEJKN2tzMkd6TjhfS1psV3NnWkhRZmRsd1J4OEhVbE1iLWhubGp0VlpSZVlmQXQta3J1RElnR3h0YnFER3B6UDJjNmJyQkpfeDR1NjRRdmVlU3REUmtDa0t2eThz?oc=5",
-   "source": "Australian Cyber Security",
-   "feed": "ACSC (via Google News)",
-   "region": "AU",
-   "published": "2026-10-07T12:00:00Z",
-   "summary": "",
-   "score": 8,
-   "tags": [
-    "Identity",
-    "Australia"
-   ]
-  },
-  {
-   "id": "00742b78b11c",
-   "title": "Event logging",
-   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQVlgwRjROb2dqRUh2d3RDNW9IcC11R3pCb0ZaLWVHelpRN1dCazd0eXZBUlZfci1zRkVoT1owUW5raGxRYk1FejdxaHdVbkI4NEprREVNX1hGWXA3cDZIV1VEUnFCbWYxbzNBeEg5T0VucHcwMVpQUHlleDB2MG92dUZaUHVoeXFsVjV1MFg0RThKYVU?oc=5",
-   "source": "Australian Cyber Security",
-   "feed": "ACSC (via Google News)",
-   "region": "AU",
-   "published": "2026-10-07T12:00:00Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "Australia"
-   ]
-  },
-  {
-   "id": "7f38b855520a",
-   "title": "Small business cyber security handbook",
-   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQcmw2c3NtQUFUdE9MdEVPdFZtQlJnSWtSLTBiOHZ1WEFCRFBfTGxveXhYZkxrYW5tZFhJbExfVkUtbjBaQ2lUSGRmazFEZHh5b3l2Q3VoQ2dFbWpDZ2tIUVdsUjI5VVFVak5vbnA3TnRDRWdqWjQ5dXRHNno2VUQ5aw?oc=5",
-   "source": "Australian Cyber Security",
-   "feed": "ACSC (via Google News)",
-   "region": "AU",
-   "published": "2026-10-07T12:00:00Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "Australia"
-   ]
-  },
-  {
-   "id": "cb4fe919571a",
-   "title": "Use passkeys",
-   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOblBVOXlxOWwwWE5CdUxKQi1oUFVWVnZXSGRUREg0aWU0S2gzVW5FX2doWnl4QzVlRkhTZU9zeW50dm9ndXpISHJLQ0thLTlnNUdUTk1Bak5ob2JFNVNESnhOVXRpQS1iWkVqX1ptWl9pR0JndFNtOHJLQVY4eXo4SzVOZGJvMWFBc0E?oc=5",
-   "source": "Australian Cyber Security",
-   "feed": "ACSC (via Google News)",
-   "region": "AU",
-   "published": "2026-10-07T12:00:00Z",
-   "summary": "",
-   "score": 8,
-   "tags": [
-    "Identity",
-    "Australia"
-   ]
-  },
-  {
-   "id": "112a995ddd8a",
-   "title": "Post-quantum cryptography",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPYU9yaU1CeVE5VGVNbU14bmowdlY5V1ZFVzFjRVVhNnJvTWRpZUpWR3pfclh0V013SkxjbmotZ1ZvYUhpcU91WGlTRHdUOWU4MVY3X2R3UmhGS01KZm9LZjVjbEd5YnM4bldFTXhCWm1MVzIzNXhUaU5NbnRjUnVhMmtNLXVJVDduZkFnRTRtMGFGSGp6VmNTMUJHSUZNMnRHcWhF?oc=5",
-   "source": "Australian Cyber Security",
-   "feed": "ACSC (via Google News)",
-   "region": "AU",
-   "published": "2026-10-07T12:00:00Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "Australia"
-   ]
-  },
-  {
-   "id": "718dbfbcc018",
-   "title": "Set up multi-factor authentication",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOclh1bDRWY05mcFNpeVFKYk5ReGlRRXE5OGRMVGZFWWE4aUdfQVNYNTV0cHBlMTR5bmFXUDFBZzNfMkx1SmkyQWcwa0FDU3V5RHRXTUgtVjZkUE5zbjFfV0Nlc3haVkp6NkdER19LNTlZdUk5MERHeUo1dWRZNGtaRUhuTzF6d2ZPd1JPR2dic3d4aU14ZV9LLWpuOUg0a1MyT2h0aVhETQ?oc=5",
-   "source": "Australian Cyber Security",
-   "feed": "ACSC (via Google News)",
-   "region": "AU",
-   "published": "2026-10-07T12:00:00Z",
-   "summary": "",
-   "score": 8,
-   "tags": [
-    "Identity",
-    "Australia"
-   ]
-  },
-  {
-   "id": "dd54dd4d2df5",
-   "title": "Common cyber threats to small businesses",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNR01SOWd2cVBDNXppaE8yZW8ySXpQdjhlcGdUWXU2WFRQeW9fczNzRzdpS214alZQWDFCVGdycllvMTlxTFAtcno2TEloMEc5MTVVNnJ4R2w2ei1hMHF5dUd5d25qaWtyazdiX2N3amQtb1V3UzlKcUxOejFqdksxdVFCRkhLbVdUSXBTa2xfY1E4MkNSeHhveVZWQUdsTC0tX0FERmFtRHZxWU9IRHZZbFJIdjlXeVU?oc=5",
-   "source": "Australian Cyber Security",
-   "feed": "ACSC (via Google News)",
-   "region": "AU",
-   "published": "2026-10-07T12:00:00Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "Australia"
-   ]
-  },
-  {
-   "id": "d59cac0c6023",
-   "title": "Travelling overseas",
-   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQVk9MYTUxc0c0bEhVVndMdXQzMUVhSjYwVDg4SC1PMmczYjdacTRTTkl2dWs0RGVpSU40ZjN1Y3lfRkFGT0MtUUs0OGVsSmdlNVMyWEFVSWwwRndBdVpqMk9jcENwRWU5MUJKQmZITElZOEpzQUN5akxKNzRXcDYxWVFDekVEN1E1b3RSTjQwby1sYXM?oc=5",
-   "source": "Australian Cyber Security",
-   "feed": "ACSC (via Google News)",
-   "region": "AU",
-   "published": "2026-10-07T12:00:00Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "Australia"
+   ],
+   "why": [
+    "Data breach",
+    "Vulnerability"
    ]
   },
   {
@@ -1573,7 +1738,8 @@
    "published": "2026-10-07T02:00:02Z",
    "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
    "score": 1,
-   "tags": []
+   "tags": [],
+   "why": []
   },
   {
    "id": "7ccedc646e57",
@@ -1586,6 +1752,9 @@
    "summary": "Learn how CISOs can mitigate cybersecurity risks and increase resilience in the age of AI-powered vulnerability management. The post CISO perspectives on managing vulnerability risks in the age of AI appeared first on Microsoft Security Blog .",
    "score": 3,
    "tags": [
+    "Vulnerability"
+   ],
+   "why": [
     "Vulnerability"
    ]
   },
@@ -1601,6 +1770,9 @@
    "score": 6,
    "tags": [
     "Actively exploited"
+   ],
+   "why": [
+    "Actively exploited"
    ]
   },
   {
@@ -1613,7 +1785,8 @@
    "published": "2026-10-06T11:45:11Z",
    "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
    "score": 1,
-   "tags": []
+   "tags": [],
+   "why": []
   },
   {
    "id": "deda64e494a6",
@@ -1625,21 +1798,8 @@
    "published": "2026-10-05T02:00:02Z",
    "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
    "score": 1,
-   "tags": []
-  },
-  {
-   "id": "50c1aff1b12b",
-   "title": "Colonial First State turns marketing automation into an always-on engagement engine",
-   "link": "https://www.itnews.com.au/news/colonial-first-state-turns-marketing-automation-into-an-always-on-engagement-engine-629251?utm_source=feed&utm_medium=rss&utm_campaign=iTnews+Business+feed",
-   "source": "iTnews Security",
-   "feed": "iTnews Security",
-   "region": "AU",
-   "published": "2026-10-04T18:00:00Z",
-   "summary": "Connecting members to their super.",
-   "score": 3,
-   "tags": [
-    "Australia"
-   ]
+   "tags": [],
+   "why": []
   },
   {
    "id": "6ea617158423",
@@ -1656,7 +1816,12 @@
     "KEV",
     "Edge devices",
     "Vulnerability"
-   ]
+   ],
+   "why": [
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "epss": 0.0059
   },
   {
    "id": "00d8e8779d5a",
@@ -1672,7 +1837,11 @@
     "Actively exploited",
     "KEV",
     "Vulnerability"
-   ]
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0055
   },
   {
    "id": "3dde8d788a0e",
@@ -1688,7 +1857,11 @@
     "Actively exploited",
     "KEV",
     "Vulnerability"
-   ]
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0126
   },
   {
    "id": "03612a48c440",
@@ -1700,7 +1873,8 @@
    "published": "2026-10-01T14:00:00Z",
    "summary": "According to this year’s Microsoft Digital Defense Report, government agencies and services were the sector most impacted by cyber threats in 2026, accounting for 27% of observed activity, up from 17% in 2025. The post Preparing governments for an era of interconnected cyber risk appeared first on…",
    "score": 1,
-   "tags": []
+   "tags": [],
+   "why": []
   },
   {
    "id": "143a7ccff477",
@@ -1712,7 +1886,8 @@
    "published": "2026-10-01T14:00:00Z",
    "summary": "Read highlights from the 2026 Microsoft Digital Defense Report, which reflects a security environment that continues to grow more interconnected. The post Insights from the 2026 Microsoft Digital Defense Report appeared first on Microsoft Security Blog .",
    "score": 1,
-   "tags": []
+   "tags": [],
+   "why": []
   },
   {
    "id": "f26468d8d522",
@@ -1729,7 +1904,12 @@
     "KEV",
     "Edge devices",
     "Vulnerability"
-   ]
+   ],
+   "why": [
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "epss": 0.022
   },
   {
    "id": "786d26f6dd45",
@@ -1741,7 +1921,8 @@
    "published": "2026-09-30T19:31:00Z",
    "summary": "This year at Microsoft Ignite, we spotlight our AI-first, end-to-end security platform designed to protect identities, devices, data, applications, clouds, infrastructure, and the AI agents now working alongside your teams. The post ​​Secure what’s next: Your guide to Microsoft Security at…",
    "score": 1,
-   "tags": []
+   "tags": [],
+   "why": []
   },
   {
    "id": "a8c7a9dcbf05",
@@ -1752,10 +1933,14 @@
    "region": "Global",
    "published": "2026-09-30T14:00:00Z",
    "summary": "Microsoft Threat Intelligence examines CVE-2026-73570 exploitation in Zimbra, including observed attack paths, detection opportunities, and mitigation guidance. The post Unauthenticated command injection on internet-facing mail servers: tracking CVE-2026-73570 appeared first on Microsoft Security…",
-   "score": 3,
+   "score": 5,
    "tags": [
     "Vulnerability"
-   ]
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.7166
   },
   {
    "id": "5411a76de5a8",
@@ -1772,7 +1957,12 @@
     "KEV",
     "Edge devices",
     "Vulnerability"
-   ]
+   ],
+   "why": [
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "epss": 0.0182
   },
   {
    "id": "28594b2bec10",
@@ -1786,34 +1976,9 @@
    "score": 5,
    "tags": [
     "Phishing"
-   ]
-  },
-  {
-   "id": "25f9c5f6eedb",
-   "title": "Australian Energy Regulator appoints permanent CIO",
-   "link": "https://www.itnews.com.au/news/australian-energy-regulator-appoints-permanent-cio-629287?utm_source=feed&utm_medium=rss&utm_campaign=iTnews+Business+feed",
-   "source": "iTnews Security",
-   "feed": "iTnews Security",
-   "region": "AU",
-   "published": "2026-09-29T20:08:00Z",
-   "summary": "After its separation from the competition watchdog.",
-   "score": 8,
-   "tags": [
-    "Australia"
-   ]
-  },
-  {
-   "id": "e229cee17b4e",
-   "title": "ASIC to review banking sector AI use and customer impacts",
-   "link": "https://www.itnews.com.au/news/asic-to-review-banking-sector-ai-use-and-customer-impacts-629307?utm_source=feed&utm_medium=rss&utm_campaign=iTnews+Business+feed",
-   "source": "iTnews Security",
-   "feed": "iTnews Security",
-   "region": "AU",
-   "published": "2026-09-29T20:05:00Z",
-   "summary": "Will focus particularly on emerging use cases.",
-   "score": 3,
-   "tags": [
-    "Australia"
+   ],
+   "why": [
+    "Phishing"
    ]
   },
   {
@@ -1828,6 +1993,9 @@
    "score": 3,
    "tags": [
     "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
    ]
   },
   {
@@ -1841,6 +2009,9 @@
    "summary": "Since January 2026, Microsoft has observed Russian state threat actor Star Blizzard evolve their detection evasion capabilities through large-scale phishing campaigns, the use of accounts on compromised websites, and a novel malware delivery technique, tracked by Microsoft as “RedFlick”. The post…",
    "score": 5,
    "tags": [
+    "Phishing"
+   ],
+   "why": [
     "Phishing"
    ]
   },
@@ -1858,7 +2029,11 @@
     "Actively exploited",
     "KEV",
     "Vulnerability"
-   ]
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0124
   },
   {
    "id": "9eea57edb89b",
@@ -1872,6 +2047,9 @@
    "score": 4,
    "tags": [
     "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
    ]
   },
   {
@@ -1884,7 +2062,8 @@
    "published": "2026-09-28T15:00:00Z",
    "summary": "Microsoft Threat Intelligence identified NeedyMantis, a modular post-compromise malware framework used in targeted intrusions that combines custom loaders, encrypted archives, and extensible components to maintain long-term access and support follow-on operations. The post NeedyMantis: Unpacking a…",
    "score": 1,
-   "tags": []
+   "tags": [],
+   "why": []
   }
  ]
 }

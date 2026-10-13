@@ -25,7 +25,12 @@ Sec-Pulse is built and used by a working security analyst, and **the repo and th
 | Morning brief text | ntfy.sh topic | Anyone who knows or guesses the topic name |
 | `NTFY_TOPIC` | GitHub Actions secret | Repo admins; masked in logs |
 
-The app makes no requests except to its own origin (the JSON files) and to news links the user taps. No analytics, no third-party scripts or fonts.
+The app makes no requests except to its own origin (the JSON and Markdown files) and to links the user taps: news stories, the lesson YouTube searches and the user's own Udemy link. No analytics, no third-party scripts or fonts.
+
+## Personal links and vendor-specific study
+
+- **Udemy (or any profile) link**: stored only in the phone's `localStorage` (`sp_courseUrl`), entered in Settings. Never hard-code it in `index.html`: a public profile ties a real name to "the analyst who watches for X".
+- **Vendor platform training** (the specific EDR, SIEM/vulnerability-management or email-security products used at work): don't add lessons, flashcards or keyword groups for them here. A public study deck for exactly those products is a map of the employer's stack. Keep vendor-specific study in the vendors' own training portals or a private repo. Generic lessons on the *categories* (EDR, vulnerability management, secure email gateways) are fine.
 
 ## Work-device considerations
 

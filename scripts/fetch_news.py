@@ -356,6 +356,18 @@ def cluster(items):
     return primaries
 
 
+def passes_filters(src, title, tags):
+    """A source's `exclude` title regexes, `minTitleWords` and `requireMatch`.
+    Also re-applied to stored items, so tightening a source cleans up history
+    instead of waiting for KEEP_DAYS."""
+    if any(re.search(x, title, re.I) for x in src.get("exclude", [])):
+        return False
+    if len(title.split()) < src.get("minTitleWords", 0):
+        return False
+    # Searches match loosely; drop results with no security keyword at all.
+    return not src.get("requireMatch") or any(t != "Australia" for t in tags)
+
+
 def run_source(src, keywords):
     try:
         raw = fetch(src["url"])
@@ -370,8 +382,7 @@ def run_source(src, keywords):
             if (NOW - pub).days > KEEP_DAYS:
                 continue
             s, tags, region, why = score(it, src, keywords)
-            # Searches match loosely; drop results with no security keyword at all.
-            if src.get("requireMatch") and not [t for t in tags if t != "Australia"]:
+            if not passes_filters(src, it["title"], tags):
                 continue
             result.append({
                 "id": hashlib.sha1(it["link"].encode()).hexdigest()[:12],
@@ -416,6 +427,9 @@ def main():
     # Fresh copies win over older stored ones; keep older items until they age out.
     # A skipped copy's `also` list is carried over, and an identical headline from
     # a different publisher is recorded in `also` rather than silently dropped.
+    src_by_name = {s["name"]: s for s in cfg["sources"]}
+    previous = [it for it in previous
+                if passes_filters(src_by_name.get(it.get("feed"), {}), it["title"], it.get("tags", []))]
     merged, by_id, by_title = [], {}, {}
     for it in fresh + previous:
         key_t = norm_title(it["title"])

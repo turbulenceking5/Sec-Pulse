@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-13: Analyst rank, What's new and fixes
+- **Level up as you study.** Quiz answers, flashcards, lessons and reading news now earn XP. Climb from Trainee Analyst through SOC Analyst, Incident Responder and Threat Hunter to Cyber Legend, with a skill bar per exam domain plus Threat Intel from news. Tap the rank card on the Brief for your profile. Progress you'd already made counts: it's converted to XP the first time you open the app.
+- **What's new and Roadmap** buttons at the top of Settings.
+- **Videos on this topic**: every lesson links to a YouTube search for it.
+- **Udemy link**: add your profile or course link in Settings for a shortcut on Learn and in every lesson. It's saved on your phone only.
+- **Refresh button fixed**: it now spins and tells you whether there are new stories, or when the next news update is due (news is fetched every 3 hours).
+- **Cleaner Australian news**: cyber.gov.au guidance pages ("Use passkeys", "Event logging") and general IT business stories no longer show up as news. Coverage of ASD/ACSC alerts now comes in from Australian outlets.
+
 ## 2026-10-13: Better flashcard answers
 - Flashcard wrong answers now come from the same topic as the card (e.g. Cyber Kill Chain is mixed with Diamond Model, STRIDE and NIST IR phases), instead of unrelated ports or event IDs that gave the answer away.
 

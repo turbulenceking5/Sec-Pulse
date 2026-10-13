@@ -150,6 +150,25 @@ button.pill{font-size:12px}
 .wrap{flex-wrap:wrap}
 .mute-note{margin:-4px 0 10px}
 code{background:var(--surface2);padding:1px 6px;border-radius:6px;font-size:13px;word-break:break-all}
+/* refresh spinner */
+.icon-btn.spin svg{animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+/* XP / analyst rank */
+.rank-card{width:100%;text-align:left;gap:12px;margin-top:12px}
+.rank-badge{flex:none;width:48px;height:48px;border-radius:12px;background:var(--accent-dim);border:1px solid rgba(56,225,200,.4);display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1}
+.rank-badge b{font-size:19px;color:var(--accent);font-variant-numeric:tabular-nums}
+.rank-badge span{font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:.6px;margin-top:2px}
+.rank-badge.big{width:72px;height:72px}.rank-badge.big b{font-size:30px}
+.xp{color:var(--accent);font-weight:700;font-size:12.5px;white-space:nowrap}
+.skill{margin-bottom:12px}.skill:last-child{margin-bottom:0}
+.ladder td{padding:7px 4px}.ladder tr.here td{color:var(--accent);font-weight:700}.ladder tr.locked td{color:var(--muted)}
+/* changelog / roadmap */
+.md h3{font-size:15px;margin:18px 0 6px}.md h3:first-child{margin-top:0}
+.md ul{padding-left:18px;margin:6px 0}.md li{margin-bottom:6px}
+.md li.todo,.md li.done{list-style:none;margin-left:-18px}
+.md li.done{color:var(--muted)}
+.links{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.links a{text-decoration:none}
 </style>
 </head>
 <body>
@@ -173,6 +192,7 @@ code{background:var(--surface2);padding:1px 6px;border-radius:6px;font-size:13px
       <div class="stat"><b id="st-due">0</b><span>cards due</span></div>
       <div class="stat"><b id="st-lessons">0</b><span>lessons done</span></div>
     </div>
+    <div id="brief-rank"></div>
     <div id="brief-exam" style="margin-top:10px"></div>
     <h2>Top for you</h2>
     <div id="brief-top"><div class="empty">Loading news…</div></div>
@@ -201,6 +221,7 @@ code{background:var(--surface2);padding:1px 6px;border-radius:6px;font-size:13px
       <button class="btn grow" id="practice-exam">Practice exam · 30</button>
     </div>
     <button class="btn block" id="review-quiz" style="margin-top:8px">Review mistakes</button>
+    <div id="course-link"></div>
     <div id="domains"></div>
   </section>
 
@@ -258,11 +279,106 @@ function markActivity(){
   if (s.last === t) return;
   s.count = s.last === addDays(t, -1) ? s.count + 1 : 1;
   s.best = Math.max(s.best || 0, s.count); s.last = t;
-  store.set('streak', s); renderStats();
+  store.set('streak', s);
+  const bonus = gainXP(10 + 2 * Math.min(10, s.count));
+  if (bonus) setTimeout(() => toast(`Daily bonus +${bonus} XP · ${s.count} day streak`), 1200);
+  renderStats();
 }
 function currentStreak(){
   const s = store.get('streak', {last: null, count: 0}), t = todayKey();
   return (s.last === t || s.last === addDays(t, -1)) ? s.count : 0;
+}
+
+/* ---------- XP + analyst rank: every study action (and reading the news) earns XP ---------- */
+// Per-day caps stop farming: each question/card earns once a day, story reads cap at READ_CAP.
+const XP = {right: 10, wrong: 3, cardRight: 5, cardWrong: 1, lesson: 50, read: 2, exam: 25, quiz: 10};
+const READ_CAP = 25;
+const RANKS = [[1, 'Trainee Analyst'], [3, 'SOC Analyst (Tier 1)'], [6, 'SOC Analyst (Tier 2)'], [10, 'Incident Responder'],
+  [15, 'Threat Hunter'], [20, 'Senior Analyst'], [25, 'Detection Engineer'], [30, 'SOC Lead'], [40, 'Security Architect'], [50, 'Cyber Legend']];
+const SKILLS = () => (CYSA ? CYSA.domains.map(d => [String(d.id), d.name]) : []).concat([['intel', 'Threat Intel (news)']]);
+// Level L -> L+1 costs step*L XP, so reaching level L takes step*L*(L-1)/2 in total.
+const levelOf = (xp, step = 100) => Math.floor((1 + Math.sqrt(1 + 8 * Math.max(0, xp) / step)) / 2);
+const xpForLevel = (L, step = 100) => step * L * (L - 1) / 2;
+const rankOf = L => RANKS.filter(r => r[0] <= L).pop()[1];
+function getXP(){
+  const x = store.get('xp', null);
+  if (!x || typeof x !== 'object' || typeof x.total !== 'number') return null;
+  x.bySkill = x.bySkill && typeof x.bySkill === 'object' ? x.bySkill : {};
+  const t = todayKey();
+  if (!x.today || x.today.date !== t) x.today = {date: t, xp: 0, reads: 0, q: [], c: []};
+  return x;
+}
+// First run: credit progress made before XP existed, so nobody starts back at level 1.
+function seedXP(){
+  if (store.get('xp', null) || !CYSA) return;
+  const x = {total: 0, bySkill: {}, today: null};
+  const add = (n, skill) => { x.total += n; x.bySkill[skill] = (x.bySkill[skill] || 0) + n; };
+  const lessonDom = Object.fromEntries(CYSA.lessons.map(l => [l.id, String(l.domain)]));
+  const cardDom = Object.fromEntries(CYSA.cards.map(c => [c.id, String(c.domain)]));
+  Object.keys(store.get('lessons', {})).forEach(id => lessonDom[id] && add(XP.lesson, lessonDom[id]));
+  Object.entries(store.get('qhist', {}) || {}).forEach(([qid, r]) => { const d = lessonDom[qid.split('#')[0]];
+    if (d && r) add((r.right || 0) * XP.right + (r.wrong || 0) * XP.wrong, d); });
+  Object.entries(cardHist()).forEach(([id, r]) => cardDom[id] && r && add((r.right || 0) * XP.cardRight + (r.wrong || 0) * XP.cardWrong, cardDom[id]));
+  const reads = store.get('read', []);
+  if (Array.isArray(reads)) add(reads.length * XP.read, 'intel');
+  store.set('xp', x);
+}
+// Returns the XP actually awarded (0 if today's cap for this item is used up).
+function gainXP(n, skill, once){
+  const x = getXP(); if (!x || !n) return 0;
+  if (once){ const [kind, id] = once; if (x.today[kind].includes(id)) return 0; x.today[kind].push(id); }
+  const before = levelOf(x.total);
+  x.total += n; x.today.xp += n;
+  if (skill) x.bySkill[skill] = (x.bySkill[skill] || 0) + n;
+  store.set('xp', x);
+  const after = levelOf(x.total);
+  if (after > before){
+    const promo = rankOf(after) !== rankOf(before);
+    setTimeout(() => toast(`Level up! Lv ${after}${promo ? ' · promoted to ' + rankOf(after) : ''}`), 300);
+  }
+  renderRank();
+  return n;
+}
+function readXP(){
+  const x = getXP(); if (!x || x.today.reads >= READ_CAP) return 0;
+  x.today.reads++; store.set('xp', x);
+  return gainXP(XP.read, 'intel');
+}
+const xpTag = n => n ? ` <span class="xp">+${n} XP</span>` : '';
+function renderRank(){
+  const el = $('#brief-rank'), x = getXP();
+  if (!el || !x){ if (el) el.innerHTML = ''; return; }
+  const L = levelOf(x.total), lo = xpForLevel(L), hi = xpForLevel(L + 1);
+  el.innerHTML = `<button class="card row rank-card" id="rank-card"><div class="rank-badge"><span>Lv</span><b>${L}</b></div>
+    <div class="grow"><div class="row"><b class="grow">${esc(rankOf(L))}</b><span class="xp">+${x.today.xp} XP today</span></div>
+    <div class="bar"><i style="width:${((x.total - lo) / (hi - lo) * 100).toFixed(1)}%"></i></div>
+    <div class="small muted" style="margin-top:4px">${x.total - lo} / ${hi - lo} XP to Lv ${L + 1}</div></div></button>`;
+  $('#rank-card').onclick = openProfile;
+}
+function openProfile(){
+  const x = getXP(); if (!x) return;
+  const L = levelOf(x.total), next = RANKS.find(r => r[0] > L);
+  const skills = SKILLS().map(([k, name]) => { const v = x.bySkill[k] || 0, sl = levelOf(v, 25), lo = xpForLevel(sl, 25), hi = xpForLevel(sl + 1, 25);
+    return `<div class="skill"><div class="row small"><span class="grow">${esc(name)}</span><span class="muted">Lv ${sl} · ${v} XP</span></div>
+      <div class="bar"><i style="width:${((v - lo) / (hi - lo) * 100).toFixed(1)}%"></i></div></div>`; }).join('');
+  openSheet('Analyst profile', `
+    <div class="card row" style="gap:14px"><div class="rank-badge big"><span>Lv</span><b>${L}</b></div>
+      <div class="grow"><div style="font-weight:700;font-size:18px">${esc(rankOf(L))}</div>
+      <div class="small muted">${x.total} XP total · +${x.today.xp} today · ${currentStreak()} day streak</div>
+      ${next ? `<div class="small" style="margin-top:4px">Next rank: <b>${esc(next[1])}</b> at Lv ${next[0]} (${xpForLevel(next[0]) - x.total} XP to go)</div>` : ''}</div></div>
+    <h2>Skills</h2><div class="card">${skills}</div>
+    <h2>How to earn XP</h2>
+    <div class="card small"><table>
+      <tr><td>Answer a quiz question</td><td style="text-align:right">+${XP.right} right · +${XP.wrong} wrong</td></tr>
+      <tr><td>Answer a flashcard</td><td style="text-align:right">+${XP.cardRight} right · +${XP.cardWrong} wrong</td></tr>
+      <tr><td>Complete a lesson (first time)</td><td style="text-align:right">+${XP.lesson}</td></tr>
+      <tr><td>Finish a practice exam / quiz round</td><td style="text-align:right">+${XP.exam} / +${XP.quiz}</td></tr>
+      <tr><td>Read a news story (up to ${READ_CAP} a day)</td><td style="text-align:right">+${XP.read}</td></tr>
+      <tr><td>First study of the day</td><td style="text-align:right">+10, +2 per streak day (max +30)</td></tr></table>
+      <p class="muted" style="margin-bottom:0">Each question and card earns XP once a day, so repeats are practice, not grinding. Skills level up from the XP earned in each exam domain; reading news trains Threat Intel.</p></div>
+    <h2>Rank ladder</h2>
+    <div class="card small"><table class="ladder">${RANKS.map((r, i) => { const here = L >= r[0] && (!RANKS[i + 1] || L < RANKS[i + 1][0]);
+      return `<tr class="${here ? 'here' : L < r[0] ? 'locked' : ''}"><td>Lv ${r[0]}</td><td>${esc(r[1])}${here ? ' ← you' : ''}</td></tr>`; }).join('')}</table></div>`);
 }
 
 /* ---------- data ---------- */
@@ -270,14 +386,32 @@ let NEWS = {items: [], sources: [], generated: null};
 let CYSA = null;
 const ALL_Q = () => CYSA.lessons.flatMap(l => l.quiz.map((q, i) => ({...q, domain: l.domain, lesson: l.id, qid: l.id + '#' + i})));
 
+// fetch-news.yml runs at :17 past every third UTC hour; GitHub often starts it a few minutes late.
+function nextFetchIn(){
+  const d = new Date(); d.setUTCMinutes(17, 0, 0);
+  while (d <= new Date() || d.getUTCHours() % 3) d.setUTCHours(d.getUTCHours() + 1);
+  const m = Math.round((d - Date.now()) / 6e4);
+  return m < 60 ? m + 'm' : Math.floor(m / 60) + 'h ' + (m % 60) + 'm';
+}
 async function loadNews(manual){
+  const btn = $('#refresh-btn'), started = Date.now();
+  const known = new Set(NEWS.items.map(i => i.id));
+  if (manual){ btn.classList.add('spin'); btn.disabled = true; }
   try{
     const r = await fetch('data/news.json?_=' + Date.now());
     if (!r.ok) throw new Error(r.status);
     NEWS = await r.json();
-    if (manual) toast('News refreshed');
+    if (manual){
+      const n = NEWS.items.filter(i => !known.has(i.id)).length;
+      toast(n ? `${n} new stor${n === 1 ? 'y' : 'ies'}` : `Up to date · fetched ${ago(NEWS.generated)}, next in ~${nextFetchIn()}`);
+    }
   }catch(e){
     if (manual) toast('Offline - showing saved news');
+  }
+  if (manual){
+    // Also pick up a new version of the app itself, and keep the spin visible long enough to notice.
+    try{ navigator.serviceWorker && navigator.serviceWorker.getRegistration().then(r => r && r.update()).catch(() => {}); }catch(e){}
+    setTimeout(() => { btn.classList.remove('spin'); btn.disabled = false; }, Math.max(0, 600 - (Date.now() - started)));
   }
   $('#updated').textContent = NEWS.generated ? 'updated ' + ago(NEWS.generated) : '';
   renderBrief(); renderNews();
@@ -324,7 +458,7 @@ function wireNewsList(root){
     const id = el.dataset.id;
     el.querySelector('.news-title').addEventListener('click', () => {
       const read = store.get('read', []);
-      if (!read.includes(id)){ read.push(id); store.set('read', read.slice(-1500)); }
+      if (!read.includes(id)){ read.push(id); store.set('read', read.slice(-1500)); readXP(); }
       el.classList.add('read'); el.querySelector('.dot')?.remove();
     });
     el.querySelector('.save-btn').addEventListener('click', e => {
@@ -486,6 +620,7 @@ function renderBrief(){
     const q = qs[(ordinal(t) * 7) % qs.length];
     renderQuiz($('#brief-qotd'), [q], {single: true});
   }
+  renderRank();
   renderExam();
   renderStats();
 }
@@ -540,6 +675,7 @@ function recordAnswer(q, correct){
     store.set('qhist', h);
   }
   markActivity();
+  return gainXP(correct ? XP.right : XP.wrong, String(q.domain), q.qid ? ['q', q.qid] : null);
 }
 // Questions to review: latest answer wrong, or wrong more often than right. Latest-wrong first, then most net misses, then most recent.
 function weakQuestions(){
@@ -561,14 +697,14 @@ function renderQuiz(root, questions, opts = {}){
     root.querySelectorAll('.opt').forEach(b => b.onclick = () => {
       const pick = +b.dataset.i, ok = pick === q.answer;
       if (ok) correct++;
-      recordAnswer(q, ok);
+      const xp = recordAnswer(q, ok);
       root.querySelectorAll('.opt').forEach(o => {
         o.disabled = true;
         if (+o.dataset.i === q.answer) o.classList.add('correct');
         else if (+o.dataset.i === pick) o.classList.add('wrong');
       });
       const ex = root.querySelector('.explain'); ex.hidden = false;
-      ex.innerHTML = `<b style="color:${ok ? 'var(--ok)' : 'var(--danger)'}">${ok ? 'Correct.' : 'Not quite.'}</b> ${esc(q.explain)}`;
+      ex.innerHTML = `<b style="color:${ok ? 'var(--ok)' : 'var(--danger)'}">${ok ? 'Correct.' : 'Not quite.'}</b>${xpTag(xp)} ${esc(q.explain)}`;
       if (opts.single) return;
       const last = idx === questions.length - 1;
       const nb = document.createElement('button');
@@ -589,8 +725,15 @@ function renderQuiz(root, questions, opts = {}){
 }
 
 /* ---------- Learn ---------- */
+// YouTube search (not hand-picked videos, which go stale) and the user's own course link (stored on-device only).
+const ytSearch = l => 'https://www.youtube.com/results?search_query=' + encodeURIComponent(`CompTIA CySA+ ${CYSA.exam.code} ${l.title.replace(/\(.*?\)/g, '')}`);
+function courseUrl(){ const u = store.get('courseUrl', ''); return isUrl(u) && /^https:/i.test(u) ? u : ''; }
 function renderLearn(){
   if (!CYSA) return;
+  $('#course-link').innerHTML = courseUrl()
+    ? `<a class="btn block" style="margin-top:8px;text-decoration:none" href="${esc(courseUrl())}" target="_blank" rel="noopener noreferrer">🎓 Open my Udemy</a>`
+    : `<button class="linkish small" style="margin-top:10px" id="course-set">Add your Udemy profile or course link →</button>`;
+  const cs = $('#course-set'); if (cs) cs.onclick = () => openSettings('course-url');
   const done = store.get('lessons', {}), qs = store.get('qstats', {answered: 0, correct: 0, byDomain: {}});
   $('#exam-name').textContent = CYSA.exam.name + ' (' + CYSA.exam.code + ')';
   const n = Object.keys(done).length;
@@ -631,18 +774,21 @@ function openLesson(id){
     <h2>Key points</h2><ul class="points">${l.points.map(p => `<li>${esc(p)}</li>`).join('')}</ul>
     <div class="box tip"><b>Exam tip</b>${esc(l.examTip)}</div>
     <div class="box job"><b>On the job</b>${esc(l.onTheJob)}</div>
+    <div class="links"><a class="btn" href="${esc(ytSearch(l))}" target="_blank" rel="noopener noreferrer">▶ Videos on this topic</a>${courseUrl() ? `<a class="btn" href="${esc(courseUrl())}" target="_blank" rel="noopener noreferrer">🎓 My Udemy</a>` : ''}</div>
     <h2>Check yourself</h2><div class="card" id="lesson-quiz"></div>
     <button class="btn block" id="mark-done" style="margin-top:6px">Mark as complete</button>`);
   const quizQs = l.quiz.map((q, i) => ({...q, domain: l.domain, qid: l.id + '#' + i}));
   const complete = score => {
-    const done = store.get('lessons', {});
+    const done = store.get('lessons', {}), first = !done[l.id];
     done[l.id] = {date: todayKey(), score: score ?? (done[l.id] && done[l.id].score) ?? null};
     store.set('lessons', done); markActivity();
+    if (first) gainXP(XP.lesson, String(l.domain));
     $('#mark-done').textContent = 'Completed ✓'; $('#mark-done').disabled = true;
   };
-  renderQuiz($('#lesson-quiz'), quizQs, {onDone: c => { complete(c); toast('Lesson complete'); }});
+  const firstTime = () => !store.get('lessons', {})[l.id];
+  renderQuiz($('#lesson-quiz'), quizQs, {onDone: c => { const f = firstTime(); complete(c); toast('Lesson complete' + (f ? ` +${XP.lesson} XP` : '')); }});
   if (store.get('lessons', {})[l.id]){ $('#mark-done').textContent = 'Completed ✓'; $('#mark-done').disabled = true; }
-  $('#mark-done').onclick = () => { complete(); toast('Lesson complete'); };
+  $('#mark-done').onclick = () => { const f = firstTime(); complete(); toast('Lesson complete' + (f ? ` +${XP.lesson} XP` : '')); };
 }
 function startQuiz(n, weighted){
   const all = ALL_Q();
@@ -660,6 +806,7 @@ function startQuiz(n, weighted){
     <p class="small muted">The real exam is scored 100-900 with 750 to pass, and includes performance-based questions. Treat this as a knowledge check, not a score predictor.</p>`);
   renderQuiz($('#big-quiz'), picked, {onDone: (c, t) => {
     const h = store.get('quizHistory', []); h.push({date: todayKey(), c, t, type: weighted ? 'exam' : 'quick'}); store.set('quizHistory', h.slice(-100));
+    const b = gainXP(weighted ? XP.exam : XP.quiz); if (b) toast(`Round complete +${b} XP`);
   }});
 }
 function startReview(){
@@ -673,6 +820,7 @@ function startReview(){
     <p class="small muted">${weak.length} question${weak.length === 1 ? '' : 's'} to review, most recent misses first (up to 10 per round). A question drops off once you get it right more often than wrong.</p>`);
   renderQuiz($('#big-quiz'), shuffle(weak.slice(0, 10)), {onDone: (c, t) => {
     const h = store.get('quizHistory', []); h.push({date: todayKey(), c, t, type: 'review'}); store.set('quizHistory', h.slice(-100));
+    const b = gainXP(XP.quiz); if (b) toast(`Round complete +${b} XP`);
   }});
 }
 $('#review-quiz').onclick = startReview;
@@ -761,7 +909,8 @@ function renderCards(){
     const ex = $('#flash .explain'); ex.hidden = false;
     ex.innerHTML = `<b style="color:${ok ? 'var(--ok)' : 'var(--danger)'}">${ok ? (improved ? 'Improved! ✓' : 'Correct.') : 'Not quite.'}</b> ${esc(c.back)}`
       + (ok ? '' : `<div class="small" style="margin-top:6px">Saved to your missed cards - you'll see it again${c.retried ? ' next time' : ' later in this round'}.</div>`);
-    answerCard(c, ok);
+    const xp = answerCard(c, ok);
+    if (xp) ex.querySelector('b').insertAdjacentHTML('afterend', xpTag(xp));
     const nb = document.createElement('button');
     nb.className = 'btn primary block'; nb.id = 'card-next-btn'; nb.textContent = cardQueue.length ? 'Next card' : 'Done';
     nb.onclick = renderCards;
@@ -785,6 +934,31 @@ function answerCard(c, ok){
   // Wrong: ask once more at the end of this round (fresh options), then it waits in "Review missed cards".
   if (!ok && !c.retried) cardQueue.push({...c, retried: true});
   markActivity(); renderStats();
+  return gainXP(ok ? XP.cardRight : XP.cardWrong, String(c.domain), ['c', c.id]);
+}
+
+/* ---------- What's new / Roadmap: render the repo's own Markdown (headings, bullets, checkboxes, bold, code) ---------- */
+function miniMd(src){
+  const inline = t => esc(t).replace(/\[([^\]]+)\]\([^)]*\)/g, '$1').replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/`([^`]+)`/g, '<code>$1</code>');
+  let html = '', inList = false;
+  const close = () => { if (inList){ html += '</ul>'; inList = false; } };
+  src.split('\n').forEach(line => {
+    const h = line.match(/^#{1,3}\s+(.*)/), li = line.match(/^\s*[-*]\s+(\[( |x)\]\s+)?(.*)/i);
+    if (h){ close(); if (!/^#\s/.test(line)) html += `<h3>${inline(h[1])}</h3>`; }
+    else if (li){ if (!inList){ html += '<ul>'; inList = true; }
+      html += li[1] ? `<li class="${li[2].toLowerCase() === 'x' ? 'done' : 'todo'}">${li[2].toLowerCase() === 'x' ? '✅' : '⬜'} ${inline(li[3])}</li>` : `<li>${inline(li[3])}</li>`; }
+    else if (line.trim()){ close(); html += `<p class="small muted">${inline(line)}</p>`; }
+  });
+  close();
+  return html;
+}
+async function openDoc(title, path){
+  openSheet(title, '<div class="empty">Loading…</div>');
+  try{
+    const r = await fetch(path + '?_=' + Date.now());
+    if (!r.ok) throw new Error(r.status);
+    $('#sheet-body').innerHTML = `<div class="card md">${miniMd(await r.text())}</div>`;
+  }catch(e){ $('#sheet-body').innerHTML = '<div class="empty">Couldn\'t load this (offline?).</div>'; }
 }
 
 /* ---------- Settings ---------- */
@@ -801,11 +975,18 @@ function renderMuteList(){
 function openSettings(focus){
   const rows = NEWS.sources.map(s => `<tr><td>${s.ok ? '✅' : '⚠️'}</td><td>${esc(s.name)}${s.error ? `<div class="small muted">${esc(s.error)}</div>` : ''}</td><td style="text-align:right">${s.count}</td></tr>`).join('');
   openSheet('Settings', `
+    <div class="row" style="gap:8px"><button class="btn grow" id="open-changelog">What's new</button><button class="btn grow" id="open-roadmap">Roadmap</button></div>
     <h2>Exam date</h2>
     <div class="card small">
       <div class="row" style="gap:8px"><input type="date" class="field grow" id="exam-date" value="${esc(examDate() || '')}" aria-label="Exam date">
         <button class="btn" id="exam-clear">Clear</button></div>
       <p class="muted" style="margin-bottom:0">Shows a countdown and a suggested daily target on the Brief (Brisbane dates).</p>
+    </div>
+    <h2>Udemy link</h2>
+    <div class="card small">
+      <div class="row" style="gap:8px"><input type="url" class="field grow" id="course-url" value="${esc(courseUrl())}" placeholder="https://www.udemy.com/user/…" aria-label="Udemy profile or course link">
+        <button class="btn" id="course-clear">Clear</button></div>
+      <p class="muted" style="margin-bottom:0">Adds a shortcut on Learn and in every lesson. Saved on this device only, never in the public repo.</p>
     </div>
     <h2>Muted sources and tags</h2>
     <div class="card small" id="mute-list"></div>
@@ -843,6 +1024,16 @@ function openSettings(focus){
   };
   $('#exam-clear').onclick = () => { $('#exam-date').value = ''; store.del('examDate'); toast('Exam date cleared'); };
   if (focus === 'exam-date') $('#exam-date').scrollIntoView({block: 'center'});
+  if (focus === 'course-url') $('#course-url').scrollIntoView({block: 'center'});
+  $('#course-url').onchange = e => {
+    const v = e.target.value.trim();
+    if (!v){ store.del('courseUrl'); toast('Link cleared'); }
+    else if (/^https:\/\//i.test(v)){ store.set('courseUrl', v); toast('Link saved'); }
+    else toast('Use a full https:// link');
+  };
+  $('#course-clear').onclick = () => { $('#course-url').value = ''; store.del('courseUrl'); toast('Link cleared'); };
+  $('#open-changelog').onclick = () => openDoc("What's new", 'CHANGELOG.md');
+  $('#open-roadmap').onclick = () => openDoc('Roadmap', 'context/roadmap.md');
   $('#export').onclick = () => {
     const data = {};
     try{ for (let i = 0; i < localStorage.length; i++){ const k = localStorage.key(i); if (k.startsWith('sp_')) data[k] = localStorage.getItem(k); } }catch(e){}
@@ -887,7 +1078,7 @@ $('#install-dismiss').onclick = () => { store.set('hintDismissed', true); $('#in
 
 /* ---------- boot ---------- */
 (async () => {
-  try{ await loadCysa(); }catch(e){ toast('Could not load study content'); }
+  try{ await loadCysa(); seedXP(); }catch(e){ toast('Could not load study content'); }
   await loadNews(false);
   renderLearn();
   const start = location.hash.slice(1);

@@ -25,6 +25,8 @@ Standard library only, so there's no `pip install` step and nothing to pin.
       "type": "kev",                          // optional; only for the CISA KEV JSON
       "region": "AU" | "auto" | "Global",
       "requireMatch": true,                   // optional
+      "exclude": ["^use\\b"],                  // optional; title regexes to drop
+      "minTitleWords": 6,                     // optional; drop shorter titles
       "weight": 0,                            // added to every item's score
       "max": 25                               // newest N items kept per fetch
     }
@@ -42,6 +44,11 @@ Standard library only, so there's no `pip install` step and nothing to pin.
 
 ### `requireMatch`
 Google News searches match loosely (e.g. a "real estate cyber" search returns plain property-auction stories). With `requireMatch: true`, an item is dropped unless it hits at least one keyword group other than `Australia`.
+
+### `exclude` and `minTitleWords`
+For search feeds that surface evergreen web pages rather than news. Google News re-indexes cyber.gov.au's guidance pages ("Use passkeys", "Event logging", product-evaluation listings like "Junos OS 23.4R1 for …") as if they were new, so **ACSC (via Google News)** drops titles matching its `exclude` regexes (case-insensitive) or shorter than `minTitleWords` words. Real ACSC alerts have long, descriptive titles, and outlets' coverage of them also arrives via **ASD / ACSC in the news**.
+
+`passes_filters()` applies `exclude`, `minTitleWords` and `requireMatch`, both to fresh items and to items kept from the previous `news.json`. So tightening a source's filters removes already-stored junk on the next run instead of leaving it for up to 14 days.
 
 ## Scoring
 
@@ -140,7 +147,9 @@ Each source runs in its own `try/except`, and so does the EPSS lookup (its healt
 
 | Source | Status | Notes |
 |---|---|---|
-| ACSC Alerts / ACSC Advisories (`cyber.gov.au/rss/…`) | ⚠️ failing since launch | Correct URLs per feed directories, but cyber.gov.au returns nothing to data-centre IPs (GitHub Actions, cloud sandboxes). ACSC content still arrives via the **ACSC (via Google News)** source. Leave them in, since they'll recover silently if ACSC changes its blocking, or remove them to clear the ⚠️. |
+| ACSC Alerts / ACSC Advisories (`cyber.gov.au/rss/…`) | ⚠️ failing since launch | Correct URLs per feed directories, but cyber.gov.au returns nothing to data-centre IPs (GitHub Actions, cloud sandboxes). ACSC content still arrives via the **ACSC (via Google News)** and **ASD / ACSC in the news** sources. Leave them in, since they'll recover silently if ACSC changes its blocking, or remove them to clear the ⚠️. |
+| ACSC (via Google News) | ✅ filtered | Without its `exclude`/`minTitleWords` filters, most of its items are evergreen guidance pages, not news (fixed 2026-10-13). If it still lets junk through, add a regex to `exclude`. |
+| iTnews Security (category 37) | ✅ `requireMatch` | The "security" category feed also carries general IT business news (CIO appointments, visa policy), so it needs `requireMatch`. Expect a few items a week, not 20. |
 | CISA advisories (`cisa.gov/cybersecurity-advisories/all.xml`) | not used | Returns 403 to scripts. CISA KEV JSON works fine and covers the most actionable part. |
 
 ## Adding a source

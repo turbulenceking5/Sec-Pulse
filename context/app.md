@@ -4,6 +4,7 @@ One self-contained HTML file: inline `<style>` and `<script>`, no framework, no 
 
 ## Layout
 - **Header** (sticky, respects `env(safe-area-inset-top)`): logo, "updated Xh ago" (from `news.json.generated`), ↻ refresh news, ⚙️ Settings.
+- **↻ Refresh** re-fetches `news.json`, spins while it does, and always toasts the result: "N new stories", or "Up to date · fetched 2h ago, next in ~40m" (`nextFetchIn()`, from the `17 */3 * * *` cron in `fetch-news.yml`; keep it in sync if the schedule changes). It also asks the service worker to check for a new app version. It **can't** fetch the feeds itself: there's no backend, and only the GitHub Action runs `fetch_news.py`. Before this, an unchanged `news.json` made the button look broken.
 - **Four views** in `<main>`, switched by the bottom **nav** (fixed, respects `safe-area-inset-bottom`). The current view is kept in the URL hash (`#news`, `#learn`, …) so reopening lands on the same tab.
 - **Sheet** (`#sheet`): a full-screen overlay used for lessons, quizzes and Settings. Closing it re-renders Learn and Brief so ticks and stats update.
 - **Toast** (`#toast`, z-index 80): above the sheet (50) and nav (30). Any new overlay must stay below 80.
@@ -12,6 +13,7 @@ One self-contained HTML file: inline `<style>` and `<script>`, no framework, no 
 
 ### Brief
 - Greeting by Brisbane hour, date, and three stats: day streak, cards due, lessons done.
+- **Analyst rank card** (`renderRank()`): level, rank title, XP bar, XP earned today. Tap it for the profile sheet. See [XP and analyst rank](#xp-and-analyst-rank).
 - **Exam countdown** (`renderExam()`): with `sp_examDate` set, a card shows days left (`ordinal(exam) - ordinal(today)`, both Brisbane dates) and a suggested target for today: `ceil(unfinished lessons / days left)` lessons, plus cards due and up to 10 review-mistakes questions. All lessons done → suggests a practice exam. Day 0 → "Exam day"; past date → asks to update it. With no date, a small link opens Settings at the date field. Tapping the card does the same.
 - **Top for you**: 5 highest-`rank()` items from the last 30h (falls back to 72h if fewer than 5), excluding muted sources/tags.
 - Pills: items in 24h, Australian count, actively-exploited count, feeds OK.
@@ -48,8 +50,9 @@ Tag colours: red (`hot`) for Actively exploited / KEV / Ransomware, teal (`re`) 
 - **Quick quiz**: 10 random questions from all lessons.
 - **Practice exam**: 30 questions spread across domains by exam weight (33/30/20/17% → 10/9/6/5 questions). Results go to `sp_quizHistory`.
 - **Review mistakes** (`startReview()` / `weakQuestions()`): up to 10 questions from `sp_qhist` whose latest answer was wrong or that have been missed more often than answered right. Ordered latest-wrong first, then most net misses, then most recent; the picked 10 are shuffled. A question drops off once right outnumbers wrong and the latest answer was right. The button shows the count; with no history it opens an empty-state card. Results go to `sp_quizHistory` with `type: "review"`. Question IDs (`<lesson id>#<index>`) that no longer exist in cysa.json are ignored.
+- **Udemy link** (`sp_courseUrl`): an "Open my Udemy" button under Review mistakes once set in Settings, otherwise a link to set it. Only `https://` URLs are accepted. It's stored on the device, never in the repo (see [opsec.md](opsec.md)).
 - Lessons grouped by domain, with ✓ when done and the lesson-quiz score.
-- **Lesson sheet**: summary, key points, Exam tip box (teal), On the job box (amber), a 3-question quiz. Finishing the quiz or tapping **Mark as complete** marks the lesson done.
+- **Lesson sheet**: summary, key points, Exam tip box (teal), On the job box (amber), **▶ Videos on this topic** (a YouTube *search* for "CompTIA CySA+ CS0-003 <lesson title>", via `ytSearch()`; deliberately not hand-picked videos, which get deleted or go stale), 🎓 My Udemy if set, and a 3-question quiz. Finishing the quiz or tapping **Mark as complete** marks the lesson done.
 
 ### Cards
 Multiple choice on top of Leitner spaced repetition:
@@ -61,7 +64,7 @@ Multiple choice on top of Leitner spaced repetition:
 - The nav badge shows the number of due cards.
 
 ### Settings sheet
-Exam date (`<input type="date">` + Clear, saved on change to `sp_examDate`), muted sources/tags (tap to unmute), ntfy setup steps (with a random topic suggestion), feed health table, Export / Import / Reset progress, About. `openSettings('exam-date')` scrolls to the date field.
+**What's new** and **Roadmap** buttons (`openDoc()`) fetch `CHANGELOG.md` and `context/roadmap.md` and render them with `miniMd()`: `##` headings, `-` bullets, `[ ]`/`[x]` checkboxes, `**bold**` and `` `code` ``. Links show as plain text, since the docs' relative links point at other `.md` files. It works because `.nojekyll` makes Pages serve `.md` files raw. Keep both files to that simple subset. Then: exam date (`<input type="date">` + Clear, saved on change to `sp_examDate`), Udemy link (`sp_courseUrl`), muted sources/tags (tap to unmute), ntfy setup steps (with a random topic suggestion), feed health table, Export / Import / Reset progress, About. `openSettings('exam-date')` scrolls to the date field.
 
 ## Quiz engine: `renderQuiz(root, questions, opts)`
 - One question at a time. **Option order is shuffled on every render**, so the `answer` index in the JSON can be anything.
@@ -70,6 +73,17 @@ Exam date (`<input type="date">` + Clear, saved on change to `sp_examDate`), mut
 - `opts.onDone(correct, total)`: called after the result screen.
 - Every answer → `recordAnswer()` updates `sp_qstats` (overall and per-domain), `sp_qhist` (per question, when the question has a `qid`, which all three quiz entry points set) and the streak.
 - Result messages: ≥80% "Exam-ready territory", ≥65% "Close", else "Keep going". These are rough guides; the real exam is scaled 100–900, with 750 to pass.
+
+## XP and analyst rank
+An RPG-style layer over the existing study features: everything earns XP, XP sets a level, levels unlock rank titles.
+
+- **Earning** (`XP` constants, `gainXP(n, skill, once)`): quiz answer +10 right / +3 wrong; flashcard +5 / +1; lesson completed for the first time +50; finishing a practice exam +25 or a quick/review round +10; opening a news story +2 (first open of that story, up to `READ_CAP` = 25 a day); first study activity of a Brisbane day +10 +2 per streak day (max +30, awarded in `markActivity()`).
+- **Anti-grind**: each question (`qid`) and card (`id`) earns XP once per Brisbane day, tracked in `today.q`/`today.c`. That covers the question of the day re-rendering, cram rounds and the in-round retry of a wrong card. Repeats still count for stats and spaced repetition, just not XP.
+- **Levels**: going from level L to L+1 costs 100×L XP (`levelOf()`, `xpForLevel()`), so Lv 10 needs 4,500 XP and Lv 20 needs 19,000. A steady day (≈10 cards, 10 questions, a few stories) is about 150–200 XP.
+- **Ranks** (`RANKS`): Trainee Analyst (1), SOC Analyst Tier 1 (3), Tier 2 (6), Incident Responder (10), Threat Hunter (15), Senior Analyst (20), Detection Engineer (25), SOC Lead (30), Security Architect (40), Cyber Legend (50). Level-ups toast, and a new rank says "promoted to …".
+- **Skills**: XP is also credited to the CySA+ domain of the question/card/lesson (`"1"`-`"4"`) or to `intel` for news reads. Skill levels use the same curve at 25 XP per step. Shown on the **Analyst profile** sheet (`openProfile()`), along with the earning table and rank ladder.
+- **Seeding** (`seedXP()`, runs once after `cysa.json` loads when `sp_xp` doesn't exist): credits progress made before XP existed from `sp_lessons`, `sp_qhist`, `sp_cardhist` and `sp_read` at the same rates, so existing users don't restart at level 1. No daily or round bonuses are back-dated.
+- Quiz and card explanations show `+N XP` when XP was awarded.
 
 ## Streak
 Any study activity (answering a question, completing a lesson, grading a card) on a Brisbane calendar day calls `markActivity()`. Consecutive days increment the streak, and a missed day resets it to 1. The streak is shown as 0 once more than one day has passed since the last activity.
@@ -93,6 +107,8 @@ All keys are prefixed `sp_` (Export, Import and Reset rely on the prefix). Every
 | `sp_hintDismissed` | `true` | iOS install hint dismissed |
 | `sp_examDate` | `"YYYY-MM-DD"` (Brisbane date) | Exam countdown; removed when cleared |
 | `sp_muted` | `{sources: [name, …], tags: [tag, …]}` | Muted news sources/tags |
+| `sp_xp` | `{total, bySkill: {"1": n, …, "intel": n}, today: {date, xp, reads, q: [qid…], c: [cardId…]}}` | XP, skills and today's per-item XP caps (`today` resets on a new Brisbane day) |
+| `sp_courseUrl` | `"https://…"` | Udemy profile/course link; removed when cleared |
 
 **Never rename a key or change its shape without a migration.** Existing progress on the phone would silently reset.
 

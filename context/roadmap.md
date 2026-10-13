@@ -13,6 +13,11 @@ Ideas for what to build next, roughly in priority order. Move items to [CHANGELO
 - [ ] **Scaled score estimate** after practice exams, with a clear "rough guide" disclaimer.
 - [x] **Exam countdown**: set an exam date in Settings, show days left on the Brief, and suggest daily targets.
 - [x] **More flashcards** for tools and ports (Nmap flags, common ports, Windows event IDs such as 4624/4625/4688/4720/1102).
+- [x] **XP and analyst rank**: RPG-style levels, rank titles and per-domain skills, earned from quizzes, cards, lessons and reading news.
+- [x] **Video help per lesson**: a YouTube search link on every lesson.
+- [x] **Udemy link** in Settings, shown on Learn and in lessons (stored on-device only).
+- [ ] **Category lessons for common security tooling**: generic EDR, vulnerability-scanner and secure-email-gateway workflows (triaging an EDR detection, reading a scan report, releasing a quarantined email). Keep them vendor-neutral, see [opsec.md](opsec.md).
+- [ ] **XP quests**: optional daily goals ("answer 10 questions", "read 3 Australian stories") worth bonus XP.
 - [ ] **Version check**: when CompTIA announces the CS0-003 successor, update `exam.code`, domains and weights (see [study-content.md](study-content.md#accuracy)).
 
 ## News
@@ -26,6 +31,8 @@ Ideas for what to build next, roughly in priority order. Move items to [CHANGELO
 
 ## App
 
+- [x] **In-app What's new and Roadmap** (Settings), rendered from CHANGELOG.md and this file.
+- [x] **Refresh button feedback**: spins and reports new stories or when the next fetch is due.
 - [ ] **Pull-to-refresh** on News.
 - [ ] **Light theme** option.
 - [ ] **Read-later list separate from Saved**, or notes on saved stories.
@@ -35,3 +42,5 @@ Ideas for what to build next, roughly in priority order. Move items to [CHANGELO
 
 - **Anything that stores employer-internal data** (internal alert feeds, asset lists, incident notes). The repo and site are public; see [opsec.md](opsec.md).
 - **A shared or multi-user version.** It's a personal tool.
+- **Lessons named after the employer's actual security vendors.** A public deck for exactly those products reveals the stack. Use the vendors' own training portals privately; generic category lessons are on the list above.
+- **Triggering a news fetch from the ↻ button.** It would need a GitHub token in a public page. The Action runs every 3 hours, and **Actions → Fetch news → Run workflow** forces one.
