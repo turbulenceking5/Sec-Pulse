@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-13T23:01:16Z",
+ "generated": "2026-10-13T23:49:33Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,7 +28,7 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 6,
+   "count": 5,
    "error": null
   },
   {
@@ -70,7 +70,7 @@
   {
    "name": "Krebs on Security",
    "ok": true,
-   "count": 2,
+   "count": 3,
    "error": null
   },
   {
@@ -82,7 +82,7 @@
   {
    "name": "Microsoft Security Blog",
    "ok": true,
-   "count": 10,
+   "count": 7,
    "error": null
   },
   {
@@ -105,6 +105,38 @@
   }
  ],
  "items": [
+  {
+   "id": "83d130e7ba9f",
+   "title": "Microsoft Patches More Than 1,400 Security Flaws",
+   "link": "https://krebsonsecurity.com/2026/10/microsoft-patches-more-than-1400-security-flaws/",
+   "source": "Krebs on Security",
+   "feed": "Krebs on Security",
+   "region": "Global",
+   "published": "2026-10-13T23:24:53Z",
+   "summary": "Microsoft today issued updates to fix more than 1,400 security vulnerabilities in its Windows operating systems and other software. Today's epic patch batch dwarfs September's record of nearly 1,000 fixes, which was already about ten times the normal monthly patch load from Redmond.",
+   "score": 6,
+   "tags": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "0cfb790894cf",
+   "title": "Employee Arrested After Listening Device Found in OpenAI Conference Room, FBI and the Company Say",
+   "link": "https://www.securityweek.com/employee-arrested-after-listening-device-found-in-openai-conference-room-fbi-and-the-company-say/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-13T23:07:00Z",
+   "summary": "Saudi national Abdulrahman Alfozan was arrested Friday and terminated by OpenAI. The post Employee Arrested After Listening Device Found in OpenAI Conference Room, FBI and the Company Say appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
   {
    "id": "ff21bb8aab01",
    "title": "OpenAI engineer arrested for allegedly planting spy device in office",
