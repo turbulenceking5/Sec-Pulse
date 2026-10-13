@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-13T09:24:46Z",
+ "generated": "2026-10-13T10:39:30Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -106,6 +106,25 @@
  ],
  "items": [
   {
+   "id": "3b4e5e79f1e2",
+   "title": "Cyberattack Prompts Ahold Delhaize to Disconnect Systems",
+   "link": "https://www.securityweek.com/cyberattack-prompts-ahold-delhaize-to-disconnect-systems/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-13T09:37:12Z",
+   "summary": "The company says it took some of its systems offline to contain a security issue within its network. The post Cyberattack Prompts Ahold Delhaize to Disconnect Systems appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": [],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/retail-giant-ahold-delhaize-takes-systems-offline-after-cyberattack/"
+    }
+   ]
+  },
+  {
    "id": "339f93492eef",
    "title": "Two Critical MarkLogic Flaws Could Give Delegated Managers Persistent Admin Control",
    "link": "https://thehackernews.com/2026/10/two-critical-marklogic-flaws-could-give.html",
@@ -170,23 +189,6 @@
    ]
   },
   {
-   "id": "032ab673110e",
-   "title": "‘Hands off': CJP's Saurav Das, Ashutosh Ranka breach Jantar Mantar, detained | WATCH | India News",
-   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOdVdxdEVMdlQzTW9DRXktNjNiZktrNGhpMVNJZzBNU3NxNHVXeUR2MC1QbVJhYWRwbUhUUDQ2YmMtV2d1eF9zVkJHRjlicmtoTi1XVmRndERYWHZlczBERThYOHlFU1ZKQ1JGYlVucHhyRjM5eUNyNWpOdjNZTzdvTTFPVVVXbVl5eno0elhPTlRWSTRybll6VlV2dXFTYTdmYzh1RW5mRDd1elkxeDlKT1QwNElmVzg1VWxkdkRMcWxXYVVqVDA3NWhUbzhCa2xfeEtDUjkyNUFKNjNXOUxSNGxlMNIB6AFBVV95cUxPVjVzTFg4QUJhZklpUHAtX0xEV3NibjgxSWs1MGNUMENXSWZ1RHlMdUpyR1lVUmp2NWlQWnlKMmcta2l2QVhZcmFudXNvdGJRU09fUTNHLTl1aDdmY3FSdXdGS1NNTGd3aEZCMnZNaWtFcXBkN1gtUnJZaFNnemlyQXlQUmRsYmdieEYtamdmRG1DRk53SnZSb2hBdlJReEMxckxZZkhuLTR4QnJHRlZiNmk4N0dMN0hYVUtJRXBfaXlVcnJoalF6NFA3YkVraUVTQ3JHYzkxWDhBMmNyTVV3Q1lUTnJwWXdo?oc=5",
-   "source": "Hindustan Times",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-13T07:03:44Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
    "id": "585594f86cc8",
    "title": "Low-Cost Android Phones Ship With Preinstalled Malware That Turns Them Into Residential Proxies",
    "link": "https://thehackernews.com/2026/10/low-cost-android-phones-ship-with.html",
@@ -216,6 +218,23 @@
    "why": [
     "Australia",
     "Edge devices"
+   ]
+  },
+  {
+   "id": "032ab673110e",
+   "title": "‘Hands off': CJP's Saurav Das, Ashutosh Ranka breach Jantar Mantar, detained | WATCH | India News",
+   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOdVdxdEVMdlQzTW9DRXktNjNiZktrNGhpMVNJZzBNU3NxNHVXeUR2MC1QbVJhYWRwbUhUUDQ2YmMtV2d1eF9zVkJHRjlicmtoTi1XVmRndERYWHZlczBERThYOHlFU1ZKQ1JGYlVucHhyRjM5eUNyNWpOdjNZTzdvTTFPVVVXbVl5eno0elhPTlRWSTRybll6VlV2dXFTYTdmYzh1RW5mRDd1elkxeDlKT1QwNElmVzg1VWxkdkRMcWxXYVVqVDA3NWhUbzhCa2xfeEtDUjkyNUFKNjNXOUxSNGxlMNIB6AFBVV95cUxPVjVzTFg4QUJhZklpUHAtX0xEV3NibjgxSWs1MGNUMENXSWZ1RHlMdUpyR1lVUmp2NWlQWnlKMmcta2l2QVhZcmFudXNvdGJRU09fUTNHLTl1aDdmY3FSdXdGS1NNTGd3aEZCMnZNaWtFcXBkN1gtUnJZaFNnemlyQXlQUmRsYmdieEYtamdmRG1DRk53SnZSb2hBdlJReEMxckxZZkhuLTR4QnJHRlZiNmk4N0dMN0hYVUtJRXBfaXlVcnJoalF6NFA3YkVraUVTQ3JHYzkxWDhBMmNyTVV3Q1lUTnJwWXdo?oc=5",
+   "source": "Hindustan Times",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-13T04:08:30Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
    ]
   },
   {
@@ -593,19 +612,6 @@
    "region": "Global",
    "published": "2026-10-12T14:00:10Z",
    "summary": "A new Windows malware loader called AvisLoader uses encrypted peer-to-peer communications to make command-and-control infrastructure harder to disrupt. Varonis researchers explain how the malware uses ClickFix delivery, shortcut-based persistence, and remote command execution capabilities. [...]",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "8bf2f9414a62",
-   "title": "Retail giant Ahold Delhaize takes systems offline after cyberattack",
-   "link": "https://www.bleepingcomputer.com/news/security/retail-giant-ahold-delhaize-takes-systems-offline-after-cyberattack/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-12T13:51:07Z",
-   "summary": "Retail giant Ahold Delhaize, one of the world's largest food retail chains, confirmed today that it had to take some systems offline in response to a \"cybersecurity incident\" affecting its network. [...]",
    "score": 0,
    "tags": [],
    "why": []
