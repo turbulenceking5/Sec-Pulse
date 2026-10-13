@@ -19,6 +19,8 @@ Browsers can't read most news feeds directly (CORS), so a scheduled Action fetch
 
 ## Setup
 
+Full guide with troubleshooting: [SETUP.md](SETUP.md). Short version:
+
 1. **Turn on GitHub Pages:** repo **Settings → Pages → Build and deployment → Deploy from a branch → `main` / `(root)`**. The app will be at `https://<you>.github.io/Sec-Pulse/`.
 2. **Allow the Action to push:** **Settings → Actions → General → Workflow permissions → Read and write permissions**.
 3. **Fetch news now:** **Actions → Fetch news → Run workflow** (then it runs every 3 hours by itself).
@@ -29,6 +31,10 @@ Browsers can't read most news feeds directly (CORS), so a scheduled Action fetch
    - Test: **Actions → Morning brief → Run workflow**.
 
    Anyone who knows an ntfy topic name can read it, so keep it long and secret. The brief only contains public headlines.
+
+## Docs
+
+How each part works is documented in [`context/`](context/), starting with [architecture.md](context/architecture.md). Planned work is in [roadmap.md](context/roadmap.md).
 
 ## Customising
 

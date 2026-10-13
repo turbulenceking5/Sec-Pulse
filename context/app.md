@@ -1,0 +1,104 @@
+# The app (`index.html`)
+
+One self-contained HTML file: inline `<style>` and `<script>`, no framework, no build step, no external scripts or fonts. It works opened from GitHub Pages or `python3 -m http.server`. Opening the file directly via `file://` doesn't work, because `fetch()` of the JSON files fails there.
+
+## Layout
+- **Header** (sticky, respects `env(safe-area-inset-top)`): logo, "updated Xh ago" (from `news.json.generated`), ↻ refresh news, ⚙️ Settings.
+- **Four views** in `<main>`, switched by the bottom **nav** (fixed, respects `safe-area-inset-bottom`). The current view is kept in the URL hash (`#news`, `#learn`, …) so reopening lands on the same tab.
+- **Sheet** (`#sheet`): a full-screen overlay used for lessons, quizzes and Settings. Closing it re-renders Learn and Brief so ticks and stats update.
+- **Toast** (`#toast`, z-index 80): above the sheet (50) and nav (30). Any new overlay must stay below 80.
+
+## Tabs
+
+### Brief
+- Greeting by Brisbane hour, date, and three stats: day streak, cards due, lessons done.
+- **Top for you**: 5 highest-`rank()` items from the last 30h (falls back to 72h if fewer than 5).
+- Pills: items in 24h, Australian count, actively-exploited count, feeds OK.
+- **Today's CySA+ lesson**: same pick as the notification (see [morning-brief.md](morning-brief.md)).
+- **Question of the day**: `ALL_Q()[(ordinal(today) * 7) % n]`. Each answer counts toward stats. It re-renders whenever the Brief re-renders (e.g. returning to the app), so it can be answered more than once a day.
+
+### News
+Filter chips (the last choice is remembered in `sp_filter`):
+
+| Chip | Logic | Sort |
+|---|---|---|
+| For you | `score >= 5` and < 7 days old | `rank()` |
+| Latest | everything | newest |
+| 🇦🇺 Australia | `region == "AU"` | newest |
+| Exploited | tag `Actively exploited` or `KEV` | newest |
+| Real estate & BEC | tag `Real estate` or `BEC / payment fraud` | newest |
+| Microsoft 365 | tag `Microsoft 365` | newest |
+| ★ Saved | from `sp_saved` (survives the story ageing out of news.json) | newest |
+
+Search filters on title + summary + source + tags. The list paginates 40 at a time ("Show more"). Opening a story marks it read (dimmed, unread dot removed); ☆ saves it.
+
+Tag colours: red (`hot`) for Actively exploited / KEV / Ransomware, teal (`re`) for Real estate / BEC. The `Australia` tag is hidden on cards because the AU pill already shows it.
+
+### Learn
+- Exam card: lessons done / total, overall quiz accuracy, progress bar.
+- **Quick quiz**: 10 random questions from all lessons.
+- **Practice exam**: 30 questions spread across domains by exam weight (33/30/20/17% → 10/9/6/5 questions). Results go to `sp_quizHistory`.
+- Lessons grouped by domain, with ✓ when done and the lesson-quiz score.
+- **Lesson sheet**: summary, key points, Exam tip box (teal), On the job box (amber), a 3-question quiz. Finishing the quiz or tapping **Mark as complete** marks the lesson done.
+
+### Cards
+Leitner spaced repetition:
+- Boxes 1–5 with review intervals `[_, 1, 3, 7, 14, 30]` days (`INTERVALS[box]`).
+- **Again** → box 1, due today (goes back to the end of the current queue). **Good** → box +1. **Easy** → box +2. Capped at 5.
+- **8 new cards per day** (`NEW_PER_DAY`), tracked in `sp_newToday`. Cards are introduced in `cysa.json` order.
+- When caught up: a **Cram 10** button reviews random cards without touching the schedule.
+- The nav badge shows the number of due cards.
+
+### Settings sheet
+ntfy setup steps (with a random topic suggestion), feed health table, Export / Import / Reset progress, About.
+
+## Quiz engine: `renderQuiz(root, questions, opts)`
+- One question at a time. **Option order is shuffled on every render**, so the `answer` index in the JSON can be anything.
+- After answering: correct/incorrect highlight, explanation, Next / See result.
+- `opts.single`: no Next button (question of the day).
+- `opts.onDone(correct, total)`: called after the result screen.
+- Every answer → `recordAnswer()` updates `sp_qstats` (overall and per-domain) and the streak.
+- Result messages: ≥80% "Exam-ready territory", ≥65% "Close", else "Keep going". These are rough guides; the real exam is scaled 100–900, with 750 to pass.
+
+## Streak
+Any study activity (answering a question, completing a lesson, grading a card) on a Brisbane calendar day calls `markActivity()`. Consecutive days increment the streak, and a missed day resets it to 1. The streak is shown as 0 once more than one day has passed since the last activity.
+
+## localStorage keys
+All keys are prefixed `sp_` (Export, Import and Reset rely on the prefix). Every access goes through `store.get`/`store.set`, which wrap `JSON.parse`/`stringify` in try/catch so private browsing can't crash the app.
+
+| Key | Shape | Purpose |
+|---|---|---|
+| `sp_streak` | `{last: "YYYY-MM-DD", count, best}` | Day streak |
+| `sp_lessons` | `{"1.5": {date, score}}` | Completed lessons |
+| `sp_qstats` | `{answered, correct, byDomain: {"1": {a, c}}}` | Quiz accuracy |
+| `sp_quizHistory` | `[{date, c, t, type: "quick"\|"exam"}]` (last 100) | Quiz results |
+| `sp_cards` | `{"c01": {box, due: "YYYY-MM-DD"}}` | Flashcard schedule |
+| `sp_newToday` | `{date, n}` | New cards introduced today |
+| `sp_read` | `[id, …]` (last 1,500) | Read stories |
+| `sp_saved` | `{id: item}` | Saved stories (full item copy) |
+| `sp_filter` | `"foryou"` etc. | Last news filter |
+| `sp_hintDismissed` | `true` | iOS install hint dismissed |
+
+**Never rename a key or change its shape without a migration.** Existing progress on the phone would silently reset.
+
+## Data loading
+- `data/cysa.json` and `data/news.json` are fetched with `?_=Date.now()` to bypass the GitHub Pages CDN cache (max-age 600).
+- News reloads on the ↻ button and whenever the app comes back to the foreground (`visibilitychange`).
+- If the fetch fails (offline), the app keeps whatever it last loaded, and the service worker serves the cached copy.
+
+## Service worker
+`sw.js` is **network-first**: every same-origin GET tries the network, caches a successful response, and falls back to the cache when offline (finally to `index.html`). The `?_=` cache-buster is stripped from the cache key so offline lookups still match. There's no precache list to maintain. Bump `CACHE_NAME` only if the caching strategy itself changes, since activation deletes all other caches.
+
+## PWA / install
+- `manifest.json`: `display: standalone`, theme `#0b1220`, 192/512 icons (`purpose: any maskable`).
+- iOS uses `apple-touch-icon` (`icon-180.png`) and the `apple-mobile-web-app-*` meta tags. The status bar is `black-translucent`, which is why the header pads with `safe-area-inset-top`.
+- Icons are referenced with `?v=1`. **If the icon art changes, bump `v` everywhere** (index.html ×3, manifest ×2) and re-add the home-screen icon. iOS caches icons aggressively.
+- Icons were drawn with Pillow: a teal shield with a pulse line on navy. Regenerate at 1024px and downscale.
+
+## Theme tokens
+Dark navy UI with CSS variables on `:root`: `--bg #0b1220`, `--surface #121c2e`, `--surface2 #17243a`, `--border #22314a`, `--text #e6edf7`, `--muted #8da2c0`, `--accent #38e1c8` (teal), `--warn/--au #f5b84b` (amber), `--danger #ff6b6b`, `--ok #5ad08a`. Reuse these rather than adding new colours.
+
+## Gotchas
+- **`[hidden]{display:none!important}`** is at the top of the CSS on purpose. `.btn.block` and `.grade` set `display`, which would otherwise override the `hidden` attribute. This caused a real bug where "Show answer" and the grade buttons showed at the same time.
+- Everything inserted as HTML goes through `esc()`. News titles and summaries come from third-party feeds, so treat them as untrusted.
+- News links use `target="_blank" rel="noopener noreferrer"`.
