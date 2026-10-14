@@ -7,7 +7,7 @@ Sec-Pulse is a static site. There is no server of our own and no database. Three
 ```
 ┌──────────────────────── GitHub Actions (scheduled) ─────────────────────────┐
 │ fetch-news.yml   every 3h   → scripts/fetch_news.py → commit data/news.json │
-│ morning-brief.yml 6:30 AEST → fetch_news.py + commit → scripts/send_brief.py│
+│ morning-brief.yml 7:25 AEST → fetch_news.py + commit → scripts/send_brief.py│
 │ weekly-digest.yml Sun 6pm  → fetch_news.py + commit → scripts/send_digest.py│
 └──────────────────────────────────────┬──────────────────────────────────────┘
                                        │ git push → Pages rebuild
@@ -61,4 +61,4 @@ There's no shared module system between the Python scripts and the browser JS, s
 
 ## Time zones
 
-Everything user-facing uses **Australia/Brisbane** (UTC+10 all year; Queensland has no daylight saving). GitHub cron is UTC, so 6:30am Brisbane = `30 20 * * *` (the previous UTC day). If the user ever moves to a daylight-saving state, the cron and `BRISBANE` offset need revisiting.
+Everything user-facing uses **Australia/Brisbane** (UTC+10 all year; Queensland has no daylight saving). GitHub cron is UTC, so 7:25am Brisbane = `25 21 * * *` (the previous UTC day). If the user ever moves to a daylight-saving state, the cron and `BRISBANE` offset need revisiting.

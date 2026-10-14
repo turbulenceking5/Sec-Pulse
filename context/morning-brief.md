@@ -3,9 +3,9 @@
 A daily push notification with the top stories and the day's CySA+ lesson, plus a Sunday-evening [weekly digest](#weekly-digest).
 
 ## Schedule
-`.github/workflows/morning-brief.yml`: cron `30 20 * * *` = **20:30 UTC = 6:30am Brisbane** (AEST, UTC+10, no daylight saving). It can also be run on demand from **Actions → Morning brief → Run workflow**.
+`.github/workflows/morning-brief.yml`: cron `25 21 * * *` = **21:25 UTC = 7:25am Brisbane** (AEST, UTC+10, no daylight saving). It can also be run on demand from **Actions → Morning brief → Run workflow**.
 
-GitHub's cron is best-effort: runs are often 5–30 minutes late at busy times, and very occasionally skipped. The time is set early so the brief still arrives before a normal workday starts.
+GitHub's cron is best-effort: runs are often 5–30 minutes late at busy times, and very occasionally skipped. A late run means the brief can land closer to 7:30-7:55am.
 
 ## Steps
 1. **Fetch fresh news**: runs `fetch_news.py` first so the brief isn't up to 3 hours stale.

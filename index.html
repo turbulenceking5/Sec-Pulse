@@ -356,9 +356,10 @@ const READ_CAP = 25;
 const RANKS = [[1, 'Trainee Analyst'], [3, 'SOC Analyst (Tier 1)'], [6, 'SOC Analyst (Tier 2)'], [10, 'Incident Responder'],
   [15, 'Threat Hunter'], [20, 'Senior Analyst'], [25, 'Detection Engineer'], [30, 'SOC Lead'], [40, 'Security Architect'], [50, 'Cyber Legend']];
 const SKILLS = () => (CYSA ? CYSA.domains.map(d => [String(d.id), d.name]) : []).concat([['intel', 'Threat Intel (news)']]);
-// Level L -> L+1 costs step*L XP, so reaching level L takes step*L*(L-1)/2 in total.
-const levelOf = (xp, step = 100) => Math.floor((1 + Math.sqrt(1 + 8 * Math.max(0, xp) / step)) / 2);
-const xpForLevel = (L, step = 100) => step * L * (L - 1) / 2;
+// Level L -> L+1 costs step*L*(2 + L/20) XP (the curve steepens as you climb), so reaching level L
+// takes step*(L-1)*L*(1 + (2L-1)/120) in total: Lv 10 = 10,425, Lv 20 = 50,350, Lv 50 = 447,125.
+const xpForLevel = (L, step = 100) => Math.round(step * (L - 1) * L * (1 + (2 * L - 1) / 120));
+const levelOf = (xp, step = 100) => { let L = 1; while (xpForLevel(L + 1, step) <= xp) L++; return L; };
 const rankOf = L => RANKS.filter(r => r[0] <= L).pop()[1];
 function getXP(){
   const x = store.get('xp', null);
@@ -1227,7 +1228,7 @@ function openSettings(focus){
     <div class="card small" id="mute-list"></div>
     <h2>Morning brief notification</h2>
     <div class="card small">
-      <p style="margin-top:0">Every morning at about 6:30am Brisbane time, a GitHub Action sends your top 5 stories plus today's CySA+ lesson to the free <b>ntfy</b> app.</p>
+      <p style="margin-top:0">Every morning at about 7:25am Brisbane time, a GitHub Action sends your top 5 stories plus today's CySA+ lesson to the free <b>ntfy</b> app.</p>
       <ol style="padding-left:18px;margin:0">
         <li>Install <b>ntfy</b> from the App Store or Google Play.</li>
         <li>Pick a long, unguessable topic name, e.g. <code>secpulse-${Math.random().toString(36).slice(2, 10)}${Math.random().toString(36).slice(2, 8)}</code></li>

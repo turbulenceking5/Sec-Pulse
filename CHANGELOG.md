@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-10-14: Harder levels, later morning brief
+- **Levelling up is more of a grind.** Each level now costs more than the last, and the climb keeps steepening: Lv 10 takes about 10,400 XP (was 4,500), Lv 20 about 50,000 (was 19,000), and Cyber Legend (Lv 50) is years of daily study. Your XP total is unchanged, so your level will show lower than before. Skill levels follow the same curve.
+- **Morning brief moved to 7:25am** Brisbane time (was 6:30am). GitHub sometimes runs it a little late.
+
 ## 2026-10-14: PBQs, quests, light theme and weekly digest
 - **PBQ practice** (Learn): 15 performance-based scenarios - read an exhibit (logs, email headers, scan output, firewall rules, process trees) and pick the answer, or put steps in order. Missed ones join Review mistakes.
 - **Scaled score estimate** after a practice exam (rough guide only - CompTIA doesn't publish its conversion).
