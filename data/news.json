@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-14T08:46:05Z",
+ "generated": "2026-10-14T14:32:00Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -34,13 +34,13 @@
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 3,
+   "count": 5,
    "error": null
   },
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 2,
+   "count": 1,
    "error": null
   },
   {
@@ -70,7 +70,7 @@
   {
    "name": "Krebs on Security",
    "ok": true,
-   "count": 3,
+   "count": 4,
    "error": null
   },
   {
@@ -100,11 +100,362 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 16,
+   "count": 19,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "fac7cd6e29f5",
+   "title": "Microsoft fixes VPN issues caused by September Windows updates",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-vpn-issues-caused-by-september-windows-updates/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-14T14:27:01Z",
+   "summary": "Microsoft has resolved a known issue that caused Always On VPN connection issues after installing the September 2026 Windows 11 security updates. [...]",
+   "score": 4,
+   "tags": [
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "why": [
+    "Edge devices",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "78394b2e6b36",
+   "title": "U.K. Sanctions Cryptomus for RU Money Laundering",
+   "link": "https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/",
+   "source": "Krebs on Security",
+   "feed": "Krebs on Security",
+   "region": "Global",
+   "published": "2026-10-14T14:22:49Z",
+   "summary": "The United Kingdom has issued economic sanctions against Cryptomus, a chameleonic cryptocurrency platform that experts say serves as a major conduit for payments related to ransomware, narcotics, darknet markets, fraud and cybercrime services that are helping Russia circumvent existing financial…",
+   "score": 4,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
+  },
+  {
+   "id": "f6b610c18e50",
+   "title": "Harmonic Security Raises $50 Million for Workforce AI Protection",
+   "link": "https://www.securityweek.com/harmonic-security-raises-50-million-for-workforce-ai-protection/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-14T14:09:51Z",
+   "summary": "The cybersecurity startup plans to expand engineering and go-to-market teams in the US and UK. The post Harmonic Security Raises $50 Million for Workforce AI Protection appeared first on SecurityWeek .",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "937c7f4fab21",
+   "title": "The Blind Spots of Agentic Pentesting and How to Close Them",
+   "link": "https://www.bleepingcomputer.com/news/security/the-blind-spots-of-agentic-pentesting-and-how-to-close-them/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-14T14:00:10Z",
+   "summary": "AI-powered penetration testing can uncover complex attack paths, but safety restrictions and network limitations leave many assets and vulnerabilities untested. Picus Security explains how combining agentic pentesting with exposure validation and breach simulation can help close these gaps. [...]",
+   "score": 3,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "2ee0c0a49b5a",
+   "title": "Virtual Event Today: Zero Trust Strategies Summit",
+   "link": "https://www.securityweek.com/virtual-event-today-zero-trust-strategies-summit-2/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-14T13:56:36Z",
+   "summary": "This summit is laser-focused on the next generation of Zero Trust and Identity security, moving beyond theory to deliver actionable strategies. The post Virtual Event Today: Zero Trust Strategies Summit appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "91795601b1ff",
+   "title": "Global takedown hits network behind 1 billion phishing messages",
+   "link": "https://www.bleepingcomputer.com/news/security/global-takedown-hits-network-behind-1-billion-phishing-messages/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-14T13:12:52Z",
+   "summary": "A massive cybercriminal ecosystem facilitating more than a billion malicious messages targeting over 75,000 organizations across 150 countries has been disrupted by law enforcement agencies and partners worldwide. [...]",
+   "score": 5,
+   "tags": [
+    "Phishing",
+    "Vulnerability"
+   ],
+   "why": [
+    "Phishing",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "b9b58f38aa23",
+   "title": "Microsoft Disrupts Chinese-Language Phishing Market Behind 1B+ Messages",
+   "link": "https://www.securityweek.com/microsoft-disrupts-chinese-language-phishing-market-behind-1b-messages/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-14T13:00:00Z",
+   "summary": "Backed by a federal court order, Microsoft and Health-ISAC seized domains powering YAM Store, CoGUI, and Iron Man. The post Microsoft Disrupts Chinese-Language Phishing Market Behind 1B+ Messages appeared first on SecurityWeek .",
+   "score": 4,
+   "tags": [
+    "Phishing"
+   ],
+   "why": [
+    "Phishing"
+   ]
+  },
+  {
+   "id": "319aa986d3e5",
+   "title": "Russian Influence Operation Widely Targeting Latin America",
+   "link": "https://www.darkreading.com/cyberattacks-data-breaches/russian-influence-operation-targeting-latin-america",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-14T13:00:00Z",
+   "summary": "The AI-enabled operation used spoofed emails, fake government documents, and the creation of a local organization to target schools in Peru and Ecuador, among other efforts.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "835a57efab96",
+   "title": "CISA warns admins to immediately fix Ivanti flaw exploited as zero-day",
+   "link": "https://www.bleepingcomputer.com/news/security/cisa-warns-admins-to-immediately-fix-ivanti-flaw-exploited-as-zero-day/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-14T12:58:07Z",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) urged security teams to immediately patch an Ivanti Connect Secure (ICS) flaw exploited in zero-day attacks since at least October 1st. [...]",
+   "score": 9,
+   "tags": [
+    "Actively exploited",
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "why": [
+    "Actively exploited",
+    "Edge devices",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "f27586b6e439",
+   "title": "$120M NAR real estate commission class action settlement",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPYjFLa0hpV0tId2tPWXZzSEFuNm00ZEVSN2EwSGxLNGlmUThTcF8wQS1JSkV0VkhsYTV2a2tJX05VcDZWTzV2ZmlYWWVwbHRCdWxXY3JDNFJQLVV0d3JFWUZkazh5dnJ1QURpci1DVmFWRl9QYjVJQV9rcnNuc18yQmUxeTFidl9hZkNyZVJiVWp5OU1qZENMZTZDMFVGM2FDWnE4ZDJaMmxsTnprZFpQVENOVGhGd0pLazRvYjJUcTZPQVQ4dGJJVw?oc=5",
+   "source": "Top Class Actions",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-14T12:55:13Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
+   "id": "c8c2a8e77f0c",
+   "title": "CISA Urges Immediate Ivanti Connect Secure Updates as Honeypots Log 105 Exploit Attempts",
+   "link": "https://thehackernews.com/2026/10/cisa-urges-immediate-ivanti-connect.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-14T12:30:42Z",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday urged organizations to take steps to immediately update their Ivanti Connect Secure (ICS) appliances and deployments to the latest version following the disclosure of an actively exploited vulnerability. The security flaw,…",
+   "score": 8,
+   "tags": [
+    "Actively exploited",
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "why": [
+    "Actively exploited",
+    "Edge devices",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "297c58c4dd00",
+   "title": "CenterPoint data breach affects over 1 million Texans, new AG report shows",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNMHlLY01GVWhhdW5mM3NmOWN3NzFmU1lFNHN0VElyU19WZWtYU0pkUXA4UUVXdHNDX3RLYUk0ekI0WnU1WDJUZ1p4M2MwSW5yQnVjZ1QyRGU1aEoyU0FqRWZ4OENaOGRENW1VdjBzNUxMVGZSaHJFaHlMWm96Q0tSaE1Ea05GWnVfaTBtZ1NlXzJNSzRaM25QTGVhRDA?oc=5",
+   "source": "Houston Chronicle",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-14T12:30:30Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "01ccdefefe75",
+   "title": "curl Patches HTTP/2 Upload Flaw After PoC Demonstrates Client-Side Code Execution",
+   "link": "https://thehackernews.com/2026/10/curl-patches-http2-upload-flaw-after.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-14T12:13:36Z",
+   "summary": "A flaw in how curl handles HTTP/2 uploads lets a malicious server receiving an upload corrupt the client's memory, and the researcher who reported it turned that into code execution on the uploading machine. The curl project fixed it on October 14 in curl 8.23.0. Taking over a client needs exact…",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "de7e4a82bb7f",
+   "title": "How to Run a Deepfake Readiness Drill Before a Cloned Voice Calls Your Team",
+   "link": "https://thehackernews.com/2026/10/how-to-run-deepfake-readiness-drill.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-14T11:50:00Z",
+   "summary": "Cloned voices and synthetic video calls now show up in payment fraud, help desk resets, and access requests. A structured drill shows security teams exactly where verification breaks down, while nothing is at stake. The call comes in at 4:40 on a Friday. It's the CFO, or it sounds exactly like…",
+   "score": 2,
+   "tags": [
+    "AI threats"
+   ],
+   "why": [
+    "AI threats"
+   ]
+  },
+  {
+   "id": "0602ed16425a",
+   "title": "Hirudo Android malware replaces banking apps to evade security checks",
+   "link": "https://www.bleepingcomputer.com/news/security/hirudo-android-malware-replaces-banking-apps-to-evade-security-checks/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-14T11:41:20Z",
+   "summary": "A new Android malware called Hirudo steals bank account credentials by replacing legitimate banking apps with modified versions that disable security checks. [...]",
+   "score": 2,
+   "tags": [
+    "Identity"
+   ],
+   "why": [
+    "Identity"
+   ],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/hirudo-android-trojan-uses-patched.html"
+    }
+   ]
+  },
+  {
+   "id": "ecd984dc6bd3",
+   "title": "Researchers Used a Public OpenAI Model to Build a $250,000 Chrome Full-Chain Exploit in Six Days",
+   "link": "https://thehackernews.com/2026/10/researchers-used-public-openai-model-to.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-14T11:19:02Z",
+   "summary": "A team at security firm XBOW chained three then-unknown Google Chrome bugs into a single attack that runs code on a Windows computer when the user only loads a web page, the company said. Its researchers built the attack in six days by directing AI agents running OpenAI's publicly available…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "181d174bbac4",
+   "title": "An AI Agent Found a Critical OTP Bypass in Production. The Attack Was the Easy Part.",
+   "link": "https://thehackernews.com/2026/10/an-ai-agent-found-critical-otp-bypass.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-14T11:00:00Z",
+   "summary": "The bug was simple: the login let you choose where your sign-in code went. Proving it on a live website was the hard part. TL;DR During an authorized assessment, an AI pentesting agent found a critical authentication bypass on a major insurer's production website, on its own. One login request let…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "2cf131532cb9",
+   "title": "US Arrests Two in Crackdown on North Korean IT Worker Laptop Farms",
+   "link": "https://www.securityweek.com/us-arrests-two-in-crackdown-on-north-korean-it-worker-laptop-farms/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-14T10:55:21Z",
+   "summary": "Investigators stormed 40 locations in Texas and seized 187 laptops used by North Korean IT workers to hide their location. The post US Arrests Two in Crackdown on North Korean IT Worker Laptop Farms appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "0aa13b1d8369",
+   "title": "Microsoft: Recent Windows updates may trigger Remote Desktop failures",
+   "link": "https://www.bleepingcomputer.com/news/security/microsoft-recent-windows-updates-may-trigger-remote-desktop-failures/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-14T10:48:09Z",
+   "summary": "Microsoft has confirmed that non-admin users may be unable to connect to devices via Remote Desktop after installing recent Windows updates if the \"Administrator protection\" security feature is enabled. [...]",
+   "score": 4,
+   "tags": [
+    "Phishing"
+   ],
+   "why": [
+    "Phishing"
+   ]
+  },
+  {
+   "id": "7a5f19911810",
+   "title": "Palo Alto urges Korea firms to revamp cyber defense as AI speeds attacks - CHOSUNBIZ",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNUEllb1ZfWUllZFM5TnZSSzZPbEdDSnpXb2RKNHM1dHRwUm1sNlBRbFJVcXVlbHFLb0hzZG9tQy1NcHRBVGhWZEZYS3FpNnZHZ0M0UjFGM0R5ZHJ3Zy1xbkgzZGtseUhxZVlzMUxud3hhbXlYZHR4UEx3N2FtOWdGWFBpQUNvSWR0eTZQbHpB0gGOAUFVX3lxTE1QSWVvVl9ZSWVkUzlOdlJLNk9sR0NKeldvZEo0czV0dHBSbWw2UFFsUlVxdWVscUtvSHNkb21DLU1wdEFUaFZkRlhLcWk2dkdnQzRSMUYzRHlkcndnLXFuSDNka2x5SHFlWXMxTG53eGFteVhkdHhQTHc3YW05Z0ZYUGlBQ29JZHR5NlBsekE?oc=5",
+   "source": "Chosunbiz",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-14T08:34:00Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Edge devices"
+   ],
+   "why": [
+    "Edge devices"
+   ]
+  },
+  {
+   "id": "0a34dc42eff4",
+   "title": "AI-Found Linux Kernel Flaw Gives Local Users Root, and Can Break a Guest Out to the Host",
+   "link": "https://thehackernews.com/2026/10/ai-found-linux-kernel-flaw-gives-local.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-14T07:46:57Z",
+   "summary": "A flaw in Linux's vhost subsystem lets a local user read and write kernel memory at will and become root across nearly a decade of kernel versions. In one virtualization setup, it lets an untrusted virtual machine write to the host's memory and hijack the program that runs the virtual machine. The…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
   {
    "id": "ca2337ba7a1a",
    "title": "Chrome, Firefox Updates Patch 114 Flaws as Mozilla Unveils Firefox Enterprise",
@@ -196,7 +547,7 @@
    "feed": "Dark Reading",
    "region": "Global",
    "published": "2026-10-14T05:00:00Z",
-   "summary": "Organizations are reporting that employees face threats to their families, stalking, physical violence, and abduction. But these alarming claims are hard to verify.",
+   "summary": "Organizations are reporting that employees face threats of stalking, physical violence, and abduction. But these alarming claims are hard to verify.",
    "score": 4,
    "tags": [
     "Ransomware"
@@ -230,13 +581,14 @@
      "source": "SecurityWeek",
      "url": "https://www.securityweek.com/microsoft-patches-record-1413-vulnerabilities-including-exploited-windows-zero-day/"
     }
-   ]
+   ],
+   "epss": 0.0151
   },
   {
-   "id": "26b1ef9e900d",
+   "id": "78a4deb73c12",
    "title": "Taylor Weiner Team Marks Cybersecurity Awareness Month With a Closing-Funds Warning as FBI Reports Real Estate Fraud Losses Rose 58% to $275.1 Million in 2025",
-   "link": "https://news.google.com/rss/articles/CBMitgJBVV95cUxNM1B3V3JnSTFpUV81dEgyd1JOWldjdDB1M2lUY3lVbThhcF9xd3d6eHItS1ZGaUw0b3Q2RkZYQWtZOVE1c3BXbVN3cXJtZmpLQWxwenVYUlc0V1pLTDJIX1E5RnN1YUVzbU92UGJwclo1S2ZBN3V0ck9yR0IzT1otY19wQkotejQ5a1BYMlJCb1E0WGtTcTBjSHBmcE41WVR6eFU0ZU8xcTZ3T1Y1MVlxUkliNTlWU0gxX1ZWYmppbzZFZDhLOXVPYS1RUFUxc3hGYV92Ukgwai1zTWc2N1EydDFicE5MSnJURklNdkFXVndiR2xFU1R5a2o0RDB2R3pxOEJMWE1PRWdmazVkZGFWS2g4SUREaWkxTVk4NjUyMFo2QjFncU5GUVc3X1Y4dVQ1ZVp6QUh3?oc=5",
-   "source": "The Laconia Daily Sun",
+   "link": "https://news.google.com/rss/articles/CBMipwJBVV95cUxPR25ISmdldG0wVFJMa2tRM1BJZHF6TkpaeFNfRWlCNTBYX3Y1RXY3MGtTYVV0UHl3WURUa1J3RTJKY0VQSXJmN2ZzZWRnblZOaDJZbXI5SXhtd0Y1cko4Wm5yNWhMX3FZaWxValhUY05Ddk5sTXRuRE52QUVEWHctNzRpYWdFendXNzBLd2ZLQkhMcFplV1hobzhUOEl5UUdhY29qSnNsWi0xVGJJYXg2S2RUX3dnY05QVFJWMVc1T1kta3VjTXBKSDlpTjJmbUZuenE0d0dPcngxMUk2YUdoQWd1dDNkLUVyeTN3T3J4Z1YyYVQwejBuYldsaGc3cHZOMUhNWU4xLXFZdS00MlpGdnJIMlgtMXZXMV9ER0RhSjJGNGdyMXFR?oc=5",
+   "source": "WKOW",
    "feed": "Real estate cyber news",
    "region": "Global",
    "published": "2026-10-14T03:13:32Z",
@@ -247,6 +599,12 @@
    ],
    "why": [
     "Real estate"
+   ],
+   "also": [
+    {
+     "source": "The Laconia Daily Sun",
+     "url": "https://news.google.com/rss/articles/CBMitgJBVV95cUxNM1B3V3JnSTFpUV81dEgyd1JOWldjdDB1M2lUY3lVbThhcF9xd3d6eHItS1ZGaUw0b3Q2RkZYQWtZOVE1c3BXbVN3cXJtZmpLQWxwenVYUlc0V1pLTDJIX1E5RnN1YUVzbU92UGJwclo1S2ZBN3V0ck9yR0IzT1otY19wQkotejQ5a1BYMlJCb1E0WGtTcTBjSHBmcE41WVR6eFU0ZU8xcTZ3T1Y1MVlxUkliNTlWU0gxX1ZWYmppbzZFZDhLOXVPYS1RUFUxc3hGYV92Ukgwai1zTWc2N1EydDFicE5MSnJURklNdkFXVndiR2xFU1R5a2o0RDB2R3pxOEJMWE1PRWdmazVkZGFWS2g4SUREaWkxTVk4NjUyMFo2QjFncU5GUVc3X1Y4dVQ1ZVp6QUh3?oc=5"
+    }
    ]
   },
   {
@@ -291,7 +649,7 @@
    "feed": "The Hacker News",
    "region": "Global",
    "published": "2026-10-14T01:59:25Z",
-   "summary": "A Saudi National and employee of OpenAI has been arrested for allegedly planting a hidden recording device in an executive conference room at the company's San Francisco offices to covertly record sensitive conversations. Abdulrahman Alfozan, 35, has been charged with using or endeavoring to use…",
+   "summary": "A Saudi national and employee of OpenAI has been arrested for allegedly planting a hidden recording device in an executive conference room at the company's San Francisco offices to covertly record sensitive conversations. Abdulrahman Alfozan, 35, has been charged with using or endeavoring to use…",
    "score": 2,
    "tags": [
     "Edge devices"
@@ -354,7 +712,7 @@
    "feed": "Dark Reading",
    "region": "Global",
    "published": "2026-10-13T22:29:57Z",
-   "summary": "The scary surprises for the largest security update ever include security bypasses and unauthenticated RCEs.",
+   "summary": "The scary surprises in the largest security update ever include security bypasses and unauthenticated RCEs.",
    "score": 7,
    "tags": [
     "Actively exploited",
@@ -548,7 +906,8 @@
     "Actively exploited",
     "Edge devices",
     "Vulnerability"
-   ]
+   ],
+   "epss": 0.2598
   },
   {
    "id": "85d3723cf2b9",
@@ -809,6 +1168,23 @@
    ]
   },
   {
+   "id": "e4ff1a4e534d",
+   "title": "Data Breaches That Have Happened This Year (2026 Update)",
+   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1QZkRBeUR5Y19DcGJvaGwxa3Z5MWdGTTlzSEhxcDdtNU1PZ0s0VDkxaW9KRnJTZWNUb295S0RqQmtSVGtwTUo2RlRLVlpFMkxZZmRaTkZnZGc0cVE?oc=5",
+   "source": "Tech.co",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-13T15:30:21Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
    "id": "cd001c5faa80",
    "title": "Docker Hub flaw let attackers impersonate users, tamper with images",
    "link": "https://www.bleepingcomputer.com/news/security/docker-hub-flaw-let-attackers-impersonate-users-tamper-with-images/",
@@ -829,7 +1205,8 @@
      "source": "The Hacker News",
      "url": "https://thehackernews.com/2026/10/docker-fixes-critical-two-year-old-hub.html"
     }
-   ]
+   ],
+   "epss": 0.0041
   },
   {
    "id": "46e66f8ca65c",
@@ -1099,23 +1476,6 @@
    ]
   },
   {
-   "id": "e4ff1a4e534d",
-   "title": "Data Breaches That Have Happened This Year (2026 Update)",
-   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1QZkRBeUR5Y19DcGJvaGwxa3Z5MWdGTTlzSEhxcDdtNU1PZ0s0VDkxaW9KRnJTZWNUb295S0RqQmtSVGtwTUo2RlRLVlpFMkxZZmRaTkZnZGc0cVE?oc=5",
-   "source": "Tech.co",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-13T03:30:21Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
    "id": "7dd6d3ef0e59",
    "title": "ISC Stormcast For Tuesday, October 13th, 2026 https://isc.sans.edu/podcastdetail/10134, (Tue, Oct 13th)",
    "link": "https://isc.sans.edu/diary/rss/33418",
@@ -1215,7 +1575,8 @@
    "why": [
     "Edge devices",
     "Vulnerability"
-   ]
+   ],
+   "epss": 0.2598
   },
   {
    "id": "f8e6abe81cc5",
@@ -1234,7 +1595,8 @@
    ],
    "why": [
     "Vulnerability"
-   ]
+   ],
+   "epss": 0.0151
   },
   {
    "id": "9b30868fc224",
