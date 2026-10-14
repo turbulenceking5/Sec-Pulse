@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-14T19:26:04Z",
+ "generated": "2026-10-14T23:26:11Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -40,7 +40,7 @@
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 1,
+   "count": 0,
    "error": null
   },
   {
@@ -52,7 +52,7 @@
   {
    "name": "CISA KEV",
    "ok": true,
-   "count": 12,
+   "count": 16,
    "error": null
   },
   {
@@ -82,7 +82,7 @@
   {
    "name": "Microsoft Security Blog",
    "ok": true,
-   "count": 9,
+   "count": 8,
    "error": null
   },
   {
@@ -100,11 +100,168 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 19,
+   "count": 21,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "c721f9197e2d",
+   "title": "DHX faces lawsuit as ex-director alleges 4 billion won embezzlement tied to failed real estate deal - CHOSUNBIZ",
+   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQM2JtY3N6MjhneTl6Q3lWSEd4ODI3MkI0RmxBbXZBMDd0MVllTHJaa2NXV09NdHowUnFMWnNHeEV1b1F0LWlPQWl6MzZZMjFnMVJxWTJ0SDVyWUptYmxyN1g5YnRxNGZDZVhrdTFRTjhkdTF1NktkdE01WV9TNUxMa9IBlAFBVV95cUxQYlNRWmdIRjRRZXJkZVRYUzE2YnVaRjRHSGRKOVkzTzRfa2ZjakNRZVc3RTBLX3RpR2NFbjM4RDdDUGM0LTJZWmZ2NHFFenA3R3hab01tbU5TNThoejBNbmdNMGJoXzhJb3dkZlFuN05jckZZV2V5V3JxQ09IUHc2UmlhdDl1WHRzNERmX1k0M085MV9f?oc=5",
+   "source": "Chosunbiz",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-14T23:00:00Z",
+   "summary": "",
+   "score": 13,
+   "tags": [
+    "Real estate",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Real estate",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "c9a3f02d710c",
+   "title": "Palo Alto Networks warns of PAN-OS RCE flaw exploited in attacks",
+   "link": "https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-pan-os-rce-flaw-exploited-in-attacks/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-14T22:56:47Z",
+   "summary": "Palo Alto Networks has released security updates for a high-severity PAN-OS RCE zero-day, tracked as CVE-2026-0322, that has been exploited in attacks targeting firewalls. [...]",
+   "score": 9,
+   "tags": [
+    "Actively exploited",
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "why": [
+    "Actively exploited",
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "also": [
+    {
+     "source": "Chosunbiz",
+     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNUEllb1ZfWUllZFM5TnZSSzZPbEdDSnpXb2RKNHM1dHRwUm1sNlBRbFJVcXVlbHFLb0hzZG9tQy1NcHRBVGhWZEZYS3FpNnZHZ0M0UjFGM0R5ZHJ3Zy1xbkgzZGtseUhxZVlzMUxud3hhbXlYZHR4UEx3N2FtOWdGWFBpQUNvSWR0eTZQbHpB0gGOAUFVX3lxTE1QSWVvVl9ZSWVkUzlOdlJLNk9sR0NKeldvZEo0czV0dHBSbWw2UFFsUlVxdWVscUtvSHNkb21DLU1wdEFUaFZkRlhLcWk2dkdnQzRSMUYzRHlkcndnLXFuSDNka2x5SHFlWXMxTG53eGFteVhkdHhQTHc3YW05Z0ZYUGlBQ29JZHR5NlBsekE?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "e1c5b3e9fc3c",
+   "title": "Ivanti ICS Zero-Day Attacks Highlight Vendor Patching Hurdles",
+   "link": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-14T21:20:13Z",
+   "summary": "CVE-2026-104935, a high-severity authentication bypass + RCE vulnerability, was only partially discovered and patched in July, leaving an opening for threat actors to capitalize on.",
+   "score": 10,
+   "tags": [
+    "Actively exploited",
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "why": [
+    "Actively exploited",
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "epss": 0.2598,
+   "also": [
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/ivanti-zero-day-chain-gave-attackers-root-access-to-fully-patched-vpn/"
+    }
+   ]
+  },
+  {
+   "id": "b0a791a97e86",
+   "title": "Yam Store: The Phishing Network Behind a Billion Messages",
+   "link": "https://www.darkreading.com/cyberattacks-data-breaches/yam-store-phishing-network-behind-billion-messages",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-14T20:57:16Z",
+   "summary": "A sprawling cybercrime marketplace supplied cloud infrastructure and phishing kits that helped fuel more than 1 billion phishing messages worldwide.",
+   "score": 4,
+   "tags": [
+    "Phishing"
+   ],
+   "why": [
+    "Phishing"
+   ]
+  },
+  {
+   "id": "2882c15660e0",
+   "title": "Prosecutors urge life sentences for Alexander luxury real estate brokers in sex trafficking case",
+   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNR0Q4akJvTXZZVE1qUWF3U3pGR0lDTDMwUHJudFBScWFwMGM5SmJfZEEzSzYzYjNJTGNaUjNfdEwzeE1YYXZ6Zl8zME05WjhabDNmZjNlempHaTZiSU1raEhwSDUtUlVUSG9oeTh1c2V5TFdyR0pockN1cXg1QUlTYVJDb0xLdHNWUm84Q0pSUXNCeVdqLWgtZE9PQXA3dmRYcDJHbi1PbVRqMXFUaGd0NFhZZEpWSUdFb1NMRWl3dE5rNFFXdzlmaUNYMER0dkh0NldOc19ROFhmNF80VWYzNw?oc=5",
+   "source": "Click2Houston",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-14T20:41:17Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
+   "id": "7f55a7a9001e",
+   "title": "Anthropic 'SneakPeek' Flaw Is a Silent Zero-Click Threat",
+   "link": "https://www.darkreading.com/threat-intelligence/new-anthropic-sneakpeek-silent-zero-click-threat",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-14T20:09:42Z",
+   "summary": "A bug in Claude Code Desktop's preview pane can allow adversaries to quietly steal credentials from developers, including SSH private keys, AWS credentials, and Claude 0Auth tokens.",
+   "score": 4,
+   "tags": [
+    "Identity",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Identity",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "8ab3c51ec371",
+   "title": "FBI raids DPRK IT worker laptop farms in Texas, US nationals arrested",
+   "link": "https://www.bleepingcomputer.com/news/security/fbi-raids-dprk-it-worker-laptop-farms-in-texas-us-nationals-arrested/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-14T19:41:43Z",
+   "summary": "The U.S. Department of Justice (DoJ) has disrupted the Famous Chollima threat group's operations by arresting two suspects, charging 14 individuals, and seizing nearly 187 laptops used in North Korean remote IT worker schemes. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "f27586b6e439",
+   "title": "$120M NAR real estate commission class action settlement",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPYjFLa0hpV0tId2tPWXZzSEFuNm00ZEVSN2EwSGxLNGlmUThTcF8wQS1JSkV0VkhsYTV2a2tJX05VcDZWTzV2ZmlYWWVwbHRCdWxXY3JDNFJQLVV0d3JFWUZkazh5dnJ1QURpci1DVmFWRl9QYjVJQV9rcnNuc18yQmUxeTFidl9hZkNyZVJiVWp5OU1qZENMZTZDMFVGM2FDWnE4ZDJaMmxsTnprZFpQVENOVGhGd0pLazRvYjJUcTZPQVQ4dGJJVw?oc=5",
+   "source": "Top Class Actions",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-14T19:01:44Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
   {
    "id": "b84c40f0160a",
    "title": "Man accused of posing as San Francisco 49er charged in Oregon romance scam case",
@@ -420,23 +577,6 @@
    ]
   },
   {
-   "id": "f27586b6e439",
-   "title": "$120M NAR real estate commission class action settlement",
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPYjFLa0hpV0tId2tPWXZzSEFuNm00ZEVSN2EwSGxLNGlmUThTcF8wQS1JSkV0VkhsYTV2a2tJX05VcDZWTzV2ZmlYWWVwbHRCdWxXY3JDNFJQLVV0d3JFWUZkazh5dnJ1QURpci1DVmFWRl9QYjVJQV9rcnNuc18yQmUxeTFidl9hZkNyZVJiVWp5OU1qZENMZTZDMFVGM2FDWnE4ZDJaMmxsTnprZFpQVENOVGhGd0pLazRvYjJUcTZPQVQ4dGJJVw?oc=5",
-   "source": "Top Class Actions",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-14T12:55:13Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ]
-  },
-  {
    "id": "c8c2a8e77f0c",
    "title": "CISA Urges Immediate Ivanti Connect Secure Updates as Honeypots Log 105 Exploit Attempts",
    "link": "https://thehackernews.com/2026/10/cisa-urges-immediate-ivanti-connect.html",
@@ -555,23 +695,6 @@
    ],
    "why": [
     "Phishing"
-   ]
-  },
-  {
-   "id": "7a5f19911810",
-   "title": "Palo Alto urges Korea firms to revamp cyber defense as AI speeds attacks - CHOSUNBIZ",
-   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNUEllb1ZfWUllZFM5TnZSSzZPbEdDSnpXb2RKNHM1dHRwUm1sNlBRbFJVcXVlbHFLb0hzZG9tQy1NcHRBVGhWZEZYS3FpNnZHZ0M0UjFGM0R5ZHJ3Zy1xbkgzZGtseUhxZVlzMUxud3hhbXlYZHR4UEx3N2FtOWdGWFBpQUNvSWR0eTZQbHpB0gGOAUFVX3lxTE1QSWVvVl9ZSWVkUzlOdlJLNk9sR0NKeldvZEo0czV0dHBSbWw2UFFsUlVxdWVscUtvSHNkb21DLU1wdEFUaFZkRlhLcWk2dkdnQzRSMUYzRHlkcndnLXFuSDNka2x5SHFlWXMxTG53eGFteVhkdHhQTHc3YW05Z0ZYUGlBQ29JZHR5NlBsekE?oc=5",
-   "source": "Chosunbiz",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-14T08:34:00Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Edge devices"
-   ],
-   "why": [
-    "Edge devices"
    ]
   },
   {
@@ -733,6 +856,23 @@
    "epss": 0.0151
   },
   {
+   "id": "2755ecc5ca8a",
+   "title": "Saemaul Geumgo Unaware of Personal Information Breach Until 60 Hours After Hacking Incident; Data of 400 Individuals Exposed",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5PcUpvaEVfNWNCWVVpNjVPM3FMdUdnUUpDZXN2WDlHMVpsSVNIbzdsZFplMWpUZExnY2lhT2Y5QVg4YmFuWVVZVTdNTk1fZGd2VDE3a2QzVjlONUdMRXg1Q2Vn?oc=5",
+   "source": "재경일보",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-14T04:05:00Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
    "id": "b57de9624406",
    "title": "Taylor Weiner Team Marks Cybersecurity Awareness Month With a Closing-Funds Warning as FBI Reports Real Estate Fraud Losses Rose 58% to $275.1 Million in 2025",
    "link": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxPZzlIVVhSSVlmUGt4M1B6bGJJeFY1OUxXVDhEVmZ1T0N6R1E0QXhuaS1ZWTZDVmxvdjZQWDhmUUxqUkpyUEljRHlFN1FvTmRnLU1FRVVabE9kMktEb0pjTzZ1TG55X09iNzRDVElLdWpCSk1RcElOakRxNDRON2o5dTg0Z3Y0SGo5S3Y4emgtckNkNG0yaDBFS2tpSmtXVFoycUFhcnVhdG9wZHJjUF9rQ2xubkVkWUs3aWFhb3JPZExMTEM2bUktUDcxRnVpUUx0c1dYbkd6c2s1QUNLSVlKN3VENWQxMk1ONHRFUk1SLXZ1cERYVzFOeXNwbk13QTVWVC13QU9yRjU3ejh4dHhPbWhPSFpLeTVvczFKQnFXZUlDWkdmYWprOHln?oc=5",
@@ -836,6 +976,88 @@
    "why": [
     "Data breach"
    ]
+  },
+  {
+   "id": "300b6923da02",
+   "title": "CVE-2026-76519: Cisco Secure Email Gateway — Cisco Secure Email Gateway Relative Path Traversal Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76519",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-10-14T00:00:00Z",
+   "summary": "Cisco Secure Email Gateway contains a relative path traversal vulnerability that could allow an unauthenticated, remote attacker to write arbitrary files on the underlying operating system. CISA remediation due 2026-10-17.",
+   "score": 7,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "why": [
+    "Edge devices",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "45ee4e8f72f4",
+   "title": "CVE-2026-0322: Palo Alto Networks PAN-OS — Palo Alto Networks PAN-OS Code Injection Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-0322",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-10-14T00:00:00Z",
+   "summary": "Palo Alto Networks PAN-OS contains a code injection vulnerability that could allow an authenticated attacker with network access to execute arbitrary code with root privileges on the firewall. CISA remediation due 2026-10-17.",
+   "score": 7,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "why": [
+    "Edge devices",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "f04894a7601f",
+   "title": "CVE-2026-105134: Ahsay AhsayCBS — Ahsay AhsayCBS Command Injection Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-105134",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-10-14T00:00:00Z",
+   "summary": "Ahsay AhsayCBS contains a command injection vulnerability that could allow a remote attacker to execute operating system commands via manipulation of the random parameter in the Replication Receiver component’s /rps/api/json/UpdateReceivers.do endpoint. This… CISA remediation due 2026-10-17.",
+   "score": 4,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0184
+  },
+  {
+   "id": "eb20c74d6ce5",
+   "title": "CVE-2026-105133: Ahsay AhsayCBS — Ahsay AhsayCBS Improper Authentication Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-105133",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-10-14T00:00:00Z",
+   "summary": "Ahsay AhsayCBS contains an improper authentication vulnerability that could allow a remote attacker to bypass authentication via manipulation of the random parameter in the API component’s checkSysPwd function. This vulnerability can be chained with… CISA remediation due 2026-10-17.",
+   "score": 4,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0038
   },
   {
    "id": "62050be54e07",
@@ -1055,28 +1277,6 @@
    "score": 0,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "79446cd89775",
-   "title": "Ivanti Zero-Day Chain Gave Attackers Root Access to Fully Patched VPN",
-   "link": "https://www.securityweek.com/ivanti-zero-day-chain-gave-attackers-root-access-to-fully-patched-vpn/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-13T18:43:43Z",
-   "summary": "CVE-2026-104935 affects Ivanti Connect Secure and it can be exploited for unauthenticated remote code execution with elevated privileges. The post Ivanti Zero-Day Chain Gave Attackers Root Access to Fully Patched VPN appeared first on SecurityWeek .",
-   "score": 10,
-   "tags": [
-    "Actively exploited",
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "why": [
-    "Actively exploited",
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "epss": 0.2598
   },
   {
    "id": "85d3723cf2b9",
@@ -2282,26 +2482,13 @@
    ]
   },
   {
-   "id": "7bac4c3b4e76",
-   "title": "ISC Stormcast For Monday, October 12th, 2026 https://isc.sans.edu/podcastdetail/10132, (Mon, Oct 12th)",
-   "link": "https://isc.sans.edu/diary/rss/33416",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-10-12T02:00:03Z",
-   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
-   "score": 1,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "1ec74a9a3546",
-   "title": "Act Now! Aussie cyber agency updates Citrix NetScaler critical alert to include brand new vulnerability",
-   "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOb0ZBUU1JU2hGVjMxNkdBQWVwM3BhLVozR0dvSFNtb0lMaDJHYXZ3RW1IN2hrdjgyUnJESVF3eEpzYXB6NGk3dFpEc1U4YkdFYS1SS1E0Tm9KWl9oNWExbzNWajdxeDNuRVRudnBMc18ya3NvRGg1d0ZLWFV1ZzBQYllnMGYzZmVtTGhlSDVJS0t5a2tBcnNHSWFGcWlLYzJPMzQ4RXE1SVgzU3ZnN1pHTkw1emRwX2VOSEY4b3hGTGphdlJHbHh0b3hLcGxFeGFqUVFGZmVYSkxVbzhYTEZ4bG9wU01lUFFJZVU4Q05n?oc=5",
+   "id": "e6422d668e6a",
+   "title": "Act now! Aussie cyber agency updates Citrix NetScaler critical alert to include brand new vulnerability",
+   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOS1MtZjJ3c1N4ODUwZ0M1QndiZHdPWjlRMWZNODRKU3NzbkVMd2NZeGhmaU1iX3VFRDNxTFpoekR0eFpORnpDNUxtNmZGcVhZYnlwUGY0cHBSWXV4cXFoUEl6VHJVekFjSzhPU1RFSWJEMk02TDhRRTI2TjQxcHNTbG5ncWh1eFpYdTMya2pqSTNScGxXQjJnb3ZuXzZWbVA3ZkpKYUJiQVhtemlGcFlJMzg5bFlZcTM4OExIa05GQ21vNVZfNlJoT1FUam5RdF9VMG0wU2xVbzc3TDQ?oc=5",
    "source": "Cyber Daily",
    "feed": "ASD / ACSC in the news",
    "region": "AU",
-   "published": "2026-10-12T00:58:00Z",
+   "published": "2026-10-12T06:12:45Z",
    "summary": "",
    "score": 10,
    "tags": [
@@ -2313,6 +2500,19 @@
     "Edge devices",
     "Vulnerability"
    ]
+  },
+  {
+   "id": "7bac4c3b4e76",
+   "title": "ISC Stormcast For Monday, October 12th, 2026 https://isc.sans.edu/podcastdetail/10132, (Mon, Oct 12th)",
+   "link": "https://isc.sans.edu/diary/rss/33416",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-10-12T02:00:03Z",
+   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
+   "score": 1,
+   "tags": [],
+   "why": []
   },
   {
    "id": "4c28b0c9be31",
@@ -3457,23 +3657,6 @@
     "Vulnerability"
    ],
    "epss": 0.0182
-  },
-  {
-   "id": "28594b2bec10",
-   "title": "Phishing Abuses RMM Tools for Persistent Access",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/09/29/phishing-abuses-rmm-tools-persistent-access/",
-   "source": "Microsoft Security Blog",
-   "feed": "Microsoft Security Blog",
-   "region": "Global",
-   "published": "2026-09-29T21:39:27Z",
-   "summary": "Microsoft observed phishing campaigns that abused MSP360 RMM to deploy ScreenConnect, creating redundant remote-access channels for follow-on activity The post Phishing Abuses RMM Tools for Persistent Access appeared first on Microsoft Security Blog .",
-   "score": 5,
-   "tags": [
-    "Phishing"
-   ],
-   "why": [
-    "Phishing"
-   ]
   }
  ]
 }
