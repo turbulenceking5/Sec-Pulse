@@ -8,7 +8,7 @@ Env vars:
 
 Run with --dry-run to print the message instead of sending it.
 
-The helpers here (rank, published, load_data, lesson_for, headline, notify) are
+The helpers here (rank, published, load_data, lesson_for, qotd_for, headline, notify) are
 also imported by fetch_news.py (rank) and send_digest.py, so importing this
 module must stay free of side effects.
 """
@@ -21,6 +21,7 @@ import urllib.request
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 NOW = dt.datetime.now(dt.timezone.utc)
 BRISBANE = dt.timezone(dt.timedelta(hours=10))  # Queensland has no daylight saving
+MAX_Q = 240  # question-of-the-day characters in the brief
 
 
 def published(item):
@@ -43,6 +44,12 @@ def load_data():
 def lesson_for(day, lessons):
     """Lesson of the day for a Brisbane date; index.html's ordinal() picks the same one."""
     return lessons[day.toordinal() % len(lessons)]
+
+
+def qotd_for(day, lessons):
+    """Question of the day; index.html's Brief shows ALL_Q()[(ordinal * 7) % n] from the same flattened list."""
+    qs = [q for lesson in lessons for q in lesson["quiz"]]
+    return qs[(day.toordinal() * 7) % len(qs)]
 
 
 def headline(item, max_title=None):
@@ -93,6 +100,10 @@ def main():
     lines.append("")
     lines.append(f"Last 30h: {len(recent)} items, {au_count} Australian, {kev_count} new CISA KEV entries.")
     lines.append(f"CySA+ focus: {lesson['id']} {lesson['title']}")
+    question = qotd_for(today, cysa["lessons"])["q"]
+    if len(question) > MAX_Q:
+        question = question[:MAX_Q - 1].rstrip() + "…"
+    lines.append(f"❓ {question} (answer in the app)")
     body = "\n".join(lines)
     title = f"Sec-Pulse brief - {today.strftime('%a %d %b')}"
     notify(title, body, dry=dry)

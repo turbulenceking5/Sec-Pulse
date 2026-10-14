@@ -60,7 +60,7 @@ For each item, `score = source.weight + Σ (group.weight + title_bonus)` over ev
 - Matching is **case-insensitive substring** on `" " + title + " " + summary + " "`. The padding lets a term like `"bec "` match a whole word at the end of a sentence. Terms are substrings, not words, so `"rce"` would match "sou**rce**". Pick terms carefully and use spaces where needed.
 - **title_bonus** is +1 when the group also matches the title (headline mentions are stronger signals).
 - Each matching group adds its `tag` to the item's `tags`.
-- KEV items get `Actively exploited` + `KEV` tags up front (and `Ransomware` if CISA marks known ransomware use).
+- KEV items get `Actively exploited` + `KEV` tags up front (and `Ransomware` if CISA marks known ransomware use). Their summary ends with `CISA remediation due YYYY-MM-DD.`, which the app parses for its "Fix by" pill, so keep that wording.
 - **EPSS bump**: +2 (`EPSS_BUMP`) for a **non-KEV** item whose `epss` is ≥ 0.5 (`EPSS_BUMP_AT`, roughly the top 1-2% of all CVEs). KEV entries are excluded because they already carry the exploited signal, and old CVEs newly added to KEV score ~0.99 almost by definition, so bumping them would double-count. Only applied when an item is (re)scored from a fresh fetch, so stored items are never bumped twice.
 - The keyword groups that matched are stored in the item's `why` (in `sources.json` order), for a "why this ranked" view. `why` doesn't include the source `weight`, the +2 Australian-publisher bonus, the title bonus, the EPSS bump, or the KEV extra tags.
 

@@ -16,10 +16,12 @@ One self-contained HTML file: inline `<style>` and `<script>`, no framework, no 
 - **Analyst rank card** (`renderRank()`): level, rank title, XP bar, XP earned today. Tap it for the profile sheet. See [XP and analyst rank](#xp-and-analyst-rank).
 - **Daily quests** (`renderQuests()`, under the rank card): optional bonus goals that reset on the Brisbane date: answer 10 questions (+30), review 10 flashcards (+30), read 3 Australian stories (+20), finish a lesson (+40). Questions and cards count the *unique* ones answered today (`sp_xp.today.q`/`.c`), so repeats can't farm them. Australian stories and lessons are tracked in `sp_quests`. `checkQuests()` runs from `gainXP()` (and `questTick()`), pays each quest once a day and toasts. Tapping a quest jumps to Learn, Cards, the Australia filter or the next unfinished lesson. Defined in `QUESTS`.
 - **Exam countdown** (`renderExam()`): with `sp_examDate` set, a card shows days left (`ordinal(exam) - ordinal(today)`, both Brisbane dates) and a suggested target for today: `ceil(unfinished lessons / days left)` lessons, plus cards due and up to 10 review-mistakes questions. All lessons done → suggests a practice exam. Day 0 → "Exam day"; past date → asks to update it. With no date, a small link opens Settings at the date field. Tapping the card does the same.
+- **Focus area** (`renderFocus()`, `focusDomain()`, under the exam card): the domain with the biggest `(1 - accuracy) × exam weight`, from `sp_qstats.byDomain`. Domains with fewer than `FOCUS_MIN` (5) answers count as 0%, so the heaviest unpractised domain comes first. Tapping it runs a **domain drill** (`startDrill()`): `DRILL_N` (10) questions from that domain, missed ones first, then unseen, then the rest; logged as `type: "drill"` with `domain` in `sp_quizHistory`, +10 XP like a quick quiz.
+- **Backup nudge** (`renderBackup()`, above the rank card): once there's 100+ XP and no export in `BACKUP_DAYS` (30) days, a card offers **Export backup** or **Remind me later** (hidden for `BACKUP_SNOOZE` = 7 days). Export (here or in Settings) goes through `exportBackup()`, which records `sp_backup.last`. At boot `persistStorage()` asks for persistent storage (`navigator.storage.persist()`); Settings shows the result and the last backup date. iOS can evict a home-screen app's storage after weeks unused, which is why both exist.
 - **Top for you**: 5 highest-`rank()` items from the last 30h (falls back to 72h if fewer than 5), excluding muted sources/tags.
 - Pills: items in 24h, Australian count, actively-exploited count, feeds OK.
 - **Today's CySA+ lesson**: same pick as the notification (see [morning-brief.md](morning-brief.md)).
-- **Question of the day**: `ALL_Q()[(ordinal(today) * 7) % n]`. Each answer counts toward stats. It re-renders whenever the Brief re-renders (e.g. returning to the app), so it can be answered more than once a day.
+- **Question of the day**: `ALL_Q()[(ordinal(today) * 7) % n]`. The morning notification includes the same question (`qotd_for()` in `send_brief.py`), so keep the two picks in sync. Each answer counts toward stats. It re-renders whenever the Brief re-renders (e.g. returning to the app), so it can be answered more than once a day.
 
 ### News
 Filter chips (the last choice is remembered in `sp_filter`):
@@ -49,12 +51,15 @@ Search filters on title + summary + source + tags + your note. The list paginate
 - `epss` (number 0–1): a pill `EPSS 97%` in the meta row (`<1%` below 1%), red at ≥ 50%.
 - `also` (array of `{source, url}`): a "+N more sources" toggle under the summary expanding to links. Entries whose `url` isn't `http(s)://` are dropped; a missing `source` falls back to the URL's hostname.
 
+**CVE links and KEV due dates** (`cvesOf()`, `kevDuePill()`): up to 3 CVE IDs found in a story's title/summary show as `CVE-… ↗` pills linking to NVD (skipping the one the headline already links to). KEV items show `Fix by 16 Oct` (red within 3 days, `· overdue` after), parsed from the `CISA remediation due YYYY-MM-DD.` sentence `fetch_news.py` writes into KEV summaries. **Keep that wording if `parse_kev()` changes.**
+
 Tag colours: red (`hot`) for Actively exploited / KEV / Ransomware, teal (`re`) for Real estate / BEC. The `Australia` tag is hidden on cards because the AU pill already shows it.
 
 ### Learn
 - Exam card: lessons done / total, overall quiz accuracy, progress bar.
 - **Quick quiz**: 10 random questions from all lessons.
 - **Practice exam**: 30 questions spread across domains by exam weight (33/30/20/17% → 10/9/6/5 questions). Results go to `sp_quizHistory`.
+- **Timed practice exam** (`startQuiz(30, true, EXAM_SECS)`): the same exam with a 58-minute limit (the real CS0-003 allows 165 minutes for up to 85 questions; 30 at that pace ≈ 58). `renderQuiz`'s `opts.timeLimit` counts down in the sheet title via `opts.onTick`; at zero the round ends and unanswered questions count as wrong. Closing the sheet abandons the attempt (nothing is logged). The result shows time used, and history gets `timed`, `secs` and `expired`.
 - **Practice exam scaled estimate** (`scaledScore()` / `scaledHtml()`): after a practice exam, a "Rough scaled estimate" box maps the percentage onto 100-900 in a straight line (0% = 100, 100% = 900, so 750 ≈ 81%), rounded to 10, green at ≥ 750. It says plainly that CompTIA doesn't publish its conversion. It isn't stored (it's derivable from `c`/`t` in `sp_quizHistory`).
 - **PBQ practice** (`startPBQ()`, `ALL_PBQ()`, `validPBQ()`): runs `cysa.json`'s optional `pbqs` array, 5 per round (`PBQ_ROUND`), unseen first, then latest-wrong, then the rest. The button is hidden when there are no valid PBQs (missing/empty array), and `startPBQ()` has an empty state. Invalid entries (unknown `type`, bad `answer`, fewer than 2 items/options) are skipped. Each PBQ gets `qid` `pbq:<id>`, so answers go into `sp_qstats`/`sp_qhist` and missed PBQs appear in Review mistakes. Rounds log `type: "pbq"` in `sp_quizHistory`. See the quiz engine for how they render.
 - **Review mistakes** (`startReview()` / `weakQuestions()`): up to 10 questions from `sp_qhist` whose latest answer was wrong or that have been missed more often than answered right. Ordered latest-wrong first, then most net misses, then most recent; the picked 10 are shuffled. A question drops off once right outnumbers wrong and the latest answer was right. The button shows the count; with no history it opens an empty-state card. Results go to `sp_quizHistory` with `type: "review"`. Includes PBQs (`pbq:<id>`). Question IDs (`<lesson id>#<index>` or `pbq:<id>`) that no longer exist in cysa.json are ignored.
@@ -68,6 +73,7 @@ Multiple choice on top of Leitner spaced repetition:
 - Boxes 1-5 with review intervals `[_, 1, 3, 7, 14, 30]` days (`INTERVALS[box]`). **Right** → box +1. **Wrong** → box 1, due today, and re-asked once at the end of the current round (with fresh options).
 - **Missed cards** (`sp_cardhist`, `missedCards()`): every answer (scheduled, cram or review) is recorded per card. A card counts as missed while its latest answer was wrong or it's been wrong more often than right (the same rule as Review mistakes). **Review missed cards · N** runs up to 10 of them without touching the schedule. The card shows "Missed N× before"; getting a previously-missed card right shows **Improved! ✓**. The Brief's exam target includes missed cards.
 - **8 new cards per day** (`NEW_PER_DAY`), tracked in `sp_newToday`. Cards are introduced in `cysa.json` order.
+- **Acronym drill** (`#card-acro`): 10 random cards from the `acronym` group, run like cram (mode `acronyms`, no schedule change). Shown whenever the deck has acronym cards; the acronym cards also join the normal deck as new cards.
 - When caught up: a **Cram 10** button runs random cards without touching the schedule. Finishing a review or cram round returns to the scheduled queue.
 - The nav badge shows the number of due cards.
 
@@ -80,7 +86,8 @@ Multiple choice on top of Leitner spaced repetition:
 - `type: "order"` (PBQs): `items` are stored in the correct order, displayed shuffled (never already solved), and moved with ▲/▼ buttons (40px, no drag library; focus follows the moved item). **Check order** marks each row right/wrong; it's correct only if every item is in place, otherwise it says "N of M in the right place" and lists the correct order under the explanation.
 - After answering: correct/incorrect highlight, explanation, Next / See result.
 - `opts.single`: no Next button (question of the day).
-- `opts.onDone(correct, total)`: called after the result screen.
+- `opts.onDone(correct, total, timing)`: called after the result screen (`timing` = `{secs, expired}` for timed rounds, else null).
+- `opts.timeLimit` / `opts.onTick(secondsLeft)`: optional countdown (see Timed practice exam).
 - Every answer → `recordAnswer()` updates `sp_qstats` (overall and per-domain), `sp_qhist` (per question, when the question has a `qid`, which all three quiz entry points set) and the streak.
 - Result messages: ≥80% "Exam-ready territory", ≥65% "Close", else "Keep going". These are rough guides; the real exam is scaled 100–900, with 750 to pass.
 
@@ -89,13 +96,18 @@ An RPG-style layer over the existing study features: everything earns XP, XP set
 
 - **Earning** (`XP` constants, `gainXP(n, skill, once)`): quiz answer +10 right / +3 wrong; PBQ +20 right / +5 wrong; daily quests +20 to +40 each (see Brief); flashcard +5 / +1; lesson completed for the first time +50; finishing a practice exam +25 or a quick/review round +10; opening a news story +2 (first open of that story, up to `READ_CAP` = 25 a day); first study activity of a Brisbane day +10 +2 per streak day (max +30, awarded in `markActivity()`).
 - **Anti-grind**: each question (`qid`) and card (`id`) earns XP once per Brisbane day, tracked in `today.q`/`today.c`. That covers the question of the day re-rendering, cram rounds and the in-round retry of a wrong card. Repeats still count for stats and spaced repetition, just not XP.
-- **Levels**: going from level L to L+1 costs 100×L XP (`levelOf()`, `xpForLevel()`), so Lv 10 needs 4,500 XP and Lv 20 needs 19,000. A steady day (≈10 cards, 10 questions, a few stories) is about 150–200 XP.
+- **Levels**: going from level L to L+1 costs 100×L XP (`levelOf()`, `xpForLevel()`), so Lv 10 needs 4,500 XP and Lv 20 needs 19,000. (A steeper curve was tried on 2026-10-14 and reverted the same day as too slow.) A steady day (≈10 cards, 10 questions, a few stories) is about 150–200 XP.
 - **Ranks** (`RANKS`): Trainee Analyst (1), SOC Analyst Tier 1 (3), Tier 2 (6), Incident Responder (10), Threat Hunter (15), Senior Analyst (20), Detection Engineer (25), SOC Lead (30), Security Architect (40), Cyber Legend (50). Level-ups toast, and a new rank says "promoted to …".
 - **Skills**: XP is also credited to the CySA+ domain of the question/card/lesson (`"1"`-`"4"`) or to `intel` for news reads. Skill levels use the same curve at 25 XP per step. Shown on the **Analyst profile** sheet (`openProfile()`), along with the earning table and rank ladder.
 - **Seeding** (`seedXP()`, runs once after `cysa.json` loads when `sp_xp` doesn't exist): credits progress made before XP existed from `sp_lessons`, `sp_qhist`, `sp_cardhist` and `sp_read` at the same rates, so existing users don't restart at level 1. No daily or round bonuses are back-dated.
 - Quiz and card explanations show `+N XP` when XP was awarded.
+- **Achievements** (`BADGES()`, `checkBadges()`, `sp_badges`): one-off badges, +25 XP each (`BADGE_XP`): first answer, 250 questions, 100/500 flashcard answers, 25 cards in box 5, 7/30-day best streak, each domain's lessons cleared, all lessons, a perfect PBQ round, an estimated 750+ practice exam, 750+ on a timed exam inside the time, all daily quests in a day, 100 stories read. Each badge's `test()` reads existing state (`badgeCtx()`), so nothing extra is tracked. `checkBadges()` runs at the end of `gainXP()` (guarded against recursion) and at boot. The first run (no `sp_badges`) credits existing progress silently, with no XP or toast.
+- **Study activity** heatmap on the profile (`heatmapHtml()`): 17 weeks × 7 days from `sp_days` (XP per Brisbane day, written by `gainXP()` via `logDay()`, last 400 days). Shades step at 1 / 50 / 120 / 200 XP; freeze days have a dashed outline. `seedDays()` (once, at boot) rebuilds active days from the streak run, lesson dates, quiz history and the `last` dates in `sp_qhist`/`sp_cardhist`, logged as 1 ("active") because per-day XP wasn't kept before.
+- **Quiz accuracy** trend on the profile (`trendHtml()`): an SVG line of the last 20 `sp_quizHistory` rounds (all types), with an 80% dashed guide, a tooltip per point, and average/latest in text.
 
 ## Streak
+**Streak freezes** (`sp_freeze`, `getFreeze()`, `earnFreeze()`): finishing every daily quest earns one (once a day, up to `FREEZE_MAX` = 2 held). If the last activity was the day before yesterday and a freeze is held, `markActivity()` spends it, logs the covered day in `used`, and the streak carries on (+1 for today). Only a single missed day can be covered. `currentStreak()` keeps showing the streak during that gap while a freeze is held. The Brief's streak stat shows `🧊N` when freezes are held.
+
 Any study activity (answering a question, completing a lesson, grading a card) on a Brisbane calendar day calls `markActivity()`. Consecutive days increment the streak, and a missed day resets it to 1. The streak is shown as 0 once more than one day has passed since the last activity.
 
 ## localStorage keys
@@ -107,7 +119,7 @@ All keys are prefixed `sp_` (Export, Import and Reset rely on the prefix). Every
 | `sp_lessons` | `{"1.5": {date, score}}` | Completed lessons |
 | `sp_qstats` | `{answered, correct, byDomain: {"1": {a, c}}}` | Quiz accuracy |
 | `sp_qhist` | `{"1.5#0": {right, wrong, last: "YYYY-MM-DD", ok}}` | Per-question history for Review mistakes (`ok` = latest answer correct) |
-| `sp_quizHistory` | `[{date, c, t, type: "quick"\|"exam"\|"review"\|"pbq"}]` (last 100) | Quiz results |
+| `sp_quizHistory` | `[{date, c, t, type: "quick"\|"exam"\|"review"\|"pbq"\|"drill"}]` (last 100); drills add `domain`, timed exams add `timed: true, secs, expired` | Quiz results |
 | `sp_cards` | `{"c01": {box, due: "YYYY-MM-DD"}}` | Flashcard schedule |
 | `sp_newToday` | `{date, n}` | New cards introduced today |
 | `sp_cardhist` | `{"c01": {right, wrong, last: "YYYY-MM-DD", ok}}` | Per-card answer history for Review missed cards (`ok` = latest answer right) |
@@ -123,6 +135,10 @@ All keys are prefixed `sp_` (Export, Import and Reset rely on the prefix). Every
 | `sp_later` | `{id: item}` | Read-later list (full item copy), separate from Saved |
 | `sp_notes` | `{id: "text"}` | Notes on saved stories (max 500 chars each) |
 | `sp_theme` | `"dark"` \| `"light"` | Theme override; absent = follow the system |
+| `sp_badges` | `{badgeId: "YYYY-MM-DD"}` | Achievements earned and when |
+| `sp_days` | `{"YYYY-MM-DD": xp}` (last 400 days) | XP per Brisbane day for the heatmap (1 = active day seeded from older data) |
+| `sp_freeze` | `{n, used: ["YYYY-MM-DD"…], earned: "YYYY-MM-DD"}` | Streak freezes held, days they covered, last day one was earned |
+| `sp_backup` | `{last: "YYYY-MM-DD", snooze: "YYYY-MM-DD"}` | Last export and backup-nudge snooze |
 
 **Never rename a key or change its shape without a migration.** Existing progress on the phone would silently reset.
 

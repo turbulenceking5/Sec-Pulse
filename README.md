@@ -6,13 +6,13 @@ A personal cyber security news brief and CySA+ study app that installs on your p
 - **News:** Australian + global security news, scored for relevance (real estate / BEC, Australia, M365, actively exploited, ransomware…), with filters, search and saved stories.
 - **Learn:** CySA+ (CS0-003) lessons for all four domains, quizzes, a 30-question weighted practice exam, plus Australian bonus lessons (Essential Eight, BEC playbook, NDB scheme).
 - **Cards:** spaced-repetition flashcards (Leitner boxes).
-- **Morning push notification** at ~6:30am Brisbane time via the free [ntfy](https://ntfy.sh) app.
+- **Morning push notification** at ~7:25am Brisbane time via the free [ntfy](https://ntfy.sh) app.
 
 ## How it works
 
 ```
 GitHub Action (every 3h) → scripts/fetch_news.py → data/news.json committed → GitHub Pages → your phone
-GitHub Action (6:30am AEST) → fetch + scripts/send_brief.py → ntfy push notification
+GitHub Action (7:25am AEST) → fetch + scripts/send_brief.py → ntfy push notification
 ```
 
 Browsers can't read most news feeds directly (CORS), so a scheduled Action fetches them server-side and commits the result. Study progress lives in your browser's `localStorage` only. Use Settings → Export backup to keep a copy.

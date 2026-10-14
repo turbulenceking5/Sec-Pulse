@@ -39,7 +39,7 @@ The app shows an install hint on iOS Safari until you dismiss it or open it from
    - Secret: your topic name
 5. Test: **Actions → Morning brief → Run workflow**. A notification should arrive within a minute.
 
-It then runs daily at 20:30 UTC (6:30am Brisbane). GitHub's scheduler can run it 5–30 minutes late at busy times.
+It then runs daily at 21:25 UTC (7:25am Brisbane). GitHub's scheduler can run it 5–30 minutes late at busy times.
 
 The **Weekly digest** workflow (Sundays 08:00 UTC = 6pm Brisbane) uses the same `NTFY_TOPIC` secret, so there's nothing extra to set up. To test it: **Actions → Weekly digest → Run workflow**.
 

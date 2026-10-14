@@ -6,13 +6,13 @@ All CySA+ lessons, quiz questions and flashcards live in one hand-written JSON f
 
 | Domain | Exam weight | Lessons | Questions | Cards | PBQs |
 |---|---|---|---|---|---|
-| 1 Security Operations | 33% | 1.1–1.10 (10) | 30 | 43 | 5 |
-| 2 Vulnerability Management | 30% | 2.1–2.7 (7, incl. 2.6 AU bonus) | 21 | 42 | 3 |
-| 3 Incident Response & Management | 20% | 3.1–3.5 (5, incl. 3.4 AU bonus) | 15 | 26 | 4 |
-| 4 Reporting & Communication | 17% | 4.1–4.5 (5) | 15 | 20 | 3 |
-| **Total** | | **27** | **81** | **131** | **15** |
+| 1 Security Operations | 33% | 1.1–1.10 (10) | 30 | 60 | 5 |
+| 2 Vulnerability Management | 30% | 2.1–2.7 (7, incl. 2.6 AU bonus) | 21 | 51 | 3 |
+| 3 Incident Response & Management | 20% | 3.1–3.5 (5, incl. 3.4 AU bonus) | 15 | 30 | 4 |
+| 4 Reporting & Communication | 17% | 4.1–4.5 (5) | 15 | 22 | 3 |
+| **Total** | | **27** | **81** | **163** | **15** |
 
-The card deck now roughly tracks the exam weights (33/32/20/15%). Cards c61–c93 cover tools and ports: Nmap flags (c61–c70, domain 2), common ports (c71–c81, domain 1) and Windows Security/System event IDs (c82–c93, domain 1). Cards c94–c107 are Domain 4 reporting terms (dwell time, KPI vs metric, MTTC/remediate, out-of-band comms, report structure, escalation matrix, vulnerability SLA/ageing/recurrence, risk exceptions, regulatory notification). Cards c108–c117 are Domain 2 vulnerability management (CVSS vectors/scope/metric groups, EPSS, prioritisation, ASM, scan false positives, CVE vs CWE). Cards c118–c131 are Domain 3 (containment, eradication, recovery, playbooks, IoC sweeps; c127–c131 are the `forensics` group).
+The card deck now roughly tracks the exam weights (33/32/20/15%). Cards c61–c93 cover tools and ports: Nmap flags (c61–c70, domain 2), common ports (c71–c81, domain 1) and Windows Security/System event IDs (c82–c93, domain 1). Cards c94–c107 are Domain 4 reporting terms (dwell time, KPI vs metric, MTTC/remediate, out-of-band comms, report structure, escalation matrix, vulnerability SLA/ageing/recurrence, risk exceptions, regulatory notification). Cards c108–c117 are Domain 2 vulnerability management (CVSS vectors/scope/metric groups, EPSS, prioritisation, ASM, scan false positives, CVE vs CWE). Cards c118–c131 are Domain 3 (containment, eradication, recovery, playbooks, IoC sweeps; c127–c131 are the `forensics` group). Cards c132–c163 are the `acronym` group (EDR, XDR, TTP, TLP, SCAP, OWASP, BIA, RACI and so on), used by the Acronym drill; they're counted in the table above but sit outside the exam-weight balancing.
 
 **Tooling** lessons (1.9 triaging an EDR detection, 1.10 secure email gateway workflows, 2.7 reading a vulnerability scan report) cover the *categories* of tool the user works with, deliberately vendor-neutral (no product names, see [opsec.md](opsec.md)). Their titles start with "Tooling:".
 
@@ -71,7 +71,7 @@ Performance-based practice: a realistic exhibit and a hands-on task, like the PB
   - New flashcards are introduced in array order (8/day). Append new cards at the end so they arrive after the existing deck.
 - **Exactly 4 options per question.** The app assumes it, and so does the CySA+ format.
 - **Don't worry about answer position.** Options are shuffled on every render, so `answer` can always be 0 if that's easier to write.
-- **Every card needs a `group`, and every group needs at least 4 cards.** The other 3 multiple-choice answers are drawn from the card's group, so a group should hold cards whose backs look alike (same shape and topic). Current groups: `models` (frameworks and lists), `tooling` (SIEM/SOAR, Zero Trust, SASE, CASB, UEBA), `email-identity`, `detection`, `vuln-mgmt`, `appsec`, `ir`, `forensics` (evidence acquisition and integrity), `reporting`, `nmap`, `port`, `event-id`. Reuse one where it fits; a new group needs 4+ cards.
+- **Every card needs a `group`, and every group needs at least 4 cards.** The other 3 multiple-choice answers are drawn from the card's group, so a group should hold cards whose backs look alike (same shape and topic). Current groups: `models` (frameworks and lists), `tooling` (SIEM/SOAR, Zero Trust, SASE, CASB, UEBA), `email-identity`, `detection`, `vuln-mgmt`, `appsec`, `ir`, `forensics` (evidence acquisition and integrity), `reporting`, `nmap`, `port`, `event-id`, `acronym` (acronym on the front, expansion plus one line of meaning on the back; never repeat the acronym on the back). Reuse one where it fits; a new group needs 4+ cards.
 - **Plain text only.** Everything is HTML-escaped on render: no markdown, no HTML tags. Use `\\` for a literal backslash in JSON (e.g. registry paths and regex).
 - **Generic examples only.** The repo is public. Use `example.com`, `examp1e.com` style look-alikes, and generic org descriptions. Never use the employer's real domain, systems or incident details.
 - **Validate after editing:**
