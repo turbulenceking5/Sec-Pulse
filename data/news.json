@@ -1,28 +1,28 @@
 {
- "generated": "2026-10-14T00:19:08Z",
+ "generated": "2026-10-14T08:46:05Z",
  "sources": [
   {
    "name": "ACSC Alerts",
-   "ok": false,
-   "count": 0,
-   "error": "ValueError: feed returned no entries"
-  },
-  {
-   "name": "ACSC Advisories",
-   "ok": false,
-   "count": 0,
-   "error": "ValueError: feed returned no entries"
-  },
-  {
-   "name": "ACSC (via Google News)",
    "ok": true,
    "count": 2,
    "error": null
   },
   {
-   "name": "ASD / ACSC in the news",
+   "name": "ACSC Advisories",
+   "ok": true,
+   "count": 1,
+   "error": null
+  },
+  {
+   "name": "ACSC (via Google News)",
    "ok": true,
    "count": 3,
+   "error": null
+  },
+  {
+   "name": "ASD / ACSC in the news",
+   "ok": true,
+   "count": 2,
    "error": null
   },
   {
@@ -106,6 +106,228 @@
  ],
  "items": [
   {
+   "id": "ca2337ba7a1a",
+   "title": "Chrome, Firefox Updates Patch 114 Flaws as Mozilla Unveils Firefox Enterprise",
+   "link": "https://www.securityweek.com/chrome-firefox-updates-patch-114-flaws-as-mozilla-unveils-firefox-enterprise/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-14T07:38:51Z",
+   "summary": "Mozilla has introduced Firefox Enterprise for organizations with strict compliance, governance, and security requirements. The post Chrome, Firefox Updates Patch 114 Flaws as Mozilla Unveils Firefox Enterprise appeared first on SecurityWeek .",
+   "score": 5,
+   "tags": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "3c74e6888cec",
+   "title": "Citrix, Fortinet, Ivanti Patch 29 Vulnerabilities Across Their Products",
+   "link": "https://www.securityweek.com/citrix-fortinet-ivanti-patch-29-vulnerabilities-across-their-products/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-14T07:26:35Z",
+   "summary": "Critical-severity flaws could lead to authentication bypass, code execution, and sensitive authentication information leaks. The post Citrix, Fortinet, Ivanti Patch 29 Vulnerabilities Across Their Products appeared first on SecurityWeek .",
+   "score": 7,
+   "tags": [
+    "Edge devices",
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Edge devices",
+    "Vulnerability",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "6a1ad96a7af9",
+   "title": "Orphaned VBA Projects Inside DWG Files, (Wed, Oct 14th)",
+   "link": "https://isc.sans.edu/diary/rss/33420",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-10-14T06:49:46Z",
+   "summary": "Years ago I wrote diary entries about VBA code stored inside AutoCAD drawing files (.dwg).",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "107051ae553a",
+   "title": "SAP Patches Critical NetWeaver, S/4HANA Vulnerabilities",
+   "link": "https://www.securityweek.com/sap-patches-critical-netweaver-s-4hana-vulnerabilities/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-14T06:12:10Z",
+   "summary": "The bugs could allow attackers to invoke internal operations and execute code, completely compromising the system. The post SAP Patches Critical NetWeaver, S/4HANA Vulnerabilities appeared first on SecurityWeek .",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "ef61a9283f23",
+   "title": "Four-Byte Write and Timing Bug Let Researchers Run Code in Windows SmartScreen Enclave",
+   "link": "https://thehackernews.com/2026/10/four-byte-write-and-timing-bug-let.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-14T05:52:28Z",
+   "summary": "Security researchers ran their own code inside a protected part of Windows that is meant to stay sealed off even when the rest of the computer is taken over. The protected area is a VBS enclave, an isolated slice of memory the operating system uses to guard secrets, and the one they broke into…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "144f472a1e64",
+   "title": "Ransomware Gangs Embrace Physical Threats, Family Stalking?",
+   "link": "https://www.darkreading.com/cybersecurity-analytics/ransomware-gangs-physical-threats-family-stalking",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-14T05:00:00Z",
+   "summary": "Organizations are reporting that employees face threats to their families, stalking, physical violence, and abduction. But these alarming claims are hard to verify.",
+   "score": 4,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
+  },
+  {
+   "id": "b7b1929554c4",
+   "title": "Microsoft Patches Record 1,413 Flaws, Including Exploited Windows Shell Bug",
+   "link": "https://thehackernews.com/2026/10/microsoft-patches-record-1413-flaws.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-14T04:34:43Z",
+   "summary": "Microsoft on Tuesday shattered its own Patch Tuesday record by shipping patches for a whopping 1,413 vulnerabilities, including one that it said has come under active exploitation. These include 1,102 flaws in Windows, 134 in Office, 61 in Developer Tools, 36 in SharePoint Server, and 22 in SQL…",
+   "score": 8,
+   "tags": [
+    "Microsoft 365",
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Microsoft 365",
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "also": [
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/microsoft-patches-record-1413-vulnerabilities-including-exploited-windows-zero-day/"
+    }
+   ]
+  },
+  {
+   "id": "26b1ef9e900d",
+   "title": "Taylor Weiner Team Marks Cybersecurity Awareness Month With a Closing-Funds Warning as FBI Reports Real Estate Fraud Losses Rose 58% to $275.1 Million in 2025",
+   "link": "https://news.google.com/rss/articles/CBMitgJBVV95cUxNM1B3V3JnSTFpUV81dEgyd1JOWldjdDB1M2lUY3lVbThhcF9xd3d6eHItS1ZGaUw0b3Q2RkZYQWtZOVE1c3BXbVN3cXJtZmpLQWxwenVYUlc0V1pLTDJIX1E5RnN1YUVzbU92UGJwclo1S2ZBN3V0ck9yR0IzT1otY19wQkotejQ5a1BYMlJCb1E0WGtTcTBjSHBmcE41WVR6eFU0ZU8xcTZ3T1Y1MVlxUkliNTlWU0gxX1ZWYmppbzZFZDhLOXVPYS1RUFUxc3hGYV92Ukgwai1zTWc2N1EydDFicE5MSnJURklNdkFXVndiR2xFU1R5a2o0RDB2R3pxOEJMWE1PRWdmazVkZGFWS2g4SUREaWkxTVk4NjUyMFo2QjFncU5GUVc3X1Y4dVQ1ZVp6QUh3?oc=5",
+   "source": "The Laconia Daily Sun",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-14T03:13:32Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
+   "id": "a6d0b1683624",
+   "title": "Protecting operational technology and edge devices",
+   "link": "https://www.cyber.gov.au/alert/protecting-operational-technology-and-edge-devices",
+   "source": "ACSC Alerts",
+   "feed": "ACSC Alerts",
+   "region": "AU",
+   "published": "2026-10-14T02:17:37Z",
+   "summary": "Alert on the cyber security risks to operational technology (OT), including refrigeration and cooling technology, with mitigation advice and guidance for businesses and organisations that operate this technology.",
+   "score": 6,
+   "tags": [
+    "Australia"
+   ],
+   "why": [],
+   "also": [
+    {
+     "source": "Australian Cyber Security",
+     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOMmVkTW5oZkVYTk5TR0JBQnJmdWNRaWxadEpaUlZlQlpZQ3kxdGVRVEwyUVNkYUF3UDFNQ1pRam0xcVlGTzVyblItSmQwV2xkdnhXNEhPMjN0eHJlenFfS0c4SThiS1FFa1Jkem9IWG9ROXo5OTlkeHgtTW5WSHBYU1dKT3NpZUJN?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "cb6f424a9bac",
+   "title": "ISC Stormcast For Wednesday, October 14th, 2026 https://isc.sans.edu/podcastdetail/10136, (Wed, Oct 14th)",
+   "link": "https://isc.sans.edu/diary/rss/33424",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-10-14T02:00:03Z",
+   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "cb3154f35431",
+   "title": "OpenAI Employee Arrested for Allegedly Planting Hidden Recorder in Executive Conference Room",
+   "link": "https://thehackernews.com/2026/10/openai-employee-arrested-for-allegedly.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-14T01:59:25Z",
+   "summary": "A Saudi National and employee of OpenAI has been arrested for allegedly planting a hidden recording device in an executive conference room at the company's San Francisco offices to covertly record sensitive conversations. Abdulrahman Alfozan, 35, has been charged with using or endeavoring to use…",
+   "score": 2,
+   "tags": [
+    "Edge devices"
+   ],
+   "why": [
+    "Edge devices"
+   ],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-engineer-arrested-for-allegedly-planting-spy-device-in-office/"
+    },
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/employee-arrested-after-listening-device-found-in-openai-conference-room-fbi-and-the-company-say/"
+    }
+   ]
+  },
+  {
+   "id": "62050be54e07",
+   "title": "Exclusive: Mandurah SES confirms operations unaffected by ransomware attack",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNZ3Q1SFVZMmtfa0ptQ2JmNXNZazgtb3RSVlBabUJKeFQtbU5PbTVhc1JzejBZelgxSGI1aHlHamJzalB2aldsRlhVMUhQeDkxa0FwdVhPMFFpelFKdWctcHI2bnY4bzZiN2hoQW40U1dVMDNWMVVyNG85ZVJpOEh5RHdlRW9SQ0gyU2dyb3dacGFBd3BZYWRlSDlGczdOQXItS3dTRkxwRnF3aG5WbHVnZDlQdHRoUQ?oc=5",
+   "source": "Cyber Daily",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-13T23:57:10Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
+  },
+  {
    "id": "83d130e7ba9f",
    "title": "Microsoft Patches More Than 1,400 Security Flaws",
    "link": "https://krebsonsecurity.com/2026/10/microsoft-patches-more-than-1400-security-flaws/",
@@ -122,36 +344,6 @@
    "why": [
     "Vulnerability",
     "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "0cfb790894cf",
-   "title": "Employee Arrested After Listening Device Found in OpenAI Conference Room, FBI and the Company Say",
-   "link": "https://www.securityweek.com/employee-arrested-after-listening-device-found-in-openai-conference-room-fbi-and-the-company-say/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-13T23:07:00Z",
-   "summary": "Saudi national Abdulrahman Alfozan was arrested Friday and terminated by OpenAI. The post Employee Arrested After Listening Device Found in OpenAI Conference Room, FBI and the Company Say appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "ff21bb8aab01",
-   "title": "OpenAI engineer arrested for allegedly planting spy device in office",
-   "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-engineer-arrested-for-allegedly-planting-spy-device-in-office/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-13T22:33:02Z",
-   "summary": "A Saudi OpenAI engineer has been arrested for allegedly planting a hidden recording device in an executive conference room at the company's San Francisco offices to secretly record sensitive conversations. [...]",
-   "score": 2,
-   "tags": [
-    "Edge devices"
-   ],
-   "why": [
-    "Edge devices"
    ]
   },
   {
@@ -478,13 +670,13 @@
   },
   {
    "id": "21816e632b64",
-   "title": "Adobe Patches 140 Vulnerabilities Across 10 Products",
+   "title": "Adobe Patches 176 Vulnerabilities Across 11 Products",
    "link": "https://www.securityweek.com/adobe-patches-140-vulnerabilities-across-10-products/",
    "source": "SecurityWeek",
    "feed": "SecurityWeek",
    "region": "Global",
    "published": "2026-10-13T17:14:42Z",
-   "summary": "The flaws affect products such as Commerce, Photoshop, ColdFusion, Substance 3D, Dimension, FrameMaker and Bridge. The post Adobe Patches 140 Vulnerabilities Across 10 Products appeared first on SecurityWeek .",
+   "summary": "The flaws affect products such as Commerce, Photoshop, ColdFusion, Substance 3D, Dimension, FrameMaker and Bridge. The post Adobe Patches 176 Vulnerabilities Across 11 Products appeared first on SecurityWeek .",
    "score": 4,
    "tags": [
     "Vulnerability",
@@ -656,25 +848,6 @@
    "why": [
     "Identity",
     "Edge devices"
-   ]
-  },
-  {
-   "id": "e8575f2a7b9b",
-   "title": "Pending home sales hit 12-year low as mortgage rates breach 7%",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOS0xpSWlydEY3OV9Qam56WGV4bEwyejdPTExnc2pmVzVQQlY2UWdOYnZQUTFURzhhTnFXTG03eDU3WVFSWGE5Z0FwLVpzNkVoanU1a3N0R09rR3E0cmcyVm01ZXg0REVYY1BWekJUMFJabGx0OHFxVlRDeGpyNVB6U1VkQTNLMXlJbG5nMnRIWlJLWUxmZHdGT2YwT3ZybzM3bEJaa0VqUzVFbkY2UWhKM1ZaS2xtR2cxN0E3OVhBM1BYcnIzSmc?oc=5",
-   "source": "Mortgage Professional America",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-13T13:52:27Z",
-   "summary": "",
-   "score": 14,
-   "tags": [
-    "Real estate",
-    "Data breach"
-   ],
-   "why": [
-    "Real estate",
-    "Data breach"
    ]
   },
   {
@@ -2019,21 +2192,6 @@
    "epss": 0.995
   },
   {
-   "id": "8f5724899730",
-   "title": "Chinese government-linked cyber threat actors combine automated and hands-on hacking tools to steal sensitive data",
-   "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPSXgySXdDMlp2Q091MXdBUUgyTUg1X215eFh3NVNxSTJ3ZnIxR1hMcGZzVUFNU2RpYlFpNWVaRnpSRFRKTXVEODhFZmV0SkE3WlpJTTAxOFJ4WTdBVHA3VXlkTnRHWVVhR2Z6ZmhFdzI3Z2xfcmFKeVJBSTlQS1ZjNVNkSGNLMFg5M1RfMFFsNU1GUHZRMFpLSG9KUDdKNVNpaEk3bF96OGNxdFJNQWlZdXZVTjNqYzF6UVBRUHlmLTVBLW03Y1BKWGhTUlo0TnhVWGxIREJDYmNvTTRrekplRDdB?oc=5",
-   "source": "Australian Cyber Security",
-   "feed": "ACSC (via Google News)",
-   "region": "AU",
-   "published": "2026-10-09T12:00:00Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "Australia"
-   ],
-   "why": []
-  },
-  {
    "id": "b7ae45cc2528",
    "title": "The AI Velocity Paradox: Why Security Is Decades Behind AI Ambition",
    "link": "https://thehackernews.com/2026/10/the-ai-velocity-paradox-why-security-is.html",
@@ -2123,6 +2281,31 @@
    "score": 0,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "921040b2c508",
+   "title": "Chinese government-linked cyber threat actors combine automated and hands-on hacking tools to steal sensitive data",
+   "link": "https://www.cyber.gov.au/advisory/chinese-government-linked-cyber-threat-actors-combine-automated-and-hands-on-hacking-tools-to-steal-sensitive-data",
+   "source": "ACSC Advisories",
+   "feed": "ACSC Advisories",
+   "region": "AU",
+   "published": "2026-10-08T22:10:58Z",
+   "summary": "Learn how Chinese state-linked cyber actors steal sensitive data and discover practical steps to detect, prevent and respond to attacks.",
+   "score": 6,
+   "tags": [
+    "Australia"
+   ],
+   "why": [],
+   "also": [
+    {
+     "source": "Australian Cyber Security",
+     "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPSXgySXdDMlp2Q091MXdBUUgyTUg1X215eFh3NVNxSTJ3ZnIxR1hMcGZzVUFNU2RpYlFpNWVaRnpSRFRKTXVEODhFZmV0SkE3WlpJTTAxOFJ4WTdBVHA3VXlkTnRHWVVhR2Z6ZmhFdzI3Z2xfcmFKeVJBSTlQS1ZjNVNkSGNLMFg5M1RfMFFsNU1GUHZRMFpLSG9KUDdKNVNpaEk3bF96OGNxdFJNQWlZdXZVTjNqYzF6UVBRUHlmLTVBLW03Y1BKWGhTUlo0TnhVWGxIREJDYmNvTTRrekplRDdB?oc=5"
+    },
+    {
+     "source": "Australian Cyber Security",
+     "url": "https://news.google.com/rss/articles/CBMipgJBVV95cUxPdUxVZ1NaOFRoSUhDbGlPRHdzQVVqNGRGYmdocldGcmNBSjlRcjZoY19Dc0lHSXU5NXBzd05OX3BPUUo4WWFWdmNkamNJUTA4QUhRUmxzSW0waFlqM3lmWnhENVNPbGVNSFprY1JHeXdGZkdjX05zTklNS0dFVHduTEJnbmVsRVhBWnM3R2wyQVBhLUh4T2otMTRuTDRuVFlyV2tYM05UWGN6OUl2M0xRcTdsXzBNOE9PNjlIX2xvYVZId1I4YjRKYU5tbEVGcmxoRC1ZUmw1UTQzbDh1RUotcXA3VTlOZ29CNWQ1LU9TRlI2X3NCTE4wb3l3eVNiUzM3VDhQOGlXVUYxWnhuY3JWeEdxZTA4SUc1WXVmeDUwTk1vYjN3dFE?oc=5"
+    }
+   ]
   },
   {
    "id": "2c6533f22f44",
@@ -2657,6 +2840,26 @@
    "score": 1,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "12ef8a277d37",
+   "title": "Critical vulnerabilities in Citrix NetScaler ADC and Citrix NetScaler Gateway products",
+   "link": "https://www.cyber.gov.au/alert/critical-vulnerabilities-in-citrix-netscaler-adc-and-citrix-netscaler-gateway-products",
+   "source": "ACSC Alerts",
+   "feed": "ACSC Alerts",
+   "region": "AU",
+   "published": "2026-10-01T00:39:24Z",
+   "summary": "Alert for organisations to implement a high-priority patch addressing new vulnerabilities, under active exploitation in Citrix NetScaler ADC and Citrix NetScaler Gateway products.",
+   "score": 10,
+   "tags": [
+    "Edge devices",
+    "Vulnerability",
+    "Australia"
+   ],
+   "why": [
+    "Edge devices",
+    "Vulnerability"
+   ]
   },
   {
    "id": "f26468d8d522",
