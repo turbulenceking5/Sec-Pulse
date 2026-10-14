@@ -7,6 +7,10 @@ Env vars:
   APP_URL      optional - opened when you tap the notification
 
 Run with --dry-run to print the message instead of sending it.
+Run with --once to skip if today's brief was already sent: data/brief-sent.txt
+holds the Brisbane date of the last successful send. The scheduled run and the
+optional external trigger (see SETUP.md) both pass --once, so whichever runs
+first sends and the other does nothing; a manual run always sends.
 
 The helpers here (rank, published, load_data, lesson_for, qotd_for, headline, notify) are
 also imported by fetch_news.py (rank) and send_digest.py, so importing this
@@ -22,6 +26,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 NOW = dt.datetime.now(dt.timezone.utc)
 BRISBANE = dt.timezone(dt.timedelta(hours=10))  # Queensland has no daylight saving
 MAX_Q = 240  # question-of-the-day characters in the brief
+SENT_FILE = os.path.join(ROOT, "data", "brief-sent.txt")
 
 
 def published(item):
@@ -64,14 +69,15 @@ def headline(item, max_title=None):
 
 
 def notify(title, body, dry=False, tags="shield", priority="default", what="brief"):
-    """Print (dry run) or POST the message to ntfy. No NTFY_TOPIC = skip, exit 0."""
+    """Print (dry run) or POST the message to ntfy. No NTFY_TOPIC = skip, exit 0.
+    Returns True only if the message was actually sent."""
     if dry:
         print(title + "\n\n" + body)
-        return
+        return False
     topic = os.environ.get("NTFY_TOPIC", "").strip()
     if not topic:
         print("NTFY_TOPIC not set - skipping notification (see README).", file=sys.stderr)
-        return
+        return False
     server = os.environ.get("NTFY_SERVER", "https://ntfy.sh").rstrip("/")
     headers = {"Title": title.encode("utf-8"), "Tags": tags, "Priority": priority}
     app_url = os.environ.get("APP_URL", "").strip()
@@ -80,10 +86,20 @@ def notify(title, body, dry=False, tags="shield", priority="default", what="brie
     req = urllib.request.Request(f"{server}/{topic}", data=body.encode("utf-8"), headers=headers, method="POST")
     with urllib.request.urlopen(req, timeout=30) as r:
         print(f"Sent {what}: HTTP {r.status}", file=sys.stderr)
+    return True
 
 
 def main():
     dry = "--dry-run" in sys.argv
+    today = NOW.astimezone(BRISBANE).date()
+    if "--once" in sys.argv and not dry:
+        try:
+            with open(SENT_FILE) as f:
+                if f.read().strip() == today.isoformat():
+                    print(f"Brief for {today} already sent - skipping.", file=sys.stderr)
+                    return
+        except FileNotFoundError:
+            pass
     news, cysa = load_data()
 
     recent = [i for i in news["items"] if (NOW - published(i)).total_seconds() < 30 * 3600]
@@ -91,7 +107,6 @@ def main():
     kev_count = sum(1 for i in recent if "KEV" in i["tags"])
     au_count = sum(1 for i in recent if i["region"] == "AU")
 
-    today = NOW.astimezone(BRISBANE).date()
     lesson = lesson_for(today, cysa["lessons"])
 
     lines = [headline(i) for i in top]
@@ -106,7 +121,9 @@ def main():
     lines.append(f"❓ {question} (answer in the app)")
     body = "\n".join(lines)
     title = f"Sec-Pulse brief - {today.strftime('%a %d %b')}"
-    notify(title, body, dry=dry)
+    if notify(title, body, dry=dry):
+        with open(SENT_FILE, "w") as f:
+            f.write(today.isoformat() + "\n")
 
 
 if __name__ == "__main__":

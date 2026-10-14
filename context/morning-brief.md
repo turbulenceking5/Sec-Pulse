@@ -5,12 +5,14 @@ A daily push notification with the top stories and the day's CySA+ lesson, plus 
 ## Schedule
 `.github/workflows/morning-brief.yml`: cron `25 21 * * *` = **21:25 UTC = 7:25am Brisbane** (AEST, UTC+10, no daylight saving). It can also be run on demand from **Actions → Morning brief → Run workflow**.
 
-GitHub's cron is best-effort: runs are often 5–30 minutes late at busy times, and very occasionally skipped. A late run means the brief can land closer to 7:30-7:55am.
+GitHub's cron is best-effort: runs are often 5–30 minutes late, and on 2026-10-14 one ran 3h19m late and the next didn't run at all. So the recommended setup adds an **external trigger**: cron-job.org POSTs to the `workflow_dispatch` API at 07:25 Brisbane with `inputs.once = true` (steps in [SETUP.md](../SETUP.md#recommended-on-time-brief-with-cron-joborg)). GitHub's schedule stays as a backup.
+
+**Send once a day:** scheduled runs and `once` dispatches call `send_brief.py --once`. It skips if `data/brief-sent.txt` already holds today's Brisbane date, and writes that date after a successful send (not on dry runs or with no `NTFY_TOPIC`). The workflow commits the file. Runs share the `news-data` concurrency group, so a second run only checks out after the first has pushed the marker. A manual **Run workflow** (once unticked) always sends, and still records the date so the scheduled backup skips.
 
 ## Steps
 1. **Fetch fresh news**: runs `fetch_news.py` first so the brief isn't up to 3 hours stale.
 2. **Commit** `news.json` if it changed, so tapping the notification shows the same stories in the app.
-3. **Send**: `scripts/send_brief.py` with `NTFY_TOPIC` (secret) and `APP_URL` (built from the repo owner/name, `https://<owner>.github.io/<repo>/`).
+3. **Send**: `scripts/send_brief.py` (with `--once` for scheduled/external runs) with `NTFY_TOPIC` (secret) and `APP_URL` (built from the repo owner/name, `https://<owner>.github.io/<repo>/`).
 
 ## Message content
 `send_brief.py` builds:

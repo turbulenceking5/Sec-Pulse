@@ -39,7 +39,35 @@ The app shows an install hint on iOS Safari until you dismiss it or open it from
    - Secret: your topic name
 5. Test: **Actions → Morning brief → Run workflow**. A notification should arrive within a minute.
 
-It then runs daily at 21:25 UTC (7:25am Brisbane). GitHub's scheduler can run it 5–30 minutes late at busy times.
+It then runs daily at 21:25 UTC (7:25am Brisbane). GitHub's scheduler is best-effort, though: runs are often 5–30 minutes late and have been seen hours late or skipped. For an on-time brief, add the external trigger below.
+
+### Recommended: on-time brief with cron-job.org
+
+[cron-job.org](https://cron-job.org) (free) starts the workflow at exactly 7:25 through GitHub's API. GitHub's own schedule stays on as a backup. Both pass "send once", so whichever runs first sends the brief and the other skips (the date of the last send is kept in `data/brief-sent.txt`). **Run workflow** from the Actions tab always sends.
+
+**1. Create a GitHub token that can only start workflows in this repo**
+1. GitHub → your avatar → **Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token**.
+2. Name: `cron-job.org morning brief`. Expiration: the longest offered (put a reminder in your calendar to renew it).
+3. **Repository access → Only select repositories →** `Sec-Pulse`.
+4. **Permissions → Repository permissions → Actions: Read and write**. Leave everything else as **No access**.
+5. **Generate token** and copy it (it's shown once). Don't paste it anywhere else, and never into this repo.
+
+**2. Create the cron job**
+1. Sign up at cron-job.org and choose **Create cronjob**.
+2. **Title:** `Sec-Pulse morning brief`
+3. **URL:** `https://api.github.com/repos/turbulenceking5/Sec-Pulse/actions/workflows/morning-brief.yml/dispatches`
+4. **Execution schedule:** every day at **07:25**, and set the time zone to **Australia/Brisbane** (in the job, or in your account settings).
+5. Open the **Advanced** tab:
+   - **Request method:** `POST`
+   - **Headers** (add three):
+     - `Authorization`: `Bearer <your token>`
+     - `Accept`: `application/vnd.github+json`
+     - `X-GitHub-Api-Version`: `2022-11-28`
+   - **Request body:** `{"ref":"main","inputs":{"once":"true"}}`
+6. Save, then use **Test run**. A `204` response means the brief workflow started. Check **Actions → Morning brief** for the run; on a day the brief was already sent, the log says `already sent - skipping`.
+7. Turn on cron-job.org's failure notifications (e-mail) so you hear about an expired token.
+
+**If it stops working:** a `401` means the token expired or was revoked (make a new one and update the header); `404` means a typo in the URL or the token doesn't cover this repo; `422` means the body is wrong (check `"ref":"main"`).
 
 The **Weekly digest** workflow (Sundays 08:00 UTC = 6pm Brisbane) uses the same `NTFY_TOPIC` secret, so there's nothing extra to set up. To test it: **Actions → Weekly digest → Run workflow**.
 
@@ -56,6 +84,7 @@ The **Weekly digest** workflow (Sundays 08:00 UTC = 6pm Brisbane) uses the same 
 | Site shows the old placeholder README | Pages not enabled, or deploying from the wrong branch/folder (step 1). |
 | Workflow fails at `git push` with 403 | Workflow permissions are read-only (step 2). |
 | "Morning brief" / "Weekly digest" ran but no notification | `NTFY_TOPIC` secret missing or misspelled. The run log says `NTFY_TOPIC not set - skipping`. Also check you subscribed to the exact same topic in ntfy. |
+| Brief arrives late or not at all | GitHub's scheduler runs late at busy times. Set up the cron-job.org trigger (step 5). |
 | News in the app is stale | Check **Actions → Fetch news** for failures. GitHub disables scheduled workflows after 60 days without repo activity; re-enable it from the workflow page. |
 | A feed shows ⚠️ in Settings → Feed health | That source failed this run. Other feeds are unaffected. See [context/news-pipeline.md](context/news-pipeline.md#known-feed-issues). |
 | Home-screen app shows an old version | Fully close the app (swipe it away) and reopen it. The service worker is network-first, so any fresh load picks up the new version. The ↻ button only refreshes news, not the app itself. |

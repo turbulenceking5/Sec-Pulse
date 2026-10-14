@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-10-15: On-time morning brief
+- The morning brief can now be started at exactly 7:25am by a free external scheduler (cron-job.org; steps in SETUP.md), with GitHub's own schedule as a backup. You never get two briefs in one day: whichever runs first sends it.
+
 ## 2026-10-14: Achievements, timed exam, streak freezes and more
 - **Achievements**: 17 badges on your profile (streaks, questions and cards answered, each domain cleared, a perfect PBQ round, a 750+ practice exam, beating the clock…), +25 XP each. Ones you'd already earned are credited quietly.
 - **Study activity and accuracy trend** on your profile: a 17-week heatmap of the days you studied, and a chart of your last 20 quiz rounds against the 80% mark.
