@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-14T14:32:00Z",
+ "generated": "2026-10-14T19:26:04Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,13 +28,13 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 6,
+   "count": 7,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 5,
+   "count": 8,
    "error": null
   },
   {
@@ -82,7 +82,7 @@
   {
    "name": "Microsoft Security Blog",
    "ok": true,
-   "count": 10,
+   "count": 9,
    "error": null
   },
   {
@@ -105,6 +105,165 @@
   }
  ],
  "items": [
+  {
+   "id": "b84c40f0160a",
+   "title": "Man accused of posing as San Francisco 49er charged in Oregon romance scam case",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNT2c2QXlFVVJwVEhfbHJid3RsY0N0QUpaeWdaa0hTdlE1a2hHLV9LS0V3TTdKWEswQ3B0aGEtZEJ6X3JQa0Y3cV9mc0otRmhqa182ZXZWeFBGUUdRcVJTVjdBdU9DS0s1WmN5cXJSSHFHOGoyeWxKQTRuSnNIQ3VCWG1jWTlPRU13cklsUnlBR2NGSEdmcnZ4MtIBrAFBVV95cUxNb2E2UGFMbzJtUTNEOXVra0NmUFRQYXhleldjaDJ5V3J2d2M1Z3hmZEdkQ2xjTnA2YmJ1RTkyVVMwM1hnOWk4bW05Skluandxazg5YXVjNElZSmlLbUN0NUtUbzBZMlFwc3g0RER5c1B6QjhWUXM3aHZubXRLUFhkbXJ0cHU1TGpHVEFYdDJsUVRHUThFYkRyOWREUWJaaWoyVV84eXp5eGo3aGpV?oc=5",
+   "source": "KPTV",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-14T18:45:00Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Edge devices"
+   ],
+   "why": [
+    "Edge devices"
+   ]
+  },
+  {
+   "id": "297c58c4dd00",
+   "title": "CenterPoint data breach affects over 1 million Texans, new AG report shows",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNMHlLY01GVWhhdW5mM3NmOWN3NzFmU1lFNHN0VElyU19WZWtYU0pkUXA4UUVXdHNDX3RLYUk0ekI0WnU1WDJUZ1p4M2MwSW5yQnVjZ1QyRGU1aEoyU0FqRWZ4OENaOGRENW1VdjBzNUxMVGZSaHJFaHlMWm96Q0tSaE1Ea05GWnVfaTBtZ1NlXzJNSzRaM25QTGVhRDA?oc=5",
+   "source": "Houston Chronicle",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-14T18:05:21Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "91d989b5fb66",
+   "title": "Ledger asks sellers across Asia to halt sales after supply-chain attack",
+   "link": "https://www.bleepingcomputer.com/news/security/ledger-asks-sellers-across-asia-to-halt-sales-after-supply-chain-attack/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-14T17:46:50Z",
+   "summary": "Ledger has asked resellers and distributors of its wallets in Indonesia, Singapore, Thailand, the Philippines, Vietnam, Malaysia, and Hong Kong to suspend device sales and remove products from shelves while it investigates device tampering. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "639d0d6e00a7",
+   "title": "Hackers Backdoor Nextcloud Servers Through Critical Flaw in Collabora’s Built-in CODE App",
+   "link": "https://thehackernews.com/2026/10/hackers-backdoor-nextcloud-servers.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-14T17:38:31Z",
+   "summary": "Attackers exploited a flaw in an optional Nextcloud app, Collabora Online - Built-in CODE Server, to plant web shells on Nextcloud servers. Three administrators reported the issue on GitHub, with the first logged attack on September 10. A web shell is a small file that executes any command an…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "a7632caf16a4",
+   "title": "Cisco patches new Secure Email Gateway zero-day exploited in attacks",
+   "link": "https://www.bleepingcomputer.com/news/security/cisco-patches-actively-exploited-secure-email-gateway-zero-day/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-14T17:29:14Z",
+   "summary": "Cisco has patched another actively exploited zero-day flaw in its Secure Email Gateway (SEG) that lets remote unauthenticated attackers execute commands with root privileges. [...]",
+   "score": 10,
+   "tags": [
+    "Actively exploited",
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "why": [
+    "Actively exploited",
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/cisco-warns-of-active-attacks.html"
+    }
+   ]
+  },
+  {
+   "id": "78b0d9b2dfa1",
+   "title": "Microsoft Disrupts 3 Phishing Kits Linked to Over 1 Billion Scam Messages",
+   "link": "https://thehackernews.com/2026/10/microsoft-disrupts-3-phishing-kits.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-14T17:09:15Z",
+   "summary": "Microsoft and Health-ISAC, along with the Japan Cybercrime Control Center (JC3) and a coalition of private sector companies, such as Resecurity, Cloudflare, Oracle, Proofpoint, and TRM Labs, announced the disruption of three phishing kits, CoGUI (aka NX or FA), Haozi (aka Phoenix), and Iron Man…",
+   "score": 4,
+   "tags": [
+    "Phishing"
+   ],
+   "why": [
+    "Phishing"
+   ],
+   "also": [
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/microsoft-disrupts-chinese-language-phishing-market-behind-1b-messages/"
+    }
+   ]
+  },
+  {
+   "id": "f47fa4018271",
+   "title": "U.S. Shuts Down Over 40 Laptop Farms, Charges 14 in North Korean IT Worker Fraud",
+   "link": "https://thehackernews.com/2026/10/us-shuts-down-over-40-laptop-farms.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-14T16:34:31Z",
+   "summary": "The U.S. Department of Justice (DoJ) on Tuesday charged 14 people and seized about 187 computers as part of its ongoing efforts to disrupt North Korea's fraudulent remote IT worker (ITW) scheme. The indictment charges a mix of U.S. citizens and Chinese nationals for their roles in an IT worker…",
+   "score": 0,
+   "tags": [],
+   "why": [],
+   "also": [
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/us-arrests-two-in-crackdown-on-north-korean-it-worker-laptop-farms/"
+    }
+   ]
+  },
+  {
+   "id": "e2e487f81c3d",
+   "title": "AI Agents Navigate Unfamiliar OT Systems and Move Equipment in Minutes, Booz Allen Finds",
+   "link": "https://www.securityweek.com/ai-agents-navigate-unfamiliar-ot-systems-and-move-equipment-in-minutes-booz-allen-finds/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-14T16:00:00Z",
+   "summary": "In Booz Allen’s isolated OT lab, AI models met every objective across eight scenarios and reached an industrial control network from a perimeter compromise in just over 16 minutes. The post AI Agents Navigate Unfamiliar OT Systems and Move Equipment in Minutes, Booz Allen Finds appeared first on…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "f0efb52b806c",
+   "title": "ICS Patch Tuesday: Siemens Issues 17 Advisories, Rockwell Fixes ArmorBlock Takeover Flaw",
+   "link": "https://www.securityweek.com/ics-patch-tuesday-siemens-issues-17-advisories-rockwell-fixes-armorblock-takeover-flaw/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-14T15:15:15Z",
+   "summary": "ABB previously published an advisory warning about possible probing of a dynovaPRO vulnerability. The post ICS Patch Tuesday: Siemens Issues 17 Advisories, Rockwell Fixes ArmorBlock Takeover Flaw appeared first on SecurityWeek .",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
   {
    "id": "fac7cd6e29f5",
    "title": "Microsoft fixes VPN issues caused by September Windows updates",
@@ -208,20 +367,22 @@
    ]
   },
   {
-   "id": "b9b58f38aa23",
-   "title": "Microsoft Disrupts Chinese-Language Phishing Market Behind 1B+ Messages",
-   "link": "https://www.securityweek.com/microsoft-disrupts-chinese-language-phishing-market-behind-1b-messages/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
+   "id": "b2dbdf4e9e45",
+   "title": "The hidden network: Inside the phishing infrastructure ecosystem powering global cybercrime",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/10/14/the-hidden-network-inside-the-phishing-infrastructure-ecosystem-powering-global-cybercrime/",
+   "source": "Microsoft Security Blog",
+   "feed": "Microsoft Security Blog",
    "region": "Global",
    "published": "2026-10-14T13:00:00Z",
-   "summary": "Backed by a federal court order, Microsoft and Health-ISAC seized domains powering YAM Store, CoGUI, and Iron Man. The post Microsoft Disrupts Chinese-Language Phishing Market Behind 1B+ Messages appeared first on SecurityWeek .",
-   "score": 4,
+   "summary": "Microsoft uncovered a Chinese-language cybercriminal ecosystem, an interconnected network of phishing kit operators (tracked as Storm-2990), and an illicit marketplace (tracked as Storm-3119) selling tools and infrastructure for large-scale phishing. In collaboration with law enforcement agencies…",
+   "score": 6,
    "tags": [
-    "Phishing"
+    "Phishing",
+    "Vulnerability"
    ],
    "why": [
-    "Phishing"
+    "Phishing",
+    "Vulnerability"
    ]
   },
   {
@@ -294,23 +455,6 @@
     "Actively exploited",
     "Edge devices",
     "Vulnerability"
-   ]
-  },
-  {
-   "id": "297c58c4dd00",
-   "title": "CenterPoint data breach affects over 1 million Texans, new AG report shows",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNMHlLY01GVWhhdW5mM3NmOWN3NzFmU1lFNHN0VElyU19WZWtYU0pkUXA4UUVXdHNDX3RLYUk0ekI0WnU1WDJUZ1p4M2MwSW5yQnVjZ1QyRGU1aEoyU0FqRWZ4OENaOGRENW1VdjBzNUxMVGZSaHJFaHlMWm96Q0tSaE1Ea05GWnVfaTBtZ1NlXzJNSzRaM25QTGVhRDA?oc=5",
-   "source": "Houston Chronicle",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-14T12:30:30Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
    ]
   },
   {
@@ -397,19 +541,6 @@
    "why": []
   },
   {
-   "id": "2cf131532cb9",
-   "title": "US Arrests Two in Crackdown on North Korean IT Worker Laptop Farms",
-   "link": "https://www.securityweek.com/us-arrests-two-in-crackdown-on-north-korean-it-worker-laptop-farms/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-14T10:55:21Z",
-   "summary": "Investigators stormed 40 locations in Texas and seized 187 laptops used by North Korean IT workers to hide their location. The post US Arrests Two in Crackdown on North Korean IT Worker Laptop Farms appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
    "id": "0aa13b1d8369",
    "title": "Microsoft: Recent Windows updates may trigger Remote Desktop failures",
    "link": "https://www.bleepingcomputer.com/news/security/microsoft-recent-windows-updates-may-trigger-remote-desktop-failures/",
@@ -441,6 +572,23 @@
    ],
    "why": [
     "Edge devices"
+   ]
+  },
+  {
+   "id": "216c66fa9dd2",
+   "title": "At least 15 charged in California for alleged PH real estate scam",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPRFR6SmRqc0NUbnBHSFhBYkotNG1vTVVFUGlOR1NOZ29qenpSOXY5dllXRVdVcDlWYm9LdE9RdEVHeTRpRnYzLUlLSHhzYlg4RzVTdGZaWmZEQ1BKYjEyNk91dXJ5Q0oyYnFBU0xWSU0yajJfcW9hVTBHQjAtS2pTeXBHU2IzeG5MMkkxWGxIaGpzMm0xQnNwdENLcmZFSEFTd3EyU3BFeS1LbEhS?oc=5",
+   "source": "Rappler",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-14T07:57:21Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
    ]
   },
   {
@@ -585,10 +733,10 @@
    "epss": 0.0151
   },
   {
-   "id": "78a4deb73c12",
+   "id": "b57de9624406",
    "title": "Taylor Weiner Team Marks Cybersecurity Awareness Month With a Closing-Funds Warning as FBI Reports Real Estate Fraud Losses Rose 58% to $275.1 Million in 2025",
-   "link": "https://news.google.com/rss/articles/CBMipwJBVV95cUxPR25ISmdldG0wVFJMa2tRM1BJZHF6TkpaeFNfRWlCNTBYX3Y1RXY3MGtTYVV0UHl3WURUa1J3RTJKY0VQSXJmN2ZzZWRnblZOaDJZbXI5SXhtd0Y1cko4Wm5yNWhMX3FZaWxValhUY05Ddk5sTXRuRE52QUVEWHctNzRpYWdFendXNzBLd2ZLQkhMcFplV1hobzhUOEl5UUdhY29qSnNsWi0xVGJJYXg2S2RUX3dnY05QVFJWMVc1T1kta3VjTXBKSDlpTjJmbUZuenE0d0dPcngxMUk2YUdoQWd1dDNkLUVyeTN3T3J4Z1YyYVQwejBuYldsaGc3cHZOMUhNWU4xLXFZdS00MlpGdnJIMlgtMXZXMV9ER0RhSjJGNGdyMXFR?oc=5",
-   "source": "WKOW",
+   "link": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxPZzlIVVhSSVlmUGt4M1B6bGJJeFY1OUxXVDhEVmZ1T0N6R1E0QXhuaS1ZWTZDVmxvdjZQWDhmUUxqUkpyUEljRHlFN1FvTmRnLU1FRVVabE9kMktEb0pjTzZ1TG55X09iNzRDVElLdWpCSk1RcElOakRxNDRON2o5dTg0Z3Y0SGo5S3Y4emgtckNkNG0yaDBFS2tpSmtXVFoycUFhcnVhdG9wZHJjUF9rQ2xubkVkWUs3aWFhb3JPZExMTEM2bUktUDcxRnVpUUx0c1dYbkd6c2s1QUNLSVlKN3VENWQxMk1ONHRFUk1SLXZ1cERYVzFOeXNwbk13QTVWVC13QU9yRjU3ejh4dHhPbWhPSFpLeTVvczFKQnFXZUlDWkdmYWprOHln?oc=5",
+   "source": "WV News",
    "feed": "Real estate cyber news",
    "region": "Global",
    "published": "2026-10-14T03:13:32Z",
@@ -604,6 +752,10 @@
     {
      "source": "The Laconia Daily Sun",
      "url": "https://news.google.com/rss/articles/CBMitgJBVV95cUxNM1B3V3JnSTFpUV81dEgyd1JOWldjdDB1M2lUY3lVbThhcF9xd3d6eHItS1ZGaUw0b3Q2RkZYQWtZOVE1c3BXbVN3cXJtZmpLQWxwenVYUlc0V1pLTDJIX1E5RnN1YUVzbU92UGJwclo1S2ZBN3V0ck9yR0IzT1otY19wQkotejQ5a1BYMlJCb1E0WGtTcTBjSHBmcE41WVR6eFU0ZU8xcTZ3T1Y1MVlxUkliNTlWU0gxX1ZWYmppbzZFZDhLOXVPYS1RUFUxc3hGYV92Ukgwai1zTWc2N1EydDFicE5MSnJURklNdkFXVndiR2xFU1R5a2o0RDB2R3pxOEJMWE1PRWdmazVkZGFWS2g4SUREaWkxTVk4NjUyMFo2QjFncU5GUVc3X1Y4dVQ1ZVp6QUh3?oc=5"
+    },
+    {
+     "source": "WKOW",
+     "url": "https://news.google.com/rss/articles/CBMipwJBVV95cUxPR25ISmdldG0wVFJMa2tRM1BJZHF6TkpaeFNfRWlCNTBYX3Y1RXY3MGtTYVV0UHl3WURUa1J3RTJKY0VQSXJmN2ZzZWRnblZOaDJZbXI5SXhtd0Y1cko4Wm5yNWhMX3FZaWxValhUY05Ddk5sTXRuRE52QUVEWHctNzRpYWdFendXNzBLd2ZLQkhMcFplV1hobzhUOEl5UUdhY29qSnNsWi0xVGJJYXg2S2RUX3dnY05QVFJWMVc1T1kta3VjTXBKSDlpTjJmbUZuenE0d0dPcngxMUk2YUdoQWd1dDNkLUVyeTN3T3J4Z1YyYVQwejBuYldsaGc3cHZOMUhNWU4xLXFZdS00MlpGdnJIMlgtMXZXMV9ER0RhSjJGNGdyMXFR?oc=5"
     }
    ]
   },
@@ -666,6 +818,23 @@
      "source": "SecurityWeek",
      "url": "https://www.securityweek.com/employee-arrested-after-listening-device-found-in-openai-conference-room-fbi-and-the-company-say/"
     }
+   ]
+  },
+  {
+   "id": "e4ff1a4e534d",
+   "title": "Data Breaches That Have Happened This Year (2026 Update)",
+   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1QZkRBeUR5Y19DcGJvaGwxa3Z5MWdGTTlzSEhxcDdtNU1PZ0s0VDkxaW9KRnJTZWNUb295S0RqQmtSVGtwTUo2RlRLVlpFMkxZZmRaTkZnZGc0cVE?oc=5",
+   "source": "Tech.co",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-14T00:22:19Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
    ]
   },
   {
@@ -1168,23 +1337,6 @@
    ]
   },
   {
-   "id": "e4ff1a4e534d",
-   "title": "Data Breaches That Have Happened This Year (2026 Update)",
-   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1QZkRBeUR5Y19DcGJvaGwxa3Z5MWdGTTlzSEhxcDdtNU1PZ0s0VDkxaW9KRnJTZWNUb295S0RqQmtSVGtwTUo2RlRLVlpFMkxZZmRaTkZnZGc0cVE?oc=5",
-   "source": "Tech.co",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-13T15:30:21Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
    "id": "cd001c5faa80",
    "title": "Docker Hub flaw let attackers impersonate users, tamper with images",
    "link": "https://www.bleepingcomputer.com/news/security/docker-hub-flaw-let-attackers-impersonate-users-tamper-with-images/",
@@ -1473,6 +1625,23 @@
    ],
    "why": [
     "Data breach"
+   ]
+  },
+  {
+   "id": "7aba8f91ad36",
+   "title": "Singapore refreshes cyber strategy with new measure to block malware and phishing sites",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNUnRJdl9qRjVHVmZNaGJtWkVPWDFqZ2ZPb3FOVmtXTmNTY3FpVXdKcjQyRzYwMnlzR1dQMWg4d3pkM0plbFNLRWtKUGNMOGJRWlNGdDBsRVZCVUZVcmZCUExsQU53Ry11VWw1SUZUckR0cUhoclVIREcxajhzbUlOMkpZbkVtN1FYU3BxaUYwTWNSMkp6TDduZnpyeXBCVXpCdTVoeUh6bFB0STZOZkxhWVg1QnRrbnE3SEhyWXR0UDlrSFUtZEE?oc=5",
+   "source": "The Straits Times",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-13T02:25:00Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Phishing"
+   ],
+   "why": [
+    "Phishing"
    ]
   },
   {
@@ -1835,21 +2004,12 @@
     {
      "source": "The Hacker News",
      "url": "https://thehackernews.com/2026/10/attackers-heat-french-supermarket.html"
+    },
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/cyberattack-shuts-down-refrigerators-at-french-supermarkets/"
     }
    ]
-  },
-  {
-   "id": "5ae29bf7b51a",
-   "title": "Cyberattack shuts down refrigerators at French supermarkets",
-   "link": "https://www.bleepingcomputer.com/news/security/cyberattack-shuts-down-refrigerators-at-french-supermarkets/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-12T15:23:34Z",
-   "summary": "Attackers remotely defrosted refrigerators at multiple French supermarket chains overnight in a cyberattack that reportedly targeted Danfoss refrigeration controllers. [...]",
-   "score": 0,
-   "tags": [],
-   "why": []
   },
   {
    "id": "6e33620606a0",
@@ -3307,40 +3467,6 @@
    "region": "Global",
    "published": "2026-09-29T21:39:27Z",
    "summary": "Microsoft observed phishing campaigns that abused MSP360 RMM to deploy ScreenConnect, creating redundant remote-access channels for follow-on activity The post Phishing Abuses RMM Tools for Persistent Access appeared first on Microsoft Security Blog .",
-   "score": 5,
-   "tags": [
-    "Phishing"
-   ],
-   "why": [
-    "Phishing"
-   ]
-  },
-  {
-   "id": "517682da1264",
-   "title": "​​Beyond source code: A path to the keys to the kingdom",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/09/29/beyond-source-code-a-path-to-the-keys-to-the-kingdom/",
-   "source": "Microsoft Security Blog",
-   "feed": "Microsoft Security Blog",
-   "region": "Global",
-   "published": "2026-09-29T16:00:00Z",
-   "summary": "Explore how Storm-3068 turned a compromised identity into broader cloud access and the steps organizations can take to defend their identities, pipelines, and cloud infrastructure. The post ​​Beyond source code: A path to the keys to the kingdom appeared first on Microsoft Security Blog .",
-   "score": 3,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "2be2e79555e5",
-   "title": "Star Blizzard refines phishing and malware delivery with the RedFlick technique",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/09/29/star-blizzard-refines-phishing-and-malware-delivery-with-the-redflick-technique/",
-   "source": "Microsoft Security Blog",
-   "feed": "Microsoft Security Blog",
-   "region": "Global",
-   "published": "2026-09-29T15:00:00Z",
-   "summary": "Since January 2026, Microsoft has observed Russian state threat actor Star Blizzard evolve their detection evasion capabilities through large-scale phishing campaigns, the use of accounts on compromised websites, and a novel malware delivery technique, tracked by Microsoft as “RedFlick”. The post…",
    "score": 5,
    "tags": [
     "Phishing"
