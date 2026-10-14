@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-13T23:49:33Z",
+ "generated": "2026-10-14T00:19:08Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,7 +28,7 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 5,
+   "count": 6,
    "error": null
   },
   {
@@ -52,7 +52,7 @@
   {
    "name": "CISA KEV",
    "ok": true,
-   "count": 13,
+   "count": 12,
    "error": null
   },
   {
@@ -82,7 +82,7 @@
   {
    "name": "Microsoft Security Blog",
    "ok": true,
-   "count": 7,
+   "count": 10,
    "error": null
   },
   {
@@ -100,7 +100,7 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 17,
+   "count": 16,
    "error": null
   }
  ],
@@ -2783,26 +2783,6 @@
    "why": [
     "Phishing"
    ]
-  },
-  {
-   "id": "df2caeb0bca0",
-   "title": "CVE-2026-86950: Apple Multiple Products — Apple Multiple Products Out-of-Bounds Write Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-86950",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-09-29T00:00:00Z",
-   "summary": "Apple iOS, macOS, and iPadOS contain an out-of-bounds write vulnerability in CoreGraphics that may lead to arbitrary code execution. CISA remediation due 2026-10-13.",
-   "score": 4,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.0124
   }
  ]
 }
