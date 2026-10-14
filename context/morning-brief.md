@@ -35,6 +35,15 @@ CySA+ focus: 2.2 Reading scan output and CVSS
 - **Question of the day** (`qotd_for()`): the app's question of the day (`lesson quiz questions flattened, [(ordinal * 7) % n]`), cut to 240 chars (`MAX_Q`). Only the question goes in the notification; the options and answer are in the app.
 - If nothing is recent: `• Quiet night - no new high-relevance items.`
 
+## Web Push (notifications from the app)
+`notify()` sends through every configured channel: ntfy (`NTFY_TOPIC`) and/or Web Push (`WEBPUSH_SUBSCRIPTION` + `VAPID_PRIVATE_KEY`). On iPhone, a ntfy tap opens the link in Safari, while a Web Push notification belongs to the Home Screen app and opens it.
+
+- **App side** (`index.html`, Settings → Notifications on this phone): `enablePush()` asks permission and calls `pushManager.subscribe()` with the public key `VAPID_PUBLIC`, then shows the subscription JSON to copy into the `WEBPUSH_SUBSCRIPTION` secret. iOS only offers push to the Home Screen app, so in Safari the card says to open it from the icon. **Test** shows a local notification; **Turn off** unsubscribes.
+- **Service worker** (`sw.js`): `push` shows `{title, body, tag}`; `notificationclick` focuses an open Sec-Pulse window and navigates it to `url` (`./#brief`), or opens one.
+- **Sender** (`send_webpush()` in `send_brief.py`): `pywebpush` (pip-installed in the brief and digest workflows, pinned; imported lazily so everything else stays standard library) encrypts and posts the payload with a VAPID JWT. `sub` is `https://<app host>` (the library only accepts mailto: or a bare https origin). TTL 12h. The JSON payload is capped at 3,800 bytes (`WEBPUSH_MAX`, under Web Push's ~4 KB), trimming the body if needed; the digest can hit this. Tag `brief` or `digest`, so a new one replaces the old.
+- **Failures**: a 404/410 from the push service means the subscription is gone ("subscription expired" in the log; re-enable in the app and update the secret). `notify()` tries both channels before raising `NotifyError`, so one broken channel doesn't block the other. The run then fails (so GitHub e-mails you), but `brief-sent.txt` is still written if the other channel delivered.
+- Tested end to end against Chromium/FCM (subscribe, send with `send_brief.py`, the service worker shows it). Apple's push service uses the same standard.
+
 ## ntfy specifics
 - POST to `{NTFY_SERVER}/{NTFY_TOPIC}`. The body is the message text.
 - Headers: `Title`, `Tags: shield` (shows a 🛡️ emoji), `Priority: default`, and `Click: APP_URL` (tapping opens the app).

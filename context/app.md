@@ -78,7 +78,7 @@ Multiple choice on top of Leitner spaced repetition:
 - The nav badge shows the number of due cards.
 
 ### Settings sheet
-**What's new** and **Roadmap** buttons (`openDoc()`) fetch `CHANGELOG.md` and `context/roadmap.md` and render them with `miniMd()`: `##` headings, `-` bullets, `[ ]`/`[x]` checkboxes, `**bold**` and `` `code` ``. Links show as plain text, since the docs' relative links point at other `.md` files. It works because `.nojekyll` makes Pages serve `.md` files raw. Keep both files to that simple subset. Then: **Appearance** (System / Dark / Light, see [Theme](#theme-tokens)), exam date (`<input type="date">` + Clear, saved on change to `sp_examDate`), Udemy link (`sp_courseUrl`), muted sources/tags (tap to unmute), ntfy setup steps (with a random topic suggestion), feed health table, Export / Import / Reset progress, About. `openSettings('exam-date')` scrolls to the date field.
+**What's new** and **Roadmap** buttons (`openDoc()`) fetch `CHANGELOG.md` and `context/roadmap.md` and render them with `miniMd()`: `##` headings, `-` bullets, `[ ]`/`[x]` checkboxes, `**bold**` and `` `code` ``. Links show as plain text, since the docs' relative links point at other `.md` files. It works because `.nojekyll` makes Pages serve `.md` files raw. Keep both files to that simple subset. Then: **Appearance** (System / Dark / Light, see [Theme](#theme-tokens)), exam date (`<input type="date">` + Clear, saved on change to `sp_examDate`), Udemy link (`sp_courseUrl`), muted sources/tags (tap to unmute), **Notifications on this phone** (Web Push: turn on, copy the subscription code for GitHub, test, turn off; see [morning-brief.md](morning-brief.md#web-push-notifications-from-the-app)), ntfy setup steps (with a random topic suggestion), feed health table, Export / Import / Reset progress, About. `openSettings('exam-date')` scrolls to the date field.
 
 ## Quiz engine: `renderQuiz(root, questions, opts)`
 - One question at a time. **Option order is shuffled on every render**, so the `answer` index in the JSON can be anything.
@@ -148,7 +148,7 @@ All keys are prefixed `sp_` (Export, Import and Reset rely on the prefix). Every
 - If the fetch fails (offline), the app keeps whatever it last loaded, and the service worker serves the cached copy.
 
 ## Service worker
-`sw.js` is **network-first**: every same-origin GET tries the network, caches a successful response, and falls back to the cache when offline (finally to `index.html`). The `?_=` cache-buster is stripped from the cache key so offline lookups still match. There's no precache list to maintain. Bump `CACHE_NAME` only if the caching strategy itself changes, since activation deletes all other caches.
+`sw.js` is **network-first**: every same-origin GET tries the network, caches a successful response, and falls back to the cache when offline (finally to `index.html`). The `?_=` cache-buster is stripped from the cache key so offline lookups still match. There's no precache list to maintain. Bump `CACHE_NAME` only if the caching strategy itself changes, since activation deletes all other caches. It also handles `push` and `notificationclick` for Web Push (see [morning-brief.md](morning-brief.md#web-push-notifications-from-the-app)).
 
 ## PWA / install
 - `manifest.json`: `display: standalone`, theme `#0b1220`, 192/512 icons (`purpose: any maskable`).

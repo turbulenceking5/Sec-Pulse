@@ -41,6 +41,19 @@ The app shows an install hint on iOS Safari until you dismiss it or open it from
 
 It then runs daily at 21:25 UTC (7:25am Brisbane). GitHub's scheduler is best-effort, though: runs are often 5–30 minutes late and have been seen hours late or skipped. For an on-time brief, add the external trigger below.
 
+### Recommended on iPhone: notifications from the app itself
+
+ntfy works, but on iPhone tapping its notification opens the app link in Safari. Notifications sent straight to the Home Screen app (Web Push, iOS 16.4+) open Sec-Pulse itself.
+
+1. Add the secret **`VAPID_PRIVATE_KEY`** (repo **Settings → Secrets and variables → Actions → New repository secret**). It's the private half of the key pair whose public half is `VAPID_PUBLIC` in `index.html`; you were given it when this was set up. To make a new pair, see "New key pair" below.
+2. Open Sec-Pulse **from its Home Screen icon** → ⚙️ Settings → **Notifications on this phone** → **Turn on notifications** → Allow.
+3. Tap **Copy code** and save it as the secret **`WEBPUSH_SUBSCRIPTION`**.
+4. Test: **Actions → Morning brief → Run workflow**. Tapping the notification should open the app on the Brief.
+
+Both channels can stay on (you'd get two notifications); delete the `NTFY_TOPIC` secret to use Web Push only. If you turn notifications off in the app or reinstall it, the code changes: copy the new one into `WEBPUSH_SUBSCRIPTION`. A run that fails with "subscription expired" means the same.
+
+**New key pair** (only if the private key is lost or leaked): run `python3 -m venv /tmp/v && /tmp/v/bin/pip install cryptography` and then a short script that generates a P-256 key and prints the private value (32 bytes) and the uncompressed public point, both base64url without padding. Put the public one in `VAPID_PUBLIC` in `index.html`, the private one in the `VAPID_PRIVATE_KEY` secret, then turn notifications off and on in the app and update `WEBPUSH_SUBSCRIPTION`.
+
 ### Recommended: on-time brief with cron-job.org
 
 [cron-job.org](https://cron-job.org) (free) starts the workflow at exactly 7:25 through GitHub's API. GitHub's own schedule stays on as a backup. Both pass "send once", so whichever runs first sends the brief and the other skips (the date of the last send is kept in `data/brief-sent.txt`). **Run workflow** from the Actions tab always sends.
@@ -83,6 +96,7 @@ The **Weekly digest** workflow (Sundays 08:00 UTC = 6pm Brisbane) uses the same 
 |---|---|
 | Site shows the old placeholder README | Pages not enabled, or deploying from the wrong branch/folder (step 1). |
 | Workflow fails at `git push` with 403 | Workflow permissions are read-only (step 2). |
+| "Turn on notifications" missing in Settings | On iPhone it only appears when the app is opened from the Home Screen icon, not in Safari. If it says "blocked", allow notifications in iPhone Settings → Notifications → Sec-Pulse. |
 | "Morning brief" / "Weekly digest" ran but no notification | `NTFY_TOPIC` secret missing or misspelled. The run log says `NTFY_TOPIC not set - skipping`. Also check you subscribed to the exact same topic in ntfy. |
 | Brief arrives late or not at all | GitHub's scheduler runs late at busy times. Set up the cron-job.org trigger (step 5). |
 | News in the app is stale | Check **Actions → Fetch news** for failures. GitHub disables scheduled workflows after 60 days without repo activity; re-enable it from the workflow page. |
