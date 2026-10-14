@@ -225,6 +225,24 @@ html.ptr-on{overscroll-behavior-y:contain}
 .news-item .news-meta{padding-right:66px}
 .note{margin-top:10px;padding:8px 10px;border-left:3px solid var(--warn);background:var(--warn-dim);border-radius:6px;font-size:13.5px;white-space:pre-wrap;overflow-wrap:anywhere}
 .note-edit textarea{width:100%;min-height:70px;resize:vertical;margin-top:10px}
+/* achievements, heatmap, accuracy trend, focus + backup cards, CVE links */
+.badges{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.badge-tile{display:flex;gap:8px;align-items:flex-start;background:var(--surface2);border:1px solid var(--border);border-radius:12px;padding:8px 10px;font-size:12.5px;line-height:1.35}
+.badge-tile .ic{font-size:20px;line-height:1.1;flex:none}
+.badge-tile.locked{opacity:.5}.badge-tile.locked .ic{filter:grayscale(1)}
+.badge-tile b{display:block;font-size:13px}
+.heat{display:grid;grid-template-rows:repeat(7,1fr);grid-auto-flow:column;grid-auto-columns:1fr;gap:3px}
+.heat i{aspect-ratio:1;border-radius:3px;background:var(--surface2)}
+.heat i.l1,.heat i.l2,.heat i.l3,.heat i.l4,.heat-key i.l1,.heat-key i.l2,.heat-key i.l3,.heat-key i.l4{background:var(--accent)}
+.heat i.l1,.heat-key i.l1{opacity:.3}.heat i.l2,.heat-key i.l2{opacity:.5}.heat i.l3,.heat-key i.l3{opacity:.75}
+.heat i.fz{outline:1px dashed var(--accent);outline-offset:-1px}
+.heat i.future{visibility:hidden}
+.heat-key{display:flex;align-items:center;gap:3px;justify-content:flex-end;margin-top:8px;font-size:11px;color:var(--muted)}
+.heat-key i{width:10px;height:10px;border-radius:2px;background:var(--surface2);display:inline-block}
+.trend{width:100%;height:auto;display:block}
+.focus-card{width:100%;text-align:left;gap:12px}
+.cves{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
+.cves a{text-decoration:none;color:var(--accent);border-color:var(--accent-line)}
 .seg{display:flex;gap:6px}.seg .btn{flex:1;padding:9px 6px}.seg .btn.on{background:var(--accent-dim);border-color:var(--accent);color:var(--accent)}
 </style>
 </head>
@@ -245,13 +263,15 @@ html.ptr-on{overscroll-behavior-y:contain}
     <div class="greet" id="greet">G'day</div>
     <div class="muted small" id="today-date"></div>
     <div class="stats">
-      <div class="stat"><b id="st-streak">0</b><span>day streak</span></div>
+      <div class="stat"><b id="st-streak">0</b><span id="st-streak-l">day streak</span></div>
       <div class="stat"><b id="st-due">0</b><span>cards due</span></div>
       <div class="stat"><b id="st-lessons">0</b><span>lessons done</span></div>
     </div>
+    <div id="brief-backup"></div>
     <div id="brief-rank"></div>
     <div id="brief-quests"></div>
     <div id="brief-exam" style="margin-top:10px"></div>
+    <div id="brief-focus"></div>
     <h2>Top for you</h2>
     <div id="brief-top"><div class="empty">Loading news…</div></div>
     <div class="row small muted" id="brief-glance" style="flex-wrap:wrap;gap:6px"></div>
@@ -279,6 +299,7 @@ html.ptr-on{overscroll-behavior-y:contain}
       <button class="btn primary grow" id="quick-quiz">Quick quiz · 10</button>
       <button class="btn grow" id="practice-exam">Practice exam · 30</button>
     </div>
+    <button class="btn block" id="timed-exam" style="margin-top:8px">⏱ Timed practice exam · 30 in 58 min</button>
     <button class="btn block" id="review-quiz" style="margin-top:8px">Review mistakes</button>
     <button class="btn block" id="pbq-practice" style="margin-top:8px" hidden>PBQ practice</button>
     <div id="course-link"></div>
@@ -337,16 +358,57 @@ function shuffle(a){ a = a.slice(); for (let i = a.length - 1; i > 0; i--){ cons
 function markActivity(){
   const t = todayKey(), s = store.get('streak', {last: null, count: 0, best: 0});
   if (s.last === t) return;
-  s.count = s.last === addDays(t, -1) ? s.count + 1 : 1;
+  // A streak freeze covers exactly one missed day (last activity the day before yesterday).
+  const f = getFreeze(), frozen = s.last === addDays(t, -2) && f.n > 0;
+  if (frozen){ f.n--; f.used = f.used.concat(addDays(t, -1)).slice(-50); store.set('freeze', f); }
+  s.count = s.last === addDays(t, -1) || frozen ? s.count + 1 : 1;
   s.best = Math.max(s.best || 0, s.count); s.last = t;
   store.set('streak', s);
   const bonus = gainXP(10 + 2 * Math.min(10, s.count));
-  if (bonus) setTimeout(() => toast(`Daily bonus +${bonus} XP · ${s.count} day streak`), 1200);
+  if (bonus || frozen) setTimeout(() => toast(`${bonus ? `Daily bonus +${bonus} XP · ` : ''}${s.count} day streak${frozen ? ' · 🧊 streak freeze used' : ''}`), 1200);
   renderStats();
 }
 function currentStreak(){
   const s = store.get('streak', {last: null, count: 0}), t = todayKey();
-  return (s.last === t || s.last === addDays(t, -1)) ? s.count : 0;
+  if (s.last === t || s.last === addDays(t, -1)) return s.count;
+  return s.last === addDays(t, -2) && getFreeze().n > 0 ? s.count : 0; // a freeze will cover yesterday
+}
+/* ---------- streak freezes: earned by finishing every daily quest, max FREEZE_MAX banked ---------- */
+const FREEZE_MAX = 2;
+function getFreeze(){
+  const f = store.get('freeze', null) || {};
+  return {n: Number.isInteger(f.n) ? Math.max(0, Math.min(FREEZE_MAX, f.n)) : 0, used: Array.isArray(f.used) ? f.used : [], earned: typeof f.earned === 'string' ? f.earned : null};
+}
+// Returns 'earned', 'full' (already holding the max) or '' (already earned today).
+function earnFreeze(){
+  const f = getFreeze(), t = todayKey();
+  if (f.earned === t) return '';
+  f.earned = t; const full = f.n >= FREEZE_MAX; if (!full) f.n++;
+  store.set('freeze', f);
+  return full ? 'full' : 'earned';
+}
+
+/* ---------- activity log: XP per Brisbane day (sp_days), drawn as the profile heatmap ---------- */
+const DAYS_KEEP = 400;
+function getDays(){ const d = store.get('days', null); return d && typeof d === 'object' && !Array.isArray(d) ? d : null; }
+function logDay(n){
+  const d = getDays() || {}, t = todayKey();
+  d[t] = (d[t] || 0) + n;
+  const keys = Object.keys(d).sort();
+  keys.slice(0, Math.max(0, keys.length - DAYS_KEEP)).forEach(k => delete d[k]);
+  store.set('days', d);
+}
+// First run: rebuild which days had activity from what's already stored. XP per day wasn't kept, so those days log 1 ("active").
+function seedDays(){
+  if (getDays()) return;
+  const d = {}, mark = k => { if (typeof k === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(k) && !d[k]) d[k] = 1; };
+  const s = store.get('streak', null);
+  if (s && s.last) for (let i = 0; i < Math.min(s.count || 0, DAYS_KEEP); i++) mark(addDays(s.last, -i));
+  Object.values(store.get('lessons', {}) || {}).forEach(v => v && mark(v.date));
+  const qh = store.get('quizHistory', []); if (Array.isArray(qh)) qh.forEach(h => h && mark(h.date));
+  [store.get('qhist', {}) || {}, cardHist()].forEach(h => Object.values(h).forEach(r => r && mark(r.last)));
+  const x = getXP(); if (x && x.today.xp) d[x.today.date] = x.today.xp;
+  store.set('days', d);
 }
 
 /* ---------- XP + analyst rank: every study action (and reading the news) earns XP ---------- */
@@ -356,10 +418,9 @@ const READ_CAP = 25;
 const RANKS = [[1, 'Trainee Analyst'], [3, 'SOC Analyst (Tier 1)'], [6, 'SOC Analyst (Tier 2)'], [10, 'Incident Responder'],
   [15, 'Threat Hunter'], [20, 'Senior Analyst'], [25, 'Detection Engineer'], [30, 'SOC Lead'], [40, 'Security Architect'], [50, 'Cyber Legend']];
 const SKILLS = () => (CYSA ? CYSA.domains.map(d => [String(d.id), d.name]) : []).concat([['intel', 'Threat Intel (news)']]);
-// Level L -> L+1 costs step*L*(2 + L/20) XP (the curve steepens as you climb), so reaching level L
-// takes step*(L-1)*L*(1 + (2L-1)/120) in total: Lv 10 = 10,425, Lv 20 = 50,350, Lv 50 = 447,125.
-const xpForLevel = (L, step = 100) => Math.round(step * (L - 1) * L * (1 + (2 * L - 1) / 120));
-const levelOf = (xp, step = 100) => { let L = 1; while (xpForLevel(L + 1, step) <= xp) L++; return L; };
+// Level L -> L+1 costs step*L XP, so reaching level L takes step*L*(L-1)/2 in total.
+const levelOf = (xp, step = 100) => Math.floor((1 + Math.sqrt(1 + 8 * Math.max(0, xp) / step)) / 2);
+const xpForLevel = (L, step = 100) => step * L * (L - 1) / 2;
 const rankOf = L => RANKS.filter(r => r[0] <= L).pop()[1];
 function getXP(){
   const x = store.get('xp', null);
@@ -397,7 +458,9 @@ function gainXP(n, skill, once){
     const promo = rankOf(after) !== rankOf(before);
     setTimeout(() => toast(`Level up! Lv ${after}${promo ? ' · promoted to ' + rankOf(after) : ''}`), 300);
   }
+  logDay(n);
   checkQuests();
+  checkBadges();
   renderRank();
   return n;
 }
@@ -438,8 +501,9 @@ function checkQuests(){
   s.done.push(...fresh.map(q => q.id)); store.set('quests', s);
   questBusy = true;
   try{ fresh.forEach(q => gainXP(q.xp)); }finally{ questBusy = false; }
-  const all = QUESTS.every(q => s.done.includes(q.id));
-  setTimeout(() => toast(`Quest complete: ${fresh.map(q => q.label).join(', ')} +${fresh.reduce((a, q) => a + q.xp, 0)} XP${all ? ' · all done today!' : ''}`), 1600);
+  const all = QUESTS.every(q => s.done.includes(q.id)), fz = all ? earnFreeze() : '';
+  setTimeout(() => toast(`Quest complete: ${fresh.map(q => q.label).join(', ')} +${fresh.reduce((a, q) => a + q.xp, 0)} XP${all ? ' · all done today!' : ''}${fz === 'earned' ? ' 🧊 Streak freeze earned' : ''}`), 1600);
+  if (all) renderStats();
 }
 function renderQuests(){
   const el = $('#brief-quests'); if (!el) return;
@@ -449,9 +513,88 @@ function renderQuests(){
     ${QUESTS.map(q => { const v = Math.min(q.goal, q.n(x, s)), done = s.done.includes(q.id);
       return `<button class="quest${done ? ' done' : ''}" data-q="${q.id}"><div class="row small"><span class="grow">${done ? '✓ ' : ''}${esc(q.label)}</span>
         <span class="muted">${v}/${q.goal}</span><span class="xp">+${q.xp} XP</span></div><div class="bar thin"><i style="width:${(v / q.goal * 100).toFixed(0)}%"></i></div></button>`; }).join('')}
-    <div class="small muted" style="margin-top:8px">Optional bonus goals. Tap one to jump to it.</div></div>`;
+    <div class="small muted" style="margin-top:8px">Optional bonus goals. Tap one to jump to it. Finish all ${QUESTS.length} to earn a 🧊 streak freeze (you have ${getFreeze().n}/${FREEZE_MAX}).</div></div>`;
   el.querySelectorAll('.quest').forEach(b => b.onclick = () => QUESTS.find(q => q.id === b.dataset.q).go());
 }
+/* ---------- achievements: one-off badges (sp_badges {id: date earned}), +BADGE_XP each ---------- */
+const BADGE_XP = 25;
+const BADGES = () => [
+  {id: 'first-q', icon: '🎯', name: 'First answer', desc: 'Answer a quiz question', test: c => c.answered >= 1},
+  {id: 'q250', icon: '🧠', name: 'Question bank', desc: 'Answer 250 quiz questions', test: c => c.answered >= 250},
+  {id: 'cards100', icon: '🃏', name: 'Card shark', desc: 'Answer 100 flashcards', test: c => c.cards >= 100},
+  {id: 'cards500', icon: '🗂️', name: 'Deck master', desc: 'Answer 500 flashcards', test: c => c.cards >= 500},
+  {id: 'box5', icon: '🏛️', name: 'Long-term memory', desc: 'Get 25 cards to box 5', test: c => c.box5 >= 25},
+  {id: 'streak7', icon: '🔥', name: 'On a roll', desc: 'Reach a 7-day streak', test: c => c.best >= 7},
+  {id: 'streak30', icon: '☄️', name: 'Unstoppable', desc: 'Reach a 30-day streak', test: c => c.best >= 30},
+  ...(CYSA ? CYSA.domains : []).map(d => ({id: 'dom' + d.id, icon: '🛡️', name: `Domain ${d.id} cleared`, desc: `Finish every ${d.name} lesson`,
+    test: c => CYSA.lessons.filter(l => l.domain === d.id).every(l => c.lessons[l.id])})),
+  {id: 'all-lessons', icon: '🎓', name: 'Syllabus cleared', desc: 'Finish every lesson', test: c => CYSA.lessons.every(l => c.lessons[l.id])},
+  {id: 'pbq-perfect', icon: '🧩', name: 'Hands-on hero', desc: 'Get every PBQ right in a round', test: c => c.hist.some(h => h.type === 'pbq' && h.t >= 2 && h.c === h.t)},
+  {id: 'exam-pass', icon: '📈', name: 'Pass mark', desc: 'Estimated 750+ on a practice exam', test: c => c.hist.some(h => h.type === 'exam' && h.t && scaledScore(h.c, h.t) >= PASS_MARK)},
+  {id: 'beat-clock', icon: '⏱️', name: 'Beat the clock', desc: 'Estimated 750+ on a timed exam, inside the time', test: c => c.hist.some(h => h.type === 'exam' && h.timed && !h.expired && h.t && scaledScore(h.c, h.t) >= PASS_MARK)},
+  {id: 'quests-all', icon: '✅', name: 'Quest master', desc: 'Finish every daily quest in a day', test: c => c.questsAll},
+  {id: 'reader100', icon: '📰', name: 'Well informed', desc: 'Read 100 news stories', test: c => c.reads >= 100}
+];
+function badgeCtx(){
+  const qs = store.get('qstats', {}) || {}, st = store.get('cards', {}) || {}, hist = store.get('quizHistory', []), reads = store.get('read', []), q = getQuests();
+  return {answered: qs.answered || 0, cards: Object.values(cardHist()).reduce((a, r) => a + ((r && r.right) || 0) + ((r && r.wrong) || 0), 0),
+    box5: Object.values(st).filter(v => v && v.box === 5).length, best: (store.get('streak', {}) || {}).best || 0,
+    lessons: store.get('lessons', {}) || {}, hist: Array.isArray(hist) ? hist.filter(Boolean) : [],
+    questsAll: QUESTS.every(x => q.done.includes(x.id)), reads: Array.isArray(reads) ? reads.length : 0};
+}
+function getBadges(){ const b = store.get('badges', null); return b && typeof b === 'object' && !Array.isArray(b) ? b : null; }
+let badgeBusy = false;
+function checkBadges(){
+  if (badgeBusy || !CYSA) return;
+  const prev = getBadges(), have = prev || {}, c = badgeCtx();
+  const fresh = BADGES().filter(b => !have[b.id] && b.test(c));
+  fresh.forEach(b => { have[b.id] = todayKey(); });
+  if (fresh.length || !prev) store.set('badges', have);
+  if (!fresh.length || !prev) return; // first run credits existing progress quietly, without XP
+  badgeBusy = true;
+  try{ gainXP(BADGE_XP * fresh.length); }finally{ badgeBusy = false; }
+  setTimeout(() => toast(`🏅 Achievement${fresh.length > 1 ? 's' : ''} unlocked: ${fresh.map(b => b.name).join(', ')} +${BADGE_XP * fresh.length} XP`), 2600);
+}
+function badgesHtml(){
+  const have = getBadges() || {}, all = BADGES(), n = all.filter(b => have[b.id]).length;
+  return `<h2>Achievements · ${n}/${all.length}</h2><div class="badges" id="badges">${all.map(b => `<div class="badge-tile${have[b.id] ? '' : ' locked'}">
+    <span class="ic">${b.icon}</span><div><b>${esc(b.name)}</b><span class="muted">${have[b.id] ? 'Earned ' + fmtKey(have[b.id], {day: 'numeric', month: 'short'}) : esc(b.desc)}</span></div></div>`).join('')}</div>`;
+}
+
+/* ---------- progress history: activity heatmap (sp_days) and quiz accuracy trend (sp_quizHistory) ---------- */
+const HEAT_WEEKS = 17;
+function heatmapHtml(){
+  const days = getDays() || {}, fz = new Set(getFreeze().used), t = todayKey();
+  const monIdx = (new Date(t + 'T00:00:00Z').getUTCDay() + 6) % 7, start = addDays(t, -(HEAT_WEEKS - 1) * 7 - monIdx);
+  const lvl = v => !v ? 0 : v < 50 ? 1 : v < 120 ? 2 : v < 200 ? 3 : 4;
+  let cells = '', active = 0;
+  for (let i = 0; i < HEAT_WEEKS * 7; i++){
+    const k = addDays(start, i), v = days[k] || 0, future = k > t;
+    if (v && !future) active++;
+    const tip = `${fmtKey(k, {weekday: 'short', day: 'numeric', month: 'short'})}: ${fz.has(k) ? 'streak freeze' : v > 1 ? v + ' XP' : v ? 'active' : 'no study'}`;
+    cells += `<i class="l${lvl(v)}${fz.has(k) ? ' fz' : ''}${future ? ' future' : ''}" title="${esc(tip)}"></i>`;
+  }
+  return `<div class="card small"><div class="row" style="margin-bottom:8px"><span class="grow">${active} active day${active === 1 ? '' : 's'} in the last ${HEAT_WEEKS} weeks</span>
+    <span class="muted">best streak ${(store.get('streak', {}) || {}).best || 0}</span></div>
+    <div class="heat" id="heatmap" role="img" aria-label="Study activity heatmap, ${active} active days">${cells}</div>
+    <div class="heat-key">Less <i></i><i class="l1"></i><i class="l2"></i><i class="l3"></i><i class="l4"></i> More · columns are weeks, Mon at top${fz.size ? ' · dashed = freeze' : ''}</div></div>`;
+}
+function trendHtml(){
+  const hist = store.get('quizHistory', []), rounds = (Array.isArray(hist) ? hist : []).filter(h => h && h.t > 0).slice(-20);
+  if (rounds.length < 2) return `<div class="card small muted" id="trend-empty">Finish two or more quiz rounds to see your accuracy trend.</div>`;
+  const W = 320, H = 120, L = 36, R = 8, T = 8, B = 16, pw = W - L - R, ph = H - T - B;
+  const x = i => L + (rounds.length === 1 ? pw / 2 : i * pw / (rounds.length - 1)), y = p => T + ph * (1 - p / 100);
+  const pcts = rounds.map(h => Math.round(h.c / h.t * 100)), avg = Math.round(pcts.reduce((a, b) => a + b, 0) / pcts.length);
+  const names = {quick: 'Quick quiz', exam: 'Practice exam', review: 'Review', pbq: 'PBQ round', drill: 'Domain drill'};
+  const grid = [0, 50, 80, 100].map(p => `<line x1="${L}" x2="${W - R}" y1="${y(p)}" y2="${y(p)}" style="stroke:var(--border)" stroke-width="1"${p === 80 ? ' stroke-dasharray="4 3"' : ''}/>
+    <text x="${L - 6}" y="${y(p) + 4}" text-anchor="end" font-size="10" style="fill:var(--muted)">${p}%</text>`).join('');
+  const pts = pcts.map((p, i) => `${x(i).toFixed(1)},${y(p).toFixed(1)}`).join(' ');
+  const dots = rounds.map((h, i) => `<circle cx="${x(i).toFixed(1)}" cy="${y(pcts[i]).toFixed(1)}" r="4" style="fill:var(--accent);stroke:var(--surface)" stroke-width="2"><title>${esc(fmtKey(h.date, {day: 'numeric', month: 'short'}))} · ${esc(names[h.type] || 'Quiz')}: ${pcts[i]}% (${h.c}/${h.t})</title></circle>`).join('');
+  return `<div class="card small"><svg class="trend" id="trend" viewBox="0 0 ${W} ${H}" role="img" aria-label="Quiz accuracy over the last ${rounds.length} rounds, average ${avg}%">${grid}
+    <polyline points="${pts}" fill="none" style="stroke:var(--accent)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>${dots}</svg>
+    <div class="muted" style="margin-top:4px">Last ${rounds.length} rounds · average ${avg}% · latest ${pcts[pcts.length - 1]}% · dashed line = 80%, roughly exam-ready</div></div>`;
+}
+
 function renderRank(){
   const el = $('#brief-rank'), x = getXP();
   if (!el || !x){ if (el) el.innerHTML = ''; return; }
@@ -472,9 +615,12 @@ function openProfile(){
   openSheet('Analyst profile', `
     <div class="card row" style="gap:14px"><div class="rank-badge big"><span>Lv</span><b>${L}</b></div>
       <div class="grow"><div style="font-weight:700;font-size:18px">${esc(rankOf(L))}</div>
-      <div class="small muted">${x.total} XP total · +${x.today.xp} today · ${currentStreak()} day streak</div>
+      <div class="small muted">${x.total} XP total · +${x.today.xp} today · ${currentStreak()} day streak · 🧊 ${getFreeze().n}/${FREEZE_MAX} freezes</div>
       ${next ? `<div class="small" style="margin-top:4px">Next rank: <b>${esc(next[1])}</b> at Lv ${next[0]} (${xpForLevel(next[0]) - x.total} XP to go)</div>` : ''}</div></div>
     <h2>Skills</h2><div class="card">${skills}</div>
+    ${badgesHtml()}
+    <h2>Study activity</h2>${heatmapHtml()}
+    <h2>Quiz accuracy</h2>${trendHtml()}
     <h2>How to earn XP</h2>
     <div class="card small"><table>
       <tr><td>Answer a quiz question</td><td style="text-align:right">+${XP.right} right · +${XP.wrong} wrong</td></tr>
@@ -484,8 +630,9 @@ function openProfile(){
       <tr><td>Finish a practice exam / quiz round</td><td style="text-align:right">+${XP.exam} / +${XP.quiz}</td></tr>
       <tr><td>Read a news story (up to ${READ_CAP} a day)</td><td style="text-align:right">+${XP.read}</td></tr>
       <tr><td>First study of the day</td><td style="text-align:right">+10, +2 per streak day (max +30)</td></tr>
-      ${QUESTS.map(q => `<tr><td>Daily quest: ${esc(q.label.toLowerCase())}</td><td style="text-align:right">+${q.xp}</td></tr>`).join('')}</table>
-      <p class="muted" style="margin-bottom:0">Each question and card earns XP once a day, so repeats are practice, not grinding. Skills level up from the XP earned in each exam domain; reading news trains Threat Intel.</p></div>
+      ${QUESTS.map(q => `<tr><td>Daily quest: ${esc(q.label.toLowerCase())}</td><td style="text-align:right">+${q.xp}</td></tr>`).join('')}
+      <tr><td>Unlock an achievement</td><td style="text-align:right">+${BADGE_XP}</td></tr></table>
+      <p class="muted" style="margin-bottom:0">Each question and card earns XP once a day, so repeats are practice, not grinding. Skills level up from the XP earned in each exam domain; reading news trains Threat Intel. Finishing every daily quest earns a 🧊 streak freeze (hold up to ${FREEZE_MAX}); one covers a single missed day automatically.</p></div>
     <h2>Rank ladder</h2>
     <div class="card small"><table class="ladder">${RANKS.map((r, i) => { const here = L >= r[0] && (!RANKS[i + 1] || L < RANKS[i + 1][0]);
       return `<tr class="${here ? 'here' : L < r[0] ? 'locked' : ''}"><td>Lv ${r[0]}</td><td>${esc(r[1])}${here ? ' ← you' : ''}</td></tr>`; }).join('')}</table></div>`);
@@ -542,6 +689,23 @@ function epssOf(i){ return typeof i.epss === 'number' && isFinite(i.epss) && i.e
 function epssPct(e){ const p = e * 100; return p < 1 ? '<1%' : Math.round(p) + '%'; }
 function hostOf(u){ try{ return new URL(u).hostname; }catch(e){ return u; } }
 function alsoOf(i){ return Array.isArray(i.also) ? i.also.filter(a => a && isUrl(a.url)) : []; }
+// CVE IDs in a story link to NVD (skipping the one the headline already links to, e.g. KEV items).
+const nvdUrl = c => 'https://nvd.nist.gov/vuln/detail/' + c;
+function cvesOf(i){
+  const found = ((i.title || '') + ' ' + (i.summary || '')).match(/\bCVE-\d{4}-\d{4,7}\b/gi) || [];
+  return [...new Set(found.map(c => c.toUpperCase()))].filter(c => i.link !== nvdUrl(c)).slice(0, 3);
+}
+// KEV entries carry CISA's remediation due date in the summary ("CISA remediation due YYYY-MM-DD.", from fetch_news.py).
+function kevDue(i){
+  if (!(i.tags || []).includes('KEV')) return null;
+  const m = /CISA remediation due (\d{4}-\d{2}-\d{2})/.exec(i.summary || '');
+  return m ? m[1] : null;
+}
+function kevDuePill(i){
+  const d = kevDue(i); if (!d) return '';
+  const left = ordinal(d) - ordinal(todayKey()), when = fmtKey(d, {day: 'numeric', month: 'short'});
+  return `<span class="pill ${left <= 3 ? 'danger' : ''} kev-due" title="CISA's remediation deadline for US federal agencies - a useful yardstick for patch urgency">Fix by ${when}${left < 0 ? ' · overdue' : ''}</span>`;
+}
 const LATER_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>';
 // opts.notes: show the note line (Saved filter). Called via .map(newsCard) too, so opts may be an index.
 function newsCard(i, opts){
@@ -550,15 +714,17 @@ function newsCard(i, opts){
   const notes = !!(opts && opts.notes);
   const tags = i.tags.filter(t => t !== 'Australia').slice(0, 4)
     .map(t => `<span class="tag ${HOT.has(t) ? 'hot' : RE.has(t) ? 're' : ''}">${esc(t)}</span>`).join('');
-  const epss = epssOf(i), also = alsoOf(i);
+  const epss = epssOf(i), also = alsoOf(i), cves = cvesOf(i);
   return `<div class="card news-item ${read ? 'read' : ''}" data-id="${esc(i.id)}">
     <div class="news-meta">${read ? '' : '<span class="dot"></span>'}
       ${i.region === 'AU' ? '<span class="pill au">AU</span>' : ''}
       <span>${esc(i.source)}</span><span>· ${ago(i.published)}</span>
       ${epss !== null ? `<span class="pill ${epss >= 0.5 ? 'danger' : ''} epss" title="EPSS: estimated chance of exploitation in the next 30 days">EPSS ${epssPct(epss)}</span>` : ''}
+      ${kevDuePill(i)}
       <button class="pill why score" aria-label="Why this ranked">score ${esc(i.score ?? 0)}</button></div>
     <a class="news-title" href="${esc(i.link)}" target="_blank" rel="noopener noreferrer">${esc(i.title)}</a>
     ${i.summary ? `<p class="news-sum">${esc(i.summary)}</p>` : ''}
+    ${cves.length ? `<div class="cves">${cves.map(c => `<a class="pill cve" href="${esc(nvdUrl(c))}" target="_blank" rel="noopener noreferrer">${esc(c)} ↗</a>`).join('')}</div>` : ''}
     ${tags ? `<button class="tags why" aria-label="Why this ranked">${tags}</button>` : ''}
     ${also.length ? `<button class="also-btn">+${also.length} more source${also.length === 1 ? '' : 's'}</button>
       <ul class="also-list" hidden>${also.map(a => `<li><a href="${esc(a.url)}" target="_blank" rel="noopener noreferrer">${esc(a.source || hostOf(a.url))}</a></li>`).join('')}</ul>` : ''}
@@ -699,6 +865,7 @@ async function openWhy(id){
 /* ---------- Brief ---------- */
 function renderStats(){
   $('#st-streak').textContent = currentStreak();
+  const fz = getFreeze().n; $('#st-streak-l').textContent = 'day streak' + (fz ? ' · 🧊' + fz : '');
   const due = CYSA ? dueCards().length : 0;
   $('#st-due').textContent = due;
   const nb = $('#nav-due'); nb.hidden = !due; nb.textContent = due;
@@ -734,6 +901,62 @@ function renderExam(){
     <div>${target}</div></div></button>`;
   $('#exam-card').onclick = () => openSettings('exam-date');
 }
+/* ---------- weakest-domain drill: biggest (1 - accuracy) x exam weight ---------- */
+// Domains with fewer than FOCUS_MIN answers count as 0% (not practised yet), so the heaviest unpractised domain comes first.
+const FOCUS_MIN = 5, DRILL_N = 10;
+function focusDomain(){
+  if (!CYSA) return null;
+  const by = (store.get('qstats', {}) || {}).byDomain || {};
+  let best = null;
+  CYSA.domains.forEach(d => {
+    const r = by[d.id], a = r ? r.a || 0 : 0, acc = a ? (r.c || 0) / a : null, need = (1 - (a >= FOCUS_MIN ? acc : 0)) * d.weight;
+    if (!best || need > best.need) best = {d, a, acc, need};
+  });
+  return best;
+}
+function renderFocus(){
+  const el = $('#brief-focus'), f = focusDomain();
+  if (!f){ el.innerHTML = ''; return; }
+  const detail = f.a >= FOCUS_MIN ? `${Math.round(f.acc * 100)}% correct over ${f.a} answers` : f.a ? `only ${f.a} answered so far` : 'not practised yet';
+  el.innerHTML = `<button class="card row focus-card" id="focus-card"><div class="grow small"><div class="muted">Focus area · weakest domain</div>
+    <div style="font-weight:700">Domain ${f.d.id} · ${esc(f.d.name)}</div><div class="muted">${detail} · ${f.d.weight}% of the exam</div></div>
+    <span class="pill accent">Drill ${DRILL_N} →</span></button>`;
+  $('#focus-card').onclick = () => startDrill(f.d.id);
+}
+/* ---------- protect progress: ask for persistent storage, nudge a backup every BACKUP_DAYS ---------- */
+// sp_backup {last: date of last export, snooze: date the nudge stays hidden until}.
+const BACKUP_DAYS = 30, BACKUP_SNOOZE = 7;
+let storagePersisted = null;
+async function persistStorage(){
+  try{ if (navigator.storage && navigator.storage.persist) storagePersisted = await navigator.storage.persisted() || await navigator.storage.persist(); }catch(e){}
+}
+function getBackup(){ const b = store.get('backup', null); return b && typeof b === 'object' ? b : {}; }
+function backupAgo(){ const b = getBackup(); if (!b.last) return 'never'; const d = ordinal(todayKey()) - ordinal(b.last); return d <= 0 ? 'today' : d === 1 ? 'yesterday' : d + ' days ago'; }
+function backupDue(){
+  const x = getXP(), b = getBackup(), t = todayKey();
+  if (!x || x.total < 100) return false; // nothing much to lose yet
+  if (b.snooze && b.snooze > t) return false;
+  return !b.last || ordinal(t) - ordinal(b.last) >= BACKUP_DAYS;
+}
+function exportBackup(){
+  const data = {};
+  try{ for (let i = 0; i < localStorage.length; i++){ const k = localStorage.key(i); if (k.startsWith('sp_')) data[k] = localStorage.getItem(k); } }catch(e){}
+  data.sp_backup = JSON.stringify({last: todayKey()}); // the backup file remembers it was a backup
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([JSON.stringify(data)], {type: 'application/json'}));
+  a.download = 'sec-pulse-backup-' + todayKey() + '.json'; a.click();
+  store.set('backup', {last: todayKey()});
+  toast('Backup saved - keep the file somewhere safe');
+}
+function renderBackup(){
+  const el = $('#brief-backup');
+  if (!backupDue()){ el.innerHTML = ''; return; }
+  el.innerHTML = `<div class="card small" id="backup-nudge" style="margin-top:12px"><b>💾 Back up your progress</b>
+    <div class="muted" style="margin:4px 0 10px">Your progress lives only on this phone, and iOS can clear a home-screen app's data after weeks unused. Last backup: ${backupAgo()}.</div>
+    <div class="row" style="gap:8px"><button class="btn primary" id="backup-now">Export backup</button><button class="btn" id="backup-later">Remind me later</button></div></div>`;
+  $('#backup-now').onclick = () => { exportBackup(); renderBackup(); };
+  $('#backup-later').onclick = () => { store.set('backup', {...getBackup(), snooze: addDays(todayKey(), BACKUP_SNOOZE)}); renderBackup(); };
+}
 function renderBrief(){
   const h = brisHour();
   $('#greet').textContent = h < 12 ? 'Good morning' : h < 17 ? 'Good afternoon' : 'Good evening';
@@ -768,6 +991,8 @@ function renderBrief(){
   }
   renderRank();
   renderExam();
+  renderFocus();
+  renderBackup();
   renderStats();
 }
 
@@ -836,8 +1061,12 @@ function weakQuestions(){
     .sort((a, b) => { const x = h[a.qid], y = h[b.qid];
       return (!!x.ok - !!y.ok) || ((y.wrong - y.right) - (x.wrong - x.right)) || String(y.last || '').localeCompare(String(x.last || '')); });
 }
+// opts.timeLimit (seconds): countdown via opts.onTick(secondsLeft); at zero the round ends and unanswered questions count as wrong.
+// Closing the sheet abandons a timed round (nothing is recorded).
+const mmss = sec => { sec = Math.max(0, Math.round(sec)); return Math.floor(sec / 60) + ':' + String(sec % 60).padStart(2, '0'); };
 function renderQuiz(root, questions, opts = {}){
-  let idx = 0, correct = 0;
+  let idx = 0, correct = 0, nAnswered = 0, timer = null, ended = false;
+  const t0 = Date.now(), used = () => Math.min(opts.timeLimit || Infinity, (Date.now() - t0) / 1000);
   const show = () => {
     const q = questions[idx];
     const where = q.lesson ? ' · lesson ' + esc(q.lesson) : q.pbq ? ' · PBQ · domain ' + esc(q.domain) : '';
@@ -888,7 +1117,8 @@ function renderQuiz(root, questions, opts = {}){
     };
   };
   const answered = (q, ok, pre = '', post = '') => {
-    if (ok) correct++;
+    if (ended) return;
+    nAnswered++; if (ok) correct++;
     const xp = recordAnswer(q, ok);
     const ex = root.querySelector('.explain'); ex.hidden = false;
     ex.innerHTML = `<b style="color:${ok ? 'var(--ok)' : 'var(--danger)'}">${ok ? 'Correct.' : 'Not quite.'}</b>${xpTag(xp)} ${esc(pre)}${esc(q.explain)}${post}`;
@@ -899,14 +1129,26 @@ function renderQuiz(root, questions, opts = {}){
     nb.onclick = () => { if (last) finish(); else { idx++; show(); } };
     root.querySelector('.q-next').appendChild(nb);
   };
-  const finish = () => {
+  const finish = (expired = false) => {
+    if (ended) return; ended = true; clearInterval(timer);
     const pct = Math.round(correct / questions.length * 100);
     // Rough guide only: CySA+ is scaled 100-900, pass 750. ~80%+ on practice sets is a good sign.
     const msg = pct >= 80 ? 'Exam-ready territory on this set.' : pct >= 65 ? 'Close - review the misses.' : 'Keep going - revisit the lessons for the domains you missed.';
     root.innerHTML = `<div style="text-align:center;padding:10px 0"><div style="font-size:40px;font-weight:800;color:var(--accent)">${pct}%</div>
-      <div>${correct} of ${questions.length} correct</div><div class="muted small" style="margin-top:6px">${msg}</div></div>`;
-    opts.onDone && opts.onDone(correct, questions.length);
+      <div>${correct} of ${questions.length} correct</div><div class="muted small" style="margin-top:6px">${msg}</div>
+      ${opts.timeLimit ? `<div class="small" id="time-used" style="margin-top:8px">${expired ? `⏱ Time's up - ${questions.length - nAnswered} unanswered counted as wrong` : `⏱ Time used ${mmss(used())} of ${mmss(opts.timeLimit)}`}</div>` : ''}</div>`;
+    opts.onDone && opts.onDone(correct, questions.length, opts.timeLimit ? {secs: Math.round(used()), expired} : null);
   };
+  if (opts.timeLimit){
+    const tick = () => {
+      if (ended) return;
+      if (!root.isConnected || !$('#sheet').classList.contains('open')){ clearInterval(timer); ended = true; return; }
+      const left = opts.timeLimit - (Date.now() - t0) / 1000;
+      opts.onTick && opts.onTick(Math.max(0, left));
+      if (left <= 0) finish(true);
+    };
+    timer = setInterval(tick, 1000); tick();
+  }
   show();
 }
 // Practice exam -> rough 100-900 estimate. A straight line from 0% = 100 to 100% = 900 (so 750 ≈ 81%), rounded to 10.
@@ -999,7 +1241,9 @@ function openLesson(id){
   if (store.get('lessons', {})[l.id]){ $('#mark-done').textContent = 'Completed ✓'; $('#mark-done').disabled = true; }
   $('#mark-done').onclick = () => { const f = firstTime(); complete(); toast('Lesson complete' + (f ? ` +${XP.lesson} XP` : '')); };
 }
-function startQuiz(n, weighted){
+// Timed exam: the real CS0-003 is up to 85 questions in 165 minutes; 30 questions at that pace is ~58 minutes.
+const EXAM_SECS = 58 * 60;
+function startQuiz(n, weighted, timed){
   const all = ALL_Q();
   let picked;
   if (weighted){
@@ -1011,12 +1255,30 @@ function startQuiz(n, weighted){
     });
     picked = shuffle(picked);
   } else picked = shuffle(all).slice(0, n);
-  openSheet(weighted ? 'Practice exam' : 'Quick quiz', `<div class="card" id="big-quiz"></div>
+  const title = timed ? 'Timed exam' : weighted ? 'Practice exam' : 'Quick quiz';
+  openSheet(title, `${timed ? `<div class="small muted" style="margin-bottom:10px">${mmss(EXAM_SECS)} for ${picked.length} questions - the real exam's pace. Unanswered questions count as wrong when time runs out. Closing this screen abandons the attempt.</div>` : ''}<div class="card" id="big-quiz"></div>
     <p class="small muted">The real exam is scored 100-900 with 750 to pass, and includes performance-based questions${ALL_PBQ().length ? ' (try PBQ practice on Learn)' : ''}. Treat this as a knowledge check${weighted ? '; the estimate at the end is a rough guide only' : ', not a score predictor'}.</p>`);
+  renderQuiz($('#big-quiz'), picked, {timeLimit: timed || 0, onTick: left => { $('#sheet-title').textContent = `${title} · ${mmss(left)} left`; },
+    onDone: (c, t, tm) => {
+      if (weighted) $('#big-quiz').insertAdjacentHTML('beforeend', scaledHtml(c, t));
+      const h = store.get('quizHistory', []), rec = {date: todayKey(), c, t, type: weighted ? 'exam' : 'quick'};
+      if (tm) Object.assign(rec, {timed: true, secs: tm.secs, expired: tm.expired});
+      h.push(rec); store.set('quizHistory', h.slice(-100));
+      if (tm) $('#sheet-title').textContent = title + (tm.expired ? " · time's up" : ' · done');
+      const b = gainXP(weighted ? XP.exam : XP.quiz); if (b) toast(`Round complete +${b} XP`);
+    }});
+}
+// Domain drill: DRILL_N questions from one domain, missed ones first, then unseen, then the rest.
+function startDrill(id){
+  const d = CYSA.domains.find(x => x.id === id); if (!d) return;
+  const h = store.get('qhist', {}) || {}, pri = q => { const r = h[q.qid]; return !r ? 1 : (!r.ok || r.wrong > r.right) ? 0 : 2; };
+  const picked = shuffle(shuffle(ALL_Q().filter(q => q.domain === id)).sort((a, b) => pri(a) - pri(b)).slice(0, DRILL_N));
+  if (!picked.length){ toast('No questions in this domain yet'); return; }
+  openSheet(`Drill · Domain ${d.id}`, `<div class="card" id="big-quiz"></div>
+    <p class="small muted">${esc(d.name)} (${d.weight}% of the exam): questions you've missed come first, then ones you haven't seen.</p>`);
   renderQuiz($('#big-quiz'), picked, {onDone: (c, t) => {
-    if (weighted) $('#big-quiz').insertAdjacentHTML('beforeend', scaledHtml(c, t));
-    const h = store.get('quizHistory', []); h.push({date: todayKey(), c, t, type: weighted ? 'exam' : 'quick'}); store.set('quizHistory', h.slice(-100));
-    const b = gainXP(weighted ? XP.exam : XP.quiz); if (b) toast(`Round complete +${b} XP`);
+    const hist = store.get('quizHistory', []); hist.push({date: todayKey(), c, t, type: 'drill', domain: id}); store.set('quizHistory', hist.slice(-100));
+    const b = gainXP(XP.quiz); if (b) toast(`Drill complete +${b} XP`);
   }});
 }
 function startReview(){
@@ -1054,6 +1316,7 @@ $('#pbq-practice').onclick = startPBQ;
 $('#review-quiz').onclick = startReview;
 $('#quick-quiz').onclick = () => startQuiz(10, false);
 $('#practice-exam').onclick = () => startQuiz(30, true);
+$('#timed-exam').onclick = () => startQuiz(30, true, EXAM_SECS);
 
 /* ---------- Flashcards: multiple choice + Leitner boxes 1-5 ---------- */
 const INTERVALS = [0, 1, 3, 7, 14, 30]; // days until next review, by box
@@ -1095,19 +1358,22 @@ function renderCards(){
   if (!CYSA) return;
   const area = $('#cards-area');
   // A review/cram round that's finished hands back to the scheduled queue.
-  if (cardRound && cardQueue && !cardQueue.length){ toast(cardRound === 'review' ? 'Missed-card review done' : 'Cram done'); cardRound = null; cardQueue = null; }
+  if (cardRound && cardQueue && !cardQueue.length){ toast(cardRound === 'review' ? 'Missed-card review done' : cardRound === 'acronyms' ? 'Acronym drill done' : 'Cram done'); cardRound = null; cardQueue = null; }
   if (!cardQueue) cardQueue = shuffle(dueCards()).map(c => ({...c}));
   const st = store.get('cards', {}), missed = missedCards().length;
   const boxes = [1, 2, 3, 4, 5].map(b => CYSA.cards.filter(c => st[c.id] && st[c.id].box === b).length);
   const unseen = CYSA.cards.filter(c => !st[c.id]).length;
-  const reviewBtn = `<button class="btn block" id="card-review">Review missed cards${missed ? ' · ' + missed : ''}</button>`;
+  const acro = CYSA.cards.filter(x => x.group === 'acronym');
+  const reviewBtn = `<button class="btn block" id="card-review">Review missed cards${missed ? ' · ' + missed : ''}</button>`
+    + (acro.length ? `<button class="btn block" id="card-acro" style="margin-top:8px">Acronym drill · 10 of ${acro.length}</button>` : '');
   const summary = `<div class="boxes">${boxes.map((n, i) => `<div><b>${n}</b>box ${i + 1}</div>`).join('')}<div><b>${unseen}</b>new</div></div>
     <p class="small muted">New cards: ${NEW_PER_DAY}/day. Pick the answer: right → next box, wrong → box 1 and you'll be asked again later in the round. Missed cards stay in "Review missed cards" until you get them right more often than wrong. Box 5 cards come back every 30 days.</p>`;
   const wireReview = () => { $('#card-review').onclick = () => {
     const m = missedCards();
     if (!m.length){ toast('No missed cards yet'); return; }
     startCardRound(shuffle(m.slice(0, 10)), 'review');
-  }; };
+  };
+    const ab = $('#card-acro'); if (ab) ab.onclick = () => startCardRound(shuffle(acro).slice(0, 10), 'acronyms'); };
   if (!cardQueue.length){
     area.innerHTML = `<div class="card flash"><div class="front">All caught up ✓</div><div class="muted" style="margin-top:8px">Come back tomorrow for more cards.</div></div>
       ${reviewBtn}<button class="btn block" id="cram" style="margin-top:8px">Cram 10 random cards (doesn't affect schedule)</button>${summary}`;
@@ -1117,7 +1383,7 @@ function renderCards(){
   const c = cardQueue[0], dom = CYSA.domains.find(d => d.id === c.domain), h = cardHist()[c.id];
   // Keep the same options if we re-render the same card (e.g. switching tabs mid-card).
   if (!cardShown || cardShown.id !== c.id || cardShown.q !== c) cardShown = {id: c.id, q: c, opts: cardOptions(c)};
-  const label = c.mode === 'review' ? ' · missed cards' : c.mode === 'cram' ? ' · cram' : '';
+  const label = c.mode === 'review' ? ' · missed cards' : c.mode === 'cram' ? ' · cram' : c.mode === 'acronyms' ? ' · acronyms' : '';
   const past = h && h.wrong ? `<div class="small muted" style="margin-top:8px">Missed ${h.wrong}× before${h.ok ? '' : ' · last time wrong'}</div>` : '';
   area.innerHTML = `<div class="row small muted" style="margin-bottom:8px"><span class="grow">${cardQueue.length} left${label}</span><span>Domain ${dom.id} · ${esc(dom.name)}</span></div>
     <div class="card" id="flash" data-card="${esc(c.id)}"><div class="flash-front">${esc(c.front)}</div>${past}
@@ -1125,8 +1391,8 @@ function renderCards(){
       ${cardShown.opts.map(o => `<button class="opt" data-id="${esc(o.id)}">${esc(maskBack(o))}</button>`).join('')}
       <div class="explain" hidden></div></div>
     <div id="card-next"></div>
-    ${c.mode === 'review' ? '' : reviewBtn}${summary}`;
-  if (c.mode !== 'review') wireReview();
+    ${c.mode === 'review' || c.mode === 'acronyms' ? '' : reviewBtn}${summary}`;
+  if (c.mode !== 'review' && c.mode !== 'acronyms') wireReview();
   area.querySelectorAll('#flash .opt').forEach(b => b.onclick = () => {
     const ok = b.dataset.id === c.id;
     area.querySelectorAll('#flash .opt').forEach(o => {
@@ -1244,6 +1510,7 @@ function openSettings(focus){
     <h2>Your progress</h2>
     <div class="card small">
       <p style="margin-top:0">Progress is stored only on this device. Export a backup before clearing Safari data or switching phones.</p>
+      <p class="muted"><span id="backup-status">Last backup: ${backupAgo()}</span> · storage ${storagePersisted ? 'protected from automatic clearing ✓' : storagePersisted === false ? 'may be cleared by the browser if unused, so back up monthly' : 'protection unknown'}</p>
       <div class="row" style="gap:8px;flex-wrap:wrap">
         <button class="btn" id="export">Export backup</button>
         <label class="btn" style="font-weight:600">Import backup<input type="file" id="import" accept="application/json" hidden></label>
@@ -1275,13 +1542,7 @@ function openSettings(focus){
   $('#course-clear').onclick = () => { $('#course-url').value = ''; store.del('courseUrl'); toast('Link cleared'); };
   $('#open-changelog').onclick = () => openDoc("What's new", 'CHANGELOG.md');
   $('#open-roadmap').onclick = () => openDoc('Roadmap', 'context/roadmap.md');
-  $('#export').onclick = () => {
-    const data = {};
-    try{ for (let i = 0; i < localStorage.length; i++){ const k = localStorage.key(i); if (k.startsWith('sp_')) data[k] = localStorage.getItem(k); } }catch(e){}
-    const a = document.createElement('a');
-    a.href = URL.createObjectURL(new Blob([JSON.stringify(data)], {type: 'application/json'}));
-    a.download = 'sec-pulse-backup-' + todayKey() + '.json'; a.click();
-  };
+  $('#export').onclick = () => { exportBackup(); $('#backup-status').textContent = 'Last backup: ' + backupAgo(); };
   $('#import').onchange = async e => {
     try{
       const data = JSON.parse(await e.target.files[0].text());
@@ -1358,7 +1619,8 @@ $('#install-dismiss').onclick = () => { store.set('hintDismissed', true); $('#in
 
 /* ---------- boot ---------- */
 (async () => {
-  try{ await loadCysa(); seedXP(); }catch(e){ toast('Could not load study content'); }
+  try{ await loadCysa(); seedXP(); seedDays(); checkBadges(); }catch(e){ toast('Could not load study content'); }
+  persistStorage();
   await loadNews(false);
   renderLearn();
   const start = location.hash.slice(1);

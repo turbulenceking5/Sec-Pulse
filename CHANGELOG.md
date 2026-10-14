@@ -1,8 +1,17 @@
 # Changelog
 
-## 2026-10-14: Harder levels, later morning brief
-- **Levelling up is more of a grind.** Each level now costs more than the last, and the climb keeps steepening: Lv 10 takes about 10,400 XP (was 4,500), Lv 20 about 50,000 (was 19,000), and Cyber Legend (Lv 50) is years of daily study. Your XP total is unchanged, so your level will show lower than before. Skill levels follow the same curve.
+## 2026-10-14: Achievements, timed exam, streak freezes and more
+- **Achievements**: 17 badges on your profile (streaks, questions and cards answered, each domain cleared, a perfect PBQ round, a 750+ practice exam, beating the clock…), +25 XP each. Ones you'd already earned are credited quietly.
+- **Study activity and accuracy trend** on your profile: a 17-week heatmap of the days you studied, and a chart of your last 20 quiz rounds against the 80% mark.
+- **Streak freezes** 🧊: finish all the daily quests to earn one (hold up to 2). A freeze automatically covers a single missed day.
+- **Focus area** on the Brief: your weakest exam domain (accuracy weighted by exam weight), with a 10-question drill that puts your past misses first.
+- **Timed practice exam**: 30 questions in 58 minutes, the real exam's pace. Unanswered questions count as wrong when time runs out.
+- **Acronym drill** on Cards: 32 new acronym cards (EDR, XDR, TTP, TLP, SCAP, OWASP, BIA, RACI…), run as a 10-card drill.
+- **Question of the day in the morning notification**. The answer is in the app.
+- **CVE links**: CVE numbers in a story link to their NVD page, and CISA KEV stories show the remediation deadline ("Fix by 16 Oct").
+- **Protect your progress**: the app asks the browser not to clear its storage, and reminds you to export a backup once a month.
 - **Morning brief moved to 7:25am** Brisbane time (was 6:30am). GitHub sometimes runs it a little late.
+- Levelling stays at the original pace: a steeper curve was tried briefly and reverted.
 
 ## 2026-10-14: PBQs, quests, light theme and weekly digest
 - **PBQ practice** (Learn): 15 performance-based scenarios - read an exhibit (logs, email headers, scan output, firewall rules, process trees) and pick the answer, or put steps in order. Missed ones join Review mistakes.

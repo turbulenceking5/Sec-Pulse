@@ -18,12 +18,12 @@ Ideas for what to build next, roughly in priority order. Move items to [CHANGELO
 - [x] **Udemy link** in Settings, shown on Learn and in lessons (stored on-device only).
 - [x] **Category lessons for common security tooling**: generic EDR, vulnerability-scanner and secure-email-gateway workflows (triaging an EDR detection, reading a scan report, releasing a quarantined email). Keep them vendor-neutral, see [opsec.md](opsec.md).
 - [x] **XP quests**: optional daily goals ("answer 10 questions", "read 3 Australian stories") worth bonus XP.
-- [ ] **Achievements**: one-off badges on the profile for milestones (30-day streak, every lesson in a domain, a perfect PBQ round, 500 cards reviewed) to give the longer level grind more to aim for between promotions.
-- [ ] **Weakest-domain drill**: the Brief names the domain with the lowest quiz accuracy (from `sp_qstats.byDomain`, weighted by exam weight) and offers a 10-question round from it.
-- [ ] **Timed practice exam**: optional timer on the 30-question exam scaled from the real one (85 questions / 165 min ≈ 58 min), with time used shown on the result.
-- [ ] **Progress history**: a study-activity calendar (heatmap) and a quiz-accuracy trend from `sp_quizHistory` on the profile sheet.
-- [ ] **Streak freeze**: earn one by finishing all daily quests; it covers a single missed day.
-- [ ] **Acronym drill**: a card group for the CySA+ acronym list (CS0-003 objectives appendix).
+- [x] **Achievements**: one-off badges on the profile for milestones (30-day streak, every lesson in a domain, a perfect PBQ round, 500 cards reviewed) to give the longer level grind more to aim for between promotions.
+- [x] **Weakest-domain drill**: the Brief names the domain with the lowest quiz accuracy (from `sp_qstats.byDomain`, weighted by exam weight) and offers a 10-question round from it.
+- [x] **Timed practice exam**: optional timer on the 30-question exam scaled from the real one (85 questions / 165 min ≈ 58 min), with time used shown on the result.
+- [x] **Progress history**: a study-activity calendar (heatmap) and a quiz-accuracy trend from `sp_quizHistory` on the profile sheet.
+- [x] **Streak freeze**: earn one by finishing all daily quests; it covers a single missed day.
+- [x] **Acronym drill**: a card group for the CySA+ acronym list (CS0-003 objectives appendix).
 - [ ] **Version check**: when CompTIA announces the CS0-003 successor, update `exam.code`, domains and weights (see [study-content.md](study-content.md#accuracy)).
 
 ## News
@@ -33,8 +33,8 @@ Ideas for what to build next, roughly in priority order. Move items to [CHANGELO
 - [x] **Mute a source or tag** from the app (stored locally, filtered client-side).
 - [x] **EPSS enrichment for KEV/CVE items** via FIRST's public EPSS API in `fetch_news.py`.
 - [x] **Story clustering**: group the same incident reported by several outlets (the title dedupe only catches identical headlines).
-- [ ] **Question of the day in the morning brief**: the question text in the notification, the answer in the app (the pick is deterministic, like the lesson of the day, so `send_brief.py` can compute it).
-- [ ] **CVE links**: link CVE IDs in titles/summaries to their NVD page, and show the KEV remediation due date on KEV items.
+- [x] **Question of the day in the morning brief**: the question text in the notification, the answer in the app (the pick is deterministic, like the lesson of the day, so `send_brief.py` can compute it).
+- [x] **CVE links**: link CVE IDs in titles/summaries to their NVD page, and show the KEV remediation due date on KEV items.
 - [ ] Revisit the ACSC direct feeds (re-checked 2026-10-14: still reset/time out from data-centre IPs) if a working route appears (see [news-pipeline.md](news-pipeline.md#known-feed-issues)).
 
 ## App
@@ -44,7 +44,7 @@ Ideas for what to build next, roughly in priority order. Move items to [CHANGELO
 - [x] **Pull-to-refresh** on News.
 - [x] **Light theme** option.
 - [x] **Read-later list separate from Saved**, or notes on saved stories.
-- [ ] **Protect progress**: call `navigator.storage.persist()` and nudge to Export once a month. Progress lives only in localStorage, and iOS can clear a home-screen app's storage after weeks unused.
+- [x] **Protect progress**: call `navigator.storage.persist()` and nudge to Export once a month. Progress lives only in localStorage, and iOS can clear a home-screen app's storage after weeks unused.
 - [ ] **Cross-device progress sync** (optional, only if needed). It would need a backend such as a Supabase row or a GitHub Gist with a token. The public repo means no secrets in the page, so this needs real auth. Export/Import covers moving phones today.
 
 ## Won't do (and why)

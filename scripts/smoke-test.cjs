@@ -313,6 +313,75 @@ const fs = require('fs');
   await page.click('nav button[data-view=brief]');
 
   check(await page.textContent('#st-streak') === '1', 'Streak is 1 after activity');
+
+  // CVE links and KEV due dates on news cards.
+  const card = await page.evaluate(() => newsCard({ id: 'cvetest', title: 'CVE-2026-1111: Example product flaw', link: nvdUrl('CVE-2026-1111'), source: 'CISA KEV', region: 'Global',
+    published: new Date().toISOString(), score: 5, tags: ['Actively exploited', 'KEV'], summary: 'Chained with cve-2026-2222. CISA remediation due ' + addDays(todayKey(), 2) + '.' }));
+  check(card.includes('https://nvd.nist.gov/vuln/detail/CVE-2026-2222') && !card.includes('>CVE-2026-1111 ↗') && /kev-due[^>]*>Fix by/.test(card) && /pill danger kev-due/.test(card), 'News card links CVEs to NVD and shows the KEV due date');
+
+  // Weakest-domain drill from the Brief.
+  check(await page.locator('#focus-card').count() === 1, 'Brief shows the weakest-domain focus card');
+  const fd = await page.evaluate(() => focusDomain().d.id);
+  await page.click('#focus-card');
+  check((await page.textContent('#sheet-title')) === 'Drill · Domain ' + fd && (await page.textContent('#big-quiz .q-progress')).includes('lesson ' + fd + '.'), 'Focus card opens a drill from that domain');
+  await page.click('#sheet-close');
+
+  // Timed exam: countdown in the title, auto-finish at zero, abandoned if closed.
+  check(await page.evaluate(() => !!$('#timed-exam')), 'Learn has a timed practice exam button');
+  await page.evaluate(() => startQuiz(30, true, 3));
+  check(/Timed exam · 0:0\d left/.test(await page.textContent('#sheet-title')), 'Timed exam shows a countdown');
+  await page.click('#big-quiz .opt >> nth=0');
+  await page.waitForTimeout(3600);
+  const timedRec = await page.evaluate(() => store.get('quizHistory', []).pop());
+  check((await page.textContent('#time-used')).includes("29 unanswered") && timedRec.timed && timedRec.expired && timedRec.t === 30, "Timed exam ends at zero and logs a timed, expired round");
+  await page.click('#sheet-close');
+  const nHist = await page.evaluate(() => store.get('quizHistory', []).length);
+  await page.evaluate(() => startQuiz(30, true, 2)); await page.click('#sheet-close'); await page.waitForTimeout(2600);
+  check(await page.evaluate(() => store.get('quizHistory', []).length) === nHist, 'Closing a timed exam abandons it');
+
+  // Acronym drill on Cards: doesn't touch the schedule.
+  await page.click('nav button[data-view=cards]');
+  await page.click('#card-acro');
+  const acroId = await page.getAttribute('#flash', 'data-card');
+  check((await page.textContent('#cards-area')).includes('· acronyms') && await page.evaluate(id => CYSA.cards.find(c => c.id === id).group, acroId) === 'acronym', 'Acronym drill runs acronym cards');
+  const hadSched = await page.evaluate(id => !!store.get('cards', {})[id], acroId);
+  await page.click('#flash .opt >> nth=0');
+  check(await page.evaluate(id => !!store.get('cards', {})[id], acroId) === hadSched, "Acronym drill doesn't change the card schedule");
+  await page.evaluate(() => { cardQueue = null; cardRound = null; renderCards(); });
+  await page.click('nav button[data-view=brief]');
+
+  // Achievements, heatmap and accuracy trend on the profile.
+  check(await page.evaluate(() => !!(getBadges() || {})['first-q']), 'First-answer achievement is earned');
+  await page.click('#rank-card');
+  check(await page.locator('#badges .badge-tile').count() === await page.evaluate(() => BADGES().length), 'Profile lists achievements');
+  const heat = await page.evaluate(() => ({ n: document.querySelectorAll('#heatmap i').length, today: getDays()[todayKey()] > 0 }));
+  check(heat.n === 17 * 7 && heat.today, 'Profile heatmap shows 17 weeks with today active');
+  check(await page.locator('#trend circle').count() >= 2, 'Profile shows the quiz accuracy trend');
+  await page.screenshot({ path: 'shots/profile-history.png', fullPage: true });
+  await page.click('#sheet-close');
+
+  // Streak freeze: earned once a day, covers exactly one missed day.
+  const fz = await page.evaluate(() => {
+    const t = todayKey(), saved = store.get('streak'), savedF = store.get('freeze', null);
+    store.set('freeze', { n: 0, used: [] });
+    const e1 = earnFreeze(), e2 = earnFreeze();
+    store.set('streak', { last: addDays(t, -2), count: 5, best: 5 });
+    const shown = currentStreak(); markActivity();
+    const after = { s: store.get('streak'), f: getFreeze() };
+    store.set('streak', { last: addDays(t, -3), count: 5, best: 5 }); store.set('freeze', { n: 1, used: [] });
+    const gap2 = currentStreak();
+    store.set('streak', saved); if (savedF) store.set('freeze', savedF); else store.del('freeze');
+    return { e1, e2, shown, count: after.s.count, n: after.f.n, used: after.f.used.includes(addDays(t, -1)), gap2 };
+  });
+  check(fz.e1 === 'earned' && fz.e2 === '' && fz.shown === 5 && fz.count === 6 && fz.n === 0 && fz.used && fz.gap2 === 0, 'Streak freeze is earned once a day and covers one missed day');
+
+  // Backup nudge: shown with no backup, snoozes, export records the date.
+  await page.evaluate(() => { store.del('backup'); const x = getXP(); if (x.total < 100){ x.total = 150; store.set('xp', x); } renderBrief(); });
+  check(await page.locator('#backup-nudge').count() === 1, 'Brief nudges a backup when none has been made');
+  await page.click('#backup-later');
+  check(await page.locator('#backup-nudge').count() === 0 && await page.evaluate(() => getBackup().snooze > todayKey()), 'Remind me later snoozes the backup nudge');
+  await page.evaluate(() => { store.del('backup'); exportBackup(); renderBrief(); });
+  check(await page.evaluate(() => getBackup().last === todayKey()) && await page.locator('#backup-nudge').count() === 0, 'Export records the backup date');
   check(!(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth)), 'No horizontal scroll');
   check(errors.length === 0, 'No console/page errors' + (errors.length ? ': ' + errors.join(' | ') : ''));
 
