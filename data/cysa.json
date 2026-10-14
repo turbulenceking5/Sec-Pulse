@@ -164,6 +164,46 @@
       ]
     },
     {
+      "id": "1.9", "domain": 1, "title": "Tooling: triaging an EDR detection",
+      "summary": "EDR tools raise detections from endpoint behaviour, not just file signatures. Good triage answers three questions quickly: is it malicious, how far has it gone, and should the host be isolated now or watched a little longer.",
+      "points": [
+        "Start with the process tree: parent, child and the full command line. An Office app or email client (winword.exe, excel.exe, outlook.exe) spawning powershell.exe, cmd.exe, mshta.exe or rundll32.exe is a high-fidelity sign of a malicious document.",
+        "Compare parent/child pairs with normal: services.exe starting svchost.exe is expected. svchost.exe started by explorer.exe, or running from outside C:\\Windows\\System32, is not.",
+        "Read the command line: encoded PowerShell (-enc / -EncodedCommand), hidden windows (-w hidden), download cradles (IEX with a web download) and LOLBins fetching files (certutil -urlcache) are classic signs.",
+        "Hash and reputation: check the file's SHA-256 against threat intel and against your own fleet (how many hosts have it?). A signed, widespread binary lowers concern. A rare, unsigned file in AppData or Temp raises it. Unknown reputation is not the same as clean.",
+        "Scope: search every endpoint for the same hash, command line, domain or IP. Check what the process did next: network connections, files written and persistence created (Run keys, scheduled tasks, services).",
+        "Isolate vs monitor: isolation stops spread and C2 but alerts the attacker and stops the user working. Isolate at once for ransomware behaviour, credential dumping or lateral movement. Monitor only briefly, when risk is low and scope is needed, and record who made the call.",
+        "EDR network isolation normally keeps the host connected to the EDR console, so you can still collect memory and files after isolating it. Reimaging before collecting evidence destroys what you need to scope the incident."
+      ],
+      "examTip": "When a scenario shows an Office application spawning a scripting engine or LOLBin, think malicious macro or document. The best next step is usually to isolate the host and collect evidence, not to reimage straight away.",
+      "onTheJob": "Write a short triage note on every EDR detection: the process tree, your verdict, the evidence for it and the action taken. Repeated false positives then become tuning requests instead of noise.",
+      "quiz": [
+        {"q": "An EDR detection shows excel.exe as the parent of powershell.exe running with -EncodedCommand. The user says they just opened an invoice attachment. What is the best next step?", "options": ["Isolate the host and collect evidence before further analysis", "Close it as a false positive because Excel is a signed Microsoft binary", "Reimage the laptop immediately without investigating", "Wait for a second detection before taking any action"], "answer": 0, "explain": "Office spawning encoded PowerShell right after an attachment is opened is a high-fidelity sign of a malicious macro. Isolation limits spread and C2 while preserving evidence; reimaging first destroys the evidence needed to scope the incident."},
+        {"q": "A detection flags an unsigned executable in a user's AppData folder. Its SHA-256 hash returns no threat intel results and appears on no other endpoint. What is the best interpretation?", "options": ["Unknown reputation is not proof of safety, so analyse its behaviour and treat it as suspicious", "The file is clean because no threat intel source has flagged it", "The file is definitely malware because every unsigned file is malicious", "The hash is probably wrong because every file has a known reputation"], "answer": 0, "explain": "New or custom malware often has no reputation yet. A rare, unsigned binary in a user-writable folder warrants behavioural analysis (process activity, sandbox) rather than a quick close. Plenty of legitimate software is unsigned, so unsigned alone does not prove malice."},
+        {"q": "An EDR shows a process reading LSASS memory on a file server, followed by new SMB connections from that server to several workstations. Which action is most appropriate?", "options": ["Isolate the server immediately", "Keep monitoring for a week to learn the attacker's objectives", "Uninstall the EDR agent to stop the alerts", "Run a vulnerability scan against the server"], "answer": 0, "explain": "Credential dumping followed by lateral movement is an active compromise. The risk of further spread outweighs the value of watching longer, so contain now and collect evidence through the EDR console."}
+      ]
+    },
+    {
+      "id": "1.10", "domain": 1, "title": "Tooling: secure email gateway workflows",
+      "summary": "A secure email gateway (SEG) filters mail for spam, phishing, malware and spoofing, and holds suspicious messages in quarantine. Analysts spend much of their day deciding what to release, what to purge and what user-reported phish tells them.",
+      "points": [
+        "Filtering layers: sender IP and domain reputation, authentication results (SPF, DKIM, DMARC), content and URL analysis, attachment sandboxing, and policy rules such as blocking executable attachments.",
+        "Quarantine review: check why the message was held (the verdict and the rule that fired), the true sender domain and Return-Path, the authentication results, and every link and attachment before deciding.",
+        "Releasing safely: detonate attachments in a sandbox, check where links really go, confirm the sender out of band if in doubt, release only to the original recipients and record why. A user saying they are expecting it is not enough.",
+        "Header analysis: read Authentication-Results for the spf, dkim and dmarc verdicts and the Received lines bottom-up for the path. DMARC passes only if SPF or DKIM passes for a domain that aligns with the visible From domain.",
+        "User-reported phish: triage the report, then search for every copy of the message (sender, subject, URL or attachment hash) and remove it from all mailboxes, not just the reporter's.",
+        "Close the loop: block the sender, domain or URL at the gateway, check click logs (URL rewriting or proxy) to find anyone who interacted, and thank the reporter. Feedback keeps people reporting.",
+        "False positives cost money too: a real contract stuck in quarantine harms the business. Tune with narrow rules, never by allow-listing an entire free-mail domain or a whole sender domain that has failed authentication."
+      ],
+      "examTip": "After confirming one reported email is malicious, the best answer usually searches for and removes every copy across the organisation, then blocks the indicators. Containment is organisation-wide, not one mailbox.",
+      "onTheJob": "In real estate, quarantined 'contract', 'deposit' and 'bank details' emails are high-risk and high-pressure. Release them only after verifying the sender on a known phone number, never one taken from the email itself.",
+      "quiz": [
+        {"q": "A user asks for a quarantined email to be released because they are expecting a document from a new client. The attachment is a password-protected ZIP and the sender's domain was registered last week. What should the analyst do?", "options": ["Keep it quarantined and verify the sender through a known contact method before any release", "Release it because the user is expecting it", "Release it and ask the user to scan the ZIP with antivirus first", "Forward the ZIP to the user's personal email so the corporate network stays safe"], "answer": 0, "explain": "Password-protected archives stop the gateway inspecting the contents, and newly registered domains are a classic phishing sign. A user's expectation is exactly what attackers exploit, so verify out of band first."},
+        {"q": "A quarantined message shows: spf=pass smtp.mailfrom=bounce.example.net; dkim=pass header.d=example.net; dmarc=fail header.from=example.com. Why did DMARC fail?", "options": ["Neither the SPF nor the DKIM domain aligns with the From domain example.com", "SPF failed for the sending server", "The DKIM signature did not verify", "The message had no Return-Path header"], "answer": 0, "explain": "SPF and DKIM both passed, but for example.net. DMARC needs at least one passing result whose domain aligns with the visible From domain. A spoofer can easily pass SPF and DKIM for a domain they own."},
+        {"q": "Three users report the same phishing email and the analyst confirms it is malicious. What is the most effective next step?", "options": ["Search all mailboxes for the message, remove every copy, then block the sender and URL", "Delete the message from the three reporters' mailboxes only", "Forward the phishing email to all staff so they can recognise it", "Reset the passwords of the three users who reported it"], "answer": 0, "explain": "Reporters are usually a fraction of the recipients. Purging all copies and blocking the indicators contains the campaign; click logs then show who interacted and needs follow-up. The reporters did the right thing and have no reason for a reset unless they entered credentials."}
+      ]
+    },
+    {
       "id": "2.1", "domain": 2, "title": "Asset discovery and vulnerability scanning",
       "summary": "You cannot protect what you do not know about. Vulnerability management starts with accurate asset inventory, then scanning designed around the environment.",
       "points": [
@@ -276,6 +316,26 @@
         {"q": "Which Essential Eight strategy prevents unapproved executables from running?", "options": ["Patch applications", "Application control", "User application hardening", "Restrict admin privileges"], "answer": 1, "explain": "Application control allow-lists approved code."},
         {"q": "Essential Eight Maturity Level 1 is designed to resist which adversaries?", "options": ["Nation-state APTs", "Opportunistic attackers using commodity tradecraft", "Insiders only", "No adversary - it is documentation only"], "answer": 1, "explain": "ML1 targets widely available tools and opportunistic attacks."},
         {"q": "What makes backups effective against ransomware under the Essential Eight?", "options": ["Storing them on the same file server", "Protecting them from modification/deletion and testing restores", "Taking them annually", "Encrypting them with the same admin account"], "answer": 1, "explain": "Backups must survive the attacker and be proven restorable."}
+      ]
+    },
+    {
+      "id": "2.7", "domain": 2, "title": "Tooling: reading a vulnerability scan report",
+      "summary": "A scan report is a list of claims, not a to-do list. The analyst's job is to validate findings, weed out false positives and rank what is left by real risk: severity, exploitability and the importance of the asset.",
+      "points": [
+        "A finding usually shows the check name, CVE IDs, CVSS score and vector, affected host and port, evidence (what the scanner actually saw) and suggested remediation. Read the evidence: it tells you how much to trust the finding.",
+        "Severity is not priority. CVSS describes how bad a flaw is in general. Exploitability (CISA KEV listing, public exploit code, EPSS probability) and asset criticality (internet-facing, sensitive data, business critical) decide what is fixed first.",
+        "Common false positives: version-banner checks on systems where the vendor backported the fix without changing the version string, and software that is installed but disabled or unreachable. Validate before raising a ticket.",
+        "Credentialed vs non-credentialed: a credentialed scan logs in and reads installed patches and configuration, so it finds more (including local and client-side issues) with fewer false positives. A non-credentialed scan shows the outside view but has to guess more.",
+        "False negatives hide in gaps: hosts that were offline, firewalled from the scanner, failed authentication or were left out of scope. Check the coverage and authentication-success summary, not just the findings list.",
+        "Group by fix, not by count: one missing cumulative update can produce dozens of findings, and installing it closes them all.",
+        "Rescan after remediation to verify the fix, and track recurrence. A finding that keeps coming back points to a golden image or configuration management problem."
+      ],
+      "examTip": "When two findings have similar CVSS scores, the exam usually wants the one that is internet-facing, actively exploited (in KEV) or on the most critical asset fixed first.",
+      "onTheJob": "Before sending results to system owners, sort by exploitability and asset criticality, remove validated false positives with a note explaining why, and group findings under the single fix that closes them. Owners act on short, accurate lists.",
+      "quiz": [
+        {"q": "A non-credentialed scan reports a critical OpenSSH vulnerability on a Linux server based on its version banner. The owner shows that the distribution's security update, which backported the fix, is installed. What is this finding most likely?", "options": ["A false positive", "A false negative", "A true positive", "A true negative"], "answer": 0, "explain": "Distributions often backport security fixes without changing the upstream version number, so banner-based checks report a flaw that is already fixed. A credentialed check of the installed package confirms it."},
+        {"q": "Which finding should be remediated first?", "options": ["CVSS 8.1 on an internet-facing VPN appliance, listed in CISA KEV", "CVSS 9.8 on an isolated lab server with no path to production and no known exploit", "CVSS 7.5 on an internal print server with no known exploit", "CVSS 5.3 information disclosure on the public website"], "answer": 0, "explain": "Confirmed exploitation in the wild (KEV) plus internet exposure on a critical access point outweighs a higher base score on an isolated system nobody is exploiting."},
+        {"q": "A team switches from non-credentialed to credentialed scans and the number of findings rises sharply. What is the most likely reason?", "options": ["Logging in lets the scanner see installed software, patch levels and local configuration that are invisible from the network", "Credentialed scans generate far more false positives", "The scan credentials gave attackers access to the hosts", "Non-credentialed scans only test web applications"], "answer": 0, "explain": "With credentials the scanner can read patch levels and local software (browsers, PDF readers, runtimes), revealing real issues a network-only scan cannot see. Credentialed scans usually reduce false positives, not increase them."}
       ]
     },
     {
@@ -565,6 +625,160 @@
     {"id": "c90", "domain": 1, "group": "event-id", "front": "Event ID 4720", "back": "A user account was created. An account created outside the normal provisioning process can be attacker persistence."},
     {"id": "c91", "domain": 1, "group": "event-id", "front": "Event ID 4732", "back": "A member was added to a security-enabled local group (e.g. local Administrators). Domain global group adds = 4728; universal group adds = 4756."},
     {"id": "c92", "domain": 1, "group": "event-id", "front": "Event ID 4740", "back": "A user account was locked out. For domain accounts it is logged on the domain controller; the Caller Computer Name shows where the bad attempts came from."},
-    {"id": "c93", "domain": 1, "group": "event-id", "front": "Event ID 1102", "back": "The Security audit log was cleared. A classic anti-forensics indicator - always investigate. (System log cleared = event 104.)"}
+    {"id": "c93", "domain": 1, "group": "event-id", "front": "Event ID 1102", "back": "The Security audit log was cleared. A classic anti-forensics indicator - always investigate. (System log cleared = event 104.)"},
+    {"id": "c94", "domain": 4, "group": "reporting", "front": "Dwell time", "back": "How long an attacker was present before being detected, usually measured from initial compromise to detection. Lower MTTD means lower dwell time."},
+    {"id": "c95", "domain": 4, "group": "reporting", "front": "KPI vs metric", "back": "A metric is any measurement (e.g. 340 alerts this week). A KPI is a metric tied to a target that shows performance (e.g. 95% of criticals fixed within 14 days)."},
+    {"id": "c96", "domain": 4, "group": "reporting", "front": "Mean time to contain", "back": "Average time from detecting an incident to stopping its spread (host isolated, account disabled). Sits between MTTD and mean time to remediate."},
+    {"id": "c97", "domain": 4, "group": "reporting", "front": "Mean time to remediate", "back": "Average time from detection (or a vulnerability being found) to the issue being fully fixed and verified. Longer than mean time to respond."},
+    {"id": "c98", "domain": 4, "group": "reporting", "front": "Out-of-band communication", "back": "Using a separate channel (phone, pre-arranged secure chat) during an incident because normal email or chat may be compromised or watched by the attacker."},
+    {"id": "c99", "domain": 4, "group": "reporting", "front": "Incident report structure", "back": "Executive summary, incident details, timeline, scope and impact, evidence, root cause, recommendations (owner, due date), lessons learned."},
+    {"id": "c100", "domain": 4, "group": "reporting", "front": "Executive summary vs technical detail", "back": "Executive summary: impact, risk, status and decisions needed, in plain language. Technical detail: IoCs, hosts, timeline and exact actions for IT teams, often in an appendix."},
+    {"id": "c101", "domain": 4, "group": "reporting", "front": "Severity / escalation matrix", "back": "Table in the IR plan mapping incident criteria (data involved, systems affected, spread, business impact) to a severity level, who must be told and how fast."},
+    {"id": "c102", "domain": 4, "group": "reporting", "front": "Lessons-learned meeting", "back": "Blameless review held soon after an incident closes: what happened, what worked, what didn't and what to change. Actions get an owner and due date."},
+    {"id": "c103", "domain": 4, "group": "reporting", "front": "Vulnerability SLA compliance", "back": "Percentage of findings remediated within the agreed timeframe for their severity (e.g. criticals within 14 days). Late closures count as misses."},
+    {"id": "c104", "domain": 4, "group": "reporting", "front": "Vulnerability ageing", "back": "How long findings have stayed open, usually reported in buckets (0-30, 31-60, 61-90, 90+ days) to show overdue risk building up."},
+    {"id": "c105", "domain": 4, "group": "reporting", "front": "Vulnerability recurrence", "back": "Findings that come back after being closed (e.g. a patch rolled back or a rebuilt image missing it). Points to a configuration management failure."},
+    {"id": "c106", "domain": 4, "group": "reporting", "front": "Risk acceptance / exception", "back": "Documented decision not to remediate yet: business justification, compensating controls, risk owner sign-off and an expiry or review date. Report open exceptions separately."},
+    {"id": "c107", "domain": 4, "group": "reporting", "front": "Regulatory notification", "back": "Mandatory report to a regulator within a set timeframe (e.g. NDB to the OAIC, GDPR within 72 hours). Legal and executives decide; analysts supply accurate facts."},
+    {"id": "c108", "domain": 2, "group": "vuln-mgmt", "front": "CVSS vector string", "back": "Compact record of the metric values, e.g. CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H (score 9.8: remote, easy, no privileges, no user interaction)."},
+    {"id": "c109", "domain": 2, "group": "vuln-mgmt", "front": "CVSS Scope (S:U vs S:C)", "back": "Changed scope (S:C) means exploiting the flaw affects resources beyond the vulnerable component's security authority, e.g. a VM or sandbox escape. Raises the score."},
+    {"id": "c110", "domain": 2, "group": "vuln-mgmt", "front": "CVSS metric groups (v3.1)", "back": "Base = intrinsic severity. Temporal = exploit maturity, remediation level, report confidence. Environmental = adjusted for your assets and controls."},
+    {"id": "c111", "domain": 2, "group": "vuln-mgmt", "front": "CVSS Privileges Required / User Interaction", "back": "PR: None, Low or High. UI: None or Required. PR:N and UI:N are worst - an unauthenticated attacker needs no victim action."},
+    {"id": "c112", "domain": 2, "group": "vuln-mgmt", "front": "CVSS vs EPSS", "back": "CVSS rates severity (how bad if exploited). EPSS estimates likelihood (probability of exploitation). Use both, plus KEV, to prioritise."},
+    {"id": "c113", "domain": 2, "group": "vuln-mgmt", "front": "Patch prioritisation inputs", "back": "Exploitability (KEV, public exploit, EPSS), severity (CVSS), asset criticality, exposure (internet-facing) and existing compensating controls."},
+    {"id": "c114", "domain": 2, "group": "vuln-mgmt", "front": "Attack surface management (ASM)", "back": "Continuous discovery and monitoring of internet-facing assets (domains, IPs, cloud services, forgotten or shadow IT) from an attacker's point of view."},
+    {"id": "c115", "domain": 2, "group": "vuln-mgmt", "front": "Backported patch false positive", "back": "Scanner flags a vulnerable version from the banner, but the vendor backported the fix without changing the version string. Confirm with a credentialed check."},
+    {"id": "c116", "domain": 2, "group": "vuln-mgmt", "front": "Non-credentialed scan", "back": "Sees only what is exposed over the network (open ports, banners, responses). The attacker's view, but misses local issues and produces more false positives."},
+    {"id": "c117", "domain": 2, "group": "vuln-mgmt", "front": "CVE vs CWE", "back": "CVE = ID for one specific vulnerability in a product. CWE = category of weakness behind it (e.g. CWE-79 is cross-site scripting)."},
+    {"id": "c118", "domain": 3, "group": "ir", "front": "Isolation (containment)", "back": "Cutting a compromised host off from the network (EDR isolation, unplugging, quarantine VLAN) while keeping it powered on for evidence collection."},
+    {"id": "c119", "domain": 3, "group": "ir", "front": "Segmentation (containment)", "back": "Moving affected systems into a restricted network zone so they cannot reach critical assets, while monitoring continues."},
+    {"id": "c120", "domain": 3, "group": "ir", "front": "Eradication steps", "back": "Remove malware and persistence, reimage from a known-good build, reset compromised credentials and close the entry point (patch, config fix)."},
+    {"id": "c121", "domain": 3, "group": "ir", "front": "Recovery validation", "back": "Restore from known-good backups, confirm systems are clean and patched, then monitor closely for reinfection before returning to normal operations."},
+    {"id": "c122", "domain": 3, "group": "ir", "front": "Playbook vs runbook", "back": "Playbook: high-level response workflow for an incident type (roles, decisions, phases). Runbook: detailed step-by-step procedure for a specific technical task."},
+    {"id": "c123", "domain": 3, "group": "ir", "front": "IoC sweep (scoping)", "back": "Searching all endpoints, logs and mailboxes for indicators found in one incident (hashes, IPs, domains) to find every other affected system."},
+    {"id": "c124", "domain": 3, "group": "ir", "front": "DNS sinkhole", "back": "Resolving a known malicious domain to a controlled address, cutting off C2 and revealing infected hosts by who tries to connect."},
+    {"id": "c125", "domain": 3, "group": "ir", "front": "Timeline analysis", "back": "Ordering events from many sources (firewall, EDR, mailbox, auth logs) after normalising timestamps to one time zone, usually UTC."},
+    {"id": "c126", "domain": 3, "group": "ir", "front": "Scope of an incident", "back": "The full extent of what is affected: systems, accounts, data and locations. Establish it before eradication, or the attacker keeps a foothold you missed."},
+    {"id": "c127", "domain": 3, "group": "forensics", "front": "Memory acquisition", "back": "Capturing RAM from a live system before shutdown: running processes, network connections, injected code and encryption keys. Pulling the power loses it."},
+    {"id": "c128", "domain": 3, "group": "forensics", "front": "Live vs dead-box forensics", "back": "Live: analysing a running system to capture volatile data. Dead-box: the system is powered off and its disk imaged through a write blocker."},
+    {"id": "c129", "domain": 3, "group": "forensics", "front": "Write blocker", "back": "Hardware or software that lets an investigator read evidence media while blocking any writes, preserving its integrity during imaging."},
+    {"id": "c130", "domain": 3, "group": "forensics", "front": "Evidence hashing", "back": "Hash the image (e.g. SHA-256) at acquisition and again before analysis or court. Matching hashes prove the evidence has not changed."},
+    {"id": "c131", "domain": 3, "group": "forensics", "front": "Forensic image vs logical copy", "back": "Forensic image: bit-for-bit copy including deleted files, slack and unallocated space. Logical copy: only the visible files and folders."}
+  ],
+  "pbqs": [
+    {
+      "id": "p01", "domain": 1, "type": "select",
+      "q": "An internet-facing server shows a burst of failed logons. Which event shows the attacker's successful logon?",
+      "exhibit": "Security log - FS01 (times UTC)\n2026-03-02 14:02:07  4625  Account: administrator  Type: 3   Src: 203.0.113.45  Status: 0xC000006A\n2026-03-02 14:02:09  4625  Account: admin          Type: 3   Src: 203.0.113.45  Status: 0xC0000064\n2026-03-02 14:02:11  4625  Account: reception      Type: 3   Src: 203.0.113.45  Status: 0xC000006A\n2026-03-02 14:02:40  4624  Account: SYSTEM         Type: 5   Src: -\n2026-03-02 14:03:02  4624  Account: reception      Type: 10  Src: 203.0.113.45\n2026-03-02 14:05:19  4624  Account: jlee           Type: 3   Src: 10.1.20.33",
+      "options": ["14:03:02 - 4624 for reception, logon type 10 from 203.0.113.45", "14:02:40 - 4624 for SYSTEM, logon type 5", "14:05:19 - 4624 for jlee, logon type 3 from 10.1.20.33", "14:02:11 - 4625 for reception, status 0xC000006A"],
+      "answer": 0,
+      "explain": "4624 is a successful logon and type 10 is RemoteInteractive (RDP), from the same external IP that just failed against several accounts. 4625 is a failure (0xC000006A = wrong password for a real account, 0xC0000064 = no such user). Type 5 is a service starting, and jlee's type 3 logon from an internal address looks like normal file share access. With Network Level Authentication, failed RDP attempts are often logged as type 3, as here."
+    },
+    {
+      "id": "p02", "domain": 1, "type": "select",
+      "q": "The secure email gateway quarantined this message. Which authentication check failed, and why?",
+      "exhibit": "Return-Path: <billing@examp1e.com>\nReceived: from mail.examp1e.com (mail.examp1e.com [198.51.100.23])\n        by mx.example.net; Tue, 3 Mar 2026 09:14:22 +1000\nAuthentication-Results: mx.example.net;\n       spf=pass (sender IP is 198.51.100.23) smtp.mailfrom=examp1e.com;\n       dkim=none (message not signed);\n       dmarc=fail (p=reject) header.from=example.com\nFrom: \"Example Property Accounts\" <accounts@example.com>\nReply-To: <accounts.example@example.org>\nTo: <tenant@example.net>\nSubject: Updated bank details for rent payments",
+      "options": ["DMARC: SPF passed only for examp1e.com, which does not align with the From domain example.com, and there is no DKIM signature", "SPF: 198.51.100.23 is not authorised to send mail for examp1e.com", "DKIM: the signature did not match the message body", "SPF: the Reply-To domain example.org has no SPF record"],
+      "answer": 0,
+      "explain": "SPF passed, but for the look-alike envelope domain examp1e.com. DMARC needs SPF or DKIM to pass for a domain aligned with the visible From domain (example.com); neither did, so DMARC failed. SPF never checks Reply-To. The look-alike Return-Path, a Reply-To on a third domain and the 'updated bank details' lure all point to payment redirection fraud."
+    },
+    {
+      "id": "p03", "domain": 1, "type": "select",
+      "q": "Which internal host shows the strongest sign of command-and-control beaconing?",
+      "exhibit": "Web proxy log extract (times AEST, UTC+10)\nTime      Client      Method  URL                                     Status  Bytes\n09:00:04  10.1.5.21   GET     https://www.example.com/news            200     48213\n09:00:05  10.1.5.37   POST    https://cdn.example.net/api/check       200     312\n09:01:05  10.1.5.37   POST    https://cdn.example.net/api/check       200     312\n09:01:41  10.1.5.44   GET     https://files.example.org/report.pdf    200     1873220\n09:02:06  10.1.5.37   POST    https://cdn.example.net/api/check       200     312\n09:03:04  10.1.5.37   POST    https://cdn.example.net/api/check       200     312\n09:03:30  10.1.5.21   GET     https://www.example.com/contact         200     15112\n09:04:05  10.1.5.37   POST    https://cdn.example.net/api/check       200     312",
+      "options": ["10.1.5.37", "10.1.5.44", "10.1.5.21", "None - every request returned HTTP 200"],
+      "answer": 0,
+      "explain": "10.1.5.37 posts to the same URL roughly every 60 seconds (with a second or two of jitter), always with the same small response size. That regular, automated pattern is classic beaconing. One large PDF download is not periodic, the other host is ordinary browsing, and a 200 status only means the server answered."
+    },
+    {
+      "id": "p04", "domain": 1, "type": "select",
+      "q": "Which process in this EDR process tree is the first clear sign of malicious execution?",
+      "exhibit": "EDR process tree - host WS-0142, user jsmith (times UTC)\n05:31:02  explorer.exe (PID 4120)\n05:31:09   └─ outlook.exe (PID 6220)\n05:33:47       └─ winword.exe (PID 7004)  \"C:\\Users\\jsmith\\AppData\\Local\\Microsoft\\Windows\\INetCache\\...\\Invoice_0342.docm\"\n05:33:52           └─ powershell.exe (PID 7388)  -nop -w hidden -enc SQBFAFgAIAAoAE4AZQB3AC0ATwBiAGoAZQBjAHQAIAB...\n05:33:55               └─ rundll32.exe (PID 7512)  C:\\Users\\jsmith\\AppData\\Roaming\\upd.dll,DllRegisterServer",
+      "options": ["winword.exe launching powershell.exe with a hidden, encoded command", "outlook.exe launching winword.exe to open an attachment", "explorer.exe launching outlook.exe", "rundll32.exe loading upd.dll from AppData"],
+      "answer": 0,
+      "explain": "Opening an attachment from Outlook is normal. Word spawning PowerShell with -nop -w hidden -enc is the first clearly malicious step: a macro running a hidden, encoded command (the visible part decodes to IEX (New-Object ..., the start of a typical download cradle). rundll32 loading a DLL from AppData is also malicious, but it happens afterwards as the payload runs."
+    },
+    {
+      "id": "p05", "domain": 1, "type": "order",
+      "q": "Normalise the timestamps in the exhibit to UTC and put the events in the order they happened, earliest first.",
+      "exhibit": "Source      Timestamp as logged          Event\nProxy       2026-04-08 10:09:55 +10:00   10.1.2.15 GET http://198.51.100.9/t.exe\nEDR         2026-04-08 00:01:45 UTC      w3wp.exe spawned cmd.exe /c whoami on 10.1.2.15\nWeb server  2026-04-08 09:59:30 +10:00   POST /upload.aspx 200 from 203.0.113.80\nFirewall    2026-04-07 23:58:10 UTC      Allowed 203.0.113.80 -> 10.1.2.15:443\nWeb server  2026-04-08 10:01:44 +10:00   GET /uploads/img.aspx?c=whoami 200 from 203.0.113.80",
+      "items": ["Firewall allows 203.0.113.80 to reach the web server on 443 (23:58:10 UTC)", "Attacker uploads a file via POST /upload.aspx (23:59:30 UTC)", "Attacker calls the uploaded web shell with c=whoami (00:01:44 UTC)", "EDR sees w3wp.exe spawn cmd.exe /c whoami (00:01:45 UTC)", "The web server downloads t.exe from 198.51.100.9 (00:09:55 UTC)"],
+      "explain": "Subtract 10 hours from the +10:00 entries: 09:59:30 AEST is 23:59:30 UTC on 7 April, 10:01:44 is 00:01:44 UTC and 10:09:55 is 00:09:55 UTC. Sorted, the story makes sense: access allowed, web shell uploaded, web shell used (the web server process spawning cmd.exe one second later), then a second-stage download. Always state the time zone you normalised to."
+    },
+    {
+      "id": "p06", "domain": 2, "type": "select",
+      "q": "Which vulnerability could an unauthenticated attacker exploit over the internet without any action by a user?",
+      "exhibit": "VULN-A  CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H\nVULN-B  CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H\nVULN-C  CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N\nVULN-D  CVSS:3.1/AV:P/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+      "options": ["VULN-A", "VULN-B", "VULN-C", "VULN-D"],
+      "answer": 0,
+      "explain": "VULN-A is AV:N (network), PR:N (no privileges) and UI:N (no user interaction) - the 9.8 Critical pattern. VULN-B needs local access and a low-privileged account (a typical privilege escalation). VULN-C is remote but needs a user to act (UI:R), like clicking a link. VULN-D needs physical access."
+    },
+    {
+      "id": "p07", "domain": 2, "type": "order",
+      "q": "Order these findings by remediation priority, highest first.",
+      "exhibit": "ID     Host      Exposure         CVSS  CISA KEV  EPSS  Public exploit\nV-101  web01     Internet-facing  9.1   No        0.61  Yes\nV-102  vpn-gw01  Internet-facing  8.6   Yes       0.94  Yes\nV-103  hr-db01   Internal only    9.8   No        0.02  No\nV-104  print02   Internal only    6.5   No        0.01  No",
+      "items": ["V-102 - VPN gateway, internet-facing and actively exploited (KEV)", "V-101 - web server, internet-facing with a public exploit and high EPSS", "V-103 - internal HR database, critical score but low exploitation likelihood", "V-104 - internal print server, medium score and no known exploit"],
+      "explain": "Known exploitation in the wild (KEV) on an internet-facing access point comes first, even with the lower CVSS score. Next is the other internet-facing system with a public exploit and a high EPSS probability. The internal HR database has the highest base score and sensitive data but is not exposed and unlikely to be exploited soon, so it follows. The internal printer is last."
+    },
+    {
+      "id": "p08", "domain": 2, "type": "select",
+      "q": "An external scan shows RDP (3389/tcp) open on 198.51.100.20 even though rule 3 denies it. Which rule is responsible?",
+      "exhibit": "Perimeter firewall - inbound rules (processed top-down, first match wins)\n#  Action  Source           Destination       Port/Proto\n1  Allow   any              198.51.100.10     443/tcp\n2  Allow   any              198.51.100.0/24   any\n3  Deny    any              198.51.100.20     3389/tcp\n4  Allow   203.0.113.0/24   198.51.100.30     22/tcp\n5  Deny    any              any               any",
+      "options": ["Rule 2", "Rule 1", "Rule 4", "Rule 5"],
+      "answer": 0,
+      "explain": "Rule 2 allows any source to any port on the whole 198.51.100.0/24 range. Because the first match wins, it matches RDP to .20 before rule 3 is reached, so rule 3 is shadowed and never fires (rule 4 is redundant for the same reason). Fix it by removing or narrowing rule 2, or moving specific denies above it."
+    },
+    {
+      "id": "p09", "domain": 3, "type": "order",
+      "q": "You are collecting evidence from a compromised server that is still running. Put these sources in the order they should be collected, most volatile first.",
+      "items": ["CPU registers and cache", "RAM: running processes, network connections, routing and ARP tables", "Temporary file systems", "Local disk", "Remote logs and monitoring data", "Archived backups"],
+      "explain": "Collect the most volatile data first because it disappears soonest (RFC 3227): registers and cache, then memory and the live system state it holds, temporary file systems, disk, remote logging, and finally archival media, which barely changes."
+    },
+    {
+      "id": "p10", "domain": 3, "type": "order",
+      "q": "Put the NIST SP 800-61 incident response lifecycle phases in order.",
+      "items": ["Preparation", "Detection and Analysis", "Containment, Eradication and Recovery", "Post-Incident Activity"],
+      "explain": "These are the four phases in NIST SP 800-61 Rev. 2, which CS0-003 follows. Post-incident lessons learned feed back into preparation, so the lifecycle is a cycle. (NIST's 2025 Rev. 3 reframes incident response around the CSF 2.0 functions, but the exam uses these four phases.)"
+    },
+    {
+      "id": "p11", "domain": 3, "type": "select",
+      "q": "A finance mailbox was compromised. Which entry shows the attacker hiding their activity from the real user?",
+      "exhibit": "Mailbox audit - accounts@example.com (times UTC)\n2026-05-12 01:14:09  UserLoggedIn       IP 10.1.8.22      Client: Outlook desktop\n2026-05-12 03:40:51  UserLoggedIn       IP 198.51.100.77  Client: Browser  Location: overseas\n2026-05-12 03:42:18  New-InboxRule      Name: \".\"\n                     If subject/body contains \"invoice\" or \"payment\":\n                     move to RSS Feeds, mark as read\n2026-05-12 03:44:02  Send               To: payables@example.net  Subject: RE: Invoice 3381 - updated bank details\n2026-05-12 05:02:37  MailItemsAccessed  IP 10.1.8.22      Client: Outlook desktop",
+      "options": ["03:42:18 - New-InboxRule moving invoice and payment emails to RSS Feeds and marking them read", "03:40:51 - UserLoggedIn from 198.51.100.77 overseas", "03:44:02 - Send to payables@example.net with updated bank details", "05:02:37 - MailItemsAccessed from Outlook desktop"],
+      "answer": 0,
+      "explain": "A rule with a meaningless name that moves invoice and payment replies to a folder nobody checks, and marks them read, stops the real user seeing replies to the fraud. The overseas sign-in is the initial access and the Send is the fraud itself; neither hides anything. The 05:02 entry is the real user on their usual internal address. Remove the rule as part of eradication, not just the password reset."
+    },
+    {
+      "id": "p12", "domain": 3, "type": "select",
+      "q": "An EDR alert fires on a workstation. What should the analyst do first?",
+      "exhibit": "EDR alert - WS-0219 (times UTC)\nSeverity: Critical   Detection: Ransomware behaviour\n06:12:40  vssadmin.exe delete shadows /all /quiet\n06:12:58  Mass file rename: 1,412 files -> *.locked on mapped drive S: (\\\\fs02\\shared)\n06:13:05  Host status: online, powered on, user logged in\nAnalyst action required",
+      "options": ["Network-isolate the workstation from the EDR console, leaving it powered on", "Shut the workstation down immediately to stop the encryption", "Reimage the workstation from the golden image", "Start a full antivirus scan and wait for the result"],
+      "answer": 0,
+      "explain": "The host is actively encrypting a shared drive, so cut it off from the network now. Isolating through the EDR stops the spread while keeping RAM (which may hold keys and the running process) for collection. Shutting down loses that volatile evidence, reimaging destroys it entirely, and a scan wastes time while encryption continues."
+    },
+    {
+      "id": "p13", "domain": 4, "type": "select",
+      "q": "The KPI target is 90% of critical findings closed within the 14-day SLA. Which statement for the quarterly report is accurate?",
+      "exhibit": "Critical vulnerability remediation - Q3 (SLA: 14 days)\nMonth  Opened  Closed within SLA  Closed late  Still open (overdue)\nJul    12      10                 2            0\nAug    15      12                 1            2\nSep    13      11                 0            2\nTotal  40      33                 3            4",
+      "options": ["82.5% were closed within SLA, below the 90% target, and 4 criticals remain open and overdue", "92.5% were closed within SLA, so the target was met", "SLA compliance improved in every month of the quarter", "No critical findings are currently overdue"],
+      "answer": 0,
+      "explain": "33 of 40 closed within 14 days is 82.5%. The 92.5% figure (37 of 40) wrongly counts late closures as compliant. Monthly compliance went 83%, 80%, 85%, so it did not improve every month, and the overdue column shows 4 still open."
+    },
+    {
+      "id": "p14", "domain": 4, "type": "select",
+      "q": "An attacker had access to a property manager's mailbox for two days. Audit logs show they opened emails containing tenants' driver's licence scans. Using the matrix, what is the correct classification?",
+      "exhibit": "Severity matrix (excerpt from the IR plan)\nSev 1 Critical: confirmed data breach involving personal information,\n                OR ransomware on more than one system.\n                Notify: CISO, Legal and executive team within 1 hour.\nSev 2 High:     confirmed compromise of one account or host, no evidence of data access.\n                Notify: SOC manager and IT manager within 4 hours.\nSev 3 Medium:   malware blocked or automatically contained, no compromise.\n                Notify: SOC queue, review next business day.\nSev 4 Low:      policy violation or suspicious activity with no impact.\n                Notify: ticket only.",
+      "options": ["Sev 1: notify the CISO, Legal and the executive team within 1 hour", "Sev 2: only one account was compromised, so notify the SOC manager and IT manager within 4 hours", "Sev 2 for now, escalating to Sev 1 only once forensics proves data was copied out", "Sev 3: the account has already been contained"],
+      "answer": 0,
+      "explain": "Unauthorised access to personal information is a data breach even if nothing was proven to be copied out, which meets the Sev 1 criteria. Escalating within the hour lets Legal start the Notifiable Data Breaches assessment. Waiting for perfect forensic certainty delays decisions the matrix says leaders must make now."
+    },
+    {
+      "id": "p15", "domain": 4, "type": "select",
+      "q": "Which sentence is most appropriate for the executive summary of this incident's report?",
+      "exhibit": "Incident IR-2026-014 - confirmed facts (times AEST)\n14 May 08:12  Staff member entered their password on a phishing page\n14 May 08:20  Attacker signed in from 198.51.100.77 via legacy IMAP (no MFA prompt)\n14 May 08:20-11:05  312 emails accessed, 18 containing tenant personal information\n14 May 11:05  Account disabled, sessions revoked, legacy authentication blocked\nStatus: contained. Privacy assessment under way with Legal.",
+      "options": ["An attacker accessed one staff email account for about three hours on 14 May and viewed some tenant personal information. The account is now secured, and Legal is assessing whether affected tenants and the regulator must be notified.", "At 08:20 AEST the threat actor authenticated from 198.51.100.77 over IMAP, where legacy protocols bypass MFA enforcement.", "The incident was caused by a careless staff member who fell for an obvious phishing email.", "No customer data was affected and no further action is required."],
+      "answer": 0,
+      "explain": "An executive summary gives impact, status and the decision or next step in plain language. The IMAP detail is accurate but belongs in the technical timeline. Blaming the user misstates the root cause (legacy authentication without MFA), and the last option contradicts the confirmed facts."
+    }
   ]
 }
