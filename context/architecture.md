@@ -8,6 +8,7 @@ Sec-Pulse is a static site. There is no server of our own and no database. Three
 ┌──────────────────────── GitHub Actions (scheduled) ─────────────────────────┐
 │ fetch-news.yml   every 3h   → scripts/fetch_news.py → commit data/news.json │
 │ morning-brief.yml 6:30 AEST → fetch_news.py + commit → scripts/send_brief.py│
+│ weekly-digest.yml Sun 6pm  → fetch_news.py + commit → scripts/send_digest.py│
 └──────────────────────────────────────┬──────────────────────────────────────┘
                                        │ git push → Pages rebuild
                                        ▼
@@ -40,8 +41,9 @@ It's a single-user personal tool, and `localStorage` is enough. The cost is that
 | `data/cysa.json` | Hand-written study content (domains, lessons, quizzes, flashcards) | [study-content.md](study-content.md) |
 | `scripts/sources.json` | Feed list + keyword groups for relevance scoring | [news-pipeline.md](news-pipeline.md) |
 | `scripts/fetch_news.py` | Fetch, parse, score, dedupe, write `news.json` | [news-pipeline.md](news-pipeline.md) |
-| `scripts/send_brief.py` | Build and send the morning ntfy notification | [morning-brief.md](morning-brief.md) |
-| `.github/workflows/*.yml` | The two schedules | [news-pipeline.md](news-pipeline.md), [morning-brief.md](morning-brief.md) |
+| `scripts/send_brief.py` | Build and send the morning ntfy notification (helpers reused by `send_digest.py`) |
+| `scripts/send_digest.py` | Build and send the Sunday weekly digest | [morning-brief.md](morning-brief.md) | [morning-brief.md](morning-brief.md) |
+| `.github/workflows/*.yml` | The three schedules | [news-pipeline.md](news-pipeline.md), [morning-brief.md](morning-brief.md) |
 | `sw.js` | Network-first service worker (offline fallback) | [app.md](app.md#service-worker) |
 | `manifest.json`, `assets/icons/` | PWA install metadata and icons | [app.md](app.md#pwa--install) |
 | `.nojekyll` | Tells Pages to skip Jekyll | - |
