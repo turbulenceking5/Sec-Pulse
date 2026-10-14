@@ -13,12 +13,39 @@
 <link rel="manifest" href="manifest.json?v=1">
 <link rel="apple-touch-icon" href="assets/icons/icon-180.png?v=1">
 <link rel="icon" href="assets/icons/icon-192.png?v=1">
+<script>
+// Theme before first paint (no flash). sp_theme: "system" (default) | "dark" | "light". Re-run by the Settings picker.
+(function(){
+  var mq = window.matchMedia ? matchMedia('(prefers-color-scheme: light)') : null;
+  function apply(){
+    var p = null; try{ p = JSON.parse(localStorage.getItem('sp_theme')); }catch(e){}
+    var t = p === 'light' || p === 'dark' ? p : (mq && mq.matches ? 'light' : 'dark');
+    document.documentElement.setAttribute('data-theme', t);
+    var m = document.querySelector('meta[name=theme-color]'); if (m) m.setAttribute('content', t === 'light' ? '#f3f6fa' : '#0b1220');
+    // iOS reads this at launch: dark text on a light status bar in light mode (takes effect next time the app opens).
+    var s = document.querySelector('meta[name=apple-mobile-web-app-status-bar-style]'); if (s) s.setAttribute('content', t === 'light' ? 'default' : 'black-translucent');
+    return t;
+  }
+  window.applyTheme = apply; apply();
+  if (mq){ try{ mq.addEventListener('change', apply); }catch(e){ try{ mq.addListener(apply); }catch(e2){} } }
+})();
+</script>
 <style>
 :root{
   --bg:#0b1220; --surface:#121c2e; --surface2:#17243a; --border:#22314a;
-  --text:#e6edf7; --muted:#8da2c0; --accent:#38e1c8; --accent-dim:rgba(56,225,200,.14);
+  --text:#e6edf7; --muted:#8da2c0; --accent:#38e1c8; --accent-dim:rgba(56,225,200,.14); --accent-line:rgba(56,225,200,.4);
   --warn:#f5b84b; --danger:#ff6b6b; --ok:#5ad08a; --au:#f5b84b;
-  --radius:14px; --nav-h:62px;
+  --warn-dim:rgba(245,184,75,.1); --warn-line:rgba(245,184,75,.42); --danger-dim:rgba(255,107,107,.12); --danger-line:rgba(255,107,107,.42);
+  --ok-dim:rgba(90,208,138,.12); --on-accent:#06221d; --glass:rgba(11,18,32,.94);
+  --radius:14px; --nav-h:62px; color-scheme:dark;
+}
+/* Light theme: set on <html data-theme="light"> by the head script (System follows prefers-color-scheme). */
+:root[data-theme=light]{
+  --bg:#f3f6fa; --surface:#ffffff; --surface2:#eaf0f6; --border:#d3dce8;
+  --text:#0f1b2d; --muted:#53647c; --accent:#077a6b; --accent-dim:rgba(7,122,107,.1); --accent-line:rgba(7,122,107,.45);
+  --warn:#9a5b00; --danger:#c42b2b; --ok:#1d7f45; --au:#9a5b00;
+  --warn-dim:rgba(154,91,0,.08); --warn-line:rgba(154,91,0,.4); --danger-dim:rgba(196,43,43,.08); --danger-line:rgba(196,43,43,.4);
+  --ok-dim:rgba(29,127,69,.1); --on-accent:#ffffff; --glass:rgba(243,246,250,.94); color-scheme:light;
 }
 [hidden]{display:none!important}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
@@ -26,7 +53,7 @@ html,body{margin:0;background:var(--bg);color:var(--text);font:15px/1.5 -apple-s
 body{padding-bottom:calc(var(--nav-h) + env(safe-area-inset-bottom) + 12px);min-height:100vh}
 button{font:inherit;color:inherit;cursor:pointer}
 a{color:var(--accent)}
-header{position:sticky;top:0;z-index:20;background:rgba(11,18,32,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+header{position:sticky;top:0;z-index:20;background:var(--glass);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
   border-bottom:1px solid var(--border);padding:calc(10px + env(safe-area-inset-top)) 16px 10px;display:flex;align-items:center;gap:10px}
 header h1{font-size:18px;margin:0;letter-spacing:.3px;flex:1;display:flex;align-items:center;gap:8px}
 header h1 img{width:26px;height:26px;border-radius:7px}
@@ -42,11 +69,11 @@ h2:first-child{margin-top:4px}
 .grow{flex:1;min-width:0}
 .muted{color:var(--muted)}.small{font-size:13px}
 .pill{display:inline-flex;align-items:center;gap:5px;background:var(--surface2);border:1px solid var(--border);border-radius:999px;padding:3px 10px;font-size:12px;color:var(--muted);white-space:nowrap}
-.pill.accent{color:var(--accent);border-color:rgba(56,225,200,.4);background:var(--accent-dim)}
-.pill.au{color:var(--au);border-color:rgba(245,184,75,.45);background:rgba(245,184,75,.1)}
-.pill.danger{color:var(--danger);border-color:rgba(255,107,107,.45);background:rgba(255,107,107,.1)}
+.pill.accent{color:var(--accent);border-color:var(--accent-line);background:var(--accent-dim)}
+.pill.au{color:var(--au);border-color:var(--warn-line);background:var(--warn-dim)}
+.pill.danger{color:var(--danger);border-color:var(--danger-line);background:var(--danger-dim)}
 .btn{background:var(--surface2);border:1px solid var(--border);border-radius:12px;padding:10px 14px;font-weight:600}
-.btn.primary{background:var(--accent);color:#06221d;border-color:var(--accent)}
+.btn.primary{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
 .btn.block{width:100%;display:block;text-align:center}
 .btn:disabled{opacity:.45}
 .greet{font-size:22px;font-weight:700;margin:2px 0 2px}
@@ -68,12 +95,11 @@ h2:first-child{margin-top:4px}
 .news-sum{font-size:13.5px;color:var(--muted);margin:6px 0 0;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
 .tag{font-size:11px;padding:2px 8px;border-radius:6px;background:var(--surface2);color:var(--muted);border:1px solid var(--border)}
-.tag.hot{color:var(--danger);border-color:rgba(255,107,107,.4)}
-.tag.re{color:var(--accent);border-color:rgba(56,225,200,.4)}
+.tag.hot{color:var(--danger);border-color:var(--danger-line)}
+.tag.re{color:var(--accent);border-color:var(--accent-line)}
 .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);flex:none}
 .save-btn{position:absolute;top:10px;right:8px;background:none;border:0;padding:6px;color:var(--muted)}
 .save-btn.on{color:var(--warn)}
-.news-item .news-meta{padding-right:30px}
 .score{font-variant-numeric:tabular-nums}
 .empty{text-align:center;color:var(--muted);padding:30px 10px}
 
@@ -83,11 +109,11 @@ h2:first-child{margin-top:4px}
 .lesson-row{display:flex;align-items:center;gap:12px;padding:12px 4px;border-bottom:1px solid var(--border);width:100%;background:none;border-left:0;border-right:0;border-top:0;text-align:left}
 .lesson-row:last-child{border-bottom:0}
 .check{width:22px;height:22px;border-radius:50%;border:2px solid var(--border);flex:none;display:flex;align-items:center;justify-content:center;font-size:13px}
-.check.done{background:var(--accent);border-color:var(--accent);color:#06221d}
-.lesson-id{font-variant-numeric:tabular-nums;color:var(--muted);font-size:13px;width:28px;flex:none}
+.check.done{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.lesson-id{font-variant-numeric:tabular-nums;color:var(--muted);font-size:13px;min-width:34px;flex:none}
 .box{border-radius:12px;padding:12px;margin:12px 0;font-size:14px}
-.box.tip{background:var(--accent-dim);border:1px solid rgba(56,225,200,.35)}
-.box.job{background:rgba(245,184,75,.08);border:1px solid rgba(245,184,75,.35)}
+.box.tip{background:var(--accent-dim);border:1px solid var(--accent-line)}
+.box.job{background:var(--warn-dim);border:1px solid var(--warn-line)}
 .box b{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.6px;margin-bottom:4px}
 .box.tip b{color:var(--accent)}.box.job b{color:var(--warn)}
 .points{padding-left:18px;margin:8px 0}.points li{margin-bottom:8px}
@@ -95,8 +121,8 @@ h2:first-child{margin-top:4px}
 /* quiz */
 .q-text{font-weight:600;margin:4px 0 12px}
 .opt{display:block;width:100%;text-align:left;background:var(--surface2);border:1px solid var(--border);border-radius:12px;padding:11px 12px;margin-bottom:8px}
-.opt.correct{border-color:var(--ok);background:rgba(90,208,138,.12)}
-.opt.wrong{border-color:var(--danger);background:rgba(255,107,107,.12)}
+.opt.correct{border-color:var(--ok);background:var(--ok-dim)}
+.opt.wrong{border-color:var(--danger);background:var(--danger-dim)}
 .opt:disabled{cursor:default;color:var(--text)}
 .explain{font-size:13.5px;color:var(--muted);margin:4px 0 12px}
 .q-progress{font-size:12px;color:var(--muted);margin-bottom:6px}
@@ -113,7 +139,7 @@ h2:first-child{margin-top:4px}
 .boxes b{display:block;color:var(--text);font-size:15px}
 
 /* nav */
-nav{position:fixed;left:0;right:0;bottom:0;z-index:30;background:rgba(11,18,32,.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+nav{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--glass);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
   border-top:1px solid var(--border);display:flex;padding:6px 6px calc(6px + env(safe-area-inset-bottom))}
 nav button{flex:1;background:none;border:0;display:flex;flex-direction:column;align-items:center;gap:2px;font-size:11px;color:var(--muted);padding:4px 0;position:relative}
 nav button.on{color:var(--accent)}
@@ -123,7 +149,7 @@ nav svg{width:24px;height:24px}
 /* sheet */
 #sheet{position:fixed;inset:0;z-index:50;background:var(--bg);overflow-y:auto;display:none;-webkit-overflow-scrolling:touch}
 #sheet.open{display:block}
-#sheet-head{position:sticky;top:0;background:rgba(11,18,32,.95);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--border);
+#sheet-head{position:sticky;top:0;background:var(--glass);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--border);
   padding:calc(10px + env(safe-area-inset-top)) 12px 10px;display:flex;align-items:center;gap:8px;z-index:2}
 #sheet-title{font-weight:700;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 #sheet-body{max-width:720px;margin:0 auto;padding:16px 16px calc(40px + env(safe-area-inset-bottom))}
@@ -146,7 +172,7 @@ button.pill{font-size:12px}
 .also-list{margin:6px 0 0;padding-left:18px;font-size:13px}
 .also-list li{margin-bottom:4px;overflow-wrap:anywhere}
 .linkish{background:none;border:0;padding:0;color:var(--accent);font-size:inherit}
-.field{width:100%;min-width:0;background:var(--surface2);border:1px solid var(--border);border-radius:12px;padding:9px 12px;color:var(--text);font:inherit;color-scheme:dark}
+.field{width:100%;min-width:0;background:var(--surface2);border:1px solid var(--border);border-radius:12px;padding:9px 12px;color:var(--text);font:inherit}
 .wrap{flex-wrap:wrap}
 .mute-note{margin:-4px 0 10px}
 code{background:var(--surface2);padding:1px 6px;border-radius:6px;font-size:13px;word-break:break-all}
@@ -155,7 +181,7 @@ code{background:var(--surface2);padding:1px 6px;border-radius:6px;font-size:13px
 @keyframes spin{to{transform:rotate(360deg)}}
 /* XP / analyst rank */
 .rank-card{width:100%;text-align:left;gap:12px;margin-top:12px}
-.rank-badge{flex:none;width:48px;height:48px;border-radius:12px;background:var(--accent-dim);border:1px solid rgba(56,225,200,.4);display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1}
+.rank-badge{flex:none;width:48px;height:48px;border-radius:12px;background:var(--accent-dim);border:1px solid var(--accent-line);display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1}
 .rank-badge b{font-size:19px;color:var(--accent);font-variant-numeric:tabular-nums}
 .rank-badge span{font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:.6px;margin-top:2px}
 .rank-badge.big{width:72px;height:72px}.rank-badge.big b{font-size:30px}
@@ -169,6 +195,37 @@ code{background:var(--surface2);padding:1px 6px;border-radius:6px;font-size:13px
 .md li.done{color:var(--muted)}
 .links{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
 .links a{text-decoration:none}
+/* PBQs: exhibit scrolls inside its own box, never the page */
+.exhibit{margin:0 0 12px;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;background:var(--surface2);border:1px solid var(--border);border-radius:10px;
+  padding:10px 12px;font:12.5px/1.45 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;white-space:pre;color:var(--text)}
+.order-list{list-style:none;margin:0 0 10px;padding:0}
+.order-item{display:flex;align-items:center;gap:8px;background:var(--surface2);border:1px solid var(--border);border-radius:12px;padding:6px 6px 6px 10px;margin-bottom:8px}
+.order-item.correct{border-color:var(--ok);background:var(--ok-dim)}.order-item.wrong{border-color:var(--danger);background:var(--danger-dim)}
+.order-item .n{flex:none;width:22px;font-weight:700;color:var(--muted);font-variant-numeric:tabular-nums}
+.order-item .t{flex:1;min-width:0;overflow-wrap:anywhere}
+.mv{flex:none;width:40px;height:40px;border-radius:10px;background:var(--surface);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:15px}
+.mv:disabled{opacity:.3}
+.scaled{margin-top:14px;padding:12px;border:1px solid var(--border);border-radius:12px;background:var(--surface2);text-align:center}
+.scaled b{font-size:24px;font-variant-numeric:tabular-nums}
+/* daily quests */
+.quest{display:block;width:100%;background:none;border:0;padding:0;text-align:left;margin-bottom:10px}
+.quest.done .grow{color:var(--muted);text-decoration:line-through}
+.bar.thin{height:4px;margin-top:5px}.quest.done .bar i{background:var(--ok)}
+/* pull to refresh */
+#ptr{height:0;overflow:hidden;display:flex;align-items:flex-end;justify-content:center;gap:8px;font-size:13px;color:var(--muted)}
+#ptr.anim{transition:height .2s}
+#ptr svg{width:18px;height:18px;margin-bottom:12px;transition:transform .15s}
+#ptr span{margin-bottom:12px}
+#ptr.ready svg{transform:rotate(180deg)}#ptr.busy svg{animation:spin .8s linear infinite}
+html.ptr-on{overscroll-behavior-y:contain}
+/* read later + notes */
+.later-btn{position:absolute;top:10px;right:40px;background:none;border:0;padding:6px;color:var(--muted);display:flex}
+.later-btn.on{color:var(--accent)}
+.later-btn svg{width:18px;height:18px}
+.news-item .news-meta{padding-right:66px}
+.note{margin-top:10px;padding:8px 10px;border-left:3px solid var(--warn);background:var(--warn-dim);border-radius:6px;font-size:13.5px;white-space:pre-wrap;overflow-wrap:anywhere}
+.note-edit textarea{width:100%;min-height:70px;resize:vertical;margin-top:10px}
+.seg{display:flex;gap:6px}.seg .btn{flex:1;padding:9px 6px}.seg .btn.on{background:var(--accent-dim);border-color:var(--accent);color:var(--accent)}
 </style>
 </head>
 <body>
@@ -193,6 +250,7 @@ code{background:var(--surface2);padding:1px 6px;border-radius:6px;font-size:13px
       <div class="stat"><b id="st-lessons">0</b><span>lessons done</span></div>
     </div>
     <div id="brief-rank"></div>
+    <div id="brief-quests"></div>
     <div id="brief-exam" style="margin-top:10px"></div>
     <h2>Top for you</h2>
     <div id="brief-top"><div class="empty">Loading news…</div></div>
@@ -204,6 +262,7 @@ code{background:var(--surface2);padding:1px 6px;border-radius:6px;font-size:13px
   </section>
 
   <section class="view" id="view-news">
+    <div id="ptr" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg><span>Pull to refresh</span></div>
     <div class="chips" id="news-filters"></div>
     <input class="search" id="news-search" type="search" placeholder="Search headlines, sources, tags…" autocomplete="off">
     <div id="news-list"></div>
@@ -221,6 +280,7 @@ code{background:var(--surface2);padding:1px 6px;border-radius:6px;font-size:13px
       <button class="btn grow" id="practice-exam">Practice exam · 30</button>
     </div>
     <button class="btn block" id="review-quiz" style="margin-top:8px">Review mistakes</button>
+    <button class="btn block" id="pbq-practice" style="margin-top:8px" hidden>PBQ practice</button>
     <div id="course-link"></div>
     <div id="domains"></div>
   </section>
@@ -291,7 +351,7 @@ function currentStreak(){
 
 /* ---------- XP + analyst rank: every study action (and reading the news) earns XP ---------- */
 // Per-day caps stop farming: each question/card earns once a day, story reads cap at READ_CAP.
-const XP = {right: 10, wrong: 3, cardRight: 5, cardWrong: 1, lesson: 50, read: 2, exam: 25, quiz: 10};
+const XP = {right: 10, wrong: 3, pbqRight: 20, pbqWrong: 5, cardRight: 5, cardWrong: 1, lesson: 50, read: 2, exam: 25, quiz: 10};
 const READ_CAP = 25;
 const RANKS = [[1, 'Trainee Analyst'], [3, 'SOC Analyst (Tier 1)'], [6, 'SOC Analyst (Tier 2)'], [10, 'Incident Responder'],
   [15, 'Threat Hunter'], [20, 'Senior Analyst'], [25, 'Detection Engineer'], [30, 'SOC Lead'], [40, 'Security Architect'], [50, 'Cyber Legend']];
@@ -336,6 +396,7 @@ function gainXP(n, skill, once){
     const promo = rankOf(after) !== rankOf(before);
     setTimeout(() => toast(`Level up! Lv ${after}${promo ? ' · promoted to ' + rankOf(after) : ''}`), 300);
   }
+  checkQuests();
   renderRank();
   return n;
 }
@@ -345,6 +406,51 @@ function readXP(){
   return gainXP(XP.read, 'intel');
 }
 const xpTag = n => n ? ` <span class="xp">+${n} XP</span>` : '';
+
+/* ---------- daily quests: optional goals for bonus XP, reset on the Brisbane date, each paid once a day ---------- */
+// Questions/cards count the unique ones answered today (sp_xp.today.q/.c), so repeats don't farm a quest either.
+const QUESTS = [
+  {id: 'q10', label: 'Answer 10 questions', goal: 10, xp: 30, n: x => x.today.q.length, go: () => show('learn')},
+  {id: 'c10', label: 'Review 10 flashcards', goal: 10, xp: 30, n: x => x.today.c.length, go: () => show('cards')},
+  {id: 'au3', label: 'Read 3 Australian stories', goal: 3, xp: 20, n: (x, s) => s.au.length, go: () => { newsFilter = 'au'; store.set('filter', 'au'); show('news'); }},
+  {id: 'lesson', label: 'Finish a lesson', goal: 1, xp: 40, n: (x, s) => s.lessons.length,
+    go: () => CYSA && openLesson((CYSA.lessons.find(l => !store.get('lessons', {})[l.id]) || CYSA.lessons[ordinal(todayKey()) % CYSA.lessons.length]).id)}
+];
+function getQuests(){
+  const s = store.get('quests', null), t = todayKey();
+  if (!s || typeof s !== 'object' || s.date !== t) return {date: t, au: [], lessons: [], done: []};
+  ['au', 'lessons', 'done'].forEach(k => { if (!Array.isArray(s[k])) s[k] = []; });
+  return s;
+}
+// kind: 'au' (Australian story opened today) or 'lessons' (lesson finished today).
+function questTick(kind, id){
+  const s = getQuests();
+  if (!s[kind].includes(id)){ s[kind].push(id); store.set('quests', s); }
+  checkQuests(); renderQuests();
+}
+let questBusy = false;
+function checkQuests(){
+  if (questBusy) return; // the bonus itself goes through gainXP, which calls back here
+  const x = getXP(); if (!x) return;
+  const s = getQuests(), fresh = QUESTS.filter(q => !s.done.includes(q.id) && q.n(x, s) >= q.goal);
+  if (!fresh.length) return;
+  s.done.push(...fresh.map(q => q.id)); store.set('quests', s);
+  questBusy = true;
+  try{ fresh.forEach(q => gainXP(q.xp)); }finally{ questBusy = false; }
+  const all = QUESTS.every(q => s.done.includes(q.id));
+  setTimeout(() => toast(`Quest complete: ${fresh.map(q => q.label).join(', ')} +${fresh.reduce((a, q) => a + q.xp, 0)} XP${all ? ' · all done today!' : ''}`), 1600);
+}
+function renderQuests(){
+  const el = $('#brief-quests'); if (!el) return;
+  const x = getXP(); if (!x){ el.innerHTML = ''; return; }
+  const s = getQuests(), nDone = QUESTS.filter(q => s.done.includes(q.id)).length;
+  el.innerHTML = `<div class="card" id="quests"><div class="row small" style="margin-bottom:10px"><b class="grow">Daily quests</b><span class="muted">${nDone}/${QUESTS.length} done · resets at midnight</span></div>
+    ${QUESTS.map(q => { const v = Math.min(q.goal, q.n(x, s)), done = s.done.includes(q.id);
+      return `<button class="quest${done ? ' done' : ''}" data-q="${q.id}"><div class="row small"><span class="grow">${done ? '✓ ' : ''}${esc(q.label)}</span>
+        <span class="muted">${v}/${q.goal}</span><span class="xp">+${q.xp} XP</span></div><div class="bar thin"><i style="width:${(v / q.goal * 100).toFixed(0)}%"></i></div></button>`; }).join('')}
+    <div class="small muted" style="margin-top:8px">Optional bonus goals. Tap one to jump to it.</div></div>`;
+  el.querySelectorAll('.quest').forEach(b => b.onclick = () => QUESTS.find(q => q.id === b.dataset.q).go());
+}
 function renderRank(){
   const el = $('#brief-rank'), x = getXP();
   if (!el || !x){ if (el) el.innerHTML = ''; return; }
@@ -354,6 +460,7 @@ function renderRank(){
     <div class="bar"><i style="width:${((x.total - lo) / (hi - lo) * 100).toFixed(1)}%"></i></div>
     <div class="small muted" style="margin-top:4px">${x.total - lo} / ${hi - lo} XP to Lv ${L + 1}</div></div></button>`;
   $('#rank-card').onclick = openProfile;
+  renderQuests();
 }
 function openProfile(){
   const x = getXP(); if (!x) return;
@@ -370,11 +477,13 @@ function openProfile(){
     <h2>How to earn XP</h2>
     <div class="card small"><table>
       <tr><td>Answer a quiz question</td><td style="text-align:right">+${XP.right} right · +${XP.wrong} wrong</td></tr>
+      <tr><td>Answer a PBQ</td><td style="text-align:right">+${XP.pbqRight} right · +${XP.pbqWrong} wrong</td></tr>
       <tr><td>Answer a flashcard</td><td style="text-align:right">+${XP.cardRight} right · +${XP.cardWrong} wrong</td></tr>
       <tr><td>Complete a lesson (first time)</td><td style="text-align:right">+${XP.lesson}</td></tr>
       <tr><td>Finish a practice exam / quiz round</td><td style="text-align:right">+${XP.exam} / +${XP.quiz}</td></tr>
       <tr><td>Read a news story (up to ${READ_CAP} a day)</td><td style="text-align:right">+${XP.read}</td></tr>
-      <tr><td>First study of the day</td><td style="text-align:right">+10, +2 per streak day (max +30)</td></tr></table>
+      <tr><td>First study of the day</td><td style="text-align:right">+10, +2 per streak day (max +30)</td></tr>
+      ${QUESTS.map(q => `<tr><td>Daily quest: ${esc(q.label.toLowerCase())}</td><td style="text-align:right">+${q.xp}</td></tr>`).join('')}</table>
       <p class="muted" style="margin-bottom:0">Each question and card earns XP once a day, so repeats are practice, not grinding. Skills level up from the XP earned in each exam domain; reading news trains Threat Intel.</p></div>
     <h2>Rank ladder</h2>
     <div class="card small"><table class="ladder">${RANKS.map((r, i) => { const here = L >= r[0] && (!RANKS[i + 1] || L < RANKS[i + 1][0]);
@@ -432,9 +541,12 @@ function epssOf(i){ return typeof i.epss === 'number' && isFinite(i.epss) && i.e
 function epssPct(e){ const p = e * 100; return p < 1 ? '<1%' : Math.round(p) + '%'; }
 function hostOf(u){ try{ return new URL(u).hostname; }catch(e){ return u; } }
 function alsoOf(i){ return Array.isArray(i.also) ? i.also.filter(a => a && isUrl(a.url)) : []; }
-function newsCard(i){
+const LATER_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>';
+// opts.notes: show the note line (Saved filter). Called via .map(newsCard) too, so opts may be an index.
+function newsCard(i, opts){
   const read = store.get('read', []).includes(i.id);
-  const saved = !!store.get('saved', {})[i.id];
+  const saved = !!store.get('saved', {})[i.id], later = !!store.get('later', {})[i.id];
+  const notes = !!(opts && opts.notes);
   const tags = i.tags.filter(t => t !== 'Australia').slice(0, 4)
     .map(t => `<span class="tag ${HOT.has(t) ? 'hot' : RE.has(t) ? 're' : ''}">${esc(t)}</span>`).join('');
   const epss = epssOf(i), also = alsoOf(i);
@@ -449,27 +561,60 @@ function newsCard(i){
     ${tags ? `<button class="tags why" aria-label="Why this ranked">${tags}</button>` : ''}
     ${also.length ? `<button class="also-btn">+${also.length} more source${also.length === 1 ? '' : 's'}</button>
       <ul class="also-list" hidden>${also.map(a => `<li><a href="${esc(a.url)}" target="_blank" rel="noopener noreferrer">${esc(a.source || hostOf(a.url))}</a></li>`).join('')}</ul>` : ''}
+    ${notes ? '<div class="note-wrap"></div>' : ''}
+    <button class="later-btn ${later ? 'on' : ''}" aria-label="Read later" aria-pressed="${later}" title="Read later">${LATER_SVG}</button>
     <button class="save-btn ${saved ? 'on' : ''}" aria-label="Save">${saved ? '★' : '☆'}</button>
   </div>`;
 }
-const findItem = id => NEWS.items.find(x => x.id === id) || store.get('saved', {})[id];
+const findItem = id => NEWS.items.find(x => x.id === id) || store.get('saved', {})[id] || store.get('later', {})[id];
+/* ---------- notes on saved stories (sp_notes, on this device only) ---------- */
+const NOTE_MAX = 500;
+function getNotes(){ const n = store.get('notes', {}); return n && typeof n === 'object' && !Array.isArray(n) ? n : {}; }
+function drawNote(wrap, id, editing){
+  const note = getNotes()[id] || '';
+  if (!editing){
+    wrap.innerHTML = `${note ? `<div class="note">${esc(note)}</div>` : ''}<button class="linkish small note-btn" style="margin-top:8px">${note ? '✎ Edit note' : '+ Add note'}</button>`;
+    wrap.querySelector('.note-btn').onclick = () => drawNote(wrap, id, true);
+    return;
+  }
+  wrap.innerHTML = `<div class="note-edit"><textarea class="field" maxlength="${NOTE_MAX}" placeholder="Why you saved it, what to follow up…" aria-label="Note">${esc(note)}</textarea>
+    <div class="row wrap" style="gap:8px;margin-top:8px"><button class="btn primary note-save">Save note</button><button class="btn note-cancel">Cancel</button>
+    <span class="small muted">Stays on this device.</span></div></div>`;
+  const ta = wrap.querySelector('textarea'); ta.focus();
+  wrap.querySelector('.note-save').onclick = () => {
+    const v = ta.value.trim().slice(0, NOTE_MAX), n = getNotes();
+    if (v) n[id] = v; else delete n[id];
+    store.set('notes', n); toast(v ? 'Note saved' : 'Note removed'); drawNote(wrap, id, false);
+  };
+  wrap.querySelector('.note-cancel').onclick = () => drawNote(wrap, id, false);
+}
 function wireNewsList(root){
   root.querySelectorAll('.news-item').forEach(el => {
     const id = el.dataset.id;
     el.querySelector('.news-title').addEventListener('click', () => {
       const read = store.get('read', []);
       if (!read.includes(id)){ read.push(id); store.set('read', read.slice(-1500)); readXP(); }
+      const it = findItem(id); if (it && it.region === 'AU') questTick('au', id);
       el.classList.add('read'); el.querySelector('.dot')?.remove();
     });
     el.querySelector('.save-btn').addEventListener('click', e => {
       const saved = store.get('saved', {});
       if (saved[id]) delete saved[id];
-      else saved[id] = NEWS.items.find(x => x.id === id) || Object.values(saved).find(x => x.id === id);
+      else { const it = findItem(id); if (it) saved[id] = it; }
       store.set('saved', saved);
       e.currentTarget.classList.toggle('on', !!saved[id]);
       e.currentTarget.textContent = saved[id] ? '★' : '☆';
       toast(saved[id] ? 'Saved' : 'Removed from saved');
     });
+    el.querySelector('.later-btn').addEventListener('click', e => {
+      const later = store.get('later', {});
+      if (later[id]) delete later[id];
+      else { const it = findItem(id); if (it) later[id] = it; }
+      store.set('later', later);
+      const b = e.currentTarget; b.classList.toggle('on', !!later[id]); b.setAttribute('aria-pressed', !!later[id]);
+      toast(later[id] ? 'Added to Read later' : 'Removed from Read later');
+    });
+    const nw = el.querySelector('.note-wrap'); if (nw) drawNote(nw, id, false);
     el.querySelectorAll('.why').forEach(w => w.onclick = () => openWhy(id));
     const ab = el.querySelector('.also-btn');
     if (ab) ab.onclick = () => { const ul = el.querySelector('.also-list'); ul.hidden = !ul.hidden; };
@@ -628,14 +773,16 @@ function renderBrief(){
 /* ---------- News ---------- */
 const FILTERS = [
   ['foryou', 'For you'], ['latest', 'Latest'], ['au', '🇦🇺 Australia'], ['exploited', 'Exploited'],
-  ['realestate', 'Real estate & BEC'], ['m365', 'Microsoft 365'], ['saved', '★ Saved']
+  ['realestate', 'Real estate & BEC'], ['m365', 'Microsoft 365'], ['later', '⏱ Later'], ['saved', '★ Saved']
 ];
 let newsFilter = store.get('filter', 'foryou'), newsLimit = 40;
 function renderNews(){
   $('#news-filters').innerHTML = FILTERS.map(([k, l]) => `<button class="chip ${k === newsFilter ? 'on' : ''}" data-f="${k}">${l}</button>`).join('');
   $('#news-filters').querySelectorAll('.chip').forEach(c => c.onclick = () => { newsFilter = c.dataset.f; store.set('filter', newsFilter); newsLimit = 40; renderNews(); });
   const q = $('#news-search').value.trim().toLowerCase();
-  let list = newsFilter === 'saved' ? Object.values(store.get('saved', {})).filter(Boolean) : NEWS.items.slice();
+  // Saved and Later are the user's own lists: kept after stories age out of news.json, and never hidden by mutes.
+  const own = newsFilter === 'saved' || newsFilter === 'later';
+  let list = own ? Object.values(store.get(newsFilter, {}) || {}).filter(Boolean) : NEWS.items.slice();
   const has = t => i => i.tags.includes(t);
   if (newsFilter === 'foryou') list = list.filter(i => i.score >= 5 && Date.now() - Date.parse(i.published) < 7 * 864e5).sort((a, b) => rank(b) - rank(a));
   else {
@@ -645,14 +792,17 @@ function renderNews(){
     if (newsFilter === 'm365') list = list.filter(has('Microsoft 365'));
     list.sort((a, b) => Date.parse(b.published) - Date.parse(a.published));
   }
-  if (q) list = list.filter(i => (i.title + ' ' + i.summary + ' ' + i.source + ' ' + i.tags.join(' ')).toLowerCase().includes(q));
+  const notes = getNotes();
+  if (q) list = list.filter(i => (i.title + ' ' + i.summary + ' ' + i.source + ' ' + i.tags.join(' ') + ' ' + (notes[i.id] || '')).toLowerCase().includes(q));
   let hidden = 0;
-  if (newsFilter !== 'saved'){ const m = getMuted(), n = list.length; list = list.filter(i => !isMuted(i, m)); hidden = n - list.length; }
+  if (!own){ const m = getMuted(), n = list.length; list = list.filter(i => !isMuted(i, m)); hidden = n - list.length; }
   const note = hidden ? `<div class="small muted mute-note">${hidden} hidden by mutes · <button class="linkish" id="manage-mutes">Manage</button></div>` : '';
   const el = $('#news-list');
   const wireNote = () => { const b = $('#manage-mutes'); if (b) b.onclick = () => openSettings(); };
-  if (!list.length){ el.innerHTML = note + `<div class="empty">${newsFilter === 'saved' ? 'Nothing saved yet - tap ☆ on a story.' : 'No matching stories.'}</div>`; wireNote(); return; }
-  el.innerHTML = note + list.slice(0, newsLimit).map(newsCard).join('') +
+  const empty = q ? 'No matching stories.' : newsFilter === 'saved' ? 'Nothing saved yet - tap ☆ on a story. Saved stories can carry a note.'
+    : newsFilter === 'later' ? 'Nothing in Read later - tap the clock on a story.' : 'No matching stories.';
+  if (!list.length){ el.innerHTML = note + `<div class="empty">${empty}</div>`; wireNote(); return; }
+  el.innerHTML = note + list.slice(0, newsLimit).map(i => newsCard(i, {notes: newsFilter === 'saved'})).join('') +
     (list.length > newsLimit ? `<button class="btn block" id="more">Show more (${list.length - newsLimit})</button>` : '');
   wireNewsList(el); wireNote();
   const more = $('#more'); if (more) more.onclick = () => { newsLimit += 40; renderNews(); };
@@ -675,13 +825,13 @@ function recordAnswer(q, correct){
     store.set('qhist', h);
   }
   markActivity();
-  return gainXP(correct ? XP.right : XP.wrong, String(q.domain), q.qid ? ['q', q.qid] : null);
+  return gainXP(q.pbq ? (correct ? XP.pbqRight : XP.pbqWrong) : (correct ? XP.right : XP.wrong), String(q.domain), q.qid ? ['q', q.qid] : null);
 }
 // Questions to review: latest answer wrong, or wrong more often than right. Latest-wrong first, then most net misses, then most recent.
 function weakQuestions(){
   if (!CYSA) return [];
   const h = store.get('qhist', {}) || {};
-  return ALL_Q().filter(q => { const r = h[q.qid]; return r && r.wrong > 0 && (!r.ok || r.wrong > r.right); })
+  return ALL_Q().concat(ALL_PBQ()).filter(q => { const r = h[q.qid]; return r && r.wrong > 0 && (!r.ok || r.wrong > r.right); })
     .sort((a, b) => { const x = h[a.qid], y = h[b.qid];
       return (!!x.ok - !!y.ok) || ((y.wrong - y.right) - (x.wrong - x.right)) || String(y.last || '').localeCompare(String(x.last || '')); });
 }
@@ -689,29 +839,64 @@ function renderQuiz(root, questions, opts = {}){
   let idx = 0, correct = 0;
   const show = () => {
     const q = questions[idx];
+    const where = q.lesson ? ' · lesson ' + esc(q.lesson) : q.pbq ? ' · PBQ · domain ' + esc(q.domain) : '';
+    const head = `${questions.length > 1 ? `<div class="q-progress">Question ${idx + 1} of ${questions.length}${where}</div>` : ''}
+      <div class="q-text">${esc(q.q)}</div>${q.exhibit ? `<pre class="exhibit" tabindex="0" aria-label="Exhibit">${esc(q.exhibit)}</pre>` : ''}`;
+    if (q.type === 'order') return showOrder(q, head);
     const order = shuffle(q.options.map((o, i) => i)); // options are shuffled every time
-    root.innerHTML = `${questions.length > 1 ? `<div class="q-progress">Question ${idx + 1} of ${questions.length}${q.lesson ? ' · lesson ' + esc(q.lesson) : ''}</div>` : ''}
-      <div class="q-text">${esc(q.q)}</div>
-      ${order.map(i => `<button class="opt" data-i="${i}">${esc(q.options[i])}</button>`).join('')}
+    root.innerHTML = `${head}${order.map(i => `<button class="opt" data-i="${i}">${esc(q.options[i])}</button>`).join('')}
       <div class="explain" hidden></div><div class="q-next"></div>`;
     root.querySelectorAll('.opt').forEach(b => b.onclick = () => {
       const pick = +b.dataset.i, ok = pick === q.answer;
-      if (ok) correct++;
-      const xp = recordAnswer(q, ok);
       root.querySelectorAll('.opt').forEach(o => {
         o.disabled = true;
         if (+o.dataset.i === q.answer) o.classList.add('correct');
         else if (+o.dataset.i === pick) o.classList.add('wrong');
       });
-      const ex = root.querySelector('.explain'); ex.hidden = false;
-      ex.innerHTML = `<b style="color:${ok ? 'var(--ok)' : 'var(--danger)'}">${ok ? 'Correct.' : 'Not quite.'}</b>${xpTag(xp)} ${esc(q.explain)}`;
-      if (opts.single) return;
-      const last = idx === questions.length - 1;
-      const nb = document.createElement('button');
-      nb.className = 'btn primary block'; nb.textContent = last ? 'See result' : 'Next';
-      nb.onclick = () => { if (last) finish(); else { idx++; show(); } };
-      root.querySelector('.q-next').appendChild(nb);
+      answered(q, ok);
     });
+  };
+  // Order PBQ: `items` are stored in the correct order, shown shuffled, moved with ▲/▼ (no drag, touch-friendly), then checked.
+  const showOrder = (q, head) => {
+    const n = q.items.length;
+    let cur = shuffle(q.items.map((_, i) => i)), checked = false;
+    for (let k = 0; k < 6 && cur.every((v, i) => v === i); k++) cur = shuffle(cur);
+    root.innerHTML = `${head}<div class="small muted" style="margin:-4px 0 8px">Put these in order, first at the top. ▲ ▼ move an item one step.</div>
+      <ol class="order-list"></ol><button class="btn primary block order-check">Check order</button>
+      <div class="explain" hidden></div><div class="q-next"></div>`;
+    const list = root.querySelector('.order-list');
+    const draw = focusPos => {
+      list.innerHTML = cur.map((it, pos) => `<li class="order-item${checked ? (it === pos ? ' correct' : ' wrong') : ''}" data-i="${it}">
+        <span class="n">${pos + 1}</span><span class="t">${esc(q.items[it])}</span>
+        ${checked ? '' : `<button class="mv" data-pos="${pos}" data-d="-1" aria-label="Move up" ${pos === 0 ? 'disabled' : ''}>▲</button>
+          <button class="mv" data-pos="${pos}" data-d="1" aria-label="Move down" ${pos === n - 1 ? 'disabled' : ''}>▼</button>`}</li>`).join('');
+      list.querySelectorAll('.mv').forEach(b => b.onclick = () => {
+        const p = +b.dataset.pos, d = +b.dataset.d, t = p + d;
+        if (t < 0 || t >= n) return;
+        [cur[p], cur[t]] = [cur[t], cur[p]]; draw([t, d]);
+      });
+      // Keep focus on the moved item's button so keyboard / switch users can keep moving it.
+      if (focusPos){ const b = list.querySelector(`.mv[data-pos="${focusPos[0]}"][data-d="${focusPos[1]}"]:not(:disabled)`) || list.querySelector(`.mv[data-pos="${focusPos[0]}"]:not(:disabled)`); b && b.focus(); }
+    };
+    draw();
+    root.querySelector('.order-check').onclick = e => {
+      checked = true; e.currentTarget.remove(); draw();
+      const right = cur.filter((it, pos) => it === pos).length, ok = right === n;
+      answered(q, ok, ok ? '' : `${right} of ${n} in the right place. `,
+        ok ? '' : `<div style="margin-top:8px"><b>Correct order</b><ol class="points" style="margin:4px 0 0">${q.items.map(t => `<li>${esc(t)}</li>`).join('')}</ol></div>`);
+    };
+  };
+  const answered = (q, ok, pre = '', post = '') => {
+    if (ok) correct++;
+    const xp = recordAnswer(q, ok);
+    const ex = root.querySelector('.explain'); ex.hidden = false;
+    ex.innerHTML = `<b style="color:${ok ? 'var(--ok)' : 'var(--danger)'}">${ok ? 'Correct.' : 'Not quite.'}</b>${xpTag(xp)} ${esc(pre)}${esc(q.explain)}${post}`;
+    if (opts.single) return;
+    const last = idx === questions.length - 1;
+    const nb = document.createElement('button');
+    nb.className = 'btn primary block'; nb.textContent = last ? 'See result' : 'Next';
+    nb.onclick = () => { if (last) finish(); else { idx++; show(); } };
+    root.querySelector('.q-next').appendChild(nb);
   };
   const finish = () => {
     const pct = Math.round(correct / questions.length * 100);
@@ -723,6 +908,27 @@ function renderQuiz(root, questions, opts = {}){
   };
   show();
 }
+// Practice exam -> rough 100-900 estimate. A straight line from 0% = 100 to 100% = 900 (so 750 ≈ 81%), rounded to 10.
+// CompTIA doesn't publish its conversion, so this is deliberately simple and labelled as a guide.
+const PASS_MARK = 750;
+const scaledScore = (c, t) => Math.round((100 + 800 * c / t) / 10) * 10;
+function scaledHtml(c, t){
+  const sc = scaledScore(c, t);
+  return `<div class="scaled" id="scaled"><div class="small muted">Rough scaled estimate</div>
+    <div><b style="color:${sc >= PASS_MARK ? 'var(--ok)' : 'var(--warn)'}">≈ ${sc}</b> <span class="muted">/ 900 · pass ${PASS_MARK}</span></div>
+    <div class="small muted" style="margin-top:6px">Rough guide only. CompTIA doesn't publish how raw scores convert to its 100-900 scale, and the real exam adds PBQs, unscored items and different question weights. This simply maps 0% to 100 and 100% to 900 in a straight line.</div></div>`;
+}
+
+/* ---------- PBQs (performance-based questions): cysa.json `pbqs`, type "select" or "order" ---------- */
+const PBQ_ROUND = 5;
+function validPBQ(p){
+  if (!p || typeof p !== 'object' || !p.id || typeof p.q !== 'string') return false;
+  if (p.type === 'select') return Array.isArray(p.options) && p.options.length >= 2 && Number.isInteger(p.answer) && p.answer >= 0 && p.answer < p.options.length;
+  if (p.type === 'order') return Array.isArray(p.items) && p.items.length >= 2;
+  return false;
+}
+// qid "pbq:<id>" puts PBQs in sp_qhist, so missed ones also show in Review mistakes.
+const ALL_PBQ = () => (CYSA && Array.isArray(CYSA.pbqs) ? CYSA.pbqs.filter(validPBQ) : []).map(p => ({...p, pbq: true, qid: 'pbq:' + p.id}));
 
 /* ---------- Learn ---------- */
 // YouTube search (not hand-picked videos, which go stale) and the user's own course link (stored on-device only).
@@ -742,6 +948,8 @@ function renderLearn(){
   $('#exam-bar').style.width = (n / CYSA.lessons.length * 100) + '%';
   const nw = weakQuestions().length;
   $('#review-quiz').textContent = 'Review mistakes' + (nw ? ' · ' + nw : '');
+  const np = ALL_PBQ().length, pb = $('#pbq-practice');
+  pb.hidden = !np; pb.textContent = `PBQ practice · ${np} scenario${np === 1 ? '' : 's'}`;
   $('#domains').innerHTML = CYSA.domains.map(d => {
     const ls = CYSA.lessons.filter(l => l.domain === d.id), dd = qs.byDomain[d.id];
     const nd = ls.filter(l => done[l.id]).length;
@@ -781,7 +989,7 @@ function openLesson(id){
   const complete = score => {
     const done = store.get('lessons', {}), first = !done[l.id];
     done[l.id] = {date: todayKey(), score: score ?? (done[l.id] && done[l.id].score) ?? null};
-    store.set('lessons', done); markActivity();
+    store.set('lessons', done); markActivity(); questTick('lessons', l.id);
     if (first) gainXP(XP.lesson, String(l.domain));
     $('#mark-done').textContent = 'Completed ✓'; $('#mark-done').disabled = true;
   };
@@ -803,8 +1011,9 @@ function startQuiz(n, weighted){
     picked = shuffle(picked);
   } else picked = shuffle(all).slice(0, n);
   openSheet(weighted ? 'Practice exam' : 'Quick quiz', `<div class="card" id="big-quiz"></div>
-    <p class="small muted">The real exam is scored 100-900 with 750 to pass, and includes performance-based questions. Treat this as a knowledge check, not a score predictor.</p>`);
+    <p class="small muted">The real exam is scored 100-900 with 750 to pass, and includes performance-based questions${ALL_PBQ().length ? ' (try PBQ practice on Learn)' : ''}. Treat this as a knowledge check${weighted ? '; the estimate at the end is a rough guide only' : ', not a score predictor'}.</p>`);
   renderQuiz($('#big-quiz'), picked, {onDone: (c, t) => {
+    if (weighted) $('#big-quiz').insertAdjacentHTML('beforeend', scaledHtml(c, t));
     const h = store.get('quizHistory', []); h.push({date: todayKey(), c, t, type: weighted ? 'exam' : 'quick'}); store.set('quizHistory', h.slice(-100));
     const b = gainXP(weighted ? XP.exam : XP.quiz); if (b) toast(`Round complete +${b} XP`);
   }});
@@ -823,6 +1032,24 @@ function startReview(){
     const b = gainXP(XP.quiz); if (b) toast(`Round complete +${b} XP`);
   }});
 }
+function startPBQ(){
+  const all = ALL_PBQ();
+  if (!all.length){
+    openSheet('PBQ practice', `<div class="card empty" id="pbq-empty"><div style="font-weight:700;color:var(--text)">No PBQs yet</div>
+      <div class="small" style="margin-top:6px">Performance-based scenarios will appear here once they're added to the study content.</div></div>`);
+    return;
+  }
+  // Unseen first, then latest-wrong, then the rest; random within each group (sort is stable).
+  const h = store.get('qhist', {}) || {}, pri = q => { const r = h[q.qid]; return !r ? 0 : !r.ok ? 1 : 2; };
+  const picked = shuffle(shuffle(all).sort((a, b) => pri(a) - pri(b)).slice(0, PBQ_ROUND));
+  openSheet('PBQ practice', `<div class="card" id="big-quiz"></div>
+    <p class="small muted">Performance-based questions: read the exhibit (swipe it sideways if it's wide), then pick the answer or put the steps in order. ${all.length} in the bank, ${PBQ_ROUND} per round, unseen and missed ones first. Missed PBQs also go to Review mistakes.</p>`);
+  renderQuiz($('#big-quiz'), picked, {onDone: (c, t) => {
+    const hist = store.get('quizHistory', []); hist.push({date: todayKey(), c, t, type: 'pbq'}); store.set('quizHistory', hist.slice(-100));
+    const b = gainXP(XP.quiz); if (b) toast(`Round complete +${b} XP`);
+  }});
+}
+$('#pbq-practice').onclick = startPBQ;
 $('#review-quiz').onclick = startReview;
 $('#quick-quiz').onclick = () => startQuiz(10, false);
 $('#practice-exam').onclick = () => startQuiz(30, true);
@@ -972,10 +1199,18 @@ function renderMuteList(){
     : '<span class="muted">Nothing muted. Tap a story\'s score or tags to mute its source or a tag.</span>';
   el.querySelectorAll('.unmute').forEach(b => b.onclick = () => { toggleMute(b.dataset.k, b.dataset.v); renderMuteList(); toast('Unmuted'); });
 }
+// Theme: sp_theme "dark" | "light"; absent = follow the system. Applied by the <head> script's applyTheme().
+const THEMES = [['system', 'System'], ['dark', 'Dark'], ['light', 'Light']];
+const themePref = () => { const p = store.get('theme', 'system'); return p === 'dark' || p === 'light' ? p : 'system'; };
 function openSettings(focus){
   const rows = NEWS.sources.map(s => `<tr><td>${s.ok ? '✅' : '⚠️'}</td><td>${esc(s.name)}${s.error ? `<div class="small muted">${esc(s.error)}</div>` : ''}</td><td style="text-align:right">${s.count}</td></tr>`).join('');
   openSheet('Settings', `
     <div class="row" style="gap:8px"><button class="btn grow" id="open-changelog">What's new</button><button class="btn grow" id="open-roadmap">Roadmap</button></div>
+    <h2>Appearance</h2>
+    <div class="card small">
+      <div class="seg" id="theme-seg" role="group" aria-label="Theme">${THEMES.map(([k, l]) => `<button class="btn ${themePref() === k ? 'on' : ''}" data-t="${k}" aria-pressed="${themePref() === k}">${l}</button>`).join('')}</div>
+      <p class="muted" style="margin-bottom:0">System follows your phone's light/dark setting. On iPhone the status bar matches from the next time you open the app.</p>
+    </div>
     <h2>Exam date</h2>
     <div class="card small">
       <div class="row" style="gap:8px"><input type="date" class="field grow" id="exam-date" value="${esc(examDate() || '')}" aria-label="Exam date">
@@ -1017,6 +1252,11 @@ function openSettings(focus){
     <h2>About</h2>
     <p class="small muted">Sec-Pulse is a personal, unofficial study and news tool. Not affiliated with CompTIA, ASD or any employer. Headlines link to their original publishers.</p>`);
   renderMuteList();
+  $('#theme-seg').querySelectorAll('button').forEach(b => b.onclick = () => {
+    if (b.dataset.t === 'system') store.del('theme'); else store.set('theme', b.dataset.t);
+    applyTheme();
+    $('#theme-seg').querySelectorAll('button').forEach(o => { o.classList.toggle('on', o === b); o.setAttribute('aria-pressed', o === b); });
+  });
   $('#exam-date').onchange = e => {
     const v = e.target.value;
     if (/^\d{4}-\d{2}-\d{2}$/.test(v)){ store.set('examDate', v); toast('Exam date saved'); }
@@ -1045,14 +1285,14 @@ function openSettings(focus){
     try{
       const data = JSON.parse(await e.target.files[0].text());
       Object.entries(data).forEach(([k, v]) => { if (k.startsWith('sp_')) localStorage.setItem(k, v); });
-      toast('Backup restored'); cardQueue = null; cardRound = null; closeSheet(); renderCards();
+      applyTheme(); toast('Backup restored'); cardQueue = null; cardRound = null; closeSheet(); renderCards();
     }catch(err){ toast('That file is not a Sec-Pulse backup'); }
   };
   $('#reset').onclick = e => {
     const b = e.currentTarget;
     if (b.dataset.armed){
       try{ Object.keys(localStorage).filter(k => k.startsWith('sp_')).forEach(k => localStorage.removeItem(k)); }catch(err){}
-      toast('Progress reset'); cardQueue = null; cardRound = null; closeSheet(); renderCards();
+      applyTheme(); toast('Progress reset'); cardQueue = null; cardRound = null; closeSheet(); renderCards();
     } else { b.dataset.armed = '1'; b.textContent = 'Tap again to erase all progress'; }
   };
 }
@@ -1066,10 +1306,49 @@ function show(view){
   if (view === 'learn') renderLearn();
   if (view === 'cards') renderCards();
   if (view === 'news') renderNews();
+  document.documentElement.classList.toggle('ptr-on', view === 'news');
   window.scrollTo(0, 0);
   try{ history.replaceState(null, '', '#' + view); }catch(e){}
 }
 document.querySelectorAll('nav button').forEach(b => b.onclick = () => show(b.dataset.view));
+
+/* ---------- pull to refresh on News: drag down at the very top, reuses loadNews(true) ---------- */
+// Listeners sit on the News view only. Sideways swipes (filter chips) and upward scrolls are left alone;
+// preventDefault only happens once a downward pull from scrollY 0 is under way (it stops the rubber-band).
+(() => {
+  const view = $('#view-news'), el = $('#ptr'), label = el.querySelector('span'), TH = 60, MAX = 90;
+  let y0 = null, x0 = 0, pull = 0, pulling = false, busy = false;
+  const set = h => { el.style.height = h + 'px'; };
+  view.addEventListener('touchstart', e => {
+    y0 = null;
+    if (busy || e.touches.length !== 1 || window.scrollY > 0 || $('#sheet').classList.contains('open')) return;
+    y0 = e.touches[0].clientY; x0 = e.touches[0].clientX; pull = 0; pulling = false;
+  }, {passive: true});
+  view.addEventListener('touchmove', e => {
+    if (y0 === null) return;
+    const dy = e.touches[0].clientY - y0, dx = e.touches[0].clientX - x0;
+    if (!pulling){
+      if (dy < -6 || Math.abs(dx) > Math.max(8, dy) || window.scrollY > 0){ y0 = null; return; }
+      if (dy < 8) return;
+      pulling = true; el.classList.remove('anim');
+    }
+    if (e.cancelable) e.preventDefault();
+    pull = Math.min(MAX, Math.max(0, dy - 8) * 0.55);
+    set(pull); el.classList.toggle('ready', pull >= TH);
+    label.textContent = pull >= TH ? 'Release to refresh' : 'Pull to refresh';
+  }, {passive: false});
+  const end = async () => {
+    const was = pulling; y0 = null; pulling = false;
+    if (!was) return;
+    el.classList.add('anim'); el.classList.remove('ready');
+    if (pull < TH){ set(0); return; }
+    busy = true; set(46); el.classList.add('busy'); label.textContent = 'Refreshing…';
+    try{ await loadNews(true); }finally{
+      el.classList.remove('busy'); set(0); label.textContent = 'Pull to refresh'; busy = false;
+    }
+  };
+  view.addEventListener('touchend', end); view.addEventListener('touchcancel', end);
+})();
 
 /* ---------- install hint (iOS Safari only, until dismissed) ---------- */
 const standalone = matchMedia('(display-mode: standalone)').matches || navigator.standalone;

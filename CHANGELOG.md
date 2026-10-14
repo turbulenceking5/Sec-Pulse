@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026-10-14: PBQs, quests, light theme and weekly digest
+- **PBQ practice** (Learn): 15 performance-based scenarios - read an exhibit (logs, email headers, scan output, firewall rules, process trees) and pick the answer, or put steps in order. Missed ones join Review mistakes.
+- **Scaled score estimate** after a practice exam (rough guide only - CompTIA doesn't publish its conversion).
+- **Daily quests** on the Brief: answer 10 questions, review 10 cards, read 3 Australian stories, finish a lesson - bonus XP once a day.
+- **Light theme**: Settings → Appearance (System / Dark / Light).
+- **Pull to refresh** on News.
+- **Read later** list (separate from Saved) and **notes** on saved stories.
+- **Weekly digest**: Sunday 6pm push with the week's top 10 stories, stats and the week's lessons.
+- New content: 3 vendor-neutral tooling lessons (EDR triage, email gateway, scan reports), 38 more flashcards (Domain 4 reporting, vulnerability management, IR and forensics) to balance the deck by exam weight.
+- Real estate news no longer picks up property-market headlines ("mortgage rates breach 7%").
+
 ## 2026-10-13: No more paywalls
 - Stories from paywalled outlets (e.g. Newcastle Herald, The Australian, SMH/The Age/AFR, WSJ, FT, Bloomberg) are no longer included, and don't appear in "+N more sources" either. The list lives in `scripts/sources.json` (`paywalled`).
 

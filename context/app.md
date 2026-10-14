@@ -14,6 +14,7 @@ One self-contained HTML file: inline `<style>` and `<script>`, no framework, no 
 ### Brief
 - Greeting by Brisbane hour, date, and three stats: day streak, cards due, lessons done.
 - **Analyst rank card** (`renderRank()`): level, rank title, XP bar, XP earned today. Tap it for the profile sheet. See [XP and analyst rank](#xp-and-analyst-rank).
+- **Daily quests** (`renderQuests()`, under the rank card): optional bonus goals that reset on the Brisbane date: answer 10 questions (+30), review 10 flashcards (+30), read 3 Australian stories (+20), finish a lesson (+40). Questions and cards count the *unique* ones answered today (`sp_xp.today.q`/`.c`), so repeats can't farm them. Australian stories and lessons are tracked in `sp_quests`. `checkQuests()` runs from `gainXP()` (and `questTick()`), pays each quest once a day and toasts. Tapping a quest jumps to Learn, Cards, the Australia filter or the next unfinished lesson. Defined in `QUESTS`.
 - **Exam countdown** (`renderExam()`): with `sp_examDate` set, a card shows days left (`ordinal(exam) - ordinal(today)`, both Brisbane dates) and a suggested target for today: `ceil(unfinished lessons / days left)` lessons, plus cards due and up to 10 review-mistakes questions. All lessons done → suggests a practice exam. Day 0 → "Exam day"; past date → asks to update it. With no date, a small link opens Settings at the date field. Tapping the card does the same.
 - **Top for you**: 5 highest-`rank()` items from the last 30h (falls back to 72h if fewer than 5), excluding muted sources/tags.
 - Pills: items in 24h, Australian count, actively-exploited count, feeds OK.
@@ -31,9 +32,14 @@ Filter chips (the last choice is remembered in `sp_filter`):
 | Exploited | tag `Actively exploited` or `KEV` | newest |
 | Real estate & BEC | tag `Real estate` or `BEC / payment fraud` | newest |
 | Microsoft 365 | tag `Microsoft 365` | newest |
+| ⏱ Later | from `sp_later` (read-later list, separate from Saved) | newest |
 | ★ Saved | from `sp_saved` (survives the story ageing out of news.json) | newest |
 
-Search filters on title + summary + source + tags. The list paginates 40 at a time ("Show more"). Opening a story marks it read (dimmed, unread dot removed); ☆ saves it.
+Search filters on title + summary + source + tags + your note. The list paginates 40 at a time ("Show more"). Opening a story marks it read (dimmed, unread dot removed); ☆ saves it; the clock icon (`.later-btn`) toggles it in **Read later**. Both lists keep a full copy of the item, so stories survive ageing out of news.json, and neither is filtered by mutes.
+
+**Notes on saved stories** (`drawNote()`, `sp_notes`): in the ★ Saved filter each card has "+ Add note" / "✎ Edit note" (inline textarea, max 500 chars, empty = delete). Notes are kept if the story is unsaved, so re-saving brings the note back. On-device only.
+
+**Pull to refresh**: on News, dragging down from `scrollY` 0 grows `#ptr` ("Pull to refresh" → "Release to refresh" past 60px) and on release calls `loadNews(true)` (same toast as ↻). Listeners are on `#view-news` only; sideways swipes (filter chips) and upward scrolls are ignored, and `preventDefault` only runs once a downward pull is under way, so normal scrolling is untouched. `html.ptr-on` (News only) sets `overscroll-behavior-y: contain` so Chrome's own pull-to-reload doesn't fire too.
 
 **Why this ranked** (`openWhy()` / `explainScore()`): each card shows a `score N` pill; tapping it or the tag row opens a sheet with the score breakdown. news.json items don't store which terms matched, so the app fetches `scripts/sources.json` (lazily, once) and re-runs `fetch_news.py`'s `score()` logic client-side: source weight (by `feed` name) + each keyword group whose terms appear in title/summary (weight, +1 if in the headline, matched terms listed) + 2 if `region == "AU"`. Tags not explained by a keyword match (e.g. KEV's `Actively exploited`/`KEV`) show as "tagged by the feed itself, +0". If the rebuilt total differs from the stored `score` (keywords edited since the fetch), a note says so. Offline / fetch failure falls back to listing the tags. **If `score()` or the EPSS bump in `fetch_news.py` changes, update `explainScore()` to match** (it's display-only; `rank()` is untouched).
 
@@ -49,7 +55,9 @@ Tag colours: red (`hot`) for Actively exploited / KEV / Ransomware, teal (`re`) 
 - Exam card: lessons done / total, overall quiz accuracy, progress bar.
 - **Quick quiz**: 10 random questions from all lessons.
 - **Practice exam**: 30 questions spread across domains by exam weight (33/30/20/17% → 10/9/6/5 questions). Results go to `sp_quizHistory`.
-- **Review mistakes** (`startReview()` / `weakQuestions()`): up to 10 questions from `sp_qhist` whose latest answer was wrong or that have been missed more often than answered right. Ordered latest-wrong first, then most net misses, then most recent; the picked 10 are shuffled. A question drops off once right outnumbers wrong and the latest answer was right. The button shows the count; with no history it opens an empty-state card. Results go to `sp_quizHistory` with `type: "review"`. Question IDs (`<lesson id>#<index>`) that no longer exist in cysa.json are ignored.
+- **Practice exam scaled estimate** (`scaledScore()` / `scaledHtml()`): after a practice exam, a "Rough scaled estimate" box maps the percentage onto 100-900 in a straight line (0% = 100, 100% = 900, so 750 ≈ 81%), rounded to 10, green at ≥ 750. It says plainly that CompTIA doesn't publish its conversion. It isn't stored (it's derivable from `c`/`t` in `sp_quizHistory`).
+- **PBQ practice** (`startPBQ()`, `ALL_PBQ()`, `validPBQ()`): runs `cysa.json`'s optional `pbqs` array, 5 per round (`PBQ_ROUND`), unseen first, then latest-wrong, then the rest. The button is hidden when there are no valid PBQs (missing/empty array), and `startPBQ()` has an empty state. Invalid entries (unknown `type`, bad `answer`, fewer than 2 items/options) are skipped. Each PBQ gets `qid` `pbq:<id>`, so answers go into `sp_qstats`/`sp_qhist` and missed PBQs appear in Review mistakes. Rounds log `type: "pbq"` in `sp_quizHistory`. See the quiz engine for how they render.
+- **Review mistakes** (`startReview()` / `weakQuestions()`): up to 10 questions from `sp_qhist` whose latest answer was wrong or that have been missed more often than answered right. Ordered latest-wrong first, then most net misses, then most recent; the picked 10 are shuffled. A question drops off once right outnumbers wrong and the latest answer was right. The button shows the count; with no history it opens an empty-state card. Results go to `sp_quizHistory` with `type: "review"`. Includes PBQs (`pbq:<id>`). Question IDs (`<lesson id>#<index>` or `pbq:<id>`) that no longer exist in cysa.json are ignored.
 - **Udemy link** (`sp_courseUrl`): an "Open my Udemy" button under Review mistakes once set in Settings, otherwise a link to set it. Only `https://` URLs are accepted. It's stored on the device, never in the repo (see [opsec.md](opsec.md)).
 - Lessons grouped by domain, with ✓ when done and the lesson-quiz score.
 - **Lesson sheet**: summary, key points, Exam tip box (teal), On the job box (amber), **▶ Videos on this topic** (a YouTube *search* for "CompTIA CySA+ CS0-003 <lesson title>", via `ytSearch()`; deliberately not hand-picked videos, which get deleted or go stale), 🎓 My Udemy if set, and a 3-question quiz. Finishing the quiz or tapping **Mark as complete** marks the lesson done.
@@ -64,10 +72,12 @@ Multiple choice on top of Leitner spaced repetition:
 - The nav badge shows the number of due cards.
 
 ### Settings sheet
-**What's new** and **Roadmap** buttons (`openDoc()`) fetch `CHANGELOG.md` and `context/roadmap.md` and render them with `miniMd()`: `##` headings, `-` bullets, `[ ]`/`[x]` checkboxes, `**bold**` and `` `code` ``. Links show as plain text, since the docs' relative links point at other `.md` files. It works because `.nojekyll` makes Pages serve `.md` files raw. Keep both files to that simple subset. Then: exam date (`<input type="date">` + Clear, saved on change to `sp_examDate`), Udemy link (`sp_courseUrl`), muted sources/tags (tap to unmute), ntfy setup steps (with a random topic suggestion), feed health table, Export / Import / Reset progress, About. `openSettings('exam-date')` scrolls to the date field.
+**What's new** and **Roadmap** buttons (`openDoc()`) fetch `CHANGELOG.md` and `context/roadmap.md` and render them with `miniMd()`: `##` headings, `-` bullets, `[ ]`/`[x]` checkboxes, `**bold**` and `` `code` ``. Links show as plain text, since the docs' relative links point at other `.md` files. It works because `.nojekyll` makes Pages serve `.md` files raw. Keep both files to that simple subset. Then: **Appearance** (System / Dark / Light, see [Theme](#theme-tokens)), exam date (`<input type="date">` + Clear, saved on change to `sp_examDate`), Udemy link (`sp_courseUrl`), muted sources/tags (tap to unmute), ntfy setup steps (with a random topic suggestion), feed health table, Export / Import / Reset progress, About. `openSettings('exam-date')` scrolls to the date field.
 
 ## Quiz engine: `renderQuiz(root, questions, opts)`
 - One question at a time. **Option order is shuffled on every render**, so the `answer` index in the JSON can be anything.
+- `exhibit` (optional, PBQs): rendered as `<pre class="exhibit">`, monospace, `white-space: pre`, scrolling sideways inside its own box so the page never scrolls horizontally.
+- `type: "order"` (PBQs): `items` are stored in the correct order, displayed shuffled (never already solved), and moved with ▲/▼ buttons (40px, no drag library; focus follows the moved item). **Check order** marks each row right/wrong; it's correct only if every item is in place, otherwise it says "N of M in the right place" and lists the correct order under the explanation.
 - After answering: correct/incorrect highlight, explanation, Next / See result.
 - `opts.single`: no Next button (question of the day).
 - `opts.onDone(correct, total)`: called after the result screen.
@@ -77,7 +87,7 @@ Multiple choice on top of Leitner spaced repetition:
 ## XP and analyst rank
 An RPG-style layer over the existing study features: everything earns XP, XP sets a level, levels unlock rank titles.
 
-- **Earning** (`XP` constants, `gainXP(n, skill, once)`): quiz answer +10 right / +3 wrong; flashcard +5 / +1; lesson completed for the first time +50; finishing a practice exam +25 or a quick/review round +10; opening a news story +2 (first open of that story, up to `READ_CAP` = 25 a day); first study activity of a Brisbane day +10 +2 per streak day (max +30, awarded in `markActivity()`).
+- **Earning** (`XP` constants, `gainXP(n, skill, once)`): quiz answer +10 right / +3 wrong; PBQ +20 right / +5 wrong; daily quests +20 to +40 each (see Brief); flashcard +5 / +1; lesson completed for the first time +50; finishing a practice exam +25 or a quick/review round +10; opening a news story +2 (first open of that story, up to `READ_CAP` = 25 a day); first study activity of a Brisbane day +10 +2 per streak day (max +30, awarded in `markActivity()`).
 - **Anti-grind**: each question (`qid`) and card (`id`) earns XP once per Brisbane day, tracked in `today.q`/`today.c`. That covers the question of the day re-rendering, cram rounds and the in-round retry of a wrong card. Repeats still count for stats and spaced repetition, just not XP.
 - **Levels**: going from level L to L+1 costs 100×L XP (`levelOf()`, `xpForLevel()`), so Lv 10 needs 4,500 XP and Lv 20 needs 19,000. A steady day (≈10 cards, 10 questions, a few stories) is about 150–200 XP.
 - **Ranks** (`RANKS`): Trainee Analyst (1), SOC Analyst Tier 1 (3), Tier 2 (6), Incident Responder (10), Threat Hunter (15), Senior Analyst (20), Detection Engineer (25), SOC Lead (30), Security Architect (40), Cyber Legend (50). Level-ups toast, and a new rank says "promoted to …".
@@ -97,7 +107,7 @@ All keys are prefixed `sp_` (Export, Import and Reset rely on the prefix). Every
 | `sp_lessons` | `{"1.5": {date, score}}` | Completed lessons |
 | `sp_qstats` | `{answered, correct, byDomain: {"1": {a, c}}}` | Quiz accuracy |
 | `sp_qhist` | `{"1.5#0": {right, wrong, last: "YYYY-MM-DD", ok}}` | Per-question history for Review mistakes (`ok` = latest answer correct) |
-| `sp_quizHistory` | `[{date, c, t, type: "quick"\|"exam"\|"review"}]` (last 100) | Quiz results |
+| `sp_quizHistory` | `[{date, c, t, type: "quick"\|"exam"\|"review"\|"pbq"}]` (last 100) | Quiz results |
 | `sp_cards` | `{"c01": {box, due: "YYYY-MM-DD"}}` | Flashcard schedule |
 | `sp_newToday` | `{date, n}` | New cards introduced today |
 | `sp_cardhist` | `{"c01": {right, wrong, last: "YYYY-MM-DD", ok}}` | Per-card answer history for Review missed cards (`ok` = latest answer right) |
@@ -109,6 +119,10 @@ All keys are prefixed `sp_` (Export, Import and Reset rely on the prefix). Every
 | `sp_muted` | `{sources: [name, …], tags: [tag, …]}` | Muted news sources/tags |
 | `sp_xp` | `{total, bySkill: {"1": n, …, "intel": n}, today: {date, xp, reads, q: [qid…], c: [cardId…]}}` | XP, skills and today's per-item XP caps (`today` resets on a new Brisbane day) |
 | `sp_courseUrl` | `"https://…"` | Udemy profile/course link; removed when cleared |
+| `sp_quests` | `{date, au: [storyId…], lessons: [lessonId…], done: [questId…]}` | Today's daily-quest progress (Australian stories opened, lessons finished) and quests already paid; ignored once `date` isn't today (Brisbane) |
+| `sp_later` | `{id: item}` | Read-later list (full item copy), separate from Saved |
+| `sp_notes` | `{id: "text"}` | Notes on saved stories (max 500 chars each) |
+| `sp_theme` | `"dark"` \| `"light"` | Theme override; absent = follow the system |
 
 **Never rename a key or change its shape without a migration.** Existing progress on the phone would silently reset.
 
@@ -127,7 +141,9 @@ All keys are prefixed `sp_` (Export, Import and Reset rely on the prefix). Every
 - Icons were drawn with Pillow: a teal shield with a pulse line on navy. Regenerate at 1024px and downscale.
 
 ## Theme tokens
-Dark navy UI with CSS variables on `:root`: `--bg #0b1220`, `--surface #121c2e`, `--surface2 #17243a`, `--border #22314a`, `--text #e6edf7`, `--muted #8da2c0`, `--accent #38e1c8` (teal), `--warn/--au #f5b84b` (amber), `--danger #ff6b6b`, `--ok #5ad08a`. Reuse these rather than adding new colours.
+Dark navy UI with CSS variables on `:root`: `--bg #0b1220`, `--surface #121c2e`, `--surface2 #17243a`, `--border #22314a`, `--text #e6edf7`, `--muted #8da2c0`, `--accent #38e1c8` (teal), `--warn/--au #f5b84b` (amber), `--danger #ff6b6b`, `--ok #5ad08a`, plus tints `--accent-dim/--accent-line`, `--warn-dim/--warn-line`, `--danger-dim/--danger-line`, `--ok-dim`, `--on-accent` (text on teal buttons) and `--glass` (header/nav/sheet-head backdrop). **Every colour goes through these variables**, because the light theme just redefines them; don't hard-code a hex/rgba in a rule.
+
+**Light theme**: `:root[data-theme=light]` overrides every token (white surfaces, darker teal `#077a6b`, darker amber/red/green for contrast) and `color-scheme`. A small `<script>` in `<head>` (before the stylesheet, so there's no flash) reads `sp_theme` straight from localStorage, resolves System via `prefers-color-scheme`, sets `data-theme`, the `theme-color` meta (`#f3f6fa` light / `#0b1220` dark) and `apple-mobile-web-app-status-bar-style` (`default` light / `black-translucent` dark; iOS only reads that at launch, so the status bar matches from the next open). It exposes `applyTheme()`, which Settings, Import and Reset call, and listens for system theme changes. The manifest's `theme_color` stays dark (it's fixed at install).
 
 ## Gotchas
 - **`[hidden]{display:none!important}`** is at the top of the CSS on purpose. `.btn.block` and `.grade` set `display`, which would otherwise override the `hidden` attribute. This caused a real bug where "Show answer" and the grade buttons showed at the same time.

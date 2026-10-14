@@ -9,7 +9,7 @@ const fs = require('fs');
 (async () => {
   fs.mkdirSync('shots', { recursive: true });
   const browser = await chromium.launch(process.env.CHROMIUM_PATH ? { executablePath: process.env.CHROMIUM_PATH } : {});
-  const page = await (await browser.newContext({ ...devices['iPhone 13'] })).newPage();
+  const page = await (await browser.newContext({ ...devices['iPhone 13'], colorScheme: 'dark' })).newPage();
   const errors = [], fails = [];
   const check = (ok, msg) => { console.log((ok ? 'PASS ' : 'FAIL ') + msg); if (!ok) fails.push(msg); };
   page.on('pageerror', e => errors.push(e.message));
@@ -44,12 +44,85 @@ const fs = require('fs');
   check(await page.evaluate(() => JSON.parse(localStorage.getItem('sp_examDate'))) === exam, 'Exam date stored in sp_examDate');
   await page.screenshot({ path: 'shots/brief.png' });
 
+  // Daily quests: shown on the Brief, completed once, reset on a new Brisbane day.
+  check(await page.locator('#quests .quest').count() === 4, 'Brief shows 4 daily quests');
+  const qr = await page.evaluate(() => {
+    const x0 = getXP().total, seen = getXP().today.q;
+    const fresh = ALL_Q().filter(q => !seen.includes(q.qid)).slice(0, Math.max(0, 10 - seen.length));
+    fresh.forEach(q => recordAnswer(q, true));
+    const mid = getXP().total; checkQuests(); // a second check must not pay again
+    return { done: getQuests().done, bonus: mid - x0 - fresh.length * XP.right, again: getXP().total - mid };
+  });
+  check(qr.done.includes('q10') && qr.bonus === 30 && qr.again === 0, 'Answering 10 questions completes the quest once (+30 XP)');
+  check(await page.locator('#quests .quest.done[data-q=q10]').count() === 1, 'Completed quest is ticked on the Brief');
+  check(await page.evaluate(() => { const s = getQuests(); s.date = addDays(todayKey(), -1); store.set('quests', s); return getQuests().done.length === 0; }), 'Quests reset on a new Brisbane day');
+  await page.evaluate(() => { const s = getQuests(); s.done = ['q10']; store.set('quests', s); renderQuests(); });
+
   await page.click('nav button[data-view=news]');
   check(await page.locator('#news-list .news-item').count() > 0, 'News list renders');
   await page.click('.chip[data-f=latest]');
   await page.click('#news-list .save-btn');
   await page.click('.chip[data-f=saved]');
   check(await page.locator('#news-list .news-item').count() === 1, 'Saving a story works');
+
+  // Notes on saved stories.
+  await page.click('#news-list .note-btn');
+  await page.fill('#news-list .note-edit textarea', 'Check our mail rules for this one');
+  await page.click('#news-list .note-save');
+  check((await page.textContent('#news-list .note')).includes('Check our mail rules'), 'Note shows on the saved story');
+  check(Object.values(await page.evaluate(() => JSON.parse(localStorage.getItem('sp_notes')))).length === 1, 'Note stored in sp_notes');
+  await page.fill('#news-search', 'mail rules');
+  check(await page.locator('#news-list .news-item').count() === 1, 'Search matches note text');
+  await page.fill('#news-search', '');
+  await page.screenshot({ path: 'shots/saved-note.png' });
+
+  // Read later: separate from Saved.
+  await page.click('.chip[data-f=latest]');
+  await page.click('#news-list .news-item >> nth=1 >> .later-btn');
+  await page.click('.chip[data-f=later]');
+  check(await page.locator('#news-list .news-item').count() === 1, 'Read later list shows the story');
+  check(await page.locator('#news-list .note-btn').count() === 0, 'Read later has no note editor (Saved only)');
+  await page.click('#news-list .later-btn');
+  await page.click('.chip[data-f=later]');
+  check((await page.textContent('#news-list')).includes('Nothing in Read later'), 'Removing from Read later empties it');
+  await page.click('.chip[data-f=latest]');
+  await page.click('#news-list .news-item >> nth=1 >> .later-btn');
+  check(await page.evaluate(() => Object.keys(localStorage).filter(k => k === 'sp_later' || k === 'sp_notes').length) === 2, 'Later and notes use sp_ keys (export/import/reset)');
+
+  // Australian-stories quest counts AU stories opened today (popups blocked for the test).
+  await page.evaluate(() => { document.addEventListener('click', e => { if (e.target.closest('.news-title')) e.preventDefault(); }, true);
+    NEWS.items.slice(0, 3).forEach(i => i.region = 'AU'); newsFilter = 'au'; renderNews(); });
+  for (let i = 0; i < 3; i++) await page.click(`#news-list .news-title >> nth=${i}`);
+  check((await page.evaluate(() => getQuests())).done.includes('au3'), 'Reading 3 Australian stories completes a quest');
+  await page.waitForTimeout(1800); // let the quest toast fire before the refresh toast check below
+
+  // Pull to refresh: synthetic touch drag at the top of News.
+  await page.click('.chip[data-f=latest]');
+  await page.evaluate(() => { window.__loads = 0; const orig = loadNews; loadNews = (...a) => { window.__loads++; return orig(...a); }; scrollTo(0, 0); });
+  const drag = (ys, dx = 0) => page.evaluate(([ys, dx]) => {
+    const el = document.querySelector('#news-list');
+    const fire = (type, y, x) => { const t = new Touch({ identifier: 1, target: el, clientX: 150 + x, clientY: y });
+      el.dispatchEvent(new TouchEvent(type, { touches: type === 'touchend' ? [] : [t], changedTouches: [t], bubbles: true, cancelable: true })); };
+    fire('touchstart', ys[0], 0);
+    ys.slice(1).forEach((y, i) => fire('touchmove', y, dx * (i + 1)));
+    const label = document.querySelector('#ptr span').textContent, h = parseFloat(document.querySelector('#ptr').style.height) || 0;
+    fire('touchend', ys[ys.length - 1], 0);
+    return { label, h };
+  }, [ys, dx]);
+  const shortPull = await drag([100, 130, 160]);
+  check(shortPull.h > 0 && shortPull.label === 'Pull to refresh', 'Short pull shows the indicator');
+  await page.waitForTimeout(300);
+  check(await page.evaluate(() => window.__loads) === 0, 'Short pull does not refresh');
+  await drag([100, 110, 120], 40);
+  check(await page.evaluate(() => window.__loads) === 0, 'Sideways swipe is ignored');
+  const longPull = await drag([100, 140, 200, 260, 320]);
+  check(longPull.label === 'Release to refresh', 'Long pull says release to refresh');
+  await page.waitForTimeout(150);
+  await page.screenshot({ path: 'shots/ptr.png' });
+  check(await page.evaluate(() => window.__loads) === 1, 'Pull to refresh reloads news');
+  await page.waitForTimeout(900);
+  const ptrEnd = { toast: await page.textContent('#toast'), h: await page.evaluate(() => document.querySelector('#ptr').offsetHeight) };
+  check(/new stor|Up to date|Offline/.test(ptrEnd.toast) && ptrEnd.h === 0, 'Pull to refresh reports and collapses');
 
   // Optional pipeline fields render when present (injected here since news.json may not have them yet).
   await page.click('.chip[data-f=latest]');
@@ -79,7 +152,56 @@ const fs = require('fs');
   await page.click('#sheet-close');
   check(await page.locator('#manage-mutes').count() === 0, 'Unmuted source shows again');
 
+  // PBQs: hidden without content, then run injected samples (select with a wide exhibit, order).
   await page.click('nav button[data-view=learn]');
+  const realPbqs = await page.evaluate(() => { const n = Array.isArray(CYSA.pbqs) ? CYSA.pbqs.length : 0; return { n, valid: n ? CYSA.pbqs.filter(validPBQ).length : 0 }; });
+  if (realPbqs.n) check(realPbqs.valid === realPbqs.n, `All ${realPbqs.n} PBQs in cysa.json are valid`);
+  await page.evaluate(() => { window.__realPbqs = CYSA.pbqs; delete CYSA.pbqs; renderLearn(); });
+  check(await page.locator('#pbq-practice').isHidden(), 'PBQ button hidden when cysa.json has no pbqs');
+  check(await page.evaluate(() => { startPBQ(); const ok = !!document.querySelector('#pbq-empty'); closeSheet(); return ok; }), 'PBQ practice has an empty state');
+  await page.evaluate(() => {
+    const wide = 'Oct 14 03:12:44 web01 sshd[2211]: Failed password for invalid user admin from 203.0.113.50 port 51122 ssh2 (attempt 1 of many, very long line to force horizontal scroll)\n'
+      + 'Oct 14 03:12:45 web01 sshd[2211]: Failed password for invalid user admin from 203.0.113.50 port 51123 ssh2\nOct 14 03:13:02 web01 sshd[2240]: Accepted password for deploy from 198.51.100.7 port 40022 ssh2';
+    CYSA.pbqs = [
+      { id: 't1', domain: 1, type: 'select', q: 'Which line shows a successful login?', exhibit: wide, options: ['Line 1', 'Line 2', 'Line 3', 'None'], answer: 2, explain: 'Line 3 is Accepted password.' },
+      { id: 't2', domain: 3, type: 'order', q: 'Put the incident response phases in order.', items: ['Preparation', 'Detection and analysis', 'Containment, eradication and recovery', 'Post-incident activity'], explain: 'NIST SP 800-61 order.' },
+      { id: 't3', domain: 2, type: 'select', q: 'Which port is the attacker using?', exhibit: 'src=203.0.113.50 dport=22', options: ['22', '80', '443', '3389'], answer: 0, explain: 'dport=22 is SSH.' },
+      { id: 'bad', domain: 1, type: 'order', q: 'Invalid: one item', items: ['x'], explain: '' }
+    ];
+    renderLearn();
+  });
+  check((await page.textContent('#pbq-practice')).includes('3 scenarios'), 'PBQ button shows valid PBQ count');
+  const samplePbqs = await page.evaluate(() => CYSA.pbqs);
+  await page.click('#pbq-practice');
+  for (let n = 0; n < 3; n++) {
+    if (await page.locator('#big-quiz .order-list').count()) {
+      check(await page.locator('#big-quiz .mv').count() === 8, 'Order PBQ shows up/down buttons');
+      for (let k = 0; k < 20; k++) {
+        const order = await page.$$eval('#big-quiz .order-item', els => els.map(e => +e.dataset.i));
+        const p = order.findIndex((v, i) => i < order.length - 1 && v > order[i + 1]);
+        if (p < 0) break;
+        await page.click(`#big-quiz .mv[data-pos="${p}"][data-d="1"]`);
+      }
+      await page.screenshot({ path: 'shots/pbq-order.png' });
+      await page.click('#big-quiz .order-check');
+      check(await page.locator('#big-quiz .order-item.correct').count() === 4 && (await page.textContent('#big-quiz .explain')).includes('Correct'), 'Ordering the items correctly scores the PBQ');
+    } else {
+      const qtext = await page.textContent('#big-quiz .q-text');
+      if (qtext.includes('successful login')) {
+        const ex = await page.evaluate(() => { const e = document.querySelector('#big-quiz .exhibit'); return { scrolls: e.scrollWidth > e.clientWidth, page: document.documentElement.scrollWidth > innerWidth, sheet: document.querySelector('#sheet').scrollWidth > innerWidth }; });
+        check(ex.scrolls && !ex.page && !ex.sheet, 'Wide exhibit scrolls inside its box, not the page');
+        await page.screenshot({ path: 'shots/pbq.png' });
+        await page.click('#big-quiz .opt:not([data-i="2"]) >> nth=0'); // wrong on purpose
+      } else await page.click('#big-quiz .opt[data-i="0"]');
+    }
+    await page.click('#big-quiz .q-next button');
+  }
+  check((await page.textContent('#big-quiz')).includes('2 of 3 correct'), 'PBQ round shows a result');
+  const pbqHist = await page.evaluate(() => { const h = JSON.parse(localStorage.getItem('sp_qhist')); return { t1: h['pbq:t1'], t2: h['pbq:t2'], weak: weakQuestions().some(q => q.qid === 'pbq:t1'), xp: getXP().today.q.includes('pbq:t2'), last: store.get('quizHistory', []).pop() }; });
+  check(pbqHist.t1 && pbqHist.t1.ok === false && pbqHist.t2 && pbqHist.t2.ok === true, 'PBQ answers recorded in sp_qhist');
+  check(pbqHist.weak, 'Missed PBQ shows in Review mistakes');
+  check(pbqHist.xp && pbqHist.last.type === 'pbq', 'PBQs earn XP and log a pbq round');
+  await page.click('#sheet-close');
   await page.click('.lesson-row >> nth=0');
   for (let i = 0; i < 3; i++) { await page.click('#lesson-quiz .opt >> nth=0'); await page.click('#lesson-quiz .q-next button'); }
   check((await page.textContent('#mark-done')).includes('Completed'), 'Finishing a lesson quiz completes the lesson');
@@ -92,6 +214,15 @@ const fs = require('fs');
   await page.click('#sheet-close');
   await page.click('#practice-exam');
   check((await page.textContent('.q-progress')).includes('of 30'), 'Practice exam has 30 questions');
+  for (let i = 0; i < 30; i++) {
+    if (await page.locator('#big-quiz .order-list').count()) await page.click('#big-quiz .order-check');
+    else await page.click('#big-quiz .opt >> nth=0');
+    await page.click('#big-quiz .q-next button');
+  }
+  const scaled = await page.textContent('#scaled');
+  check(/≈ \d{3}/.test(scaled) && scaled.includes('Rough guide only') && scaled.includes("doesn't publish"), 'Practice exam shows a scaled estimate with a disclaimer');
+  check(await page.evaluate(() => [scaledScore(0, 30), scaledScore(30, 30), scaledScore(24, 30), scaledScore(25, 30)].join()) === '100,900,740,770', 'Scaled estimate maps 0-100% onto 100-900');
+  await page.screenshot({ path: 'shots/exam-result.png' });
   await page.click('#sheet-close');
 
   await page.click('nav button[data-view=cards]');
@@ -147,6 +278,39 @@ const fs = require('fs');
   await page.click('#refresh-btn');
   await page.waitForTimeout(900);
   check(/new stor|Up to date|Offline/.test(await page.textContent('#toast')), 'Refresh reports what it found');
+
+  // Light theme: Settings picker, applied before scripts on reload, System follows the OS.
+  await page.click('#settings-btn');
+  await page.click('#theme-seg button[data-t=light]');
+  const th = await page.evaluate(() => ({ t: document.documentElement.dataset.theme, meta: document.querySelector('meta[name=theme-color]').content, k: localStorage.getItem('sp_theme'), bg: getComputedStyle(document.body).backgroundColor }));
+  check(th.t === 'light' && th.meta === '#f3f6fa' && th.k === '"light"' && th.bg === 'rgb(243, 246, 250)', 'Light theme applies and is stored in sp_theme');
+  await page.screenshot({ path: 'shots/settings-light.png' });
+  await page.click('#sheet-close');
+  await page.reload({ waitUntil: 'domcontentloaded' }); await page.waitForTimeout(1500);
+  check(await page.evaluate(() => document.documentElement.dataset.theme) === 'light', 'Light theme survives a reload');
+  await page.screenshot({ path: 'shots/brief-light.png' });
+  await page.screenshot({ path: 'shots/brief-light-full.png', fullPage: true });
+  await page.click('nav button[data-view=news]');
+  await page.screenshot({ path: 'shots/news-light.png' });
+  await page.click('nav button[data-view=learn]');
+  await page.screenshot({ path: 'shots/learn-light.png' });
+  await page.evaluate(s => { if (!ALL_PBQ().length) { CYSA.pbqs = s; renderLearn(); } }, samplePbqs);
+  await page.click('#pbq-practice');
+  await page.screenshot({ path: 'shots/pbq-light.png' });
+  if (await page.locator('#big-quiz .order-check').count()) await page.click('#big-quiz .order-check'); else await page.click('#big-quiz .opt >> nth=0');
+  await page.screenshot({ path: 'shots/pbq-light-answered.png' });
+  await page.click('#sheet-close');
+  await page.click('nav button[data-view=cards]');
+  await page.screenshot({ path: 'shots/cards-light.png' });
+  await page.click('#settings-btn');
+  await page.click('#theme-seg button[data-t=system]');
+  await page.emulateMedia({ colorScheme: 'light' }); await page.waitForTimeout(150);
+  const sysLight = await page.evaluate(() => document.documentElement.dataset.theme);
+  await page.emulateMedia({ colorScheme: 'dark' }); await page.waitForTimeout(150);
+  const sysDark = await page.evaluate(() => document.documentElement.dataset.theme);
+  check(sysLight === 'light' && sysDark === 'dark' && await page.evaluate(() => localStorage.getItem('sp_theme')) === null, 'System theme follows the OS setting');
+  await page.click('#sheet-close');
+  await page.click('nav button[data-view=brief]');
 
   check(await page.textContent('#st-streak') === '1', 'Streak is 1 after activity');
   check(!(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth)), 'No horizontal scroll');
