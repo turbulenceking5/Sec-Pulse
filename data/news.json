@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-15T11:33:21Z",
+ "generated": "2026-10-15T17:03:56Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -16,7 +16,7 @@
   {
    "name": "ACSC (via Google News)",
    "ok": true,
-   "count": 1,
+   "count": 3,
    "error": null
   },
   {
@@ -28,13 +28,13 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 7,
+   "count": 6,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 5,
+   "count": 6,
    "error": null
   },
   {
@@ -82,7 +82,7 @@
   {
    "name": "Microsoft Security Blog",
    "ok": true,
-   "count": 8,
+   "count": 7,
    "error": null
   },
   {
@@ -100,11 +100,302 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 20,
+   "count": 21,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "1f5d528f2318",
+   "title": "Magna Hospitality Group Data Breach Lawsuit Investigation",
+   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQQzVBTkUxN1doTHZzR2s2cVBzdnRLTUVnWUV3cHpQZExJX1pvOWhLM2ozcVV6QmVhbTRGQ3NFTkt1SmpmUER4Q0ZTWGM2QlF3R2djQnFnX0lFcDI0UnhVS3FrVmZvTUNLSVlMRXh4TFhTdm5xbGw5bktNOVRRLURxcEQyUEUtX013ZkE?oc=5",
+   "source": "Claim Depot",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-15T16:54:26Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Data breach",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Data breach",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "2ee0c0a49b5a",
+   "title": "Watch Now: Zero Trust Strategies Summit – All Sessions Available on Demand",
+   "link": "https://www.securityweek.com/virtual-event-today-zero-trust-strategies-summit-2/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-15T16:51:34Z",
+   "summary": "This summit is laser-focused on the next generation of Zero Trust and Identity security, moving beyond theory to deliver actionable strategies. The post Watch Now: Zero Trust Strategies Summit – All Sessions Available on Demand appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "4de3942a6b01",
+   "title": "Magna Hospitality Data Breach: 385 GB of Data Stolen",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1HaU9LT1EtbnNHTlZLcFJ1QjhQZU5FNEwyQjNtbV9adUZCR3RLX3Rfd3IwS1RmTmFEN2tLTVZMVkJ3V25XSjhQdjc1OU9xbWZFbFZRV2pMNkJ2YmNTYjZMX18wcXBLc2l1TU5MUmZvdVo0bGdpREE?oc=5",
+   "source": "Claim Depot",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-15T16:40:10Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "cdc576e64c59",
+   "title": "Citizen Lab Traces Zero-Click Candiru Spyware Infections at Al Jazeera to Targeted Online Ads",
+   "link": "https://thehackernews.com/2026/10/citizen-lab-traces-zero-click-candiru.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-15T16:01:57Z",
+   "summary": "Candiru, an Israeli maker of spyware sold to governments, infected devices at the news network Al Jazeera through ordinary online ads, in attacks that needed no click or other action from the user, researchers at the Citizen Lab said Thursday. The hidden attack code ran the moment an ad loaded on…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "6ab9bdcb522c",
+   "title": "Silent Lynx Exploits WinRAR Flaw to Deploy Reverse Shell in CIS Government Attacks",
+   "link": "https://thehackernews.com/2026/10/silent-lynx-exploits-winrar-flaw-to.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-15T16:00:26Z",
+   "summary": "The threat actor known as Silent Lynx has been attributed to a fresh set of attacks targeting government organizations across the Commonwealth of Independent States (CIS). The activity, observed from June 2025 through August 2026, involves four different infection chains that make use of…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "295b94e919e7",
+   "title": "Vulnerability Management Isn't About the Score — It's About How It Applies to You",
+   "link": "https://www.darkreading.com/cybersecurity-operations/vulnerability-management-isnt-about-the-score-its-about-how-it-applies-to-you",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-15T15:17:18Z",
+   "summary": "Organizations need to move away from vendor-assigned, theoretical scores toward real exploit data specific to their environments.",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "067d7709e5cd",
+   "title": "Protect yourself and your family online",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBGZm1IWFVNNjY2ZWZjeVY2ZmxrTWlMZmljeXlsM1NLZWpHaGozTU9CcV9NTU5sMDlvMmNOZThDZVJMd3ZQVlFOT3NwMEdpUUg2M0xoQjBSVkFjWkVGQ1dWQzZlYzl2T1VfdFFOLXpjeWtyZw?oc=5",
+   "source": "Australian Cyber Security",
+   "feed": "ACSC (via Google News)",
+   "region": "AU",
+   "published": "2026-10-15T15:12:12Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "Australia"
+   ],
+   "why": []
+  },
+  {
+   "id": "ba5ef20dc7e9",
+   "title": "Help TDS Linked to Hotejka as 20,000+ Cloudflare Pages Domains Host Tech Support Scams",
+   "link": "https://thehackernews.com/2026/10/help-tds-linked-to-hotejka-as-20000.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-15T14:11:36Z",
+   "summary": "A long-running Traffic Distribution System (TDS) known as Help TDS to a Russian-language affiliate program called Hotejka, which appears to be a rebrand of a traffic monetization operation dubbed ROI777. Help TDS is assessed to be active since at least 2017, offering PHP code templates to partners…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "5d774caabf5a",
+   "title": "Is AI pentesting as good as a human pentester?",
+   "link": "https://www.bleepingcomputer.com/news/security/is-ai-pentesting-as-good-as-a-human-pentester/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-15T14:01:11Z",
+   "summary": "AI pentesting can uncover vulnerabilities missed by human testers, but it also has limitations in consistency, risk assessment, and understanding business context. Intruder compares the strengths and weaknesses of both approaches and explains where AI agents can improve security testing. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "80cf54be1286",
+   "title": "Microsoft: Windows Server 2022 reached end of mainstream support",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2022-reached-end-of-mainstream-support/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-15T13:18:36Z",
+   "summary": "Microsoft announced that Windows Server 2022 has reached the end of mainstream support and will remain in extended support until October 2031. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "12b5084185c2",
+   "title": "NGINX Fixes 5 Flaws, Including Possible RCE and a TLS Bug That May Skip Client-Cert Checks",
+   "link": "https://thehackernews.com/2026/10/nginx-fixes-5-flaws-including-possible.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-15T12:58:05Z",
+   "summary": "NGINX released versions 1.30.6 and 1.31.7 on October 14 to fix five vulnerabilities, one of them present in every release since May 2005. There are three memory bugs that F5, the company behind NGINX, says could crash a worker process or possibly let an attacker run code, and each requires a…",
+   "score": 5,
+   "tags": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "804b1f79c64c",
+   "title": "Supermarket Refrigeration Attack Widens to Copeland, Dixell Controllers",
+   "link": "https://www.securityweek.com/supermarket-refrigeration-attack-widens-to-copeland-dixell-controllers/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-15T12:50:42Z",
+   "summary": "Roughly 700 French supermarkets were hit by the cyberattacks, for which no group has claimed responsibility. The post Supermarket Refrigeration Attack Widens to Copeland, Dixell Controllers appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "e7e058293387",
+   "title": "Next.js Ships Out-of-Band Patch for Two Critical RCE Flaws in Caching and SVG Processing",
+   "link": "https://thehackernews.com/2026/10/nextjs-ships-out-of-band-patch-for-two.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-15T12:28:13Z",
+   "summary": "Next.js released an out-of-band security update on October 14 that fixes two critical flaws allowing unauthenticated remote code execution, along with a high-severity denial-of-service flaw. One code-execution flaw is in React Server Components, and the other in librsvg, the open-source library…",
+   "score": 5,
+   "tags": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "d31e027d6ff9",
+   "title": "Yamaha Saw a Small-Scale Hack That Leaked Some User Data",
+   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPZG9yRmdfMzg5VFZ4T052VnYxNFN0dEoxWkd3bEkxcFdsYUI5amFXSTJCR2RzdkR5aGxGMEROQmJ3Z2VuOW9TelE5MWRxdE1WQTdSTkx1Z0lRQXNLUFozRUxYTE81eTVkdVV4aUNrajhvM0lYN0EtN3RESkMxQ056WnVTVHZsUQ?oc=5",
+   "source": "RideApart.com",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-15T12:21:00Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "ce862b886d1b",
+   "title": "Drupal Patches Critical Field UI Flaw With Unauthenticated RCE Path via Contributed Modules",
+   "link": "https://thehackernews.com/2026/10/drupal-patches-critical-core-rce-flaw.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-15T12:07:20Z",
+   "summary": "Drupal core has a critical flaw in its Field UI module that could let an attacker run code on the site's server, and fixes were shipped on October 14 in Drupal 11.4.10, 11.3.19, and 10.6.19. An attacker cannot reach the flaw through core alone, the Drupal Security Team said in its advisory.…",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "daedf7c2200a",
+   "title": "Assessment evidence guide for enterprise IT",
+   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQUDRscGJXaFRHckJWMC1zOGRxRFVPTG1oYk5oem9WY3pUZkZHRVRGRVNkd0MtZ19qUGdnMmdxTjhiVjNqUG0xZG9wSGxIbnRfcUc4MGY5ajhiSk5hY2czTy1HODhHLTd0NDNWdlRTNGx6eDVibzJVUk1ET0NueEpRd0FWUkh0N1U?oc=5",
+   "source": "Australian Cyber Security",
+   "feed": "ACSC (via Google News)",
+   "region": "AU",
+   "published": "2026-10-15T12:00:00Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "Australia"
+   ],
+   "why": []
+  },
+  {
+   "id": "b88483e9efe2",
+   "title": "ASD Essentials: evolving our approach to cyber security resilience",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQaUppaHdnNnBQMVh6YWtkU1FMTUdOM09zVUFyT2hzbGJxRWlKLW1KZmI5bjlybW5hQjA1UzFjdEZLZ1pqdmFLWXZORXl4S0xFbVJsR1k5YWMtTmhQYUExM0QyUDJIVkVVODlRcEdJSGZCQWVTbkpDNGowY0daLVl6SDVUeHhtRmpJYlFmRUdKRlUyWHlKMGRXd0tfVQ?oc=5",
+   "source": "Australian Cyber Security",
+   "feed": "ACSC (via Google News)",
+   "region": "AU",
+   "published": "2026-10-15T12:00:00Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "Australia"
+   ],
+   "why": []
+  },
+  {
+   "id": "3565d45fa972",
+   "title": "Police arrests 95 suspects in international CSAM crackdown action",
+   "link": "https://www.bleepingcomputer.com/news/security/police-arrests-95-suspects-in-child-sexual-abuse-material-crackdown/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-15T11:55:38Z",
+   "summary": "Law enforcement authorities from 17 countries in Latin America and Europe have arrested 95 suspects in an INTERPOL-coordinated operation targeting the distribution of child sexual abuse material (CSAM) through online messaging groups. [...]",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "999e9923be39",
+   "title": "Fake AI Attacks Spread Across US Companies: How MSSPs Can Stop Incidents Early",
+   "link": "https://thehackernews.com/2026/10/fake-ai-attacks-spread-across-us.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-15T11:46:59Z",
+   "summary": "Attackers are impersonating popular AI products to distribute malware, steal browser sessions, and compromise business accounts. ANY.RUN linked 1,258 public sandbox analyses to fake AI campaigns between April and October of 2026. The campaigns also increase operational pressure on MSSPs serving US…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
   {
    "id": "a28002aabf34",
    "title": "CikaBika Bot RAT Uses Discord for C&C",
@@ -121,6 +412,19 @@
    "why": [
     "Phishing"
    ]
+  },
+  {
+   "id": "9bedf93cf19d",
+   "title": "Why AI Confidence Is Not Validation",
+   "link": "https://thehackernews.com/2026/10/why-ai-confidence-is-not-validation.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-15T11:04:35Z",
+   "summary": "AI is already part of digital forensics and incident response work, with or without a policy in place to govern it. The issue is that these tools are growing more confident in their own output faster than practitioners are developing reliable ways to verify it. Without governance models and…",
+   "score": 0,
+   "tags": [],
+   "why": []
   },
   {
    "id": "b5878f01eb58",
@@ -195,6 +499,12 @@
    "why": [
     "Microsoft 365",
     "Data breach"
+   ],
+   "also": [
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/uk-legal-aid-agency-hack-scope-widens-after-forensic-review/"
+    }
    ]
   },
   {
@@ -264,7 +574,8 @@
      "source": "The Hacker News",
      "url": "https://thehackernews.com/2026/10/palo-alto-networks-patches-pan-os.html"
     }
-   ]
+   ],
+   "epss": 0.0108
   },
   {
    "id": "a713f2422da2",
@@ -284,7 +595,7 @@
     "Vulnerability",
     "SaaS / cloud"
    ],
-   "epss": 0.0184
+   "epss": 0.0324
   },
   {
    "id": "8bed3c35c1a5",
@@ -437,36 +748,6 @@
    "summary": "[This is a Guest Diary by Zachary Norwood, an ISC intern as part of the SANS.edu BACS program]",
    "score": 1,
    "tags": [],
-   "why": []
-  },
-  {
-   "id": "b88483e9efe2",
-   "title": "ASD Essentials: evolving our approach to cyber security resilience",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQaUppaHdnNnBQMVh6YWtkU1FMTUdOM09zVUFyT2hzbGJxRWlKLW1KZmI5bjlybW5hQjA1UzFjdEZLZ1pqdmFLWXZORXl4S0xFbVJsR1k5YWMtTmhQYUExM0QyUDJIVkVVODlRcEdJSGZCQWVTbkpDNGowY0daLVl6SDVUeHhtRmpJYlFmRUdKRlUyWHlKMGRXd0tfVQ?oc=5",
-   "source": "Australian Cyber Security",
-   "feed": "ACSC (via Google News)",
-   "region": "AU",
-   "published": "2026-10-15T00:11:11Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "Australia"
-   ],
-   "why": []
-  },
-  {
-   "id": "daedf7c2200a",
-   "title": "Assessment evidence guide for enterprise IT",
-   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQUDRscGJXaFRHckJWMC1zOGRxRFVPTG1oYk5oem9WY3pUZkZHRVRGRVNkd0MtZ19qUGdnMmdxTjhiVjNqUG0xZG9wSGxIbnRfcUc4MGY5ajhiSk5hY2czTy1HODhHLTd0NDNWdlRTNGx6eDVibzJVUk1ET0NueEpRd0FWUkh0N1U?oc=5",
-   "source": "Australian Cyber Security",
-   "feed": "ACSC (via Google News)",
-   "region": "AU",
-   "published": "2026-10-15T00:11:10Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "Australia"
-   ],
    "why": []
   },
   {
@@ -862,19 +1143,6 @@
    ]
   },
   {
-   "id": "2ee0c0a49b5a",
-   "title": "Virtual Event Today: Zero Trust Strategies Summit",
-   "link": "https://www.securityweek.com/virtual-event-today-zero-trust-strategies-summit-2/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-14T13:56:36Z",
-   "summary": "This summit is laser-focused on the next generation of Zero Trust and Identity security, moving beyond theory to deliver actionable strategies. The post Virtual Event Today: Zero Trust Strategies Summit appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
    "id": "91795601b1ff",
    "title": "Global takedown hits network behind 1 billion phishing messages",
    "link": "https://www.bleepingcomputer.com/news/security/global-takedown-hits-network-behind-1-billion-phishing-messages/",
@@ -914,7 +1182,7 @@
   },
   {
    "id": "319aa986d3e5",
-   "title": "Russian Influence Operation Widely Targeting Latin America",
+   "title": "Russian Influence Operation Widely Targets Latin America",
    "link": "https://www.darkreading.com/cyberattacks-data-breaches/russian-influence-operation-targeting-latin-america",
    "source": "Dark Reading",
    "feed": "Dark Reading",
@@ -1369,7 +1637,8 @@
    "why": [
     "Edge devices",
     "Vulnerability"
-   ]
+   ],
+   "epss": 0.0174
   },
   {
    "id": "45ee4e8f72f4",
@@ -1390,7 +1659,8 @@
    "why": [
     "Edge devices",
     "Vulnerability"
-   ]
+   ],
+   "epss": 0.0108
   },
   {
    "id": "f04894a7601f",
@@ -1410,7 +1680,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0184
+   "epss": 0.0324
   },
   {
    "id": "eb20c74d6ce5",
@@ -1430,7 +1700,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0038
+   "epss": 0.0067
   },
   {
    "id": "62050be54e07",
@@ -1476,7 +1746,7 @@
    "feed": "Dark Reading",
    "region": "Global",
    "published": "2026-10-13T22:29:57Z",
-   "summary": "The scary surprises in the largest security update ever include security bypasses and unauthenticated RCEs.",
+   "summary": "The scary surprises in the largest security update ever include defense bypasses and unauthenticated RCEs.",
    "score": 7,
    "tags": [
     "Actively exploited",
@@ -1543,7 +1813,7 @@
    "feed": "Dark Reading",
    "region": "Global",
    "published": "2026-10-13T20:35:23Z",
-   "summary": "Anthropic's latest study combined IoT and network tests to explore AI self-replication, which researchers said would be \"challenging\" to shut down.",
+   "summary": "Anthropic's latest study combines IoT and network tests to explore AI self-replication, which researchers said would be \"challenging\" to shut down.",
    "score": 0,
    "tags": [],
    "why": []
@@ -2663,7 +2933,7 @@
    "feed": "Dark Reading",
    "region": "Global",
    "published": "2026-10-12T12:30:58Z",
-   "summary": "Fahmida Y Rashid will keep the momentum going as she leads Dark Reading.",
+   "summary": "Fahmida Y. Rashid will keep the momentum going as she leads Dark Reading.",
    "score": 0,
    "tags": [],
    "why": []
@@ -3973,24 +4243,6 @@
    "score": 1,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "a8c7a9dcbf05",
-   "title": "Unauthenticated command injection on internet-facing mail servers: tracking CVE-2026-73570",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/09/30/unauthenticated-command-injection-on-internet-facing-mail-servers-tracking-cve-2026-73570/",
-   "source": "Microsoft Security Blog",
-   "feed": "Microsoft Security Blog",
-   "region": "Global",
-   "published": "2026-09-30T14:00:00Z",
-   "summary": "Microsoft Threat Intelligence examines CVE-2026-73570 exploitation in Zimbra, including observed attack paths, detection opportunities, and mitigation guidance. The post Unauthenticated command injection on internet-facing mail servers: tracking CVE-2026-73570 appeared first on Microsoft Security…",
-   "score": 5,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.7166
   }
  ]
 }
