@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-15T17:03:56Z",
+ "generated": "2026-10-15T21:25:12Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -34,7 +34,7 @@
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 6,
+   "count": 5,
    "error": null
   },
   {
@@ -52,7 +52,7 @@
   {
    "name": "CISA KEV",
    "ok": true,
-   "count": 15,
+   "count": 16,
    "error": null
   },
   {
@@ -82,7 +82,7 @@
   {
    "name": "Microsoft Security Blog",
    "ok": true,
-   "count": 7,
+   "count": 6,
    "error": null
   },
   {
@@ -100,11 +100,134 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 21,
+   "count": 22,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "c7adc8194c58",
+   "title": "AI Slop Isn't Just for Social Media; It's Ruining Cyberattacks, Too",
+   "link": "https://www.darkreading.com/threat-intelligence/ai-slop-ruining-cyberattacks",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-15T20:43:20Z",
+   "summary": "Don't buy the hype! AI has been dumbing down cyberattacks, and serious threat actors are barely touching it.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "a094aa58c0da",
+   "title": "Hackers exploit Collabora RCE flaw to backdoor Nextcloud servers",
+   "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-collabora-rce-flaw-to-backdoor-nextcloud-servers/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-15T20:25:04Z",
+   "summary": "Threat actors are exploiting a critical command execution flaw, now tracked as CVE-2026-110447, in the Collabora Online - Built-in CODE Server app (richdocumentscode) for Nextcloud. [...]",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0123,
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/hackers-backdoor-nextcloud-servers.html"
+    }
+   ]
+  },
+  {
+   "id": "222e66a51003",
+   "title": "Critical PwnEscape Linux Kernel Vulnerability Lets Guest VMs Read Host Memory",
+   "link": "https://thehackernews.com/2026/10/critical-pwnescape-linux-kernel.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-15T20:24:36Z",
+   "summary": "A newly disclosed critical flaw in the Linux kernel allows code inside a virtual machine to read memory on the host computer it runs on. A researcher demonstrated the leak against Vercel's live cloud sandboxes, and Vercel confirmed it. The flaw, now tracked as CVE-2026-99999 and nicknamed…",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "6c8051f534fe",
+   "title": "Android gets AI defenses against messaging scams, fake calls",
+   "link": "https://www.bleepingcomputer.com/news/security/android-gets-ai-defenses-against-messaging-scams-fake-calls/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-15T19:48:43Z",
+   "summary": "Google announced new AI-powered defenses against scam messages and call-forwarding abuse on Android, currently rolling out to eligible devices. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "986cc714fb42",
+   "title": "ThreatsDay: Adobe RCE, DNS Wallet Theft, NVIDIA Container Escape, Self-Healing Backdoor + 23 More",
+   "link": "https://thehackernews.com/2026/10/threatsday-adobe-rce-dns-wallet-theft.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-15T18:49:33Z",
+   "summary": "Someone built a tool to steal data, then decided it should scare the victim for fun. Yes, that’s an actual feature. And somehow, it fits right in with this week's security stories. The rest gets interesting in different ways. A small permission can lead to a big theft. A trusted login can hide the…",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "b14fd868476b",
+   "title": "Hackers hijack D-Link, Ubiquiti devices to resell your stolen bandwidth",
+   "link": "https://www.bleepingcomputer.com/news/security/hackers-hijack-d-link-ubiquiti-devices-to-resell-your-stolen-bandwidth/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-15T18:20:59Z",
+   "summary": "A proxyjacking campaign has impacted devices in 34 countries, monetizing victims' internet connections through a commercial residential proxy network. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "33659e3f7808",
+   "title": "Context Is King in the Fight Against Modern Cyberattacks",
+   "link": "https://www.securityweek.com/context-is-king-in-the-fight-against-modern-cyberattacks/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-15T17:42:50Z",
+   "summary": "Contextual defense helps security teams connect the signals, anticipate what comes next, and stop threats before they escalate. The post Context Is King in the Fight Against Modern Cyberattacks appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "20dc09b781c4",
+   "title": "Fake Arch Linux packages push malware with root privileges",
+   "link": "https://www.bleepingcomputer.com/news/security/fake-arch-linux-packages-push-malware-with-root-privileges/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-15T17:12:31Z",
+   "summary": "A threat actor uploaded malicious packages to the Arch User Repository (AUR) that impersonated two popular helper tools, yay and paru. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
   {
    "id": "1f5d528f2318",
    "title": "Magna Hospitality Group Data Breach Lawsuit Investigation",
@@ -532,7 +655,7 @@
    "feed": "Dark Reading",
    "region": "Global",
    "published": "2026-10-15T07:00:00Z",
-   "summary": "Hundreds of stores lost millions of dollars because they hired third parties to manage the outdated OT firmware running their cooling systems.",
+   "summary": "Hundreds of stores lost millions of euros because they hired third parties to manage the outdated OT firmware running their cooling systems.",
    "score": 2,
    "tags": [
     "Vulnerability"
@@ -596,25 +719,6 @@
     "SaaS / cloud"
    ],
    "epss": 0.0324
-  },
-  {
-   "id": "8bed3c35c1a5",
-   "title": "Cisco Warns of Exploited Secure Email Gateway Vulnerability",
-   "link": "https://www.securityweek.com/cisco-warns-of-exploited-secure-email-gateway-vulnerability/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-15T06:34:15Z",
-   "summary": "Unauthenticated, remote attackers could write arbitrary files to the operating system and execute commands with root privileges. The post Cisco Warns of Exploited Secure Email Gateway Vulnerability appeared first on SecurityWeek .",
-   "score": 5,
-   "tags": [
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "why": [
-    "Edge devices",
-    "Vulnerability"
-   ]
   },
   {
    "id": "502c877b3bd3",
@@ -766,6 +870,26 @@
    "why": []
   },
   {
+   "id": "032dae075ea2",
+   "title": "CVE-2026-21589: Atlassian Multiple Products — Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-21589",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-10-15T00:00:00Z",
+   "summary": "Multiple Atlassian products (Bitbucket Data Center ,Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center, Crowd Data Center, Crucible and Fisheye) contain a files or directories accessible to external… CISA remediation due 2026-10-18.",
+   "score": 4,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0278
+  },
+  {
    "id": "fc19441ee597",
    "title": "Ransomware gangs threaten Australian executives & families",
    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPRnJ1ZTFHUmxVY3lONlpNNE5JOVZxMm96ZVEzQWRTcktFazV6ZXRralp2OVJHTXlzdjNXc2YtX0lJajBNMVNadHlCd0dDYlFWS053YlJ0bjdINnV6RVdPdG1kYWhNLU5QalhWSDNfX2tWT09kZnFRM2ZxanVhSWJtVElDQXVNMndhTVF3QVhhOFlMMy15clE?oc=5",
@@ -829,23 +953,6 @@
      "source": "SecurityWeek",
      "url": "https://www.securityweek.com/ivanti-zero-day-chain-gave-attackers-root-access-to-fully-patched-vpn/"
     }
-   ]
-  },
-  {
-   "id": "b0a791a97e86",
-   "title": "Yam Store: The Phishing Network Behind a Billion Messages",
-   "link": "https://www.darkreading.com/cyberattacks-data-breaches/yam-store-phishing-network-behind-billion-messages",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-14T20:57:16Z",
-   "summary": "A sprawling cybercrime marketplace supplied cloud infrastructure and phishing kits that helped fuel more than 1 billion phishing messages worldwide.",
-   "score": 4,
-   "tags": [
-    "Phishing"
-   ],
-   "why": [
-    "Phishing"
    ]
   },
   {
@@ -925,25 +1032,6 @@
    ]
   },
   {
-   "id": "976f4f5fb239",
-   "title": "Cisco Warns of Active Attacks Exploiting New Critical Secure Email Gateway Vulnerability",
-   "link": "https://thehackernews.com/2026/10/cisco-warns-of-active-attacks.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-14T18:38:56Z",
-   "summary": "Attackers are exploiting a critical flaw in Cisco Secure Email Gateway that lets a sender with no login write files to the appliance's operating system, Cisco said in an advisory on Wednesday. The attacker sends an email with a crafted attachment through the gateway and, if it succeeds, could then…",
-   "score": 5,
-   "tags": [
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "why": [
-    "Edge devices",
-    "Vulnerability"
-   ]
-  },
-  {
    "id": "297c58c4dd00",
    "title": "CenterPoint data breach affects over 1 million Texans, new AG report shows",
    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNMHlLY01GVWhhdW5mM3NmOWN3NzFmU1lFNHN0VElyU19WZWtYU0pkUXA4UUVXdHNDX3RLYUk0ekI0WnU1WDJUZ1p4M2MwSW5yQnVjZ1QyRGU1aEoyU0FqRWZ4OENaOGRENW1VdjBzNUxMVGZSaHJFaHlMWm96Q0tSaE1Ea05GWnVfaTBtZ1NlXzJNSzRaM25QTGVhRDA?oc=5",
@@ -980,19 +1068,6 @@
    "why": []
   },
   {
-   "id": "639d0d6e00a7",
-   "title": "Hackers Backdoor Nextcloud Servers Through Critical Flaw in Collabora’s Built-in CODE App",
-   "link": "https://thehackernews.com/2026/10/hackers-backdoor-nextcloud-servers.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-14T17:38:31Z",
-   "summary": "Attackers exploited a flaw in an optional Nextcloud app, Collabora Online - Built-in CODE Server, to plant web shells on Nextcloud servers. Three administrators reported the issue on GitHub, with the first logged attack on September 10. A web shell is a small file that executes any command an…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
    "id": "a7632caf16a4",
    "title": "Cisco patches new Secure Email Gateway zero-day exploited in attacks",
    "link": "https://www.bleepingcomputer.com/news/security/cisco-patches-actively-exploited-secure-email-gateway-zero-day/",
@@ -1016,6 +1091,10 @@
     {
      "source": "The Hacker News",
      "url": "https://thehackernews.com/2026/10/cisco-warns-of-active-attacks.html"
+    },
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/cisco-warns-of-exploited-secure-email-gateway-vulnerability/"
     }
    ]
   },
@@ -1159,6 +1238,12 @@
    "why": [
     "Phishing",
     "Vulnerability"
+   ],
+   "also": [
+    {
+     "source": "Dark Reading",
+     "url": "https://www.darkreading.com/cyberattacks-data-breaches/yam-store-phishing-network-behind-billion-messages"
+    }
    ]
   },
   {
@@ -4230,19 +4315,6 @@
     "Vulnerability"
    ],
    "epss": 0.022
-  },
-  {
-   "id": "786d26f6dd45",
-   "title": "​​Secure what’s next: Your guide to Microsoft Security at Microsoft Ignite 2026",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/09/30/secure-whats-next-your-guide-to-microsoft-security-at-microsoft-ignite-2026/",
-   "source": "Microsoft Security Blog",
-   "feed": "Microsoft Security Blog",
-   "region": "Global",
-   "published": "2026-09-30T19:31:00Z",
-   "summary": "This year at Microsoft Ignite, we spotlight our AI-first, end-to-end security platform designed to protect identities, devices, data, applications, clouds, infrastructure, and the AI agents now working alongside your teams. The post ​​Secure what’s next: Your guide to Microsoft Security at…",
-   "score": 1,
-   "tags": [],
-   "why": []
   }
  ]
 }
