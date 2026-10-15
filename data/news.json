@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-14T23:56:18Z",
+ "generated": "2026-10-15T04:43:32Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,13 +28,13 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 7,
+   "count": 5,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 8,
+   "count": 6,
    "error": null
   },
   {
@@ -52,7 +52,7 @@
   {
    "name": "CISA KEV",
    "ok": true,
-   "count": 16,
+   "count": 15,
    "error": null
   },
   {
@@ -100,15 +100,145 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 21,
+   "count": 20,
    "error": null
   }
  ],
  "items": [
   {
-   "id": "c721f9197e2d",
+   "id": "4eb5bf7922c6",
+   "title": "Hobbs and Whistles owner investigat­es hack that may have exposed customer data",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQSWZDbjJ6ZUFGWm1pU2hoSHJzMGtaWTZuck9hTW9Wem93WHZZN1ZfZ2liSkNFWFhwaEJJcjJ4TkR1ZTMtSTBJaGg5N2JabE9mWXU3MWw0aC1IUTFtNy1kUTg3MEgzZms5YlVOd1BJcWVvU0xGSTg0ekVxSHF4U19KRzRJYjdsanR0UFJPdzV3?oc=5",
+   "source": "PressReader",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-15T02:26:15Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ],
+   "also": [
+    {
+     "source": "The Guardian",
+     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPc2ZJTzIzMFMzRTlOSldDbGRtMU9tLURsSVV5LV9zcDlYVzZXUU81aWtBOVc2eWcyQmZuQVYtRl9iQXV6dDVabGNDWmxZQm1wSnNwTWI5d3VockxNS3JsWk5jdW9uTHRMWG5OUEV5eG9CX2NpV3QzSmN3X0VRSlZhMXp1SDUxTVE2SVdRa1RsYw?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "a187e99c589d",
+   "title": "ISC Stormcast For Thursday, October 15th, 2026 https://isc.sans.edu/podcastdetail/10138, (Thu, Oct 15th)",
+   "link": "https://isc.sans.edu/diary/rss/33428",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-10-15T02:00:03Z",
+   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "e981b7de3fc1",
+   "title": "Panchan's Mining Island [Guest Diary], (Wed, Oct 14th)",
+   "link": "https://isc.sans.edu/diary/rss/33426",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-10-15T01:10:57Z",
+   "summary": "[This is a Guest Diary by Zachary Norwood, an ISC intern as part of the SANS.edu BACS program]",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "f27586b6e439",
+   "title": "$120M NAR real estate commission class action settlement",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPYjFLa0hpV0tId2tPWXZzSEFuNm00ZEVSN2EwSGxLNGlmUThTcF8wQS1JSkV0VkhsYTV2a2tJX05VcDZWTzV2ZmlYWWVwbHRCdWxXY3JDNFJQLVV0d3JFWUZkazh5dnJ1QURpci1DVmFWRl9QYjVJQV9rcnNuc18yQmUxeTFidl9hZkNyZVJiVWp5OU1qZENMZTZDMFVGM2FDWnE4ZDJaMmxsTnprZFpQVENOVGhGd0pLazRvYjJUcTZPQVQ4dGJJVw?oc=5",
+   "source": "Top Class Actions",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-15T00:38:36Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
+   "id": "b88483e9efe2",
+   "title": "ASD Essentials: evolving our approach to cyber security resilience",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQaUppaHdnNnBQMVh6YWtkU1FMTUdOM09zVUFyT2hzbGJxRWlKLW1KZmI5bjlybW5hQjA1UzFjdEZLZ1pqdmFLWXZORXl4S0xFbVJsR1k5YWMtTmhQYUExM0QyUDJIVkVVODlRcEdJSGZCQWVTbkpDNGowY0daLVl6SDVUeHhtRmpJYlFmRUdKRlUyWHlKMGRXd0tfVQ?oc=5",
+   "source": "Australian Cyber Security",
+   "feed": "ACSC (via Google News)",
+   "region": "AU",
+   "published": "2026-10-15T00:11:11Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "Australia"
+   ],
+   "why": []
+  },
+  {
+   "id": "daedf7c2200a",
+   "title": "Assessment evidence guide for enterprise IT",
+   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQUDRscGJXaFRHckJWMC1zOGRxRFVPTG1oYk5oem9WY3pUZkZHRVRGRVNkd0MtZ19qUGdnMmdxTjhiVjNqUG0xZG9wSGxIbnRfcUc4MGY5ajhiSk5hY2czTy1HODhHLTd0NDNWdlRTNGx6eDVibzJVUk1ET0NueEpRd0FWUkh0N1U?oc=5",
+   "source": "Australian Cyber Security",
+   "feed": "ACSC (via Google News)",
+   "region": "AU",
+   "published": "2026-10-15T00:11:10Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "Australia"
+   ],
+   "why": []
+  },
+  {
+   "id": "f35fdae7915f",
+   "title": "Asset scoping guide for enterprise IT",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBCQ0VwSk1zYnhaM0IwRERmcXNyblJmOGg2NG1aNXZDZGJROHFHdDVpek8xTXJpSlphRWtJUFNPY3lTZG9CemlBUFoxdXpiVUt4QVZSa1JhOGpGd2hBSlR6MnpsWnJKa1dsQlVJRWliMVE4U2U3X3JmdWE3UGhieDA?oc=5",
+   "source": "Australian Cyber Security",
+   "feed": "ACSC (via Google News)",
+   "region": "AU",
+   "published": "2026-10-15T00:11:07Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "Australia"
+   ],
+   "why": []
+  },
+  {
+   "id": "fc19441ee597",
+   "title": "Ransomware gangs threaten Australian executives & families",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPRnJ1ZTFHUmxVY3lONlpNNE5JOVZxMm96ZVEzQWRTcktFazV6ZXRralp2OVJHTXlzdjNXc2YtX0lJajBNMVNadHlCd0dDYlFWS053YlJ0bjdINnV6RVdPdG1kYWhNLU5QalhWSDNfX2tWT09kZnFRM2ZxanVhSWJtVElDQXVNMndhTVF3QVhhOFlMMy15clE?oc=5",
+   "source": "SecurityBrief Australia",
+   "feed": "AU breach news",
+   "region": "AU",
+   "published": "2026-10-14T23:37:00Z",
+   "summary": "",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Ransomware"
+   ],
+   "why": [
+    "Australia",
+    "Ransomware"
+   ]
+  },
+  {
+   "id": "b57abd2c6608",
    "title": "DHX faces lawsuit as ex-director alleges 4 billion won embezzlement tied to failed real estate deal - CHOSUNBIZ",
-   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQM2JtY3N6MjhneTl6Q3lWSEd4ODI3MkI0RmxBbXZBMDd0MVllTHJaa2NXV09NdHowUnFMWnNHeEV1b1F0LWlPQWl6MzZZMjFnMVJxWTJ0SDVyWUptYmxyN1g5YnRxNGZDZVhrdTFRTjhkdTF1NktkdE01WV9TNUxMa9IBlAFBVV95cUxQYlNRWmdIRjRRZXJkZVRYUzE2YnVaRjRHSGRKOVkzTzRfa2ZjakNRZVc3RTBLX3RpR2NFbjM4RDdDUGM0LTJZWmZ2NHFFenA3R3hab01tbU5TNThoejBNbmdNMGJoXzhJb3dkZlFuN05jckZZV2V5V3JxQ09IUHc2UmlhdDl1WHRzNERmX1k0M085MV9f?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQYlNRWmdIRjRRZXJkZVRYUzE2YnVaRjRHSGRKOVkzTzRfa2ZjakNRZVc3RTBLX3RpR2NFbjM4RDdDUGM0LTJZWmZ2NHFFenA3R3hab01tbU5TNThoejBNbmdNMGJoXzhJb3dkZlFuN05jckZZV2V5V3JxQ09IUHc2UmlhdDl1WHRzNERmX1k0M085MV9f0gGUAUFVX3lxTFBiU1FaZ0hGNFFlcmRlVFhTMTZidVpGNEdIZEo5WTNPNF9rZmNqQ1FlVzdFMEtfdGlHY0VuMzhEN0NQYzQtMllaZnY0cUV6cDdHeFpvTW1tTlM1OGh6ME1uZ00wYmhfOElvd2RmUW43TmNyRllXZXlXcnFDT0hQdzZSaWF0OXVYdHM0RGZfWTQzTzkxX18?oc=5",
    "source": "Chosunbiz",
    "feed": "Real estate cyber news",
    "region": "Global",
@@ -244,23 +374,6 @@
    "score": 0,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "f27586b6e439",
-   "title": "$120M NAR real estate commission class action settlement",
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPYjFLa0hpV0tId2tPWXZzSEFuNm00ZEVSN2EwSGxLNGlmUThTcF8wQS1JSkV0VkhsYTV2a2tJX05VcDZWTzV2ZmlYWWVwbHRCdWxXY3JDNFJQLVV0d3JFWUZkazh5dnJ1QURpci1DVmFWRl9QYjVJQV9rcnNuc18yQmUxeTFidl9hZkNyZVJiVWp5OU1qZENMZTZDMFVGM2FDWnE4ZDJaMmxsTnprZFpQVENOVGhGd0pLazRvYjJUcTZPQVQ4dGJJVw?oc=5",
-   "source": "Top Class Actions",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-14T19:01:44Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ]
   },
   {
    "id": "b84c40f0160a",
@@ -1676,23 +1789,6 @@
    ],
    "why": [
     "Microsoft 365"
-   ]
-  },
-  {
-   "id": "ee38f0095604",
-   "title": "Hobbs and Whistles owner investigates hack that may have exposed customer data | Retail industry",
-   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPc2ZJTzIzMFMzRTlOSldDbGRtMU9tLURsSVV5LV9zcDlYVzZXUU81aWtBOVc2eWcyQmZuQVYtRl9iQXV6dDVabGNDWmxZQm1wSnNwTWI5d3VockxNS3JsWk5jdW9uTHRMWG5OUEV5eG9CX2NpV3QzSmN3X0VRSlZhMXp1SDUxTVE2SVdRa1RsYw?oc=5",
-   "source": "The Guardian",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-13T10:11:00Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
    ]
   },
   {
@@ -3635,28 +3731,6 @@
     "Vulnerability"
    ],
    "epss": 0.7166
-  },
-  {
-   "id": "5411a76de5a8",
-   "title": "CVE-2026-76504: Cisco Catalyst SD-WAN Manager — Cisco Catalyst SD-WAN Manager Hex Encoding Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76504",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-09-30T00:00:00Z",
-   "summary": "Cisco Catalyst SD-WAN Manager contains a hex encoding vulnerability that could allow an unauthenticated, remote attacker to access an affected system with privileges of the admin user due to improper handling of URI encoding in an HTTP request. CISA remediation due 2026-10-03.",
-   "score": 7,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "why": [
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "epss": 0.0182
   }
  ]
 }
