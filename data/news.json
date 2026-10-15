@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-15T21:25:12Z",
+ "generated": "2026-10-15T23:43:08Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -34,7 +34,7 @@
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 5,
+   "count": 6,
    "error": null
   },
   {
@@ -105,6 +105,66 @@
   }
  ],
  "items": [
+  {
+   "id": "3bd9f144301e",
+   "title": "Cyber breach revelations fettered with stigma",
+   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNR182SWNEYlpRbWZkNmYzT3AxV1lLN1NZeklRb0ZWRHpUeEVucy00X3J2TmplLUpFMDlTZGhkeHQwdWhsR1ZjSm5mX0hjNHFTYjNfODRld2RfSjg4RUhFbVktT0dHQzM4V1Y5Ynd0NUhrRkFyc0NsWnJtbzVtWklfTTZyXzZaLXZGeXcw?oc=5",
+   "source": "REMI Network - Real Estate Management Industry Network",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-15T23:35:10Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "e981b7de3fc1",
+   "title": "Panchan's Mining Island [Guest Diary], (Wed, Oct 14th)",
+   "link": "https://isc.sans.edu/diary/rss/33426",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-10-15T23:03:42Z",
+   "summary": "[This is a Guest Diary by Zachary Norwood, an ISC intern as part of the SANS.edu BACS program]",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "3f1030ed0e26",
+   "title": "SecTor 2026 Reveals a Rapidly Shifting Cybersecurity Landscape",
+   "link": "https://www.darkreading.com/cybersecurity-operations/sector-2026-reveals-a-rapidly-shifting-cybersecurity-landscape",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-15T22:10:08Z",
+   "summary": "The event closed in Toronto last week, with experts sharing critical perspectives on emerging risks, drawing record attendance and marking 22% growth.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "5921092180eb",
+   "title": "F-Secure Launches Victim-First Scam Encyclopedia Covering 50+ Types of Consumer Fraud",
+   "link": "https://www.darkreading.com/threat-intelligence/f-secure-launches-victim-first-scam-encyclopedia-covering-50-types-of-consumer-fraud",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-15T21:55:07Z",
+   "summary": "Built from decades of threat intelligence research, the new resource explains scams from the victims' perspective and tracks emerging forms of cyber crime.",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
   {
    "id": "c7adc8194c58",
    "title": "AI Slop Isn't Just for Social Media; It's Ruining Cyberattacks, Too",
@@ -267,7 +327,7 @@
    "source": "Claim Depot",
    "feed": "Real estate cyber news",
    "region": "Global",
-   "published": "2026-10-15T16:40:10Z",
+   "published": "2026-10-15T16:39:25Z",
    "summary": "",
    "score": 7,
    "tags": [
@@ -837,19 +897,6 @@
    "region": "Global",
    "published": "2026-10-15T02:00:03Z",
    "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
-   "score": 1,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "e981b7de3fc1",
-   "title": "Panchan's Mining Island [Guest Diary], (Wed, Oct 14th)",
-   "link": "https://isc.sans.edu/diary/rss/33426",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-10-15T01:10:57Z",
-   "summary": "[This is a Guest Diary by Zachary Norwood, an ISC intern as part of the SANS.edu BACS program]",
    "score": 1,
    "tags": [],
    "why": []
