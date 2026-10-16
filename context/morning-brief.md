@@ -44,6 +44,11 @@ CySA+ focus: 2.2 Reading scan output and CVSS
 - **Failures**: a 404/410 from the push service means the subscription is gone ("subscription expired" in the log; re-enable in the app and update the secret). `notify()` tries both channels before raising `NotifyError`, so one broken channel doesn't block the other. The run then fails (so GitHub e-mails you), but `brief-sent.txt` is still written if the other channel delivered.
 - Tested end to end against Chromium/FCM (subscribe, send with `send_brief.py`, the service worker shows it). Apple's push service uses the same standard.
 
+## This morning's brief (tap target)
+`send_brief.py` also writes **`data/brief.json`** (`{date, generated, title, items: [news-card fields], stats: {recent, au, kev}, lesson: {id, title}}`), committed by the workflow with the sent marker. The Web Push payload carries a compact copy as `brief` (`shrink_brief()`: items keep only `id, title, source, region, published, summary`, because Google News links alone run to 450 chars; summaries are cut to 140 chars, then dropped, if the payload would pass `WEBPUSH_MAX`). Its `url` is `./#today`.
+
+The service worker saves `brief` to the `sec-pulse-push` cache (`push-brief.json`, kept by the activate cleanup), so tapping the notification shows it instantly, before the new `news.json`/`brief.json` are deployed (about a minute). The app's `loadTodayBrief()` takes whichever of the cached copy and `data/brief.json` has the newer `generated`; `briefItems()` fills links, tags and longer summaries from `news.json` by id (falling back to a Google News search link). See [app.md](app.md).
+
 ## ntfy specifics
 - POST to `{NTFY_SERVER}/{NTFY_TOPIC}`. The body is the message text.
 - Headers: `Title`, `Tags: shield` (shows a 🛡️ emoji), `Priority: default`, and `Click: APP_URL` (tapping opens the app).

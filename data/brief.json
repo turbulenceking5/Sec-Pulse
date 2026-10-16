@@ -1,0 +1,88 @@
+{
+ "date": "2026-10-16",
+ "generated": "2026-10-16T02:44:23+00:00",
+ "title": "Sec-Pulse brief - Fri 16 Oct",
+ "items": [
+  {
+   "id": "baddc3bdfdcc",
+   "title": "Semperis report: Australian cyber executives face physical threats in ransomware attacks",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQOGlJYUhRcllLZDRtX1ZxNGNHeHIxSmpBOHpaS2k3MDI1aDJ2SV82RkxUeFNTM0xYcXdKVmtfUG5sMkQyNnhEeDdjQ25scnFOcldDOHdzVmtqVkFQRWJ5N29yZ3RVRGZxV2xOMkhCT0dPNDdfUDRUSzEyd3hiN1JhbXhPeDF5dXdyU0pnMC1sVDhMN2FSb2VtM2pDMmdIajVfUlNSVTFseEEtaHlqNmtpT1NRODVpajlsR2JxLWFVSUY3RHBvSURZMmZnMFhhZjRU?oc=5",
+   "source": "Australian Cyber Security Magazine",
+   "region": "AU",
+   "published": "2026-10-15T05:00:00Z",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Ransomware"
+   ],
+   "summary": ""
+  },
+  {
+   "id": "fc19441ee597",
+   "title": "Ransomware gangs threaten Australian executives & families",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPRnJ1ZTFHUmxVY3lONlpNNE5JOVZxMm96ZVEzQWRTcktFazV6ZXRralp2OVJHTXlzdjNXc2YtX0lJajBNMVNadHlCd0dDYlFWS053YlJ0bjdINnV6RVdPdG1kYWhNLU5QalhWSDNfX2tWT09kZnFRM2ZxanVhSWJtVElDQXVNMndhTVF3QVhhOFlMMy15clE?oc=5",
+   "source": "SecurityBrief Australia",
+   "region": "AU",
+   "published": "2026-10-14T23:37:00Z",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Ransomware"
+   ],
+   "summary": ""
+  },
+  {
+   "id": "b57abd2c6608",
+   "title": "DHX faces lawsuit as ex-director alleges 4 billion won embezzlement tied to failed real estate deal - CHOSUNBIZ",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQYlNRWmdIRjRRZXJkZVRYUzE2YnVaRjRHSGRKOVkzTzRfa2ZjakNRZVc3RTBLX3RpR2NFbjM4RDdDUGM0LTJZWmZ2NHFFenA3R3hab01tbU5TNThoejBNbmdNMGJoXzhJb3dkZlFuN05jckZZV2V5V3JxQ09IUHc2UmlhdDl1WHRzNERmX1k0M085MV9f0gGUAUFVX3lxTFBiU1FaZ0hGNFFlcmRlVFhTMTZidVpGNEdIZEo5WTNPNF9rZmNqQ1FlVzdFMEtfdGlHY0VuMzhEN0NQYzQtMllaZnY0cUV6cDdHeFpvTW1tTlM1OGh6ME1uZ00wYmhfOElvd2RmUW43TmNyRllXZXlXcnFDT0hQdzZSaWF0OXVYdHM0RGZfWTQzTzkxX18?oc=5",
+   "source": "Chosunbiz",
+   "region": "Global",
+   "published": "2026-10-14T23:00:00Z",
+   "score": 13,
+   "tags": [
+    "Real estate",
+    "SaaS / cloud"
+   ],
+   "summary": ""
+  },
+  {
+   "id": "1f5d528f2318",
+   "title": "Magna Hospitality Group Data Breach Lawsuit Investigation",
+   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQQzVBTkUxN1doTHZzR2s2cVBzdnRLTUVnWUV3cHpQZExJX1pvOWhLM2ozcVV6QmVhbTRGQ3NFTkt1SmpmUER4Q0ZTWGM2QlF3R2djQnFnX0lFcDI0UnhVS3FrVmZvTUNLSVlMRXh4TFhTdm5xbGw5bktNOVRRLURxcEQyUEUtX013ZkE?oc=5",
+   "source": "Claim Depot",
+   "region": "Global",
+   "published": "2026-10-15T16:54:26Z",
+   "score": 10,
+   "tags": [
+    "Data breach",
+    "SaaS / cloud"
+   ],
+   "summary": ""
+  },
+  {
+   "id": "0ec6dac33216",
+   "title": "Palo Alto Networks Patches PAN-OS Zero-Day Exploited for Remote Code Execution",
+   "link": "https://www.securityweek.com/palo-alto-networks-patches-pan-os-zero-day-exploited-for-remote-code-execution/",
+   "source": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-15T06:59:54Z",
+   "score": 10,
+   "tags": [
+    "Actively exploited",
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "summary": "The company says it’s aware of limited exploitation against customers’ firewalls, and it has made IoCs available. The post Palo Alto Networks Patches PAN-OS Zero-Day Exploited for Remote Code Execution appeared first on SecurityWeek .",
+   "epss": 0.0108
+  }
+ ],
+ "stats": {
+  "recent": 54,
+  "au": 7,
+  "kev": 1
+ },
+ "lesson": {
+  "id": "4.3",
+  "title": "Security metrics and KPIs"
+ }
+}

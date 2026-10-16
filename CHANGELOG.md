@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-10-16: Read the whole brief
+- Tapping the morning notification now opens **This morning's brief**: the same 5 stories with full summaries and links, the overnight stats, today's lesson and the question of the day. It works the moment the notification arrives. It's also on the Brief tab ("📰 This morning's brief") for the rest of the day.
+
 ## 2026-10-15: Notifications that open the app
 - **Turn on notifications in Settings** (open Sec-Pulse from its Home Screen icon first). The morning brief and weekly digest then arrive as notifications from Sec-Pulse itself, and tapping one opens the app on the Brief instead of Safari. One-time setup: copy the code it shows into GitHub (steps in Settings and SETUP.md). ntfy keeps working if you want both.
 - The morning brief can be started at exactly 7:25am by a free external scheduler (cron-job.org; steps in SETUP.md), with GitHub's own schedule as a backup. You never get two briefs in one day: whichever runs first sends it.

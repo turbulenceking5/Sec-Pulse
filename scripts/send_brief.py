@@ -30,6 +30,7 @@ NOW = dt.datetime.now(dt.timezone.utc)
 BRISBANE = dt.timezone(dt.timedelta(hours=10))  # Queensland has no daylight saving
 MAX_Q = 240  # question-of-the-day characters in the brief
 SENT_FILE = os.path.join(ROOT, "data", "brief-sent.txt")
+BRIEF_FILE = os.path.join(ROOT, "data", "brief.json")
 
 
 def published(item):
@@ -81,7 +82,7 @@ class NotifyError(Exception):
 WEBPUSH_MAX = 3800  # bytes of JSON payload; Web Push allows ~4 KB after encryption
 
 
-def send_webpush(title, body, tag):
+def send_webpush(title, body, tag, brief=None):
     """Web Push to the Home Screen app (tapping opens it). Needs WEBPUSH_SUBSCRIPTION (the JSON the
     app shows in Settings) and VAPID_PRIVATE_KEY. pywebpush is pip-installed by the brief/digest
     workflows only, and imported here so the rest of this module stays standard library."""
@@ -91,15 +92,32 @@ def send_webpush(title, body, tag):
         raise RuntimeError("VAPID_PRIVATE_KEY not set")
     sub = json.loads(os.environ["WEBPUSH_SUBSCRIPTION"])
 
-    def payload(text):
-        return json.dumps({"title": title, "body": text, "tag": tag, "url": "./#brief"}, ensure_ascii=False)
-    while len(payload(body).encode("utf-8")) > WEBPUSH_MAX:
+    # With a brief, tapping opens the in-app "This morning's brief" sheet (#today), and the service worker
+    # stores the brief so it shows instantly, even before the new news.json is deployed.
+    url = "./#today" if brief else "./#brief"
+
+    def payload(text, b):
+        d = {"title": title, "body": text, "tag": tag, "url": url}
+        if b:
+            d["brief"] = b
+        return json.dumps(d, ensure_ascii=False)
+
+    def fits(text, b):
+        return len(payload(text, b).encode("utf-8")) <= WEBPUSH_MAX
+    # Shrink to fit: shorter story summaries, then none (the app fills them from news.json), then the body.
+    b = brief
+    for limit in (None, 140, 0):
+        b = shrink_brief(brief, limit)
+        if fits(body, b):
+            break
+    while not fits(body, b):
         body = body[:-200].rstrip() + "…"
+    body_payload = payload(body, b)
     # VAPID "sub" must be mailto: or a bare https://host; the app's origin keeps any e-mail out of the repo.
     host = urllib.parse.urlsplit(os.environ.get("APP_URL", "")).hostname or "github.com"
     claims = {"sub": f"https://{host}"}
     try:
-        webpush(sub, payload(body), vapid_private_key=key, vapid_claims=claims, ttl=12 * 3600, timeout=30)
+        webpush(sub, body_payload, vapid_private_key=key, vapid_claims=claims, ttl=12 * 3600, timeout=30)
     except WebPushException as e:
         if getattr(e.response, "status_code", None) in (404, 410):
             raise RuntimeError("subscription expired - in the app turn notifications on again (Settings) "
@@ -107,7 +125,35 @@ def send_webpush(title, body, tag):
         raise
 
 
-def notify(title, body, dry=False, tags="shield", priority="default", what="brief", tag="brief"):
+PUSH_ITEM_KEYS = ("id", "title", "source", "region", "published", "summary")
+
+
+def shrink_brief(brief, limit):
+    """Compact copy of the brief for the push payload: no links/tags/scores (Google News links alone can
+    be 450 chars; the app takes them from data/brief.json or news.json by id), and story summaries cut
+    to `limit` characters (0 = dropped, None = as is)."""
+    if not brief:
+        return brief
+    items = []
+    for i in brief["items"]:
+        i = {k: i[k] for k in PUSH_ITEM_KEYS if k in i}
+        if limit is None:
+            pass
+        elif limit and len(i.get("summary", "")) > limit:
+            i["summary"] = i["summary"][:limit - 1].rstrip() + "…"
+        elif not limit:
+            i.pop("summary", None)
+        items.append(i)
+    return {**brief, "items": items}
+
+
+def brief_item(i):
+    """The fields the app's news card needs, from a news.json item."""
+    keep = ("id", "title", "link", "source", "region", "published", "score", "tags", "summary", "epss")
+    return {k: i[k] for k in keep if k in i}
+
+
+def notify(title, body, dry=False, tags="shield", priority="default", what="brief", tag="brief", brief=None):
     """Print (dry run), or send via ntfy (NTFY_TOPIC) and/or Web Push (WEBPUSH_SUBSCRIPTION).
     Neither configured = skip, exit 0. Returns True if any channel delivered; raises NotifyError
     (after trying both) if a configured channel failed."""
@@ -131,7 +177,7 @@ def notify(title, body, dry=False, tags="shield", priority="default", what="brie
             errors.append(f"ntfy: {e}")
     if os.environ.get("WEBPUSH_SUBSCRIPTION", "").strip():
         try:
-            send_webpush(title, body, tag)
+            send_webpush(title, body, tag, brief)
             print(f"Sent {what} via Web Push", file=sys.stderr)
             sent = True
         except Exception as e:  # noqa: BLE001
@@ -175,9 +221,18 @@ def main():
     lines.append(f"❓ {question} (answer in the app)")
     body = "\n".join(lines)
     title = f"Sec-Pulse brief - {today.strftime('%a %d %b')}"
+    # data/brief.json: the same brief for the app's "This morning's brief" sheet (committed by the workflow).
+    brief = {"date": today.isoformat(), "generated": NOW.isoformat(timespec="seconds"), "title": title,
+             "items": [brief_item(i) for i in top],
+             "stats": {"recent": len(recent), "au": au_count, "kev": kev_count},
+             "lesson": {"id": lesson["id"], "title": lesson["title"]}}
+    if not dry:
+        with open(BRIEF_FILE, "w") as f:
+            json.dump(brief, f, ensure_ascii=False, indent=1)
+            f.write("\n")
     failed = None
     try:
-        sent = notify(title, body, dry=dry)
+        sent = notify(title, body, dry=dry, brief=brief)
     except NotifyError as e:
         sent, failed = e.sent, e
     if sent:
