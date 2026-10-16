@@ -13,6 +13,7 @@ Read the relevant file before changing that part of the project:
 - [context/testing.md](context/testing.md): checks to run before pushing (`scripts/smoke-test.cjs`).
 - [context/roadmap.md](context/roadmap.md): planned work.
 - [context/opsec.md](context/opsec.md): what must never be committed to this public repo.
+- [context/blog.md](context/blog.md): writing WordPress blog drafts (`blog/drafts/`, sent as drafts by `scripts/post_draft.py`).
 - [CHANGELOG.md](CHANGELOG.md): add an entry for every user-visible change.
 
 ## Layout

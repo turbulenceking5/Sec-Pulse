@@ -25,6 +25,8 @@ Sec-Pulse is built and used by a working security analyst, and **the repo and th
 | Morning brief text | ntfy.sh topic | Anyone who knows or guesses the topic name |
 | `NTFY_TOPIC` | GitHub Actions secret | Repo admins; masked in logs |
 | Morning brief via Web Push | Encrypted end to end from the Action to the phone (Apple's push service relays it but can't read it) | Only the subscribed phone |
+| Blog drafts (`blog/drafts/`) | Public repo, then WordPress drafts | Anyone can read the repo copy before it's published; the user reviews every post |
+| `WP_CLIENT_ID`, `WP_CLIENT_SECRET`, `WP_USERNAME`, `WP_APP_PASSWORD` | GitHub Actions secrets | Repo admins; masked in logs. Revoke the application password in WordPress.com → Me → Security if it leaks |
 | `WEBPUSH_SUBSCRIPTION`, `VAPID_PRIVATE_KEY` | GitHub Actions secrets | Repo admins; masked in logs. Both are needed to send to the phone; regenerate the key pair (new public key in `index.html`) if the private key leaks |
 
 The app makes no requests except to its own origin (the JSON and Markdown files) and to links the user taps: news stories, the lesson YouTube searches and the user's own Udemy link. No analytics, no third-party scripts or fonts.

@@ -134,7 +134,8 @@ def token():
     r = post(f"{API}/oauth2/token", {
         "client_id": os.environ["WP_CLIENT_ID"].strip(), "client_secret": os.environ["WP_CLIENT_SECRET"].strip(),
         "grant_type": "password", "username": os.environ["WP_USERNAME"].strip(),
-        "password": os.environ["WP_APP_PASSWORD"].strip()})
+        # Application passwords are shown in groups ("abcd efgh ijkl mnop"); the spaces aren't part of it.
+        "password": re.sub(r"\s+", "", os.environ["WP_APP_PASSWORD"])})
     return r["access_token"]
 
 
