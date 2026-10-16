@@ -383,6 +383,22 @@ const fs = require('fs');
   check(await page.locator('#backup-nudge').count() === 0 && await page.evaluate(() => getBackup().snooze > todayKey()), 'Remind me later snoozes the backup nudge');
   await page.evaluate(() => { store.del('backup'); exportBackup(); renderBrief(); });
   check(await page.evaluate(() => getBackup().last === todayKey()) && await page.locator('#backup-nudge').count() === 0, 'Export records the backup date');
+
+  // This morning's brief: the pushed copy (from the service worker's cache) opens from #today, with links filled from news.json.
+  await page.evaluate(async () => {
+    const items = NEWS.items.slice(0, 3).map(i => ({ id: i.id, title: i.title, source: i.source, region: i.region, published: i.published }));
+    const b = { date: todayKey(), generated: new Date().toISOString(), title: 'test', items, stats: { recent: 9, au: 1, kev: 0 }, lesson: { id: CYSA.lessons[0].id, title: CYSA.lessons[0].title } };
+    await (await caches.open('sec-pulse-push')).put('push-brief.json', new Response(JSON.stringify(b)));
+    location.hash = '#today';
+  });
+  await page.waitForTimeout(800);
+  const tb = await page.evaluate(() => ({ title: $('#sheet-title').textContent, n: document.querySelectorAll('#today-brief .news-item').length,
+    links: [...document.querySelectorAll('#today-brief .news-title')].every((a, k) => a.href === NEWS.items[k].link), lesson: !!$('#today-lesson-btn'), qotd: !!$('#today-qotd .opt'), hash: location.hash }));
+  check(tb.title === "This morning's brief" && tb.n === 3 && tb.links && tb.lesson && tb.qotd && tb.hash === '#brief', "#today opens This morning's brief with the pushed stories, links, lesson and question");
+  await page.screenshot({ path: 'shots/today-brief.png' });
+  await page.click('#sheet-close');
+  await page.evaluate(() => renderTodayLink()); await page.waitForTimeout(300);
+  check(await page.locator('#today-open').count() === 1, "Brief tab links to this morning's brief");
   check(!(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth)), 'No horizontal scroll');
   check(errors.length === 0, 'No console/page errors' + (errors.length ? ': ' + errors.join(' | ') : ''));
 

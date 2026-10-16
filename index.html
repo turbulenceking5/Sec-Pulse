@@ -241,6 +241,7 @@ html.ptr-on{overscroll-behavior-y:contain}
 .heat-key i{width:10px;height:10px;border-radius:2px;background:var(--surface2);display:inline-block}
 .trend{width:100%;height:auto;display:block}
 .focus-card{width:100%;text-align:left;gap:12px}
+#today-brief .news-sum{display:block;-webkit-line-clamp:unset;overflow:visible}
 .cves{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
 .cves a{text-decoration:none;color:var(--accent);border-color:var(--accent-line)}
 .seg{display:flex;gap:6px}.seg .btn{flex:1;padding:9px 6px}.seg .btn.on{background:var(--accent-dim);border-color:var(--accent);color:var(--accent)}
@@ -267,6 +268,7 @@ html.ptr-on{overscroll-behavior-y:contain}
       <div class="stat"><b id="st-due">0</b><span>cards due</span></div>
       <div class="stat"><b id="st-lessons">0</b><span>lessons done</span></div>
     </div>
+    <div id="brief-today"></div>
     <div id="brief-backup"></div>
     <div id="brief-rank"></div>
     <div id="brief-quests"></div>
@@ -861,6 +863,56 @@ async function openWhy(id){
     toast(on ? 'Muted - hidden from Brief and News' : 'Unmuted');
   });
 }
+
+/* ---------- This morning's brief: exactly what the notification listed, with summaries and links ---------- */
+// Two sources: the copy the service worker saved from the push (compact, there the moment it arrives) and
+// data/brief.json (full, committed a minute or so later). The newer wins; links/tags fill in from news.json by id.
+async function loadTodayBrief(){
+  let b = null;
+  try{ const r = await (await caches.open('sec-pulse-push')).match('push-brief.json'); if (r) b = await r.json(); }catch(e){}
+  try{
+    const r = await fetch('data/brief.json?_=' + Date.now());
+    if (r.ok){ const f = await r.json(); if (!b || String(f.generated || '') >= String(b.generated || '')) b = f; }
+  }catch(e){}
+  return b && Array.isArray(b.items) && b.date ? b : null;
+}
+function briefItems(b){
+  return b.items.filter(i => i && i.id && i.title).map(i => {
+    const n = NEWS.items.find(x => x.id === i.id) || {};
+    return {tags: [], score: 0, region: 'Global', published: b.generated, ...n, ...i,
+      link: i.link || n.link || 'https://news.google.com/search?q=' + encodeURIComponent(i.title),
+      summary: (n.summary || '').length > (i.summary || '').length ? n.summary : (i.summary || '')};
+  });
+}
+async function openTodayBrief(){
+  try{ history.replaceState(null, '', '#brief'); }catch(e){} // so reopening the app doesn't reopen this sheet
+  openSheet("This morning's brief", '<div class="empty">Loading…</div>');
+  const b = await loadTodayBrief();
+  if (!$('#sheet').classList.contains('open')) return;
+  if (!b){ $('#sheet-body').innerHTML = '<div class="card empty" id="today-empty">No morning brief yet. It arrives at about 7:25am Brisbane time.</div>'; return; }
+  const items = briefItems(b), st = b.stats || {}, old = b.date !== todayKey();
+  const when = fmtKey(b.date, {weekday: 'long', day: 'numeric', month: 'long'});
+  $('#sheet-body').innerHTML = `<div id="today-brief"><div class="small muted">${esc(when)}${old ? ' · not today\'s yet' : ''}</div>
+    <h3 style="margin:4px 0 10px;font-size:20px">Top ${items.length} for you</h3>
+    ${items.length ? items.map(newsCard).join('') : '<div class="empty">Quiet night - no new high-relevance items.</div>'}
+    <div class="row small wrap" style="gap:6px;margin:4px 0 6px"><span class="pill">${esc(st.recent ?? '?')} items in 30h</span>
+      <span class="pill au">${esc(st.au ?? '?')} Australian</span><span class="pill danger">${esc(st.kev ?? '?')} new KEV</span></div>
+    ${b.lesson && CYSA && CYSA.lessons.some(l => l.id === b.lesson.id) ? `<h2>CySA+ focus</h2><button class="card" style="width:100%;text-align:left" id="today-lesson-btn">
+      <div style="font-weight:700">${esc(b.lesson.id)} ${esc(b.lesson.title)}</div><div class="small muted">Open the lesson →</div></button>` : ''}
+    ${CYSA ? '<h2>Question of the day</h2><div class="card" id="today-qotd"></div>' : ''}</div>`;
+  wireNewsList($('#today-brief'));
+  const lb = $('#today-lesson-btn'); if (lb) lb.onclick = () => openLesson(b.lesson.id);
+  if (CYSA){ const qs = ALL_Q(); renderQuiz($('#today-qotd'), [qs[(ordinal(b.date) * 7) % qs.length]], {single: true}); }
+}
+async function renderTodayLink(){
+  const el = $('#brief-today'); if (!el) return;
+  const b = await loadTodayBrief();
+  if (!b || b.date !== todayKey()){ el.innerHTML = ''; return; }
+  el.innerHTML = `<button class="card row focus-card" id="today-open" style="margin-top:12px"><div class="grow small"><div style="font-weight:700">📰 This morning's brief</div>
+    <div class="muted">${b.items.length} stories from your 7:25 notification</div></div><span class="pill accent">Read →</span></button>`;
+  $('#today-open').onclick = openTodayBrief;
+}
+window.addEventListener('hashchange', () => { if (location.hash === '#today') openTodayBrief(); });
 
 /* ---------- Brief ---------- */
 function renderStats(){
@@ -1681,9 +1733,11 @@ $('#install-dismiss').onclick = () => { store.set('hintDismissed', true); $('#in
   renderLearn();
   const start = location.hash.slice(1);
   if (['brief', 'news', 'learn', 'cards'].includes(start)) show(start);
+  if (start === 'today'){ show('brief'); openTodayBrief(); }
+  renderTodayLink();
 })();
 // Re-check for fresh news whenever the app comes back to the foreground.
-document.addEventListener('visibilitychange', () => { if (!document.hidden) loadNews(false); });
+document.addEventListener('visibilitychange', () => { if (!document.hidden){ loadNews(false); renderTodayLink(); } });
 if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
 </script>
 </body>
