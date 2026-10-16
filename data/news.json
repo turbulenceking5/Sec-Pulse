@@ -1,10 +1,10 @@
 {
- "generated": "2026-10-15T23:43:08Z",
+ "generated": "2026-10-16T02:37:02Z",
  "sources": [
   {
    "name": "ACSC Alerts",
    "ok": true,
-   "count": 2,
+   "count": 1,
    "error": null
   },
   {
@@ -28,19 +28,19 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 6,
+   "count": 7,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 6,
+   "count": 8,
    "error": null
   },
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 0,
+   "count": 1,
    "error": null
   },
   {
@@ -52,7 +52,7 @@
   {
    "name": "CISA KEV",
    "ok": true,
-   "count": 16,
+   "count": 15,
    "error": null
   },
   {
@@ -100,11 +100,90 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 22,
+   "count": 21,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "dcae46e419da",
+   "title": "ISC Stormcast For Friday, October 16th, 2026 https://isc.sans.edu/podcastdetail/10140, (Fri, Oct 16th)",
+   "link": "https://isc.sans.edu/diary/rss/33432",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-10-16T02:00:03Z",
+   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "27d96b1a5cc2",
+   "title": "SOCI Act and cyber security: Australian lessons from France’s connected device attack",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOaWt0bV8wSzFDV0tpRGJHeGZ2dzUwQkQ4eXUzQmNHUWJzS2pReEpvS1laTUY4dVczLXRudWFocXBISmJtdjh0QzFETHFXanU2dy1sam8zVDlvbXA0OFNDZXJ5bW12Q001VUhyTnJaOGdTTjJpSDAxZU14MEUxNHFERkRyLTFmcFNibGZYMHJMWmMwNWNTeFEzUDlLcUl2Qmp3TnhwTVpQWFVFbGlfUUR6bjhocUVVbTZZ?oc=5",
+   "source": "Corrs Chambers Westgarth",
+   "feed": "AU breach news",
+   "region": "AU",
+   "published": "2026-10-16T01:57:02Z",
+   "summary": "",
+   "score": 12,
+   "tags": [
+    "Australia",
+    "Identity"
+   ],
+   "why": [
+    "Australia",
+    "Identity"
+   ]
+  },
+  {
+   "id": "457d30bd5e9d",
+   "title": "Government Warning Of Real Estate Scam",
+   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE8xUFdpYTRZM2poRWpheG5VNDktX0c0d3RFTmJoam1fT0FkdE90QUtvOWk4ZzhmQ0dMM0k3d1ZLSU1EZGZaeVlPdndOS3NKQnVRdHZheWVEM2Y1OWtkY29zYW1aWm1EZlZsaElVYlJJd1ZDY2FIMmpZ?oc=5",
+   "source": "Bernews",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-16T01:03:44Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
+   "id": "92d5abc10ae9",
+   "title": "Small Agents, Smaller Blast Radius: Controlling What AI Can Do, (Fri, Oct 16th)",
+   "link": "https://isc.sans.edu/diary/rss/33430",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-10-16T00:46:35Z",
+   "summary": "I believe the cybersecurity industry may be approaching AI security the wrong way.",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "c2e210ed4208",
+   "title": "Redfin Hit With Breach Suit Over Hacked Worker, User Data",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPTnd0Q255ZzBnUW9Ed3pTbG9KWmFBRGxnMG9nNEp3bGRJUjVhZUJPcElsQnRDNE52YmFrWERNaHNPU0ZrUDgteWdRdnY2ZUFyMjJGVjBYLTlGalpMeGdEMXdSZXpRTllZWEpaUElTU1czdFBPLVNkc1pxLVA4YUl0YjFCUW0tYldZcW1lZ1JoUjNSXzdBYXY3RmxrOWdkVk9xcjVSd0JFRmw1UGV4VHJaYTdUS2NzTnBkXzY2QnpNcjhWd9IBc0FVX3lxTE1XV2hDbXd5LTU5aEtubkhXemtjZ053aFh1ZFNLMWRveklYS0U0bTl4eFNnZUVRclRPWWpTSG1tWUpQY1NIRHJaUVA0ZTFoQW5fNkFuV1Q3Y1NLMTFmYy1GSXJhanZTMkhIUkpQQ3otejRpU0k?oc=5",
+   "source": "Law360",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-16T00:02:23Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
   {
    "id": "3bd9f144301e",
    "title": "Cyber breach revelations fettered with stigma",
@@ -134,6 +213,23 @@
    "score": 1,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "1d01a60427db",
+   "title": "Exclusive: Poole Group investigating Lockbit ransomware attack",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPeG51S25HSU5scDZuRHpHMmwwZW14Z1hveUtVOTl0Yk1lTXN0cXNEdjVndXFucGxPQWdnXzd1emNRNEQwN2FON3c2cUpLV0YyQ2NiVkV6WmVIZ0pYcXNJa3o1NEpzV3JzQmV6QnNTOHBaY19pbGdOdkUzREk4dlBENjY5UHMtWTRkLWl3QnJqYnRzQkRORmFRYVZZdmJIX0dOaTZfbWlGLW1pOEM3VEF0U2NXUDBUZTA?oc=5",
+   "source": "Cyber Daily",
+   "feed": "OAIC / Privacy news",
+   "region": "Global",
+   "published": "2026-10-15T22:35:54Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
   },
   {
    "id": "3f1030ed0e26",
@@ -4320,48 +4416,6 @@
    "score": 1,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "12ef8a277d37",
-   "title": "Critical vulnerabilities in Citrix NetScaler ADC and Citrix NetScaler Gateway products",
-   "link": "https://www.cyber.gov.au/alert/critical-vulnerabilities-in-citrix-netscaler-adc-and-citrix-netscaler-gateway-products",
-   "source": "ACSC Alerts",
-   "feed": "ACSC Alerts",
-   "region": "AU",
-   "published": "2026-10-01T00:39:24Z",
-   "summary": "Alert for organisations to implement a high-priority patch addressing new vulnerabilities, under active exploitation in Citrix NetScaler ADC and Citrix NetScaler Gateway products.",
-   "score": 10,
-   "tags": [
-    "Edge devices",
-    "Vulnerability",
-    "Australia"
-   ],
-   "why": [
-    "Edge devices",
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "f26468d8d522",
-   "title": "CVE-2026-104286: Fortinet FortiMail — Fortinet FortiMail Path Traversal Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-104286",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-10-01T00:00:00Z",
-   "summary": "Fortinet FortiMail contains a path traversal and an improper neutralization of NULL byte or NULL character vulnerability that may allow an unauthenticated attacker to write arbitrary files on the underlying system via crafted HTTP or HTTPS requests. CISA remediation due 2026-10-04.",
-   "score": 7,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "why": [
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "epss": 0.022
   }
  ]
 }
