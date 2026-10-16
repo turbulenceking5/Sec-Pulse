@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-16T04:34:59Z",
+ "generated": "2026-10-16T11:27:52Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,19 +28,19 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 8,
+   "count": 9,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 8,
+   "count": 9,
    "error": null
   },
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 1,
+   "count": 2,
    "error": null
   },
   {
@@ -100,11 +100,231 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 21,
+   "count": 22,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "196d1fbeb9fc",
+   "title": "Chinese APT Exploited BeyondTrust Vulnerability as Zero-Day",
+   "link": "https://www.securityweek.com/chinese-apt-exploited-beyondtrust-vulnerability-as-zero-day/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-16T10:53:22Z",
+   "summary": "Armory Castle exploited CVE-2026-102764 for initial access, deployed custom tools, and deleted logs and artifacts. The post Chinese APT Exploited BeyondTrust Vulnerability as Zero-Day appeared first on SecurityWeek .",
+   "score": 7,
+   "tags": [
+    "Actively exploited",
+    "Vulnerability"
+   ],
+   "why": [
+    "Actively exploited",
+    "Vulnerability"
+   ],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/china-linked-hackers-exploited.html"
+    }
+   ]
+  },
+  {
+   "id": "3042b8d5fd6d",
+   "title": "OpenAI Models Hacked Data Portals, Raided a Crypto Wallet to Finish Tasks",
+   "link": "https://www.securityweek.com/openai-models-hacked-data-portals-raided-a-crypto-wallet-to-finish-tasks/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-16T10:32:11Z",
+   "summary": "Left without funds for a coding task, an OpenAI model spent test crypto from a stranger’s wallet and left it out of its report. The post OpenAI Models Hacked Data Portals, Raided a Crypto Wallet to Finish Tasks appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "c426150a84ac",
+   "title": "F5, Juniper Networks Patch Critical Vulnerabilities",
+   "link": "https://www.securityweek.com/f5-juniper-networks-patch-critical-vulnerabilities/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-16T09:54:34Z",
+   "summary": "Successful exploitation of some of these issues could lead to remote code execution and full device takeover. The post F5, Juniper Networks Patch Critical Vulnerabilities appeared first on SecurityWeek .",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "7e8ace9d42e7",
+   "title": "Microsoft: October Windows update may break Smart App Control",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/kb5127648-windows-security-update-may-break-smart-app-control/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-16T08:44:22Z",
+   "summary": "Microsoft says some users may have trouble turning on Smart App Control after installing this month's KB5127648 Windows 11 security update. [...]",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "509b1847c72f",
+   "title": "Microsoft Patches Two Dozen RCE Flaws in Office",
+   "link": "https://www.securityweek.com/microsoft-patches-two-dozen-rce-flaws-in-office/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-16T07:55:06Z",
+   "summary": "In addition to RCE flaws, Microsoft fixed multiple information disclosure bugs and a security bypass issue in Office. The post Microsoft Patches Two Dozen RCE Flaws in Office appeared first on SecurityWeek .",
+   "score": 5,
+   "tags": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "9c075cf12462",
+   "title": "Real estate transactions decreased by 66,000 in the third quarter compared with 2025, amid the cyberattack on ANCPI",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNeHFmMkZRQ3Q4eE9nUXpoM3NqTUVqd21LOFdCLThmR2Y3UnhVMzhIR1NaTGxzekI4ckkwa0t0TzdZaUdQSVFlV0szMmNvemFpVDZPWVp2Y3Z2ckt6bzA4clRlU2FjZWNMU1lVRHNET1NKejBNV3NFQlR0TXgtOS1RY190b1ZEZTdOeTNvV0dZQ0g5MGNJcFFWSjZta2JuTUktTEpPRC1zeWc?oc=5",
+   "source": "Informat.ro",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-16T07:49:03Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
+   "id": "d342f7137dd6",
+   "title": "BAE Systems cyberattack disrupts US federal court operations",
+   "link": "https://www.bleepingcomputer.com/news/security/bae-systems-cyberattack-disrupts-us-federal-court-operations/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-16T07:37:35Z",
+   "summary": "The Administrative Office of the US Courts says a cyberattack on government contractor BAE Systems has taken down the notice system used by federal bankruptcy courts. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "bc377ce6401c",
+   "title": "Former CIA officer used Florida homes in $200m scam, then admitted exposing a secret source",
+   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPUmM1UDVDdml2RGh5Rm1TMDVxRTV6YnNJZkozMGg4WFR3ZDlROUFsYmxWSWhMajFPdXlwclByRkVQSzNBZzhyck8zQlhsV21GX090eUFkNm5Sd2pJU1dzbnJJODltTEhxZHJXSk9NWGNua3pqcXh3TldHc0JvSGlJbzBR?oc=5",
+   "source": "The Cool Down",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-16T07:15:00Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "105239e3490a",
+   "title": "Proofpoint Inks $6.3 Billion All-Cash Deal to Acquire Varonis",
+   "link": "https://www.securityweek.com/proofpoint-inks-6-3-billion-all-cash-deal-to-acquire-varonis/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-16T07:12:51Z",
+   "summary": "The Thoma Bravo-owned Proofpoint will acquire Varonis in an all-cash transaction and Varonis will become a private company. The post Proofpoint Inks $6.3 Billion All-Cash Deal to Acquire Varonis appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "f909b9dee009",
+   "title": "CERT-In Warns AI Agents Accessed Sensitive Data at Indian Organizations During Testing",
+   "link": "https://thehackernews.com/2026/10/cert-in-warns-ai-agents-accessed.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-16T06:53:09Z",
+   "summary": "AI agents being tested online reached the live systems of Indian organizations and read business records, including personal data and confidential material, CERT-In said in an advisory on October 15. The agents went beyond their assigned tasks, and none of the organizations detected the…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "494b44d4ddb2",
+   "title": "BeyondTrust patches zero-day exploited in attacks since August",
+   "link": "https://www.bleepingcomputer.com/news/security/beyondtrust-patches-zero-day-exploited-in-attacks-since-august/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-16T06:18:08Z",
+   "summary": "BeyondTrust warned customers on Thursday to patch a critical flaw in its Remote Support (RS) that has been exploited in zero-day attacks since late August. [...]",
+   "score": 7,
+   "tags": [
+    "Actively exploited",
+    "Vulnerability"
+   ],
+   "why": [
+    "Actively exploited",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "5fc8c6dd8c54",
+   "title": "PEERSTITCH Malware Deployed via FortiOS Flaw Bypasses Checks on Tagged VPN Sessions",
+   "link": "https://thehackernews.com/2026/10/attackers-exploit-fortios-flaw-to.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-16T04:59:36Z",
+   "summary": "A suspected advanced threat actor has been observed exploiting a security flaw in Fortinet FortiOS to deliver a previously unreported memory-resident ARM64 malware known as PEERSTITCH. The attack involves the exploitation of CVE-2025-61624 (CVSS score: 5.4), a path traversal flaw in the command…",
+   "score": 4,
+   "tags": [
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "why": [
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "epss": 0.0053
+  },
+  {
+   "id": "e0e9e3550086",
+   "title": "Cyber insurance limits and ransomware reporting under scrutiny",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOcHBLQ2h4WW4zaEY2OUx2dE1NeGhzNjJRMENTUVRfbGdJZWhLY0F2azBNa1RVYmFiRG05dmNrbE9fUmhFV1diZU5qRGZhZ0I1YnR6bHVEQnpXZkNsbzdmbEVCdWoxMXg5NEJyUWZIYVM4RnZ6aVBJQ2hXZHN2aWFOVzdsbEVXQmxCU2NpeGR4OGhQRlhoQlM5ZVhBMGlMWWkyQUFVc3kwNjY1bnVjV0lxc0Jjd2dBMTFt?oc=5",
+   "source": "Insurance Business",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-16T04:50:23Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
+  },
   {
    "id": "58dfe122935e",
    "title": "ACS warns ASD Essentials lacks clear assessor standards",
@@ -178,7 +398,7 @@
    "source": "Bernews",
    "feed": "Real estate cyber news",
    "region": "Global",
-   "published": "2026-10-16T01:03:44Z",
+   "published": "2026-10-16T01:47:34Z",
    "summary": "",
    "score": 10,
    "tags": [
@@ -595,6 +815,23 @@
    "score": 0,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "caf91390fbd8",
+   "title": "Hackers used AI in most ransomware attacks and threatened staff, Semperis report found",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE04Q1JjVkhmdEFNN2l1eG5LYmx3VlM3THd5WXRkMkVkYmNyeEhFRzl2aUFQYURsaXQybV9vSXlZS2NoWmx5OUxDRVIxZHRYMFFLbUdMcy0wUVl5U3g5Wk9wd1NicE5vdGRIWTA0SGoxN2s4WW9CNWV6SUdURUxfdw?oc=5",
+   "source": "Quartz",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-15T12:41:38Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
   },
   {
    "id": "e7e058293387",
@@ -1310,6 +1547,37 @@
    "score": 0,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "65d8e9e8bad0",
+   "title": "Thousands of supermarket fridges still exposed after cyberattack",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOOVFlVGlHdWVEOWFxN3dodUFSUFdEN0ZPLUg3Q3lTNEVGWXF2UFFtYjFLT1BHRXVCMGw1MEZBSEM1WlZEeFhrQkRyOTMycy05aE5VN21yVWVNZnVlYWlvM2pQSzNSQl9qeUg0X24yVEk0NWdwVzMySmN6OXEzZ1Y5dk9kWFBuMVdZaHB0Rw?oc=5",
+   "source": "Yahoo News Australia",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-14T15:42:18Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ],
+   "also": [
+    {
+     "source": "The Guardian",
+     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxObVV6N2RhN3poNzA0M3lyU1RvaDRvVG5YbXNORi0tbmxScTliUklMM3ZoQWhCR1lWLU1FU2VNVV9MdkgtaDhPVlM4eEljRUk0VlFlYzZJQ1puUmY2ZC1jSWUtcVpLQ1pJS1J6WmNRMUVlUWZrUGdJdXoxTTBsa0NPekFKLVpTYl9KY0F1NUdubmZmb0NaT25sdEpXYmxldlBURVk4T2pKc1ZKYkY2MzFvVkRKbDE5S3hwMExuaThNdXgxN0J2cXVFYVFYVElhdw?oc=5"
+    },
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/attackers-heat-french-supermarket.html"
+    },
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/cyberattack-shuts-down-refrigerators-at-french-supermarkets/"
+    }
+   ]
   },
   {
    "id": "f0efb52b806c",
@@ -3069,33 +3337,6 @@
     {
      "source": "Daily Mirror",
      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPY205MnNsMTlpQUIzemxhWEZMVldiX0hzdTF1Y1p1QUpnZW4wT2QwclVNS0RMUk1taHhHZjlQai04YjNsdnJpVDZwbl9mU3FWMUNJRkdSWTlfME4xdTBGTkNYVk16aE16TENoTUVFVHh3cHN2Y3p3Zl9FRXk4QjRLRk82YWdOWU93aTNUVS1vSzVkcHBmcndFc0RKONIBoAFBVV95cUxPcmMzV2ZUclRvZVdBMWhSdFEtRk5GdDJiejBzQ2VnRUlvTmNicGxNUWRvek5pY0t4aE83YU5NSGItdGlheFYtdVZBcHdVMkQwSG1wdGIyY3ZyeUd3YnRxM3JMNFdPQnM1Y2xFYlJsZlUyb2xXSzJ3M2RLdEM0SVNncGptbXlMTkpyYi1jcV9qcldaRUVxQ1JsZVp2WG9TUDdo?oc=5"
-    }
-   ]
-  },
-  {
-   "id": "7be611be23a8",
-   "title": "Hackers force French supermarket fridges to heat up to 50C in ‘unprecedented’ cyber-attack",
-   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxObVV6N2RhN3poNzA0M3lyU1RvaDRvVG5YbXNORi0tbmxScTliUklMM3ZoQWhCR1lWLU1FU2VNVV9MdkgtaDhPVlM4eEljRUk0VlFlYzZJQ1puUmY2ZC1jSWUtcVpLQ1pJS1J6WmNRMUVlUWZrUGdJdXoxTTBsa0NPekFKLVpTYl9KY0F1NUdubmZmb0NaT25sdEpXYmxldlBURVk4T2pKc1ZKYkY2MzFvVkRKbDE5S3hwMExuaThNdXgxN0J2cXVFYVFYVElhdw?oc=5",
-   "source": "The Guardian",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-12T15:24:00Z",
-   "summary": "",
-   "score": 4,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/attackers-heat-french-supermarket.html"
-    },
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/cyberattack-shuts-down-refrigerators-at-french-supermarkets/"
     }
    ]
   },
