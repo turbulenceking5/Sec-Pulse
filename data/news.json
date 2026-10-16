@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-16T11:27:52Z",
+ "generated": "2026-10-16T16:41:40Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,13 +28,13 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 9,
+   "count": 10,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 9,
+   "count": 8,
    "error": null
   },
   {
@@ -82,7 +82,7 @@
   {
    "name": "Microsoft Security Blog",
    "ok": true,
-   "count": 6,
+   "count": 4,
    "error": null
   },
   {
@@ -100,11 +100,175 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 22,
+   "count": 24,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "7ca539292393",
+   "title": "UAT-11985 Uses Fake Event Invites to Target Taiwan Research Affiliates With Google AitM Phishing",
+   "link": "https://thehackernews.com/2026/10/uat-11985-uses-fake-event-invites-to.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-16T16:16:44Z",
+   "summary": "Cybersecurity researchers have disclosed details of an advanced persistent threat (APT) spear-phishing campaign that has targeted individuals affiliated with Taiwan research organizations to direct victims to an adversary-in-the-middle (AitM) phishing framework designed to harvest their Google…",
+   "score": 4,
+   "tags": [
+    "Phishing"
+   ],
+   "why": [
+    "Phishing"
+   ]
+  },
+  {
+   "id": "c84ec4adaad2",
+   "title": "CT Settles 2024 Data Breach That Compromised Information Of 58,000 Residents",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNSkVYWXlhbFBoYV9ONzF4d3lQcERoM1BDZ3phSGc4Yy1JVElRXzRBYVoxamRhalI0WTA3UWdZQ2lTa0U2TWdwYWxScVBadjRMOXhnRjlXNUdjQS0xMzNtdzZaNWhCR2FmclpxUk54ODFaZnlrSkJhT0tKUGxpQWdJbzRkeFpyeDFZWmNhNFVPbkQ3OTNqbEtNWVNKWUFpbTM2UkpHSVJPcXo2WnFIbnMyZS1B?oc=5",
+   "source": "CT News Junkie",
+   "feed": "OAIC / Privacy news",
+   "region": "Global",
+   "published": "2026-10-16T14:13:24Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "7a1f49cfc715",
+   "title": "In Other News: ICS-Sniper Attack, Hacking XWorm Malware Operators, $250k Chrome Exploit",
+   "link": "https://www.securityweek.com/in-other-news-ics-sniper-attack-hacking-xworm-malware-operators-250k-chrome-exploit/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-16T14:09:51Z",
+   "summary": "Noteworthy stories that might have slipped under the radar: BofA adds 1,000 patching contractors, KGB RAT pairs data theft with jump scares, and Langflow flaw under attack. The post In Other News: ICS-Sniper Attack, Hacking XWorm Malware Operators, $250k Chrome Exploit appeared first on…",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "82bd71e8965d",
+   "title": "OpenAI Research Model Spent 3rd-Party Test ETH Without Permission to Deploy Smart Contract",
+   "link": "https://thehackernews.com/2026/10/openai-research-model-spent-3rd-party.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-16T14:03:04Z",
+   "summary": "OpenAI has disclosed seven new incidents in which its artificial intelligence (AI) models exhibited misaligned behavior, including one case where its research model, after not having funds on an Ethereum test network, spent test cryptocurrency from a third-party's wallet without authorization to…",
+   "score": 2,
+   "tags": [
+    "SaaS / cloud"
+   ],
+   "why": [
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "834a248937df",
+   "title": "When Your Ransomware Negotiator Works for the Other Side",
+   "link": "https://www.darkreading.com/cyber-risk/when-your-ransomware-negotiator-works-other-side",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-16T14:00:00Z",
+   "summary": "The shocking arrest of a well-known ransomware negotiator reveals the critical need for vendor program oversight.",
+   "score": 4,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
+  },
+  {
+   "id": "d269ee990910",
+   "title": "Employees using personal ChatGPT at work? Here's what IT admins need to do",
+   "link": "https://www.bleepingcomputer.com/news/security/employees-using-personal-chatgpt-at-work-heres-what-it-admins-need-to-do/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-16T13:50:59Z",
+   "summary": "Employees using personal ChatGPT accounts at work can expose sensitive company data, even when their organization provides an approved Enterprise workspace. NordLayer explains how IT teams can investigate unauthorized AI use and block sensitive information before it reaches personal accounts. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "48b9aea0ee83",
+   "title": "When AI Agents Commit Breaches, Humans May Not Be Held Liable",
+   "link": "https://www.darkreading.com/insider-threats/ai-agents-breaches-humans-liable",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-16T13:00:00Z",
+   "summary": "As agents escape containment and access external systems, responsibility remains human. Accountability, however, is much less settled.",
+   "score": 4,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "862e2db1b4e0",
+   "title": "Burger King Japan data breach exposes 11 million customer records",
+   "link": "https://www.bleepingcomputer.com/news/security/burger-king-japan-data-breach-exposes-11-million-customer-records/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-16T12:01:29Z",
+   "summary": "Burger King Japan, the Japanese subsidiary of global fast-food giant Burger King, disclosed a major data breach after attackers accessed a server containing 11.18 million customer records. [...]",
+   "score": 4,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "754b8af5c24d",
+   "title": "BAE Systems Security Incident Stalls Notices From US Bankruptcy Courts",
+   "link": "https://www.securityweek.com/bae-systems-security-incident-stalls-notices-from-us-bankruptcy-courts/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-16T11:46:40Z",
+   "summary": "A cyber incident affecting contractor BAE Systems has knocked out the Bankruptcy Noticing Center, halting notices nationwide for a week. The post BAE Systems Security Incident Stalls Notices From US Bankruptcy Courts appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": [],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/bae-systems-cyberattack-disrupts-us-federal-court-operations/"
+    }
+   ]
+  },
+  {
+   "id": "61ac6bfaa7c9",
+   "title": "AI Decision Models and Their Impact on AI SOC Platforms",
+   "link": "https://thehackernews.com/2026/10/ai-decision-models-and-their-impact-on.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-16T11:30:00Z",
+   "summary": "In the space of a month, a new category of AI model went from nonexistent to everywhere. TypeSafe AI released Jev on September 15 and called it a System One model, a nod to Kahneman's fast, intuitive thinking. OpenAI announced its own Decisions API at DevDay and opened a public beta on October 6.…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
   {
    "id": "196d1fbeb9fc",
    "title": "Chinese APT Exploited BeyondTrust Vulnerability as Zero-Day",
@@ -128,7 +292,8 @@
      "source": "The Hacker News",
      "url": "https://thehackernews.com/2026/10/china-linked-hackers-exploited.html"
     }
-   ]
+   ],
+   "epss": 0.006
   },
   {
    "id": "3042b8d5fd6d",
@@ -214,19 +379,6 @@
    ]
   },
   {
-   "id": "d342f7137dd6",
-   "title": "BAE Systems cyberattack disrupts US federal court operations",
-   "link": "https://www.bleepingcomputer.com/news/security/bae-systems-cyberattack-disrupts-us-federal-court-operations/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-16T07:37:35Z",
-   "summary": "The Administrative Office of the US Courts says a cyberattack on government contractor BAE Systems has taken down the notice system used by federal bankruptcy courts. [...]",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
    "id": "bc377ce6401c",
    "title": "Former CIA officer used Florida homes in $200m scam, then admitted exposing a secret source",
    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPUmM1UDVDdml2RGh5Rm1TMDVxRTV6YnNJZkozMGg4WFR3ZDlROUFsYmxWSWhMajFPdXlwclByRkVQSzNBZzhyck8zQlhsV21GX090eUFkNm5Sd2pJU1dzbnJJODltTEhxZHJXSk9NWGNua3pqcXh3TldHc0JvSGlJbzBR?oc=5",
@@ -306,7 +458,7 @@
     "Edge devices",
     "Vulnerability"
    ],
-   "epss": 0.0053
+   "epss": 0.0058
   },
   {
    "id": "e0e9e3550086",
@@ -357,6 +509,23 @@
    ],
    "why": [
     "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "9114f23a3b38",
+   "title": "Commvault adds Microsoft 365 tools to spot safe backups",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxObzhJa3RBMk11Yk5SSndIT0tMc0R1SHVKZ2pSX2l0YThDUkZaLXI5Qjh2S29NRUtDSllhWk5tVWtYM21jNEdHd1V5YS1iVlpsVXBsSEtramI3eF9xcXNta3lIR2szeUlpaEZraGJobEljdEN1aC1TcVlCZXdRY1hObjZqU3JfcDBrQ3dHYzQ1OTBFdFl3?oc=5",
+   "source": "SecurityBrief Australia",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-16T02:58:00Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Microsoft 365"
+   ],
+   "why": [
+    "Microsoft 365"
    ]
   },
   {
@@ -529,6 +698,23 @@
    "why": []
   },
   {
+   "id": "f29e21a7f915",
+   "title": "Bristol primary school hit by second cyber attack as records exported in data breach",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1POG42MHp2eGZPVXlrTGpBM2NweS1qMkw2enh1YjZtTTVVZmY3bXc1Ym55eDhXMXBhcENvdDhGc1ZEbXVsV24wVElTOWhSdWRUdXFYVlhiaDhpdklGOUVnMDhjTUdWTW1xVU1LcnNsOFJBcFdLRTNueWsxS096cG8?oc=5",
+   "source": "Yahoo News UK",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-15T20:32:55Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
    "id": "a094aa58c0da",
    "title": "Hackers exploit Collabora RCE flaw to backdoor Nextcloud servers",
    "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-collabora-rce-flaw-to-backdoor-nextcloud-servers/",
@@ -567,7 +753,8 @@
    ],
    "why": [
     "Vulnerability"
-   ]
+   ],
+   "epss": 0.0021
   },
   {
    "id": "6c8051f534fe",
@@ -611,6 +798,25 @@
    "score": 0,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "ead457b69704",
+   "title": "Australian court called data offshoring breach minor",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQSkhIclhTVDZlN0tReUVMc2dGc2FMamZtVVE1YlpwV3M0X1ZFMUVyMFVteWRyeTUwSENMLXkydmxNMWFZZFozUlNaRU1jZXM5Q2lpekswSTA2cEUtSG1BWDV3ZkphRW1kUVktazE0ZVpydUFiVDdiQklKTkNBWFFwNjA4dGtaSnlCWjlVUFJGSDNWcXJZOEo3d2xrVEtmRXRuZmJreXlQaHdKSFNoaFpXWkNVbWdxeVVhdGctQWdpbG1RdDcx?oc=5",
+   "source": "UA.NEWS",
+   "feed": "AU breach news",
+   "region": "AU",
+   "published": "2026-10-15T18:19:01Z",
+   "summary": "",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Data breach"
+   ],
+   "why": [
+    "Australia",
+    "Data breach"
+   ]
   },
   {
    "id": "33659e3f7808",
@@ -817,6 +1023,23 @@
    "why": []
   },
   {
+   "id": "db4d2510bca3",
+   "title": "n0n extortion claims target 38 global maritime and logistics organizations, raising port data exposure concerns",
+   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPcUhadjlHdXJWLU5seEc1OHVHZU9iNlBuVnM2LTZwZllSZldubE53Qzl3T2cwdmNNTnBkOUQtdFB2QWstNExGSFgxWDBlQ2pUQlA2OXdhR1pDdF9iYVk3cmRmY2lxeEdJVTNqZkZEbEJXbmpYX1NqWXlsS0s2VzBlVkVzQVBUbU9BZjdRZjVRMnVSaF9pMEFxVmlJUWFBTG5WRHNGaVU5blJuMm8xTE52dDNHX0dTWXBieTE0TUhkMjhqa3ZtZVJVY0J0cThramxqSkdRbnNRSXcxZC1kNjg0VVVINA?oc=5",
+   "source": "Industrial Cyber",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-15T12:45:26Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
+  },
+  {
    "id": "caf91390fbd8",
    "title": "Hackers used AI in most ransomware attacks and threatened staff, Semperis report found",
    "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE04Q1JjVkhmdEFNN2l1eG5LYmx3VlM3THd5WXRkMkVkYmNyeEhFRzl2aUFQYURsaXQybV9vSXlZS2NoWmx5OUxDRVIxZHRYMFFLbUdMcy0wUVl5U3g5Wk9wd1NicE5vdGRIWTA0SGoxN2s4WW9CNWV6SUdURUxfdw?oc=5",
@@ -977,6 +1200,23 @@
    "why": []
   },
   {
+   "id": "243b4990da3c",
+   "title": "Ransomware Attacks Intensify: Criminals Shift Focus to Target Employees and Their Families",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE51dkxVSTdIYmJ4MGthanpYMW5XYVVYaHI5dExvOVRvb3hhd3NQaWxjREt6OWtVLXRQaFZrVHRlZlBQWGc2SW14RHNyVm9zeERYNlFGMEZibXR1X1lEd3lMYndtWGUtWWNLelQ4TjdhRdIBdEFVX3lxTFBLY3FuMkhGbmNkNklUTnJmSXNqQzdCQllvWU1WMnFfQnhsNzBaTzZYNVpDZzNvbnpEQ1BhR014YnVqZmtHVy1QYjJXWTZWT2k1NkxFdU4xMWVMVWF3VldHZ3hueXJTdGxoNmFfZ01PZFg1RnVr?oc=5",
+   "source": "CyberSecurityNews",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-15T10:57:36Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
+  },
+  {
    "id": "b5878f01eb58",
    "title": "India Mandates Registered Caller Name Display on 4G and Newer Networks From November 1",
    "link": "https://thehackernews.com/2026/10/india-mandates-registered-caller-name.html",
@@ -988,6 +1228,23 @@
    "score": 0,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "5f2e6883b87f",
+   "title": "Gamdom founder Felix Römer estimates breach losses at over $3m following hot wallet attack",
+   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNMEk0MWRlTGhiNFVDQ094OENLNDQ0bGRHR3F4VWdNVUpVVTFrWTdNR3FScG1hYlZzc210WVpXZHEybFRjM3R2SWwxZEp4R3otc01rU2ZDRE15LWlHckItT3E2ckstR2lxR1VXZkl1Zm9lQzhwRkJyYWFhSk5vTzh6RXBxZlYwam16cjNhQjhpWVEzODk2TnFoS2tTWTI2bHA3d0FHMzFIVklJRGtheWhBU2VObC1JVkZBZ0tqamM3TFRFM2YzQ1gyUURXaTBYazBnZHRLRlBXNNIB1wFBVV95cUxNMEk0MWRlTGhiNFVDQ094OENLNDQ0bGRHR3F4VWdNVUpVVTFrWTdNR3FScG1hYlZzc210WVpXZHEybFRjM3R2SWwxZEp4R3otc01rU2ZDRE15LWlHckItT3E2ckstR2lxR1VXZkl1Zm9lQzhwRkJyYWFhSk5vTzh6RXBxZlYwam16cjNhQjhpWVEzODk2TnFoS2tTWTI2bHA3d0FHMzFIVklJRGtheWhBU2VObC1JVkZBZ0tqamM3TFRFM2YzQ1gyUURXaTBYazBnZHRLRlBXNA?oc=5",
+   "source": "Tribuna.com",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-15T10:39:00Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
   },
   {
    "id": "080d6dd1dc1f",
@@ -1125,7 +1382,7 @@
      "url": "https://thehackernews.com/2026/10/palo-alto-networks-patches-pan-os.html"
     }
    ],
-   "epss": 0.0108
+   "epss": 0.0121
   },
   {
    "id": "a713f2422da2",
@@ -1145,7 +1402,7 @@
     "Vulnerability",
     "SaaS / cloud"
    ],
-   "epss": 0.0324
+   "epss": 0.0478
   },
   {
    "id": "502c877b3bd3",
@@ -1301,7 +1558,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0278
+   "epss": 0.1271
   },
   {
    "id": "fc19441ee597",
@@ -2168,7 +2425,7 @@
     "Edge devices",
     "Vulnerability"
    ],
-   "epss": 0.0174
+   "epss": 0.0157
   },
   {
    "id": "45ee4e8f72f4",
@@ -2190,7 +2447,7 @@
     "Edge devices",
     "Vulnerability"
    ],
-   "epss": 0.0108
+   "epss": 0.0121
   },
   {
    "id": "f04894a7601f",
@@ -2210,7 +2467,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0324
+   "epss": 0.0478
   },
   {
    "id": "eb20c74d6ce5",
@@ -2230,7 +2487,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0067
+   "epss": 0.0085
   },
   {
    "id": "62050be54e07",
@@ -4492,7 +4749,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0278
+   "epss": 0.1271
   },
   {
    "id": "4d0ab1e7dd59",
@@ -4665,32 +4922,6 @@
     "Vulnerability"
    ],
    "epss": 0.0126
-  },
-  {
-   "id": "03612a48c440",
-   "title": "Preparing governments for an era of interconnected cyber risk",
-   "link": "https://blogs.microsoft.com/on-the-issues/2026/10/01/preparing-governments-for-an-era-of-interconnected-cyber-risk/",
-   "source": "Microsoft Security Blog",
-   "feed": "Microsoft Security Blog",
-   "region": "Global",
-   "published": "2026-10-01T14:00:00Z",
-   "summary": "According to this year’s Microsoft Digital Defense Report, government agencies and services were the sector most impacted by cyber threats in 2026, accounting for 27% of observed activity, up from 17% in 2025. The post Preparing governments for an era of interconnected cyber risk appeared first on…",
-   "score": 1,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "143a7ccff477",
-   "title": "Insights from the 2026 Microsoft Digital Defense Report",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/10/01/insights-from-the-2026-microsoft-digital-defense-report/",
-   "source": "Microsoft Security Blog",
-   "feed": "Microsoft Security Blog",
-   "region": "Global",
-   "published": "2026-10-01T14:00:00Z",
-   "summary": "Read highlights from the 2026 Microsoft Digital Defense Report, which reflects a security environment that continues to grow more interconnected. The post Insights from the 2026 Microsoft Digital Defense Report appeared first on Microsoft Security Blog .",
-   "score": 1,
-   "tags": [],
-   "why": []
   }
  ]
 }
