@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-16T02:42:45Z",
+ "generated": "2026-10-16T04:34:59Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,7 +28,7 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 7,
+   "count": 8,
    "error": null
   },
   {
@@ -105,6 +105,40 @@
   }
  ],
  "items": [
+  {
+   "id": "58dfe122935e",
+   "title": "ACS warns ASD Essentials lacks clear assessor standards",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQdWk1dzMwZFp4cFN1c3RWdHhIdXE4dUJwSTl2YW45eVptamJwQndQWE9zQmNLTms0YkhwREhMa3dKSzdxSkg2RzZKMHMyS3ROcFkxRDZ1bFMtTXI2REZpbFVUMWFTSHp4Z0JCQlFnaFJNc2dibTFnZk1ZYk1sR0tpdVdsVFVuZDNkQ3JtdkoxYkV6VG5mYVp4Z28taU9MSXI3MTVTZ1JB?oc=5",
+   "source": "Australian Cyber Security Magazine",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-16T04:14:31Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "Identity"
+   ],
+   "why": [
+    "Identity"
+   ]
+  },
+  {
+   "id": "d74b1821be7b",
+   "title": "Chicago lawsuits accuse robot delivery companies Coco and Serve of biometric privacy violations",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZUlLaEZuWWNYN0k4cS1lX3o1WmRkY2h0MW1aQjl2R05FekFoYm42WTFxU2EzRVlZb2RvaE9kU1N3cXFJX0hjbm1lT0QzemR2VlE4MzJIZU5DeHNKZHdtVzJDcnUwZGdhNWw5aDNONS1jaHhWRm5DaDdLN2JLS09Yd1U4WU1iRzJCVmRxdVpnUGdKS2dYdmNYU1Q3U28wZlh4c1psdg?oc=5",
+   "source": "CBS News",
+   "feed": "OAIC / Privacy news",
+   "region": "Global",
+   "published": "2026-10-16T03:28:51Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "SaaS / cloud"
+   ],
+   "why": [
+    "SaaS / cloud"
+   ]
+  },
   {
    "id": "dcae46e419da",
    "title": "ISC Stormcast For Friday, October 16th, 2026 https://isc.sans.edu/podcastdetail/10140, (Fri, Oct 16th)",
