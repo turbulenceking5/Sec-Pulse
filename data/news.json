@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-16T16:41:40Z",
+ "generated": "2026-10-16T21:12:27Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -22,25 +22,25 @@
   {
    "name": "ASD / ACSC in the news",
    "ok": true,
-   "count": 2,
+   "count": 1,
    "error": null
   },
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 10,
+   "count": 11,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 8,
+   "count": 7,
    "error": null
   },
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 2,
+   "count": 1,
    "error": null
   },
   {
@@ -52,7 +52,7 @@
   {
    "name": "CISA KEV",
    "ok": true,
-   "count": 15,
+   "count": 17,
    "error": null
   },
   {
@@ -82,7 +82,7 @@
   {
    "name": "Microsoft Security Blog",
    "ok": true,
-   "count": 4,
+   "count": 5,
    "error": null
   },
   {
@@ -100,11 +100,183 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 24,
+   "count": 25,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "15367a3259ff",
+   "title": "BeyondTrust Remote Support Zero-Day Continues Trend of Exploited Edge Bugs",
+   "link": "https://www.darkreading.com/endpoint-security/beyondtrust-remote-support-exploited-edge-bugs",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-16T20:34:37Z",
+   "summary": "Ivanti, Cisco, and Palo Alto Networks all had vulnerabilities in edge devices come under fire this week. Now BeyondTrust joins the group.",
+   "score": 7,
+   "tags": [
+    "Actively exploited",
+    "Edge devices"
+   ],
+   "why": [
+    "Actively exploited",
+    "Edge devices"
+   ]
+  },
+  {
+   "id": "8dfac5c34b84",
+   "title": "Critical BlockStrap flaw lets hackers run code on Magento servers",
+   "link": "https://www.bleepingcomputer.com/news/security/critical-blockstrap-flaw-lets-hackers-run-code-on-magento-servers/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-16T20:00:59Z",
+   "summary": "Researchers warn that hackers could soon exploit a maximum-severity vulnerability (CVE-2026-103849) affecting Magento and Adobe Commerce, potentially allowing them to execute arbitrary PHP code on store servers. [...]",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0078
+  },
+  {
+   "id": "0cd568eb4deb",
+   "title": "Secure.com says ransomware budgets should fix basics first",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNbzdkV1l6X1BydTB0LUZja1kwXy1MM296UE9IbkRhMXY0Q2tjOVc1ZWFiWHpMeW5VaTVQcXpsSkt2RUtiZ1dKMTczNEFma18wTzA3TngzbmxwLXk5SnRBSlZvaEhvd2k2TnFVTUxVT1d1bEFZcGFoN3phMm5GczJGckU1OS1RTDB3YTJ0ZjI5cmRLOHBNZVp3?oc=5",
+   "source": "SecurityBrief New Zealand",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-16T19:56:00Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
+  },
+  {
+   "id": "8e2b4b8581aa",
+   "title": "Fake Claude, ChatGPT Attacks Surge, Putting Developers at Risk",
+   "link": "https://www.darkreading.com/application-security/fake-claude-chatgpt-attacks-developers-risk",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-16T19:49:30Z",
+   "summary": "Campaigns that impersonate popular AI brands are on the rise, and they typically use ClickFix-like tactics to target unsuspecting enterprise employees.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "b8b7cb7d4b49",
+   "title": "Biomemory Launches DNA Shield, First Commercial Product Built on Its Molecular IT Platform",
+   "link": "https://www.darkreading.com/data-privacy/biomemory-launches-dna-shield",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-16T19:22:12Z",
+   "summary": "The launch follows the acquisition of catalog's assets and the appointment of Laurent Guengant as CEO earlier this year.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "714d202db596",
+   "title": "Enterprise AI Enters Risk Management Phase as Security Concerns Rise",
+   "link": "https://www.darkreading.com/cyber-risk/enterprise-ai-risk-management-phase-security-concerns-rise",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-16T19:13:59Z",
+   "summary": "Companies are increasingly discovering that the challenge with AI is no longer adoption, but execution.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "0a0234023332",
+   "title": "AI Takes Control of Robotic Arm in 16 Minutes Flat",
+   "link": "https://www.darkreading.com/ics-ot-security/ai-takes-control-robotic-arm-16-minutes",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-16T18:37:50Z",
+   "summary": "Most OT devices at utilities, factories, and elsewhere have been deployed for a decade or more, but operators need to get agile and deploy new cyber defenses.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "2f67e7ff74fc",
+   "title": "Researchers Demonstrate OpenBSD Root Exploit Chaining 37-Year-Old Shared-Memory Bug",
+   "link": "https://thehackernews.com/2026/10/researchers-demonstrate-openbsd-root.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-16T17:48:45Z",
+   "summary": "A local privilege escalation exploit published today gains root on OpenBSD 7.9 by chaining a roughly 37-year-old integer overflow with a separate kernel flaw, bypassing OpenBSD's KARL kernel-address randomization and its SMAP and SMEP hardware protections. Security firm Calif, which found and…",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "50880c900177",
+   "title": "Targeted ads installed Candiru spyware in zero-click attacks",
+   "link": "https://www.bleepingcomputer.com/news/security/zero-click-attacks-used-targeted-ads-to-deliver-candiru-spyware/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-16T17:20:03Z",
+   "summary": "Candiru spyware was delivered to devices at Al Jazeera Media Network via targeted online advertisements in a zero-click attack that required only rendering the malicious ads on the victim's device. [...]",
+   "score": 0,
+   "tags": [],
+   "why": [],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/citizen-lab-traces-zero-click-candiru.html"
+    }
+   ]
+  },
+  {
+   "id": "8fcaa4195067",
+   "title": "Accused Beijing Agent’s Underground Money Transfers and Real Estate Circle Bring MSS Spy Case Into Cartel and Scam Compound Terrain",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1OUEVYUFNxeElrcVJkUDNXcnhVaU5FWm95Y1BQb2xaaEwzZ2xWamdfcDFuRmRrT0o1SkFpZS0walNVdUpQb3p5TlR0N29zNDJRY2ZTcXU2WllLNUNJdV9HcTVnZWdzLTRaQVRpWWxScGk?oc=5",
+   "source": "The Bureau | Sam Cooper | Substack",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-16T17:15:12Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
+   "id": "2f6312b7767d",
+   "title": "Attackers Tampered with AOMEI Backupper's Update Servers for Minutes to Deliver a Backdoor",
+   "link": "https://thehackernews.com/2026/10/attackers-tampered-with-aomei.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-16T16:43:39Z",
+   "summary": "Attackers repeatedly changed the files that AOMEI Backupper fetches from the vendor's own update servers, in windows of five to ten minutes at a time between May and July 2026, so that any copy of the Windows backup program that checked for an update during one of those windows would download and…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
   {
    "id": "7ca539292393",
    "title": "UAT-11985 Uses Fake Event Invites to Target Taiwan Research Affiliates With Google AitM Phishing",
@@ -121,6 +293,19 @@
    "why": [
     "Phishing"
    ]
+  },
+  {
+   "id": "c094ac3382c9",
+   "title": "Managing open-weight model risk in enterprise deployments",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/10/16/managing-open-weight-model-risk-in-enterprise-deployments/",
+   "source": "Microsoft Security Blog",
+   "feed": "Microsoft Security Blog",
+   "region": "Global",
+   "published": "2026-10-16T16:00:00Z",
+   "summary": "New whitepaper from Microsoft and NVIDIA helps enterprises manage open-weight AI model risks with a shared taxonomy, evaluations, and controls. The post Managing open-weight model risk in enterprise deployments appeared first on Microsoft Security Blog .",
+   "score": 1,
+   "tags": [],
+   "why": []
   },
   {
    "id": "c84ec4adaad2",
@@ -287,13 +472,13 @@
     "Actively exploited",
     "Vulnerability"
    ],
+   "epss": 0.006,
    "also": [
     {
      "source": "The Hacker News",
      "url": "https://thehackernews.com/2026/10/china-linked-hackers-exploited.html"
     }
-   ],
-   "epss": 0.006
+   ]
   },
   {
    "id": "3042b8d5fd6d",
@@ -591,9 +776,9 @@
    "why": []
   },
   {
-   "id": "c2e210ed4208",
+   "id": "52fd64738107",
    "title": "Redfin Hit With Breach Suit Over Hacked Worker, User Data",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPTnd0Q255ZzBnUW9Ed3pTbG9KWmFBRGxnMG9nNEp3bGRJUjVhZUJPcElsQnRDNE52YmFrWERNaHNPU0ZrUDgteWdRdnY2ZUFyMjJGVjBYLTlGalpMeGdEMXdSZXpRTllZWEpaUElTU1czdFBPLVNkc1pxLVA4YUl0YjFCUW0tYldZcW1lZ1JoUjNSXzdBYXY3RmxrOWdkVk9xcjVSd0JFRmw1UGV4VHJaYTdUS2NzTnBkXzY2QnpNcjhWd9IBc0FVX3lxTE1XV2hDbXd5LTU5aEtubkhXemtjZ053aFh1ZFNLMWRveklYS0U0bTl4eFNnZUVRclRPWWpTSG1tWUpQY1NIRHJaUVA0ZTFoQW5fNkFuV1Q3Y1NLMTFmYy1GSXJhanZTMkhIUkpQQ3otejRpU0k?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxON0huSTBLMk8zOXFNdGVMV3BuSE5tU3liMjNnNFlqNlV6N2JGaVJDREhKWEhKa2ZvTXhQWmdnRTQwMmRxTk8xcXd5RmFXZ2hMaGhwSUxCYS0yX01YRzh3REQwYWhaMEh2cTFDZ0FUaVJaRW9TaC1nT3paV2E1ZkdSWjZTczBycEdYcTBpTEthNm96dHJqdTUzeXg3ZG9qTklIX19UbC05R1ZiZzhHcXZDZ2FxTWRNanhlZFHSAXNBVV95cUxNV1doQ213eS01OWhLbm5IV3prY2dOd2hYdWRTSzFkb3pJWEtFNG05eHhTZ2VFUXJUT1lqU0htbVlKUGNTSERyWlFQNGUxaEFuXzZBbldUN2NTSzExZmMtRklyYWp2UzJISFJKUEN6LXo0aVNJ?oc=5",
    "source": "Law360",
    "feed": "Real estate cyber news",
    "region": "Global",
@@ -606,6 +791,48 @@
    "why": [
     "Data breach"
    ]
+  },
+  {
+   "id": "51427f5a7699",
+   "title": "CVE-2025-61624: Fortinet Multiple Products — Fortinet Multiple Products Path Traversal Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-61624",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-10-16T00:00:00Z",
+   "summary": "FortiOS, FortiPAM, FortiProxy, and FortiSwitchManager contain a path traversal vulnerability that may allow an authenticated attacker with admin profile and at least read-write permissions to write or delete arbitrary files via specific CLI commands. CISA remediation due 2026-10-19.",
+   "score": 7,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "why": [
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "epss": 0.0058
+  },
+  {
+   "id": "7d3104b45e33",
+   "title": "CVE-2026-102764: BeyondTrust Remote Support — BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-102764",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-10-16T00:00:00Z",
+   "summary": "BeyondTrust Remote Support contains an authentication bypass by spoofing vulnerability that could allow a remote attacker to perform file operations on the appliance. CISA remediation due 2026-10-19.",
+   "score": 4,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.006
   },
   {
    "id": "3bd9f144301e",
@@ -892,19 +1119,6 @@
    "why": [
     "Data breach"
    ]
-  },
-  {
-   "id": "cdc576e64c59",
-   "title": "Citizen Lab Traces Zero-Click Candiru Spyware Infections at Al Jazeera to Targeted Online Ads",
-   "link": "https://thehackernews.com/2026/10/citizen-lab-traces-zero-click-candiru.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-15T16:01:57Z",
-   "summary": "Candiru, an Israeli maker of spyware sold to governments, infected devices at the news network Al Jazeera through ordinary online ads, in attacks that needed no click or other action from the user, researchers at the Citizen Lab said Thursday. The hidden attack code ran the moment an ad loaded on…",
-   "score": 0,
-   "tags": [],
-   "why": []
   },
   {
    "id": "6ab9bdcb522c",
@@ -1453,6 +1667,12 @@
    "why": [
     "Australia",
     "Ransomware"
+   ],
+   "also": [
+    {
+     "source": "SecurityBrief Australia",
+     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPRnJ1ZTFHUmxVY3lONlpNNE5JOVZxMm96ZVEzQWRTcktFazV6ZXRralp2OVJHTXlzdjNXc2YtX0lJajBNMVNadHlCd0dDYlFWS053YlJ0bjdINnV6RVdPdG1kYWhNLU5QalhWSDNfX2tWT09kZnFRM2ZxanVhSWJtVElDQXVNMndhTVF3QVhhOFlMMy15clE?oc=5"
+    }
    ]
   },
   {
@@ -1559,25 +1779,6 @@
     "Vulnerability"
    ],
    "epss": 0.1271
-  },
-  {
-   "id": "fc19441ee597",
-   "title": "Ransomware gangs threaten Australian executives & families",
-   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPRnJ1ZTFHUmxVY3lONlpNNE5JOVZxMm96ZVEzQWRTcktFazV6ZXRralp2OVJHTXlzdjNXc2YtX0lJajBNMVNadHlCd0dDYlFWS053YlJ0bjdINnV6RVdPdG1kYWhNLU5QalhWSDNfX2tWT09kZnFRM2ZxanVhSWJtVElDQXVNMndhTVF3QVhhOFlMMy15clE?oc=5",
-   "source": "SecurityBrief Australia",
-   "feed": "AU breach news",
-   "region": "AU",
-   "published": "2026-10-14T23:37:00Z",
-   "summary": "",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "Ransomware"
-   ],
-   "why": [
-    "Australia",
-    "Ransomware"
-   ]
   },
   {
    "id": "b57abd2c6608",
@@ -2903,23 +3104,6 @@
    ],
    "why": [
     "Real estate"
-   ]
-  },
-  {
-   "id": "3770e65c491f",
-   "title": "GitHub Tightens npm Publishing After Flaw Left 1,500+ Packages Vulnerable to Hijacking",
-   "link": "https://thehackernews.com/2026/10/github-tightens-npm-publishing-after.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-13T16:18:18Z",
-   "summary": "GitHub has taken the step of expiring unvalidated npm trusted publishing configurations 48 hours after creation after researchers found that it was possible for an attacker to push new versions of a different user's package without having to steal their credentials. \"Your configuration becomes…",
-   "score": 2,
-   "tags": [
-    "Identity"
-   ],
-   "why": [
-    "Identity"
    ]
   },
   {
