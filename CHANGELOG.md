@@ -1,6 +1,7 @@
 # Changelog
 
 ## 2026-10-16: Read the whole brief
+- **How to use** guide in Settings: a quick tour of every tab and feature.
 - Tapping the morning notification now opens **This morning's brief**: the same 5 stories with full summaries and links, the overnight stats, today's lesson and the question of the day. It works the moment the notification arrives. It's also on the Brief tab ("📰 This morning's brief") for the rest of the day.
 
 ## 2026-10-15: Notifications that open the app

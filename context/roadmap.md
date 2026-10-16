@@ -47,6 +47,14 @@ Ideas for what to build next, roughly in priority order. Move items to [CHANGELO
 - [x] **Protect progress**: call `navigator.storage.persist()` and nudge to Export once a month. Progress lives only in localStorage, and iOS can clear a home-screen app's storage after weeks unused.
 - [ ] **Cross-device progress sync** (optional, only if needed). It would need a backend such as a Supabase row or a GitHub Gist with a token. The public repo means no secrets in the page, so this needs real auth. Export/Import covers moving phones today.
 
+## Blog
+- [x] **WordPress drafts**: posts written as `blog/drafts/*.md` arrive in WordPress as drafts (see [blog.md](blog.md)).
+- [ ] **Weekly draft routine**: a scheduled session every Sunday drafting a "week in cyber" roundup from the digest data plus one Learning explainer.
+
+## Notifications
+- [x] **Web Push** to the Home Screen app, opening This morning's brief.
+- [ ] **On-time trigger via cron-job.org** (instructions in SETUP.md; on hold at the user's request).
+
 ## Won't do (and why)
 
 - **Anything that stores employer-internal data** (internal alert feeds, asset lists, incident notes). The repo and site are public; see [opsec.md](opsec.md).

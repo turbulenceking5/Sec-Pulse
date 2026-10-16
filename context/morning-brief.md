@@ -7,12 +7,14 @@ A daily push notification with the top stories and the day's CySA+ lesson, plus 
 
 GitHub's cron is best-effort: runs are often 5–30 minutes late, and on 2026-10-14 one ran 3h19m late and the next didn't run at all. So the recommended setup adds an **external trigger**: cron-job.org POSTs to the `workflow_dispatch` API at 07:25 Brisbane with `inputs.once = true` (steps in [SETUP.md](../SETUP.md#recommended-on-time-brief-with-cron-joborg)). GitHub's schedule stays as a backup.
 
-**Send once a day:** scheduled runs and `once` dispatches call `send_brief.py --once`. It skips if `data/brief-sent.txt` already holds today's Brisbane date, and writes that date after a successful send (not on dry runs or with no `NTFY_TOPIC`). The workflow commits the file. Runs share the `news-data` concurrency group, so a second run only checks out after the first has pushed the marker. A manual **Run workflow** (once unticked) always sends, and still records the date so the scheduled backup skips.
+**Send once a day:** scheduled runs and `once` dispatches skip if today's brief already went out. See [notifications.md](notifications.md#send-once-a-day).
 
 ## Steps
 1. **Fetch fresh news**: runs `fetch_news.py` first so the brief isn't up to 3 hours stale.
 2. **Commit** `news.json` if it changed, so tapping the notification shows the same stories in the app.
-3. **Send**: `scripts/send_brief.py` (with `--once` for scheduled/external runs) with `NTFY_TOPIC` (secret) and `APP_URL` (built from the repo owner/name, `https://<owner>.github.io/<repo>/`).
+3. **Install** `pywebpush` (allowed to fail; only Web Push needs it).
+4. **Send**: `scripts/send_brief.py` (with `--once` for scheduled/external runs), which also writes `data/brief.json`. Env: the notification secrets (see [secrets.md](secrets.md)) and `APP_URL` (`https://<owner>.github.io/<repo>/`).
+5. **Commit** `data/brief.json` and `data/brief-sent.txt`.
 
 ## Message content
 `send_brief.py` builds:
@@ -35,35 +37,18 @@ CySA+ focus: 2.2 Reading scan output and CVSS
 - **Question of the day** (`qotd_for()`): the app's question of the day (`lesson quiz questions flattened, [(ordinal * 7) % n]`), cut to 240 chars (`MAX_Q`). Only the question goes in the notification; the options and answer are in the app.
 - If nothing is recent: `• Quiet night - no new high-relevance items.`
 
-## Web Push (notifications from the app)
-`notify()` sends through every configured channel: ntfy (`NTFY_TOPIC`) and/or Web Push (`WEBPUSH_SUBSCRIPTION` + `VAPID_PRIVATE_KEY`). On iPhone, a ntfy tap opens the link in Safari, while a Web Push notification belongs to the Home Screen app and opens it.
-
-- **App side** (`index.html`, Settings → Notifications on this phone): `enablePush()` asks permission and calls `pushManager.subscribe()` with the public key `VAPID_PUBLIC`, then shows the subscription JSON to copy into the `WEBPUSH_SUBSCRIPTION` secret. iOS only offers push to the Home Screen app, so in Safari the card says to open it from the icon. **Test** shows a local notification; **Turn off** unsubscribes.
-- **Service worker** (`sw.js`): `push` shows `{title, body, tag}`; `notificationclick` focuses an open Sec-Pulse window and navigates it to `url` (`./#brief`), or opens one.
-- **Sender** (`send_webpush()` in `send_brief.py`): `pywebpush` (pip-installed in the brief and digest workflows, pinned; imported lazily so everything else stays standard library) encrypts and posts the payload with a VAPID JWT. `sub` is `https://<app host>` (the library only accepts mailto: or a bare https origin). TTL 12h. The JSON payload is capped at 3,800 bytes (`WEBPUSH_MAX`, under Web Push's ~4 KB), trimming the body if needed; the digest can hit this. Tag `brief` or `digest`, so a new one replaces the old.
-- **Failures**: a 404/410 from the push service means the subscription is gone ("subscription expired" in the log; re-enable in the app and update the secret). `notify()` tries both channels before raising `NotifyError`, so one broken channel doesn't block the other. The run then fails (so GitHub e-mails you), but `brief-sent.txt` is still written if the other channel delivered.
-- Tested end to end against Chromium/FCM (subscribe, send with `send_brief.py`, the service worker shows it). Apple's push service uses the same standard.
-
-## This morning's brief (tap target)
-`send_brief.py` also writes **`data/brief.json`** (`{date, generated, title, items: [news-card fields], stats: {recent, au, kev}, lesson: {id, title}}`), committed by the workflow with the sent marker. The Web Push payload carries a compact copy as `brief` (`shrink_brief()`: items keep only `id, title, source, region, published, summary`, because Google News links alone run to 450 chars; summaries are cut to 140 chars, then dropped, if the payload would pass `WEBPUSH_MAX`). Its `url` is `./#today`.
-
-The service worker saves `brief` to the `sec-pulse-push` cache (`push-brief.json`, kept by the activate cleanup), so tapping the notification shows it instantly, before the new `news.json`/`brief.json` are deployed (about a minute). The app's `loadTodayBrief()` takes whichever of the cached copy and `data/brief.json` has the newer `generated`; `briefItems()` fills links, tags and longer summaries from `news.json` by id (falling back to a Google News search link). See [app.md](app.md).
-
-## ntfy specifics
-- POST to `{NTFY_SERVER}/{NTFY_TOPIC}`. The body is the message text.
-- Headers: `Title`, `Tags: shield` (shows a 🛡️ emoji), `Priority: default`, and `Click: APP_URL` (tapping opens the app).
-- ntfy's message limit is 4,096 bytes. Five headlines plus two lines sits well under it. If more items are ever added, keep an eye on it (ntfy turns oversize messages into attachments).
-- With no `NTFY_TOPIC` set, the script logs `NTFY_TOPIC not set - skipping notification` and exits 0, so a fresh clone doesn't fail CI.
+## Delivery
+How the message reaches the phone (Web Push to the Home Screen app, optional ntfy, the tap-to-read "This morning's brief" screen, and the send-once rule) is in [notifications.md](notifications.md).
 
 ## Testing locally
 ```bash
 python3 scripts/send_brief.py --dry-run         # print, don't send
-NTFY_TOPIC=your-topic python3 scripts/send_brief.py   # really send
+NTFY_TOPIC=your-topic python3 scripts/send_brief.py   # really send via ntfy (also writes data/brief.json)
 python3 scripts/send_digest.py --dry-run        # the weekly digest, same flags/env
 ```
 
 ## Weekly digest
-`.github/workflows/weekly-digest.yml`: cron `0 8 * * 0` = **Sunday 08:00 UTC = Sunday 6pm Brisbane**, also runnable from **Actions → Weekly digest → Run workflow**. Same steps as the morning brief (fetch, commit `news.json` if changed, send), same `news-data` concurrency group, same `NTFY_TOPIC` secret and `APP_URL`.
+`.github/workflows/weekly-digest.yml`: cron `0 8 * * 0` = **Sunday 08:00 UTC = Sunday 6pm Brisbane**, also runnable from **Actions → Weekly digest → Run workflow**. Same steps as the morning brief (fetch, commit `news.json` if changed, send), same `news-data` concurrency group, same notification secrets and `APP_URL`. It has no send-once rule and no tap-to-read screen; its Web Push tag is `digest`.
 
 `scripts/send_digest.py` imports its helpers from `send_brief.py` (`load_data`, `published`, `lesson_for`, `headline`, `notify`) rather than copying them, so `send_brief.py` must stay importable without side effects (it already is, because `fetch_news.py` imports `rank()` from it).
 
@@ -90,4 +75,4 @@ Tomorrow: 2.1 Asset discovery and vulnerability scanning
 - If nothing was collected all week: `• Quiet week - no items collected.`
 
 ## Privacy
-ntfy.sh topics are public to anyone who knows the name. The message only contains public headlines and a lesson title, so this is fine, but **never add anything internal or work-related to the brief**. If that's ever needed, move to an authenticated self-hosted ntfy server (see [SETUP.md](../SETUP.md#optional-self-hosted-or-authenticated-ntfy)).
+Web Push is encrypted end to end. ntfy.sh topics are public to anyone who knows the name. The message only contains public headlines and a lesson title, so this is fine, but **never add anything internal or work-related to the brief**. If that's ever needed, move to an authenticated self-hosted ntfy server (see [SETUP.md](../SETUP.md#optional-self-hosted-or-authenticated-ntfy)).

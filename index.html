@@ -1578,7 +1578,7 @@ const themePref = () => { const p = store.get('theme', 'system'); return p === '
 function openSettings(focus){
   const rows = NEWS.sources.map(s => `<tr><td>${s.ok ? '✅' : '⚠️'}</td><td>${esc(s.name)}${s.error ? `<div class="small muted">${esc(s.error)}</div>` : ''}</td><td style="text-align:right">${s.count}</td></tr>`).join('');
   openSheet('Settings', `
-    <div class="row" style="gap:8px"><button class="btn grow" id="open-changelog">What's new</button><button class="btn grow" id="open-roadmap">Roadmap</button></div>
+    <div class="row" style="gap:8px"><button class="btn grow" id="open-guide">How to use</button><button class="btn grow" id="open-changelog">What's new</button><button class="btn grow" id="open-roadmap">Roadmap</button></div>
     <h2>Appearance</h2>
     <div class="card small">
       <div class="seg" id="theme-seg" role="group" aria-label="Theme">${THEMES.map(([k, l]) => `<button class="btn ${themePref() === k ? 'on' : ''}" data-t="${k}" aria-pressed="${themePref() === k}">${l}</button>`).join('')}</div>
@@ -1650,6 +1650,7 @@ function openSettings(focus){
   $('#course-clear').onclick = () => { $('#course-url').value = ''; store.del('courseUrl'); toast('Link cleared'); };
   $('#open-changelog').onclick = () => openDoc("What's new", 'CHANGELOG.md');
   $('#open-roadmap').onclick = () => openDoc('Roadmap', 'context/roadmap.md');
+  $('#open-guide').onclick = () => openDoc('How to use', 'GUIDE.md');
   $('#export').onclick = () => { exportBackup(); $('#backup-status').textContent = 'Last backup: ' + backupAgo(); };
   $('#import').onchange = async e => {
     try{
