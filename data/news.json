@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-16T21:12:27Z",
+ "generated": "2026-10-16T23:37:59Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -40,7 +40,7 @@
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 1,
+   "count": 0,
    "error": null
   },
   {
@@ -105,6 +105,23 @@
   }
  ],
  "items": [
+  {
+   "id": "1396deafd01c",
+   "title": "Rental scam alert warning: Scammer poses as homeowners to rent homes that aren't for rent in North Carolina",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQZ2pOWXpTRVV1V0ZHM2lhcWhrbHRHcmljdktqaHdVeGtQXzJrT1hZRlhMRXVjYVFNX3N1c3I1bWMzVWFaVDczLTBVWEw4YlhTV1lRa1ZlNDRLWVdkVUIxYTROSDZrSHB4UXZ1cXM4N1FERmxBMWVmUGdYbkRxUGpUWDVvb2dlZkRHU2VMSDgzSEMwSjBaR2dyLVBlTzlpM1BWVmZTamZudUZDUk9qU2pQaHdqaGNkV3Awalo00gG7AUFVX3lxTFBnak5ZelNFVXVXRkczaWFxaGtsdEdyaWN2S2pod1V4a1BfMmtPWFlGWExFdWNhUU1fc3VzcjVtYzNVYVpUNzMtMFVYTDhiWFNXWVFrVmU0NEtZV2RVQjFhNE5INmtIcHhRdnVxczg3UURGbEExZWZQZ1huRHFQalRYNW9vZ2VmREdTZUxIODNIQzBKMFpHZ3ItUGVPOWkzUFZWZlNqZm51RkNST2pTalBod2poY2RXcDBqWjQ?oc=5",
+   "source": "ABC11 News",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-16T21:43:52Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
   {
    "id": "15367a3259ff",
    "title": "BeyondTrust Remote Support Zero-Day Continues Trend of Exploited Edge Bugs",
@@ -776,9 +793,9 @@
    "why": []
   },
   {
-   "id": "52fd64738107",
+   "id": "c2e210ed4208",
    "title": "Redfin Hit With Breach Suit Over Hacked Worker, User Data",
-   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxON0huSTBLMk8zOXFNdGVMV3BuSE5tU3liMjNnNFlqNlV6N2JGaVJDREhKWEhKa2ZvTXhQWmdnRTQwMmRxTk8xcXd5RmFXZ2hMaGhwSUxCYS0yX01YRzh3REQwYWhaMEh2cTFDZ0FUaVJaRW9TaC1nT3paV2E1ZkdSWjZTczBycEdYcTBpTEthNm96dHJqdTUzeXg3ZG9qTklIX19UbC05R1ZiZzhHcXZDZ2FxTWRNanhlZFHSAXNBVV95cUxNV1doQ213eS01OWhLbm5IV3prY2dOd2hYdWRTSzFkb3pJWEtFNG05eHhTZ2VFUXJUT1lqU0htbVlKUGNTSERyWlFQNGUxaEFuXzZBbldUN2NTSzExZmMtRklyYWp2UzJISFJKUEN6LXo0aVNJ?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPTnd0Q255ZzBnUW9Ed3pTbG9KWmFBRGxnMG9nNEp3bGRJUjVhZUJPcElsQnRDNE52YmFrWERNaHNPU0ZrUDgteWdRdnY2ZUFyMjJGVjBYLTlGalpMeGdEMXdSZXpRTllZWEpaUElTU1czdFBPLVNkc1pxLVA4YUl0YjFCUW0tYldZcW1lZ1JoUjNSXzdBYXY3RmxrOWdkVk9xcjVSd0JFRmw1UGV4VHJaYTdUS2NzTnBkXzY2QnpNcjhWd9IBc0FVX3lxTE1XV2hDbXd5LTU5aEtubkhXemtjZ053aFh1ZFNLMWRveklYS0U0bTl4eFNnZUVRclRPWWpTSG1tWUpQY1NIRHJaUVA0ZTFoQW5fNkFuV1Q3Y1NLMTFmYy1GSXJhanZTMkhIUkpQQ3otejRpU0k?oc=5",
    "source": "Law360",
    "feed": "Real estate cyber news",
    "region": "Global",
@@ -1543,6 +1560,23 @@
    ],
    "why": [
     "Vulnerability"
+   ]
+  },
+  {
+   "id": "68d41bab13b9",
+   "title": "Trends In Healthcare Data Breach Statistics",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9PMzZZbVJzWV9lV0JPWXBJOW9BSmI2eElLWHNxWVAtTkhyNnoydUdqTDRnNzE0X056UTE2WW9nakR1UTkxR0ZzX3pMVmdqb2Vjb095eHpIM1Bva0UtTXphRnh5bkpuaDBNQWNvamd5Z2E?oc=5",
+   "source": "The HIPAA Journal",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-15T07:00:00Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
    ]
   },
   {
