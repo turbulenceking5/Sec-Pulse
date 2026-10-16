@@ -1,0 +1,43 @@
+name: Blog drafts
+
+# Sends new files in blog/drafts/ to WordPress.com as DRAFT posts (never published).
+# You review and publish them in WordPress. See context/blog.md.
+on:
+  push:
+    paths:
+      - "blog/drafts/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: blog-drafts
+  cancel-in-progress: false
+
+jobs:
+  drafts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Create WordPress drafts
+        env:
+          WP_CLIENT_ID: ${{ secrets.WP_CLIENT_ID }}
+          WP_CLIENT_SECRET: ${{ secrets.WP_CLIENT_SECRET }}
+          WP_USERNAME: ${{ secrets.WP_USERNAME }}
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+        run: python3 scripts/post_draft.py
+      - name: Record which drafts were sent
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add blog/posted.json 2>/dev/null || exit 0
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Record blog drafts sent to WordPress"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push

@@ -241,6 +241,7 @@ const fs = require('fs');
 
   await page.click('#settings-btn');
   check(await page.locator('#sheet table tr').count() > 0, 'Settings shows feed health');
+  check((await page.textContent('#push-card')).trim().length > 0, 'Settings shows the notifications card');
   await page.fill('#course-url', 'https://www.udemy.com/user/example/');
   await page.dispatchEvent('#course-url', 'change');
   await page.click('#open-changelog');

@@ -32,8 +32,15 @@ jobs:
           git commit -m "Update news feed (weekly digest)"
           git pull --rebase origin "${GITHUB_REF_NAME}"
           git push
+      - name: Install Web Push library
+        # The one non-stdlib dependency, used only for Web Push to the Home Screen app. If PyPI is down,
+        # ntfy still sends and the Web Push error fails the run visibly.
+        continue-on-error: true
+        run: pip install --quiet pywebpush==2.5.0
       - name: Send push notification
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          WEBPUSH_SUBSCRIPTION: ${{ secrets.WEBPUSH_SUBSCRIPTION }}
+          VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
           APP_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
         run: python3 scripts/send_digest.py

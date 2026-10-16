@@ -67,7 +67,7 @@ def build(news, cysa):
 def main():
     news, cysa = load_data()
     title, body = build(news, cysa)
-    notify(title, body, dry="--dry-run" in sys.argv, tags="shield,calendar", what="weekly digest")
+    notify(title, body, dry="--dry-run" in sys.argv, tags="shield,calendar", what="weekly digest", tag="digest")
 
 
 if __name__ == "__main__":

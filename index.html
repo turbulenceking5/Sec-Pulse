@@ -1455,6 +1455,60 @@ async function openDoc(title, path){
   }catch(e){ $('#sheet-body').innerHTML = '<div class="empty">Couldn\'t load this (offline?).</div>'; }
 }
 
+/* ---------- Web Push: the brief arrives as a notification from this app, and tapping it opens the app ---------- */
+// Public half of the VAPID key pair; the private half is the VAPID_PRIVATE_KEY Actions secret used by send_brief.py.
+// iPhone only allows web notifications for the Home Screen app (iOS 16.4+), not Safari tabs.
+const VAPID_PUBLIC = 'BN2kYewkiWEd45jtQutWHWD2ux09hsADilE1iJ6PNo-q2ZEjOaw46OSgH3qJJ2AeLhOpUzNVH02WJlKIZE5C0F4';
+const pushSupported = () => 'serviceWorker' in navigator && 'PushManager' in window && 'Notification' in window;
+function b64urlBytes(s){ const b = atob((s + '='.repeat((4 - s.length % 4) % 4)).replace(/-/g, '+').replace(/_/g, '/')); return Uint8Array.from(b, c => c.charCodeAt(0)); }
+async function pushSub(){ try{ return await (await navigator.serviceWorker.ready).pushManager.getSubscription(); }catch(e){ return null; } }
+async function enablePush(){
+  try{
+    // requestPermission must be the first await after the tap, or iOS ignores it.
+    if (await Notification.requestPermission() !== 'granted'){ toast('Notifications not allowed'); return renderPush(); }
+    const reg = await navigator.serviceWorker.ready;
+    await reg.pushManager.subscribe({userVisibleOnly: true, applicationServerKey: b64urlBytes(VAPID_PUBLIC)});
+    toast('Notifications on - now copy the code to GitHub');
+  }catch(e){ toast("Couldn't turn on notifications"); }
+  renderPush();
+}
+async function renderPush(){
+  const el = $('#push-card'); if (!el) return;
+  if (!pushSupported()){
+    el.innerHTML = /iphone|ipad|ipod/i.test(navigator.userAgent) && !standalone
+      ? '<span class="muted">Open Sec-Pulse from its Home Screen icon to turn these on. iPhone only allows notifications for Home Screen apps.</span>'
+      : '<span class="muted">This browser doesn\'t support web notifications.</span>';
+    return;
+  }
+  if (Notification.permission === 'denied'){ el.innerHTML = '<span class="muted">Notifications are blocked. Allow them in iPhone Settings → Notifications → Sec-Pulse, then come back here.</span>'; return; }
+  const sub = await pushSub();
+  if (!sub){
+    el.innerHTML = `<p style="margin-top:0">Get the morning brief and weekly digest as notifications from this app. Tapping one opens Sec-Pulse.</p>
+      <button class="btn primary" id="push-on">Turn on notifications</button>`;
+    $('#push-on').onclick = enablePush;
+    return;
+  }
+  const code = JSON.stringify(sub.toJSON());
+  el.innerHTML = `<p style="margin-top:0">✅ On for this phone. One-time step: copy this code into GitHub so the brief can reach this phone.</p>
+    <textarea class="field" id="push-code" readonly rows="3" aria-label="Notification code" style="font-size:12px">${esc(code)}</textarea>
+    <div class="row wrap" style="gap:8px;margin-top:8px"><button class="btn primary" id="push-copy">Copy code</button>
+      <button class="btn" id="push-test">Test</button><button class="btn" id="push-off">Turn off</button></div>
+    <ol style="padding-left:18px;margin:10px 0 0">
+      <li>GitHub repo <b>Settings → Secrets and variables → Actions → New repository secret</b>.</li>
+      <li>Name <code>WEBPUSH_SUBSCRIPTION</code>, secret = the code above.</li>
+      <li>Check it: <b>Actions → Morning brief → Run workflow</b>.</li></ol>
+    <p class="muted" style="margin-bottom:0">If you turn this off or reinstall the app, the code changes: update the secret with the new one.</p>`;
+  $('#push-copy').onclick = async () => {
+    try{ await navigator.clipboard.writeText(code); toast('Code copied'); }
+    catch(e){ const t = $('#push-code'); t.focus(); t.select(); toast('Select all and copy'); }
+  };
+  $('#push-test').onclick = async () => {
+    try{ (await navigator.serviceWorker.ready).showNotification('Sec-Pulse', {body: 'Notifications work. Tap to open the app.', tag: 'test', icon: 'assets/icons/icon-192.png?v=1', data: {url: new URL('./#brief', location.href).href}}); }
+    catch(e){ toast("Couldn't show a notification"); }
+  };
+  $('#push-off').onclick = async () => { try{ await sub.unsubscribe(); toast('Notifications off'); }catch(e){} renderPush(); };
+}
+
 /* ---------- Settings ---------- */
 function renderMuteList(){
   const el = $('#mute-list'); if (!el) return;
@@ -1492,9 +1546,11 @@ function openSettings(focus){
     </div>
     <h2>Muted sources and tags</h2>
     <div class="card small" id="mute-list"></div>
-    <h2>Morning brief notification</h2>
+    <h2>Notifications on this phone</h2>
+    <div class="card small" id="push-card"></div>
+    <h2>Morning brief via ntfy (alternative)</h2>
     <div class="card small">
-      <p style="margin-top:0">Every morning at about 7:25am Brisbane time, a GitHub Action sends your top 5 stories plus today's CySA+ lesson to the free <b>ntfy</b> app.</p>
+      <p style="margin-top:0">Every morning at about 7:25am Brisbane time, a GitHub Action sends your top 5 stories plus today's CySA+ lesson. Notifications from this app (above) open Sec-Pulse when tapped; the free <b>ntfy</b> app works too, but on iPhone its links open in Safari.</p>
       <ol style="padding-left:18px;margin:0">
         <li>Install <b>ntfy</b> from the App Store or Google Play.</li>
         <li>Pick a long, unguessable topic name, e.g. <code>secpulse-${Math.random().toString(36).slice(2, 10)}${Math.random().toString(36).slice(2, 8)}</code></li>
@@ -1519,7 +1575,7 @@ function openSettings(focus){
     </div>
     <h2>About</h2>
     <p class="small muted">Sec-Pulse is a personal, unofficial study and news tool. Not affiliated with CompTIA, ASD or any employer. Headlines link to their original publishers.</p>`);
-  renderMuteList();
+  renderMuteList(); renderPush();
   $('#theme-seg').querySelectorAll('button').forEach(b => b.onclick = () => {
     if (b.dataset.t === 'system') store.del('theme'); else store.set('theme', b.dataset.t);
     applyTheme();

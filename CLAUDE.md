@@ -13,6 +13,7 @@ Read the relevant file before changing that part of the project:
 - [context/testing.md](context/testing.md): checks to run before pushing (`scripts/smoke-test.cjs`).
 - [context/roadmap.md](context/roadmap.md): planned work.
 - [context/opsec.md](context/opsec.md): what must never be committed to this public repo.
+- [context/blog.md](context/blog.md): writing WordPress blog drafts (`blog/drafts/`, sent as drafts by `scripts/post_draft.py`).
 - [CHANGELOG.md](CHANGELOG.md): add an entry for every user-visible change.
 
 ## Layout
@@ -25,7 +26,7 @@ Read the relevant file before changing that part of the project:
 - `scripts/smoke-test.cjs` - headless Playwright check of the app (see context/testing.md).
 
 ## Conventions
-- Python scripts are standard library only (no pip install in Actions).
+- Python scripts are standard library only (no pip install in Actions). One exception: the brief/digest workflows `pip install pywebpush` for Web Push, imported lazily inside `send_webpush()` so the scripts still run (and `fetch_news.py` still imports `send_brief`) without it.
 - One broken feed must never fail the run - errors are recorded in `news.json`'s `sources` health list.
 - `rank()` (score minus age/12h) is duplicated in `index.html` and `send_brief.py`; the lesson-of-the-day pick (`ordinal % lessons`) and the question of the day (`(ordinal * 7) % questions`) are too. Keep them in sync.
 - All dates are Australia/Brisbane (UTC+10, no daylight saving).

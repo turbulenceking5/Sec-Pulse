@@ -5,12 +5,14 @@ A daily push notification with the top stories and the day's CySA+ lesson, plus 
 ## Schedule
 `.github/workflows/morning-brief.yml`: cron `25 21 * * *` = **21:25 UTC = 7:25am Brisbane** (AEST, UTC+10, no daylight saving). It can also be run on demand from **Actions → Morning brief → Run workflow**.
 
-GitHub's cron is best-effort: runs are often 5–30 minutes late at busy times, and very occasionally skipped. A late run means the brief can land closer to 7:30-7:55am.
+GitHub's cron is best-effort: runs are often 5–30 minutes late, and on 2026-10-14 one ran 3h19m late and the next didn't run at all. So the recommended setup adds an **external trigger**: cron-job.org POSTs to the `workflow_dispatch` API at 07:25 Brisbane with `inputs.once = true` (steps in [SETUP.md](../SETUP.md#recommended-on-time-brief-with-cron-joborg)). GitHub's schedule stays as a backup.
+
+**Send once a day:** scheduled runs and `once` dispatches call `send_brief.py --once`. It skips if `data/brief-sent.txt` already holds today's Brisbane date, and writes that date after a successful send (not on dry runs or with no `NTFY_TOPIC`). The workflow commits the file. Runs share the `news-data` concurrency group, so a second run only checks out after the first has pushed the marker. A manual **Run workflow** (once unticked) always sends, and still records the date so the scheduled backup skips.
 
 ## Steps
 1. **Fetch fresh news**: runs `fetch_news.py` first so the brief isn't up to 3 hours stale.
 2. **Commit** `news.json` if it changed, so tapping the notification shows the same stories in the app.
-3. **Send**: `scripts/send_brief.py` with `NTFY_TOPIC` (secret) and `APP_URL` (built from the repo owner/name, `https://<owner>.github.io/<repo>/`).
+3. **Send**: `scripts/send_brief.py` (with `--once` for scheduled/external runs) with `NTFY_TOPIC` (secret) and `APP_URL` (built from the repo owner/name, `https://<owner>.github.io/<repo>/`).
 
 ## Message content
 `send_brief.py` builds:
@@ -32,6 +34,15 @@ CySA+ focus: 2.2 Reading scan output and CVSS
 - **CySA+ focus**: `lessons[today.toordinal() % len(lessons)]` using Brisbane's date. The app computes the same index, so "Today's CySA+ lesson" on the Brief tab matches the notification.
 - **Question of the day** (`qotd_for()`): the app's question of the day (`lesson quiz questions flattened, [(ordinal * 7) % n]`), cut to 240 chars (`MAX_Q`). Only the question goes in the notification; the options and answer are in the app.
 - If nothing is recent: `• Quiet night - no new high-relevance items.`
+
+## Web Push (notifications from the app)
+`notify()` sends through every configured channel: ntfy (`NTFY_TOPIC`) and/or Web Push (`WEBPUSH_SUBSCRIPTION` + `VAPID_PRIVATE_KEY`). On iPhone, a ntfy tap opens the link in Safari, while a Web Push notification belongs to the Home Screen app and opens it.
+
+- **App side** (`index.html`, Settings → Notifications on this phone): `enablePush()` asks permission and calls `pushManager.subscribe()` with the public key `VAPID_PUBLIC`, then shows the subscription JSON to copy into the `WEBPUSH_SUBSCRIPTION` secret. iOS only offers push to the Home Screen app, so in Safari the card says to open it from the icon. **Test** shows a local notification; **Turn off** unsubscribes.
+- **Service worker** (`sw.js`): `push` shows `{title, body, tag}`; `notificationclick` focuses an open Sec-Pulse window and navigates it to `url` (`./#brief`), or opens one.
+- **Sender** (`send_webpush()` in `send_brief.py`): `pywebpush` (pip-installed in the brief and digest workflows, pinned; imported lazily so everything else stays standard library) encrypts and posts the payload with a VAPID JWT. `sub` is `https://<app host>` (the library only accepts mailto: or a bare https origin). TTL 12h. The JSON payload is capped at 3,800 bytes (`WEBPUSH_MAX`, under Web Push's ~4 KB), trimming the body if needed; the digest can hit this. Tag `brief` or `digest`, so a new one replaces the old.
+- **Failures**: a 404/410 from the push service means the subscription is gone ("subscription expired" in the log; re-enable in the app and update the secret). `notify()` tries both channels before raising `NotifyError`, so one broken channel doesn't block the other. The run then fails (so GitHub e-mails you), but `brief-sent.txt` is still written if the other channel delivered.
+- Tested end to end against Chromium/FCM (subscribe, send with `send_brief.py`, the service worker shows it). Apple's push service uses the same standard.
 
 ## ntfy specifics
 - POST to `{NTFY_SERVER}/{NTFY_TOPIC}`. The body is the message text.
