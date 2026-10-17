@@ -49,12 +49,19 @@ The workflow commits it with the sent marker. The push payload carries a compact
 
 Tapping the notification opens `#today` → `openTodayBrief()` (see [app.md](app.md)). `loadTodayBrief()` takes whichever of the cached push copy and `data/brief.json` has the newer `generated`, because the commit and Pages deploy take about a minute after the notification arrives. `briefItems()` fills links, tags and longer summaries from `news.json` by id, falling back to a Google News search link.
 
+## Starting early and waiting (why it's on time)
+GitHub starts scheduled runs late, often by hours: 3h19m on 2026-10-13, never on 10-14, 2h17m on 10-17. So the workflow is scheduled **four times**: 18:25, 19:25, 20:25 and 21:25 UTC (4:25, 5:25, 6:25, 7:25am Brisbane).
+- The **wait** job (no concurrency group, up to 250 min) skips straight away if `data/brief-sent.txt` already has today's date. Otherwise, on a scheduled run that started before 7:25am Brisbane (and no more than 4h before), it **sleeps until 7:25** before the **brief** job runs.
+- So the first run to start sends at 7:25 (or immediately, if GitHub delayed it past 7:25), and the later runs skip.
+- The brief job has its own concurrency group, `morning-brief`, so a second run only checks out after the first has pushed the marker. It's not in `news-data`, because a pending fetch there would cancel a pending brief. A clash with a concurrent Fetch news push on `news.json` is tolerated (`continue-on-error`); the brief still sends.
+- Sleeping runners cost nothing on a public repo (unlimited Actions minutes).
+
 ## Send once a day
 - Scheduled runs and `workflow_dispatch` with `inputs.once = true` run `send_brief.py --once`.
 - `--once` skips (exit 0, "already sent") if `data/brief-sent.txt` holds today's Brisbane date. After any channel delivers, the date is written; the workflow commits it.
-- Runs share the `news-data` concurrency group, so a second run only checks out after the first has pushed the marker.
+- Both jobs check the marker, so a later scheduled run stops before fetching news.
 - A manual **Run workflow** with *once* unticked always sends, and still records the date, so the scheduled run skips that day.
-- This exists so an external scheduler (cron-job.org, see [SETUP.md](../SETUP.md#recommended-on-time-brief-with-cron-joborg)) and GitHub's own schedule can both run without double-sending. The user has **not** set up cron-job.org yet (on hold since 2026-10-15).
+- It's what makes the four early schedules safe, and also lets an external scheduler (cron-job.org, see [SETUP.md](../SETUP.md#optional-on-time-brief-with-cron-joborg)) run alongside without double-sending. The user hasn't set up cron-job.org; the early-start schedules (added 2026-10-17) are meant to make it unnecessary.
 
 ## ntfy
 - POST to `{NTFY_SERVER}/{NTFY_TOPIC}` (default server `https://ntfy.sh`). The body is the message text.

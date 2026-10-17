@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-10-17: Morning brief on time
+- GitHub was starting the 7:25 brief up to 2-3 hours late. It now starts several times from 4:25am, and the first run waits until exactly 7:25 to send. You still get one notification.
+
 ## 2026-10-16: Read the whole brief
 - **How to use** guide in Settings: a quick tour of every tab and feature.
 - Tapping the morning notification now opens **This morning's brief**: the same 5 stories with full summaries and links, the overnight stats, today's lesson and the question of the day. It works the moment the notification arrives. It's also on the Brief tab ("📰 This morning's brief") for the rest of the day.

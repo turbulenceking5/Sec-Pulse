@@ -3,9 +3,9 @@
 A daily push notification with the top stories and the day's CySA+ lesson, plus a Sunday-evening [weekly digest](#weekly-digest).
 
 ## Schedule
-`.github/workflows/morning-brief.yml`: cron `25 21 * * *` = **21:25 UTC = 7:25am Brisbane** (AEST, UTC+10, no daylight saving). It can also be run on demand from **Actions → Morning brief → Run workflow**.
+`.github/workflows/morning-brief.yml` sends at **7:25am Brisbane** (21:25 UTC; AEST, UTC+10, no daylight saving). It's scheduled four times from 4:25am and the first run to start waits until 7:25 (see [notifications.md](notifications.md#starting-early-and-waiting-why-its-on-time)). It can also be run on demand from **Actions → Morning brief → Run workflow**.
 
-GitHub's cron is best-effort: runs are often 5–30 minutes late, and on 2026-10-14 one ran 3h19m late and the next didn't run at all. So the recommended setup adds an **external trigger**: cron-job.org POSTs to the `workflow_dispatch` API at 07:25 Brisbane with `inputs.once = true` (steps in [SETUP.md](../SETUP.md#recommended-on-time-brief-with-cron-joborg)). GitHub's schedule stays as a backup.
+GitHub's cron is best-effort and has run hours late (3h19m, 2h17m) or not at all, hence the early starts. An external trigger (cron-job.org POSTing to `workflow_dispatch` with `inputs.once = true`, [SETUP.md](../SETUP.md#optional-on-time-brief-with-cron-joborg)) is an optional extra.
 
 **Send once a day:** scheduled runs and `once` dispatches skip if today's brief already went out. See [notifications.md](notifications.md#send-once-a-day).
 
