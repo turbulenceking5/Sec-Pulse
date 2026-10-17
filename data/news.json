@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-17T04:30:39Z",
+ "generated": "2026-10-17T10:47:49Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -15,33 +15,33 @@
   },
   {
    "name": "ACSC (via Google News)",
-   "ok": true,
-   "count": 3,
-   "error": null
+   "ok": false,
+   "count": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "ASD / ACSC in the news",
-   "ok": true,
-   "count": 1,
-   "error": null
+   "ok": false,
+   "count": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "AU breach news",
-   "ok": true,
-   "count": 9,
-   "error": null
+   "ok": false,
+   "count": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "Real estate cyber news",
-   "ok": true,
-   "count": 9,
-   "error": null
+   "ok": false,
+   "count": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "OAIC / Privacy news",
-   "ok": true,
-   "count": 1,
-   "error": null
+   "ok": false,
+   "count": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "iTnews Security",
@@ -105,6 +105,27 @@
   }
  ],
  "items": [
+  {
+   "id": "b3dabcb4d0c0",
+   "title": "Hackers Use Compromised ConnectWise Credential to Sign In to 173 Microsoft 365 Tenants",
+   "link": "https://thehackernews.com/2026/10/hackers-use-compromised-connectwise.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-17T06:16:46Z",
+   "summary": "Cybersecurity researchers are sounding the alarm related to an active campaign in which unknown threat actors are abusing a compromised Microsoft 365 (M365) credential belonging to ConnectWise Cloud Backup (formerly SkyKick) to gain unauthorized access to customers' M365 environments. ConnectWise…",
+   "score": 14,
+   "tags": [
+    "Real estate",
+    "Microsoft 365",
+    "Identity"
+   ],
+   "why": [
+    "Real estate",
+    "Microsoft 365",
+    "Identity"
+   ]
+  },
   {
    "id": "c935a65ca7c8",
    "title": "Bandra luxe tower developer under fire for building plan breach | Mumbai news",
