@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-16T23:42:10Z",
+ "generated": "2026-10-17T04:30:39Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,19 +28,19 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 11,
+   "count": 9,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 7,
+   "count": 9,
    "error": null
   },
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 0,
+   "count": 1,
    "error": null
   },
   {
@@ -52,7 +52,7 @@
   {
    "name": "CISA KEV",
    "ok": true,
-   "count": 17,
+   "count": 15,
    "error": null
   },
   {
@@ -100,11 +100,70 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 25,
+   "count": 23,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "c935a65ca7c8",
+   "title": "Bandra luxe tower developer under fire for building plan breach | Mumbai news",
+   "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQTDJZSmVxM25UOUF5YXNmMTJSYXM3WmJnVERJUDVKUHZfYXJhNHJMLUVLd21hdnZRd0pEM012ODdiM3BfMXhGZnp4WjVnRDYxc2R0VHZQVDFUQUZvZ3pLUVRhNVcwc1pzMG5xck1zS0RlQTFHbmFxdjNqS0JmN2d4VWdjX0NQNEstY1dfdGF4YWlEMy0teVV2ZmZmRW4xVzNCbEgxZXhzTUNIX21YQ24yLWJmSTdVU1FwRU04RnI5bmdWeVFiTDRDb1JuZkRhRkVUY3YxTTRsNkNERTBaQWVsR3pBVWlvOFEyRFVJaWVDZ0R3R0HSAfgBQVVfeXFMTVNoejNnWDd6X3RNd0NEQ01xemZXMl9EVC1RYldSY3FNVlFvNEtMN2pCSFZyTklJbV9nU2ZLRHYxSkZ0cERhN0ZtWnNvcWVvQWNZeTRud2treUgtRjR4ZkZmSUhVRVZvQU15M1Zfbm1yX3JETEc1Z2pLcC1tZmNYSFFBbjBVMmVuWUNrVkgwcnBaX0ZPeE9vSmtaZUVlT216VFdURTR1RHpCLXpSYTZhWVVlcGdhM2tBcFd1ZGgzWGJkMWFaTjA3QUF4VW1xM1FhUG5YMkdpc285SVhJT0Raa2JybC1CVDBjUk1lbUxadkdpcC1aZWVDSUs?oc=5",
+   "source": "Hindustan Times",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-17T04:13:57Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "b0959b26007f",
+   "title": "Lawsuits accuse Chicago delivery robot companies of collecting biometric data",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNWGhFSTZQeVRGd1NPemRIMHpDUnY3ZTc1UDNqUDE4cDg5SEpfTFVOaDBHOHAyQTVrdy1ObFNWQnB5RzhMR3czVDl0Z3IzWEcwczYyMDI2bmRGMTR5M2lsUkxqTmZYTnNFYko4aUVGMGNjRkpndUpBa0g4RXl0REdZUUdSVkRpS0JZRnlHYlF3Y0g2QXM1NVVfcXV1WVNIb190UVBuZ1VaSGpBWnFGTThVVDlCZUo?oc=5",
+   "source": "WBEZ Chicago",
+   "feed": "OAIC / Privacy news",
+   "region": "Global",
+   "published": "2026-10-17T04:09:00Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "SaaS / cloud"
+   ],
+   "why": [
+    "SaaS / cloud"
+   ],
+   "also": [
+    {
+     "source": "CBS News",
+     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZUlLaEZuWWNYN0k4cS1lX3o1WmRkY2h0MW1aQjl2R05FekFoYm42WTFxU2EzRVlZb2RvaE9kU1N3cXFJX0hjbm1lT0QzemR2VlE4MzJIZU5DeHNKZHdtVzJDcnUwZGdhNWw5aDNONS1jaHhWRm5DaDdLN2JLS09Yd1U4WU1iRzJCVmRxdVpnUGdKS2dYdmNYU1Q3U28wZlh4c1psdg?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "c452fd369354",
+   "title": "Redfin, Rocket hit with lawsuit over alleged breach of employee data",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOaU1ibDI4b29SbG00NFliRHhCQmJwUGNsLTZnRDNNMklDM0E1UThXbGVJOXFRamhENGpBMmI3TEE3Si1TTWREb2pJbnNBeE1UYkZjYWNwRVhxSllIR3QxeG5ndjVaTHRjelFpT3VoVUd1Y3ZCbEVJandPTFZvekppTGZ3Ujg4MTNRRHVFdFBRajA2dldDaTRfQVBHWHhlQQ?oc=5",
+   "source": "The Spokesman-Review",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-16T23:52:00Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Data breach",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Data breach",
+    "SaaS / cloud"
+   ]
+  },
   {
    "id": "1396deafd01c",
    "title": "Rental scam alert warning: Scammer poses as homeowners to rent homes that aren't for rent in North Carolina",
@@ -697,23 +756,6 @@
    ]
   },
   {
-   "id": "d74b1821be7b",
-   "title": "Chicago lawsuits accuse robot delivery companies Coco and Serve of biometric privacy violations",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZUlLaEZuWWNYN0k4cS1lX3o1WmRkY2h0MW1aQjl2R05FekFoYm42WTFxU2EzRVlZb2RvaE9kU1N3cXFJX0hjbm1lT0QzemR2VlE4MzJIZU5DeHNKZHdtVzJDcnUwZGdhNWw5aDNONS1jaHhWRm5DaDdLN2JLS09Yd1U4WU1iRzJCVmRxdVpnUGdKS2dYdmNYU1Q3U28wZlh4c1psdg?oc=5",
-   "source": "CBS News",
-   "feed": "OAIC / Privacy news",
-   "region": "Global",
-   "published": "2026-10-16T03:28:51Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "SaaS / cloud"
-   ],
-   "why": [
-    "SaaS / cloud"
-   ]
-  },
-  {
    "id": "9114f23a3b38",
    "title": "Commvault adds Microsoft 365 tools to spot safe backups",
    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxObzhJa3RBMk11Yk5SSndIT0tMc0R1SHVKZ2pSX2l0YThDUkZaLXI5Qjh2S29NRUtDSllhWk5tVWtYM21jNEdHd1V5YS1iVlpsVXBsSEtramI3eF9xcXNta3lIR2szeUlpaEZraGJobEljdEN1aC1TcVlCZXdRY1hObjZqU3JfcDBrQ3dHYzQ1OTBFdFl3?oc=5",
@@ -793,9 +835,9 @@
    "why": []
   },
   {
-   "id": "52fd64738107",
+   "id": "c2e210ed4208",
    "title": "Redfin Hit With Breach Suit Over Hacked Worker, User Data",
-   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxON0huSTBLMk8zOXFNdGVMV3BuSE5tU3liMjNnNFlqNlV6N2JGaVJDREhKWEhKa2ZvTXhQWmdnRTQwMmRxTk8xcXd5RmFXZ2hMaGhwSUxCYS0yX01YRzh3REQwYWhaMEh2cTFDZ0FUaVJaRW9TaC1nT3paV2E1ZkdSWjZTczBycEdYcTBpTEthNm96dHJqdTUzeXg3ZG9qTklIX19UbC05R1ZiZzhHcXZDZ2FxTWRNanhlZFHSAXNBVV95cUxNV1doQ213eS01OWhLbm5IV3prY2dOd2hYdWRTSzFkb3pJWEtFNG05eHhTZ2VFUXJUT1lqU0htbVlKUGNTSERyWlFQNGUxaEFuXzZBbldUN2NTSzExZmMtRklyYWp2UzJISFJKUEN6LXo0aVNJ?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPTnd0Q255ZzBnUW9Ed3pTbG9KWmFBRGxnMG9nNEp3bGRJUjVhZUJPcElsQnRDNE52YmFrWERNaHNPU0ZrUDgteWdRdnY2ZUFyMjJGVjBYLTlGalpMeGdEMXdSZXpRTllZWEpaUElTU1czdFBPLVNkc1pxLVA4YUl0YjFCUW0tYldZcW1lZ1JoUjNSXzdBYXY3RmxrOWdkVk9xcjVSd0JFRmw1UGV4VHJaYTdUS2NzTnBkXzY2QnpNcjhWd9IBc0FVX3lxTE1XV2hDbXd5LTU5aEtubkhXemtjZ053aFh1ZFNLMWRveklYS0U0bTl4eFNnZUVRclRPWWpTSG1tWUpQY1NIRHJaUVA0ZTFoQW5fNkFuV1Q3Y1NLMTFmYy1GSXJhanZTMkhIUkpQQ3otejRpU0k?oc=5",
    "source": "Law360",
    "feed": "Real estate cyber news",
    "region": "Global",
@@ -1401,6 +1443,29 @@
    "why": []
   },
   {
+   "id": "eb44f2358c7c",
+   "title": "Ransomware extortion gets personal as attackers target employees’ families",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxORGl6ZlpPcWZkcWhWYVRqM0trbFRIaXNCdHFJU2hOQTJBcEUzcVM1ZTh6VHo5cDdOeFlDdkE2dV9OcTNqb3pmenVQek11eTRBU1hMeUVRenZaTUpFdk13eVFNdjlwc2ZEYU5LS1dZUG54QlNBQ3ZZNUVtLXRfTTN4UjVPLUJWYmRoME9YMGZLd2dfZDVYSFp6Sng1TUQxZ2FDMW11SmZtUGRDMEV2ZDNUVTUzWUlqUzBhVWowSw?oc=5",
+   "source": "CSO Online",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-15T11:40:07Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ],
+   "also": [
+    {
+     "source": "CyberSecurityNews",
+     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE51dkxVSTdIYmJ4MGthanpYMW5XYVVYaHI5dExvOVRvb3hhd3NQaWxjREt6OWtVLXRQaFZrVHRlZlBQWGc2SW14RHNyVm9zeERYNlFGMEZibXR1X1lEd3lMYndtWGUtWWNLelQ4TjdhRdIBdEFVX3lxTFBLY3FuMkhGbmNkNklUTnJmSXNqQzdCQllvWU1WMnFfQnhsNzBaTzZYNVpDZzNvbnpEQ1BhR014YnVqZmtHVy1QYjJXWTZWT2k1NkxFdU4xMWVMVWF3VldHZ3hueXJTdGxoNmFfZ01PZFg1RnVr?oc=5"
+    }
+   ]
+  },
+  {
    "id": "a28002aabf34",
    "title": "CikaBika Bot RAT Uses Discord for C&C",
    "link": "https://www.securityweek.com/cikabika-bot-rat-uses-discord-for-cc/",
@@ -1429,23 +1494,6 @@
    "score": 0,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "243b4990da3c",
-   "title": "Ransomware Attacks Intensify: Criminals Shift Focus to Target Employees and Their Families",
-   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE51dkxVSTdIYmJ4MGthanpYMW5XYVVYaHI5dExvOVRvb3hhd3NQaWxjREt6OWtVLXRQaFZrVHRlZlBQWGc2SW14RHNyVm9zeERYNlFGMEZibXR1X1lEd3lMYndtWGUtWWNLelQ4TjdhRdIBdEFVX3lxTFBLY3FuMkhGbmNkNklUTnJmSXNqQzdCQllvWU1WMnFfQnhsNzBaTzZYNVpDZzNvbnpEQ1BhR014YnVqZmtHVy1QYjJXWTZWT2k1NkxFdU4xMWVMVWF3VldHZ3hueXJTdGxoNmFfZ01PZFg1RnVr?oc=5",
-   "source": "CyberSecurityNews",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-15T10:57:36Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Ransomware"
-   ],
-   "why": [
-    "Ransomware"
-   ]
   },
   {
    "id": "b5878f01eb58",
@@ -5100,46 +5148,6 @@
     "Vulnerability"
    ],
    "epss": 0.0059
-  },
-  {
-   "id": "00d8e8779d5a",
-   "title": "CVE-2026-102490: Zammad GmbH Zammad — Zammad GmbH Zammad Improper Privilege Management Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-102490",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-10-02T00:00:00Z",
-   "summary": "Zammad GmbH Zammad contains an improper privilege management vulnerability that can allow the local zammad user to escalate privileges to root. This vulnerability can be chained with CVE-2026-102489. CISA remediation due 2026-10-05.",
-   "score": 4,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.0055
-  },
-  {
-   "id": "3dde8d788a0e",
-   "title": "CVE-2026-102489: Zammad GmbH Zammad — Zammad GmbH Zammad Session Fixation Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-102489",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-10-02T00:00:00Z",
-   "summary": "Zammad GmbH Zammad contains a session fixation vulnerability that can lead to remote code execution as the zammad user. This vulnerability can be chained with CVE-2026-102490. CISA remediation due 2026-10-05.",
-   "score": 4,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.0126
   }
  ]
 }
