@@ -1,88 +1,83 @@
 {
- "date": "2026-10-16",
- "generated": "2026-10-16T02:44:23+00:00",
- "title": "Sec-Pulse brief - Fri 16 Oct",
+ "date": "2026-10-17",
+ "generated": "2026-10-16T23:42:19+00:00",
+ "title": "Sec-Pulse brief - Sat 17 Oct",
  "items": [
   {
-   "id": "baddc3bdfdcc",
-   "title": "Semperis report: Australian cyber executives face physical threats in ransomware attacks",
-   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQOGlJYUhRcllLZDRtX1ZxNGNHeHIxSmpBOHpaS2k3MDI1aDJ2SV82RkxUeFNTM0xYcXdKVmtfUG5sMkQyNnhEeDdjQ25scnFOcldDOHdzVmtqVkFQRWJ5N29yZ3RVRGZxV2xOMkhCT0dPNDdfUDRUSzEyd3hiN1JhbXhPeDF5dXdyU0pnMC1sVDhMN2FSb2VtM2pDMmdIajVfUlNSVTFseEEtaHlqNmtpT1NRODVpajlsR2JxLWFVSUY3RHBvSURZMmZnMFhhZjRU?oc=5",
-   "source": "Australian Cyber Security Magazine",
+   "id": "ead457b69704",
+   "title": "Australian court called data offshoring breach minor",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQSkhIclhTVDZlN0tReUVMc2dGc2FMamZtVVE1YlpwV3M0X1ZFMUVyMFVteWRyeTUwSENMLXkydmxNMWFZZFozUlNaRU1jZXM5Q2lpekswSTA2cEUtSG1BWDV3ZkphRW1kUVktazE0ZVpydUFiVDdiQklKTkNBWFFwNjA4dGtaSnlCWjlVUFJGSDNWcXJZOEo3d2xrVEtmRXRuZmJreXlQaHdKSFNoaFpXWkNVbWdxeVVhdGctQWdpbG1RdDcx?oc=5",
+   "source": "UA.NEWS",
    "region": "AU",
-   "published": "2026-10-15T05:00:00Z",
+   "published": "2026-10-15T18:19:01Z",
    "score": 13,
    "tags": [
     "Australia",
-    "Ransomware"
+    "Data breach"
    ],
    "summary": ""
   },
   {
-   "id": "fc19441ee597",
-   "title": "Ransomware gangs threaten Australian executives & families",
-   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPRnJ1ZTFHUmxVY3lONlpNNE5JOVZxMm96ZVEzQWRTcktFazV6ZXRralp2OVJHTXlzdjNXc2YtX0lJajBNMVNadHlCd0dDYlFWS053YlJ0bjdINnV6RVdPdG1kYWhNLU5QalhWSDNfX2tWT09kZnFRM2ZxanVhSWJtVElDQXVNMndhTVF3QVhhOFlMMy15clE?oc=5",
-   "source": "SecurityBrief Australia",
+   "id": "27d96b1a5cc2",
+   "title": "SOCI Act and cyber security: Australian lessons from France’s connected device attack",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOaWt0bV8wSzFDV0tpRGJHeGZ2dzUwQkQ4eXUzQmNHUWJzS2pReEpvS1laTUY4dVczLXRudWFocXBISmJtdjh0QzFETHFXanU2dy1sam8zVDlvbXA0OFNDZXJ5bW12Q001VUhyTnJaOGdTTjJpSDAxZU14MEUxNHFERkRyLTFmcFNibGZYMHJMWmMwNWNTeFEzUDlLcUl2Qmp3TnhwTVpQWFVFbGlfUUR6bjhocUVVbTZZ?oc=5",
+   "source": "Corrs Chambers Westgarth",
    "region": "AU",
-   "published": "2026-10-14T23:37:00Z",
-   "score": 13,
+   "published": "2026-10-16T01:57:02Z",
+   "score": 12,
    "tags": [
     "Australia",
-    "Ransomware"
+    "Identity"
    ],
    "summary": ""
   },
   {
-   "id": "b57abd2c6608",
-   "title": "DHX faces lawsuit as ex-director alleges 4 billion won embezzlement tied to failed real estate deal - CHOSUNBIZ",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQYlNRWmdIRjRRZXJkZVRYUzE2YnVaRjRHSGRKOVkzTzRfa2ZjakNRZVc3RTBLX3RpR2NFbjM4RDdDUGM0LTJZWmZ2NHFFenA3R3hab01tbU5TNThoejBNbmdNMGJoXzhJb3dkZlFuN05jckZZV2V5V3JxQ09IUHc2UmlhdDl1WHRzNERmX1k0M085MV9f0gGUAUFVX3lxTFBiU1FaZ0hGNFFlcmRlVFhTMTZidVpGNEdIZEo5WTNPNF9rZmNqQ1FlVzdFMEtfdGlHY0VuMzhEN0NQYzQtMllaZnY0cUV6cDdHeFpvTW1tTlM1OGh6ME1uZ00wYmhfOElvd2RmUW43TmNyRllXZXlXcnFDT0hQdzZSaWF0OXVYdHM0RGZfWTQzTzkxX18?oc=5",
-   "source": "Chosunbiz",
+   "id": "1396deafd01c",
+   "title": "Rental scam alert warning: Scammer poses as homeowners to rent homes that aren't for rent in North Carolina",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQZ2pOWXpTRVV1V0ZHM2lhcWhrbHRHcmljdktqaHdVeGtQXzJrT1hZRlhMRXVjYVFNX3N1c3I1bWMzVWFaVDczLTBVWEw4YlhTV1lRa1ZlNDRLWVdkVUIxYTROSDZrSHB4UXZ1cXM4N1FERmxBMWVmUGdYbkRxUGpUWDVvb2dlZkRHU2VMSDgzSEMwSjBaR2dyLVBlTzlpM1BWVmZTamZudUZDUk9qU2pQaHdqaGNkV3Awalo00gG7AUFVX3lxTFBnak5ZelNFVXVXRkczaWFxaGtsdEdyaWN2S2pod1V4a1BfMmtPWFlGWExFdWNhUU1fc3VzcjVtYzNVYVpUNzMtMFVYTDhiWFNXWVFrVmU0NEtZV2RVQjFhNE5INmtIcHhRdnVxczg3UURGbEExZWZQZ1huRHFQalRYNW9vZ2VmREdTZUxIODNIQzBKMFpHZ3ItUGVPOWkzUFZWZlNqZm51RkNST2pTalBod2poY2RXcDBqWjQ?oc=5",
+   "source": "ABC11 News",
    "region": "Global",
-   "published": "2026-10-14T23:00:00Z",
-   "score": 13,
-   "tags": [
-    "Real estate",
-    "SaaS / cloud"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "1f5d528f2318",
-   "title": "Magna Hospitality Group Data Breach Lawsuit Investigation",
-   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQQzVBTkUxN1doTHZzR2s2cVBzdnRLTUVnWUV3cHpQZExJX1pvOWhLM2ozcVV6QmVhbTRGQ3NFTkt1SmpmUER4Q0ZTWGM2QlF3R2djQnFnX0lFcDI0UnhVS3FrVmZvTUNLSVlMRXh4TFhTdm5xbGw5bktNOVRRLURxcEQyUEUtX013ZkE?oc=5",
-   "source": "Claim Depot",
-   "region": "Global",
-   "published": "2026-10-15T16:54:26Z",
+   "published": "2026-10-16T21:43:52Z",
    "score": 10,
    "tags": [
-    "Data breach",
-    "SaaS / cloud"
+    "Real estate"
    ],
    "summary": ""
   },
   {
-   "id": "0ec6dac33216",
-   "title": "Palo Alto Networks Patches PAN-OS Zero-Day Exploited for Remote Code Execution",
-   "link": "https://www.securityweek.com/palo-alto-networks-patches-pan-os-zero-day-exploited-for-remote-code-execution/",
-   "source": "SecurityWeek",
+   "id": "8fcaa4195067",
+   "title": "Accused Beijing Agent’s Underground Money Transfers and Real Estate Circle Bring MSS Spy Case Into Cartel and Scam Compound Terrain",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1OUEVYUFNxeElrcVJkUDNXcnhVaU5FWm95Y1BQb2xaaEwzZ2xWamdfcDFuRmRrT0o1SkFpZS0walNVdUpQb3p5TlR0N29zNDJRY2ZTcXU2WllLNUNJdV9HcTVnZWdzLTRaQVRpWWxScGk?oc=5",
+   "source": "The Bureau | Sam Cooper | Substack",
    "region": "Global",
-   "published": "2026-10-15T06:59:54Z",
+   "published": "2026-10-16T17:15:12Z",
    "score": 10,
    "tags": [
-    "Actively exploited",
-    "Edge devices",
-    "Vulnerability"
+    "Real estate"
    ],
-   "summary": "The company says it’s aware of limited exploitation against customers’ firewalls, and it has made IoCs available. The post Palo Alto Networks Patches PAN-OS Zero-Day Exploited for Remote Code Execution appeared first on SecurityWeek .",
-   "epss": 0.0108
+   "summary": ""
+  },
+  {
+   "id": "9c075cf12462",
+   "title": "Real estate transactions decreased by 66,000 in the third quarter compared with 2025, amid the cyberattack on ANCPI",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNeHFmMkZRQ3Q4eE9nUXpoM3NqTUVqd21LOFdCLThmR2Y3UnhVMzhIR1NaTGxzekI4ckkwa0t0TzdZaUdQSVFlV0szMmNvemFpVDZPWVp2Y3Z2ckt6bzA4clRlU2FjZWNMU1lVRHNET1NKejBNV3NFQlR0TXgtOS1RY190b1ZEZTdOeTNvV0dZQ0g5MGNJcFFWSjZta2JuTUktTEpPRC1zeWc?oc=5",
+   "source": "Informat.ro",
+   "region": "Global",
+   "published": "2026-10-16T07:49:03Z",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "summary": ""
   }
  ],
  "stats": {
-  "recent": 54,
-  "au": 7,
-  "kev": 1
+  "recent": 59,
+  "au": 2,
+  "kev": 2
  },
  "lesson": {
-  "id": "4.3",
-  "title": "Security metrics and KPIs"
+  "id": "4.4",
+  "title": "Stakeholder communication and escalation"
  }
 }

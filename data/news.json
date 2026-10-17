@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-16T02:42:45Z",
+ "generated": "2026-10-16T23:42:10Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -22,25 +22,25 @@
   {
    "name": "ASD / ACSC in the news",
    "ok": true,
-   "count": 2,
+   "count": 1,
    "error": null
   },
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 7,
+   "count": 11,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 8,
+   "count": 7,
    "error": null
   },
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 1,
+   "count": 0,
    "error": null
   },
   {
@@ -52,7 +52,7 @@
   {
    "name": "CISA KEV",
    "ok": true,
-   "count": 15,
+   "count": 17,
    "error": null
   },
   {
@@ -82,7 +82,7 @@
   {
    "name": "Microsoft Security Blog",
    "ok": true,
-   "count": 6,
+   "count": 5,
    "error": null
   },
   {
@@ -100,11 +100,636 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 21,
+   "count": 25,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "1396deafd01c",
+   "title": "Rental scam alert warning: Scammer poses as homeowners to rent homes that aren't for rent in North Carolina",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQZ2pOWXpTRVV1V0ZHM2lhcWhrbHRHcmljdktqaHdVeGtQXzJrT1hZRlhMRXVjYVFNX3N1c3I1bWMzVWFaVDczLTBVWEw4YlhTV1lRa1ZlNDRLWVdkVUIxYTROSDZrSHB4UXZ1cXM4N1FERmxBMWVmUGdYbkRxUGpUWDVvb2dlZkRHU2VMSDgzSEMwSjBaR2dyLVBlTzlpM1BWVmZTamZudUZDUk9qU2pQaHdqaGNkV3Awalo00gG7AUFVX3lxTFBnak5ZelNFVXVXRkczaWFxaGtsdEdyaWN2S2pod1V4a1BfMmtPWFlGWExFdWNhUU1fc3VzcjVtYzNVYVpUNzMtMFVYTDhiWFNXWVFrVmU0NEtZV2RVQjFhNE5INmtIcHhRdnVxczg3UURGbEExZWZQZ1huRHFQalRYNW9vZ2VmREdTZUxIODNIQzBKMFpHZ3ItUGVPOWkzUFZWZlNqZm51RkNST2pTalBod2poY2RXcDBqWjQ?oc=5",
+   "source": "ABC11 News",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-16T21:43:52Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
+   "id": "15367a3259ff",
+   "title": "BeyondTrust Remote Support Zero-Day Continues Trend of Exploited Edge Bugs",
+   "link": "https://www.darkreading.com/endpoint-security/beyondtrust-remote-support-exploited-edge-bugs",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-16T20:34:37Z",
+   "summary": "Ivanti, Cisco, and Palo Alto Networks all had vulnerabilities in edge devices come under fire this week. Now BeyondTrust joins the group.",
+   "score": 7,
+   "tags": [
+    "Actively exploited",
+    "Edge devices"
+   ],
+   "why": [
+    "Actively exploited",
+    "Edge devices"
+   ]
+  },
+  {
+   "id": "8dfac5c34b84",
+   "title": "Critical BlockStrap flaw lets hackers run code on Magento servers",
+   "link": "https://www.bleepingcomputer.com/news/security/critical-blockstrap-flaw-lets-hackers-run-code-on-magento-servers/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-16T20:00:59Z",
+   "summary": "Researchers warn that hackers could soon exploit a maximum-severity vulnerability (CVE-2026-103849) affecting Magento and Adobe Commerce, potentially allowing them to execute arbitrary PHP code on store servers. [...]",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0078
+  },
+  {
+   "id": "0cd568eb4deb",
+   "title": "Secure.com says ransomware budgets should fix basics first",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNbzdkV1l6X1BydTB0LUZja1kwXy1MM296UE9IbkRhMXY0Q2tjOVc1ZWFiWHpMeW5VaTVQcXpsSkt2RUtiZ1dKMTczNEFma18wTzA3TngzbmxwLXk5SnRBSlZvaEhvd2k2TnFVTUxVT1d1bEFZcGFoN3phMm5GczJGckU1OS1RTDB3YTJ0ZjI5cmRLOHBNZVp3?oc=5",
+   "source": "SecurityBrief New Zealand",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-16T19:56:00Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
+  },
+  {
+   "id": "8e2b4b8581aa",
+   "title": "Fake Claude, ChatGPT Attacks Surge, Putting Developers at Risk",
+   "link": "https://www.darkreading.com/application-security/fake-claude-chatgpt-attacks-developers-risk",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-16T19:49:30Z",
+   "summary": "Campaigns that impersonate popular AI brands are on the rise, and they typically use ClickFix-like tactics to target unsuspecting enterprise employees.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "b8b7cb7d4b49",
+   "title": "Biomemory Launches DNA Shield, First Commercial Product Built on Its Molecular IT Platform",
+   "link": "https://www.darkreading.com/data-privacy/biomemory-launches-dna-shield",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-16T19:22:12Z",
+   "summary": "The launch follows the acquisition of catalog's assets and the appointment of Laurent Guengant as CEO earlier this year.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "714d202db596",
+   "title": "Enterprise AI Enters Risk Management Phase as Security Concerns Rise",
+   "link": "https://www.darkreading.com/cyber-risk/enterprise-ai-risk-management-phase-security-concerns-rise",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-16T19:13:59Z",
+   "summary": "Companies are increasingly discovering that the challenge with AI is no longer adoption, but execution.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "0a0234023332",
+   "title": "AI Takes Control of Robotic Arm in 16 Minutes Flat",
+   "link": "https://www.darkreading.com/ics-ot-security/ai-takes-control-robotic-arm-16-minutes",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-16T18:37:50Z",
+   "summary": "Most OT devices at utilities, factories, and elsewhere have been deployed for a decade or more, but operators need to get agile and deploy new cyber defenses.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "2f67e7ff74fc",
+   "title": "Researchers Demonstrate OpenBSD Root Exploit Chaining 37-Year-Old Shared-Memory Bug",
+   "link": "https://thehackernews.com/2026/10/researchers-demonstrate-openbsd-root.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-16T17:48:45Z",
+   "summary": "A local privilege escalation exploit published today gains root on OpenBSD 7.9 by chaining a roughly 37-year-old integer overflow with a separate kernel flaw, bypassing OpenBSD's KARL kernel-address randomization and its SMAP and SMEP hardware protections. Security firm Calif, which found and…",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "50880c900177",
+   "title": "Targeted ads installed Candiru spyware in zero-click attacks",
+   "link": "https://www.bleepingcomputer.com/news/security/zero-click-attacks-used-targeted-ads-to-deliver-candiru-spyware/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-16T17:20:03Z",
+   "summary": "Candiru spyware was delivered to devices at Al Jazeera Media Network via targeted online advertisements in a zero-click attack that required only rendering the malicious ads on the victim's device. [...]",
+   "score": 0,
+   "tags": [],
+   "why": [],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/citizen-lab-traces-zero-click-candiru.html"
+    }
+   ]
+  },
+  {
+   "id": "8fcaa4195067",
+   "title": "Accused Beijing Agent’s Underground Money Transfers and Real Estate Circle Bring MSS Spy Case Into Cartel and Scam Compound Terrain",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1OUEVYUFNxeElrcVJkUDNXcnhVaU5FWm95Y1BQb2xaaEwzZ2xWamdfcDFuRmRrT0o1SkFpZS0walNVdUpQb3p5TlR0N29zNDJRY2ZTcXU2WllLNUNJdV9HcTVnZWdzLTRaQVRpWWxScGk?oc=5",
+   "source": "The Bureau | Sam Cooper | Substack",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-16T17:15:12Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
+   "id": "2f6312b7767d",
+   "title": "Attackers Tampered with AOMEI Backupper's Update Servers for Minutes to Deliver a Backdoor",
+   "link": "https://thehackernews.com/2026/10/attackers-tampered-with-aomei.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-16T16:43:39Z",
+   "summary": "Attackers repeatedly changed the files that AOMEI Backupper fetches from the vendor's own update servers, in windows of five to ten minutes at a time between May and July 2026, so that any copy of the Windows backup program that checked for an update during one of those windows would download and…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "7ca539292393",
+   "title": "UAT-11985 Uses Fake Event Invites to Target Taiwan Research Affiliates With Google AitM Phishing",
+   "link": "https://thehackernews.com/2026/10/uat-11985-uses-fake-event-invites-to.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-16T16:16:44Z",
+   "summary": "Cybersecurity researchers have disclosed details of an advanced persistent threat (APT) spear-phishing campaign that has targeted individuals affiliated with Taiwan research organizations to direct victims to an adversary-in-the-middle (AitM) phishing framework designed to harvest their Google…",
+   "score": 4,
+   "tags": [
+    "Phishing"
+   ],
+   "why": [
+    "Phishing"
+   ]
+  },
+  {
+   "id": "c094ac3382c9",
+   "title": "Managing open-weight model risk in enterprise deployments",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/10/16/managing-open-weight-model-risk-in-enterprise-deployments/",
+   "source": "Microsoft Security Blog",
+   "feed": "Microsoft Security Blog",
+   "region": "Global",
+   "published": "2026-10-16T16:00:00Z",
+   "summary": "New whitepaper from Microsoft and NVIDIA helps enterprises manage open-weight AI model risks with a shared taxonomy, evaluations, and controls. The post Managing open-weight model risk in enterprise deployments appeared first on Microsoft Security Blog .",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "c84ec4adaad2",
+   "title": "CT Settles 2024 Data Breach That Compromised Information Of 58,000 Residents",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNSkVYWXlhbFBoYV9ONzF4d3lQcERoM1BDZ3phSGc4Yy1JVElRXzRBYVoxamRhalI0WTA3UWdZQ2lTa0U2TWdwYWxScVBadjRMOXhnRjlXNUdjQS0xMzNtdzZaNWhCR2FmclpxUk54ODFaZnlrSkJhT0tKUGxpQWdJbzRkeFpyeDFZWmNhNFVPbkQ3OTNqbEtNWVNKWUFpbTM2UkpHSVJPcXo2WnFIbnMyZS1B?oc=5",
+   "source": "CT News Junkie",
+   "feed": "OAIC / Privacy news",
+   "region": "Global",
+   "published": "2026-10-16T14:13:24Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "7a1f49cfc715",
+   "title": "In Other News: ICS-Sniper Attack, Hacking XWorm Malware Operators, $250k Chrome Exploit",
+   "link": "https://www.securityweek.com/in-other-news-ics-sniper-attack-hacking-xworm-malware-operators-250k-chrome-exploit/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-16T14:09:51Z",
+   "summary": "Noteworthy stories that might have slipped under the radar: BofA adds 1,000 patching contractors, KGB RAT pairs data theft with jump scares, and Langflow flaw under attack. The post In Other News: ICS-Sniper Attack, Hacking XWorm Malware Operators, $250k Chrome Exploit appeared first on…",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "82bd71e8965d",
+   "title": "OpenAI Research Model Spent 3rd-Party Test ETH Without Permission to Deploy Smart Contract",
+   "link": "https://thehackernews.com/2026/10/openai-research-model-spent-3rd-party.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-16T14:03:04Z",
+   "summary": "OpenAI has disclosed seven new incidents in which its artificial intelligence (AI) models exhibited misaligned behavior, including one case where its research model, after not having funds on an Ethereum test network, spent test cryptocurrency from a third-party's wallet without authorization to…",
+   "score": 2,
+   "tags": [
+    "SaaS / cloud"
+   ],
+   "why": [
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "834a248937df",
+   "title": "When Your Ransomware Negotiator Works for the Other Side",
+   "link": "https://www.darkreading.com/cyber-risk/when-your-ransomware-negotiator-works-other-side",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-16T14:00:00Z",
+   "summary": "The shocking arrest of a well-known ransomware negotiator reveals the critical need for vendor program oversight.",
+   "score": 4,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
+  },
+  {
+   "id": "d269ee990910",
+   "title": "Employees using personal ChatGPT at work? Here's what IT admins need to do",
+   "link": "https://www.bleepingcomputer.com/news/security/employees-using-personal-chatgpt-at-work-heres-what-it-admins-need-to-do/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-16T13:50:59Z",
+   "summary": "Employees using personal ChatGPT accounts at work can expose sensitive company data, even when their organization provides an approved Enterprise workspace. NordLayer explains how IT teams can investigate unauthorized AI use and block sensitive information before it reaches personal accounts. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "48b9aea0ee83",
+   "title": "When AI Agents Commit Breaches, Humans May Not Be Held Liable",
+   "link": "https://www.darkreading.com/insider-threats/ai-agents-breaches-humans-liable",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-16T13:00:00Z",
+   "summary": "As agents escape containment and access external systems, responsibility remains human. Accountability, however, is much less settled.",
+   "score": 4,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "862e2db1b4e0",
+   "title": "Burger King Japan data breach exposes 11 million customer records",
+   "link": "https://www.bleepingcomputer.com/news/security/burger-king-japan-data-breach-exposes-11-million-customer-records/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-16T12:01:29Z",
+   "summary": "Burger King Japan, the Japanese subsidiary of global fast-food giant Burger King, disclosed a major data breach after attackers accessed a server containing 11.18 million customer records. [...]",
+   "score": 4,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "754b8af5c24d",
+   "title": "BAE Systems Security Incident Stalls Notices From US Bankruptcy Courts",
+   "link": "https://www.securityweek.com/bae-systems-security-incident-stalls-notices-from-us-bankruptcy-courts/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-16T11:46:40Z",
+   "summary": "A cyber incident affecting contractor BAE Systems has knocked out the Bankruptcy Noticing Center, halting notices nationwide for a week. The post BAE Systems Security Incident Stalls Notices From US Bankruptcy Courts appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": [],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/bae-systems-cyberattack-disrupts-us-federal-court-operations/"
+    }
+   ]
+  },
+  {
+   "id": "61ac6bfaa7c9",
+   "title": "AI Decision Models and Their Impact on AI SOC Platforms",
+   "link": "https://thehackernews.com/2026/10/ai-decision-models-and-their-impact-on.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-16T11:30:00Z",
+   "summary": "In the space of a month, a new category of AI model went from nonexistent to everywhere. TypeSafe AI released Jev on September 15 and called it a System One model, a nod to Kahneman's fast, intuitive thinking. OpenAI announced its own Decisions API at DevDay and opened a public beta on October 6.…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "196d1fbeb9fc",
+   "title": "Chinese APT Exploited BeyondTrust Vulnerability as Zero-Day",
+   "link": "https://www.securityweek.com/chinese-apt-exploited-beyondtrust-vulnerability-as-zero-day/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-16T10:53:22Z",
+   "summary": "Armory Castle exploited CVE-2026-102764 for initial access, deployed custom tools, and deleted logs and artifacts. The post Chinese APT Exploited BeyondTrust Vulnerability as Zero-Day appeared first on SecurityWeek .",
+   "score": 7,
+   "tags": [
+    "Actively exploited",
+    "Vulnerability"
+   ],
+   "why": [
+    "Actively exploited",
+    "Vulnerability"
+   ],
+   "epss": 0.006,
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/china-linked-hackers-exploited.html"
+    }
+   ]
+  },
+  {
+   "id": "3042b8d5fd6d",
+   "title": "OpenAI Models Hacked Data Portals, Raided a Crypto Wallet to Finish Tasks",
+   "link": "https://www.securityweek.com/openai-models-hacked-data-portals-raided-a-crypto-wallet-to-finish-tasks/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-16T10:32:11Z",
+   "summary": "Left without funds for a coding task, an OpenAI model spent test crypto from a stranger’s wallet and left it out of its report. The post OpenAI Models Hacked Data Portals, Raided a Crypto Wallet to Finish Tasks appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "c426150a84ac",
+   "title": "F5, Juniper Networks Patch Critical Vulnerabilities",
+   "link": "https://www.securityweek.com/f5-juniper-networks-patch-critical-vulnerabilities/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-16T09:54:34Z",
+   "summary": "Successful exploitation of some of these issues could lead to remote code execution and full device takeover. The post F5, Juniper Networks Patch Critical Vulnerabilities appeared first on SecurityWeek .",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "7e8ace9d42e7",
+   "title": "Microsoft: October Windows update may break Smart App Control",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/kb5127648-windows-security-update-may-break-smart-app-control/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-16T08:44:22Z",
+   "summary": "Microsoft says some users may have trouble turning on Smart App Control after installing this month's KB5127648 Windows 11 security update. [...]",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "509b1847c72f",
+   "title": "Microsoft Patches Two Dozen RCE Flaws in Office",
+   "link": "https://www.securityweek.com/microsoft-patches-two-dozen-rce-flaws-in-office/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-16T07:55:06Z",
+   "summary": "In addition to RCE flaws, Microsoft fixed multiple information disclosure bugs and a security bypass issue in Office. The post Microsoft Patches Two Dozen RCE Flaws in Office appeared first on SecurityWeek .",
+   "score": 5,
+   "tags": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "9c075cf12462",
+   "title": "Real estate transactions decreased by 66,000 in the third quarter compared with 2025, amid the cyberattack on ANCPI",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNeHFmMkZRQ3Q4eE9nUXpoM3NqTUVqd21LOFdCLThmR2Y3UnhVMzhIR1NaTGxzekI4ckkwa0t0TzdZaUdQSVFlV0szMmNvemFpVDZPWVp2Y3Z2ckt6bzA4clRlU2FjZWNMU1lVRHNET1NKejBNV3NFQlR0TXgtOS1RY190b1ZEZTdOeTNvV0dZQ0g5MGNJcFFWSjZta2JuTUktTEpPRC1zeWc?oc=5",
+   "source": "Informat.ro",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-16T07:49:03Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
+   "id": "bc377ce6401c",
+   "title": "Former CIA officer used Florida homes in $200m scam, then admitted exposing a secret source",
+   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPUmM1UDVDdml2RGh5Rm1TMDVxRTV6YnNJZkozMGg4WFR3ZDlROUFsYmxWSWhMajFPdXlwclByRkVQSzNBZzhyck8zQlhsV21GX090eUFkNm5Sd2pJU1dzbnJJODltTEhxZHJXSk9NWGNua3pqcXh3TldHc0JvSGlJbzBR?oc=5",
+   "source": "The Cool Down",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-16T07:15:00Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "105239e3490a",
+   "title": "Proofpoint Inks $6.3 Billion All-Cash Deal to Acquire Varonis",
+   "link": "https://www.securityweek.com/proofpoint-inks-6-3-billion-all-cash-deal-to-acquire-varonis/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-16T07:12:51Z",
+   "summary": "The Thoma Bravo-owned Proofpoint will acquire Varonis in an all-cash transaction and Varonis will become a private company. The post Proofpoint Inks $6.3 Billion All-Cash Deal to Acquire Varonis appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "f909b9dee009",
+   "title": "CERT-In Warns AI Agents Accessed Sensitive Data at Indian Organizations During Testing",
+   "link": "https://thehackernews.com/2026/10/cert-in-warns-ai-agents-accessed.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-16T06:53:09Z",
+   "summary": "AI agents being tested online reached the live systems of Indian organizations and read business records, including personal data and confidential material, CERT-In said in an advisory on October 15. The agents went beyond their assigned tasks, and none of the organizations detected the…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "494b44d4ddb2",
+   "title": "BeyondTrust patches zero-day exploited in attacks since August",
+   "link": "https://www.bleepingcomputer.com/news/security/beyondtrust-patches-zero-day-exploited-in-attacks-since-august/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-16T06:18:08Z",
+   "summary": "BeyondTrust warned customers on Thursday to patch a critical flaw in its Remote Support (RS) that has been exploited in zero-day attacks since late August. [...]",
+   "score": 7,
+   "tags": [
+    "Actively exploited",
+    "Vulnerability"
+   ],
+   "why": [
+    "Actively exploited",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "5fc8c6dd8c54",
+   "title": "PEERSTITCH Malware Deployed via FortiOS Flaw Bypasses Checks on Tagged VPN Sessions",
+   "link": "https://thehackernews.com/2026/10/attackers-exploit-fortios-flaw-to.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-16T04:59:36Z",
+   "summary": "A suspected advanced threat actor has been observed exploiting a security flaw in Fortinet FortiOS to deliver a previously unreported memory-resident ARM64 malware known as PEERSTITCH. The attack involves the exploitation of CVE-2025-61624 (CVSS score: 5.4), a path traversal flaw in the command…",
+   "score": 4,
+   "tags": [
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "why": [
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "epss": 0.0058
+  },
+  {
+   "id": "e0e9e3550086",
+   "title": "Cyber insurance limits and ransomware reporting under scrutiny",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOcHBLQ2h4WW4zaEY2OUx2dE1NeGhzNjJRMENTUVRfbGdJZWhLY0F2azBNa1RVYmFiRG05dmNrbE9fUmhFV1diZU5qRGZhZ0I1YnR6bHVEQnpXZkNsbzdmbEVCdWoxMXg5NEJyUWZIYVM4RnZ6aVBJQ2hXZHN2aWFOVzdsbEVXQmxCU2NpeGR4OGhQRlhoQlM5ZVhBMGlMWWkyQUFVc3kwNjY1bnVjV0lxc0Jjd2dBMTFt?oc=5",
+   "source": "Insurance Business",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-16T04:50:23Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
+  },
+  {
+   "id": "58dfe122935e",
+   "title": "ACS warns ASD Essentials lacks clear assessor standards",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQdWk1dzMwZFp4cFN1c3RWdHhIdXE4dUJwSTl2YW45eVptamJwQndQWE9zQmNLTms0YkhwREhMa3dKSzdxSkg2RzZKMHMyS3ROcFkxRDZ1bFMtTXI2REZpbFVUMWFTSHp4Z0JCQlFnaFJNc2dibTFnZk1ZYk1sR0tpdVdsVFVuZDNkQ3JtdkoxYkV6VG5mYVp4Z28taU9MSXI3MTVTZ1JB?oc=5",
+   "source": "Australian Cyber Security Magazine",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-16T04:14:31Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "Identity"
+   ],
+   "why": [
+    "Identity"
+   ]
+  },
+  {
+   "id": "d74b1821be7b",
+   "title": "Chicago lawsuits accuse robot delivery companies Coco and Serve of biometric privacy violations",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZUlLaEZuWWNYN0k4cS1lX3o1WmRkY2h0MW1aQjl2R05FekFoYm42WTFxU2EzRVlZb2RvaE9kU1N3cXFJX0hjbm1lT0QzemR2VlE4MzJIZU5DeHNKZHdtVzJDcnUwZGdhNWw5aDNONS1jaHhWRm5DaDdLN2JLS09Yd1U4WU1iRzJCVmRxdVpnUGdKS2dYdmNYU1Q3U28wZlh4c1psdg?oc=5",
+   "source": "CBS News",
+   "feed": "OAIC / Privacy news",
+   "region": "Global",
+   "published": "2026-10-16T03:28:51Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "SaaS / cloud"
+   ],
+   "why": [
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "9114f23a3b38",
+   "title": "Commvault adds Microsoft 365 tools to spot safe backups",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxObzhJa3RBMk11Yk5SSndIT0tMc0R1SHVKZ2pSX2l0YThDUkZaLXI5Qjh2S29NRUtDSllhWk5tVWtYM21jNEdHd1V5YS1iVlpsVXBsSEtramI3eF9xcXNta3lIR2szeUlpaEZraGJobEljdEN1aC1TcVlCZXdRY1hObjZqU3JfcDBrQ3dHYzQ1OTBFdFl3?oc=5",
+   "source": "SecurityBrief Australia",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-16T02:58:00Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Microsoft 365"
+   ],
+   "why": [
+    "Microsoft 365"
+   ]
+  },
   {
    "id": "dcae46e419da",
    "title": "ISC Stormcast For Friday, October 16th, 2026 https://isc.sans.edu/podcastdetail/10140, (Fri, Oct 16th)",
@@ -144,7 +769,7 @@
    "source": "Bernews",
    "feed": "Real estate cyber news",
    "region": "Global",
-   "published": "2026-10-16T01:03:44Z",
+   "published": "2026-10-16T01:47:34Z",
    "summary": "",
    "score": 10,
    "tags": [
@@ -168,9 +793,9 @@
    "why": []
   },
   {
-   "id": "c2e210ed4208",
+   "id": "52fd64738107",
    "title": "Redfin Hit With Breach Suit Over Hacked Worker, User Data",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPTnd0Q255ZzBnUW9Ed3pTbG9KWmFBRGxnMG9nNEp3bGRJUjVhZUJPcElsQnRDNE52YmFrWERNaHNPU0ZrUDgteWdRdnY2ZUFyMjJGVjBYLTlGalpMeGdEMXdSZXpRTllZWEpaUElTU1czdFBPLVNkc1pxLVA4YUl0YjFCUW0tYldZcW1lZ1JoUjNSXzdBYXY3RmxrOWdkVk9xcjVSd0JFRmw1UGV4VHJaYTdUS2NzTnBkXzY2QnpNcjhWd9IBc0FVX3lxTE1XV2hDbXd5LTU5aEtubkhXemtjZ053aFh1ZFNLMWRveklYS0U0bTl4eFNnZUVRclRPWWpTSG1tWUpQY1NIRHJaUVA0ZTFoQW5fNkFuV1Q3Y1NLMTFmYy1GSXJhanZTMkhIUkpQQ3otejRpU0k?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxON0huSTBLMk8zOXFNdGVMV3BuSE5tU3liMjNnNFlqNlV6N2JGaVJDREhKWEhKa2ZvTXhQWmdnRTQwMmRxTk8xcXd5RmFXZ2hMaGhwSUxCYS0yX01YRzh3REQwYWhaMEh2cTFDZ0FUaVJaRW9TaC1nT3paV2E1ZkdSWjZTczBycEdYcTBpTEthNm96dHJqdTUzeXg3ZG9qTklIX19UbC05R1ZiZzhHcXZDZ2FxTWRNanhlZFHSAXNBVV95cUxNV1doQ213eS01OWhLbm5IV3prY2dOd2hYdWRTSzFkb3pJWEtFNG05eHhTZ2VFUXJUT1lqU0htbVlKUGNTSERyWlFQNGUxaEFuXzZBbldUN2NTSzExZmMtRklyYWp2UzJISFJKUEN6LXo0aVNJ?oc=5",
    "source": "Law360",
    "feed": "Real estate cyber news",
    "region": "Global",
@@ -183,6 +808,48 @@
    "why": [
     "Data breach"
    ]
+  },
+  {
+   "id": "51427f5a7699",
+   "title": "CVE-2025-61624: Fortinet Multiple Products — Fortinet Multiple Products Path Traversal Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-61624",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-10-16T00:00:00Z",
+   "summary": "FortiOS, FortiPAM, FortiProxy, and FortiSwitchManager contain a path traversal vulnerability that may allow an authenticated attacker with admin profile and at least read-write permissions to write or delete arbitrary files via specific CLI commands. CISA remediation due 2026-10-19.",
+   "score": 7,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "why": [
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "epss": 0.0058
+  },
+  {
+   "id": "7d3104b45e33",
+   "title": "CVE-2026-102764: BeyondTrust Remote Support — BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-102764",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-10-16T00:00:00Z",
+   "summary": "BeyondTrust Remote Support contains an authentication bypass by spoofing vulnerability that could allow a remote attacker to perform file operations on the appliance. CISA remediation due 2026-10-19.",
+   "score": 4,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.006
   },
   {
    "id": "3bd9f144301e",
@@ -275,6 +942,23 @@
    "why": []
   },
   {
+   "id": "f29e21a7f915",
+   "title": "Bristol primary school hit by second cyber attack as records exported in data breach",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1POG42MHp2eGZPVXlrTGpBM2NweS1qMkw2enh1YjZtTTVVZmY3bXc1Ym55eDhXMXBhcENvdDhGc1ZEbXVsV24wVElTOWhSdWRUdXFYVlhiaDhpdklGOUVnMDhjTUdWTW1xVU1LcnNsOFJBcFdLRTNueWsxS096cG8?oc=5",
+   "source": "Yahoo News UK",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-15T20:32:55Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
    "id": "a094aa58c0da",
    "title": "Hackers exploit Collabora RCE flaw to backdoor Nextcloud servers",
    "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-collabora-rce-flaw-to-backdoor-nextcloud-servers/",
@@ -313,7 +997,8 @@
    ],
    "why": [
     "Vulnerability"
-   ]
+   ],
+   "epss": 0.0021
   },
   {
    "id": "6c8051f534fe",
@@ -357,6 +1042,25 @@
    "score": 0,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "ead457b69704",
+   "title": "Australian court called data offshoring breach minor",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQSkhIclhTVDZlN0tReUVMc2dGc2FMamZtVVE1YlpwV3M0X1ZFMUVyMFVteWRyeTUwSENMLXkydmxNMWFZZFozUlNaRU1jZXM5Q2lpekswSTA2cEUtSG1BWDV3ZkphRW1kUVktazE0ZVpydUFiVDdiQklKTkNBWFFwNjA4dGtaSnlCWjlVUFJGSDNWcXJZOEo3d2xrVEtmRXRuZmJreXlQaHdKSFNoaFpXWkNVbWdxeVVhdGctQWdpbG1RdDcx?oc=5",
+   "source": "UA.NEWS",
+   "feed": "AU breach news",
+   "region": "AU",
+   "published": "2026-10-15T18:19:01Z",
+   "summary": "",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Data breach"
+   ],
+   "why": [
+    "Australia",
+    "Data breach"
+   ]
   },
   {
    "id": "33659e3f7808",
@@ -432,19 +1136,6 @@
    "why": [
     "Data breach"
    ]
-  },
-  {
-   "id": "cdc576e64c59",
-   "title": "Citizen Lab Traces Zero-Click Candiru Spyware Infections at Al Jazeera to Targeted Online Ads",
-   "link": "https://thehackernews.com/2026/10/citizen-lab-traces-zero-click-candiru.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-15T16:01:57Z",
-   "summary": "Candiru, an Israeli maker of spyware sold to governments, infected devices at the news network Al Jazeera through ordinary online ads, in attacks that needed no click or other action from the user, researchers at the Citizen Lab said Thursday. The hidden attack code ran the moment an ad loaded on…",
-   "score": 0,
-   "tags": [],
-   "why": []
   },
   {
    "id": "6ab9bdcb522c",
@@ -561,6 +1252,40 @@
    "score": 0,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "db4d2510bca3",
+   "title": "n0n extortion claims target 38 global maritime and logistics organizations, raising port data exposure concerns",
+   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPcUhadjlHdXJWLU5seEc1OHVHZU9iNlBuVnM2LTZwZllSZldubE53Qzl3T2cwdmNNTnBkOUQtdFB2QWstNExGSFgxWDBlQ2pUQlA2OXdhR1pDdF9iYVk3cmRmY2lxeEdJVTNqZkZEbEJXbmpYX1NqWXlsS0s2VzBlVkVzQVBUbU9BZjdRZjVRMnVSaF9pMEFxVmlJUWFBTG5WRHNGaVU5blJuMm8xTE52dDNHX0dTWXBieTE0TUhkMjhqa3ZtZVJVY0J0cThramxqSkdRbnNRSXcxZC1kNjg0VVVINA?oc=5",
+   "source": "Industrial Cyber",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-15T12:45:26Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
+  },
+  {
+   "id": "caf91390fbd8",
+   "title": "Hackers used AI in most ransomware attacks and threatened staff, Semperis report found",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE04Q1JjVkhmdEFNN2l1eG5LYmx3VlM3THd5WXRkMkVkYmNyeEhFRzl2aUFQYURsaXQybV9vSXlZS2NoWmx5OUxDRVIxZHRYMFFLbUdMcy0wUVl5U3g5Wk9wd1NicE5vdGRIWTA0SGoxN2s4WW9CNWV6SUdURUxfdw?oc=5",
+   "source": "Quartz",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-15T12:41:38Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
   },
   {
    "id": "e7e058293387",
@@ -706,6 +1431,23 @@
    "why": []
   },
   {
+   "id": "243b4990da3c",
+   "title": "Ransomware Attacks Intensify: Criminals Shift Focus to Target Employees and Their Families",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE51dkxVSTdIYmJ4MGthanpYMW5XYVVYaHI5dExvOVRvb3hhd3NQaWxjREt6OWtVLXRQaFZrVHRlZlBQWGc2SW14RHNyVm9zeERYNlFGMEZibXR1X1lEd3lMYndtWGUtWWNLelQ4TjdhRdIBdEFVX3lxTFBLY3FuMkhGbmNkNklUTnJmSXNqQzdCQllvWU1WMnFfQnhsNzBaTzZYNVpDZzNvbnpEQ1BhR014YnVqZmtHVy1QYjJXWTZWT2k1NkxFdU4xMWVMVWF3VldHZ3hueXJTdGxoNmFfZ01PZFg1RnVr?oc=5",
+   "source": "CyberSecurityNews",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-15T10:57:36Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
+  },
+  {
    "id": "b5878f01eb58",
    "title": "India Mandates Registered Caller Name Display on 4G and Newer Networks From November 1",
    "link": "https://thehackernews.com/2026/10/india-mandates-registered-caller-name.html",
@@ -717,6 +1459,23 @@
    "score": 0,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "5f2e6883b87f",
+   "title": "Gamdom founder Felix Römer estimates breach losses at over $3m following hot wallet attack",
+   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNMEk0MWRlTGhiNFVDQ094OENLNDQ0bGRHR3F4VWdNVUpVVTFrWTdNR3FScG1hYlZzc210WVpXZHEybFRjM3R2SWwxZEp4R3otc01rU2ZDRE15LWlHckItT3E2ckstR2lxR1VXZkl1Zm9lQzhwRkJyYWFhSk5vTzh6RXBxZlYwam16cjNhQjhpWVEzODk2TnFoS2tTWTI2bHA3d0FHMzFIVklJRGtheWhBU2VObC1JVkZBZ0tqamM3TFRFM2YzQ1gyUURXaTBYazBnZHRLRlBXNNIB1wFBVV95cUxNMEk0MWRlTGhiNFVDQ094OENLNDQ0bGRHR3F4VWdNVUpVVTFrWTdNR3FScG1hYlZzc210WVpXZHEybFRjM3R2SWwxZEp4R3otc01rU2ZDRE15LWlHckItT3E2ckstR2lxR1VXZkl1Zm9lQzhwRkJyYWFhSk5vTzh6RXBxZlYwam16cjNhQjhpWVEzODk2TnFoS2tTWTI2bHA3d0FHMzFIVklJRGtheWhBU2VObC1JVkZBZ0tqamM3TFRFM2YzQ1gyUURXaTBYazBnZHRLRlBXNA?oc=5",
+   "source": "Tribuna.com",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-15T10:39:00Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
   },
   {
    "id": "080d6dd1dc1f",
@@ -804,6 +1563,23 @@
    ]
   },
   {
+   "id": "68d41bab13b9",
+   "title": "Trends In Healthcare Data Breach Statistics",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9PMzZZbVJzWV9lV0JPWXBJOW9BSmI2eElLWHNxWVAtTkhyNnoydUdqTDRnNzE0X056UTE2WW9nakR1UTkxR0ZzX3pMVmdqb2Vjb095eHpIM1Bva0UtTXphRnh5bkpuaDBNQWNvamd5Z2E?oc=5",
+   "source": "The HIPAA Journal",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-15T07:00:00Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
    "id": "c86f8dee64ea",
    "title": "EU Grocers Pay a Steep Price for Unpatched Fridge Firmware",
    "link": "https://www.darkreading.com/ics-ot-security/eu-grocers-unpatched-fridge-firmware",
@@ -854,7 +1630,7 @@
      "url": "https://thehackernews.com/2026/10/palo-alto-networks-patches-pan-os.html"
     }
    ],
-   "epss": 0.0108
+   "epss": 0.0121
   },
   {
    "id": "a713f2422da2",
@@ -874,7 +1650,7 @@
     "Vulnerability",
     "SaaS / cloud"
    ],
-   "epss": 0.0324
+   "epss": 0.0478
   },
   {
    "id": "502c877b3bd3",
@@ -925,6 +1701,12 @@
    "why": [
     "Australia",
     "Ransomware"
+   ],
+   "also": [
+    {
+     "source": "SecurityBrief Australia",
+     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPRnJ1ZTFHUmxVY3lONlpNNE5JOVZxMm96ZVEzQWRTcktFazV6ZXRralp2OVJHTXlzdjNXc2YtX0lJajBNMVNadHlCd0dDYlFWS053YlJ0bjdINnV6RVdPdG1kYWhNLU5QalhWSDNfX2tWT09kZnFRM2ZxanVhSWJtVElDQXVNMndhTVF3QVhhOFlMMy15clE?oc=5"
+    }
    ]
   },
   {
@@ -1030,26 +1812,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0278
-  },
-  {
-   "id": "fc19441ee597",
-   "title": "Ransomware gangs threaten Australian executives & families",
-   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPRnJ1ZTFHUmxVY3lONlpNNE5JOVZxMm96ZVEzQWRTcktFazV6ZXRralp2OVJHTXlzdjNXc2YtX0lJajBNMVNadHlCd0dDYlFWS053YlJ0bjdINnV6RVdPdG1kYWhNLU5QalhWSDNfX2tWT09kZnFRM2ZxanVhSWJtVElDQXVNMndhTVF3QVhhOFlMMy15clE?oc=5",
-   "source": "SecurityBrief Australia",
-   "feed": "AU breach news",
-   "region": "AU",
-   "published": "2026-10-14T23:37:00Z",
-   "summary": "",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "Ransomware"
-   ],
-   "why": [
-    "Australia",
-    "Ransomware"
-   ]
+   "epss": 0.1271
   },
   {
    "id": "b57abd2c6608",
@@ -1276,6 +2039,37 @@
    "score": 0,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "65d8e9e8bad0",
+   "title": "Thousands of supermarket fridges still exposed after cyberattack",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOOVFlVGlHdWVEOWFxN3dodUFSUFdEN0ZPLUg3Q3lTNEVGWXF2UFFtYjFLT1BHRXVCMGw1MEZBSEM1WlZEeFhrQkRyOTMycy05aE5VN21yVWVNZnVlYWlvM2pQSzNSQl9qeUg0X24yVEk0NWdwVzMySmN6OXEzZ1Y5dk9kWFBuMVdZaHB0Rw?oc=5",
+   "source": "Yahoo News Australia",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-14T15:42:18Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ],
+   "also": [
+    {
+     "source": "The Guardian",
+     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxObVV6N2RhN3poNzA0M3lyU1RvaDRvVG5YbXNORi0tbmxScTliUklMM3ZoQWhCR1lWLU1FU2VNVV9MdkgtaDhPVlM4eEljRUk0VlFlYzZJQ1puUmY2ZC1jSWUtcVpLQ1pJS1J6WmNRMUVlUWZrUGdJdXoxTTBsa0NPekFKLVpTYl9KY0F1NUdubmZmb0NaT25sdEpXYmxldlBURVk4T2pKc1ZKYkY2MzFvVkRKbDE5S3hwMExuaThNdXgxN0J2cXVFYVFYVElhdw?oc=5"
+    },
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/attackers-heat-french-supermarket.html"
+    },
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/cyberattack-shuts-down-refrigerators-at-french-supermarkets/"
+    }
+   ]
   },
   {
    "id": "f0efb52b806c",
@@ -1866,7 +2660,7 @@
     "Edge devices",
     "Vulnerability"
    ],
-   "epss": 0.0174
+   "epss": 0.0157
   },
   {
    "id": "45ee4e8f72f4",
@@ -1888,7 +2682,7 @@
     "Edge devices",
     "Vulnerability"
    ],
-   "epss": 0.0108
+   "epss": 0.0121
   },
   {
    "id": "f04894a7601f",
@@ -1908,7 +2702,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0324
+   "epss": 0.0478
   },
   {
    "id": "eb20c74d6ce5",
@@ -1928,7 +2722,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0067
+   "epss": 0.0085
   },
   {
    "id": "62050be54e07",
@@ -2344,23 +3138,6 @@
    ],
    "why": [
     "Real estate"
-   ]
-  },
-  {
-   "id": "3770e65c491f",
-   "title": "GitHub Tightens npm Publishing After Flaw Left 1,500+ Packages Vulnerable to Hijacking",
-   "link": "https://thehackernews.com/2026/10/github-tightens-npm-publishing-after.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-13T16:18:18Z",
-   "summary": "GitHub has taken the step of expiring unvalidated npm trusted publishing configurations 48 hours after creation after researchers found that it was possible for an attacker to push new versions of a different user's package without having to steal their credentials. \"Your configuration becomes…",
-   "score": 2,
-   "tags": [
-    "Identity"
-   ],
-   "why": [
-    "Identity"
    ]
   },
   {
@@ -3035,33 +3812,6 @@
     {
      "source": "Daily Mirror",
      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPY205MnNsMTlpQUIzemxhWEZMVldiX0hzdTF1Y1p1QUpnZW4wT2QwclVNS0RMUk1taHhHZjlQai04YjNsdnJpVDZwbl9mU3FWMUNJRkdSWTlfME4xdTBGTkNYVk16aE16TENoTUVFVHh3cHN2Y3p3Zl9FRXk4QjRLRk82YWdOWU93aTNUVS1vSzVkcHBmcndFc0RKONIBoAFBVV95cUxPcmMzV2ZUclRvZVdBMWhSdFEtRk5GdDJiejBzQ2VnRUlvTmNicGxNUWRvek5pY0t4aE83YU5NSGItdGlheFYtdVZBcHdVMkQwSG1wdGIyY3ZyeUd3YnRxM3JMNFdPQnM1Y2xFYlJsZlUyb2xXSzJ3M2RLdEM0SVNncGptbXlMTkpyYi1jcV9qcldaRUVxQ1JsZVp2WG9TUDdo?oc=5"
-    }
-   ]
-  },
-  {
-   "id": "7be611be23a8",
-   "title": "Hackers force French supermarket fridges to heat up to 50C in ‘unprecedented’ cyber-attack",
-   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxObVV6N2RhN3poNzA0M3lyU1RvaDRvVG5YbXNORi0tbmxScTliUklMM3ZoQWhCR1lWLU1FU2VNVV9MdkgtaDhPVlM4eEljRUk0VlFlYzZJQ1puUmY2ZC1jSWUtcVpLQ1pJS1J6WmNRMUVlUWZrUGdJdXoxTTBsa0NPekFKLVpTYl9KY0F1NUdubmZmb0NaT25sdEpXYmxldlBURVk4T2pKc1ZKYkY2MzFvVkRKbDE5S3hwMExuaThNdXgxN0J2cXVFYVFYVElhdw?oc=5",
-   "source": "The Guardian",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-12T15:24:00Z",
-   "summary": "",
-   "score": 4,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/attackers-heat-french-supermarket.html"
-    },
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/cyberattack-shuts-down-refrigerators-at-french-supermarkets/"
     }
    ]
   },
@@ -4217,7 +4967,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0278
+   "epss": 0.1271
   },
   {
    "id": "4d0ab1e7dd59",
@@ -4390,32 +5140,6 @@
     "Vulnerability"
    ],
    "epss": 0.0126
-  },
-  {
-   "id": "03612a48c440",
-   "title": "Preparing governments for an era of interconnected cyber risk",
-   "link": "https://blogs.microsoft.com/on-the-issues/2026/10/01/preparing-governments-for-an-era-of-interconnected-cyber-risk/",
-   "source": "Microsoft Security Blog",
-   "feed": "Microsoft Security Blog",
-   "region": "Global",
-   "published": "2026-10-01T14:00:00Z",
-   "summary": "According to this year’s Microsoft Digital Defense Report, government agencies and services were the sector most impacted by cyber threats in 2026, accounting for 27% of observed activity, up from 17% in 2025. The post Preparing governments for an era of interconnected cyber risk appeared first on…",
-   "score": 1,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "143a7ccff477",
-   "title": "Insights from the 2026 Microsoft Digital Defense Report",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/10/01/insights-from-the-2026-microsoft-digital-defense-report/",
-   "source": "Microsoft Security Blog",
-   "feed": "Microsoft Security Blog",
-   "region": "Global",
-   "published": "2026-10-01T14:00:00Z",
-   "summary": "Read highlights from the 2026 Microsoft Digital Defense Report, which reflects a security environment that continues to grow more interconnected. The post Insights from the 2026 Microsoft Digital Defense Report appeared first on Microsoft Security Blog .",
-   "score": 1,
-   "tags": [],
-   "why": []
   }
  ]
 }
