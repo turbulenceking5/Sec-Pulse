@@ -2,7 +2,12 @@ name: Morning brief
 
 on:
   schedule:
-    - cron: "25 21 * * *"   # 21:25 UTC = 7:25am Brisbane (AEST, no daylight saving)
+    # GitHub often starts scheduled runs hours late (2-3h seen in Oct 2026), so it's started several times
+    # early. The first run to start waits until 7:25am Brisbane, sends, and the rest skip (send-once).
+    - cron: "25 18 * * *"   # 4:25am Brisbane (UTC+10, no daylight saving)
+    - cron: "25 19 * * *"   # 5:25am
+    - cron: "25 20 * * *"   # 6:25am
+    - cron: "25 21 * * *"   # 7:25am
   workflow_dispatch:
     inputs:
       once:
@@ -13,36 +18,88 @@ on:
 permissions:
   contents: write
 
-concurrency:
-  group: news-data
-  cancel-in-progress: false
-
 jobs:
-  brief:
+  wait:
+    # No concurrency group here, so a waiting run never blocks the news fetch.
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 250
+    outputs:
+      skip: ${{ steps.gate.outputs.skip }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          sparse-checkout: data/brief-sent.txt
+          sparse-checkout-cone-mode: false
+      - name: Skip if already sent, else wait until 7:25am Brisbane
+        id: gate
+        env:
+          EVENT: ${{ github.event_name }}
+          ONCE: ${{ inputs.once }}
+        run: |
+          today=$(TZ=Australia/Brisbane date +%F)
+          if [ "$EVENT" = schedule ] || [ "$ONCE" = true ]; then
+            if [ "$(cat data/brief-sent.txt 2>/dev/null)" = "$today" ]; then
+              echo "Brief for $today already sent - skipping."; echo "skip=true" >> "$GITHUB_OUTPUT"; exit 0
+            fi
+          fi
+          if [ "$EVENT" = schedule ]; then
+            secs=$(( $(TZ=Australia/Brisbane date -d "$today 07:25" +%s) - $(date +%s) ))
+            if [ "$secs" -gt 0 ] && [ "$secs" -le 14400 ]; then
+              echo "Started early: waiting ${secs}s until 7:25am Brisbane."; sleep "$secs"
+            fi
+          fi
+          echo "skip=false" >> "$GITHUB_OUTPUT"
+
+  brief:
+    needs: wait
+    if: needs.wait.outputs.skip != 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    # Briefs queue behind each other, so a second run checks out after the first has pushed brief-sent.txt
+    # and skips. (Not the news-data group: a pending fetch there would cancel a pending brief.)
+    concurrency:
+      group: morning-brief
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+      - name: Skip if another run already sent today's brief
+        id: gate
+        env:
+          EVENT: ${{ github.event_name }}
+          ONCE: ${{ inputs.once }}
+        run: |
+          today=$(TZ=Australia/Brisbane date +%F)
+          if { [ "$EVENT" = schedule ] || [ "$ONCE" = true ]; } && [ "$(cat data/brief-sent.txt 2>/dev/null)" = "$today" ]; then
+            echo "Brief for $today already sent - skipping."; echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
       - uses: actions/setup-python@v5
+        if: steps.gate.outputs.skip != 'true'
         with:
           python-version: "3.12"
       - name: Fetch fresh news first
+        if: steps.gate.outputs.skip != 'true'
         run: python3 scripts/fetch_news.py
       - name: Commit news.json if it changed
+        if: steps.gate.outputs.skip != 'true'
+        # A clash with a concurrent "Fetch news" push must not stop the brief: it still sends this fetch.
+        continue-on-error: true
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/news.json
           if git diff --cached --quiet; then exit 0; fi
           git commit -m "Update news feed (morning brief)"
-          git pull --rebase origin "${GITHUB_REF_NAME}"
-          git push
+          git pull --rebase origin "${GITHUB_REF_NAME}" && git push || { git rebase --abort 2>/dev/null; git reset --hard "origin/${GITHUB_REF_NAME}"; exit 1; }
       - name: Install Web Push library
+        if: steps.gate.outputs.skip != 'true'
         # The one non-stdlib dependency, used only for Web Push to the Home Screen app. If PyPI is down,
         # ntfy still sends and the Web Push error fails the run visibly.
         continue-on-error: true
         run: pip install --quiet pywebpush==2.5.0
       - name: Send push notification
+        if: steps.gate.outputs.skip != 'true'
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           WEBPUSH_SUBSCRIPTION: ${{ secrets.WEBPUSH_SUBSCRIPTION }}
@@ -51,7 +108,10 @@ jobs:
         # Scheduled and external-scheduler runs pass --once, so only the first one each day sends.
         run: python3 scripts/send_brief.py ${{ (github.event_name == 'schedule' || inputs.once) && '--once' || '' }}
       - name: Commit today's brief and sent marker
+        if: steps.gate.outputs.skip != 'true'
         run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           for f in data/brief-sent.txt data/brief.json; do [ -f "$f" ] && git add "$f"; done
           if git diff --cached --quiet; then exit 0; fi
           git commit -m "Morning brief sent"

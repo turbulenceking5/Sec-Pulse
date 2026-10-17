@@ -49,7 +49,7 @@ Ideas for what to build next, roughly in priority order. Move items to [CHANGELO
 
 ## Blog
 - [x] **WordPress drafts**: posts written as `blog/drafts/*.md` arrive in WordPress as drafts (see [blog.md](blog.md)).
-- [ ] **Weekly draft routine**: a scheduled session every Sunday drafting a "week in cyber" roundup from the digest data plus one Learning explainer.
+- [x] **Weekly draft routine**: every Sunday 9am Brisbane a scheduled Claude session drafts a "This Week in Cyber" post from the past 7 days of news (see [blog.md](blog.md#weekly-routine)).
 
 ## Notifications
 - [x] **Web Push** to the Home Screen app, opening This morning's brief.

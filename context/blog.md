@@ -26,6 +26,9 @@ Simple Markdown: ## / ### headings, paragraphs, - and 1. lists, **bold**, *itali
 ## Secrets (repo Actions secrets)
 `WP_CLIENT_ID`, `WP_CLIENT_SECRET` (the "Sec-Pulse drafts" app at developer.wordpress.com/apps), `WP_USERNAME`, `WP_APP_PASSWORD` (a WordPress.com application password; needs two-step authentication on). Optional `WP_SITE` overrides the site. A missing secret fails the run with "Missing secrets: …".
 
+## Weekly routine
+A Claude Code routine, **"Weekly blog draft"** (`trig_0167Aia5J6hfqL7xYLbgUjeb`, cron `CRON_TZ=Australia/Brisbane 59 8 * * 0`, created 2026-10-16), starts a fresh session every Sunday at about 9am Brisbane. It drafts a "This Week in Cyber" News post from the past 7 days of `data/news.json`, verifies facts against the original reporting, writes `blog/drafts/YYYY-MM-DD-week-in-cyber-<slug>.md`, and pushes it to its own working branch (not `main`), which triggers the Blog drafts Action. The owner gets a push notification when it finishes and reviews the draft in WordPress. If a week-in-cyber file for that date already exists, it stops. Manage it in the claude.ai Routines list (pause, edit or run now).
+
 ## Writing the posts
 - **Match the blog's voice**: short, plain explainers in the first person; `##` headings like "What is X?", "How it works", "Why it matters"; bold-label bullet lists; a closing takeaway. Australian spelling.
 - **Categories**: Learning (explainers, CySA+ topics), News (incident and vulnerability write-ups). Leave **Career** posts to the user, since they're personal experience.

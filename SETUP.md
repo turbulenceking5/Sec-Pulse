@@ -40,7 +40,7 @@ The brief is sent at 21:25 UTC (7:25am Brisbane) as a notification **from the Ho
 
 If you turn notifications off in the app or reinstall it, the code changes: copy the new one into `WEBPUSH_SUBSCRIPTION`. A run that fails with "subscription expired" means the same.
 
-GitHub's scheduler is best-effort: runs are often 5–30 minutes late and have been seen hours late or skipped. For an on-time brief, add the external trigger below.
+GitHub's scheduler is best-effort and has started runs hours late, so the workflow is scheduled four times from 4:25am; the first run to start waits until 7:25 and sends, and the rest skip. The external trigger below is an optional extra.
 
 The **Weekly digest** (Sundays 08:00 UTC = 6pm Brisbane) uses the same secrets. To test it: **Actions → Weekly digest → Run workflow**.
 
@@ -54,7 +54,7 @@ The **Weekly digest** (Sundays 08:00 UTC = 6pm Brisbane) uses the same secrets. 
 
 > **Security:** ntfy.sh topics have no password. Anyone who knows the topic name can read the messages and post to it. That's acceptable here because the brief only contains public headlines, but keep the name long and unguessable. Never reuse it for anything sensitive.
 
-### Recommended: on-time brief with cron-job.org
+### Optional: on-time brief with cron-job.org
 
 [cron-job.org](https://cron-job.org) (free) starts the workflow at exactly 7:25 through GitHub's API. GitHub's own schedule stays on as a backup. Both pass "send once", so whichever runs first sends the brief and the other skips (the date of the last send is kept in `data/brief-sent.txt`). **Run workflow** from the Actions tab always sends.
 
