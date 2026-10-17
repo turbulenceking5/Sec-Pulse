@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-17T10:47:49Z",
+ "generated": "2026-10-17T15:38:19Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -15,33 +15,33 @@
   },
   {
    "name": "ACSC (via Google News)",
-   "ok": false,
-   "count": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "count": 3,
+   "error": null
   },
   {
    "name": "ASD / ACSC in the news",
-   "ok": false,
-   "count": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "count": 2,
+   "error": null
   },
   {
    "name": "AU breach news",
-   "ok": false,
-   "count": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "count": 8,
+   "error": null
   },
   {
    "name": "Real estate cyber news",
-   "ok": false,
-   "count": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "count": 7,
+   "error": null
   },
   {
    "name": "OAIC / Privacy news",
-   "ok": false,
-   "count": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "count": 2,
+   "error": null
   },
   {
    "name": "iTnews Security",
@@ -106,15 +106,99 @@
  ],
  "items": [
   {
-   "id": "b3dabcb4d0c0",
-   "title": "Hackers Use Compromised ConnectWise Credential to Sign In to 173 Microsoft 365 Tenants",
-   "link": "https://thehackernews.com/2026/10/hackers-use-compromised-connectwise.html",
+   "id": "43fc56afbb27",
+   "title": "Drupal patches critical RCE flaws, warns exploits may emerge soon",
+   "link": "https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaws-warns-exploits-may-emerge-soon/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-17T14:32:48Z",
+   "summary": "Drupal has patched two critical vulnerabilities that could allow attackers to execute code remotely on websites running any supported version of the content management system. [...]",
+   "score": 5,
+   "tags": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "1fae9cde44bf",
+   "title": "MALFEX npm Package 'imgdecode' Hides Shellcode Loader in Windows Native Addon",
+   "link": "https://thehackernews.com/2026/10/malfex-npm-package-imgdecode-hides.html",
    "source": "The Hacker News",
    "feed": "The Hacker News",
    "region": "Global",
-   "published": "2026-10-17T06:16:46Z",
-   "summary": "Cybersecurity researchers are sounding the alarm related to an active campaign in which unknown threat actors are abusing a compromised Microsoft 365 (M365) credential belonging to ConnectWise Cloud Backup (formerly SkyKick) to gain unauthorized access to customers' M365 environments. ConnectWise…",
-   "score": 14,
+   "published": "2026-10-17T11:11:56Z",
+   "summary": "Cybersecurity researchers have discovered a malicious npm package that's part of a recently disclosed software supply chain attack campaign dubbed MALFEX. The package, named \"imgdecode,\" was uploaded to the package registry on September 30, 2026, by a user named \"malfexteste8.\" It has been…",
+   "score": 2,
+   "tags": [
+    "SaaS / cloud"
+   ],
+   "why": [
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "2956b1e39e10",
+   "title": "Israeli Ad Firm Doubled as Candiru’s Zero-Click Spyware Delivery Channel",
+   "link": "https://www.securityweek.com/israeli-ad-firm-doubled-as-candirus-zero-click-spyware-delivery-channel/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-17T11:00:00Z",
+   "summary": "Israeli company Discover-Tech’s ads allow threat actors to fingerprint and track devices at scale and infect selected targets. The post Israeli Ad Firm Doubled as Candiru’s Zero-Click Spyware Delivery Channel appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": [],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/zero-click-attacks-used-targeted-ads-to-deliver-candiru-spyware/"
+    },
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/citizen-lab-traces-zero-click-candiru.html"
+    }
+   ]
+  },
+  {
+   "id": "bd3a9d6713d9",
+   "title": "Napoleon Perdis reports data breach affecting 339,000 customers — ABC News Australia",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQQTlyS2xmT3B3ZEw5ajlYWl9hY1h0SGlGekJKR0JEM1piQm5ibFZtUENncWVUbUxhbUJNdXhRajBIX0stUlh2SG1pbnRqdDNkTzh5bUVGYTdaaTJiODFoYnJWYnN5X1c4bEJBWWVuWjUteUt0WEtqYi1kN2tqS0Y4NkpNbm8tekhiQlQyS3pDUmtOamozRG1aQURVVnRyTG5ieFFSMFVkUUlWWlFvaXc?oc=5",
+   "source": "UA.NEWS",
+   "feed": "AU breach news",
+   "region": "AU",
+   "published": "2026-10-17T06:44:13Z",
+   "summary": "",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Data breach"
+   ],
+   "why": [
+    "Australia",
+    "Data breach"
+   ],
+   "also": [
+    {
+     "source": "tech-insider.org",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNUTZsZ0l0WS1zQ3B5U3ZBNTRtRDM5TXRLaFVFa2NLLU1VRTNXWXl6czVrOVNiejYzSFRqOG5OeEh3OEEwWVVpZGhsVzhMNVZfZlJGdXVUMWUzaUFZU25hT1VqWjdmWGE2RmUzN2o0Z2E5VDFuTGxQNUt2QkVJMGtNM3I0REw?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "34e3fcbaf685",
+   "title": "Hackers Use Compromised ConnectWise Credential to Sign In to 173 Microsoft 365 Tenants",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9LLVo4bDAtYTNoMmpoeFIwdFpheVNIQVJMaXZqOUtaZXZ4TjE4M2E3T0Z4SlA0aVJtNGh3N2dBSXg2SWZiQ0EtcVRKNnhrU1E3RVN5ejJ1V0h4Y2U1SG5nMmtGV2xWckV6NkJWaVJ2VEZDWGVVVTdRLUI1YzgxUUU?oc=5",
+   "source": "The Hacker News",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-17T06:16:00Z",
+   "summary": "",
+   "score": 16,
    "tags": [
     "Real estate",
     "Microsoft 365",
@@ -124,6 +208,29 @@
     "Real estate",
     "Microsoft 365",
     "Identity"
+   ],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/hackers-breach-microsoft-365-tenants-via-connectwise-supply-chain-attack/"
+    }
+   ]
+  },
+  {
+   "id": "a16c16916fa3",
+   "title": "Cosmetics company data breach affects 340,000 clients",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNajNCVDI4bzRXdy1CYy1vNjN6WXpDZS1tYkVyR2N6V2h0aGY2UEpwdlBKUVBENGo1Z2w1dDJsRjFMQXVkSjVEd3BEcGE2M0NydW1qMVM1NXE5QXJqdXd1ZWxDQ3laNEd5Z2VnWk9qU1lKcEtBcHVPSTd6VU5peFhlQ2xIQVpDMTB5UFRYMjdWdGpRdlVGMTVzX293WURHTE4zRVJpdQ?oc=5",
+   "source": "ABC News & Headlines – Australian Broadcasting Corporation",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-17T05:59:12Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
    ]
   },
   {
@@ -323,25 +430,6 @@
    ],
    "why": [
     "Vulnerability"
-   ]
-  },
-  {
-   "id": "50880c900177",
-   "title": "Targeted ads installed Candiru spyware in zero-click attacks",
-   "link": "https://www.bleepingcomputer.com/news/security/zero-click-attacks-used-targeted-ads-to-deliver-candiru-spyware/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-16T17:20:03Z",
-   "summary": "Candiru spyware was delivered to devices at Al Jazeera Media Network via targeted online advertisements in a zero-click attack that required only rendering the malicious ads on the victim's device. [...]",
-   "score": 0,
-   "tags": [],
-   "why": [],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/citizen-lab-traces-zero-click-candiru.html"
-    }
    ]
   },
   {
@@ -605,6 +693,23 @@
    ],
    "why": [
     "Vulnerability"
+   ]
+  },
+  {
+   "id": "d7a2c08a8673",
+   "title": "AI phishing kits are making micro businesses worth attacking, Coalition warns",
+   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQT3YtckRUZGM2aFhBYndGdnM5Mlo3NkJUZFlZdU1QUTQzdVlFMkl0MEdRdHY4bVR0ODlzQW1namNGTFJpZjNYZFdRYS1qX1c5cl8zdkNHdmsyNk1vV1BYWDRKZVBkX0lPM0xsd1ZHZTdzaXdFNmFjaF9zR0FNMDBTLU5PcWF1ZGsxaHdKNGl4c1pEU1BwWTMyYnNGTFZWSzJ4TndpQmlSY1Y3QnJtQWd6QkJ6clZ5T2xmcFp0cHJWV3BKVWJORGpZbnlpcXE3dXZPU25fYzN3?oc=5",
+   "source": "Insurance Business",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-16T08:49:46Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Phishing"
+   ],
+   "why": [
+    "Phishing"
    ]
   },
   {
