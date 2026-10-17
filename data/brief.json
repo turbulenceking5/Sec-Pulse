@@ -1,15 +1,30 @@
 {
- "date": "2026-10-17",
- "generated": "2026-10-16T23:42:19+00:00",
- "title": "Sec-Pulse brief - Sat 17 Oct",
+ "date": "2026-10-18",
+ "generated": "2026-10-17T22:45:02+00:00",
+ "title": "Sec-Pulse brief - Sun 18 Oct",
  "items": [
   {
-   "id": "ead457b69704",
-   "title": "Australian court called data offshoring breach minor",
-   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQSkhIclhTVDZlN0tReUVMc2dGc2FMamZtVVE1YlpwV3M0X1ZFMUVyMFVteWRyeTUwSENMLXkydmxNMWFZZFozUlNaRU1jZXM5Q2lpekswSTA2cEUtSG1BWDV3ZkphRW1kUVktazE0ZVpydUFiVDdiQklKTkNBWFFwNjA4dGtaSnlCWjlVUFJGSDNWcXJZOEo3d2xrVEtmRXRuZmJreXlQaHdKSFNoaFpXWkNVbWdxeVVhdGctQWdpbG1RdDcx?oc=5",
+   "id": "74a44f824ba0",
+   "title": "Hackers breach Microsoft 365 tenants via ConnectWise supply-chain attack",
+   "link": "https://www.bleepingcomputer.com/news/security/hackers-breach-microsoft-365-tenants-via-connectwise-supply-chain-attack/",
+   "source": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-17T15:18:51Z",
+   "score": 15,
+   "tags": [
+    "Real estate",
+    "Microsoft 365",
+    "Data breach"
+   ],
+   "summary": "ConnectWise has shut down customer access to its Cloud Backup service (formerly SkyKick Cloud Backup) after hackers accessed application identities and compromised Microsoft 365 tenants. [...]"
+  },
+  {
+   "id": "bd3a9d6713d9",
+   "title": "Napoleon Perdis reports data breach affecting 339,000 customers — ABC News Australia",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQQTlyS2xmT3B3ZEw5ajlYWl9hY1h0SGlGekJKR0JEM1piQm5ibFZtUENncWVUbUxhbUJNdXhRajBIX0stUlh2SG1pbnRqdDNkTzh5bUVGYTdaaTJiODFoYnJWYnN5X1c4bEJBWWVuWjUteUt0WEtqYi1kN2tqS0Y4NkpNbm8tekhiQlQyS3pDUmtOamozRG1aQURVVnRyTG5ieFFSMFVkUUlWWlFvaXc?oc=5",
    "source": "UA.NEWS",
    "region": "AU",
-   "published": "2026-10-15T18:19:01Z",
+   "published": "2026-10-17T06:44:13Z",
    "score": 13,
    "tags": [
     "Australia",
@@ -18,16 +33,16 @@
    "summary": ""
   },
   {
-   "id": "27d96b1a5cc2",
-   "title": "SOCI Act and cyber security: Australian lessons from France’s connected device attack",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOaWt0bV8wSzFDV0tpRGJHeGZ2dzUwQkQ4eXUzQmNHUWJzS2pReEpvS1laTUY4dVczLXRudWFocXBISmJtdjh0QzFETHFXanU2dy1sam8zVDlvbXA0OFNDZXJ5bW12Q001VUhyTnJaOGdTTjJpSDAxZU14MEUxNHFERkRyLTFmcFNibGZYMHJMWmMwNWNTeFEzUDlLcUl2Qmp3TnhwTVpQWFVFbGlfUUR6bjhocUVVbTZZ?oc=5",
-   "source": "Corrs Chambers Westgarth",
-   "region": "AU",
-   "published": "2026-10-16T01:57:02Z",
-   "score": 12,
+   "id": "c452fd369354",
+   "title": "Redfin, Rocket hit with lawsuit over alleged breach of employee data",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOaU1ibDI4b29SbG00NFliRHhCQmJwUGNsLTZnRDNNMklDM0E1UThXbGVJOXFRamhENGpBMmI3TEE3Si1TTWREb2pJbnNBeE1UYkZjYWNwRVhxSllIR3QxeG5ndjVaTHRjelFpT3VoVUd1Y3ZCbEVJandPTFZvekppTGZ3Ujg4MTNRRHVFdFBRajA2dldDaTRfQVBHWHhlQQ?oc=5",
+   "source": "The Spokesman-Review",
+   "region": "Global",
+   "published": "2026-10-16T23:52:00Z",
+   "score": 10,
    "tags": [
-    "Australia",
-    "Identity"
+    "Data breach",
+    "SaaS / cloud"
    ],
    "summary": ""
   },
@@ -56,28 +71,15 @@
     "Real estate"
    ],
    "summary": ""
-  },
-  {
-   "id": "9c075cf12462",
-   "title": "Real estate transactions decreased by 66,000 in the third quarter compared with 2025, amid the cyberattack on ANCPI",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNeHFmMkZRQ3Q4eE9nUXpoM3NqTUVqd21LOFdCLThmR2Y3UnhVMzhIR1NaTGxzekI4ckkwa0t0TzdZaUdQSVFlV0szMmNvemFpVDZPWVp2Y3Z2ckt6bzA4clRlU2FjZWNMU1lVRHNET1NKejBNV3NFQlR0TXgtOS1RY190b1ZEZTdOeTNvV0dZQ0g5MGNJcFFWSjZta2JuTUktTEpPRC1zeWc?oc=5",
-   "source": "Informat.ro",
-   "region": "Global",
-   "published": "2026-10-16T07:49:03Z",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "summary": ""
   }
  ],
  "stats": {
-  "recent": 59,
-  "au": 2,
-  "kev": 2
+  "recent": 19,
+  "au": 1,
+  "kev": 0
  },
  "lesson": {
-  "id": "4.4",
-  "title": "Stakeholder communication and escalation"
+  "id": "4.5",
+  "title": "Writing an incident report"
  }
 }
