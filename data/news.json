@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-17T15:38:19Z",
+ "generated": "2026-10-17T20:38:39Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,13 +28,13 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 8,
+   "count": 6,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 7,
+   "count": 6,
    "error": null
   },
   {
@@ -82,7 +82,7 @@
   {
    "name": "Microsoft Security Blog",
    "ok": true,
-   "count": 5,
+   "count": 0,
    "error": null
   },
   {
@@ -290,6 +290,12 @@
    "why": [
     "Data breach",
     "SaaS / cloud"
+   ],
+   "also": [
+    {
+     "source": "Hoodline",
+     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQd0t2U3hybTRVbGZIWmt1MzlPaXJOZlBxYndTVTNFUWlJaDNxMDRZZkVoOWRITi1peV91NXhvUDl2bXNjZl95NjVtQmYxRmJoenBoY0lmdElMT3F1WFdGZGN5U0ZYMUExbkdEZlc2ZjdGNUhsVW10MzVhWllXZzl3M0o3VjNaUVNVRXhsRnp1Sm1CMzZselpyYkdpSl8?oc=5"
+    }
    ]
   },
   {
@@ -423,7 +429,7 @@
    "feed": "The Hacker News",
    "region": "Global",
    "published": "2026-10-16T17:48:45Z",
-   "summary": "A local privilege escalation exploit published today gains root on OpenBSD 7.9 by chaining a roughly 37-year-old integer overflow with a separate kernel flaw, bypassing OpenBSD's KARL kernel-address randomization and its SMAP and SMEP hardware protections. Security firm Calif, which found and…",
+   "summary": "A local privilege escalation exploit published today gains root on OpenBSD 7.9 by chaining a roughly 37-year-old integer overflow with a separate kernel flaw, bypassing OpenBSD's KARL kernel-address randomization and its SMAP and SMEP hardware protections.Security firm Calif, which found and…",
    "score": 1,
    "tags": [
     "Vulnerability"
