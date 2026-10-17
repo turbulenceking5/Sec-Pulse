@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-17T20:38:39Z",
+ "generated": "2026-10-17T22:44:52Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,7 +28,7 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 6,
+   "count": 7,
    "error": null
   },
   {
@@ -82,7 +82,7 @@
   {
    "name": "Microsoft Security Blog",
    "ok": true,
-   "count": 0,
+   "count": 5,
    "error": null
   },
   {
@@ -105,6 +105,37 @@
   }
  ],
  "items": [
+  {
+   "id": "74a44f824ba0",
+   "title": "Hackers breach Microsoft 365 tenants via ConnectWise supply-chain attack",
+   "link": "https://www.bleepingcomputer.com/news/security/hackers-breach-microsoft-365-tenants-via-connectwise-supply-chain-attack/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-17T15:18:51Z",
+   "summary": "ConnectWise has shut down customer access to its Cloud Backup service (formerly SkyKick Cloud Backup) after hackers accessed application identities and compromised Microsoft 365 tenants. [...]",
+   "score": 15,
+   "tags": [
+    "Real estate",
+    "Microsoft 365",
+    "Data breach"
+   ],
+   "why": [
+    "Real estate",
+    "Microsoft 365",
+    "Data breach"
+   ],
+   "also": [
+    {
+     "source": "LinkedIn",
+     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPT3BaSGs5Y0R6NjR0RzRITVc2TGo1Yjd6aVFIamM0LWxzeEM2S1lhbEkxOWc0eGh6ZGY5XzNpQXNmcmoyWmtuQlRjN1NwQVJ5UER4TFh2ZEF1WXNWT0phNlJRUFJoY1c5Z3RBcHE0NXNMMlpTVndLeHBiYllHVUpDOUVmNzI0eEdBQzZZRg?oc=5"
+    },
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/hackers-use-compromised-connectwise.html"
+    }
+   ]
+  },
   {
    "id": "43fc56afbb27",
    "title": "Drupal patches critical RCE flaws, warns exploits may emerge soon",
@@ -190,40 +221,13 @@
    ]
   },
   {
-   "id": "34e3fcbaf685",
-   "title": "Hackers Use Compromised ConnectWise Credential to Sign In to 173 Microsoft 365 Tenants",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9LLVo4bDAtYTNoMmpoeFIwdFpheVNIQVJMaXZqOUtaZXZ4TjE4M2E3T0Z4SlA0aVJtNGh3N2dBSXg2SWZiQ0EtcVRKNnhrU1E3RVN5ejJ1V0h4Y2U1SG5nMmtGV2xWckV6NkJWaVJ2VEZDWGVVVTdRLUI1YzgxUUU?oc=5",
-   "source": "The Hacker News",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-17T06:16:00Z",
-   "summary": "",
-   "score": 16,
-   "tags": [
-    "Real estate",
-    "Microsoft 365",
-    "Identity"
-   ],
-   "why": [
-    "Real estate",
-    "Microsoft 365",
-    "Identity"
-   ],
-   "also": [
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/hackers-breach-microsoft-365-tenants-via-connectwise-supply-chain-attack/"
-    }
-   ]
-  },
-  {
    "id": "a16c16916fa3",
    "title": "Cosmetics company data breach affects 340,000 clients",
    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNajNCVDI4bzRXdy1CYy1vNjN6WXpDZS1tYkVyR2N6V2h0aGY2UEpwdlBKUVBENGo1Z2w1dDJsRjFMQXVkSjVEd3BEcGE2M0NydW1qMVM1NXE5QXJqdXd1ZWxDQ3laNEd5Z2VnWk9qU1lKcEtBcHVPSTd6VU5peFhlQ2xIQVpDMTB5UFRYMjdWdGpRdlVGMTVzX293WURHTE4zRVJpdQ?oc=5",
    "source": "ABC News & Headlines – Australian Broadcasting Corporation",
    "feed": "AU breach news",
    "region": "Global",
-   "published": "2026-10-17T05:59:12Z",
+   "published": "2026-10-17T06:00:24Z",
    "summary": "",
    "score": 6,
    "tags": [
