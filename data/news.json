@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-17T23:08:49Z",
+ "generated": "2026-10-18T04:37:35Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,7 +28,7 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 7,
+   "count": 6,
    "error": null
   },
   {
@@ -105,6 +105,23 @@
   }
  ],
  "items": [
+  {
+   "id": "a0eb11b81acb",
+   "title": "Silo Real Estate REA probe exposes unlicensed operator gap",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOVXJDN0ZZSTYwczM4cWpDSzdTOGg4cVlscmQtSF8teGtRQ2hKMk0tR3R2YVVNSzl0N29xbnJZTmg5cUJybEJkQ3h6YzJUamFWalZ6RTNDTllleWk5a1g4eHhWVVctSmZJdW5hclJoa19SalQ0amk3M0tUbmk3Ry1GMzVIQ01kcWcyMWsyblVuaw?oc=5",
+   "source": "B2B News",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-17T20:40:54Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
   {
    "id": "74a44f824ba0",
    "title": "Hackers breach Microsoft 365 tenants via ConnectWise supply-chain attack",
@@ -227,7 +244,7 @@
    "source": "ABC News & Headlines – Australian Broadcasting Corporation",
    "feed": "AU breach news",
    "region": "Global",
-   "published": "2026-10-17T06:00:24Z",
+   "published": "2026-10-17T05:59:12Z",
    "summary": "",
    "score": 6,
    "tags": [
@@ -275,6 +292,23 @@
      "source": "CBS News",
      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZUlLaEZuWWNYN0k4cS1lX3o1WmRkY2h0MW1aQjl2R05FekFoYm42WTFxU2EzRVlZb2RvaE9kU1N3cXFJX0hjbm1lT0QzemR2VlE4MzJIZU5DeHNKZHdtVzJDcnUwZGdhNWw5aDNONS1jaHhWRm5DaDdLN2JLS09Yd1U4WU1iRzJCVmRxdVpnUGdKS2dYdmNYU1Q3U28wZlh4c1psdg?oc=5"
     }
+   ]
+  },
+  {
+   "id": "e0aab5cdf64d",
+   "title": "Killer of real estate agent in Duncan has day parole appeal denied",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPQnVabXI0b2hIRzQtd2s1cndWaHNlcllPdzBZOFhRdFFUZDRmZ3ZQcUNDQzJ1cUEzOWNkRGFhdURaSnNBQkROVlYxVTVqZHFRVFlPcHRTSHl6U24zMDg4djBUZGdUQ0oxTVFNbDY3bk5fd3hzMmstQUc2NEZyVDdSN2VpNnoyN0c0VUhER09lWWNpcWw3T2dZUkRMVFViZnQ4UXgtbnhyR3htdXdia1JiZXFQU2h2NEU?oc=5",
+   "source": "Times Colonist",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-17T04:00:00Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
    ]
   },
   {
