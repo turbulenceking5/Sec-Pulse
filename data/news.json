@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-18T15:54:31Z",
+ "generated": "2026-10-18T20:46:52Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -106,13 +106,13 @@
  ],
  "items": [
   {
-   "id": "8431a59751b6",
+   "id": "320074c06c49",
    "title": "Florida Man Sentenced In Texas Federal Court To Over 4 Years For $3M Real Estate Scam",
-   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOdzJsQzNQLXF5OHBtaWxzOGo1dzhTQUNMejc5SXJFSXpnOW1SY1BIQURpQVV2LVlua3YyWUFKa05TY3lpTlMyZmplemNDdHM0R3NsTjNESVRTVEFaM2hFT0tWNkI0ejEzcUlwMUJqbng1bHZLWVN4TGtCQXByWXNwOG1IdlFIQQ?oc=5",
-   "source": "AOL.com",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQU09uQTFlMUhQSmMtOEp2cDFVOWhFN2k2bHFLbE5aWHo3bjJ5OERHbXBXU3NqSTJWMHBWbUlkajBQM2hGZE9iSVJsWFBfVU9ralA5WFM0TGlrZ1lxdGt4Q0FJTk9pR0Nob2tRN1lISmNYdEpveFR4MVh5bTc2VXlCLWI5SEJVWk1vVjhWZmlqcWhKeEg4SDBYU2N0VDlNU3lOdG9ibXBJNDhKNWxfbVE?oc=5",
+   "source": "Tampa Free Press",
    "feed": "Real estate cyber news",
    "region": "Global",
-   "published": "2026-10-18T14:33:19Z",
+   "published": "2026-10-18T14:29:18Z",
    "summary": "",
    "score": 10,
    "tags": [
@@ -120,6 +120,12 @@
    ],
    "why": [
     "Real estate"
+   ],
+   "also": [
+    {
+     "source": "AOL.com",
+     "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOdzJsQzNQLXF5OHBtaWxzOGo1dzhTQUNMejc5SXJFSXpnOW1SY1BIQURpQVV2LVlua3YyWUFKa05TY3lpTlMyZmplemNDdHM0R3NsTjNESVRTVEFaM2hFT0tWNkI0ejEzcUlwMUJqbng1bHZLWVN4TGtCQXByWXNwOG1IdlFIQQ?oc=5"
+    }
    ]
   },
   {
@@ -234,6 +240,23 @@
    "why": [
     "Vulnerability",
     "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "7982482cbe3f",
+   "title": "Brad Thoreson, Seattle Real Estate Litigator | Buchalter",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQMTgzR0JpZlp5V0lfWGFmeHoxaDNjRmZCUEU3RXN4MjJ6Zm9PQW94UDhFbE5xSjZya3NPakpQVTVuTzljc3FUaVJLNXJ0WDkwbXRLemc3akRFc0FmQTFhM2lQb3lqMHJKaXBZUWlMeXd4UUJzYTVGaUNlajIzSDk4cDdJZjg1ME0yU3dUTlYwbElIX2piWFZ5elQtMktrOFZSNlczSHdWcw?oc=5",
+   "source": "Haute Living",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-17T12:51:40Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
    ]
   },
   {
