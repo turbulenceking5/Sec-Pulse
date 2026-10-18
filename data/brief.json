@@ -1,85 +1,77 @@
 {
- "date": "2026-10-18",
- "generated": "2026-10-17T22:45:02+00:00",
- "title": "Sec-Pulse brief - Sun 18 Oct",
+ "date": "2026-10-19",
+ "generated": "2026-10-18T21:25:19+00:00",
+ "title": "Sec-Pulse brief - Mon 19 Oct",
  "items": [
   {
-   "id": "74a44f824ba0",
-   "title": "Hackers breach Microsoft 365 tenants via ConnectWise supply-chain attack",
-   "link": "https://www.bleepingcomputer.com/news/security/hackers-breach-microsoft-365-tenants-via-connectwise-supply-chain-attack/",
+   "id": "8431a59751b6",
+   "title": "Florida Man Sentenced In Texas Federal Court To Over 4 Years For $3M Real Estate Scam",
+   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOdzJsQzNQLXF5OHBtaWxzOGo1dzhTQUNMejc5SXJFSXpnOW1SY1BIQURpQVV2LVlua3YyWUFKa05TY3lpTlMyZmplemNDdHM0R3NsTjNESVRTVEFaM2hFT0tWNkI0ejEzcUlwMUJqbng1bHZLWVN4TGtCQXByWXNwOG1IdlFIQQ?oc=5",
+   "source": "AOL.com",
+   "region": "Global",
+   "published": "2026-10-18T14:33:19Z",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "summary": ""
+  },
+  {
+   "id": "a0eb11b81acb",
+   "title": "Silo Real Estate REA probe exposes unlicensed operator gap",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOVXJDN0ZZSTYwczM4cWpDSzdTOGg4cVlscmQtSF8teGtRQ2hKMk0tR3R2YVVNSzl0N29xbnJZTmg5cUJybEJkQ3h6YzJUamFWalZ6RTNDTllleWk5a1g4eHhWVVctSmZJdW5hclJoa19SalQ0amk3M0tUbmk3Ry1GMzVIQ01kcWcyMWsyblVuaw?oc=5",
+   "source": "B2B News",
+   "region": "Global",
+   "published": "2026-10-17T20:40:54Z",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "summary": ""
+  },
+  {
+   "id": "74ff0a30f9fe",
+   "title": "Hackers exploit SiteGuard WAF flaw to run commands as admins",
+   "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-siteguard-waf-flaw-to-run-commands-as-system-root/",
    "source": "BleepingComputer",
    "region": "Global",
-   "published": "2026-10-17T15:18:51Z",
-   "score": 15,
+   "published": "2026-10-18T14:23:16Z",
+   "score": 1,
    "tags": [
-    "Real estate",
-    "Microsoft 365",
-    "Data breach"
+    "Vulnerability"
    ],
-   "summary": "ConnectWise has shut down customer access to its Cloud Backup service (formerly SkyKick Cloud Backup) after hackers accessed application identities and compromised Microsoft 365 tenants. [...]"
+   "summary": "Attackers are targeting an OS command injection vulnerability in SiteGuard Server Edition that lets them execute commands as root or SYSTEM on affected servers. [...]"
   },
   {
-   "id": "bd3a9d6713d9",
-   "title": "Napoleon Perdis reports data breach affecting 339,000 customers — ABC News Australia",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQQTlyS2xmT3B3ZEw5ajlYWl9hY1h0SGlGekJKR0JEM1piQm5ibFZtUENncWVUbUxhbUJNdXhRajBIX0stUlh2SG1pbnRqdDNkTzh5bUVGYTdaaTJiODFoYnJWYnN5X1c4bEJBWWVuWjUteUt0WEtqYi1kN2tqS0Y4NkpNbm8tekhiQlQyS3pDUmtOamozRG1aQURVVnRyTG5ieFFSMFVkUUlWWlFvaXc?oc=5",
-   "source": "UA.NEWS",
-   "region": "AU",
-   "published": "2026-10-17T06:44:13Z",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "Data breach"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "c452fd369354",
-   "title": "Redfin, Rocket hit with lawsuit over alleged breach of employee data",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOaU1ibDI4b29SbG00NFliRHhCQmJwUGNsLTZnRDNNMklDM0E1UThXbGVJOXFRamhENGpBMmI3TEE3Si1TTWREb2pJbnNBeE1UYkZjYWNwRVhxSllIR3QxeG5ndjVaTHRjelFpT3VoVUd1Y3ZCbEVJandPTFZvekppTGZ3Ujg4MTNRRHVFdFBRajA2dldDaTRfQVBHWHhlQQ?oc=5",
-   "source": "The Spokesman-Review",
+   "id": "d33178f3f117",
+   "title": "Orphaned VBA Projects Inside DWG Files: YARA Rule, (Sun, Oct 18th)",
+   "link": "https://isc.sans.edu/diary/rss/33434",
+   "source": "SANS ISC",
    "region": "Global",
-   "published": "2026-10-16T23:52:00Z",
-   "score": 10,
-   "tags": [
-    "Data breach",
-    "SaaS / cloud"
-   ],
-   "summary": ""
+   "published": "2026-10-18T12:59:30Z",
+   "score": 1,
+   "tags": [],
+   "summary": "Here is the YARA rule I used to detect \" Orphaned VBA Projects Inside DWG Files \"."
   },
   {
-   "id": "1396deafd01c",
-   "title": "Rental scam alert warning: Scammer poses as homeowners to rent homes that aren't for rent in North Carolina",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQZ2pOWXpTRVV1V0ZHM2lhcWhrbHRHcmljdktqaHdVeGtQXzJrT1hZRlhMRXVjYVFNX3N1c3I1bWMzVWFaVDczLTBVWEw4YlhTV1lRa1ZlNDRLWVdkVUIxYTROSDZrSHB4UXZ1cXM4N1FERmxBMWVmUGdYbkRxUGpUWDVvb2dlZkRHU2VMSDgzSEMwSjBaR2dyLVBlTzlpM1BWVmZTamZudUZDUk9qU2pQaHdqaGNkV3Awalo00gG7AUFVX3lxTFBnak5ZelNFVXVXRkczaWFxaGtsdEdyaWN2S2pod1V4a1BfMmtPWFlGWExFdWNhUU1fc3VzcjVtYzNVYVpUNzMtMFVYTDhiWFNXWVFrVmU0NEtZV2RVQjFhNE5INmtIcHhRdnVxczg3UURGbEExZWZQZ1huRHFQalRYNW9vZ2VmREdTZUxIODNIQzBKMFpHZ3ItUGVPOWkzUFZWZlNqZm51RkNST2pTalBod2poY2RXcDBqWjQ?oc=5",
-   "source": "ABC11 News",
+   "id": "7e978702ff2e",
+   "title": "US Cybersecurity Job Postings Fall 26% as AI Security Engineer Demand Soars",
+   "link": "https://www.securityweek.com/us-cybersecurity-job-postings-fall-26-as-ai-security-engineer-demand-soars/",
+   "source": "SecurityWeek",
    "region": "Global",
-   "published": "2026-10-16T21:43:52Z",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "8fcaa4195067",
-   "title": "Accused Beijing Agent’s Underground Money Transfers and Real Estate Circle Bring MSS Spy Case Into Cartel and Scam Compound Terrain",
-   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1OUEVYUFNxeElrcVJkUDNXcnhVaU5FWm95Y1BQb2xaaEwzZ2xWamdfcDFuRmRrT0o1SkFpZS0walNVdUpQb3p5TlR0N29zNDJRY2ZTcXU2WllLNUNJdV9HcTVnZWdzLTRaQVRpWWxScGk?oc=5",
-   "source": "The Bureau | Sam Cooper | Substack",
-   "region": "Global",
-   "published": "2026-10-16T17:15:12Z",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "summary": ""
+   "published": "2026-10-18T11:00:00Z",
+   "score": 0,
+   "tags": [],
+   "summary": "CyberSN’s Cybersecurity Jobs Report provides visibility into the US cybersecurity job market. It’s a mixed bag. The post US Cybersecurity Job Postings Fall 26% as AI Security Engineer Demand Soars appeared first on SecurityWeek ."
   }
  ],
  "stats": {
-  "recent": 19,
-  "au": 1,
+  "recent": 5,
+  "au": 0,
   "kev": 0
  },
  "lesson": {
-  "id": "4.5",
-  "title": "Writing an incident report"
+  "id": "1.1",
+  "title": "Architecture concepts for analysts"
  }
 }
