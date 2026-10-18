@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-18T12:19:30Z",
+ "generated": "2026-10-18T15:54:31Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -100,11 +100,58 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 23,
+   "count": 22,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "8431a59751b6",
+   "title": "Florida Man Sentenced In Texas Federal Court To Over 4 Years For $3M Real Estate Scam",
+   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOdzJsQzNQLXF5OHBtaWxzOGo1dzhTQUNMejc5SXJFSXpnOW1SY1BIQURpQVV2LVlua3YyWUFKa05TY3lpTlMyZmplemNDdHM0R3NsTjNESVRTVEFaM2hFT0tWNkI0ejEzcUlwMUJqbng1bHZLWVN4TGtCQXByWXNwOG1IdlFIQQ?oc=5",
+   "source": "AOL.com",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-18T14:33:19Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
+   "id": "74ff0a30f9fe",
+   "title": "Hackers exploit SiteGuard WAF flaw to run commands as admins",
+   "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-siteguard-waf-flaw-to-run-commands-as-system-root/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-18T14:23:16Z",
+   "summary": "Attackers are targeting an OS command injection vulnerability in SiteGuard Server Edition that lets them execute commands as root or SYSTEM on affected servers. [...]",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "d33178f3f117",
+   "title": "Orphaned VBA Projects Inside DWG Files: YARA Rule, (Sun, Oct 18th)",
+   "link": "https://isc.sans.edu/diary/rss/33434",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-10-18T12:59:30Z",
+   "summary": "Here is the YARA rule I used to detect \" Orphaned VBA Projects Inside DWG Files \".",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
   {
    "id": "7e978702ff2e",
    "title": "US Cybersecurity Job Postings Fall 26% as AI Security Engineer Demand Soars",
@@ -722,7 +769,7 @@
     "Actively exploited",
     "Vulnerability"
    ],
-   "epss": 0.006,
+   "epss": 0.0118,
    "also": [
     {
      "source": "The Hacker News",
@@ -910,7 +957,7 @@
     "Edge devices",
     "Vulnerability"
    ],
-   "epss": 0.0058
+   "epss": 0.0108
   },
   {
    "id": "e0e9e3550086",
@@ -1062,7 +1109,7 @@
     "Edge devices",
     "Vulnerability"
    ],
-   "epss": 0.0058
+   "epss": 0.0108
   },
   {
    "id": "7d3104b45e33",
@@ -1082,7 +1129,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.006
+   "epss": 0.0118
   },
   {
    "id": "3bd9f144301e",
@@ -2050,8 +2097,7 @@
    ],
    "why": [
     "Vulnerability"
-   ],
-   "epss": 0.1271
+   ]
   },
   {
    "id": "b57abd2c6608",
@@ -5119,7 +5165,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.1935
+   "epss": 0.2014
   },
   {
    "id": "74cde892ff7f",
@@ -5205,8 +5251,7 @@
    ],
    "why": [
     "Vulnerability"
-   ],
-   "epss": 0.1271
+   ]
   },
   {
    "id": "4d0ab1e7dd59",
