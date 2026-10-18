@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-18T21:25:07Z",
+ "generated": "2026-10-18T23:15:34Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,7 +28,7 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 5,
+   "count": 6,
    "error": null
   },
   {
@@ -105,6 +105,44 @@
   }
  ],
  "items": [
+  {
+   "id": "6fa2fc15ec28",
+   "title": "AI Breach of Australian Healthcare Website Sparks Regulation Debate",
+   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOXzE0Rl9tTjZmcEk4QXFPOTZoWmU5QnNUUk96a2NkOTN5WHJyeFNvSVh1OTlQeGdUS3l0QzRsZTZqYl9fZ04teEhXYlVza0tLZjNaQ05XckJCaEhrOVRqOFNVWHA4MDk0emRGcnV3SklQLXJBM2xITDFUam0zX245S194UUYwY2swMVRKN0NrNDZEVXlxcUxFdUpoMUNpSzBpUE55N2hjNW94QjNNYUhLUHpXT0toeUItWkQ2a1VadU53RFFlcHdZdDRCTGs0RjR2UGc?oc=5",
+   "source": "Carolina Political Review",
+   "feed": "AU breach news",
+   "region": "AU",
+   "published": "2026-10-18T23:07:18Z",
+   "summary": "",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Data breach"
+   ],
+   "why": [
+    "Australia",
+    "Data breach"
+   ]
+  },
+  {
+   "id": "4579e8e957d5",
+   "title": "Australia 11th in Microsoft cyber report as phishing rises",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNU1Rra2NmZnFBVmFhTnBid1djT1UydndLNDMzajFkd3djZEFOeF9CU3JwSXVTWjlEM3A4YW14SDB4LW5UelUwVXJaYVM4Nm1rc1VJSG9uOHJ6d1JCWDYxb0J1cWVvci1ySTZfVFItclFZczdsSmRHMm5tT180NTFocXBOVkVYb2tVdXhxdXQ3R1ZQczFlajBPNA?oc=5",
+   "source": "SecurityBrief Australia",
+   "feed": "AU breach news",
+   "region": "AU",
+   "published": "2026-10-18T22:30:00Z",
+   "summary": "",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Phishing"
+   ],
+   "why": [
+    "Australia",
+    "Phishing"
+   ]
+  },
   {
    "id": "8431a59751b6",
    "title": "Florida Man Sentenced In Texas Federal Court To Over 4 Years For $3M Real Estate Scam",
