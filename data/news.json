@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T13:21:37Z",
+ "generated": "2026-10-19T20:36:23Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -22,13 +22,13 @@
   {
    "name": "ASD / ACSC in the news",
    "ok": true,
-   "count": 1,
+   "count": 0,
    "error": null
   },
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 6,
+   "count": 7,
    "error": null
   },
   {
@@ -70,7 +70,7 @@
   {
    "name": "Krebs on Security",
    "ok": true,
-   "count": 4,
+   "count": 5,
    "error": null
   },
   {
@@ -105,6 +105,298 @@
   }
  ],
  "items": [
+  {
+   "id": "553c25ef7794",
+   "title": "'AdFection' Turns Ad Impressions Into Zero-Click Spyware Delivery",
+   "link": "https://www.darkreading.com/data-privacy/adfection-online-ads-spyware-delivery",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-19T19:55:01Z",
+   "summary": "Spyware vendors are exploiting targeted ad bidding in the digital ecosystem to identify and track individuals and organizations of interest.",
+   "score": 0,
+   "tags": [],
+   "why": [],
+   "also": [
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/israeli-ad-firm-doubled-as-candirus-zero-click-spyware-delivery-channel/"
+    },
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/zero-click-attacks-used-targeted-ads-to-deliver-candiru-spyware/"
+    },
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/citizen-lab-traces-zero-click-candiru.html"
+    }
+   ]
+  },
+  {
+   "id": "06accfcb31a1",
+   "title": "Bullhorn takes staffing platform offline to contain cyberattack",
+   "link": "https://www.bleepingcomputer.com/news/security/bullhorn-takes-staffing-platform-offline-to-contain-cyberattack/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-19T18:51:13Z",
+   "summary": "Staffing software company Bullhorn has disabled access to its platform to contain a cyberattack that caused a system-wide outage. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "561dd3f2eda5",
+   "title": "Siemens Software Center Vulnerability Exploited in ClickFix Malware Attacks",
+   "link": "https://www.securityweek.com/siemens-software-center-vulnerability-exploited-in-clickfix-malware-attacks/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-19T18:15:39Z",
+   "summary": "Attackers paired a genuine, signed copy of Siemens Software Center with malicious DLLs to infect Windows PCs via ClickFix lures. The post Siemens Software Center Vulnerability Exploited in ClickFix Malware Attacks appeared first on SecurityWeek .",
+   "score": 5,
+   "tags": [
+    "Phishing",
+    "Vulnerability"
+   ],
+   "why": [
+    "Phishing",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "3763fb67ea2a",
+   "title": "One Hacker Used AI Agents to Breach More Than 100 Websites",
+   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1SQklFSWJ0Q2VyNFFwbUhOZG1tSjd2SlNNN0gzd0xlYXJFYUx0R3ktcDlkQW5TbkRvbUY0M0FGS2xhTEtEdEhsckZjdHhwR3FFMnlNZy1nQjRaWS1hdC1HY3lDU3htalhLWkVaamNZZERaRGN1dHpmNw?oc=5",
+   "source": "The420.in",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-19T17:55:40Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "2c0424db18b3",
+   "title": "Sabre Cybersecurity Stops Wire Fraud Attempt Targeting Central Ohio Real Estate Closing",
+   "link": "https://news.google.com/rss/articles/CBMimwJBVV95cUxOYVRfUW5GRF80cERsNTZOU2RreTM0YkJiYU9rakg0c242N3I1aDg3cUFqVmFEVHpFZ2xJeE5sTEkyMXY0UmZaU0RNZkhVQWpsS0JyRGlZYjNYWEtRZHJ0cFRycnAwQUhtX0kwYld0OTdCMHFnR3F5S3JKMVN6TklFd09WNHFkSmNtQk5MZUdzblh1VmlvWGhRYmdGLVBqVl9FVWdlTDFQdm0yRGJ1alczaHVuT1kwc1pScjVkei15SUFPWkhoTTVPZjUtMTYyTEdmTEo2Y2JiTnhHRXhHMEJCbFY1bm5NcEtYc2RwY1FheXNROVl3YllBNGZlX0FBMlNqUE4zNFpleHRZY2hXaEZSYnViYnc5NVEzQ01F?oc=5",
+   "source": "mykxlg.com",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-19T17:45:02Z",
+   "summary": "",
+   "score": 20,
+   "tags": [
+    "Real estate",
+    "BEC / payment fraud",
+    "Microsoft 365"
+   ],
+   "why": [
+    "Real estate",
+    "BEC / payment fraud",
+    "Microsoft 365"
+   ]
+  },
+  {
+   "id": "143bfdf19e2b",
+   "title": "Hackers Exploit Plex2Shell Flaws to Install Crypto Miners and Linux Proxy Backdoor",
+   "link": "https://thehackernews.com/2026/10/hackers-exploit-plex2shell-flaws-to.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-19T17:32:13Z",
+   "summary": "Threat actors have begun to exploit a chain of vulnerabilities in Plex Media Server to deploy cryptocurrency miners and reverse proxy software, a day after a proof-of-concept (PoC) went public. According to a researcher who goes by the online alias boredhackerblog, the exploitation activity…",
+   "score": 3,
+   "tags": [
+    "SaaS / cloud"
+   ],
+   "why": [
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "c2afa7723501",
+   "title": "Drupal Warns of Fast Exploitation Risk for Critical Core RCE Flaw",
+   "link": "https://www.securityweek.com/drupal-warns-of-fast-exploitation-risk-for-critical-core-rce-flaw/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-19T15:47:50Z",
+   "summary": "Critical flaws impact the Entity List and Field UI modules, and exploit paths exist with contributed modules. The post Drupal Warns of Fast Exploitation Risk for Critical Core RCE Flaw appeared first on SecurityWeek .",
+   "score": 4,
+   "tags": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "c513afb9763b",
+   "title": "Rank Math PRO WordPress Plugin Compromised in Supply Chain Attack",
+   "link": "https://www.securityweek.com/rank-math-pro-wordpress-plugin-compromised-in-supply-chain-attack/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-19T15:20:53Z",
+   "summary": "Hackers injected malware into Rank Math PRO version 3.0.123 packages distributed between October 15 and October 16. The post Rank Math PRO WordPress Plugin Compromised in Supply Chain Attack appeared first on SecurityWeek .",
+   "score": 3,
+   "tags": [
+    "SaaS / cloud"
+   ],
+   "why": [
+    "SaaS / cloud"
+   ],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/popular-wordpress-seo-plugin-rank-math.html"
+    }
+   ]
+  },
+  {
+   "id": "6e689f58716d",
+   "title": "Microsoft fixes game, app crashes caused by recent Windows update",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-game-app-crashes-caused-by-windows-kb5124010-preview-update/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-19T14:55:23Z",
+   "summary": "Microsoft has resolved a bug that caused games and apps using AC-3 (Dolby Digital) audio decoding to crash after installing the September 2026 Windows 11 preview update (KB5124010). [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "e4ddb72db383",
+   "title": "OnlyFans Copyright Takedowns Expose Compromised Websites",
+   "link": "https://www.darkreading.com/vulnerabilities-threats/onlyfans-copyright-takedowns-expose-compromised-websites",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-19T14:28:11Z",
+   "summary": "Copyright takedown requests tied to OnlyFans and other adult content creators are revealing how attackers exploit vulnerable university and government websites to manipulate search results. UpGuard's Greg Pollock explains what universities, government websites, and security teams need to think…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "03d3ba9d36cc",
+   "title": "⚡ Weekly Recap: 98 Zero-Days, Rogue AI Agents, $100M Crypto Theft, 700 Supermarkets Hit and More",
+   "link": "https://thehackernews.com/2026/10/weekly-recap-98-zero-days-rogue-ai.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-19T14:14:07Z",
+   "summary": "The worst problems don't always come with a warning. Sometimes they arrive through a service everyone trusts, a device someone bought, or a system nobody thought to check. By the time something looks wrong, the damage may already be done. This week had plenty of that. Trusted connections became a…",
+   "score": 5,
+   "tags": [
+    "Actively exploited"
+   ],
+   "why": [
+    "Actively exploited"
+   ]
+  },
+  {
+   "id": "10c7257940cc",
+   "title": "Inside the Underground Market for Know Your Client Services",
+   "link": "https://www.bleepingcomputer.com/news/security/inside-the-underground-market-for-know-your-client-services/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-19T14:00:10Z",
+   "summary": "Cybercriminals are selling forged identity documents, deepfake videos, and live verification services to help buyers bypass Know Your Client (KYC) checks. Flare examines how these underground services operate and the techniques used to create and maintain fraudulent verified accounts. [...]",
+   "score": 1,
+   "tags": [
+    "AI threats"
+   ],
+   "why": [
+    "AI threats"
+   ]
+  },
+  {
+   "id": "6e8696034a92",
+   "title": "The Evolving Cybersecurity Lexicon: Vulnerability Discovery to Resilience",
+   "link": "https://www.darkreading.com/vulnerabilities-threats/cybersecurity-lexicon-vulnerability-discovery-resilience",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-19T14:00:00Z",
+   "summary": "An industry-wide laser focus on vulnerabilities has left cybersecurity teams without enough room to strategize for resilience.",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "59b0e474cfa7",
+   "title": "F5 releases out-of-band patches for critical NGINX vulnerabilities",
+   "link": "https://www.bleepingcomputer.com/news/security/f5-releases-out-of-band-patches-for-critical-nginx-vulnerabilities/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-19T13:49:24Z",
+   "summary": "F5 has released out-of-band security patches to address multiple NGINX web server flaws, including three critical-severity vulnerabilities that can let attackers execute code on vulnerable systems. [...]",
+   "score": 4,
+   "tags": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "5f2037864b2f",
+   "title": "Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site",
+   "link": "https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/",
+   "source": "Krebs on Security",
+   "feed": "Krebs on Security",
+   "region": "Global",
+   "published": "2026-10-19T13:48:56Z",
+   "summary": "U.S. federal investigators pursuing the ShinyHunters hacking group that recently stole highly sensitive data from the FBI have identified executives at two different ransomware negotiation firms who maintained unusually close relations with the extortion group, KrebsOnSecurity has learned. Sources…",
+   "score": 6,
+   "tags": [
+    "Ransomware",
+    "Vulnerability"
+   ],
+   "why": [
+    "Ransomware",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "47f4fcfb349a",
+   "title": "GhostAction Attackers Plant Credential Stealer Disguised as Font in 94 GitHub Repositories",
+   "link": "https://thehackernews.com/2026/10/ghostaction-attackers-plant-credential.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-19T13:05:45Z",
+   "summary": "The threat actor behind the GhostAction supply chain attack has expanded beyond injecting malicious GitHub Actions workflows into compromised projects to phish open-source developers and deliver a stealer malware disguised within a fake font file. The latest evolution, detailed by…",
+   "score": 6,
+   "tags": [
+    "Identity",
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Identity",
+    "Vulnerability",
+    "SaaS / cloud"
+   ]
+  },
   {
    "id": "cd30eb68866b",
    "title": "Agents are your newest insiders. Security must move at their speed.",
@@ -191,6 +483,25 @@
    ]
   },
   {
+   "id": "5ae38a63e473",
+   "title": "From Email-to-Case to the Boardroom: How Inherited Agents Break Governance Built for Software",
+   "link": "https://thehackernews.com/2026/10/from-email-to-case-to-boardroom-how.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-19T11:50:00Z",
+   "summary": "In Salesforce Agentforce, the recommended way to make an agent respond to events is a Flow: a record is created or a case is updated, and the Flow passes data into the agent's prompt. Separately, Email-to-Case and Web-to-Case turn inbound customer messages into case records; it is how airlines and…",
+   "score": 3,
+   "tags": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ]
+  },
+  {
    "id": "3e1eacecc51d",
    "title": "Exploited Fortinet Bug Linked to Stealthy FortiGate Implant in Telecom Hack",
    "link": "https://www.securityweek.com/exploited-fortinet-bug-linked-to-stealthy-fortigate-implant-in-telecom-hack/",
@@ -239,6 +550,12 @@
    ],
    "why": [
     "Identity"
+   ],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/hackers-hijack-aomei-update-servers-to-secretly-spread-malware/"
+    }
    ]
   },
   {
@@ -338,6 +655,10 @@
     {
      "source": "Startup Fortune",
      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNLTRuYTBta3p6RENuTVRJdWlGTW9qV1pPYmdZWl9qR1BEN1k4czdONmx5elpCa3hfOTExaWJSRkQ5RHE4QVFjcmhxa3lSc1c2a0x5aVlCUThkTElreHkzbG81RG5lUGdzSkNCbU9JRmRIc0Fqb0hXNngxRG1vTmJGNmVuU2Nwclc1R3hONHFuWi1OSDhRUzNXalNIS21pb3gxeHZDVy1uSnd1bnpmYUwxdVNn?oc=5"
+    },
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/opencode-hack-exposes-api-keys-amid-ai-distillation-attacks/"
     }
    ]
   },
@@ -605,29 +926,6 @@
    ],
    "why": [
     "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "2956b1e39e10",
-   "title": "Israeli Ad Firm Doubled as Candiru’s Zero-Click Spyware Delivery Channel",
-   "link": "https://www.securityweek.com/israeli-ad-firm-doubled-as-candirus-zero-click-spyware-delivery-channel/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-17T11:00:00Z",
-   "summary": "Israeli company Discover-Tech’s ads allow threat actors to fingerprint and track devices at scale and infect selected targets. The post Israeli Ad Firm Doubled as Candiru’s Zero-Click Spyware Delivery Channel appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": [],
-   "also": [
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/zero-click-attacks-used-targeted-ads-to-deliver-candiru-spyware/"
-    },
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/citizen-lab-traces-zero-click-candiru.html"
-    }
    ]
   },
   {
@@ -2266,8 +2564,7 @@
      "source": "The Hacker News",
      "url": "https://thehackernews.com/2026/10/palo-alto-networks-patches-pan-os.html"
     }
-   ],
-   "epss": 0.0121
+   ]
   },
   {
    "id": "a713f2422da2",
