@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T04:44:07Z",
+ "generated": "2026-10-19T13:21:37Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -22,25 +22,25 @@
   {
    "name": "ASD / ACSC in the news",
    "ok": true,
-   "count": 2,
+   "count": 1,
    "error": null
   },
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 10,
+   "count": 6,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 6,
+   "count": 7,
    "error": null
   },
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 2,
+   "count": 0,
    "error": null
   },
   {
@@ -82,7 +82,7 @@
   {
    "name": "Microsoft Security Blog",
    "ok": true,
-   "count": 5,
+   "count": 6,
    "error": null
   },
   {
@@ -106,6 +106,259 @@
  ],
  "items": [
   {
+   "id": "cd30eb68866b",
+   "title": "Agents are your newest insiders. Security must move at their speed.",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/10/19/agents-are-your-newest-insiders-security-must-move-at-their-speed/",
+   "source": "Microsoft Security Blog",
+   "feed": "Microsoft Security Blog",
+   "region": "Global",
+   "published": "2026-10-19T13:00:00Z",
+   "summary": "New capabilities in Microsoft 365 E7 and Project Perception help organizations contain agent risk and adapt protection continuously. The post Agents are your newest insiders. Security must move at their speed. appeared first on Microsoft Security Blog .",
+   "score": 5,
+   "tags": [
+    "Microsoft 365",
+    "Vulnerability"
+   ],
+   "why": [
+    "Microsoft 365",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "1f63abf1d8df",
+   "title": "Microsoft fixes classic Outlook bug that hid Copilot buttons",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-bug-that-hid-copilot-buttons-in-classic-outlook/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-19T12:44:44Z",
+   "summary": "Microsoft has fixed a known issue that removed the Copilot Chat and Copilot buttons in the classic Outlook desktop mail client for some Windows users. [...]",
+   "score": 4,
+   "tags": [
+    "Microsoft 365"
+   ],
+   "why": [
+    "Microsoft 365"
+   ]
+  },
+  {
+   "id": "bcca2fd24d4b",
+   "title": "Plex2Shell Exploit Chain Weaponized Against Plex Servers Hours After Disclosure",
+   "link": "https://www.securityweek.com/plex2shell-exploit-chain-weaponized-against-plex-servers-hours-after-disclosure/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-19T12:44:39Z",
+   "summary": "Threat actors have been observed delivering cryptocurrency miners and proxy software. The post Plex2Shell Exploit Chain Weaponized Against Plex Servers Hours After Disclosure appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "afb21bb14d6f",
+   "title": "Whopper of a data breach sees Burger King Japan expose over 11 million customer records",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPOXN2ck12M0w0bnJFSFRwMmpEbjBTUUg5ZTV2MnZNeG9oYnZBdmtVWE9jcEVib3lUSnpBSXpZSmhZUzJxODhUTUkwVC1xRzhHRndNcE1Za3dnYTFNYzVPZ3dCQmdJUk5rMnhvcXVhZVVlRWpUaGRaWmJEbUhxVG84akZHNzdhZXhtdmZna1ZTb2hIT2QxeG1VVGRtV1JQWjl4M2U0M3BpZTA3SnBWRDBuTl9lclo3YzZYR19QNVM4dkxvN1VI?oc=5",
+   "source": "TechRadar",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-19T12:05:00Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "6e3176643ea9",
+   "title": "One Compromised Login Exposed Millions of California Students’ Records",
+   "link": "https://www.securityweek.com/one-compromised-login-exposed-millions-of-california-students-records/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-19T11:55:50Z",
+   "summary": "Intruders used compromised credentials to access an ETS SFTP server, copying records of California students back to 2006. The post One Compromised Login Exposed Millions of California Students’ Records appeared first on SecurityWeek .",
+   "score": 6,
+   "tags": [
+    "Data breach",
+    "Identity"
+   ],
+   "why": [
+    "Data breach",
+    "Identity"
+   ]
+  },
+  {
+   "id": "3e1eacecc51d",
+   "title": "Exploited Fortinet Bug Linked to Stealthy FortiGate Implant in Telecom Hack",
+   "link": "https://www.securityweek.com/exploited-fortinet-bug-linked-to-stealthy-fortigate-implant-in-telecom-hack/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-19T11:13:23Z",
+   "summary": "The persistent, stealthy FortiGate implant was deployed against a telecommunications organization. The post Exploited Fortinet Bug Linked to Stealthy FortiGate Implant in Telecom Hack appeared first on SecurityWeek .",
+   "score": 3,
+   "tags": [
+    "Edge devices"
+   ],
+   "why": [
+    "Edge devices"
+   ]
+  },
+  {
+   "id": "9d9b1cbb50ad",
+   "title": "Canada OSAP student grant ‘scam’ & why a Chandigarh real estate group filed defamation case over it",
+   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQV0o1dGQ5SWVNaFBWOUVkTFdIQ0FYU2dudzNhRlBxRVZqYVlUZTFlSGhNOEZjNmVnOUlKT190Vk96OEF5cDZIYzJpQmtwSWpiLW5BRkZmY3JuWnJhRTk0ODdWNklrQl9YazFNRWJaV3Iyb0N3SXpNUkRRY0NwdWx5UXYyQS0zdG5wODJsSDdnbDVqczhHQkNsaFhuWjBRZ29pTmFDSWlvdVhaNWNmZVVzZ2dKMFhRZXJoYkttSkRiaXdtc3F0MFdUZDNWdFBIYzTSAc8BQVVfeXFMUFdKNXRkOUllTWhQVjlFZExXSENBWFNnbnczYUZQcUVWamFZVGUxZUhoTThGYzZlZzlJSk9fdFZPejhBeXA2SGMyaUJrcElqYi1uQUZGZmNyblpyYUU5NDg3VjZJa0JfWGsxTUViWldyMm9Dd0l6TVJEUWNDcHVseVF2MkEtM3RucDgybEg3Z2w1anM4R0JDbGhYblowUWdvaU5hQ0lpb3VYWjVjZmVVc2dnSjBYUWVyaGJLbUpEYml3bXNxdDBXVGQzVnRQSGM0?oc=5",
+   "source": "ThePrint",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-19T10:38:35Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
+   "id": "0534f1906337",
+   "title": "Fake Web3 Accelerator Uses npm Packages to Spread Malware and Hijack AI Agent Traffic",
+   "link": "https://thehackernews.com/2026/10/fake-web3-accelerator-uses-npm-packages.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-19T10:06:40Z",
+   "summary": "A fake Web3 accelerator has been observed pushing information stealers and backdoors to Windows and macOS systems using malicious npm packages under the pretext of offering free artificial intelligence (AI) credits for Anthropic Claude and Google Gemini, coding tools, and security audits. \"The…",
+   "score": 2,
+   "tags": [
+    "Identity"
+   ],
+   "why": [
+    "Identity"
+   ]
+  },
+  {
+   "id": "82c7537f544b",
+   "title": "MITRE ATT&CK v20 Catalogs AI Abuse, MFA Bypass, Water Utility Attacks",
+   "link": "https://www.securityweek.com/mitre-attck-v20-catalogs-ai-abuse-mfa-bypass-water-utility-attacks/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-19T09:37:04Z",
+   "summary": "Defenders get 15 new detection strategies, six for Enterprise and nine for ICS, backed by 38 analytics. The post MITRE ATT&CK v20 Catalogs AI Abuse, MFA Bypass, Water Utility Attacks appeared first on SecurityWeek .",
+   "score": 6,
+   "tags": [
+    "Microsoft 365",
+    "Identity"
+   ],
+   "why": [
+    "Microsoft 365",
+    "Identity"
+   ]
+  },
+  {
+   "id": "15156651e221",
+   "title": "Microsoft: October Windows Server updates break Exchange sign-in, mail flow",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-october-windows-server-updates-cause-exchange-issues/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-19T08:58:41Z",
+   "summary": "Microsoft has confirmed that this month's Windows Server security updates are causing OWA sign-in and mail delivery issues on some Exchange Server systems. [...]",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "5c0bebf27f10",
+   "title": "Anthropic Acquires Confidential AI Startup Opaque Systems",
+   "link": "https://www.securityweek.com/anthropic-acquires-confidential-ai-startup-opaque-systems/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-19T07:45:25Z",
+   "summary": "Opaque Systems has developed technology that lets AI systems use sensitive data while keeping it protected by the underlying hardware. The post Anthropic Acquires Confidential AI Startup Opaque Systems appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "f519e0b522d7",
+   "title": "Unpatched Broadcom Wi-Fi Flaw Lets Attackers in Range Run Code as Root on Routers",
+   "link": "https://thehackernews.com/2026/10/unpatched-broadcom-wi-fi-flaw-lets.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-19T06:29:44Z",
+   "summary": "A flaw in Broadcom's Wi-Fi setup software lets an attacker within radio range run code as root on Broadcom-based routers, without the network password or any pairing step, security researcher Quentin Kaiser disclosed on October 16. He showed the attack working against home gateways supplied by…",
+   "score": 4,
+   "tags": [
+    "Identity",
+    "Vulnerability"
+   ],
+   "why": [
+    "Identity",
+    "Vulnerability"
+   ],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/critical-blockstrap-flaw-lets-hackers-run-code-on-magento-servers/"
+    }
+   ],
+   "epss": 0.0078
+  },
+  {
+   "id": "1de1c48ce23b",
+   "title": "OpenCode Console Breach May Have Exposed OpenAI, Anthropic, and Google API Keys",
+   "link": "https://thehackernews.com/2026/10/opencode-console-breach-may-have.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-19T06:07:08Z",
+   "summary": "An intruder reached a legacy system at OpenCode on the night of October 16 and may have exposed the third-party AI provider keys that users had saved in OpenCode Console, the company said. Console is OpenCode's optional hosted service: a workspace saves its own OpenAI, Anthropic, or Google key…",
+   "score": 6,
+   "tags": [
+    "Data breach",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Data breach",
+    "SaaS / cloud"
+   ],
+   "also": [
+    {
+     "source": "Startup Fortune",
+     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNLTRuYTBta3p6RENuTVRJdWlGTW9qV1pPYmdZWl9qR1BEN1k4czdONmx5elpCa3hfOTExaWJSRkQ5RHE4QVFjcmhxa3lSc1c2a0x5aVlCUThkTElreHkzbG81RG5lUGdzSkNCbU9JRmRIc0Fqb0hXNngxRG1vTmJGNmVuU2Nwclc1R3hONHFuWi1OSDhRUzNXalNIS21pb3gxeHZDVy1uSnd1bnpmYUwxdVNn?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "caafe54b5f2d",
+   "title": "Exclusive: Aussie software giant Canva confirms third-party data incident",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQYmtuazQ2V1Zwa3ZCMnZjM0NHQVcyMWhiY3pDSFNISXdTMF8yckhnUjRJenlqaGVIX2RULUVwTVMzeGV2bUREUkVQLVNXODRxNzdkckhaR3NJWUllUXktY3VMNi1BaHVyQVJWeDhNdnU3T0ZnTFc1cTY0NDVzN2k4Wm12eU9kTWtJVW1ZN0pUQldvV2VPZ3UwTVNycVNEblQ0YnZxZ3lkak5rRmNpTGhRMThqRQ?oc=5",
+   "source": "Cyber Daily",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-19T06:00:50Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "SaaS / cloud"
+   ],
+   "why": [
+    "SaaS / cloud"
+   ]
+  },
+  {
    "id": "3e41ca2a32fc",
    "title": "98 zero-day flaws found at TrendAI hacking contest",
    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPYXNOT3ZNNnFua1R5WVVKRTRRblgzTVdpOUdCZlRpMTYzbFVHcTRkWkpuZWhMcllQd2JFa0pXRGd2QlBOYWV2QlV3TmZlRmkyOXlsaEozYlN5ZDlHTWhQbUhFTjFub2xQZVA4a3gyWW1RWHpKTHE1RzkycU8xNnRDdnVQS2RMNWl2cUVyZktB?oc=5",
@@ -121,23 +374,6 @@
    ],
    "why": [
     "Actively exploited",
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "caafe54b5f2d",
-   "title": "Exclusive: Aussie software giant Canva confirms third-party data incident",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQYmtuazQ2V1Zwa3ZCMnZjM0NHQVcyMWhiY3pDSFNISXdTMF8yckhnUjRJenlqaGVIX2RULUVwTVMzeGV2bUREUkVQLVNXODRxNzdkckhaR3NJWUllUXktY3VMNi1BaHVyQVJWeDhNdnU3T0ZnTFc1cTY0NDVzN2k4Wm12eU9kTWtJVW1ZN0pUQldvV2VPZ3UwTVNycVNEblQ0YnZxZ3lkak5rRmNpTGhRMThqRQ?oc=5",
-   "source": "Cyber Daily",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-19T01:23:40Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "SaaS / cloud"
-   ],
-   "why": [
     "SaaS / cloud"
    ]
   },
@@ -280,23 +516,6 @@
    ]
   },
   {
-   "id": "64f8d6a84294",
-   "title": "OpenCode breach exposes stored OpenAI and Anthropic keys, prompts urgent key rotation",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNLTRuYTBta3p6RENuTVRJdWlGTW9qV1pPYmdZWl9qR1BEN1k4czdONmx5elpCa3hfOTExaWJSRkQ5RHE4QVFjcmhxa3lSc1c2a0x5aVlCUThkTElreHkzbG81RG5lUGdzSkNCbU9JRmRIc0Fqb0hXNngxRG1vTmJGNmVuU2Nwclc1R3hONHFuWi1OSDhRUzNXalNIS21pb3gxeHZDVy1uSnd1bnpmYUwxdVNn?oc=5",
-   "source": "Startup Fortune",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-17T18:57:21Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
    "id": "74a44f824ba0",
    "title": "Hackers breach Microsoft 365 tenants via ConnectWise supply-chain attack",
    "link": "https://www.bleepingcomputer.com/news/security/hackers-breach-microsoft-365-tenants-via-connectwise-supply-chain-attack/",
@@ -328,6 +547,10 @@
     {
      "source": "The Hacker News",
      "url": "https://thehackernews.com/2026/10/connectwise-suspends-cloud-backup-after.html"
+    },
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/connectwise-suspends-cloud-services-in-response-to-cyberattack/"
     }
    ]
   },
@@ -507,13 +730,13 @@
    ]
   },
   {
-   "id": "9dfc5131a445",
+   "id": "c452fd369354",
    "title": "Redfin, Rocket hit with lawsuit over alleged breach of employee data",
-   "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPamluWTlWTVFWMmpJRnlZMk5OLXZlcFphTzFTamI3a1E5OTBCM1Z5MXRnSjhwa3JYV2QydHRJcDNraVhXXzRfVmtDMG5oRmxvZFN6ZDVzblVJQXA2OGpkel9ma1RicnZJOXBadzVEdEliR1hIc1QtSF9qRGxfcHRrZDlLRERaSDVINERKcndLQ0oxb05HZFl2bXgtTE91OUxxXzNTLXdKWGIwSjJIMDVYX1BZSVBaN1pNcmwyakVqM3p6Wlc1R1hrWjM3SzdpcUM5QjRFYkFNLWQwOGEwNUh0NkRPUU9ScHFkNEhTMkVHNkpmQkJvaFE?oc=5",
-   "source": "The Derrick",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOaU1ibDI4b29SbG00NFliRHhCQmJwUGNsLTZnRDNNMklDM0E1UThXbGVJOXFRamhENGpBMmI3TEE3Si1TTWREb2pJbnNBeE1UYkZjYWNwRVhxSllIR3QxeG5ndjVaTHRjelFpT3VoVUd1Y3ZCbEVJandPTFZvekppTGZ3Ujg4MTNRRHVFdFBRajA2dldDaTRfQVBHWHhlQQ?oc=5",
+   "source": "The Spokesman-Review",
    "feed": "Real estate cyber news",
    "region": "Global",
-   "published": "2026-10-17T01:39:00Z",
+   "published": "2026-10-16T23:52:00Z",
    "summary": "",
    "score": 10,
    "tags": [
@@ -530,8 +753,8 @@
      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQd0t2U3hybTRVbGZIWmt1MzlPaXJOZlBxYndTVTNFUWlJaDNxMDRZZkVoOWRITi1peV91NXhvUDl2bXNjZl95NjVtQmYxRmJoenBoY0lmdElMT3F1WFdGZGN5U0ZYMUExbkdEZlc2ZjdGNUhsVW10MzVhWllXZzl3M0o3VjNaUVNVRXhsRnp1Sm1CMzZselpyYkdpSl8?oc=5"
     },
     {
-     "source": "The Spokesman-Review",
-     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOaU1ibDI4b29SbG00NFliRHhCQmJwUGNsLTZnRDNNMklDM0E1UThXbGVJOXFRamhENGpBMmI3TEE3Si1TTWREb2pJbnNBeE1UYkZjYWNwRVhxSllIR3QxeG5ndjVaTHRjelFpT3VoVUd1Y3ZCbEVJandPTFZvekppTGZ3Ujg4MTNRRHVFdFBRajA2dldDaTRfQVBHWHhlQQ?oc=5"
+     "source": "The Derrick",
+     "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPamluWTlWTVFWMmpJRnlZMk5OLXZlcFphTzFTamI3a1E5OTBCM1Z5MXRnSjhwa3JYV2QydHRJcDNraVhXXzRfVmtDMG5oRmxvZFN6ZDVzblVJQXA2OGpkel9ma1RicnZJOXBadzVEdEliR1hIc1QtSF9qRGxfcHRrZDlLRERaSDVINERKcndLQ0oxb05HZFl2bXgtTE91OUxxXzNTLXdKWGIwSjJIMDVYX1BZSVBaN1pNcmwyakVqM3p6Wlc1R1hrWjM3SzdpcUM5QjRFYkFNLWQwOGEwNUh0NkRPUU9ScHFkNEhTMkVHNkpmQkJvaFE?oc=5"
     }
    ]
   },
@@ -570,24 +793,6 @@
     "Actively exploited",
     "Edge devices"
    ]
-  },
-  {
-   "id": "8dfac5c34b84",
-   "title": "Critical BlockStrap flaw lets hackers run code on Magento servers",
-   "link": "https://www.bleepingcomputer.com/news/security/critical-blockstrap-flaw-lets-hackers-run-code-on-magento-servers/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-16T20:00:59Z",
-   "summary": "Researchers warn that hackers could soon exploit a maximum-severity vulnerability (CVE-2026-103849) affecting Magento and Adobe Commerce, potentially allowing them to execute arbitrary PHP code on store servers. [...]",
-   "score": 1,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.0078
   },
   {
    "id": "0cd568eb4deb",
