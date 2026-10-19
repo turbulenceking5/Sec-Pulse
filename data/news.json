@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-18T23:15:34Z",
+ "generated": "2026-10-19T04:44:07Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -16,7 +16,7 @@
   {
    "name": "ACSC (via Google News)",
    "ok": true,
-   "count": 3,
+   "count": 1,
    "error": null
   },
   {
@@ -28,7 +28,7 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 6,
+   "count": 10,
    "error": null
   },
   {
@@ -52,7 +52,7 @@
   {
    "name": "CISA KEV",
    "ok": true,
-   "count": 15,
+   "count": 14,
    "error": null
   },
   {
@@ -100,11 +100,64 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 22,
+   "count": 21,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "3e41ca2a32fc",
+   "title": "98 zero-day flaws found at TrendAI hacking contest",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPYXNOT3ZNNnFua1R5WVVKRTRRblgzTVdpOUdCZlRpMTYzbFVHcTRkWkpuZWhMcllQd2JFa0pXRGd2QlBOYWV2QlV3TmZlRmkyOXlsaEozYlN5ZDlHTWhQbUhFTjFub2xQZVA4a3gyWW1RWHpKTHE1RzkycU8xNnRDdnVQS2RMNWl2cUVyZktB?oc=5",
+   "source": "SecurityBrief Australia",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-19T02:38:00Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Actively exploited",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Actively exploited",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "caafe54b5f2d",
+   "title": "Exclusive: Aussie software giant Canva confirms third-party data incident",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQYmtuazQ2V1Zwa3ZCMnZjM0NHQVcyMWhiY3pDSFNISXdTMF8yckhnUjRJenlqaGVIX2RULUVwTVMzeGV2bUREUkVQLVNXODRxNzdkckhaR3NJWUllUXktY3VMNi1BaHVyQVJWeDhNdnU3T0ZnTFc1cTY0NDVzN2k4Wm12eU9kTWtJVW1ZN0pUQldvV2VPZ3UwTVNycVNEblQ0YnZxZ3lkak5rRmNpTGhRMThqRQ?oc=5",
+   "source": "Cyber Daily",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-19T01:23:40Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "SaaS / cloud"
+   ],
+   "why": [
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "a25cf59c6997",
+   "title": "Cyber's failure of imagination relates to the cost of waiting",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOaEt0aGtQblI2QnE1T0F6cTNfVk5IdktGUW80cGxjR2R3em1ldVlHb3hEaTlGanpCZ01id1hjLUZYMTN1Nl9Ya2tVUFBVNk9SUE1fUndocVhvWDVEMUZtTXlEX3VIQWctTUZkdmlNYVNIQ01DVm5Jdk1WY3RDQkJyZEt6bHdVdjFDMGpscGJPelpkZm1u?oc=5",
+   "source": "IT Brief Australia",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-19T00:49:00Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Phishing"
+   ],
+   "why": [
+    "Phishing"
+   ]
+  },
   {
    "id": "6fa2fc15ec28",
    "title": "AI Breach of Australian Healthcare Website Sparks Regulation Debate",
@@ -224,6 +277,23 @@
    ],
    "why": [
     "Real estate"
+   ]
+  },
+  {
+   "id": "64f8d6a84294",
+   "title": "OpenCode breach exposes stored OpenAI and Anthropic keys, prompts urgent key rotation",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNLTRuYTBta3p6RENuTVRJdWlGTW9qV1pPYmdZWl9qR1BEN1k4czdONmx5elpCa3hfOTExaWJSRkQ5RHE4QVFjcmhxa3lSc1c2a0x5aVlCUThkTElreHkzbG81RG5lUGdzSkNCbU9JRmRIc0Fqb0hXNngxRG1vTmJGNmVuU2Nwclc1R3hONHFuWi1OSDhRUzNXalNIS21pb3gxeHZDVy1uSnd1bnpmYUwxdVNn?oc=5",
+   "source": "Startup Fortune",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-17T18:57:21Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
    ]
   },
   {
@@ -1682,6 +1752,21 @@
    ]
   },
   {
+   "id": "502c877b3bd3",
+   "title": "Which chapter should I start with?",
+   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1PeDMyVE5zNFFyTDlOQ3ZzTDBNaXNtaHBMaExxU3g4Rm8zaVV2VXNZZnVucFQwTW0xSF82YVZnT0dlZFB1SEprZDVNSXNrRHZGaENuSFJuYUo4YnBROXRRN185SmF6SnZ4UE9QbXc4OHhEajNaOEg1TVBn?oc=5",
+   "source": "Australian Cyber Security",
+   "feed": "ACSC (via Google News)",
+   "region": "AU",
+   "published": "2026-10-15T12:00:00Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "Australia"
+   ],
+   "why": []
+  },
+  {
    "id": "daedf7c2200a",
    "title": "Assessment evidence guide for enterprise IT",
    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQUDRscGJXaFRHckJWMC1zOGRxRFVPTG1oYk5oem9WY3pUZkZHRVRGRVNkd0MtZ19qUGdnMmdxTjhiVjNqUG0xZG9wSGxIbnRfcUc4MGY5ajhiSk5hY2czTy1HODhHLTd0NDNWdlRTNGx6eDVibzJVUk1ET0NueEpRd0FWUkh0N1U?oc=5",
@@ -1998,21 +2083,6 @@
     "SaaS / cloud"
    ],
    "epss": 0.0478
-  },
-  {
-   "id": "502c877b3bd3",
-   "title": "Which chapter should I start with?",
-   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1PeDMyVE5zNFFyTDlOQ3ZzTDBNaXNtaHBMaExxU3g4Rm8zaVV2VXNZZnVucFQwTW0xSF82YVZnT0dlZFB1SEprZDVNSXNrRHZGaENuSFJuYUo4YnBROXRRN185SmF6SnZ4UE9QbXc4OHhEajNaOEg1TVBn?oc=5",
-   "source": "Australian Cyber Security",
-   "feed": "ACSC (via Google News)",
-   "region": "AU",
-   "published": "2026-10-15T06:00:42Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "Australia"
-   ],
-   "why": []
   },
   {
    "id": "f27586b6e439",
@@ -3653,7 +3723,17 @@
    "summary": "A small circuit board hidden under the signers’ screens read user data and transmitted it to the attackers. The post $86 Million Crypto Heist Linked to Ledger Signer Hardware Implant appeared first on SecurityWeek .",
    "score": 0,
    "tags": [],
-   "why": []
+   "why": [],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/ledger-confirms-hardware-wallet-spy-implant-behind-crypto-thefts/"
+    },
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/ledger-finds-unauthorized-hardware.html"
+    }
+   ]
   },
   {
    "id": "302530343dab",
@@ -4113,25 +4193,6 @@
    "why": [
     "Ransomware",
     "Data breach"
-   ]
-  },
-  {
-   "id": "28da8c245f5d",
-   "title": "Ledger confirms spy chip implant behind wallet crypto thefts",
-   "link": "https://www.bleepingcomputer.com/news/security/ledger-confirms-hardware-wallet-spy-implant-behind-crypto-thefts/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-12T16:27:23Z",
-   "summary": "Ledger has confirmed that some of its devices distributed through Southeast Asian reseller CryptoBilis were compromised with a hardware implant that drained users' cryptocurrency wallets. [...]",
-   "score": 0,
-   "tags": [],
-   "why": [],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/ledger-finds-unauthorized-hardware.html"
-    }
    ]
   },
   {
@@ -5423,28 +5484,6 @@
    "score": 1,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "6ea617158423",
-   "title": "CVE-2026-88779: Citrix NetScaler — Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-88779",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-10-04T00:00:00Z",
-   "summary": "Citrix NetScaler ADC (formerly Citrix ADC) and Citrix NetScaler Gateway (formerly Citrix Gateway) contain an improper restriction of operations within the bounds of a memory buffer vulnerability that could allow for a denial of service. CISA remediation due 2026-10-07.",
-   "score": 7,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "why": [
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "epss": 0.0059
   }
  ]
 }
