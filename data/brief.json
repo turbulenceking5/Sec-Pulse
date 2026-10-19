@@ -1,77 +1,88 @@
 {
- "date": "2026-10-19",
- "generated": "2026-10-18T21:25:19+00:00",
- "title": "Sec-Pulse brief - Mon 19 Oct",
+ "date": "2026-10-20",
+ "generated": "2026-10-19T22:32:11+00:00",
+ "title": "Sec-Pulse brief - Tue 20 Oct",
  "items": [
   {
-   "id": "8431a59751b6",
-   "title": "Florida Man Sentenced In Texas Federal Court To Over 4 Years For $3M Real Estate Scam",
-   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOdzJsQzNQLXF5OHBtaWxzOGo1dzhTQUNMejc5SXJFSXpnOW1SY1BIQURpQVV2LVlua3YyWUFKa05TY3lpTlMyZmplemNDdHM0R3NsTjNESVRTVEFaM2hFT0tWNkI0ejEzcUlwMUJqbng1bHZLWVN4TGtCQXByWXNwOG1IdlFIQQ?oc=5",
-   "source": "AOL.com",
+   "id": "30b695a4673c",
+   "title": "Sabre Cybersecurity Stops Wire Fraud Attempt Targeting Central Ohio Real Estate Closing",
+   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNZWdxVTR2dlRUM0pVbmhoWURaa016TWF3TGxrRTdRQTVESmctaHA4SFZlaVRRUDRZRGpnV2dkcmJ1clFxRmtTenUwNGtCanBUM25YT3A3c29GRnQwWDJqcVN3NExCdnZqUG9PWFIxelRKVGsxcjZtMklZUXlFZVg2T0xqN2RueTNWekZ2WlAzbDdFdVdzVTliN1dFRGZBVWtQNWxxWHN0Q1hWYUdxdDRkU0J3NzNNRlAycUFfWmlDcEJuUnBLamREakFFd3FuUkRqeVV6b0hB?oc=5",
+   "source": "USA Today",
    "region": "Global",
-   "published": "2026-10-18T14:33:19Z",
-   "score": 10,
+   "published": "2026-10-19T19:24:50Z",
+   "score": 20,
    "tags": [
-    "Real estate"
+    "Real estate",
+    "BEC / payment fraud",
+    "Microsoft 365"
    ],
    "summary": ""
   },
   {
-   "id": "a0eb11b81acb",
-   "title": "Silo Real Estate REA probe exposes unlicensed operator gap",
-   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOVXJDN0ZZSTYwczM4cWpDSzdTOGg4cVlscmQtSF8teGtRQ2hKMk0tR3R2YVVNSzl0N29xbnJZTmg5cUJybEJkQ3h6YzJUamFWalZ6RTNDTllleWk5a1g4eHhWVVctSmZJdW5hclJoa19SalQ0amk3M0tUbmk3Ry1GMzVIQ01kcWcyMWsyblVuaw?oc=5",
-   "source": "B2B News",
-   "region": "Global",
-   "published": "2026-10-17T20:40:54Z",
-   "score": 10,
+   "id": "6fa2fc15ec28",
+   "title": "AI Breach of Australian Healthcare Website Sparks Regulation Debate",
+   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOXzE0Rl9tTjZmcEk4QXFPOTZoWmU5QnNUUk96a2NkOTN5WHJyeFNvSVh1OTlQeGdUS3l0QzRsZTZqYl9fZ04teEhXYlVza0tLZjNaQ05XckJCaEhrOVRqOFNVWHA4MDk0emRGcnV3SklQLXJBM2xITDFUam0zX245S194UUYwY2swMVRKN0NrNDZEVXlxcUxFdUpoMUNpSzBpUE55N2hjNW94QjNNYUhLUHpXT0toeUItWkQ2a1VadU53RFFlcHdZdDRCTGs0RjR2UGc?oc=5",
+   "source": "Carolina Political Review",
+   "region": "AU",
+   "published": "2026-10-18T23:07:18Z",
+   "score": 13,
    "tags": [
-    "Real estate"
+    "Australia",
+    "Data breach"
    ],
    "summary": ""
   },
   {
-   "id": "74ff0a30f9fe",
-   "title": "Hackers exploit SiteGuard WAF flaw to run commands as admins",
-   "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-siteguard-waf-flaw-to-run-commands-as-system-root/",
-   "source": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-18T14:23:16Z",
-   "score": 1,
+   "id": "4579e8e957d5",
+   "title": "Australia 11th in Microsoft cyber report as phishing rises",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNU1Rra2NmZnFBVmFhTnBid1djT1UydndLNDMzajFkd3djZEFOeF9CU3JwSXVTWjlEM3A4YW14SDB4LW5UelUwVXJaYVM4Nm1rc1VJSG9uOHJ6d1JCWDYxb0J1cWVvci1ySTZfVFItclFZczdsSmRHMm5tT180NTFocXBOVkVYb2tVdXhxdXQ3R1ZQczFlajBPNA?oc=5",
+   "source": "SecurityBrief Australia",
+   "region": "AU",
+   "published": "2026-10-18T22:30:00Z",
+   "score": 13,
    "tags": [
-    "Vulnerability"
+    "Australia",
+    "Phishing"
    ],
-   "summary": "Attackers are targeting an OS command injection vulnerability in SiteGuard Server Edition that lets them execute commands as root or SYSTEM on affected servers. [...]"
+   "summary": ""
   },
   {
-   "id": "d33178f3f117",
-   "title": "Orphaned VBA Projects Inside DWG Files: YARA Rule, (Sun, Oct 18th)",
-   "link": "https://isc.sans.edu/diary/rss/33434",
-   "source": "SANS ISC",
+   "id": "3e1278093e93",
+   "title": "ConnectWise Disables Cloud Backups Amid Concerns for Downstream MSPs",
+   "link": "https://www.darkreading.com/identity-access-management-security/connectwise-disables-cloud-backups-downstream-msps",
+   "source": "Dark Reading",
    "region": "Global",
-   "published": "2026-10-18T12:59:30Z",
-   "score": 1,
-   "tags": [],
-   "summary": "Here is the YARA rule I used to detect \" Orphaned VBA Projects Inside DWG Files \"."
+   "published": "2026-10-19T19:19:33Z",
+   "score": 11,
+   "tags": [
+    "Real estate",
+    "Microsoft 365",
+    "Identity"
+   ],
+   "summary": "Researchers say attackers authenticated into Microsoft 365 tenants using ConnectWise credentials; ConnectWise says customer impact remains unconfirmed."
   },
   {
-   "id": "7e978702ff2e",
-   "title": "US Cybersecurity Job Postings Fall 26% as AI Security Engineer Demand Soars",
-   "link": "https://www.securityweek.com/us-cybersecurity-job-postings-fall-26-as-ai-security-engineer-demand-soars/",
-   "source": "SecurityWeek",
+   "id": "775a8ffb1a0d",
+   "title": "Frazer Ltd. Data Breach Lawsuit Investigation",
+   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5nVV9GaVBhNk1nRXBkTW1YN0RzcjJsSUpOVWl4aVFHUUJfaEFLRU41WUpDOFNNLWJHQ3h2VjJkYWNQLWxNSjZyTDdKVE5ISjZXb2FLblhhcWxtckE0dTRnenpkZWRDclBzX2djMVVaTldIUXZqSWR4Vw?oc=5",
+   "source": "Claim Depot",
    "region": "Global",
-   "published": "2026-10-18T11:00:00Z",
-   "score": 0,
-   "tags": [],
-   "summary": "CyberSN’s Cybersecurity Jobs Report provides visibility into the US cybersecurity job market. It’s a mixed bag. The post US Cybersecurity Job Postings Fall 26% as AI Security Engineer Demand Soars appeared first on SecurityWeek ."
+   "published": "2026-10-19T21:17:59Z",
+   "score": 10,
+   "tags": [
+    "Data breach",
+    "SaaS / cloud"
+   ],
+   "summary": ""
   }
  ],
  "stats": {
-  "recent": 5,
-  "au": 0,
+  "recent": 40,
+  "au": 2,
   "kev": 0
  },
  "lesson": {
-  "id": "1.1",
-  "title": "Architecture concepts for analysts"
+  "id": "1.2",
+  "title": "Indicators of malicious activity: network"
  }
 }
