@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T20:36:23Z",
+ "generated": "2026-10-19T22:32:01Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -34,13 +34,13 @@
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 7,
+   "count": 9,
    "error": null
   },
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 0,
+   "count": 1,
    "error": null
   },
   {
@@ -82,7 +82,7 @@
   {
    "name": "Microsoft Security Blog",
    "ok": true,
-   "count": 6,
+   "count": 3,
    "error": null
   },
   {
@@ -105,6 +105,72 @@
   }
  ],
  "items": [
+  {
+   "id": "5a8d0413be6f",
+   "title": "Nikkei discloses third data breach in a month, 1.8M records exposed",
+   "link": "https://www.bleepingcomputer.com/news/security/nikkei-discloses-third-data-breach-in-a-month-18m-records-exposed/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-19T21:49:48Z",
+   "summary": "Nikkei Inc. disclosed a new data breach, the third in about a month, that exposed 1.83 million personal information records. [...]",
+   "score": 4,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "775a8ffb1a0d",
+   "title": "Frazer Ltd. Data Breach Lawsuit Investigation",
+   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5nVV9GaVBhNk1nRXBkTW1YN0RzcjJsSUpOVWl4aVFHUUJfaEFLRU41WUpDOFNNLWJHQ3h2VjJkYWNQLWxNSjZyTDdKVE5ISjZXb2FLblhhcWxtckE0dTRnenpkZWRDclBzX2djMVVaTldIUXZqSWR4Vw?oc=5",
+   "source": "Claim Depot",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-19T21:17:59Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Data breach",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Data breach",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "cd2448e33b82",
+   "title": "Researchers Infiltrate Microsoft Tech Support Scam Operation",
+   "link": "https://www.darkreading.com/threat-intelligence/microsoft-tech-support-scam-operation",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-19T21:13:41Z",
+   "summary": "A large-scale scam operation impersonating Microsoft uses a malicious traffic distribution system (TDS) run by a Russian organization and abuses thousands of Cloudflare links.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "ecdd557607b2",
+   "title": "California settles 23andMe data breach claims for $6 million",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1XNXdyOUE2X2NMa3RwdlpDSGlSRXE0RUdtbG5qZHZYbEp6b254c0pJd2JuTXF5VTJtZ1hBTVVmRWVXdVVBakJEN0wwUkFUZEpia21MUlhFNDBuemhBUVc0SW5qYWlKNjF4VFlUUGgtcmlxZw?oc=5",
+   "source": "Rock Hill Herald",
+   "feed": "OAIC / Privacy news",
+   "region": "Global",
+   "published": "2026-10-19T21:00:00Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
   {
    "id": "553c25ef7794",
    "title": "'AdFection' Turns Ad Impressions Into Zero-Click Spyware Delivery",
@@ -130,6 +196,54 @@
      "source": "The Hacker News",
      "url": "https://thehackernews.com/2026/10/citizen-lab-traces-zero-click-candiru.html"
     }
+   ]
+  },
+  {
+   "id": "30b695a4673c",
+   "title": "Sabre Cybersecurity Stops Wire Fraud Attempt Targeting Central Ohio Real Estate Closing",
+   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNZWdxVTR2dlRUM0pVbmhoWURaa016TWF3TGxrRTdRQTVESmctaHA4SFZlaVRRUDRZRGpnV2dkcmJ1clFxRmtTenUwNGtCanBUM25YT3A3c29GRnQwWDJqcVN3NExCdnZqUG9PWFIxelRKVGsxcjZtMklZUXlFZVg2T0xqN2RueTNWekZ2WlAzbDdFdVdzVTliN1dFRGZBVWtQNWxxWHN0Q1hWYUdxdDRkU0J3NzNNRlAycUFfWmlDcEJuUnBLamREakFFd3FuUkRqeVV6b0hB?oc=5",
+   "source": "USA Today",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-19T19:24:50Z",
+   "summary": "",
+   "score": 20,
+   "tags": [
+    "Real estate",
+    "BEC / payment fraud",
+    "Microsoft 365"
+   ],
+   "why": [
+    "Real estate",
+    "BEC / payment fraud",
+    "Microsoft 365"
+   ],
+   "also": [
+    {
+     "source": "mykxlg.com",
+     "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxOYVRfUW5GRF80cERsNTZOU2RreTM0YkJiYU9rakg0c242N3I1aDg3cUFqVmFEVHpFZ2xJeE5sTEkyMXY0UmZaU0RNZkhVQWpsS0JyRGlZYjNYWEtRZHJ0cFRycnAwQUhtX0kwYld0OTdCMHFnR3F5S3JKMVN6TklFd09WNHFkSmNtQk5MZUdzblh1VmlvWGhRYmdGLVBqVl9FVWdlTDFQdm0yRGJ1alczaHVuT1kwc1pScjVkei15SUFPWkhoTTVPZjUtMTYyTEdmTEo2Y2JiTnhHRXhHMEJCbFY1bm5NcEtYc2RwY1FheXNROVl3YllBNGZlX0FBMlNqUE4zNFpleHRZY2hXaEZSYnViYnc5NVEzQ01F?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "3e1278093e93",
+   "title": "ConnectWise Disables Cloud Backups Amid Concerns for Downstream MSPs",
+   "link": "https://www.darkreading.com/identity-access-management-security/connectwise-disables-cloud-backups-downstream-msps",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-19T19:19:33Z",
+   "summary": "Researchers say attackers authenticated into Microsoft 365 tenants using ConnectWise credentials; ConnectWise says customer impact remains unconfirmed.",
+   "score": 11,
+   "tags": [
+    "Real estate",
+    "Microsoft 365",
+    "Identity"
+   ],
+   "why": [
+    "Real estate",
+    "Microsoft 365",
+    "Identity"
    ]
   },
   {
@@ -179,27 +293,6 @@
    ],
    "why": [
     "Data breach"
-   ]
-  },
-  {
-   "id": "2c0424db18b3",
-   "title": "Sabre Cybersecurity Stops Wire Fraud Attempt Targeting Central Ohio Real Estate Closing",
-   "link": "https://news.google.com/rss/articles/CBMimwJBVV95cUxOYVRfUW5GRF80cERsNTZOU2RreTM0YkJiYU9rakg0c242N3I1aDg3cUFqVmFEVHpFZ2xJeE5sTEkyMXY0UmZaU0RNZkhVQWpsS0JyRGlZYjNYWEtRZHJ0cFRycnAwQUhtX0kwYld0OTdCMHFnR3F5S3JKMVN6TklFd09WNHFkSmNtQk5MZUdzblh1VmlvWGhRYmdGLVBqVl9FVWdlTDFQdm0yRGJ1alczaHVuT1kwc1pScjVkei15SUFPWkhoTTVPZjUtMTYyTEdmTEo2Y2JiTnhHRXhHMEJCbFY1bm5NcEtYc2RwY1FheXNROVl3YllBNGZlX0FBMlNqUE4zNFpleHRZY2hXaEZSYnViYnc5NVEzQ01F?oc=5",
-   "source": "mykxlg.com",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-19T17:45:02Z",
-   "summary": "",
-   "score": 20,
-   "tags": [
-    "Real estate",
-    "BEC / payment fraud",
-    "Microsoft 365"
-   ],
-   "why": [
-    "Real estate",
-    "BEC / payment fraud",
-    "Microsoft 365"
    ]
   },
   {
@@ -258,6 +351,10 @@
     {
      "source": "The Hacker News",
      "url": "https://thehackernews.com/2026/10/popular-wordpress-seo-plugin-rank-math.html"
+    },
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/wordpress-seo-plugin-rank-math-compromised-to-backdoor-websites/"
     }
    ]
   },
@@ -1176,6 +1273,25 @@
    ],
    "why": [
     "Vulnerability"
+   ]
+  },
+  {
+   "id": "50880c900177",
+   "title": "Targeted ads installed Candiru spyware in zero-click attacks",
+   "link": "https://www.bleepingcomputer.com/news/security/zero-click-attacks-used-targeted-ads-to-deliver-candiru-spyware/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-16T17:20:03Z",
+   "summary": "Candiru spyware was delivered to devices at Al Jazeera Media Network via targeted online advertisements in a zero-click attack that required only rendering the malicious ads on the victim's device. [...]",
+   "score": 0,
+   "tags": [],
+   "why": [],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/citizen-lab-traces-zero-click-candiru.html"
+    }
    ]
   },
   {
@@ -3952,6 +4068,12 @@
     "Edge devices",
     "Vulnerability",
     "SaaS / cloud"
+   ],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/ivanti-warns-of-connect-secure-zero-day-exploited-in-attacks/"
+    }
    ]
   },
   {
@@ -4079,27 +4201,6 @@
      "source": "The Hacker News",
      "url": "https://thehackernews.com/2026/10/github-tightens-npm-publishing-after.html"
     }
-   ]
-  },
-  {
-   "id": "c63069ba1c8d",
-   "title": "Ivanti warns of Connect Secure zero-day exploited in attacks",
-   "link": "https://www.bleepingcomputer.com/news/security/ivanti-warns-of-connect-secure-zero-day-exploited-in-attacks/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-13T15:45:50Z",
-   "summary": "Ivanti urged customers on Tuesday to immediately patch an actively exploited zero-day vulnerability in the Ivanti Connect Secure (ICS) remote access gateway. [...]",
-   "score": 9,
-   "tags": [
-    "Actively exploited",
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "why": [
-    "Actively exploited",
-    "Edge devices",
-    "Vulnerability"
    ]
   },
   {
