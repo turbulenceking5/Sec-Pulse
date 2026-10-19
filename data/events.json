@@ -1,0 +1,23 @@
+{
+  "updated": "2026-10-19",
+  "note": "Hand-maintained. Dates checked against organiser sites on the 'updated' date; 'tentative' = announced only by a listing or social post. Past events are hidden by the app. See context/events.md.",
+  "events": [
+    {"id": "bsides-sydney-2026", "name": "BSides Sydney", "start": "2026-11-07", "end": "2026-11-07", "city": "Sydney", "state": "NSW", "venue": "Cyber Range Training Centre, TAFE Meadowbank", "url": "https://www.bsides.sydney/", "kind": "community"},
+    {"id": "bsides-perth-2026", "name": "BSides Perth", "start": "2026-11-13", "end": "2026-11-14", "city": "Perth", "state": "WA", "venue": "UWA Business School, Crawley", "url": "https://bsidesperth.com.au/", "kind": "community"},
+    {"id": "perthsec-2026", "name": "PerthSec (AISA Security Days)", "start": "2026-11-18", "end": "2026-11-18", "city": "Perth", "state": "WA", "url": "https://aisasecuritydays.com.au/perthsec", "kind": "industry"},
+    {"id": "roocon-2026", "name": "RooCon", "start": "2026-11-18", "end": "2026-11-19", "city": "Sydney", "state": "NSW", "url": "https://x.com/RooCon_AU", "kind": "community", "tentative": true},
+    {"id": "cs4ca-anz-2027", "name": "CS4CA ANZ Summit (OT security)", "start": "2027-02-09", "end": "2027-02-10", "city": "Perth", "state": "WA", "url": "https://anz.cs4ca.com/", "kind": "industry"},
+    {"id": "appsec-devsecops-syd-2027", "name": "AppSec & DevSecOps Sydney", "start": "2027-02-10", "end": "2027-02-10", "city": "Sydney", "state": "NSW", "url": "https://appsec-devsecops-syd.coriniumintelligence.com/", "kind": "industry"},
+    {"id": "cosac-apac-2027", "name": "COSAC APAC", "start": "2027-02-23", "end": "2027-02-25", "city": "Melbourne", "state": "VIC", "url": "https://cosac.net/apac/", "kind": "industry"},
+    {"id": "gartner-sydney-2027", "name": "Gartner Cybersecurity & Risk Management Summit", "start": "2027-03-15", "end": "2027-03-16", "city": "Sydney", "state": "NSW", "venue": "ICC Sydney", "url": "https://www.gartner.com/en/conferences/apac/security-risk-management-australia", "kind": "industry"},
+    {"id": "crikeycon-2027", "name": "CrikeyCon 12", "start": "2027-04-17", "end": "2027-04-17", "city": "Brisbane", "state": "QLD", "url": "https://crikeycon.com/", "kind": "community"},
+    {"id": "auscert-2027", "name": "AUSCERT Cyber Security Conference", "start": "2027-05-18", "end": "2027-05-21", "city": "Gold Coast", "state": "QLD", "venue": "RACV Royal Pines, Benowa", "url": "https://conference.auscert.org.au/", "kind": "industry"},
+    {"id": "bsides-brisbane-2027", "name": "BSides Brisbane", "start": "2027-07-10", "end": "2027-07-10", "city": "Brisbane", "state": "QLD", "venue": "QUT Gardens Point, Z Block", "url": "https://bsidesbrisbane.com/", "kind": "community"},
+    {"id": "cybercon-2027", "name": "AISA CyberCon (Australian Cyber Conference)", "start": "2027-10-18", "end": "2027-10-20", "city": "Melbourne", "state": "VIC", "url": "https://www.cyberconference.com.au/", "kind": "industry", "tentative": true}
+  ],
+  "meetups": [
+    {"name": "SecTalks Brisbane", "url": "https://www.sectalks.org/", "note": "Free monthly talks and CTFs"},
+    {"name": "OWASP Brisbane", "url": "https://owasp.org/www-chapter-brisbane/", "note": "Application security chapter"},
+    {"name": "AISA Brisbane branch", "url": "https://aisa.org.au/", "note": "Australian Information Security Association events"}
+  ]
+}
