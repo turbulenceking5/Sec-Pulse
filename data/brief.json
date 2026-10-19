@@ -1,30 +1,30 @@
 {
- "date": "2026-10-18",
- "generated": "2026-10-17T22:45:02+00:00",
- "title": "Sec-Pulse brief - Sun 18 Oct",
+ "date": "2026-10-20",
+ "generated": "2026-10-19T22:32:11+00:00",
+ "title": "Sec-Pulse brief - Tue 20 Oct",
  "items": [
   {
-   "id": "74a44f824ba0",
-   "title": "Hackers breach Microsoft 365 tenants via ConnectWise supply-chain attack",
-   "link": "https://www.bleepingcomputer.com/news/security/hackers-breach-microsoft-365-tenants-via-connectwise-supply-chain-attack/",
-   "source": "BleepingComputer",
+   "id": "30b695a4673c",
+   "title": "Sabre Cybersecurity Stops Wire Fraud Attempt Targeting Central Ohio Real Estate Closing",
+   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNZWdxVTR2dlRUM0pVbmhoWURaa016TWF3TGxrRTdRQTVESmctaHA4SFZlaVRRUDRZRGpnV2dkcmJ1clFxRmtTenUwNGtCanBUM25YT3A3c29GRnQwWDJqcVN3NExCdnZqUG9PWFIxelRKVGsxcjZtMklZUXlFZVg2T0xqN2RueTNWekZ2WlAzbDdFdVdzVTliN1dFRGZBVWtQNWxxWHN0Q1hWYUdxdDRkU0J3NzNNRlAycUFfWmlDcEJuUnBLamREakFFd3FuUkRqeVV6b0hB?oc=5",
+   "source": "USA Today",
    "region": "Global",
-   "published": "2026-10-17T15:18:51Z",
-   "score": 15,
+   "published": "2026-10-19T19:24:50Z",
+   "score": 20,
    "tags": [
     "Real estate",
-    "Microsoft 365",
-    "Data breach"
+    "BEC / payment fraud",
+    "Microsoft 365"
    ],
-   "summary": "ConnectWise has shut down customer access to its Cloud Backup service (formerly SkyKick Cloud Backup) after hackers accessed application identities and compromised Microsoft 365 tenants. [...]"
+   "summary": ""
   },
   {
-   "id": "bd3a9d6713d9",
-   "title": "Napoleon Perdis reports data breach affecting 339,000 customers — ABC News Australia",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQQTlyS2xmT3B3ZEw5ajlYWl9hY1h0SGlGekJKR0JEM1piQm5ibFZtUENncWVUbUxhbUJNdXhRajBIX0stUlh2SG1pbnRqdDNkTzh5bUVGYTdaaTJiODFoYnJWYnN5X1c4bEJBWWVuWjUteUt0WEtqYi1kN2tqS0Y4NkpNbm8tekhiQlQyS3pDUmtOamozRG1aQURVVnRyTG5ieFFSMFVkUUlWWlFvaXc?oc=5",
-   "source": "UA.NEWS",
+   "id": "6fa2fc15ec28",
+   "title": "AI Breach of Australian Healthcare Website Sparks Regulation Debate",
+   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOXzE0Rl9tTjZmcEk4QXFPOTZoWmU5QnNUUk96a2NkOTN5WHJyeFNvSVh1OTlQeGdUS3l0QzRsZTZqYl9fZ04teEhXYlVza0tLZjNaQ05XckJCaEhrOVRqOFNVWHA4MDk0emRGcnV3SklQLXJBM2xITDFUam0zX245S194UUYwY2swMVRKN0NrNDZEVXlxcUxFdUpoMUNpSzBpUE55N2hjNW94QjNNYUhLUHpXT0toeUItWkQ2a1VadU53RFFlcHdZdDRCTGs0RjR2UGc?oc=5",
+   "source": "Carolina Political Review",
    "region": "AU",
-   "published": "2026-10-17T06:44:13Z",
+   "published": "2026-10-18T23:07:18Z",
    "score": 13,
    "tags": [
     "Australia",
@@ -33,53 +33,56 @@
    "summary": ""
   },
   {
-   "id": "c452fd369354",
-   "title": "Redfin, Rocket hit with lawsuit over alleged breach of employee data",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOaU1ibDI4b29SbG00NFliRHhCQmJwUGNsLTZnRDNNMklDM0E1UThXbGVJOXFRamhENGpBMmI3TEE3Si1TTWREb2pJbnNBeE1UYkZjYWNwRVhxSllIR3QxeG5ndjVaTHRjelFpT3VoVUd1Y3ZCbEVJandPTFZvekppTGZ3Ujg4MTNRRHVFdFBRajA2dldDaTRfQVBHWHhlQQ?oc=5",
-   "source": "The Spokesman-Review",
+   "id": "4579e8e957d5",
+   "title": "Australia 11th in Microsoft cyber report as phishing rises",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNU1Rra2NmZnFBVmFhTnBid1djT1UydndLNDMzajFkd3djZEFOeF9CU3JwSXVTWjlEM3A4YW14SDB4LW5UelUwVXJaYVM4Nm1rc1VJSG9uOHJ6d1JCWDYxb0J1cWVvci1ySTZfVFItclFZczdsSmRHMm5tT180NTFocXBOVkVYb2tVdXhxdXQ3R1ZQczFlajBPNA?oc=5",
+   "source": "SecurityBrief Australia",
+   "region": "AU",
+   "published": "2026-10-18T22:30:00Z",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Phishing"
+   ],
+   "summary": ""
+  },
+  {
+   "id": "3e1278093e93",
+   "title": "ConnectWise Disables Cloud Backups Amid Concerns for Downstream MSPs",
+   "link": "https://www.darkreading.com/identity-access-management-security/connectwise-disables-cloud-backups-downstream-msps",
+   "source": "Dark Reading",
    "region": "Global",
-   "published": "2026-10-16T23:52:00Z",
+   "published": "2026-10-19T19:19:33Z",
+   "score": 11,
+   "tags": [
+    "Real estate",
+    "Microsoft 365",
+    "Identity"
+   ],
+   "summary": "Researchers say attackers authenticated into Microsoft 365 tenants using ConnectWise credentials; ConnectWise says customer impact remains unconfirmed."
+  },
+  {
+   "id": "775a8ffb1a0d",
+   "title": "Frazer Ltd. Data Breach Lawsuit Investigation",
+   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5nVV9GaVBhNk1nRXBkTW1YN0RzcjJsSUpOVWl4aVFHUUJfaEFLRU41WUpDOFNNLWJHQ3h2VjJkYWNQLWxNSjZyTDdKVE5ISjZXb2FLblhhcWxtckE0dTRnenpkZWRDclBzX2djMVVaTldIUXZqSWR4Vw?oc=5",
+   "source": "Claim Depot",
+   "region": "Global",
+   "published": "2026-10-19T21:17:59Z",
    "score": 10,
    "tags": [
     "Data breach",
     "SaaS / cloud"
    ],
    "summary": ""
-  },
-  {
-   "id": "1396deafd01c",
-   "title": "Rental scam alert warning: Scammer poses as homeowners to rent homes that aren't for rent in North Carolina",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQZ2pOWXpTRVV1V0ZHM2lhcWhrbHRHcmljdktqaHdVeGtQXzJrT1hZRlhMRXVjYVFNX3N1c3I1bWMzVWFaVDczLTBVWEw4YlhTV1lRa1ZlNDRLWVdkVUIxYTROSDZrSHB4UXZ1cXM4N1FERmxBMWVmUGdYbkRxUGpUWDVvb2dlZkRHU2VMSDgzSEMwSjBaR2dyLVBlTzlpM1BWVmZTamZudUZDUk9qU2pQaHdqaGNkV3Awalo00gG7AUFVX3lxTFBnak5ZelNFVXVXRkczaWFxaGtsdEdyaWN2S2pod1V4a1BfMmtPWFlGWExFdWNhUU1fc3VzcjVtYzNVYVpUNzMtMFVYTDhiWFNXWVFrVmU0NEtZV2RVQjFhNE5INmtIcHhRdnVxczg3UURGbEExZWZQZ1huRHFQalRYNW9vZ2VmREdTZUxIODNIQzBKMFpHZ3ItUGVPOWkzUFZWZlNqZm51RkNST2pTalBod2poY2RXcDBqWjQ?oc=5",
-   "source": "ABC11 News",
-   "region": "Global",
-   "published": "2026-10-16T21:43:52Z",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "8fcaa4195067",
-   "title": "Accused Beijing Agent’s Underground Money Transfers and Real Estate Circle Bring MSS Spy Case Into Cartel and Scam Compound Terrain",
-   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1OUEVYUFNxeElrcVJkUDNXcnhVaU5FWm95Y1BQb2xaaEwzZ2xWamdfcDFuRmRrT0o1SkFpZS0walNVdUpQb3p5TlR0N29zNDJRY2ZTcXU2WllLNUNJdV9HcTVnZWdzLTRaQVRpWWxScGk?oc=5",
-   "source": "The Bureau | Sam Cooper | Substack",
-   "region": "Global",
-   "published": "2026-10-16T17:15:12Z",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "summary": ""
   }
  ],
  "stats": {
-  "recent": 19,
-  "au": 1,
+  "recent": 40,
+  "au": 2,
   "kev": 0
  },
  "lesson": {
-  "id": "4.5",
-  "title": "Writing an incident report"
+  "id": "1.2",
+  "title": "Indicators of malicious activity: network"
  }
 }

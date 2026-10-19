@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-18T04:37:35Z",
+ "generated": "2026-10-19T22:32:01Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -16,31 +16,31 @@
   {
    "name": "ACSC (via Google News)",
    "ok": true,
-   "count": 3,
+   "count": 1,
    "error": null
   },
   {
    "name": "ASD / ACSC in the news",
    "ok": true,
-   "count": 2,
+   "count": 0,
    "error": null
   },
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 6,
+   "count": 7,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 6,
+   "count": 9,
    "error": null
   },
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 2,
+   "count": 1,
    "error": null
   },
   {
@@ -52,7 +52,7 @@
   {
    "name": "CISA KEV",
    "ok": true,
-   "count": 15,
+   "count": 14,
    "error": null
   },
   {
@@ -70,7 +70,7 @@
   {
    "name": "Krebs on Security",
    "ok": true,
-   "count": 4,
+   "count": 5,
    "error": null
   },
   {
@@ -82,7 +82,7 @@
   {
    "name": "Microsoft Security Blog",
    "ok": true,
-   "count": 5,
+   "count": 3,
    "error": null
   },
   {
@@ -100,11 +100,822 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 23,
+   "count": 21,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "5a8d0413be6f",
+   "title": "Nikkei discloses third data breach in a month, 1.8M records exposed",
+   "link": "https://www.bleepingcomputer.com/news/security/nikkei-discloses-third-data-breach-in-a-month-18m-records-exposed/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-19T21:49:48Z",
+   "summary": "Nikkei Inc. disclosed a new data breach, the third in about a month, that exposed 1.83 million personal information records. [...]",
+   "score": 4,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "775a8ffb1a0d",
+   "title": "Frazer Ltd. Data Breach Lawsuit Investigation",
+   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5nVV9GaVBhNk1nRXBkTW1YN0RzcjJsSUpOVWl4aVFHUUJfaEFLRU41WUpDOFNNLWJHQ3h2VjJkYWNQLWxNSjZyTDdKVE5ISjZXb2FLblhhcWxtckE0dTRnenpkZWRDclBzX2djMVVaTldIUXZqSWR4Vw?oc=5",
+   "source": "Claim Depot",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-19T21:17:59Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Data breach",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Data breach",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "cd2448e33b82",
+   "title": "Researchers Infiltrate Microsoft Tech Support Scam Operation",
+   "link": "https://www.darkreading.com/threat-intelligence/microsoft-tech-support-scam-operation",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-19T21:13:41Z",
+   "summary": "A large-scale scam operation impersonating Microsoft uses a malicious traffic distribution system (TDS) run by a Russian organization and abuses thousands of Cloudflare links.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "ecdd557607b2",
+   "title": "California settles 23andMe data breach claims for $6 million",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1XNXdyOUE2X2NMa3RwdlpDSGlSRXE0RUdtbG5qZHZYbEp6b254c0pJd2JuTXF5VTJtZ1hBTVVmRWVXdVVBakJEN0wwUkFUZEpia21MUlhFNDBuemhBUVc0SW5qYWlKNjF4VFlUUGgtcmlxZw?oc=5",
+   "source": "Rock Hill Herald",
+   "feed": "OAIC / Privacy news",
+   "region": "Global",
+   "published": "2026-10-19T21:00:00Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "553c25ef7794",
+   "title": "'AdFection' Turns Ad Impressions Into Zero-Click Spyware Delivery",
+   "link": "https://www.darkreading.com/data-privacy/adfection-online-ads-spyware-delivery",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-19T19:55:01Z",
+   "summary": "Spyware vendors are exploiting targeted ad bidding in the digital ecosystem to identify and track individuals and organizations of interest.",
+   "score": 0,
+   "tags": [],
+   "why": [],
+   "also": [
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/israeli-ad-firm-doubled-as-candirus-zero-click-spyware-delivery-channel/"
+    },
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/zero-click-attacks-used-targeted-ads-to-deliver-candiru-spyware/"
+    },
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/citizen-lab-traces-zero-click-candiru.html"
+    }
+   ]
+  },
+  {
+   "id": "30b695a4673c",
+   "title": "Sabre Cybersecurity Stops Wire Fraud Attempt Targeting Central Ohio Real Estate Closing",
+   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNZWdxVTR2dlRUM0pVbmhoWURaa016TWF3TGxrRTdRQTVESmctaHA4SFZlaVRRUDRZRGpnV2dkcmJ1clFxRmtTenUwNGtCanBUM25YT3A3c29GRnQwWDJqcVN3NExCdnZqUG9PWFIxelRKVGsxcjZtMklZUXlFZVg2T0xqN2RueTNWekZ2WlAzbDdFdVdzVTliN1dFRGZBVWtQNWxxWHN0Q1hWYUdxdDRkU0J3NzNNRlAycUFfWmlDcEJuUnBLamREakFFd3FuUkRqeVV6b0hB?oc=5",
+   "source": "USA Today",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-19T19:24:50Z",
+   "summary": "",
+   "score": 20,
+   "tags": [
+    "Real estate",
+    "BEC / payment fraud",
+    "Microsoft 365"
+   ],
+   "why": [
+    "Real estate",
+    "BEC / payment fraud",
+    "Microsoft 365"
+   ],
+   "also": [
+    {
+     "source": "mykxlg.com",
+     "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxOYVRfUW5GRF80cERsNTZOU2RreTM0YkJiYU9rakg0c242N3I1aDg3cUFqVmFEVHpFZ2xJeE5sTEkyMXY0UmZaU0RNZkhVQWpsS0JyRGlZYjNYWEtRZHJ0cFRycnAwQUhtX0kwYld0OTdCMHFnR3F5S3JKMVN6TklFd09WNHFkSmNtQk5MZUdzblh1VmlvWGhRYmdGLVBqVl9FVWdlTDFQdm0yRGJ1alczaHVuT1kwc1pScjVkei15SUFPWkhoTTVPZjUtMTYyTEdmTEo2Y2JiTnhHRXhHMEJCbFY1bm5NcEtYc2RwY1FheXNROVl3YllBNGZlX0FBMlNqUE4zNFpleHRZY2hXaEZSYnViYnc5NVEzQ01F?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "3e1278093e93",
+   "title": "ConnectWise Disables Cloud Backups Amid Concerns for Downstream MSPs",
+   "link": "https://www.darkreading.com/identity-access-management-security/connectwise-disables-cloud-backups-downstream-msps",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-19T19:19:33Z",
+   "summary": "Researchers say attackers authenticated into Microsoft 365 tenants using ConnectWise credentials; ConnectWise says customer impact remains unconfirmed.",
+   "score": 11,
+   "tags": [
+    "Real estate",
+    "Microsoft 365",
+    "Identity"
+   ],
+   "why": [
+    "Real estate",
+    "Microsoft 365",
+    "Identity"
+   ]
+  },
+  {
+   "id": "06accfcb31a1",
+   "title": "Bullhorn takes staffing platform offline to contain cyberattack",
+   "link": "https://www.bleepingcomputer.com/news/security/bullhorn-takes-staffing-platform-offline-to-contain-cyberattack/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-19T18:51:13Z",
+   "summary": "Staffing software company Bullhorn has disabled access to its platform to contain a cyberattack that caused a system-wide outage. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "561dd3f2eda5",
+   "title": "Siemens Software Center Vulnerability Exploited in ClickFix Malware Attacks",
+   "link": "https://www.securityweek.com/siemens-software-center-vulnerability-exploited-in-clickfix-malware-attacks/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-19T18:15:39Z",
+   "summary": "Attackers paired a genuine, signed copy of Siemens Software Center with malicious DLLs to infect Windows PCs via ClickFix lures. The post Siemens Software Center Vulnerability Exploited in ClickFix Malware Attacks appeared first on SecurityWeek .",
+   "score": 5,
+   "tags": [
+    "Phishing",
+    "Vulnerability"
+   ],
+   "why": [
+    "Phishing",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "3763fb67ea2a",
+   "title": "One Hacker Used AI Agents to Breach More Than 100 Websites",
+   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1SQklFSWJ0Q2VyNFFwbUhOZG1tSjd2SlNNN0gzd0xlYXJFYUx0R3ktcDlkQW5TbkRvbUY0M0FGS2xhTEtEdEhsckZjdHhwR3FFMnlNZy1nQjRaWS1hdC1HY3lDU3htalhLWkVaamNZZERaRGN1dHpmNw?oc=5",
+   "source": "The420.in",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-19T17:55:40Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "143bfdf19e2b",
+   "title": "Hackers Exploit Plex2Shell Flaws to Install Crypto Miners and Linux Proxy Backdoor",
+   "link": "https://thehackernews.com/2026/10/hackers-exploit-plex2shell-flaws-to.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-19T17:32:13Z",
+   "summary": "Threat actors have begun to exploit a chain of vulnerabilities in Plex Media Server to deploy cryptocurrency miners and reverse proxy software, a day after a proof-of-concept (PoC) went public. According to a researcher who goes by the online alias boredhackerblog, the exploitation activity…",
+   "score": 3,
+   "tags": [
+    "SaaS / cloud"
+   ],
+   "why": [
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "c2afa7723501",
+   "title": "Drupal Warns of Fast Exploitation Risk for Critical Core RCE Flaw",
+   "link": "https://www.securityweek.com/drupal-warns-of-fast-exploitation-risk-for-critical-core-rce-flaw/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-19T15:47:50Z",
+   "summary": "Critical flaws impact the Entity List and Field UI modules, and exploit paths exist with contributed modules. The post Drupal Warns of Fast Exploitation Risk for Critical Core RCE Flaw appeared first on SecurityWeek .",
+   "score": 4,
+   "tags": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "c513afb9763b",
+   "title": "Rank Math PRO WordPress Plugin Compromised in Supply Chain Attack",
+   "link": "https://www.securityweek.com/rank-math-pro-wordpress-plugin-compromised-in-supply-chain-attack/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-19T15:20:53Z",
+   "summary": "Hackers injected malware into Rank Math PRO version 3.0.123 packages distributed between October 15 and October 16. The post Rank Math PRO WordPress Plugin Compromised in Supply Chain Attack appeared first on SecurityWeek .",
+   "score": 3,
+   "tags": [
+    "SaaS / cloud"
+   ],
+   "why": [
+    "SaaS / cloud"
+   ],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/popular-wordpress-seo-plugin-rank-math.html"
+    },
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/wordpress-seo-plugin-rank-math-compromised-to-backdoor-websites/"
+    }
+   ]
+  },
+  {
+   "id": "6e689f58716d",
+   "title": "Microsoft fixes game, app crashes caused by recent Windows update",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-game-app-crashes-caused-by-windows-kb5124010-preview-update/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-19T14:55:23Z",
+   "summary": "Microsoft has resolved a bug that caused games and apps using AC-3 (Dolby Digital) audio decoding to crash after installing the September 2026 Windows 11 preview update (KB5124010). [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "e4ddb72db383",
+   "title": "OnlyFans Copyright Takedowns Expose Compromised Websites",
+   "link": "https://www.darkreading.com/vulnerabilities-threats/onlyfans-copyright-takedowns-expose-compromised-websites",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-19T14:28:11Z",
+   "summary": "Copyright takedown requests tied to OnlyFans and other adult content creators are revealing how attackers exploit vulnerable university and government websites to manipulate search results. UpGuard's Greg Pollock explains what universities, government websites, and security teams need to think…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "03d3ba9d36cc",
+   "title": "⚡ Weekly Recap: 98 Zero-Days, Rogue AI Agents, $100M Crypto Theft, 700 Supermarkets Hit and More",
+   "link": "https://thehackernews.com/2026/10/weekly-recap-98-zero-days-rogue-ai.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-19T14:14:07Z",
+   "summary": "The worst problems don't always come with a warning. Sometimes they arrive through a service everyone trusts, a device someone bought, or a system nobody thought to check. By the time something looks wrong, the damage may already be done. This week had plenty of that. Trusted connections became a…",
+   "score": 5,
+   "tags": [
+    "Actively exploited"
+   ],
+   "why": [
+    "Actively exploited"
+   ]
+  },
+  {
+   "id": "10c7257940cc",
+   "title": "Inside the Underground Market for Know Your Client Services",
+   "link": "https://www.bleepingcomputer.com/news/security/inside-the-underground-market-for-know-your-client-services/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-19T14:00:10Z",
+   "summary": "Cybercriminals are selling forged identity documents, deepfake videos, and live verification services to help buyers bypass Know Your Client (KYC) checks. Flare examines how these underground services operate and the techniques used to create and maintain fraudulent verified accounts. [...]",
+   "score": 1,
+   "tags": [
+    "AI threats"
+   ],
+   "why": [
+    "AI threats"
+   ]
+  },
+  {
+   "id": "6e8696034a92",
+   "title": "The Evolving Cybersecurity Lexicon: Vulnerability Discovery to Resilience",
+   "link": "https://www.darkreading.com/vulnerabilities-threats/cybersecurity-lexicon-vulnerability-discovery-resilience",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-19T14:00:00Z",
+   "summary": "An industry-wide laser focus on vulnerabilities has left cybersecurity teams without enough room to strategize for resilience.",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "59b0e474cfa7",
+   "title": "F5 releases out-of-band patches for critical NGINX vulnerabilities",
+   "link": "https://www.bleepingcomputer.com/news/security/f5-releases-out-of-band-patches-for-critical-nginx-vulnerabilities/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-19T13:49:24Z",
+   "summary": "F5 has released out-of-band security patches to address multiple NGINX web server flaws, including three critical-severity vulnerabilities that can let attackers execute code on vulnerable systems. [...]",
+   "score": 4,
+   "tags": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "5f2037864b2f",
+   "title": "Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site",
+   "link": "https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/",
+   "source": "Krebs on Security",
+   "feed": "Krebs on Security",
+   "region": "Global",
+   "published": "2026-10-19T13:48:56Z",
+   "summary": "U.S. federal investigators pursuing the ShinyHunters hacking group that recently stole highly sensitive data from the FBI have identified executives at two different ransomware negotiation firms who maintained unusually close relations with the extortion group, KrebsOnSecurity has learned. Sources…",
+   "score": 6,
+   "tags": [
+    "Ransomware",
+    "Vulnerability"
+   ],
+   "why": [
+    "Ransomware",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "47f4fcfb349a",
+   "title": "GhostAction Attackers Plant Credential Stealer Disguised as Font in 94 GitHub Repositories",
+   "link": "https://thehackernews.com/2026/10/ghostaction-attackers-plant-credential.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-19T13:05:45Z",
+   "summary": "The threat actor behind the GhostAction supply chain attack has expanded beyond injecting malicious GitHub Actions workflows into compromised projects to phish open-source developers and deliver a stealer malware disguised within a fake font file. The latest evolution, detailed by…",
+   "score": 6,
+   "tags": [
+    "Identity",
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Identity",
+    "Vulnerability",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "cd30eb68866b",
+   "title": "Agents are your newest insiders. Security must move at their speed.",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/10/19/agents-are-your-newest-insiders-security-must-move-at-their-speed/",
+   "source": "Microsoft Security Blog",
+   "feed": "Microsoft Security Blog",
+   "region": "Global",
+   "published": "2026-10-19T13:00:00Z",
+   "summary": "New capabilities in Microsoft 365 E7 and Project Perception help organizations contain agent risk and adapt protection continuously. The post Agents are your newest insiders. Security must move at their speed. appeared first on Microsoft Security Blog .",
+   "score": 5,
+   "tags": [
+    "Microsoft 365",
+    "Vulnerability"
+   ],
+   "why": [
+    "Microsoft 365",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "1f63abf1d8df",
+   "title": "Microsoft fixes classic Outlook bug that hid Copilot buttons",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-bug-that-hid-copilot-buttons-in-classic-outlook/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-19T12:44:44Z",
+   "summary": "Microsoft has fixed a known issue that removed the Copilot Chat and Copilot buttons in the classic Outlook desktop mail client for some Windows users. [...]",
+   "score": 4,
+   "tags": [
+    "Microsoft 365"
+   ],
+   "why": [
+    "Microsoft 365"
+   ]
+  },
+  {
+   "id": "bcca2fd24d4b",
+   "title": "Plex2Shell Exploit Chain Weaponized Against Plex Servers Hours After Disclosure",
+   "link": "https://www.securityweek.com/plex2shell-exploit-chain-weaponized-against-plex-servers-hours-after-disclosure/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-19T12:44:39Z",
+   "summary": "Threat actors have been observed delivering cryptocurrency miners and proxy software. The post Plex2Shell Exploit Chain Weaponized Against Plex Servers Hours After Disclosure appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "afb21bb14d6f",
+   "title": "Whopper of a data breach sees Burger King Japan expose over 11 million customer records",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPOXN2ck12M0w0bnJFSFRwMmpEbjBTUUg5ZTV2MnZNeG9oYnZBdmtVWE9jcEVib3lUSnpBSXpZSmhZUzJxODhUTUkwVC1xRzhHRndNcE1Za3dnYTFNYzVPZ3dCQmdJUk5rMnhvcXVhZVVlRWpUaGRaWmJEbUhxVG84akZHNzdhZXhtdmZna1ZTb2hIT2QxeG1VVGRtV1JQWjl4M2U0M3BpZTA3SnBWRDBuTl9lclo3YzZYR19QNVM4dkxvN1VI?oc=5",
+   "source": "TechRadar",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-19T12:05:00Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "6e3176643ea9",
+   "title": "One Compromised Login Exposed Millions of California Students’ Records",
+   "link": "https://www.securityweek.com/one-compromised-login-exposed-millions-of-california-students-records/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-19T11:55:50Z",
+   "summary": "Intruders used compromised credentials to access an ETS SFTP server, copying records of California students back to 2006. The post One Compromised Login Exposed Millions of California Students’ Records appeared first on SecurityWeek .",
+   "score": 6,
+   "tags": [
+    "Data breach",
+    "Identity"
+   ],
+   "why": [
+    "Data breach",
+    "Identity"
+   ]
+  },
+  {
+   "id": "5ae38a63e473",
+   "title": "From Email-to-Case to the Boardroom: How Inherited Agents Break Governance Built for Software",
+   "link": "https://thehackernews.com/2026/10/from-email-to-case-to-boardroom-how.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-19T11:50:00Z",
+   "summary": "In Salesforce Agentforce, the recommended way to make an agent respond to events is a Flow: a record is created or a case is updated, and the Flow passes data into the agent's prompt. Separately, Email-to-Case and Web-to-Case turn inbound customer messages into case records; it is how airlines and…",
+   "score": 3,
+   "tags": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "3e1eacecc51d",
+   "title": "Exploited Fortinet Bug Linked to Stealthy FortiGate Implant in Telecom Hack",
+   "link": "https://www.securityweek.com/exploited-fortinet-bug-linked-to-stealthy-fortigate-implant-in-telecom-hack/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-19T11:13:23Z",
+   "summary": "The persistent, stealthy FortiGate implant was deployed against a telecommunications organization. The post Exploited Fortinet Bug Linked to Stealthy FortiGate Implant in Telecom Hack appeared first on SecurityWeek .",
+   "score": 3,
+   "tags": [
+    "Edge devices"
+   ],
+   "why": [
+    "Edge devices"
+   ]
+  },
+  {
+   "id": "9d9b1cbb50ad",
+   "title": "Canada OSAP student grant ‘scam’ & why a Chandigarh real estate group filed defamation case over it",
+   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQV0o1dGQ5SWVNaFBWOUVkTFdIQ0FYU2dudzNhRlBxRVZqYVlUZTFlSGhNOEZjNmVnOUlKT190Vk96OEF5cDZIYzJpQmtwSWpiLW5BRkZmY3JuWnJhRTk0ODdWNklrQl9YazFNRWJaV3Iyb0N3SXpNUkRRY0NwdWx5UXYyQS0zdG5wODJsSDdnbDVqczhHQkNsaFhuWjBRZ29pTmFDSWlvdVhaNWNmZVVzZ2dKMFhRZXJoYkttSkRiaXdtc3F0MFdUZDNWdFBIYzTSAc8BQVVfeXFMUFdKNXRkOUllTWhQVjlFZExXSENBWFNnbnczYUZQcUVWamFZVGUxZUhoTThGYzZlZzlJSk9fdFZPejhBeXA2SGMyaUJrcElqYi1uQUZGZmNyblpyYUU5NDg3VjZJa0JfWGsxTUViWldyMm9Dd0l6TVJEUWNDcHVseVF2MkEtM3RucDgybEg3Z2w1anM4R0JDbGhYblowUWdvaU5hQ0lpb3VYWjVjZmVVc2dnSjBYUWVyaGJLbUpEYml3bXNxdDBXVGQzVnRQSGM0?oc=5",
+   "source": "ThePrint",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-19T10:38:35Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
+   "id": "0534f1906337",
+   "title": "Fake Web3 Accelerator Uses npm Packages to Spread Malware and Hijack AI Agent Traffic",
+   "link": "https://thehackernews.com/2026/10/fake-web3-accelerator-uses-npm-packages.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-19T10:06:40Z",
+   "summary": "A fake Web3 accelerator has been observed pushing information stealers and backdoors to Windows and macOS systems using malicious npm packages under the pretext of offering free artificial intelligence (AI) credits for Anthropic Claude and Google Gemini, coding tools, and security audits. \"The…",
+   "score": 2,
+   "tags": [
+    "Identity"
+   ],
+   "why": [
+    "Identity"
+   ],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/hackers-hijack-aomei-update-servers-to-secretly-spread-malware/"
+    }
+   ]
+  },
+  {
+   "id": "82c7537f544b",
+   "title": "MITRE ATT&CK v20 Catalogs AI Abuse, MFA Bypass, Water Utility Attacks",
+   "link": "https://www.securityweek.com/mitre-attck-v20-catalogs-ai-abuse-mfa-bypass-water-utility-attacks/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-19T09:37:04Z",
+   "summary": "Defenders get 15 new detection strategies, six for Enterprise and nine for ICS, backed by 38 analytics. The post MITRE ATT&CK v20 Catalogs AI Abuse, MFA Bypass, Water Utility Attacks appeared first on SecurityWeek .",
+   "score": 6,
+   "tags": [
+    "Microsoft 365",
+    "Identity"
+   ],
+   "why": [
+    "Microsoft 365",
+    "Identity"
+   ]
+  },
+  {
+   "id": "15156651e221",
+   "title": "Microsoft: October Windows Server updates break Exchange sign-in, mail flow",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-october-windows-server-updates-cause-exchange-issues/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-19T08:58:41Z",
+   "summary": "Microsoft has confirmed that this month's Windows Server security updates are causing OWA sign-in and mail delivery issues on some Exchange Server systems. [...]",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "5c0bebf27f10",
+   "title": "Anthropic Acquires Confidential AI Startup Opaque Systems",
+   "link": "https://www.securityweek.com/anthropic-acquires-confidential-ai-startup-opaque-systems/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-19T07:45:25Z",
+   "summary": "Opaque Systems has developed technology that lets AI systems use sensitive data while keeping it protected by the underlying hardware. The post Anthropic Acquires Confidential AI Startup Opaque Systems appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "f519e0b522d7",
+   "title": "Unpatched Broadcom Wi-Fi Flaw Lets Attackers in Range Run Code as Root on Routers",
+   "link": "https://thehackernews.com/2026/10/unpatched-broadcom-wi-fi-flaw-lets.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-19T06:29:44Z",
+   "summary": "A flaw in Broadcom's Wi-Fi setup software lets an attacker within radio range run code as root on Broadcom-based routers, without the network password or any pairing step, security researcher Quentin Kaiser disclosed on October 16. He showed the attack working against home gateways supplied by…",
+   "score": 4,
+   "tags": [
+    "Identity",
+    "Vulnerability"
+   ],
+   "why": [
+    "Identity",
+    "Vulnerability"
+   ],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/critical-blockstrap-flaw-lets-hackers-run-code-on-magento-servers/"
+    }
+   ],
+   "epss": 0.0078
+  },
+  {
+   "id": "1de1c48ce23b",
+   "title": "OpenCode Console Breach May Have Exposed OpenAI, Anthropic, and Google API Keys",
+   "link": "https://thehackernews.com/2026/10/opencode-console-breach-may-have.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-19T06:07:08Z",
+   "summary": "An intruder reached a legacy system at OpenCode on the night of October 16 and may have exposed the third-party AI provider keys that users had saved in OpenCode Console, the company said. Console is OpenCode's optional hosted service: a workspace saves its own OpenAI, Anthropic, or Google key…",
+   "score": 6,
+   "tags": [
+    "Data breach",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Data breach",
+    "SaaS / cloud"
+   ],
+   "also": [
+    {
+     "source": "Startup Fortune",
+     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNLTRuYTBta3p6RENuTVRJdWlGTW9qV1pPYmdZWl9qR1BEN1k4czdONmx5elpCa3hfOTExaWJSRkQ5RHE4QVFjcmhxa3lSc1c2a0x5aVlCUThkTElreHkzbG81RG5lUGdzSkNCbU9JRmRIc0Fqb0hXNngxRG1vTmJGNmVuU2Nwclc1R3hONHFuWi1OSDhRUzNXalNIS21pb3gxeHZDVy1uSnd1bnpmYUwxdVNn?oc=5"
+    },
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/opencode-hack-exposes-api-keys-amid-ai-distillation-attacks/"
+    }
+   ]
+  },
+  {
+   "id": "caafe54b5f2d",
+   "title": "Exclusive: Aussie software giant Canva confirms third-party data incident",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQYmtuazQ2V1Zwa3ZCMnZjM0NHQVcyMWhiY3pDSFNISXdTMF8yckhnUjRJenlqaGVIX2RULUVwTVMzeGV2bUREUkVQLVNXODRxNzdkckhaR3NJWUllUXktY3VMNi1BaHVyQVJWeDhNdnU3T0ZnTFc1cTY0NDVzN2k4Wm12eU9kTWtJVW1ZN0pUQldvV2VPZ3UwTVNycVNEblQ0YnZxZ3lkak5rRmNpTGhRMThqRQ?oc=5",
+   "source": "Cyber Daily",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-19T06:00:50Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "SaaS / cloud"
+   ],
+   "why": [
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "3e41ca2a32fc",
+   "title": "98 zero-day flaws found at TrendAI hacking contest",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPYXNOT3ZNNnFua1R5WVVKRTRRblgzTVdpOUdCZlRpMTYzbFVHcTRkWkpuZWhMcllQd2JFa0pXRGd2QlBOYWV2QlV3TmZlRmkyOXlsaEozYlN5ZDlHTWhQbUhFTjFub2xQZVA4a3gyWW1RWHpKTHE1RzkycU8xNnRDdnVQS2RMNWl2cUVyZktB?oc=5",
+   "source": "SecurityBrief Australia",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-19T02:38:00Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Actively exploited",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Actively exploited",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "a25cf59c6997",
+   "title": "Cyber's failure of imagination relates to the cost of waiting",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOaEt0aGtQblI2QnE1T0F6cTNfVk5IdktGUW80cGxjR2R3em1ldVlHb3hEaTlGanpCZ01id1hjLUZYMTN1Nl9Ya2tVUFBVNk9SUE1fUndocVhvWDVEMUZtTXlEX3VIQWctTUZkdmlNYVNIQ01DVm5Jdk1WY3RDQkJyZEt6bHdVdjFDMGpscGJPelpkZm1u?oc=5",
+   "source": "IT Brief Australia",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-19T00:49:00Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Phishing"
+   ],
+   "why": [
+    "Phishing"
+   ]
+  },
+  {
+   "id": "6fa2fc15ec28",
+   "title": "AI Breach of Australian Healthcare Website Sparks Regulation Debate",
+   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOXzE0Rl9tTjZmcEk4QXFPOTZoWmU5QnNUUk96a2NkOTN5WHJyeFNvSVh1OTlQeGdUS3l0QzRsZTZqYl9fZ04teEhXYlVza0tLZjNaQ05XckJCaEhrOVRqOFNVWHA4MDk0emRGcnV3SklQLXJBM2xITDFUam0zX245S194UUYwY2swMVRKN0NrNDZEVXlxcUxFdUpoMUNpSzBpUE55N2hjNW94QjNNYUhLUHpXT0toeUItWkQ2a1VadU53RFFlcHdZdDRCTGs0RjR2UGc?oc=5",
+   "source": "Carolina Political Review",
+   "feed": "AU breach news",
+   "region": "AU",
+   "published": "2026-10-18T23:07:18Z",
+   "summary": "",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Data breach"
+   ],
+   "why": [
+    "Australia",
+    "Data breach"
+   ]
+  },
+  {
+   "id": "4579e8e957d5",
+   "title": "Australia 11th in Microsoft cyber report as phishing rises",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNU1Rra2NmZnFBVmFhTnBid1djT1UydndLNDMzajFkd3djZEFOeF9CU3JwSXVTWjlEM3A4YW14SDB4LW5UelUwVXJaYVM4Nm1rc1VJSG9uOHJ6d1JCWDYxb0J1cWVvci1ySTZfVFItclFZczdsSmRHMm5tT180NTFocXBOVkVYb2tVdXhxdXQ3R1ZQczFlajBPNA?oc=5",
+   "source": "SecurityBrief Australia",
+   "feed": "AU breach news",
+   "region": "AU",
+   "published": "2026-10-18T22:30:00Z",
+   "summary": "",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Phishing"
+   ],
+   "why": [
+    "Australia",
+    "Phishing"
+   ]
+  },
+  {
+   "id": "8431a59751b6",
+   "title": "Florida Man Sentenced In Texas Federal Court To Over 4 Years For $3M Real Estate Scam",
+   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOdzJsQzNQLXF5OHBtaWxzOGo1dzhTQUNMejc5SXJFSXpnOW1SY1BIQURpQVV2LVlua3YyWUFKa05TY3lpTlMyZmplemNDdHM0R3NsTjNESVRTVEFaM2hFT0tWNkI0ejEzcUlwMUJqbng1bHZLWVN4TGtCQXByWXNwOG1IdlFIQQ?oc=5",
+   "source": "AOL.com",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-18T14:33:19Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ],
+   "also": [
+    {
+     "source": "Tampa Free Press",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQU09uQTFlMUhQSmMtOEp2cDFVOWhFN2k2bHFLbE5aWHo3bjJ5OERHbXBXU3NqSTJWMHBWbUlkajBQM2hGZE9iSVJsWFBfVU9ralA5WFM0TGlrZ1lxdGt4Q0FJTk9pR0Nob2tRN1lISmNYdEpveFR4MVh5bTc2VXlCLWI5SEJVWk1vVjhWZmlqcWhKeEg4SDBYU2N0VDlNU3lOdG9ibXBJNDhKNWxfbVE?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "74ff0a30f9fe",
+   "title": "Hackers exploit SiteGuard WAF flaw to run commands as admins",
+   "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-siteguard-waf-flaw-to-run-commands-as-system-root/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-18T14:23:16Z",
+   "summary": "Attackers are targeting an OS command injection vulnerability in SiteGuard Server Edition that lets them execute commands as root or SYSTEM on affected servers. [...]",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "d33178f3f117",
+   "title": "Orphaned VBA Projects Inside DWG Files: YARA Rule, (Sun, Oct 18th)",
+   "link": "https://isc.sans.edu/diary/rss/33434",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-10-18T12:59:30Z",
+   "summary": "Here is the YARA rule I used to detect \" Orphaned VBA Projects Inside DWG Files \".",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "7e978702ff2e",
+   "title": "US Cybersecurity Job Postings Fall 26% as AI Security Engineer Demand Soars",
+   "link": "https://www.securityweek.com/us-cybersecurity-job-postings-fall-26-as-ai-security-engineer-demand-soars/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-18T11:00:00Z",
+   "summary": "CyberSN’s Cybersecurity Jobs Report provides visibility into the US cybersecurity job market. It’s a mixed bag. The post US Cybersecurity Job Postings Fall 26% as AI Security Engineer Demand Soars appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
   {
    "id": "a0eb11b81acb",
    "title": "Silo Real Estate REA probe exposes unlicensed operator gap",
@@ -150,6 +961,14 @@
     {
      "source": "The Hacker News",
      "url": "https://thehackernews.com/2026/10/hackers-use-compromised-connectwise.html"
+    },
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/connectwise-suspends-cloud-backup-after.html"
+    },
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/connectwise-suspends-cloud-services-in-response-to-cyberattack/"
     }
    ]
   },
@@ -173,6 +992,23 @@
    ]
   },
   {
+   "id": "7982482cbe3f",
+   "title": "Brad Thoreson, Seattle Real Estate Litigator | Buchalter",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQMTgzR0JpZlp5V0lfWGFmeHoxaDNjRmZCUEU3RXN4MjJ6Zm9PQW94UDhFbE5xSjZya3NPakpQVTVuTzljc3FUaVJLNXJ0WDkwbXRLemc3akRFc0FmQTFhM2lQb3lqMHJKaXBZUWlMeXd4UUJzYTVGaUNlajIzSDk4cDdJZjg1ME0yU3dUTlYwbElIX2piWFZ5elQtMktrOFZSNlczSHdWcw?oc=5",
+   "source": "Haute Living",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-17T12:51:40Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
    "id": "1fae9cde44bf",
    "title": "MALFEX npm Package 'imgdecode' Hides Shellcode Loader in Windows Native Addon",
    "link": "https://thehackernews.com/2026/10/malfex-npm-package-imgdecode-hides.html",
@@ -187,29 +1023,6 @@
    ],
    "why": [
     "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "2956b1e39e10",
-   "title": "Israeli Ad Firm Doubled as Candiru’s Zero-Click Spyware Delivery Channel",
-   "link": "https://www.securityweek.com/israeli-ad-firm-doubled-as-candirus-zero-click-spyware-delivery-channel/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-17T11:00:00Z",
-   "summary": "Israeli company Discover-Tech’s ads allow threat actors to fingerprint and track devices at scale and infect selected targets. The post Israeli Ad Firm Doubled as Candiru’s Zero-Click Spyware Delivery Channel appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": [],
-   "also": [
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/zero-click-attacks-used-targeted-ads-to-deliver-candiru-spyware/"
-    },
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/citizen-lab-traces-zero-click-candiru.html"
-    }
    ]
   },
   {
@@ -333,6 +1146,10 @@
     {
      "source": "Hoodline",
      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQd0t2U3hybTRVbGZIWmt1MzlPaXJOZlBxYndTVTNFUWlJaDNxMDRZZkVoOWRITi1peV91NXhvUDl2bXNjZl95NjVtQmYxRmJoenBoY0lmdElMT3F1WFdGZGN5U0ZYMUExbkdEZlc2ZjdGNUhsVW10MzVhWllXZzl3M0o3VjNaUVNVRXhsRnp1Sm1CMzZselpyYkdpSl8?oc=5"
+    },
+    {
+     "source": "The Derrick",
+     "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPamluWTlWTVFWMmpJRnlZMk5OLXZlcFphTzFTamI3a1E5OTBCM1Z5MXRnSjhwa3JYV2QydHRJcDNraVhXXzRfVmtDMG5oRmxvZFN6ZDVzblVJQXA2OGpkel9ma1RicnZJOXBadzVEdEliR1hIc1QtSF9qRGxfcHRrZDlLRERaSDVINERKcndLQ0oxb05HZFl2bXgtTE91OUxxXzNTLXdKWGIwSjJIMDVYX1BZSVBaN1pNcmwyakVqM3p6Wlc1R1hrWjM3SzdpcUM5QjRFYkFNLWQwOGEwNUh0NkRPUU9ScHFkNEhTMkVHNkpmQkJvaFE?oc=5"
     }
    ]
   },
@@ -371,24 +1188,6 @@
     "Actively exploited",
     "Edge devices"
    ]
-  },
-  {
-   "id": "8dfac5c34b84",
-   "title": "Critical BlockStrap flaw lets hackers run code on Magento servers",
-   "link": "https://www.bleepingcomputer.com/news/security/critical-blockstrap-flaw-lets-hackers-run-code-on-magento-servers/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-16T20:00:59Z",
-   "summary": "Researchers warn that hackers could soon exploit a maximum-severity vulnerability (CVE-2026-103849) affecting Magento and Adobe Commerce, potentially allowing them to execute arbitrary PHP code on store servers. [...]",
-   "score": 1,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.0078
   },
   {
    "id": "0cd568eb4deb",
@@ -474,6 +1273,25 @@
    ],
    "why": [
     "Vulnerability"
+   ]
+  },
+  {
+   "id": "50880c900177",
+   "title": "Targeted ads installed Candiru spyware in zero-click attacks",
+   "link": "https://www.bleepingcomputer.com/news/security/zero-click-attacks-used-targeted-ads-to-deliver-candiru-spyware/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-16T17:20:03Z",
+   "summary": "Candiru spyware was delivered to devices at Al Jazeera Media Network via targeted online advertisements in a zero-click attack that required only rendering the malicious ads on the victim's device. [...]",
+   "score": 0,
+   "tags": [],
+   "why": [],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/citizen-lab-traces-zero-click-candiru.html"
+    }
    ]
   },
   {
@@ -701,7 +1519,7 @@
     "Actively exploited",
     "Vulnerability"
    ],
-   "epss": 0.006,
+   "epss": 0.0118,
    "also": [
     {
      "source": "The Hacker News",
@@ -889,7 +1707,7 @@
     "Edge devices",
     "Vulnerability"
    ],
-   "epss": 0.0058
+   "epss": 0.0108
   },
   {
    "id": "e0e9e3550086",
@@ -1041,7 +1859,7 @@
     "Edge devices",
     "Vulnerability"
    ],
-   "epss": 0.0058
+   "epss": 0.0108
   },
   {
    "id": "7d3104b45e33",
@@ -1061,7 +1879,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.006
+   "epss": 0.0118
   },
   {
    "id": "3bd9f144301e",
@@ -1553,6 +2371,21 @@
    ]
   },
   {
+   "id": "502c877b3bd3",
+   "title": "Which chapter should I start with?",
+   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1PeDMyVE5zNFFyTDlOQ3ZzTDBNaXNtaHBMaExxU3g4Rm8zaVV2VXNZZnVucFQwTW0xSF82YVZnT0dlZFB1SEprZDVNSXNrRHZGaENuSFJuYUo4YnBROXRRN185SmF6SnZ4UE9QbXc4OHhEajNaOEg1TVBn?oc=5",
+   "source": "Australian Cyber Security",
+   "feed": "ACSC (via Google News)",
+   "region": "AU",
+   "published": "2026-10-15T12:00:00Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "Australia"
+   ],
+   "why": []
+  },
+  {
    "id": "daedf7c2200a",
    "title": "Assessment evidence guide for enterprise IT",
    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQUDRscGJXaFRHckJWMC1zOGRxRFVPTG1oYk5oem9WY3pUZkZHRVRGRVNkd0MtZ19qUGdnMmdxTjhiVjNqUG0xZG9wSGxIbnRfcUc4MGY5ajhiSk5hY2czTy1HODhHLTd0NDNWdlRTNGx6eDVibzJVUk1ET0NueEpRd0FWUkh0N1U?oc=5",
@@ -1847,8 +2680,7 @@
      "source": "The Hacker News",
      "url": "https://thehackernews.com/2026/10/palo-alto-networks-patches-pan-os.html"
     }
-   ],
-   "epss": 0.0121
+   ]
   },
   {
    "id": "a713f2422da2",
@@ -1869,21 +2701,6 @@
     "SaaS / cloud"
    ],
    "epss": 0.0478
-  },
-  {
-   "id": "502c877b3bd3",
-   "title": "Which chapter should I start with?",
-   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1PeDMyVE5zNFFyTDlOQ3ZzTDBNaXNtaHBMaExxU3g4Rm8zaVV2VXNZZnVucFQwTW0xSF82YVZnT0dlZFB1SEprZDVNSXNrRHZGaENuSFJuYUo4YnBROXRRN185SmF6SnZ4UE9QbXc4OHhEajNaOEg1TVBn?oc=5",
-   "source": "Australian Cyber Security",
-   "feed": "ACSC (via Google News)",
-   "region": "AU",
-   "published": "2026-10-15T06:00:42Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "Australia"
-   ],
-   "why": []
   },
   {
    "id": "f27586b6e439",
@@ -2029,8 +2846,7 @@
    ],
    "why": [
     "Vulnerability"
-   ],
-   "epss": 0.1271
+   ]
   },
   {
    "id": "b57abd2c6608",
@@ -3252,6 +4068,12 @@
     "Edge devices",
     "Vulnerability",
     "SaaS / cloud"
+   ],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/ivanti-warns-of-connect-secure-zero-day-exploited-in-attacks/"
+    }
    ]
   },
   {
@@ -3382,27 +4204,6 @@
    ]
   },
   {
-   "id": "c63069ba1c8d",
-   "title": "Ivanti warns of Connect Secure zero-day exploited in attacks",
-   "link": "https://www.bleepingcomputer.com/news/security/ivanti-warns-of-connect-secure-zero-day-exploited-in-attacks/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-13T15:45:50Z",
-   "summary": "Ivanti urged customers on Tuesday to immediately patch an actively exploited zero-day vulnerability in the Ivanti Connect Secure (ICS) remote access gateway. [...]",
-   "score": 9,
-   "tags": [
-    "Actively exploited",
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "why": [
-    "Actively exploited",
-    "Edge devices",
-    "Vulnerability"
-   ]
-  },
-  {
    "id": "cd001c5faa80",
    "title": "Docker Hub flaw let attackers impersonate users, tamper with images",
    "link": "https://www.bleepingcomputer.com/news/security/docker-hub-flaw-let-attackers-impersonate-users-tamper-with-images/",
@@ -3525,7 +4326,17 @@
    "summary": "A small circuit board hidden under the signers’ screens read user data and transmitted it to the attackers. The post $86 Million Crypto Heist Linked to Ledger Signer Hardware Implant appeared first on SecurityWeek .",
    "score": 0,
    "tags": [],
-   "why": []
+   "why": [],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/ledger-confirms-hardware-wallet-spy-implant-behind-crypto-thefts/"
+    },
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/ledger-finds-unauthorized-hardware.html"
+    }
+   ]
   },
   {
    "id": "302530343dab",
@@ -3985,25 +4796,6 @@
    "why": [
     "Ransomware",
     "Data breach"
-   ]
-  },
-  {
-   "id": "28da8c245f5d",
-   "title": "Ledger confirms spy chip implant behind wallet crypto thefts",
-   "link": "https://www.bleepingcomputer.com/news/security/ledger-confirms-hardware-wallet-spy-implant-behind-crypto-thefts/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-12T16:27:23Z",
-   "summary": "Ledger has confirmed that some of its devices distributed through Southeast Asian reseller CryptoBilis were compromised with a hardware implant that drained users' cryptocurrency wallets. [...]",
-   "score": 0,
-   "tags": [],
-   "why": [],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/ledger-finds-unauthorized-hardware.html"
-    }
    ]
   },
   {
@@ -5098,7 +5890,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.1935
+   "epss": 0.2014
   },
   {
    "id": "74cde892ff7f",
@@ -5184,8 +5976,7 @@
    ],
    "why": [
     "Vulnerability"
-   ],
-   "epss": 0.1271
+   ]
   },
   {
    "id": "4d0ab1e7dd59",
@@ -5296,28 +6087,6 @@
    "score": 1,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "6ea617158423",
-   "title": "CVE-2026-88779: Citrix NetScaler — Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-88779",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-10-04T00:00:00Z",
-   "summary": "Citrix NetScaler ADC (formerly Citrix ADC) and Citrix NetScaler Gateway (formerly Citrix Gateway) contain an improper restriction of operations within the bounds of a memory buffer vulnerability that could allow for a denial of service. CISA remediation due 2026-10-07.",
-   "score": 7,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "why": [
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "epss": 0.0059
   }
  ]
 }
