@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T21:46:39Z",
+ "generated": "2026-10-20T23:54:43Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -40,7 +40,7 @@
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 2,
+   "count": 3,
    "error": null
   },
   {
@@ -82,7 +82,7 @@
   {
    "name": "Microsoft Security Blog",
    "ok": true,
-   "count": 6,
+   "count": 3,
    "error": null
   },
   {
@@ -105,6 +105,36 @@
   }
  ],
  "items": [
+  {
+   "id": "533125ff068a",
+   "title": "SafePay ransomware group has targeted hundreds this year, US agencies say",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQV2trd1VWek1Nb1FKRVdQVDcwam44ckgxLTltZ0podGktQkVtcTd1N1pyUTdzNG14b2tNQzYzRmRkWXVTVmxlNm1XbU5YS2tacHRPb1FCZ0RvLTBoOS1uX1luYll4MUNFa212MGxBYUhLcU9KVTBHUnBBaFh2c2kyWWJDRm9Lcm9jajhmV2hIQzFPRzBVSDU2d0wwb1NlNGpHU29vS1hqcXRtRVRncnVXTVIwWXpWakJhck56ellCQkRFTVExcWR2eUtBc9IB0AFBVV95cUxPZWdsVTVZaHVIOTEwTThoNkNOLU1lQ1RYZHNrU3dYcEp2NHBmRWJnbkJucWhhRzJNZ1JYOXNMWVAxVUxRZDJlbFVqU3FEYjRRWkRPTW9Qekt0ZEVrSEh2Sk9xenYyRlRIYUhMTVFZbDV1TTdZcG1mRU1zNk14UkY2dTd6OHF0LXNlMzBNa1hPeXB0TmgzRUJTYUROZThBRkZaaEQzR2Z3eU51bUlHV3Y0cGtoU1puRHBNZ2x2LWNfZFF4OWJ5alVfTHN2RHRvdE0x?oc=5",
+   "source": "Devdiscourse",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-20T23:25:01Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
+  },
+  {
+   "id": "532771c4fc27",
+   "title": "Tech Giants Block eMudhra Certificates Tied to 8 Compromised Keys",
+   "link": "https://www.darkreading.com/cyber-risk/tech-giants-emudhra-certificates-compromised-keys",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-20T21:45:47Z",
+   "summary": "Google, Mozilla, Apple, the Go project and others moved swiftly to block the affected certificates from the Indian CA, though it's unclear how the keys were compromised.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
   {
    "id": "05dd90fd0f45",
    "title": "PHP warns admins of two critical flaws, emergency patches coming tomorrow",
@@ -699,6 +729,10 @@
     {
      "source": "The420.in",
      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1SQklFSWJ0Q2VyNFFwbUhOZG1tSjd2SlNNN0gzd0xlYXJFYUx0R3ktcDlkQW5TbkRvbUY0M0FGS2xhTEtEdEhsckZjdHhwR3FFMnlNZy1nQjRaWS1hdC1HY3lDU3htalhLWkVaamNZZERaRGN1dHpmNw?oc=5"
+    },
+    {
+     "source": "Cyber Press",
+     "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE0wcUNSWUhOSG8yb0xVYXMxNy1FRTdCRVU1YkJncHI0cjRtbDJwR0tXX2hVbVBzOUZvanEwYXJVTDNOcGRNSUc3b21sUHM0akRmajFsU1BRRDFfMzhaR3VPSFFBWEM5TzVmOFHSAWpBVV95cUxNMHFDUllITkhvMm9MVWFzMTctRUU3QkVVNWJCZ3ByNHI0bWwycEdLV19oVW1QczlGb2pxMGFyVUwzTnBkTUlHN29tbFBzNGpEZmoxbFNQUUQxXzM4Wkd1T0hRQVhDOU81ZjhR?oc=5"
     }
    ]
   },
