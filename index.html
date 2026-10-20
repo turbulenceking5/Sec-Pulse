@@ -14,7 +14,7 @@
 <link rel="apple-touch-icon" href="assets/icons/icon-180.png?v=1">
 <link rel="icon" href="assets/icons/icon-192.png?v=1">
 <script>
-// Theme before first paint (no flash). sp_theme: "system" (default) | "dark" | "light". Re-run by the Settings picker.
+// Theme before first paint (no flash). sp_theme: "dark" | "light"; absent = follow the system. Re-run by the Settings picker.
 (function(){
   var mq = window.matchMedia ? matchMedia('(prefers-color-scheme: light)') : null;
   function apply(){
@@ -36,7 +36,7 @@
   --text:#e6edf7; --muted:#8da2c0; --accent:#38e1c8; --accent-dim:rgba(56,225,200,.14); --accent-line:rgba(56,225,200,.4);
   --warn:#f5b84b; --danger:#ff6b6b; --ok:#5ad08a; --au:#f5b84b;
   --warn-dim:rgba(245,184,75,.1); --warn-line:rgba(245,184,75,.42); --danger-dim:rgba(255,107,107,.12); --danger-line:rgba(255,107,107,.42);
-  --ok-dim:rgba(90,208,138,.12); --on-accent:#06221d; --glass:rgba(11,18,32,.94);
+  --ok-dim:rgba(90,208,138,.12); --on-accent:#06221d; --on-danger:#2a0707; --glass:rgba(11,18,32,.94);
   --radius:14px; --nav-h:62px; color-scheme:dark;
 }
 /* Light theme: set on <html data-theme="light"> by the head script (System follows prefers-color-scheme). */
@@ -45,7 +45,7 @@
   --text:#0f1b2d; --muted:#53647c; --accent:#077a6b; --accent-dim:rgba(7,122,107,.1); --accent-line:rgba(7,122,107,.45);
   --warn:#9a5b00; --danger:#c42b2b; --ok:#1d7f45; --au:#9a5b00;
   --warn-dim:rgba(154,91,0,.08); --warn-line:rgba(154,91,0,.4); --danger-dim:rgba(196,43,43,.08); --danger-line:rgba(196,43,43,.4);
-  --ok-dim:rgba(29,127,69,.1); --on-accent:#ffffff; --glass:rgba(243,246,250,.94); color-scheme:light;
+  --ok-dim:rgba(29,127,69,.1); --on-accent:#ffffff; --on-danger:#ffffff; --glass:rgba(243,246,250,.94); color-scheme:light;
 }
 [hidden]{display:none!important}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
@@ -89,7 +89,7 @@ h2:first-child{margin-top:4px}
 .chip.on{background:var(--accent-dim);border-color:var(--accent);color:var(--accent)}
 .search{width:100%;margin:10px 0 12px;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:10px 12px;color:var(--text);font:inherit}
 .news-item{position:relative}
-.news-item.read{opacity:.62}
+.news-item.read .news-title{color:var(--muted)}
 .news-meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font-size:12px;color:var(--muted);margin-bottom:5px}
 .news-title{font-weight:600;font-size:15.5px;line-height:1.35;text-decoration:none;color:var(--text);display:block}
 .news-sum{font-size:13.5px;color:var(--muted);margin:6px 0 0;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
@@ -123,6 +123,7 @@ h2:first-child{margin-top:4px}
 .opt{display:block;width:100%;text-align:left;background:var(--surface2);border:1px solid var(--border);border-radius:12px;padding:11px 12px;margin-bottom:8px}
 .opt.correct{border-color:var(--ok);background:var(--ok-dim)}
 .opt.wrong{border-color:var(--danger);background:var(--danger-dim)}
+.opt.correct::before{content:"✓ ";color:var(--ok);font-weight:700}.opt.wrong::before{content:"✗ ";color:var(--danger);font-weight:700}
 .opt:disabled{cursor:default;color:var(--text)}
 .explain{font-size:13.5px;color:var(--muted);margin:4px 0 12px}
 .q-progress{font-size:12px;color:var(--muted);margin-bottom:6px}
@@ -131,9 +132,6 @@ h2:first-child{margin-top:4px}
 .flash{min-height:220px;display:flex;flex-direction:column;justify-content:center;text-align:center;padding:24px 18px}
 .flash .front,.flash-front{font-size:21px;font-weight:700}
 .flash-front{text-align:center;padding:6px 0 2px}
-.flash .back{font-size:15.5px;margin-top:16px;color:var(--text);border-top:1px solid var(--border);padding-top:16px}
-.grade{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-.grade .btn{padding:12px 6px}
 .boxes{display:flex;gap:6px;margin-top:10px}
 .boxes div{flex:1;text-align:center;background:var(--surface2);border-radius:8px;padding:6px 0;font-size:12px;color:var(--muted)}
 .boxes b{display:block;color:var(--text);font-size:15px}
@@ -144,7 +142,7 @@ nav{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--glass);ba
 nav button{flex:1;background:none;border:0;display:flex;flex-direction:column;align-items:center;gap:2px;font-size:11px;color:var(--muted);padding:4px 0;position:relative}
 nav button.on{color:var(--accent)}
 nav svg{width:24px;height:24px}
-.badge{position:absolute;top:0;left:calc(50% + 6px);background:var(--danger);color:#fff;font-size:10px;font-weight:700;border-radius:99px;padding:0 5px;min-width:16px;line-height:16px}
+.badge{position:absolute;top:0;left:calc(50% + 6px);background:var(--danger);color:var(--on-danger);font-size:10px;font-weight:700;border-radius:99px;padding:0 5px;min-width:16px;line-height:16px}
 
 /* sheet */
 #sheet{position:fixed;inset:0;z-index:50;background:var(--bg);overflow-y:auto;display:none;-webkit-overflow-scrolling:touch}
@@ -223,13 +221,17 @@ html.ptr-on{overscroll-behavior-y:contain}
 .later-btn.on{color:var(--accent)}
 .later-btn svg{width:18px;height:18px}
 .news-item .news-meta{padding-right:66px}
+.tag.score{font-variant-numeric:tabular-nums}
+.exhibit-hint{font-size:12px;color:var(--muted);margin:-8px 0 12px;text-align:right}
+#exam-name .code{white-space:nowrap}
+.doc-btns .btn{padding:9px 6px;font-size:13.5px;white-space:nowrap}
 .note{margin-top:10px;padding:8px 10px;border-left:3px solid var(--warn);background:var(--warn-dim);border-radius:6px;font-size:13.5px;white-space:pre-wrap;overflow-wrap:anywhere}
 .note-edit textarea{width:100%;min-height:70px;resize:vertical;margin-top:10px}
 /* achievements, heatmap, accuracy trend, focus + backup cards, CVE links */
 .badges{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 .badge-tile{display:flex;gap:8px;align-items:flex-start;background:var(--surface2);border:1px solid var(--border);border-radius:12px;padding:8px 10px;font-size:12.5px;line-height:1.35}
 .badge-tile .ic{font-size:20px;line-height:1.1;flex:none}
-.badge-tile.locked{opacity:.5}.badge-tile.locked .ic{filter:grayscale(1)}
+.badge-tile.locked{opacity:.68}.badge-tile.locked .ic{filter:grayscale(1)}
 .badge-tile b{display:block;font-size:13px}
 .heat{display:grid;grid-template-rows:repeat(7,1fr);grid-auto-flow:column;grid-auto-columns:1fr;gap:3px}
 .heat i{aspect-ratio:1;border-radius:3px;background:var(--surface2)}
@@ -278,15 +280,15 @@ html.ptr-on{overscroll-behavior-y:contain}
     <div id="brief-quests"></div>
     <div id="brief-exam" style="margin-top:10px"></div>
     <div id="brief-focus"></div>
-    <h2>Top for you</h2>
+    <h2 id="top-title">Top for you</h2>
     <div id="brief-top"><div class="empty">Loading news…</div></div>
     <div class="row small muted" id="brief-glance" style="flex-wrap:wrap;gap:6px"></div>
-    <h2 class="row"><span class="grow">Upcoming events</span><button class="linkish small" id="events-all" hidden>See all →</button></h2>
-    <div id="brief-events"></div>
     <h2>Today's CySA+ lesson</h2>
     <div id="brief-lesson"></div>
     <h2>Question of the day</h2>
     <div class="card" id="brief-qotd"></div>
+    <h2 class="row"><span class="grow">Upcoming events</span><button class="linkish small" id="events-all" hidden>See all →</button></h2>
+    <div id="brief-events"></div>
   </section>
 
   <section class="view" id="view-news">
@@ -310,7 +312,7 @@ html.ptr-on{overscroll-behavior-y:contain}
     <button class="btn block" id="timed-exam" style="margin-top:8px">⏱ Timed practice exam · 30 in 58 min</button>
     <button class="btn block" id="review-quiz" style="margin-top:8px">Review mistakes</button>
     <button class="btn block" id="pbq-practice" style="margin-top:8px" hidden>PBQ practice</button>
-    <div id="course-link"></div>
+    <div id="course-link" style="margin-bottom:6px"></div>
     <div id="domains"></div>
   </section>
 
@@ -326,21 +328,21 @@ html.ptr-on{overscroll-behavior-y:contain}
   <button data-view="cards"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v12"/></svg>Cards<span class="badge" id="nav-due" hidden></span></button>
 </nav>
 
-<div id="sheet" role="dialog" aria-modal="true">
+<div id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title">
   <div id="sheet-head">
     <button class="icon-btn" id="sheet-close" aria-label="Close"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
     <div id="sheet-title"></div>
   </div>
   <div id="sheet-body"></div>
 </div>
-<div id="toast"></div>
+<div id="toast" role="status" aria-live="polite"></div>
 
 <script>
 'use strict';
 /* ---------- storage (per-device, wrapped so private mode never breaks the app) ---------- */
 const store = {
   get(k, d){ try{ const v = localStorage.getItem('sp_'+k); return v === null ? d : JSON.parse(v); }catch(e){ return d; } },
-  set(k, v){ try{ localStorage.setItem('sp_'+k, JSON.stringify(v)); }catch(e){} },
+  set(k, v){ if (k === 'read' || k === 'saved' || k === 'later') cardState.c = null; try{ localStorage.setItem('sp_'+k, JSON.stringify(v)); }catch(e){} },
   del(k){ try{ localStorage.removeItem('sp_'+k); }catch(e){} }
 };
 const $ = s => document.querySelector(s);
@@ -349,7 +351,9 @@ function toast(msg){ const t = $('#toast'); t.textContent = msg; t.classList.add
 
 /* ---------- dates: everything keyed to Brisbane time (no daylight saving) ---------- */
 const TZ = 'Australia/Brisbane';
-function todayKey(d = new Date()){ return new Intl.DateTimeFormat('en-CA', {timeZone: TZ}).format(d); }
+// Built from parts, not a locale's date format (en-CA's "YYYY-MM-DD" isn't guaranteed); every stored date key depends on it.
+const DATE_FMT = new Intl.DateTimeFormat('en-AU', {timeZone: TZ, year: 'numeric', month: '2-digit', day: '2-digit'});
+function todayKey(d = new Date()){ const p = Object.fromEntries(DATE_FMT.formatToParts(d).map(x => [x.type, x.value])); return `${p.year}-${p.month}-${p.day}`; }
 function addDays(key, n){ const d = new Date(key + 'T00:00:00Z'); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); }
 // Same as Python's date.toordinal(), so the app and the morning notification pick the same lesson.
 function ordinal(key){ return Math.floor(Date.parse(key + 'T00:00:00Z') / 864e5) + 719163; }
@@ -591,7 +595,7 @@ function trendHtml(){
   const hist = store.get('quizHistory', []), rounds = (Array.isArray(hist) ? hist : []).filter(h => h && h.t > 0).slice(-20);
   if (rounds.length < 2) return `<div class="card small muted" id="trend-empty">Finish two or more quiz rounds to see your accuracy trend.</div>`;
   const W = 320, H = 120, L = 36, R = 8, T = 8, B = 16, pw = W - L - R, ph = H - T - B;
-  const x = i => L + (rounds.length === 1 ? pw / 2 : i * pw / (rounds.length - 1)), y = p => T + ph * (1 - p / 100);
+  const x = i => L + i * pw / (rounds.length - 1), y = p => T + ph * (1 - p / 100); // rounds.length >= 2 here
   const pcts = rounds.map(h => Math.round(h.c / h.t * 100)), avg = Math.round(pcts.reduce((a, b) => a + b, 0) / pcts.length);
   const names = {quick: 'Quick quiz', exam: 'Practice exam', review: 'Review', pbq: 'PBQ round', drill: 'Domain drill'};
   const grid = [0, 50, 80, 100].map(p => `<line x1="${L}" x2="${W - R}" y1="${y(p)}" y2="${y(p)}" style="stroke:var(--border)" stroke-width="1"${p === 80 ? ' stroke-dasharray="4 3"' : ''}/>
@@ -658,8 +662,9 @@ function nextFetchIn(){
   const m = Math.round((d - Date.now()) / 6e4);
   return m < 60 ? m + 'm' : Math.floor(m / 60) + 'h ' + (m % 60) + 'm';
 }
+let newsRendered = false;
 async function loadNews(manual){
-  const btn = $('#refresh-btn'), started = Date.now();
+  const btn = $('#refresh-btn'), started = Date.now(), prevGen = NEWS.generated;
   const known = new Set(NEWS.items.map(i => i.id));
   if (manual){ btn.classList.add('spin'); btn.disabled = true; }
   try{
@@ -679,6 +684,10 @@ async function loadNews(manual){
     setTimeout(() => { btn.classList.remove('spin'); btn.disabled = false; }, Math.max(0, 600 - (Date.now() - started)));
   }
   $('#updated').textContent = NEWS.generated ? 'updated ' + ago(NEWS.generated) : '';
+  // Coming back to the app re-fetches; only re-render if the news changed, so a half-typed note or an
+  // answered question of the day isn't wiped. Manual refresh and first load always render.
+  if (!manual && newsRendered && NEWS.generated === prevGen) return;
+  newsRendered = true;
   renderBrief(); renderNews();
 }
 async function loadCysa(){
@@ -716,9 +725,13 @@ function kevDuePill(i){
 }
 const LATER_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>';
 // opts.notes: show the note line (Saved filter). Called via .map(newsCard) too, so opts may be an index.
+// Read/saved/later parsed once, not per card (sp_read holds up to 1,500 ids); store.set() on those keys clears it.
+function cardState(){
+  if (!cardState.c){ const r = store.get('read', []); cardState.c = {read: new Set(Array.isArray(r) ? r : []), saved: store.get('saved', {}) || {}, later: store.get('later', {}) || {}}; }
+  return cardState.c;
+}
 function newsCard(i, opts){
-  const read = store.get('read', []).includes(i.id);
-  const saved = !!store.get('saved', {})[i.id], later = !!store.get('later', {})[i.id];
+  const cs = cardState(), read = cs.read.has(i.id), saved = !!cs.saved[i.id], later = !!cs.later[i.id];
   const notes = !!(opts && opts.notes);
   const tags = i.tags.filter(t => t !== 'Australia').slice(0, 4)
     .map(t => `<span class="tag ${HOT.has(t) ? 'hot' : RE.has(t) ? 're' : ''}">${esc(t)}</span>`).join('');
@@ -728,20 +741,21 @@ function newsCard(i, opts){
       ${i.region === 'AU' ? '<span class="pill au">AU</span>' : ''}
       <span>${esc(i.source)}</span><span>· ${ago(i.published)}</span>
       ${epss !== null ? `<span class="pill ${epss >= 0.5 ? 'danger' : ''} epss" title="EPSS: estimated chance of exploitation in the next 30 days">EPSS ${epssPct(epss)}</span>` : ''}
-      ${kevDuePill(i)}
-      <button class="pill why score" aria-label="Why this ranked">score ${esc(i.score ?? 0)}</button></div>
-    <a class="news-title" href="${esc(i.link)}" target="_blank" rel="noopener noreferrer">${esc(i.title)}</a>
+      ${kevDuePill(i)}</div>
+    <a class="news-title" href="${esc(isUrl(i.link) ? i.link : '#')}" target="_blank" rel="noopener noreferrer">${esc(i.title)}</a>
     ${i.summary ? `<p class="news-sum">${esc(i.summary)}</p>` : ''}
     ${cves.length ? `<div class="cves">${cves.map(c => `<a class="pill cve" href="${esc(nvdUrl(c))}" target="_blank" rel="noopener noreferrer">${esc(c)} ↗</a>`).join('')}</div>` : ''}
-    ${tags ? `<button class="tags why" aria-label="Why this ranked">${tags}</button>` : ''}
+    <button class="tags why" title="Why this ranked"><span class="tag score">score ${esc(i.score ?? 0)}</span>${tags}</button>
     ${also.length ? `<button class="also-btn">+${also.length} more source${also.length === 1 ? '' : 's'}</button>
       <ul class="also-list" hidden>${also.map(a => `<li><a href="${esc(a.url)}" target="_blank" rel="noopener noreferrer">${esc(a.source || hostOf(a.url))}</a></li>`).join('')}</ul>` : ''}
     ${notes ? '<div class="note-wrap"></div>' : ''}
     <button class="later-btn ${later ? 'on' : ''}" aria-label="Read later" aria-pressed="${later}" title="Read later">${LATER_SVG}</button>
-    <button class="save-btn ${saved ? 'on' : ''}" aria-label="Save">${saved ? '★' : '☆'}</button>
+    <button class="save-btn ${saved ? 'on' : ''}" aria-label="Save" aria-pressed="${saved}">${saved ? '★' : '☆'}</button>
   </div>`;
 }
-const findItem = id => NEWS.items.find(x => x.id === id) || store.get('saved', {})[id] || store.get('later', {})[id];
+// Also the stories shown in This morning's brief, which may not be in news.json (offline, or already aged out).
+let BRIEF_ITEMS = [];
+const findItem = id => NEWS.items.find(x => x.id === id) || BRIEF_ITEMS.find(x => x.id === id) || store.get('saved', {})[id] || store.get('later', {})[id];
 /* ---------- notes on saved stories (sp_notes, on this device only) ---------- */
 const NOTE_MAX = 500;
 function getNotes(){ const n = store.get('notes', {}); return n && typeof n === 'object' && !Array.isArray(n) ? n : {}; }
@@ -763,6 +777,16 @@ function drawNote(wrap, id, editing){
   };
   wrap.querySelector('.note-cancel').onclick = () => drawNote(wrap, id, false);
 }
+// Saved / Read later keep a full copy of the story. Returns the new state, or null if the story couldn't be found.
+function toggleOwn(key, id, btn, onMsg, offMsg){
+  const list = store.get(key, {}) || {};
+  if (list[id]) delete list[id];
+  else { const it = findItem(id); if (!it){ toast("Couldn't find that story to save"); return null; } list[id] = it; }
+  store.set(key, list);
+  const on = !!list[id]; btn.classList.toggle('on', on); btn.setAttribute('aria-pressed', on);
+  toast(on ? onMsg : offMsg);
+  return on;
+}
 function wireNewsList(root){
   root.querySelectorAll('.news-item').forEach(el => {
     const id = el.dataset.id;
@@ -773,22 +797,10 @@ function wireNewsList(root){
       el.classList.add('read'); el.querySelector('.dot')?.remove();
     });
     el.querySelector('.save-btn').addEventListener('click', e => {
-      const saved = store.get('saved', {});
-      if (saved[id]) delete saved[id];
-      else { const it = findItem(id); if (it) saved[id] = it; }
-      store.set('saved', saved);
-      e.currentTarget.classList.toggle('on', !!saved[id]);
-      e.currentTarget.textContent = saved[id] ? '★' : '☆';
-      toast(saved[id] ? 'Saved' : 'Removed from saved');
+      const on = toggleOwn('saved', id, e.currentTarget, 'Saved', 'Removed from saved');
+      if (on !== null) e.currentTarget.textContent = on ? '★' : '☆';
     });
-    el.querySelector('.later-btn').addEventListener('click', e => {
-      const later = store.get('later', {});
-      if (later[id]) delete later[id];
-      else { const it = findItem(id); if (it) later[id] = it; }
-      store.set('later', later);
-      const b = e.currentTarget; b.classList.toggle('on', !!later[id]); b.setAttribute('aria-pressed', !!later[id]);
-      toast(later[id] ? 'Added to Read later' : 'Removed from Read later');
-    });
+    el.querySelector('.later-btn').addEventListener('click', e => toggleOwn('later', id, e.currentTarget, 'Added to Read later', 'Removed from Read later'));
     const nw = el.querySelector('.note-wrap'); if (nw) drawNote(nw, id, false);
     el.querySelectorAll('.why').forEach(w => w.onclick = () => openWhy(id));
     const ab = el.querySelector('.also-btn');
@@ -837,7 +849,8 @@ function explainScore(i, cfg){
 }
 async function openWhy(id){
   const i = findItem(id); if (!i) return;
-  const cfg = await loadSourcesCfg();
+  const seq = sheetSeq, cfg = await loadSourcesCfg();
+  if (seq !== sheetSeq) return; // another sheet opened while the keyword list loaded
   const m = getMuted();
   let body;
   if (cfg){
@@ -883,18 +896,18 @@ async function loadTodayBrief(){
   return b && Array.isArray(b.items) && b.date ? b : null;
 }
 function briefItems(b){
-  return b.items.filter(i => i && i.id && i.title).map(i => {
+  return BRIEF_ITEMS = b.items.filter(i => i && i.id && i.title).map(i => {
     const n = NEWS.items.find(x => x.id === i.id) || {};
     return {tags: [], score: 0, region: 'Global', published: b.generated, ...n, ...i,
-      link: i.link || n.link || 'https://news.google.com/search?q=' + encodeURIComponent(i.title),
+      link: [i.link, n.link].find(isUrl) || 'https://news.google.com/search?q=' + encodeURIComponent(i.title),
       summary: (n.summary || '').length > (i.summary || '').length ? n.summary : (i.summary || '')};
   });
 }
 async function openTodayBrief(){
   try{ history.replaceState(null, '', '#brief'); }catch(e){} // so reopening the app doesn't reopen this sheet
   openSheet("This morning's brief", '<div class="empty">Loading…</div>');
-  const b = await loadTodayBrief();
-  if (!$('#sheet').classList.contains('open')) return;
+  const seq = sheetSeq, b = await loadTodayBrief();
+  if (!sheetIs(seq)) return;
   if (!b){ $('#sheet-body').innerHTML = '<div class="card empty" id="today-empty">No morning brief yet. It arrives at about 7:25am Brisbane time.</div>'; return; }
   const items = briefItems(b), st = b.stats || {}, old = b.date !== todayKey();
   const when = fmtKey(b.date, {weekday: 'long', day: 'numeric', month: 'long'});
@@ -910,9 +923,12 @@ async function openTodayBrief(){
   const lb = $('#today-lesson-btn'); if (lb) lb.onclick = () => openLesson(b.lesson.id);
   if (CYSA){ const qs = ALL_Q(); renderQuiz($('#today-qotd'), [qs[(ordinal(b.date) * 7) % qs.length]], {single: true}); }
 }
+let TODAY_BRIEF = null;
 async function renderTodayLink(){
   const el = $('#brief-today'); if (!el) return;
   const b = await loadTodayBrief();
+  const had = TODAY_BRIEF && TODAY_BRIEF.generated; TODAY_BRIEF = b;
+  if (b && b.generated !== had) renderBrief(); // Top for you drops the brief's stories
   if (!b || b.date !== todayKey()){ el.innerHTML = ''; return; }
   el.innerHTML = `<button class="card row focus-card" id="today-open" style="margin-top:12px"><div class="grow small"><div style="font-weight:700">📰 This morning's brief</div>
     <div class="muted">${b.items.length} stories from your 7:25 notification</div></div><span class="pill accent">Read →</span></button>`;
@@ -1089,8 +1105,12 @@ function renderBrief(){
   $('#today-date').textContent = new Intl.DateTimeFormat('en-AU', {timeZone: TZ, weekday: 'long', day: 'numeric', month: 'long'}).format(new Date()) + ' · Brisbane';
   const within = hrs => NEWS.items.filter(i => Date.now() - Date.parse(i.published) < hrs * 36e5);
   const muted = getMuted(), fresh = hrs => within(hrs).filter(i => !isMuted(i, muted));
-  let pool = fresh(30); if (pool.length < 5) pool = fresh(72);
+  // Once today's brief exists, its stories are one tap away, so show the next best ones instead of repeating them.
+  const inBrief = new Set(TODAY_BRIEF && TODAY_BRIEF.date === todayKey() ? TODAY_BRIEF.items.map(i => i.id) : []);
+  const fresh2 = hrs => fresh(hrs).filter(i => !inBrief.has(i.id));
+  let pool = fresh2(30); if (pool.length < 5) pool = fresh2(72);
   const top = pool.sort((a, b) => rank(b) - rank(a)).slice(0, 5);
+  $('#top-title').textContent = inBrief.size ? 'More for you' : 'Top for you';
   const el = $('#brief-top');
   el.innerHTML = top.length ? top.map(newsCard).join('') : '<div class="empty">No news yet - it updates every few hours.</div>';
   wireNewsList(el);
@@ -1160,7 +1180,8 @@ function renderNews(){
   wireNewsList(el); wireNote();
   const more = $('#more'); if (more) more.onclick = () => { newsLimit += 40; renderNews(); };
 }
-$('#news-search').addEventListener('input', () => { newsLimit = 40; renderNews(); });
+let searchTimer = null;
+$('#news-search').addEventListener('input', () => { clearTimeout(searchTimer); searchTimer = setTimeout(() => { newsLimit = 40; renderNews(); }, 150); });
 
 /* ---------- Quiz engine ---------- */
 function recordAnswer(q, correct){
@@ -1193,13 +1214,14 @@ function weakQuestions(){
 const mmss = sec => { sec = Math.max(0, Math.round(sec)); return Math.floor(sec / 60) + ':' + String(sec % 60).padStart(2, '0'); };
 function renderQuiz(root, questions, opts = {}){
   let idx = 0, correct = 0, nAnswered = 0, timer = null, ended = false;
-  const t0 = Date.now(), used = () => Math.min(opts.timeLimit || Infinity, (Date.now() - t0) / 1000);
+  let tDone = 0; // set when the last question is answered, so reading the result doesn't count as exam time
+  const t0 = Date.now(), used = () => Math.min(opts.timeLimit || Infinity, ((tDone || Date.now()) - t0) / 1000);
   const show = () => {
     const q = questions[idx];
     const where = q.lesson ? ' · lesson ' + esc(q.lesson) : q.pbq ? ' · PBQ · domain ' + esc(q.domain) : '';
     const head = `${questions.length > 1 ? `<div class="q-progress">Question ${idx + 1} of ${questions.length}${where}</div>` : ''}
       <div class="q-text">${esc(q.q)}</div>${q.exhibit ? `<pre class="exhibit" tabindex="0" aria-label="Exhibit">${esc(q.exhibit)}</pre>` : ''}`;
-    if (q.type === 'order') return showOrder(q, head);
+    if (q.type === 'order'){ showOrder(q, head); return hintExhibit(); }
     const order = shuffle(q.options.map((o, i) => i)); // options are shuffled every time
     root.innerHTML = `${head}${order.map(i => `<button class="opt" data-i="${i}">${esc(q.options[i])}</button>`).join('')}
       <div class="explain" hidden></div><div class="q-next"></div>`;
@@ -1212,6 +1234,12 @@ function renderQuiz(root, questions, opts = {}){
       });
       answered(q, ok);
     });
+    hintExhibit();
+  };
+  // A wide exhibit scrolls sideways inside its box; say so, since the answer can depend on the clipped part.
+  const hintExhibit = () => {
+    const ex = root.querySelector('.exhibit');
+    if (ex && ex.scrollWidth > ex.clientWidth + 4) ex.insertAdjacentHTML('afterend', '<div class="exhibit-hint">Swipe the exhibit sideways to see the rest →</div>');
   };
   // Order PBQ: `items` are stored in the correct order, shown shuffled, moved with ▲/▼ (no drag, touch-friendly), then checked.
   const showOrder = (q, head) => {
@@ -1246,6 +1274,7 @@ function renderQuiz(root, questions, opts = {}){
   const answered = (q, ok, pre = '', post = '') => {
     if (ended) return;
     nAnswered++; if (ok) correct++;
+    if (nAnswered === questions.length && !tDone){ tDone = Date.now(); clearInterval(timer); }
     const xp = recordAnswer(q, ok);
     const ex = root.querySelector('.explain'); ex.hidden = false;
     ex.innerHTML = `<b style="color:${ok ? 'var(--ok)' : 'var(--danger)'}">${ok ? 'Correct.' : 'Not quite.'}</b>${xpTag(xp)} ${esc(pre)}${esc(q.explain)}${post}`;
@@ -1268,7 +1297,7 @@ function renderQuiz(root, questions, opts = {}){
   };
   if (opts.timeLimit){
     const tick = () => {
-      if (ended) return;
+      if (ended || tDone) return;
       if (!root.isConnected || !$('#sheet').classList.contains('open')){ clearInterval(timer); ended = true; return; }
       const left = opts.timeLimit - (Date.now() - t0) / 1000;
       opts.onTick && opts.onTick(Math.max(0, left));
@@ -1287,6 +1316,13 @@ function scaledHtml(c, t){
   return `<div class="scaled" id="scaled"><div class="small muted">Rough scaled estimate</div>
     <div><b style="color:${sc >= PASS_MARK ? 'var(--ok)' : 'var(--warn)'}">≈ ${sc}</b> <span class="muted">/ 900 · pass ${PASS_MARK}</span></div>
     <div class="small muted" style="margin-top:6px">Rough guide only. CompTIA doesn't publish how raw scores convert to its 100-900 scale, and the real exam adds PBQs, unscored items and different question weights. This simply maps 0% to 100 and 100% to 900 in a straight line.</div></div>`;
+}
+
+// Record a finished round in sp_quizHistory (last 100) and pay the round bonus.
+function logRound(rec, xp, label = 'Round complete'){
+  const h = store.get('quizHistory', []), hist = Array.isArray(h) ? h : [];
+  hist.push({date: todayKey(), ...rec}); store.set('quizHistory', hist.slice(-100));
+  const b = gainXP(xp); if (b) toast(`${label} +${b} XP`);
 }
 
 /* ---------- PBQs (performance-based questions): cysa.json `pbqs`, type "select" or "order" ---------- */
@@ -1311,7 +1347,7 @@ function renderLearn(){
     : `<button class="linkish small" style="margin-top:10px" id="course-set">Add your Udemy profile or course link →</button>`;
   const cs = $('#course-set'); if (cs) cs.onclick = () => openSettings('course-url');
   const done = store.get('lessons', {}), qs = store.get('qstats', {answered: 0, correct: 0, byDomain: {}});
-  $('#exam-name').textContent = CYSA.exam.name + ' (' + CYSA.exam.code + ')';
+  $('#exam-name').innerHTML = `${esc(CYSA.exam.name)} <span class="code">(${esc(CYSA.exam.code)})</span>`;
   const n = Object.keys(done).length;
   $('#exam-sub').textContent = `${n} of ${CYSA.lessons.length} lessons · ${qs.answered} question${qs.answered === 1 ? '' : 's'} answered`;
   $('#exam-acc').textContent = qs.answered ? Math.round(qs.correct / qs.answered * 100) + '% accuracy' : 'No quizzes yet';
@@ -1336,11 +1372,23 @@ function renderLearn(){
   }).join('') + `<p class="small muted" style="margin-top:16px">${esc(CYSA.exam.note)}</p>`;
   $('#domains').querySelectorAll('.lesson-row').forEach(b => b.onclick = () => openLesson(b.dataset.l));
 }
+// Async loaders capture sheetSeq before awaiting and only write if it hasn't changed (another sheet may have opened).
+let sheetSeq = 0, sheetOpener = null;
+const sheetIs = n => n === sheetSeq && $('#sheet').classList.contains('open');
 function openSheet(title, html){
+  sheetSeq++;
+  if (!$('#sheet').classList.contains('open')) sheetOpener = document.activeElement;
   $('#sheet-title').textContent = title; $('#sheet-body').innerHTML = html;
   $('#sheet').classList.add('open'); $('#sheet').scrollTop = 0; document.body.style.overflow = 'hidden';
+  try{ $('#sheet-close').focus({preventScroll: true}); }catch(e){}
 }
-function closeSheet(){ $('#sheet').classList.remove('open'); document.body.style.overflow = ''; renderLearn(); renderBrief(); renderNews(); }
+function closeSheet(){
+  sheetSeq++; $('#sheet').classList.remove('open'); document.body.style.overflow = '';
+  renderLearn(); renderBrief(); renderNews();
+  try{ sheetOpener && sheetOpener.isConnected && sheetOpener.focus(); }catch(e){}
+  sheetOpener = null;
+}
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && $('#sheet').classList.contains('open')) closeSheet(); });
 $('#sheet-close').onclick = closeSheet;
 
 function openLesson(id){
@@ -1388,11 +1436,10 @@ function startQuiz(n, weighted, timed){
   renderQuiz($('#big-quiz'), picked, {timeLimit: timed || 0, onTick: left => { $('#sheet-title').textContent = `${title} · ${mmss(left)} left`; },
     onDone: (c, t, tm) => {
       if (weighted) $('#big-quiz').insertAdjacentHTML('beforeend', scaledHtml(c, t));
-      const h = store.get('quizHistory', []), rec = {date: todayKey(), c, t, type: weighted ? 'exam' : 'quick'};
+      const rec = {c, t, type: weighted ? 'exam' : 'quick'};
       if (tm) Object.assign(rec, {timed: true, secs: tm.secs, expired: tm.expired});
-      h.push(rec); store.set('quizHistory', h.slice(-100));
       if (tm) $('#sheet-title').textContent = title + (tm.expired ? " · time's up" : ' · done');
-      const b = gainXP(weighted ? XP.exam : XP.quiz); if (b) toast(`Round complete +${b} XP`);
+      logRound(rec, weighted ? XP.exam : XP.quiz);
     }});
 }
 // Domain drill: DRILL_N questions from one domain, missed ones first, then unseen, then the rest.
@@ -1404,8 +1451,7 @@ function startDrill(id){
   openSheet(`Drill · Domain ${d.id}`, `<div class="card" id="big-quiz"></div>
     <p class="small muted">${esc(d.name)} (${d.weight}% of the exam): questions you've missed come first, then ones you haven't seen.</p>`);
   renderQuiz($('#big-quiz'), picked, {onDone: (c, t) => {
-    const hist = store.get('quizHistory', []); hist.push({date: todayKey(), c, t, type: 'drill', domain: id}); store.set('quizHistory', hist.slice(-100));
-    const b = gainXP(XP.quiz); if (b) toast(`Drill complete +${b} XP`);
+    logRound({c, t, type: 'drill', domain: id}, XP.quiz, 'Drill complete');
   }});
 }
 function startReview(){
@@ -1418,8 +1464,7 @@ function startReview(){
   openSheet('Review mistakes', `<div class="card" id="big-quiz"></div>
     <p class="small muted">${weak.length} question${weak.length === 1 ? '' : 's'} to review, most recent misses first (up to 10 per round). A question drops off once you get it right more often than wrong.</p>`);
   renderQuiz($('#big-quiz'), shuffle(weak.slice(0, 10)), {onDone: (c, t) => {
-    const h = store.get('quizHistory', []); h.push({date: todayKey(), c, t, type: 'review'}); store.set('quizHistory', h.slice(-100));
-    const b = gainXP(XP.quiz); if (b) toast(`Round complete +${b} XP`);
+    logRound({c, t, type: 'review'}, XP.quiz);
   }});
 }
 function startPBQ(){
@@ -1435,8 +1480,7 @@ function startPBQ(){
   openSheet('PBQ practice', `<div class="card" id="big-quiz"></div>
     <p class="small muted">Performance-based questions: read the exhibit (swipe it sideways if it's wide), then pick the answer or put the steps in order. ${all.length} in the bank, ${PBQ_ROUND} per round, unseen and missed ones first. Missed PBQs also go to Review mistakes.</p>`);
   renderQuiz($('#big-quiz'), picked, {onDone: (c, t) => {
-    const hist = store.get('quizHistory', []); hist.push({date: todayKey(), c, t, type: 'pbq'}); store.set('quizHistory', hist.slice(-100));
-    const b = gainXP(XP.quiz); if (b) toast(`Round complete +${b} XP`);
+    logRound({c, t, type: 'pbq'}, XP.quiz);
   }});
 }
 $('#pbq-practice').onclick = startPBQ;
@@ -1486,7 +1530,8 @@ function renderCards(){
   const area = $('#cards-area');
   // A review/cram round that's finished hands back to the scheduled queue.
   if (cardRound && cardQueue && !cardQueue.length){ toast(cardRound === 'review' ? 'Missed-card review done' : cardRound === 'acronyms' ? 'Acronym drill done' : 'Cram done'); cardRound = null; cardQueue = null; }
-  if (!cardQueue) cardQueue = shuffle(dueCards()).map(c => ({...c}));
+  // Rebuild the scheduled queue when it runs dry: cards missed twice are due again today, and a new day brings new cards.
+  if (!cardQueue || (!cardRound && !cardQueue.length)) cardQueue = shuffle(dueCards()).map(c => ({...c}));
   const st = store.get('cards', {}), missed = missedCards().length;
   const boxes = [1, 2, 3, 4, 5].map(b => CYSA.cards.filter(c => st[c.id] && st[c.id].box === b).length);
   const unseen = CYSA.cards.filter(c => !st[c.id]).length;
@@ -1554,7 +1599,7 @@ function answerCard(c, ok){
   }
   // Wrong: ask once more at the end of this round (fresh options), then it waits in "Review missed cards".
   if (!ok && !c.retried) cardQueue.push({...c, retried: true});
-  markActivity(); renderStats();
+  markActivity(); renderStats(); // markActivity only re-renders stats on the day's first activity
   return gainXP(ok ? XP.cardRight : XP.cardWrong, String(c.domain), ['c', c.id]);
 }
 
@@ -1575,11 +1620,14 @@ function miniMd(src){
 }
 async function openDoc(title, path){
   openSheet(title, '<div class="empty">Loading…</div>');
+  const seq = sheetSeq;
+  let html;
   try{
     const r = await fetch(path + '?_=' + Date.now());
     if (!r.ok) throw new Error(r.status);
-    $('#sheet-body').innerHTML = `<div class="card md">${miniMd(await r.text())}</div>`;
-  }catch(e){ $('#sheet-body').innerHTML = '<div class="empty">Couldn\'t load this (offline?).</div>'; }
+    html = `<div class="card md">${miniMd(await r.text())}</div>`;
+  }catch(e){ html = '<div class="empty">Couldn\'t load this (offline?).</div>'; }
+  if (sheetIs(seq)) $('#sheet-body').innerHTML = html;
 }
 
 /* ---------- Web Push: the brief arrives as a notification from this app, and tapping it opens the app ---------- */
@@ -1653,7 +1701,7 @@ const themePref = () => { const p = store.get('theme', 'system'); return p === '
 function openSettings(focus){
   const rows = NEWS.sources.map(s => `<tr><td>${s.ok ? '✅' : '⚠️'}</td><td>${esc(s.name)}${s.error ? `<div class="small muted">${esc(s.error)}</div>` : ''}</td><td style="text-align:right">${s.count}</td></tr>`).join('');
   openSheet('Settings', `
-    <div class="row" style="gap:8px"><button class="btn grow" id="open-guide">How to use</button><button class="btn grow" id="open-changelog">What's new</button><button class="btn grow" id="open-roadmap">Roadmap</button></div>
+    <div class="row doc-btns" style="gap:8px"><button class="btn grow" id="open-guide">How to use</button><button class="btn grow" id="open-changelog">What's new</button><button class="btn grow" id="open-roadmap">Roadmap</button></div>
     <h2>Appearance</h2>
     <div class="card small">
       <div class="seg" id="theme-seg" role="group" aria-label="Theme">${THEMES.map(([k, l]) => `<button class="btn ${themePref() === k ? 'on' : ''}" data-t="${k}" aria-pressed="${themePref() === k}">${l}</button>`).join('')}</div>
@@ -1728,19 +1776,28 @@ function openSettings(focus){
   $('#open-guide').onclick = () => openDoc('How to use', 'GUIDE.md');
   $('#export').onclick = () => { exportBackup(); $('#backup-status').textContent = 'Last backup: ' + backupAgo(); };
   $('#import').onchange = async e => {
+    let entries;
     try{
       const data = JSON.parse(await e.target.files[0].text());
-      Object.entries(data).forEach(([k, v]) => { if (k.startsWith('sp_')) localStorage.setItem(k, v); });
-      applyTheme(); toast('Backup restored'); cardQueue = null; cardRound = null; closeSheet(); renderCards();
-    }catch(err){ toast('That file is not a Sec-Pulse backup'); }
+      entries = Object.entries(data && typeof data === 'object' ? data : {}).filter(([k, v]) => k.startsWith('sp_') && typeof v === 'string');
+    }catch(err){ entries = []; }
+    if (!entries.length){ toast('That file is not a Sec-Pulse backup'); return; }
+    // Replace, not merge: progress keys missing from the backup shouldn't survive from the current state.
+    try{ Object.keys(localStorage).filter(k => k.startsWith('sp_')).forEach(k => localStorage.removeItem(k)); entries.forEach(([k, v]) => localStorage.setItem(k, v)); }catch(err){}
+    afterStorageReplaced('Backup restored');
   };
   $('#reset').onclick = e => {
     const b = e.currentTarget;
     if (b.dataset.armed){
       try{ Object.keys(localStorage).filter(k => k.startsWith('sp_')).forEach(k => localStorage.removeItem(k)); }catch(err){}
-      applyTheme(); toast('Progress reset'); cardQueue = null; cardRound = null; closeSheet(); renderCards();
+      afterStorageReplaced('Progress reset');
     } else { b.dataset.armed = '1'; b.textContent = 'Tap again to erase all progress'; }
   };
+}
+// After Reset or Import: rebuild derived state (XP, day log, badges) the way boot does, or XP stays off until a restart.
+function afterStorageReplaced(msg){
+  cardState.c = null; seedXP(); seedDays(); checkBadges();
+  applyTheme(); toast(msg); cardQueue = null; cardRound = null; closeSheet(); renderCards();
 }
 $('#settings-btn').onclick = () => openSettings();
 $('#refresh-btn').onclick = () => loadNews(true);
@@ -1813,7 +1870,11 @@ $('#install-dismiss').onclick = () => { store.set('hintDismissed', true); $('#in
   renderTodayLink();
 })();
 // Re-check for fresh news whenever the app comes back to the foreground.
-document.addEventListener('visibilitychange', () => { if (!document.hidden){ loadNews(false); renderTodayLink(); } });
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden) return;
+  if (!CYSA) loadCysa().then(() => { seedXP(); seedDays(); checkBadges(); renderLearn(); renderBrief(); }).catch(() => {}); // first launch was offline
+  loadNews(false); renderTodayLink();
+});
 if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
 </script>
 </body>

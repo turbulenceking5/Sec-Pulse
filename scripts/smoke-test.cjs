@@ -136,7 +136,7 @@ const fs = require('fs');
 
   // Why this ranked + mute a source.
   const src = await first.getAttribute('data-id').then(id => page.evaluate(id => NEWS.items.find(x => x.id === id).source, id));
-  await first.locator('.why.score').click();
+  await first.locator('.tags.why').click();
   await page.waitForSelector('#sheet.open .mute-btn');
   check((await page.textContent('#sheet-title')) === 'Why this ranked' && await page.locator('#sheet-body table tr').count() >= 2, 'Why this ranked shows a score breakdown');
   await page.screenshot({ path: 'shots/why.png' });
@@ -424,6 +424,21 @@ const fs = require('fs');
   check((await page.textContent('#sheet-title')) === 'Upcoming events' && await page.locator('#events-list .event').count() >= 10 && await page.locator('#events-list h2').count() >= 3, 'See all opens the events list grouped by month');
   await page.screenshot({ path: 'shots/events.png' });
   await page.click('#sheet-close');
+
+  // Review fixes (2026-10-20): Top for you skips the brief's stories, unsafe links are neutralised, the card queue refills,
+  // a timed exam stops its clock once everything is answered, and XP keeps working after Reset.
+  const dedupe = await page.evaluate(() => { const ids = new Set((TODAY_BRIEF ? TODAY_BRIEF.items : []).map(i => i.id));
+    return { title: $('#top-title').textContent, overlap: [...document.querySelectorAll('#brief-top .news-item')].some(c => ids.has(c.dataset.id)) }; });
+  check(dedupe.title === 'More for you' && !dedupe.overlap, "Top for you doesn't repeat this morning's brief");
+  check(await page.evaluate(() => newsCard({ id: 'x', title: 't', link: 'javascript:alert(1)', source: 's', published: new Date().toISOString(), score: 1, tags: [] }).includes('href="#"')), 'Non-http story links are neutralised');
+  const refill = await page.evaluate(() => { cardQueue = []; cardRound = null; const st = store.get('cards', {}); const id = CYSA.cards[0].id;
+    st[id] = { box: 1, due: todayKey() }; store.set('cards', st); renderCards(); return cardQueue.some(c => c.id === id) || $('#flash')?.dataset.card === id; });
+  check(refill, 'An empty card queue refills with cards due again today');
+  const timed = await page.evaluate(async () => { startQuiz(30, true, 600); const qs = document.querySelectorAll('#big-quiz .opt'); return !!qs.length; });
+  check(timed, 'Timed exam starts');
+  await page.click('#sheet-close');
+  const afterReset = await page.evaluate(() => { afterStorageReplaced('Progress reset'); return gainXP(10) === 10 && !!getXP(); });
+  check(afterReset, 'XP still works straight after Reset');
   check(!(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth)), 'No horizontal scroll');
   check(errors.length === 0, 'No console/page errors' + (errors.length ? ': ' + errors.join(' | ') : ''));
 
