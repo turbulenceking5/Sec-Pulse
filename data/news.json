@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T22:32:01Z",
+ "generated": "2026-10-20T00:22:46Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -34,13 +34,13 @@
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 9,
+   "count": 7,
    "error": null
   },
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 1,
+   "count": 2,
    "error": null
   },
   {
@@ -82,7 +82,7 @@
   {
    "name": "Microsoft Security Blog",
    "ok": true,
-   "count": 3,
+   "count": 6,
    "error": null
   },
   {
@@ -106,6 +106,42 @@
  ],
  "items": [
   {
+   "id": "d3fd0ebf24cf",
+   "title": "Japan Faces New Wave Of AI-Powered Cyberattacks As Hackers Exploit Stolen Data",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPVHlXTGs1aElqalJKdnJtQWtQVVFjajhta1hmeVlmUjI4ckxQcmktbFlUQUNOY1l4cmF6UWpBOXhnVnpYeTVsUk53a3lEZUpCQmNTbWRzbFlfMkNwUGhKVFh4QWJTUXAtQlZEUUc2RTRRWXIxX054NF81azZYVXZ0TGV0cGlnSWpuN1pTb0VXa0ZZdHRiYndxZngyeW1vZlV2YnZLWG0xMWU3bWlPOUI4?oc=5",
+   "source": "ChannelNews.com.au",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-19T23:36:15Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "966e9a52ddea",
+   "title": "Opinion: SB 690 provided some relief against privacy act lawsuits, but work must continue",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOY1NGdXYtWnpBX2pvLWdLUnctLW9vRkVuMVMzZmZJMkp4N2YwemhreUxZamJxYVFqWXA1QXo5VHBOQ3QwVlQwM2pLd1ZhNE9vb3B2MmVZbXNNUXJMdEZjeXVCcUR4UlVnbHBpZTMzdXNJbFdiZHpSNDdRMTl6MlRKSk5rQXNwT01hMGdwS2ZERVhvMWZ0OFdRQVJWeVBZdmJHMW5F?oc=5",
+   "source": "The Business Journals",
+   "feed": "OAIC / Privacy news",
+   "region": "AU",
+   "published": "2026-10-19T22:36:00Z",
+   "summary": "",
+   "score": 12,
+   "tags": [
+    "Australia",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Australia",
+    "SaaS / cloud"
+   ]
+  },
+  {
    "id": "5a8d0413be6f",
    "title": "Nikkei discloses third data breach in a month, 1.8M records exposed",
    "link": "https://www.bleepingcomputer.com/news/security/nikkei-discloses-third-data-breach-in-a-month-18m-records-exposed/",
@@ -120,6 +156,29 @@
    ],
    "why": [
     "Data breach"
+   ]
+  },
+  {
+   "id": "962df917dbfe",
+   "title": "California settles 23andMe data breach claims for US$6M",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNcG5DY0tsUTY3WEpfdjlqMk5GRDJCemY0UllObzJtNDZLaXoya2tXSk9wNjBCVlR0anRJOXpCYjB6V215akR1dW05UHJYQW9kSTZjbWt0ZUs4eDU4VDF2RVhud3RpV2M2cVJLU2lGbkV3THVPaEhSemxzZlNrMXlNWFlhT0kzXzlQaE1oenp6aFZCbC1SVlNIcnkybV92S1E?oc=5",
+   "source": "CP24",
+   "feed": "OAIC / Privacy news",
+   "region": "Global",
+   "published": "2026-10-19T21:25:47Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ],
+   "also": [
+    {
+     "source": "Rock Hill Herald",
+     "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1XNXdyOUE2X2NMa3RwdlpDSGlSRXE0RUdtbG5qZHZYbEp6b254c0pJd2JuTXF5VTJtZ1hBTVVmRWVXdVVBakJEN0wwUkFUZEpia21MUlhFNDBuemhBUVc0SW5qYWlKNjF4VFlUUGgtcmlxZw?oc=5"
+    }
    ]
   },
   {
@@ -153,23 +212,6 @@
    "score": 0,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "ecdd557607b2",
-   "title": "California settles 23andMe data breach claims for $6 million",
-   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1XNXdyOUE2X2NMa3RwdlpDSGlSRXE0RUdtbG5qZHZYbEp6b254c0pJd2JuTXF5VTJtZ1hBTVVmRWVXdVVBakJEN0wwUkFUZEpia21MUlhFNDBuemhBUVc0SW5qYWlKNjF4VFlUUGgtcmlxZw?oc=5",
-   "source": "Rock Hill Herald",
-   "feed": "OAIC / Privacy news",
-   "region": "Global",
-   "published": "2026-10-19T21:00:00Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
   },
   {
    "id": "553c25ef7794",
@@ -433,6 +475,23 @@
    ],
    "why": [
     "Vulnerability"
+   ]
+  },
+  {
+   "id": "8fa11e4ab81b",
+   "title": "Are Pakistani Universities Safe From ShinyHunters Ransomware?",
+   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1RZ25FQTM5VTA0elg3SmRnNHozY1o4NEpva3p5WHBmZ1BObkRNV0FiNTRubnl5VWcwUVBIczVsQS0wQ0V2RjJkc0J0MGdCbzFBTWdxTmVUNjVtQ0JTbUdoS0N4SFJaZ1ZZdWRPTGFEdGl3WE0?oc=5",
+   "source": "TechJuice",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-19T13:53:45Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
    ]
   },
   {
