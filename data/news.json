@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T19:18:35Z",
+ "generated": "2026-10-20T21:46:39Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -52,7 +52,7 @@
   {
    "name": "CISA KEV",
    "ok": true,
-   "count": 14,
+   "count": 20,
    "error": null
   },
   {
@@ -100,11 +100,51 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 24,
+   "count": 29,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "05dd90fd0f45",
+   "title": "PHP warns admins of two critical flaws, emergency patches coming tomorrow",
+   "link": "https://www.bleepingcomputer.com/news/security/php-warns-admins-of-two-critical-flaws-emergency-patches-coming-tomorrow/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-20T20:56:43Z",
+   "summary": "The PHP security team is warning administrators to prepare for emergency security updates tomorrow to address two critical vulnerabilities, as information about the flaws has reportedly leaked ahead of their scheduled disclosure. [...]",
+   "score": 8,
+   "tags": [
+    "Data breach",
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Data breach",
+    "Vulnerability",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "aa2f36ffa3be",
+   "title": "Zeabur shutting down after second security breach in two months",
+   "link": "https://www.bleepingcomputer.com/news/security/zeabur-shutting-down-after-second-security-breach-in-two-months/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-20T19:33:02Z",
+   "summary": "Development platform Zeabur has disclosed details of a cybersecurity incident in which an attacker used leaked internal credentials stored in plaintext to compromise its infrastructure and steal over 3.2 million environment variable records and information for 321,810 accounts. [...]",
+   "score": 6,
+   "tags": [
+    "Data breach",
+    "Identity"
+   ],
+   "why": [
+    "Data breach",
+    "Identity"
+   ]
+  },
   {
    "id": "89526558312a",
    "title": "Greenfield police warn of real estate scam on Facebook",
@@ -150,6 +190,23 @@
    ],
    "why": [
     "Real estate"
+   ]
+  },
+  {
+   "id": "937200821589",
+   "title": "Not Just a Selfie: The New BIPA Theory Aimed at Generative AI (via Passle)",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQcHlPV2ZOY3A2cUprRDA3eFdad2Znd3JSVkQ0M0NTemxQR3FRbkhFVlhMelZLR2FuNjdYNFFmbklxV3pUeC1sUkhVN3pIN09JOUVHWVV4Wmg4eW1ZakVMRDA1ZXBFTjZ6bDZnV2FSUWlWODg1c3kyOFVSTUFwcGtFMXZQVVA4NENsSF82aGw3aEdJVVIzNVZCMDlSX3l3aWZZZHVuczJMVQ?oc=5",
+   "source": "Frankfurt Kurnit Klein & Selz PC",
+   "feed": "OAIC / Privacy news",
+   "region": "Global",
+   "published": "2026-10-20T17:12:01Z",
+   "summary": "",
+   "score": 4,
+   "tags": [
+    "AI threats"
+   ],
+   "why": [
+    "AI threats"
    ]
   },
   {
@@ -625,6 +682,24 @@
    ],
    "why": [
     "Data breach"
+   ],
+   "also": [
+    {
+     "source": "Cyber Press",
+     "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE4zTWl1ZmRKamx2NUVPcGlVWXVLYXg2WWVxbTZZTERDd0NheUJsUEtYTzdFT05mbGl3b28wRkhBbGNtMGQ0aXkwNDVDZmRfTGg0SldnQjljaFRmcEtjc1RNRnlRSHJmeTR3OFp0RS1lOTBYQdIBckFVX3lxTE4zTWl1ZmRKamx2NUVPcGlVWXVLYXg2WWVxbTZZTERDd0NheUJsUEtYTzdFT05mbGl3b28wRkhBbGNtMGQ0aXkwNDVDZmRfTGg0SldnQjljaFRmcEtjc1RNRnlRSHJmeTR3OFp0RS1lOTBYQQ?oc=5"
+    },
+    {
+     "source": "GBHackers News",
+     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPc2JRa0Vhbl9fTmREdmloY0xScUpDbEpDSExuWGhrUHhmc010eGczaTRYM0RsVk1aRWU1aG9yMmpOdF9SMERJZ0RGcWZyYUMyaUtQSURWcnY2NVk3VmxrbFNYWFBxM2lVN01sMHRtMUVobnJXVGN3T3dKY2g2M21FVUlnT2RiYmVNOGFsbdIBjAFBVV95cUxPc2JRa0Vhbl9fTmREdmloY0xScUpDbEpDSExuWGhrUHhmc010eGczaTRYM0RsVk1aRWU1aG9yMmpOdF9SMERJZ0RGcWZyYUMyaUtQSURWcnY2NVk3VmxrbFNYWFBxM2lVN01sMHRtMUVobnJXVGN3T3dKY2g2M21FVUlnT2RiYmVNOGFsbQ?oc=5"
+    },
+    {
+     "source": "CyberSecurityNews",
+     "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5fc0JHa2dWUzJuVzRhaGpzd3VZSkxUVkhaOEM2WnUzbWRscC1CYkVMaURrb0k3ZjlwU1BMTER1dVNRdDg5VmJfVWhSaVdFVGhlMGhYcEg5QTVCRE1rbTFVaVlzVlVtR1VMZGZoWndaNnA4dUh5X01uUWV30gF6QVVfeXFMTl9zQkdrZ1ZTMm5XNGFoanN3dVlKTFRWSFo4QzZadTNtZGxwLUJiRUxpRGtvSTdmOXBTUExMRHV1U1F0ODlWYl9VaFJpV0VUaGUwaFhwSDlBNUJETWttMVVpWXNWVW1HVUxkZmhad1o2cDh1SHlfTW5RZXc?oc=5"
+    },
+    {
+     "source": "The420.in",
+     "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1SQklFSWJ0Q2VyNFFwbUhOZG1tSjd2SlNNN0gzd0xlYXJFYUx0R3ktcDlkQW5TbkRvbUY0M0FGS2xhTEtEdEhsckZjdHhwR3FFMnlNZy1nQjRaWS1hdC1HY3lDU3htalhLWkVaamNZZERaRGN1dHpmNw?oc=5"
+    }
    ]
   },
   {
@@ -645,37 +720,6 @@
    ]
   },
   {
-   "id": "0e979ab4eea3",
-   "title": "Hacker Uses AI Agents to Breach Over 100 Websites for Just $5,000",
-   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE4zTWl1ZmRKamx2NUVPcGlVWXVLYXg2WWVxbTZZTERDd0NheUJsUEtYTzdFT05mbGl3b28wRkhBbGNtMGQ0aXkwNDVDZmRfTGg0SldnQjljaFRmcEtjc1RNRnlRSHJmeTR3OFp0RS1lOTBYQdIBckFVX3lxTE4zTWl1ZmRKamx2NUVPcGlVWXVLYXg2WWVxbTZZTERDd0NheUJsUEtYTzdFT05mbGl3b28wRkhBbGNtMGQ0aXkwNDVDZmRfTGg0SldnQjljaFRmcEtjc1RNRnlRSHJmeTR3OFp0RS1lOTBYQQ?oc=5",
-   "source": "Cyber Press",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-20T06:52:59Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ],
-   "also": [
-    {
-     "source": "GBHackers News",
-     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPc2JRa0Vhbl9fTmREdmloY0xScUpDbEpDSExuWGhrUHhmc010eGczaTRYM0RsVk1aRWU1aG9yMmpOdF9SMERJZ0RGcWZyYUMyaUtQSURWcnY2NVk3VmxrbFNYWFBxM2lVN01sMHRtMUVobnJXVGN3T3dKY2g2M21FVUlnT2RiYmVNOGFsbdIBjAFBVV95cUxPc2JRa0Vhbl9fTmREdmloY0xScUpDbEpDSExuWGhrUHhmc010eGczaTRYM0RsVk1aRWU1aG9yMmpOdF9SMERJZ0RGcWZyYUMyaUtQSURWcnY2NVk3VmxrbFNYWFBxM2lVN01sMHRtMUVobnJXVGN3T3dKY2g2M21FVUlnT2RiYmVNOGFsbQ?oc=5"
-    },
-    {
-     "source": "CyberSecurityNews",
-     "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5fc0JHa2dWUzJuVzRhaGpzd3VZSkxUVkhaOEM2WnUzbWRscC1CYkVMaURrb0k3ZjlwU1BMTER1dVNRdDg5VmJfVWhSaVdFVGhlMGhYcEg5QTVCRE1rbTFVaVlzVlVtR1VMZGZoWndaNnA4dUh5X01uUWV30gF6QVVfeXFMTl9zQkdrZ1ZTMm5XNGFoanN3dVlKTFRWSFo4QzZadTNtZGxwLUJiRUxpRGtvSTdmOXBTUExMRHV1U1F0ODlWYl9VaFJpV0VUaGUwaFhwSDlBNUJETWttMVVpWXNWVW1HVUxkZmhad1o2cDh1SHlfTW5RZXc?oc=5"
-    },
-    {
-     "source": "The420.in",
-     "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1SQklFSWJ0Q2VyNFFwbUhOZG1tSjd2SlNNN0gzd0xlYXJFYUx0R3ktcDlkQW5TbkRvbUY0M0FGS2xhTEtEdEhsckZjdHhwR3FFMnlNZy1nQjRaWS1hdC1HY3lDU3htalhLWkVaamNZZERaRGN1dHpmNw?oc=5"
-    }
-   ]
-  },
-  {
    "id": "50e342417287",
    "title": "Ex-OpenAI Engineer Detained in Spy Device Case as Saudi Royal Contacts Emerge",
    "link": "https://thehackernews.com/2026/10/ex-openai-engineer-detained-in-spy.html",
@@ -690,6 +734,12 @@
    ],
    "why": [
     "Edge devices"
+   ],
+   "also": [
+    {
+     "source": "Dark Reading",
+     "url": "https://www.darkreading.com/insider-threats/ex-openai-engineer-secret-recorder-saudi-ties"
+    }
    ]
   },
   {
@@ -774,6 +824,126 @@
     "Australia",
     "SaaS / cloud"
    ]
+  },
+  {
+   "id": "fb153a3119f4",
+   "title": "CVE-2026-106931: EG Secure Solutions SiteGuard Server Edition — EG Secure Solutions SiteGuard Server Edition OS Command Injection Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-106931",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-10-20T00:00:00Z",
+   "summary": "EG Secure Solutions SiteGuard Server Edition contains an OS command injection vulnerability which may allow an attacker to execute arbitrary OS commands with root or SYSTEM privileges on the system running the affected product. CISA remediation due 2026-10-23.",
+   "score": 4,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0066
+  },
+  {
+   "id": "17cca1785b07",
+   "title": "CVE-2026-96656: Plex Media Server — Plex Media Server External Control of File Name or Path Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-96656",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-10-20T00:00:00Z",
+   "summary": "Plex Media Server contains an external control of file name or path vulnerability which can allow an admin user to write arbitrary files that may be executed on load. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96655. CISA remediation due 2026-10-23.",
+   "score": 4,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.004
+  },
+  {
+   "id": "f8740efa0ba7",
+   "title": "CVE-2026-96655: Plex Media Server — Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-96655",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-10-20T00:00:00Z",
+   "summary": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability that could allow an authenticated user to request arbitrary internal or external addresses via the '/video/:/transcode/universal' path parameter. This vulnerability can be chained… CISA remediation due 2026-11-03.",
+   "score": 4,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0022
+  },
+  {
+   "id": "58d95396f190",
+   "title": "CVE-2026-96654: Plex Media Server — Plex Media Server Improper Neutralization of Encoded URI Schemes in a Web Page Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-96654",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-10-20T00:00:00Z",
+   "summary": "Plex Media Server contains an improper neutralization of encoded URI schemes in a web page vulnerability that could allow an attacker to call other plugins' functions and supply their own parameters. This vulnerability can be chained with CVE-2026-96652,… CISA remediation due 2026-10-23.",
+   "score": 4,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0023
+  },
+  {
+   "id": "4222a3123091",
+   "title": "CVE-2026-96652: Plex Media Server — Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-96652",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-10-20T00:00:00Z",
+   "summary": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability which could allow an attacker using any X-Plex-Token value to include a full URL in the 'protocol' parameter and force the Plex server to POST to the attacker's chosen destination.… CISA remediation due 2026-11-03.",
+   "score": 4,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0022
+  },
+  {
+   "id": "d846792329f0",
+   "title": "CVE-2026-110936: Siemens Software Center — Siemens Software Center Uncontrolled Search Path Element Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-110936",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-10-20T00:00:00Z",
+   "summary": "Siemens Software Center contains an uncontrolled search path element vulnerability that could allow an authenticated local attacker to place a specially crafted DLL in a directory that the application searches, leading to arbitrary code execution with the… CISA remediation due 2026-11-03.",
+   "score": 4,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0014
   },
   {
    "id": "d3fd0ebf24cf",
