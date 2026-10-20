@@ -14,23 +14,24 @@ Your daily cyber security news and CySA+ study app. Everything is saved on this 
 - **Daily quests**: four optional goals that reset at midnight. Finish all four to earn a 🧊 streak freeze, which saves your streak if you miss a single day.
 - **Exam countdown**: set your exam date in Settings to get days left and a daily target.
 - **Focus area**: your weakest exam domain. Tap **Drill 10** for questions from it, with past misses first.
+- **Top for you** (**More for you** once this morning's brief has arrived, so it doesn't repeat those stories), then **today's lesson** and the **question of the day**.
 - **Upcoming events**: the next cyber security conferences in Australia. Queensland ones are marked **Near you**. **See all** lists every event plus Brisbane meetups, and **+ Calendar** adds one to your calendar.
-- **Top for you**, **today's lesson** and the **question of the day**.
+- A **backup reminder** appears about once a month; it only takes a tap to export.
 
 ## News tab
 - **Filters**: For you, Latest, Australia, Exploited, Real estate & BEC, Microsoft 365, Later, Saved.
 - **Tap a headline** to read the story. Read stories are dimmed.
 - **☆** saves a story (you can add a note to saved ones). The **clock** adds it to Read later.
-- **score N**: tap to see why a story ranked and to **mute** a source or tag.
+- **score N** (first in the tag row): tap it or the tags to see why a story ranked, and to **mute** a source or tag.
 - **CVE-… ↗** links open the vulnerability on NVD. **Fix by** shows CISA's patch deadline for actively exploited flaws (red when it's close).
 - **Pull down** at the top to refresh. News updates every 3 hours.
 
 ## Learn tab
-- **Lessons** for all four CySA+ domains. Each has key points, an exam tip, an on-the-job note, a video search link and a 3-question quiz.
+- **Lessons** for all four CySA+ domains. Each has key points, an exam tip, an on-the-job note, a video search link and a 3-question quiz. Finish the quiz or tap **Mark as complete** to tick it off.
 - **Quick quiz** (10 questions) and **Practice exam** (30 questions weighted like the real exam, with a rough scaled score).
 - **Timed practice exam**: 30 questions in 58 minutes, the real exam's pace. Closing it cancels the attempt.
 - **Review mistakes**: questions you've got wrong, until you get them right more often than wrong.
-- **PBQ practice**: hands-on scenarios with logs, headers and scan output.
+- **PBQ practice**: hands-on scenarios with logs, headers and scan output. Wide exhibits scroll sideways; the app says when there's more to see.
 
 ## Cards tab
 - Multiple-choice flashcards with spaced repetition: right answers come back later, wrong ones come back sooner. 8 new cards a day.

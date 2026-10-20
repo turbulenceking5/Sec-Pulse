@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026-10-20: Fixes and polish from a full review
+- **Fixed:** after **Reset** or **Import**, levelling up stopped until you restarted the app. Import now replaces your progress properly and refuses files that aren't backups.
+- **Fixed:** Cards could say "All caught up" while cards were still due (missed cards, or a new day with the app left open).
+- **Fixed:** coming back to the app could wipe a note you were typing or an answered question of the day.
+- **Fixed:** a timed exam kept the clock running after the last answer, which could block the "Beat the clock" achievement.
+- **Faster on bad signal:** if the network is slow, the app shows your saved copy after 4 seconds instead of a blank screen.
+- **Brief:** "Top for you" becomes "More for you" once this morning's brief is in, so it doesn't repeat the same stories. The lesson and question of the day now sit above events.
+- **News:** the score now sits in the tag row, so cards are shorter. Scoring no longer mistakes "flaws" for AWS, "Central Ohio" for Microsoft Entra or "San Francisco" for Cisco, and US privacy stories are no longer tagged Australian.
+- **Study content:** clearer answers for the executive-summary, intel-levels, order-of-volatility, MTTR and ATT&CK cards, and better wrong options on three quiz questions.
+- **Also:** quiz answers are marked ✓/✗ (not just by colour), wide PBQ exhibits say they scroll, Esc closes screens, and the morning brief can no longer double-send or stall in rare failure cases.
+
 ## 2026-10-19: Upcoming events
 - **Upcoming events** on the Brief: the next cyber security conferences in Australia (BSides, CrikeyCon, AUSCERT, CyberCon, Gartner and more), with Queensland events marked "Near you". **See all** lists every event by month plus Brisbane meetups, and **+ Calendar** adds an event to your phone's calendar.
 

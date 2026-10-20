@@ -110,7 +110,10 @@ def send_webpush(title, body, tag, brief=None):
         b = shrink_brief(brief, limit)
         if fits(body, b):
             break
-    while not fits(body, b):
+    # Still too big (very long titles): drop stories from the end, then trim the body. Always terminates.
+    while not fits(body, b) and b and b.get("items"):
+        b = {**b, "items": b["items"][:-1]}
+    while not fits(body, b) and len(body) > 200:
         body = body[:-200].rstrip() + "…"
     body_payload = payload(body, b)
     # VAPID "sub" must be mailto: or a bare https://host; the app's origin keeps any e-mail out of the repo.

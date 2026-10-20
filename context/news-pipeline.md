@@ -10,7 +10,9 @@ How headlines get from publishers into `data/news.json`.
 4. Fresh items are merged with the previous `news.json` (so stories survive until they age out) and de-duplicated by link/identical title.
 5. Items naming a CVE are enriched with an **EPSS** probability from FIRST's public API (see [EPSS enrichment](#epss-enrichment)).
 6. Reports of the same story from different outlets are **clustered** into one item (see [Story clustering](#story-clustering)), then everything is sorted newest-first and capped at 400.
-7. The workflow commits `data/news.json` only if it changed, pulling and rebasing first so it can't collide with the morning-brief workflow (both share the `news-data` concurrency group anyway).
+7. The workflow commits `data/news.json` only if it changed, pulling and rebasing first. If another workflow (usually the morning brief, which is in a different concurrency group) pushed `news.json` in the meantime, the rebase conflicts on `generated`; the fetch then skips its commit (exit 0) rather than failing, and the next run fetches again.
+
+Keyword terms match at the **start of a word** (`term_in()`; `termIn()` in the app's Why-this-ranked view), so `aws` doesn't match "flaws", `entra` doesn't match "central" and `cisco` doesn't match "Francisco", while `credential` still matches "credentials". Titles are capped at 300 characters, links must be `http(s)`, future dates are clamped to now, and an undated item keeps the time it was first seen.
 
 Standard library only, so there's no `pip install` step and nothing to pin.
 
@@ -150,7 +152,7 @@ Each source runs in its own `try/except`, and so does the EPSS lookup (its healt
 
 | Source | Status | Notes |
 |---|---|---|
-| ACSC Alerts / ACSC Advisories (`cyber.gov.au/rss/…`) | ⚠️ failing since launch | Correct URLs per feed directories, but cyber.gov.au returns nothing to data-centre IPs (GitHub Actions, cloud sandboxes). ACSC content still arrives via the **ACSC (via Google News)** and **ASD / ACSC in the news** sources. Leave them in, since they'll recover silently if ACSC changes its blocking, or remove them to clear the ⚠️. |
+| ACSC Alerts / ACSC Advisories (`cyber.gov.au/rss/…`) | ✅ intermittent | Failed from data-centre IPs at launch; by 2026-10-20 the Actions runs showed both `ok` (a cloud sandbox still gets nothing, so it may be IP-dependent). ACSC content still arrives via the **ACSC (via Google News)** and **ASD / ACSC in the news** sources. Leave them in, since they'll recover silently if ACSC changes its blocking, or remove them to clear the ⚠️. |
 | ACSC (via Google News) | ✅ filtered | Without its `exclude`/`minTitleWords` filters, most of its items are evergreen guidance pages, not news (fixed 2026-10-13). If it still lets junk through, add a regex to `exclude`. |
 | iTnews Security (category 37) | ✅ `requireMatch` | The "security" category feed also carries general IT business news (CIO appointments, visa policy), so it needs `requireMatch`. Expect a few items a week, not 20. |
 | CISA advisories (`cisa.gov/cybersecurity-advisories/all.xml`) | not used | Returns 403 to scripts. CISA KEV JSON works fine and covers the most actionable part. |

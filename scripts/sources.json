@@ -21,7 +21,7 @@
   ],
   "keywords": [
     {"tag": "Real estate", "weight": 6, "terms": ["real estate", "realestate", "property manag", "conveyanc", "property settlement", "pexa", "proptech", "rental", "tenant", "landlord", "mortgage", "home buyer", "homebuyer"]},
-    {"tag": "Australia", "weight": 4, "terms": ["australia", "australian", "acsc", "asd's", "cyber.gov.au", "oaic", "brisbane", "queensland", "sydney", "melbourne", "perth", "adelaide", "new zealand", "privacy act", "scamwatch", "essential eight", "medibank", "optus", "qantas"]},
+    {"tag": "Australia", "weight": 4, "terms": ["australia", "australian", "acsc", "asd's", "cyber.gov.au", "oaic", "brisbane", "queensland", "sydney", "melbourne", "perth", "adelaide", "new zealand", "australian privacy act", "privacy act 1988", "scamwatch", "essential eight", "medibank", "optus", "qantas"]},
     {"tag": "BEC / payment fraud", "weight": 5, "terms": ["business email compromise", "bec ", "invoice fraud", "payment redirection", "payment diversion", "wire fraud", "fake invoice", "bank detail", "email compromise"]},
     {"tag": "Actively exploited", "weight": 4, "terms": ["actively exploited", "exploited in the wild", "in the wild", "zero-day", "0-day", "zero day", "known exploited"]},
     {"tag": "Phishing", "weight": 3, "terms": ["phishing", "smishing", "vishing", "credential harvest", "adversary-in-the-middle", "aitm", "mfa fatigue", "mfa bombing", "qr code", "quishing", "lure"]},

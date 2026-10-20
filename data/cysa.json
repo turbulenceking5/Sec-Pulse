@@ -84,7 +84,7 @@
       "quiz": [
         {"q": "Which tool automates response steps such as disabling an account and opening a ticket when an alert fires?", "options": ["SIEM", "SOAR", "IDS", "NetFlow collector"], "answer": 1, "explain": "SOAR orchestrates and automates response playbooks across tools."},
         {"q": "An analyst needs to see the actual payload of an HTTP request. Which data source is required?", "options": ["NetFlow", "Firewall allow logs", "Full packet capture", "DHCP logs"], "answer": 2, "explain": "Only full packet capture contains payload contents."},
-        {"q": "Why should an analyst search VirusTotal by hash before uploading a suspicious document?", "options": ["Hashes are faster to type", "Uploading may expose sensitive content to third parties", "VirusTotal does not accept documents", "Hash search also cleans the file"], "answer": 1, "explain": "Uploaded files can be shared with researchers and vendors; hash lookups reveal nothing new."}
+        {"q": "Why should an analyst search VirusTotal by hash before uploading a suspicious document?", "options": ["Hash lookups return more detailed sandbox results", "Uploading may expose sensitive content to third parties", "VirusTotal does not accept documents", "Hash search also cleans the file"], "answer": 1, "explain": "Uploaded files can be shared with researchers and vendors; hash lookups reveal nothing new."}
       ]
     },
     {
@@ -160,7 +160,7 @@
       "quiz": [
         {"q": "Which regex matches an IPv4-looking string most simply?", "options": ["\\d+\\.\\d+\\.\\d+\\.\\d+", "[a-z]+@[a-z]+", "^\\s*$", "\\w{32}"], "answer": 0, "explain": "Four groups of digits separated by literal dots. (It does not validate 0-255, but finds candidates.)"},
         {"q": "What is the best reason to keep a human approval step before automatically disabling an executive's account?", "options": ["Automation cannot disable accounts", "The business impact of a false positive is high", "Regulations ban automation", "It is faster"], "answer": 1, "explain": "High-impact actions need human judgement to avoid costly false-positive disruption."},
-        {"q": "Which data format uses key-value pairs in braces and is common in API responses?", "options": ["CSV", "JSON", "YAML only", "Syslog"], "answer": 1, "explain": "JSON is the standard API format."}
+        {"q": "Which data format uses key-value pairs in braces and is common in API responses?", "options": ["CSV", "JSON", "XML", "Syslog"], "answer": 1, "explain": "JSON is the standard API format."}
       ]
     },
     {
@@ -391,7 +391,7 @@
       "onTheJob": "M365 account compromise checklist: reset password, revoke sessions, review MFA methods, remove malicious inbox rules and forwarding, check OAuth app consents, review sent items, notify likely recipients.",
       "quiz": [
         {"q": "After resetting a compromised user's password, the attacker still has access. What was most likely missed?", "options": ["Revoking existing sessions/tokens", "Changing the user's display name", "Running a disk defrag", "Updating DNS"], "answer": 0, "explain": "Existing session tokens can remain valid until revoked."},
-        {"q": "Why is reimaging preferred over cleaning malware from a host?", "options": ["It is faster to type", "It removes hidden persistence you might miss", "It preserves evidence", "It avoids needing backups"], "answer": 1, "explain": "You cannot be sure cleaning found everything; reimaging returns a known-good state."},
+        {"q": "Why is reimaging preferred over cleaning malware from a host?", "options": ["It keeps the attacker's tools available for analysis", "It removes hidden persistence you might miss", "It preserves evidence", "It avoids needing backups"], "answer": 1, "explain": "You cannot be sure cleaning found everything; reimaging returns a known-good state."},
         {"q": "Isolating an infected laptop from the network is which step?", "options": ["Eradication", "Containment", "Recovery", "Preparation"], "answer": 1, "explain": "Isolation limits spread - containment."}
       ]
     },
@@ -540,7 +540,7 @@
     {"id": "c05", "domain": 1, "group": "detection", "front": "STIX vs TAXII", "back": "STIX = structured language/format for threat intel. TAXII = transport protocol for sharing it."},
     {"id": "c06", "domain": 1, "group": "models", "front": "Diamond Model", "back": "Intrusion analysis model with four core features: Adversary, Capability, Infrastructure, Victim."},
     {"id": "c07", "domain": 1, "group": "models", "front": "Cyber Kill Chain (7 stages)", "back": "Recon, Weaponisation, Delivery, Exploitation, Installation, Command & Control, Actions on Objectives."},
-    {"id": "c08", "domain": 1, "group": "models", "front": "Tactic vs technique (ATT&CK)", "back": "Tactic = adversary's goal (why, e.g. Persistence). Technique = how they achieve it (e.g. Scheduled Task T1053)."},
+    {"id": "c08", "domain": 1, "group": "models", "front": "Tactic vs technique (ATT&CK)", "back": "Tactic = adversary's goal (why, e.g. Persistence). Technique = how they achieve it (e.g. Scheduled Task/Job, T1053)."},
     {"id": "c09", "domain": 1, "group": "detection", "front": "IoC vs IoA", "back": "Indicator of Compromise = evidence an attack happened (hash, IP). Indicator of Attack = behaviour showing an attack in progress."},
     {"id": "c10", "domain": 1, "group": "tooling", "front": "SIEM vs SOAR", "back": "SIEM collects, correlates and alerts on logs. SOAR automates and orchestrates response with playbooks."},
     {"id": "c11", "domain": 1, "group": "detection", "front": "NetFlow vs packet capture", "back": "NetFlow = metadata (who, when, how much). Full packet capture = complete payload contents."},
@@ -549,7 +549,7 @@
     {"id": "c14", "domain": 1, "group": "tooling", "front": "Zero Trust", "back": "No implicit trust from network location; continuously verify identity, device and context for every request."},
     {"id": "c15", "domain": 1, "group": "tooling", "front": "SASE", "back": "Secure Access Service Edge - networking (SD-WAN) and security (SWG, CASB, ZTNA, FWaaS) delivered from the cloud."},
     {"id": "c16", "domain": 1, "group": "tooling", "front": "CASB", "back": "Cloud Access Security Broker - visibility and policy enforcement between users and cloud services."},
-    {"id": "c17", "domain": 1, "group": "models", "front": "Strategic / operational / tactical intel", "back": "Strategic = big-picture for leaders. Operational = campaigns and TTPs. Tactical = specific IoCs."},
+    {"id": "c17", "domain": 1, "group": "models", "front": "Strategic / operational / tactical intel", "back": "Strategic = big-picture trends and risk for leaders. Operational = specific campaigns and actors. Tactical = TTPs (how attackers operate). Technical = specific IoCs (hashes, IPs, domains)."},
     {"id": "c18", "domain": 1, "group": "tooling", "front": "UEBA", "back": "User and Entity Behaviour Analytics - baselines normal behaviour and flags anomalies (e.g. impossible travel)."},
     {"id": "c19", "domain": 1, "group": "email-identity", "front": "Impossible travel", "back": "Sign-ins from locations too far apart for the time between them - suggests stolen credentials or tokens."},
     {"id": "c20", "domain": 1, "group": "email-identity", "front": "AiTM phishing", "back": "Adversary-in-the-middle: a proxy phishing page relays the real login and steals the session cookie, bypassing standard MFA."},
@@ -576,7 +576,7 @@
     {"id": "c41", "domain": 2, "group": "models", "front": "Essential Eight (list)", "back": "Patch apps, patch OS, MFA, restrict admin privileges, application control, restrict Office macros, user app hardening, regular backups."},
     {"id": "c42", "domain": 2, "group": "appsec", "front": "SBOM", "back": "Software Bill of Materials - inventory of components in a piece of software, for supply-chain risk."},
     {"id": "c43", "domain": 3, "group": "models", "front": "NIST IR phases", "back": "Preparation; Detection & Analysis; Containment, Eradication & Recovery; Post-Incident Activity."},
-    {"id": "c44", "domain": 3, "group": "models", "front": "Order of volatility", "back": "Registers/cache → RAM → network state/processes → temp files → disk → remote logs → archives/backups."},
+    {"id": "c44", "domain": 3, "group": "models", "front": "Order of volatility", "back": "Registers/cache → RAM (incl. running processes, network connections, routing/ARP tables) → swap/pagefile and temp files → disk → remote logs/monitoring data → archives/backups (RFC 3227)."},
     {"id": "c45", "domain": 3, "group": "ir", "front": "Chain of custody", "back": "Documented record of who handled evidence, when, and how - required for legal admissibility."},
     {"id": "c46", "domain": 3, "group": "ir", "front": "Legal hold", "back": "Instruction to preserve relevant data when litigation is reasonably anticipated."},
     {"id": "c47", "domain": 3, "group": "ir", "front": "RTO vs RPO", "back": "RTO = maximum time to restore service. RPO = maximum acceptable data loss (time since last good backup)."},
@@ -587,7 +587,7 @@
     {"id": "c52", "domain": 3, "group": "ir", "front": "Containment vs eradication", "back": "Containment limits spread (isolate, block). Eradication removes the threat (malware, persistence, attacker access)."},
     {"id": "c53", "domain": 3, "group": "ir", "front": "ReportCyber", "back": "ASD/ACSC's online reporting service for cybercrime and incidents in Australia (cyber.gov.au). Hotline 1300 CYBER1."},
     {"id": "c54", "domain": 3, "group": "email-identity", "front": "Payment redirection fraud: first move", "back": "Contact the sending bank's fraud team immediately to attempt a recall, then report and preserve evidence."},
-    {"id": "c55", "domain": 4, "group": "reporting", "front": "MTTD / MTTR", "back": "Mean Time To Detect / Mean Time To Respond (or Remediate) - core SOC performance metrics."},
+    {"id": "c55", "domain": 4, "group": "reporting", "front": "MTTD / MTTR", "back": "Mean Time To Detect / Mean Time To Respond - core SOC performance metrics. MTTR can also mean Mean Time To Remediate (a separate, longer metric), so check the context."},
     {"id": "c56", "domain": 4, "group": "reporting", "front": "Inhibitors to remediation", "back": "MOUs, SLAs, organisational governance, business process interruption, degrading functionality, legacy and proprietary systems."},
     {"id": "c57", "domain": 4, "group": "reporting", "front": "Executive summary", "back": "Non-technical first section: what happened, impact, actions taken, decisions needed."},
     {"id": "c58", "domain": 4, "group": "reporting", "front": "NDB scheme", "back": "Australia's Notifiable Data Breaches scheme: notify OAIC and affected individuals of eligible breaches likely to cause serious harm; assess suspected breaches within 30 days."},
@@ -632,7 +632,7 @@
     {"id": "c97", "domain": 4, "group": "reporting", "front": "Mean time to remediate", "back": "Average time from detection (or a vulnerability being found) to the issue being fully fixed and verified. Longer than mean time to respond."},
     {"id": "c98", "domain": 4, "group": "reporting", "front": "Out-of-band communication", "back": "Using a separate channel (phone, pre-arranged secure chat) during an incident because normal email or chat may be compromised or watched by the attacker."},
     {"id": "c99", "domain": 4, "group": "reporting", "front": "Incident report structure", "back": "Executive summary, incident details, timeline, scope and impact, evidence, root cause, recommendations (owner, due date), lessons learned."},
-    {"id": "c100", "domain": 4, "group": "reporting", "front": "Executive summary vs technical detail", "back": "Executive summary: impact, risk, status and decisions needed, in plain language. Technical detail: IoCs, hosts, timeline and exact actions for IT teams, often in an appendix."},
+    {"id": "c100", "domain": 4, "group": "reporting", "front": "Executive summary vs technical detail", "back": "Leadership section = impact, risk, status and decisions needed, in plain language. The detailed section = IoCs, hosts, timeline and exact actions for IT teams, often in an appendix."},
     {"id": "c101", "domain": 4, "group": "reporting", "front": "Severity / escalation matrix", "back": "Table in the IR plan mapping incident criteria (data involved, systems affected, spread, business impact) to a severity level, who must be told and how fast."},
     {"id": "c102", "domain": 4, "group": "reporting", "front": "Lessons-learned meeting", "back": "Blameless review held soon after an incident closes: what happened, what worked, what didn't and what to change. Actions get an owner and due date."},
     {"id": "c103", "domain": 4, "group": "reporting", "front": "Vulnerability SLA compliance", "back": "Percentage of findings remediated within the agreed timeframe for their severity (e.g. criticals within 14 days). Late closures count as misses."},

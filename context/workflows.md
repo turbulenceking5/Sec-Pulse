@@ -26,6 +26,6 @@ Secrets are described in [secrets.md](secrets.md).
 - Scheduled workflows only run from the **default branch (`main`)**. A change to a schedule on a feature branch does nothing until it's merged.
 
 ## Failure behaviour
-- **Fetch news**: one broken feed never fails the run; errors go into `news.json`'s `sources` list (Settings → Feed health).
-- **Brief/digest**: a channel that fails still lets the other send; then the run fails, so GitHub e-mails the owner. "subscription expired" means the app's notification code changed (see [notifications.md](notifications.md)).
+- **Fetch news**: one broken feed never fails the run; errors go into `news.json`'s `sources` list (Settings → Feed health). If another workflow pushed `news.json` first, it skips its commit instead of failing.
+- **Brief/digest**: a broken news fetch doesn't stop them (they send from the last committed news); a channel that fails still lets the other send; then the run fails, so GitHub e-mails the owner. "subscription expired" means the app's notification code changed (see [notifications.md](notifications.md)).
 - **Blog drafts**: missing secrets fail with "Missing secrets: …"; an OAuth error shows WordPress's message (e.g. two-step authentication needs an application password). `posted.json` is saved after each draft, so a later failure doesn't resend earlier ones.

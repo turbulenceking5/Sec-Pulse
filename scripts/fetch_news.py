@@ -44,7 +44,7 @@ CLUSTER_SIM = 0.35           # IDF-weighted title overlap needed to merge (plus 
 def fetch(url, timeout=30):
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "*/*"})
     with urllib.request.urlopen(req, timeout=timeout) as r:
-        return r.read()
+        return r.read(5_000_000)  # cap: a misbehaving server can't make one feed eat the run
 
 
 def strip_ns(tree):
@@ -93,7 +93,7 @@ def parse_feed(raw, src):
     out = []
     entries = root.findall(".//item") or root.findall(".//entry")
     for e in entries:
-        title = clean(text_of(e, "title"))
+        title = clean(text_of(e, "title"), 300)
         link = text_of(e, "link").strip()
         if not link:
             le = e.find("link[@rel='alternate']")
@@ -108,11 +108,11 @@ def parse_feed(raw, src):
         if "news.google.com" in src["url"]:
             # Google News titles end in " - Publisher"; show the publisher as the source.
             publisher = (pub_el.text if pub_el is not None else "") or ""
-            if publisher and title.endswith(" - " + publisher):
+            if publisher and title.lower().endswith(" - " + publisher.lower()):
                 title = title[: -len(publisher) - 3]
             source = publisher or source
             summary = ""  # Google's description is just the title again plus links
-        if len(title) >= 12 and link and not title.startswith("-"):
+        if len(title) >= 12 and link.startswith(("https://", "http://")) and not title.startswith("-"):
             out.append({"title": title, "link": link, "published": published,
                         "summary": summary, "source": source})
     return out
@@ -121,7 +121,9 @@ def parse_feed(raw, src):
 def parse_kev(raw, src):
     data = json.loads(raw)
     out = []
-    for v in data.get("vulnerabilities", []):
+    if "vulnerabilities" not in data:  # a schema change would otherwise look like "0 new KEV entries"
+        raise ValueError("KEV JSON has no 'vulnerabilities' key")
+    for v in data["vulnerabilities"]:
         added = parse_date(v.get("dateAdded", "") + "T00:00:00Z")
         if not added or (NOW - added).days > KEEP_DAYS:
             continue
@@ -142,14 +144,13 @@ def parse_kev(raw, src):
 
 
 def score(item, src, keywords):
-    hay = " " + (item["title"] + " " + item["summary"]).lower() + " "
     total = src.get("weight", 0)
     tags = list(item.pop("extra_tags", []))
     why = matched_groups(item, keywords)
     for group in keywords:
         if group["tag"] in why:
             # Title hits count more than summary-only hits.
-            in_title = any(t in " " + item["title"].lower() + " " for t in group["terms"])
+            in_title = any(term_in(t, item["title"].lower()) for t in group["terms"])
             total += group["weight"] + (1 if in_title else 0)
             if group["tag"] not in tags:
                 tags.append(group["tag"])
@@ -166,10 +167,17 @@ def score(item, src, keywords):
     return total, tags, region, why
 
 
+def term_in(term, text):
+    """A keyword matches at the start of a word, so "aws" doesn't match "flaws", "entra" doesn't match
+    "central" and "cisco" doesn't match "Francisco", while "credential" still matches "credentials".
+    index.html's termIn() is the same rule (explainScore); keep them in sync."""
+    return re.search(r"(?<![a-z0-9])" + re.escape(term), text) is not None
+
+
 def matched_groups(item, keywords):
     """Keyword group tags whose terms appear in the title or summary (the `why` field)."""
-    hay = " " + (item["title"] + " " + item.get("summary", "")).lower() + " "
-    return [g["tag"] for g in keywords if any(t in hay for t in g["terms"])]
+    hay = (item["title"] + " " + item.get("summary", "")).lower()
+    return [g["tag"] for g in keywords if any(term_in(t, hay) for t in g["terms"])]
 
 
 def norm_title(t):
@@ -220,8 +228,8 @@ def add_epss(items, fresh_ids):
         probs = [scores[c] for c in item_cves(it) if c in scores]
         if probs:
             it["epss"] = round(max(probs), 4)
-        elif err is None:
-            it.pop("epss", None)  # lookup worked but EPSS has no score (yet) for these CVEs
+        elif err is None and all(c in wanted for c in item_cves(it)):
+            it.pop("epss", None)  # lookup worked but EPSS has no score (yet) for these CVEs (not just cut by the cap)
         # On error, keep whatever epss a stored item already had.
         if (id(it) in fresh_ids and it.get("epss", 0) >= EPSS_BUMP_AT
                 and "KEV" not in it["tags"]):
@@ -378,7 +386,7 @@ def run_source(src, keywords):
         items = items[: src.get("max", 25)]
         result = []
         for it in items:
-            pub = it["published"] or NOW
+            pub = min(it["published"] or NOW, NOW)  # future-dated items would otherwise sit on top
             if (NOW - pub).days > KEEP_DAYS:
                 continue
             s, tags, region, why = score(it, src, keywords)
@@ -392,6 +400,7 @@ def run_source(src, keywords):
                 "feed": src["name"],
                 "region": region,
                 "published": pub.strftime("%Y-%m-%dT%H:%M:%SZ"),
+                "_undated": it["published"] is None,  # merge() keeps the first-seen time for these
                 "summary": it["summary"],
                 "score": s,
                 "tags": tags,
@@ -436,9 +445,14 @@ def main():
     src_by_name = {s["name"]: s for s in cfg["sources"]}
     previous = [it for it in previous if free(it)
                 and passes_filters(src_by_name.get(it.get("feed"), {}), it["title"], it.get("tags", []))]
+    # An undated feed item gets "now" every run; keep the time it was first seen so it can age out.
+    first_seen = {p["id"]: p["published"] for p in previous}
+    for it in fresh:
+        if it.pop("_undated", False) and it["id"] in first_seen:
+            it["published"] = first_seen[it["id"]]
     merged, by_id, by_title = [], {}, {}
     for it in fresh + previous:
-        key_t = norm_title(it["title"])
+        key_t = norm_title(it["title"]) or it["id"]  # an all-non-Latin title normalises to ""
         kept = by_id.get(it["id"]) or by_title.get(key_t)
         if kept is not None:
             if "epss" in it and "epss" not in kept:

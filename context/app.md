@@ -148,6 +148,6 @@ Dark navy UI with CSS variables on `:root`: `--bg #0b1220`, `--surface #121c2e`,
 **Light theme**: `:root[data-theme=light]` overrides every token (white surfaces, darker teal `#077a6b`, darker amber/red/green for contrast) and `color-scheme`. A small `<script>` in `<head>` (before the stylesheet, so there's no flash) reads `sp_theme` straight from localStorage, resolves System via `prefers-color-scheme`, sets `data-theme`, the `theme-color` meta (`#f3f6fa` light / `#0b1220` dark) and `apple-mobile-web-app-status-bar-style` (`default` light / `black-translucent` dark; iOS only reads that at launch, so the status bar matches from the next open). It exposes `applyTheme()`, which Settings, Import and Reset call, and listens for system theme changes. The manifest's `theme_color` stays dark (it's fixed at install).
 
 ## Gotchas
-- **`[hidden]{display:none!important}`** is at the top of the CSS on purpose. `.btn.block` and `.grade` set `display`, which would otherwise override the `hidden` attribute. This caused a real bug where "Show answer" and the grade buttons showed at the same time.
+- **`[hidden]{display:none!important}`** is at the top of the CSS on purpose. Rules like `.btn.block` set `display`, which would otherwise override the `hidden` attribute (it once caused two sets of buttons to show at once).
 - Everything inserted as HTML goes through `esc()`. News titles and summaries come from third-party feeds, so treat them as untrusted.
 - News links use `target="_blank" rel="noopener noreferrer"`.

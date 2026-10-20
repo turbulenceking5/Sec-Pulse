@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Send the Sunday-evening weekly digest as a push notification via ntfy.
+"""Send the Sunday-evening weekly digest as a push notification (Web Push to the app and/or ntfy).
 
 Top 10 stories of the past 7 days from data/news.json, a few weekly stats and a
-CySA+ study nudge. Same env vars and ntfy conventions as send_brief.py, whose
-helpers it reuses (see context/morning-brief.md#weekly-digest):
-  NTFY_TOPIC   required - your private topic name (set as a GitHub Actions secret)
-  NTFY_SERVER  optional - defaults to https://ntfy.sh
-  APP_URL      optional - opened when you tap the notification
+CySA+ study nudge. Same env vars and channels as send_brief.py, whose helpers it
+reuses (see context/morning-brief.md#weekly-digest and context/notifications.md):
+  WEBPUSH_SUBSCRIPTION + VAPID_PRIVATE_KEY   Web Push to the Home Screen app
+  NTFY_TOPIC (+ NTFY_SERVER)                 optional ntfy channel
+  APP_URL                                    the app's URL
 
 Run with --dry-run to print the message instead of sending it.
 """
@@ -15,7 +15,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from send_brief import BRISBANE, NOW, headline, lesson_for, load_data, notify, published  # noqa: E402
+from send_brief import BRISBANE, NOW, NotifyError, headline, lesson_for, load_data, notify, published  # noqa: E402
 
 WINDOW_DAYS = 7
 TOP_N = 10
@@ -67,7 +67,10 @@ def build(news, cysa):
 def main():
     news, cysa = load_data()
     title, body = build(news, cysa)
-    notify(title, body, dry="--dry-run" in sys.argv, tags="shield,calendar", what="weekly digest", tag="digest")
+    try:
+        notify(title, body, dry="--dry-run" in sys.argv, tags="shield,calendar", what="weekly digest", tag="digest")
+    except NotifyError as e:
+        sys.exit(f"Notification failed: {e}")
 
 
 if __name__ == "__main__":

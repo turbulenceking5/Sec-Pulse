@@ -828,16 +828,18 @@ async function loadSourcesCfg(){
   try{ const r = await fetch('scripts/sources.json?_=' + Date.now()); if (r.ok) SOURCES_CFG = await r.json(); }catch(e){}
   return SOURCES_CFG;
 }
+// Same rule as term_in() in fetch_news.py: a keyword matches at the start of a word ("aws" not in "flaws").
+const termIn = (t, text) => new RegExp('(^|[^a-z0-9])' + t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).test(text);
 // Mirrors score() in fetch_news.py: source weight + each matched group (weight, +1 if in the headline) + 2 if Australian.
 function explainScore(i, cfg){
   const rows = [], matched = new Set();
-  const hay = (' ' + i.title + ' ' + (i.summary || '') + ' ').toLowerCase(), head = (' ' + i.title + ' ').toLowerCase();
+  const hay = (i.title + ' ' + (i.summary || '')).toLowerCase(), head = i.title.toLowerCase();
   const src = (cfg.sources || []).find(s => s.name === i.feed);
   rows.push({label: 'Source weight · ' + (i.feed || i.source), pts: src ? (src.weight || 0) : 0});
   (cfg.keywords || []).forEach(g => {
-    const hits = (g.terms || []).filter(t => hay.includes(t));
+    const hits = (g.terms || []).filter(t => termIn(t, hay));
     if (!hits.length) return;
-    const inTitle = g.terms.some(t => head.includes(t));
+    const inTitle = g.terms.some(t => termIn(t, head));
     rows.push({label: g.tag, pts: (g.weight || 0) + (inTitle ? 1 : 0), terms: hits, inTitle});
     matched.add(g.tag);
   });
