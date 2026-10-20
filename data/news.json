@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T00:22:46Z",
+ "generated": "2026-10-20T08:35:41Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,19 +28,19 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 7,
+   "count": 9,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 7,
+   "count": 6,
    "error": null
   },
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 2,
+   "count": 4,
    "error": null
   },
   {
@@ -100,11 +100,139 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 21,
+   "count": 23,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "a2d9885f09cd",
+   "title": "Hacker Uses AI Agents to Breach Over 100 Company Websites With Minimal Human Effort",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPc2JRa0Vhbl9fTmREdmloY0xScUpDbEpDSExuWGhrUHhmc010eGczaTRYM0RsVk1aRWU1aG9yMmpOdF9SMERJZ0RGcWZyYUMyaUtQSURWcnY2NVk3VmxrbFNYWFBxM2lVN01sMHRtMUVobnJXVGN3T3dKY2g2M21FVUlnT2RiYmVNOGFsbdIBjAFBVV95cUxPc2JRa0Vhbl9fTmREdmloY0xScUpDbEpDSExuWGhrUHhmc010eGczaTRYM0RsVk1aRWU1aG9yMmpOdF9SMERJZ0RGcWZyYUMyaUtQSURWcnY2NVk3VmxrbFNYWFBxM2lVN01sMHRtMUVobnJXVGN3T3dKY2g2M21FVUlnT2RiYmVNOGFsbQ?oc=5",
+   "source": "GBHackers News",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-20T06:29:21Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ],
+   "also": [
+    {
+     "source": "CyberSecurityNews",
+     "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5fc0JHa2dWUzJuVzRhaGpzd3VZSkxUVkhaOEM2WnUzbWRscC1CYkVMaURrb0k3ZjlwU1BMTER1dVNRdDg5VmJfVWhSaVdFVGhlMGhYcEg5QTVCRE1rbTFVaVlzVlVtR1VMZGZoWndaNnA4dUh5X01uUWV30gF6QVVfeXFMTl9zQkdrZ1ZTMm5XNGFoanN3dVlKTFRWSFo4QzZadTNtZGxwLUJiRUxpRGtvSTdmOXBTUExMRHV1U1F0ODlWYl9VaFJpV0VUaGUwaFhwSDlBNUJETWttMVVpWXNWVW1HVUxkZmhad1o2cDh1SHlfTW5RZXc?oc=5"
+    },
+    {
+     "source": "The420.in",
+     "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1SQklFSWJ0Q2VyNFFwbUhOZG1tSjd2SlNNN0gzd0xlYXJFYUx0R3ktcDlkQW5TbkRvbUY0M0FGS2xhTEtEdEhsckZjdHhwR3FFMnlNZy1nQjRaWS1hdC1HY3lDU3htalhLWkVaamNZZERaRGN1dHpmNw?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "50e342417287",
+   "title": "Ex-OpenAI Engineer Detained in Spy Device Case as Saudi Royal Contacts Emerge",
+   "link": "https://thehackernews.com/2026/10/ex-openai-engineer-detained-in-spy.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-20T05:53:16Z",
+   "summary": "A U.S. court on Monday granted the U.S. government's request to detain a former OpenAI engineer accused of planting a recording device in an executive conference room at the company's San Francisco office to allegedly steal sensitive secrets. In a new court filing Sunday, prosecutors revealed that…",
+   "score": 2,
+   "tags": [
+    "Edge devices"
+   ],
+   "why": [
+    "Edge devices"
+   ]
+  },
+  {
+   "id": "6c494d43a845",
+   "title": "Hackers Use New ROMULUS ClickFix Platform to Deliver LegionLoader and Other Malware",
+   "link": "https://thehackernews.com/2026/10/romulus-clickfix-platform-tricks-users.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-20T04:05:58Z",
+   "summary": "Cybersecurity researchers have disclosed details of a ClickFix delivery platform called ROMULUS that's being used to distribute malware such as Legion Loader. According to Forescout Research - Vedere Labs, ROMULUS is akin to a malware delivery service that employs ClickFix-style lures on bogus…",
+   "score": 3,
+   "tags": [
+    "Phishing"
+   ],
+   "why": [
+    "Phishing"
+   ]
+  },
+  {
+   "id": "a085781d251e",
+   "title": "New anti-money laundering laws could get your business fined over privacy, too",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNX0Y1VFZfQzhaZkxXa0pEQ2VqeHVHSWF6UXl5UFhxMENZX3ZRcklCMDRWSy13Z1VBTFExcG1lWF8zUzdCWUZkbUVFc1k0NVBNcjVheWVSSnpoNFYyRmM0U2FyWERxSGVMbUdWZmd5QjBoWmpQRDlaX000S2duUkViRW9WRFBnNGQ1dlRaZEZLQjJnZThqRWVubnZfNHdTenZPbWpnYk1ucktXalN2c3JZ?oc=5",
+   "source": "Dynamic Business",
+   "feed": "OAIC / Privacy news",
+   "region": "Global",
+   "published": "2026-10-20T02:03:53Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "SaaS / cloud"
+   ],
+   "why": [
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "c942233fb681",
+   "title": "ISC Stormcast For Tuesday, October 20th, 2026 https://isc.sans.edu/podcastdetail/10142, (Tue, Oct 20th)",
+   "link": "https://isc.sans.edu/diary/rss/33436",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-10-20T02:00:03Z",
+   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "0935300df0e9",
+   "title": "AI-powered hacker breaches 100+ firms worldwide for 6.7 million won - CHOSUNBIZ",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQTWZCYW0zbHBYN0NBQWtvZ3ZBd29YWVZDOHJycGtmaVlGWk12eGp2Qy1BTEhwTkhkaUFlMENleU5CVko1SDhiX3l5RmhLOVpMeUZxUmRzNmFrR0xUb05xam0zeUpHS2htVVY1aThpN1Fqd0dsSFQ2NXBkOXhRRF9xWmRzNkdOZHRm0gGcAUFVX3lxTE9OQ20tU3pvdW9PWWNlQ2txQVFIUEItM0pRVGRqLUhDOGszRHFjZ0RxN1J1bTN0UUxWcUREOGxmSXlWNmpCUWJ1eVpsMHpSRF9QdFdaRlFfTFhCcG9kMzJtUUxFd3pCTmFYdmlCemFBNVMxdHVqTVZoZDQtYjd4VUotSUo5Y2k4S253S05nT3FMeTNMTEhYUWkwc2RaaQ?oc=5",
+   "source": "Chosunbiz",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-20T01:51:00Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "b9503670b144",
+   "title": "Threat Brief: Active Exploitation of PAN-OS CVE-2026-0257 (Updated October 19)",
+   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQTUVTa0pZeTdwQS1ySmhSTV85cFBkeXdBOUFkWWFxeW9MOE9RNGtETVlwOEVXbkxxcmREUkNqVWlQNmh6VHJMMGZZTHBfdGhmTTNfaTh4S1gwMnZCdkhEdkJrYXBMb0NJOXJhT0U4R0lFVGJfYjNaREM3eFMxeU52bVdpUjhrbGc?oc=5",
+   "source": "Unit 42",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-20T00:57:12Z",
+   "summary": "",
+   "score": 9,
+   "tags": [
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "why": [
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "epss": 0.9689
+  },
   {
    "id": "d3fd0ebf24cf",
    "title": "Japan Faces New Wave Of AI-Powered Cyberattacks As Hackers Exploit Stolen Data",
@@ -112,7 +240,24 @@
    "source": "ChannelNews.com.au",
    "feed": "AU breach news",
    "region": "Global",
-   "published": "2026-10-19T23:36:15Z",
+   "published": "2026-10-19T23:39:08Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "ebb9e952af5d",
+   "title": "AI strike team assembled after cyber breach",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNN1NhcjgwZm1zb1FaYlRFX1czNjF3ME5tTVRYWXdIMDZYSmwzNzNRNXBieEJrYTRlQktoRFZGV19VQ2kyRExTQ0pKZXVxQ0dyWUVYY21VdDZLcHZiTURicm5PaTFuQ2FRREJ3SGhjeEVRQ2o5Zk5YZkxjbUFpNFhyQ1Fqa0ZGQmJIVF9pUEhqX1JqTjVLbDdrLWE2UTdXSFBOTExQUlFJUzhrODJ6ZkttY0Vqc3Y2ZmRIYWVGcjFzX1lXeTZHOHJrOVcxM0NCUQ?oc=5",
+   "source": "The Nightly",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-19T23:24:20Z",
    "summary": "",
    "score": 6,
    "tags": [
@@ -159,15 +304,15 @@
    ]
   },
   {
-   "id": "962df917dbfe",
+   "id": "61b131fce2a8",
    "title": "California settles 23andMe data breach claims for US$6M",
-   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNcG5DY0tsUTY3WEpfdjlqMk5GRDJCemY0UllObzJtNDZLaXoya2tXSk9wNjBCVlR0anRJOXpCYjB6V215akR1dW05UHJYQW9kSTZjbWt0ZUs4eDU4VDF2RVhud3RpV2M2cVJLU2lGbkV3THVPaEhSemxzZlNrMXlNWFlhT0kzXzlQaE1oenp6aFZCbC1SVlNIcnkybV92S1E?oc=5",
-   "source": "CP24",
-   "feed": "OAIC / Privacy news",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPSUMxcldvUE9ZUnlMajRaMVJhekd1LUt3S3dVRzRIeHFXSW9idW51NUFtTE1wSTBfbGt0SWExdkM3azdkcm9oeVlJSnQydEg5SC1LelljNTlmTDdsRWVEVERrbFNFREt5RnFEWGs1THpWT01HdkJhN2hrN0ZfRkZqQnBOd21CZlp4aHBJaEQtNXF3cUFIc3VFVkN5V3lVcEcxbFZDVF8zWmx4WDVVckVDU2VnWmg?oc=5",
+   "source": "BNN Bloomberg",
+   "feed": "Real estate cyber news",
    "region": "Global",
    "published": "2026-10-19T21:25:47Z",
    "summary": "",
-   "score": 6,
+   "score": 7,
    "tags": [
     "Data breach"
    ],
@@ -175,6 +320,10 @@
     "Data breach"
    ],
    "also": [
+    {
+     "source": "CP24",
+     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNcG5DY0tsUTY3WEpfdjlqMk5GRDJCemY0UllObzJtNDZLaXoya2tXSk9wNjBCVlR0anRJOXpCYjB6V215akR1dW05UHJYQW9kSTZjbWt0ZUs4eDU4VDF2RVhud3RpV2M2cVJLU2lGbkV3THVPaEhSemxzZlNrMXlNWFlhT0kzXzlQaE1oenp6aFZCbC1SVlNIcnkybV92S1E?oc=5"
+    },
     {
      "source": "Rock Hill Herald",
      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1XNXdyOUE2X2NMa3RwdlpDSGlSRXE0RUdtbG5qZHZYbEp6b254c0pJd2JuTXF5VTJtZ1hBTVVmRWVXdVVBakJEN0wwUkFUZEpia21MUlhFNDBuemhBUVc0SW5qYWlKNjF4VFlUUGgtcmlxZw?oc=5"
@@ -188,7 +337,7 @@
    "source": "Claim Depot",
    "feed": "Real estate cyber news",
    "region": "Global",
-   "published": "2026-10-19T21:17:59Z",
+   "published": "2026-10-19T21:22:16Z",
    "summary": "",
    "score": 10,
    "tags": [
@@ -318,24 +467,14 @@
    "why": [
     "Phishing",
     "Vulnerability"
-   ]
-  },
-  {
-   "id": "3763fb67ea2a",
-   "title": "One Hacker Used AI Agents to Breach More Than 100 Websites",
-   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1SQklFSWJ0Q2VyNFFwbUhOZG1tSjd2SlNNN0gzd0xlYXJFYUx0R3ktcDlkQW5TbkRvbUY0M0FGS2xhTEtEdEhsckZjdHhwR3FFMnlNZy1nQjRaWS1hdC1HY3lDU3htalhLWkVaamNZZERaRGN1dHpmNw?oc=5",
-   "source": "The420.in",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-19T17:55:40Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
    ],
-   "why": [
-    "Data breach"
-   ]
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/clickfix-attackers-exploit-siemens.html"
+    }
+   ],
+   "epss": 0.0014
   },
   {
    "id": "143bfdf19e2b",
@@ -601,6 +740,23 @@
    "score": 0,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "cb20c2f64e3a",
+   "title": "Apple Photos faceprint privacy lawsuit pared down a bit, will continue",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOVUdvNDg2Z2w5ZFAwZnhjR1V2cWVINk5IOU5MUFdoUENKNUFXY095REJqT2FFRDg4ZDUyRkIxYjBrUGowd2pMdEpLMnNHVWJncVE5b05YQnlzSjRUMDNkUkFCRHduQmFjeHJGRkFXejZ2cFFZYkFnVG9CWWVSSzVBWlZnREM5a2ZnNnAxLXNjV0lsbGx1N2h6bzBQMk5pOEJ2NGVvbkpUQkd5c2doVTZzbnJR?oc=5",
+   "source": "AppleInsider",
+   "feed": "OAIC / Privacy news",
+   "region": "Global",
+   "published": "2026-10-19T12:28:00Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "SaaS / cloud"
+   ],
+   "why": [
+    "SaaS / cloud"
+   ]
   },
   {
    "id": "afb21bb14d6f",
@@ -6129,19 +6285,6 @@
    "feed": "SANS ISC",
    "region": "Global",
    "published": "2026-10-06T11:45:11Z",
-   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
-   "score": 1,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "deda64e494a6",
-   "title": "ISC Stormcast For Monday, October 5th, 2026 https://isc.sans.edu/podcastdetail/10122, (Mon, Oct 5th)",
-   "link": "https://isc.sans.edu/diary/rss/33398",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-10-05T02:00:02Z",
    "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
    "score": 1,
    "tags": [],
