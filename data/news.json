@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T14:19:49Z",
+ "generated": "2026-10-20T19:18:35Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,19 +28,19 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 11,
+   "count": 8,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 7,
+   "count": 6,
    "error": null
   },
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 3,
+   "count": 2,
    "error": null
   },
   {
@@ -100,11 +100,160 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 22,
+   "count": 24,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "89526558312a",
+   "title": "Greenfield police warn of real estate scam on Facebook",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNcWNwX3JrMXpicl9YVUFQcGZwYXhpU25GcnliNU5XQWhaNThIRHJYanh2YU5hQmlJZnVwdmVTUHlyMzdUZV9tUWxiNTlYSXJQVngzdm9vRExjZldrdkxsY01HM0NpbGh6dExOWDRockxHbHY4MlMwbFlkODFhTWo4Nms3WXVFdy0yOEpoX0dITWdHNU8xalh5Q24xdUpVb096?oc=5",
+   "source": "Scioto Valley Guardian",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-20T18:13:02Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
+   "id": "2bcaf37a740b",
+   "title": "OpenAI says GPT-6.1 Sol is dramatically better at migrating legacy code",
+   "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-says-gpt-61-sol-is-dramatically-better-at-migrating-legacy-code/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-20T18:11:03Z",
+   "summary": "OpenAI confirmed that its newer models are much better at writing and migrating software in older programming languages. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "e51627f614e6",
+   "title": "Orion Real Estate Data Exchange Announces Strategic Relationship with HUB International to Offer Dedicated Insurance Solutions for MLS Organizations",
+   "link": "https://news.google.com/rss/articles/CBMiygJBVV95cUxQenR1bnZvT2FnNHdpOGZSa2pfQmRqUkJlMVlGcWNJTGFIY0d2RzQ0emUzQWw4Slk3RXJNV3pxLXpuSG9Ja21PNFJ5LURWWU93TVBBSzRpamtsRW90RzR6UG85UXBSY0Y1ZU11VXRHaGwtT3EtemVLRzBnWjM5ZlM3WXFWZ0UyY0lMNklCUFA4NFJiLXhTMDlKQ21vbUFVc2VZUzdxVTdDZEVYWjdpZF9Ld3hQVm5KTkNNRjJ0cU9qMUJnbWtKOXlZbFdJa2NSeUVlSEtRbjdhRHJLUWE5N1cwQm1rSklBaEJOdWlPZlRSMXFmM0NOVXdZN19FU1ZNejdvZ01tN3FrYmkyUW1idlNyZnFzV2RnYjBKWExoZ0dUR3FVY2oySjdHM2FRaElJd19DR3U0M2V4SHhseXVsQVRSdnBtWktQLTZPNmfSAcoCQVVfeXFMUHp0dW52b09hZzR3aThmUmtqX0JkalJCZTFZRnFjSUxhSGNHdkc0NHplM0FsOEpZN0VyTVd6cS16bkhvSWttTzRSeS1EVllPd01QQUs0aWprbEVvdEc0elBvOVFwUmNGNWVNdVV0R2hsLU9xLXplS0cwZ1ozOWZTN1lxVmdFMmNJTDZJQlBQODRSYi14UzA5SkNtb21BVXNlWVM3cVU3Q2RFWFo3aWRfS3d4UFZuSk5DTUYydHFPajFCZ21rSjl5WWxXSWtjUnlFZUhLUW43YURyS1FhOTdXMEJta0pJQWhCTnVpT2ZUUjFxZjNDTlV3WTdfRVNWTXo3b2dNbTdxa2JpMlFtYnZTcmZxc1dkZ2IwSlhMaGdHVEdxVWNqMko3RzNhUWhJSXdfQ0d1NDNleEh4bHl1bEFUUnZwbVpLUC02TzZn?oc=5",
+   "source": "The Manila Times",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-20T17:21:17Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
+   "id": "1530955429aa",
+   "title": "Eight eMudhra CA Keys Compromised, Triggering Emergency Fixes Across Browsers and Software",
+   "link": "https://thehackernews.com/2026/10/eight-emudhra-ca-keys-compromised.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-20T17:09:53Z",
+   "summary": "The private keys of eight eMudhra intermediate certificate authority (CA) certificates are compromised, Mozilla and Google's Chrome Root Program confirms on October 20. An intermediate CA signs the certificates that websites present, so anyone holding one of these keys could issue a certificate…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "f7a865abe770",
+   "title": "US Agencies Detail Incident Response Practices for Rogue AI Agents",
+   "link": "https://www.securityweek.com/us-agencies-detail-incident-response-practices-for-rogue-ai-agents/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-20T15:45:00Z",
+   "summary": "NIST, CISA and NSA share ten voluntary practices for preparing for, detecting, responding to, recovering from, and reporting rogue AI agent incidents. The post US Agencies Detail Incident Response Practices for Rogue AI Agents appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "53ddecf9f5b1",
+   "title": "Critical FortiSIEM Flaw Gets Public Exploit PoC for Unauthenticated Remote Code Execution",
+   "link": "https://thehackernews.com/2026/10/critical-fortisiem-flaw-gets-public.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-20T15:38:52Z",
+   "summary": "Cybersecurity researchers have released a proof-of-concept (PoC) exploit for a recently patched critical security flaw impacting Fortinet FortiSIEM that could result in arbitrary code execution. The vulnerability, tracked as CVE-2026-106173 (CVSS score: 9.4), is a critical path traversal flaw that…",
+   "score": 4,
+   "tags": [
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "why": [
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "epss": 0.0043
+  },
+  {
+   "id": "dff178c340ad",
+   "title": "Close Identity Gaps in Software Development Before Unleashing AI",
+   "link": "https://www.darkreading.com/application-security/close-identity-gaps-sdlc-before-ai",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-20T15:35:45Z",
+   "summary": "Artificial Intelligence is complicating security in the software development lifecycle, but a Dark Reading roundtable found collaboration, better identity visibility, and reduced testing costs offer CISOs a way ahead.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "0d304799e621",
+   "title": "Qilin and INC Ransomware Groups Exploit Palo Alto Networks Flaw to Bypass MFA",
+   "link": "https://thehackernews.com/2026/10/qilin-and-inc-ransomware-groups-exploit.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-20T15:32:27Z",
+   "summary": "Palo Alto Networks has disclosed that it's continuing to observe exploitation of a now-patched security flaw impacting PAN-OS and Prisma Access by ransomware actors. The activity relates to CVE-2026-0257 (CVSS score: 7.8), an authentication bypass flaw that could be exploited by bad actors to set…",
+   "score": 13,
+   "tags": [
+    "Ransomware",
+    "Identity",
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "why": [
+    "Ransomware",
+    "Identity",
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "epss": 0.9689,
+   "also": [
+    {
+     "source": "Unit 42",
+     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQTUVTa0pZeTdwQS1ySmhSTV85cFBkeXdBOUFkWWFxeW9MOE9RNGtETVlwOEVXbkxxcmREUkNqVWlQNmh6VHJMMGZZTHBfdGhmTTNfaTh4S1gwMnZCdkhEdkJrYXBMb0NJOXJhT0U4R0lFVGJfYjNaREM3eFMxeU52bVdpUjhrbGc?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "91169d021095",
+   "title": "Hackers Abuse AI Pen-Test Tool Cairn to Automate Massive Attack Spree",
+   "link": "https://www.darkreading.com/cyberattacks-data-breaches/hackers-abuse-ai-pen-test-tool-cairn",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-20T14:36:05Z",
+   "summary": "A Chinese-speaking attacker has compromised hundreds of websites across the globe, looting from big fish like John Deere, SharkNinja, and engine manufacturer Cummins.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
   {
    "id": "4162cca6289c",
    "title": "DHS bans DeepSeek products across US federal civilian agencies",
@@ -268,30 +417,13 @@
    "why": []
   },
   {
-   "id": "4f28949e9098",
-   "title": "Windows Server 2025 gets support for quick machine recovery",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/windows-server-2025-gets-support-for-quick-machine-recovery/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-20T12:16:32Z",
-   "summary": "Microsoft announced that IT administrators can now use quick machine recovery on Windows Server 2025 after installing the October 2026 security update. [...]",
-   "score": 1,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
    "id": "b6f3371e0f4b",
    "title": "Exposed Cairn AI Hacking Panels Reveal 1,100+ Attack Projects Targeting the US, Japan, Australia",
    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPbXAySmw1YS1LVU0zY215SWV0ZjIxZ1cwTTRYM0ZkWEIyQ0pGX2MySDRSN2RSa2VySkhNRUEwOGpZa25QbElneTNMdmc3LUlyUWhDc2F0X3dJMDVPNURpTUFGalpUV3A3RW93MFpzeVJUOUk0R0U5eG1xWGFmemNFZUFrTFlCeHhLMUItSk5LaFJDLTA0ODEzeXFSYURBQWt0VGJBTW5UbWdIbE53VlNfZlVEVDdkWkpBTzNTRnFabnV5anM?oc=5",
    "source": "TechNadu",
    "feed": "AU breach news",
    "region": "AU",
-   "published": "2026-10-20T12:10:37Z",
+   "published": "2026-10-20T12:31:46Z",
    "summary": "",
    "score": 13,
    "tags": [
@@ -307,6 +439,23 @@
      "source": "SecurityWeek",
      "url": "https://www.securityweek.com/ai-platform-cairn-abused-to-hack-over-100-organizations/"
     }
+   ]
+  },
+  {
+   "id": "4f28949e9098",
+   "title": "Windows Server 2025 gets support for quick machine recovery",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/windows-server-2025-gets-support-for-quick-machine-recovery/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-20T12:16:32Z",
+   "summary": "Microsoft announced that IT administrators can now use quick machine recovery on Windows Server 2025 after installing the October 2026 security update. [...]",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
    ]
   },
   {
@@ -432,26 +581,6 @@
    "why": []
   },
   {
-   "id": "b9503670b144",
-   "title": "Threat Brief: Active Exploitation of PAN-OS CVE-2026-0257 (Updated October 19)",
-   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQTUVTa0pZeTdwQS1ySmhSTV85cFBkeXdBOUFkWWFxeW9MOE9RNGtETVlwOEVXbkxxcmREUkNqVWlQNmh6VHJMMGZZTHBfdGhmTTNfaTh4S1gwMnZCdkhEdkJrYXBMb0NJOXJhT0U4R0lFVGJfYjNaREM3eFMxeU52bVdpUjhrbGc?oc=5",
-   "source": "Unit 42",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-20T10:25:28Z",
-   "summary": "",
-   "score": 9,
-   "tags": [
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "why": [
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "epss": 0.9689
-  },
-  {
    "id": "4b4f09e00694",
    "title": "Revolut outage disrupts online banking operations worldwide",
    "link": "https://www.bleepingcomputer.com/news/security/revolut-outage-disrupts-online-banking-operations-worldwide/",
@@ -496,6 +625,23 @@
    ],
    "why": [
     "Data breach"
+   ]
+  },
+  {
+   "id": "eac6b18a7bf7",
+   "title": "An Arizona agent’s crusade against AI-fueled real estate fraud",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOOGk3Vy1PM0J6Q05MakhlN0dFSExkNXN4N0VKVXl5UFdqZmpjUEdLNlRFa19VT3pDaThJU2JHZWs1NERRUjVSdEl6ZnFabV9YbENPLUh6NEMtQm5kSnloWGlrYWZEVGFtaHQ2UVE2a0hRd2JaWEV0bWlSalRXSTYwZGJ6VWk5RFVvVUxEcGRZbw?oc=5",
+   "source": "Yahoo",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-20T08:00:51Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
    ]
   },
   {
@@ -3487,7 +3633,8 @@
    ],
    "why": [
     "Vulnerability"
-   ]
+   ],
+   "epss": 0.1271
   },
   {
    "id": "b57abd2c6608",
@@ -6617,7 +6764,8 @@
    ],
    "why": [
     "Vulnerability"
-   ]
+   ],
+   "epss": 0.1271
   },
   {
    "id": "4d0ab1e7dd59",
