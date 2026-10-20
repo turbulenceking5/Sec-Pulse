@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-10-19: Upcoming events
+- **Upcoming events** on the Brief: the next cyber security conferences in Australia (BSides, CrikeyCon, AUSCERT, CyberCon, Gartner and more), with Queensland events marked "Near you". **See all** lists every event by month plus Brisbane meetups, and **+ Calendar** adds an event to your phone's calendar.
+
 ## 2026-10-17: Morning brief on time
 - GitHub was starting the 7:25 brief up to 2-3 hours late. It now starts several times from 4:25am, and the first run waits until exactly 7:25 to send. You still get one notification.
 

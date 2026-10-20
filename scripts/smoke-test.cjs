@@ -403,6 +403,27 @@ const fs = require('fs');
   await page.click('#sheet-close');
   await page.evaluate(() => renderTodayLink()); await page.waitForTimeout(300);
   check(await page.locator('#today-open').count() === 1, "Brief tab links to this morning's brief");
+
+  // Upcoming events: Brief shows the next few (past ones hidden, QLD marked), See all opens the list, + Calendar makes an .ics.
+  await page.click('nav button[data-view=brief]');
+  const ev = await page.evaluate(async () => {
+    await loadEvents();
+    EVENTS.events.push({ id: 'past', name: 'Past Con', start: '2020-01-01', end: '2020-01-02', city: 'X', state: 'QLD', url: 'https://example.com/', kind: 'community' });
+    await renderEvents();
+    const cards = [...document.querySelectorAll('#brief-events .event')];
+    let ics = '';
+    const orig = URL.createObjectURL; URL.createObjectURL = b => { b.text().then(t => { ics = t; }); return orig.call(URL, b); };
+    const up = upcomingEvents(); downloadIcs(up.find(e => e.end !== e.start) || up[0]);
+    await new Promise(r => setTimeout(r, 100)); URL.createObjectURL = orig;
+    const sorted = up.every((e, i) => !i || up[i - 1].start <= e.start);
+    return { n: cards.length, past: cards.some(c => c.dataset.ev === 'past'), near: document.querySelectorAll('#brief-events .event.near .pill.accent').length, sorted, ics };
+  });
+  check(ev.n >= 3 && !ev.past && ev.near >= 1 && ev.sorted, 'Brief lists upcoming events in date order, hides past ones and marks Queensland');
+  check(/BEGIN:VEVENT[\s\S]*DTSTART;VALUE=DATE:\d{8}[\s\S]*DTEND;VALUE=DATE:\d{8}[\s\S]*END:VCALENDAR/.test(ev.ics), '+ Calendar builds an all-day .ics entry');
+  await page.click('#events-all');
+  check((await page.textContent('#sheet-title')) === 'Upcoming events' && await page.locator('#events-list .event').count() >= 10 && await page.locator('#events-list h2').count() >= 3, 'See all opens the events list grouped by month');
+  await page.screenshot({ path: 'shots/events.png' });
+  await page.click('#sheet-close');
   check(!(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth)), 'No horizontal scroll');
   check(errors.length === 0, 'No console/page errors' + (errors.length ? ': ' + errors.join(' | ') : ''));
 

@@ -14,6 +14,7 @@ Your daily cyber security news and CySA+ study app. Everything is saved on this 
 - **Daily quests**: four optional goals that reset at midnight. Finish all four to earn a 🧊 streak freeze, which saves your streak if you miss a single day.
 - **Exam countdown**: set your exam date in Settings to get days left and a daily target.
 - **Focus area**: your weakest exam domain. Tap **Drill 10** for questions from it, with past misses first.
+- **Upcoming events**: the next cyber security conferences in Australia. Queensland ones are marked **Near you**. **See all** lists every event plus Brisbane meetups, and **+ Calendar** adds one to your calendar.
 - **Top for you**, **today's lesson** and the **question of the day**.
 
 ## News tab
