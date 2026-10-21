@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21T11:52:59Z",
+ "generated": "2026-10-21T17:14:48Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -22,13 +22,13 @@
   {
    "name": "ASD / ACSC in the news",
    "ok": true,
-   "count": 2,
+   "count": 3,
    "error": null
   },
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 8,
+   "count": 9,
    "error": null
   },
   {
@@ -70,7 +70,7 @@
   {
    "name": "Krebs on Security",
    "ok": true,
-   "count": 5,
+   "count": 6,
    "error": null
   },
   {
@@ -82,7 +82,7 @@
   {
    "name": "Microsoft Security Blog",
    "ok": true,
-   "count": 6,
+   "count": 5,
    "error": null
   },
   {
@@ -105,6 +105,350 @@
   }
  ],
  "items": [
+  {
+   "id": "6397dd9bb23f",
+   "title": "Google Hardens Chrome Against ClickFix Attacks, Insecure HTTP Connections",
+   "link": "https://www.securityweek.com/google-hardens-chrome-against-clickfix-attacks-insecure-http-connections/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-21T17:00:00Z",
+   "summary": "Protections have been added against scams and social engineering, including new site warnings and server-side Gemini analysis. The post Google Hardens Chrome Against ClickFix Attacks, Insecure HTTP Connections appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": [],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/google-chrome-adds-clickfix-warnings-to.html"
+    }
+   ]
+  },
+  {
+   "id": "a124b567afcf",
+   "title": "OVHcloud GitHub Compromise Tied to GlassWorm Threat Actors",
+   "link": "https://www.darkreading.com/cyberattacks-data-breaches/ovhcloud-github-compromise-glassworm-threat-actors",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-21T16:50:15Z",
+   "summary": "A developer's GitHub account that was compromised several months earlier was used to push malicious code to unsuspecting users.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "288893f63679",
+   "title": "OpenAI agents disabled safety monitoring, one lied about it",
+   "link": "https://www.bleepingcomputer.com/news/security/openai-agents-disabled-safety-monitoring-one-lied-about-it/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-21T16:26:53Z",
+   "summary": "OpenAI agents powered by the GPT-6.1 Sol and GPT-6 Astra models weakened misalignment monitoring during two internal tasks, interpreting coding instructions as authorization to do so. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "253a6afd1c73",
+   "title": "Real estate agents flag new earnest money scam warning",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9YT1VXMGJFQ19NSXZwT2Z6NUR6WjBoYm1FRkRUc3ptRHN3QWJhQlVjNnRzcHZ2YmJnNlg5cUVwMm9zT2hQam5KejBuWENVcEFKV0ZSaGZaSXl2R3hlLXdOREM5NHphb19vcUViUjVEMG1fUQ?oc=5",
+   "source": "HousingWire",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-21T16:07:30Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
+   "id": "b716aa6739b4",
+   "title": "Optiv Launches CyberBOT Cybersecurity Awareness Training Program",
+   "link": "https://www.darkreading.com/cybersecurity-operations/optiv-launches-cyberbot-cybersecurity-awareness-training-program",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-21T15:44:48Z",
+   "summary": "Hands-on sessions provide educators, nonprofits, and community leaders with an accessible resource to foster year-round cyber awareness and build more resilient communities.",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "ce8b3bbcd62b",
+   "title": "Survey Finds High-Profile Executives Feel Untouchable as Digital Exposure Turns Into Physical Risk",
+   "link": "https://www.darkreading.com/cybersecurity-operations/360-privacy-survey-high-profile-executives-feel-untouchable",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-21T15:29:09Z",
+   "summary": "360 Privacy finds more than 8 in 10 security and wealth professionals say cybersecurity and physical security can no longer be separated.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "24755a352d3d",
+   "title": "Widespread PHP Flaw May Cause Many Site Outages Today",
+   "link": "https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/",
+   "source": "Krebs on Security",
+   "feed": "Krebs on Security",
+   "region": "Global",
+   "published": "2026-10-21T15:26:07Z",
+   "summary": "Expect to see quite a few websites serving \"404\" or \"Page Not Found\" errors today: Nearly 70 percent of websites need to update their core software to fix a pair of vulnerabilities that allow an attacker to seize full control over affected servers. Experts say there are working exploits for the…",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "e85c7b673e3f",
+   "title": "Websites taken down across Europe as critical cyber-security update issued",
+   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE8yYkJ1a0hkTXBMWUxzUGRNam81RzlXVTd0THJ2cWlvbVd4VmlNQ0ZzeHV0b21aR21mazJNTXAwSjRqN3VoNzgydHplRmRUamltaFJSUmZvcXBUZDg?oc=5",
+   "source": "BBC",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-21T15:11:11Z",
+   "summary": "",
+   "score": 4,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "a45dacf80c10",
+   "title": "‘Context Bombs’ Cut AI Attack Success by Misleading Agents With Fake Targets",
+   "link": "https://www.securityweek.com/context-bombs-cut-ai-attack-success-by-misleading-agents-with-fake-targets/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-21T15:00:00Z",
+   "summary": "Deceptive prompts lure AI agents into decoys and dead ends, cutting attack success by up to 91% in tests and raising the cost of a successful attack 23-fold. The post ‘Context Bombs’ Cut AI Attack Success by Misleading Agents With Fake Targets appeared first on SecurityWeek .",
+   "score": 3,
+   "tags": [
+    "Phishing"
+   ],
+   "why": [
+    "Phishing"
+   ]
+  },
+  {
+   "id": "edba974544e3",
+   "title": "Encore Enterprises Data Breach Lawsuit Investigation",
+   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPdDdGWDFrMjZmS1E0QkVMbnQxMW1ybGc0M0xsTmhBaTlWUVAwenU1aWU2TDhxSmJjMTd1UHlDdlZSV2V1eGZrZkdWNXRWdXppcXQ0SmEtUFFCSHN2OFlfTUIwUnY4NzlFcjc1RE1nVlk4bVp3NWQ0N1JYNWhEZURGRVo0UQ?oc=5",
+   "source": "Claim Depot",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-21T14:57:23Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Data breach",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Data breach",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "67c1ab51681c",
+   "title": "High-Severity Flaws Exploited in Three Days as Ransomware Dominates Q3: Rapid7",
+   "link": "https://www.securityweek.com/high-severity-flaws-exploited-in-three-days-as-ransomware-dominates-q3-rapid7/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-21T14:45:00Z",
+   "summary": "Rapid7’s Q3 analysis finds high-severity flaws exploited within three days on average, while AI appeared in just 8% of tracked incidents. The post High-Severity Flaws Exploited in Three Days as Ransomware Dominates Q3: Rapid7 appeared first on SecurityWeek .",
+   "score": 7,
+   "tags": [
+    "Ransomware",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Ransomware",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "d852900f1baa",
+   "title": "Feds Issues Advisory About SafePay Ransomware Group",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQS3g0MWM0dm16Yk9oOXV0ejhHdW9pcEhuNWtQZmpOS0dPYmtiazhTSkNQbjIzTzN0bXh4Z1RkZDBoWjlkdHR0TXMzN0RYVlpxbXJIcUVFczdIM1VObVBMN0RST3ZFeVZHYlFreDFKZ01Bb2VJWXZ3M2lDODNRZ2FKaEFCb3JDRmJC?oc=5",
+   "source": "The HIPAA Journal",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-21T14:05:53Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ],
+   "also": [
+    {
+     "source": "Howl.link",
+     "url": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE0zclJQSzFMYlRFcmZOaTZySEpCZ0RxQ2NDeWYxd1ZkbnlpWlVFUlBWaW1nT2JvaDA0S1R3?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "bc6b0429e7ca",
+   "title": "ClickFix has never been bigger, and AI tools are its most convincing lure yet",
+   "link": "https://www.bleepingcomputer.com/news/security/clickfix-has-never-been-bigger-and-ai-tools-are-its-most-convincing-lure-yet/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-21T14:00:10Z",
+   "summary": "ClickFix attacks are surging as cybercriminals use fake AI installers, malicious search results, and trusted chatbot platforms to trick users into executing malware. Push Security examines how these attacks evade traditional defenses and why AI tools have become increasingly effective lures. [...]",
+   "score": 4,
+   "tags": [
+    "Phishing"
+   ],
+   "why": [
+    "Phishing"
+   ]
+  },
+  {
+   "id": "71ae2abe1296",
+   "title": "Asymptote Labs Lands $5.5 Million Seed for AI Agent Runtime Security",
+   "link": "https://www.securityweek.com/asymptote-labs-lands-5-5-million-seed-for-ai-agent-runtime-security/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-21T13:17:35Z",
+   "summary": "Asymptote Labs raises $5.5M seed led by Tower Research Ventures to commercialize its Beacon AI agent runtime security platform. The post Asymptote Labs Lands $5.5 Million Seed for AI Agent Runtime Security appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "13820dacd5f3",
+   "title": "Decades-Old Windows Utility Powers Modern ClickFix Attack",
+   "link": "https://www.darkreading.com/cyberattacks-data-breaches/decades-old-windows-utility-modern-clickfix-attack",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-21T13:00:00Z",
+   "summary": "The attack uses malicious Google search results related to Amazon and leverages the 'finger' utility to launch a CAPTCHA that installs malware, including the Lumma stealer.",
+   "score": 2,
+   "tags": [
+    "Identity"
+   ],
+   "why": [
+    "Identity"
+   ]
+  },
+  {
+   "id": "9fa3f970853e",
+   "title": "Memory Bugs Account for Most of Chrome’s 353 New Security Fixes",
+   "link": "https://www.securityweek.com/memory-bugs-account-for-most-of-chromes-353-new-security-fixes/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-21T12:57:47Z",
+   "summary": "The update fixes 353 flaws, including 163 memory corruption and 125 use-after-free vulnerabilities. The post Memory Bugs Account for Most of Chrome’s 353 New Security Fixes appeared first on SecurityWeek .",
+   "score": 2,
+   "tags": [
+    "SaaS / cloud"
+   ],
+   "why": [
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "2616dfa7252a",
+   "title": "OpenAI Agents Silenced Security Team Alerts, Removed Misalignment Monitor",
+   "link": "https://www.securityweek.com/openai-agents-silenced-security-team-alerts-removed-misalignment-monitor/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-21T12:34:22Z",
+   "summary": "In two internal incidents, agents read routine coding instructions as permission to weaken monitoring, and one gave a false answer about it. The post OpenAI Agents Silenced Security Team Alerts, Removed Misalignment Monitor appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "e35cbb165472",
+   "title": "EU agency warns unpatched PHP sites may need offline isolation amid critical flaws",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOQnFHam1XUzZ5OFNYWTFaZlo5bHpleDFVQXBxT0E3ZVdDUEltQS1HWk85NFVqbm9ZQXAzMndPMUtlUjdBRW5zb254cXhZNlVFcDZra0FxWndOajZfaWlPMnNXOG9mSHNxSmF1eXpvNU1TM0V1SkZETW1IYUxtWlU5aE15VmUzdDVaWTdzSTR1ZmF4d08wY3hwY21OVWgzdUlCeFRTX0QxSkVlWHlSSXdsdHlUb3JKTGltVVJUNHBhaWxzQdIBvgFBVV95cUxNS3ZVTGpFekMwN0p1MC03WG1aNjItWm43NHJlXzV2SDB0SVVHWnpnc1g5T1pBSGRxdHFRbTBveVl6Z1NvLVpSbkhsUmlESDhZSFpPRGNUaEtDOE9nOFpXdmRhMXRlc1ptX0NneldrRVdJYUdwQmJhbDdrZ0tibmZfNnE1Unp2R01UZFA4VWxyNE9jd0tZOUtUOXNscGlnX011c3NYVDFKcm9jZ0psTDRGMzBfR2RjUFJQWW4zZ1BR?oc=5",
+   "source": "The News International",
+   "feed": "ASD / ACSC in the news",
+   "region": "AU",
+   "published": "2026-10-21T12:24:00Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Vulnerability",
+    "SaaS / cloud",
+    "Australia"
+   ],
+   "why": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "ba8deb36fe9d",
+   "title": "Microsoft PowerToys adds CursorHide, Button Lock mouse tools",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-powertoys-adds-cursorhide-button-lock-mouse-tools/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-21T12:20:34Z",
+   "summary": "Microsoft has released PowerToys 0.102, with two new mouse utilities, new command-line tools, and Command Palette improvements. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "c7a020f274e0",
+   "title": "China-Aligned Bronze Sandcastle Abuses Sandboxie DLL Sideloading to Deploy Backdoors",
+   "link": "https://thehackernews.com/2026/10/china-aligned-bronze-sandcastle-abuses.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-21T12:05:00Z",
+   "summary": "Cybersecurity researchers have disclosed details of a previously undocumented China-aligned threat cluster known as Bronze Sandcastle that has been observed targeting organizations in Asia and Africa since mid-2025. \"The most distinctive technical marker for Bronze Sandcastle is its consistent use…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "b81260804ad3",
+   "title": "Generative AI Is Erasing Behavioral Tells, Weakening Behavior-Only Detection, Proofpoint Reports",
+   "link": "https://thehackernews.com/2026/10/generative-ai-is-erasing-behavioral.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-21T11:53:34Z",
+   "summary": "Generative AI has changed what a malicious email looks like. Messages that once gave themselves away through clumsy wording, generic pretexts, and reused templates now arrive fluent, personalized, and unique to each recipient, and the behavioral signals email filters have relied on for years are…",
+   "score": 2,
+   "tags": [
+    "AI threats"
+   ],
+   "why": [
+    "AI threats"
+   ]
+  },
   {
    "id": "9b477066ea3b",
    "title": "Browsers Block eMudhra Intermediate CAs Over Recoverable Private Keys",
@@ -280,9 +624,9 @@
    ]
   },
   {
-   "id": "c358a7bb49ad",
+   "id": "044190e3d1aa",
    "title": "Critical flaws strike PHP as disclosure embargo is broken",
-   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQaU1BS2lnTUROaUVKc2ZmZmVkVnc5WTRWM19mY19YaTd1ZGdEVGw3LVNJbklmTmFUZzlLWUUwWmJsT05SbVRESklUX3hhTTBhOE9tbV9qNU9ycGlmTGJqZ3R4Sy0zSWVwRGpoLVFINWx3bXlJUHBEYXppN3U3UnNqTkk4WXIxLUlXOGlCUzZtUlhmVHJreTRMRQ?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNM2J1MmZvV1JKTFBQVnIwUGVpOWVjZENKdkRob0dsUUdIbnV1ZDRncTE0NzFQdXNweUMtVUx6cWp1cnBibnJSSTBTQnJKX0J5ZnVaTC1jNjV5MWF0cjFmZVljYmFoaTdvcXNOOFR6NVdBNHVOTGdOV2gxZEduRHF0c3FYSTlGakoyVGZZWGwyOEtQdkZ0MjJpaXo2SQ?oc=5",
    "source": "iTnews",
    "feed": "ASD / ACSC in the news",
    "region": "AU",
@@ -377,6 +721,32 @@
     "Data breach",
     "Vulnerability",
     "SaaS / cloud"
+   ],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/"
+    },
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/php-issues-emergency-patches-for-two.html"
+    },
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/php2shell-two-unpatched-critical-php.html"
+    },
+    {
+     "source": "Unit 42",
+     "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBaSXRUMkVsWkF3TjhoV29oTXdyZHhrMGZINFBHNVVrNmZubTA4SkFzMzlWMlNMLW15ZWdISDJYeURJbVdpTFB5ZzNTU21aazFfTmc4R0VkLWVyMVY4S1JRYTZ5UjJqWk82SlR5Q0ZMOTJrNEJVeXNV?oc=5"
+    },
+    {
+     "source": "SANS ISC",
+     "url": "https://isc.sans.edu/diary/rss/33440"
+    },
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/php2shell-patches-land-as-first-exploitation-attempts-hit-sensors/"
+    }
    ]
   },
   {
@@ -409,6 +779,14 @@
     {
      "source": "Howl.link",
      "url": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE0zclJQSzFMYlRFcmZOaTZySEpCZ0RxQ2NDeWYxd1ZkbnlpWlVFUlBWaW1nT2JvaDA0S1R3?oc=5"
+    },
+    {
+     "source": "Cybersecurity Dive",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQWElmNk5keXBOZG9JQ0hRSnB2WjU0RklnU1RvZFBLcWRPWjFmZGxBN3VWSzgyZGRwaGlSYmticTNmTUFsYTgyTmZBVXVPZk1iX2Q3bjBsLTF2d3RCdDdBNE5RQWVDWVVwZlhQSkVnaDFxMmdfYmxYYkJIRDEtMjcyOTBfREp6ZkprTjlEY2doQjNiMXBwWUdpeW5JbE9QQllBS0h2dkNyR2daTmtCNkFB?oc=5"
+    },
+    {
+     "source": "GBHackers News",
+     "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5ucUp5ejJ3bHRQUVRHWmg0QW1ycVNaMGxnckxnQUx4NEhoSDBIWk1pblJBMkltbVlCX2JNNlh5clNVcUJmUUhFNGRfYUlZTC1jV3NuWF9yMG1KUzlf0gFiQVVfeXFMTmlFMVp2T0tmVVFMY3IyM3I5Mk5PUnRLUDZmZHF3TGJVM05BNFprY2owUlpsNFdvckFBYTFoRl9lNzFIdkM1dzIxSUNXdVNiOUdlTldqR3BCYzR2V2ZfcnJDRFE?oc=5"
     }
    ]
   },
@@ -724,7 +1102,7 @@
     "Edge devices",
     "Vulnerability"
    ],
-   "epss": 0.0043
+   "epss": 0.0046
   },
   {
    "id": "dff178c340ad",
@@ -734,7 +1112,7 @@
    "feed": "Dark Reading",
    "region": "Global",
    "published": "2026-10-20T15:35:45Z",
-   "summary": "Artificial Intelligence is complicating security in the software development lifecycle, but a Dark Reading roundtable found collaboration, better identity visibility, and reduced testing costs offer CISOs a way ahead.",
+   "summary": "Artificial intelligence is complicating security in the software development life cycle, but a Dark Reading roundtable found collaboration, better identity visibility, and reduced testing costs offer CISOs a way ahead.",
    "score": 0,
    "tags": [],
    "why": []
@@ -783,15 +1161,15 @@
    "why": []
   },
   {
-   "id": "1a6da72fb138",
+   "id": "0dfa738d1635",
    "title": "Hackers Use Autonomous AI Agents to Breach Company Websites, Target Over 1,200 Sites",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9xVTRxMVZMZEJqTU1JbTA2dUx4RjhlYm10dFlFaEZWcV9NMHlIZUU4X0cyZzh5dW5fUi1ILTBIdXVOWG1YWS1jWXk3eXBvTXlpbkV2MmRVal9WOUpGallQOWYzUURvMU1GWjRycFpuTWRTTTYwckFONWJzV3BxeWc?oc=5",
+   "link": "https://thehackernews.com/2026/10/hackers-use-autonomous-ai-agents-to.html",
    "source": "The Hacker News",
-   "feed": "AU breach news",
+   "feed": "The Hacker News",
    "region": "Global",
-   "published": "2026-10-20T14:07:00Z",
-   "summary": "",
-   "score": 6,
+   "published": "2026-10-20T14:07:17Z",
+   "summary": "A Chinese-speaking criminal pointed autonomous AI agents at company websites and let them break in with almost no help, and a security researcher watched it happen because the operators left their control panels open on the internet. The agents tried more than 1,200 sites and reached websites…",
+   "score": 4,
    "tags": [
     "Data breach"
    ],
@@ -971,6 +1349,23 @@
    ],
    "why": [
     "Vulnerability"
+   ]
+  },
+  {
+   "id": "619f27242b6f",
+   "title": "Nashik: Dussehra Drives Festive Buying Across Real Estate, Auto And Gold Markets",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxObXpHclVwOGpZWGwxOFVjS3U4TWUybEVzY2hwTzJqV0xDV1NYd1RLdlpoQTFuQllGWk9GMnBMRFo5c1VmWmQ5M1BsS2lTcmFnRm1fbzNMWmp6aXpCREJIZjMzZEJlYmtqemVyS2d5SlZka2oxazQ5MjBlMi1PaHdxaFRrblFQT1FsSjJTWXp4YmZMR1FuNEF5SmJ5YVM3eGJHeDVLRktXNDNHaHB0alEtLVU0bHp4UdIBuwFBVV95cUxOcTA2clZmVzFFMVd2WlgxalBxcENyNVI5OFNpWk1fdGhkWHRtRTh0S0l6SkVOc2ZYbUxKb3BWNXNRS29TaXpVZjE0MEhHVVVTb1BmamV5VTdKU0xuLU43bC0yckVnNFoyWmV1VVA5Mm1iTS02ZzZILW9ETXZvRk5Say0zTXBOOXdDTDRSMS1XODZsZWJuS2NqUmJmMDNDWGFTc2YyRjBiYUc2UTFOdGN6RzJzdVAxU1hWRS1F?oc=5",
+   "source": "Free Press Journal",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-20T11:43:42Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
    ]
   },
   {
@@ -1159,6 +1554,19 @@
    ]
   },
   {
+   "id": "92e407676578",
+   "title": "Hackers Hijack Five OVHcloud CLI Releases to Distribute Secret-Stealing Malware",
+   "link": "https://thehackernews.com/2026/10/hackers-hijack-five-ovhcloud-cli.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-20T08:21:29Z",
+   "summary": "An attacker used a contributor's GitHub account to replace the download archives on five existing releases of OVHcloud's command-line tool on Monday, October 19. The account had been hijacked, and the new files were a build designed to steal secrets stored on the disk of any machine that runs it,…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
    "id": "eac6b18a7bf7",
    "title": "An Arizona agent’s crusade against AI-fueled real estate fraud",
    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOOGk3Vy1PM0J6Q05MakhlN0dFSExkNXN4N0VKVXl5UFdqZmpjUEdLNlRFa19VT3pDaThJU2JHZWs1NERRUjVSdEl6ZnFabV9YbENPLUh6NEMtQm5kSnloWGlrYWZEVGFtaHQ2UVE2a0hRd2JaWEV0bWlSalRXSTYwZGJ6VWk5RFVvVUxEcGRZbw?oc=5",
@@ -1316,7 +1724,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0066
+   "epss": 0.0137
   },
   {
    "id": "17cca1785b07",
@@ -1336,7 +1744,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.004
+   "epss": 0.0076
   },
   {
    "id": "f8740efa0ba7",
@@ -1356,7 +1764,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0022
+   "epss": 0.0042
   },
   {
    "id": "58d95396f190",
@@ -1376,7 +1784,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0023
+   "epss": 0.0043
   },
   {
    "id": "4222a3123091",
@@ -1396,7 +1804,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0022
+   "epss": 0.0042
   },
   {
    "id": "d846792329f0",
@@ -1416,7 +1824,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0014
+   "epss": 0.0026
   },
   {
    "id": "d3fd0ebf24cf",
@@ -1642,7 +2050,7 @@
      "url": "https://thehackernews.com/2026/10/clickfix-attackers-exploit-siemens.html"
     }
    ],
-   "epss": 0.0014
+   "epss": 0.0026
   },
   {
    "id": "52b0d35525c9",
@@ -6815,389 +7223,6 @@
    "why": [
     "Ransomware",
     "Data breach"
-   ]
-  },
-  {
-   "id": "5d21e50f10d3",
-   "title": "What We Missed: FBI Strikes Back at ShinyHunters",
-   "link": "https://www.darkreading.com/identity-access-management-security/fbi-shinyhunters-claims-hack",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-09T17:21:00Z",
-   "summary": "In this video conversation, Dark Reading editors discuss some of the news they didn't get a chance to cover, from the arrest of a suspected ShinyHunters operative to the compromise of a Pentagon-run data center.",
-   "score": 4,
-   "tags": [
-    "Ransomware"
-   ],
-   "why": [
-    "Ransomware"
-   ]
-  },
-  {
-   "id": "14225bdacc0e",
-   "title": "Unpatched AhsayCBS flaws exploited to deploy webshells, mine crypto",
-   "link": "https://www.bleepingcomputer.com/news/security/unpatched-ahsaycbs-flaws-exploited-to-deploy-webshells-mine-crypto/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-09T17:17:23Z",
-   "summary": "Threat actors are exploiting one critical and one medium-severity vulnerability still unpatched in the AhsayCBS backup management platform to deploy webshells and cryptocurrency miners. [...]",
-   "score": 5,
-   "tags": [
-    "Vulnerability",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Vulnerability",
-    "SaaS / cloud"
-   ],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/attackers-exploit-ahsaycbs-flaws-to.html"
-    }
-   ]
-  },
-  {
-   "id": "3a2f3756dccc",
-   "title": "Security Threats Don't Stop at the Office: Why Executives' Families Need Training, Too",
-   "link": "https://www.darkreading.com/cyber-risk/security-threats-don-t-stop-at-the-office-why-executives-families-need-training-too",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-09T16:25:05Z",
-   "summary": "Those closest to executives must match their security postures because the weakest link in a family can become the entry point for attacks.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "55864660cd86",
-   "title": "TP-Link Sued by Four More U.S. States Over Router Security and China Ties",
-   "link": "https://thehackernews.com/2026/10/tp-link-sued-by-four-more-us-states.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-09T13:22:53Z",
-   "summary": "Four more U.S. states sued router maker TP-Link Systems on October 6, bringing the total to five, with Texas filing a suit in February. Florida, Iowa, Montana and Nebraska allege the California company misled buyers about how secure its routers are and how separate it is from China. TP-Link denies…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "90f8d938cf4b",
-   "title": "Social Engineering AI Agents: The New BEC for 2026",
-   "link": "https://www.darkreading.com/cybersecurity-operations/social-engineering-ai-agents-bec-2026",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-09T13:00:00Z",
-   "summary": "As AI agents gain authority over business systems, attackers can manipulate them like business email compromise (BEC) victims.",
-   "score": 6,
-   "tags": [
-    "BEC / payment fraud"
-   ],
-   "why": [
-    "BEC / payment fraud"
-   ]
-  },
-  {
-   "id": "addcfda79add",
-   "title": "Researchers Publish Working Exploit for Pre-Auth AnyDesk Linux Flaw That Gives Root Access",
-   "link": "https://thehackernews.com/2026/10/researchers-publish-working-exploit-for.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-09T12:59:22Z",
-   "summary": "Security researchers have published a full working exploit for a pre-authentication remote code execution flaw in AnyDesk Linux that gives attackers root access before anyone approves the connection. AnyDesk patched the flaw in version 8.0.3 in June, but its changelog described the fix only as…",
-   "score": 1,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "04cd63484434",
-   "title": "Anthropic Launches Free AI Vulnerability Scanner for Open-Source Projects",
-   "link": "https://thehackernews.com/2026/10/anthropic-launches-free-ai.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-09T12:47:28Z",
-   "summary": "Anthropic on Thursday unveiled OSS Scanner as an opt-in vulnerability scanner to help secure the open-source ecosystem using artificial intelligence (AI). \"It's an opt-in service informed by our experience using Claude to find vulnerabilities during Project Glasswing,\" Anthropic said. \"Projects…",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "83f8612997a5",
-   "title": "Flax Typhoon Exploits Five Flaws as CISA Sets October 11 Deadline for Federal Agencies",
-   "link": "https://thehackernews.com/2026/10/flax-typhoon-exploits-five-flaws-as.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-09T12:21:51Z",
-   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added five security flaws to its Known Exploited Vulnerabilities (KEV) catalog, following their abuse by a China-linked threat actor known as Flax Typhoon. The vulnerabilities in question are listed below - CVE-2015-3306…",
-   "score": 10,
-   "tags": [
-    "Actively exploited",
-    "Vulnerability",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Actively exploited",
-    "Vulnerability",
-    "SaaS / cloud"
-   ],
-   "epss": 0.995
-  },
-  {
-   "id": "b7ae45cc2528",
-   "title": "The AI Velocity Paradox: Why Security Is Decades Behind AI Ambition",
-   "link": "https://thehackernews.com/2026/10/the-ai-velocity-paradox-why-security-is.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-09T11:30:00Z",
-   "summary": "As enterprises race to deploy autonomous AI agents to accelerate business, a new report reveals they are tethered to security architectures built for a different era. The \"Horizons of Identity Security\" report from SailPoint highlights a critical “velocity paradox,” in which organizations invest…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "d32c756e311a",
-   "title": "GoBalance Flaw Lets Attackers Hijack .onion Addresses by Recovering Tor-Format Keys",
-   "link": "https://thehackernews.com/2026/10/gobalance-flaw-lets-attackers-hijack.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-09T09:03:24Z",
-   "summary": "A bug in GoBalance, a tool many dark-web sites use to stay reachable during attacks, lets anyone work out the secret key that controls a site's .onion address using only public information, and then take that address over. Searchlight Cyber, which disclosed the flaw on October 8, says an attacker…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "e3f3090fc550",
-   "title": "Three Teams Demonstrate Remote Hacks of Fully Patched Google Pixel 10 at Pwn2Own",
-   "link": "https://thehackernews.com/2026/10/three-teams-demonstrate-remote-hacks-of.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-09T08:26:17Z",
-   "summary": "Three research teams broke into Google's Pixel 10 on October 8 at Pwn2Own Ireland, a hacking contest in Cork whose rules require every target to be fully patched. The contest pays researchers to show working exploits and passes the flaws to the vendors. One of the three Pixel exploits earned…",
-   "score": 4,
-   "tags": [
-    "Vulnerability",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Vulnerability",
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "313976c42503",
-   "title": "Citrix Patches Critical NetScaler Flaw That Could Enable RCE in SAML Deployments",
-   "link": "https://thehackernews.com/2026/10/citrix-patches-critical-netscaler-flaw.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-09T08:11:33Z",
-   "summary": "Citrix has released patches for yet another critical security flaw impacting NetScaler ADC and NetScaler Gateway that could result in remote code execution or denial-of-service (DoS) under certain conditions. \"CVE-2026-107406 is a memory overflow vulnerability that may lead to remote code…",
-   "score": 5,
-   "tags": [
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "why": [
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "epss": 0.0047
-  },
-  {
-   "id": "a02aff11f228",
-   "title": "ISC Stormcast For Friday, October 9th, 2026 https://isc.sans.edu/podcastdetail/10130, (Fri, Oct 9th)",
-   "link": "https://isc.sans.edu/diary/rss/33412",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-10-09T07:52:03Z",
-   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
-   "score": 1,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "5448277fa97e",
-   "title": "FBI Seizes 7 Domains, Disrupts Flax Typhoon Tools Used in Critical Infrastructure Intrusions",
-   "link": "https://thehackernews.com/2026/10/fbi-seizes-7-domains-disrupts-flax.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-09T06:39:29Z",
-   "summary": "The U.S. Federal Bureau of Investigation (FBI) and Department of Justice (DoJ) have announced the disruption of malicious tools used by a China-linked advanced persistent threat group known as Flax Typhoon. To that end, the agencies seized several domains and blocked access to platforms that were…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "921040b2c508",
-   "title": "Chinese government-linked cyber threat actors combine automated and hands-on hacking tools to steal sensitive data",
-   "link": "https://www.cyber.gov.au/advisory/chinese-government-linked-cyber-threat-actors-combine-automated-and-hands-on-hacking-tools-to-steal-sensitive-data",
-   "source": "ACSC Advisories",
-   "feed": "ACSC Advisories",
-   "region": "AU",
-   "published": "2026-10-08T22:10:58Z",
-   "summary": "Learn how Chinese state-linked cyber actors steal sensitive data and discover practical steps to detect, prevent and respond to attacks.",
-   "score": 6,
-   "tags": [
-    "Australia"
-   ],
-   "why": [],
-   "also": [
-    {
-     "source": "Australian Cyber Security",
-     "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPSXgySXdDMlp2Q091MXdBUUgyTUg1X215eFh3NVNxSTJ3ZnIxR1hMcGZzVUFNU2RpYlFpNWVaRnpSRFRKTXVEODhFZmV0SkE3WlpJTTAxOFJ4WTdBVHA3VXlkTnRHWVVhR2Z6ZmhFdzI3Z2xfcmFKeVJBSTlQS1ZjNVNkSGNLMFg5M1RfMFFsNU1GUHZRMFpLSG9KUDdKNVNpaEk3bF96OGNxdFJNQWlZdXZVTjNqYzF6UVBRUHlmLTVBLW03Y1BKWGhTUlo0TnhVWGxIREJDYmNvTTRrekplRDdB?oc=5"
-    },
-    {
-     "source": "Australian Cyber Security",
-     "url": "https://news.google.com/rss/articles/CBMipgJBVV95cUxPdUxVZ1NaOFRoSUhDbGlPRHdzQVVqNGRGYmdocldGcmNBSjlRcjZoY19Dc0lHSXU5NXBzd05OX3BPUUo4WWFWdmNkamNJUTA4QUhRUmxzSW0waFlqM3lmWnhENVNPbGVNSFprY1JHeXdGZkdjX05zTklNS0dFVHduTEJnbmVsRVhBWnM3R2wyQVBhLUh4T2otMTRuTDRuVFlyV2tYM05UWGN6OUl2M0xRcTdsXzBNOE9PNjlIX2xvYVZId1I4YjRKYU5tbEVGcmxoRC1ZUmw1UTQzbDh1RUotcXA3VTlOZ29CNWQ1LU9TRlI2X3NCTE4wb3l3eVNiUzM3VDhQOGlXVUYxWnhuY3JWeEdxZTA4SUc1WXVmeDUwTk1vYjN3dFE?oc=5"
-    }
-   ]
-  },
-  {
-   "id": "2c6533f22f44",
-   "title": "Post-quantum authentication: Why organizations should start testing certificate ecosystems now",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/10/08/post-quantum-authentication-why-organizations-should-start-testing-certificate-ecosystems-now/",
-   "source": "Microsoft Security Blog",
-   "feed": "Microsoft Security Blog",
-   "region": "Global",
-   "published": "2026-10-08T20:44:28Z",
-   "summary": "Prepare for post-quantum authentication by testing certificate ecosystems now. Learn how Microsoft’s PQC TLS Pilot Program helps advance future readiness. The post Post-quantum authentication: Why organizations should start testing certificate ecosystems now appeared first on Microsoft Security…",
-   "score": 1,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "f5568cb9bcb2",
-   "title": "'AgentCorruption' Puts AWS Environments at Risk With Single Prompt",
-   "link": "https://www.darkreading.com/cloud-security/agentcorruption-aws-environments-at-risk-single-prompt",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-08T20:39:44Z",
-   "summary": "A now-patched vulnerability in AWS Bedrock AgentCore could have allowed an attacker to use one AI chatbot to take over an organization's entire fleet.",
-   "score": 4,
-   "tags": [
-    "Vulnerability",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Vulnerability",
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "90f714cac7b3",
-   "title": "Venezuelan Cartel's Malware Honcho Nabbed for ATM Jackpotting",
-   "link": "https://www.darkreading.com/cyberattacks-data-breaches/venezuelan-cartel-malware-honcho-nabbed-atm-jackpotting",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-08T19:08:16Z",
-   "summary": "The first cybercriminal to ever make the FBI's \"10 Most Wanted Fugitives\" list allegedly infused Tren de Aragua's violent criminal operations with cash.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "ffc305faa6ee",
-   "title": "FBI Says China-Linked Hackers Ran Portal Giving Third Parties Access to Stolen Emails",
-   "link": "https://thehackernews.com/2026/10/fbi-says-china-linked-hackers-ran.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-08T18:32:21Z",
-   "summary": "Hackers tied to a Chinese cybersecurity company stole email from government organizations, law enforcement agencies, healthcare systems, and religious institutions in Southeast Asia, the FBI and agencies in 6 other countries said on October 8. The company, Integrity Technology Group, has been…",
-   "score": 1,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "6a96d5d7e3a8",
-   "title": "Russian Spies Give 'MatchBoil' Malware a Stealthy Facelift",
-   "link": "https://www.darkreading.com/cyberattacks-data-breaches/russian-spies-matchboil-malware-facelift",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-08T18:01:50Z",
-   "summary": "Cyber-espionage actor UAC-0099 has been steadily refining its flagship dropper in campaigns targeting Ukrainian organizations.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "f8595042a198",
-   "title": "ThreatsDay: Ransomware Affiliate Betrayal, WhatsApp RAT, Exposed Hacker Tools and 12 More Stories",
-   "link": "https://thehackernews.com/2026/10/threatsday-ransomware-affiliate.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-08T17:58:02Z",
-   "summary": "The crooks have trust problems of their own. One ransomware affiliate decided to keep the profits for himself. Elsewhere, an attacker left a server exposed, complete with tools and traces of an intrusion. Apparently, keeping things secure is a problem on both sides of the fence. The rest of the…",
-   "score": 8,
-   "tags": [
-    "Ransomware",
-    "Data breach"
-   ],
-   "why": [
-    "Ransomware",
-    "Data breach"
-   ]
-  },
-  {
-   "id": "09ad52419444",
-   "title": "Reconstructing AI Agent Activity: Two New Scripts for Forensic Review, (Thu, Oct 8th)",
-   "link": "https://isc.sans.edu/diary/rss/33410",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-10-08T16:52:53Z",
-   "summary": "We just did a major update to FOR577 and added a lot of new material on day 5 about investigating AI usage in incident response. In the new material we dicsuss 8&#;x26;#;xc2;&#;x26;#;xa0;of the most popular AI coding assistants and&#;x26;#;xc2;&#;x26;#;xa0;agents including Claude Code, Codex,…",
-   "score": 1,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "e23311ff0ce1",
-   "title": "Japan Sees Sharp Rise in Web Data Leaks Amid Mobile API Abuse and Metabase Attacks",
-   "link": "https://thehackernews.com/2026/10/japan-sees-sharp-rise-in-web-data-leaks.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-08T15:45:56Z",
-   "summary": "Attackers behind a string of personal data leaks at Japanese organizations have abused APIs for mobile apps and targeted known software flaws, the JPCERT Coordination Center (JPCERT/CC) said. The Tokyo-based center, which takes incident reports, based its October 8, 2026 alert on those reports and…",
-   "score": 6,
-   "tags": [
-    "Data breach",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Data breach",
-    "SaaS / cloud"
    ]
   }
  ]
