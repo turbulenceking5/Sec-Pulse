@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21T04:52:35Z",
+ "generated": "2026-10-21T11:52:59Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -22,13 +22,13 @@
   {
    "name": "ASD / ACSC in the news",
    "ok": true,
-   "count": 0,
+   "count": 2,
    "error": null
   },
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 9,
+   "count": 8,
    "error": null
   },
   {
@@ -40,7 +40,7 @@
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 3,
+   "count": 1,
    "error": null
   },
   {
@@ -106,6 +106,377 @@
  ],
  "items": [
   {
+   "id": "9b477066ea3b",
+   "title": "Browsers Block eMudhra Intermediate CAs Over Recoverable Private Keys",
+   "link": "https://www.securityweek.com/browsers-block-emudhra-intermediate-cas-over-recoverable-private-keys/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-21T11:22:05Z",
+   "summary": "The private keys associated with eight certificates were compromised, and root programs and trust stores are blocking them. The post Browsers Block eMudhra Intermediate CAs Over Recoverable Private Keys appeared first on SecurityWeek .",
+   "score": 2,
+   "tags": [
+    "Identity"
+   ],
+   "why": [
+    "Identity"
+   ]
+  },
+  {
+   "id": "e7f2884fd694",
+   "title": "Hackers steal children's data after company used 'Password1' to protect old account",
+   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1MWWRiQTlFUk1lZnVlUE9Udk5sYURFN0VndVZsS0E4NFlwOWxFZG9hMFllbTIyM3d2aUc3NmJYV0FkVXoyX1h5RzNIOHJ1MGNyLUFzWm0tdUlOU28?oc=5",
+   "source": "BBC",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-21T10:56:47Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "Identity"
+   ],
+   "why": [
+    "Identity"
+   ]
+  },
+  {
+   "id": "a9327fc12a2b",
+   "title": "China Defends DeepSeek After US Ban of Its AI From Government Systems",
+   "link": "https://www.securityweek.com/china-defends-deepseek-after-us-ban-of-its-ai-from-government-systems/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-21T10:54:49Z",
+   "summary": "The DHS said agencies should remove DeepSeek products as well as third-party products and services developed using DeepSeek from their IT systems. The post China Defends DeepSeek After US Ban of Its AI From Government Systems appeared first on SecurityWeek .",
+   "score": 2,
+   "tags": [
+    "SaaS / cloud"
+   ],
+   "why": [
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "ec0fd993c8b5",
+   "title": "PHP2Shell: What Actually Protects You Before the 14:00 UTC PHP RCE Patch, and What Doesn't",
+   "link": "https://thehackernews.com/2026/10/php2shell-what-actually-protects-you.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-21T10:36:53Z",
+   "summary": "You cannot fully block the two critical PHP flaws called PHP2Shell before today's fix, and the one setting being passed around as a workaround is not enough on its own, the security firm that suggested it now says. PHP will release the fix at 14:00 UTC on October 21 for two flaws it rates 9.2 out…",
+   "score": 4,
+   "tags": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "f31f85df952c",
+   "title": "The Harness Is the Hard Part of Agentic Pentesting",
+   "link": "https://thehackernews.com/2026/10/the-harness-is-hard-part-of-agentic.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-21T10:32:40Z",
+   "summary": "An AppSec team can point an AI agent running on a general-purpose model at its own web apps with little setup. Sure, the model writes the attacks. But everything that makes those attacks safe to run against production and worth acting on afterward lives in the harness around the model. The harness…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "00d9c6c07315",
+   "title": "Attackers Hijacked Over 300 Tor Exit Relays to Intercept SSH Connections",
+   "link": "https://thehackernews.com/2026/10/attackers-hijacked-over-300-tor-exit.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-21T10:30:27Z",
+   "summary": "Attackers took control of more than 300 Tor exit relays in early October and used them to redirect SSH connections to servers that stole login passwords, a researcher found. Exit relays are the last hop in a Tor circuit, where traffic leaves the network for its destination. Only a password login…",
+   "score": 4,
+   "tags": [
+    "Identity",
+    "Vulnerability"
+   ],
+   "why": [
+    "Identity",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "73d154fe3b9b",
+   "title": "Microsoft says October updates didn’t actually fix VPN issues",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-didnt-actually-fix-vpn-issues-caused-by-windows-updates/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-21T10:14:53Z",
+   "summary": "Microsoft says it mistakenly flagged a bug causing Always On VPN connection issues as fixed in the October 2026 Windows 11 cumulative updates. [...]",
+   "score": 3,
+   "tags": [
+    "Edge devices"
+   ],
+   "why": [
+    "Edge devices"
+   ]
+  },
+  {
+   "id": "724c2add33ae",
+   "title": "Chinese AI Model Writes More Hackable Code When Told It’s for US Contractor",
+   "link": "https://www.securityweek.com/chinese-ai-model-writes-more-hackable-code-when-told-its-for-us-contractor/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-21T10:03:24Z",
+   "summary": "Tasked with writing an application for a US defense contractor, the model made the code 19% more likely to be hackable. The post Chinese AI Model Writes More Hackable Code When Told It’s for US Contractor appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "9ea8a56702ee",
+   "title": "Why more lenders are opting to make big payouts in data breach cases",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPd0RNRzZnV3M3M05CMm1PUzFwY01TYmM2aFlmakRlakZ1bW9mb0xKVHhQRXpBaUVTdDJtQVk5SC0zZVd2NTNCcl91MlRKaUpzUzNVOHREa3dJQjRzekdrcFNDWnJ5ZEZLazJaQm1FTXBxSHZfSnJUcWJlenBWdU83NHFrd3VuMFZVX0xhSXlCVGJxWnFVbG5Ha2RsLVZ6UVN0NkdEbzhNTWFsa1RjVk44?oc=5",
+   "source": "National Mortgage News",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-21T10:00:00Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "7f88afbf76a3",
+   "title": "Attackers Abuse UpdraftCentral Keys to Plant Backdoors on WordPress Sites",
+   "link": "https://thehackernews.com/2026/10/attackers-abuse-updraftcentral-keys-to.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-21T09:01:12Z",
+   "summary": "Unknown threat actors breached TeamUpdraft's website and potentially gained unauthorized access to customers' connection keys for UpdraftCentral, UpdraftVault, and UpdraftClone, using them to backdoor WordPress sites. TeamUpdraft is the developer behind UpdraftPlus, a popular WordPress backup…",
+   "score": 7,
+   "tags": [
+    "Microsoft 365",
+    "Data breach"
+   ],
+   "why": [
+    "Microsoft 365",
+    "Data breach"
+   ],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/stolen-updraftcentral-keys-used-to-backdoor-wordpress-sites/"
+    }
+   ]
+  },
+  {
+   "id": "c358a7bb49ad",
+   "title": "Critical flaws strike PHP as disclosure embargo is broken",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQaU1BS2lnTUROaUVKc2ZmZmVkVnc5WTRWM19mY19YaTd1ZGdEVGw3LVNJbklmTmFUZzlLWUUwWmJsT05SbVRESklUX3hhTTBhOE9tbV9qNU9ycGlmTGJqZ3R4Sy0zSWVwRGpoLVFINWx3bXlJUHBEYXppN3U3UnNqTkk4WXIxLUlXOGlCUzZtUlhmVHJreTRMRQ?oc=5",
+   "source": "iTnews",
+   "feed": "ASD / ACSC in the news",
+   "region": "AU",
+   "published": "2026-10-21T08:58:00Z",
+   "summary": "",
+   "score": 8,
+   "tags": [
+    "SaaS / cloud",
+    "Australia"
+   ],
+   "why": [
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "0c6fe061465a",
+   "title": "U.S. Orders DeepSeek Removed From Federal Civilian Systems, Bans New Purchases",
+   "link": "https://thehackernews.com/2026/10/us-orders-deepseek-removed-from-federal.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-21T08:04:17Z",
+   "summary": "U.S. federal civilian agencies must remove DeepSeek products from their information technology systems, along with any third-party products or services \"developed using DeepSeek implementations,\" under a Department of Homeland Security order. They may also no longer buy information technology…",
+   "score": 2,
+   "tags": [
+    "SaaS / cloud"
+   ],
+   "why": [
+    "SaaS / cloud"
+   ],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/dhs-bans-deepseek-products-across-us-federal-civilian-agencies/"
+    }
+   ]
+  },
+  {
+   "id": "17efaa05bd14",
+   "title": "State Bank of India Confirms Data Leak After 3,897 Customer Records Found on Dark Web",
+   "link": "https://thehackernews.com/2026/10/state-bank-of-india-confirms-data-leak.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-21T07:44:22Z",
+   "summary": "State Bank of India has identified 3,897 customer records containing personal information in a set of about 375,000 records available on the dark web, and it does not yet know where the data came from. The state-owned bank, India's largest, said in a stock-exchange filing dated October 21 that it…",
+   "score": 4,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "f6fe2f9557b7",
+   "title": "CISA Orders Federal Agencies to Patch Exploited Plex2Shell, Siemens, and SiteGuard Flaws",
+   "link": "https://thehackernews.com/2026/10/cisa-orders-federal-agencies-to-patch.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-21T07:26:49Z",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added four vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog, including four vulnerabilities impacting Plex Media Server that's collectively called Plex2Shell. The vulnerabilities are listed below -…",
+   "score": 9,
+   "tags": [
+    "Actively exploited",
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Actively exploited",
+    "Vulnerability",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "856618cc054b",
+   "title": "PHP2Shell: Mass Exploitation Looms for Leaked Critical PHP Flaws",
+   "link": "https://www.securityweek.com/php2shell-mass-exploitation-looms-for-leaked-critical-php-flaws/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-21T07:02:06Z",
+   "summary": "Tracked as CVE-2026-109618 and CVE-2026-109619, the bugs could potentially lead to unauthenticated remote code execution. The post PHP2Shell: Mass Exploitation Looms for Leaked Critical PHP Flaws appeared first on SecurityWeek .",
+   "score": 8,
+   "tags": [
+    "Data breach",
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Data breach",
+    "Vulnerability",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "73ce0a80572d",
+   "title": "FBI Reveals How SafePay Ransomware Hackers Breached 600+ Organizations Worldwide",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1fR3ZoOGNIRGZ2cUpjZmx6dnR4cDFHMzE3bmlMQmVyMHdHMVRUa09qU3hnQ09aeVdyTUY1bDVtc3dxaVBKdkdpcm5Hd0NFY21wNEZUWWdMbTRLLTBhMFBleXpkMnNXUlBrX0HSAWpBVV95cUxNX0d2aDhjSERmdnFKY2ZsenZ0eHAxRzMxN25pTEJlcjB3RzFUVGtPalN4Z0NPWnlXck1GNWw1bXN3cWlQSnZHaXJuR3dDRWNtcDRGVFlnTG00Sy0wYTBQZXl6ZDJzV1JQa19B?oc=5",
+   "source": "Cyber Press",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-21T06:24:23Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Ransomware",
+    "Data breach"
+   ],
+   "why": [
+    "Ransomware",
+    "Data breach"
+   ],
+   "also": [
+    {
+     "source": "CyberSecurityNews",
+     "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFA0R1oyTVNtdUoteGpDUVpmYUxnRlFtMWE5M2Z5YVVjTmNQdm56Sm02WmVXWXluODNGRl9UbndYeVVQOFZvNFNnWkVLT0RTQjlpOU1qaGNnNGpQcHMyYkHSAWNBVV95cUxPcS1HNXRSYzMtTTJDdHJ6MnhBVkhYYlRmLW5IMm4yYlVwRVpaOTdBT1lkcnlVRlhNU1hkVzV5VUJzRVcwakQyVGRRVEp0dU13TkRGUlA0YUthX0diTmkzUE5hWVk?oc=5"
+    },
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/cisa-and-fbi-safepay-ransomware-has-hit-over-600-critical-infrastructure-organizations/"
+    },
+    {
+     "source": "Howl.link",
+     "url": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE0zclJQSzFMYlRFcmZOaTZySEpCZ0RxQ2NDeWYxd1ZkbnlpWlVFUlBWaW1nT2JvaDA0S1R3?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "69fb556b97dd",
+   "title": "ASD rushes out ‘critical’ alert on unpatched PHP vulnerability",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOb3BubTQyX19MQWlEZ0Job1BndzJzS2pxa0pPX1J1d3lJSVhhR21iUFNYNkJQUHpIelFSSkRxVGh4ZXJGbURraGpGUzNhamw0SDVmbUpMNzU0VDZDWWJ3WVNsbE1mWHNFTUQyZllwQWZxY3pxVi1ONDJNMllzOFNfRmVGY1lBSkNLZWpGTVlscmZub1A1ZkhQWFpsTnNmbXZC?oc=5",
+   "source": "The Mandarin",
+   "feed": "ASD / ACSC in the news",
+   "region": "AU",
+   "published": "2026-10-21T06:13:11Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Vulnerability",
+    "Australia"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/php2shell-two-unpatched-critical-php.html"
+    }
+   ]
+  },
+  {
+   "id": "bd60f0eb51aa",
+   "title": "Hackers Hid Vasilek Backdoor in VMware Tools During 2-Year Russian Healthcare Intrusion",
+   "link": "https://thehackernews.com/2026/10/hackers-hid-vasilek-backdoor-in-vmware.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-21T06:05:15Z",
+   "summary": "A Belarus-aligned hacktivist group spent nearly two years within the network of a Russian healthcare organization. According to a report published by Russian cybersecurity firm Solar, the activity has been attributed to a threat cluster dubbed Partisan Zmiy, which is also known as the Cyber…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "f543d8c6a881",
+   "title": "Hijacked Developer Account Used to Plant Stealer in OVHcloud CLI",
+   "link": "https://www.securityweek.com/hijacked-developer-account-used-to-plant-stealer-in-ovhcloud-cli/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-21T06:02:27Z",
+   "summary": "Researchers say the developer’s account was compromised in March with a GlassWorm-linked loader. The post Hijacked Developer Account Used to Plant Stealer in OVHcloud CLI appeared first on SecurityWeek .",
+   "score": 3,
+   "tags": [
+    "Identity"
+   ],
+   "why": [
+    "Identity"
+   ],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/ovhcloud-cli-releases-backdoored-on-github-to-steal-developer-secrets/"
+    },
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/hackers-hijack-five-ovhcloud-cli.html"
+    }
+   ]
+  },
+  {
    "id": "b374ef599927",
    "title": "Accenture, Dragos, SANS Launch $10M Initiative to Defend Small US Utilities",
    "link": "https://www.securityweek.com/accenture-dragos-sans-launch-10m-initiative-to-defend-small-us-utilities/",
@@ -117,6 +488,29 @@
    "score": 0,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "ea5b31be4fa9",
+   "title": "SafePay ransomware group has targeted hundreds this year, US agencies say",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPbUVhRzhyR0FIcEljR1BWOG9FZTdzZkg2Y3VrN0RFMjBXdTRVSjBqMXkyTzg4aWdSajJzXzZhejhETUxvdDRtUHlpQTB3ZVFkVVR4dFduU0JxdzhzQ0xFd1NqQzUtUE9MZ0h3YjhMVEkweVNEZUUtNGNoZ1JEd2FPandmampSOUJQaTlpeUkzWUtVeVZlRmVvZVJzRU1pMEpvQXhB?oc=5",
+   "source": "WKZO",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-21T03:38:26Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ],
+   "also": [
+    {
+     "source": "Devdiscourse",
+     "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQV2trd1VWek1Nb1FKRVdQVDcwam44ckgxLTltZ0podGktQkVtcTd1N1pyUTdzNG14b2tNQzYzRmRkWXVTVmxlNm1XbU5YS2tacHRPb1FCZ0RvLTBoOS1uX1luYll4MUNFa212MGxBYUhLcU9KVTBHUnBBaFh2c2kyWWJDRm9Lcm9jajhmV2hIQzFPRzBVSDU2d0wwb1NlNGpHU29vS1hqcXRtRVRncnVXTVIwWXpWakJhck56ellCQkRFTVExcWR2eUtBc9IB0AFBVV95cUxPZWdsVTVZaHVIOTEwTThoNkNOLU1lQ1RYZHNrU3dYcEp2NHBmRWJnbkJucWhhRzJNZ1JYOXNMWVAxVUxRZDJlbFVqU3FEYjRRWkRPTW9Qekt0ZEVrSEh2Sk9xenYyRlRIYUhMTVFZbDV1TTdZcG1mRU1zNk14UkY2dTd6OHF0LXNlMzBNa1hPeXB0TmgzRUJTYUROZThBRkZaaEQzR2Z3eU51bUlHV3Y0cGtoU1puRHBNZ2x2LWNfZFF4OWJ5alVfTHN2RHRvdE0x?oc=5"
+    }
+   ]
   },
   {
    "id": "5d3cff124915",
@@ -164,25 +558,6 @@
    "why": []
   },
   {
-   "id": "0f04a6f0fbac",
-   "title": "Stolen UpdraftCentral keys used to backdoor WordPress sites",
-   "link": "https://www.bleepingcomputer.com/news/security/stolen-updraftcentral-keys-used-to-backdoor-wordpress-sites/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-21T01:01:50Z",
-   "summary": "A threat actor breached TeamUpdraft's website, a developer of popular WordPress backup and security plugins, potentially compromising UpdraftCentral connection keys that can send commands to connected websites. [...]",
-   "score": 7,
-   "tags": [
-    "Microsoft 365",
-    "Data breach"
-   ],
-   "why": [
-    "Microsoft 365",
-    "Data breach"
-   ]
-  },
-  {
    "id": "7a020fdc3830",
    "title": "Mozilla, Google, Apple block compromised eMudhra CA certificates",
    "link": "https://www.bleepingcomputer.com/news/security/mozilla-google-apple-block-compromised-emudhra-ca-certificates/",
@@ -198,29 +573,6 @@
     {
      "source": "Dark Reading",
      "url": "https://www.darkreading.com/cyber-risk/tech-giants-emudhra-certificates-compromised-keys"
-    }
-   ]
-  },
-  {
-   "id": "ea5b31be4fa9",
-   "title": "SafePay ransomware group has targeted hundreds this year, US agencies say",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPbUVhRzhyR0FIcEljR1BWOG9FZTdzZkg2Y3VrN0RFMjBXdTRVSjBqMXkyTzg4aWdSajJzXzZhejhETUxvdDRtUHlpQTB3ZVFkVVR4dFduU0JxdzhzQ0xFd1NqQzUtUE9MZ0h3YjhMVEkweVNEZUUtNGNoZ1JEd2FPandmampSOUJQaTlpeUkzWUtVeVZlRmVvZVJzRU1pMEpvQXhB?oc=5",
-   "source": "WKZO",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-20T23:57:09Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Ransomware"
-   ],
-   "why": [
-    "Ransomware"
-   ],
-   "also": [
-    {
-     "source": "Devdiscourse",
-     "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQV2trd1VWek1Nb1FKRVdQVDcwam44ckgxLTltZ0podGktQkVtcTd1N1pyUTdzNG14b2tNQzYzRmRkWXVTVmxlNm1XbU5YS2tacHRPb1FCZ0RvLTBoOS1uX1luYll4MUNFa212MGxBYUhLcU9KVTBHUnBBaFh2c2kyWWJDRm9Lcm9jajhmV2hIQzFPRzBVSDU2d0wwb1NlNGpHU29vS1hqcXRtRVRncnVXTVIwWXpWakJhck56ellCQkRFTVExcWR2eUtBc9IB0AFBVV95cUxPZWdsVTVZaHVIOTEwTThoNkNOLU1lQ1RYZHNrU3dYcEp2NHBmRWJnbkJucWhhRzJNZ1JYOXNMWVAxVUxRZDJlbFVqU3FEYjRRWkRPTW9Qekt0ZEVrSEh2Sk9xenYyRlRIYUhMTVFZbDV1TTdZcG1mRU1zNk14UkY2dTd6OHF0LXNlMzBNa1hPeXB0TmgzRUJTYUROZThBRkZaaEQzR2Z3eU51bUlHV3Y0cGtoU1puRHBNZ2x2LWNfZFF4OWJ5alVfTHN2RHRvdE0x?oc=5"
     }
    ]
   },
@@ -426,19 +778,6 @@
    "region": "Global",
    "published": "2026-10-20T14:36:05Z",
    "summary": "A Chinese-speaking attacker has compromised hundreds of websites across the globe, looting from big fish like John Deere, SharkNinja, and engine manufacturer Cummins.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "4162cca6289c",
-   "title": "DHS bans DeepSeek products across US federal civilian agencies",
-   "link": "https://www.bleepingcomputer.com/news/security/dhs-bans-deepseek-products-across-us-federal-civilian-agencies/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-20T14:19:05Z",
-   "summary": "The U.S. Department of Homeland Security (DHS) is ordering federal civilian agencies to stop using DeepSeek products and remove them from government systems. [...]",
    "score": 0,
    "tags": [],
    "why": []
@@ -689,29 +1028,6 @@
    "score": 0,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "4ee7cda6f2dc",
-   "title": "OVHcloud CLI releases backdoored on GitHub to steal developer secrets",
-   "link": "https://www.bleepingcomputer.com/news/security/ovhcloud-cli-releases-backdoored-on-github-to-steal-developer-secrets/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-20T11:31:22Z",
-   "summary": "French cloud and hosting provider OVHcloud is warning users that attackers compromised its open-source command-line interface (CLI) tool to distribute information-stealing malware. [...]",
-   "score": 1,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/hackers-hijack-five-ovhcloud-cli.html"
-    }
-   ]
   },
   {
    "id": "382400392fa0",
@@ -6882,283 +7198,6 @@
    "why": [
     "Data breach",
     "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "597dc1488663",
-   "title": "UAC-0099 Targets Ukrainian Government Personnel With ASHVEIN RAT Hiding Commands in HTML",
-   "link": "https://thehackernews.com/2026/10/uac-0099-targets-ukrainian-government.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-08T15:26:56Z",
-   "summary": "The Russia-aligned threat actor known as UAC-0099 has been attributed to a previously undocumented .NET infostealer and remote access trojan (RAT) codenamed ASHVEIN. According to TrendAI, the malware has been put to use in attacks targeting Ukrainian government personnel. The cybersecurity company…",
-   "score": 2,
-   "tags": [
-    "Identity"
-   ],
-   "why": [
-    "Identity"
-   ]
-  },
-  {
-   "id": "730868d2c918",
-   "title": "Writing the Next Chapter",
-   "link": "https://www.darkreading.com/cybersecurity-operations/writing-next-chapter",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-08T12:00:00Z",
-   "summary": "Dark Reading is about to begin a new decade in its storied history, and we have some breaking news of our own to share.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "ecdf7113631f",
-   "title": "ISC Stormcast For Thursday, October 8th, 2026 https://isc.sans.edu/podcastdetail/10128, (Thu, Oct 8th)",
-   "link": "https://isc.sans.edu/diary/rss/33408",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-10-08T02:00:02Z",
-   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
-   "score": 1,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "b77403a9e73a",
-   "title": "CVE-2015-5477: ISC BIND —  ISC BIND Data Processing Errors Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2015-5477",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-10-08T00:00:00Z",
-   "summary": "ISC BIND contains a data processing errors vulnerability that could allow remote attackers to cause a denial of service via TKEY queries. CISA remediation due 2026-10-11.",
-   "score": 4,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.9941
-  },
-  {
-   "id": "f2ac269646f7",
-   "title": "CVE-2016-3081: Apache Struts — Apache Struts Command Injection Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2016-3081",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-10-08T00:00:00Z",
-   "summary": "Apache Struts contains a command injection vulnerability that could allow remote attackers to execute arbitrary code via method:prefix when Dynamic Method Invocation is enabled. CISA remediation due 2026-10-11.",
-   "score": 4,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.9605
-  },
-  {
-   "id": "4d11b5836627",
-   "title": "CVE-2023-22894: Strapi Strapi — Strapi Cleartext Storage of Sensitive Information Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-22894",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-10-08T00:00:00Z",
-   "summary": "Strapi contains a cleartext storage of sensitive information vulnerability that could allow attackers with access to the admin panel to discover sensitive user details via the query filter. The impacted product(s) could be end-of-life (EoL) and/or… CISA remediation due 2026-10-11.",
-   "score": 4,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.0361
-  },
-  {
-   "id": "e0620a025838",
-   "title": "CVE-2021-3199: ONLYOFFICE Docs — ONLYOFFICE Docs Server Path Traversal Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2021-3199",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-10-08T00:00:00Z",
-   "summary": "ONLYOFFICE Docs contains a path traversal vulnerability that can occur when JWT is used, via a /.. sequence in an image upload parameter and could allow for remote code execution. CISA remediation due 2026-10-11.",
-   "score": 4,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.2014
-  },
-  {
-   "id": "74cde892ff7f",
-   "title": "CVE-2015-3306: ProFTPD ProFTPD — ProFTPD Improper Access Control Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2015-3306",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-10-08T00:00:00Z",
-   "summary": "ProFTPD contains an improper access control vulnerability that could allow remote attackers to read and write to arbitrary files via the site cpfr and site cpto commands. CISA remediation due 2026-10-11.",
-   "score": 4,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.995
-  },
-  {
-   "id": "e63549e2e04b",
-   "title": "Australian Gov't Weighs Mandatory AI Incident Reporting",
-   "link": "https://www.darkreading.com/cybersecurity-operations/australian-govt-ai-incident-reporting",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-07T21:42:55Z",
-   "summary": "In the wake of an agentic attack against its own Medicare systems, Australia's government is feeling out what regulations might look like for frontier AI companies.",
-   "score": 5,
-   "tags": [
-    "Australia"
-   ],
-   "why": [
-    "Australia"
-   ]
-  },
-  {
-   "id": "40e5d1b442a5",
-   "title": "Citizen Lab Slams Trump Administration, 'Techno-Fascist' Executives",
-   "link": "https://www.darkreading.com/cyber-risk/citizen-lab-slams-trump-administration-techno-fascist-executives",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-07T21:25:13Z",
-   "summary": "The Citizen Lab's Ron Deibert warns the US government is pushing for pervasive surveillance and says certain technology executives are all too happy to help.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "13ead4d40341",
-   "title": "3 lessons from frontier AI vulnerability research",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/10/07/3-lessons-from-frontier-ai-vulnerability-research/",
-   "source": "Microsoft Security Blog",
-   "feed": "Microsoft Security Blog",
-   "region": "Global",
-   "published": "2026-10-07T16:00:00Z",
-   "summary": "Read how How Microsoft Security's FORGE Lab is scaling vulnerability research from Windows to the Linux kernel. The post 3 lessons from frontier AI vulnerability research appeared first on Microsoft Security Blog .",
-   "score": 6,
-   "tags": [
-    "Identity",
-    "Vulnerability"
-   ],
-   "why": [
-    "Identity",
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "a7dce30e3faa",
-   "title": "Scans for Atlassian vulnerablity (CVE-2026-21589), (Wed, Oct 7th)",
-   "link": "https://isc.sans.edu/diary/rss/33406",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-10-07T14:59:33Z",
-   "summary": "On October 5th, Atlassian published patches&#;x26;#;xc2;&#;x26;#;xa0;for multiple products to fix an \"Arbitrary File Access\" vulnerability &#;x26;#;x5b; CVE-2026-21589 &#;x26;#;x5d;. An attacker can read arbitrary files in the web application&#;x26;#;39;s directory, potentially exposing sensitive…",
-   "score": 3,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.1271
-  },
-  {
-   "id": "4d0ab1e7dd59",
-   "title": "ShinyHunters Extorted Boeing Spin-off Prior to Arrests",
-   "link": "https://krebsonsecurity.com/2026/10/shinyhunters-extorted-boeing-spin-off-prior-to-arrests/",
-   "source": "Krebs on Security",
-   "feed": "Krebs on Security",
-   "region": "Global",
-   "published": "2026-10-07T13:48:45Z",
-   "summary": "A teenager from Amman, Jordan suspected of leading the prolific data theft and extortion group ShinyHunters has been detained and is reportedly cooperating with the FBI to identify other members of the hacking gang. KrebsOnSecurity has learned that the suspect, who uses the hacker handle \"Rey,\"…",
-   "score": 5,
-   "tags": [
-    "Ransomware"
-   ],
-   "why": [
-    "Ransomware"
-   ]
-  },
-  {
-   "id": "5c8b6dedbd3c",
-   "title": "Unpatched server behind Vic student data breach",
-   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOcEs1UTgyYWRrM0twT3dkcHkyZzRDbWZ2d0p0alNsQ1RvaG0yUjhFODJKR3ZrSUt6QUgxOXZGWEZrMkQ3b2NnLWpNWDRjNlNaMjRYSkVzMjU2aDdSNGpFNVJJcDE4S1NMVDRIa09nME1PclQzRWM5N2tld2MtbXFNUGNmc3U2N0hwRFVNNDhn?oc=5",
-   "source": "iTnews",
-   "feed": "ASD / ACSC in the news",
-   "region": "AU",
-   "published": "2026-10-07T07:25:00Z",
-   "summary": "",
-   "score": 11,
-   "tags": [
-    "Data breach",
-    "Vulnerability",
-    "Australia"
-   ],
-   "why": [
-    "Data breach",
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "40db35f3daf7",
-   "title": "ISC Stormcast For Wednesday, October 7th, 2026 https://isc.sans.edu/podcastdetail/10126, (Wed, Oct 7th)",
-   "link": "https://isc.sans.edu/diary/rss/33404",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-10-07T02:00:02Z",
-   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
-   "score": 1,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "7ccedc646e57",
-   "title": "CISO perspectives on managing vulnerability risks in the age of AI",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/10/06/ciso-perspectives-on-managing-vulnerability-risks-in-the-age-of-ai/",
-   "source": "Microsoft Security Blog",
-   "feed": "Microsoft Security Blog",
-   "region": "Global",
-   "published": "2026-10-06T16:00:00Z",
-   "summary": "Learn how CISOs can mitigate cybersecurity risks and increase resilience in the age of AI-powered vulnerability management. The post CISO perspectives on managing vulnerability risks in the age of AI appeared first on Microsoft Security Blog .",
-   "score": 3,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
    ]
   }
  ]
