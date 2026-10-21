@@ -1,10 +1,10 @@
 {
- "generated": "2026-10-20T23:54:43Z",
+ "generated": "2026-10-21T04:52:35Z",
  "sources": [
   {
    "name": "ACSC Alerts",
    "ok": true,
-   "count": 1,
+   "count": 2,
    "error": null
   },
   {
@@ -28,13 +28,13 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 8,
+   "count": 9,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 6,
+   "count": 7,
    "error": null
   },
   {
@@ -82,7 +82,7 @@
   {
    "name": "Microsoft Security Blog",
    "ok": true,
-   "count": 3,
+   "count": 6,
    "error": null
   },
   {
@@ -106,13 +106,109 @@
  ],
  "items": [
   {
-   "id": "533125ff068a",
-   "title": "SafePay ransomware group has targeted hundreds this year, US agencies say",
-   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQV2trd1VWek1Nb1FKRVdQVDcwam44ckgxLTltZ0podGktQkVtcTd1N1pyUTdzNG14b2tNQzYzRmRkWXVTVmxlNm1XbU5YS2tacHRPb1FCZ0RvLTBoOS1uX1luYll4MUNFa212MGxBYUhLcU9KVTBHUnBBaFh2c2kyWWJDRm9Lcm9jajhmV2hIQzFPRzBVSDU2d0wwb1NlNGpHU29vS1hqcXRtRVRncnVXTVIwWXpWakJhck56ellCQkRFTVExcWR2eUtBc9IB0AFBVV95cUxPZWdsVTVZaHVIOTEwTThoNkNOLU1lQ1RYZHNrU3dYcEp2NHBmRWJnbkJucWhhRzJNZ1JYOXNMWVAxVUxRZDJlbFVqU3FEYjRRWkRPTW9Qekt0ZEVrSEh2Sk9xenYyRlRIYUhMTVFZbDV1TTdZcG1mRU1zNk14UkY2dTd6OHF0LXNlMzBNa1hPeXB0TmgzRUJTYUROZThBRkZaaEQzR2Z3eU51bUlHV3Y0cGtoU1puRHBNZ2x2LWNfZFF4OWJ5alVfTHN2RHRvdE0x?oc=5",
-   "source": "Devdiscourse",
+   "id": "b374ef599927",
+   "title": "Accenture, Dragos, SANS Launch $10M Initiative to Defend Small US Utilities",
+   "link": "https://www.securityweek.com/accenture-dragos-sans-launch-10m-initiative-to-defend-small-us-utilities/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-21T04:22:11Z",
+   "summary": "The first phase will cover up to 500 utilities, which will get free security tools, equipment, deployment help and training. The post Accenture, Dragos, SANS Launch $10M Initiative to Defend Small US Utilities appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "5d3cff124915",
+   "title": "Business email compromise dominates SME cyber claims",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOdXB6Z2wtdE9VdUtQRGxvdjF4UlVUT1dfX29DeE4xM0pYWVRlSW1TMXNKazVrLTNoVHZPaWp6S3laVWFqZnhMbmM0UkRLM1FVenZWMDFNX2YtRFVqTl8yczBFUXZPT3RSaVRYUTVJT19MVzk3NldtaWp6Z2wxNXAxeVVJTXd0bVBqRlZNVFpSdGFNcGthSXM4emNVQ1NoZ3NVSDVqQjlsemYyM2VPYlAxTnpnX3lSdw?oc=5",
+   "source": "Insurance Business",
    "feed": "AU breach news",
    "region": "Global",
-   "published": "2026-10-20T23:25:01Z",
+   "published": "2026-10-21T03:22:43Z",
+   "summary": "",
+   "score": 8,
+   "tags": [
+    "BEC / payment fraud"
+   ],
+   "why": [
+    "BEC / payment fraud"
+   ]
+  },
+  {
+   "id": "f6d2274058e5",
+   "title": "Critical vulnerabilities in PHP",
+   "link": "https://www.cyber.gov.au/alert/critical-vulnerabilities-in-php",
+   "source": "ACSC Alerts",
+   "feed": "ACSC Alerts",
+   "region": "AU",
+   "published": "2026-10-21T03:01:26Z",
+   "summary": "A security release for two critical PHP vulnerabilities is set for public disclosure on 22 October 2026. PHP is widely used to power web applications.",
+   "score": 6,
+   "tags": [
+    "Australia"
+   ],
+   "why": []
+  },
+  {
+   "id": "e6c707c06a8b",
+   "title": "ISC Stormcast For Wednesday, October 21st, 2026 https://isc.sans.edu/podcastdetail/10144, (Wed, Oct 21st)",
+   "link": "https://isc.sans.edu/diary/rss/33438",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-10-21T02:00:03Z",
+   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "0f04a6f0fbac",
+   "title": "Stolen UpdraftCentral keys used to backdoor WordPress sites",
+   "link": "https://www.bleepingcomputer.com/news/security/stolen-updraftcentral-keys-used-to-backdoor-wordpress-sites/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-21T01:01:50Z",
+   "summary": "A threat actor breached TeamUpdraft's website, a developer of popular WordPress backup and security plugins, potentially compromising UpdraftCentral connection keys that can send commands to connected websites. [...]",
+   "score": 7,
+   "tags": [
+    "Microsoft 365",
+    "Data breach"
+   ],
+   "why": [
+    "Microsoft 365",
+    "Data breach"
+   ]
+  },
+  {
+   "id": "7a020fdc3830",
+   "title": "Mozilla, Google, Apple block compromised eMudhra CA certificates",
+   "link": "https://www.bleepingcomputer.com/news/security/mozilla-google-apple-block-compromised-emudhra-ca-certificates/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-21T00:46:42Z",
+   "summary": "Certificate authority eMudhra revoked eight compromised intermediate certificates after researchers found their private keys were so weak that anyone could recover them almost instantly and use them to forge trusted certificates for legitimate websites. [...]",
+   "score": 0,
+   "tags": [],
+   "why": [],
+   "also": [
+    {
+     "source": "Dark Reading",
+     "url": "https://www.darkreading.com/cyber-risk/tech-giants-emudhra-certificates-compromised-keys"
+    }
+   ]
+  },
+  {
+   "id": "ea5b31be4fa9",
+   "title": "SafePay ransomware group has targeted hundreds this year, US agencies say",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPbUVhRzhyR0FIcEljR1BWOG9FZTdzZkg2Y3VrN0RFMjBXdTRVSjBqMXkyTzg4aWdSajJzXzZhejhETUxvdDRtUHlpQTB3ZVFkVVR4dFduU0JxdzhzQ0xFd1NqQzUtUE9MZ0h3YjhMVEkweVNEZUUtNGNoZ1JEd2FPandmampSOUJQaTlpeUkzWUtVeVZlRmVvZVJzRU1pMEpvQXhB?oc=5",
+   "source": "WKZO",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-20T23:57:09Z",
    "summary": "",
    "score": 6,
    "tags": [
@@ -120,20 +216,13 @@
    ],
    "why": [
     "Ransomware"
+   ],
+   "also": [
+    {
+     "source": "Devdiscourse",
+     "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQV2trd1VWek1Nb1FKRVdQVDcwam44ckgxLTltZ0podGktQkVtcTd1N1pyUTdzNG14b2tNQzYzRmRkWXVTVmxlNm1XbU5YS2tacHRPb1FCZ0RvLTBoOS1uX1luYll4MUNFa212MGxBYUhLcU9KVTBHUnBBaFh2c2kyWWJDRm9Lcm9jajhmV2hIQzFPRzBVSDU2d0wwb1NlNGpHU29vS1hqcXRtRVRncnVXTVIwWXpWakJhck56ellCQkRFTVExcWR2eUtBc9IB0AFBVV95cUxPZWdsVTVZaHVIOTEwTThoNkNOLU1lQ1RYZHNrU3dYcEp2NHBmRWJnbkJucWhhRzJNZ1JYOXNMWVAxVUxRZDJlbFVqU3FEYjRRWkRPTW9Qekt0ZEVrSEh2Sk9xenYyRlRIYUhMTVFZbDV1TTdZcG1mRU1zNk14UkY2dTd6OHF0LXNlMzBNa1hPeXB0TmgzRUJTYUROZThBRkZaaEQzR2Z3eU51bUlHV3Y0cGtoU1puRHBNZ2x2LWNfZFF4OWJ5alVfTHN2RHRvdE0x?oc=5"
+    }
    ]
-  },
-  {
-   "id": "532771c4fc27",
-   "title": "Tech Giants Block eMudhra Certificates Tied to 8 Compromised Keys",
-   "link": "https://www.darkreading.com/cyber-risk/tech-giants-emudhra-certificates-compromised-keys",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-20T21:45:47Z",
-   "summary": "Google, Mozilla, Apple, the Go project and others moved swiftly to block the affected certificates from the Indian CA, though it's unclear how the keys were compromised.",
-   "score": 0,
-   "tags": [],
-   "why": []
   },
   {
    "id": "05dd90fd0f45",
@@ -510,7 +599,7 @@
    "source": "TechNadu",
    "feed": "AU breach news",
    "region": "AU",
-   "published": "2026-10-20T12:31:46Z",
+   "published": "2026-10-20T12:31:48Z",
    "summary": "",
    "score": 13,
    "tags": [
@@ -557,6 +646,23 @@
    "score": 0,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "0ddf01c56ffe",
+   "title": "Webinar on NIS2 and third-party cyber risk hosted by Infocredit Group and Mastercard",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPVjhjN2ZzdUpORnY2cGotQmExRDZtcUsxdEpnX2pRNy1Ic3c0THJoZ1Z1QUxzajlRZGpQWVpUc0tlcXNtc0Y0QU9rcTBVQURHcVhkTVgwNHR6Y1hEOGN5ZE5od2Fuaks5V0NhYjNHdWNZMHRud1Zsb1lwNmNGc3k2UUx2djg5NDNrRkg0ZXdiR2lyTmVOMHZuOHBBWXRJMGstQVNzMXF6azd1VVpDT2NZeGU1YUdsZERnSExGbjd4Yw?oc=5",
+   "source": "CBN.com.cy",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-20T11:35:36Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "SaaS / cloud"
+   ],
+   "why": [
+    "SaaS / cloud"
+   ]
   },
   {
    "id": "df48f73ea919",
@@ -774,6 +880,23 @@
      "source": "Dark Reading",
      "url": "https://www.darkreading.com/insider-threats/ex-openai-engineer-secret-recorder-saudi-ties"
     }
+   ]
+  },
+  {
+   "id": "d7264a6b6292",
+   "title": "FRCS requests audit after border breach",
+   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBIS1RXMGpvNnVzWFlCbWVPQzBubVFodFdZVWFXMWNfbGlCREtkMklyeXBia1pNMFk5OFl6V2hPSTRxSi00R29lYm45MlBWaGg1a1BCckZRdWRPUDE2ZVQwYlFUNWx1dEp6MlRJaXprb1VZOHJ3Z3pXbGh4NTY?oc=5",
+   "source": "FBC News",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-20T04:54:23Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
    ]
   },
   {
@@ -7037,36 +7160,6 @@
    "why": [
     "Vulnerability"
    ]
-  },
-  {
-   "id": "0ec27457214b",
-   "title": "More RMM Tools In the Wild, (Tue, Oct 6th)",
-   "link": "https://isc.sans.edu/diary/rss/33400",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-10-06T13:16:02Z",
-   "summary": "It seems that a trend started&#xe2;&#x80;&#xa6; I continue my journey discovering more RMM (\"Remote Management & Monitoring\") tools abused by threat actors! A few days ago, I wrote a diary[ 1 ] about ScreenConnect used in the wild. Today, I found another one.",
-   "score": 6,
-   "tags": [
-    "Actively exploited"
-   ],
-   "why": [
-    "Actively exploited"
-   ]
-  },
-  {
-   "id": "125365e63222",
-   "title": "ISC Stormcast For Tuesday, October 6th, 2026 https://isc.sans.edu/podcastdetail/10124, (Tue, Oct 6th)",
-   "link": "https://isc.sans.edu/diary/rss/33402",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-10-06T11:45:11Z",
-   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
-   "score": 1,
-   "tags": [],
-   "why": []
   }
  ]
 }
