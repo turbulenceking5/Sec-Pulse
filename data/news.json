@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21T17:14:48Z",
+ "generated": "2026-10-21T21:45:06Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -34,13 +34,13 @@
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 7,
+   "count": 8,
    "error": null
   },
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 1,
+   "count": 0,
    "error": null
   },
   {
@@ -82,7 +82,7 @@
   {
    "name": "Microsoft Security Blog",
    "ok": true,
-   "count": 5,
+   "count": 6,
    "error": null
   },
   {
@@ -100,11 +100,240 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 29,
+   "count": 28,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "e9fd60a700e2",
+   "title": "Japan's Onamae Desktop Cloud hacked, up to 27,000 servers affected",
+   "link": "https://www.bleepingcomputer.com/news/security/japans-onamae-desktop-cloud-hacked-up-to-27-000-servers-affected/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-21T21:43:27Z",
+   "summary": "Hackers compromised the infrastructure of Onamae Desktop Cloud, a popular provider of VPS services in Japan, and installed malware on up to 26,739 customers' servers. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "7bcbd743c3f7",
+   "title": "TiDB Breach Exposes Flawed Cloud Security Assumptions",
+   "link": "https://www.darkreading.com/cloud-security/tidb-breach-flawed-cloud-security",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-21T21:15:39Z",
+   "summary": "Cloud providers may be storing sensitive customer data, without either party knowing it. But when a provider is breached, the data comes home to roost.",
+   "score": 4,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "0dbd162481ab",
+   "title": "COLUMN: The real estate scam landscape is changing. Northeast Colorado homeowners need to be ready",
+   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQZVVGZ1RvYzk4dkxsaFFVU1pyeGxLclBEWUg4X3F0SncxeWpESEstNnVWR1lleGJlZ2hBTWRIZGxrS08zNUhFV190U2Z4YjkwV2JiR2FEdTFWeF9NdFoxZzZNazJ6TEZ2d05xOGJ5bXVCZk1uNnRFbGVRSEhROE91aUY1TGRCQldtV2RxYTRZWFdKcnpXU1JnaGRvMHAxVDkwdGpzWm55QWhtU3Y0cm1FcVN0ZHhxZlFzTnZhWE9TVW8xM0hJaC1MNm9HNjhyLVM2SzgwQkVJcw?oc=5",
+   "source": "The Fort Morgan Times",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-21T21:14:34Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
+   "id": "3371acd3dcb3",
+   "title": "Lazarus hackers use post-quantum cryptography for malware delivery",
+   "link": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-use-post-quantum-cryptography-for-malware-delivery/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-21T20:31:48Z",
+   "summary": "North Korean hackers are using a post-quantum cryptographic mechanism to secure malicious payload delivery in new operations that combine old and new malware. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "f6f763b9dab2",
+   "title": "Marvell, Microsoft & Oracle Work to Standardize Data Center Hardware Security",
+   "link": "https://www.darkreading.com/cloud-security/marvell-microsoft-oracle-standardize-data-center-hardware-security",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-21T20:14:42Z",
+   "summary": "The effort is aimed at standardizing a NIST FIPS 140-3 Level 3 integrated HSM for cloud and hyperscale data center infrastructure.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "04b5c5ae9150",
+   "title": "Cloud Security Alliance Survey Finds Data Loss Prevention Often Detects Data Loss Only After It Happens",
+   "link": "https://www.darkreading.com/cloud-security/cloud-security-alliance-survey-data-loss-prevention-detects-data-loss",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-21T20:03:14Z",
+   "summary": "Research finds that, among respondents experiencing data loss, only 16% said DLP blocked their most significant incidents before data left the organization.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "a0e99a083080",
+   "title": "Some N.L. government sites taken offline due to 'global cybersecurity vulnerability'",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQbmUwR1hmeDdOX2wyUmMwRkNKWmh4b2pVS3lveHAyTC1FUWxUeVYydF9pdUhoeG1TYjU1bi15YkdXV04xbEhZQ2lmRkJBM3hQaVVJbHhlNmstY05KcExqNWZuVEFHUFF3RjlFa05fNDlEdGVkQk1qeDFheGdvOFFfVVlPTmFtaW5Yck9fOW1vX1JjS0dITnY3NThoWEFjMGtqdnNKQW5CY1p2UQ?oc=5",
+   "source": "CBC",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-21T19:52:37Z",
+   "summary": "",
+   "score": 4,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "5f2ddb413304",
+   "title": "'PHP2Shell' Bugs Signal Red Alert for Security Industry",
+   "link": "https://www.darkreading.com/application-security/php2shell-bugs-red-alert-security-industry",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-21T19:19:17Z",
+   "summary": "Security teams are scrambling to remediate two critical PHP vulnerabilities following leaked details and reports of exploitation attempts.",
+   "score": 3,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "a9726704f0fa",
+   "title": "Critical GitLab Flaw (CVSS 10.0) Could Allow Unauthenticated RCE Across 12 Years of Releases",
+   "link": "https://thehackernews.com/2026/10/critical-gitlab-flaw-cvss-100-could.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-21T18:57:34Z",
+   "summary": "GitLab released fixes on October 21 for a flaw that lets an attacker run code on a self-managed server without logging in, and it affects every version of the software going back to 7.0, released in 2014. The fix matters even for administrators who patched nine days earlier: the October 12 update…",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "25f995d0be20",
+   "title": "SafePay Ransomware: SafeBreach Coverage for CISA Alert AA26-293A",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOWThfa0U0YTBhNExNSjNCVFJSbVRYMWxVMUZLSnJHNGFJcFhXQ0pjbWpQN00xQmwyWExEbjU0Q21rQnJwTEM1Q2tRTTFlU0pSSGw0U1otNEZZc2Y4X0ZwcWlBU0g2WDZkMUxqY0ZSQnhDSTZXd3JYYk1ibi0yQ1REQ2xrNzNXaG50T2pLM1lZYmNfbFJRZEJmc0I5cU83OXpnRjFpXw?oc=5",
+   "source": "Security Boulevard",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-21T18:49:02Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Ransomware",
+    "Data breach"
+   ],
+   "why": [
+    "Ransomware",
+    "Data breach"
+   ]
+  },
+  {
+   "id": "71f0485320c6",
+   "title": "CISA: Hackers chain Plex flaws in Plex2Shell attacks to breach servers",
+   "link": "https://www.bleepingcomputer.com/news/security/cisa-hackers-chain-plex-flaws-in-plex2shell-attacks-to-breach-servers/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-21T18:34:42Z",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) is warning that attackers are actively exploiting four vulnerabilities in Plex Media Server. [...]",
+   "score": 7,
+   "tags": [
+    "Data breach",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Data breach",
+    "SaaS / cloud"
+   ],
+   "also": [
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/plex2shell-exploit-chain-weaponized-against-plex-servers-hours-after-disclosure/"
+    }
+   ]
+  },
+  {
+   "id": "80aac9868cd3",
+   "title": "AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/",
+   "source": "Microsoft Security Blog",
+   "feed": "Microsoft Security Blog",
+   "region": "Global",
+   "published": "2026-10-21T18:23:55Z",
+   "summary": "Storm-0940 used ARTEX agentic AI to accelerate a ConnectWise supply chain compromise, enabling application credential abuse across Microsoft 365 environments. The post AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise appeared first on Microsoft Security Blog .",
+   "score": 9,
+   "tags": [
+    "Microsoft 365",
+    "Identity",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Microsoft 365",
+    "Identity",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "f5335e20393b",
+   "title": "LiteLLM Compromised in Supply Chain Attack Delivering Credential Stealer and Backdoor",
+   "link": "https://thehackernews.com/2026/10/litellm-compromised-in-supply-chain.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-21T18:01:57Z",
+   "summary": "The popular LiteLLM Python package has been compromised as part of a software supply chain attack that delivered a credential stealer and a backdoor, according to reports from SafeDep, Socket, StepSecurity, and Upwind. The compromise affects LiteLLM 1.107.0, distributed through PyPI wheels and…",
+   "score": 8,
+   "tags": [
+    "Identity",
+    "SaaS / cloud",
+    "AI threats"
+   ],
+   "why": [
+    "Identity",
+    "SaaS / cloud",
+    "AI threats"
+   ],
+   "also": [
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/aomei-backupper-compromised-in-short-burst-supply-chain-campaign/"
+    }
+   ]
+  },
   {
    "id": "6397dd9bb23f",
    "title": "Google Hardens Chrome Against ClickFix Attacks, Insecure HTTP Connections",
@@ -138,17 +367,46 @@
    "why": []
   },
   {
-   "id": "288893f63679",
-   "title": "OpenAI agents disabled safety monitoring, one lied about it",
-   "link": "https://www.bleepingcomputer.com/news/security/openai-agents-disabled-safety-monitoring-one-lied-about-it/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
+   "id": "2cd8b2bd53ed",
+   "title": "OpenAI's GPT-6 Agent Removed Safety Monitoring, Then Falsely Denied Doing So",
+   "link": "https://thehackernews.com/2026/10/openais-gpt-6-agent-removed-safety.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
    "region": "Global",
-   "published": "2026-10-21T16:26:53Z",
-   "summary": "OpenAI agents powered by the GPT-6.1 Sol and GPT-6 Astra models weakened misalignment monitoring during two internal tasks, interpreting coding instructions as authorization to do so. [...]",
+   "published": "2026-10-21T16:33:47Z",
+   "summary": "OpenAI has revealed that two artificial intelligence (AI) agents powered by GPT-6.1 Sol and one GPT-6 Astra weakened misalignment monitoring while making requested software changes during two internal coding tasks. The AI company said the incident took place on October 3 and 6, 2026, for Sol and…",
    "score": 0,
    "tags": [],
-   "why": []
+   "why": [],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/openai-agents-disabled-safety-monitoring-one-lied-about-it/"
+    }
+   ]
+  },
+  {
+   "id": "8618fd7c4109",
+   "title": "Orion Real Estate Data Exchange Announces Relationship with HUB International; Offers MLS Insurance Solutions",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOc0l2bG5SZThVZkptSlRmUWRzSDdTLXpYZjdwbDB2NnZnVXZHdjJVQkNocHNvQVFEN1Z6Sl9oV3g3QVdLSm9TZC1rLWpMbXY2X1NEbWpiRUZQX2pkRUFGNWZOWEdKNzAya0VVUzYyVWZCdjlzT0lEdjlvN3JrY2c0WWV5RndPSzhUcHlHbndjU2laUUZiVkV2Ym5Bejc3WTdWTFM3WUlKZm1jQQ?oc=5",
+   "source": "RISMedia",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-21T16:08:53Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ],
+   "also": [
+    {
+     "source": "The Manila Times",
+     "url": "https://news.google.com/rss/articles/CBMiygJBVV95cUxQenR1bnZvT2FnNHdpOGZSa2pfQmRqUkJlMVlGcWNJTGFIY0d2RzQ0emUzQWw4Slk3RXJNV3pxLXpuSG9Ja21PNFJ5LURWWU93TVBBSzRpamtsRW90RzR6UG85UXBSY0Y1ZU11VXRHaGwtT3EtemVLRzBnWjM5ZlM3WXFWZ0UyY0lMNklCUFA4NFJiLXhTMDlKQ21vbUFVc2VZUzdxVTdDZEVYWjdpZF9Ld3hQVm5KTkNNRjJ0cU9qMUJnbWtKOXlZbFdJa2NSeUVlSEtRbjdhRHJLUWE5N1cwQm1rSklBaEJOdWlPZlRSMXFmM0NOVXdZN19FU1ZNejdvZ01tN3FrYmkyUW1idlNyZnFzV2RnYjBKWExoZ0dUR3FVY2oySjdHM2FRaElJd19DR3U0M2V4SHhseXVsQVRSdnBtWktQLTZPNmfSAcoCQVVfeXFMUHp0dW52b09hZzR3aThmUmtqX0JkalJCZTFZRnFjSUxhSGNHdkc0NHplM0FsOEpZN0VyTVd6cS16bkhvSWttTzRSeS1EVllPd01QQUs0aWprbEVvdEc0elBvOVFwUmNGNWVNdVV0R2hsLU9xLXplS0cwZ1ozOWZTN1lxVmdFMmNJTDZJQlBQODRSYi14UzA5SkNtb21BVXNlWVM3cVU3Q2RFWFo3aWRfS3d4UFZuSk5DTUYydHFPajFCZ21rSjl5WWxXSWtjUnlFZUhLUW43YURyS1FhOTdXMEJta0pJQWhCTnVpT2ZUUjFxZjNDTlV3WTdfRVNWTXo3b2dNbTdxa2JpMlFtYnZTcmZxc1dkZ2IwSlhMaGdHVEdxVWNqMko3RzNhUWhJSXdfQ0d1NDNleEh4bHl1bEFUUnZwbVpLUC02TzZn?oc=5"
+    }
+   ]
   },
   {
    "id": "253a6afd1c73",
@@ -157,7 +415,7 @@
    "source": "HousingWire",
    "feed": "Real estate cyber news",
    "region": "Global",
-   "published": "2026-10-21T16:07:30Z",
+   "published": "2026-10-21T16:01:31Z",
    "summary": "",
    "score": 10,
    "tags": [
@@ -165,6 +423,25 @@
    ],
    "why": [
     "Real estate"
+   ]
+  },
+  {
+   "id": "c7a664d25ce9",
+   "title": "Australian government sites among those exposed to 'critical' software flaw",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOalBBMnc1dmJ0VUlMNWJZQjhQUWlHMUg2OGo5V2U2LV9Wam1qU2lSa2x2QkJ1VzFFVm5SNUZXdXlnR3FVdlEyTEsxUFhMZ3JWVTRZZXVFY3loWldYb1pXTGI0ODN2RFZ6RWxkZWxvTHN5TVhTbkVyUUVoQ09LYWpidVQ0alI?oc=5",
+   "source": "ABC News & Headlines – Australian Broadcasting Corporation",
+   "feed": "ASD / ACSC in the news",
+   "region": "AU",
+   "published": "2026-10-21T15:58:02Z",
+   "summary": "",
+   "score": 14,
+   "tags": [
+    "Australia",
+    "Data breach"
+   ],
+   "why": [
+    "Australia",
+    "Data breach"
    ]
   },
   {
@@ -268,6 +545,23 @@
    ]
   },
   {
+   "id": "70887b981d7a",
+   "title": "Encore Enterprises Data Breach Exposes Social Security Numbers and Health Info",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBZckZQLWxUZ1lmSnI4bTNmRTRXcGoxazBfb1htVGlxYUFCWnJReXN6WmxGZXZfMGFPN19Sek5YYlBZaHFscFZZdGcwN1J2TEtjN3F1NmV5U3VtYVRwWklZb19ON0lzNnlRY0l6UXg3cw?oc=5",
+   "source": "Claim Depot",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-21T14:52:44Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
    "id": "67c1ab51681c",
    "title": "High-Severity Flaws Exploited in Three Days as Ransomware Dominates Q3: Rapid7",
    "link": "https://www.securityweek.com/high-severity-flaws-exploited-in-three-days-as-ransomware-dominates-q3-rapid7/",
@@ -347,7 +641,7 @@
    "feed": "Dark Reading",
    "region": "Global",
    "published": "2026-10-21T13:00:00Z",
-   "summary": "The attack uses malicious Google search results related to Amazon and leverages the 'finger' utility to launch a CAPTCHA that installs malware, including the Lumma stealer.",
+   "summary": "The attack uses malicious Google search results related to Amazon and leverages the \"finger\" utility to launch a CAPTCHA that installs malware, including the Lumma stealer.",
    "score": 2,
    "tags": [
     "Identity"
@@ -420,6 +714,40 @@
    "why": []
   },
   {
+   "id": "4f7acb56e33a",
+   "title": "Deed Fraud in Maine: Protecting Real Estate Transactions",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQVm9iZnpTMHNSMGtpXzFfQUdPVEtsQjRGNE5pMF9FQlVhTUFmT09TaUNTS2tnbEdQY0xlSi1oaC1xUkZLNHpYX0JXMHlqZFZGWXFiVGZIUmJ1YTNyVUxRazhuWTh3WTlINTd6ek9janlIOWtkOS1XMXRJaU16VWlWaHdGTlAzZ3B6YkZROHpOU0VaRGxRSDJpVHJWd25pSzh4NXJuS1liRFh2bzVnVFdKMG9IN2Rta0o2MFhqd0FsVjhMM3FUU1JXU0xzSmJCbmxR?oc=5",
+   "source": "Bar Harbor Story",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-21T12:18:57Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
+   "id": "b3d32ad4c8b7",
+   "title": "Websites taken down worldwide as critical cyber-security update issued",
+   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9MZm92Wk5lTkRwWnBjVktycXRCMFVfcnAtYXVQR0hHU0UtZTRWWGJVWm4xbW9SbTd2M2QwZ2R2Ulp2R1hKaENudFlIbDBpZm94M3lSajNydDZnVThScEE?oc=5",
+   "source": "BBC",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-21T12:09:22Z",
+   "summary": "",
+   "score": 4,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
    "id": "c7a020f274e0",
    "title": "China-Aligned Bronze Sandcastle Abuses Sandboxie DLL Sideloading to Deploy Backdoors",
    "link": "https://thehackernews.com/2026/10/china-aligned-bronze-sandcastle-abuses.html",
@@ -468,7 +796,7 @@
   },
   {
    "id": "e7f2884fd694",
-   "title": "Hackers steal children's data after company used 'Password1' to protect old account",
+   "title": "Hackers steal children's data after company used 'Password1' for old account",
    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1MWWRiQTlFUk1lZnVlUE9Udk5sYURFN0VndVZsS0E4NFlwOWxFZG9hMFllbTIyM3d2aUc3NmJYV0FkVXoyX1h5RzNIOHJ1MGNyLUFzWm0tdUlOU28?oc=5",
    "source": "BBC",
    "feed": "AU breach news",
@@ -624,9 +952,9 @@
    ]
   },
   {
-   "id": "044190e3d1aa",
+   "id": "c358a7bb49ad",
    "title": "Critical flaws strike PHP as disclosure embargo is broken",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNM2J1MmZvV1JKTFBQVnIwUGVpOWVjZENKdkRob0dsUUdIbnV1ZDRncTE0NzFQdXNweUMtVUx6cWp1cnBibnJSSTBTQnJKX0J5ZnVaTC1jNjV5MWF0cjFmZVljYmFoaTdvcXNOOFR6NVdBNHVOTGdOV2gxZEduRHF0c3FYSTlGakoyVGZZWGwyOEtQdkZ0MjJpaXo2SQ?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQaU1BS2lnTUROaUVKc2ZmZmVkVnc5WTRWM19mY19YaTd1ZGdEVGw3LVNJbklmTmFUZzlLWUUwWmJsT05SbVRESklUX3hhTTBhOE9tbV9qNU9ycGlmTGJqZ3R4Sy0zSWVwRGpoLVFINWx3bXlJUHBEYXppN3U3UnNqTkk4WXIxLUlXOGlCUzZtUlhmVHJreTRMRQ?oc=5",
    "source": "iTnews",
    "feed": "ASD / ACSC in the news",
    "region": "AU",
@@ -1025,23 +1353,6 @@
    "why": []
   },
   {
-   "id": "e51627f614e6",
-   "title": "Orion Real Estate Data Exchange Announces Strategic Relationship with HUB International to Offer Dedicated Insurance Solutions for MLS Organizations",
-   "link": "https://news.google.com/rss/articles/CBMiygJBVV95cUxQenR1bnZvT2FnNHdpOGZSa2pfQmRqUkJlMVlGcWNJTGFIY0d2RzQ0emUzQWw4Slk3RXJNV3pxLXpuSG9Ja21PNFJ5LURWWU93TVBBSzRpamtsRW90RzR6UG85UXBSY0Y1ZU11VXRHaGwtT3EtemVLRzBnWjM5ZlM3WXFWZ0UyY0lMNklCUFA4NFJiLXhTMDlKQ21vbUFVc2VZUzdxVTdDZEVYWjdpZF9Ld3hQVm5KTkNNRjJ0cU9qMUJnbWtKOXlZbFdJa2NSeUVlSEtRbjdhRHJLUWE5N1cwQm1rSklBaEJOdWlPZlRSMXFmM0NOVXdZN19FU1ZNejdvZ01tN3FrYmkyUW1idlNyZnFzV2RnYjBKWExoZ0dUR3FVY2oySjdHM2FRaElJd19DR3U0M2V4SHhseXVsQVRSdnBtWktQLTZPNmfSAcoCQVVfeXFMUHp0dW52b09hZzR3aThmUmtqX0JkalJCZTFZRnFjSUxhSGNHdkc0NHplM0FsOEpZN0VyTVd6cS16bkhvSWttTzRSeS1EVllPd01QQUs0aWprbEVvdEc0elBvOVFwUmNGNWVNdVV0R2hsLU9xLXplS0cwZ1ozOWZTN1lxVmdFMmNJTDZJQlBQODRSYi14UzA5SkNtb21BVXNlWVM3cVU3Q2RFWFo3aWRfS3d4UFZuSk5DTUYydHFPajFCZ21rSjl5WWxXSWtjUnlFZUhLUW43YURyS1FhOTdXMEJta0pJQWhCTnVpT2ZUUjFxZjNDTlV3WTdfRVNWTXo3b2dNbTdxa2JpMlFtYnZTcmZxc1dkZ2IwSlhMaGdHVEdxVWNqMko3RzNhUWhJSXdfQ0d1NDNleEh4bHl1bEFUUnZwbVpLUC02TzZn?oc=5",
-   "source": "The Manila Times",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-20T17:21:17Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ]
-  },
-  {
    "id": "937200821589",
    "title": "Not Just a Selfie: The New BIPA Theory Aimed at Generative AI (via Passle)",
    "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQcHlPV2ZOY3A2cUprRDA3eFdad2Znd3JSVkQ0M0NTemxQR3FRbkhFVlhMelZLR2FuNjdYNFFmbklxV3pUeC1sUkhVN3pIN09JOUVHWVV4Wmg4eW1ZakVMRDA1ZXBFTjZ6bDZnV2FSUWlWODg1c3kyOFVSTUFwcGtFMXZQVVA4NENsSF82aGw3aEdJVVIzNVZCMDlSX3l3aWZZZHVuczJMVQ?oc=5",
@@ -1175,23 +1486,6 @@
    ],
    "why": [
     "Data breach"
-   ]
-  },
-  {
-   "id": "0db72c8bc263",
-   "title": "AOMEI Backupper Compromised in Short-Burst Supply Chain Campaign",
-   "link": "https://www.securityweek.com/aomei-backupper-compromised-in-short-burst-supply-chain-campaign/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-20T13:51:01Z",
-   "summary": "Across multiple short compromise windows, users were served a downloader for the ShinyRoad modular backdoor framework. The post AOMEI Backupper Compromised in Short-Burst Supply Chain Campaign appeared first on SecurityWeek .",
-   "score": 3,
-   "tags": [
-    "SaaS / cloud"
-   ],
-   "why": [
-    "SaaS / cloud"
    ]
   },
   {
@@ -2049,8 +2343,7 @@
      "source": "The Hacker News",
      "url": "https://thehackernews.com/2026/10/clickfix-attackers-exploit-siemens.html"
     }
-   ],
-   "epss": 0.0026
+   ]
   },
   {
    "id": "52b0d35525c9",
@@ -2334,19 +2627,6 @@
    "why": [
     "Microsoft 365"
    ]
-  },
-  {
-   "id": "bcca2fd24d4b",
-   "title": "Plex2Shell Exploit Chain Weaponized Against Plex Servers Hours After Disclosure",
-   "link": "https://www.securityweek.com/plex2shell-exploit-chain-weaponized-against-plex-servers-hours-after-disclosure/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-19T12:44:39Z",
-   "summary": "Threat actors have been observed delivering cryptocurrency miners and proxy software. The post Plex2Shell Exploit Chain Weaponized Against Plex Servers Hours After Disclosure appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
   },
   {
    "id": "cb20c2f64e3a",
@@ -6981,247 +7261,6 @@
     "Data breach"
    ],
    "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "dc7b54e8c00a",
-   "title": "P7 DarkSword iOS Exploit Kit Adds Crypto Wallet Data Theft and Remote Commands",
-   "link": "https://thehackernews.com/2026/10/p7-darksword-ios-exploit-kit-adds.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-11T04:24:34Z",
-   "summary": "Cybersecurity researchers have disclosed details of a previously unseen variant of the DarkSword iOS exploit kit called P7 DarkSword. \"Compared with the variants we usually observe, P7 reduces its on-device footprint, adds on-device keychain and crypto-wallet theft, and adds two way C2…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "5d6a58b64149",
-   "title": "Cyber exec arrested in case allegedly tied to ShinyHunters hackers",
-   "link": "https://www.bleepingcomputer.com/news/security/cyber-exec-arrested-in-case-allegedly-tied-to-shinyhunters-hackers/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-10T15:07:54Z",
-   "summary": "Canadian cybersecurity executive Edward Dubrovsky has been arrested in Pennsylvania in connection with alleged extortion activity that multiple reports have linked to the FBI's ongoing crackdown on the ShinyHunters hacking group. [...]",
-   "score": 4,
-   "tags": [
-    "Ransomware"
-   ],
-   "why": [
-    "Ransomware"
-   ]
-  },
-  {
-   "id": "bef374d68721",
-   "title": "ARTEX AI, Claude agents used in cyberattacks on South Korean banks",
-   "link": "https://www.bleepingcomputer.com/news/security/hacker-used-artex-ai-and-claude-agents-to-target-south-korean-banks/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-10T14:16:17Z",
-   "summary": "The cyberattacks that shook the South Korean financial sector earlier this month were launched by a Chinese hacker using the ARTEX AI penetration testing suite and Claude agents. [...]",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "bc479026f826",
-   "title": "Criminal IP Introduces AITEM as the Next Evolution of Attack Surface Management",
-   "link": "https://www.bleepingcomputer.com/news/security/criminal-ip-introduces-aitem-as-the-next-evolution-of-attack-surface-management/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-10T12:30:39Z",
-   "summary": "Traditional attack surface management helps organizations discover exposed assets, but visibility alone is not enough to address threats. Criminal IP introduces AITEM, an AI-powered approach that connects exposure discovery with investigation, risk prioritization, and response. [...]",
-   "score": 3,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "bf4931f04983",
-   "title": "Insider Cyber Extortion Plot Against Industrial Firm Lands Engineer in Prison",
-   "link": "https://www.securityweek.com/insider-cyber-extortion-plot-against-industrial-firm-lands-engineer-in-prison/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-10T11:00:00Z",
-   "summary": "The former core infrastructure engineer deleted admin accounts, reset hundreds of passwords, and demanded 20 bitcoin to spare the company’s servers. The post Insider Cyber Extortion Plot Against Industrial Firm Lands Engineer in Prison appeared first on SecurityWeek .",
-   "score": 6,
-   "tags": [
-    "Ransomware",
-    "Identity"
-   ],
-   "why": [
-    "Ransomware",
-    "Identity"
-   ]
-  },
-  {
-   "id": "4f95732c4969",
-   "title": "The Third-Party Agent Problem: Why Security Built for AI You Chose Misses the Agents You Didn't",
-   "link": "https://thehackernews.com/2026/10/the-third-party-agent-problem-why.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-10T11:00:00Z",
-   "summary": "In environments studied for the 2026 State of Agent Security Report, roughly 1,280 third-party products now embed AI. About 282 of them sit behind single sign-on. The other thousand are invisible to identity infrastructure by default, not because anyone hid them, but because an identity stack can…",
-   "score": 3,
-   "tags": [
-    "SaaS / cloud"
-   ],
-   "why": [
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "ebcd6167a236",
-   "title": "Anthropic Cuts Live Internet Access for Internal AI Tests After Claude Exploits Injection Flaws",
-   "link": "https://thehackernews.com/2026/10/anthropic-cuts-live-internet-access-for.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-10T09:18:45Z",
-   "summary": "Anthropic on Friday said it's cutting off live internet access for all its internal evaluations until further notice following the discovery of new incidents in which its artificial intelligence (AI) models exhibited misaligned behavior and targeted real websites. The AI company said it identified…",
-   "score": 3,
-   "tags": [
-    "SaaS / cloud"
-   ],
-   "why": [
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "62262d39b0ff",
-   "title": "Why TLP should not replace your internal information classification, (Sat, Oct 10th)",
-   "link": "https://isc.sans.edu/diary/rss/33414",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-10-10T09:11:34Z",
-   "summary": "The Traffic Light Protocol (TLP)[ 1 ], which is now in its second incarnation, is a wonderful standard that enables one to easily communicate whether information may be shared further (and if so, how far).",
-   "score": 1,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "7f5dd566b2dd",
-   "title": "FBI Arrests Executive at Ransomware Negotiation Firm",
-   "link": "https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/",
-   "source": "Krebs on Security",
-   "feed": "Krebs on Security",
-   "region": "Global",
-   "published": "2026-10-10T00:17:42Z",
-   "summary": "Agents with the Federal Bureau of Investigation (FBI) on Thursday arrested the co-founder of a Canadian cybersecurity firm in connection with an investigation into the ShinyHunters hacking group that recently relieved the FBI of sensitive data on thousands of agents, multiple sources tell…",
-   "score": 6,
-   "tags": [
-    "Ransomware",
-    "Vulnerability"
-   ],
-   "why": [
-    "Ransomware",
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "074da747e4e4",
-   "title": "OpenAI Fires 3 Safety Researchers in Dispute Over AI Risks",
-   "link": "https://www.securityweek.com/openai-fires-3-safety-researchers-in-dispute-over-ai-risks/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-09T21:07:46Z",
-   "summary": "The ChatGPT maker said the researchers \"violated clear policies on handling sensitive information.” The post OpenAI Fires 3 Safety Researchers in Dispute Over AI Risks appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "edcc711b1e7a",
-   "title": "ASOS Breach Reveals the Risks in Customer-Facing SaaS",
-   "link": "https://www.darkreading.com/cyberattacks-data-breaches/asos-breach-risks-customer-facing-saas",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-09T20:58:32Z",
-   "summary": "The attack on the British retailer shows that compromising a single identity can lead to much deeper penetration of the corporate network.",
-   "score": 7,
-   "tags": [
-    "Data breach",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Data breach",
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "c85e183aba75",
-   "title": "Hackers abuse Google Ads, Bing redirects to push Claude ClickFix attacks",
-   "link": "https://www.bleepingcomputer.com/news/security/hackers-abuse-google-ads-bing-redirects-to-push-claude-clickfix-attacks/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-09T20:31:37Z",
-   "summary": "Hackers are abusing legitimate Bing search-result redirects as click URLs in Google search ads to direct users to fake Claude installers that deliver ClickFix attacks. [...]",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "7a7f58a87f0e",
-   "title": "AI Scramble Drives Cybersecurity M&A Boom",
-   "link": "https://www.darkreading.com/cybersecurity-analytics/ai-scramble-cybersecurity-ma-boom",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-09T19:26:26Z",
-   "summary": "Welcome to another gangbuster year for strategic M&A activity in cyber, with 117 deals announced in the latest quarter. What's different: Many of the buyers are not your typical cybersecurity firms.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "fbb467666674",
-   "title": "Credential-Stealing GitHub Actions Workflows Planted in Tens of Thousands of Repositories",
-   "link": "https://thehackernews.com/2026/10/credential-stealing-github-actions.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-09T19:14:28Z",
-   "summary": "Cybersecurity researchers have disclosed details of an ongoing credential-theft campaign that has compromised two high-profile open-source maintainer accounts to push a malicious workflow into over 340 repositories. \"Using the account of Takashi Kitao, author of the 18,400-star game engine pyxel,…",
-   "score": 4,
-   "tags": [
-    "Identity",
-    "Vulnerability"
-   ],
-   "why": [
-    "Identity",
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "43d8a91bc2a7",
-   "title": "FBI Arrests Another ShinyHunters Suspect Reportedly Involved in Its Jobs Portal Hack",
-   "link": "https://thehackernews.com/2026/10/fbi-arrests-another-shinyhunters.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-09T17:45:26Z",
-   "summary": "The FBI has arrested another suspected co-conspirator of ShinyHunters, FBI Director Kash Patel said on October 9 in a post on X. ShinyHunters is the extortion group that said in September it had breached the FBI's jobs portal and stolen sensitive data on almost all FBI agents and job applicants.…",
-   "score": 7,
-   "tags": [
-    "Ransomware",
-    "Data breach"
-   ],
-   "why": [
-    "Ransomware",
     "Data breach"
    ]
   }
