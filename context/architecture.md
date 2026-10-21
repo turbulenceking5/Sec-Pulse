@@ -67,7 +67,7 @@ There's no shared module system between the Python scripts and the browser JS, s
 | Ranking: `score - age_hours / 12` | `send_brief.py` `rank()` (also imported by `fetch_news.py` to pick a cluster's primary story, so a break in `send_brief.py` breaks the fetch too) | `rank()` |
 | Score breakdown: source weight + keyword groups (+1 in title) + 2 for AU + 2 for non-KEV EPSS ≥ 0.5 | `fetch_news.py` `score()` / `add_epss()` | `explainScore()` (display only) |
 | Lesson of the day: `lessons[ordinal(today_brisbane) % len]` | `send_brief.py` `lesson_for()` (`date.toordinal()`) | `ordinal()` (Unix days + 719163) |
-| Question of the day: all lesson quiz questions flattened, `[(ordinal * 7) % n]` | `send_brief.py` `qotd_for()` | `ALL_Q()` in `renderBrief()` / `openTodayBrief()` |
+| Question of the day: lesson quiz questions then valid bank questions, `[(ordinal * 7) % n]` | `send_brief.py` `qotd_for()` / `valid_bank()` | `POOL()` / `validBank()` in `renderBrief()` / `openTodayBrief()` |
 | KEV due date: parsed from `CISA remediation due YYYY-MM-DD.` in KEV summaries | written by `fetch_news.py` `parse_kev()` | `kevDue()` |
 | Timezone: Australia/Brisbane, UTC+10, no daylight saving | `BRISBANE` constant | `TZ` constant |
 

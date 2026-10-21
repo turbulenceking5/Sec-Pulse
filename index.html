@@ -184,7 +184,7 @@ code{background:var(--surface2);padding:1px 6px;border-radius:6px;font-size:13px
 .rank-badge span{font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:.6px;margin-top:2px}
 .rank-badge.big{width:72px;height:72px}.rank-badge.big b{font-size:30px}
 .xp{color:var(--accent);font-weight:700;font-size:12.5px;white-space:nowrap}
-.skill{margin-bottom:12px}.skill:last-child{margin-bottom:0}
+.skill,.obj-row{margin-bottom:12px}.skill:last-child{margin-bottom:0}
 .ladder td{padding:7px 4px}.ladder tr.here td{color:var(--accent);font-weight:700}.ladder tr.locked td{color:var(--muted)}
 /* changelog / roadmap */
 .md h3{font-size:15px;margin:18px 0 6px}.md h3:first-child{margin-top:0}
@@ -573,6 +573,20 @@ function badgesHtml(){
     <span class="ic">${b.icon}</span><div><b>${esc(b.name)}</b><span class="muted">${have[b.id] ? 'Earned ' + fmtKey(have[b.id], {day: 'numeric', month: 'short'}) : esc(b.desc)}</span></div></div>`).join('')}</div>`;
 }
 
+/* ---------- exam objectives coverage: bank questions seen / right per CS0-003 objective ---------- */
+function objectivesHtml(){
+  const bank = ALL_BANK(); if (!bank.length) return '';
+  const h = store.get('qhist', {}) || {}, by = {};
+  bank.forEach(q => { const o = String(q.objective || '?'), r = h[q.qid], e = by[o] || (by[o] = {n: 0, seen: 0, ok: 0, d: q.domain});
+    e.n++; if (r){ e.seen++; if (r.ok) e.ok++; } });
+  const rows = Object.keys(by).sort((a, b) => a.localeCompare(b, undefined, {numeric: true})).map(o => { const e = by[o], pct = e.seen ? Math.round(e.ok / e.seen * 100) : null;
+    return `<div class="obj-row"><div class="row small"><span class="grow">Objective ${esc(o)}</span>
+      <span class="muted">${e.seen}/${e.n} seen${pct === null ? '' : ` · <b style="color:${pct >= 80 ? 'var(--ok)' : pct >= 60 ? 'var(--warn)' : 'var(--danger)'}">${pct}% right</b>`}</span></div>
+      <div class="bar thin"><i style="width:${(e.seen / e.n * 100).toFixed(0)}%"></i></div></div>`; }).join('');
+  return `<h2>Exam objectives</h2><div class="card" id="objectives">${rows}
+    <p class="small muted" style="margin-bottom:0">From the question bank: how many questions per CS0-003 objective you've answered, and how many you got right the last time you answered them.</p></div>`;
+}
+
 /* ---------- progress history: activity heatmap (sp_days) and quiz accuracy trend (sp_quizHistory) ---------- */
 const HEAT_WEEKS = 17;
 function heatmapHtml(){
@@ -631,6 +645,7 @@ function openProfile(){
       ${next ? `<div class="small" style="margin-top:4px">Next rank: <b>${esc(next[1])}</b> at Lv ${next[0]} (${xpForLevel(next[0]) - x.total} XP to go)</div>` : ''}</div></div>
     <h2>Skills</h2><div class="card">${skills}</div>
     ${badgesHtml()}
+    ${objectivesHtml()}
     <h2>Study activity</h2>${heatmapHtml()}
     <h2>Quiz accuracy</h2>${trendHtml()}
     <h2>How to earn XP</h2>
@@ -654,6 +669,13 @@ function openProfile(){
 let NEWS = {items: [], sources: [], generated: null};
 let CYSA = null;
 const ALL_Q = () => CYSA.lessons.flatMap(l => l.quiz.map((q, i) => ({...q, domain: l.domain, lesson: l.id, qid: l.id + '#' + i})));
+// Question bank (cysa.json `bank`): standalone questions tagged with a CS0-003 objective; qid "bank:<id>".
+const validBank = q => q && q.id && typeof q.q === 'string' && [1, 2, 3, 4].includes(q.domain) && Array.isArray(q.options) && q.options.length === 4
+  && Number.isInteger(q.answer) && q.answer >= 0 && q.answer < 4;
+const ALL_BANK = () => (CYSA && Array.isArray(CYSA.bank) ? CYSA.bank.filter(validBank) : []).map(q => ({...q, qid: 'bank:' + q.id}));
+// Every multiple-choice question: lesson quizzes first, then the bank, in file order. The question of the day
+// indexes this list, and send_brief.py's qotd_for() builds the same list - keep them in sync.
+const POOL = () => ALL_Q().concat(ALL_BANK());
 
 // fetch-news.yml runs at :17 past every third UTC hour; GitHub often starts it a few minutes late.
 function nextFetchIn(){
@@ -923,7 +945,7 @@ async function openTodayBrief(){
     ${CYSA ? '<h2>Question of the day</h2><div class="card" id="today-qotd"></div>' : ''}</div>`;
   wireNewsList($('#today-brief'));
   const lb = $('#today-lesson-btn'); if (lb) lb.onclick = () => openLesson(b.lesson.id);
-  if (CYSA){ const qs = ALL_Q(); renderQuiz($('#today-qotd'), [qs[(ordinal(b.date) * 7) % qs.length]], {single: true}); }
+  if (CYSA){ const qs = POOL(); renderQuiz($('#today-qotd'), [qs[(ordinal(b.date) * 7) % qs.length]], {single: true}); }
 }
 let TODAY_BRIEF = null;
 async function renderTodayLink(){
@@ -1133,7 +1155,7 @@ function renderBrief(){
       <div class="small muted" style="margin-top:4px">${esc(lesson.summary.slice(0, 120))}…</div></div>
       ${done ? '<span class="pill accent">Done ✓</span>' : '<span class="pill accent">Start →</span>'}</div></button>`;
     $('#today-lesson').onclick = () => openLesson(lesson.id);
-    const qs = ALL_Q();
+    const qs = POOL();
     const q = qs[(ordinal(t) * 7) % qs.length];
     renderQuiz($('#brief-qotd'), [q], {single: true});
   }
@@ -1207,7 +1229,7 @@ function recordAnswer(q, correct){
 function weakQuestions(){
   if (!CYSA) return [];
   const h = store.get('qhist', {}) || {};
-  return ALL_Q().concat(ALL_PBQ()).filter(q => { const r = h[q.qid]; return r && r.wrong > 0 && (!r.ok || r.wrong > r.right); })
+  return POOL().concat(ALL_PBQ()).filter(q => { const r = h[q.qid]; return r && r.wrong > 0 && (!r.ok || r.wrong > r.right); })
     .sort((a, b) => { const x = h[a.qid], y = h[b.qid];
       return (!!x.ok - !!y.ok) || ((y.wrong - y.right) - (x.wrong - x.right)) || String(y.last || '').localeCompare(String(x.last || '')); });
 }
@@ -1220,7 +1242,7 @@ function renderQuiz(root, questions, opts = {}){
   const t0 = Date.now(), used = () => Math.min(opts.timeLimit || Infinity, ((tDone || Date.now()) - t0) / 1000);
   const show = () => {
     const q = questions[idx];
-    const where = q.lesson ? ' · lesson ' + esc(q.lesson) : q.pbq ? ' · PBQ · domain ' + esc(q.domain) : '';
+    const where = q.lesson ? ' · lesson ' + esc(q.lesson) : q.pbq ? ' · PBQ · domain ' + esc(q.domain) : q.objective ? ' · objective ' + esc(q.objective) : '';
     const head = `${questions.length > 1 ? `<div class="q-progress">Question ${idx + 1} of ${questions.length}${where}</div>` : ''}
       <div class="q-text">${esc(q.q)}</div>${q.exhibit ? `<pre class="exhibit" tabindex="0" aria-label="Exhibit">${esc(q.exhibit)}</pre>` : ''}`;
     if (q.type === 'order'){ showOrder(q, head); return hintExhibit(); }
@@ -1421,14 +1443,18 @@ function openLesson(id){
 // Timed exam: the real CS0-003 is up to 85 questions in 165 minutes; 30 questions at that pace is ~58 minutes.
 const EXAM_SECS = 58 * 60;
 function startQuiz(n, weighted, timed){
-  const all = ALL_Q();
+  const all = POOL(), h = store.get('qhist', {}) || {};
+  // Practice exams prefer questions you haven't answered, then ones you got wrong last time, so a score
+  // measures knowledge rather than recognition. Random within each group (the sort is stable).
+  const pri = q => { const r = h[q.qid]; return !r ? 0 : !r.ok ? 1 : 2; };
+  const freshFirst = qs => shuffle(qs).sort((a, b) => pri(a) - pri(b));
   let picked;
   if (weighted){
     // Spread questions across domains by exam weight.
     picked = [];
     CYSA.domains.forEach(d => {
       const k = Math.round(n * d.weight / 100);
-      picked.push(...shuffle(all.filter(q => q.domain === d.id)).slice(0, k));
+      picked.push(...freshFirst(all.filter(q => q.domain === d.id)).slice(0, k));
     });
     picked = shuffle(picked);
   } else picked = shuffle(all).slice(0, n);
@@ -1448,7 +1474,7 @@ function startQuiz(n, weighted, timed){
 function startDrill(id){
   const d = CYSA.domains.find(x => x.id === id); if (!d) return;
   const h = store.get('qhist', {}) || {}, pri = q => { const r = h[q.qid]; return !r ? 1 : (!r.ok || r.wrong > r.right) ? 0 : 2; };
-  const picked = shuffle(shuffle(ALL_Q().filter(q => q.domain === id)).sort((a, b) => pri(a) - pri(b)).slice(0, DRILL_N));
+  const picked = shuffle(shuffle(POOL().filter(q => q.domain === id)).sort((a, b) => pri(a) - pri(b)).slice(0, DRILL_N));
   if (!picked.length){ toast('No questions in this domain yet'); return; }
   openSheet(`Drill · Domain ${d.id}`, `<div class="card" id="big-quiz"></div>
     <p class="small muted">${esc(d.name)} (${d.weight}% of the exam): questions you've missed come first, then ones you haven't seen.</p>`);

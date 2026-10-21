@@ -28,7 +28,8 @@ Your daily cyber security news and CySA+ study app. Everything is saved on this 
 
 ## Learn tab
 - **Lessons** for all four CySA+ domains. Each has key points, an exam tip, an on-the-job note, a video search link and a 3-question quiz. Finish the quiz or tap **Mark as complete** to tick it off.
-- **Quick quiz** (10 questions) and **Practice exam** (30 questions weighted like the real exam, with a rough scaled score).
+- **Quick quiz** (10 questions) and **Practice exam** (30 questions weighted like the real exam, with a rough scaled score). Questions come from a bank of 250+, and practice exams use questions you haven't seen first, so the score means something.
+- **Exam objectives** on your profile show how much of each CS0-003 objective you've covered and how you're going.
 - **Timed practice exam**: 30 questions in 58 minutes, the real exam's pace. Closing it cancels the attempt.
 - **Review mistakes**: questions you've got wrong, until you get them right more often than wrong.
 - **PBQ practice**: hands-on scenarios with logs, headers and scan output. Wide exhibits scroll sideways; the app says when there's more to see.

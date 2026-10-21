@@ -35,7 +35,7 @@ Read the relevant file before changing that part of the project:
 ## Conventions
 - Python scripts are standard library only (no pip install in Actions). One exception: the brief/digest workflows `pip install pywebpush` for Web Push, imported lazily inside `send_webpush()` so the scripts still run (and `fetch_news.py` still imports `send_brief`) without it.
 - One broken feed must never fail the run - errors are recorded in `news.json`'s `sources` health list.
-- `rank()` (score minus age/12h) is duplicated in `index.html` and `send_brief.py`; the lesson-of-the-day pick (`ordinal % lessons`) and the question of the day (`(ordinal * 7) % questions`) are too. Keep them in sync.
+- `rank()` (score minus age/12h) is duplicated in `index.html` and `send_brief.py`; the lesson-of-the-day pick (`ordinal % lessons`) and the question of the day (`(ordinal * 7) % questions`, over lesson questions then the `bank`) are too. Keep them in sync.
 - All dates are Australia/Brisbane (UTC+10, no daylight saving).
 - localStorage keys are prefixed `sp_` (export/import/reset rely on that). Wrap storage access in try/catch.
 - Quiz option order is shuffled at render time, so `answer` indexes can be anything in the JSON.

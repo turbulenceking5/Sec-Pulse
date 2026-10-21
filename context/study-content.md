@@ -4,13 +4,15 @@ All CySA+ lessons, quiz questions and flashcards live in one hand-written JSON f
 
 ## Current coverage
 
-| Domain | Exam weight | Lessons | Questions | Cards | PBQs |
-|---|---|---|---|---|---|
-| 1 Security Operations | 33% | 1.1–1.10 (10) | 30 | 60 | 5 |
-| 2 Vulnerability Management | 30% | 2.1–2.7 (7, incl. 2.6 AU bonus) | 21 | 51 | 3 |
-| 3 Incident Response & Management | 20% | 3.1–3.5 (5, incl. 3.4 AU bonus) | 15 | 30 | 4 |
-| 4 Reporting & Communication | 17% | 4.1–4.5 (5) | 15 | 22 | 3 |
-| **Total** | | **27** | **81** | **163** | **15** |
+| Domain | Exam weight | Lessons | Lesson questions | Bank questions | Cards | PBQs |
+|---|---|---|---|---|---|---|
+| 1 Security Operations | 33% | 1.1–1.10 (10) | 30 | 58 | 60 | 5 |
+| 2 Vulnerability Management | 30% | 2.1–2.7 (7, incl. 2.6 AU bonus) | 21 | 51 | 51 | 3 |
+| 3 Incident Response & Management | 20% | 3.1–3.5 (5, incl. 3.4 AU bonus) | 15 | 34 | 30 | 4 |
+| 4 Reporting & Communication | 17% | 4.1–4.5 (5) | 15 | 29 | 22 | 3 |
+| **Total** | | **27** | **81** | **172** | **163** | **15** |
+
+**Question bank by CS0-003 objective** (2026-10-21): 1.1 10 · 1.2 14 · 1.3 16 · 1.4 10 · 1.5 8 · 2.1 10 · 2.2 9 · 2.3 11 · 2.4 12 · 2.5 9 · 3.1 9 · 3.2 15 · 3.3 10 · 4.1 14 · 4.2 15. Note that lesson ids (e.g. lesson 1.5) are the app's own numbering, not CompTIA objective numbers; only bank questions carry an `objective`.
 
 The card deck now roughly tracks the exam weights (33/32/20/15%). Cards c61–c93 cover tools and ports: Nmap flags (c61–c70, domain 2), common ports (c71–c81, domain 1) and Windows Security/System event IDs (c82–c93, domain 1). Cards c94–c107 are Domain 4 reporting terms (dwell time, KPI vs metric, MTTC/remediate, out-of-band comms, report structure, escalation matrix, vulnerability SLA/ageing/recurrence, risk exceptions, regulatory notification). Cards c108–c117 are Domain 2 vulnerability management (CVSS vectors/scope/metric groups, EPSS, prioritisation, ASM, scan false positives, CVE vs CWE). Cards c118–c131 are Domain 3 (containment, eradication, recovery, playbooks, IoC sweeps; c127–c131 are the `forensics` group). Cards c132–c163 are the `acronym` group (EDR, XDR, TTP, TLP, SCAP, OWASP, BIA, RACI and so on), used by the Acronym drill; they're counted in the table above but sit outside the exam-weight balancing.
 
@@ -44,12 +46,25 @@ The card deck now roughly tracks the exam weights (33/32/20/15%). Cards c61–c9
     }
   ],
   "cards": [{"id": "c01", "domain": 1, "group": "detection", "front": "term", "back": "definition"}],  // group: see Rules
+  "bank": [  // standalone questions tagged with a CS0-003 objective, see below
+    {"id": "q001", "domain": 1, "objective": "1.1", "q": "question", "options": ["exactly", "four", "distinct", "options"], "answer": 0, "explain": "why"}
+  ],
   "pbqs": [  // performance-based questions, see below
     {"id": "p01", "domain": 1, "type": "select", "q": "task prompt", "exhibit": "multi-line\\nmonospace text", "options": ["four", "options", "exactly", "here"], "answer": 0, "explain": "why"},
     {"id": "p09", "domain": 3, "type": "order", "q": "task prompt", "items": ["4-6 steps", "in the", "CORRECT", "order"], "explain": "why"}  // optional "exhibit"
   ]
 }
 ```
+
+### Question bank (`bank`)
+
+Standalone multiple-choice questions that make the practice exam a real test instead of a recognition exercise (the 81 lesson questions alone were memorised after a few attempts).
+
+- `id` (`q001`, `q002`...; **permanent**, progress is keyed `bank:<id>` in `sp_qhist`), `domain` (1-4), `objective` (CS0-003 objective number `"1.1"`…`"4.2"`; its first digit must equal `domain`), `q`, `options` (exactly 4, all different), `answer`, `explain`.
+- Keep the bank roughly at exam weight (33/30/20/17%) and spread across objectives; the profile's **Exam objectives** card shows coverage per objective.
+- **Order matters**: the question of the day indexes lesson questions followed by bank questions (`POOL()` / `qotd_for()`), so append new questions at the end; inserting shifts which question appears on which day (harmless).
+- The app uses the bank in Quick quiz, Practice exam (unseen questions first), Timed exam, Domain drill, Review mistakes and the question of the day. Lesson sheets still use only their own 3 questions.
+- Same style rules as lesson questions: plausible distractors (no joke options), explanations that say why the answer is right and, where useful, why the tempting distractor isn't.
 
 ### PBQs (`pbqs`)
 
@@ -76,7 +91,7 @@ Performance-based practice: a realistic exhibit and a hands-on task, like the PB
 - **Generic examples only.** The repo is public. Use `example.com`, `examp1e.com` style look-alikes, and generic org descriptions. Never use the employer's real domain, systems or incident details.
 - **Validate after editing:**
   ```bash
-  python3 -c "import json;d=json.load(open('data/cysa.json'));qs=[q for l in d['lessons'] for q in l['quiz']];assert all(len(q['options'])==4 and 0<=q['answer']<4 for q in qs);import collections;g=collections.Counter(c['group'] for c in d['cards']);assert min(g.values())>=4,g;print(len(d['lessons']),'lessons',len(qs),'questions',len(d['cards']),'cards')"
+  python3 -c "import json,collections;d=json.load(open('data/cysa.json'));qs=[q for l in d['lessons'] for q in l['quiz']]+d.get('bank',[]);assert all(len(q['options'])==4 and len(set(q['options']))==4 and 0<=q['answer']<4 for q in qs);b=d.get('bank',[]);assert len({q['id'] for q in b})==len(b) and all(str(q['domain'])==q['objective'][0] for q in b);g=collections.Counter(c['group'] for c in d['cards']);assert min(g.values())>=4,g;print(len(d['lessons']),'lessons',len(qs),'questions',len(d['cards']),'cards')"
   ```
 
 ## Accuracy

@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-10-21: 172 new exam questions
+- **Question bank:** 172 new CySA+ questions across all four domains (weighted like the exam), each tagged with its CS0-003 objective. Quick quizzes, practice and timed exams, domain drills, Review mistakes and the question of the day now draw from 253 questions instead of 81.
+- **Practice exams use questions you haven't seen first**, then ones you got wrong, so the score reflects what you know rather than what you remember.
+- **Exam objectives** on your profile: questions seen and the share right for each of the 15 CS0-003 objectives.
+
 ## 2026-10-20: Fixes and polish from a full review
 - **Fixed:** after **Reset** or **Import**, levelling up stopped until you restarted the app. Import now replaces your progress properly and refuses files that aren't backups.
 - **Fixed:** Cards could say "All caught up" while cards were still due (missed cards, or a new day with the app left open).

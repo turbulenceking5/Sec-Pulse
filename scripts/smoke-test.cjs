@@ -25,7 +25,7 @@ const fs = require('fs');
   check(await page.locator('#review-empty').count() === 1, 'Review mistakes shows empty state with no history');
   await page.click('#sheet-close');
   await page.click('nav button[data-view=brief]');
-  const qotd = await page.evaluate(() => { const qs = ALL_Q(); const q = qs[(ordinal(todayKey()) * 7) % qs.length]; return { qid: q.qid, answer: q.answer }; });
+  const qotd = await page.evaluate(() => { const qs = POOL(); const q = qs[(ordinal(todayKey()) * 7) % qs.length]; return { qid: q.qid, answer: q.answer }; });
   await page.click(`#brief-qotd .opt:not([data-i="${qotd.answer}"]) >> nth=0`);
   check(!(await page.locator('#brief-qotd .explain').isHidden()), 'Question of the day shows explanation');
   const hist = await page.evaluate(id => JSON.parse(localStorage.getItem('sp_qhist') || '{}')[id], qotd.qid);
@@ -328,7 +328,7 @@ const fs = require('fs');
   check(await page.locator('#focus-card').count() === 1, 'Brief shows the weakest-domain focus card');
   const fd = await page.evaluate(() => focusDomain().d.id);
   await page.click('#focus-card');
-  check((await page.textContent('#sheet-title')) === 'Drill · Domain ' + fd && (await page.textContent('#big-quiz .q-progress')).includes('lesson ' + fd + '.'), 'Focus card opens a drill from that domain');
+  check((await page.textContent('#sheet-title')) === 'Drill · Domain ' + fd && /(lesson|objective) /.test(await page.textContent('#big-quiz .q-progress')) && (await page.textContent('#big-quiz .q-progress')).match(new RegExp('(lesson|objective) ' + fd + '\\.')), 'Focus card opens a drill from that domain');
   await page.click('#sheet-close');
 
   // Timed exam: countdown in the title, auto-finish at zero, abandoned if closed.
@@ -439,6 +439,25 @@ const fs = require('fs');
   await page.click('#sheet-close');
   const afterReset = await page.evaluate(() => { afterStorageReplaced('Progress reset'); return gainXP(10) === 10 && !!getXP(); });
   check(afterReset, 'XP still works straight after Reset');
+
+  // Question bank: objective-tagged questions join every quiz; practice exams prefer unseen ones; profile shows objectives.
+  const bank = await page.evaluate(() => ({ n: ALL_BANK().length, raw: (CYSA.bank || []).length, pool: POOL().length, lessons: ALL_Q().length,
+    tagged: ALL_BANK().every(q => /^[1-4]\.\d$/.test(q.objective) && String(q.domain) === q.objective[0]) }));
+  check(bank.n >= 150 && bank.n === bank.raw && bank.pool === bank.lessons + bank.n && bank.tagged, `Question bank loads (${bank.n} questions), all tagged with a matching objective`);
+  const fresh = await page.evaluate(() => {
+    const h = {}; POOL().slice(0, 60).forEach(q => { h[q.qid] = { right: 1, wrong: 0, ok: true, last: todayKey() }; }); store.set('qhist', h);
+    startQuiz(30, true); const n = [...document.querySelectorAll('#big-quiz .q-progress')].length; closeSheet();
+    return n;
+  });
+  check(fresh === 1, 'Practice exam starts from the bigger pool');
+  const unseen = await page.evaluate(() => { const h = store.get('qhist', {}); const all = POOL();
+    const pri = q => { const r = h[q.qid]; return !r ? 0 : !r.ok ? 1 : 2; };
+    const byDom = d => all.filter(q => q.domain === d); // each domain has far more unseen questions than it needs
+    return CYSA.domains.every(d => byDom(d.id).filter(q => !h[q.qid]).length >= Math.round(30 * d.weight / 100)); });
+  check(unseen, 'Every domain has enough unseen questions for a fresh practice exam');
+  await page.click('#rank-card');
+  check(await page.locator('#objectives .obj-row').count() === 15, 'Profile shows coverage for all 15 exam objectives');
+  await page.click('#sheet-close');
   check(!(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth)), 'No horizontal scroll');
   check(errors.length === 0, 'No console/page errors' + (errors.length ? ': ' + errors.join(' | ') : ''));
 

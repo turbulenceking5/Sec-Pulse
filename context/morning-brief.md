@@ -34,7 +34,7 @@ CySA+ focus: 2.2 Reading scan output and CVSS
 - 🇦🇺 marks `region == "AU"` items.
 - Because `fetch_news.py` clusters the same story from several outlets into one item (see [news-pipeline.md](news-pipeline.md#story-clustering)), the top 5 are 5 different stories. `+N` after the source is the number of other outlets folded into that item's `also`; it's omitted when there are none. "Last 30h: N items" counts clustered stories, not raw reports.
 - **CySA+ focus**: `lessons[today.toordinal() % len(lessons)]` using Brisbane's date. The app computes the same index, so "Today's CySA+ lesson" on the Brief tab matches the notification.
-- **Question of the day** (`qotd_for()`): the app's question of the day (`lesson quiz questions flattened, [(ordinal * 7) % n]`), cut to 240 chars (`MAX_Q`). Only the question goes in the notification; the options and answer are in the app.
+- **Question of the day** (`qotd_for()`): the app's question of the day (lesson quiz questions then the question bank, `[(ordinal * 7) % n]`), cut to 240 chars (`MAX_Q`). Only the question goes in the notification; the options and answer are in the app.
 - If nothing is recent: `• Quiet night - no new high-relevance items.`
 
 ## Delivery
