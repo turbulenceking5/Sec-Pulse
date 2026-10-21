@@ -1,48 +1,16 @@
 {
- "date": "2026-10-21",
- "generated": "2026-10-20T21:46:51+00:00",
- "title": "Sec-Pulse brief - Wed 21 Oct",
+ "date": "2026-10-22",
+ "generated": "2026-10-21T21:52:51+00:00",
+ "title": "Sec-Pulse brief - Thu 22 Oct",
  "items": [
   {
-   "id": "52b0d35525c9",
-   "title": "Sabre Cybersecurity Stops Wire Fraud Attempt Targeting Central Ohio Real Estate Closing",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxORFZMUzgzdGhXYWozVGJtVzdkSFlPZEZCSGphODF1UC1jYlRtUnpGRTZXVTdFLXhkWjlfc0hCOGJDNnVjWF9JczhCNmlLcFJibHVxT1podlhZZE1RcUR1TVhTQkhqS09lT1pSYnNhLXo2QUNrQ25NSnE1MmhrWTgzdFlRTjA1TUJIRnpQUHNreWotMTd3TmJRY04tR21WSnVQblE5MFF1ZUJuLVZTMTQzcUM0MEZTeXM?oc=5",
-   "source": "Carroll County Mirror-Democrat",
-   "region": "Global",
-   "published": "2026-10-19T17:45:02Z",
-   "score": 20,
-   "tags": [
-    "Real estate",
-    "BEC / payment fraud",
-    "Microsoft 365"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "0d304799e621",
-   "title": "Qilin and INC Ransomware Groups Exploit Palo Alto Networks Flaw to Bypass MFA",
-   "link": "https://thehackernews.com/2026/10/qilin-and-inc-ransomware-groups-exploit.html",
-   "source": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-20T15:32:27Z",
-   "score": 13,
-   "tags": [
-    "Ransomware",
-    "Identity",
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "summary": "Palo Alto Networks has disclosed that it's continuing to observe exploitation of a now-patched security flaw impacting PAN-OS and Prisma Access by ransomware actors. The activity relates to CVE-2026-0257 (CVSS score: 7.8), an authentication bypass flaw that could be exploited by bad actors to set…",
-   "epss": 0.9689
-  },
-  {
-   "id": "b6f3371e0f4b",
-   "title": "Exposed Cairn AI Hacking Panels Reveal 1,100+ Attack Projects Targeting the US, Japan, Australia",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPbXAySmw1YS1LVU0zY215SWV0ZjIxZ1cwTTRYM0ZkWEIyQ0pGX2MySDRSN2RSa2VySkhNRUEwOGpZa25QbElneTNMdmc3LUlyUWhDc2F0X3dJMDVPNURpTUFGalpUV3A3RW93MFpzeVJUOUk0R0U5eG1xWGFmemNFZUFrTFlCeHhLMUItSk5LaFJDLTA0ODEzeXFSYURBQWt0VGJBTW5UbWdIbE53VlNfZlVEVDdkWkpBTzNTRnFabnV5anM?oc=5",
-   "source": "TechNadu",
+   "id": "c7a664d25ce9",
+   "title": "Australian government sites among those exposed to 'critical' software flaw",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOalBBMnc1dmJ0VUlMNWJZQjhQUWlHMUg2OGo5V2U2LV9Wam1qU2lSa2x2QkJ1VzFFVm5SNUZXdXlnR3FVdlEyTEsxUFhMZ3JWVTRZZXVFY3loWldYb1pXTGI0ODN2RFZ6RWxkZWxvTHN5TVhTbkVyUUVoQ09LYWpidVQ0alI?oc=5",
+   "source": "ABC News & Headlines – Australian Broadcasting Corporation",
    "region": "AU",
-   "published": "2026-10-20T12:31:46Z",
-   "score": 13,
+   "published": "2026-10-21T15:58:02Z",
+   "score": 14,
    "tags": [
     "Australia",
     "Data breach"
@@ -50,41 +18,66 @@
    "summary": ""
   },
   {
-   "id": "68bdae35f62d",
-   "title": "Australian laws are tougher on hacked companies than rogue AI doing it - here's what needs to change to make agents accountable",
-   "link": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxOdlVuVjZMUUl1OExyMzBFcG9wOGpjWTQ3eGUxQm9jQV9yMUNyYnpiUGJlRU92RTB6N3daSk9XZUpXLVkzVzhFS0NlNGtZblBXalhvc19oMXhFZjVJSkc1Z1UzeHpZckJBSW92bkp6VlN6d2N4UWdCbE5XYmZKaWV3bmQxVmhKei15dDFNS2x1ZmZCRnVpVk5GNXlmTU5sOXpDOW42MEJmNFdYQjFJTGc0WnNVNmhrQzBNNUFwbXRaQ2VFaWM5a0pZbW5LdU5DNWJxb0xiR3Axa0RGUmZwd2JyS0xUZHNvazdELTVpZGxvaEx3RGFGeHhHVXRGc3I2QS1EU0dyZGVLMVJoY2R3NXJ6RlcwcUNZVkR5TGxPekY5WkJscTBhNG9ycw?oc=5",
-   "source": "Startup Daily",
-   "region": "AU",
-   "published": "2026-10-20T00:50:04Z",
-   "score": 12,
+   "id": "5554e14ffe2c",
+   "title": "COLUMN: The real estate scam landscape is changing. Northeast Colorado homeowners need to be ready",
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNblp4NW9vN1hvbFFMdVpUSWhrbTVGWlNqNi1PWUdkYjJfM2R4OVcwTnY1dHdhcURtWHdkekVwR1dEeTRiZjFYNVY2aWxzTWYwUUVzcDhJbHJRUVhpTmd1X1kxZWMwOTc5THFjakJsSFpGTG9rblgwMHI2aHdYeGZLbFFad3o3TjlOWFV3b3JpNklUbUphSFpSMVVBUzdDT0ktM1VnVThZVk1zMmpoYkJ5Qks1Mzhua21vMmcwdmpHeWtURUxYTE5vYkR5eE9MeHN6SHd6VlpHeTM?oc=5",
+   "source": "Journal-Advocate",
+   "region": "Global",
+   "published": "2026-10-21T21:14:47Z",
+   "score": 10,
    "tags": [
-    "Australia",
-    "SaaS / cloud"
+    "Real estate"
    ],
    "summary": ""
   },
   {
-   "id": "966e9a52ddea",
-   "title": "Opinion: SB 690 provided some relief against privacy act lawsuits, but work must continue",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOY1NGdXYtWnpBX2pvLWdLUnctLW9vRkVuMVMzZmZJMkp4N2YwemhreUxZamJxYVFqWXA1QXo5VHBOQ3QwVlQwM2pLd1ZhNE9vb3B2MmVZbXNNUXJMdEZjeXVCcUR4UlVnbHBpZTMzdXNJbFdiZHpSNDdRMTl6MlRKSk5rQXNwT01hMGdwS2ZERVhvMWZ0OFdRQVJWeVBZdmJHMW5F?oc=5",
-   "source": "The Business Journals",
-   "region": "AU",
-   "published": "2026-10-19T22:36:00Z",
-   "score": 12,
+   "id": "25f995d0be20",
+   "title": "SafePay Ransomware: SafeBreach Coverage for CISA Alert AA26-293A",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOWThfa0U0YTBhNExNSjNCVFJSbVRYMWxVMUZLSnJHNGFJcFhXQ0pjbWpQN00xQmwyWExEbjU0Q21rQnJwTEM1Q2tRTTFlU0pSSGw0U1otNEZZc2Y4X0ZwcWlBU0g2WDZkMUxqY0ZSQnhDSTZXd3JYYk1ibi0yQ1REQ2xrNzNXaG50T2pLM1lZYmNfbFJRZEJmc0I5cU83OXpnRjFpXw?oc=5",
+   "source": "Security Boulevard",
+   "region": "Global",
+   "published": "2026-10-21T18:49:02Z",
+   "score": 10,
    "tags": [
-    "Australia",
-    "SaaS / cloud"
+    "Ransomware",
+    "Data breach"
+   ],
+   "summary": ""
+  },
+  {
+   "id": "8618fd7c4109",
+   "title": "Orion Real Estate Data Exchange Announces Relationship with HUB International; Offers MLS Insurance Solutions",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOc0l2bG5SZThVZkptSlRmUWRzSDdTLXpYZjdwbDB2NnZnVXZHdjJVQkNocHNvQVFEN1Z6Sl9oV3g3QVdLSm9TZC1rLWpMbXY2X1NEbWpiRUZQX2pkRUFGNWZOWEdKNzAya0VVUzYyVWZCdjlzT0lEdjlvN3JrY2c0WWV5RndPSzhUcHlHbndjU2laUUZiVkV2Ym5Bejc3WTdWTFM3WUlKZm1jQQ?oc=5",
+   "source": "RISMedia",
+   "region": "Global",
+   "published": "2026-10-21T16:08:53Z",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "summary": ""
+  },
+  {
+   "id": "253a6afd1c73",
+   "title": "Real estate agents flag new earnest money scam warning",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9YT1VXMGJFQ19NSXZwT2Z6NUR6WjBoYm1FRkRUc3ptRHN3QWJhQlVjNnRzcHZ2YmJnNlg5cUVwMm9zT2hQam5KejBuWENVcEFKV0ZSaGZaSXl2R3hlLXdOREM5NHphb19vcUViUjVEMG1fUQ?oc=5",
+   "source": "HousingWire",
+   "region": "Global",
+   "published": "2026-10-21T16:01:31Z",
+   "score": 10,
+   "tags": [
+    "Real estate"
    ],
    "summary": ""
   }
  ],
  "stats": {
-  "recent": 62,
-  "au": 3,
-  "kev": 6
+  "recent": 70,
+  "au": 5,
+  "kev": 0
  },
  "lesson": {
-  "id": "1.3",
-  "title": "Indicators of malicious activity: host and application"
+  "id": "1.4",
+  "title": "Analyst tools: SIEM, SOAR, EDR and friends"
  }
 }
