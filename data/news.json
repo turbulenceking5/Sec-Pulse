@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21T21:45:06Z",
+ "generated": "2026-10-21T21:52:41Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -22,13 +22,13 @@
   {
    "name": "ASD / ACSC in the news",
    "ok": true,
-   "count": 3,
+   "count": 4,
    "error": null
   },
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 9,
+   "count": 8,
    "error": null
   },
   {
@@ -136,13 +136,13 @@
    ]
   },
   {
-   "id": "0dbd162481ab",
+   "id": "5554e14ffe2c",
    "title": "COLUMN: The real estate scam landscape is changing. Northeast Colorado homeowners need to be ready",
-   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQZVVGZ1RvYzk4dkxsaFFVU1pyeGxLclBEWUg4X3F0SncxeWpESEstNnVWR1lleGJlZ2hBTWRIZGxrS08zNUhFV190U2Z4YjkwV2JiR2FEdTFWeF9NdFoxZzZNazJ6TEZ2d05xOGJ5bXVCZk1uNnRFbGVRSEhROE91aUY1TGRCQldtV2RxYTRZWFdKcnpXU1JnaGRvMHAxVDkwdGpzWm55QWhtU3Y0cm1FcVN0ZHhxZlFzTnZhWE9TVW8xM0hJaC1MNm9HNjhyLVM2SzgwQkVJcw?oc=5",
-   "source": "The Fort Morgan Times",
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNblp4NW9vN1hvbFFMdVpUSWhrbTVGWlNqNi1PWUdkYjJfM2R4OVcwTnY1dHdhcURtWHdkekVwR1dEeTRiZjFYNVY2aWxzTWYwUUVzcDhJbHJRUVhpTmd1X1kxZWMwOTc5THFjakJsSFpGTG9rblgwMHI2aHdYeGZLbFFad3o3TjlOWFV3b3JpNklUbUphSFpSMVVBUzdDT0ktM1VnVThZVk1zMmpoYkJ5Qks1Mzhua21vMmcwdmpHeWtURUxYTE5vYkR5eE9MeHN6SHd6VlpHeTM?oc=5",
+   "source": "Journal-Advocate",
    "feed": "Real estate cyber news",
    "region": "Global",
-   "published": "2026-10-21T21:14:34Z",
+   "published": "2026-10-21T21:14:47Z",
    "summary": "",
    "score": 10,
    "tags": [
@@ -150,6 +150,12 @@
    ],
    "why": [
     "Real estate"
+   ],
+   "also": [
+    {
+     "source": "The Fort Morgan Times",
+     "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQZVVGZ1RvYzk4dkxsaFFVU1pyeGxLclBEWUg4X3F0SncxeWpESEstNnVWR1lleGJlZ2hBTWRIZGxrS08zNUhFV190U2Z4YjkwV2JiR2FEdTFWeF9NdFoxZzZNazJ6TEZ2d05xOGJ5bXVCZk1uNnRFbGVRSEhROE91aUY1TGRCQldtV2RxYTRZWFdKcnpXU1JnaGRvMHAxVDkwdGpzWm55QWhtU3Y0cm1FcVN0ZHhxZlFzTnZhWE9TVW8xM0hJaC1MNm9HNjhyLVM2SzgwQkVJcw?oc=5"
+    }
    ]
   },
   {
@@ -331,6 +337,18 @@
     {
      "source": "SecurityWeek",
      "url": "https://www.securityweek.com/aomei-backupper-compromised-in-short-burst-supply-chain-campaign/"
+    },
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/rank-math-pro-wordpress-plugin-compromised-in-supply-chain-attack/"
+    },
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/popular-wordpress-seo-plugin-rank-math.html"
+    },
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/wordpress-seo-plugin-rank-math-compromised-to-backdoor-websites/"
     }
    ]
   },
@@ -2410,33 +2428,6 @@
    "why": [
     "Vulnerability",
     "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "c513afb9763b",
-   "title": "Rank Math PRO WordPress Plugin Compromised in Supply Chain Attack",
-   "link": "https://www.securityweek.com/rank-math-pro-wordpress-plugin-compromised-in-supply-chain-attack/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-19T15:20:53Z",
-   "summary": "Hackers injected malware into Rank Math PRO version 3.0.123 packages distributed between October 15 and October 16. The post Rank Math PRO WordPress Plugin Compromised in Supply Chain Attack appeared first on SecurityWeek .",
-   "score": 3,
-   "tags": [
-    "SaaS / cloud"
-   ],
-   "why": [
-    "SaaS / cloud"
-   ],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/popular-wordpress-seo-plugin-rank-math.html"
-    },
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/wordpress-seo-plugin-rank-math-compromised-to-backdoor-websites/"
-    }
    ]
   },
   {
@@ -7262,6 +7253,25 @@
    ],
    "why": [
     "Data breach"
+   ]
+  },
+  {
+   "id": "7f5dd566b2dd",
+   "title": "FBI Arrests Executive at Ransomware Negotiation Firm",
+   "link": "https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/",
+   "source": "Krebs on Security",
+   "feed": "Krebs on Security",
+   "region": "Global",
+   "published": "2026-10-10T00:17:42Z",
+   "summary": "Agents with the Federal Bureau of Investigation (FBI) on Thursday arrested the co-founder of a Canadian cybersecurity firm in connection with an investigation into the ShinyHunters hacking group that recently relieved the FBI of sensitive data on thousands of agents, multiple sources tell…",
+   "score": 6,
+   "tags": [
+    "Ransomware",
+    "Vulnerability"
+   ],
+   "why": [
+    "Ransomware",
+    "Vulnerability"
    ]
   }
  ]
