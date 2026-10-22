@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-22T21:38:33Z",
+ "generated": "2026-10-22T21:49:22Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -120,6 +120,23 @@
    ],
    "why": [
     "Data breach"
+   ]
+  },
+  {
+   "id": "524ad3c5d509",
+   "title": "Client Alert: California Closes 2026 Legislative Session With Sweeping New Privacy and AI Laws",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQS19wR20zQTl3SXJqaGlzekx0ejJqd01WU0x4ODhqbzdwYzFwekp5anNRVVBzX2NUUkFXZmFoZF9CdGI4Tl9OckZLQXJTWks3QUY4bkc4T3l0SktQdnpyeWJrQmswUV85MFhnWkNyZjljM0M3bnhrY0M5X1p4U3NqanhvZzZtUU9TWTVWWUEtZ0JTYTBMUE5zQTFBUGhCUEtGcDh6eHdiOWhkZ0JONE4tcXZpVVc3UUJuREhkc9IBvAFBVV95cUxQS19wR20zQTl3SXJqaGlzekx0ejJqd01WU0x4ODhqbzdwYzFwekp5anNRVVBzX2NUUkFXZmFoZF9CdGI4Tl9OckZLQXJTWks3QUY4bkc4T3l0SktQdnpyeWJrQmswUV85MFhnWkNyZjljM0M3bnhrY0M5X1p4U3NqanhvZzZtUU9TWTVWWUEtZ0JTYTBMUE5zQTFBUGhCUEtGcDh6eHdiOWhkZ0JONE4tcXZpVVc3UUJuREhkcw?oc=5",
+   "source": "The National Law Review",
+   "feed": "OAIC / Privacy news",
+   "region": "Global",
+   "published": "2026-10-22T20:39:46Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "SaaS / cloud"
+   ],
+   "why": [
+    "SaaS / cloud"
    ]
   },
   {
@@ -1684,7 +1701,7 @@
   },
   {
    "id": "e7f2884fd694",
-   "title": "Hackers steal children's data after company used 'Password1' for old account",
+   "title": "Hackers steal children's data after company used 'Password1' to protect old account",
    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1MWWRiQTlFUk1lZnVlUE9Udk5sYURFN0VndVZsS0E4NFlwOWxFZG9hMFllbTIyM3d2aUc3NmJYV0FkVXoyX1h5RzNIOHJ1MGNyLUFzWm0tdUlOU28?oc=5",
    "source": "BBC",
    "feed": "AU breach news",
@@ -1812,25 +1829,6 @@
    ],
    "why": [
     "Data breach"
-   ]
-  },
-  {
-   "id": "705a2aee0bf3",
-   "title": "PHP2Shell: Two Unpatched Critical PHP RCE Flaws (CVSS 9.2) Trigger Emergency Security Alert",
-   "link": "https://thehackernews.com/2026/10/php2shell-two-unpatched-critical-php.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-21T09:05:17Z",
-   "summary": "This story is developing and was written before PHP's scheduled 14:00 UTC release on October 21. Once the release is out, the affected and fixed versions below are confirmed by the official advisory. PHP will ship an out-of-cycle security release at 14:00 UTC today, October 21, for two critical…",
-   "score": 5,
-   "tags": [
-    "Vulnerability",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Vulnerability",
-    "SaaS / cloud"
    ]
   },
   {
