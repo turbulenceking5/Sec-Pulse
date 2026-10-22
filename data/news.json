@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-22T11:56:35Z",
+ "generated": "2026-10-22T17:13:15Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,13 +28,13 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 7,
+   "count": 8,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 6,
+   "count": 5,
    "error": null
   },
   {
@@ -70,7 +70,7 @@
   {
    "name": "Krebs on Security",
    "ok": true,
-   "count": 6,
+   "count": 5,
    "error": null
   },
   {
@@ -82,7 +82,7 @@
   {
    "name": "Microsoft Security Blog",
    "ok": true,
-   "count": 6,
+   "count": 5,
    "error": null
   },
   {
@@ -105,6 +105,205 @@
   }
  ],
  "items": [
+  {
+   "id": "6b7369ef168a",
+   "title": "Meta Ordered to Pay $25 Billion After Court Finds 43 Million Privacy Violations",
+   "link": "https://thehackernews.com/2026/10/meta-ordered-to-pay-25-billion-after.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-22T16:12:31Z",
+   "summary": "Social media giant Meta was ordered to pay 25 billion in penalties by a New Mexico court on Wednesday as part of a data privacy lawsuit that sprang from the company's Cambridge Analytica data scandal, which came to light in 2018. According to multiple reports from the Associated Press, the New…",
+   "score": 4,
+   "tags": [
+    "Identity",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Identity",
+    "SaaS / cloud"
+   ],
+   "also": [
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/meta-ordered-to-pay-new-mexico-25-billion-for-deceiving-users-about-privacy-on-facebook/"
+    }
+   ]
+  },
+  {
+   "id": "0563a66ccd63",
+   "title": "Microsoft shares how to fix broken Exchange Online EWS apps",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-shares-how-to-fix-broken-exchange-online-ews-apps/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-22T15:49:32Z",
+   "summary": "Microsoft says IT admins can re-enable the retired Exchange Web Services (EWS) API in Exchange Online to fix EWS apps that have stopped working. [...]",
+   "score": 4,
+   "tags": [
+    "Microsoft 365"
+   ],
+   "why": [
+    "Microsoft 365"
+   ]
+  },
+  {
+   "id": "dcda11bca225",
+   "title": "Hacker Conversations: Corey Thuen and the Evil Bit",
+   "link": "https://www.securityweek.com/hacker-conversations-corey-thuen-and-the-evil-bit/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-22T14:31:34Z",
+   "summary": "Corey Thuen hires hackers for what he calls ‘the evil bit’ — an adversarial streak he believes is either there or it isn’t. The post Hacker Conversations: Corey Thuen and the Evil Bit appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "7e3771f19983",
+   "title": "Hacking attempts surge as websites race to patch PHP issues",
+   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNYVFEcnJyOU9GWU9vRUVnRXktMHVtNzhiSVMza1o5YTFRbzh1cFV2SGREOUNWZHlFaVUtaVlhZXp5VHMtcWhsdFNpbE5zRzM0ZE45SmcyVHFpb1BGcWVTcUl0aURBTHBMS1hSVmwxa3M5dEVoNnhUVl9NZ3Z2czVGTVlSanFyNENVZElB?oc=5",
+   "source": "ABC News & Headlines – Australian Broadcasting Corporation",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-22T14:22:54Z",
+   "summary": "",
+   "score": 4,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "92b876190d73",
+   "title": "Machine speed attacks require machine speed detection and response",
+   "link": "https://www.bleepingcomputer.com/news/security/machine-speed-attacks-require-machine-speed-detection-and-response/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-22T14:02:12Z",
+   "summary": "Attackers can steal credentials and begin exfiltrating data within minutes, often before security teams can respond. Exaforce examines real-world attacks involving stolen GitHub tokens, malicious AI installers, and MFA phishing, explaining why faster detection and automated containment are…",
+   "score": 6,
+   "tags": [
+    "Phishing",
+    "Identity",
+    "Vulnerability"
+   ],
+   "why": [
+    "Phishing",
+    "Identity",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "c145f24074c2",
+   "title": "INTERPOL Arrests 1,462 Suspects, Disrupts 10,909 Cybercrime Networks in Global Crackdown",
+   "link": "https://thehackernews.com/2026/10/interpol-arrests-1462-suspects-disrupts.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-22T13:38:22Z",
+   "summary": "INTERPOL on Thursday announced that a coordinated law enforcement action has disrupted 10,909 malicious networks and recovered more than $105 million in illicit funds. In tandem, the effort saw law enforcement agencies from 21 countries arrest 1,462 suspects. Codenamed Operation Serengeti III, the…",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "c78f9791369d",
+   "title": "Amazon says PHP2Shell exploitation began 4 days before patches",
+   "link": "https://www.bleepingcomputer.com/news/security/amazon-says-php2shell-exploitation-began-4-days-before-patches/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-22T13:09:12Z",
+   "summary": "Security researchers at Amazon Threat Intelligence say attackers began targeting the PHP2Shell flaws four days before security patches were released on Wednesday. [...]",
+   "score": 4,
+   "tags": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "6a8ba679d4e1",
+   "title": "Indurex Raises $8 Million to Expand Industrial Cybersecurity Platform",
+   "link": "https://www.securityweek.com/indurex-raises-8-million-to-expand-industrial-cybersecurity-platform/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-22T13:00:00Z",
+   "summary": "The Amsterdam-based company plans to use the funding for research and development and commercial expansion in Europe and the Middle East. The post Indurex Raises $8 Million to Expand Industrial Cybersecurity Platform appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "2bd447638fb1",
+   "title": "Signal Vulnerability Lets Malicious Callers Block Hang-Ups",
+   "link": "https://www.securityweek.com/signal-vulnerability-lets-malicious-callers-block-hang-ups/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-22T12:34:31Z",
+   "summary": "Affecting the open source calling library RingRTC, the bug prevented calls from ending properly. The post Signal Vulnerability Lets Malicious Callers Block Hang-Ups appeared first on SecurityWeek .",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "ec99b1cdf496",
+   "title": "Tech and Security Companies Respond to PHP2Shell Vulnerabilities",
+   "link": "https://www.securityweek.com/tech-and-security-companies-respond-to-php2shell-vulnerabilities/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-22T12:20:23Z",
+   "summary": "Vendors are checking their products for PHP2Shell, security firms are shipping detections, and governments are urging immediate patching. The post Tech and Security Companies Respond to PHP2Shell Vulnerabilities appeared first on SecurityWeek .",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "d76b50dba162",
+   "title": "The AI Agent Nobody Owns: Watch Expert Webinar On Your Newest Insider Threat",
+   "link": "https://thehackernews.com/2026/10/the-ai-agent-nobody-owns-watch-expert.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-22T11:45:00Z",
+   "summary": "Right now, there is probably an AI agent running on a laptop somewhere in your network. It stores API keys and database passwords, can access your internal systems, and works without anyone watching. Nobody reviewed its access. Nobody owns it. If an employee had that much reach with that little…",
+   "score": 2,
+   "tags": [
+    "Identity"
+   ],
+   "why": [
+    "Identity"
+   ],
+   "also": [
+    {
+     "source": "Microsoft Security Blog",
+     "url": "https://www.microsoft.com/en-us/security/blog/2026/10/19/agents-are-your-newest-insiders-security-must-move-at-their-speed/"
+    }
+   ]
+  },
   {
    "id": "0f812922fb34",
    "title": "GitLab warns of new max severity code execution vulnerability",
@@ -300,19 +499,6 @@
    ]
   },
   {
-   "id": "dd2c177462a4",
-   "title": "Meta Ordered to Pay New Mexico $25 Billion for Deceiving Users About Privacy on Facebook",
-   "link": "https://www.securityweek.com/meta-ordered-to-pay-new-mexico-25-billion-for-deceiving-users-about-privacy-on-facebook/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-22T07:26:54Z",
-   "summary": "The $25 billion award far exceeds a $5 billion fine the Federal Trade Commission levied against Facebook in 2019. The post Meta Ordered to Pay New Mexico $25 Billion for Deceiving Users About Privacy on Facebook appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
    "id": "eff3ebf7d52f",
    "title": "New QPACK Flaws Can Crash HTTP/3 Servers, Trigger Up to 4,000-Fold Memory Amplification",
    "link": "https://thehackernews.com/2026/10/new-qpack-flaws-can-crash-http3-servers.html",
@@ -444,25 +630,6 @@
    "why": []
   },
   {
-   "id": "92cbbe3f9264",
-   "title": "Australians facing spike in data breaches after 'critical' flaw uncovered",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPUTVlb25PVFZBMHhUV2czLTc5THpRZTNQQ0QyWUQwX25zRnQ5X0xCOGlzSjYtWWxuTnNDdExYVlNzVGFUczZaMzk0TWdydm1lUl9LUDVuN0FUQXpuV1NhYVVNU3dvLVBiR0I3TWJWdC1DV1RvZldJbmVJVnNxY3l1eXNGMUJMREcwakw2clM3WUFLSHVodjFqSGhTeHRqcGJBRUZIR0Y2cw?oc=5",
-   "source": "ABC News & Headlines – Australian Broadcasting Corporation",
-   "feed": "AU breach news",
-   "region": "AU",
-   "published": "2026-10-22T01:00:14Z",
-   "summary": "",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "Data breach"
-   ],
-   "why": [
-    "Australia",
-    "Data breach"
-   ]
-  },
-  {
    "id": "04fe29893135",
    "title": "Exclusive: Sydney-based visualisation firm Virtual Ideas hit by Lamashtu ransomware attack",
    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNcXFheFEyMm5RMW00RXRac3d3T0ZCSFR4X0dNRHZuNzdkdmN5WHozZjNEelJ5NGloVTNGMFZGb0JtT2FMWHNXQlZmSGFQZkZQdzJNX0p5Sk5ZUW9SOG5HaDE3RUNYR3dYT0Z0WWJlLVN3cHQxbU9lTm43eHNVbmIwOVh1OHVRUmdrTWdjcGNjTjNRV3FIMjF4c0czMzdKSVVCLWdKTGViV2ZwbnlkR1lTYmZ3Zzh2NVFETWNGam0wWnNFcDVxQldIcl9B?oc=5",
@@ -479,6 +646,25 @@
    "why": [
     "Australia",
     "Ransomware"
+   ]
+  },
+  {
+   "id": "92cbbe3f9264",
+   "title": "Australians facing spike in data breaches after 'critical' flaw uncovered",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPUTVlb25PVFZBMHhUV2czLTc5THpRZTNQQ0QyWUQwX25zRnQ5X0xCOGlzSjYtWWxuTnNDdExYVlNzVGFUczZaMzk0TWdydm1lUl9LUDVuN0FUQXpuV1NhYVVNU3dvLVBiR0I3TWJWdC1DV1RvZldJbmVJVnNxY3l1eXNGMUJMREcwakw2clM3WUFLSHVodjFqSGhTeHRqcGJBRUZIR0Y2cw?oc=5",
+   "source": "ABC News & Headlines – Australian Broadcasting Corporation",
+   "feed": "AU breach news",
+   "region": "AU",
+   "published": "2026-10-22T00:48:22Z",
+   "summary": "",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Data breach"
+   ],
+   "why": [
+    "Australia",
+    "Data breach"
    ]
   },
   {
@@ -1569,7 +1755,8 @@
      "source": "SecurityWeek",
      "url": "https://www.securityweek.com/php2shell-patches-land-as-first-exploitation-attempts-hit-sensors/"
     }
-   ]
+   ],
+   "epss": 0.0576
   },
   {
    "id": "73ce0a80572d",
@@ -2528,7 +2715,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0137
+   "epss": 0.0117
   },
   {
    "id": "17cca1785b07",
@@ -2548,7 +2735,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0076
+   "epss": 0.0082
   },
   {
    "id": "f8740efa0ba7",
@@ -2568,7 +2755,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0042
+   "epss": 0.0046
   },
   {
    "id": "58d95396f190",
@@ -2588,7 +2775,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0043
+   "epss": 0.0046
   },
   {
    "id": "4222a3123091",
@@ -2608,7 +2795,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0042
+   "epss": 0.0046
   },
   {
    "id": "d846792329f0",
@@ -2628,7 +2815,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0026
+   "epss": 0.0024
   },
   {
    "id": "d3fd0ebf24cf",
@@ -3073,25 +3260,6 @@
     "Identity",
     "Vulnerability",
     "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "cd30eb68866b",
-   "title": "Agents are your newest insiders. Security must move at their speed.",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/10/19/agents-are-your-newest-insiders-security-must-move-at-their-speed/",
-   "source": "Microsoft Security Blog",
-   "feed": "Microsoft Security Blog",
-   "region": "Global",
-   "published": "2026-10-19T13:00:00Z",
-   "summary": "New capabilities in Microsoft 365 E7 and Project Perception help organizations contain agent risk and adapt protection continuously. The post Agents are your newest insiders. Security must move at their speed. appeared first on Microsoft Security Blog .",
-   "score": 5,
-   "tags": [
-    "Microsoft 365",
-    "Vulnerability"
-   ],
-   "why": [
-    "Microsoft 365",
-    "Vulnerability"
    ]
   },
   {
@@ -4513,6 +4681,21 @@
    "why": []
   },
   {
+   "id": "34bc9d006102",
+   "title": "Perfect Forward Secrecy (PFS) | CGA",
+   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1aVGdUY3BLdXB2cTE1QXk4LTYyenppSTBCZzFBbXlUMWJuTzhVaWRhVy1jamVWZEp3XzV0T1cxZjBTQlFEOHFBeXB2SmpqSkR6amR3Z0t0UGZQYWdDRUdXOVltRFcwdENBejNmdFhB?oc=5",
+   "source": "Australian Cyber Security",
+   "feed": "ACSC (via Google News)",
+   "region": "AU",
+   "published": "2026-10-15T22:52:18Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "Australia"
+   ],
+   "why": []
+  },
+  {
    "id": "1d01a60427db",
    "title": "Exclusive: Poole Group investigating Lockbit ransomware attack",
    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPeG51S25HSU5scDZuRHpHMmwwZW14Z1hveUtVOTl0Yk1lTXN0cXNEdjVndXFucGxPQWdnXzd1emNRNEQwN2FON3c2cUpLV0YyQ2NiVkV6WmVIZ0pYcXNJa3o1NEpzV3JzQmV6QnNTOHBaY19pbGdOdkUzREk4dlBENjY5UHMtWTRkLWl3QnJqYnRzQkRORmFRYVZZdmJIX0dOaTZfbWlGLW1pOEM3VEF0U2NXUDBUZTA?oc=5",
@@ -4629,7 +4812,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0021
+   "epss": 0.0032
   },
   {
    "id": "6c8051f534fe",
@@ -5301,7 +5484,7 @@
     "Vulnerability",
     "SaaS / cloud"
    ],
-   "epss": 0.0478
+   "epss": 0.3831
   },
   {
    "id": "f27586b6e439",
@@ -6338,7 +6521,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0478
+   "epss": 0.3831
   },
   {
    "id": "eb20c74d6ce5",
@@ -6358,7 +6541,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0085
+   "epss": 0.0579
   },
   {
    "id": "62050be54e07",
@@ -7134,183 +7317,6 @@
    ],
    "why": [
     "Data breach"
-   ]
-  },
-  {
-   "id": "7dd50f3e50e9",
-   "title": "One in 10 Victorian auctions in doubt as tough new laws start",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQV1pzVTZtbkxLc0xDejhndDRVdFc2c1hVbUJBZlFFWVVObGQtZXJkbXAtU0doZEJyU0lXcUljVl9nRkN0QWtacE5pbDY2Y0ZxVzdtb2NsdUhIRFp1OWJsUW5RY2NxZER1NUlUWjNPVWQ3dVBTTzZnQXo3ZlVGWGxWcWs2YlBQcjNUbHRoMGhEMEx0cmRxOXFoWUE4dXlIZw?oc=5",
-   "source": "Real Estate",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-13T00:59:40Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "SaaS / cloud"
-   ],
-   "why": [
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "284537ac6899",
-   "title": "Govt agencies taking three months to report data breaches",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQTTh5eXRLRFRmNHg2TVV0enk4b1EyV0Y2YWpSSzZfQTdfdTlwNElyb3FyWkJoLW5nVU9iZ1daUTNLN2k5eDYyN1A1WFZpTkNiWFAtcW03Q1dHRGNfZkI2NldURGdQYlJPaXhSbG1WY2EwNHI2U25tdG9aUkZWdFlpYk5nUVVqREdQbFg2RUM5RlBHblRlSzZBY1BaRXJIQQ?oc=5",
-   "source": "Information Age | ACS",
-   "feed": "OAIC / Privacy news",
-   "region": "Global",
-   "published": "2026-10-13T00:23:15Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "6fda9a3fdd58",
-   "title": "Fake AUSTRAC officials, WhatsApp scams: Agencies targeted as AML/CTF enforcement ramps up",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNN09LdlZTODNZbXJITWZwYlFjUXU5VkN6VjRLODl6RkNYZUdLNnUzM0M3aC1uYzlMSGZVSWZPQmdPRmhxdDNUb09zOXpGQTMyVHRhYkg3bWNVZjU4WFFmSDJ5LXVkUVNoNGdzRzgzaGtSOVVJWG5mSU1OelljQlllaWtIbmVwUjJCWlN5NUNEM3lJdkxOUU5fTTBaLXZUemhYSTRyV0hPSnhPYWFxZUgwOHI1dXBjZ3ZwTGhNWThyUTJpa1VrQ0Zv?oc=5",
-   "source": "Cyber Daily",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-13T00:06:50Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "132cb4fa6db0",
-   "title": "CVE-2026-104935: Ivanti Connect Secure — Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-104935",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-10-13T00:00:00Z",
-   "summary": "Ivanti Connect Secure contains an authentication bypass by spoofing vulnerability that allows a remote unauthenticated attacker to execute arbitrary commands. CISA remediation due 2026-10-16.",
-   "score": 7,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "why": [
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "epss": 0.2598
-  },
-  {
-   "id": "f8e6abe81cc5",
-   "title": "CVE-2026-96951: Microsoft Windows — Microsoft Windows Command Injection Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-96951",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-10-13T00:00:00Z",
-   "summary": "Microsoft Windows Shell contains a command injection vulnerability that allows an unauthorized attacker to bypass a security feature over a network. CISA remediation due 2026-10-16.",
-   "score": 4,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.0151
-  },
-  {
-   "id": "9b30868fc224",
-   "title": "Daiichi Kosho data breach puts 8.7 mn records at risk in Japan",
-   "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE91NXlTRE56ZU5ZLVFLS083Qm5KdU1wSGNjSEZtQ25MVURjM3VieW5iVHRFUWRmcXgxUmN4S1FNOE1Dd3pjRjFVc3pTYjNRc2Fka2xnSmp3ckJJM1lIZV8tRndWWVZua2s3SEhNeW9oQjhlU21UQ1pIeTE3RQ?oc=5",
-   "source": "Beinsure",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-12T21:36:51Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "33ddcfb506bc",
-   "title": "Denmark CPR data breach exposes 8.75 mn records via weak password",
-   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5IaWZzZHN6bEtPMEpvSllPMGhVRXhuUS1SYURhOVlsdkFqd0FpalZvTTZfbVFvSnpGN0FFWDdNaG55TU5WMjdxTW5sNUYtcFBrZnU3Sm1Hc2dfbjJVaERFVzR4VmtBd05qcF9jNTRmYlY3U3pmVFMwajFXV1pNQQ?oc=5",
-   "source": "Beinsure",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-12T21:31:51Z",
-   "summary": "",
-   "score": 9,
-   "tags": [
-    "Data breach",
-    "Identity"
-   ],
-   "why": [
-    "Data breach",
-    "Identity"
-   ]
-  },
-  {
-   "id": "d0137ba408da",
-   "title": "Norway fines Microsoft ad firm $9.6 million over Grindr data sharing",
-   "link": "https://www.bleepingcomputer.com/news/security/norway-fines-microsoft-ad-firm-96-million-over-grindr-data-sharing/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-12T20:13:52Z",
-   "summary": "Norway's Data Protection Authority (Datatilsynet) has fined Microsoft-owned advertising company Xandr NOK 92 million ($9.6M) for unlawfully processing and sharing sensitive data belonging to Grindr users in the country. [...]",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "2bf942dfdae5",
-   "title": "The new phishing trick aimed at the AI reading your inbox",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOVEk0QS1obE55clJyUnp4N2xfT3o2N1lLT0lWZ01OcFB1aEM3WlREVFk4dFhTLWtjcWdIZjg1ZUg2MFA4SHBVdkR3TUtDUHJiRDFvcTg3TldmcGhTNmkxOEJPd2N3ZjduQU1zaHo5VVJON2E4SDQzUEMyb3Vpc3U5aU1tX2I0cDJzajRtcW5XUnItYTh2?oc=5",
-   "source": "Dynamic Business",
-   "feed": "ASD / ACSC in the news",
-   "region": "AU",
-   "published": "2026-10-12T20:02:06Z",
-   "summary": "",
-   "score": 9,
-   "tags": [
-    "Phishing",
-    "Australia"
-   ],
-   "why": [
-    "Phishing"
-   ]
-  },
-  {
-   "id": "4dcee3405aba",
-   "title": "Prominent Ransomware Negotiator Faces Extortion Charges",
-   "link": "https://www.darkreading.com/insider-threats/prominent-ransomware-negotiator-extortion-charges",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-12T20:00:53Z",
-   "summary": "Edward Dubrovsky, a longtime cybersecurity executive, was arrested and charged in Pennsylvania last week under conspiracy to extort money.",
-   "score": 4,
-   "tags": [
-    "Ransomware"
-   ],
-   "why": [
-    "Ransomware"
    ]
   }
  ]
