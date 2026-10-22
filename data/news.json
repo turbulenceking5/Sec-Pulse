@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-22T04:51:47Z",
+ "generated": "2026-10-22T11:56:35Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -16,25 +16,25 @@
   {
    "name": "ACSC (via Google News)",
    "ok": true,
-   "count": 0,
+   "count": 2,
    "error": null
   },
   {
    "name": "ASD / ACSC in the news",
    "ok": true,
-   "count": 2,
+   "count": 4,
    "error": null
   },
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 9,
+   "count": 7,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 7,
+   "count": 6,
    "error": null
   },
   {
@@ -106,6 +106,285 @@
  ],
  "items": [
   {
+   "id": "0f812922fb34",
+   "title": "GitLab warns of new max severity code execution vulnerability",
+   "link": "https://www.bleepingcomputer.com/news/security/gitlab-warns-of-new-max-severity-code-execution-vulnerability/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-22T11:41:48Z",
+   "summary": "GitLab has released security patches for a maximum-severity Regular Expression Compiler flaw that can let remote attackers run arbitrary code on vulnerable servers. [...]",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "76b18c2dc5a9",
+   "title": "Railway Says Intruder May Have Accessed Customer Secrets, Urges Credential Rotation",
+   "link": "https://thehackernews.com/2026/10/railway-says-intruder-may-have-accessed.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-22T11:15:42Z",
+   "summary": "Platform-as-a-Service (PaaS) provider Railway on Wednesday disclosed \"anomalous activity\" related to systems that store customer environment variables. Upon further investigation, the company found that an unauthorized third party may have gained access to encrypted environment variables, and, in…",
+   "score": 3,
+   "tags": [
+    "Identity"
+   ],
+   "why": [
+    "Identity"
+   ]
+  },
+  {
+   "id": "eb08dcb4a958",
+   "title": "Splunk, SolarWinds Release Fresh Security Updates",
+   "link": "https://www.securityweek.com/splunk-solarwinds-release-fresh-security-updates/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-22T10:45:24Z",
+   "summary": "Patched vulnerabilities could allow attackers to execute code, elevate privileges, and leak sensitive information. The post Splunk, SolarWinds Release Fresh Security Updates appeared first on SecurityWeek .",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "1d3516a0d0a6",
+   "title": "OpenCode Flaw Lets Malicious MCP Servers Execute Code During Sign-In on Windows and WSL",
+   "link": "https://thehackernews.com/2026/10/opencode-flaw-lets-malicious-mcp.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-22T10:44:05Z",
+   "summary": "A flaw in the OpenCode AI coding agent allowed a malicious or hijacked MCP server to run code on a developer's Windows or WSL machine when the developer signed in. OpenCode connects to MCP (Model Context Protocol) servers to add outside tools, and such code would run with the developer's own…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "34f12a1f7c34",
+   "title": "Cisco Patches 34 Vulnerabilities Across Multiple Products",
+   "link": "https://www.securityweek.com/cisco-patches-34-vulnerabilities-across-multiple-products/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-22T10:05:21Z",
+   "summary": "Critical-severity security defects could lead to command execution, authentication bypass, and XSS attacks. The post Cisco Patches 34 Vulnerabilities Across Multiple Products appeared first on SecurityWeek .",
+   "score": 5,
+   "tags": [
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "why": [
+    "Edge devices",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "01e27be4feb4",
+   "title": "PHP2Shell Exploitation Started Days Before Patches",
+   "link": "https://www.securityweek.com/php2shell-exploitation-started-days-before-patches/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-22T09:48:58Z",
+   "summary": "Initial attempts were observed on October 17, and mass activity began shortly after patches were released. The post PHP2Shell Exploitation Started Days Before Patches appeared first on SecurityWeek .",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "9ae2fe52b9b1",
+   "title": "Governments take websites offline as critical cyber flaws trigger global alert",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQajAwMnRPRDRwYjlpYmRFRmhlSkpWMHdtampsd0FPYTQyd0E4TzgyemJNRmRqU2R2ODhWNEw4U1F5RVJlNkxrYUZsRmlGcXBvOWV6M1FfcDdnbUJGbFN1Qnl2T0w2V1BQTkFxU29SR3RnS09Ba2R0UjJjU0xpNWVxRDVfU2lxY21Bd1JHMnJCMmZZVVdaMXdoVXp3b1Z5Z0tNdzJlOW1HTURHZTRyMWfSAa4BQVVfeXFMUGowMDJ0T0Q0cGI5aWJkRUZoZUpKVjB3bWpqbHdBT2E0MndBOE84MnpiTUZkalNkdjg4VjRMOFNReUVSZTZMa2FGbEZpRnFwbzllejNRX3A3Z21CRmxTdUJ5dk9MNldQUE5BcVNvUkd0Z0tPQWtkdFIyY1NMaTVlcUQ1X1NpcWNtQXdSRzJyQjJmWVVXWjF3aFV6d29WeWdLTXcyZTltR01ER2U0cjFn?oc=5",
+   "source": "Ariana News",
+   "feed": "ASD / ACSC in the news",
+   "region": "AU",
+   "published": "2026-10-22T08:33:48Z",
+   "summary": "",
+   "score": 8,
+   "tags": [
+    "SaaS / cloud",
+    "Australia"
+   ],
+   "why": [
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "a9227db3dd33",
+   "title": "LiteLLM Suspects GitHub Token Leak in AI Gateway Logs Behind Malicious Package Release",
+   "link": "https://thehackernews.com/2026/10/litellm-suspects-github-token-leak-in.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-22T08:28:48Z",
+   "summary": "LiteLLM on Wednesday disclosed that threat actors compromised \"multiple independent security controls\" to push a malicious version of the Python package containing a credential stealer and a backdoor. On October 21, 2026, LiteLLM's release pipeline was compromised to push 1.107.0 to the Docker Hub…",
+   "score": 4,
+   "tags": [
+    "Identity",
+    "AI threats"
+   ],
+   "why": [
+    "Identity",
+    "AI threats"
+   ]
+  },
+  {
+   "id": "df0211e45e19",
+   "title": "Authorities disrupt nearly 11,000 cybercrime networks in Africa",
+   "link": "https://www.bleepingcomputer.com/news/security/authorities-disrupt-nearly-11-000-cybercrime-networks-in-africa/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-22T08:27:11Z",
+   "summary": "Law enforcement agencies have disrupted nearly 11,000 cybercriminal networks and arrested more than 1,400 people in Operation Serengeti III, which targeted business email compromise, ransomware, and online scams. [...]",
+   "score": 9,
+   "tags": [
+    "BEC / payment fraud",
+    "Ransomware",
+    "Vulnerability"
+   ],
+   "why": [
+    "BEC / payment fraud",
+    "Ransomware",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "29143f2ae20d",
+   "title": "Node.js Brotli Decoder Bug Could Allow Remote Code Execution in All Supported Versions",
+   "link": "https://thehackernews.com/2026/10/nodejs-brotli-decoder-bug-could-allow.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-22T07:47:22Z",
+   "summary": "Node.js released security updates on October 21 for its three supported release lines, 22.x, 24.x and 26.x, fixing 10 flaws. The most serious is a bug in the Brotli decompression code that Node.js bundles, which the project says can allow remote code execution, meaning an attacker could run code…",
+   "score": 4,
+   "tags": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "a5298e0f95bc",
+   "title": "Oracle Patches Over 1,200 Vulnerabilities With October 2026 CPU",
+   "link": "https://www.securityweek.com/oracle-patches-over-1200-vulnerabilities-with-october-2026-cpu/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-22T07:38:14Z",
+   "summary": "Nearly 100 vulnerabilities have been assigned a critical severity rating and Fusion Middleware received the most patches. The post Oracle Patches Over 1,200 Vulnerabilities With October 2026 CPU appeared first on SecurityWeek .",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "dd2c177462a4",
+   "title": "Meta Ordered to Pay New Mexico $25 Billion for Deceiving Users About Privacy on Facebook",
+   "link": "https://www.securityweek.com/meta-ordered-to-pay-new-mexico-25-billion-for-deceiving-users-about-privacy-on-facebook/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-22T07:26:54Z",
+   "summary": "The $25 billion award far exceeds a $5 billion fine the Federal Trade Commission levied against Facebook in 2019. The post Meta Ordered to Pay New Mexico $25 Billion for Deceiving Users About Privacy on Facebook appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "eff3ebf7d52f",
+   "title": "New QPACK Flaws Can Crash HTTP/3 Servers, Trigger Up to 4,000-Fold Memory Amplification",
+   "link": "https://thehackernews.com/2026/10/new-qpack-flaws-can-crash-http3-servers.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-22T06:38:31Z",
+   "summary": "A remote attacker who has not logged in can crash many HTTP/3 web servers with a single connection, security firm FoxIO disclosed, releasing working proof-of-concept code. By sending a small batch of compressed HTTP headers that expands in memory to a much larger set, the attacker can force the…",
+   "score": 4,
+   "tags": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "3d29fe5d9f89",
+   "title": "Someone Tried to Exploit PHP2Shell 4 Days Before the Vulnerabilities Were Publicly Disclosed",
+   "link": "https://thehackernews.com/2026/10/someone-tried-to-exploit-php2shell-4.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-22T06:34:10Z",
+   "summary": "Amazon's Threat Intelligence team on Wednesday said it detected an attempt to exploit the newly disclosed PHP2Shell vulnerabilities on October 17, 2026, against its MadPot honeypot service, as the flaws come under broad exploitation in the wild following the release of the patches. \"The exploit…",
+   "score": 7,
+   "tags": [
+    "Actively exploited",
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Actively exploited",
+    "Vulnerability",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "b4d6fa6b5fba",
+   "title": "Australian govt websites affected by PHP vulnerability",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQcFdROXpVZ1JrbDRkTFkwRnYxWkVfcGtXZVZPOWFuZ2hMaEtpNEUyS2xGaTFKTDVhYzB5YWRja1IxS195TnJOS1ZTdXJXOXZkT0pvRkJqLW4zNDczNG1pdVFNWGwxb1hzeWtfMFlrbUZzYmpNYnZMN0Z0VmxadzRNR2VGV1g4azVCc1dyeVl0dXEtNFk1Mkcxc3B5NnFIX2NfQjZOR1pPRTVLNlFPRVZvRXNDeDg?oc=5",
+   "source": "Free Malaysia Today",
+   "feed": "ASD / ACSC in the news",
+   "region": "AU",
+   "published": "2026-10-22T05:52:00Z",
+   "summary": "",
+   "score": 12,
+   "tags": [
+    "Australia",
+    "Vulnerability"
+   ],
+   "why": [
+    "Australia",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "a734856ab1ed",
+   "title": "UAE Transitions 50% of Gov't Services to Agentic AI",
+   "link": "https://www.darkreading.com/cybersecurity-operations/uae-transitions-50-government-services-agentic-ai",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-22T05:00:00Z",
+   "summary": "The United Arab Emirates says it's creating a foundation of security and safety as it transforms its public service footprint.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
    "id": "535888929304",
    "title": "Email compromise the top cyber threat: underwriter",
    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5lc0hqazUyNVdHSWJWOVlGY2M0dThxb01CYl95RlpCWlZNLTJWRjdnZHBGdnE5WmhtQ3M3bkxIN25JU1IwU1ZPRFJsU1FmODFZZng2UHlJNDZxWTJMUmh1c3p6WTV5ejdBSG9aNE5xczVQb0F0N3hIR3RuN202M1k?oc=5",
@@ -129,6 +408,29 @@
    ]
   },
   {
+   "id": "ff0e5ee2728a",
+   "title": "China-linked hackers breach ConnectWise backup in AI-driven attack",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOYUhUaWgxcVNKcUNRV1RtbEFRVFFwTk43QU81dDBjN1Q2LV9KdlllUzN5dUJBcFhBVXJUTjBlUV8yRjlPcEtpSG1OU2dEZW1hS05NZlE4VTU0d2YyUFRPVHFjeks2SU1JQTBWdERjYU9rNEktSUU2RHlrTS1VZzhUUzdpSWVzWjVyS0VnVkl5Q2R4WVUxU254ZFQyeU5YbTJTbmFaMGttZkNJZzJ0SkQ4S1VCYWZHWVA1VmNndlVTTkRTajZQVFE?oc=5",
+   "source": "Insurance Business",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-22T02:02:36Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/china-linked-hackers-use-artex-ai.html"
+    }
+   ]
+  },
+  {
    "id": "0dbc9387e361",
    "title": "ISC Stormcast For Thursday, October 22nd, 2026 https://isc.sans.edu/podcastdetail/10146, (Thu, Oct 22nd)",
    "link": "https://isc.sans.edu/diary/rss/33446",
@@ -140,6 +442,25 @@
    "score": 1,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "92cbbe3f9264",
+   "title": "Australians facing spike in data breaches after 'critical' flaw uncovered",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPUTVlb25PVFZBMHhUV2czLTc5THpRZTNQQ0QyWUQwX25zRnQ5X0xCOGlzSjYtWWxuTnNDdExYVlNzVGFUczZaMzk0TWdydm1lUl9LUDVuN0FUQXpuV1NhYVVNU3dvLVBiR0I3TWJWdC1DV1RvZldJbmVJVnNxY3l1eXNGMUJMREcwakw2clM3WUFLSHVodjFqSGhTeHRqcGJBRUZIR0Y2cw?oc=5",
+   "source": "ABC News & Headlines – Australian Broadcasting Corporation",
+   "feed": "AU breach news",
+   "region": "AU",
+   "published": "2026-10-22T01:00:14Z",
+   "summary": "",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Data breach"
+   ],
+   "why": [
+    "Australia",
+    "Data breach"
+   ]
   },
   {
    "id": "04fe29893135",
@@ -158,25 +479,6 @@
    "why": [
     "Australia",
     "Ransomware"
-   ]
-  },
-  {
-   "id": "92cbbe3f9264",
-   "title": "Australians facing spike in data breaches after 'critical' flaw uncovered",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPUTVlb25PVFZBMHhUV2czLTc5THpRZTNQQ0QyWUQwX25zRnQ5X0xCOGlzSjYtWWxuTnNDdExYVlNzVGFUczZaMzk0TWdydm1lUl9LUDVuN0FUQXpuV1NhYVVNU3dvLVBiR0I3TWJWdC1DV1RvZldJbmVJVnNxY3l1eXNGMUJMREcwakw2clM3WUFLSHVodjFqSGhTeHRqcGJBRUZIR0Y2cw?oc=5",
-   "source": "ABC News & Headlines – Australian Broadcasting Corporation",
-   "feed": "AU breach news",
-   "region": "AU",
-   "published": "2026-10-22T00:48:22Z",
-   "summary": "",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "Data breach"
-   ],
-   "why": [
-    "Australia",
-    "Data breach"
    ]
   },
   {
@@ -568,7 +870,7 @@
    "feed": "The Hacker News",
    "region": "Global",
    "published": "2026-10-21T16:33:47Z",
-   "summary": "OpenAI has revealed that two artificial intelligence (AI) agents powered by GPT-6.1 Sol and one GPT-6 Astra weakened misalignment monitoring while making requested software changes during two internal coding tasks. The AI company said the incident took place on October 3 and 6, 2026, for Sol and…",
+   "summary": "OpenAI has revealed that two artificial intelligence (AI) agents powered by GPT-6.1 Sol and GPT-6 Astra weakened misalignment monitoring while making requested software changes during two internal coding tasks. The AI company said the incident took place on October 3 and 6, 2026, for Sol and…",
    "score": 0,
    "tags": [],
    "why": [],
@@ -938,6 +1240,21 @@
    "why": []
   },
   {
+   "id": "21956da9d15b",
+   "title": "Critical vulnerabilities in PHP | CGA",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE81OHpLdWRyeFdnclNtbnlfMnF5YXp2SlFybTQ2aTh3RVB5RHQtOXJiTGlpXzl1eEZQaURMRWN4MnBSa3ktWjZQd3NwM3ZnWWNHcXd2bTFRaC1OYzZXOGxicklacVNXMms2MHpCbkhXcw?oc=5",
+   "source": "Australian Cyber Security Centre",
+   "feed": "ACSC (via Google News)",
+   "region": "AU",
+   "published": "2026-10-21T12:00:00Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "Australia"
+   ],
+   "why": []
+  },
+  {
    "id": "b81260804ad3",
    "title": "Generative AI Is Erasing Behavioral Tells, Weakening Behavior-Only Detection, Proofpoint Reports",
    "link": "https://thehackernews.com/2026/10/generative-ai-is-erasing-behavioral.html",
@@ -1292,6 +1609,10 @@
     {
      "source": "GBHackers News",
      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5ucUp5ejJ3bHRQUVRHWmg0QW1ycVNaMGxnckxnQUx4NEhoSDBIWk1pblJBMkltbVlCX2JNNlh5clNVcUJmUUhFNGRfYUlZTC1jV3NuWF9yMG1KUzlf0gFiQVVfeXFMTmlFMVp2T0tmVVFMY3IyM3I5Mk5PUnRLUDZmZHF3TGJVM05BNFprY2owUlpsNFdvckFBYTFoRl9lNzFIdkM1dzIxSUNXdVNiOUdlTldqR3BCYzR2V2ZfcnJDRFE?oc=5"
+    },
+    {
+     "source": "Security Affairs",
+     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQM2J6Qmx3VWVReWxvMUFuV3VBTVF3czEteFlXelh4ZGxrcDVVeDJOZnVvdjAxQkVBX3J2YS1LcnI3VFBySlBrNi1admp4QmhpYm9KZzFVTEh3S2pqeDAzRHJMUEpBeVBWbjJ3VkprN1d3ZGJuc1FpUWJHZVVPaV8wWjI1SVRXMUpDdlB2YmRCZ0lpNVBWVTZrbE9CZWZNTG1fLXo0eS01amFLMF8xSHVnWWt0VzY0VGRwaWt6UzZrdU9DQdIBwgFBVV95cUxQM2J6Qmx3VWVReWxvMUFuV3VBTVF3czEteFlXelh4ZGxrcDVVeDJOZnVvdjAxQkVBX3J2YS1LcnI3VFBySlBrNi1admp4QmhpYm9KZzFVTEh3S2pqeDAzRHJMUEpBeVBWbjJ3VkprN1d3ZGJuc1FpUWJHZVVPaV8wWjI1SVRXMUpDdlB2YmRCZ0lpNVBWVTZrbE9CZWZNTG1fLXo0eS01amFLMF8xSHVnWWt0VzY0VGRwaWt6UzZrdU9DQQ?oc=5"
     }
    ]
   },
@@ -1443,6 +1764,25 @@
    ]
   },
   {
+   "id": "acbdae47d822",
+   "title": "Homeless Queensland man blasts $480-a-week driveway rental",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQRUs3N2MtM3Q4Z1NhM25MclFzQ2Iyb3NQN0hfTXBxT0x0cE8tTWdUVGkzR0dWZGVrMjdvbzhQRGxFTFpXY195SjMtejYtcnhCRDllbTFtaEdTWjZ0N1YzVDRkXzF2aW0wQW1sWXByNU00OUJ3TWtyaDdvTGZFU1JOUDI3ZmhfcjJOaDhSVHVlSDh3TnNSTEE?oc=5",
+   "source": "Real Estate",
+   "feed": "Real estate cyber news",
+   "region": "AU",
+   "published": "2026-10-20T22:14:11Z",
+   "summary": "",
+   "score": 17,
+   "tags": [
+    "Real estate",
+    "Australia"
+   ],
+   "why": [
+    "Real estate",
+    "Australia"
+   ]
+  },
+  {
    "id": "05dd90fd0f45",
    "title": "PHP warns admins of two critical flaws, emergency patches coming tomorrow",
    "link": "https://www.bleepingcomputer.com/news/security/php-warns-admins-of-two-critical-flaws-emergency-patches-coming-tomorrow/",
@@ -1461,6 +1801,16 @@
     "Data breach",
     "Vulnerability",
     "SaaS / cloud"
+   ],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/php-issues-emergency-patches-for-two.html"
+    },
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/php2shell-two-unpatched-critical-php.html"
+    }
    ]
   },
   {
@@ -4625,7 +4975,7 @@
    "id": "502c877b3bd3",
    "title": "Which chapter should I start with?",
    "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1PeDMyVE5zNFFyTDlOQ3ZzTDBNaXNtaHBMaExxU3g4Rm8zaVV2VXNZZnVucFQwTW0xSF82YVZnT0dlZFB1SEprZDVNSXNrRHZGaENuSFJuYUo4YnBROXRRN185SmF6SnZ4UE9QbXc4OHhEajNaOEg1TVBn?oc=5",
-   "source": "Australian Cyber Security",
+   "source": "Australian Cyber Security Centre",
    "feed": "ACSC (via Google News)",
    "region": "AU",
    "published": "2026-10-15T12:00:00Z",
@@ -6955,341 +7305,6 @@
    "region": "Global",
    "published": "2026-10-12T20:00:53Z",
    "summary": "Edward Dubrovsky, a longtime cybersecurity executive, was arrested and charged in Pennsylvania last week under conspiracy to extort money.",
-   "score": 4,
-   "tags": [
-    "Ransomware"
-   ],
-   "why": [
-    "Ransomware"
-   ]
-  },
-  {
-   "id": "8d0ac34c06d5",
-   "title": "Yandex confirms service outage as users lose access to cloud files",
-   "link": "https://www.bleepingcomputer.com/news/security/yandex-confirms-service-outage-as-users-lose-access-to-cloud-files/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-12T19:23:01Z",
-   "summary": "Russian cloud services provider Yandex announced that drone attacks damaged three of its data centers, forcing it to shut down two facilities and partially disable a third. [...]",
-   "score": 2,
-   "tags": [
-    "SaaS / cloud"
-   ],
-   "why": [
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "8ba9b8e7a12a",
-   "title": "Anthropic takes risky AI tests offline after models breach govt sites",
-   "link": "https://www.bleepingcomputer.com/news/security/anthropic-takes-risky-ai-tests-offline-after-models-breach-govt-sites/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-12T18:51:59Z",
-   "summary": "Anthropic announced that its internal AI models undergoing \"high-risk and cybersecurity evaluations\" no longer have internet access following incidents involving U.S. government websites at the federal, state, and local levels. [...]",
-   "score": 4,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "220c7ab693cd",
-   "title": "Criminals used 79 dormant domains to impersonate a top real estate team",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNTUhiSTN3eUdNc2NMVVdSR0VoaUFsUVk5Z2NJd1RXTGZycF9qUkhrczVzRHdYUHZKMWxXM0ZzaDliSWhid1BnZjg4cDJKMENzc1pPWjFKc3NFYWptQ1pSR1pkalh5ZjF6ejhINmlib0pwWWIxdGpXcEQ4Wk5oa2o3OG13YTRfSnM3aUZEN0p4NUlick1wZVVlNUtBRzVnS1hVOWlnX2NvSjFueXRuc2c?oc=5",
-   "source": "HousingWire",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-12T18:28:08Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ]
-  },
-  {
-   "id": "61395f90aa8a",
-   "title": "No Identity, No Recovery: Cyber Resilience Starts With IAM",
-   "link": "https://www.darkreading.com/cybersecurity-operations/cyber-resilience-starts-with-iam",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-12T18:27:25Z",
-   "summary": "The proliferation of enterprise apps and the centrality of cloud identity providers requires an identity security rethink.",
-   "score": 3,
-   "tags": [
-    "Microsoft 365"
-   ],
-   "why": [
-    "Microsoft 365"
-   ]
-  },
-  {
-   "id": "4394f737f6a4",
-   "title": "Canadian Ransomware Negotiator Arrested in FBI Breach Probe",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQNnN2SzJ2ZkQ3cWdXQjI2aVB1XzdYd3JMZ3N4RE5Sb3NjdGVqdmdtZzVWWjBFZmExZW1TREs2eGE0YlVfdmtRa2hDdVhXYTVvVnVzMlFvX1RjU0x0T0NiUXBzSDFUNzZpY0RHckVrVWE2V2pKYmRNOFZyekY4cGhZSFcyNTdSOGVYQ2kySHdEaXFKOTItaVZxb3gxTUFjZXNrQ3c?oc=5",
-   "source": "BankInfoSecurity",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-12T16:29:34Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Ransomware",
-    "Data breach"
-   ],
-   "why": [
-    "Ransomware",
-    "Data breach"
-   ]
-  },
-  {
-   "id": "782eca2d8fc0",
-   "title": "Cyber-attack similar to OpenAI Medicare breach seems likely in UK, says minister",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQanFCd2l3akRydHFXY29pRTZCazF6UXljRERLWHpZMzZVNkZlN19VMG5qSnkwRzJjVGpRNm5fMGxKV0p4R05UWnZqTi1JUTVJOHVzR0tUYnRMRTRGN3lHaU1qc2ZjdV9NbmFtVTZwZ1NLQ1lUcGNnb0JJZk4xdzEyTmhPVmhNeHh1RHgyRWRwRnJ4cDZ1Sk5EMGszVFVpbDVaT0p3b3NZNnN2T3JoQXJ1LXVmVk1KcDlaV3N2VHl4Y1ZPdw?oc=5",
-   "source": "The Guardian",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-12T16:23:00Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ],
-   "also": [
-    {
-     "source": "BBC",
-     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5BVzFodUpGU2dHVGdvMzFqTTdZNmVsQXctREZkMVg0dmNPZXJZaDVidmlna19nM25WWW5BSU52TlJ3TWtTNHNOczNEZEhFc1dLNDdpMEZVV1JDYlk?oc=5"
-    },
-    {
-     "source": "Daily Mirror",
-     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPY205MnNsMTlpQUIzemxhWEZMVldiX0hzdTF1Y1p1QUpnZW4wT2QwclVNS0RMUk1taHhHZjlQai04YjNsdnJpVDZwbl9mU3FWMUNJRkdSWTlfME4xdTBGTkNYVk16aE16TENoTUVFVHh3cHN2Y3p3Zl9FRXk4QjRLRk82YWdOWU93aTNUVS1vSzVkcHBmcndFc0RKONIBoAFBVV95cUxPcmMzV2ZUclRvZVdBMWhSdFEtRk5GdDJiejBzQ2VnRUlvTmNicGxNUWRvek5pY0t4aE83YU5NSGItdGlheFYtdVZBcHdVMkQwSG1wdGIyY3ZyeUd3YnRxM3JMNFdPQnM1Y2xFYlJsZlUyb2xXSzJ3M2RLdEM0SVNncGptbXlMTkpyYi1jcV9qcldaRUVxQ1JsZVp2WG9TUDdo?oc=5"
-    }
-   ]
-  },
-  {
-   "id": "6e33620606a0",
-   "title": "⚡ Weekly Recap: Helpdesk 0-Days, Rogue Certs, ShinyHunters Arrest, AI-Fooling Malware and More",
-   "link": "https://thehackernews.com/2026/10/weekly-recap-helpdesk-0-days-rogue.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-12T15:16:26Z",
-   "summary": "Some meetings last longer than it took attackers to jump on a newly disclosed security flaw this week. Within hours, they were already testing it. That's not much time to read the warning, let alone do something about it. But speed is only part of the problem. A secure connection didn't always…",
-   "score": 9,
-   "tags": [
-    "Actively exploited",
-    "Ransomware"
-   ],
-   "why": [
-    "Actively exploited",
-    "Ransomware"
-   ]
-  },
-  {
-   "id": "ef7595ad07b8",
-   "title": "IonQ to Acquire Zero Trust Firm Elisity for Up to $1.3 Billion",
-   "link": "https://www.securityweek.com/ionq-to-acquire-zero-trust-firm-elisity-for-up-to-1-3-billion/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-12T14:25:00Z",
-   "summary": "The all-stock deal brings Elisity’s least-privilege access technology into IonQ’s security portfolio. The post IonQ to Acquire Zero Trust Firm Elisity for Up to $1.3 Billion appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "7a7fbf93e11c",
-   "title": "Inside AvisLoader: A Windows Malware Loader Built to Resist Disruption",
-   "link": "https://www.bleepingcomputer.com/news/security/inside-avisloader-a-windows-malware-loader-built-to-resist-disruption/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-12T14:00:10Z",
-   "summary": "A new Windows malware loader called AvisLoader uses encrypted peer-to-peer communications to make command-and-control infrastructure harder to disrupt. Varonis researchers explain how the malware uses ClickFix delivery, shortcut-based persistence, and remote command execution capabilities. [...]",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "5ffff8d173ed",
-   "title": "Bricksforge WordPress Plugin Vulnerability Exploited in the Wild",
-   "link": "https://www.securityweek.com/bricksforge-wordpress-plugin-vulnerability-exploited-in-the-wild/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-12T13:14:37Z",
-   "summary": "The vulnerability tracked as CVE-2026-85097 can allow threat actors to take control of the targeted WordPress websites. The post Bricksforge WordPress Plugin Vulnerability Exploited in the Wild appeared first on SecurityWeek .",
-   "score": 7,
-   "tags": [
-    "Actively exploited",
-    "Vulnerability"
-   ],
-   "why": [
-    "Actively exploited",
-    "Vulnerability"
-   ],
-   "epss": 0.0031,
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/attackers-exploit-cvss-100-bricksforge.html"
-    }
-   ]
-  },
-  {
-   "id": "175a7df5c5cc",
-   "title": "GitLab warns of max severity code execution vulnerability",
-   "link": "https://www.bleepingcomputer.com/news/security/gitlab-warns-of-max-severity-rce-flaw-in-regex-compiler-engine/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-12T13:09:09Z",
-   "summary": "GitLab warned users today to immediately patch a maximum-severity vulnerability in the CI/CD Regular Expression Compiler that could let remote attackers run arbitrary code on targeted instances. [...]",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "f09be95f6cf3",
-   "title": "Passing the Baton: Dark Reading Names New Editor-in-Chief",
-   "link": "https://www.darkreading.com/cyber-risk/passing-baton-dark-reading-new-editor-in-chief",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-12T12:30:58Z",
-   "summary": "Fahmida Y. Rashid will keep the momentum going as she leads Dark Reading.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "89310c4a866b",
-   "title": "Canonical Websites Disrupted in Second DDoS Attack This Year",
-   "link": "https://www.securityweek.com/canonical-websites-disrupted-in-second-ddos-attack-this-year/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-12T11:58:39Z",
-   "summary": "The outage hit the main Ubuntu and Canonical websites, including the Ubuntu blog and developer portal. The post Canonical Websites Disrupted in Second DDoS Attack This Year appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "fb25f61ae291",
-   "title": "Microsoft: Windows 11 23H2 reaches end of support in 30 days",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-11-23h2-reaches-end-of-support-in-30-days/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-12T11:58:33Z",
-   "summary": "Microsoft has reminded customers that systems running Windows 11 23H2 Enterprise, Education, and IoT Enterprise editions will stop receiving security updates next month. [...]",
-   "score": 1,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "172b933e4740",
-   "title": "Bring Your Own Agent: Your Employees' Assistants Are Already Logged In",
-   "link": "https://thehackernews.com/2026/10/bring-your-own-agent-your-employees.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-12T11:55:00Z",
-   "summary": "The personal AI agents rollout is going about as smoothly as expected: Amazon now blocks Meta's Muse because it doesn't identify itself as a bot while browsing; Instinct keeps raising privacy concerns; and the horror stories from pretty much every personal AI agent keep piling up. Regardless, the…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "876fc8d20364",
-   "title": "Mastermind of 15,000-Mule Cybercrime Laundering Network Pleads Guilty in US",
-   "link": "https://www.securityweek.com/mastermind-of-15000-mule-cybercrime-laundering-network-pleads-guilty-in-us/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-12T11:24:50Z",
-   "summary": "Oleg Korniev was a leader of YMCO, a sophisticated network of money mules that helped hackers move funds outside the US. The post Mastermind of 15,000-Mule Cybercrime Laundering Network Pleads Guilty in US appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "34f9e6caf0ef",
-   "title": "iRhythm Data Breach Impacts at Least 360,000 People",
-   "link": "https://www.securityweek.com/irhythm-data-breach-impacts-over-360000-people/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-12T11:05:43Z",
-   "summary": "Hackers stole patients’ personal information, including names, addresses, email addresses, dates of birth, and phone numbers. The post iRhythm Data Breach Impacts at Least 360,000 People appeared first on SecurityWeek .",
-   "score": 4,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "5124492cfbfb",
-   "title": "Critical SonicWall SMA 1000 Flaw Targeted in 135 Exploitation Attempts After Patch",
-   "link": "https://thehackernews.com/2026/10/critical-sonicwall-sma-1000-flaw.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-12T10:36:56Z",
-   "summary": "Threat actors have been observed exploiting a recently disclosed critical security flaw in SonicWall Secure Mobile Access (SMA) 1000 appliances within days of public disclosure. The vulnerability, tracked as CVE-2026-102255 (CVSS score: 10.0), is a case of pre-authenticated server-side request…",
-   "score": 5,
-   "tags": [
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "why": [
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "epss": 0.0048,
-   "also": [
-    {
-     "source": "Dark Reading",
-     "url": "https://www.darkreading.com/vulnerabilities-threats/max-severity-ssrf-flaw-sonicwall-sma-devices-under-attack"
-    },
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/critical-sonicwall-vulnerability-exploited-days-after-disclosure/"
-    }
-   ]
-  },
-  {
-   "id": "9ce734d52cda",
-   "title": "Ransomware Response Expert Arrested in ShinyHunters FBI Hack Probe",
-   "link": "https://www.securityweek.com/ransomware-response-expert-arrested-in-shinyhunters-fbi-hack-probe/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-12T10:32:05Z",
-   "summary": "The suspect is believed to be Edward Dubrovsky, a Canadian cybersecurity executive who was visiting the United States for a conference. The post Ransomware Response Expert Arrested in ShinyHunters FBI Hack Probe appeared first on SecurityWeek .",
    "score": 4,
    "tags": [
     "Ransomware"
