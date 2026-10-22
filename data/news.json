@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-22T17:13:15Z",
+ "generated": "2026-10-22T21:38:33Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,7 +28,7 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 8,
+   "count": 9,
    "error": null
   },
   {
@@ -40,7 +40,7 @@
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 0,
+   "count": 1,
    "error": null
   },
   {
@@ -106,6 +106,212 @@
  ],
  "items": [
   {
+   "id": "6af5f5a84e31",
+   "title": "Railway warns devs to rotate secrets after potential breach",
+   "link": "https://www.bleepingcomputer.com/news/security/railway-warns-devs-to-rotate-secrets-after-potential-breach/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-22T21:25:31Z",
+   "summary": "Cloud platform Railway published an urgent warning to users after detecting suspicious activity on its systems that store customer environment variables earlier this week. [...]",
+   "score": 4,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "0a62902654ce",
+   "title": "What We Missed: Feds Lasso Texas Laptop Farms",
+   "link": "https://www.darkreading.com/insider-threats/texas-laptop-farms-north-korean-it-workers",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-22T20:33:10Z",
+   "summary": "In this video, Dark Reading editors discuss some of the news they didn't get a chance to cover, from busting up North Korea's stateside infrastructure in \"Operation Lonestar Justice\" to Staples' gift card bonanza.",
+   "score": 3,
+   "tags": [
+    "Identity"
+   ],
+   "why": [
+    "Identity"
+   ]
+  },
+  {
+   "id": "177124c993da",
+   "title": "Capcom confirms data breach affecting 11.7 million accounts",
+   "link": "https://www.bleepingcomputer.com/news/security/capcom-confirms-data-breach-affecting-117-million-accounts/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-22T20:22:45Z",
+   "summary": "Japanese gaming giant Capcom has confirmed that hackers breached its membership service, CAPCOM ID, exposing more than 11.7 million customer email addresses and associated information. [...]",
+   "score": 6,
+   "tags": [
+    "Data breach",
+    "Identity"
+   ],
+   "why": [
+    "Data breach",
+    "Identity"
+   ]
+  },
+  {
+   "id": "a0b44de98d51",
+   "title": "Les supermarchés de l'UE paient d'un firmware de réfrigérateur non mis à jour",
+   "link": "https://www.darkreading.com/ics-ot-security/eu-grocers-unpatched-fridge-firmware-french",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-22T19:30:20Z",
+   "summary": "Des centaines de magasins ont subi des pertes se chiffrant en millions d'euros parce qu'ils avaient fait appel à des tiers pour gérer le micrologiciel OT obsolète qui pilotait leurs systèmes de climatisation.",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "0151e8522bf7",
+   "title": "LiteLLM release pipeline hacked to distribute info-stealer malware",
+   "link": "https://www.bleepingcomputer.com/news/security/litellm-release-pipeline-hacked-to-distribute-info-stealer-malware/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-22T19:12:51Z",
+   "summary": "Hackers compromised the LiteLLM project's PyPI package and published malicious Docker images with a payload that steals credentials, secrets, and environment variables. [...]",
+   "score": 5,
+   "tags": [
+    "Identity",
+    "AI threats"
+   ],
+   "why": [
+    "Identity",
+    "AI threats"
+   ],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/hackers-hijack-five-ovhcloud-cli.html"
+    }
+   ]
+  },
+  {
+   "id": "d76b50dba162",
+   "title": "The AI Agent Nobody Owns: Watch Expert Webinar On Your Newest Insider Threat",
+   "link": "https://thehackernews.com/2026/10/the-ai-agent-nobody-owns-watch-expert.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-22T19:05:35Z",
+   "summary": "Right now, there is probably an AI agent running on a laptop somewhere in your network. It stores API keys and database passwords, can access your internal systems, and works without anyone watching. Nobody reviewed its access. Nobody owns it. If an employee had that much reach with that little…",
+   "score": 2,
+   "tags": [
+    "Identity"
+   ],
+   "why": [
+    "Identity"
+   ],
+   "also": [
+    {
+     "source": "Microsoft Security Blog",
+     "url": "https://www.microsoft.com/en-us/security/blog/2026/10/19/agents-are-your-newest-insiders-security-must-move-at-their-speed/"
+    }
+   ]
+  },
+  {
+   "id": "23872cb1986e",
+   "title": "Arista Warns of Critical VeloCloud SQL Injection Zero-Day Exploited in Attacks",
+   "link": "https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-22T19:05:17Z",
+   "summary": "Attackers are exploiting a zero-day SQL injection flaw in Arista's VeloCloud Orchestrator (VCO), the central management system for VeloCloud SD-WAN networks, the company said in an advisory on October 22. The flaw lets anyone who can log in to the orchestrator, even with a read-only customer…",
+   "score": 8,
+   "tags": [
+    "Actively exploited",
+    "Microsoft 365"
+   ],
+   "why": [
+    "Actively exploited",
+    "Microsoft 365"
+   ],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/arista-patches-new-velocloud-orchestrator-zero-day-exploited-in-attacks/"
+    }
+   ]
+  },
+  {
+   "id": "f74ce17a74d9",
+   "title": "eMudhra to Exit Global SSL/TLS Business After 8 Intermediate CA Keys Found Easily Guessable",
+   "link": "https://thehackernews.com/2026/10/emudhra-to-exit-global-ssltls-business.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-22T18:12:43Z",
+   "summary": "eMudhra, an Indian certificate authority (CA), will withdraw from its global SSL/TLS certificate business, its board decided on Thursday. The decision came five days after a researcher reported recovering the private keys of eight of its intermediate CA certificates. eMudhra said it will replace…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "a45e553ca30b",
+   "title": "ThreatsDay: AI Secrets Leak, PingCAP Source Theft, Signal Hang-Up Flaw, Laravel Auth Bypass + 21 More",
+   "link": "https://thehackernews.com/2026/10/threatsday-ai-secrets-leak-pingcap.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-22T17:45:44Z",
+   "summary": "This week has already been rough for cybersecurity. Critical PHP and GitLab RCE flaws, serious Linux security bugs, compromised eMudhra certificates, a Node.js RCE flaw, a hacked LiteLLM release, and hundreds of hijacked Tor relays. That's a lot to deal with in just a few days. And the week isn't…",
+   "score": 5,
+   "tags": [
+    "Vulnerability",
+    "SaaS / cloud",
+    "AI threats"
+   ],
+   "why": [
+    "Vulnerability",
+    "SaaS / cloud",
+    "AI threats"
+   ],
+   "also": [
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/signal-vulnerability-lets-malicious-callers-block-hang-ups/"
+    }
+   ]
+  },
+  {
+   "id": "eebdb3f4f6ae",
+   "title": "Two CVSS 9.0 Linux KSMBD RCE Flaws Disclosed on Public Mailing Lists Before Kernel Fixes",
+   "link": "https://thehackernews.com/2026/10/two-cvss-90-linux-ksmbd-rce-flaws.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-22T17:01:53Z",
+   "summary": "Linux servers running KSMBD, the kernel's built-in SMB server, are exposed to two publicly reported remote code execution flaws rated 9.0 by Trend Micro's Zero Day Initiative, with no fix yet in the mainline kernel. One of them, ZDI-CAN-33774, can be triggered before any network authentication.…",
+   "score": 12,
+   "tags": [
+    "Actively exploited",
+    "Data breach",
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Actively exploited",
+    "Data breach",
+    "Vulnerability",
+    "SaaS / cloud"
+   ]
+  },
+  {
    "id": "6b7369ef168a",
    "title": "Meta Ordered to Pay $25 Billion After Court Finds 43 Million Privacy Violations",
    "link": "https://thehackernews.com/2026/10/meta-ordered-to-pay-25-billion-after.html",
@@ -128,6 +334,23 @@
      "source": "SecurityWeek",
      "url": "https://www.securityweek.com/meta-ordered-to-pay-new-mexico-25-billion-for-deceiving-users-about-privacy-on-facebook/"
     }
+   ]
+  },
+  {
+   "id": "475cb77c6a8a",
+   "title": "Side Letter: First through the breach",
+   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOUmh1NnAwZ1pfUy1ZV3hzMklXODFPdTZOTTBrYVdpbmdHa1RrSEZfTVhEb3JrQm9qT25xU2Z4TU9VU0R5dXRPQ01fb3NEMlJJUHU2Qk5EZWMxdjJVRUI4ODh3SUo1U25xblFfeExlTjY2aDNpaG5MaTEySDRuS0RDME9ObS1EMWM?oc=5",
+   "source": "PEI Private Equity",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-22T16:02:08Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
    ]
   },
   {
@@ -175,6 +398,12 @@
    ],
    "why": [
     "Vulnerability"
+   ],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/php-issues-emergency-patches-for-two.html"
+    }
    ]
   },
   {
@@ -248,23 +477,6 @@
    "why": []
   },
   {
-   "id": "2bd447638fb1",
-   "title": "Signal Vulnerability Lets Malicious Callers Block Hang-Ups",
-   "link": "https://www.securityweek.com/signal-vulnerability-lets-malicious-callers-block-hang-ups/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-22T12:34:31Z",
-   "summary": "Affecting the open source calling library RingRTC, the bug prevented calls from ending properly. The post Signal Vulnerability Lets Malicious Callers Block Hang-Ups appeared first on SecurityWeek .",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
    "id": "ec99b1cdf496",
    "title": "Tech and Security Companies Respond to PHP2Shell Vulnerabilities",
    "link": "https://www.securityweek.com/tech-and-security-companies-respond-to-php2shell-vulnerabilities/",
@@ -279,29 +491,6 @@
    ],
    "why": [
     "Vulnerability"
-   ]
-  },
-  {
-   "id": "d76b50dba162",
-   "title": "The AI Agent Nobody Owns: Watch Expert Webinar On Your Newest Insider Threat",
-   "link": "https://thehackernews.com/2026/10/the-ai-agent-nobody-owns-watch-expert.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-22T11:45:00Z",
-   "summary": "Right now, there is probably an AI agent running on a laptop somewhere in your network. It stores API keys and database passwords, can access your internal systems, and works without anyone watching. Nobody reviewed its access. Nobody owns it. If an employee had that much reach with that little…",
-   "score": 2,
-   "tags": [
-    "Identity"
-   ],
-   "why": [
-    "Identity"
-   ],
-   "also": [
-    {
-     "source": "Microsoft Security Blog",
-     "url": "https://www.microsoft.com/en-us/security/blog/2026/10/19/agents-are-your-newest-insiders-security-must-move-at-their-speed/"
-    }
    ]
   },
   {
@@ -402,6 +591,25 @@
    ],
    "why": [
     "Vulnerability"
+   ]
+  },
+  {
+   "id": "aec87e7b79dd",
+   "title": "Australian government websites exposed to major cyber flaw",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNTzFySVg1UFdtX1BIa0lBSThrYWdtQ3VubzRrUjNRYVFZMzMwLUtHZTFlRE5pUTItMW5GdDFlcWtTNDJVQkhDMVBxQlREWmd6U0M0VHVTRVc3ZklxUGFGLTIzNmREbHpjei1sTENxdUpRRkhZOXYwSjdQbzFBR0dtc1pGNDlXakhRYy1zODU0eURNR2dOSnlJcmJ2VGlPMTZtUlpuRA?oc=5",
+   "source": "SBS",
+   "feed": "AU breach news",
+   "region": "AU",
+   "published": "2026-10-22T09:31:34Z",
+   "summary": "",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Data breach"
+   ],
+   "why": [
+    "Australia",
+    "Data breach"
    ]
   },
   {
@@ -525,7 +733,7 @@
    "feed": "The Hacker News",
    "region": "Global",
    "published": "2026-10-22T06:34:10Z",
-   "summary": "Amazon's Threat Intelligence team on Wednesday said it detected an attempt to exploit the newly disclosed PHP2Shell vulnerabilities on October 17, 2026, against its MadPot honeypot service, as the flaws come under broad exploitation in the wild following the release of the patches. \"The exploit…",
+   "summary": "Amazon's Threat Intelligence team on Wednesday said it detected an attempt to exploit the newly disclosed PHP2Shell vulnerabilities dating back to October 17, 2026, against its MadPot honeypot service, as the flaws come under broad exploitation in the wild following the release of the patches.…",
    "score": 7,
    "tags": [
     "Actively exploited",
@@ -1607,6 +1815,25 @@
    ]
   },
   {
+   "id": "705a2aee0bf3",
+   "title": "PHP2Shell: Two Unpatched Critical PHP RCE Flaws (CVSS 9.2) Trigger Emergency Security Alert",
+   "link": "https://thehackernews.com/2026/10/php2shell-two-unpatched-critical-php.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-21T09:05:17Z",
+   "summary": "This story is developing and was written before PHP's scheduled 14:00 UTC release on October 21. Once the release is out, the affected and fixed versions below are confirmed by the official advisory. PHP will ship an out-of-cycle security release at 14:00 UTC today, October 21, for two critical…",
+   "score": 5,
+   "tags": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ]
+  },
+  {
    "id": "7f88afbf76a3",
    "title": "Attackers Abuse UpdraftCentral Keys to Plant Backdoors on WordPress Sites",
    "link": "https://thehackernews.com/2026/10/attackers-abuse-updraftcentral-keys-to.html",
@@ -2545,19 +2772,6 @@
    ]
   },
   {
-   "id": "92e407676578",
-   "title": "Hackers Hijack Five OVHcloud CLI Releases to Distribute Secret-Stealing Malware",
-   "link": "https://thehackernews.com/2026/10/hackers-hijack-five-ovhcloud-cli.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-20T08:21:29Z",
-   "summary": "An attacker used a contributor's GitHub account to replace the download archives on five existing releases of OVHcloud's command-line tool on Monday, October 19. The account had been hijacked, and the new files were a build designed to steal secrets stored on the disk of any machine that runs it,…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
    "id": "eac6b18a7bf7",
    "title": "An Arizona agent’s crusade against AI-fueled real estate fraud",
    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOOGk3Vy1PM0J6Q05MakhlN0dFSExkNXN4N0VKVXl5UFdqZmpjUEdLNlRFa19VT3pDaThJU2JHZWs1NERRUjVSdEl6ZnFabV9YbENPLUh6NEMtQm5kSnloWGlrYWZEVGFtaHQ2UVE2a0hRd2JaWEV0bWlSalRXSTYwZGJ6VWk5RFVvVUxEcGRZbw?oc=5",
@@ -3260,6 +3474,25 @@
     "Identity",
     "Vulnerability",
     "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "cd30eb68866b",
+   "title": "Agents are your newest insiders. Security must move at their speed.",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/10/19/agents-are-your-newest-insiders-security-must-move-at-their-speed/",
+   "source": "Microsoft Security Blog",
+   "feed": "Microsoft Security Blog",
+   "region": "Global",
+   "published": "2026-10-19T13:00:00Z",
+   "summary": "New capabilities in Microsoft 365 E7 and Project Perception help organizations contain agent risk and adapt protection continuously. The post Agents are your newest insiders. Security must move at their speed. appeared first on Microsoft Security Blog .",
+   "score": 5,
+   "tags": [
+    "Microsoft 365",
+    "Vulnerability"
+   ],
+   "why": [
+    "Microsoft 365",
+    "Vulnerability"
    ]
   },
   {
@@ -7138,185 +7371,6 @@
    ],
    "why": [
     "Microsoft 365"
-   ]
-  },
-  {
-   "id": "3b4e5e79f1e2",
-   "title": "Cyberattack Prompts Grocery Giant Ahold Delhaize to Disconnect Systems",
-   "link": "https://www.securityweek.com/cyberattack-prompts-ahold-delhaize-to-disconnect-systems/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-13T09:37:12Z",
-   "summary": "The company says it took some of its systems offline to contain a security issue within its network. The post Cyberattack Prompts Grocery Giant Ahold Delhaize to Disconnect Systems appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": [],
-   "also": [
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/retail-giant-ahold-delhaize-takes-systems-offline-after-cyberattack/"
-    }
-   ]
-  },
-  {
-   "id": "339f93492eef",
-   "title": "Two Critical MarkLogic Flaws Could Give Delegated Managers Persistent Admin Control",
-   "link": "https://thehackernews.com/2026/10/two-critical-marklogic-flaws-could-give.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-13T08:44:01Z",
-   "summary": "Two of 31 newly disclosed flaws in Progress Software's MarkLogic Server database could let an account given only some management privileges take administrator control of the server, the company says. Progress published all 31 on October 12 and scored five of them critical. Fixes have been…",
-   "score": 3,
-   "tags": [
-    "SaaS / cloud"
-   ],
-   "why": [
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "e7916ed60e97",
-   "title": "GitLab Patches CVSS 10.0 Flaw That Could Let Unauthenticated Users Run Server Code",
-   "link": "https://thehackernews.com/2026/10/gitlab-patches-cvss-100-flaw-that-could.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-13T08:43:37Z",
-   "summary": "GitLab has released patches for a maximum-severity security flaw impacting its Community Edition (CE) and Enterprise Edition (EE) software that could result in arbitrary code execution. \"GitLab has remediated an issue that, under certain conditions, could have allowed an unauthenticated user to…",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "1608d9df78e7",
-   "title": "Refrigeration Controller Hack Spoils Food Across European Supermarkets",
-   "link": "https://www.securityweek.com/refrigeration-controller-hack-spoils-food-across-european-supermarkets/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-13T08:28:51Z",
-   "summary": "A cyberattack targeted refrigeration controllers, setting refrigerators and freezers across hundreds of supermarkets to defrost. The post Refrigeration Controller Hack Spoils Food Across European Supermarkets appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "035b1023e28d",
-   "title": "PIPC chief Song Kyung-hee toughens Korea data-breach sanctions, targets AI era - CHOSUNBIZ",
-   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQU3hIWUtSZFBnRUt4aENMUjg4LXpObHBGRkprc1VCZGZZRnRFWmt6c3d4OUwwZVRsS2o0S1VsQ0JoRTJQXzEyT3hETnpvTUFuQ01zV0dndmhsUW54aFBjV1VCQWJlcHRsTVpIOF9WNHplSlZ0M0ZQYktMRDl6NW1yWkx4UTBMUmREcXRLZURB0gGOAUFVX3lxTFBTeEhZS1JkUGdFS3hoQ0xSODgtek5scEZGSmtzVUJkZllGdEVaa3pzd3g5TDBlVGxLajRLVWxDQmhFMlBfMTJPeEROem9NQW5DTXNXR2d2aGxRbnhoUGNXVUJBYmVwdGxNWkg4X1Y0emVKVnQzRlBiS0xEOXo1bXJaTHhRMExSZERxdEtlREE?oc=5",
-   "source": "Chosunbiz",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-13T07:28:00Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "585594f86cc8",
-   "title": "Low-Cost Android Phones Ship With Preinstalled Malware That Turns Them Into Residential Proxies",
-   "link": "https://thehackernews.com/2026/10/low-cost-android-phones-ship-with.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-13T06:00:11Z",
-   "summary": "Low-cost Android smartphones have been shipped with malicious software baked into the device firmware, allowing bad actors to covertly install apps, conduct ad fraud, and turn devices into residential proxies. The activity, which targets Android devices built on MediaTek platforms across several…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "ef39b2419395",
-   "title": "Cisco report flags organisational friction as a key barrier to AI-driven cyber defence in Australia",
-   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPcTE4cXZWUDRtVHV5NnBvNi01N3Q3OU0tb21fbUp1SUdBX29xUGR1NXpsRzBFaEVtYVlvZjlGSGtUZV84eVpDU0FOMVBZc2p3Q2lNYl9CSWU0ZHg3ajhaX1JfNENZalVxbUpTbVVyWFd5Yno0N2szaVBLTzU3dkVkeWp5cnEzV21BNWRVODdQRUR4bV9SanBfSkJjWFpZckZqWDFCaEdBU2tQOU1zbkRzakVxX08xQzBxUUxFZkw5b1lzOVVkcmo1SnlFS3lycHAybUt2Mi1LVGh0N1VGeE9HVA?oc=5",
-   "source": "Australian Cyber Security Magazine",
-   "feed": "AU breach news",
-   "region": "AU",
-   "published": "2026-10-13T04:39:35Z",
-   "summary": "",
-   "score": 12,
-   "tags": [
-    "Australia",
-    "Edge devices"
-   ],
-   "why": [
-    "Australia",
-    "Edge devices"
-   ]
-  },
-  {
-   "id": "032ab673110e",
-   "title": "‘Hands off': CJP's Saurav Das, Ashutosh Ranka breach Jantar Mantar, detained | WATCH | India News",
-   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOdVdxdEVMdlQzTW9DRXktNjNiZktrNGhpMVNJZzBNU3NxNHVXeUR2MC1QbVJhYWRwbUhUUDQ2YmMtV2d1eF9zVkJHRjlicmtoTi1XVmRndERYWHZlczBERThYOHlFU1ZKQ1JGYlVucHhyRjM5eUNyNWpOdjNZTzdvTTFPVVVXbVl5eno0elhPTlRWSTRybll6VlV2dXFTYTdmYzh1RW5mRDd1elkxeDlKT1QwNElmVzg1VWxkdkRMcWxXYVVqVDA3NWhUbzhCa2xfeEtDUjkyNUFKNjNXOUxSNGxlMNIB6AFBVV95cUxPVjVzTFg4QUJhZklpUHAtX0xEV3NibjgxSWs1MGNUMENXSWZ1RHlMdUpyR1lVUmp2NWlQWnlKMmcta2l2QVhZcmFudXNvdGJRU09fUTNHLTl1aDdmY3FSdXdGS1NNTGd3aEZCMnZNaWtFcXBkN1gtUnJZaFNnemlyQXlQUmRsYmdieEYtamdmRG1DRk53SnZSb2hBdlJReEMxckxZZkhuLTR4QnJHRlZiNmk4N0dMN0hYVUtJRXBfaXlVcnJoalF6NFA3YkVraUVTQ3JHYzkxWDhBMmNyTVV3Q1lUTnJwWXdo?oc=5",
-   "source": "Hindustan Times",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-13T04:08:30Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "7aba8f91ad36",
-   "title": "Singapore refreshes cyber strategy with new measure to block malware and phishing sites",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNUnRJdl9qRjVHVmZNaGJtWkVPWDFqZ2ZPb3FOVmtXTmNTY3FpVXdKcjQyRzYwMnlzR1dQMWg4d3pkM0plbFNLRWtKUGNMOGJRWlNGdDBsRVZCVUZVcmZCUExsQU53Ry11VWw1SUZUckR0cUhoclVIREcxajhzbUlOMkpZbkVtN1FYU3BxaUYwTWNSMkp6TDduZnpyeXBCVXpCdTVoeUh6bFB0STZOZkxhWVg1QnRrbnE3SEhyWXR0UDlrSFUtZEE?oc=5",
-   "source": "The Straits Times",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-13T02:25:00Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Phishing"
-   ],
-   "why": [
-    "Phishing"
-   ]
-  },
-  {
-   "id": "7dd6d3ef0e59",
-   "title": "ISC Stormcast For Tuesday, October 13th, 2026 https://isc.sans.edu/podcastdetail/10134, (Tue, Oct 13th)",
-   "link": "https://isc.sans.edu/diary/rss/33418",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-10-13T02:00:02Z",
-   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
-   "score": 1,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "dcb3f0d69e8b",
-   "title": "Icon falls victim to data breach",
-   "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5ZU2YtMGFtMWE2VGxNYlpFYmt1VEk0Zm55Zl9xaVdGQ1l2Ym45c3BQYWMzWExVQ1Z4S0d3Y2pUcTNBbkxITllOSnFoUjZQaEJBLThPNEgtb3R4NWxVYnpvZWlpS0ltMGVk?oc=5",
-   "source": "Australian Journal of Pharmacy",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-13T01:50:14Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
    ]
   }
  ]
