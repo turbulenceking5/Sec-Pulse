@@ -1,16 +1,16 @@
 {
- "date": "2026-10-22",
- "generated": "2026-10-21T21:52:51+00:00",
- "title": "Sec-Pulse brief - Thu 22 Oct",
+ "date": "2026-10-23",
+ "generated": "2026-10-22T21:49:33+00:00",
+ "title": "Sec-Pulse brief - Fri 23 Oct",
  "items": [
   {
-   "id": "c7a664d25ce9",
-   "title": "Australian government sites among those exposed to 'critical' software flaw",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOalBBMnc1dmJ0VUlMNWJZQjhQUWlHMUg2OGo5V2U2LV9Wam1qU2lSa2x2QkJ1VzFFVm5SNUZXdXlnR3FVdlEyTEsxUFhMZ3JWVTRZZXVFY3loWldYb1pXTGI0ODN2RFZ6RWxkZWxvTHN5TVhTbkVyUUVoQ09LYWpidVQ0alI?oc=5",
-   "source": "ABC News & Headlines – Australian Broadcasting Corporation",
+   "id": "aec87e7b79dd",
+   "title": "Australian government websites exposed to major cyber flaw",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNTzFySVg1UFdtX1BIa0lBSThrYWdtQ3VubzRrUjNRYVFZMzMwLUtHZTFlRE5pUTItMW5GdDFlcWtTNDJVQkhDMVBxQlREWmd6U0M0VHVTRVc3ZklxUGFGLTIzNmREbHpjei1sTENxdUpRRkhZOXYwSjdQbzFBR0dtc1pGNDlXakhRYy1zODU0eURNR2dOSnlJcmJ2VGlPMTZtUlpuRA?oc=5",
+   "source": "SBS",
    "region": "AU",
-   "published": "2026-10-21T15:58:02Z",
-   "score": 14,
+   "published": "2026-10-22T09:31:34Z",
+   "score": 13,
    "tags": [
     "Australia",
     "Data breach"
@@ -18,66 +18,71 @@
    "summary": ""
   },
   {
-   "id": "5554e14ffe2c",
-   "title": "COLUMN: The real estate scam landscape is changing. Northeast Colorado homeowners need to be ready",
-   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNblp4NW9vN1hvbFFMdVpUSWhrbTVGWlNqNi1PWUdkYjJfM2R4OVcwTnY1dHdhcURtWHdkekVwR1dEeTRiZjFYNVY2aWxzTWYwUUVzcDhJbHJRUVhpTmd1X1kxZWMwOTc5THFjakJsSFpGTG9rblgwMHI2aHdYeGZLbFFad3o3TjlOWFV3b3JpNklUbUphSFpSMVVBUzdDT0ktM1VnVThZVk1zMmpoYkJ5Qks1Mzhua21vMmcwdmpHeWtURUxYTE5vYkR5eE9MeHN6SHd6VlpHeTM?oc=5",
-   "source": "Journal-Advocate",
+   "id": "eebdb3f4f6ae",
+   "title": "Two CVSS 9.0 Linux KSMBD RCE Flaws Disclosed on Public Mailing Lists Before Kernel Fixes",
+   "link": "https://thehackernews.com/2026/10/two-cvss-90-linux-ksmbd-rce-flaws.html",
+   "source": "The Hacker News",
    "region": "Global",
-   "published": "2026-10-21T21:14:47Z",
-   "score": 10,
+   "published": "2026-10-22T17:01:53Z",
+   "score": 12,
    "tags": [
-    "Real estate"
+    "Actively exploited",
+    "Data breach",
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "summary": "Linux servers running KSMBD, the kernel's built-in SMB server, are exposed to two publicly reported remote code execution flaws rated 9.0 by Trend Micro's Zero Day Initiative, with no fix yet in the mainline kernel. One of them, ZDI-CAN-33774, can be triggered before any network authentication.…"
+  },
+  {
+   "id": "04fe29893135",
+   "title": "Exclusive: Sydney-based visualisation firm Virtual Ideas hit by Lamashtu ransomware attack",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNcXFheFEyMm5RMW00RXRac3d3T0ZCSFR4X0dNRHZuNzdkdmN5WHozZjNEelJ5NGloVTNGMFZGb0JtT2FMWHNXQlZmSGFQZkZQdzJNX0p5Sk5ZUW9SOG5HaDE3RUNYR3dYT0Z0WWJlLVN3cHQxbU9lTm43eHNVbmIwOVh1OHVRUmdrTWdjcGNjTjNRV3FIMjF4c0czMzdKSVVCLWdKTGViV2ZwbnlkR1lTYmZ3Zzh2NVFETWNGam0wWnNFcDVxQldIcl9B?oc=5",
+   "source": "Cyber Daily",
+   "region": "AU",
+   "published": "2026-10-22T00:49:47Z",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Ransomware"
    ],
    "summary": ""
   },
   {
-   "id": "25f995d0be20",
-   "title": "SafePay Ransomware: SafeBreach Coverage for CISA Alert AA26-293A",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOWThfa0U0YTBhNExNSjNCVFJSbVRYMWxVMUZLSnJHNGFJcFhXQ0pjbWpQN00xQmwyWExEbjU0Q21rQnJwTEM1Q2tRTTFlU0pSSGw0U1otNEZZc2Y4X0ZwcWlBU0g2WDZkMUxqY0ZSQnhDSTZXd3JYYk1ibi0yQ1REQ2xrNzNXaG50T2pLM1lZYmNfbFJRZEJmc0I5cU83OXpnRjFpXw?oc=5",
-   "source": "Security Boulevard",
-   "region": "Global",
-   "published": "2026-10-21T18:49:02Z",
-   "score": 10,
+   "id": "92cbbe3f9264",
+   "title": "Australians facing spike in data breaches after 'critical' flaw uncovered",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPUTVlb25PVFZBMHhUV2czLTc5THpRZTNQQ0QyWUQwX25zRnQ5X0xCOGlzSjYtWWxuTnNDdExYVlNzVGFUczZaMzk0TWdydm1lUl9LUDVuN0FUQXpuV1NhYVVNU3dvLVBiR0I3TWJWdC1DV1RvZldJbmVJVnNxY3l1eXNGMUJMREcwakw2clM3WUFLSHVodjFqSGhTeHRqcGJBRUZIR0Y2cw?oc=5",
+   "source": "ABC News & Headlines – Australian Broadcasting Corporation",
+   "region": "AU",
+   "published": "2026-10-22T00:48:22Z",
+   "score": 13,
    "tags": [
-    "Ransomware",
+    "Australia",
     "Data breach"
    ],
    "summary": ""
   },
   {
-   "id": "8618fd7c4109",
-   "title": "Orion Real Estate Data Exchange Announces Relationship with HUB International; Offers MLS Insurance Solutions",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOc0l2bG5SZThVZkptSlRmUWRzSDdTLXpYZjdwbDB2NnZnVXZHdjJVQkNocHNvQVFEN1Z6Sl9oV3g3QVdLSm9TZC1rLWpMbXY2X1NEbWpiRUZQX2pkRUFGNWZOWEdKNzAya0VVUzYyVWZCdjlzT0lEdjlvN3JrY2c0WWV5RndPSzhUcHlHbndjU2laUUZiVkV2Ym5Bejc3WTdWTFM3WUlKZm1jQQ?oc=5",
-   "source": "RISMedia",
-   "region": "Global",
-   "published": "2026-10-21T16:08:53Z",
-   "score": 10,
+   "id": "761f95e757b0",
+   "title": "Major Australian government websites go offline after critical security flaws are uncovered using AI",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPdmM2bXNzNGljZHNfSlBvOHc2YTFfSVA0d2JSNDU1UWxyQzRaOVhwSzJiTVZpeFozQ1d4Nl8waWlnTEROWFlvOGs3SGtKdnpyVHREb3ViSUlBMnNnR05hNkpNeTRZUURIejhFSVNNS0d5VS1sWTVNamFQRnZsYlo1ZVVsQXRMZHJTSlRuQUt2d3VsbDhNY2JEZGRzUjg3czhTalFpRDFkONIBrAFBVV95cUxOeFFNNzd0YzVHTnVpVXN2NFE1OHJJR2FuQmp2eEpjalVwcXJocWR4WnBHZm9DS3BZdGNDU0xkaVBjMFROSks1dV9CalI3YThIemNNajFHdzVwSjlpVjU4bXU3VTgzRF9lZzZGTW5RLURJUmg3T0RQcGpDbUpMNXotU3B2MjY3NVVVUnFoV21zUDlmdDZ0TmVSUmR0RXJ4Wm5TeU02c19yMjFOVUtD?oc=5",
+   "source": "Daily Mail",
+   "region": "AU",
+   "published": "2026-10-21T22:38:38Z",
+   "score": 13,
    "tags": [
-    "Real estate"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "253a6afd1c73",
-   "title": "Real estate agents flag new earnest money scam warning",
-   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9YT1VXMGJFQ19NSXZwT2Z6NUR6WjBoYm1FRkRUc3ptRHN3QWJhQlVjNnRzcHZ2YmJnNlg5cUVwMm9zT2hQam5KejBuWENVcEFKV0ZSaGZaSXl2R3hlLXdOREM5NHphb19vcUViUjVEMG1fUQ?oc=5",
-   "source": "HousingWire",
-   "region": "Global",
-   "published": "2026-10-21T16:01:31Z",
-   "score": 10,
-   "tags": [
-    "Real estate"
+    "Australia",
+    "SaaS / cloud"
    ],
    "summary": ""
   }
  ],
  "stats": {
-  "recent": 70,
-  "au": 5,
+  "recent": 66,
+  "au": 8,
   "kev": 0
  },
  "lesson": {
-  "id": "1.4",
-  "title": "Analyst tools: SIEM, SOAR, EDR and friends"
+  "id": "1.5",
+  "title": "Email analysis: headers, SPF, DKIM, DMARC"
  }
 }
