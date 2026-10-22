@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21T21:52:41Z",
+ "generated": "2026-10-22T04:51:47Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -22,19 +22,19 @@
   {
    "name": "ASD / ACSC in the news",
    "ok": true,
-   "count": 4,
+   "count": 2,
    "error": null
   },
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 8,
+   "count": 9,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 8,
+   "count": 7,
    "error": null
   },
   {
@@ -106,6 +106,157 @@
  ],
  "items": [
   {
+   "id": "535888929304",
+   "title": "Email compromise the top cyber threat: underwriter",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5lc0hqazUyNVdHSWJWOVlGY2M0dThxb01CYl95RlpCWlZNLTJWRjdnZHBGdnE5WmhtQ3M3bkxIN25JU1IwU1ZPRFJsU1FmODFZZng2UHlJNDZxWTJMUmh1c3p6WTV5ejdBSG9aNE5xczVQb0F0N3hIR3RuN202M1k?oc=5",
+   "source": "Australian Journal of Pharmacy",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-22T02:23:13Z",
+   "summary": "",
+   "score": 8,
+   "tags": [
+    "BEC / payment fraud"
+   ],
+   "why": [
+    "BEC / payment fraud"
+   ],
+   "also": [
+    {
+     "source": "Insurance Business",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOdXB6Z2wtdE9VdUtQRGxvdjF4UlVUT1dfX29DeE4xM0pYWVRlSW1TMXNKazVrLTNoVHZPaWp6S3laVWFqZnhMbmM0UkRLM1FVenZWMDFNX2YtRFVqTl8yczBFUXZPT3RSaVRYUTVJT19MVzk3NldtaWp6Z2wxNXAxeVVJTXd0bVBqRlZNVFpSdGFNcGthSXM4emNVQ1NoZ3NVSDVqQjlsemYyM2VPYlAxTnpnX3lSdw?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "0dbc9387e361",
+   "title": "ISC Stormcast For Thursday, October 22nd, 2026 https://isc.sans.edu/podcastdetail/10146, (Thu, Oct 22nd)",
+   "link": "https://isc.sans.edu/diary/rss/33446",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-10-22T02:00:02Z",
+   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "04fe29893135",
+   "title": "Exclusive: Sydney-based visualisation firm Virtual Ideas hit by Lamashtu ransomware attack",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNcXFheFEyMm5RMW00RXRac3d3T0ZCSFR4X0dNRHZuNzdkdmN5WHozZjNEelJ5NGloVTNGMFZGb0JtT2FMWHNXQlZmSGFQZkZQdzJNX0p5Sk5ZUW9SOG5HaDE3RUNYR3dYT0Z0WWJlLVN3cHQxbU9lTm43eHNVbmIwOVh1OHVRUmdrTWdjcGNjTjNRV3FIMjF4c0czMzdKSVVCLWdKTGViV2ZwbnlkR1lTYmZ3Zzh2NVFETWNGam0wWnNFcDVxQldIcl9B?oc=5",
+   "source": "Cyber Daily",
+   "feed": "AU breach news",
+   "region": "AU",
+   "published": "2026-10-22T00:49:47Z",
+   "summary": "",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Ransomware"
+   ],
+   "why": [
+    "Australia",
+    "Ransomware"
+   ]
+  },
+  {
+   "id": "92cbbe3f9264",
+   "title": "Australians facing spike in data breaches after 'critical' flaw uncovered",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPUTVlb25PVFZBMHhUV2czLTc5THpRZTNQQ0QyWUQwX25zRnQ5X0xCOGlzSjYtWWxuTnNDdExYVlNzVGFUczZaMzk0TWdydm1lUl9LUDVuN0FUQXpuV1NhYVVNU3dvLVBiR0I3TWJWdC1DV1RvZldJbmVJVnNxY3l1eXNGMUJMREcwakw2clM3WUFLSHVodjFqSGhTeHRqcGJBRUZIR0Y2cw?oc=5",
+   "source": "ABC News & Headlines – Australian Broadcasting Corporation",
+   "feed": "AU breach news",
+   "region": "AU",
+   "published": "2026-10-22T00:48:22Z",
+   "summary": "",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Data breach"
+   ],
+   "why": [
+    "Australia",
+    "Data breach"
+   ]
+  },
+  {
+   "id": "9ce38517c308",
+   "title": "PHP Foundation admits ‘structural failure’ delayed critical security fix",
+   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOYjYtUmlhdlE5WmdwcFU2djY5YXVaZDBjaWU4d3RYSTBmUDdfcVI5NzUydDNSZ2xlLUtjZ3FfbVNfbi1kNy16N0k4WFhhc2xuM3p3Y2hHRGZmWnJqRWdkakM0OExsLXlFSkgxUnJDMHpSal8zeFl0NDMzWU5VY0dLNkRTYlgtaWp4RlJ2b2FKVFJoa0p0QTdwaUdzclUya1BBb1FCNVAwcDhHWjZWLUQ1Sko3TDdZUUh3d1kzWllRZHEyRVcxOHpiS0RtUTFvbUE?oc=5",
+   "source": "TradingView",
+   "feed": "ASD / ACSC in the news",
+   "region": "AU",
+   "published": "2026-10-22T00:44:00Z",
+   "summary": "",
+   "score": 9,
+   "tags": [
+    "Phishing",
+    "Australia"
+   ],
+   "why": [
+    "Phishing"
+   ]
+  },
+  {
+   "id": "e967f8d5c5f8",
+   "title": "PingCAP Breach Exposed Customer Business Data and Potentially Sensitive Logs · cyber.hendryadrian.com",
+   "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE5uU2l6TU1QR2NJSzl1aXJPVUNCMTBTOWRJaDM1UGhpTzh2Q1puWXNwMkhNTDI4cGp4MHlZ?oc=5",
+   "source": "Howl.link",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-22T00:40:41Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "761f95e757b0",
+   "title": "Major Australian government websites go offline after critical security flaws are uncovered using AI",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPdmM2bXNzNGljZHNfSlBvOHc2YTFfSVA0d2JSNDU1UWxyQzRaOVhwSzJiTVZpeFozQ1d4Nl8waWlnTEROWFlvOGs3SGtKdnpyVHREb3ViSUlBMnNnR05hNkpNeTRZUURIejhFSVNNS0d5VS1sWTVNamFQRnZsYlo1ZVVsQXRMZHJTSlRuQUt2d3VsbDhNY2JEZGRzUjg3czhTalFpRDFkONIBrAFBVV95cUxOeFFNNzd0YzVHTnVpVXN2NFE1OHJJR2FuQmp2eEpjalVwcXJocWR4WnBHZm9DS3BZdGNDU0xkaVBjMFROSks1dV9CalI3YThIemNNajFHdzVwSjlpVjU4bXU3VTgzRF9lZzZGTW5RLURJUmg3T0RQcGpDbUpMNXotU3B2MjY3NVVVUnFoV21zUDlmdDZ0TmVSUmR0RXJ4Wm5TeU02c19yMjFOVUtD?oc=5",
+   "source": "Daily Mail",
+   "feed": "ASD / ACSC in the news",
+   "region": "AU",
+   "published": "2026-10-21T22:38:38Z",
+   "summary": "",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Australia",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "832124389031",
+   "title": "Google Chrome adds Gemini-powered scam detection, warns users of ClickFix attacks",
+   "link": "https://www.bleepingcomputer.com/news/google/google-chrome-adds-gemini-powered-scam-detection-warns-users-of-clickfix-attacks/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-21T22:16:26Z",
+   "summary": "Chrome is getting new scam protections that use Gemini to detect deceptive websites and warn users when they copy suspicious commands from ClickFix attacks. [...]",
+   "score": 0,
+   "tags": [],
+   "why": [],
+   "also": [
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/google-hardens-chrome-against-clickfix-attacks-insecure-http-connections/"
+    },
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/google-chrome-adds-clickfix-warnings-to.html"
+    }
+   ]
+  },
+  {
    "id": "e9fd60a700e2",
    "title": "Japan's Onamae Desktop Cloud hacked, up to 27,000 servers affected",
    "link": "https://www.bleepingcomputer.com/news/security/japans-onamae-desktop-cloud-hacked-up-to-27-000-servers-affected/",
@@ -117,6 +268,33 @@
    "score": 0,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "2b3e5a4b3e81",
+   "title": "SafePay ransomware group targets critical infrastructure",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNQ040Q1ZzVzk1TWpxWHZfNGFiQ2xFRVVUZWZjN0JjckV0ZVNFQjdzRW5iTHNrRzNMbUN0eHZuUFlaRXJULXpYSW1SXzlPakhvTE5SYUhMQm5rN1B5MVlOTEFaNGdxanJkd3M1MU4wZFpxemY1VFM2LUJEWFZlUmI5VWVnUnlyZXFfZ1VHNjlmTQ?oc=5",
+   "source": "SC Media",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-21T21:42:41Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/cisa-and-fbi-safepay-ransomware-has-hit-over-600-critical-infrastructure-organizations/"
+    },
+    {
+     "source": "Cybersecurity Dive",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQWElmNk5keXBOZG9JQ0hRSnB2WjU0RklnU1RvZFBLcWRPWjFmZGxBN3VWSzgyZGRwaGlSYmticTNmTUFsYTgyTmZBVXVPZk1iX2Q3bjBsLTF2d3RCdDdBNE5RQWVDWVVwZlhQSkVnaDFxMmdfYmxYYkJIRDEtMjcyOTBfREp6ZkprTjlEY2doQjNiMXBwWUdpeW5JbE9QQllBS0h2dkNyR2daTmtCNkFB?oc=5"
+    }
+   ]
   },
   {
    "id": "7bcbd743c3f7",
@@ -136,13 +314,13 @@
    ]
   },
   {
-   "id": "5554e14ffe2c",
+   "id": "0dbd162481ab",
    "title": "COLUMN: The real estate scam landscape is changing. Northeast Colorado homeowners need to be ready",
-   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNblp4NW9vN1hvbFFMdVpUSWhrbTVGWlNqNi1PWUdkYjJfM2R4OVcwTnY1dHdhcURtWHdkekVwR1dEeTRiZjFYNVY2aWxzTWYwUUVzcDhJbHJRUVhpTmd1X1kxZWMwOTc5THFjakJsSFpGTG9rblgwMHI2aHdYeGZLbFFad3o3TjlOWFV3b3JpNklUbUphSFpSMVVBUzdDT0ktM1VnVThZVk1zMmpoYkJ5Qks1Mzhua21vMmcwdmpHeWtURUxYTE5vYkR5eE9MeHN6SHd6VlpHeTM?oc=5",
-   "source": "Journal-Advocate",
+   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQZVVGZ1RvYzk4dkxsaFFVU1pyeGxLclBEWUg4X3F0SncxeWpESEstNnVWR1lleGJlZ2hBTWRIZGxrS08zNUhFV190U2Z4YjkwV2JiR2FEdTFWeF9NdFoxZzZNazJ6TEZ2d05xOGJ5bXVCZk1uNnRFbGVRSEhROE91aUY1TGRCQldtV2RxYTRZWFdKcnpXU1JnaGRvMHAxVDkwdGpzWm55QWhtU3Y0cm1FcVN0ZHhxZlFzTnZhWE9TVW8xM0hJaC1MNm9HNjhyLVM2SzgwQkVJcw?oc=5",
+   "source": "The Fort Morgan Times",
    "feed": "Real estate cyber news",
    "region": "Global",
-   "published": "2026-10-21T21:14:47Z",
+   "published": "2026-10-21T21:14:34Z",
    "summary": "",
    "score": 10,
    "tags": [
@@ -153,8 +331,8 @@
    ],
    "also": [
     {
-     "source": "The Fort Morgan Times",
-     "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQZVVGZ1RvYzk4dkxsaFFVU1pyeGxLclBEWUg4X3F0SncxeWpESEstNnVWR1lleGJlZ2hBTWRIZGxrS08zNUhFV190U2Z4YjkwV2JiR2FEdTFWeF9NdFoxZzZNazJ6TEZ2d05xOGJ5bXVCZk1uNnRFbGVRSEhROE91aUY1TGRCQldtV2RxYTRZWFdKcnpXU1JnaGRvMHAxVDkwdGpzWm55QWhtU3Y0cm1FcVN0ZHhxZlFzTnZhWE9TVW8xM0hJaC1MNm9HNjhyLVM2SzgwQkVJcw?oc=5"
+     "source": "Journal-Advocate",
+     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNblp4NW9vN1hvbFFMdVpUSWhrbTVGWlNqNi1PWUdkYjJfM2R4OVcwTnY1dHdhcURtWHdkekVwR1dEeTRiZjFYNVY2aWxzTWYwUUVzcDhJbHJRUVhpTmd1X1kxZWMwOTc5THFjakJsSFpGTG9rblgwMHI2aHdYeGZLbFFad3o3TjlOWFV3b3JpNklUbUphSFpSMVVBUzdDT0ktM1VnVThZVk1zMmpoYkJ5Qks1Mzhua21vMmcwdmpHeWtURUxYTE5vYkR5eE9MeHN6SHd6VlpHeTM?oc=5"
     }
    ]
   },
@@ -196,6 +374,23 @@
    "score": 0,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "e85c7b673e3f",
+   "title": "Websites taken down worldwide as critical PHP cyber-security update issued",
+   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE8yYkJ1a0hkTXBMWUxzUGRNam81RzlXVTd0THJ2cWlvbVd4VmlNQ0ZzeHV0b21aR21mazJNTXAwSjRqN3VoNzgydHplRmRUamltaFJSUmZvcXBUZDg?oc=5",
+   "source": "BBC",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-21T19:54:57Z",
+   "summary": "",
+   "score": 4,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
   },
   {
    "id": "a0e99a083080",
@@ -353,25 +548,6 @@
    ]
   },
   {
-   "id": "6397dd9bb23f",
-   "title": "Google Hardens Chrome Against ClickFix Attacks, Insecure HTTP Connections",
-   "link": "https://www.securityweek.com/google-hardens-chrome-against-clickfix-attacks-insecure-http-connections/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-21T17:00:00Z",
-   "summary": "Protections have been added against scams and social engineering, including new site warnings and server-side Gemini analysis. The post Google Hardens Chrome Against ClickFix Attacks, Insecure HTTP Connections appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": [],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/google-chrome-adds-clickfix-warnings-to.html"
-    }
-   ]
-  },
-  {
    "id": "a124b567afcf",
    "title": "OVHcloud GitHub Compromise Tied to GlassWorm Threat Actors",
    "link": "https://www.darkreading.com/cyberattacks-data-breaches/ovhcloud-github-compromise-glassworm-threat-actors",
@@ -404,6 +580,23 @@
    ]
   },
   {
+   "id": "253a6afd1c73",
+   "title": "Real estate agents flag new earnest money scam warning",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9YT1VXMGJFQ19NSXZwT2Z6NUR6WjBoYm1FRkRUc3ptRHN3QWJhQlVjNnRzcHZ2YmJnNlg5cUVwMm9zT2hQam5KejBuWENVcEFKV0ZSaGZaSXl2R3hlLXdOREM5NHphb19vcUViUjVEMG1fUQ?oc=5",
+   "source": "HousingWire",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-21T16:10:54Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
    "id": "8618fd7c4109",
    "title": "Orion Real Estate Data Exchange Announces Relationship with HUB International; Offers MLS Insurance Solutions",
    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOc0l2bG5SZThVZkptSlRmUWRzSDdTLXpYZjdwbDB2NnZnVXZHdjJVQkNocHNvQVFEN1Z6Sl9oV3g3QVdLSm9TZC1rLWpMbXY2X1NEbWpiRUZQX2pkRUFGNWZOWEdKNzAya0VVUzYyVWZCdjlzT0lEdjlvN3JrY2c0WWV5RndPSzhUcHlHbndjU2laUUZiVkV2Ym5Bejc3WTdWTFM3WUlKZm1jQQ?oc=5",
@@ -427,32 +620,15 @@
    ]
   },
   {
-   "id": "253a6afd1c73",
-   "title": "Real estate agents flag new earnest money scam warning",
-   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9YT1VXMGJFQ19NSXZwT2Z6NUR6WjBoYm1FRkRUc3ptRHN3QWJhQlVjNnRzcHZ2YmJnNlg5cUVwMm9zT2hQam5KejBuWENVcEFKV0ZSaGZaSXl2R3hlLXdOREM5NHphb19vcUViUjVEMG1fUQ?oc=5",
-   "source": "HousingWire",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-21T16:01:31Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ]
-  },
-  {
    "id": "c7a664d25ce9",
    "title": "Australian government sites among those exposed to 'critical' software flaw",
    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOalBBMnc1dmJ0VUlMNWJZQjhQUWlHMUg2OGo5V2U2LV9Wam1qU2lSa2x2QkJ1VzFFVm5SNUZXdXlnR3FVdlEyTEsxUFhMZ3JWVTRZZXVFY3loWldYb1pXTGI0ODN2RFZ6RWxkZWxvTHN5TVhTbkVyUUVoQ09LYWpidVQ0alI?oc=5",
    "source": "ABC News & Headlines – Australian Broadcasting Corporation",
-   "feed": "ASD / ACSC in the news",
+   "feed": "AU breach news",
    "region": "AU",
    "published": "2026-10-21T15:58:02Z",
    "summary": "",
-   "score": 14,
+   "score": 13,
    "tags": [
     "Australia",
     "Data breach"
@@ -502,23 +678,6 @@
    "published": "2026-10-21T15:26:07Z",
    "summary": "Expect to see quite a few websites serving \"404\" or \"Page Not Found\" errors today: Nearly 70 percent of websites need to update their core software to fix a pair of vulnerabilities that allow an attacker to seize full control over affected servers. Experts say there are working exploits for the…",
    "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "e85c7b673e3f",
-   "title": "Websites taken down across Europe as critical cyber-security update issued",
-   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE8yYkJ1a0hkTXBMWUxzUGRNam81RzlXVTd0THJ2cWlvbVd4VmlNQ0ZzeHV0b21aR21mazJNTXAwSjRqN3VoNzgydHplRmRUamltaFJSUmZvcXBUZDg?oc=5",
-   "source": "BBC",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-21T15:11:11Z",
-   "summary": "",
-   "score": 4,
    "tags": [
     "Vulnerability"
    ],
@@ -1234,23 +1393,6 @@
      "source": "Devdiscourse",
      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQV2trd1VWek1Nb1FKRVdQVDcwam44ckgxLTltZ0podGktQkVtcTd1N1pyUTdzNG14b2tNQzYzRmRkWXVTVmxlNm1XbU5YS2tacHRPb1FCZ0RvLTBoOS1uX1luYll4MUNFa212MGxBYUhLcU9KVTBHUnBBaFh2c2kyWWJDRm9Lcm9jajhmV2hIQzFPRzBVSDU2d0wwb1NlNGpHU29vS1hqcXRtRVRncnVXTVIwWXpWakJhck56ellCQkRFTVExcWR2eUtBc9IB0AFBVV95cUxPZWdsVTVZaHVIOTEwTThoNkNOLU1lQ1RYZHNrU3dYcEp2NHBmRWJnbkJucWhhRzJNZ1JYOXNMWVAxVUxRZDJlbFVqU3FEYjRRWkRPTW9Qekt0ZEVrSEh2Sk9xenYyRlRIYUhMTVFZbDV1TTdZcG1mRU1zNk14UkY2dTd6OHF0LXNlMzBNa1hPeXB0TmgzRUJTYUROZThBRkZaaEQzR2Z3eU51bUlHV3Y0cGtoU1puRHBNZ2x2LWNfZFF4OWJ5alVfTHN2RHRvdE0x?oc=5"
     }
-   ]
-  },
-  {
-   "id": "5d3cff124915",
-   "title": "Business email compromise dominates SME cyber claims",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOdXB6Z2wtdE9VdUtQRGxvdjF4UlVUT1dfX29DeE4xM0pYWVRlSW1TMXNKazVrLTNoVHZPaWp6S3laVWFqZnhMbmM0UkRLM1FVenZWMDFNX2YtRFVqTl8yczBFUXZPT3RSaVRYUTVJT19MVzk3NldtaWp6Z2wxNXAxeVVJTXd0bVBqRlZNVFpSdGFNcGthSXM4emNVQ1NoZ3NVSDVqQjlsemYyM2VPYlAxTnpnX3lSdw?oc=5",
-   "source": "Insurance Business",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-21T03:22:43Z",
-   "summary": "",
-   "score": 8,
-   "tags": [
-    "BEC / payment fraud"
-   ],
-   "why": [
-    "BEC / payment fraud"
    ]
   },
   {
@@ -7154,124 +7296,6 @@
    ],
    "why": [
     "Ransomware"
-   ]
-  },
-  {
-   "id": "1075209273bf",
-   "title": "Let’s Encrypt Cuts Default Certificate Validity to 64 Days Ahead of 45-Day Switch",
-   "link": "https://www.securityweek.com/lets-encrypt-cuts-default-certificate-validity-to-64-days-ahead-of-45-day-switch/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-12T07:53:28Z",
-   "summary": "Beginning February 2027, all newly issued certificates will have a 64-day validity period by default. The post Let’s Encrypt Cuts Default Certificate Validity to 64 Days Ahead of 45-Day Switch appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "d261b6b9e669",
-   "title": "CyberXero Uses Claude Code in Campaign That Stole Over 628,000 Ukrainian Records",
-   "link": "https://thehackernews.com/2026/10/cyberxero-uses-claude-code-in-campaign.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-12T07:26:12Z",
-   "summary": "Cybersecurity researchers have disclosed details of a two-pronged artificial intelligence (AI)-augmented initial access campaign targeting WordPress sites, e-commerce platforms, and critical infrastructure entities in Ukraine. The activity, which brings together commodity offensive tools like…",
-   "score": 1,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "14c9a4ebac6a",
-   "title": "AI notetaker tools in Australian workforces: The hidden legal risks organisations cannot ignore",
-   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNelBjU1hQdThEdTZwT2JBaWFfMXlKclFQNEdnRHcteEdaWXI4azAxV280T0Jwa0pVejRDQjBvMVhHZWxOU1N4a0p2YmlZeTJNRWJIM0dUaGZSYng3TkUxeDl0a2RmMFJLeXdjT0liT2JJczhsamNjV1g4RFplQ2pQSDJBMk1hM2g3X25N?oc=5",
-   "source": "Lexology",
-   "feed": "OAIC / Privacy news",
-   "region": "AU",
-   "published": "2026-10-12T07:00:00Z",
-   "summary": "",
-   "score": 11,
-   "tags": [
-    "Australia",
-    "Vulnerability"
-   ],
-   "why": [
-    "Australia",
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "e6422d668e6a",
-   "title": "Act now! Aussie cyber agency updates Citrix NetScaler critical alert to include brand new vulnerability",
-   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOS1MtZjJ3c1N4ODUwZ0M1QndiZHdPWjlRMWZNODRKU3NzbkVMd2NZeGhmaU1iX3VFRDNxTFpoekR0eFpORnpDNUxtNmZGcVhZYnlwUGY0cHBSWXV4cXFoUEl6VHJVekFjSzhPU1RFSWJEMk02TDhRRTI2TjQxcHNTbG5ncWh1eFpYdTMya2pqSTNScGxXQjJnb3ZuXzZWbVA3ZkpKYUJiQVhtemlGcFlJMzg5bFlZcTM4OExIa05GQ21vNVZfNlJoT1FUam5RdF9VMG0wU2xVbzc3TDQ?oc=5",
-   "source": "Cyber Daily",
-   "feed": "ASD / ACSC in the news",
-   "region": "AU",
-   "published": "2026-10-12T06:12:45Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Edge devices",
-    "Vulnerability",
-    "Australia"
-   ],
-   "why": [
-    "Edge devices",
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "7bac4c3b4e76",
-   "title": "ISC Stormcast For Monday, October 12th, 2026 https://isc.sans.edu/podcastdetail/10132, (Mon, Oct 12th)",
-   "link": "https://isc.sans.edu/diary/rss/33416",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-10-12T02:00:03Z",
-   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
-   "score": 1,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "4c28b0c9be31",
-   "title": "Nippon Columbia malware incident exposes 8.6 million karaoke fan records",
-   "link": "https://www.bleepingcomputer.com/news/security/nippon-columbia-malware-incident-exposes-86-million-karaoke-fan-records/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-11T14:23:46Z",
-   "summary": "Daiichi Kosho, a major Japanese entertainment system maker, disclosed that a malware infection at its contractor, Nippon Columbia, exposed more than 8.7 million customer and employee records. [...]",
-   "score": 3,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "7f5dd566b2dd",
-   "title": "FBI Arrests Executive at Ransomware Negotiation Firm",
-   "link": "https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/",
-   "source": "Krebs on Security",
-   "feed": "Krebs on Security",
-   "region": "Global",
-   "published": "2026-10-10T00:17:42Z",
-   "summary": "Agents with the Federal Bureau of Investigation (FBI) on Thursday arrested the co-founder of a Canadian cybersecurity firm in connection with an investigation into the ShinyHunters hacking group that recently relieved the FBI of sensitive data on thousands of agents, multiple sources tell…",
-   "score": 6,
-   "tags": [
-    "Ransomware",
-    "Vulnerability"
-   ],
-   "why": [
-    "Ransomware",
-    "Vulnerability"
    ]
   }
  ]
