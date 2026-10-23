@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-22T21:49:22Z",
+ "generated": "2026-10-23T04:54:05Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -22,13 +22,13 @@
   {
    "name": "ASD / ACSC in the news",
    "ok": true,
-   "count": 4,
+   "count": 5,
    "error": null
   },
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 9,
+   "count": 12,
    "error": null
   },
   {
@@ -40,7 +40,7 @@
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 1,
+   "count": 2,
    "error": null
   },
   {
@@ -52,7 +52,7 @@
   {
    "name": "CISA KEV",
    "ok": true,
-   "count": 20,
+   "count": 15,
    "error": null
   },
   {
@@ -100,11 +100,136 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 28,
+   "count": 23,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "26de9cb3727c",
+   "title": "Is your password on the hackers’ hit list?",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQbDRiSHEyNXBqcjE3eGFvZ0lyOEM1WnNSVVBPZngzQjcwTnBaOWg2YUVKY09IbFJfRGRTOEZ2NVJtX1JrYXRnWWlWdFd6NFdPNU03dmg0cmRTeS1UZFZQcnN4Q1NUV0QwOVlKVVV4aUZnVnFpMmlPanAyWnE3T1lDalJJTHJHNVprVEJZWDhNQ01FbW5kMXR6RFE5Q2g1aWZieC14X3h4UE9OTG1BX2JaVWluVHhUbXVGR1gteUlEZTNDa204VEEtdTlFbw?oc=5",
+   "source": "The Nightly",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-23T04:29:39Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "Identity"
+   ],
+   "why": [
+    "Identity"
+   ]
+  },
+  {
+   "id": "a3b1a4996598",
+   "title": "Pentagon sued over data breach affecting more than 3 million people",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOVXVsTTZSeXJ3SVhqLTJSTjZjakttdVdNYjJnTlFia19GRWRVQkZSYU9YRzhYTlU4YmhIbVJhS3NmWGhsaGp0ZWV2alFjR3dtVzlGY1laejN4M0UzOVA3NUxCQWo4bWludEZKVGk4b0YwWEdwc0F0REhzWkdFT0RuZy05djNVSDRFbklpanZVeUFOV2RzbEhVZDF0endtaFRtVU04X1E3U1FXVUx0SGFLdS1naDBCaDJ6Yk5PcA?oc=5",
+   "source": "Federal News Network",
+   "feed": "OAIC / Privacy news",
+   "region": "Global",
+   "published": "2026-10-23T03:35:32Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "fdce8a7d1bd7",
+   "title": "State Bank of India Suffers a Customer PII Data Leak",
+   "link": "https://www.darkreading.com/cyberattacks-data-breaches/state-bank-india-customer-pii-data-leak",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-23T03:30:00Z",
+   "summary": "Relatively small data breaches in India can turn quite serious, thanks to a sophisticated underground market for trading PII.",
+   "score": 4,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/state-bank-of-india-confirms-data-leak.html"
+    }
+   ]
+  },
+  {
+   "id": "5c1da22f0123",
+   "title": "ABC wipes staff devices exposed to new, sophisticated cyber attack",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOSGRINGhhX043MDNKZlcxVmxpUklxOWU2UGtVcVEwR3ZDV0lPWWpMQ1I1NXh3bzhXa1ktSldpc0JlMHl0dXdHQmJuVkpYYl8zNnpJRVJwWmhKd2kyU0pvaENKajRJS2RWcGpjaEhGcVlrV1dMSnl3OTI2Ul8xenh4QkRDYzM1NTdYbDNhSXpaWnNhNWtI?oc=5",
+   "source": "ABC News & Headlines – Australian Broadcasting Corporation",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-23T01:43:38Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "a76158d6c15f",
+   "title": "Quest Diagnostics reports cyber breach affecting ‘certain patient records’",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1ER0M0TGJQUDV3QlJWZERfX0tZLUF3Uks5dllMWGtJd3FnbXVVakNWS0dQR19XdnVucnBKOF80R05FT3c1OE9KM2dUekJBYjZCR3VxZTdtY29jNlBfRGJ2UmpUUTFfWklqMVl4M0pmSmwtb0dnUEE?oc=5",
+   "source": "San Diego Union-Tribune",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-22T23:59:41Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "1a82da6a7e05",
+   "title": "Managing AI token consumption for operational resilience",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNZ09Ic1VnakNRakQwNzdCdWJURzlzYzEzaXZ3bGgwNGRrSkl3cVNSaUtyV2pXWDFSTEc3WXZ3TkFVRjJCYXdMUl8zODJwZmxFY3Z5aUZSdDNrbWwyckdOSjlWSkUzVXgza0IwYnFDekhReXVXMUNYWVZfQzlPV3Nma1FlcG1kQWVFNlJvdjMwZFQzcDAzRE5pcA?oc=5",
+   "source": "Australian Cyber Security Centre",
+   "feed": "ACSC (via Google News)",
+   "region": "AU",
+   "published": "2026-10-22T23:49:07Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "Australia"
+   ],
+   "why": []
+  },
+  {
+   "id": "972a9651804b",
+   "title": "Australia has toughest data breach fines in APAC: report",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOZG82N0ItSVptcnR1a3R2TUJBRV81dHJwU05qNGl1bGFibHotRzBtd2FRYlBoRUJ5QXhCbzdKWlJka2VjRDZpZ3JrbEdfTEdUZUtHejVRYjV4NDJVRHR2aUNmVDJmZml2T3h5d2c4UjVkS0laVVhDbTVRNDBETFowMVlTMFEyQXBuYVRxVUdfNlFoWmU1azNrWFBwQl83OU0wZm55M0JZTlNrQTFuSGt2aWVRM0lNY3BqdEloSngxcEdodnZ3?oc=5",
+   "source": "Technology Decisions",
+   "feed": "AU breach news",
+   "region": "AU",
+   "published": "2026-10-22T22:17:54Z",
+   "summary": "",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Data breach"
+   ],
+   "why": [
+    "Australia",
+    "Data breach"
+   ]
+  },
   {
    "id": "6af5f5a84e31",
    "title": "Railway warns devs to rotate secrets after potential breach",
@@ -123,6 +248,25 @@
    ]
   },
   {
+   "id": "778da97616c1",
+   "title": "Microsoft Links Storm-0940 to ConnectWise Supply Chain Attack",
+   "link": "https://www.darkreading.com/cyberattacks-data-breaches/microsoft-storm-0940-connectwise-supply-chain-attack",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-22T20:42:17Z",
+   "summary": "The China-linked actor used an AI-enabled penetration-testing tool to automate and accelerate its attack on more than 2,200 tenants.",
+   "score": 9,
+   "tags": [
+    "Real estate",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Real estate",
+    "SaaS / cloud"
+   ]
+  },
+  {
    "id": "524ad3c5d509",
    "title": "Client Alert: California Closes 2026 Legislative Session With Sweeping New Privacy and AI Laws",
    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQS19wR20zQTl3SXJqaGlzekx0ejJqd01WU0x4ODhqbzdwYzFwekp5anNRVVBzX2NUUkFXZmFoZF9CdGI4Tl9OckZLQXJTWks3QUY4bkc4T3l0SktQdnpyeWJrQmswUV85MFhnWkNyZjljM0M3bnhrY0M5X1p4U3NqanhvZzZtUU9TWTVWWUEtZ0JTYTBMUE5zQTFBUGhCUEtGcDh6eHdiOWhkZ0JONE4tcXZpVVc3UUJuREhkc9IBvAFBVV95cUxQS19wR20zQTl3SXJqaGlzekx0ejJqd01WU0x4ODhqbzdwYzFwekp5anNRVVBzX2NUUkFXZmFoZF9CdGI4Tl9OckZLQXJTWks3QUY4bkc4T3l0SktQdnpyeWJrQmswUV85MFhnWkNyZjljM0M3bnhrY0M5X1p4U3NqanhvZzZtUU9TWTVWWUEtZ0JTYTBMUE5zQTFBUGhCUEtGcDh6eHdiOWhkZ0JONE4tcXZpVVc3UUJuREhkcw?oc=5",
@@ -137,6 +281,23 @@
    ],
    "why": [
     "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "68d41bab13b9",
+   "title": "Trends In Healthcare Data Breach Statistics",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9PMzZZbVJzWV9lV0JPWXBJOW9BSmI2eElLWHNxWVAtTkhyNnoydUdqTDRnNzE0X056UTE2WW9nakR1UTkxR0ZzX3pMVmdqb2Vjb095eHpIM1Bva0UtTXphRnh5bkpuaDBNQWNvamd5Z2E?oc=5",
+   "source": "The HIPAA Journal",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-22T20:38:40Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
    ]
   },
   {
@@ -329,38 +490,13 @@
    ]
   },
   {
-   "id": "6b7369ef168a",
-   "title": "Meta Ordered to Pay $25 Billion After Court Finds 43 Million Privacy Violations",
-   "link": "https://thehackernews.com/2026/10/meta-ordered-to-pay-25-billion-after.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-22T16:12:31Z",
-   "summary": "Social media giant Meta was ordered to pay 25 billion in penalties by a New Mexico court on Wednesday as part of a data privacy lawsuit that sprang from the company's Cambridge Analytica data scandal, which came to light in 2018. According to multiple reports from the Associated Press, the New…",
-   "score": 4,
-   "tags": [
-    "Identity",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Identity",
-    "SaaS / cloud"
-   ],
-   "also": [
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/meta-ordered-to-pay-new-mexico-25-billion-for-deceiving-users-about-privacy-on-facebook/"
-    }
-   ]
-  },
-  {
    "id": "475cb77c6a8a",
    "title": "Side Letter: First through the breach",
    "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOUmh1NnAwZ1pfUy1ZV3hzMklXODFPdTZOTTBrYVdpbmdHa1RrSEZfTVhEb3JrQm9qT25xU2Z4TU9VU0R5dXRPQ01fb3NEMlJJUHU2Qk5EZWMxdjJVRUI4ODh3SUo1U25xblFfeExlTjY2aDNpaG5MaTEySDRuS0RDME9ObS1EMWM?oc=5",
    "source": "PEI Private Equity",
    "feed": "Real estate cyber news",
    "region": "Global",
-   "published": "2026-10-22T16:02:08Z",
+   "published": "2026-10-22T16:25:57Z",
    "summary": "",
    "score": 7,
    "tags": [
@@ -947,6 +1083,25 @@
    ]
   },
   {
+   "id": "aae9d66cdeed",
+   "title": "Australian websites hit after AI finds PHP vulnerability",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPVkNSY1BJbjlvUGZMUmZmTTF6S3g1S0o4S05NeF9CRXcwTkwtcXVWUFVreS1ZdnVZUzZubzFjTHIxS3dBR0VnTzI3RUpYYWJwYzVmdGpCYjZrVHdKX1pBa1UtQVA2YXFxY01nUndIdi16dHRjWEhWczdZRmN6VDFvT2huTFBIZHViMkZ3TU5WTE10Vk4tQW00?oc=5",
+   "source": "grafa.com",
+   "feed": "ASD / ACSC in the news",
+   "region": "AU",
+   "published": "2026-10-21T22:30:20Z",
+   "summary": "",
+   "score": 12,
+   "tags": [
+    "Australia",
+    "Vulnerability"
+   ],
+   "why": [
+    "Australia",
+    "Vulnerability"
+   ]
+  },
+  {
    "id": "832124389031",
    "title": "Google Chrome adds Gemini-powered scam detection, warns users of ClickFix attacks",
    "link": "https://www.bleepingcomputer.com/news/google/google-chrome-adds-gemini-powered-scam-detection-warns-users-of-clickfix-attacks/",
@@ -1219,6 +1374,33 @@
     "Microsoft 365",
     "Identity",
     "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "86b95972d873",
+   "title": "JUST IN: Meta Ordered to Pay Whopping $25 Billion Privacy Breach Settlement",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNTWJEUWM0Rk1sOUZDOVpTd1JpZzQ0eTFqWUd4UndPQ2JSWER4bG9NWTJDQVV4aVZBNEptdEtXVGk0NDFXYW1LYkJRY2YwT2g3YUlOZHp1bk90QWgzRlktOTNjVGZ4c29PNEdVT1d6b3dNendiaXdWT3BtYlR5X1hTb2V0aUxBNDNyZkxyeTY0T1JKQ0xpSHpKSXVOUEJXNGc?oc=5",
+   "source": "Yahoo Finance",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-21T18:15:14Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/meta-ordered-to-pay-25-billion-after.html"
+    },
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/meta-ordered-to-pay-new-mexico-25-billion-for-deceiving-users-about-privacy-on-facebook/"
+    }
    ]
   },
   {
@@ -1895,23 +2077,6 @@
      "source": "BleepingComputer",
      "url": "https://www.bleepingcomputer.com/news/security/dhs-bans-deepseek-products-across-us-federal-civilian-agencies/"
     }
-   ]
-  },
-  {
-   "id": "17efaa05bd14",
-   "title": "State Bank of India Confirms Data Leak After 3,897 Customer Records Found on Dark Web",
-   "link": "https://thehackernews.com/2026/10/state-bank-of-india-confirms-data-leak.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-21T07:44:22Z",
-   "summary": "State Bank of India has identified 3,897 customer records containing personal information in a set of about 375,000 records available on the dark web, and it does not yet know where the data came from. The state-owned bank, India's largest, said in a stock-exchange filing dated October 21 that it…",
-   "score": 4,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
    ]
   },
   {
@@ -5629,23 +5794,6 @@
    ]
   },
   {
-   "id": "68d41bab13b9",
-   "title": "Trends In Healthcare Data Breach Statistics",
-   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9PMzZZbVJzWV9lV0JPWXBJOW9BSmI2eElLWHNxWVAtTkhyNnoydUdqTDRnNzE0X056UTE2WW9nakR1UTkxR0ZzX3pMVmdqb2Vjb095eHpIM1Bva0UtTXphRnh5bkpuaDBNQWNvamd5Z2E?oc=5",
-   "source": "The HIPAA Journal",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-15T07:00:00Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
    "id": "c86f8dee64ea",
    "title": "EU Grocers Pay a Steep Price for Unpatched Fridge Firmware",
    "link": "https://www.darkreading.com/ics-ot-security/eu-grocers-unpatched-fridge-firmware",
@@ -7242,134 +7390,6 @@
     }
    ],
    "epss": 0.0041
-  },
-  {
-   "id": "46e66f8ca65c",
-   "title": "The MFA Gaps Attackers are Still Exploiting",
-   "link": "https://www.bleepingcomputer.com/news/security/the-mfa-gaps-attackers-are-still-exploiting/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-13T14:01:11Z",
-   "summary": "Attackers continue exploiting gaps in MFA coverage, using stolen credentials to access VPNs, RDP, and Windows systems that still rely on passwords alone. Specops explains why protecting cloud applications isn't enough and how organizations can close these authentication gaps. [...]",
-   "score": 5,
-   "tags": [
-    "Identity",
-    "Edge devices"
-   ],
-   "why": [
-    "Identity",
-    "Edge devices"
-   ]
-  },
-  {
-   "id": "2fd581d2b9b4",
-   "title": "Xandr Fined a Record €8.6 Million for Relaying Grindr Data Revealing Sexual Orientation",
-   "link": "https://thehackernews.com/2026/10/xandr-fined-record-86-million-for.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-13T13:12:32Z",
-   "summary": "The Norwegian Data Protection Authority (DPA) has fined Xandr, an advertising unit owned by Microsoft, €8.6 million ($9.62 million) for illegally relaying ​Grindr users' sensitive data to advertisers. The administrative penalty is the largest issued by the data protection watchdog, arguing the…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "cd473945c5d8",
-   "title": "[Webinar] How to Stop AI-Driven Privilege Escalation With Runtime Identity Controls",
-   "link": "https://thehackernews.com/2026/10/webinar-how-to-stop-ai-driven-privilege.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-13T11:57:06Z",
-   "summary": "The dangerous part of a stolen identity isn't always the initial login. It's what an attacker can do with that access next. With AI accelerating reconnaissance, exploitation of vulnerabilities, and privilege escalation, attackers can move through systems faster than security teams can investigate.…",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "fb6e12345e1c",
-   "title": "XWorm RAT Evolves Into Surveillance Platform",
-   "link": "https://www.securityweek.com/xworm-rat-evolves-into-surveillance-platform/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-13T11:13:10Z",
-   "summary": "Expanded plugin count allows the malware to monitor users’ location, stream live audio, and interact with authenticated browser sessions. The post XWorm RAT Evolves Into Surveillance Platform appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "8f63a0f3f054",
-   "title": "LG Smart TVs Vulnerable to Pre-Auth Root Takeover From Local Network",
-   "link": "https://thehackernews.com/2026/10/lg-smart-tvs-vulnerable-to-pre-auth.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-13T11:09:10Z",
-   "summary": "Three vulnerabilities in LG's webOS can be chained to give an attacker on the same local network root access to certain smart TVs without a PIN or any interaction from the owner. LG has issued a fix, according to an advisory published by SSD Secure Disclosure on October 12. The chain was tested on…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "8986d7ba1cda",
-   "title": "AI Turns Familiar Cyberattacks Into a Race Against Time",
-   "link": "https://www.securityweek.com/ai-turns-familiar-cyberattacks-into-a-race-against-time/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-13T11:00:00Z",
-   "summary": "IBM’s Steve Wallin talks to SecurityWeek on the effect of AI-driven attacks on enterprise defenses. The post AI Turns Familiar Cyberattacks Into a Race Against Time appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "1e8135b67b02",
-   "title": "$86 Million Crypto Heist Linked to Ledger Signer Hardware Implant",
-   "link": "https://www.securityweek.com/86-million-crypto-heist-linked-to-ledger-signer-hardware-implant/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-13T10:36:05Z",
-   "summary": "A small circuit board hidden under the signers’ screens read user data and transmitted it to the attackers. The post $86 Million Crypto Heist Linked to Ledger Signer Hardware Implant appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": [],
-   "also": [
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/ledger-confirms-hardware-wallet-spy-implant-behind-crypto-thefts/"
-    },
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/ledger-finds-unauthorized-hardware.html"
-    }
-   ]
-  },
-  {
-   "id": "302530343dab",
-   "title": "Product Walkthrough: Bitdefender AI Visibility and Control",
-   "link": "https://thehackernews.com/2026/10/product-walkthrough-bitdefender-ai.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-13T10:30:00Z",
-   "summary": "A user opens a browser tab, pastes data into a chat assistant, and nothing is installed. A developer adds a coding assistant as an editor extension, and nothing shows up in the installed programs list. Someone downloads a local model runtime, a program that runs models directly on the machine…",
-   "score": 4,
-   "tags": [
-    "Microsoft 365"
-   ],
-   "why": [
-    "Microsoft 365"
-   ]
   }
  ]
 }
