@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T17:11:02Z",
+ "generated": "2026-10-23T21:26:20Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -34,7 +34,7 @@
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 4,
+   "count": 3,
    "error": null
   },
   {
@@ -52,7 +52,7 @@
   {
    "name": "CISA KEV",
    "ok": true,
-   "count": 15,
+   "count": 17,
    "error": null
   },
   {
@@ -105,6 +105,213 @@
   }
  ],
  "items": [
+  {
+   "id": "78e6b44f5a3d",
+   "title": "Trust Is Not What It Seems — And Fraudsters Are Counting on It",
+   "link": "https://www.darkreading.com/cyber-risk/trust-is-not-what-it-seems-and-fraudsters-are-counting-on-it",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-23T20:57:56Z",
+   "summary": "Threat actors don't need to rely on malware to breach organizations anymore. They're simply calling help desks and politely asking for access, with a little help from artificial intelligence.",
+   "score": 3,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "201a6bfc4c9c",
+   "title": "Abandoned Popcorn Time app exposed millions of device to RCE attacks",
+   "link": "https://www.bleepingcomputer.com/news/security/abandoned-popcorn-time-app-exposed-millions-of-device-to-rce-attacks/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-23T20:55:05Z",
+   "summary": "Researchers remotely disabled a vulnerable updater in the abandoned Time4Popcorn app, a fork of the Popcorn Time BitTorrent client, closing a security flaw that could have allowed attackers to execute malicious code with elevated privileges on millions of computers. [...]",
+   "score": 6,
+   "tags": [
+    "Data breach",
+    "Vulnerability"
+   ],
+   "why": [
+    "Data breach",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "99cc8517906e",
+   "title": "(Reliable)? php2shell exploitability, (Fri, Oct 23rd)",
+   "link": "https://isc.sans.edu/diary/rss/33452",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-10-23T20:04:47Z",
+   "summary": "Yesterday everyone was running around like crazy (me included :) because of the php2shell vulnerability.",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "f1cc9ef1de56",
+   "title": "Exposed to PHP2Shell? Cyber Experts Weigh in With Advice",
+   "link": "https://www.darkreading.com/application-security/exposed-php2shell-cyber-experts-advice",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-23T19:41:23Z",
+   "summary": "Fixing the critical PHP flaws is not as simple as clicking \"Update.\" Here's how to assess your risk, and what you can do to protect yourself.",
+   "score": 6,
+   "tags": [
+    "Data breach",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Data breach",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "1175c0d5e99e",
+   "title": "Devika Group: A Legacy of Over 70 Years in Real Estate",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPUjZwR2xicW9fQW95UzZ3LUJucjFSU19MTi1uNlBkcHJveUxyN3VZZXQ0NjlZbGNKUjRVN09BdGs1WVlMam9rMGtuM2NhSzkzdjNpQlpRMGtGRVh5akVTc2NORm5kREVLZm90b2UyeFdNQUE4VG13QjZaVUNtYk1IdXBOTGM4MnhJZ0gzU0JaQlQ1UkpDOE1FekZxQlfSAaIBQVVfeXFMUGlrQnJ4djBNbjdxRmlRNlh3aGFvM05rNFlsM01RUXVhWmZIcVNRSHZ6clNLcXRnQ3ZHYkFUNzNSZTlOZl9ybS1CR1J3WlhQWFVwVlFyM3lDR0c1MWhfeGxwRXdsREp6M0NvbEhwQTFXaGJySDRIX1ZlQjM1RHgxSWJKMkNsaUhocXRZQjdzWVFFeFQ0dUZmd3Y5TVVya0hyb2xR?oc=5",
+   "source": "Lokmat Times",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-23T18:54:53Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
+   "id": "e62f85ca100b",
+   "title": "Microsoft Teams to get AI-powered, context-aware phishing detection",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-teams-to-get-ai-powered-context-aware-phishing-detection/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-23T18:54:41Z",
+   "summary": "Microsoft has announced plans to add AI-powered phishing detection to Teams messages starting in early November 2026. [...]",
+   "score": 8,
+   "tags": [
+    "Phishing",
+    "Microsoft 365"
+   ],
+   "why": [
+    "Phishing",
+    "Microsoft 365"
+   ]
+  },
+  {
+   "id": "077ef200d3e0",
+   "title": "BlackX UEFI Bootkit Bypasses Secure Boot on Patched Windows Systems Missing Revocations",
+   "link": "https://thehackernews.com/2026/10/blackx-uefi-bootkit-bypasses-secure.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-23T18:50:13Z",
+   "summary": "Diplomatic organizations in Central Asia have been targeted by a sophisticated new Unified Extensible Firmware Interface (UEFI) bootkit called BlackX. The activity, which singled out diplomatic entities in Tajikistan, Uzbekistan, and Turkmenistan in early 2026, is suspected to be orchestrated by a…",
+   "score": 5,
+   "tags": [
+    "Microsoft 365",
+    "Vulnerability"
+   ],
+   "why": [
+    "Microsoft 365",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "abfff6ba3917",
+   "title": "Inside the LiteLLM 1.107.0 supply chain compromise: Credential theft through Python startup hooks",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/10/23/inside-the-litellm-1-107-0-supply-chain-compromise-credential-theft-through-python-startup-hooks/",
+   "source": "Microsoft Security Blog",
+   "feed": "Microsoft Security Blog",
+   "region": "Global",
+   "published": "2026-10-23T18:12:19Z",
+   "summary": "Microsoft Threat Intelligence analyzes the LiteLLM 1.107.0 compromise, including Python startup hooks, credential theft, remote code loading, detections, and mitigations. The post Inside the LiteLLM 1.107.0 supply chain compromise: Credential theft through Python startup hooks appeared first on…",
+   "score": 9,
+   "tags": [
+    "Identity",
+    "SaaS / cloud",
+    "AI threats"
+   ],
+   "why": [
+    "Identity",
+    "SaaS / cloud",
+    "AI threats"
+   ],
+   "also": [
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/litellm-compromised-in-fresh-supply-chain-attack/"
+    }
+   ]
+  },
+  {
+   "id": "4645fb818a8e",
+   "title": "Ruby Fixes Three Regex Engine Bugs Responsible for Four Critical GitLab RCE Flaws",
+   "link": "https://thehackernews.com/2026/10/ruby-fixes-three-regex-engine-bugs.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-23T17:54:08Z",
+   "summary": "Ruby has released versions 4.0.9, 3.4.12, and 3.3.13 to fix three bugs in Onigmo, the regular expression engine built into the language. The bugs lie behind four critical security flaws that GitLab patched over the past month. GitLab found that a specially crafted pattern could corrupt memory…",
+   "score": 5,
+   "tags": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "015a882ee274",
+   "title": "Exposed Infrastructure Reveals How Ransomware Affiliates Used AI Agents to Execute Intrusions",
+   "link": "https://thehackernews.com/2026/10/exposed-infrastructure-reveals-how.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-23T17:50:47Z",
+   "summary": "Cybersecurity researchers have discovered an artificial intelligence (AI)-driven intrusion ecosystem run by affiliates of the INC and The Gentlemen ransomware groups. Central to the operation is an \"Autonomous Red Team Kill Chain Framework\" referred to as Phantom. The threat actor is assessed to…",
+   "score": 11,
+   "tags": [
+    "Microsoft 365",
+    "Ransomware",
+    "Data breach"
+   ],
+   "why": [
+    "Microsoft 365",
+    "Ransomware",
+    "Data breach"
+   ]
+  },
+  {
+   "id": "b95d5610d154",
+   "title": "AI Tools Are Generating Massive Attacks for Little Cost",
+   "link": "https://www.darkreading.com/cybersecurity-operations/ai-tools-massive-attacks-little-cost",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-23T17:26:59Z",
+   "summary": "One campaign targets 105 sites using open-weight models; in another, public models gained full domain control for $12. Cyber-defense will have to change.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
   {
    "id": "27be26c6f177",
    "title": "Microsoft: Windows Server 2016 reaches end of support in January",
@@ -339,7 +546,7 @@
    "feed": "Dark Reading",
    "region": "Global",
    "published": "2026-10-23T11:38:28Z",
-   "summary": "Microsoft's Project Perception adds Guardian Agents to monitor and contain anomalous AI agents, but experts warn that policing unpredictable agents with other agents may multiply — not contain — the risk.",
+   "summary": "Microsoft's Project Perception adds Guardian Agents to monitor and contain anomalous AI agents, but experts warn that policing unpredictable agents with other agents may compound — not contain — the risk.",
    "score": 1,
    "tags": [
     "Vulnerability"
@@ -383,7 +590,7 @@
   },
   {
    "id": "80697809b26e",
-   "title": "Russian-Linked Hackers Used New Mesh Network Backdoor in Destructive Ukraine Attack",
+   "title": "Russia-Linked Hackers Used New Mesh Network Backdoor in Destructive Ukraine Attack",
    "link": "https://thehackernews.com/2026/10/russian-linked-hackers-used-new-mesh.html",
    "source": "The Hacker News",
    "feed": "The Hacker News",
@@ -732,6 +939,46 @@
    ]
   },
   {
+   "id": "580394e0c04d",
+   "title": "CVE-2026-114625: Arista VeloCloud Orchestrator — Arista VeloCloud Orchestrator SQL Injection Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-114625",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-10-23T00:00:00Z",
+   "summary": "Arista VeloCloud Orchestrator on-prem contains a SQL injection vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful exploitation may compromise the confidentiality, integrity, and… CISA remediation due 2026-10-26.",
+   "score": 4,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0056
+  },
+  {
+   "id": "b60d049a4f32",
+   "title": "CVE-2026-110447: Collabora Collabora Online – Built-in CODE Server — Collabora Online – Built-in CODE Server OS Command Injection Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-110447",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-10-23T00:00:00Z",
+   "summary": "Collabora Collabora Online – Built-in CODE Server when used within the NextCloud platform contains an OS command injection vulnerability that allows for remote code execution when the CODE server isn't running. CISA remediation due 2026-10-26.",
+   "score": 4,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0123
+  },
+  {
    "id": "1a82da6a7e05",
    "title": "Managing AI token consumption for operational resilience",
    "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNZ09Ic1VnakNRakQwNzdCdWJURzlzYzEzaXZ3bGgwNGRrSkl3cVNSaUtyV2pXWDFSTEc3WXZ3TkFVRjJCYXdMUl8zODJwZmxFY3Z5aUZSdDNrbWwyckdOSjlWSkUzVXgza0IwYnFDekhReXVXMUNYWVZfQzlPV3Nma1FlcG1kQWVFNlJvdjMwZFQzcDAzRE5pcA?oc=5",
@@ -1074,7 +1321,7 @@
    "source": "ABC News & Headlines – Australian Broadcasting Corporation",
    "feed": "AU breach news",
    "region": "Global",
-   "published": "2026-10-22T14:22:54Z",
+   "published": "2026-10-22T14:26:27Z",
    "summary": "",
    "score": 4,
    "tags": [
@@ -1098,7 +1345,7 @@
    "feed": "Dark Reading",
    "region": "Global",
    "published": "2026-10-22T14:21:22Z",
-   "summary": "Insurers are split on AI risk: some build specialized agentic AI coverage, while major carriers quietly exclude it — leaving enterprises exposed without their knowledge.",
+   "summary": "Some build specialized agentic AI coverage, while major carriers quietly exclude it — leaving enterprises exposed without their knowledge.",
    "score": 3,
    "tags": [
     "Data breach"
@@ -7134,269 +7381,6 @@
    "why": [
     "Vulnerability"
    ]
-  },
-  {
-   "id": "ef61a9283f23",
-   "title": "Four-Byte Write and Timing Bug Let Researchers Run Code in Windows SmartScreen Enclave",
-   "link": "https://thehackernews.com/2026/10/four-byte-write-and-timing-bug-let.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-14T05:52:28Z",
-   "summary": "Security researchers ran their own code inside a protected part of Windows that is meant to stay sealed off even when the rest of the computer is taken over. The protected area is a VBS enclave, an isolated slice of memory the operating system uses to guard secrets, and the one they broke into…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "144f472a1e64",
-   "title": "Ransomware Gangs Embrace Physical Threats, Family Stalking?",
-   "link": "https://www.darkreading.com/cybersecurity-analytics/ransomware-gangs-physical-threats-family-stalking",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-14T05:00:00Z",
-   "summary": "Organizations are reporting that employees face threats of stalking, physical violence, and abduction. But these alarming claims are hard to verify.",
-   "score": 4,
-   "tags": [
-    "Ransomware"
-   ],
-   "why": [
-    "Ransomware"
-   ]
-  },
-  {
-   "id": "b7b1929554c4",
-   "title": "Microsoft Patches Record 1,413 Flaws, Including Exploited Windows Shell Bug",
-   "link": "https://thehackernews.com/2026/10/microsoft-patches-record-1413-flaws.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-14T04:34:43Z",
-   "summary": "Microsoft on Tuesday shattered its own Patch Tuesday record by shipping patches for a whopping 1,413 vulnerabilities, including one that it said has come under active exploitation. These include 1,102 flaws in Windows, 134 in Office, 61 in Developer Tools, 36 in SharePoint Server, and 22 in SQL…",
-   "score": 8,
-   "tags": [
-    "Microsoft 365",
-    "Vulnerability",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Microsoft 365",
-    "Vulnerability",
-    "SaaS / cloud"
-   ],
-   "also": [
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/microsoft-patches-record-1413-vulnerabilities-including-exploited-windows-zero-day/"
-    }
-   ]
-  },
-  {
-   "id": "2755ecc5ca8a",
-   "title": "Saemaul Geumgo Unaware of Personal Information Breach Until 60 Hours After Hacking Incident; Data of 400 Individuals Exposed",
-   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5PcUpvaEVfNWNCWVVpNjVPM3FMdUdnUUpDZXN2WDlHMVpsSVNIbzdsZFplMWpUZExnY2lhT2Y5QVg4YmFuWVVZVTdNTk1fZGd2VDE3a2QzVjlONUdMRXg1Q2Vn?oc=5",
-   "source": "재경일보",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-14T04:05:00Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "b57de9624406",
-   "title": "Taylor Weiner Team Marks Cybersecurity Awareness Month With a Closing-Funds Warning as FBI Reports Real Estate Fraud Losses Rose 58% to $275.1 Million in 2025",
-   "link": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxPZzlIVVhSSVlmUGt4M1B6bGJJeFY1OUxXVDhEVmZ1T0N6R1E0QXhuaS1ZWTZDVmxvdjZQWDhmUUxqUkpyUEljRHlFN1FvTmRnLU1FRVVabE9kMktEb0pjTzZ1TG55X09iNzRDVElLdWpCSk1RcElOakRxNDRON2o5dTg0Z3Y0SGo5S3Y4emgtckNkNG0yaDBFS2tpSmtXVFoycUFhcnVhdG9wZHJjUF9rQ2xubkVkWUs3aWFhb3JPZExMTEM2bUktUDcxRnVpUUx0c1dYbkd6c2s1QUNLSVlKN3VENWQxMk1ONHRFUk1SLXZ1cERYVzFOeXNwbk13QTVWVC13QU9yRjU3ejh4dHhPbWhPSFpLeTVvczFKQnFXZUlDWkdmYWprOHln?oc=5",
-   "source": "WV News",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-14T03:13:32Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ],
-   "also": [
-    {
-     "source": "The Laconia Daily Sun",
-     "url": "https://news.google.com/rss/articles/CBMitgJBVV95cUxNM1B3V3JnSTFpUV81dEgyd1JOWldjdDB1M2lUY3lVbThhcF9xd3d6eHItS1ZGaUw0b3Q2RkZYQWtZOVE1c3BXbVN3cXJtZmpLQWxwenVYUlc0V1pLTDJIX1E5RnN1YUVzbU92UGJwclo1S2ZBN3V0ck9yR0IzT1otY19wQkotejQ5a1BYMlJCb1E0WGtTcTBjSHBmcE41WVR6eFU0ZU8xcTZ3T1Y1MVlxUkliNTlWU0gxX1ZWYmppbzZFZDhLOXVPYS1RUFUxc3hGYV92Ukgwai1zTWc2N1EydDFicE5MSnJURklNdkFXVndiR2xFU1R5a2o0RDB2R3pxOEJMWE1PRWdmazVkZGFWS2g4SUREaWkxTVk4NjUyMFo2QjFncU5GUVc3X1Y4dVQ1ZVp6QUh3?oc=5"
-    },
-    {
-     "source": "WKOW",
-     "url": "https://news.google.com/rss/articles/CBMipwJBVV95cUxPR25ISmdldG0wVFJMa2tRM1BJZHF6TkpaeFNfRWlCNTBYX3Y1RXY3MGtTYVV0UHl3WURUa1J3RTJKY0VQSXJmN2ZzZWRnblZOaDJZbXI5SXhtd0Y1cko4Wm5yNWhMX3FZaWxValhUY05Ddk5sTXRuRE52QUVEWHctNzRpYWdFendXNzBLd2ZLQkhMcFplV1hobzhUOEl5UUdhY29qSnNsWi0xVGJJYXg2S2RUX3dnY05QVFJWMVc1T1kta3VjTXBKSDlpTjJmbUZuenE0d0dPcngxMUk2YUdoQWd1dDNkLUVyeTN3T3J4Z1YyYVQwejBuYldsaGc3cHZOMUhNWU4xLXFZdS00MlpGdnJIMlgtMXZXMV9ER0RhSjJGNGdyMXFR?oc=5"
-    }
-   ]
-  },
-  {
-   "id": "a6d0b1683624",
-   "title": "Protecting operational technology and edge devices",
-   "link": "https://www.cyber.gov.au/alert/protecting-operational-technology-and-edge-devices",
-   "source": "ACSC Alerts",
-   "feed": "ACSC Alerts",
-   "region": "AU",
-   "published": "2026-10-14T02:17:37Z",
-   "summary": "Alert on the cyber security risks to operational technology (OT), including refrigeration and cooling technology, with mitigation advice and guidance for businesses and organisations that operate this technology.",
-   "score": 6,
-   "tags": [
-    "Australia"
-   ],
-   "why": [],
-   "also": [
-    {
-     "source": "Australian Cyber Security",
-     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOMmVkTW5oZkVYTk5TR0JBQnJmdWNRaWxadEpaUlZlQlpZQ3kxdGVRVEwyUVNkYUF3UDFNQ1pRam0xcVlGTzVyblItSmQwV2xkdnhXNEhPMjN0eHJlenFfS0c4SThiS1FFa1Jkem9IWG9ROXo5OTlkeHgtTW5WSHBYU1dKT3NpZUJN?oc=5"
-    }
-   ]
-  },
-  {
-   "id": "cb6f424a9bac",
-   "title": "ISC Stormcast For Wednesday, October 14th, 2026 https://isc.sans.edu/podcastdetail/10136, (Wed, Oct 14th)",
-   "link": "https://isc.sans.edu/diary/rss/33424",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-10-14T02:00:03Z",
-   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
-   "score": 1,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "cb3154f35431",
-   "title": "OpenAI Employee Arrested for Allegedly Planting Hidden Recorder in Executive Conference Room",
-   "link": "https://thehackernews.com/2026/10/openai-employee-arrested-for-allegedly.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-14T01:59:25Z",
-   "summary": "A Saudi national and employee of OpenAI has been arrested for allegedly planting a hidden recording device in an executive conference room at the company's San Francisco offices to covertly record sensitive conversations. Abdulrahman Alfozan, 35, has been charged with using or endeavoring to use…",
-   "score": 2,
-   "tags": [
-    "Edge devices"
-   ],
-   "why": [
-    "Edge devices"
-   ],
-   "also": [
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-engineer-arrested-for-allegedly-planting-spy-device-in-office/"
-    },
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/employee-arrested-after-listening-device-found-in-openai-conference-room-fbi-and-the-company-say/"
-    }
-   ]
-  },
-  {
-   "id": "e4ff1a4e534d",
-   "title": "Data Breaches That Have Happened This Year (2026 Update)",
-   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1QZkRBeUR5Y19DcGJvaGwxa3Z5MWdGTTlzSEhxcDdtNU1PZ0s0VDkxaW9KRnJTZWNUb295S0RqQmtSVGtwTUo2RlRLVlpFMkxZZmRaTkZnZGc0cVE?oc=5",
-   "source": "Tech.co",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-14T00:22:19Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "300b6923da02",
-   "title": "CVE-2026-76519: Cisco Secure Email Gateway — Cisco Secure Email Gateway Relative Path Traversal Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76519",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-10-14T00:00:00Z",
-   "summary": "Cisco Secure Email Gateway contains a relative path traversal vulnerability that could allow an unauthenticated, remote attacker to write arbitrary files on the underlying operating system. CISA remediation due 2026-10-17.",
-   "score": 7,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "why": [
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "epss": 0.0157
-  },
-  {
-   "id": "45ee4e8f72f4",
-   "title": "CVE-2026-0322: Palo Alto Networks PAN-OS — Palo Alto Networks PAN-OS Code Injection Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-0322",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-10-14T00:00:00Z",
-   "summary": "Palo Alto Networks PAN-OS contains a code injection vulnerability that could allow an authenticated attacker with network access to execute arbitrary code with root privileges on the firewall. CISA remediation due 2026-10-17.",
-   "score": 7,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "why": [
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "epss": 0.0121
-  },
-  {
-   "id": "f04894a7601f",
-   "title": "CVE-2026-105134: Ahsay AhsayCBS — Ahsay AhsayCBS Command Injection Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-105134",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-10-14T00:00:00Z",
-   "summary": "Ahsay AhsayCBS contains a command injection vulnerability that could allow a remote attacker to execute operating system commands via manipulation of the random parameter in the Replication Receiver component’s /rps/api/json/UpdateReceivers.do endpoint. This… CISA remediation due 2026-10-17.",
-   "score": 4,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.3831
-  },
-  {
-   "id": "eb20c74d6ce5",
-   "title": "CVE-2026-105133: Ahsay AhsayCBS — Ahsay AhsayCBS Improper Authentication Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-105133",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-10-14T00:00:00Z",
-   "summary": "Ahsay AhsayCBS contains an improper authentication vulnerability that could allow a remote attacker to bypass authentication via manipulation of the random parameter in the API component’s checkSysPwd function. This vulnerability can be chained with… CISA remediation due 2026-10-17.",
-   "score": 4,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.0579
   }
  ]
 }
