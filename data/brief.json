@@ -1,19 +1,61 @@
 {
- "date": "2026-10-23",
- "generated": "2026-10-22T21:49:33+00:00",
- "title": "Sec-Pulse brief - Fri 23 Oct",
+ "date": "2026-10-24",
+ "generated": "2026-10-23T21:33:39+00:00",
+ "title": "Sec-Pulse brief - Sat 24 Oct",
  "items": [
   {
-   "id": "aec87e7b79dd",
-   "title": "Australian government websites exposed to major cyber flaw",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNTzFySVg1UFdtX1BIa0lBSThrYWdtQ3VubzRrUjNRYVFZMzMwLUtHZTFlRE5pUTItMW5GdDFlcWtTNDJVQkhDMVBxQlREWmd6U0M0VHVTRVc3ZklxUGFGLTIzNmREbHpjei1sTENxdUpRRkhZOXYwSjdQbzFBR0dtc1pGNDlXakhRYy1zODU0eURNR2dOSnlJcmJ2VGlPMTZtUlpuRA?oc=5",
-   "source": "SBS",
+   "id": "9121dd1ef642",
+   "title": "Australia's Cyber Agency Flags Critical Vulnerabilities In Fortinet, One Of The Biggest Global Cybersecurity Vendors",
+   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNXzFUX3huMnZRb29WQmtlVFFSVW1YNWtlSmViZEZKWV9zNzkxLWIyOTl3NS02MXFkbEZ2VmxVRU4xanRUOTFWTXI0dUNUNzVzR3FXaFVyaXdEcFk1eUJ5S015ZjI5blNXRlRvSElmX1d6M1VtUGwzTHdSYm41c3g1LXkxTEJPY25fR2RvdkxEUTJheG5tRmp4TmViNjhOd3VxX1RyMENmNURieVd0MkxVMjRLY05velRFT1FjajR3UnZTQWlfYkpoM3ljUlE1VHJsY2tXVVpUZ0lNcEtMb3Z3?oc=5",
+   "source": "OfficeChai",
    "region": "AU",
-   "published": "2026-10-22T09:31:34Z",
+   "published": "2026-10-23T09:28:05Z",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Edge devices"
+   ],
+   "summary": ""
+  },
+  {
+   "id": "972a9651804b",
+   "title": "Australia has toughest data breach fines in APAC: report",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOZG82N0ItSVptcnR1a3R2TUJBRV81dHJwU05qNGl1bGFibHotRzBtd2FRYlBoRUJ5QXhCbzdKWlJka2VjRDZpZ3JrbEdfTEdUZUtHejVRYjV4NDJVRHR2aUNmVDJmZml2T3h5d2c4UjVkS0laVVhDbTVRNDBETFowMVlTMFEyQXBuYVRxVUdfNlFoWmU1azNrWFBwQl83OU0wZm55M0JZTlNrQTFuSGt2aWVRM0lNY3BqdEloSngxcEdodnZ3?oc=5",
+   "source": "Technology Decisions",
+   "region": "AU",
+   "published": "2026-10-22T22:17:54Z",
    "score": 13,
    "tags": [
     "Australia",
     "Data breach"
+   ],
+   "summary": ""
+  },
+  {
+   "id": "015a882ee274",
+   "title": "Exposed Infrastructure Reveals How Ransomware Affiliates Used AI Agents to Execute Intrusions",
+   "link": "https://thehackernews.com/2026/10/exposed-infrastructure-reveals-how.html",
+   "source": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-23T17:50:47Z",
+   "score": 11,
+   "tags": [
+    "Microsoft 365",
+    "Ransomware",
+    "Data breach"
+   ],
+   "summary": "Cybersecurity researchers have discovered an artificial intelligence (AI)-driven intrusion ecosystem run by affiliates of the INC and The Gentlemen ransomware groups. Central to the operation is an \"Autonomous Red Team Kill Chain Framework\" referred to as Phantom. The threat actor is assessed to…"
+  },
+  {
+   "id": "1175c0d5e99e",
+   "title": "Devika Group: A Legacy of Over 70 Years in Real Estate",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPUjZwR2xicW9fQW95UzZ3LUJucjFSU19MTi1uNlBkcHJveUxyN3VZZXQ0NjlZbGNKUjRVN09BdGs1WVlMam9rMGtuM2NhSzkzdjNpQlpRMGtGRVh5akVTc2NORm5kREVLZm90b2UyeFdNQUE4VG13QjZaVUNtYk1IdXBOTGM4MnhJZ0gzU0JaQlQ1UkpDOE1FekZxQlfSAaIBQVVfeXFMUGlrQnJ4djBNbjdxRmlRNlh3aGFvM05rNFlsM01RUXVhWmZIcVNRSHZ6clNLcXRnQ3ZHYkFUNzNSZTlOZl9ybS1CR1J3WlhQWFVwVlFyM3lDR0c1MWhfeGxwRXdsREp6M0NvbEhwQTFXaGJySDRIX1ZlQjM1RHgxSWJKMkNsaUhocXRZQjdzWVFFeFQ0dUZmd3Y5TVVya0hyb2xR?oc=5",
+   "source": "Lokmat Times",
+   "region": "Global",
+   "published": "2026-10-23T18:54:53Z",
+   "score": 10,
+   "tags": [
+    "Real estate"
    ],
    "summary": ""
   },
@@ -32,57 +74,15 @@
     "SaaS / cloud"
    ],
    "summary": "Linux servers running KSMBD, the kernel's built-in SMB server, are exposed to two publicly reported remote code execution flaws rated 9.0 by Trend Micro's Zero Day Initiative, with no fix yet in the mainline kernel. One of them, ZDI-CAN-33774, can be triggered before any network authentication.…"
-  },
-  {
-   "id": "04fe29893135",
-   "title": "Exclusive: Sydney-based visualisation firm Virtual Ideas hit by Lamashtu ransomware attack",
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNcXFheFEyMm5RMW00RXRac3d3T0ZCSFR4X0dNRHZuNzdkdmN5WHozZjNEelJ5NGloVTNGMFZGb0JtT2FMWHNXQlZmSGFQZkZQdzJNX0p5Sk5ZUW9SOG5HaDE3RUNYR3dYT0Z0WWJlLVN3cHQxbU9lTm43eHNVbmIwOVh1OHVRUmdrTWdjcGNjTjNRV3FIMjF4c0czMzdKSVVCLWdKTGViV2ZwbnlkR1lTYmZ3Zzh2NVFETWNGam0wWnNFcDVxQldIcl9B?oc=5",
-   "source": "Cyber Daily",
-   "region": "AU",
-   "published": "2026-10-22T00:49:47Z",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "Ransomware"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "92cbbe3f9264",
-   "title": "Australians facing spike in data breaches after 'critical' flaw uncovered",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPUTVlb25PVFZBMHhUV2czLTc5THpRZTNQQ0QyWUQwX25zRnQ5X0xCOGlzSjYtWWxuTnNDdExYVlNzVGFUczZaMzk0TWdydm1lUl9LUDVuN0FUQXpuV1NhYVVNU3dvLVBiR0I3TWJWdC1DV1RvZldJbmVJVnNxY3l1eXNGMUJMREcwakw2clM3WUFLSHVodjFqSGhTeHRqcGJBRUZIR0Y2cw?oc=5",
-   "source": "ABC News & Headlines – Australian Broadcasting Corporation",
-   "region": "AU",
-   "published": "2026-10-22T00:48:22Z",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "Data breach"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "761f95e757b0",
-   "title": "Major Australian government websites go offline after critical security flaws are uncovered using AI",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPdmM2bXNzNGljZHNfSlBvOHc2YTFfSVA0d2JSNDU1UWxyQzRaOVhwSzJiTVZpeFozQ1d4Nl8waWlnTEROWFlvOGs3SGtKdnpyVHREb3ViSUlBMnNnR05hNkpNeTRZUURIejhFSVNNS0d5VS1sWTVNamFQRnZsYlo1ZVVsQXRMZHJTSlRuQUt2d3VsbDhNY2JEZGRzUjg3czhTalFpRDFkONIBrAFBVV95cUxOeFFNNzd0YzVHTnVpVXN2NFE1OHJJR2FuQmp2eEpjalVwcXJocWR4WnBHZm9DS3BZdGNDU0xkaVBjMFROSks1dV9CalI3YThIemNNajFHdzVwSjlpVjU4bXU3VTgzRF9lZzZGTW5RLURJUmg3T0RQcGpDbUpMNXotU3B2MjY3NVVVUnFoV21zUDlmdDZ0TmVSUmR0RXJ4Wm5TeU02c19yMjFOVUtD?oc=5",
-   "source": "Daily Mail",
-   "region": "AU",
-   "published": "2026-10-21T22:38:38Z",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "SaaS / cloud"
-   ],
-   "summary": ""
   }
  ],
  "stats": {
-  "recent": 66,
-  "au": 8,
-  "kev": 0
+  "recent": 62,
+  "au": 4,
+  "kev": 2
  },
  "lesson": {
-  "id": "1.5",
-  "title": "Email analysis: headers, SPF, DKIM, DMARC"
+  "id": "1.6",
+  "title": "Threat intelligence and threat hunting"
  }
 }
