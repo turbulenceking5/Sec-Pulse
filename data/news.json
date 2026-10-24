@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T04:40:07Z",
+ "generated": "2026-10-24T11:05:07Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,7 +28,7 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 14,
+   "count": 13,
    "error": null
   },
   {
@@ -40,7 +40,7 @@
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 3,
+   "count": 2,
    "error": null
   },
   {
@@ -100,11 +100,48 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 23,
+   "count": 24,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "a0a9e49aec28",
+   "title": "Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software",
+   "link": "https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-24T08:45:56Z",
+   "summary": "A memory-corruption flaw in Google's Brotli decoder sits in many programs that unpack Brotli-compressed data, among them Bun, the Python Brotli and brotlicffi packages, and Envoy proxies set up to decompress Brotli. Tracked as CVE-2026-111497, the flaw allows crafted compressed data to overwrite…",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0048
+  },
+  {
+   "id": "838b4b1ce253",
+   "title": "CISA Flags Two Actively Exploited Critical Flaws in Collabora Online and Arista VeloCloud",
+   "link": "https://thehackernews.com/2026/10/cisa-flags-two-actively-exploited.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-24T06:25:57Z",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added two vulnerabilities impacting Collabora Online Built-in CODE Server and Arista VeloCloud Orchestrator (VCO) to its Known Exploited Vulnerabilities (KEV), citing reports of active exploitation in the wild. The…",
+   "score": 8,
+   "tags": [
+    "Actively exploited",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Actively exploited",
+    "SaaS / cloud"
+   ]
+  },
   {
    "id": "78e6b44f5a3d",
    "title": "Trust Is Not What It Seems — And Fraudsters Are Counting on It",
@@ -139,6 +176,12 @@
    "why": [
     "Data breach",
     "Vulnerability"
+   ],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/researchers-push-over-2-million-updates.html"
+    }
    ]
   },
   {
@@ -633,19 +676,6 @@
    ]
   },
   {
-   "id": "80697809b26e",
-   "title": "Russia-Linked Hackers Used New Mesh Network Backdoor in Destructive Ukraine Attack",
-   "link": "https://thehackernews.com/2026/10/russian-linked-hackers-used-new-mesh.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-23T11:11:23Z",
-   "summary": "The Russian state-sponsored hacking group Sandworm teamed up with another threat actor to carry out a destructive wiping attack targeting a Ukrainian logistics company last year. According to ESET, the attack involved UAC-0099 (aka Earth Sirrush) obtaining initial access to the target on July 16,…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
    "id": "713a68aa818f",
    "title": "China APT Uses AI Pentest Tool Artex in ConnectWise Attacks",
    "link": "https://www.securityweek.com/china-apt-uses-ai-pentest-tool-artex-in-connectwise-attacks/",
@@ -1136,6 +1166,29 @@
    ]
   },
   {
+   "id": "5d3cff124915",
+   "title": "Business email compromise dominates SME cyber claims",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOdXB6Z2wtdE9VdUtQRGxvdjF4UlVUT1dfX29DeE4xM0pYWVRlSW1TMXNKazVrLTNoVHZPaWp6S3laVWFqZnhMbmM0UkRLM1FVenZWMDFNX2YtRFVqTl8yczBFUXZPT3RSaVRYUTVJT19MVzk3NldtaWp6Z2wxNXAxeVVJTXd0bVBqRlZNVFpSdGFNcGthSXM4emNVQ1NoZ3NVSDVqQjlsemYyM2VPYlAxTnpnX3lSdw?oc=5",
+   "source": "Insurance Business",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-22T20:25:37Z",
+   "summary": "",
+   "score": 8,
+   "tags": [
+    "BEC / payment fraud"
+   ],
+   "why": [
+    "BEC / payment fraud"
+   ],
+   "also": [
+    {
+     "source": "Australian Journal of Pharmacy",
+     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5lc0hqazUyNVdHSWJWOVlGY2M0dThxb01CYl95RlpCWlZNLTJWRjdnZHBGdnE5WmhtQ3M3bkxIN25JU1IwU1ZPRFJsU1FmODFZZng2UHlJNDZxWTJMUmh1c3p6WTV5ejdBSG9aNE5xczVQb0F0N3hIR3RuN202M1k?oc=5"
+    }
+   ]
+  },
+  {
    "id": "177124c993da",
    "title": "Capcom confirms data breach affecting 11.7 million accounts",
    "link": "https://www.bleepingcomputer.com/news/security/capcom-confirms-data-breach-affecting-117-million-accounts/",
@@ -1152,6 +1205,25 @@
    "why": [
     "Data breach",
     "Identity"
+   ]
+  },
+  {
+   "id": "dfe5eacdb35a",
+   "title": "Australian agency mulled firing KPMG over data-handling rule breach, documents show",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxObTFuWVYxQWcwODdTSXFycmFNZ0Z5ZU5raGJWMTR0al9xb0t3ZGotZWEtRElJU05RWi1KUFJKLVRNVnN4QlFMVVRTVW5LT2NRVDVwTXo1Nml1MlZidmZ6cktYV1otbkdkQ05MRnJaNUhMdjJ4aUNHOHJCMG5Xb25BWEdJTDRTbVVzN1BDNFh5ODY2TnIyMTVidW5fakVTMmY5Q0dtUTY1VHFJckN3NHpQODlzbS1PaFlPWmNZYTB3bmZRMXliMEN6aUp2RU5vUdIB0wFBVV95cUxNaWNVSXFRU2luc2taVU1SYmNaZ2MyWTZTODM3UFJOa3NQbmt1RjJVNzVkdklZekpJNTNaSHlKbXhzR1g0aTN3MmRRV3p3ZDNJdEJIRWd1R1FieHRvNDlDTjBfNGMtRk80V0ZtZ0VmbmxLUld2aXRBaWVWbVVrWWFmUjNmSUo5Z1lLVXlFVmJNV2FIV1dsWVRqbXFEb0ZGTUNucEVCdGl2R1FITGR2bWxhQkJFck9kdEYzWnZRMk5rRVp3VDVYOTZmYU0yX1Zmd25hanE4?oc=5",
+   "source": "Al Arabiya English",
+   "feed": "AU breach news",
+   "region": "AU",
+   "published": "2026-10-22T20:05:00Z",
+   "summary": "",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Data breach"
+   ],
+   "why": [
+    "Australia",
+    "Data breach"
    ]
   },
   {
@@ -1245,6 +1317,29 @@
     {
      "source": "SecurityWeek",
      "url": "https://www.securityweek.com/attackers-exploit-third-velocloud-orchestrator-zero-day-in-four-months/"
+    }
+   ]
+  },
+  {
+   "id": "2d822e7c14e8",
+   "title": "Russia-linked hackers use decentralised network in Ukraine cyberattack",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNWHZDVTZsZzRYc0pjNWpDYVQ2d1Y3bC1FRG9iU0pWRjY5WEZwaXFwZW5UQlB4bjl5TlR3WDZ0T0RneE9CbU1wdFp1OEtfZUVPMXV0MnljbVh5bldkdlYzd09qeFRycFZRYVJRVVA1X05rOFIyMGZSZVlBVXhUTGFIOUthaTdPRHZadnN0WHg1NlM4WnF6ZTdlVzJsYWoxWDBtSkxmR3JzT3ZrdFRT?oc=5",
+   "source": "iTnews",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-22T18:49:00Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Microsoft 365"
+   ],
+   "why": [
+    "Microsoft 365"
+   ],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/russian-linked-hackers-used-new-mesh.html"
     }
    ]
   },
@@ -1365,7 +1460,7 @@
    "source": "ABC News & Headlines – Australian Broadcasting Corporation",
    "feed": "AU breach news",
    "region": "Global",
-   "published": "2026-10-22T14:22:54Z",
+   "published": "2026-10-22T14:26:27Z",
    "summary": "",
    "score": 4,
    "tags": [
@@ -1786,29 +1881,6 @@
    "score": 0,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "535888929304",
-   "title": "Email compromise the top cyber threat: underwriter",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5lc0hqazUyNVdHSWJWOVlGY2M0dThxb01CYl95RlpCWlZNLTJWRjdnZHBGdnE5WmhtQ3M3bkxIN25JU1IwU1ZPRFJsU1FmODFZZng2UHlJNDZxWTJMUmh1c3p6WTV5ejdBSG9aNE5xczVQb0F0N3hIR3RuN202M1k?oc=5",
-   "source": "Australian Journal of Pharmacy",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-22T02:23:13Z",
-   "summary": "",
-   "score": 8,
-   "tags": [
-    "BEC / payment fraud"
-   ],
-   "why": [
-    "BEC / payment fraud"
-   ],
-   "also": [
-    {
-     "source": "Insurance Business",
-     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOdXB6Z2wtdE9VdUtQRGxvdjF4UlVUT1dfX29DeE4xM0pYWVRlSW1TMXNKazVrLTNoVHZPaWp6S3laVWFqZnhMbmM0UkRLM1FVenZWMDFNX2YtRFVqTl8yczBFUXZPT3RSaVRYUTVJT19MVzk3NldtaWp6Z2wxNXAxeVVJTXd0bVBqRlZNVFpSdGFNcGthSXM4emNVQ1NoZ3NVSDVqQjlsemYyM2VPYlAxTnpnX3lSdw?oc=5"
-    }
-   ]
   },
   {
    "id": "ff0e5ee2728a",
@@ -7325,57 +7397,6 @@
    "why": [
     "Vulnerability",
     "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "3c74e6888cec",
-   "title": "Citrix, Fortinet, Ivanti Patch 29 Vulnerabilities Across Their Products",
-   "link": "https://www.securityweek.com/citrix-fortinet-ivanti-patch-29-vulnerabilities-across-their-products/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-14T07:26:35Z",
-   "summary": "Critical-severity flaws could lead to authentication bypass, code execution, and sensitive authentication information leaks. The post Citrix, Fortinet, Ivanti Patch 29 Vulnerabilities Across Their Products appeared first on SecurityWeek .",
-   "score": 7,
-   "tags": [
-    "Edge devices",
-    "Vulnerability",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Edge devices",
-    "Vulnerability",
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "6a1ad96a7af9",
-   "title": "Orphaned VBA Projects Inside DWG Files, (Wed, Oct 14th)",
-   "link": "https://isc.sans.edu/diary/rss/33420",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-10-14T06:49:46Z",
-   "summary": "Years ago I wrote diary entries about VBA code stored inside AutoCAD drawing files (.dwg).",
-   "score": 1,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "107051ae553a",
-   "title": "SAP Patches Critical NetWeaver, S/4HANA Vulnerabilities",
-   "link": "https://www.securityweek.com/sap-patches-critical-netweaver-s-4hana-vulnerabilities/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-14T06:12:10Z",
-   "summary": "The bugs could allow attackers to invoke internal operations and execute code, completely compromising the system. The post SAP Patches Critical NetWeaver, S/4HANA Vulnerabilities appeared first on SecurityWeek .",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
    ]
   }
  ]
