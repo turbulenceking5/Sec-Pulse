@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T21:25:09Z",
+ "generated": "2026-10-24T23:17:36Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -22,13 +22,13 @@
   {
    "name": "ASD / ACSC in the news",
    "ok": true,
-   "count": 4,
+   "count": 5,
    "error": null
   },
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 13,
+   "count": 14,
    "error": null
   },
   {
@@ -473,6 +473,23 @@
    ]
   },
   {
+   "id": "8af704020689",
+   "title": "Ransomware Tracker: Live Attacks & Victim Data",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1YNFJ1aWhUNmVnUjRkM2pyZ3FmOHhQS1NiNzAwRENXaGgxRnlfNG84bGhrcUNqZWwxdGU2U2o5WDVVS1RlbVd3WlBmWnYtZURUUlFKV0kwZkJNakI2amttV1ZyRnY?oc=5",
+   "source": "SOCRadar",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-23T15:47:24Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
+  },
+  {
    "id": "5d4b1321ac5e",
    "title": "PHP shares mitigation for new RCE vulnerability with no patch",
    "link": "https://www.bleepingcomputer.com/news/security/php-shares-mitigation-for-new-and-unpatched-rce-vulnerability/",
@@ -775,6 +792,23 @@
    ]
   },
   {
+   "id": "6c35aafd0626",
+   "title": "Capcom affected by data breach, over 11.7m Capcom ID accounts compromised",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOaEdyM0o4enJVZERVMXBnQmE0Y1NITE5wWFRnUmQ4dDYtVDAzYlEySVF3MGtmdGFsOUs3MVFadUF3b2N6NEFrSWl4U1B4NFJhUUtOSExtUU9LTlNCdDhyWU5ISWxqT3hMXzV6MnlJb1dfcXRaY1Rvc1A2bVlib0oyamdxbHloc2p5Qjl5YkNlLTZ3S2lnY0pDY2RUbERUNF9iVU53?oc=5",
+   "source": "GamesIndustry.biz",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-23T11:05:20Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
    "id": "713a68aa818f",
    "title": "China APT Uses AI Pentest Tool Artex in ConnectWise Attacks",
    "link": "https://www.securityweek.com/china-apt-uses-ai-pentest-tool-artex-in-connectwise-attacks/",
@@ -869,6 +903,23 @@
    "why": [
     "Australia",
     "Edge devices"
+   ]
+  },
+  {
+   "id": "91eee45eab64",
+   "title": "Azul issues urgent Java security updates following eMudhra certificate compromise",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQcXZwSjVrQ3Zvb2dxLWJoMHJRZ0dPeE5qNW9nUWJCSzllMEJxY3RjYjN6aGYzSGhQcng2aGhmTHVmMnJVQ3Awa1dJNUFBazFLMTVVXzBoZ2xLUHVCU2hkUTVRQlo4YzV4cUIzSWxKRjRpZDhXVDRsQW9sQTdOVUtLTmJDczAtRVFfYmZvM2F3Mlp4QUwxRE0tQ21VYWFvMExpYlltb09TczJNVDZtQnZqQl9tVXBURzJaaU5UUFlSdF9lbkUyMlpfTQ?oc=5",
+   "source": "Australian Cyber Security Magazine",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-23T08:57:00Z",
+   "summary": "",
+   "score": 4,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
    ]
   },
   {
@@ -1570,13 +1621,14 @@
    "title": "Hacking attempts surge as websites race to patch PHP issues",
    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNYVFEcnJyOU9GWU9vRUVnRXktMHVtNzhiSVMza1o5YTFRbzh1cFV2SGREOUNWZHlFaVUtaVlhZXp5VHMtcWhsdFNpbE5zRzM0ZE45SmcyVHFpb1BGcWVTcUl0aURBTHBMS1hSVmwxa3M5dEVoNnhUVl9NZ3Z2czVGTVlSanFyNENVZElB?oc=5",
    "source": "ABC News & Headlines – Australian Broadcasting Corporation",
-   "feed": "AU breach news",
-   "region": "Global",
+   "feed": "ASD / ACSC in the news",
+   "region": "AU",
    "published": "2026-10-22T14:22:54Z",
    "summary": "",
-   "score": 4,
+   "score": 7,
    "tags": [
-    "Vulnerability"
+    "Vulnerability",
+    "Australia"
    ],
    "why": [
     "Vulnerability"
@@ -7364,67 +7416,6 @@
     "Actively exploited",
     "Edge devices",
     "Vulnerability"
-   ]
-  },
-  {
-   "id": "01ccdefefe75",
-   "title": "curl Patches HTTP/2 Upload Flaw After PoC Demonstrates Client-Side Code Execution",
-   "link": "https://thehackernews.com/2026/10/curl-patches-http2-upload-flaw-after.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-14T12:13:36Z",
-   "summary": "A flaw in how curl handles HTTP/2 uploads lets a malicious server receiving an upload corrupt the client's memory, and the researcher who reported it turned that into code execution on the uploading machine. The curl project fixed it on October 14 in curl 8.23.0. Taking over a client needs exact…",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "de7e4a82bb7f",
-   "title": "How to Run a Deepfake Readiness Drill Before a Cloned Voice Calls Your Team",
-   "link": "https://thehackernews.com/2026/10/how-to-run-deepfake-readiness-drill.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-14T11:50:00Z",
-   "summary": "Cloned voices and synthetic video calls now show up in payment fraud, help desk resets, and access requests. A structured drill shows security teams exactly where verification breaks down, while nothing is at stake. The call comes in at 4:40 on a Friday. It's the CFO, or it sounds exactly like…",
-   "score": 2,
-   "tags": [
-    "AI threats"
-   ],
-   "why": [
-    "AI threats"
-   ]
-  },
-  {
-   "id": "0602ed16425a",
-   "title": "Hirudo Android malware replaces banking apps to evade security checks",
-   "link": "https://www.bleepingcomputer.com/news/security/hirudo-android-malware-replaces-banking-apps-to-evade-security-checks/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-14T11:41:20Z",
-   "summary": "A new Android malware called Hirudo steals bank account credentials by replacing legitimate banking apps with modified versions that disable security checks. [...]",
-   "score": 2,
-   "tags": [
-    "Identity"
-   ],
-   "why": [
-    "Identity"
-   ],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/hirudo-android-trojan-uses-patched.html"
-    },
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/novel-android-banking-rat-hirudo-replaces-banking-apps-with-trojanized-copies/"
-    }
    ]
   }
  ]
