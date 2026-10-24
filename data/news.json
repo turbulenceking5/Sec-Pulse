@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T11:05:07Z",
+ "generated": "2026-10-24T15:59:31Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,7 +28,7 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 13,
+   "count": 14,
    "error": null
   },
   {
@@ -40,7 +40,7 @@
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 2,
+   "count": 3,
    "error": null
   },
   {
@@ -106,13 +106,30 @@
  ],
  "items": [
   {
+   "id": "31b1dfffebc6",
+   "title": "Police Warn Of Another Rental Scam",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9GWGRMY1p6b0k4aENnR2d5VndxWXcwVy15SlkxS1ZBWHdnUHRRUUF3Q051T0cyaUx1LTFuWDZlLTk2bDYtTXFNdnVJaG1weW9lLXN6TTdfVWdHdXFuQ3RoWEFoTGszMkQ3YllReQ?oc=5",
+   "source": "Bernews",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-24T12:43:12Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
    "id": "a0a9e49aec28",
    "title": "Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software",
    "link": "https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html",
    "source": "The Hacker News",
    "feed": "The Hacker News",
    "region": "Global",
-   "published": "2026-10-24T08:45:56Z",
+   "published": "2026-10-24T11:09:29Z",
    "summary": "A memory-corruption flaw in Google's Brotli decoder sits in many programs that unpack Brotli-compressed data, among them Bun, the Python Brotli and brotlicffi packages, and Envoy proxies set up to decompress Brotli. Tracked as CVE-2026-111497, the flaw allows crafted compressed data to overwrite…",
    "score": 2,
    "tags": [
@@ -121,7 +138,49 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0048
+   "epss": 0.0071
+  },
+  {
+   "id": "3a1a036ef73a",
+   "title": "Leaked LiteLLM Master Key Let Attackers Steal GitHub Tokens and Hijack Release Pipeline",
+   "link": "https://thehackernews.com/2026/10/leaked-litellm-master-key-let-attackers.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-24T11:03:33Z",
+   "summary": "LiteLLM on Friday revealed that an Agent Platform master key accidentally published to a public GitHub repository in late May 2026 ultimately allowed the threat actor to push a malicious version of the popular Python package. \"On May 27, 2026, a configuration file was committed to the public…",
+   "score": 6,
+   "tags": [
+    "Data breach",
+    "AI threats"
+   ],
+   "why": [
+    "Data breach",
+    "AI threats"
+   ],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/litellm-release-pipeline-hacked-to-distribute-info-stealer-malware/"
+    },
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/hackers-hijack-five-ovhcloud-cli.html"
+    }
+   ]
+  },
+  {
+   "id": "afec56c7243a",
+   "title": "Google Says Gmail and Photos Data Shared With AI Search Could Be Used for Targeted Ads",
+   "link": "https://thehackernews.com/2026/10/google-says-gmail-and-photos-data.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-24T10:36:33Z",
+   "summary": "Google has updated its privacy policy to spell out that using personalized artificial intelligence (AI) features in Search or Gemini could allow the company to serve targeted ads to users based on their activity on other connected Google services. \"You may choose to allow certain Google services,…",
+   "score": 0,
+   "tags": [],
+   "why": []
   },
   {
    "id": "838b4b1ce253",
@@ -273,6 +332,12 @@
    "why": [
     "Microsoft 365",
     "Vulnerability"
+   ],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/blackx-uefi-bootkit-exploits-baton-drop-flaw-to-bypass-secure-boot/"
+    }
    ]
   },
   {
@@ -425,6 +490,23 @@
    ]
   },
   {
+   "id": "236d78f8360c",
+   "title": "#TSRUpdatez: Back in 2023, real estate influencer #CesarPina was arrested in connection with a real estate scam. Three years later, he has pleaded guilty. ____________________________________ According to @6abcactionnews, Pina pleaded guilty on",
+   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9QNTBxN2drcng5NVJ3amlfRFF6c2V0WnoxNzBHa2Y2bkUydEd5bkZkVXQ1NVdMTC1jSS1wMEpsQ05iU25HREtfS29NazFXdlhFaWc?oc=5",
+   "source": "Instagram",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-23T15:31:19Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
    "id": "52d3232953e2",
    "title": "In Other News: Tor Exit Relays Hijacked, Banks Spot Rogue AI Agents, Self-Rebuilding macOS Ransomware",
    "link": "https://www.securityweek.com/in-other-news-tor-exit-relays-hijacked-banks-spot-rogue-ai-agents-self-rebuilding-macos-ransomware/",
@@ -535,7 +617,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.1162,
+   "epss": 0.1184,
    "also": [
     {
      "source": "SecurityWeek",
@@ -871,23 +953,6 @@
    "why": []
   },
   {
-   "id": "26de9cb3727c",
-   "title": "Is your password on the hackers’ hit list?",
-   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQbDRiSHEyNXBqcjE3eGFvZ0lyOEM1WnNSVVBPZngzQjcwTnBaOWg2YUVKY09IbFJfRGRTOEZ2NVJtX1JrYXRnWWlWdFd6NFdPNU03dmg0cmRTeS1UZFZQcnN4Q1NUV0QwOVlKVVV4aUZnVnFpMmlPanAyWnE3T1lDalJJTHJHNVprVEJZWDhNQ01FbW5kMXR6RFE5Q2g1aWZieC14X3h4UE9OTG1BX2JaVWluVHhUbXVGR1gteUlEZTNDa204VEEtdTlFbw?oc=5",
-   "source": "The Nightly",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-23T05:19:58Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "Identity"
-   ],
-   "why": [
-    "Identity"
-   ]
-  },
-  {
    "id": "8397aa813018",
    "title": "PwC Data Breach Claim - Everest Ransomware Group Claims to Have Stolen 590 GB of Data",
    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE82R1JMUC1UZ1R4dV81dUtKb0hQNkttbm93NE1IUlJobWlaaG5DeVlRMjhPNXFsMnYtWmJTVE9TMF9HeWFwVGd3WC1ZODI1S0Fkcl9POWZIWVhMbnlScV9tWDV30gFnQVVfeXFMT05hM3BxWFN6N1FXdDdEN2lELXlFUWVhb2JkRUtMdHY4QjhaTkFUd1pmUEE5bFJLenlsdThNbHJqUk11MU02MU0tc1RZRTNZQzFKTlJGQ1N5anM3NGVRNmpzVWhQRWZJUQ?oc=5",
@@ -909,6 +974,10 @@
     {
      "source": "GBHackers News",
      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE4xU0FCSlNZcmlDQUZuQ2p4YmtYYUVDVDdvWXJjVGFpR2ljZVRVZkk5Yi1NVDUycXp1NUJ2ZGhVWTZ6RHlLZWtOR3pNRjUwM2ZJQzZ4VGp2SXdCVUZQQjN4Q2EyR0VfVXZBWmhtLXhHeFNBNURi0gF0QVVfeXFMTjFTQUJKU1lyaUNBRm5Danhia1hhRUNUN29ZcmNUYWlHaWNlVFVmSTliLU1UNTJxenU1QnZkaFVZNnpEeUtla05Hek1GNTAzZklDNnhUanZJd0JVRlBCM3hDYTJHRV9VdkFaaG0teEd4U0E1RGI?oc=5"
+    },
+    {
+     "source": "GBHackers News",
+     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1vTk5GeVFRWGNPYnJGdGFjYVc0b0xKOXUweUdudlV4UGdsSTN1UVNxMGNmTUdBbGRyMFhoOGp6NUhZSTU1V1dPVEtsb3FheUctZWVfT2hENlBQcXJ0YUZpMGcxbENpRWltOGpFUzgzQdIBdEFVX3lxTE4xU0FCSlNZcmlDQUZuQ2p4YmtYYUVDVDdvWXJjVGFpR2ljZVRVZkk5Yi1NVDUycXp1NUJ2ZGhVWTZ6RHlLZWtOR3pNRjUwM2ZJQzZ4VGp2SXdCVUZQQjN4Q2EyR0VfVXZBWmhtLXhHeFNBNURi?oc=5"
     }
    ]
   },
@@ -933,8 +1002,25 @@
    ]
   },
   {
+   "id": "26de9cb3727c",
+   "title": "Is your password on the hackers’ hit list?",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQbDRiSHEyNXBqcjE3eGFvZ0lyOEM1WnNSVVBPZngzQjcwTnBaOWg2YUVKY09IbFJfRGRTOEZ2NVJtX1JrYXRnWWlWdFd6NFdPNU03dmg0cmRTeS1UZFZQcnN4Q1NUV0QwOVlKVVV4aUZnVnFpMmlPanAyWnE3T1lDalJJTHJHNVprVEJZWDhNQ01FbW5kMXR6RFE5Q2g1aWZieC14X3h4UE9OTG1BX2JaVWluVHhUbXVGR1gteUlEZTNDa204VEEtdTlFbw?oc=5",
+   "source": "The Nightly",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-23T04:29:39Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "Identity"
+   ],
+   "why": [
+    "Identity"
+   ]
+  },
+  {
    "id": "7d8edbf25ba4",
-   "title": "Pentagon Data Breach: 3M+ Sued Over DMDC Leak [2026]",
+   "title": "Pentagon Sued Over Data Breach Hitting 3M+ People [2026]",
    "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPQ3ZyNEZuMFF5THV2T1V4RUc0M2szMi1IcFpqaVJ1enZKMXlkaEYyNHBFdzNjNThPYkc4ZjhtNnhDUWJvSXBDeUhmMlJ5TzAtTTdPcE05WmJBMkxGaV9LY2YxY21NTEhZMTFlVklKTTVVTlpuMmItLUxtWEpGN09YV0p5MGxtUQ?oc=5",
    "source": "https://tech-insider.org/",
    "feed": "OAIC / Privacy news",
@@ -1030,7 +1116,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0056
+   "epss": 0.0081
   },
   {
    "id": "b60d049a4f32",
@@ -1050,7 +1136,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0123
+   "epss": 0.0228
   },
   {
    "id": "1a82da6a7e05",
@@ -1241,31 +1327,6 @@
    ],
    "why": [
     "Vulnerability"
-   ]
-  },
-  {
-   "id": "0151e8522bf7",
-   "title": "LiteLLM release pipeline hacked to distribute info-stealer malware",
-   "link": "https://www.bleepingcomputer.com/news/security/litellm-release-pipeline-hacked-to-distribute-info-stealer-malware/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-22T19:12:51Z",
-   "summary": "Hackers compromised the LiteLLM project's PyPI package and published malicious Docker images with a payload that steals credentials, secrets, and environment variables. [...]",
-   "score": 5,
-   "tags": [
-    "Identity",
-    "AI threats"
-   ],
-   "why": [
-    "Identity",
-    "AI threats"
-   ],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/hackers-hijack-five-ovhcloud-cli.html"
-    }
    ]
   },
   {
@@ -1460,7 +1521,7 @@
    "source": "ABC News & Headlines – Australian Broadcasting Corporation",
    "feed": "AU breach news",
    "region": "Global",
-   "published": "2026-10-22T14:26:27Z",
+   "published": "2026-10-22T14:22:54Z",
    "summary": "",
    "score": 4,
    "tags": [
@@ -2053,6 +2114,33 @@
    ]
   },
   {
+   "id": "407ba0a1ad60",
+   "title": "SafePay ransomware group has targeted hundreds this year, US agencies say",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNMDJYS3lvNVVTVHRuZGJ6VlByYWN3NF8tRERYSm1fa1VjTTBzODNpeElTWm1lNU9PVFczcHRYX2NnZDc2VGcwd2NsS0F6b3U0UkhKSVlmQnJCQ0lsY3loZF9rV05IWUJvTGdEY0dwTlFfR1VSdVU2bHpkbUtRQ25fci1Id3FtelVxOXYxTDZRNElsNV9lejFtTTZyNWRvY1VVS0JUSHRteGMteXpqYl9jWGNRajNQZG9jT0pnMWFQaHNON28?oc=5",
+   "source": "Reuters",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-21T21:50:23Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ],
+   "also": [
+    {
+     "source": "Devdiscourse",
+     "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQV2trd1VWek1Nb1FKRVdQVDcwam44ckgxLTltZ0podGktQkVtcTd1N1pyUTdzNG14b2tNQzYzRmRkWXVTVmxlNm1XbU5YS2tacHRPb1FCZ0RvLTBoOS1uX1luYll4MUNFa212MGxBYUhLcU9KVTBHUnBBaFh2c2kyWWJDRm9Lcm9jajhmV2hIQzFPRzBVSDU2d0wwb1NlNGpHU29vS1hqcXRtRVRncnVXTVIwWXpWakJhck56ellCQkRFTVExcWR2eUtBc9IB0AFBVV95cUxPZWdsVTVZaHVIOTEwTThoNkNOLU1lQ1RYZHNrU3dYcEp2NHBmRWJnbkJucWhhRzJNZ1JYOXNMWVAxVUxRZDJlbFVqU3FEYjRRWkRPTW9Qekt0ZEVrSEh2Sk9xenYyRlRIYUhMTVFZbDV1TTdZcG1mRU1zNk14UkY2dTd6OHF0LXNlMzBNa1hPeXB0TmgzRUJTYUROZThBRkZaaEQzR2Z3eU51bUlHV3Y0cGtoU1puRHBNZ2x2LWNfZFF4OWJ5alVfTHN2RHRvdE0x?oc=5"
+    },
+    {
+     "source": "WKZO",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPbUVhRzhyR0FIcEljR1BWOG9FZTdzZkg2Y3VrN0RFMjBXdTRVSjBqMXkyTzg4aWdSajJzXzZhejhETUxvdDRtUHlpQTB3ZVFkVVR4dFduU0JxdzhzQ0xFd1NqQzUtUE9MZ0h3YjhMVEkweVNEZUUtNGNoZ1JEd2FPandmampSOUJQaTlpeUkzWUtVeVZlRmVvZVJzRU1pMEpvQXhB?oc=5"
+    }
+   ]
+  },
+  {
    "id": "e9fd60a700e2",
    "title": "Japan's Onamae Desktop Cloud hacked, up to 27,000 servers affected",
    "link": "https://www.bleepingcomputer.com/news/security/japans-onamae-desktop-cloud-hacked-up-to-27-000-servers-affected/",
@@ -2173,7 +2261,7 @@
   },
   {
    "id": "e85c7b673e3f",
-   "title": "Websites taken down worldwide as critical PHP cyber-security update issued",
+   "title": "Websites taken down worldwide as critical cyber-security update issued",
    "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE8yYkJ1a0hkTXBMWUxzUGRNam81RzlXVTd0THJ2cWlvbVd4VmlNQ0ZzeHV0b21aR21mazJNTXAwSjRqN3VoNzgydHplRmRUamltaFJSUmZvcXBUZDg?oc=5",
    "source": "BBC",
    "feed": "AU breach news",
@@ -2692,23 +2780,6 @@
    ]
   },
   {
-   "id": "b3d32ad4c8b7",
-   "title": "Websites taken down worldwide as critical cyber-security update issued",
-   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9MZm92Wk5lTkRwWnBjVktycXRCMFVfcnAtYXVQR0hHU0UtZTRWWGJVWm4xbW9SbTd2M2QwZ2R2Ulp2R1hKaENudFlIbDBpZm94M3lSajNydDZnVThScEE?oc=5",
-   "source": "BBC",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-21T12:09:22Z",
-   "summary": "",
-   "score": 4,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
    "id": "c7a020f274e0",
    "title": "China-Aligned Bronze Sandcastle Abuses Sandboxie DLL Sideloading to Deploy Backdoors",
    "link": "https://thehackernews.com/2026/10/china-aligned-bronze-sandcastle-abuses.html",
@@ -3012,6 +3083,10 @@
     {
      "source": "Security Affairs",
      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQM2J6Qmx3VWVReWxvMUFuV3VBTVF3czEteFlXelh4ZGxrcDVVeDJOZnVvdjAxQkVBX3J2YS1LcnI3VFBySlBrNi1admp4QmhpYm9KZzFVTEh3S2pqeDAzRHJMUEpBeVBWbjJ3VkprN1d3ZGJuc1FpUWJHZVVPaV8wWjI1SVRXMUpDdlB2YmRCZ0lpNVBWVTZrbE9CZWZNTG1fLXo0eS01amFLMF8xSHVnWWt0VzY0VGRwaWt6UzZrdU9DQdIBwgFBVV95cUxQM2J6Qmx3VWVReWxvMUFuV3VBTVF3czEteFlXelh4ZGxrcDVVeDJOZnVvdjAxQkVBX3J2YS1LcnI3VFBySlBrNi1admp4QmhpYm9KZzFVTEh3S2pqeDAzRHJMUEpBeVBWbjJ3VkprN1d3ZGJuc1FpUWJHZVVPaV8wWjI1SVRXMUpDdlB2YmRCZ0lpNVBWVTZrbE9CZWZNTG1fLXo0eS01amFLMF8xSHVnWWt0VzY0VGRwaWt6UzZrdU9DQQ?oc=5"
+    },
+    {
+     "source": "Security Affairs",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOTXNJWlFuUVlUQUZuWkN6eTVjTURZRWpKWkdkNi1HbG5qbzN2MzI2RVdCYU9MTHZkT0V1aW5VZDRQS0FROXp1Y3o0MlRaUTRETGlRVnVvaXZjVGw5aC1Sa0RPaFhqSTlmNXNIbzVNam9feVYxRE1DNjRmQnlLRHhsNy1qWHJ5XzBoZTJkeXdlYmdjZ1hURDJxcWl1Rkh6YzdyT283NkM2aGkteWNISWRMVC1QbHRoWDk0ZnYzSdIBwgFBVV95cUxQM2J6Qmx3VWVReWxvMUFuV3VBTVF3czEteFlXelh4ZGxrcDVVeDJOZnVvdjAxQkVBX3J2YS1LcnI3VFBySlBrNi1admp4QmhpYm9KZzFVTEh3S2pqeDAzRHJMUEpBeVBWbjJ3VkprN1d3ZGJuc1FpUWJHZVVPaV8wWjI1SVRXMUpDdlB2YmRCZ0lpNVBWVTZrbE9CZWZNTG1fLXo0eS01amFLMF8xSHVnWWt0VzY0VGRwaWt6UzZrdU9DQQ?oc=5"
     }
    ]
   },
@@ -3091,29 +3166,6 @@
    "score": 0,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "ea5b31be4fa9",
-   "title": "SafePay ransomware group has targeted hundreds this year, US agencies say",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPbUVhRzhyR0FIcEljR1BWOG9FZTdzZkg2Y3VrN0RFMjBXdTRVSjBqMXkyTzg4aWdSajJzXzZhejhETUxvdDRtUHlpQTB3ZVFkVVR4dFduU0JxdzhzQ0xFd1NqQzUtUE9MZ0h3YjhMVEkweVNEZUUtNGNoZ1JEd2FPandmampSOUJQaTlpeUkzWUtVeVZlRmVvZVJzRU1pMEpvQXhB?oc=5",
-   "source": "WKZO",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-21T03:38:26Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Ransomware"
-   ],
-   "why": [
-    "Ransomware"
-   ],
-   "also": [
-    {
-     "source": "Devdiscourse",
-     "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQV2trd1VWek1Nb1FKRVdQVDcwam44ckgxLTltZ0podGktQkVtcTd1N1pyUTdzNG14b2tNQzYzRmRkWXVTVmxlNm1XbU5YS2tacHRPb1FCZ0RvLTBoOS1uX1luYll4MUNFa212MGxBYUhLcU9KVTBHUnBBaFh2c2kyWWJDRm9Lcm9jajhmV2hIQzFPRzBVSDU2d0wwb1NlNGpHU29vS1hqcXRtRVRncnVXTVIwWXpWakJhck56ellCQkRFTVExcWR2eUtBc9IB0AFBVV95cUxPZWdsVTVZaHVIOTEwTThoNkNOLU1lQ1RYZHNrU3dYcEp2NHBmRWJnbkJucWhhRzJNZ1JYOXNMWVAxVUxRZDJlbFVqU3FEYjRRWkRPTW9Qekt0ZEVrSEh2Sk9xenYyRlRIYUhMTVFZbDV1TTdZcG1mRU1zNk14UkY2dTd6OHF0LXNlMzBNa1hPeXB0TmgzRUJTYUROZThBRkZaaEQzR2Z3eU51bUlHV3Y0cGtoU1puRHBNZ2x2LWNfZFF4OWJ5alVfTHN2RHRvdE0x?oc=5"
-    }
-   ]
   },
   {
    "id": "f6d2274058e5",
@@ -5975,7 +6027,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0123,
+   "epss": 0.0228,
    "also": [
     {
      "source": "The Hacker News",
@@ -7365,38 +7417,6 @@
    ],
    "why": [
     "Real estate"
-   ]
-  },
-  {
-   "id": "0a34dc42eff4",
-   "title": "AI-Found Linux Kernel Flaw Gives Local Users Root, and Can Break a Guest Out to the Host",
-   "link": "https://thehackernews.com/2026/10/ai-found-linux-kernel-flaw-gives-local.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-14T07:46:57Z",
-   "summary": "A flaw in Linux's vhost subsystem lets a local user read and write kernel memory at will and become root across nearly a decade of kernel versions. In one virtualization setup, it lets an untrusted virtual machine write to the host's memory and hijack the program that runs the virtual machine. The…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "ca2337ba7a1a",
-   "title": "Chrome, Firefox Updates Patch 114 Flaws as Mozilla Unveils Firefox Enterprise",
-   "link": "https://www.securityweek.com/chrome-firefox-updates-patch-114-flaws-as-mozilla-unveils-firefox-enterprise/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-14T07:38:51Z",
-   "summary": "Mozilla has introduced Firefox Enterprise for organizations with strict compliance, governance, and security requirements. The post Chrome, Firefox Updates Patch 114 Flaws as Mozilla Unveils Firefox Enterprise appeared first on SecurityWeek .",
-   "score": 5,
-   "tags": [
-    "Vulnerability",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Vulnerability",
-    "SaaS / cloud"
    ]
   }
  ]
