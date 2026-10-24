@@ -1,33 +1,18 @@
 {
- "date": "2026-10-24",
- "generated": "2026-10-23T21:33:39+00:00",
- "title": "Sec-Pulse brief - Sat 24 Oct",
+ "date": "2026-10-25",
+ "generated": "2026-10-24T21:25:21+00:00",
+ "title": "Sec-Pulse brief - Sun 25 Oct",
  "items": [
   {
-   "id": "9121dd1ef642",
-   "title": "Australia's Cyber Agency Flags Critical Vulnerabilities In Fortinet, One Of The Biggest Global Cybersecurity Vendors",
-   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNXzFUX3huMnZRb29WQmtlVFFSVW1YNWtlSmViZEZKWV9zNzkxLWIyOTl3NS02MXFkbEZ2VmxVRU4xanRUOTFWTXI0dUNUNzVzR3FXaFVyaXdEcFk1eUJ5S015ZjI5blNXRlRvSElmX1d6M1VtUGwzTHdSYm41c3g1LXkxTEJPY25fR2RvdkxEUTJheG5tRmp4TmViNjhOd3VxX1RyMENmNURieVd0MkxVMjRLY05velRFT1FjajR3UnZTQWlfYkpoM3ljUlE1VHJsY2tXVVpUZ0lNcEtMb3Z3?oc=5",
-   "source": "OfficeChai",
-   "region": "AU",
-   "published": "2026-10-23T09:28:05Z",
-   "score": 13,
+   "id": "31b1dfffebc6",
+   "title": "Police Warn Of Another Rental Scam",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9GWGRMY1p6b0k4aENnR2d5VndxWXcwVy15SlkxS1ZBWHdnUHRRUUF3Q051T0cyaUx1LTFuWDZlLTk2bDYtTXFNdnVJaG1weW9lLXN6TTdfVWdHdXFuQ3RoWEFoTGszMkQ3YllReQ?oc=5",
+   "source": "Bernews",
+   "region": "Global",
+   "published": "2026-10-24T12:43:12Z",
+   "score": 10,
    "tags": [
-    "Australia",
-    "Edge devices"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "972a9651804b",
-   "title": "Australia has toughest data breach fines in APAC: report",
-   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOZG82N0ItSVptcnR1a3R2TUJBRV81dHJwU05qNGl1bGFibHotRzBtd2FRYlBoRUJ5QXhCbzdKWlJka2VjRDZpZ3JrbEdfTEdUZUtHejVRYjV4NDJVRHR2aUNmVDJmZml2T3h5d2c4UjVkS0laVVhDbTVRNDBETFowMVlTMFEyQXBuYVRxVUdfNlFoWmU1azNrWFBwQl83OU0wZm55M0JZTlNrQTFuSGt2aWVRM0lNY3BqdEloSngxcEdodnZ3?oc=5",
-   "source": "Technology Decisions",
-   "region": "AU",
-   "published": "2026-10-22T22:17:54Z",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "Data breach"
+    "Real estate"
    ],
    "summary": ""
   },
@@ -60,29 +45,40 @@
    "summary": ""
   },
   {
-   "id": "eebdb3f4f6ae",
-   "title": "Two CVSS 9.0 Linux KSMBD RCE Flaws Disclosed on Public Mailing Lists Before Kernel Fixes",
-   "link": "https://thehackernews.com/2026/10/two-cvss-90-linux-ksmbd-rce-flaws.html",
+   "id": "236d78f8360c",
+   "title": "#TSRUpdatez: Back in 2023, real estate influencer #CesarPina was arrested in connection with a real estate scam. Three years later, he has pleaded guilty. ____________________________________ According to @6abcactionnews, Pina pleaded guilty on",
+   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9QNTBxN2drcng5NVJ3amlfRFF6c2V0WnoxNzBHa2Y2bkUydEd5bkZkVXQ1NVdMTC1jSS1wMEpsQ05iU25HREtfS29NazFXdlhFaWc?oc=5",
+   "source": "Instagram",
+   "region": "Global",
+   "published": "2026-10-23T15:31:19Z",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "summary": ""
+  },
+  {
+   "id": "838b4b1ce253",
+   "title": "CISA Flags Two Actively Exploited Critical Flaws in Collabora Online and Arista VeloCloud",
+   "link": "https://thehackernews.com/2026/10/cisa-flags-two-actively-exploited.html",
    "source": "The Hacker News",
    "region": "Global",
-   "published": "2026-10-22T17:01:53Z",
-   "score": 12,
+   "published": "2026-10-24T06:25:57Z",
+   "score": 8,
    "tags": [
     "Actively exploited",
-    "Data breach",
-    "Vulnerability",
     "SaaS / cloud"
    ],
-   "summary": "Linux servers running KSMBD, the kernel's built-in SMB server, are exposed to two publicly reported remote code execution flaws rated 9.0 by Trend Micro's Zero Day Initiative, with no fix yet in the mainline kernel. One of them, ZDI-CAN-33774, can be triggered before any network authentication.…"
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added two vulnerabilities impacting Collabora Online Built-in CODE Server and Arista VeloCloud Orchestrator (VCO) to its Known Exploited Vulnerabilities (KEV), citing reports of active exploitation in the wild. The…"
   }
  ],
  "stats": {
-  "recent": 62,
-  "au": 4,
-  "kev": 2
+  "recent": 20,
+  "au": 0,
+  "kev": 0
  },
  "lesson": {
-  "id": "1.6",
-  "title": "Threat intelligence and threat hunting"
+  "id": "1.7",
+  "title": "Frameworks: ATT&CK, Kill Chain, Diamond Model"
  }
 }
