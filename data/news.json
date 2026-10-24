@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T21:33:27Z",
+ "generated": "2026-10-24T04:40:07Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -10,7 +10,7 @@
   {
    "name": "ACSC Advisories",
    "ok": true,
-   "count": 1,
+   "count": 0,
    "error": null
   },
   {
@@ -34,7 +34,7 @@
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 3,
+   "count": 4,
    "error": null
   },
   {
@@ -82,7 +82,7 @@
   {
    "name": "Microsoft Security Blog",
    "ok": true,
-   "count": 0,
+   "count": 5,
    "error": null
   },
   {
@@ -124,7 +124,7 @@
   },
   {
    "id": "201a6bfc4c9c",
-   "title": "Abandoned Popcorn Time app exposed millions of device to RCE attacks",
+   "title": "Abandoned Popcorn Time app exposed millions of devices to RCE attacks",
    "link": "https://www.bleepingcomputer.com/news/security/abandoned-popcorn-time-app-exposed-millions-of-device-to-rce-attacks/",
    "source": "BleepingComputer",
    "feed": "BleepingComputer",
@@ -474,6 +474,50 @@
     "Data breach",
     "Identity",
     "Edge devices"
+   ]
+  },
+  {
+   "id": "e40ec869602e",
+   "title": "Threat Brief: Critical Vulnerabilities in PHP: CVE-2026-109618, CVE-2026-109619 (Updated October 23)",
+   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBaSXRUMkVsWkF3TjhoV29oTXdyZHhrMGZINFBHNVVrNmZubTA4SkFzMzlWMlNMLW15ZWdISDJYeURJbVdpTFB5ZzNTU21aazFfTmc4R0VkLWVyMVY4S1JRYTZ5UjJqWk82SlR5Q0ZMOTJrNEJVeXNV?oc=5",
+   "source": "Unit 42",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-23T13:47:22Z",
+   "summary": "",
+   "score": 4,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.1162,
+   "also": [
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/php2shell-mass-exploitation-looms-for-leaked-critical-php-flaws/"
+    },
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/"
+    },
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/php-issues-emergency-patches-for-two.html"
+    },
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/php2shell-two-unpatched-critical-php.html"
+    },
+    {
+     "source": "SANS ISC",
+     "url": "https://isc.sans.edu/diary/rss/33440"
+    },
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/php2shell-patches-land-as-first-exploitation-attempts-hit-sensors/"
+    }
    ]
   },
   {
@@ -1321,7 +1365,7 @@
    "source": "ABC News & Headlines – Australian Broadcasting Corporation",
    "feed": "AU breach news",
    "region": "Global",
-   "published": "2026-10-22T14:26:27Z",
+   "published": "2026-10-22T14:22:54Z",
    "summary": "",
    "score": 4,
    "tags": [
@@ -2609,7 +2653,7 @@
    "id": "21956da9d15b",
    "title": "Critical vulnerabilities in PHP | CGA",
    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE81OHpLdWRyeFdnclNtbnlfMnF5YXp2SlFybTQ2aTh3RVB5RHQtOXJiTGlpXzl1eEZQaURMRWN4MnBSa3ktWjZQd3NwM3ZnWWNHcXd2bTFRaC1OYzZXOGxicklacVNXMms2MHpCbkhXcw?oc=5",
-   "source": "Australian Cyber Security Centre",
+   "source": "Australian Cyber Security",
    "feed": "ACSC (via Google News)",
    "region": "AU",
    "published": "2026-10-21T12:00:00Z",
@@ -2853,54 +2897,6 @@
     "Vulnerability",
     "SaaS / cloud"
    ]
-  },
-  {
-   "id": "856618cc054b",
-   "title": "PHP2Shell: Mass Exploitation Looms for Leaked Critical PHP Flaws",
-   "link": "https://www.securityweek.com/php2shell-mass-exploitation-looms-for-leaked-critical-php-flaws/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-21T07:02:06Z",
-   "summary": "Tracked as CVE-2026-109618 and CVE-2026-109619, the bugs could potentially lead to unauthenticated remote code execution. The post PHP2Shell: Mass Exploitation Looms for Leaked Critical PHP Flaws appeared first on SecurityWeek .",
-   "score": 8,
-   "tags": [
-    "Data breach",
-    "Vulnerability",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Data breach",
-    "Vulnerability",
-    "SaaS / cloud"
-   ],
-   "also": [
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/"
-    },
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/php-issues-emergency-patches-for-two.html"
-    },
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/php2shell-two-unpatched-critical-php.html"
-    },
-    {
-     "source": "Unit 42",
-     "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBaSXRUMkVsWkF3TjhoV29oTXdyZHhrMGZINFBHNVVrNmZubTA4SkFzMzlWMlNMLW15ZWdISDJYeURJbVdpTFB5ZzNTU21aazFfTmc4R0VkLWVyMVY4S1JRYTZ5UjJqWk82SlR5Q0ZMOTJrNEJVeXNV?oc=5"
-    },
-    {
-     "source": "SANS ISC",
-     "url": "https://isc.sans.edu/diary/rss/33440"
-    },
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/php2shell-patches-land-as-first-exploitation-attempts-hit-sensors/"
-    }
-   ],
-   "epss": 0.1162
   },
   {
    "id": "73ce0a80572d",
