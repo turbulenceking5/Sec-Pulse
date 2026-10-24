@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T15:59:31Z",
+ "generated": "2026-10-24T20:52:24Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -34,7 +34,7 @@
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 4,
+   "count": 6,
    "error": null
   },
   {
@@ -599,6 +599,23 @@
     "Data breach",
     "Identity",
     "Edge devices"
+   ]
+  },
+  {
+   "id": "327894b2e81c",
+   "title": "Fisher & Paykel breach puts cyber cover gaps on broker agenda",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOM1lLVDI5LVpmV0xsQ0hHX05qUjgxTHE4WjVIWGlfUlVQdHJ6X3pKangwRUxYNjd5Yk1BU0ZsSGM4cmt4RE1URUJ1RlpyMUtsbkdqZnI3MEpWYk14RndSV2FFeUE3NkRSbkdOWkhENEs0cFdLLWN6TDFmQ2ttZmxyTFplTlZrcXpheHJzbHFLcjZEQlJ6bGxnekFTOGhoQWs2akNNVFM5U1h3Y0IyZWtSYVVxUlBYR1MxQmlRS3cwdkptQi1m?oc=5",
+   "source": "Insurance Business",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-23T13:49:26Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
    ]
   },
   {
@@ -1173,6 +1190,23 @@
    ]
   },
   {
+   "id": "8f9a0180692e",
+   "title": "AI-powered ransomware aimed at Singapore firms outpace global attacks",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNRWVsZk9CeFVxN0x5RDR0bl9UTkpUeTVkZ0NOc1JxTnlRMHczalNfeTZ6eDdKemZmODBlN2hpal9UNGRUQU9Jbk43SnFETllzUm83SmRJekZoYU8waHRkUWxZSmlBQnk2aHVXWVk0aUpzZVI0VjI5YktVOGpWWlFpTXJ3SHk1V050Z0dHRGRxNjIxc3FtQloybVZTY2RIWGpJZ2x5cTlka2VOdw?oc=5",
+   "source": "Frontier Enterprise",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-22T22:00:00Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
+  },
+  {
    "id": "6af5f5a84e31",
    "title": "Railway warns devs to rotate secrets after potential breach",
    "link": "https://www.bleepingcomputer.com/news/security/railway-warns-devs-to-rotate-secrets-after-potential-breach/",
@@ -1187,6 +1221,23 @@
    ],
    "why": [
     "Data breach"
+   ]
+  },
+  {
+   "id": "9e7a0509efc9",
+   "title": "CISA, FBI, Secret Service & Partners Expose SafePay Ransomware Tactics",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPRk00UlVlaGoxV0cxZ0pqV0hUSVJEdGFwcC1LSUw5ZXpqa3pQVDhkaTM4czJaZ2VvZEZzWi11Uk1nQnRpLWZUakJTVjB6QzdjbUVETjFEcEpmaW1UcVhOeFVCRE93MElONXBhc0E2dGQ3eVZrajBocTRwUEt5SDNBaGhVNkVqWTNPNGZFNDNDbFRLWDA?oc=5",
+   "source": "ExecutiveGov",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-22T21:10:55Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
    ]
   },
   {
@@ -1474,7 +1525,7 @@
    "source": "PEI Private Equity",
    "feed": "Real estate cyber news",
    "region": "Global",
-   "published": "2026-10-22T16:25:57Z",
+   "published": "2026-10-22T16:25:06Z",
    "summary": "",
    "score": 7,
    "tags": [
@@ -1908,6 +1959,23 @@
    "why": [
     "Actively exploited",
     "Vulnerability",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "50c7774dd0c7",
+   "title": "Cyber Security Stocks Worth Watching After The PHP Security Flaws Exposure",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNRzNqc1FUclJRcFFEWTJrN1JNVmxSTXVHUlJIeVFXa0N4VzY1T1Z3aGR1Ni05NENmVFhReThjYVR5ZzRxbjR0SlBSTzFfeTF1Q3IxQ25UakViT3gwbGhWTDdfcFg0NmVaYkNkWDF4Y0RwbC1tSFk2WHU3VWtHR2RFcDU4WnNBX0luNlFlX0xtdW9zVWdjYkJYb1k1czU2aGZvcmZn?oc=5",
+   "source": "Yahoo Finance",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-22T06:17:55Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "SaaS / cloud"
+   ],
+   "why": [
     "SaaS / cloud"
    ]
   },
@@ -7357,66 +7425,6 @@
      "source": "SecurityWeek",
      "url": "https://www.securityweek.com/novel-android-banking-rat-hirudo-replaces-banking-apps-with-trojanized-copies/"
     }
-   ]
-  },
-  {
-   "id": "ecd984dc6bd3",
-   "title": "Researchers Used a Public OpenAI Model to Build a $250,000 Chrome Full-Chain Exploit in Six Days",
-   "link": "https://thehackernews.com/2026/10/researchers-used-public-openai-model-to.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-14T11:19:02Z",
-   "summary": "A team at security firm XBOW chained three then-unknown Google Chrome bugs into a single attack that runs code on a Windows computer when the user only loads a web page, the company said. Its researchers built the attack in six days by directing AI agents running OpenAI's publicly available…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "181d174bbac4",
-   "title": "An AI Agent Found a Critical OTP Bypass in Production. The Attack Was the Easy Part.",
-   "link": "https://thehackernews.com/2026/10/an-ai-agent-found-critical-otp-bypass.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-14T11:00:00Z",
-   "summary": "The bug was simple: the login let you choose where your sign-in code went. Proving it on a live website was the hard part. TL;DR During an authorized assessment, an AI pentesting agent found a critical authentication bypass on a major insurer's production website, on its own. One login request let…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "0aa13b1d8369",
-   "title": "Microsoft: Recent Windows updates may trigger Remote Desktop failures",
-   "link": "https://www.bleepingcomputer.com/news/security/microsoft-recent-windows-updates-may-trigger-remote-desktop-failures/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-14T10:48:09Z",
-   "summary": "Microsoft has confirmed that non-admin users may be unable to connect to devices via Remote Desktop after installing recent Windows updates if the \"Administrator protection\" security feature is enabled. [...]",
-   "score": 4,
-   "tags": [
-    "Phishing"
-   ],
-   "why": [
-    "Phishing"
-   ]
-  },
-  {
-   "id": "216c66fa9dd2",
-   "title": "At least 15 charged in California for alleged PH real estate scam",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPRFR6SmRqc0NUbnBHSFhBYkotNG1vTVVFUGlOR1NOZ29qenpSOXY5dllXRVdVcDlWYm9LdE9RdEVHeTRpRnYzLUlLSHhzYlg4RzVTdGZaWmZEQ1BKYjEyNk91dXJ5Q0oyYnFBU0xWSU0yajJfcW9hVTBHQjAtS2pTeXBHU2IzeG5MMkkxWGxIaGpzMm0xQnNwdENLcmZFSEFTd3EyU3BFeS1LbEhS?oc=5",
-   "source": "Rappler",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-14T07:57:21Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
    ]
   }
  ]
