@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T12:52:41Z",
+ "generated": "2026-10-25T16:25:12Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,13 +28,13 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 11,
+   "count": 10,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 5,
+   "count": 4,
    "error": null
   },
   {
@@ -105,6 +105,36 @@
   }
  ],
  "items": [
+  {
+   "id": "9d2f15233c7c",
+   "title": "What Does DaVita (DVA) Ransomware Settlement Mean For Investors?",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPZU9zV0s2TUJvem4zUVlfaUZWY0RnMWd5V0FFT1prVnhtWkxzVFl0UTVZejM5NVJXMDhjNW1UXzlBbTB1ai1fZ3hQcjNiSGUtWnUwVU8wSktLSExFNEIxeVlNTng0VXg0d3lvWmowUW9PM1A4c21QcGxtckNfN3NsNk9VT00xQjRERGdaQ1B2dkdablFwU1RhMm9tUjFNN1R4dl9FMUE3TUtOZ0F2V0dLc3AxOHIxVGUxVFpOaDd6c3p5QdIBxwFBVV95cUxQWVFHWWJUcE00czItM2V1aXl2MHRKMmIwRjMxdUtNWkw3RGNPMnRJQ01YQ2hCejlIRks5TEFBVF9oSmVlZWNDVmVSYXVfUnRWckYydU1laDVrQ0RZZ1NJU0FXckVUNnAwYjJoVE5taHl4MU9FSEdBZk5XYUJTZ0RscFZkTDY2N0JndXY3MHQ2VFhMU0tvaVM4dTE1ZHFCalBYekkwa3pZczJqdng2NGJQT0pfWHQxSHJKOHVrMlRGbkNxcDdibkE0?oc=5",
+   "source": "Simply Wall Street",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-25T16:09:45Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
+  },
+  {
+   "id": "9e8f060397f4",
+   "title": "AI coding agents hijacked using AGENTS.md file in Downloads folder",
+   "link": "https://www.bleepingcomputer.com/news/security/ai-coding-agents-hijacked-using-agentsmd-file-in-downloads-folder/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-25T15:49:38Z",
+   "summary": "Researchers found a malicious AGENTS markdown instruction file in a customer's Downloads folder that tricked an AI coding agent into installing a rogue npm package. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
   {
    "id": "e85723a0f677",
    "title": "Former Unit 8200 Officers Raise $34 Million for Agentic SecOps Startup Mave",
@@ -185,7 +215,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0071
+   "epss": 0.3278
   },
   {
    "id": "3a1a036ef73a",
@@ -748,14 +778,14 @@
    "region": "Global",
    "published": "2026-10-23T13:47:22Z",
    "summary": "",
-   "score": 4,
+   "score": 6,
    "tags": [
     "Vulnerability"
    ],
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.1184,
+   "epss": 1.0,
    "also": [
     {
      "source": "SecurityWeek",
@@ -1011,7 +1041,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0043
+   "epss": 0.0106
   },
   {
    "id": "9121dd1ef642",
@@ -1345,7 +1375,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0081
+   "epss": 0.0103
   },
   {
    "id": "b60d049a4f32",
@@ -1365,7 +1395,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0228
+   "epss": 0.1233
   },
   {
    "id": "1a82da6a7e05",
@@ -3624,7 +3654,7 @@
     "Edge devices",
     "Vulnerability"
    ],
-   "epss": 0.0046
+   "epss": 0.01
   },
   {
    "id": "dff178c340ad",
@@ -3661,7 +3691,7 @@
     "Edge devices",
     "Vulnerability"
    ],
-   "epss": 0.9689,
+   "epss": 0.9501,
    "also": [
     {
      "source": "Unit 42",
@@ -4216,7 +4246,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0117
+   "epss": 0.0253
   },
   {
    "id": "17cca1785b07",
@@ -4236,7 +4266,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0082
+   "epss": 0.0179
   },
   {
    "id": "f8740efa0ba7",
@@ -4256,7 +4286,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0046
+   "epss": 0.0164
   },
   {
    "id": "58d95396f190",
@@ -4276,7 +4306,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0046
+   "epss": 0.0195
   },
   {
    "id": "4222a3123091",
@@ -4296,7 +4326,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0046
+   "epss": 0.0182
   },
   {
    "id": "d846792329f0",
@@ -4316,7 +4346,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0024
+   "epss": 0.0097
   },
   {
    "id": "d3fd0ebf24cf",
@@ -5808,7 +5838,7 @@
     "Actively exploited",
     "Vulnerability"
    ],
-   "epss": 0.0118,
+   "epss": 0.2034,
    "also": [
     {
      "source": "The Hacker News",
@@ -5996,7 +6026,7 @@
     "Edge devices",
     "Vulnerability"
    ],
-   "epss": 0.0108
+   "epss": 0.0134
   },
   {
    "id": "e0e9e3550086",
@@ -6148,7 +6178,7 @@
     "Edge devices",
     "Vulnerability"
    ],
-   "epss": 0.0108
+   "epss": 0.0134
   },
   {
    "id": "7d3104b45e33",
@@ -6168,7 +6198,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0118
+   "epss": 0.2034
   },
   {
    "id": "3bd9f144301e",
@@ -6308,7 +6338,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0228,
+   "epss": 0.1233,
    "also": [
     {
      "source": "The Hacker News",
@@ -6332,7 +6362,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0032
+   "epss": 0.0079
   },
   {
    "id": "6c8051f534fe",
@@ -6987,7 +7017,7 @@
     "Vulnerability",
     "SaaS / cloud"
    ],
-   "epss": 0.3831
+   "epss": 0.8627
   },
   {
    "id": "f27586b6e439",
@@ -7134,7 +7164,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.1271
+   "epss": 0.9948
   },
   {
    "id": "b57abd2c6608",
@@ -7175,7 +7205,7 @@
     "Edge devices",
     "Vulnerability"
    ],
-   "epss": 0.2598,
+   "epss": 0.8677,
    "also": [
     {
      "source": "SecurityWeek",
@@ -7361,54 +7391,6 @@
    "score": 0,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "65d8e9e8bad0",
-   "title": "Thousands of supermarket fridges still exposed after cyberattack",
-   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOOVFlVGlHdWVEOWFxN3dodUFSUFdEN0ZPLUg3Q3lTNEVGWXF2UFFtYjFLT1BHRXVCMGw1MEZBSEM1WlZEeFhrQkRyOTMycy05aE5VN21yVWVNZnVlYWlvM2pQSzNSQl9qeUg0X24yVEk0NWdwVzMySmN6OXEzZ1Y5dk9kWFBuMVdZaHB0Rw?oc=5",
-   "source": "Yahoo News Australia",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-14T15:42:18Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ],
-   "also": [
-    {
-     "source": "The Guardian",
-     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxObVV6N2RhN3poNzA0M3lyU1RvaDRvVG5YbXNORi0tbmxScTliUklMM3ZoQWhCR1lWLU1FU2VNVV9MdkgtaDhPVlM4eEljRUk0VlFlYzZJQ1puUmY2ZC1jSWUtcVpLQ1pJS1J6WmNRMUVlUWZrUGdJdXoxTTBsa0NPekFKLVpTYl9KY0F1NUdubmZmb0NaT25sdEpXYmxldlBURVk4T2pKc1ZKYkY2MzFvVkRKbDE5S3hwMExuaThNdXgxN0J2cXVFYVFYVElhdw?oc=5"
-    },
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/attackers-heat-french-supermarket.html"
-    },
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/cyberattack-shuts-down-refrigerators-at-french-supermarkets/"
-    }
-   ]
-  },
-  {
-   "id": "f0efb52b806c",
-   "title": "ICS Patch Tuesday: Siemens Issues 17 Advisories, Rockwell Fixes ArmorBlock Takeover Flaw",
-   "link": "https://www.securityweek.com/ics-patch-tuesday-siemens-issues-17-advisories-rockwell-fixes-armorblock-takeover-flaw/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-14T15:15:15Z",
-   "summary": "ABB previously published an advisory warning about possible probing of a dynovaPRO vulnerability. The post ICS Patch Tuesday: Siemens Issues 17 Advisories, Rockwell Fixes ArmorBlock Takeover Flaw appeared first on SecurityWeek .",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
   }
  ]
 }
