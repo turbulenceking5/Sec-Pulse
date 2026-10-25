@@ -1,84 +1,81 @@
 {
- "date": "2026-10-25",
- "generated": "2026-10-24T21:25:21+00:00",
- "title": "Sec-Pulse brief - Sun 25 Oct",
+ "date": "2026-10-26",
+ "generated": "2026-10-25T21:25:20+00:00",
+ "title": "Sec-Pulse brief - Mon 26 Oct",
  "items": [
   {
-   "id": "31b1dfffebc6",
-   "title": "Police Warn Of Another Rental Scam",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9GWGRMY1p6b0k4aENnR2d5VndxWXcwVy15SlkxS1ZBWHdnUHRRUUF3Q051T0cyaUx1LTFuWDZlLTk2bDYtTXFNdnVJaG1weW9lLXN6TTdfVWdHdXFuQ3RoWEFoTGszMkQ3YllReQ?oc=5",
-   "source": "Bernews",
+   "id": "9d2f15233c7c",
+   "title": "What Does DaVita (DVA) Ransomware Settlement Mean For Investors?",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPZU9zV0s2TUJvem4zUVlfaUZWY0RnMWd5V0FFT1prVnhtWkxzVFl0UTVZejM5NVJXMDhjNW1UXzlBbTB1ai1fZ3hQcjNiSGUtWnUwVU8wSktLSExFNEIxeVlNTng0VXg0d3lvWmowUW9PM1A4c21QcGxtckNfN3NsNk9VT00xQjRERGdaQ1B2dkdablFwU1RhMm9tUjFNN1R4dl9FMUE3TUtOZ0F2V0dLc3AxOHIxVGUxVFpOaDd6c3p5QdIBxwFBVV95cUxQWVFHWWJUcE00czItM2V1aXl2MHRKMmIwRjMxdUtNWkw3RGNPMnRJQ01YQ2hCejlIRks5TEFBVF9oSmVlZWNDVmVSYXVfUnRWckYydU1laDVrQ0RZZ1NJU0FXckVUNnAwYjJoVE5taHl4MU9FSEdBZk5XYUJTZ0RscFZkTDY2N0JndXY3MHQ2VFhMU0tvaVM4dTE1ZHFCalBYekkwa3pZczJqdng2NGJQT0pfWHQxSHJKOHVrMlRGbkNxcDdibkE0?oc=5",
+   "source": "Simply Wall Street",
    "region": "Global",
-   "published": "2026-10-24T12:43:12Z",
-   "score": 10,
+   "published": "2026-10-25T16:09:45Z",
+   "score": 6,
    "tags": [
-    "Real estate"
+    "Ransomware"
    ],
    "summary": ""
   },
   {
-   "id": "015a882ee274",
-   "title": "Exposed Infrastructure Reveals How Ransomware Affiliates Used AI Agents to Execute Intrusions",
-   "link": "https://thehackernews.com/2026/10/exposed-infrastructure-reveals-how.html",
+   "id": "f50e0c216840",
+   "title": "Set Up HIPAA Microsoft 365 Backup: 13 Steps, 90 Min [2026]",
+   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9NbnRYTGJkTVF5TzdCRTc2azBkeEw0XzBHcHhkVnQ0NjltTGlDRktuVzdwVnFrTWd3ZUVsNDVlWkVDQXdCWVdfQ1hLRnladUk1V3puekowbG0zdjJFd0UteUIwQVFITUZhck9jWEtZZU55X1B4RzR3bGtB?oc=5",
+   "source": "tech-insider.org",
+   "region": "Global",
+   "published": "2026-10-25T09:23:34Z",
+   "score": 6,
+   "tags": [
+    "Microsoft 365"
+   ],
+   "summary": ""
+  },
+  {
+   "id": "4a8154151413",
+   "title": "Unpatched Tailscale SSH Flaws Could Let a Hacked Device Reach Root on Other Servers",
+   "link": "https://thehackernews.com/2026/10/unpatched-tailscale-ssh-flaws-could-let.html",
    "source": "The Hacker News",
    "region": "Global",
-   "published": "2026-10-23T17:50:47Z",
-   "score": 11,
+   "published": "2026-10-25T17:44:09Z",
+   "score": 5,
    "tags": [
-    "Microsoft 365",
-    "Ransomware",
-    "Data breach"
-   ],
-   "summary": "Cybersecurity researchers have discovered an artificial intelligence (AI)-driven intrusion ecosystem run by affiliates of the INC and The Gentlemen ransomware groups. Central to the operation is an \"Autonomous Red Team Kill Chain Framework\" referred to as Phantom. The threat actor is assessed to…"
-  },
-  {
-   "id": "1175c0d5e99e",
-   "title": "Devika Group: A Legacy of Over 70 Years in Real Estate",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPUjZwR2xicW9fQW95UzZ3LUJucjFSU19MTi1uNlBkcHJveUxyN3VZZXQ0NjlZbGNKUjRVN09BdGs1WVlMam9rMGtuM2NhSzkzdjNpQlpRMGtGRVh5akVTc2NORm5kREVLZm90b2UyeFdNQUE4VG13QjZaVUNtYk1IdXBOTGM4MnhJZ0gzU0JaQlQ1UkpDOE1FekZxQlfSAaIBQVVfeXFMUGlrQnJ4djBNbjdxRmlRNlh3aGFvM05rNFlsM01RUXVhWmZIcVNRSHZ6clNLcXRnQ3ZHYkFUNzNSZTlOZl9ybS1CR1J3WlhQWFVwVlFyM3lDR0c1MWhfeGxwRXdsREp6M0NvbEhwQTFXaGJySDRIX1ZlQjM1RHgxSWJKMkNsaUhocXRZQjdzWVFFeFQ0dUZmd3Y5TVVya0hyb2xR?oc=5",
-   "source": "Lokmat Times",
-   "region": "Global",
-   "published": "2026-10-23T18:54:53Z",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "236d78f8360c",
-   "title": "#TSRUpdatez: Back in 2023, real estate influencer #CesarPina was arrested in connection with a real estate scam. Three years later, he has pleaded guilty. ____________________________________ According to @6abcactionnews, Pina pleaded guilty on",
-   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9QNTBxN2drcng5NVJ3amlfRFF6c2V0WnoxNzBHa2Y2bkUydEd5bkZkVXQ1NVdMTC1jSS1wMEpsQ05iU25HREtfS29NazFXdlhFaWc?oc=5",
-   "source": "Instagram",
-   "region": "Global",
-   "published": "2026-10-23T15:31:19Z",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "838b4b1ce253",
-   "title": "CISA Flags Two Actively Exploited Critical Flaws in Collabora Online and Arista VeloCloud",
-   "link": "https://thehackernews.com/2026/10/cisa-flags-two-actively-exploited.html",
-   "source": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-24T06:25:57Z",
-   "score": 8,
-   "tags": [
-    "Actively exploited",
+    "Vulnerability",
     "SaaS / cloud"
    ],
-   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added two vulnerabilities impacting Collabora Online Built-in CODE Server and Arista VeloCloud Orchestrator (VCO) to its Known Exploited Vulnerabilities (KEV), citing reports of active exploitation in the wild. The…"
+   "summary": "A single hacked device on a Tailscale network can be used to gain root access to other servers it can reach, according to a security researcher who published the findings this week. The attack requires two things: Tailscale SSH set up to allow port forwarding, and an attacker who already controls…"
+  },
+  {
+   "id": "3eda0d6ae7e3",
+   "title": "PHP2Shell Exploitation Hits Government Entity Amid Global Scanning and Signs of AI-Assisted Hacking",
+   "link": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html",
+   "source": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-25T17:19:46Z",
+   "score": 3,
+   "tags": [
+    "Vulnerability"
+   ],
+   "summary": "Threat actors have been observed using agentic artificial intelligence (AI) platforms for post-exploitation activity following the abuse of the PHP2Shell vulnerabilities tracked as CVE-2026-109618 and CVE-2026-109619. \"In one case, the attackers targeted a government entity in Europe and within…",
+   "epss": 1.0
+  },
+  {
+   "id": "8a1ff85d598d",
+   "title": "YARA-X 1.22.0 Release, (Sun, Oct 25th)",
+   "link": "https://isc.sans.edu/diary/rss/33454",
+   "source": "SANS ISC",
+   "region": "Global",
+   "published": "2026-10-25T19:57:53Z",
+   "score": 1,
+   "tags": [],
+   "summary": "YARA-X&#;x26;#;39;s 1.22.0 release brings 11 improvements and 9 bugfixes."
   }
  ],
  "stats": {
-  "recent": 20,
+  "recent": 8,
   "au": 0,
   "kev": 0
  },
  "lesson": {
-  "id": "1.7",
-  "title": "Frameworks: ATT&CK, Kill Chain, Diamond Model"
+  "id": "1.8",
+  "title": "Process improvement and automation"
  }
 }
