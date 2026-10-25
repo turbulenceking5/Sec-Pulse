@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T04:45:00Z",
+ "generated": "2026-10-25T11:34:53Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -34,13 +34,13 @@
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 4,
+   "count": 5,
    "error": null
   },
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 2,
+   "count": 3,
    "error": null
   },
   {
@@ -105,6 +105,53 @@
   }
  ],
  "items": [
+  {
+   "id": "e85723a0f677",
+   "title": "Former Unit 8200 Officers Raise $34 Million for Agentic SecOps Startup Mave",
+   "link": "https://www.securityweek.com/former-unit-8200-officers-raise-34-million-for-agentic-secops-startup-mave/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-25T11:00:00Z",
+   "summary": "Founded in 2025 by Unit 8200 alumni, Tel Aviv-based Mave uses AI agents to investigate alerts across existing security stacks. The post Former Unit 8200 Officers Raise $34 Million for Agentic SecOps Startup Mave appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "f50e0c216840",
+   "title": "Set Up HIPAA Microsoft 365 Backup: 13 Steps, 90 Min [2026]",
+   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9NbnRYTGJkTVF5TzdCRTc2azBkeEw0XzBHcHhkVnQ0NjltTGlDRktuVzdwVnFrTWd3ZUVsNDVlWkVDQXdCWVdfQ1hLRnladUk1V3puekowbG0zdjJFd0UteUIwQVFITUZhck9jWEtZZU55X1B4RzR3bGtB?oc=5",
+   "source": "tech-insider.org",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-25T09:23:34Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Microsoft 365"
+   ],
+   "why": [
+    "Microsoft 365"
+   ]
+  },
+  {
+   "id": "5d0e99bc982d",
+   "title": "OpenAI AI Agents Demonstrate VM Escapes and Secret Cross-Sandbox Communication",
+   "link": "https://thehackernews.com/2026/10/openai-ai-agents-demonstrate-vm-escapes.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-25T06:54:29Z",
+   "summary": "OpenAI has announced plans to conduct frontier model training with no live internet access, as it resumes reinforcement learning (RL) training and internal inference of its most advanced AI models. \"Based on the current state of alignment research, monitoring systems, and the security of internet…",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
   {
    "id": "31b1dfffebc6",
    "title": "Police Warn Of Another Rental Scam",
@@ -490,6 +537,23 @@
    ]
   },
   {
+   "id": "187cc5040468",
+   "title": "Chinese Hacker Deploys Fully Automated AI Agents to Breach 100 Companies at Trivial Cost",
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNV1o3NlZJVFRJTURPcHBMU08yVDFjMjBRdzE4SDdtaEtyRWNYSUx6a2pDNno2ZU5hNDhiVUpERUVEY1d4UXZIQjZZaWZDaDRzYUx1aFFHSGRjeW1zYmxOUmhVX2JFS2Rya3NmY0tkRkplZ09RNmFDb3hNUFlka3NpekgyU2VWa1VJZ2JFLXNId3ZJUFdJM0lrbk9xcXpNbV9YaDQwM0I2dk1jRmtqRkJoMUFVU0lHSlk5ZUE0QWN2SjFMT1ZjWk1YTndSRHo?oc=5",
+   "source": "CPO Magazine",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-23T16:00:00Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
    "id": "8af704020689",
    "title": "Ransomware Tracker: Live Attacks & Victim Data",
    "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1YNFJ1aWhUNmVnUjRkM2pyZ3FmOHhQS1NiNzAwRENXaGgxRnlfNG84bGhrcUNqZWwxdGU2U2o5WDVVS1RlbVd3WlBmWnYtZURUUlFKV0kwZkJNakI2amttV1ZyRnY?oc=5",
@@ -650,6 +714,12 @@
     "Data breach",
     "Identity",
     "Edge devices"
+   ],
+   "also": [
+    {
+     "source": "Cryptopolitan",
+     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQVl8tZmdnTGdmcms0dzBRMHIwNVluQWQ1QjlvYW1aVGhsUEJWT3VlSVVrZ1F2LWNLWFpFdGdSZjNIcTduQ1FydTQ5NmpWODk3TXJkWlV4U0Z5Tnk4dmhrLUt2VmJlamJKY1NnVXprOVUwdksxYU41emhrbTRDckNqb2Rmb1NSczhzMGl2WmhaY2Itand5cVo0c20zM2VKQ1NKNlFPMWY0b18?oc=5"
+    }
    ]
   },
   {
@@ -776,6 +846,29 @@
    "why": []
   },
   {
+   "id": "180b23b05e8e",
+   "title": "Capcom data breach confirmed — around 11.7 million accounts thought to have been affected",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOdW56TmhrMHpqWU0weVhOdlBYYmdXZ08xbFlaanI3c3RhbHl1aEROcGlWQi02UXJ6M0xTYXBUd3psQy1YSXRJSjZkVS1iYmhPaHI1cy15VG5mUlFMS2hHNnBRMlJZbmM0TW8zSXhrMVhfcDE2ZjZhNTZIa2s2SEpxRktCSnNaUGNpUTBORmNUTkVNWHRTYU90SXRVLXNaRGZtbVU0Wkg3NXRTNGQ4THF2TFN4TDJfSVZWWXpyQ29xbGJHQjBC?oc=5",
+   "source": "TechRadar",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-23T12:44:04Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ],
+   "also": [
+    {
+     "source": "GamesIndustry.biz",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOaEdyM0o4enJVZERVMXBnQmE0Y1NITE5wWFRnUmQ4dDYtVDAzYlEySVF3MGtmdGFsOUs3MVFadUF3b2N6NEFrSWl4U1B4NFJhUUtOSExtUU9LTlNCdDhyWU5ISWxqT3hMXzV6MnlJb1dfcXRaY1Rvc1A2bVlib0oyamdxbHloc2p5Qjl5YkNlLTZ3S2lnY0pDY2RUbERUNF9iVU53?oc=5"
+    }
+   ]
+  },
+  {
    "id": "ba1a1addd0c2",
    "title": "AI Agents as Insider Threats: Inside Microsoft's Bet on a Unified Security Stack",
    "link": "https://www.darkreading.com/cybersecurity-operations/ai-agents-insider-threats-inside-microsoft-unified-security-stack",
@@ -840,23 +933,6 @@
    ],
    "why": [
     "Ransomware"
-   ]
-  },
-  {
-   "id": "6c35aafd0626",
-   "title": "Capcom affected by data breach, over 11.7m Capcom ID accounts compromised",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOaEdyM0o4enJVZERVMXBnQmE0Y1NITE5wWFRnUmQ4dDYtVDAzYlEySVF3MGtmdGFsOUs3MVFadUF3b2N6NEFrSWl4U1B4NFJhUUtOSExtUU9LTlNCdDhyWU5ISWxqT3hMXzV6MnlJb1dfcXRaY1Rvc1A2bVlib0oyamdxbHloc2p5Qjl5YkNlLTZ3S2lnY0pDY2RUbERUNF9iVU53?oc=5",
-   "source": "GamesIndustry.biz",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-23T11:05:20Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
    ]
   },
   {
@@ -974,6 +1050,23 @@
    ]
   },
   {
+   "id": "38a5498a23eb",
+   "title": "Capcom Breach: 11.77M CAPCOM IDs Exposed, Act Now [2026]",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5jN1ozM09EQl9IbE8tZElaQURyRFQ5VW5FSmVPZFQ4YUExNTFZYW5zam9oN0VCUDJpbW1xMHQyNzY0NE5fMTEyVC1lVkpfXzhWVGZ0YVIxY1QtdUZiUi1qQk9IZmRxZEg2emlSM244VWxyRGhDcnJXbzU0WHNSMjQ?oc=5",
+   "source": "https://tech-insider.org/",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-23T08:50:03Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
    "id": "a2a9e372db7b",
    "title": "Researchers Demonstrate Node2Shell RCE Exploit on Node.js Build Using Crafted Brotli Data",
    "link": "https://thehackernews.com/2026/10/researchers-demonstrate-node2shell-rce.html",
@@ -1020,6 +1113,23 @@
    "why": [
     "Data breach",
     "Identity"
+   ]
+  },
+  {
+   "id": "53aff77a38e1",
+   "title": "PHP flaws trigger outage fears & retail fraud warnings",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNLU1KbG43ai1iWXUyaHcyNFUya1JfOWxSM3lFUzByakFHNUJFSmZXbWp3bUxRd0FIT3lRLTVheml5OXpFN2hwV094QXNHN1dwNU1OSWVkWG1WTVdkUE9UM1R6SDZNd0RzSTNZVk9JOG4wT2xsNkFRZ0xBb1VjM1F2dzIydV9BdVlDb3Z4Q2FTQQ?oc=5",
+   "source": "SecurityBrief UK",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-23T08:15:00Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "SaaS / cloud"
+   ],
+   "why": [
+    "SaaS / cloud"
    ]
   },
   {
@@ -1142,7 +1252,7 @@
    "title": "Pentagon Sued Over Data Breach Hitting 3M+ People [2026]",
    "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPQ3ZyNEZuMFF5THV2T1V4RUc0M2szMi1IcFpqaVJ1enZKMXlkaEYyNHBFdzNjNThPYkc4ZjhtNnhDUWJvSXBDeUhmMlJ5TzAtTTdPcE05WmJBMkxGaV9LY2YxY21NTEhZMTFlVklKTTVVTlpuMmItLUxtWEpGN09YV0p5MGxtUQ?oc=5",
    "source": "https://tech-insider.org/",
-   "feed": "AU breach news",
+   "feed": "OAIC / Privacy news",
    "region": "Global",
    "published": "2026-10-23T03:48:00Z",
    "summary": "",
@@ -7297,120 +7407,6 @@
     "Vulnerability"
    ],
    "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "fac7cd6e29f5",
-   "title": "Microsoft fixes VPN issues caused by September Windows updates",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-vpn-issues-caused-by-september-windows-updates/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-14T14:27:01Z",
-   "summary": "Microsoft has resolved a known issue that caused Always On VPN connection issues after installing the September 2026 Windows 11 security updates. [...]",
-   "score": 4,
-   "tags": [
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "why": [
-    "Edge devices",
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "78394b2e6b36",
-   "title": "U.K. Sanctions Cryptomus for RU Money Laundering",
-   "link": "https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/",
-   "source": "Krebs on Security",
-   "feed": "Krebs on Security",
-   "region": "Global",
-   "published": "2026-10-14T14:22:49Z",
-   "summary": "The United Kingdom has issued economic sanctions against Cryptomus, a chameleonic cryptocurrency platform that experts say serves as a major conduit for payments related to ransomware, narcotics, darknet markets, fraud and cybercrime services that are helping Russia circumvent existing financial…",
-   "score": 4,
-   "tags": [
-    "Ransomware"
-   ],
-   "why": [
-    "Ransomware"
-   ]
-  },
-  {
-   "id": "f6b610c18e50",
-   "title": "Harmonic Security Raises $50 Million for Workforce AI Protection",
-   "link": "https://www.securityweek.com/harmonic-security-raises-50-million-for-workforce-ai-protection/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-14T14:09:51Z",
-   "summary": "The cybersecurity startup plans to expand engineering and go-to-market teams in the US and UK. The post Harmonic Security Raises $50 Million for Workforce AI Protection appeared first on SecurityWeek .",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "937c7f4fab21",
-   "title": "The Blind Spots of Agentic Pentesting and How to Close Them",
-   "link": "https://www.bleepingcomputer.com/news/security/the-blind-spots-of-agentic-pentesting-and-how-to-close-them/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-14T14:00:10Z",
-   "summary": "AI-powered penetration testing can uncover complex attack paths, but safety restrictions and network limitations leave many assets and vulnerabilities untested. Picus Security explains how combining agentic pentesting with exposure validation and breach simulation can help close these gaps. [...]",
-   "score": 3,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "91795601b1ff",
-   "title": "Global takedown hits network behind 1 billion phishing messages",
-   "link": "https://www.bleepingcomputer.com/news/security/global-takedown-hits-network-behind-1-billion-phishing-messages/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-14T13:12:52Z",
-   "summary": "A massive cybercriminal ecosystem facilitating more than a billion malicious messages targeting over 75,000 organizations across 150 countries has been disrupted by law enforcement agencies and partners worldwide. [...]",
-   "score": 5,
-   "tags": [
-    "Phishing",
-    "Vulnerability"
-   ],
-   "why": [
-    "Phishing",
-    "Vulnerability"
-   ],
-   "also": [
-    {
-     "source": "Dark Reading",
-     "url": "https://www.darkreading.com/cyberattacks-data-breaches/yam-store-phishing-network-behind-billion-messages"
-    }
-   ]
-  },
-  {
-   "id": "b2dbdf4e9e45",
-   "title": "The hidden network: Inside the phishing infrastructure ecosystem powering global cybercrime",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/10/14/the-hidden-network-inside-the-phishing-infrastructure-ecosystem-powering-global-cybercrime/",
-   "source": "Microsoft Security Blog",
-   "feed": "Microsoft Security Blog",
-   "region": "Global",
-   "published": "2026-10-14T13:00:00Z",
-   "summary": "Microsoft uncovered a Chinese-language cybercriminal ecosystem, an interconnected network of phishing kit operators (tracked as Storm-2990), and an illicit marketplace (tracked as Storm-3119) selling tools and infrastructure for large-scale phishing. In collaboration with law enforcement agencies…",
-   "score": 6,
-   "tags": [
-    "Phishing",
-    "Vulnerability"
-   ],
-   "why": [
-    "Phishing",
     "Vulnerability"
    ]
   }
