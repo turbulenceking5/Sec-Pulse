@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T20:53:05Z",
+ "generated": "2026-10-25T21:25:09Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -22,7 +22,7 @@
   {
    "name": "ASD / ACSC in the news",
    "ok": true,
-   "count": 5,
+   "count": 3,
    "error": null
   },
   {
@@ -82,7 +82,7 @@
   {
    "name": "Microsoft Security Blog",
    "ok": true,
-   "count": 0,
+   "count": 5,
    "error": null
   },
   {
@@ -952,6 +952,21 @@
    ]
   },
   {
+   "id": "1a82da6a7e05",
+   "title": "Managing AI token consumption for operational resilience",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNZ09Ic1VnakNRakQwNzdCdWJURzlzYzEzaXZ3bGgwNGRrSkl3cVNSaUtyV2pXWDFSTEc3WXZ3TkFVRjJCYXdMUl8zODJwZmxFY3Z5aUZSdDNrbWwyckdOSjlWSkUzVXgza0IwYnFDekhReXVXMUNYWVZfQzlPV3Nma1FlcG1kQWVFNlJvdjMwZFQzcDAzRE5pcA?oc=5",
+   "source": "Australian Cyber Security",
+   "feed": "ACSC (via Google News)",
+   "region": "AU",
+   "published": "2026-10-23T12:00:00Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "Australia"
+   ],
+   "why": []
+  },
+  {
    "id": "ba1a1addd0c2",
    "title": "AI Agents as Insider Threats: Inside Microsoft's Bet on a Unified Security Stack",
    "link": "https://www.darkreading.com/cybersecurity-operations/ai-agents-insider-threats-inside-microsoft-unified-security-stack",
@@ -1451,26 +1466,11 @@
    "epss": 0.1233
   },
   {
-   "id": "1a82da6a7e05",
-   "title": "Managing AI token consumption for operational resilience",
-   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNZ09Ic1VnakNRakQwNzdCdWJURzlzYzEzaXZ3bGgwNGRrSkl3cVNSaUtyV2pXWDFSTEc3WXZ3TkFVRjJCYXdMUl8zODJwZmxFY3Z5aUZSdDNrbWwyckdOSjlWSkUzVXgza0IwYnFDekhReXVXMUNYWVZfQzlPV3Nma1FlcG1kQWVFNlJvdjMwZFQzcDAzRE5pcA?oc=5",
-   "source": "Australian Cyber Security Centre",
-   "feed": "ACSC (via Google News)",
-   "region": "AU",
-   "published": "2026-10-22T23:49:07Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "Australia"
-   ],
-   "why": []
-  },
-  {
    "id": "972a9651804b",
    "title": "Australia has toughest data breach fines in APAC: report",
    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOZG82N0ItSVptcnR1a3R2TUJBRV81dHJwU05qNGl1bGFibHotRzBtd2FRYlBoRUJ5QXhCbzdKWlJka2VjRDZpZ3JrbEdfTEdUZUtHejVRYjV4NDJVRHR2aUNmVDJmZml2T3h5d2c4UjVkS0laVVhDbTVRNDBETFowMVlTMFEyQXBuYVRxVUdfNlFoWmU1azNrWFBwQl83OU0wZm55M0JZTlNrQTFuSGt2aWVRM0lNY3BqdEloSngxcEdodnZ3?oc=5",
    "source": "Technology Decisions",
-   "feed": "AU breach news",
+   "feed": "OAIC / Privacy news",
    "region": "AU",
    "published": "2026-10-22T22:17:54Z",
    "summary": "",
