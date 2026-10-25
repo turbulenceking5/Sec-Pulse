@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T16:25:12Z",
+ "generated": "2026-10-25T20:53:05Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -34,7 +34,7 @@
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 4,
+   "count": 3,
    "error": null
   },
   {
@@ -82,7 +82,7 @@
   {
    "name": "Microsoft Security Blog",
    "ok": true,
-   "count": 5,
+   "count": 0,
    "error": null
   },
   {
@@ -105,6 +105,86 @@
   }
  ],
  "items": [
+  {
+   "id": "8a1ff85d598d",
+   "title": "YARA-X 1.22.0 Release, (Sun, Oct 25th)",
+   "link": "https://isc.sans.edu/diary/rss/33454",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-10-25T19:57:53Z",
+   "summary": "YARA-X&#;x26;#;39;s 1.22.0 release brings 11 improvements and 9 bugfixes.",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "4a8154151413",
+   "title": "Unpatched Tailscale SSH Flaws Could Let a Hacked Device Reach Root on Other Servers",
+   "link": "https://thehackernews.com/2026/10/unpatched-tailscale-ssh-flaws-could-let.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-25T17:44:09Z",
+   "summary": "A single hacked device on a Tailscale network can be used to gain root access to other servers it can reach, according to a security researcher who published the findings this week. The attack requires two things: Tailscale SSH set up to allow port forwarding, and an attacker who already controls…",
+   "score": 5,
+   "tags": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "3eda0d6ae7e3",
+   "title": "PHP2Shell Exploitation Hits Government Entity Amid Global Scanning and Signs of AI-Assisted Hacking",
+   "link": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-25T17:19:46Z",
+   "summary": "Threat actors have been observed using agentic artificial intelligence (AI) platforms for post-exploitation activity following the abuse of the PHP2Shell vulnerabilities tracked as CVE-2026-109618 and CVE-2026-109619. \"In one case, the attackers targeted a government entity in Europe and within…",
+   "score": 3,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 1.0,
+   "also": [
+    {
+     "source": "Unit 42",
+     "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBaSXRUMkVsWkF3TjhoV29oTXdyZHhrMGZINFBHNVVrNmZubTA4SkFzMzlWMlNMLW15ZWdISDJYeURJbVdpTFB5ZzNTU21aazFfTmc4R0VkLWVyMVY4S1JRYTZ5UjJqWk82SlR5Q0ZMOTJrNEJVeXNV?oc=5"
+    },
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/php2shell-mass-exploitation-looms-for-leaked-critical-php-flaws/"
+    },
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/"
+    },
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/php-issues-emergency-patches-for-two.html"
+    },
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/php2shell-two-unpatched-critical-php.html"
+    },
+    {
+     "source": "SANS ISC",
+     "url": "https://isc.sans.edu/diary/rss/33440"
+    },
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/php2shell-patches-land-as-first-exploitation-attempts-hit-sensors/"
+    }
+   ]
+  },
   {
    "id": "9d2f15233c7c",
    "title": "What Does DaVita (DVA) Ransomware Settlement Mean For Investors?",
@@ -175,6 +255,23 @@
    "published": "2026-10-25T06:54:29Z",
    "summary": "OpenAI has announced plans to conduct frontier model training with no live internet access, as it resumes reinforcement learning (RL) training and internal inference of its most advanced AI models. \"Based on the current state of alignment research, monitoring systems, and the security of internet…",
    "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "9d4de0cc29cf",
+   "title": "At least 12 states face cyberattacks on their water systems, sources say",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNYWtBaEpyZlBiQmtRT25NRWJ0RnNOSmdNVDN0V2hSdG9nSFV5OUhfUzh4ZnJNU3F6eXZhUy1EM2ZTU2pmYlpHUGxYeEhhTWFtSElTMTFtamlLZGFyeEJJVk41V1pLUEQtQXZpNGtoUGprX3FNMkl3S3FwbUthVkVjOXJ6eVVpM3hDckpnclZJeXpiamdaMXfSAZsBQVVfeXFMT01wLUJCeTF5MXpBRWh1UXg5SFlhUDdRYmZYVFVkcjI5bVltdEh5TlkwV1FMLV91REt5djJSeUxNb3A4ZXJuVWhrZGNlSWxRTmpQbHFldm1TYk41dGdvT0FuQTBHbE96bENKaDRWWWc1QUxEV0xlM0ZQT05aakZ1MnNIbG9feTZnUUp3SVJPVVdNaWJnZVNDZlVtUEE?oc=5",
+   "source": "ABC News - Breaking News, Latest News and Videos",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-24T15:17:53Z",
+   "summary": "",
+   "score": 4,
    "tags": [
     "Vulnerability"
    ],
@@ -767,50 +864,6 @@
    ],
    "why": [
     "Data breach"
-   ]
-  },
-  {
-   "id": "e40ec869602e",
-   "title": "Threat Brief: Critical Vulnerabilities in PHP: CVE-2026-109618, CVE-2026-109619 (Updated October 23)",
-   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBaSXRUMkVsWkF3TjhoV29oTXdyZHhrMGZINFBHNVVrNmZubTA4SkFzMzlWMlNMLW15ZWdISDJYeURJbVdpTFB5ZzNTU21aazFfTmc4R0VkLWVyMVY4S1JRYTZ5UjJqWk82SlR5Q0ZMOTJrNEJVeXNV?oc=5",
-   "source": "Unit 42",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-23T13:47:22Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 1.0,
-   "also": [
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/php2shell-mass-exploitation-looms-for-leaked-critical-php-flaws/"
-    },
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/"
-    },
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/php-issues-emergency-patches-for-two.html"
-    },
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/php2shell-two-unpatched-critical-php.html"
-    },
-    {
-     "source": "SANS ISC",
-     "url": "https://isc.sans.edu/diary/rss/33440"
-    },
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/php2shell-patches-land-as-first-exploitation-attempts-hit-sensors/"
-    }
    ]
   },
   {
@@ -7321,73 +7374,6 @@
    "region": "Global",
    "published": "2026-10-14T17:46:50Z",
    "summary": "Ledger has asked resellers and distributors of its wallets in Indonesia, Singapore, Thailand, the Philippines, Vietnam, Malaysia, and Hong Kong to suspend device sales and remove products from shelves while it investigates device tampering. [...]",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "a7632caf16a4",
-   "title": "Cisco patches new Secure Email Gateway zero-day exploited in attacks",
-   "link": "https://www.bleepingcomputer.com/news/security/cisco-patches-actively-exploited-secure-email-gateway-zero-day/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-14T17:29:14Z",
-   "summary": "Cisco has patched another actively exploited zero-day flaw in its Secure Email Gateway (SEG) that lets remote unauthenticated attackers execute commands with root privileges. [...]",
-   "score": 10,
-   "tags": [
-    "Actively exploited",
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "why": [
-    "Actively exploited",
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/cisco-warns-of-active-attacks.html"
-    },
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/cisco-warns-of-exploited-secure-email-gateway-vulnerability/"
-    }
-   ]
-  },
-  {
-   "id": "78b0d9b2dfa1",
-   "title": "Microsoft Disrupts 3 Phishing Kits Linked to Over 1 Billion Scam Messages",
-   "link": "https://thehackernews.com/2026/10/microsoft-disrupts-3-phishing-kits.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-14T17:09:15Z",
-   "summary": "Microsoft and Health-ISAC, along with the Japan Cybercrime Control Center (JC3) and a coalition of private sector companies, such as Resecurity, Cloudflare, Oracle, Proofpoint, and TRM Labs, announced the disruption of three phishing kits, CoGUI (aka NX or FA), Haozi (aka Phoenix), and Iron Man…",
-   "score": 4,
-   "tags": [
-    "Phishing"
-   ],
-   "why": [
-    "Phishing"
-   ],
-   "also": [
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/microsoft-disrupts-chinese-language-phishing-market-behind-1b-messages/"
-    }
-   ]
-  },
-  {
-   "id": "e2e487f81c3d",
-   "title": "AI Agents Navigate Unfamiliar OT Systems and Move Equipment in Minutes, Booz Allen Finds",
-   "link": "https://www.securityweek.com/ai-agents-navigate-unfamiliar-ot-systems-and-move-equipment-in-minutes-booz-allen-finds/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-14T16:00:00Z",
-   "summary": "In Booz Allen’s isolated OT lab, AI models met every objective across eight scenarios and reached an industrial control network from a perimeter compromise in just over 16 minutes. The post AI Agents Navigate Unfamiliar OT Systems and Move Equipment in Minutes, Booz Allen Finds appeared first on…",
    "score": 0,
    "tags": [],
    "why": []
