@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-26T04:50:52Z",
+ "generated": "2026-10-26T13:07:40Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,19 +28,19 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 9,
+   "count": 8,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 4,
+   "count": 8,
    "error": null
   },
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 2,
+   "count": 5,
    "error": null
   },
   {
@@ -106,13 +106,352 @@
  ],
  "items": [
   {
-   "id": "5c76648b4d62",
-   "title": "Bathurst RSL Ransomware Attack: Qilin Claim, Club Reply",
-   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPV1o0SXZ1eEJCRjFvU1FWaDBXRy1kTTVnRUZaVVA2UVZISzdvNzMwa1ZUeXNMWWRzVEtXMVZudW53RmUyM1JrbG5ic3pZVWR4Vi1lOGxYNFREbFZJRkROYnhnRjZXQ2pEM2ZWU2ZXanRia0xCQ1VNZXd3OUFtNUw4ZUxn?oc=5",
-   "source": "shattered.io",
+   "id": "23a9892afebf",
+   "title": "953 Online Stores Infected in Long-Lasting Malware Campaign",
+   "link": "https://www.securityweek.com/953-online-stores-infected-in-long-lasting-malware-campaign/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-26T12:46:44Z",
+   "summary": "Small loader code injected into the stores served a payload to visitors or did nothing to avoid detection. The post 953 Online Stores Infected in Long-Lasting Malware Campaign appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "f5fa96b28818",
+   "title": "Dutch Police Arrest Two Over NFC Relay Attacks That Drained $400,000+ From Bank Accounts",
+   "link": "https://www.securityweek.com/dutch-police-arrest-two-over-nfc-relay-attacks-that-drained-400000/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-26T11:47:52Z",
+   "summary": "The individuals called victims and persuaded them to install an app and scan their credit cards to loot their bank accounts. The post Dutch Police Arrest Two Over NFC Relay Attacks That Drained $400,000+ From Bank Accounts appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "49aedb62ce7d",
+   "title": "Between alerts: What Attackers Do in the Spaces Ordinary Detection Misses",
+   "link": "https://thehackernews.com/2026/10/between-alerts-what-attackers-do-in.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-26T11:23:56Z",
+   "summary": "Every SOC struggles with a pile of alerts. Very few of those alerts explain how an attack started or how it progressed. Network data, like that from a network detection and response (NDR) platform, connects individual alerts into one timeline, and it feeds the defensive systems that can tie all…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "4dd6d369bedf",
+   "title": "Kali Linux 2026.3 released with 6 new tools, desktop updates",
+   "link": "https://www.bleepingcomputer.com/news/linux/kali-linux-20263-released-with-6-new-tools-desktop-updates/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-26T10:26:52Z",
+   "summary": "Kali Linux has released version 2026.3, its third release this year, featuring six new hacking tools, desktop environment improvements, refreshed build scripts, and more. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "2a948c7de7f5",
+   "title": "Node2Shell: Brotli Flaw Triggers Patching Across Microsoft, Node.js, Python Packages",
+   "link": "https://www.securityweek.com/node2shell-brotli-flaw-triggers-patching-across-microsoft-node-js-python-packages/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-26T10:21:57Z",
+   "summary": "An out-of-bounds write in Google’s Brotli decoder affects Node.js, .NET, PowerShell, and Python packages, and can lead to code execution. The post Node2Shell: Brotli Flaw Triggers Patching Across Microsoft, Node.js, Python Packages appeared first on SecurityWeek .",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html"
+    }
+   ],
+   "epss": 0.3278
+  },
+  {
+   "id": "275e6f3b55af",
+   "title": "uCreator Android Spyware Can Steal Telegram 2FA Passwords and Clone WeChat Accounts",
+   "link": "https://thehackernews.com/2026/10/ucreator-android-spyware-can-steal.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-26T09:54:02Z",
+   "summary": "A rentable Android spyware kit called uCreator takes over Telegram and WeChat accounts by hiding its code inside working copies of the two apps, researcher Ovi found. It only reaches people who install one of these tampered copies, spread outside the official app stores, or who run WeChat inside…",
+   "score": 3,
+   "tags": [
+    "Identity"
+   ],
+   "why": [
+    "Identity"
+   ]
+  },
+  {
+   "id": "00a30fec2178",
+   "title": "Mega breaches nearly triple as health sector tops Australia’s data breach count",
+   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNMFRnVl9kbjNqbUMtNThqSElVUkFibjJEd3F0RXRWSnhpVnlSOFJiS2NuSmx6M1FORjZkSFFvM19kWkNBSDRMWi1qWEpPT1hzenAtZUg2T3gwZFJ1YlpUdVZNQnEwVXlhTlRSYzY5blFNOUZHMlhCNk9mU21nN3U3WnJ6RnN5VmxSUlFQb0xzZGZLRnI5bGJHbmVBQk9PSnYtMHdscDVySDREdk0yZzFoeVNzMnBWaTZiTElOYmhLNGU3NzIxamNFM2dSZzdFQWdFSUM1UGh6MkRjanA4QzJn?oc=5",
+   "source": "Insurance Business",
+   "feed": "OAIC / Privacy news",
+   "region": "AU",
+   "published": "2026-10-26T09:49:46Z",
+   "summary": "",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Data breach"
+   ],
+   "why": [
+    "Australia",
+    "Data breach"
+   ]
+  },
+  {
+   "id": "47b059e57c09",
+   "title": "Looking for a Language [Guest Diary], (Wed, Oct 21st)",
+   "link": "https://isc.sans.edu/diary/rss/33442",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-10-26T09:38:03Z",
+   "summary": "[This is a Guest Diary by Jeffray Spence, an ISC intern as part of the SANS.edu BACS program]",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "fbd9cb2b4455",
+   "title": "PHP2Shell security flaws now sucessfully exploited in the wild",
+   "link": "https://www.bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-26T09:19:57Z",
+   "summary": "Two critical RCE vulnerabilities (CVE-2026-109618 and CVE-2026-109619), collectively tracked as PHP2Shell, have been successfully exploited in the wild. [...]",
+   "score": 11,
+   "tags": [
+    "Actively exploited",
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Actively exploited",
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "epss": 1.0,
+   "also": [
+    {
+     "source": "SANS ISC",
+     "url": "https://isc.sans.edu/diary/rss/33440"
+    }
+   ]
+  },
+  {
+   "id": "5d7d269f0ceb",
+   "title": "HIPAA Ransomware Recovery: 13 Steps, 90 Min [2026]",
+   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOWkw3V3RhbHFrYlZZcmJuUVhLeFV6MnpDc0lpb2NodTVmcmtlamlqSzkyRm5HQXRXd3lrMjduTUVGSW8zUGZ1a09pUTgyeFBoQ3pzMWk5OS1tdXo3S1pBVW54djc5SERSNUZjdzM2eDBHbHFia2E4UjdoOUhJd1lxN1VKcVpTU3BVRmhR?oc=5",
+   "source": "tech-insider.org",
    "feed": "AU breach news",
    "region": "Global",
-   "published": "2026-10-26T04:15:17Z",
+   "published": "2026-10-26T09:18:23Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
+  },
+  {
+   "id": "4c6c7b2ea9da",
+   "title": "Mythos 5 Ignored Real-World Harm in July Attack",
+   "link": "https://www.securityweek.com/mythos-5-ignored-real-world-harm-in-july-attack/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-26T09:10:03Z",
+   "summary": "The model engaged in severe overreach and dishonesty, creating fake identities and submitting malicious code on GitHub. The post Mythos 5 Ignored Real-World Harm in July Attack appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "3fa7271613c2",
+   "title": "M3M Denies Setback in Gurugram Land Dispute; Court Drops Breach of Trust Charge",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOUzJ0UFJweWtINEd4bmFLN3Q0NFJ5Z2UwTkpSMFk3UzE3SXlTRWFPalJrV3FnQWhVTnRIbXd3Q3NYOWNuOGhrWFpHdHR6N1B2dHkxSXoyWE1qU3RxNGpfdDhvdXJLZDd3VW9xeWNFb2stTXRyYTctZW93YWxIZ3NWMFZ6NFFmQmRQSWVLUk9wQlJueHVGUjFDX29EYU92bHYtQjZyYWh0YlJvYmEwTkNiQU92SDJxTmFyalNHVHZwaDY0T1XSAcgBQVVfeXFMTVgzSkR0dS1TbHFiOUh2bnB1ejFRS01qaUhIZjh6bU9DSnhONHVIZmsxaEkyQloyM2RiU1dCLXp1bE1Yb2lOR01uUUphWFFwdWhFRzYtczJYQ2pGckpZUlFmSm1yMDNEX250ZEwxdXpRYjJZS3B5dnJNN3FoVXhWMmtzZXIyQTZnUjlWY29VT2c3VWhxY1ZkUlVfQ25oWkNQVDlpdlVzTnRUMG5GY2tCdmZKN2ZBNXRZalQ4SWtnRGFoNmlTTlJSQmQ?oc=5",
+   "source": "Lokmat Times",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-26T09:06:19Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ],
+   "also": [
+    {
+     "source": "The News Mill",
+     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMFZyTm5VaXRVdXZpSzR4VEZYNGdjdG5TcGxjdGJCSThyRS02bC1WMDlqQnJmQU9lNUpxQTk2MVdWM3AtWmpqaHF5MXI1V1lScFlNSmtsTU9lRFoyRGE1OW1Nd3NUMGIzdEF1azljSmFrcTVuZ004Zll6anJMdnVHN0t2T0xnbmx2TVNPa2hIYzJFdDFqN1lRUzlLaUhLY3M3SGZWcWZ6TVprcE5saERJSXpR?oc=5"
+    },
+    {
+     "source": "ANI News",
+     "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxNdHNZTlBjNzRBSk91OW1mQ1hHU3ltdXRmWnB5cmlQQVVubjRYQ2laRWllemNRal9ta0tZYk1INExVclQ4TW0yWUJrMS1uYkNZV2FLV21vemVoTm5Wc1lVbGpCdlM0S05BemZybENWZDlpY0tzblF1UGVUMFgwVVNRYjhiVjl0UEZMcXhIRXlSZ1dKbzZrLVhKRHg0SnZtc3AzdUZaNjJqaExPVjBqOUJtZlE2MDVvRzZBME11d0xhdkM5TkhZT3IwRXl0cG9pQnJra3JRQjRMTF9yclBhU2pZRDltelFOLUozaThyRW1FVXFWeXEyWk82Ym1OcDRjcWpicW52bUpaYXZ4Q0FkRk1CNW4yVzhCRW5nN3J0SGo4dmt1YWhsREpVSHhKSWo?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "2be33c295e0d",
+   "title": "Capcom Data Breach: 196 Password Resets, 11.77M [2026]",
+   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxORXIwWjFNVkFhaWZPd3E2Q1ExXzktdWozVDdGTVZlTVp6bGl5UFBFVHdMLWNpYmJURGpBTFRMTUE4cHVneWkwbFRsUkExZUJHd3dGb2twYUZGSjEwOWpHVjlUYS1wMWM5UGFoeFhoX3RyOUJsNElfelIwcUtZd1ppN18zdDY2NTlodGZB?oc=5",
+   "source": "https://tech-insider.org/",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-26T08:43:09Z",
+   "summary": "",
+   "score": 9,
+   "tags": [
+    "Data breach",
+    "Identity"
+   ],
+   "why": [
+    "Data breach",
+    "Identity"
+   ]
+  },
+  {
+   "id": "35a2887f8653",
+   "title": "Microsoft 365 Token-Replay Attacks Compromise 97 Accounts at 79 Organizations",
+   "link": "https://thehackernews.com/2026/10/microsoft-365-token-replay-attacks.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-26T08:35:51Z",
+   "summary": "Cybersecurity researchers have disclosed a Microsoft 365 campaign that has been observed leveraging an adversary-in-the-middle (AitM) relay to capture sign-in sessions and then replay the stolen tokens to break into email accounts at 79 organizations. Huntress, which observed the activity between…",
+   "score": 7,
+   "tags": [
+    "Phishing",
+    "Microsoft 365"
+   ],
+   "why": [
+    "Phishing",
+    "Microsoft 365"
+   ]
+  },
+  {
+   "id": "4ae941d6b699",
+   "title": "Mirae Asset Life Insurance hit by hacking; data breach confirmed one day after suspicious activity, emergency response underway",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9xS0o1U2FUdmZiTVg5MVJkQURTZXFyRlNnNmEzMl9pM1pfdHJlNnhtU1ppTXMyT2lESnVDc2tiR0FDbkxSUlFuMS15YkRjMnBUdFRjMWlKWVNhQUVMQUlwT3lR?oc=5",
+   "source": "재경일보",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-26T08:05:03Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "8e95a20d61e4",
+   "title": "Gheist Uses Stolen GitHub Tokens to Steal Private Repository Secrets via Actions Logs",
+   "link": "https://thehackernews.com/2026/10/gheist-uses-stolen-github-tokens-to.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-26T07:49:46Z",
+   "summary": "An automated campaign is using stolen GitHub tokens to plant workflows that print a repository's secrets into its GitHub Actions logs, which the attackers then download before deleting the runs. The attacks have succeeded in private repositories and GitHub Enterprise environments, according to an…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "b522ae2c9049",
+   "title": "Global cyber attacks jump 48% as phishing rises",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE80ang2VlFwNzJWaVREYmJ0azd2Qmk4YWZWWnZKZ05JNzBscGtzU0RILUY1ekhUYVZ0VXIxRVFibG1hWklXS01HLWhXR3h6WTRhRTRYUWh3WDd4SmY2RG94LUxaakY4N1JjdFluMndYRnRleGx5N1R5bGVHRC1WM0U?oc=5",
+   "source": "IT Brief New Zealand",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-26T06:48:48Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Phishing"
+   ],
+   "why": [
+    "Phishing"
+   ],
+   "also": [
+    {
+     "source": "SecurityBrief Australia",
+     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPN01velluVEN6N3N6UXJIa2o2Tl9JUy1yU1hhaHROUWMtTG9oenI5WXc0Y2JCNnhnMHRUaGVHN0hFVzRxSlhLYm1jMU85WERXR2F4aXVDTjhZR2hiczJ1MkpSTVY1bHhLcGdaZkVLOFFNYlRQUFl2LTRQWkdPdjBqeDBiSDU1eVht?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "8239096a100a",
+   "title": "Malicious File in Downloads Folder Tries to Trick AI Coding Agent Into Installing Malware",
+   "link": "https://thehackernews.com/2026/10/malicious-file-in-downloads-folder.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-26T06:03:48Z",
+   "summary": "A malicious instruction file sitting in a developer's Downloads folder tried to make their AI coding agent install a known-malicious npm package, security firm Forever Security said in a report published last week. The company caught the attempt on a real customer's machine and stopped the agent…",
+   "score": 0,
+   "tags": [],
+   "why": [],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/ai-coding-agents-hijacked-using-agentsmd-file-in-downloads-folder/"
+    }
+   ]
+  },
+  {
+   "id": "fe8ef43cf778",
+   "title": "Australia's worker surveillance laws 'dangerously out of date'",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQem15NlFUVnBCekludW5XYVhsWVVwMVozSFNxQmNFTWxJVTlEWWxqTC12ei1jRGNCVWJncXNKaHNmUXZORzlqcnctZG5GdVpidzBpdnZhZGYxM3haTXhyWTNMNm4zME9ueDItVEoxZkc1UTl2S3Q0ZmVpY1d5NWllMVlmNGlmY2JZeC1JVGxpaXoyX29wd0dXa3gxVU8zMVFlcXFleVFIWVNPRDZmMnZOQlhJTWxYVzRFdFZRSFBvVQ?oc=5",
+   "source": "Human Resources Director",
+   "feed": "OAIC / Privacy news",
+   "region": "AU",
+   "published": "2026-10-26T05:52:56Z",
+   "summary": "",
+   "score": 12,
+   "tags": [
+    "Australia",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Australia",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "c00e1f440542",
+   "title": "Was Bathurst RSL Hit by Qilin Ransomware? Here’s What We Know So Far",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOT2l2TG95bERjblhacEZNMjFhRnpwWU9IdmFVTllXZjVBTzhlTDQzVTFZZEZoVENHaF9ONFZic1ZheFNMVm9CdUNVLXBHOFcxOWNJUHFOeDVrdHFzeHZYQ1l5UU1yMFp1aUtDcy0zQmpEUFc4amJqSXNiMThoTHc1WmZjUDRBZzZkMEFSUFNCYlp6N0hKdE1zY21ITFhiVFhmTThwUlVsQ3VjNnZ6R1hIdg?oc=5",
+   "source": "Kalkine Media",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-26T05:14:00Z",
    "summary": "",
    "score": 6,
    "tags": [
@@ -123,9 +462,30 @@
    ],
    "also": [
     {
+     "source": "shattered.io",
+     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPV1o0SXZ1eEJCRjFvU1FWaDBXRy1kTTVnRUZaVVA2UVZISzdvNzMwa1ZUeXNMWWRzVEtXMVZudW53RmUyM1JrbG5ic3pZVWR4Vi1lOGxYNFREbFZJRkROYnhnRjZXQ2pEM2ZWU2ZXanRia0xCQ1VNZXd3OUFtNUw4ZUxn?oc=5"
+    },
+    {
      "source": "https://tech-insider.org/",
      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNM1dQQTljZjBCNXNZdmEzb0Frb2ZLQUp2R2hFSUoxZS1kVmxBNGo2a2x3VTRyQVFXeTdXYUN1Q1lhLUdZSXpjdG03RU50aHdzaFVsOXpSSHJqN2xlWFEwX0tKR0Y1Vld4MHgxMlJqTFVoSHhieGVHTXBjYXNWYW9jM0tRa0FZbnV0dkttN0ZR?oc=5"
     }
+   ]
+  },
+  {
+   "id": "ed7d6d4a9492",
+   "title": "Healthcare data breaches hit record high",
+   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5qdF9ud05fTjdsdndGSUhtdDlkNUJIVXBZMEZiY2dpb0NFTU5DdU45ZHpROWJVVzFoaVIxaXd6bmFkTGphRWNrWkdyTEFRVW84TENUT0xUMEJwY212eG1faTdfQ2kyQW02bmN3Q1I3QngtdXc?oc=5",
+   "source": "Australian Journal of Pharmacy",
+   "feed": "OAIC / Privacy news",
+   "region": "Global",
+   "published": "2026-10-26T03:58:22Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
    ]
   },
   {
@@ -311,19 +671,6 @@
    ]
   },
   {
-   "id": "9e8f060397f4",
-   "title": "AI coding agents hijacked using AGENTS.md file in Downloads folder",
-   "link": "https://www.bleepingcomputer.com/news/security/ai-coding-agents-hijacked-using-agentsmd-file-in-downloads-folder/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-25T15:49:38Z",
-   "summary": "Researchers found a malicious AGENTS markdown instruction file in a customer's Downloads folder that tricked an AI coding agent into installing a rogue npm package. [...]",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
    "id": "e85723a0f677",
    "title": "Former Unit 8200 Officers Raise $34 Million for Agentic SecOps Startup Mave",
    "link": "https://www.securityweek.com/former-unit-8200-officers-raise-34-million-for-agentic-secops-startup-mave/",
@@ -403,24 +750,6 @@
    "why": [
     "Real estate"
    ]
-  },
-  {
-   "id": "a0a9e49aec28",
-   "title": "Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software",
-   "link": "https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-24T11:09:29Z",
-   "summary": "A memory-corruption flaw in Google's Brotli decoder sits in many programs that unpack Brotli-compressed data, among them Bun, the Python Brotli and brotlicffi packages, and Envoy proxies set up to decompress Brotli. Tracked as CVE-2026-111497, the flaw allows crafted compressed data to overwrite…",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.3278
   },
   {
    "id": "3a1a036ef73a",
@@ -2011,23 +2340,6 @@
    ]
   },
   {
-   "id": "c145f24074c2",
-   "title": "INTERPOL Arrests 1,462 Suspects, Disrupts 10,909 Cybercrime Networks in Global Crackdown",
-   "link": "https://thehackernews.com/2026/10/interpol-arrests-1462-suspects-disrupts.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-22T13:38:22Z",
-   "summary": "INTERPOL on Thursday announced that a coordinated law enforcement action has disrupted 10,909 malicious networks and recovered more than $105 million in illicit funds. In tandem, the effort saw law enforcement agencies from 21 countries arrest 1,462 suspects. Codenamed Operation Serengeti III, the…",
-   "score": 1,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
    "id": "c78f9791369d",
    "title": "Amazon says PHP2Shell exploitation began 4 days before patches",
    "link": "https://www.bleepingcomputer.com/news/security/amazon-says-php2shell-exploitation-began-4-days-before-patches/",
@@ -2268,6 +2580,12 @@
     "BEC / payment fraud",
     "Ransomware",
     "Vulnerability"
+   ],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/interpol-arrests-1462-suspects-disrupts.html"
+    }
    ]
   },
   {
@@ -2671,24 +2989,6 @@
      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNblp4NW9vN1hvbFFMdVpUSWhrbTVGWlNqNi1PWUdkYjJfM2R4OVcwTnY1dHdhcURtWHdkekVwR1dEeTRiZjFYNVY2aWxzTWYwUUVzcDhJbHJRUVhpTmd1X1kxZWMwOTc5THFjakJsSFpGTG9rblgwMHI2aHdYeGZLbFFad3o3TjlOWFV3b3JpNklUbUphSFpSMVVBUzdDT0ktM1VnVThZVk1zMmpoYkJ5Qks1Mzhua21vMmcwdmpHeWtURUxYTE5vYkR5eE9MeHN6SHd6VlpHeTM?oc=5"
     }
    ]
-  },
-  {
-   "id": "f05202614787",
-   "title": "Critical PHP Vulnerability (CVE-2026-109618, CVE-2026-109619) [infocon yellow], (Wed, Oct 21st)",
-   "link": "https://isc.sans.edu/diary/rss/33440",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-10-21T21:02:43Z",
-   "summary": "PHP.net announced that it will release a critical update today. We decided to change the infoCon to YELLOW due to the widespread use of PHP, the expected severity of the flaw (CVSS 9.4), and the availability of early PoC exploits before the patch became available.",
-   "score": 5,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 1.0
   },
   {
    "id": "3371acd3dcb3",
@@ -7063,331 +7363,6 @@
    "score": 0,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "9d7e0c21485d",
-   "title": "UK Legal Aid Agency: Hackers stole records dating back to 1978",
-   "link": "https://www.bleepingcomputer.com/news/security/uk-legal-aid-agency-hackers-stole-records-dating-back-to-1978/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-15T08:06:47Z",
-   "summary": "The Legal Aid Agency (LAA), an executive agency of the UK's Ministry of Justice that manages the country's Public Defender Service, says attackers who breached its IT systems in April 2025 stole records dating back to 1978. [...]",
-   "score": 6,
-   "tags": [
-    "Microsoft 365",
-    "Data breach"
-   ],
-   "why": [
-    "Microsoft 365",
-    "Data breach"
-   ],
-   "also": [
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/uk-legal-aid-agency-hack-scope-widens-after-forensic-review/"
-    }
-   ]
-  },
-  {
-   "id": "50367ee6ae87",
-   "title": "Langflow's Critical Authenticated RCE Flaw Targeted in 1,423 Honeypot Exploit Attempts",
-   "link": "https://thehackernews.com/2026/10/langflows-critical-authenticated-rce.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-15T07:07:05Z",
-   "summary": "Threat actors are exploiting a critical security flaw in Langflow, according to an alert from Previdian. Langflow is an open-source platform that allows developers to build artificial intelligence (AI) applications and agentic workflows. In February 2025, DataStax, the parent company of Langflow,…",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "c86f8dee64ea",
-   "title": "EU Grocers Pay a Steep Price for Unpatched Fridge Firmware",
-   "link": "https://www.darkreading.com/ics-ot-security/eu-grocers-unpatched-fridge-firmware",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-15T07:00:00Z",
-   "summary": "Hundreds of stores lost millions of euros because they hired third parties to manage the outdated OT firmware running their cooling systems.",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "0ec6dac33216",
-   "title": "Palo Alto Networks Patches PAN-OS Zero-Day Exploited for Remote Code Execution",
-   "link": "https://www.securityweek.com/palo-alto-networks-patches-pan-os-zero-day-exploited-for-remote-code-execution/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-15T06:59:54Z",
-   "summary": "The company says it’s aware of limited exploitation against customers’ firewalls, and it has made IoCs available. The post Palo Alto Networks Patches PAN-OS Zero-Day Exploited for Remote Code Execution appeared first on SecurityWeek .",
-   "score": 10,
-   "tags": [
-    "Actively exploited",
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "why": [
-    "Actively exploited",
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "also": [
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-pan-os-rce-flaw-exploited-in-attacks/"
-    },
-    {
-     "source": "Chosunbiz",
-     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNUEllb1ZfWUllZFM5TnZSSzZPbEdDSnpXb2RKNHM1dHRwUm1sNlBRbFJVcXVlbHFLb0hzZG9tQy1NcHRBVGhWZEZYS3FpNnZHZ0M0UjFGM0R5ZHJ3Zy1xbkgzZGtseUhxZVlzMUxud3hhbXlYZHR4UEx3N2FtOWdGWFBpQUNvSWR0eTZQbHpB0gGOAUFVX3lxTE1QSWVvVl9ZSWVkUzlOdlJLNk9sR0NKeldvZEo0czV0dHBSbWw2UFFsUlVxdWVscUtvSHNkb21DLU1wdEFUaFZkRlhLcWk2dkdnQzRSMUYzRHlkcndnLXFuSDNka2x5SHFlWXMxTG53eGFteVhkdHhQTHc3YW05Z0ZYUGlBQ29JZHR5NlBsekE?oc=5"
-    },
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/palo-alto-networks-patches-pan-os.html"
-    }
-   ]
-  },
-  {
-   "id": "a713f2422da2",
-   "title": "AhsayCBS Flaws Exploited to Deploy Web Shells Get New Fixes After Incomplete Patches",
-   "link": "https://thehackernews.com/2026/10/ahsaycbs-flaws-exploited-to-deploy-web.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-15T06:43:08Z",
-   "summary": "Singapore-based Ahsay Backup has released security updates to address two security flaws in AhsayCBS that have been exploited by bad actors to drop web shells and XMRig cryptocurrency miners. The vulnerabilities in question are CVE-2026-105133 and CVE-2026-105134, which could be chained to…",
-   "score": 5,
-   "tags": [
-    "Vulnerability",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Vulnerability",
-    "SaaS / cloud"
-   ],
-   "epss": 0.8627
-  },
-  {
-   "id": "f27586b6e439",
-   "title": "$120M NAR real estate commission class action settlement",
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPYjFLa0hpV0tId2tPWXZzSEFuNm00ZEVSN2EwSGxLNGlmUThTcF8wQS1JSkV0VkhsYTV2a2tJX05VcDZWTzV2ZmlYWWVwbHRCdWxXY3JDNFJQLVV0d3JFWUZkazh5dnJ1QURpci1DVmFWRl9QYjVJQV9rcnNuc18yQmUxeTFidl9hZkNyZVJiVWp5OU1qZENMZTZDMFVGM2FDWnE4ZDJaMmxsTnprZFpQVENOVGhGd0pLazRvYjJUcTZPQVQ4dGJJVw?oc=5",
-   "source": "Top Class Actions",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-15T05:25:15Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ]
-  },
-  {
-   "id": "baddc3bdfdcc",
-   "title": "Semperis report: Australian cyber executives face physical threats in ransomware attacks",
-   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQOGlJYUhRcllLZDRtX1ZxNGNHeHIxSmpBOHpaS2k3MDI1aDJ2SV82RkxUeFNTM0xYcXdKVmtfUG5sMkQyNnhEeDdjQ25scnFOcldDOHdzVmtqVkFQRWJ5N29yZ3RVRGZxV2xOMkhCT0dPNDdfUDRUSzEyd3hiN1JhbXhPeDF5dXdyU0pnMC1sVDhMN2FSb2VtM2pDMmdIajVfUlNSVTFseEEtaHlqNmtpT1NRODVpajlsR2JxLWFVSUY3RHBvSURZMmZnMFhhZjRU?oc=5",
-   "source": "Australian Cyber Security Magazine",
-   "feed": "AU breach news",
-   "region": "AU",
-   "published": "2026-10-15T05:00:00Z",
-   "summary": "",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "Ransomware"
-   ],
-   "why": [
-    "Australia",
-    "Ransomware"
-   ],
-   "also": [
-    {
-     "source": "SecurityBrief Australia",
-     "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPRnJ1ZTFHUmxVY3lONlpNNE5JOVZxMm96ZVEzQWRTcktFazV6ZXRralp2OVJHTXlzdjNXc2YtX0lJajBNMVNadHlCd0dDYlFWS053YlJ0bjdINnV6RVdPdG1kYWhNLU5QalhWSDNfX2tWT09kZnFRM2ZxanVhSWJtVElDQXVNMndhTVF3QVhhOFlMMy15clE?oc=5"
-    }
-   ]
-  },
-  {
-   "id": "2bef3996dd0b",
-   "title": "Businesswoman sues Redbrick Homes over alleged breach",
-   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPV3I2RUtVT2FaNDJjTlo1Qm1iMlFkc3FCRHVBMzJWT3pPU0cwaVM0TG1pQTJwRjNhV3hJRG84bGRCTWZyUUdOc0dJNjliWkE1WWpmN0R1TF9nVGFJeXp3WUVJeXVXbG5zUEViekprN1FQWmVvWklZbVhieVVjbjZSZENFNU92MXBzVEVaT9IBkgFBVV95cUxQMDR0ME5XTXhvMGJwYTF1ZVNmWGE0czhDa3VEcUhZeXJpck5IakV3S3JvZWVRZ1M5OWJfMUtma29FNWZPci12dG5STVpzb2pZOHlRNjlqcHFjS1FTS3hva3lQdmxpOEl2YkRQNHZjUlVHMDNUOWJyWFBINHhEbmFtcW1hVE5tOGJOaklvMjcyQU9qZw?oc=5",
-   "source": "The Nation Newspaper",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-15T04:54:14Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "8dfbbc4bb849",
-   "title": "Exclusive: Hunter Neurology investigating patient data breach claims",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQOXJ6TF8tOGZUV0FTcVNadlZNRGNzejRWeElHMG1wZ3NBM1ZoY0VNNlhIYVFOVlN2ZnViQ2lzTFFJMHp6SExrOF9rdWZvUzd5dWlWb1NtQlVKYjlTM0x6SEVmbHFXUE1qcEVIZTBSRldjZkNZOG1KQmltNmdGUXBpRW5RS0xnaTY5Si1pcndGNWdpdElEX0g0dGlCN0Jva2ZTZU5tY1g3NXJJUXZL?oc=5",
-   "source": "Cyber Daily",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-15T04:12:31Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "4eb5bf7922c6",
-   "title": "Hobbs and Whistles owner investigat­es hack that may have exposed customer data",
-   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQSWZDbjJ6ZUFGWm1pU2hoSHJzMGtaWTZuck9hTW9Wem93WHZZN1ZfZ2liSkNFWFhwaEJJcjJ4TkR1ZTMtSTBJaGg5N2JabE9mWXU3MWw0aC1IUTFtNy1kUTg3MEgzZms5YlVOd1BJcWVvU0xGSTg0ekVxSHF4U19KRzRJYjdsanR0UFJPdzV3?oc=5",
-   "source": "PressReader",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-15T02:26:15Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ],
-   "also": [
-    {
-     "source": "The Guardian",
-     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPc2ZJTzIzMFMzRTlOSldDbGRtMU9tLURsSVV5LV9zcDlYVzZXUU81aWtBOVc2eWcyQmZuQVYtRl9iQXV6dDVabGNDWmxZQm1wSnNwTWI5d3VockxNS3JsWk5jdW9uTHRMWG5OUEV5eG9CX2NpV3QzSmN3X0VRSlZhMXp1SDUxTVE2SVdRa1RsYw?oc=5"
-    }
-   ]
-  },
-  {
-   "id": "a187e99c589d",
-   "title": "ISC Stormcast For Thursday, October 15th, 2026 https://isc.sans.edu/podcastdetail/10138, (Thu, Oct 15th)",
-   "link": "https://isc.sans.edu/diary/rss/33428",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-10-15T02:00:03Z",
-   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
-   "score": 1,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "f35fdae7915f",
-   "title": "Asset scoping guide for enterprise IT",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBCQ0VwSk1zYnhaM0IwRERmcXNyblJmOGg2NG1aNXZDZGJROHFHdDVpek8xTXJpSlphRWtJUFNPY3lTZG9CemlBUFoxdXpiVUt4QVZSa1JhOGpGd2hBSlR6MnpsWnJKa1dsQlVJRWliMVE4U2U3X3JmdWE3UGhieDA?oc=5",
-   "source": "Australian Cyber Security",
-   "feed": "ACSC (via Google News)",
-   "region": "AU",
-   "published": "2026-10-15T00:11:07Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "Australia"
-   ],
-   "why": []
-  },
-  {
-   "id": "032dae075ea2",
-   "title": "CVE-2026-21589: Atlassian Multiple Products — Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-21589",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-10-15T00:00:00Z",
-   "summary": "Multiple Atlassian products (Bitbucket Data Center ,Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center, Crowd Data Center, Crucible and Fisheye) contain a files or directories accessible to external… CISA remediation due 2026-10-18.",
-   "score": 4,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.9948
-  },
-  {
-   "id": "b57abd2c6608",
-   "title": "DHX faces lawsuit as ex-director alleges 4 billion won embezzlement tied to failed real estate deal - CHOSUNBIZ",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQYlNRWmdIRjRRZXJkZVRYUzE2YnVaRjRHSGRKOVkzTzRfa2ZjakNRZVc3RTBLX3RpR2NFbjM4RDdDUGM0LTJZWmZ2NHFFenA3R3hab01tbU5TNThoejBNbmdNMGJoXzhJb3dkZlFuN05jckZZV2V5V3JxQ09IUHc2UmlhdDl1WHRzNERmX1k0M085MV9f0gGUAUFVX3lxTFBiU1FaZ0hGNFFlcmRlVFhTMTZidVpGNEdIZEo5WTNPNF9rZmNqQ1FlVzdFMEtfdGlHY0VuMzhEN0NQYzQtMllaZnY0cUV6cDdHeFpvTW1tTlM1OGh6ME1uZ00wYmhfOElvd2RmUW43TmNyRllXZXlXcnFDT0hQdzZSaWF0OXVYdHM0RGZfWTQzTzkxX18?oc=5",
-   "source": "Chosunbiz",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-14T23:00:00Z",
-   "summary": "",
-   "score": 13,
-   "tags": [
-    "Real estate",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Real estate",
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "e1c5b3e9fc3c",
-   "title": "Ivanti ICS Zero-Day Attacks Highlight Vendor Patching Hurdles",
-   "link": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-14T21:20:13Z",
-   "summary": "CVE-2026-104935, a high-severity authentication bypass + RCE vulnerability, was only partially discovered and patched in July, leaving an opening for threat actors to capitalize on.",
-   "score": 10,
-   "tags": [
-    "Actively exploited",
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "why": [
-    "Actively exploited",
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "epss": 0.8677,
-   "also": [
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/ivanti-zero-day-chain-gave-attackers-root-access-to-fully-patched-vpn/"
-    }
-   ]
-  },
-  {
-   "id": "2882c15660e0",
-   "title": "Prosecutors urge life sentences for Alexander luxury real estate brokers in sex trafficking case",
-   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNR0Q4akJvTXZZVE1qUWF3U3pGR0lDTDMwUHJudFBScWFwMGM5SmJfZEEzSzYzYjNJTGNaUjNfdEwzeE1YYXZ6Zl8zME05WjhabDNmZjNlempHaTZiSU1raEhwSDUtUlVUSG9oeTh1c2V5TFdyR0pockN1cXg1QUlTYVJDb0xLdHNWUm84Q0pSUXNCeVdqLWgtZE9PQXA3dmRYcDJHbi1PbVRqMXFUaGd0NFhZZEpWSUdFb1NMRWl3dE5rNFFXdzlmaUNYMER0dkh0NldOc19ROFhmNF80VWYzNw?oc=5",
-   "source": "Click2Houston",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-14T20:41:17Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ]
   }
  ]
 }
