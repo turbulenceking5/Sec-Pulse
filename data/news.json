@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-26T13:07:40Z",
+ "generated": "2026-10-26T20:30:38Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -22,19 +22,19 @@
   {
    "name": "ASD / ACSC in the news",
    "ok": true,
-   "count": 5,
+   "count": 4,
    "error": null
   },
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 8,
+   "count": 5,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 8,
+   "count": 6,
    "error": null
   },
   {
@@ -106,17 +106,313 @@
  ],
  "items": [
   {
-   "id": "23a9892afebf",
-   "title": "953 Online Stores Infected in Long-Lasting Malware Campaign",
-   "link": "https://www.securityweek.com/953-online-stores-infected-in-long-lasting-malware-campaign/",
+   "id": "89547e1892b3",
+   "title": "Anthropic Files for Potentially the Biggest IPO Ever as CEO Warns of Risk to Humanity From AI",
+   "link": "https://www.securityweek.com/anthropic-files-for-potentially-the-biggest-ipo-ever-as-ceo-warns-of-risk-to-humanity-from-ai/",
    "source": "SecurityWeek",
    "feed": "SecurityWeek",
    "region": "Global",
-   "published": "2026-10-26T12:46:44Z",
-   "summary": "Small loader code injected into the stores served a payload to visitors or did nothing to avoid detection. The post 953 Online Stores Infected in Long-Lasting Malware Campaign appeared first on SecurityWeek .",
+   "published": "2026-10-26T20:20:56Z",
+   "summary": "A string of hacking incidents by rogue AI agents also has raised fears the technology will slip free of human control to carry out harmful, life-threatening tasks. The post Anthropic Files for Potentially the Biggest IPO Ever as CEO Warns of Risk to Humanity From AI appeared first on SecurityWeek .",
    "score": 0,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "d84dc99ca60f",
+   "title": "DreamHost forces password resets in ongoing \"incident\"",
+   "link": "https://www.bleepingcomputer.com/news/security/dreamhost-forces-email-ftp-sftp-password-resets-in-ongoing-incident/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-26T19:26:20Z",
+   "summary": "DreamHost has forced password resets for email and FTP/SFTP users following an incident that disrupted connections to the File Manager interface. [...]",
+   "score": 5,
+   "tags": [
+    "Identity",
+    "Vulnerability"
+   ],
+   "why": [
+    "Identity",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "961277245249",
+   "title": "Hackers Infect 953 Online Stores With Scanner-Evading JavaScript, Mostly on Magento",
+   "link": "https://thehackernews.com/2026/10/hackers-infect-953-online-stores-with.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-26T18:12:22Z",
+   "summary": "An unknown threat actor has infected 953 online stores, most of them running Magento, as part of a long-running campaign active since July 2025. According to Dutch e-commerce security company Sansec, the activity is designed to add a small piece of code to the store's pages that, when visited by…",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "also": [
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/953-online-stores-infected-in-long-lasting-malware-campaign/"
+    }
+   ]
+  },
+  {
+   "id": "e6cb24183d2e",
+   "title": "'Gheist' Weaponizes GitHub Tokens to Steal Cloud Secrets",
+   "link": "https://www.darkreading.com/cyberattacks-data-breaches/gheist-stolen-github-tokens-cloud-secrets",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-26T18:01:40Z",
+   "summary": "An ongoing supply chain attack is harvesting credentials and sensitive data from thousands of developer repositories.",
+   "score": 4,
+   "tags": [
+    "Identity",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Identity",
+    "SaaS / cloud"
+   ],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/gheist-uses-stolen-github-tokens-to.html"
+    }
+   ]
+  },
+  {
+   "id": "fd2c8a91369a",
+   "title": "PHP Issues Second Windows Security Update in Five Days to Fix Brotli Code Execution Flaw",
+   "link": "https://thehackernews.com/2026/10/php-issues-second-windows-security.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-26T17:45:57Z",
+   "summary": "PHP has rebuilt its official Windows packages for PHP 8.2 through 8.5 to fix CVE-2026-111497, a flaw in the Brotli compression library that the packages include. The flaw can let an attacker corrupt memory and potentially run code. PHP says the flaw can be reached through the cURL extension when…",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.3603
+  },
+  {
+   "id": "5e34561ea984",
+   "title": "Critical 'HTTP2Shell' Brotli vulnerability triggers emergency patches",
+   "link": "https://www.bleepingcomputer.com/news/security/critical-http2shell-brotli-vulnerability-triggers-emergency-patches/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-26T16:27:57Z",
+   "summary": "A critical flaw dubbed 'HTTP2Shell' in Brotli, the C decoder library built into Node.js, could allow attackers to corrupt memory and access sensitive data. [...]",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "also": [
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/node2shell-brotli-flaw-triggers-patching-across-microsoft-node-js-python-packages/"
+    },
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html"
+    }
+   ]
+  },
+  {
+   "id": "03f54c74f6fe",
+   "title": "Attackers Use Microsoft Teams IT Support Scams to Deploy Malware and Ransomware",
+   "link": "https://thehackernews.com/2026/10/attackers-use-microsoft-teams-it.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-26T15:52:40Z",
+   "summary": "Cybersecurity researchers are calling attention to what they say is a \"recurring social engineering pattern\" across hundreds of cases in which threat actors use Microsoft Teams' external chat creation feature to conduct impersonation scams or to deliver malware. \"A consistent pattern of attacker…",
+   "score": 8,
+   "tags": [
+    "Microsoft 365",
+    "Ransomware"
+   ],
+   "why": [
+    "Microsoft 365",
+    "Ransomware"
+   ]
+  },
+  {
+   "id": "cf08225efb6b",
+   "title": "Microsoft releases emergency .NET patches for critical Brotli flaw",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-emergency-net-patches-for-critical-brotli-flaw/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-26T15:38:24Z",
+   "summary": "Microsoft released emergency .NET security updates to patch a critical vulnerability known as Broccoli2Shell, also tracked as Node2Shell and HTTP2Shell. [...]",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "d7e589c62a2d",
+   "title": "Industrial Vendors Check Products for PHP2Shell Vulnerabilities",
+   "link": "https://www.securityweek.com/industrial-vendors-check-products-for-php2shell-vulnerabilities/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-26T14:52:14Z",
+   "summary": "Siemens, Schneider Electric, ABB and others have confirmed that some of their products are affected by the PHP2Shell vulnerabilities. The post Industrial Vendors Check Products for PHP2Shell Vulnerabilities appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "0894723045c0",
+   "title": "Genesys Hack Exposes Customer Data From Internal Systems",
+   "link": "https://www.securityweek.com/genesys-hack-exposes-customer-data-from-internal-systems/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-26T14:40:48Z",
+   "summary": "The Genesys Cloud, Genesys Engage, and Genesys Engage Cloud platforms were not affected. The post Genesys Hack Exposes Customer Data From Internal Systems appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "38ba7bc24d68",
+   "title": "Stolen AI Reasoning Could Help China Build Cheaper Rivals",
+   "link": "https://www.securityweek.com/stolen-ai-reasoning-could-help-china-build-cheaper-rivals/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-26T14:30:09Z",
+   "summary": "Xint says a flaw in OpenAI’s compaction process let researchers move reasoning traces between models, potentially making it cheaper to distill a rival AI. The post Stolen AI Reasoning Could Help China Build Cheaper Rivals appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "3576934612fc",
+   "title": "⚡ Weekly Recap: This2Shell, That2Shell, Everything's an RCE? Rogue AI, Supply Chain Chaos and More",
+   "link": "https://thehackernews.com/2026/10/weekly-recap-this2shell-that2shell.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-26T14:06:13Z",
+   "summary": "This2Shell, That2Shell, Everything2Shell. That's pretty much how the last week went. Critical bugs that let attackers run code remotely are showing up everywhere. Hackers are scanning for targets, some flaws are already being used in attacks, and security teams have more urgent patches than they…",
+   "score": 5,
+   "tags": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "3c0f1fb39eea",
+   "title": "When an AI Agent Is the Incident, the Identity Record Is the Evidence",
+   "link": "https://www.bleepingcomputer.com/news/security/when-an-ai-agent-is-the-incident-the-identity-record-is-the-evidence/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-26T14:00:10Z",
+   "summary": "A new NIST, CISA, and NSA guide treats runaway agents as incidents to be rehearsed. The hard part of the response is answering whose authority the agent used, and that answer has to exist before the incident does. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "0d99ee2b2828",
+   "title": "10 Software Security Practices Built for the Next 250 Years",
+   "link": "https://www.darkreading.com/cyberattacks-data-breaches/10-software-security-practices-built-250-years",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-26T14:00:00Z",
+   "summary": "This Cybersecurity Awareness Month's theme, \"Securing the Next 250,\" asks us to look beyond vulnerabilities and consider what will make our digital systems resilient for generations.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "9cb042202f4d",
+   "title": "Chinese man extradited for role in $36 million cryptocurrency scam",
+   "link": "https://www.bleepingcomputer.com/news/security/chinese-man-extradited-for-role-in-36-million-cryptocurrency-scam/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-26T13:56:44Z",
+   "summary": "A Chinese national was arraigned in California after being extradited from the Netherlands for his alleged involvement in a cryptocurrency investment scam that stole nearly $37 million from 174 victims in the United States. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "104d63029234",
+   "title": "PHP2Shell Exploitation Moves From Probes to Working Shells",
+   "link": "https://www.securityweek.com/php2shell-exploitation-moves-from-probes-to-working-shells/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-26T13:30:10Z",
+   "summary": "Attackers successfully exploited the PHP2Shell flaws against honeypots, launching 35 shells from two IP addresses on October 24. The post PHP2Shell Exploitation Moves From Probes to Working Shells appeared first on SecurityWeek .",
+   "score": 2,
+   "tags": [
+    "SaaS / cloud"
+   ],
+   "why": [
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "2795ef9f6c1b",
+   "title": "Ransomware gangs target cybersecurity workers’ families",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQSS1oT1hHZ1J3VjdYamxTY2s5Z1NkU2VRakI3blZMV0ctYjhoVTdQZmpjRFVPNEZrWGdzd2tDZmRwUEtaRUpCRWxLMTl0TzJ0SXFEMDZRdlljYmh3VUVBeFZpNVNwRjNMSU1TMmZrUzVTWjBMRjdvdm85el9PZl9hN255czBMa1lLZDdpbWhsY0RaOHpFYUUtQnJ3QQ?oc=5",
+   "source": "Information Age | ACS",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-26T13:12:30Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
+  },
+  {
+   "id": "a5411bb33d7f",
+   "title": "Two Critical Wasmtime Flaws Could Let Malicious WebAssembly Modules Escape Sandboxes",
+   "link": "https://thehackernews.com/2026/10/two-critical-wasmtime-flaws-could-let.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-26T11:52:41Z",
+   "summary": "Two critical flaws in Wasmtime, a WebAssembly runtime that can be built into other software, could allow a malicious WebAssembly module to escape the sandbox intended to contain it, the project's maintainers say. An attacker would first need a vulnerable Wasmtime build to compile a module they…",
+   "score": 3,
+   "tags": [
+    "SaaS / cloud"
+   ],
+   "why": [
+    "SaaS / cloud"
+   ]
   },
   {
    "id": "f5fa96b28818",
@@ -156,30 +452,6 @@
    "score": 0,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "2a948c7de7f5",
-   "title": "Node2Shell: Brotli Flaw Triggers Patching Across Microsoft, Node.js, Python Packages",
-   "link": "https://www.securityweek.com/node2shell-brotli-flaw-triggers-patching-across-microsoft-node-js-python-packages/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-26T10:21:57Z",
-   "summary": "An out-of-bounds write in Google’s Brotli decoder affects Node.js, .NET, PowerShell, and Python packages, and can lead to code execution. The post Node2Shell: Brotli Flaw Triggers Patching Across Microsoft, Node.js, Python Packages appeared first on SecurityWeek .",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html"
-    }
-   ],
-   "epss": 0.3278
   },
   {
    "id": "275e6f3b55af",
@@ -317,7 +589,7 @@
   },
   {
    "id": "2be33c295e0d",
-   "title": "Capcom Data Breach: 196 Password Resets, 11.77M [2026]",
+   "title": "Capcom’s 196 Password Resets Test an 11.77M Breach [2026]",
    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxORXIwWjFNVkFhaWZPd3E2Q1ExXzktdWozVDdGTVZlTVp6bGl5UFBFVHdMLWNpYmJURGpBTFRMTUE4cHVneWkwbFRsUkExZUJHd3dGb2twYUZGSjEwOWpHVjlUYS1wMWM5UGFoeFhoX3RyOUJsNElfelIwcUtZd1ppN18zdDY2NTlodGZB?oc=5",
    "source": "https://tech-insider.org/",
    "feed": "AU breach news",
@@ -369,19 +641,6 @@
    "why": [
     "Data breach"
    ]
-  },
-  {
-   "id": "8e95a20d61e4",
-   "title": "Gheist Uses Stolen GitHub Tokens to Steal Private Repository Secrets via Actions Logs",
-   "link": "https://thehackernews.com/2026/10/gheist-uses-stolen-github-tokens-to.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-26T07:49:46Z",
-   "summary": "An automated campaign is using stolen GitHub tokens to plant workflows that print a repository's secrets into its GitHub Actions logs, which the attackers then download before deleting the runs. The attacks have succeeded in private repositories and GitHub Enterprise environments, according to an…",
-   "score": 0,
-   "tags": [],
-   "why": []
   },
   {
    "id": "b522ae2c9049",
@@ -500,6 +759,24 @@
    "score": 1,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "0183bcddc2bf",
+   "title": "ASD raises alert for critical vulnerabilities in Fortinet products",
+   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOVlY3TWYzTnkxZzE1MEQzaDRlN3lidDdRY2ctY1JmaGI1VlJQdUNPN1JpZnR5QXpQSXY4T2ZPSFpaTWJvVUo5QVZIUjAteEVFRy1NQ2dOZzNoYkFnMW9Ma21jRTVkbW45MVpkQ0JxM2dfNEw3X1J6RXJxYWpURWtEN19Lei1kU3YyWkxGU3g1SE1LLVBBal9vMDk4UTZSVHpDVWc1VzhWOUo3VVpIWWZ2TjljQlhqQV9McFFrcFIwS3NhclhCSzlqQ2otazZUT2JYSnhN?oc=5",
+   "source": "Technology Decisions",
+   "feed": "ASD / ACSC in the news",
+   "region": "AU",
+   "published": "2026-10-26T02:05:38Z",
+   "summary": "",
+   "score": 8,
+   "tags": [
+    "Edge devices",
+    "Australia"
+   ],
+   "why": [
+    "Edge devices"
+   ]
   },
   {
    "id": "36102dd5f699",
@@ -752,6 +1029,24 @@
    ]
   },
   {
+   "id": "a0a9e49aec28",
+   "title": "Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software",
+   "link": "https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-24T11:09:29Z",
+   "summary": "A memory-corruption flaw in Google's Brotli decoder sits in many programs that unpack Brotli-compressed data, among them Bun, Microsoft's .NET, the Python Brotli and brotlicffi packages, and Envoy proxies set up to decompress Brotli. Tracked as CVE-2026-111497, the flaw allows crafted compressed…",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.3603
+  },
+  {
    "id": "3a1a036ef73a",
    "title": "Leaked LiteLLM Master Key Let Attackers Steal GitHub Tokens and Hijack Release Pipeline",
    "link": "https://thehackernews.com/2026/10/leaked-litellm-master-key-let-attackers.html",
@@ -831,7 +1126,7 @@
   },
   {
    "id": "78e6b44f5a3d",
-   "title": "Trust Is Not What It Seems — And Fraudsters Are Counting on It",
+   "title": "Trust Is Not What It Seems — and Fraudsters Are Counting on It",
    "link": "https://www.darkreading.com/cyber-risk/trust-is-not-what-it-seems-and-fraudsters-are-counting-on-it",
    "source": "Dark Reading",
    "feed": "Dark Reading",
@@ -1497,23 +1792,6 @@
    "why": []
   },
   {
-   "id": "948084576510",
-   "title": "Attackers Exploit Third Arista VCO Zero-Day in Four Months",
-   "link": "https://www.securityweek.com/attackers-exploit-third-velocloud-orchestrator-zero-day-in-four-months/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-23T09:58:34Z",
-   "summary": "The critical-severity SQL injection flaw allows attackers to access privileged internal functionality and gain operator privileges. The post Attackers Exploit Third Arista VCO Zero-Day in Four Months appeared first on SecurityWeek .",
-   "score": 5,
-   "tags": [
-    "Actively exploited"
-   ],
-   "why": [
-    "Actively exploited"
-   ]
-  },
-  {
    "id": "68d41bab13b9",
    "title": "Trends In Healthcare Data Breach Statistics",
    "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9PMzZZbVJzWV9lV0JPWXBJOW9BSmI2eElLWHNxWVAtTkhyNnoydUdqTDRnNzE0X056UTE2WW9nakR1UTkxR0ZzX3pMVmdqb2Vjb095eHpIM1Bva0UtTXphRnh5bkpuaDBNQWNvamd5Z2E?oc=5",
@@ -1743,6 +2021,26 @@
      "source": "GBHackers News",
      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1vTk5GeVFRWGNPYnJGdGFjYVc0b0xKOXUweUdudlV4UGdsSTN1UVNxMGNmTUdBbGRyMFhoOGp6NUhZSTU1V1dPVEtsb3FheUctZWVfT2hENlBQcXJ0YUZpMGcxbENpRWltOGpFUzgzQdIBdEFVX3lxTE4xU0FCSlNZcmlDQUZuQ2p4YmtYYUVDVDdvWXJjVGFpR2ljZVRVZkk5Yi1NVDUycXp1NUJ2ZGhVWTZ6RHlLZWtOR3pNRjUwM2ZJQzZ4VGp2SXdCVUZQQjN4Q2EyR0VfVXZBWmhtLXhHeFNBNURi?oc=5"
     }
+   ]
+  },
+  {
+   "id": "665526c8fc50",
+   "title": "Critical vulnerabilities in Fortinet products",
+   "link": "https://www.cyber.gov.au/alert/critical-vulnerabilities-in-fortinet-products",
+   "source": "ACSC Alerts",
+   "feed": "ACSC Alerts",
+   "region": "AU",
+   "published": "2026-10-23T05:11:47Z",
+   "summary": "Fortinet have announced critical vulnerabilities in Fortinet products, and are releasing security updates which customers should implement as a priority.",
+   "score": 10,
+   "tags": [
+    "Edge devices",
+    "Vulnerability",
+    "Australia"
+   ],
+   "why": [
+    "Edge devices",
+    "Vulnerability"
    ]
   },
   {
@@ -3311,23 +3609,6 @@
    "why": []
   },
   {
-   "id": "24755a352d3d",
-   "title": "Widespread PHP Flaw May Cause Many Site Outages Today",
-   "link": "https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/",
-   "source": "Krebs on Security",
-   "feed": "Krebs on Security",
-   "region": "Global",
-   "published": "2026-10-21T15:26:07Z",
-   "summary": "Expect to see quite a few websites serving \"404\" or \"Page Not Found\" errors today: Nearly 70 percent of websites need to update their core software to fix a pair of vulnerabilities that allow an attacker to seize full control over affected servers. Experts say there are working exploits for the…",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
    "id": "a45dacf80c10",
    "title": "‘Context Bombs’ Cut AI Attack Success by Misleading Agents With Fake Targets",
    "link": "https://www.securityweek.com/context-bombs-cut-ai-attack-success-by-misleading-agents-with-fake-targets/",
@@ -3517,6 +3798,12 @@
    "why": [
     "Vulnerability",
     "SaaS / cloud"
+   ],
+   "also": [
+    {
+     "source": "Krebs on Security",
+     "url": "https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/"
+    }
    ]
   },
   {
@@ -5965,7 +6252,22 @@
    "why": [
     "Actively exploited",
     "Edge devices"
-   ]
+   ],
+   "also": [
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/chinese-apt-exploited-beyondtrust-vulnerability-as-zero-day/"
+    },
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/china-linked-hackers-exploited.html"
+    },
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/beyondtrust-patches-zero-day-exploited-in-attacks-since-august/"
+    }
+   ],
+   "epss": 0.2034
   },
   {
    "id": "0cd568eb4deb",
@@ -6280,32 +6582,6 @@
    "why": []
   },
   {
-   "id": "196d1fbeb9fc",
-   "title": "Chinese APT Exploited BeyondTrust Vulnerability as Zero-Day",
-   "link": "https://www.securityweek.com/chinese-apt-exploited-beyondtrust-vulnerability-as-zero-day/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-16T10:53:22Z",
-   "summary": "Armory Castle exploited CVE-2026-102764 for initial access, deployed custom tools, and deleted logs and artifacts. The post Chinese APT Exploited BeyondTrust Vulnerability as Zero-Day appeared first on SecurityWeek .",
-   "score": 7,
-   "tags": [
-    "Actively exploited",
-    "Vulnerability"
-   ],
-   "why": [
-    "Actively exploited",
-    "Vulnerability"
-   ],
-   "epss": 0.2034,
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/china-linked-hackers-exploited.html"
-    }
-   ]
-  },
-  {
    "id": "3042b8d5fd6d",
    "title": "OpenAI Models Hacked Data Portals, Raided a Crypto Wallet to Finish Tasks",
    "link": "https://www.securityweek.com/openai-models-hacked-data-portals-raided-a-crypto-wallet-to-finish-tasks/",
@@ -6447,25 +6723,6 @@
    "score": 0,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "494b44d4ddb2",
-   "title": "BeyondTrust patches zero-day exploited in attacks since August",
-   "link": "https://www.bleepingcomputer.com/news/security/beyondtrust-patches-zero-day-exploited-in-attacks-since-august/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-16T06:18:08Z",
-   "summary": "BeyondTrust warned customers on Thursday to patch a critical flaw in its Remote Support (RS) that has been exploited in zero-day attacks since late August. [...]",
-   "score": 7,
-   "tags": [
-    "Actively exploited",
-    "Vulnerability"
-   ],
-   "why": [
-    "Actively exploited",
-    "Vulnerability"
-   ]
   },
   {
    "id": "5fc8c6dd8c54",
@@ -7145,224 +7402,6 @@
    "why": [
     "Data breach"
    ]
-  },
-  {
-   "id": "ce862b886d1b",
-   "title": "Drupal Patches Critical Field UI Flaw With Unauthenticated RCE Path via Contributed Modules",
-   "link": "https://thehackernews.com/2026/10/drupal-patches-critical-core-rce-flaw.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-15T12:07:20Z",
-   "summary": "Drupal core has a critical flaw in its Field UI module that could let an attacker run code on the site's server, and fixes were shipped on October 14 in Drupal 11.4.10, 11.3.19, and 10.6.19. An attacker cannot reach the flaw through core alone, the Drupal Security Team said in its advisory.…",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "502c877b3bd3",
-   "title": "Which chapter should I start with?",
-   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1PeDMyVE5zNFFyTDlOQ3ZzTDBNaXNtaHBMaExxU3g4Rm8zaVV2VXNZZnVucFQwTW0xSF82YVZnT0dlZFB1SEprZDVNSXNrRHZGaENuSFJuYUo4YnBROXRRN185SmF6SnZ4UE9QbXc4OHhEajNaOEg1TVBn?oc=5",
-   "source": "Australian Cyber Security Centre",
-   "feed": "ACSC (via Google News)",
-   "region": "AU",
-   "published": "2026-10-15T12:00:00Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "Australia"
-   ],
-   "why": []
-  },
-  {
-   "id": "daedf7c2200a",
-   "title": "Assessment evidence guide for enterprise IT",
-   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQUDRscGJXaFRHckJWMC1zOGRxRFVPTG1oYk5oem9WY3pUZkZHRVRGRVNkd0MtZ19qUGdnMmdxTjhiVjNqUG0xZG9wSGxIbnRfcUc4MGY5ajhiSk5hY2czTy1HODhHLTd0NDNWdlRTNGx6eDVibzJVUk1ET0NueEpRd0FWUkh0N1U?oc=5",
-   "source": "Australian Cyber Security",
-   "feed": "ACSC (via Google News)",
-   "region": "AU",
-   "published": "2026-10-15T12:00:00Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "Australia"
-   ],
-   "why": []
-  },
-  {
-   "id": "b88483e9efe2",
-   "title": "ASD Essentials: evolving our approach to cyber security resilience",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQaUppaHdnNnBQMVh6YWtkU1FMTUdOM09zVUFyT2hzbGJxRWlKLW1KZmI5bjlybW5hQjA1UzFjdEZLZ1pqdmFLWXZORXl4S0xFbVJsR1k5YWMtTmhQYUExM0QyUDJIVkVVODlRcEdJSGZCQWVTbkpDNGowY0daLVl6SDVUeHhtRmpJYlFmRUdKRlUyWHlKMGRXd0tfVQ?oc=5",
-   "source": "Australian Cyber Security",
-   "feed": "ACSC (via Google News)",
-   "region": "AU",
-   "published": "2026-10-15T12:00:00Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "Australia"
-   ],
-   "why": []
-  },
-  {
-   "id": "3565d45fa972",
-   "title": "Police arrests 95 suspects in international CSAM crackdown action",
-   "link": "https://www.bleepingcomputer.com/news/security/police-arrests-95-suspects-in-child-sexual-abuse-material-crackdown/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-15T11:55:38Z",
-   "summary": "Law enforcement authorities from 17 countries in Latin America and Europe have arrested 95 suspects in an INTERPOL-coordinated operation targeting the distribution of child sexual abuse material (CSAM) through online messaging groups. [...]",
-   "score": 1,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "999e9923be39",
-   "title": "Fake AI Attacks Spread Across US Companies: How MSSPs Can Stop Incidents Early",
-   "link": "https://thehackernews.com/2026/10/fake-ai-attacks-spread-across-us.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-15T11:46:59Z",
-   "summary": "Attackers are impersonating popular AI products to distribute malware, steal browser sessions, and compromise business accounts. ANY.RUN linked 1,258 public sandbox analyses to fake AI campaigns between April and October of 2026. The campaigns also increase operational pressure on MSSPs serving US…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "eb44f2358c7c",
-   "title": "Ransomware extortion gets personal as attackers target employees’ families",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxORGl6ZlpPcWZkcWhWYVRqM0trbFRIaXNCdHFJU2hOQTJBcEUzcVM1ZTh6VHo5cDdOeFlDdkE2dV9OcTNqb3pmenVQek11eTRBU1hMeUVRenZaTUpFdk13eVFNdjlwc2ZEYU5LS1dZUG54QlNBQ3ZZNUVtLXRfTTN4UjVPLUJWYmRoME9YMGZLd2dfZDVYSFp6Sng1TUQxZ2FDMW11SmZtUGRDMEV2ZDNUVTUzWUlqUzBhVWowSw?oc=5",
-   "source": "CSO Online",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-15T11:40:07Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Ransomware"
-   ],
-   "why": [
-    "Ransomware"
-   ],
-   "also": [
-    {
-     "source": "CyberSecurityNews",
-     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE51dkxVSTdIYmJ4MGthanpYMW5XYVVYaHI5dExvOVRvb3hhd3NQaWxjREt6OWtVLXRQaFZrVHRlZlBQWGc2SW14RHNyVm9zeERYNlFGMEZibXR1X1lEd3lMYndtWGUtWWNLelQ4TjdhRdIBdEFVX3lxTFBLY3FuMkhGbmNkNklUTnJmSXNqQzdCQllvWU1WMnFfQnhsNzBaTzZYNVpDZzNvbnpEQ1BhR014YnVqZmtHVy1QYjJXWTZWT2k1NkxFdU4xMWVMVWF3VldHZ3hueXJTdGxoNmFfZ01PZFg1RnVr?oc=5"
-    }
-   ]
-  },
-  {
-   "id": "a28002aabf34",
-   "title": "CikaBika Bot RAT Uses Discord for C&C",
-   "link": "https://www.securityweek.com/cikabika-bot-rat-uses-discord-for-cc/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-15T11:25:58Z",
-   "summary": "Delivered via phishing, the malware provides reconnaissance, remote execution, and data exfiltration capabilities. The post CikaBika Bot RAT Uses Discord for C&C appeared first on SecurityWeek .",
-   "score": 3,
-   "tags": [
-    "Phishing"
-   ],
-   "why": [
-    "Phishing"
-   ]
-  },
-  {
-   "id": "9bedf93cf19d",
-   "title": "Why AI Confidence Is Not Validation",
-   "link": "https://thehackernews.com/2026/10/why-ai-confidence-is-not-validation.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-15T11:04:35Z",
-   "summary": "AI is already part of digital forensics and incident response work, with or without a policy in place to govern it. The issue is that these tools are growing more confident in their own output faster than practitioners are developing reliable ways to verify it. Without governance models and…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "b5878f01eb58",
-   "title": "India Mandates Registered Caller Name Display on 4G and Newer Networks From November 1",
-   "link": "https://thehackernews.com/2026/10/india-mandates-registered-caller-name.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-15T10:42:16Z",
-   "summary": "The Indian government has directed telecom service providers (TSPs) in the country to mandatorily display callers' registered names along with their numbers for incoming calls starting November 1, 2026, in an effort to help people identify calls from unknown numbers and tackle spam or fraudulent…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "5f2e6883b87f",
-   "title": "Gamdom founder Felix Römer estimates breach losses at over $3m following hot wallet attack",
-   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNMEk0MWRlTGhiNFVDQ094OENLNDQ0bGRHR3F4VWdNVUpVVTFrWTdNR3FScG1hYlZzc210WVpXZHEybFRjM3R2SWwxZEp4R3otc01rU2ZDRE15LWlHckItT3E2ckstR2lxR1VXZkl1Zm9lQzhwRkJyYWFhSk5vTzh6RXBxZlYwam16cjNhQjhpWVEzODk2TnFoS2tTWTI2bHA3d0FHMzFIVklJRGtheWhBU2VObC1JVkZBZ0tqamM3TFRFM2YzQ1gyUURXaTBYazBnZHRLRlBXNNIB1wFBVV95cUxNMEk0MWRlTGhiNFVDQ094OENLNDQ0bGRHR3F4VWdNVUpVVTFrWTdNR3FScG1hYlZzc210WVpXZHEybFRjM3R2SWwxZEp4R3otc01rU2ZDRE15LWlHckItT3E2ckstR2lxR1VXZkl1Zm9lQzhwRkJyYWFhSk5vTzh6RXBxZlYwam16cjNhQjhpWVEzODk2TnFoS2tTWTI2bHA3d0FHMzFIVklJRGtheWhBU2VObC1JVkZBZ0tqamM3TFRFM2YzQ1gyUURXaTBYazBnZHRLRlBXNA?oc=5",
-   "source": "Tribuna.com",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-15T10:39:00Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "080d6dd1dc1f",
-   "title": "Microsoft fixes bug causing Windows black screens, Explorer crashes",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-bug-causing-windows-black-screens-explorer-crashes/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-15T09:10:20Z",
-   "summary": "Microsoft has resolved a known issue that was causing black screens, desktop loading issues, and Explorer crashes after installing Windows 11 updates released since August. [...]",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "1d72630baefb",
-   "title": "GhostAction Compromises About 1,900 GitHub Accounts, Targets Over 30,000 Repositories",
-   "link": "https://thehackernews.com/2026/10/ghostaction-compromises-about-1900.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-15T08:45:10Z",
-   "summary": "The credential-theft campaign known as GhostAction has ramped up, targeting more than 30,000 repositories across 3,000 users and organizations. The spike, according to GitGuardian, was observed on October 8 and 9, 2026. \"This resulted from compromising the GitHub accounts of about 1,900 users. It…",
-   "score": 2,
-   "tags": [
-    "Identity"
-   ],
-   "why": [
-    "Identity"
-   ]
-  },
-  {
-   "id": "7278d7ea9fdc",
-   "title": "CISO Conversations: James Robinson – Many Jobs, One Journey to Netskope CISO",
-   "link": "https://www.securityweek.com/ciso-conversations-james-robinson-many-jobs-one-journey-to-netskope-ciso/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-15T08:26:40Z",
-   "summary": "James Robinson never planned a cybersecurity career — seven companies and one deputy CISO role later, he leads security at Netskope. The post CISO Conversations: James Robinson – Many Jobs, One Journey to Netskope CISO appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
   }
  ]
 }
