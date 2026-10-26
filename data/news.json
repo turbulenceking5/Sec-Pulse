@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T23:17:42Z",
+ "generated": "2026-10-26T04:50:52Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -22,25 +22,25 @@
   {
    "name": "ASD / ACSC in the news",
    "ok": true,
-   "count": 4,
+   "count": 5,
    "error": null
   },
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 10,
+   "count": 9,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 3,
+   "count": 4,
    "error": null
   },
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 1,
+   "count": 2,
    "error": null
   },
   {
@@ -106,6 +106,113 @@
  ],
  "items": [
   {
+   "id": "5c76648b4d62",
+   "title": "Bathurst RSL Ransomware Attack: Qilin Claim, Club Reply",
+   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPV1o0SXZ1eEJCRjFvU1FWaDBXRy1kTTVnRUZaVVA2UVZISzdvNzMwa1ZUeXNMWWRzVEtXMVZudW53RmUyM1JrbG5ic3pZVWR4Vi1lOGxYNFREbFZJRkROYnhnRjZXQ2pEM2ZWU2ZXanRia0xCQ1VNZXd3OUFtNUw4ZUxn?oc=5",
+   "source": "shattered.io",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-26T04:15:17Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ],
+   "also": [
+    {
+     "source": "https://tech-insider.org/",
+     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNM1dQQTljZjBCNXNZdmEzb0Frb2ZLQUp2R2hFSUoxZS1kVmxBNGo2a2x3VTRyQVFXeTdXYUN1Q1lhLUdZSXpjdG03RU50aHdzaFVsOXpSSHJqN2xlWFEwX0tKR0Y1Vld4MHgxMlJqTFVoSHhieGVHTXBjYXNWYW9jM0tRa0FZbnV0dkttN0ZR?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "a9d5557b92f4",
+   "title": "ISC Stormcast For Monday, October 26th, 2026 https://isc.sans.edu/podcastdetail/10150, (Mon, Oct 26th)",
+   "link": "https://isc.sans.edu/diary/rss/33456",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-10-26T03:30:12Z",
+   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "36102dd5f699",
+   "title": "Stat dump: Data breaches impacting Aussies continue to rise, OAIC says",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNbmptSnQ2bmdybHEtNUxLREQyZ1dWWDlxb094Vld0a1VlQnpDU0FJUC1ZSll6LUpUWlc2TllHQ2JvWkNWZHNQb242Y0RFdUhyUmRUNXRtQXhjY1dqTEp6eVFycUxoODhoNXJfNklYSklpSjRlZ0VSRnVLc09qVXpnTjk0ZW1vVnRpZkJHZnltNVRxVUVCRmZ6R2VRYjhlbDRfZWtOdGx3MUVNVExocVE?oc=5",
+   "source": "Cyber Daily",
+   "feed": "OAIC / Privacy news",
+   "region": "AU",
+   "published": "2026-10-26T01:24:27Z",
+   "summary": "",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Data breach"
+   ],
+   "why": [
+    "Australia",
+    "Data breach"
+   ],
+   "also": [
+    {
+     "source": "Mirage News",
+     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQMndFWjVKSEFOUHM5MEZadWJaNmxJblRzMV9pY01sSnhDcUxwWElUdUFCZ3FyT1pDNzlac0EyMHlRWWN1QzVPd3ExeFpZRzNTYVpwYTV1WHQtSWNxam1aVFFEc2R1cThCZnFQUVVBTEdCcVJtbmtVdEhpWE5nQnVLckZfZ2h2VEo1OFE?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "4294264f80f0",
+   "title": "ACSC warns of critical vulnerabilities in Fortinet products",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPMVE3LVVaYmFLUUVQcWlSXzJUOWVvd21BX0wxMnJCUDJzQjVZT1dhb1hxc2Z2b3NtOHVrLU9CN1JLZ3NIX0JDMlV5MHAxWDJBaDVqOXkyLVV5UEFvNHRkMUtPLWlUeHAzNm1XeGFOYkdrUWN5eUhhWWN3R3F3MHViNlRiZ1lLMG14bEhEdlBzS0RtZE04TWlPVXBya3NnUF9HdXJ4TTB1cGpTWU0?oc=5",
+   "source": "Australian Cyber Security Magazine",
+   "feed": "ASD / ACSC in the news",
+   "region": "AU",
+   "published": "2026-10-26T00:03:29Z",
+   "summary": "",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Edge devices"
+   ],
+   "why": [
+    "Australia",
+    "Edge devices"
+   ],
+   "also": [
+    {
+     "source": "Technology Decisions",
+     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOVlY3TWYzTnkxZzE1MEQzaDRlN3lidDdRY2ctY1JmaGI1VlJQdUNPN1JpZnR5QXpQSXY4T2ZPSFpaTWJvVUo5QVZIUjAteEVFRy1NQ2dOZzNoYkFnMW9Ma21jRTVkbW45MVpkQ0JxM2dfNEw3X1J6RXJxYWpURWtEN19Lei1kU3YyWkxGU3g1SE1LLVBBal9vMDk4UTZSVHpDVWc1VzhWOUo3VVpIWWZ2TjljQlhqQV9McFFrcFIwS3NhclhCSzlqQ2otazZUT2JYSnhN?oc=5"
+    },
+    {
+     "source": "ACSC Alerts",
+     "url": "https://www.cyber.gov.au/alert/critical-vulnerabilities-in-fortinet-products"
+    }
+   ]
+  },
+  {
+   "id": "be2f01b5050e",
+   "title": "Why Is Microsoft (MSFT) Central To AI Cyberattacks And Digital Patient Twins?",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPT085aEdGQ3ZtY1pCUWxURy14N1ZnaHNsaER2RTlWWGxJU2tnbVQ0Q2tQZVMwNXMzeHlKS1Z0VnZfb09tYzhtTm01dS0tdkpjMmNDSkNiNXZLUHJBSEtqYUFYbFFoV0RnX3M5SXRGV3BNSkJOeVBMYTRRa3U3Sl9hSTVhUkFza1BWR2ZKdktaRkdkZk1SekZNaw?oc=5",
+   "source": "Yahoo Finance",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-25T22:06:28Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Microsoft 365"
+   ],
+   "why": [
+    "Microsoft 365"
+   ]
+  },
+  {
    "id": "8a1ff85d598d",
    "title": "YARA-X 1.22.0 Release, (Sun, Oct 25th)",
    "link": "https://isc.sans.edu/diary/rss/33454",
@@ -139,21 +246,22 @@
   },
   {
    "id": "3eda0d6ae7e3",
-   "title": "PHP2Shell Exploitation Hits Government Entity Amid Global Scanning and Signs of AI-Assisted Hacking",
+   "title": "PHP2Shell Exploitation Attempts Continue Amid Suspected N. Korea Global Scanning Activity",
    "link": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html",
    "source": "The Hacker News",
    "feed": "The Hacker News",
    "region": "Global",
    "published": "2026-10-25T17:19:46Z",
-   "summary": "Threat actors have been observed using agentic artificial intelligence (AI) platforms for post-exploitation activity following the abuse of the PHP2Shell vulnerabilities tracked as CVE-2026-109618 and CVE-2026-109619. \"In one case, the attackers targeted a government entity in Europe and within…",
-   "score": 3,
+   "summary": "In an update, Palo Alto Networks Unit 42 said it's retracting its earlier assessment that the post-compromise activity targeting the European government agency involved the exploitation of the PHP2Shell flaws. \"What researchers saw was an attack against a European government agency executed in the…",
+   "score": 4,
    "tags": [
-    "Vulnerability"
+    "Edge devices",
+    "SaaS / cloud"
    ],
    "why": [
-    "Vulnerability"
+    "Edge devices",
+    "SaaS / cloud"
    ],
-   "epss": 1.0,
    "also": [
     {
      "source": "Unit 42",
@@ -269,7 +377,7 @@
    "source": "ABC News - Breaking News, Latest News and Videos",
    "feed": "AU breach news",
    "region": "Global",
-   "published": "2026-10-24T15:17:53Z",
+   "published": "2026-10-24T23:06:00Z",
    "summary": "",
    "score": 4,
    "tags": [
@@ -1306,26 +1414,6 @@
      "source": "GBHackers News",
      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1vTk5GeVFRWGNPYnJGdGFjYVc0b0xKOXUweUdudlV4UGdsSTN1UVNxMGNmTUdBbGRyMFhoOGp6NUhZSTU1V1dPVEtsb3FheUctZWVfT2hENlBQcXJ0YUZpMGcxbENpRWltOGpFUzgzQdIBdEFVX3lxTE4xU0FCSlNZcmlDQUZuQ2p4YmtYYUVDVDdvWXJjVGFpR2ljZVRVZkk5Yi1NVDUycXp1NUJ2ZGhVWTZ6RHlLZWtOR3pNRjUwM2ZJQzZ4VGp2SXdCVUZQQjN4Q2EyR0VfVXZBWmhtLXhHeFNBNURi?oc=5"
     }
-   ]
-  },
-  {
-   "id": "665526c8fc50",
-   "title": "Critical vulnerabilities in Fortinet products",
-   "link": "https://www.cyber.gov.au/alert/critical-vulnerabilities-in-fortinet-products",
-   "source": "ACSC Alerts",
-   "feed": "ACSC Alerts",
-   "region": "AU",
-   "published": "2026-10-23T05:11:47Z",
-   "summary": "Fortinet have announced critical vulnerabilities in Fortinet products, and are releasing security updates which customers should implement as a priority.",
-   "score": 10,
-   "tags": [
-    "Edge devices",
-    "Vulnerability",
-    "Australia"
-   ],
-   "why": [
-    "Edge devices",
-    "Vulnerability"
    ]
   },
   {
@@ -2583,6 +2671,24 @@
      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNblp4NW9vN1hvbFFMdVpUSWhrbTVGWlNqNi1PWUdkYjJfM2R4OVcwTnY1dHdhcURtWHdkekVwR1dEeTRiZjFYNVY2aWxzTWYwUUVzcDhJbHJRUVhpTmd1X1kxZWMwOTc5THFjakJsSFpGTG9rblgwMHI2aHdYeGZLbFFad3o3TjlOWFV3b3JpNklUbUphSFpSMVVBUzdDT0ktM1VnVThZVk1zMmpoYkJ5Qks1Mzhua21vMmcwdmpHeWtURUxYTE5vYkR5eE9MeHN6SHd6VlpHeTM?oc=5"
     }
    ]
+  },
+  {
+   "id": "f05202614787",
+   "title": "Critical PHP Vulnerability (CVE-2026-109618, CVE-2026-109619) [infocon yellow], (Wed, Oct 21st)",
+   "link": "https://isc.sans.edu/diary/rss/33440",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-10-21T21:02:43Z",
+   "summary": "PHP.net announced that it will release a critical update today. We decided to change the infoCon to YELLOW due to the widespread use of PHP, the expected severity of the flaw (CVSS 9.4), and the availability of early PoC exploits before the patch became available.",
+   "score": 5,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 1.0
   },
   {
    "id": "3371acd3dcb3",
@@ -7282,101 +7388,6 @@
    "why": [
     "Real estate"
    ]
-  },
-  {
-   "id": "7f55a7a9001e",
-   "title": "Anthropic 'SneakPeek' Flaw Is a Silent Zero-Click Threat",
-   "link": "https://www.darkreading.com/threat-intelligence/new-anthropic-sneakpeek-silent-zero-click-threat",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-14T20:09:42Z",
-   "summary": "A bug in Claude Code Desktop's preview pane can allow adversaries to quietly steal credentials from developers, including SSH private keys, AWS credentials, and Claude 0Auth tokens.",
-   "score": 4,
-   "tags": [
-    "Identity",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Identity",
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "8ab3c51ec371",
-   "title": "FBI raids DPRK IT worker laptop farms in Texas, US nationals arrested",
-   "link": "https://www.bleepingcomputer.com/news/security/fbi-raids-dprk-it-worker-laptop-farms-in-texas-us-nationals-arrested/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-14T19:41:43Z",
-   "summary": "The U.S. Department of Justice (DoJ) has disrupted the Famous Chollima threat group's operations by arresting two suspects, charging 14 individuals, and seizing nearly 187 laptops used in North Korean remote IT worker schemes. [...]",
-   "score": 0,
-   "tags": [],
-   "why": [],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/us-shuts-down-over-40-laptop-farms.html"
-    },
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/us-arrests-two-in-crackdown-on-north-korean-it-worker-laptop-farms/"
-    }
-   ]
-  },
-  {
-   "id": "b84c40f0160a",
-   "title": "Man accused of posing as San Francisco 49er charged in Oregon romance scam case",
-   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNT2c2QXlFVVJwVEhfbHJid3RsY0N0QUpaeWdaa0hTdlE1a2hHLV9LS0V3TTdKWEswQ3B0aGEtZEJ6X3JQa0Y3cV9mc0otRmhqa182ZXZWeFBGUUdRcVJTVjdBdU9DS0s1WmN5cXJSSHFHOGoyeWxKQTRuSnNIQ3VCWG1jWTlPRU13cklsUnlBR2NGSEdmcnZ4MtIBrAFBVV95cUxNb2E2UGFMbzJtUTNEOXVra0NmUFRQYXhleldjaDJ5V3J2d2M1Z3hmZEdkQ2xjTnA2YmJ1RTkyVVMwM1hnOWk4bW05Skluandxazg5YXVjNElZSmlLbUN0NUtUbzBZMlFwc3g0RER5c1B6QjhWUXM3aHZubXRLUFhkbXJ0cHU1TGpHVEFYdDJsUVRHUThFYkRyOWREUWJaaWoyVV84eXp5eGo3aGpV?oc=5",
-   "source": "KPTV",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-14T18:45:00Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Edge devices"
-   ],
-   "why": [
-    "Edge devices"
-   ]
-  },
-  {
-   "id": "297c58c4dd00",
-   "title": "CenterPoint data breach affects over 1 million Texans, new AG report shows",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNMHlLY01GVWhhdW5mM3NmOWN3NzFmU1lFNHN0VElyU19WZWtYU0pkUXA4UUVXdHNDX3RLYUk0ekI0WnU1WDJUZ1p4M2MwSW5yQnVjZ1QyRGU1aEoyU0FqRWZ4OENaOGRENW1VdjBzNUxMVGZSaHJFaHlMWm96Q0tSaE1Ea05GWnVfaTBtZ1NlXzJNSzRaM25QTGVhRDA?oc=5",
-   "source": "Houston Chronicle",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-14T18:05:21Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ],
-   "also": [
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/centerpoint-energy-data-breach-impacts-1-million-texans/"
-    }
-   ]
-  },
-  {
-   "id": "91d989b5fb66",
-   "title": "Ledger asks sellers across Asia to halt sales after supply-chain attack",
-   "link": "https://www.bleepingcomputer.com/news/security/ledger-asks-sellers-across-asia-to-halt-sales-after-supply-chain-attack/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-14T17:46:50Z",
-   "summary": "Ledger has asked resellers and distributors of its wallets in Indonesia, Singapore, Thailand, the Philippines, Vietnam, Malaysia, and Hong Kong to suspend device sales and remove products from shelves while it investigates device tampering. [...]",
-   "score": 0,
-   "tags": [],
-   "why": []
   }
  ]
 }
