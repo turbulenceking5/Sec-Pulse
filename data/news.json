@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-26T20:30:38Z",
+ "generated": "2026-10-26T22:48:49Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -16,7 +16,7 @@
   {
    "name": "ACSC (via Google News)",
    "ok": true,
-   "count": 2,
+   "count": 3,
    "error": null
   },
   {
@@ -40,7 +40,7 @@
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 5,
+   "count": 4,
    "error": null
   },
   {
@@ -106,6 +106,98 @@
  ],
  "items": [
   {
+   "id": "627cc70bbf65",
+   "title": "University of Copenhagen data breach exposes data of 525,000 people",
+   "link": "https://www.bleepingcomputer.com/news/security/university-of-copenhagen-data-breach-exposes-data-of-525-000-people/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-26T22:20:36Z",
+   "summary": "The University of Copenhagen in Denmark confirmed that hackers accessed one of its test environments containing personal data belonging to 525,000 people. [...]",
+   "score": 4,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "5d6c647af363",
+   "title": "Risks & Rewards: How AI Is Redefining the CISO's Role",
+   "link": "https://www.darkreading.com/cybersecurity-careers/risks-rewards-ai-redefining-ciso-role",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-26T21:44:33Z",
+   "summary": "Nvidia security executive Mark Weatherford says CISOs must help business leaders weigh AI's pros and cons, and ensure those deploying it own the risks.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "21e6441e976b",
+   "title": "ASD releases seventh annual Cyber Threat Report 2025-26",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOWTlxOHhLem9qSXRua3dlU0c5WDZCaHdGSGZxejAtMmJ4MDNOaEIxNjFoMWRmcW9UaEZtb0R0RldWNDh1d3hFVFo0eXY2WE5od0xPcGlVRkxOQ3h0Q2dvRmJHOGpBb0FPSG1nWlNyWTJ5M3NVNXZaWmhnVkFIbFE2Yzlia2lNWTNQMlNQcFh3?oc=5",
+   "source": "Australian Cyber Security",
+   "feed": "ACSC (via Google News)",
+   "region": "AU",
+   "published": "2026-10-26T21:15:32Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "Australia"
+   ],
+   "why": []
+  },
+  {
+   "id": "9b6153963ef5",
+   "title": "Former pentester used ARTEX AI to steal 8.2 million data records",
+   "link": "https://www.bleepingcomputer.com/news/security/former-pentester-used-artex-ai-to-steal-82-million-data-records/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-26T21:08:28Z",
+   "summary": "South Korean police identified seven suspects linked to a cybercrime operation that breached more than 90 organizations in the country, with ARTEX AI pentesting framework used in most of the attacks. [...]",
+   "score": 3,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "c25a5812afa3",
+   "title": "In-the-Wild Attack Abuses AI Agents' Trust in Markdown",
+   "link": "https://www.darkreading.com/application-security/in-the-wild-attack-ai-agents-trust-markdown",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-26T20:59:26Z",
+   "summary": "A new AI agent prompt injection technique exploits how coding assistants consume local instruction files, blurring the line between text documents and executable actions.",
+   "score": 1,
+   "tags": [
+    "AI threats"
+   ],
+   "why": [
+    "AI threats"
+   ]
+  },
+  {
+   "id": "154f68998af1",
+   "title": "OpenAI launches GPT-6.1 Terra with 3x faster AI agents, 50% lower pricing",
+   "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-launches-gpt-61-terra-with-3x-faster-ai-agents-50-percent-lower-pricing/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-26T20:46:49Z",
+   "summary": "OpenAI has launched GPT-6.1 Terra, a new model focused on computer use, visual reasoning, coding, and everyday work, while costing significantly less than its larger models. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
    "id": "89547e1892b3",
    "title": "Anthropic Files for Potentially the Biggest IPO Ever as CEO Warns of Risk to Humanity From AI",
    "link": "https://www.securityweek.com/anthropic-files-for-potentially-the-biggest-ipo-ever-as-ceo-warns-of-risk-to-humanity-from-ai/",
@@ -117,6 +209,23 @@
    "score": 0,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "0af8bec82f68",
+   "title": "Cyber hackers use autonomous AI agents to breach over 100 company websites",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQUndvUXhGVVF6WUhuNUNWblhwMUVkOW91Mkh6aUJDRGkta1Y1VGY2eVVfSVJnTzVPZHRobHUtYU1kZEJ0X0VKVWRsdUJyLWQ3UXhoeGxuSTM5NWU3eVdDYmFESUF0eG4wSklFeVlxT1lrU3BTZV9Ua3NtcnVfR05WZXpWLXB0ajNfVm0xVw?oc=5",
+   "source": "Beinsure",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-26T19:51:55Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
   },
   {
    "id": "d84dc99ca60f",
@@ -6266,8 +6375,7 @@
      "source": "BleepingComputer",
      "url": "https://www.bleepingcomputer.com/news/security/beyondtrust-patches-zero-day-exploited-in-attacks-since-august/"
     }
-   ],
-   "epss": 0.2034
+   ]
   },
   {
    "id": "0cd568eb4deb",
@@ -7287,121 +7395,6 @@
    "score": 0,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "80cf54be1286",
-   "title": "Microsoft: Windows Server 2022 reached end of mainstream support",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2022-reached-end-of-mainstream-support/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-15T13:18:36Z",
-   "summary": "Microsoft announced that Windows Server 2022 has reached the end of mainstream support and will remain in extended support until October 2031. [...]",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "12b5084185c2",
-   "title": "NGINX Fixes 5 Flaws, Including Possible RCE and a TLS Bug That May Skip Client-Cert Checks",
-   "link": "https://thehackernews.com/2026/10/nginx-fixes-5-flaws-including-possible.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-15T12:58:05Z",
-   "summary": "NGINX released versions 1.30.6 and 1.31.7 on October 14 to fix five vulnerabilities, one of them present in every release since May 2005. There are three memory bugs that F5, the company behind NGINX, says could crash a worker process or possibly let an attacker run code, and each requires a…",
-   "score": 5,
-   "tags": [
-    "Vulnerability",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Vulnerability",
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "804b1f79c64c",
-   "title": "Supermarket Refrigeration Attack Widens to Copeland, Dixell Controllers",
-   "link": "https://www.securityweek.com/supermarket-refrigeration-attack-widens-to-copeland-dixell-controllers/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-15T12:50:42Z",
-   "summary": "Roughly 700 French supermarkets were hit by the cyberattacks, for which no group has claimed responsibility. The post Supermarket Refrigeration Attack Widens to Copeland, Dixell Controllers appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "db4d2510bca3",
-   "title": "n0n extortion claims target 38 global maritime and logistics organizations, raising port data exposure concerns",
-   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPcUhadjlHdXJWLU5seEc1OHVHZU9iNlBuVnM2LTZwZllSZldubE53Qzl3T2cwdmNNTnBkOUQtdFB2QWstNExGSFgxWDBlQ2pUQlA2OXdhR1pDdF9iYVk3cmRmY2lxeEdJVTNqZkZEbEJXbmpYX1NqWXlsS0s2VzBlVkVzQVBUbU9BZjdRZjVRMnVSaF9pMEFxVmlJUWFBTG5WRHNGaVU5blJuMm8xTE52dDNHX0dTWXBieTE0TUhkMjhqa3ZtZVJVY0J0cThramxqSkdRbnNRSXcxZC1kNjg0VVVINA?oc=5",
-   "source": "Industrial Cyber",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-15T12:45:26Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Ransomware"
-   ],
-   "why": [
-    "Ransomware"
-   ]
-  },
-  {
-   "id": "caf91390fbd8",
-   "title": "Hackers used AI in most ransomware attacks and threatened staff, Semperis report found",
-   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE04Q1JjVkhmdEFNN2l1eG5LYmx3VlM3THd5WXRkMkVkYmNyeEhFRzl2aUFQYURsaXQybV9vSXlZS2NoWmx5OUxDRVIxZHRYMFFLbUdMcy0wUVl5U3g5Wk9wd1NicE5vdGRIWTA0SGoxN2s4WW9CNWV6SUdURUxfdw?oc=5",
-   "source": "Quartz",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-15T12:41:38Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Ransomware"
-   ],
-   "why": [
-    "Ransomware"
-   ]
-  },
-  {
-   "id": "e7e058293387",
-   "title": "Next.js Ships Out-of-Band Patch for Two Critical RCE Flaws in Caching and SVG Processing",
-   "link": "https://thehackernews.com/2026/10/nextjs-ships-out-of-band-patch-for-two.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-15T12:28:13Z",
-   "summary": "Next.js released an out-of-band security update on October 14 that fixes two critical flaws allowing unauthenticated remote code execution, along with a high-severity denial-of-service flaw. One code-execution flaw is in React Server Components, and the other in librsvg, the open-source library…",
-   "score": 5,
-   "tags": [
-    "Vulnerability",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Vulnerability",
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "d31e027d6ff9",
-   "title": "Yamaha Saw a Small-Scale Hack That Leaked Some User Data",
-   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPZG9yRmdfMzg5VFZ4T052VnYxNFN0dEoxWkd3bEkxcFdsYUI5amFXSTJCR2RzdkR5aGxGMEROQmJ3Z2VuOW9TelE5MWRxdE1WQTdSTkx1Z0lRQXNLUFozRUxYTE81eTVkdVV4aUNrajhvM0lYN0EtN3RESkMxQ056WnVTVHZsUQ?oc=5",
-   "source": "RideApart.com",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-15T12:21:00Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
   }
  ]
 }
