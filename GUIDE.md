@@ -33,6 +33,7 @@ Your daily cyber security news and CySA+ study app. Everything is saved on this 
 - **Timed practice exam**: 30 questions in 58 minutes, the real exam's pace. Closing it cancels the attempt.
 - **Review mistakes**: questions you've got wrong, until you get them right more often than wrong.
 - **PBQ practice**: hands-on scenarios with logs, headers and scan output. Wide exhibits scroll sideways; the app says when there's more to see.
+- **3D network labs**: an office network in 3D. Drag to rotate, pinch to zoom. **Explore** it to learn what each device does and which logs it gives you. **Incidents** play an attack out step by step: tap the device you'd check or isolate (or choose it from the list), and make the analyst's calls. Lessons with a matching incident show **🌐 Practise in 3D**.
 
 ## Cards tab
 - Multiple-choice flashcards with spaced repetition: right answers come back later, wrong ones come back sooner. 8 new cards a day.

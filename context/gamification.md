@@ -35,6 +35,7 @@ One-off badges (`BADGES()`, `checkBadges()`, `sp_badges`), +25 XP each (`BADGE_X
 | ⏱️ Beat the clock | Estimated 750+ on a timed exam, inside the time |
 | ✅ Quest master | Every daily quest in one day |
 | 📰 Well informed | 100 news stories read |
+| 🌐 Network defender | Every 3D network lab finished (any score) |
 
 To add one: append to `BADGES()` with a permanent `id` and a `test(c)` over `badgeCtx()`. Existing users who already meet it get it (with XP and a toast) the next time `checkBadges()` runs.
 

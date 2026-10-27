@@ -8,7 +8,9 @@ const fs = require('fs');
 
 (async () => {
   fs.mkdirSync('shots', { recursive: true });
-  const browser = await chromium.launch(process.env.CHROMIUM_PATH ? { executablePath: process.env.CHROMIUM_PATH } : {});
+  // SwiftShader gives headless Chromium software WebGL, so the 3D network labs actually render.
+  const gl = ['--use-gl=angle', '--use-angle=swiftshader', '--enable-unsafe-swiftshader'];
+  const browser = await chromium.launch(process.env.CHROMIUM_PATH ? { executablePath: process.env.CHROMIUM_PATH, args: gl } : { args: gl });
   const page = await (await browser.newContext({ ...devices['iPhone 13'], colorScheme: 'dark' })).newPage();
   const errors = [], fails = [];
   const check = (ok, msg) => { console.log((ok ? 'PASS ' : 'FAIL ') + msg); if (!ok) fails.push(msg); };
@@ -458,6 +460,50 @@ const fs = require('fs');
   await page.click('#rank-card');
   check(await page.locator('#objectives .obj-row').count() === 15, 'Profile shows coverage for all 15 exam objectives');
   await page.click('#sheet-close');
+
+  // 3D network labs: explore, tap devices in 3D, play a scenario (wrong then right), progress, lesson links, cleanup.
+  await page.click('nav button[data-view=learn]');
+  await page.waitForSelector('#labs-btn:not([hidden])');
+  const labsData = await page.evaluate(() => LABS);
+  check(labsData.scenarios.length >= 4 && labsData.scenarios.every(sc => sc.steps.every(st => st.type === 'pick'
+    ? [].concat(st.answer).every(a => labsData.nodes.some(n => n.id === a)) : st.options.length === 4 && new Set(st.options).size === 4 && st.answer >= 0 && st.answer < 4)),
+    'labs.json: every pick answer is a real device and every choice has 4 distinct options');
+  check(labsData.scenarios.every(sc => sc.steps.every(st => [st.show, st.after].flat().filter(Boolean).every(a =>
+    (a.packet || []).concat(Object.keys(a.state || {}), a.focus ? [a.focus] : []).every(id => labsData.nodes.some(n => n.id === id))))),
+    'labs.json: every animation names real devices');
+  await page.click('#labs-btn');
+  await page.click('[data-lab=""]');
+  await page.waitForSelector('.lab-canvas', { timeout: 15000 });
+  await page.waitForTimeout(600);
+  check(await page.locator('.lab-label').count() === labsData.nodes.length, '3D lab draws a label for every device');
+  const dcBox = await page.locator('.lab-label', { hasText: /^DC$/ }).boundingBox();
+  await page.mouse.click(dcBox.x + dcBox.width / 2, dcBox.y + dcBox.height + 14); // the device itself, just below its label
+  await page.waitForTimeout(200);
+  check((await page.textContent('#lab-info')).includes('Active Directory'), 'Tapping a device in the 3D view shows what it does and its logs');
+  await page.screenshot({ path: 'shots/lab-explore.png' });
+  const sc0 = labsData.scenarios[0];
+  await page.evaluate(id => openLab(id), sc0.id);
+  await page.waitForSelector('#lab-start:not([disabled])');
+  check(await page.locator('.lab-canvas').count() === 1, 'Opening another lab disposes the old 3D view');
+  await page.click('#lab-start:not([disabled])');
+  for (const [k, st] of sc0.steps.entries()) {
+    await page.waitForSelector('#lab-q:not([hidden])', { timeout: 20000 });
+    if (st.type === 'pick') { await page.selectOption('#lab-select', k === 0 ? labsData.nodes.find(n => ![].concat(st.answer).includes(n.id)).id : [].concat(st.answer)[0]); await page.click('#lab-confirm'); }
+    else await page.locator('#lab-q .opt').filter({ hasText: st.options[st.answer] }).first().click();
+    await page.waitForSelector('#lab-next:not([disabled])', { timeout: 20000 });
+    if (k === 1) await page.screenshot({ path: 'shots/lab-step.png' });
+    await page.click('#lab-next');
+  }
+  await page.waitForSelector('#lab-result');
+  const labRes = await page.evaluate(id => ({ l: store.get('labs', {})[id], h: store.get('quizHistory', []).slice(-1)[0], q: store.get('qhist', {})[`lab:${id}#0`] }), sc0.id);
+  check(labRes.l && labRes.l.best === sc0.steps.length - 1 && labRes.h.type === 'lab' && labRes.q && labRes.q.wrong === 1,
+    'A finished lab stores its best score in sp_labs, logs a lab round and records each step');
+  await page.click('#sheet-close');
+  check(await page.locator('.lab-canvas').count() === 0, 'Closing the sheet disposes the 3D view');
+  await page.evaluate(id => openLesson(id), sc0.lessons[0]);
+  check(await page.locator(`.lesson-lab[data-lab="${sc0.id}"]`).count() === 1, 'A lesson links to the lab that practises it');
+  await page.click('#sheet-close');
+
   check(!(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth)), 'No horizontal scroll');
   check(errors.length === 0, 'No console/page errors' + (errors.length ? ': ' + errors.join(' | ') : ''));
 

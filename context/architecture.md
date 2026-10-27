@@ -56,7 +56,8 @@ It's a single-user personal tool, and `localStorage` is enough. The cost is that
 | `blog/drafts/`, `blog/posted.json` | Blog drafts and the record of which were sent | [blog.md](blog.md) |
 | `.github/workflows/*.yml` | The four workflows | [workflows.md](workflows.md) |
 | `CHANGELOG.md`, `context/roadmap.md`, `GUIDE.md` | Shown in the app (Settings → What's new / Roadmap / How to use) | [app.md](app.md#settings-sheet) |
-| `3d/` | Standalone three.js model viewer in TypeScript; `3d/dist/` is compiled and committed (no build step on Pages) | [3d/README.md](../3d/README.md) |
+| `data/labs.json` | Hand-written 3D network lab content: zones, devices, scenarios | [labs.md](labs.md) |
+| `3d/` | 3D network labs: TypeScript source (`src/`), compiled and committed `dist/` (no build step on Pages), vendored three.js (`vendor/`) | [labs.md](labs.md) |
 | `.nojekyll` | Tells Pages to skip Jekyll (so `.md` files are served raw for the app) | - |
 
 ## Logic duplicated on purpose

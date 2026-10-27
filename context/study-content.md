@@ -104,8 +104,8 @@ This is exam prep, so wrong facts are worse than missing ones. When adding or ed
 |---|---|---|
 | CS0-003 domains and weights (33/30/20/17) | `domains` | Oct 2026 (initial build) |
 | Pass mark 750 on a 100–900 scale | `index.html` quiz copy | Oct 2026 |
-| NDB scheme: assess suspected breaches within 30 days; notify OAIC + individuals as soon as practicable | 4.2, card c58 | Oct 2026 |
-| Cyber Security Act 2024: ransomware/extortion payment report to ASD within 72h, turnover > $3M | 4.2, card c59 | Oct 2026 |
+| NDB scheme: assess suspected breaches within 30 days; notify OAIC + individuals as soon as practicable | 4.2, card c58, labs.json (sqli, bec) | Oct 2026 |
+| Cyber Security Act 2024: ransomware/extortion payment report to ASD within 72h, turnover > $3M | 4.2, card c59, labs.json (ransom, bec) | Oct 2026 |
 | ACSC hotline 1300 CYBER1, ReportCyber at cyber.gov.au | 3.1, 3.4, card c53 | Oct 2026 |
 | Essential Eight list and maturity level descriptions | 2.6, card c41 | Oct 2026 |
 | Windows event ID meanings and 4624 logon types | cards c82–c93 | Oct 2026 |

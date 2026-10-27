@@ -1,7 +1,10 @@
 # Changelog
 
-## 2026-10-27: 3D models
-- **3D models** at `/3d/`: a padlock, shield, server rack and network globe you can spin and zoom, written in TypeScript with three.js. **⬇ .glb** downloads the model for use in other 3D apps.
+## 2026-10-27: 3D network labs
+- **3D network labs** on Learn: a small office network in 3D (internet, DMZ, office PCs, servers, security tools, cloud email) that you can rotate and zoom.
+- **Explore** it: tap any device to see what it does, which logs it gives an analyst and which lessons cover it.
+- **Four incidents** play out on the network step by step: phishing to payment redirection, an unpatched VPN to ransomware, a web app to database breach, and beaconing malware with DNS tunnelling. Tap the device you'd check or isolate, and make the analyst's calls. Answers count toward your accuracy, XP, quests and streak.
+- Lessons link to the incident that practises them (**🌐 Practise in 3D**), and finishing all four earns the 🌐 **Network defender** achievement.
 
 ## 2026-10-21: 172 new exam questions
 - **Question bank:** 172 new CySA+ questions across all four domains (weighted like the exam), each tagged with its CS0-003 objective. Quick quizzes, practice and timed exams, domain drills, Review mistakes and the question of the day now draw from 253 questions instead of 81.

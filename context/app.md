@@ -1,6 +1,6 @@
 # The app (`index.html`)
 
-One self-contained HTML file: inline `<style>` and `<script>`, no framework, no build step, no external scripts or fonts. It works opened from GitHub Pages or `python3 -m http.server`. Opening the file directly via `file://` doesn't work, because `fetch()` of the JSON files fails there.
+One self-contained HTML file: inline `<style>` and `<script>`, no framework, no build step, no external scripts or fonts. The one exception is the 3D network labs, which import `3d/dist/lab.js` and the vendored three.js (same-origin, via the import map in `<head>`) only when a lab opens; see [labs.md](labs.md). It works opened from GitHub Pages or `python3 -m http.server`. Opening the file directly via `file://` doesn't work, because `fetch()` of the JSON files fails there.
 
 ## Layout
 - **Header** (sticky, respects `env(safe-area-inset-top)`): logo, "updated Xh ago" (from `news.json.generated`), ↻ refresh news, ⚙️ Settings.
@@ -65,6 +65,7 @@ Tag colours: red (`hot`) for Actively exploited / KEV / Ransomware, teal (`re`) 
 - **Timed practice exam** (`startQuiz(30, true, EXAM_SECS)`): the same exam with a 58-minute limit (the real CS0-003 allows 165 minutes for up to 85 questions; 30 at that pace ≈ 58). `renderQuiz`'s `opts.timeLimit` counts down in the sheet title via `opts.onTick`; at zero the round ends and unanswered questions count as wrong. Closing the sheet abandons the attempt (nothing is logged). The result shows time used, and history gets `timed`, `secs` and `expired`.
 - **Practice exam scaled estimate** (`scaledScore()` / `scaledHtml()`): after a practice exam, a "Rough scaled estimate" box maps the percentage onto 100-900 in a straight line (0% = 100, 100% = 900, so 750 ≈ 81%), rounded to 10, green at ≥ 750. It says plainly that CompTIA doesn't publish its conversion. It isn't stored (it's derivable from `c`/`t` in `sp_quizHistory`).
 - **PBQ practice** (`startPBQ()`, `ALL_PBQ()`, `validPBQ()`): runs `cysa.json`'s optional `pbqs` array, 5 per round (`PBQ_ROUND`), unseen first, then latest-wrong, then the rest. The button is hidden when there are no valid PBQs (missing/empty array), and `startPBQ()` has an empty state. Invalid entries (unknown `type`, bad `answer`, fewer than 2 items/options) are skipped. Each PBQ gets `qid` `pbq:<id>`, so answers go into `sp_qstats`/`sp_qhist` and missed PBQs appear in Review mistakes. Rounds log `type: "pbq"` in `sp_quizHistory`. See the quiz engine for how they render.
+- **3D network labs** (`openLabs()`, `openLab()`, button hidden until `data/labs.json` loads): explore the network or play an incident in 3D. Steps record answers like quiz questions (`qid` `lab:<id>#<step>`); finished scenarios log `type: "lab"` and go in `sp_labs`. Lesson sheets show **🌐 Practise in 3D** for scenarios that list the lesson. See [labs.md](labs.md).
 - **Review mistakes** (`startReview()` / `weakQuestions()`): up to 10 questions from `sp_qhist` whose latest answer was wrong or that have been missed more often than answered right. Ordered latest-wrong first, then most net misses, then most recent; the picked 10 are shuffled. A question drops off once right outnumbers wrong and the latest answer was right. The button shows the count; with no history it opens an empty-state card. Results go to `sp_quizHistory` with `type: "review"`. Includes PBQs (`pbq:<id>`). Question IDs (`<lesson id>#<index>` or `pbq:<id>`) that no longer exist in cysa.json are ignored.
 - **Udemy link** (`sp_courseUrl`): an "Open my Udemy" button under Review mistakes once set in Settings, otherwise a link to set it. Only `https://` URLs are accepted. It's stored on the device, never in the repo (see [opsec.md](opsec.md)).
 - Lessons grouped by domain, with ✓ when done and the lesson-quiz score.
@@ -106,7 +107,7 @@ All keys are prefixed `sp_` (Export, Import and Reset rely on the prefix). Every
 | `sp_lessons` | `{"1.5": {date, score}}` | Completed lessons |
 | `sp_qstats` | `{answered, correct, byDomain: {"1": {a, c}}}` | Quiz accuracy |
 | `sp_qhist` | `{"1.5#0": {right, wrong, last: "YYYY-MM-DD", ok}}` | Per-question history for Review mistakes (`ok` = latest answer correct) |
-| `sp_quizHistory` | `[{date, c, t, type: "quick"\|"exam"\|"review"\|"pbq"\|"drill"}]` (last 100); drills add `domain`, timed exams add `timed: true, secs, expired` | Quiz results |
+| `sp_quizHistory` | `[{date, c, t, type: "quick"\|"exam"\|"review"\|"pbq"\|"drill"\|"lab"}]` (last 100); drills add `domain`, labs add `lab`, timed exams add `timed: true, secs, expired` | Quiz results |
 | `sp_cards` | `{"c01": {box, due: "YYYY-MM-DD"}}` | Flashcard schedule |
 | `sp_newToday` | `{date, n}` | New cards introduced today |
 | `sp_cardhist` | `{"c01": {right, wrong, last: "YYYY-MM-DD", ok}}` | Per-card answer history for Review missed cards (`ok` = latest answer right) |
@@ -126,6 +127,7 @@ All keys are prefixed `sp_` (Export, Import and Reset rely on the prefix). Every
 | `sp_days` | `{"YYYY-MM-DD": xp}` (last 400 days) | XP per Brisbane day for the heatmap (1 = active day seeded from older data) |
 | `sp_freeze` | `{n, used: ["YYYY-MM-DD"…], earned: "YYYY-MM-DD"}` | Streak freezes held, days they covered, last day one was earned |
 | `sp_backup` | `{last: "YYYY-MM-DD", snooze: "YYYY-MM-DD"}` | Last export and backup-nudge snooze |
+| `sp_labs` | `{scenarioId: {best, t, date}}` | 3D network labs finished: best score out of `t` steps |
 
 **Never rename a key or change its shape without a migration.** Existing progress on the phone would silently reset.
 

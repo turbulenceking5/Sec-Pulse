@@ -30,6 +30,7 @@
   if (mq){ try{ mq.addEventListener('change', apply); }catch(e){ try{ mq.addListener(apply); }catch(e2){} } }
 })();
 </script>
+<script type="importmap">{"imports": {"three": "./3d/vendor/three.module.min.js", "three/addons/": "./3d/vendor/addons/"}}</script>
 <style>
 :root{
   --bg:#0b1220; --surface:#121c2e; --surface2:#17243a; --border:#22314a;
@@ -251,6 +252,26 @@ html.ptr-on{overscroll-behavior-y:contain}
 .cves{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
 .cves a{text-decoration:none;color:var(--accent);border-color:var(--accent-line)}
 .seg{display:flex;gap:6px}.seg .btn{flex:1;padding:9px 6px}.seg .btn.on{background:var(--accent-dim);border-color:var(--accent);color:var(--accent)}
+/* 3D network labs: three.js canvas (3d/dist/lab.js) with HTML labels on top */
+/* Pinned under the sheet header (top set from its height in JS) so the network stays in view while the panel scrolls;
+   the spread shadow hides panel text sliding past its sides. */
+.lab-stage{position:sticky;top:0;z-index:1;height:min(42vh,400px);min-height:220px;border-radius:var(--radius);overflow:hidden;background:var(--surface);border:1px solid var(--border);
+  margin-bottom:16px;touch-action:none;box-shadow:0 0 0 16px var(--bg)}
+.lab-canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.lab-label,.lab-zone{position:absolute;left:0;top:0;white-space:nowrap;cursor:pointer;user-select:none;-webkit-user-select:none}
+.lab-label{z-index:1;font-size:10.5px;font-weight:600;padding:1px 5px;border-radius:6px;background:var(--glass);border:1px solid var(--border);color:var(--text)}
+.lab-label.sel{border-color:var(--accent);color:var(--accent)}
+.lab-label.bad{border-color:var(--danger);color:var(--danger)}
+.lab-label.contained{border-color:var(--ok);color:var(--ok)}
+.lab-label.contained::after{content:" 🔒";font-size:9px}
+.lab-zone{font-size:10px;text-transform:uppercase;letter-spacing:.8px;color:var(--muted);transform-origin:0 0}
+.lab-msg{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;color:var(--muted);font-size:13px}
+.lab-tools{position:absolute;right:6px;bottom:6px;z-index:2}
+.lab-tools button{background:var(--glass);border:1px solid var(--border);border-radius:10px;width:32px;height:32px;padding:0;font-size:16px;line-height:1}
+.lab-select{width:100%;font:inherit;color:var(--text);background:var(--surface2);border:1px solid var(--border);border-radius:12px;padding:10px 12px;margin:4px 0 8px}
+.lab-story{border-left:3px solid var(--accent-line);padding:2px 0 2px 10px;margin:0 0 10px;font-size:14px}
+.lab-row{display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:12px 14px;margin-bottom:8px}
+.lab-row .t{font-weight:700}
 </style>
 </head>
 <body>
@@ -312,6 +333,7 @@ html.ptr-on{overscroll-behavior-y:contain}
     <button class="btn block" id="timed-exam" style="margin-top:8px">⏱ Timed practice exam · 30 in 58 min</button>
     <button class="btn block" id="review-quiz" style="margin-top:8px">Review mistakes</button>
     <button class="btn block" id="pbq-practice" style="margin-top:8px" hidden>PBQ practice</button>
+    <button class="btn block" id="labs-btn" style="margin-top:8px" hidden>🌐 3D network labs</button>
     <div id="course-link" style="margin-bottom:6px"></div>
     <div id="domains"></div>
   </section>
@@ -545,6 +567,7 @@ const BADGES = () => [
   {id: 'exam-pass', icon: '📈', name: 'Pass mark', desc: 'Estimated 750+ on a practice exam', test: c => c.hist.some(h => h.type === 'exam' && h.t && scaledScore(h.c, h.t) >= PASS_MARK)},
   {id: 'beat-clock', icon: '⏱️', name: 'Beat the clock', desc: 'Estimated 750+ on a timed exam, inside the time', test: c => c.hist.some(h => h.type === 'exam' && h.timed && !h.expired && h.t && scaledScore(h.c, h.t) >= PASS_MARK)},
   {id: 'quests-all', icon: '✅', name: 'Quest master', desc: 'Finish every daily quest in a day', test: c => c.questsAll},
+  {id: 'labs-all', icon: '🌐', name: 'Network defender', desc: 'Finish every 3D network lab', test: c => c.labsAll},
   {id: 'reader100', icon: '📰', name: 'Well informed', desc: 'Read 100 news stories', test: c => c.reads >= 100}
 ];
 function badgeCtx(){
@@ -552,7 +575,8 @@ function badgeCtx(){
   return {answered: qs.answered || 0, cards: Object.values(cardHist()).reduce((a, r) => a + ((r && r.right) || 0) + ((r && r.wrong) || 0), 0),
     box5: Object.values(st).filter(v => v && v.box === 5).length, best: (store.get('streak', {}) || {}).best || 0,
     lessons: store.get('lessons', {}) || {}, hist: Array.isArray(hist) ? hist.filter(Boolean) : [],
-    questsAll: QUESTS.every(x => q.done.includes(x.id)), reads: Array.isArray(reads) ? reads.length : 0};
+    questsAll: QUESTS.every(x => q.done.includes(x.id)),
+    labsAll: !!LABS && LABS.scenarios.length > 0 && LABS.scenarios.every(s => getLabs()[s.id]), reads: Array.isArray(reads) ? reads.length : 0};
 }
 function getBadges(){ const b = store.get('badges', null); return b && typeof b === 'object' && !Array.isArray(b) ? b : null; }
 let badgeBusy = false;
@@ -611,7 +635,7 @@ function trendHtml(){
   const W = 320, H = 120, L = 36, R = 8, T = 8, B = 16, pw = W - L - R, ph = H - T - B;
   const x = i => L + i * pw / (rounds.length - 1), y = p => T + ph * (1 - p / 100); // rounds.length >= 2 here
   const pcts = rounds.map(h => Math.round(h.c / h.t * 100)), avg = Math.round(pcts.reduce((a, b) => a + b, 0) / pcts.length);
-  const names = {quick: 'Quick quiz', exam: 'Practice exam', review: 'Review', pbq: 'PBQ round', drill: 'Domain drill'};
+  const names = {quick: 'Quick quiz', exam: 'Practice exam', review: 'Review', pbq: 'PBQ round', drill: 'Domain drill', lab: '3D lab'};
   const grid = [0, 50, 80, 100].map(p => `<line x1="${L}" x2="${W - R}" y1="${y(p)}" y2="${y(p)}" style="stroke:var(--border)" stroke-width="1"${p === 80 ? ' stroke-dasharray="4 3"' : ''}/>
     <text x="${L - 6}" y="${y(p) + 4}" text-anchor="end" font-size="10" style="fill:var(--muted)">${p}%</text>`).join('');
   const pts = pcts.map((p, i) => `${x(i).toFixed(1)},${y(p).toFixed(1)}`).join(' ');
@@ -1380,6 +1404,7 @@ function renderLearn(){
   $('#review-quiz').textContent = 'Review mistakes' + (nw ? ' · ' + nw : '');
   const np = ALL_PBQ().length, pb = $('#pbq-practice');
   pb.hidden = !np; pb.textContent = `PBQ practice · ${np} scenario${np === 1 ? '' : 's'}`;
+  const lb = $('#labs-btn'); lb.hidden = !LABS; if (LABS) lb.textContent = `🌐 3D network labs · ${LABS.scenarios.length} incidents`;
   $('#domains').innerHTML = CYSA.domains.map(d => {
     const ls = CYSA.lessons.filter(l => l.domain === d.id), dd = qs.byDomain[d.id];
     const nd = ls.filter(l => done[l.id]).length;
@@ -1400,14 +1425,14 @@ function renderLearn(){
 let sheetSeq = 0, sheetOpener = null;
 const sheetIs = n => n === sheetSeq && $('#sheet').classList.contains('open');
 function openSheet(title, html){
-  sheetSeq++;
+  closeLabView(); sheetSeq++;
   if (!$('#sheet').classList.contains('open')) sheetOpener = document.activeElement;
   $('#sheet-title').textContent = title; $('#sheet-body').innerHTML = html;
   $('#sheet').classList.add('open'); $('#sheet').scrollTop = 0; document.body.style.overflow = 'hidden';
   try{ $('#sheet-close').focus({preventScroll: true}); }catch(e){}
 }
 function closeSheet(){
-  sheetSeq++; $('#sheet').classList.remove('open'); document.body.style.overflow = '';
+  closeLabView(); sheetSeq++; $('#sheet').classList.remove('open'); document.body.style.overflow = '';
   renderLearn(); renderBrief(); renderNews();
   try{ sheetOpener && sheetOpener.isConnected && sheetOpener.focus(); }catch(e){}
   sheetOpener = null;
@@ -1425,8 +1450,10 @@ function openLesson(id){
     <div class="box tip"><b>Exam tip</b>${esc(l.examTip)}</div>
     <div class="box job"><b>On the job</b>${esc(l.onTheJob)}</div>
     <div class="links"><a class="btn" href="${esc(ytSearch(l))}" target="_blank" rel="noopener noreferrer">▶ Videos on this topic</a>${courseUrl() ? `<a class="btn" href="${esc(courseUrl())}" target="_blank" rel="noopener noreferrer">🎓 My Udemy</a>` : ''}</div>
+    ${labsForLesson(l.id).map(x => `<button class="btn block lesson-lab" data-lab="${esc(x.id)}" style="margin-bottom:8px">🌐 Practise in 3D: ${esc(x.title)}</button>`).join('')}
     <h2>Check yourself</h2><div class="card" id="lesson-quiz"></div>
     <button class="btn block" id="mark-done" style="margin-top:6px">Mark as complete</button>`);
+  $('#sheet-body').querySelectorAll('.lesson-lab').forEach(b => b.onclick = () => openLab(b.dataset.lab));
   const quizQs = l.quiz.map((q, i) => ({...q, domain: l.domain, qid: l.id + '#' + i}));
   const complete = score => {
     const done = store.get('lessons', {}), first = !done[l.id];
@@ -1511,6 +1538,180 @@ function startPBQ(){
     logRound({c, t, type: 'pbq'}, XP.quiz);
   }});
 }
+/* ---------- 3D network labs: data/labs.json, drawn by 3d/dist/lab.js (three.js, loaded only when a lab opens) ---------- */
+// The 3D module only draws; questions, answers and progress live here. Step qids are "lab:<scenario>#<step>".
+let LABS = null, labView = null, labPick = null;
+async function loadLabs(){
+  if (LABS) return LABS;
+  try{
+    const d = await (await fetch('data/labs.json?_=' + Date.now())).json();
+    if (d && Array.isArray(d.zones) && Array.isArray(d.nodes) && Array.isArray(d.scenarios)) LABS = d;
+  }catch(e){}
+  return LABS;
+}
+function getLabs(){ const l = store.get('labs', {}); return l && typeof l === 'object' && !Array.isArray(l) ? l : {}; }
+const labNode = id => LABS.nodes.find(n => n.id === id);
+const labZoneName = id => { const z = LABS.zones.find(x => x.id === id); return z ? z.name : 'Between zones'; };
+const labsForLesson = id => LABS ? LABS.scenarios.filter(s => (s.lessons || []).includes(id)) : [];
+function closeLabView(){ labPick = null; if (labView){ try{ labView.dispose(); }catch(e){} labView = null; } }
+// Theme tokens for the 3D scene (read once per mount; the scene has no CSS of its own).
+function labColors(){
+  const cs = getComputedStyle(document.documentElement), v = k => cs.getPropertyValue('--' + k).trim();
+  return {accent: v('accent'), danger: v('danger'), ok: v('ok'), warn: v('warn'), text: v('text'), muted: v('muted'), surface: v('surface2'), border: v('border')};
+}
+// Mount the 3D view in #lab-stage. Returns null (with a message) if the module or WebGL isn't available;
+// every lab still works from the device list then.
+async function mountLabView(seq){
+  const stage = $('#lab-stage');
+  let mod = null;
+  try{ mod = await import('./3d/dist/lab.js'); }catch(e){}
+  if (!sheetIs(seq)) return null;
+  const fail = msg => { stage.innerHTML = `<div class="lab-msg" id="lab-fallback">${esc(msg)}</div>`; return null; };
+  if (!mod) return fail("The 3D view couldn't load (it needs a connection the first time). You can still do the lab using the device list.");
+  stage.innerHTML = '';
+  try{ labView = mod.mountLab(stage, LABS, {colors: labColors(), onPick: (k, id) => labPick && labPick(k, id)}); }
+  catch(e){ labView = null; return fail("3D isn't available on this device (WebGL is turned off). You can still do the lab using the device list."); }
+  stage.insertAdjacentHTML('beforeend', '<div class="lab-tools"><button id="lab-home" aria-label="Reset view" title="Reset view">⟲</button></div>');
+  $('#lab-home').onclick = () => labView && labView.focus(null);
+  return labView;
+}
+function deviceSelect(){
+  const groups = LABS.zones.map(z => [z.name, LABS.nodes.filter(n => n.zone === z.id)]).concat([['Between zones', LABS.nodes.filter(n => !n.zone)]]);
+  return `<select class="lab-select" id="lab-select" aria-label="Device"><option value="">Choose a device…</option>${groups.filter(g => g[1].length)
+    .map(([name, ns]) => `<optgroup label="${esc(name)}">${ns.map(n => `<option value="${esc(n.id)}">${esc(n.name)}</option>`).join('')}</optgroup>`).join('')}</select>`;
+}
+function lessonLinks(ids){
+  const ls = (ids || []).map(id => CYSA && CYSA.lessons.find(l => l.id === id)).filter(Boolean);
+  return ls.length ? `<div class="small muted" style="margin-top:10px">Lessons</div><div class="links" style="margin-top:6px">${ls.map(l =>
+    `<button class="pill accent" data-lesson="${esc(l.id)}">${esc(l.id)} ${esc(l.title)}</button>`).join('')}</div>` : '';
+}
+const wireLessonLinks = root => root.querySelectorAll('[data-lesson]').forEach(b => b.onclick = () => openLesson(b.dataset.lesson));
+
+async function openLabs(){
+  openSheet('3D network labs', '<div class="card empty">Loading…</div>');
+  const seq = sheetSeq;
+  await loadLabs(); if (!sheetIs(seq)) return;
+  if (!LABS){ $('#sheet-body').innerHTML = `<div class="card empty" id="labs-empty">Couldn't load the labs. Check your connection and try again.</div>`; return; }
+  const done = getLabs();
+  $('#sheet-body').innerHTML = `<div id="labs-list"><p class="small muted" style="margin-top:0">A small office network in 3D. Explore it to learn what each device does and which logs it gives you, then work through incidents as the analyst: tap the device you'd check or contain, and answer the calls an analyst has to make. Answers count toward your accuracy, XP, quests and streak.</p>
+    <button class="lab-row" data-lab=""><span style="font-size:22px">🧭</span><span class="grow"><span class="t">Explore the network</span><br><span class="small muted">Tap any device or zone: its role, its logs and the lessons that cover it</span></span></button>
+    <h2>Incidents</h2>
+    ${LABS.scenarios.map(s => { const r = done[s.id]; return `<button class="lab-row" data-lab="${esc(s.id)}"><span class="check ${r ? 'done' : ''}">${r ? '✓' : ''}</span>
+      <span class="grow"><span class="t">${esc(s.title)}</span><br><span class="small muted">Domain ${esc(s.domain)} · ${s.steps.length} steps · lessons ${esc((s.lessons || []).join(', '))}</span></span>
+      ${r ? `<span class="pill">${r.best}/${r.t}</span>` : ''}</button>`; }).join('')}</div>`;
+  $('#sheet-body').querySelectorAll('[data-lab]').forEach(b => b.onclick = () => openLab(b.dataset.lab || null));
+}
+async function openLab(id){
+  await loadLabs();
+  const s = LABS && id ? LABS.scenarios.find(x => x.id === id) : null;
+  if (!LABS || (id && !s)) return openLabs();
+  openSheet(s ? s.title : 'Explore the network', `<div class="lab-stage" id="lab-stage"><div class="lab-msg">Loading 3D view…</div></div><div id="lab-panel"></div>`);
+  const seq = sheetSeq;
+  $('#lab-stage').style.top = $('#sheet-head').offsetHeight + 'px';
+  if (s) runLab(s, seq); else exploreLab(seq);
+}
+async function exploreLab(seq){
+  const panel = $('#lab-panel');
+  const intro = `<p class="small muted" style="margin-top:0">Drag to rotate, pinch to zoom. Tap a device or a zone name to learn about it.</p>`;
+  const pickRow = `<div class="small muted">Or choose a device:</div>${deviceSelect()}`;
+  const wire = () => { const sel = $('#lab-select'); sel.onchange = () => sel.value && showNode(sel.value); wireLessonLinks(panel); };
+  const showNode = id => {
+    const n = labNode(id); if (!n) return;
+    labView && labView.select(id);
+    panel.innerHTML = `<div class="card" id="lab-info"><div class="small muted">${esc(labZoneName(n.zone))}</div>
+      <div style="font-weight:700;font-size:17px;margin:2px 0 8px">${esc(n.name)}</div><div>${esc(n.role)}</div>
+      <div class="box tip"><b>What it tells an analyst</b>${esc(n.logs)}</div>${lessonLinks(n.lessons)}</div>${pickRow}`;
+    wire(); $('#lab-select').value = id;
+  };
+  const showZone = id => {
+    const z = LABS.zones.find(x => x.id === id); if (!z) return;
+    labView && labView.select(null);
+    const ns = LABS.nodes.filter(n => n.zone === id);
+    panel.innerHTML = `<div class="card" id="lab-info"><div class="small muted">Zone</div><div style="font-weight:700;font-size:17px;margin:2px 0 8px">${esc(z.name)}</div>
+      <div>${esc(z.desc)}</div>${ns.length ? `<div class="links" style="margin-top:10px">${ns.map(n => `<button class="pill" data-node="${esc(n.id)}">${esc(n.name)}</button>`).join('')}</div>` : ''}</div>${pickRow}`;
+    wire(); panel.querySelectorAll('[data-node]').forEach(b => b.onclick = () => showNode(b.dataset.node));
+  };
+  panel.innerHTML = intro + pickRow; wire();
+  labPick = (k, id) => k === 'node' ? showNode(id) : showZone(id);
+  await mountLabView(seq);
+}
+async function runLab(s, seq){
+  const panel = $('#lab-panel'), n = s.steps.length;
+  let i = 0, correct = 0;
+  // Run a step's animation list: {packet: [ids], tone}, {state: {id: "bad"|"contained"|"normal"}}, {focus: id|null}.
+  const act = async acts => {
+    for (const a of acts || []){
+      if (!sheetIs(seq) || !labView) return;
+      if (a.packet) await labView.packet(a.packet, a.tone || 'bad');
+      if (a.state) Object.entries(a.state).forEach(([id, st]) => labView.setState(id, st));
+      if ('focus' in a) await labView.focus(a.focus);
+    }
+  };
+  const step = async () => {
+    const st = s.steps[i], q = {domain: st.domain || s.domain, qid: `lab:${s.id}#${i}`};
+    labPick = null; labView && labView.select(null);
+    $('#sheet').scrollTop = 0; // the story starts right under the pinned 3D view
+    panel.innerHTML = `<div class="q-progress">Step ${i + 1} of ${n}</div><div class="lab-story" id="lab-story">${esc(st.story)}</div><div id="lab-q" hidden></div>`;
+    await act(st.show); if (!sheetIs(seq)) return;
+    const box = $('#lab-q'); box.hidden = false;
+    const answered = async (ok, pre = '') => {
+      if (ok) correct++;
+      const xp = recordAnswer(q, ok), ex = box.querySelector('.explain');
+      ex.hidden = false;
+      ex.innerHTML = `<b style="color:${ok ? 'var(--ok)' : 'var(--danger)'}">${ok ? 'Correct.' : 'Not quite.'}</b>${xpTag(xp)} ${esc(pre)}${esc(st.explain)}`;
+      const nb = document.createElement('button');
+      nb.className = 'btn primary block'; nb.id = 'lab-next'; nb.textContent = i === n - 1 ? 'See result' : 'Next'; nb.disabled = true;
+      box.querySelector('.q-next').appendChild(nb);
+      await act(st.after); if (!sheetIs(seq)) return;
+      nb.disabled = false;
+      nb.onclick = () => { if (++i < n) step(); else finish(); };
+    };
+    if (st.type === 'pick'){
+      box.innerHTML = `<div class="q-text">${esc(st.q)}</div><div class="small muted">${labView ? 'Tap the device in the 3D view, or choose it here:' : 'Choose a device:'}</div>
+        ${deviceSelect()}<button class="btn primary block" id="lab-confirm" disabled>Confirm</button><div class="explain" hidden></div><div class="q-next"></div>`;
+      const sel = $('#lab-select'), conf = $('#lab-confirm'), answers = [].concat(st.answer);
+      const choose = id => { sel.value = id || ''; conf.disabled = !id; conf.textContent = id ? 'Confirm: ' + labNode(id).name : 'Confirm'; labView && labView.select(id || null); };
+      labPick = (k, id) => { if (k === 'node') choose(id); };
+      sel.onchange = () => choose(sel.value);
+      conf.onclick = () => {
+        const pick = sel.value; if (!pick) return;
+        labPick = null; sel.disabled = true; conf.hidden = true;
+        const ok = answers.includes(pick);
+        if (!ok) labView && labView.select(answers[0]); // show where the answer was
+        answered(ok, ok ? '' : `You picked ${labNode(pick).name}; the answer is ${answers.map(a => labNode(a).name).join(' or ')}. `);
+      };
+    } else {
+      box.innerHTML = `<div class="q-text">${esc(st.q)}</div>${shuffle(st.options.map((o, k) => k)).map(k => `<button class="opt" data-i="${k}">${esc(st.options[k])}</button>`).join('')}
+        <div class="explain" hidden></div><div class="q-next"></div>`;
+      box.querySelectorAll('.opt').forEach(b => b.onclick = () => {
+        const pick = +b.dataset.i;
+        box.querySelectorAll('.opt').forEach(o => { o.disabled = true;
+          if (+o.dataset.i === st.answer) o.classList.add('correct'); else if (+o.dataset.i === pick) o.classList.add('wrong'); });
+        answered(pick === st.answer);
+      });
+    }
+  };
+  const finish = () => {
+    const labs = getLabs(), prev = labs[s.id];
+    labs[s.id] = {best: Math.max(correct, prev ? prev.best || 0 : 0), t: n, date: todayKey()};
+    store.set('labs', labs); // before logRound, so the badge check sees it
+    const pct = Math.round(correct / n * 100);
+    panel.innerHTML = `<div class="card" id="lab-result" style="text-align:center"><div style="font-size:40px;font-weight:800;color:var(--accent)">${pct}%</div>
+      <div>${correct} of ${n} calls right</div><div class="small muted" style="margin-top:6px">${pct === 100 ? 'Clean response: every call right.' : 'Read the explanations above again, then revisit the lessons below.'}</div>
+      <div style="text-align:left">${lessonLinks(s.lessons)}</div>
+      <div class="row" style="gap:8px;margin-top:8px"><button class="btn grow" id="lab-again">Try again</button><button class="btn primary grow" id="lab-all">All labs</button></div></div>`;
+    wireLessonLinks(panel);
+    $('#lab-again').onclick = () => openLab(s.id);
+    $('#lab-all').onclick = openLabs;
+    logRound({c: correct, t: n, type: 'lab', lab: s.id}, XP.quiz, 'Lab complete');
+  };
+  panel.innerHTML = `<div class="small muted">Domain ${esc(s.domain)} · ${n} steps</div><p>${esc(s.intro)}</p>
+    <button class="btn primary block" id="lab-start" disabled>Loading…</button>`;
+  await mountLabView(seq); if (!sheetIs(seq)) return;
+  const start = $('#lab-start'); start.disabled = false; start.textContent = 'Start';
+  start.onclick = step;
+}
+$('#labs-btn').onclick = openLabs;
 $('#pbq-practice').onclick = startPBQ;
 $('#review-quiz').onclick = startReview;
 $('#quick-quiz').onclick = () => startQuiz(10, false);
@@ -1892,6 +2093,7 @@ $('#install-dismiss').onclick = () => { store.set('hintDismissed', true); $('#in
   persistStorage();
   await loadNews(false);
   renderLearn();
+  loadLabs().then(renderLearn);
   const start = location.hash.slice(1);
   if (['brief', 'news', 'learn', 'cards'].includes(start)) show(start);
   if (start === 'today'){ show('brief'); openTodayBrief(); }
@@ -1901,6 +2103,7 @@ $('#install-dismiss').onclick = () => { store.set('hintDismissed', true); $('#in
 document.addEventListener('visibilitychange', () => {
   if (document.hidden) return;
   if (!CYSA) loadCysa().then(() => { seedXP(); seedDays(); checkBadges(); renderLearn(); renderBrief(); }).catch(() => {}); // first launch was offline
+  if (!LABS) loadLabs().then(renderLearn);
   loadNews(false); renderTodayLink();
 });
 if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});

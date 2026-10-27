@@ -1,14 +1,15 @@
 # Sec-Pulse 3D
 
-Procedural security-themed 3D models (padlock, shield, server rack, network globe) built with [three.js](https://threejs.org/) in TypeScript. Open `/3d/` on the Pages site. Drag to orbit, pinch or scroll to zoom, and **⬇ .glb** downloads the current model.
+TypeScript source for the app's **3D network labs** (Learn → 🌐 3D network labs), drawn with [three.js](https://threejs.org/). Full documentation: [context/labs.md](../context/labs.md).
 
-- `src/models.ts`: the models. Each `ModelDef` has a `build()` that returns a `THREE.Group` plus an optional per-frame `update(t)` for idle animation. Add a model by appending to `MODELS`.
-- `src/main.ts`: scene, lighting, orbit controls, model picker, GLB export.
-- `dist/`: compiled output, **committed** so Pages needs no build step. Rebuild after editing `src/`.
-- three.js loads from jsDelivr through the import map in `index.html`. Keep its version the same as `three` in `package.json`.
+- `src/lab.ts`: scene, camera, labels, picking, packet animation; exports `mountLab()`.
+- `src/devices.ts`: device meshes built from primitives.
+- `dist/`: compiled output, **committed**, because GitHub Pages serves it with no build step. Rebuild after editing `src/`.
+- `vendor/`: three.js 0.170.0 and OrbitControls (MIT, see `vendor/LICENSE`), served same-origin so labs work offline after first use. `index.html`'s import map points `three` here.
 
 ```bash
 cd 3d
 npm install
-npm run build    # or: npm run watch
+npm run build     # or: npm run watch
+npm run vendor    # after changing the three version
 ```
