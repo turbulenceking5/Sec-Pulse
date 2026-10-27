@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-27T22:16:46Z",
+ "generated": "2026-10-27T22:27:45Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -22,7 +22,7 @@
   {
    "name": "ASD / ACSC in the news",
    "ok": true,
-   "count": 2,
+   "count": 3,
    "error": null
   },
   {
@@ -34,13 +34,13 @@
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 8,
+   "count": 7,
    "error": null
   },
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 2,
+   "count": 3,
    "error": null
   },
   {
@@ -105,6 +105,19 @@
   }
  ],
  "items": [
+  {
+   "id": "271b83601f0c",
+   "title": "Third Serengeti Sweep Tops 1,400 Arrests as Investigations Mature",
+   "link": "https://www.darkreading.com/cybersecurity-operations/third-serengeti-sweep-1400-arrests-investigations-mature",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-28T06:00:00Z",
+   "summary": "Interpol's annual Operation Serengeti, now on its third iteration, led to 1,462 arrests across 20 African countries and the US, recovering $105 million in stolen funds.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
   {
    "id": "78275c0ac59e",
    "title": "UNM Health ransomware attack disrupts patient care, surgeries",
@@ -263,6 +276,23 @@
    ],
    "why": [
     "Real estate"
+   ]
+  },
+  {
+   "id": "d6b3b36b0050",
+   "title": "SpaceXAI class action lawsuit claims Grok AI tool violates Illinois privacy law",
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOZzF5ckxxS3kxZWg3Y2o1RS1wUU1OeVF0dWJvWEVrM2xOZWd2M19oOGoxcmlXdWNXS28zX0s1UUp5bkFMcG16WndWZ3VxMmFieE8zNE5sLUVpTjBpRGF1NlJDLWJ2TDNpZ1dDdnEtblVkMUNqazFvMDZEMmFobXhJUUhEVGhYcFY0U0RiTUdxdTZvbV9aQ0NuaWt1UktRYV9PTzlCZjF3Q0hFNUFWQmFqcThyejNMOXF5bXA4RWU4MjVNOWJfYUNhaW1TN253SkdqVW05UVgyQ0k?oc=5",
+   "source": "Top Class Actions",
+   "feed": "OAIC / Privacy news",
+   "region": "Global",
+   "published": "2026-10-27T17:05:37Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "SaaS / cloud"
+   ],
+   "why": [
+    "SaaS / cloud"
    ]
   },
   {
@@ -1132,6 +1162,23 @@
    "score": 0,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "0778ad851565",
+   "title": "Small Business Supports Legislation to Stop Lawsuit Abuse",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNNmxHd0dQejkzUEZBWGpwYUU3VkVPbjViTlZRSHpSbFBoYkZSU294cDFQUE0xR01EWks1aVZUWFZybWtMYVpSYkN4RVE2YXNaR01mcENxSHVNV0VvUnJXaUZjcVFkTllEaUNhZTNJRVVvaGNfblFQYXZWSjZiLW5ZV2IxQXVEUHJHMEQzQnRNSVAySkVNOHVDNkRiWDNRXzg?oc=5",
+   "source": "NFIB",
+   "feed": "OAIC / Privacy news",
+   "region": "Global",
+   "published": "2026-10-26T21:20:38Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "SaaS / cloud"
+   ],
+   "why": [
+    "SaaS / cloud"
+   ]
   },
   {
    "id": "9b6153963ef5",
@@ -7442,49 +7489,6 @@
      "url": "https://www.bleepingcomputer.com/news/security/beyondtrust-patches-zero-day-exploited-in-attacks-since-august/"
     }
    ]
-  },
-  {
-   "id": "0cd568eb4deb",
-   "title": "Secure.com says ransomware budgets should fix basics first",
-   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNbzdkV1l6X1BydTB0LUZja1kwXy1MM296UE9IbkRhMXY0Q2tjOVc1ZWFiWHpMeW5VaTVQcXpsSkt2RUtiZ1dKMTczNEFma18wTzA3TngzbmxwLXk5SnRBSlZvaEhvd2k2TnFVTUxVT1d1bEFZcGFoN3phMm5GczJGckU1OS1RTDB3YTJ0ZjI5cmRLOHBNZVp3?oc=5",
-   "source": "SecurityBrief New Zealand",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-16T19:56:00Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Ransomware"
-   ],
-   "why": [
-    "Ransomware"
-   ]
-  },
-  {
-   "id": "8e2b4b8581aa",
-   "title": "Fake Claude, ChatGPT Attacks Surge, Putting Developers at Risk",
-   "link": "https://www.darkreading.com/application-security/fake-claude-chatgpt-attacks-developers-risk",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-16T19:49:30Z",
-   "summary": "Campaigns that impersonate popular AI brands are on the rise, and they typically use ClickFix-like tactics to target unsuspecting enterprise employees.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "b8b7cb7d4b49",
-   "title": "Biomemory Launches DNA Shield, First Commercial Product Built on Its Molecular IT Platform",
-   "link": "https://www.darkreading.com/data-privacy/biomemory-launches-dna-shield",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-16T19:22:12Z",
-   "summary": "The launch follows the acquisition of catalog's assets and the appointment of Laurent Guengant as CEO earlier this year.",
-   "score": 0,
-   "tags": [],
-   "why": []
   }
  ]
 }
