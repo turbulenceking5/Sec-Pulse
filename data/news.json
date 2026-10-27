@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-27T15:22:53Z",
+ "generated": "2026-10-27T22:16:46Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -22,7 +22,7 @@
   {
    "name": "ASD / ACSC in the news",
    "ok": true,
-   "count": 3,
+   "count": 2,
    "error": null
   },
   {
@@ -34,13 +34,13 @@
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 6,
+   "count": 8,
    "error": null
   },
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 5,
+   "count": 2,
    "error": null
   },
   {
@@ -52,7 +52,7 @@
   {
    "name": "CISA KEV",
    "ok": true,
-   "count": 19,
+   "count": 21,
    "error": null
   },
   {
@@ -100,11 +100,243 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 24,
+   "count": 26,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "78275c0ac59e",
+   "title": "UNM Health ransomware attack disrupts patient care, surgeries",
+   "link": "https://www.bleepingcomputer.com/news/security/unm-health-ransomware-attack-disrupts-patient-care-surgeries/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-27T22:07:34Z",
+   "summary": "The University of New Mexico Health Sciences Center disclosed a cyberattack that caused system outages and disrupted patient care and academic activities. [...]",
+   "score": 4,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
+  },
+  {
+   "id": "2db299f6a190",
+   "title": "3 Frameworks to Protect CISOs & Orgs Against AI Liability",
+   "link": "https://www.darkreading.com/cyber-risk/3-frameworks-cisos-ai-liability",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-27T21:15:03Z",
+   "summary": "Cyber leaders can get ahead of AI liability with rigorous documentation, transparency, and smart contract negotiations with AI vendors.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "7477a331e67f",
+   "title": "Hackers hijack Convertr analytics script to steal payment card data",
+   "link": "https://www.bleepingcomputer.com/news/security/hackers-hijack-convertr-analytics-script-to-steal-payment-card-data/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-27T20:57:25Z",
+   "summary": "A credit card skimming group reportedly compromised a shared analytics script used by e-commerce platform Convertr to steal shoppers' payment data during checkout. [...]",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "e77674105596",
+   "title": "External Teams Chats Anchor 15-Minute Malware Delivery",
+   "link": "https://www.darkreading.com/cloud-security/email-bombing-external-teams-chats-repeatable-access-path",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-27T20:42:40Z",
+   "summary": "Main bombing sis getting a new look with a wide-scale, ongoing social engineering campaign that might be tied to the Black Basta ransomware gang.",
+   "score": 3,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
+  },
+  {
+   "id": "813b17fabd38",
+   "title": "Trustee Secretly Self-deals In Breach Of Trust: When Does The Statute-of-limitations’ Clock Start To Run Against The Beneficiary?",
+   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOUURGWWlnVnVnMmRsLVVBMlp4SzQzWjBXazRrU2l1VTJDcVNRa2JMZHNzb2NEcVJpVmJhSVBXSHBWNTFTbVNnWW9TQl9XY0Z6am5uRGdheUpUOV9MS21QRzNDZVU5QjZMUVNxTG1LbEhDYXc0d2VUaUQ3RVJKZFRydVFvN1Zka3M?oc=5",
+   "source": "JD Supra",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-27T20:07:39Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "67aef7e7b7c4",
+   "title": "SBOMs Alone Can't Reveal the Scope of a Supply Chain Attack",
+   "link": "https://www.darkreading.com/cyber-risk/sboms-alone-scope-supply-chain-attack",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-27T19:58:06Z",
+   "summary": "A recent Shai-Hulud attack shows defenders need real-time visibility into production code and affected services to respond to supply chain compromises.",
+   "score": 6,
+   "tags": [
+    "Microsoft 365",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Microsoft 365",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "d09366a97fc8",
+   "title": "CyberStrikeAI Uses 44 AI Agents to Automate Hacking Operations Against Japan Targets",
+   "link": "https://thehackernews.com/2026/10/cyberstrikeai-uses-44-ai-agents-to.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-27T18:26:46Z",
+   "summary": "Cybersecurity researchers have disclosed details of three cyber attacks targeting organizations in Japan in which artificial intelligence (AI) was a key element, either in the driving seat or to assist a human operator. TrendAI, which analyzed three exposed server environments used by threat…",
+   "score": 3,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "9df47a48bc7e",
+   "title": "Microsoft releases Windows OOB updates to distrust eMudhra certificates",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-oob-updates-to-distrust-emudhra-certificates/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-27T18:20:28Z",
+   "summary": "Microsoft has released out-of-band (OOB) Windows updates to remove trust in certificates tied to compromised eMudhra certificate authority keys, protecting systems that do not receive automatic certificate trust updates. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "a8008ad652a3",
+   "title": "Beware the Slasher: AI Could Kill Off Cybersecurity Pros' Skills",
+   "link": "https://www.darkreading.com/cybersecurity-operations/ai-kill-off-cybersecurity-pros-skills",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-27T17:43:07Z",
+   "summary": "Nathan Hamiel outlines potential SecOps horror in the AI midst, as core technical capabilities go the way of reading an atlas or remembering phone numbers.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "f4d2a287e7ba",
+   "title": "Glasscock County Sheriff's Office cautions residents about real estate scam",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPVFdIZHc4V2Z0LWdxcFBvZUpxS3JGdmFxVEJ3WGNSUXZubWUtMEdidGtzMkVoM1Q0cUUxcHJqdTJFQ1A2a09Ydl91Y1JtVlBKSjZuSFI4YjFyOTFZY2wta3h2ZW1ZZlhuWW1EdVltc1AwaWwzQkp2VTBfMUZZYVJraHRpRWxtd21FWGVJSUFLM25kOUhTZWxR?oc=5",
+   "source": "Yahoo",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-27T17:25:09Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
+   "id": "c64d4188c21b",
+   "title": "'Aokigahara' Stealer Targets 'Developer Keyrings' & AI Assistants",
+   "link": "https://www.darkreading.com/endpoint-security/aokigahara-stealer-developer-keyrings-ai-assistants",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-27T16:47:20Z",
+   "summary": "The malware's focus on AI tools expands the traditional infostealer playbook to expose a forest of AI sessions, sensitive business data, and developer infrastructure from a single compromised endpoint.",
+   "score": 3,
+   "tags": [
+    "Identity"
+   ],
+   "why": [
+    "Identity"
+   ]
+  },
+  {
+   "id": "db852607b136",
+   "title": "Warp discloses breach exposing AI agent logs, user telemetry data",
+   "link": "https://www.bleepingcomputer.com/news/security/warp-discloses-breach-exposing-ai-agent-logs-user-telemetry-data/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-27T16:15:39Z",
+   "summary": "Agent decision logs and telemetry data belonging to Warp agentic development environment users were exposed in an attack on a third-party vendor in the project's infrastructure. [...]",
+   "score": 6,
+   "tags": [
+    "Data breach",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Data breach",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "bf75d536c908",
+   "title": "Ex-employee files Redfin data breach class action over retained data",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQQk01b0RPanFraGxBVXdHR0Z1dXVna2ozYVV6N1lORy1hNy02MjRUdnBYU1pjZHE3bFowZTZsWHhKRjdsTWhVYzRtODlCbVBlNTQwR1paR1BOcy1mRGx0OUdRbm1qU0k3Q1NRMlBXd3oxLWFhNjQ4YkMzY20yMkdJdV8xVDN5VEVBUjVjSUZOMEltMmRwb3RkWERLSDB2VmdodjhwdEZLYks2R1pCQmlneVROZHhheVJ2OC1HdWVyMnE2Vi13a1h2OEl3?oc=5",
+   "source": "Top Class Actions",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-27T16:05:51Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "820476dc1929",
+   "title": "Tailscale Rushes Patches After Uncoordinated Disclosure of ‘Tailworm’ Flaws",
+   "link": "https://www.securityweek.com/tailscale-rushes-patches-after-uncoordinated-disclosure-of-tailworm-flaws/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-27T15:26:12Z",
+   "summary": "Tailscale is preparing a patch for Tailscale SSH flaws whose details went public over the weekend, before any fixes had been released. The post Tailscale Rushes Patches After Uncoordinated Disclosure of ‘Tailworm’ Flaws appeared first on SecurityWeek .",
+   "score": 5,
+   "tags": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ]
+  },
   {
    "id": "94e63b69eea8",
    "title": "Third-party cyber risk exposed by ZenTech ransomware breach",
@@ -171,6 +403,23 @@
    ]
   },
   {
+   "id": "ae042a0b53b2",
+   "title": "GoAhead TLS Flaws Allow Revoked Client Certificates and Enable Session Decryption",
+   "link": "https://thehackernews.com/2026/10/goahead-tls-flaws-allow-revoked-client.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-27T13:59:48Z",
+   "summary": "The GoAhead embedded web server loaded a certificate revocation list into its default TLS backend but never turned revocation checking on, so a revoked client certificate could still pass login on affected setups. The flaw is in builds that use the OpenSSL backend with mutual-TLS, where the server…",
+   "score": 3,
+   "tags": [
+    "SaaS / cloud"
+   ],
+   "why": [
+    "SaaS / cloud"
+   ]
+  },
+  {
    "id": "41ce8592d3fb",
    "title": "Vendor Key Leak Puts Data of 238,000 Denver Health Plan Members at Risk",
    "link": "https://www.securityweek.com/vendor-key-leak-puts-data-of-238000-denver-health-plan-members-at-risk/",
@@ -204,6 +453,23 @@
    "why": [
     "Vulnerability",
     "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "43a91f583017",
+   "title": "Kenya's Cyber Threats Surge 14.45 Percent to 2.6 Billion Events in a Single Quarter",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOUGJQM0FKTVpxNDFGMDE1X0pwMm11RWU2dWs3emRiT0w2Z2ZqR3pMS0tEdlpLclBzeGFfSldiZFJjeGNsM0cxTUF3Q3VORzRFWUpraXpCNG01SS1uUHJ3V0N1QTlZZWs1Ni1pWHlEcFlsM0tHem1EZjJyZWEyOWhvY21mYUt5aGctMEdGY2xac19MMWNwX0gwTG91ZXlCUG5ULUlWamdIYjZPNnAyZ1dUQl80S2J0QlJLZ1Qw?oc=5",
+   "source": "Mwakilishi.com",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-27T12:59:51Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
    ]
   },
   {
@@ -356,7 +622,14 @@
    "why": [
     "Actively exploited",
     "Vulnerability"
-   ]
+   ],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/apple-backports-fix-for-exploited.html"
+    }
+   ],
+   "epss": 0.2617
   },
   {
    "id": "177d2de823fd",
@@ -755,6 +1028,46 @@
    "why": [
     "Vulnerability"
    ]
+  },
+  {
+   "id": "44a5cf1a9a6f",
+   "title": "CVE-2026-48356: Adobe Commerce and Magento — Adobe Commerce and Magento Unrestricted Upload of File with Dangerous Type Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-48356",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-10-27T00:00:00Z",
+   "summary": "Adobe Commerce and Magento contain an unrestricted upload of file with dangerous type vulnerability that could result in arbitrary code execution in the context of the current user, potentially gaining elevated access or control over the victim's account or… CISA remediation due 2026-11-10.",
+   "score": 4,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.3058
+  },
+  {
+   "id": "a77dca8ee96e",
+   "title": "CVE-2026-111497: Google Brotli — Google Brotli Unchecked Return Value Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-111497",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-10-27T00:00:00Z",
+   "summary": "Google Brotli contains an unchecked return value vulnerability that allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using… CISA remediation due 2026-11-10.",
+   "score": 4,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.5548
   },
   {
    "id": "d1471d8c2286",
@@ -7169,288 +7482,6 @@
    "region": "Global",
    "published": "2026-10-16T19:22:12Z",
    "summary": "The launch follows the acquisition of catalog's assets and the appointment of Laurent Guengant as CEO earlier this year.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "714d202db596",
-   "title": "Enterprise AI Enters Risk Management Phase as Security Concerns Rise",
-   "link": "https://www.darkreading.com/cyber-risk/enterprise-ai-risk-management-phase-security-concerns-rise",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-16T19:13:59Z",
-   "summary": "Companies are increasingly discovering that the challenge with AI is no longer adoption, but execution.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "0a0234023332",
-   "title": "AI Takes Control of Robotic Arm in 16 Minutes Flat",
-   "link": "https://www.darkreading.com/ics-ot-security/ai-takes-control-robotic-arm-16-minutes",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-16T18:37:50Z",
-   "summary": "Most OT devices at utilities, factories, and elsewhere have been deployed for a decade or more, but operators need to get agile and deploy new cyber defenses.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "2f67e7ff74fc",
-   "title": "Researchers Demonstrate OpenBSD Root Exploit Chaining 37-Year-Old Shared-Memory Bug",
-   "link": "https://thehackernews.com/2026/10/researchers-demonstrate-openbsd-root.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-16T17:48:45Z",
-   "summary": "A local privilege escalation exploit published today gains root on OpenBSD 7.9 by chaining a roughly 37-year-old integer overflow with a separate kernel flaw, bypassing OpenBSD's KARL kernel-address randomization and its SMAP and SMEP hardware protections.Security firm Calif, which found and…",
-   "score": 1,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "50880c900177",
-   "title": "Targeted ads installed Candiru spyware in zero-click attacks",
-   "link": "https://www.bleepingcomputer.com/news/security/zero-click-attacks-used-targeted-ads-to-deliver-candiru-spyware/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-16T17:20:03Z",
-   "summary": "Candiru spyware was delivered to devices at Al Jazeera Media Network via targeted online advertisements in a zero-click attack that required only rendering the malicious ads on the victim's device. [...]",
-   "score": 0,
-   "tags": [],
-   "why": [],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/citizen-lab-traces-zero-click-candiru.html"
-    }
-   ]
-  },
-  {
-   "id": "8fcaa4195067",
-   "title": "Accused Beijing Agent’s Underground Money Transfers and Real Estate Circle Bring MSS Spy Case Into Cartel and Scam Compound Terrain",
-   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1OUEVYUFNxeElrcVJkUDNXcnhVaU5FWm95Y1BQb2xaaEwzZ2xWamdfcDFuRmRrT0o1SkFpZS0walNVdUpQb3p5TlR0N29zNDJRY2ZTcXU2WllLNUNJdV9HcTVnZWdzLTRaQVRpWWxScGk?oc=5",
-   "source": "The Bureau | Sam Cooper | Substack",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-16T17:15:12Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ]
-  },
-  {
-   "id": "2f6312b7767d",
-   "title": "Attackers Tampered with AOMEI Backupper's Update Servers for Minutes to Deliver a Backdoor",
-   "link": "https://thehackernews.com/2026/10/attackers-tampered-with-aomei.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-16T16:43:39Z",
-   "summary": "Attackers repeatedly changed the files that AOMEI Backupper fetches from the vendor's own update servers, in windows of five to ten minutes at a time between May and July 2026, so that any copy of the Windows backup program that checked for an update during one of those windows would download and…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "7ca539292393",
-   "title": "UAT-11985 Uses Fake Event Invites to Target Taiwan Research Affiliates With Google AitM Phishing",
-   "link": "https://thehackernews.com/2026/10/uat-11985-uses-fake-event-invites-to.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-16T16:16:44Z",
-   "summary": "Cybersecurity researchers have disclosed details of an advanced persistent threat (APT) spear-phishing campaign that has targeted individuals affiliated with Taiwan research organizations to direct victims to an adversary-in-the-middle (AitM) phishing framework designed to harvest their Google…",
-   "score": 4,
-   "tags": [
-    "Phishing"
-   ],
-   "why": [
-    "Phishing"
-   ]
-  },
-  {
-   "id": "c094ac3382c9",
-   "title": "Managing open-weight model risk in enterprise deployments",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/10/16/managing-open-weight-model-risk-in-enterprise-deployments/",
-   "source": "Microsoft Security Blog",
-   "feed": "Microsoft Security Blog",
-   "region": "Global",
-   "published": "2026-10-16T16:00:00Z",
-   "summary": "New whitepaper from Microsoft and NVIDIA helps enterprises manage open-weight AI model risks with a shared taxonomy, evaluations, and controls. The post Managing open-weight model risk in enterprise deployments appeared first on Microsoft Security Blog .",
-   "score": 1,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "c84ec4adaad2",
-   "title": "CT Settles 2024 Data Breach That Compromised Information Of 58,000 Residents",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNSkVYWXlhbFBoYV9ONzF4d3lQcERoM1BDZ3phSGc4Yy1JVElRXzRBYVoxamRhalI0WTA3UWdZQ2lTa0U2TWdwYWxScVBadjRMOXhnRjlXNUdjQS0xMzNtdzZaNWhCR2FmclpxUk54ODFaZnlrSkJhT0tKUGxpQWdJbzRkeFpyeDFZWmNhNFVPbkQ3OTNqbEtNWVNKWUFpbTM2UkpHSVJPcXo2WnFIbnMyZS1B?oc=5",
-   "source": "CT News Junkie",
-   "feed": "OAIC / Privacy news",
-   "region": "Global",
-   "published": "2026-10-16T14:13:24Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "7a1f49cfc715",
-   "title": "In Other News: ICS-Sniper Attack, Hacking XWorm Malware Operators, $250k Chrome Exploit",
-   "link": "https://www.securityweek.com/in-other-news-ics-sniper-attack-hacking-xworm-malware-operators-250k-chrome-exploit/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-16T14:09:51Z",
-   "summary": "Noteworthy stories that might have slipped under the radar: BofA adds 1,000 patching contractors, KGB RAT pairs data theft with jump scares, and Langflow flaw under attack. The post In Other News: ICS-Sniper Attack, Hacking XWorm Malware Operators, $250k Chrome Exploit appeared first on…",
-   "score": 1,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "82bd71e8965d",
-   "title": "OpenAI Research Model Spent 3rd-Party Test ETH Without Permission to Deploy Smart Contract",
-   "link": "https://thehackernews.com/2026/10/openai-research-model-spent-3rd-party.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-16T14:03:04Z",
-   "summary": "OpenAI has disclosed seven new incidents in which its artificial intelligence (AI) models exhibited misaligned behavior, including one case where its research model, after not having funds on an Ethereum test network, spent test cryptocurrency from a third-party's wallet without authorization to…",
-   "score": 2,
-   "tags": [
-    "SaaS / cloud"
-   ],
-   "why": [
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "834a248937df",
-   "title": "When Your Ransomware Negotiator Works for the Other Side",
-   "link": "https://www.darkreading.com/cyber-risk/when-your-ransomware-negotiator-works-other-side",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-16T14:00:00Z",
-   "summary": "The shocking arrest of a well-known ransomware negotiator reveals the critical need for vendor program oversight.",
-   "score": 4,
-   "tags": [
-    "Ransomware"
-   ],
-   "why": [
-    "Ransomware"
-   ]
-  },
-  {
-   "id": "d269ee990910",
-   "title": "Employees using personal ChatGPT at work? Here's what IT admins need to do",
-   "link": "https://www.bleepingcomputer.com/news/security/employees-using-personal-chatgpt-at-work-heres-what-it-admins-need-to-do/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-16T13:50:59Z",
-   "summary": "Employees using personal ChatGPT accounts at work can expose sensitive company data, even when their organization provides an approved Enterprise workspace. NordLayer explains how IT teams can investigate unauthorized AI use and block sensitive information before it reaches personal accounts. [...]",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "48b9aea0ee83",
-   "title": "When AI Agents Commit Breaches, Humans May Not Be Held Liable",
-   "link": "https://www.darkreading.com/insider-threats/ai-agents-breaches-humans-liable",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-16T13:00:00Z",
-   "summary": "As agents escape containment and access external systems, responsibility remains human. Accountability, however, is much less settled.",
-   "score": 4,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "862e2db1b4e0",
-   "title": "Burger King Japan data breach exposes 11 million customer records",
-   "link": "https://www.bleepingcomputer.com/news/security/burger-king-japan-data-breach-exposes-11-million-customer-records/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-16T12:01:29Z",
-   "summary": "Burger King Japan, the Japanese subsidiary of global fast-food giant Burger King, disclosed a major data breach after attackers accessed a server containing 11.18 million customer records. [...]",
-   "score": 4,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "754b8af5c24d",
-   "title": "BAE Systems Security Incident Stalls Notices From US Bankruptcy Courts",
-   "link": "https://www.securityweek.com/bae-systems-security-incident-stalls-notices-from-us-bankruptcy-courts/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-16T11:46:40Z",
-   "summary": "A cyber incident affecting contractor BAE Systems has knocked out the Bankruptcy Noticing Center, halting notices nationwide for a week. The post BAE Systems Security Incident Stalls Notices From US Bankruptcy Courts appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": [],
-   "also": [
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/bae-systems-cyberattack-disrupts-us-federal-court-operations/"
-    }
-   ]
-  },
-  {
-   "id": "61ac6bfaa7c9",
-   "title": "AI Decision Models and Their Impact on AI SOC Platforms",
-   "link": "https://thehackernews.com/2026/10/ai-decision-models-and-their-impact-on.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-16T11:30:00Z",
-   "summary": "In the space of a month, a new category of AI model went from nonexistent to everywhere. TypeSafe AI released Jev on September 15 and called it a System One model, a nod to Kahneman's fast, intuitive thinking. OpenAI announced its own Decisions API at DevDay and opened a public beta on October 6.…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "3042b8d5fd6d",
-   "title": "OpenAI Models Hacked Data Portals, Raided a Crypto Wallet to Finish Tasks",
-   "link": "https://www.securityweek.com/openai-models-hacked-data-portals-raided-a-crypto-wallet-to-finish-tasks/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-16T10:32:11Z",
-   "summary": "Left without funds for a coding task, an OpenAI model spent test crypto from a stranger’s wallet and left it out of its report. The post OpenAI Models Hacked Data Portals, Raided a Crypto Wallet to Finish Tasks appeared first on SecurityWeek .",
    "score": 0,
    "tags": [],
    "why": []
