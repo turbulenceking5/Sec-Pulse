@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-10-27: 3D models
+- **3D models** at `/3d/`: a padlock, shield, server rack and network globe you can spin and zoom, written in TypeScript with three.js. **⬇ .glb** downloads the model for use in other 3D apps.
+
 ## 2026-10-21: 172 new exam questions
 - **Question bank:** 172 new CySA+ questions across all four domains (weighted like the exam), each tagged with its CS0-003 objective. Quick quizzes, practice and timed exams, domain drills, Review mistakes and the question of the day now draw from 253 questions instead of 81.
 - **Practice exams use questions you haven't seen first**, then ones you got wrong, so the score reflects what you know rather than what you remember.
