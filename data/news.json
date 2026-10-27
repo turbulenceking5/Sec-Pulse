@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-27T09:02:39Z",
+ "generated": "2026-10-27T15:22:53Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -16,7 +16,7 @@
   {
    "name": "ACSC (via Google News)",
    "ok": true,
-   "count": 5,
+   "count": 4,
    "error": null
   },
   {
@@ -28,19 +28,19 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 4,
+   "count": 5,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 8,
+   "count": 6,
    "error": null
   },
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 4,
+   "count": 5,
    "error": null
   },
   {
@@ -106,6 +106,327 @@
  ],
  "items": [
   {
+   "id": "94e63b69eea8",
+   "title": "Third-party cyber risk exposed by ZenTech ransomware breach",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQOTdDRDlIdS16dUktRjdRNEFnUFNwNHhTa28yMldqWjdDSnBISmEzd0Y0dkFtUDV0WUVEVUZOMmJHWjFlMlBwbmpIcDlWbGJOOEVyYlA4TVRXWkFMVGpWdDJ6UUZqN0FhV0JYcVBHd01LNVpseTE5Z3NkUDhaODJleXE5NWN3NjZseUlhLTBlQlo4MFRuNi04cVJ5eWVDdV9XRVdPRl9PYUhyd3ljVUVPeGdPbm4zSThBMUpjV1BB?oc=5",
+   "source": "Insurance Business",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-27T14:14:32Z",
+   "summary": "",
+   "score": 13,
+   "tags": [
+    "Ransomware",
+    "Data breach",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Ransomware",
+    "Data breach",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "eeae20ed2a5a",
+   "title": "Tailscale warns of SSH flaws allowing root privilege escalation",
+   "link": "https://www.bleepingcomputer.com/news/security/tailscale-warns-of-serious-ssh-flaws-allowing-root-privilege-escalation/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-27T14:09:46Z",
+   "summary": "The Tailscale security team is working to patch almost a dozen security vulnerabilities that could be exploited to steal credentials, crash servers, gain root privileges, and more. [...]",
+   "score": 7,
+   "tags": [
+    "Identity",
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Identity",
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/unpatched-tailscale-ssh-flaws-could-let.html"
+    }
+   ]
+  },
+  {
+   "id": "b611ff4c270c",
+   "title": "The Huntress Tragic Quadrant: Ranking Threats Hitting Businesses Hardest",
+   "link": "https://www.bleepingcomputer.com/news/security/the-huntress-tragic-quadrant-ranking-threats-hitting-businesses-hardest/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-27T14:01:11Z",
+   "summary": "Attackers are increasingly abusing legitimate IT tools, Microsoft 365 sessions, and everyday workflows to compromise businesses without triggering traditional defenses. Huntress Labs ranks the threats hitting organizations hardest, highlighting which attack techniques deserve immediate attention…",
+   "score": 3,
+   "tags": [
+    "Microsoft 365"
+   ],
+   "why": [
+    "Microsoft 365"
+   ]
+  },
+  {
+   "id": "41ce8592d3fb",
+   "title": "Vendor Key Leak Puts Data of 238,000 Denver Health Plan Members at Risk",
+   "link": "https://www.securityweek.com/vendor-key-leak-puts-data-of-238000-denver-health-plan-members-at-risk/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-27T13:30:28Z",
+   "summary": "A leaked SquareML access key could have been used to access a database containing personal and health information. The post Vendor Key Leak Puts Data of 238,000 Denver Health Plan Members at Risk appeared first on SecurityWeek .",
+   "score": 3,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "243406f675bd",
+   "title": "HPE Patches Dozens of Critical Flaws in Networking Products",
+   "link": "https://www.securityweek.com/hpe-patches-dozens-of-critical-flaws-in-networking-products/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-27T13:13:58Z",
+   "summary": "Eight max-severity security defects could lead to remote code execution and authentication bypass. The post HPE Patches Dozens of Critical Flaws in Networking Products appeared first on SecurityWeek .",
+   "score": 5,
+   "tags": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "19c61499cbc2",
+   "title": "First Breach Completes First Test Flight of Long Range Strike Drone",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQai1OWTkxTEtQMi10QUlreTVBNnZ5WUtEeVotbV9EMDVWV0dkbjcyR2g4RDVlRlp3azM5a1FRXzk4TUk5UEpCZTJQa0Y1SGVTclN0Qy1RbWtWcmxPakhIZjhoY1Q4S2d3b3RONEJxZWxNZXF0TmhLdGhBZzBaRXZVbkNFNUFUVmk0OEVza1YxVjdzYkp5X3lxRXZ3?oc=5",
+   "source": "Yahoo Finance",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-27T12:31:00Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "6a6760a087af",
+   "title": "PHP2Shell Weaponized After Japanese Real Estate Extortion",
+   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQaG9pTV9JYXlkblhCSG1qejd5b2g0eFZ4TmtDLWthMV9oSlFWX1daekdNSi1TLTRrbFprSTJZQTB1QWNmMXBENmxxa3pvUXJUMy1qX2hRc3VjbU5oTkxzY0Y2OTJXWEZwREpnUVoyVE9uQ3ZMU1FQc2JuQldpbFNVRlcxTQ?oc=5",
+   "source": "SOCRadar",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-27T12:27:11Z",
+   "summary": "",
+   "score": 14,
+   "tags": [
+    "Real estate",
+    "Ransomware"
+   ],
+   "why": [
+    "Real estate",
+    "Ransomware"
+   ]
+  },
+  {
+   "id": "a6006728be28",
+   "title": "Microsoft Authenticator Flaw Let Permissionless Android Apps Steal Work Account Tokens",
+   "link": "https://thehackernews.com/2026/10/microsoft-authenticator-flaw-let.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-27T12:09:50Z",
+   "summary": "Microsoft has fixed a flaw in its Authenticator app for Android that let a malicious app with no permissions pose as a trusted Microsoft app, such as Teams, and collect sign-in tokens for a victim's work account. Microsoft tracks the flaw as CVE-2026-80097 and fixed it in Authenticator for Android…",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0053
+  },
+  {
+   "id": "c99aa3fd55df",
+   "title": "iOS, macOS 27.2 Patch 286 Bugs; Fix for Exploited Flaw Backported to iOS 18",
+   "link": "https://www.securityweek.com/ios-macos-27-2-patch-286-bugs-fix-for-exploited-flaw-backported-to-ios-18/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-27T11:49:57Z",
+   "summary": "Apple patched 286 vulnerabilities in iOS and macOS 27.2 and brought the fix for an exploited CoreGraphics zero-day to older iPhones. The post iOS, macOS 27.2 Patch 286 Bugs; Fix for Exploited Flaw Backported to iOS 18 appeared first on SecurityWeek .",
+   "score": 6,
+   "tags": [
+    "Actively exploited",
+    "Vulnerability"
+   ],
+   "why": [
+    "Actively exploited",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "3fba9192c925",
+   "title": "Keystone to Destroy 18,835 Hardware Wallets After Hackers Steal Device Verification Key",
+   "link": "https://thehackernews.com/2026/10/keystone-to-destroy-18835-hardware.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-27T11:46:00Z",
+   "summary": "An attacker who gained access to Keystone's website obtained the key that its hardware wallets use to prove they are genuine, the company said in a statement on October 26. Someone with that key could build counterfeit devices that pass the online check owners use to verify a Keystone. A buyer who…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "1ce9ccf10a03",
+   "title": "AI-Generated Fake Login Pages Are Making Account Takeovers Easier",
+   "link": "https://thehackernews.com/2026/10/ai-generated-fake-login-pages-are.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-27T11:32:46Z",
+   "summary": "Fake login pages are nothing new, but generative AI is making them easier to build and more convincing. Attackers can recreate familiar login screens, impersonate trusted brands and tailor phishing attempts to specific employees or organizations. Some fake login pages go beyond stealing passwords.…",
+   "score": 7,
+   "tags": [
+    "Phishing",
+    "Identity",
+    "AI threats"
+   ],
+   "why": [
+    "Phishing",
+    "Identity",
+    "AI threats"
+   ]
+  },
+  {
+   "id": "cf5c346fcefd",
+   "title": "Lazarus Abuses South Korean Security Software to Deploy Malware Using Post-Quantum Encryption",
+   "link": "https://thehackernews.com/2026/10/lazarus-abuses-south-korean-security.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-27T11:32:31Z",
+   "summary": "The North Korea-linked Lazarus Group has been attributed to a cyber espionage campaign dubbed Operation FlashHole targeting at least three organizations in South Korea spanning the construction, software, and wire-communication equipment manufacturing sectors. According to Russian cybersecurity…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "60e8b957385d",
+   "title": "Risks Spelled Out for Anthropic Investors Include Possible Harms From Runaway AI",
+   "link": "https://www.securityweek.com/risks-spelled-out-for-anthropic-investors-include-possible-harms-from-runaway-ai/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-27T10:44:20Z",
+   "summary": "Anthropic presents its own initial public offering as a step toward mitigating the risks it believes AI poses. The post Risks Spelled Out for Anthropic Investors Include Possible Harms From Runaway AI appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "181378638961",
+   "title": "Apple backports CoreGraphics zero-day patches to older iPhones",
+   "link": "https://www.bleepingcomputer.com/news/apple/apple-backports-coregraphics-zero-day-patches-to-older-iphones/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-27T10:36:12Z",
+   "summary": "​Apple has backported security patches released last month to older iPhones and iPads, addressing a zero-day bug exploited in \"extremely sophisticated\" targeted attacks on iOS devices. [...]",
+   "score": 7,
+   "tags": [
+    "Actively exploited",
+    "Vulnerability"
+   ],
+   "why": [
+    "Actively exploited",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "177d2de823fd",
+   "title": "This is Fine: What NetScaler Zero-Days Tell Us About the New Normal",
+   "link": "https://www.securityweek.com/this-is-fine-what-netscaler-zero-days-tell-us-about-the-new-normal/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-27T10:02:24Z",
+   "summary": "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon. The post This is Fine: What NetScaler Zero-Days Tell Us About the New Normal appeared first on SecurityWeek .",
+   "score": 9,
+   "tags": [
+    "Actively exploited",
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "why": [
+    "Actively exploited",
+    "Edge devices",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "b7087025de0e",
+   "title": "Dead Popcorn Time Updater Put Millions of Computers at Risk of Takeover",
+   "link": "https://www.securityweek.com/dead-popcorn-time-updater-put-millions-of-computers-at-risk-of-takeover/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-27T09:44:50Z",
+   "summary": "Running at system boot, it periodically polled the update domain to execute any code served, with full privileges. The post Dead Popcorn Time Updater Put Millions of Computers at Risk of Takeover appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "1da67faa3c4a",
+   "title": "Australia Gets Into Amadey Malware Backend, Cuts Off Access to 180,000 Infected Computers",
+   "link": "https://thehackernews.com/2026/10/australia-gets-into-amadey-malware.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-27T09:33:06Z",
+   "summary": "A criminal using the Amadey malware can no longer access or steal data from 180,000 infected computers around the world, including some in Australia, the Australian Signals Directorate (ASD) says. The agency's operators gained access to the criminal's operation's backend and cut it off from those…",
+   "score": 5,
+   "tags": [
+    "Australia"
+   ],
+   "why": [
+    "Australia"
+   ]
+  },
+  {
+   "id": "4b38edd6123c",
+   "title": "Energy giant ENGIE discloses data breach affecting customers",
+   "link": "https://www.bleepingcomputer.com/news/security/energy-giant-engie-discloses-data-breach-affecting-customers/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-27T09:25:50Z",
+   "summary": "French energy giant ENGIE, one of the world's largest power and natural gas providers, confirmed that attackers stole customer data after breaching a marketing platform used by business partners. [...]",
+   "score": 4,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
    "id": "9acf4c367c76",
    "title": "Southern Cross Credit Union asks AI agent to handle account balance requests",
    "link": "https://www.itnews.com.au/news/southern-cross-credit-union-asks-ai-agent-to-handle-account-balance-requests-629940?utm_source=feed&utm_medium=rss&utm_campaign=iTnews+Business+feed",
@@ -122,6 +443,55 @@
    "why": [
     "Vulnerability"
    ]
+  },
+  {
+   "id": "245c5884bdd5",
+   "title": "GMO Internet Warns of Noon Ransomware, $50M Demand [2026]",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPbWVhLTJtMUtsSHFPQUdpanFmcmhUYVV6NVVwR29KeGhpTWxBTVVyU0x2NHJ2RFhKX21EOWpOU1lBMmxydG13UjNIcDhXN0tEYzZ5blZZMnhWcll6MUlPNkpUSE1sVDVQc0hIVDZOblVUaldlWk0yel9oYWUwNnpCU25IY3J1VE1kYnRrRHE5aktsUGNUR2E2RlJ3?oc=5",
+   "source": "https://tech-insider.org/",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-27T09:03:38Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
+  },
+  {
+   "id": "923aaf647e3d",
+   "title": "Booking platform hack exposes third-party cyber risk across Australian tourism sector",
+   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNa1F5eVVNc01vbkRMNWJ2LTIyY1hoTWFwWThsQmR2R0RjRWZMbUNBcmVRSTNPeVhOZ2VTdms4ZkFvRGxNOXd1eUk2UzZfdUxlY1VCNlZ1QXVyQWVxQUVCaWlaSXBxSHlDRUVReDNVX1JXLWp4ajByd18yalVMZ1Jvd0dWSFJlMExlTHpoVTdpQzJOSmtjOWlKalpfNXVaTzBXaU43M3V5TU81R2U0YzhPaFZHcTNBOXhjOE9GR2lsMzVvaXkySHpEd3drZE5MSzdhQl8wcmJRTDZHU0dBNnBFZg?oc=5",
+   "source": "Insurance Business",
+   "feed": "OAIC / Privacy news",
+   "region": "AU",
+   "published": "2026-10-27T08:43:14Z",
+   "summary": "",
+   "score": 12,
+   "tags": [
+    "Australia",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Australia",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "ea5496feaca5",
+   "title": "OpenAI Compaction Flaw Let Researchers Bypass Hidden Reasoning Protections",
+   "link": "https://thehackernews.com/2026/10/openai-compaction-flaw-let-researchers.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-27T08:22:43Z",
+   "summary": "OpenAI's compaction feature, which shrinks a long conversation to save space, could be turned into a way to copy a model's hidden reasoning out in plain text, security firm Xint has shown. OpenAI's reasoning models work through a problem before answering, and the service normally returns only the…",
+   "score": 0,
+   "tags": [],
+   "why": []
   },
   {
    "id": "77d8f32442c0",
@@ -192,6 +562,40 @@
    ]
   },
   {
+   "id": "a2809c73032f",
+   "title": "US, UK, and Germany target SafePay ransomware group",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPdjFnYW1WclpEQTVkcVpGZVhlV2trckh4ZWVLZFZtdTBoSFlxQVh5aDZNMHAyYVdHWXRxR0kwUFg4ZldBMkhWa1ZKNklLcVNQTGozLTlCeWtsVG9xb2NwZUNNcGNjR2FKRHJpOWtqLVpody1XUlUzaTFSRWRYN0M0S083VnphX001Wm5BOTlYeEFDMjVMbkJrMDd4LXFKek93UW5V?oc=5",
+   "source": "Escudo Digital",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-27T04:50:01Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
+  },
+  {
+   "id": "b6c572e51625",
+   "title": "Exclusive: Qilin ransomware group claims quartet of Aussie victims in as many days",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPbUNGVzFMM21na0NWZFR1RThxckRCQmxUc2ltQWN2dlhoUHkzckJuRXQxSTRkelBiWGgwUDZXQnRoN3ZTc0FwS0lyX0xodG0ybkFPWFEwbDRUcS0xVER5Z0E1SHg2UUQzX2tkelRla0J0OUdabUNKVnVWVnNYYmhTWTR2cVNFY01LbVhuU01wVHpwcl8waGljb3lMRV81RnZZb1BGZUpYQlNIUWtOX1hpNHJlUTVBakhmTnVzalhESQ?oc=5",
+   "source": "Cyber Daily",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-27T04:49:26Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
+  },
+  {
    "id": "21e6441e976b",
    "title": "ASD releases seventh annual Cyber Threat Report 2025-26",
    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOWTlxOHhLem9qSXRua3dlU0c5WDZCaHdGSGZxejAtMmJ4MDNOaEIxNjFoMWRmcW9UaEZtb0R0RldWNDh1d3hFVFo0eXY2WE5od0xPcGlVRkxOQ3h0Q2dvRmJHOGpBb0FPSG1nWlNyWTJ5M3NVNXZaWmhnVkFIbFE2Yzlia2lNWTNQMlNQcFh3?oc=5",
@@ -239,6 +643,23 @@
    "score": 1,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "2bc98b70db3c",
+   "title": "Proofpoint joins Microsoft ICES in Defender portal",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPaXMzM3l6U0VHQVhsWWtIaHJuV1RhRWxFWjZpVmRENzlrN2J3am9PRm1QaHJLYnZnRFVfanlnMVlabDU1Q016b2pwSUp1UVNYTlpUMnpSSFZXTFJwR1JXN0lnMXpVREVKcDVvMEtpODZQYmlTalZlaFVzNXU3N0xBV0lrdjJtb2Fza3dBeldB?oc=5",
+   "source": "SecurityBrief Australia",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-27T02:14:00Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Microsoft 365"
+   ],
+   "why": [
+    "Microsoft 365"
+   ]
   },
   {
    "id": "39fb6abcb30e",
@@ -326,7 +747,7 @@
    "feed": "Dark Reading",
    "region": "Global",
    "published": "2026-10-27T00:26:50Z",
-   "summary": "Measuring AI model security gets complex fast — a growing patchwork of benchmarks targets different variables in the equation, but none replace testing against your own code and workflows.",
+   "summary": "Measuring AI model security gets complex, fast, thanks to a growing patchwork of benchmarks targeting different variables in the equation. But none replace testing against your own code and workflows.",
    "score": 1,
    "tags": [
     "Vulnerability"
@@ -362,6 +783,23 @@
    "published": "2026-10-26T22:20:36Z",
    "summary": "The University of Copenhagen in Denmark confirmed that hackers accessed one of its test environments containing personal data belonging to 525,000 people. [...]",
    "score": 4,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "532c627e1367",
+   "title": "Arm Holdings (ARM) Faces Jury Breach Ruling As It Unveils Server Security Tie Up",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQeWZXZnF0LWJ1ZkFSU1ZFb1JUZmtmTkFTMDBKaGJhYVBNTl9vOEUxMkFFNW5NRlItcW91ZjhKSHlyekRCUFJlNEloeENJYTFjOXJWS1VZdjZ2d0dIZTIwcHNuY0s5Zmc1YkoxWmJFUlVyemhXaHZuU1VQS2JUd20wbVRFR1pwbTlRckNfRm02QjYwdzVPeDZF?oc=5",
+   "source": "Yahoo Finance",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-26T22:15:37Z",
+   "summary": "",
+   "score": 7,
    "tags": [
     "Data breach"
    ],
@@ -476,6 +914,12 @@
    "why": [
     "Identity",
     "Vulnerability"
+   ],
+   "also": [
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/unexplained-dreamhost-incident-prompts-email-ftp-password-resets/"
+    }
    ]
   },
   {
@@ -535,14 +979,14 @@
    "region": "Global",
    "published": "2026-10-26T17:45:57Z",
    "summary": "PHP has rebuilt its official Windows packages for PHP 8.2 through 8.5 to fix CVE-2026-111497, a flaw in the Brotli compression library that the packages include. The flaw can let an attacker corrupt memory and potentially run code. PHP says the flaw can be reached through the cURL extension when…",
-   "score": 2,
+   "score": 4,
    "tags": [
     "Vulnerability"
    ],
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.3603
+   "epss": 0.5548
   },
   {
    "id": "5e34561ea984",
@@ -1234,7 +1678,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.9998
+   "epss": 1.0
   },
   {
    "id": "989022c91bd1",
@@ -1285,25 +1729,6 @@
    "score": 1,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "4a8154151413",
-   "title": "Unpatched Tailscale SSH Flaws Could Let a Hacked Device Reach Root on Other Servers",
-   "link": "https://thehackernews.com/2026/10/unpatched-tailscale-ssh-flaws-could-let.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-25T17:44:09Z",
-   "summary": "A single hacked device on a Tailscale network can be used to gain root access to other servers it can reach, according to a security researcher who published the findings this week. The attack requires two things: Tailscale SSH set up to allow port forwarding, and an attacker who already controls…",
-   "score": 5,
-   "tags": [
-    "Vulnerability",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Vulnerability",
-    "SaaS / cloud"
-   ]
   },
   {
    "id": "3eda0d6ae7e3",
@@ -1461,14 +1886,14 @@
    "region": "Global",
    "published": "2026-10-24T11:09:29Z",
    "summary": "A memory-corruption flaw in Google's Brotli decoder sits in many programs that unpack Brotli-compressed data, among them Bun, Microsoft's .NET, the Python Brotli and brotlicffi packages, and Envoy proxies set up to decompress Brotli. Tracked as CVE-2026-111497, the flaw allows crafted compressed…",
-   "score": 2,
+   "score": 4,
    "tags": [
     "Vulnerability"
    ],
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.3603
+   "epss": 0.5548
   },
   {
    "id": "3a1a036ef73a",
@@ -1508,6 +1933,19 @@
    "region": "Global",
    "published": "2026-10-24T10:36:33Z",
    "summary": "Google has updated its privacy policy to spell out that using personalized artificial intelligence (AI) features in Search or Gemini could allow the company to serve targeted ads to users based on their activity on other connected Google services. \"You may choose to allow certain Google services,…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "94d51fe2d204",
+   "title": "Researchers Push Over 2 Million Updates to Remotely Disable Popcorn Time Updater That Could Fuel a Botnet",
+   "link": "https://thehackernews.com/2026/10/researchers-push-over-2-million-updates.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-24T09:04:24Z",
+   "summary": "Between November 2025 and March 2026, the Dutch security firm Eye Security pushed more than 2 million updates to computers it did not own to switch off a background updater that it said could have allowed an outsider to take over the machine. The updater belongs to Time4Popcorn, an abandoned copy…",
    "score": 0,
    "tags": [],
    "why": []
@@ -2602,7 +3040,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.1233
+   "epss": 0.1163
   },
   {
    "id": "972a9651804b",
@@ -7016,420 +7454,6 @@
    "score": 0,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "c426150a84ac",
-   "title": "F5, Juniper Networks Patch Critical Vulnerabilities",
-   "link": "https://www.securityweek.com/f5-juniper-networks-patch-critical-vulnerabilities/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-16T09:54:34Z",
-   "summary": "Successful exploitation of some of these issues could lead to remote code execution and full device takeover. The post F5, Juniper Networks Patch Critical Vulnerabilities appeared first on SecurityWeek .",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "d7a2c08a8673",
-   "title": "AI phishing kits are making micro businesses worth attacking, Coalition warns",
-   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQT3YtckRUZGM2aFhBYndGdnM5Mlo3NkJUZFlZdU1QUTQzdVlFMkl0MEdRdHY4bVR0ODlzQW1namNGTFJpZjNYZFdRYS1qX1c5cl8zdkNHdmsyNk1vV1BYWDRKZVBkX0lPM0xsd1ZHZTdzaXdFNmFjaF9zR0FNMDBTLU5PcWF1ZGsxaHdKNGl4c1pEU1BwWTMyYnNGTFZWSzJ4TndpQmlSY1Y3QnJtQWd6QkJ6clZ5T2xmcFp0cHJWV3BKVWJORGpZbnlpcXE3dXZPU25fYzN3?oc=5",
-   "source": "Insurance Business",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-16T08:49:46Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Phishing"
-   ],
-   "why": [
-    "Phishing"
-   ]
-  },
-  {
-   "id": "7e8ace9d42e7",
-   "title": "Microsoft: October Windows update may break Smart App Control",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/kb5127648-windows-security-update-may-break-smart-app-control/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-16T08:44:22Z",
-   "summary": "Microsoft says some users may have trouble turning on Smart App Control after installing this month's KB5127648 Windows 11 security update. [...]",
-   "score": 1,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "509b1847c72f",
-   "title": "Microsoft Patches Two Dozen RCE Flaws in Office",
-   "link": "https://www.securityweek.com/microsoft-patches-two-dozen-rce-flaws-in-office/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-16T07:55:06Z",
-   "summary": "In addition to RCE flaws, Microsoft fixed multiple information disclosure bugs and a security bypass issue in Office. The post Microsoft Patches Two Dozen RCE Flaws in Office appeared first on SecurityWeek .",
-   "score": 5,
-   "tags": [
-    "Vulnerability",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Vulnerability",
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "9c075cf12462",
-   "title": "Real estate transactions decreased by 66,000 in the third quarter compared with 2025, amid the cyberattack on ANCPI",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNeHFmMkZRQ3Q4eE9nUXpoM3NqTUVqd21LOFdCLThmR2Y3UnhVMzhIR1NaTGxzekI4ckkwa0t0TzdZaUdQSVFlV0szMmNvemFpVDZPWVp2Y3Z2ckt6bzA4clRlU2FjZWNMU1lVRHNET1NKejBNV3NFQlR0TXgtOS1RY190b1ZEZTdOeTNvV0dZQ0g5MGNJcFFWSjZta2JuTUktTEpPRC1zeWc?oc=5",
-   "source": "Informat.ro",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-16T07:49:03Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ]
-  },
-  {
-   "id": "bc377ce6401c",
-   "title": "Former CIA officer used Florida homes in $200m scam, then admitted exposing a secret source",
-   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPUmM1UDVDdml2RGh5Rm1TMDVxRTV6YnNJZkozMGg4WFR3ZDlROUFsYmxWSWhMajFPdXlwclByRkVQSzNBZzhyck8zQlhsV21GX090eUFkNm5Sd2pJU1dzbnJJODltTEhxZHJXSk9NWGNua3pqcXh3TldHc0JvSGlJbzBR?oc=5",
-   "source": "The Cool Down",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-16T07:15:00Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "105239e3490a",
-   "title": "Proofpoint Inks $6.3 Billion All-Cash Deal to Acquire Varonis",
-   "link": "https://www.securityweek.com/proofpoint-inks-6-3-billion-all-cash-deal-to-acquire-varonis/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-16T07:12:51Z",
-   "summary": "The Thoma Bravo-owned Proofpoint will acquire Varonis in an all-cash transaction and Varonis will become a private company. The post Proofpoint Inks $6.3 Billion All-Cash Deal to Acquire Varonis appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "f909b9dee009",
-   "title": "CERT-In Warns AI Agents Accessed Sensitive Data at Indian Organizations During Testing",
-   "link": "https://thehackernews.com/2026/10/cert-in-warns-ai-agents-accessed.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-16T06:53:09Z",
-   "summary": "AI agents being tested online reached the live systems of Indian organizations and read business records, including personal data and confidential material, CERT-In said in an advisory on October 15. The agents went beyond their assigned tasks, and none of the organizations detected the…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "5fc8c6dd8c54",
-   "title": "PEERSTITCH Malware Deployed via FortiOS Flaw Bypasses Checks on Tagged VPN Sessions",
-   "link": "https://thehackernews.com/2026/10/attackers-exploit-fortios-flaw-to.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-16T04:59:36Z",
-   "summary": "A suspected advanced threat actor has been observed exploiting a security flaw in Fortinet FortiOS to deliver a previously unreported memory-resident ARM64 malware known as PEERSTITCH. The attack involves the exploitation of CVE-2025-61624 (CVSS score: 5.4), a path traversal flaw in the command…",
-   "score": 4,
-   "tags": [
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "why": [
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "epss": 0.0134
-  },
-  {
-   "id": "e0e9e3550086",
-   "title": "Cyber insurance limits and ransomware reporting under scrutiny",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOcHBLQ2h4WW4zaEY2OUx2dE1NeGhzNjJRMENTUVRfbGdJZWhLY0F2azBNa1RVYmFiRG05dmNrbE9fUmhFV1diZU5qRGZhZ0I1YnR6bHVEQnpXZkNsbzdmbEVCdWoxMXg5NEJyUWZIYVM4RnZ6aVBJQ2hXZHN2aWFOVzdsbEVXQmxCU2NpeGR4OGhQRlhoQlM5ZVhBMGlMWWkyQUFVc3kwNjY1bnVjV0lxc0Jjd2dBMTFt?oc=5",
-   "source": "Insurance Business",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-16T04:50:23Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Ransomware"
-   ],
-   "why": [
-    "Ransomware"
-   ]
-  },
-  {
-   "id": "58dfe122935e",
-   "title": "ACS warns ASD Essentials lacks clear assessor standards",
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQdWk1dzMwZFp4cFN1c3RWdHhIdXE4dUJwSTl2YW45eVptamJwQndQWE9zQmNLTms0YkhwREhMa3dKSzdxSkg2RzZKMHMyS3ROcFkxRDZ1bFMtTXI2REZpbFVUMWFTSHp4Z0JCQlFnaFJNc2dibTFnZk1ZYk1sR0tpdVdsVFVuZDNkQ3JtdkoxYkV6VG5mYVp4Z28taU9MSXI3MTVTZ1JB?oc=5",
-   "source": "Australian Cyber Security Magazine",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-16T04:14:31Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "Identity"
-   ],
-   "why": [
-    "Identity"
-   ]
-  },
-  {
-   "id": "9114f23a3b38",
-   "title": "Commvault adds Microsoft 365 tools to spot safe backups",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxObzhJa3RBMk11Yk5SSndIT0tMc0R1SHVKZ2pSX2l0YThDUkZaLXI5Qjh2S29NRUtDSllhWk5tVWtYM21jNEdHd1V5YS1iVlpsVXBsSEtramI3eF9xcXNta3lIR2szeUlpaEZraGJobEljdEN1aC1TcVlCZXdRY1hObjZqU3JfcDBrQ3dHYzQ1OTBFdFl3?oc=5",
-   "source": "SecurityBrief Australia",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-16T02:58:00Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Microsoft 365"
-   ],
-   "why": [
-    "Microsoft 365"
-   ]
-  },
-  {
-   "id": "dcae46e419da",
-   "title": "ISC Stormcast For Friday, October 16th, 2026 https://isc.sans.edu/podcastdetail/10140, (Fri, Oct 16th)",
-   "link": "https://isc.sans.edu/diary/rss/33432",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-10-16T02:00:03Z",
-   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
-   "score": 1,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "27d96b1a5cc2",
-   "title": "SOCI Act and cyber security: Australian lessons from France’s connected device attack",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOaWt0bV8wSzFDV0tpRGJHeGZ2dzUwQkQ4eXUzQmNHUWJzS2pReEpvS1laTUY4dVczLXRudWFocXBISmJtdjh0QzFETHFXanU2dy1sam8zVDlvbXA0OFNDZXJ5bW12Q001VUhyTnJaOGdTTjJpSDAxZU14MEUxNHFERkRyLTFmcFNibGZYMHJMWmMwNWNTeFEzUDlLcUl2Qmp3TnhwTVpQWFVFbGlfUUR6bjhocUVVbTZZ?oc=5",
-   "source": "Corrs Chambers Westgarth",
-   "feed": "AU breach news",
-   "region": "AU",
-   "published": "2026-10-16T01:57:02Z",
-   "summary": "",
-   "score": 12,
-   "tags": [
-    "Australia",
-    "Identity"
-   ],
-   "why": [
-    "Australia",
-    "Identity"
-   ]
-  },
-  {
-   "id": "457d30bd5e9d",
-   "title": "Government Warning Of Real Estate Scam",
-   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE8xUFdpYTRZM2poRWpheG5VNDktX0c0d3RFTmJoam1fT0FkdE90QUtvOWk4ZzhmQ0dMM0k3d1ZLSU1EZGZaeVlPdndOS3NKQnVRdHZheWVEM2Y1OWtkY29zYW1aWm1EZlZsaElVYlJJd1ZDY2FIMmpZ?oc=5",
-   "source": "Bernews",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-16T01:47:34Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ]
-  },
-  {
-   "id": "92d5abc10ae9",
-   "title": "Small Agents, Smaller Blast Radius: Controlling What AI Can Do, (Fri, Oct 16th)",
-   "link": "https://isc.sans.edu/diary/rss/33430",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-10-16T00:46:35Z",
-   "summary": "I believe the cybersecurity industry may be approaching AI security the wrong way.",
-   "score": 1,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "c2e210ed4208",
-   "title": "Redfin Hit With Breach Suit Over Hacked Worker, User Data",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPTnd0Q255ZzBnUW9Ed3pTbG9KWmFBRGxnMG9nNEp3bGRJUjVhZUJPcElsQnRDNE52YmFrWERNaHNPU0ZrUDgteWdRdnY2ZUFyMjJGVjBYLTlGalpMeGdEMXdSZXpRTllZWEpaUElTU1czdFBPLVNkc1pxLVA4YUl0YjFCUW0tYldZcW1lZ1JoUjNSXzdBYXY3RmxrOWdkVk9xcjVSd0JFRmw1UGV4VHJaYTdUS2NzTnBkXzY2QnpNcjhWd9IBc0FVX3lxTE1XV2hDbXd5LTU5aEtubkhXemtjZ053aFh1ZFNLMWRveklYS0U0bTl4eFNnZUVRclRPWWpTSG1tWUpQY1NIRHJaUVA0ZTFoQW5fNkFuV1Q3Y1NLMTFmYy1GSXJhanZTMkhIUkpQQ3otejRpU0k?oc=5",
-   "source": "Law360",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-16T00:02:23Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "51427f5a7699",
-   "title": "CVE-2025-61624: Fortinet Multiple Products — Fortinet Multiple Products Path Traversal Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-61624",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-10-16T00:00:00Z",
-   "summary": "FortiOS, FortiPAM, FortiProxy, and FortiSwitchManager contain a path traversal vulnerability that may allow an authenticated attacker with admin profile and at least read-write permissions to write or delete arbitrary files via specific CLI commands. CISA remediation due 2026-10-19.",
-   "score": 7,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "why": [
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "epss": 0.0134
-  },
-  {
-   "id": "7d3104b45e33",
-   "title": "CVE-2026-102764: BeyondTrust Remote Support — BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-102764",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-10-16T00:00:00Z",
-   "summary": "BeyondTrust Remote Support contains an authentication bypass by spoofing vulnerability that could allow a remote attacker to perform file operations on the appliance. CISA remediation due 2026-10-19.",
-   "score": 4,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.2034
-  },
-  {
-   "id": "3bd9f144301e",
-   "title": "Cyber breach revelations fettered with stigma",
-   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNR182SWNEYlpRbWZkNmYzT3AxV1lLN1NZeklRb0ZWRHpUeEVucy00X3J2TmplLUpFMDlTZGhkeHQwdWhsR1ZjSm5mX0hjNHFTYjNfODRld2RfSjg4RUhFbVktT0dHQzM4V1Y5Ynd0NUhrRkFyc0NsWnJtbzVtWklfTTZyXzZaLXZGeXcw?oc=5",
-   "source": "REMI Network - Real Estate Management Industry Network",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-15T23:35:10Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "e981b7de3fc1",
-   "title": "Panchan's Mining Island [Guest Diary], (Wed, Oct 14th)",
-   "link": "https://isc.sans.edu/diary/rss/33426",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-10-15T23:03:42Z",
-   "summary": "[This is a Guest Diary by Zachary Norwood, an ISC intern as part of the SANS.edu BACS program]",
-   "score": 1,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "34bc9d006102",
-   "title": "Perfect Forward Secrecy (PFS) | CGA",
-   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1aVGdUY3BLdXB2cTE1QXk4LTYyenppSTBCZzFBbXlUMWJuTzhVaWRhVy1jamVWZEp3XzV0T1cxZjBTQlFEOHFBeXB2SmpqSkR6amR3Z0t0UGZQYWdDRUdXOVltRFcwdENBejNmdFhB?oc=5",
-   "source": "Australian Cyber Security",
-   "feed": "ACSC (via Google News)",
-   "region": "AU",
-   "published": "2026-10-15T22:52:18Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "Australia"
-   ],
-   "why": []
-  },
-  {
-   "id": "1d01a60427db",
-   "title": "Exclusive: Poole Group investigating Lockbit ransomware attack",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPeG51S25HSU5scDZuRHpHMmwwZW14Z1hveUtVOTl0Yk1lTXN0cXNEdjVndXFucGxPQWdnXzd1emNRNEQwN2FON3c2cUpLV0YyQ2NiVkV6WmVIZ0pYcXNJa3o1NEpzV3JzQmV6QnNTOHBaY19pbGdOdkUzREk4dlBENjY5UHMtWTRkLWl3QnJqYnRzQkRORmFRYVZZdmJIX0dOaTZfbWlGLW1pOEM3VEF0U2NXUDBUZTA?oc=5",
-   "source": "Cyber Daily",
-   "feed": "OAIC / Privacy news",
-   "region": "Global",
-   "published": "2026-10-15T22:35:54Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Ransomware"
-   ],
-   "why": [
-    "Ransomware"
-   ]
-  },
-  {
-   "id": "3f1030ed0e26",
-   "title": "SecTor 2026 Reveals a Rapidly Shifting Cybersecurity Landscape",
-   "link": "https://www.darkreading.com/cybersecurity-operations/sector-2026-reveals-a-rapidly-shifting-cybersecurity-landscape",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-15T22:10:08Z",
-   "summary": "The event closed in Toronto last week, with experts sharing critical perspectives on emerging risks, drawing record attendance and marking 22% growth.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "5921092180eb",
-   "title": "F-Secure Launches Victim-First Scam Encyclopedia Covering 50+ Types of Consumer Fraud",
-   "link": "https://www.darkreading.com/threat-intelligence/f-secure-launches-victim-first-scam-encyclopedia-covering-50-types-of-consumer-fraud",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-15T21:55:07Z",
-   "summary": "Built from decades of threat intelligence research, the new resource explains scams from the victims' perspective and tracks emerging forms of cyber crime.",
-   "score": 1,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
   }
  ]
 }
