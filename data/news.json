@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-27T00:27:41Z",
+ "generated": "2026-10-27T09:02:39Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -16,25 +16,25 @@
   {
    "name": "ACSC (via Google News)",
    "ok": true,
-   "count": 3,
+   "count": 5,
    "error": null
   },
   {
    "name": "ASD / ACSC in the news",
    "ok": true,
-   "count": 4,
+   "count": 3,
    "error": null
   },
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 5,
+   "count": 4,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 4,
+   "count": 8,
    "error": null
   },
   {
@@ -46,7 +46,7 @@
   {
    "name": "iTnews Security",
    "ok": true,
-   "count": 1,
+   "count": 2,
    "error": null
   },
   {
@@ -106,15 +106,150 @@
  ],
  "items": [
   {
-   "id": "837fe1cef585",
-   "title": "So Many AI Security Benchmarks, But None Tell the Whole Story",
-   "link": "https://www.darkreading.com/cybersecurity-analytics/benchmarking-security-of-ai-models-poses-challenges",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
+   "id": "9acf4c367c76",
+   "title": "Southern Cross Credit Union asks AI agent to handle account balance requests",
+   "link": "https://www.itnews.com.au/news/southern-cross-credit-union-asks-ai-agent-to-handle-account-balance-requests-629940?utm_source=feed&utm_medium=rss&utm_campaign=iTnews+Business+feed",
+   "source": "iTnews Security",
+   "feed": "iTnews Security",
+   "region": "AU",
+   "published": "2026-10-27T09:16:00Z",
+   "summary": "Built on Agentforce Voice.",
+   "score": 4,
+   "tags": [
+    "Vulnerability",
+    "Australia"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "77d8f32442c0",
+   "title": "CISA confirms PHP2Shell vulnerabilities now exploited in attacks",
+   "link": "https://www.bleepingcomputer.com/news/security/cisa-confirms-php2shell-vulnerabilities-now-exploited-in-attacks/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
    "region": "Global",
-   "published": "2026-10-27T00:26:50Z",
-   "summary": "Measuring AI model security gets complex fast — a growing patchwork of benchmarks targets different variables in the equation, but none replace testing against your own code and workflows.",
+   "published": "2026-10-27T08:20:54Z",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added the PHP2Shell vulnerabilities to its catalog of actively exploited security flaws and ordered federal agencies to patch their systems by Thursday. [...]",
+   "score": 7,
+   "tags": [
+    "Actively exploited",
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Actively exploited",
+    "Vulnerability",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "46ee8b886dbe",
+   "title": "Maritime Coalition Launches Free Vulnerability Database for Ship and Port Systems",
+   "link": "https://www.securityweek.com/maritime-coalition-launches-free-vulnerability-database-for-ship-and-port-systems/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-27T07:14:27Z",
+   "summary": "Blue Initiative indexes nearly 30,000 IT and OT vulnerabilities relevant to ships and ports, 37 of them in maritime-specific products. The post Maritime Coalition Launches Free Vulnerability Database for Ship and Port Systems appeared first on SecurityWeek .",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "ad8783319617",
+   "title": "Attackers Hijack Dahua IP Cameras in Ukraine Using P2P Access and Auth Weaknesses",
+   "link": "https://thehackernews.com/2026/10/attackers-hijack-dahua-ip-cameras-in.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-27T06:34:47Z",
+   "summary": "The Computer Emergency Response Team of Ukraine (CERT-UA) has issued an alert warning of unauthorized remote access to video surveillance systems manufactured by Dahua. \"Cases of compromising IP cameras and DVRs with access to the video stream, changing the device configuration and creating…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "92244cb26732",
+   "title": "​Noida Real Estate Sector Under Scanner as ED Uncovers Alleged NRI Loan Irregularities",
+   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBkbjliSkVoMGp3NzBtbHJtbXZIOE9DSG5jS3ZhdlB6QkYzYnh6WU00UVI5bGw3Z0JRUXp5bGlSTlo4ME0wUy0yTFVhVXBsX2I3TGx3RldkQVMxbWlUWTRrek1ieFBGUklwMzhfM3Mza21kUm8?oc=5",
+   "source": "The420.in",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-27T06:12:08Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
+   "id": "21e6441e976b",
+   "title": "ASD releases seventh annual Cyber Threat Report 2025-26",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOWTlxOHhLem9qSXRua3dlU0c5WDZCaHdGSGZxejAtMmJ4MDNOaEIxNjFoMWRmcW9UaEZtb0R0RldWNDh1d3hFVFo0eXY2WE5od0xPcGlVRkxOQ3h0Q2dvRmJHOGpBb0FPSG1nWlNyWTJ5M3NVNXZaWmhnVkFIbFE2Yzlia2lNWTNQMlNQcFh3?oc=5",
+   "source": "Australian Cyber Security",
+   "feed": "ACSC (via Google News)",
+   "region": "AU",
+   "published": "2026-10-27T04:39:47Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "Australia"
+   ],
+   "why": []
+  },
+  {
+   "id": "968629f0ead3",
+   "title": "CISA Confirms Active Exploitation of Two PHP2Shell Flaws Enabling Remote Code Execution",
+   "link": "https://thehackernews.com/2026/10/cisa-confirms-active-exploitation-of.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-27T04:37:59Z",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday confirmed active exploitation of the recently patched PHP2Shell flaws by adding them to its Known Exploited Vulnerabilities (KEV) catalog. The PHP vulnerabilities, both rated 9.2 on the CVSS scoring system, facilitate…",
+   "score": 9,
+   "tags": [
+    "Actively exploited",
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Actively exploited",
+    "Vulnerability",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "34ec0f91485a",
+   "title": "ISC Stormcast For Tuesday, October 27th, 2026 https://isc.sans.edu/podcastdetail/10152, (Tue, Oct 27th)",
+   "link": "https://isc.sans.edu/diary/rss/33462",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-10-27T02:55:13Z",
+   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
    "score": 1,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "39fb6abcb30e",
+   "title": "Apple Patches for October 2026, (Mon, Oct 26th)",
+   "link": "https://isc.sans.edu/diary/rss/33458",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-10-27T02:09:55Z",
+   "summary": "Apple today released patches for 304 vulnerabilties. This number is still in line with prior Apple updates, and comes just about a month after the last apple update.",
+   "score": 3,
    "tags": [
     "Vulnerability"
    ],
@@ -129,7 +264,7 @@
    "source": "Mi-3.com.au.",
    "feed": "OAIC / Privacy news",
    "region": "AU",
-   "published": "2026-10-27T00:12:05Z",
+   "published": "2026-10-27T01:56:32Z",
    "summary": "",
    "score": 13,
    "tags": [
@@ -152,6 +287,55 @@
    ]
   },
   {
+   "id": "7f986c278117",
+   "title": "Cybersecurity Issue Forces a Major New Mexico Hospital to Divert Patients and Close Clinics",
+   "link": "https://www.securityweek.com/cybersecurity-issue-forces-a-major-new-mexico-hospital-to-divert-patients-and-close-clinics/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-27T01:30:00Z",
+   "summary": "The University of New Mexico Health System told people not to show up at its main hospital in Albuquerque and canceled appointments at more than 30 clinics. The post Cybersecurity Issue Forces a Major New Mexico Hospital to Divert Patients and Close Clinics appeared first on SecurityWeek .",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "7094f4d7bd5d",
+   "title": "Annual Cyber Threat Report 2024–25 fact sheet - For businesses and organisations",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNbHNHbnpDY3dKSWJJaGNObjdzSG95Tm9Jd29MMXJuNGwxN2RTc1lObjBtVlIzaFNIN1R3aHZVOEpWczk4dVpqQkdCNzVXWTVCa2FlcWF2bE84T1RnRVhOVFRpNkVXcEtJMXREa0hXUEVsSUtzSXd6empOdTkxY25DbkdZdjJjRVJlUTVueHEyQWgtXy14V29WVEVCZ3NHRmg4RkQ4eDdTTlI2dy1QSUxqd0g3MHc?oc=5",
+   "source": "Australian Cyber Security",
+   "feed": "ACSC (via Google News)",
+   "region": "AU",
+   "published": "2026-10-27T01:24:45Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "Australia"
+   ],
+   "why": []
+  },
+  {
+   "id": "837fe1cef585",
+   "title": "So Many AI Security Benchmarks, But None Tell the Whole Story",
+   "link": "https://www.darkreading.com/cybersecurity-analytics/benchmarking-security-of-ai-models-poses-challenges",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-27T00:26:50Z",
+   "summary": "Measuring AI model security gets complex fast — a growing patchwork of benchmarks targets different variables in the equation, but none replace testing against your own code and workflows.",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
    "id": "d1471d8c2286",
    "title": "JLL Sues Broker Who Left For CBRE For Breach Of Contract",
    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOd1h0aWlDWEZyaXdYeTRwMTlpQTJ5eWxMSC13bE5TNUx2T2NaTTAxWE9tSFlyS0RGTmN0OWF4TlVUX0lYVG9mSkxmbldqMnZYWVJhWUY2VmFFcmFzRFBZNmxyaWhwSlo5TnEtV1ZXVEhBMnFVT2xHR0ktT2hfc1R4dDRxSFZ2c05oZDNscllOWUJlcUpZX280aEsyOS1BZjk5WjczbHNRWUZqaGRpdVhvX21B?oc=5",
@@ -166,23 +350,6 @@
    ],
    "why": [
     "Data breach"
-   ]
-  },
-  {
-   "id": "39fb6abcb30e",
-   "title": "Apple Patches for October 2026, (Mon, Oct 26th)",
-   "link": "https://isc.sans.edu/diary/rss/33458",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-10-26T23:34:37Z",
-   "summary": "Apple today released patches for 304 vulnerabilties. This number is still in line with prior Apple updates, and comes just about a month after the last apple update.",
-   "score": 3,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
    ]
   },
   {
@@ -213,21 +380,6 @@
    "summary": "Nvidia security executive Mark Weatherford says CISOs must help business leaders weigh AI's pros and cons, and ensure those deploying it own the risks.",
    "score": 0,
    "tags": [],
-   "why": []
-  },
-  {
-   "id": "21e6441e976b",
-   "title": "ASD releases seventh annual Cyber Threat Report 2025-26",
-   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOWTlxOHhLem9qSXRua3dlU0c5WDZCaHdGSGZxejAtMmJ4MDNOaEIxNjFoMWRmcW9UaEZtb0R0RldWNDh1d3hFVFo0eXY2WE5od0xPcGlVRkxOQ3h0Q2dvRmJHOGpBb0FPSG1nWlNyWTJ5M3NVNXZaWmhnVkFIbFE2Yzlia2lNWTNQMlNQcFh3?oc=5",
-   "source": "Australian Cyber Security",
-   "feed": "ACSC (via Google News)",
-   "region": "AU",
-   "published": "2026-10-26T21:15:32Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "Australia"
-   ],
    "why": []
   },
   {
@@ -456,6 +608,23 @@
    ]
   },
   {
+   "id": "7adefd16d896",
+   "title": "Okta Rallies Over 4% as Sector Gains from Cyber Threat Warnings : 기업주식정보 : JKN",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9XVV9QaW1UM3RxS05ETEZRR09RVXFoVWxWNnVRRFAxdE1saE10a1lZdlhZS1g0SENLaktlWjNuVU5YSlVrMmh3dm9WNlRmdVphZlBJWHFUdmlNWFBVVjFKWXVR?oc=5",
+   "source": "재경일보",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-26T15:15:00Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Identity"
+   ],
+   "why": [
+    "Identity"
+   ]
+  },
+  {
    "id": "d7e589c62a2d",
    "title": "Industrial Vendors Check Products for PHP2Shell Vulnerabilities",
    "link": "https://www.securityweek.com/industrial-vendors-check-products-for-php2shell-vulnerabilities/",
@@ -584,6 +753,23 @@
    ],
    "why": [
     "Ransomware"
+   ]
+  },
+  {
+   "id": "8d5fc4a66a4f",
+   "title": "Report cyber security incidents to ASD’s ACSC",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOdVVRRkJudVJhYW5BczhaSmdweXQ3RTd5YXNMcmloTmZxc3RRM2JUcDlTbXpGQTlPZWpXYW5RaVB3ejgxalMyM1I3M3hpR3d5R2tTYWNmcXZxSTRTeWs2dG1HS2FhOGZ5X2lxMHZoVWN0TjBfNVFqMFBoRXNobWNUS1V0RHJUSGUwakc5UTNhdHVuRE8wUUZPaVlTZ0duNmlVdGFLNkhGb05jQnJXcG1VcWYyRzJiSkE?oc=5",
+   "source": "Australian Cyber Security",
+   "feed": "ACSC (via Google News)",
+   "region": "AU",
+   "published": "2026-10-26T12:00:00Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Australia"
+   ],
+   "why": [
+    "Australia"
    ]
   },
   {
@@ -832,6 +1018,23 @@
    ]
   },
   {
+   "id": "dbc04dc8e3d1",
+   "title": "Mirae Asset Life Insurance confirms personal data breach, blocks malicious IP addresses : Business/Industry : JKN",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE83SHZGTjVfUXVIZ2lteUhWcTZLbmlZQ0N2emxoV0F4SHdwaTVWalJURmNsaXQybkxoNUZDUkZQMUNqZmIwa2RxMDdXVnBNN2R6SHZXWTBrQ1I3bmdCcGZtbC1n?oc=5",
+   "source": "재경일보",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-26T08:05:05Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
    "id": "4ae941d6b699",
    "title": "Mirae Asset Life Insurance hit by hacking; data breach confirmed one day after suspicious activity, emergency response underway",
    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9xS0o1U2FUdmZiTVg5MVJkQURTZXFyRlNnNmEzMl9pM1pfdHJlNnhtU1ppTXMyT2lESnVDc2tiR0FDbkxSUlFuMS15YkRjMnBUdFRjMWlKWVNhQUVMQUlwT3lR?oc=5",
@@ -853,11 +1056,11 @@
    "title": "Global cyber attacks jump 48% as phishing rises",
    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPN01velluVEN6N3N6UXJIa2o2Tl9JUy1yU1hhaHROUWMtTG9oenI5WXc0Y2JCNnhnMHRUaGVHN0hFVzRxSlhLYm1jMU85WERXR2F4aXVDTjhZR2hiczJ1MkpSTVY1bHhLcGdaZkVLOFFNYlRQUFl2LTRQWkdPdjBqeDBiSDU1eVht?oc=5",
    "source": "SecurityBrief Australia",
-   "feed": "AU breach news",
+   "feed": "Real estate cyber news",
    "region": "Global",
    "published": "2026-10-26T06:48:48Z",
    "summary": "",
-   "score": 6,
+   "score": 7,
    "tags": [
     "Phishing"
    ],
@@ -7227,198 +7430,6 @@
    "why": [
     "Vulnerability"
    ]
-  },
-  {
-   "id": "c7adc8194c58",
-   "title": "AI Slop Isn't Just for Social Media; It's Ruining Cyberattacks, Too",
-   "link": "https://www.darkreading.com/threat-intelligence/ai-slop-ruining-cyberattacks",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-15T20:43:20Z",
-   "summary": "Don't buy the hype! AI has been dumbing down cyberattacks, and serious threat actors are barely touching it.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "f29e21a7f915",
-   "title": "Bristol primary school hit by second cyber attack as records exported in data breach",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1POG42MHp2eGZPVXlrTGpBM2NweS1qMkw2enh1YjZtTTVVZmY3bXc1Ym55eDhXMXBhcENvdDhGc1ZEbXVsV24wVElTOWhSdWRUdXFYVlhiaDhpdklGOUVnMDhjTUdWTW1xVU1LcnNsOFJBcFdLRTNueWsxS096cG8?oc=5",
-   "source": "Yahoo News UK",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-15T20:32:55Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "a094aa58c0da",
-   "title": "Hackers exploit Collabora RCE flaw to backdoor Nextcloud servers",
-   "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-collabora-rce-flaw-to-backdoor-nextcloud-servers/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-15T20:25:04Z",
-   "summary": "Threat actors are exploiting a critical command execution flaw, now tracked as CVE-2026-110447, in the Collabora Online - Built-in CODE Server app (richdocumentscode) for Nextcloud. [...]",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.1233,
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/hackers-backdoor-nextcloud-servers.html"
-    }
-   ]
-  },
-  {
-   "id": "222e66a51003",
-   "title": "Critical PwnEscape Linux Kernel Vulnerability Lets Guest VMs Read Host Memory",
-   "link": "https://thehackernews.com/2026/10/critical-pwnescape-linux-kernel.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-15T20:24:36Z",
-   "summary": "A newly disclosed critical flaw in the Linux kernel allows code inside a virtual machine to read memory on the host computer it runs on. A researcher demonstrated the leak against Vercel's live cloud sandboxes, and Vercel confirmed it. The flaw, now tracked as CVE-2026-99999 and nicknamed…",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.0079
-  },
-  {
-   "id": "6c8051f534fe",
-   "title": "Android gets AI defenses against messaging scams, fake calls",
-   "link": "https://www.bleepingcomputer.com/news/security/android-gets-ai-defenses-against-messaging-scams-fake-calls/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-15T19:48:43Z",
-   "summary": "Google announced new AI-powered defenses against scam messages and call-forwarding abuse on Android, currently rolling out to eligible devices. [...]",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "986cc714fb42",
-   "title": "ThreatsDay: Adobe RCE, DNS Wallet Theft, NVIDIA Container Escape, Self-Healing Backdoor + 23 More",
-   "link": "https://thehackernews.com/2026/10/threatsday-adobe-rce-dns-wallet-theft.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-15T18:49:33Z",
-   "summary": "Someone built a tool to steal data, then decided it should scare the victim for fun. Yes, that’s an actual feature. And somehow, it fits right in with this week's security stories. The rest gets interesting in different ways. A small permission can lead to a big theft. A trusted login can hide the…",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "b14fd868476b",
-   "title": "Hackers hijack D-Link, Ubiquiti devices to resell your stolen bandwidth",
-   "link": "https://www.bleepingcomputer.com/news/security/hackers-hijack-d-link-ubiquiti-devices-to-resell-your-stolen-bandwidth/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-15T18:20:59Z",
-   "summary": "A proxyjacking campaign has impacted devices in 34 countries, monetizing victims' internet connections through a commercial residential proxy network. [...]",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "ead457b69704",
-   "title": "Australian court called data offshoring breach minor",
-   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQSkhIclhTVDZlN0tReUVMc2dGc2FMamZtVVE1YlpwV3M0X1ZFMUVyMFVteWRyeTUwSENMLXkydmxNMWFZZFozUlNaRU1jZXM5Q2lpekswSTA2cEUtSG1BWDV3ZkphRW1kUVktazE0ZVpydUFiVDdiQklKTkNBWFFwNjA4dGtaSnlCWjlVUFJGSDNWcXJZOEo3d2xrVEtmRXRuZmJreXlQaHdKSFNoaFpXWkNVbWdxeVVhdGctQWdpbG1RdDcx?oc=5",
-   "source": "UA.NEWS",
-   "feed": "AU breach news",
-   "region": "AU",
-   "published": "2026-10-15T18:19:01Z",
-   "summary": "",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "Data breach"
-   ],
-   "why": [
-    "Australia",
-    "Data breach"
-   ]
-  },
-  {
-   "id": "33659e3f7808",
-   "title": "Context Is King in the Fight Against Modern Cyberattacks",
-   "link": "https://www.securityweek.com/context-is-king-in-the-fight-against-modern-cyberattacks/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-15T17:42:50Z",
-   "summary": "Contextual defense helps security teams connect the signals, anticipate what comes next, and stop threats before they escalate. The post Context Is King in the Fight Against Modern Cyberattacks appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "20dc09b781c4",
-   "title": "Fake Arch Linux packages push malware with root privileges",
-   "link": "https://www.bleepingcomputer.com/news/security/fake-arch-linux-packages-push-malware-with-root-privileges/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-15T17:12:31Z",
-   "summary": "A threat actor uploaded malicious packages to the Arch User Repository (AUR) that impersonated two popular helper tools, yay and paru. [...]",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "1f5d528f2318",
-   "title": "Magna Hospitality Group Data Breach Lawsuit Investigation",
-   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQQzVBTkUxN1doTHZzR2s2cVBzdnRLTUVnWUV3cHpQZExJX1pvOWhLM2ozcVV6QmVhbTRGQ3NFTkt1SmpmUER4Q0ZTWGM2QlF3R2djQnFnX0lFcDI0UnhVS3FrVmZvTUNLSVlMRXh4TFhTdm5xbGw5bktNOVRRLURxcEQyUEUtX013ZkE?oc=5",
-   "source": "Claim Depot",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-15T16:54:26Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Data breach",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Data breach",
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "2ee0c0a49b5a",
-   "title": "Watch Now: Zero Trust Strategies Summit – All Sessions Available on Demand",
-   "link": "https://www.securityweek.com/virtual-event-today-zero-trust-strategies-summit-2/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-15T16:51:34Z",
-   "summary": "This summit is laser-focused on the next generation of Zero Trust and Identity security, moving beyond theory to deliver actionable strategies. The post Watch Now: Zero Trust Strategies Summit – All Sessions Available on Demand appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
   }
  ]
 }
