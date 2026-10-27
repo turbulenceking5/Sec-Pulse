@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-26T22:48:49Z",
+ "generated": "2026-10-27T00:27:41Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -34,7 +34,7 @@
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 6,
+   "count": 4,
    "error": null
   },
   {
@@ -52,7 +52,7 @@
   {
    "name": "CISA KEV",
    "ok": true,
-   "count": 17,
+   "count": 19,
    "error": null
   },
   {
@@ -105,6 +105,86 @@
   }
  ],
  "items": [
+  {
+   "id": "837fe1cef585",
+   "title": "So Many AI Security Benchmarks, But None Tell the Whole Story",
+   "link": "https://www.darkreading.com/cybersecurity-analytics/benchmarking-security-of-ai-models-poses-challenges",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-27T00:26:50Z",
+   "summary": "Measuring AI model security gets complex fast — a growing patchwork of benchmarks targets different variables in the equation, but none replace testing against your own code and workflows.",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "bf8c08bba0b1",
+   "title": "OAIC: Data breaches surge in Australia in H1 2026",
+   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQcVpOcHl3dlg0RUxlVnVuVVhjbHJnR2dKOU81UldIY19RNFFPRXJ6QTlwa2JwN0JKdHJfSG1fczlpVVp3M2FQdHZkWDRCQmZ5RTk5UzJpSDRfcGl6ZXdlZXBYaTJqYmRUQndIZkExLTBUa29kUERrT0ZfcEsta3JycUpZTQ?oc=5",
+   "source": "Mi-3.com.au.",
+   "feed": "OAIC / Privacy news",
+   "region": "AU",
+   "published": "2026-10-27T00:12:05Z",
+   "summary": "",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Data breach"
+   ],
+   "why": [
+    "Australia",
+    "Data breach"
+   ],
+   "also": [
+    {
+     "source": "Cyber Daily",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNbmptSnQ2bmdybHEtNUxLREQyZ1dWWDlxb094Vld0a1VlQnpDU0FJUC1ZSll6LUpUWlc2TllHQ2JvWkNWZHNQb242Y0RFdUhyUmRUNXRtQXhjY1dqTEp6eVFycUxoODhoNXJfNklYSklpSjRlZ0VSRnVLc09qVXpnTjk0ZW1vVnRpZkJHZnltNVRxVUVCRmZ6R2VRYjhlbDRfZWtOdGx3MUVNVExocVE?oc=5"
+    },
+    {
+     "source": "Mirage News",
+     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQMndFWjVKSEFOUHM5MEZadWJaNmxJblRzMV9pY01sSnhDcUxwWElUdUFCZ3FyT1pDNzlac0EyMHlRWWN1QzVPd3ExeFpZRzNTYVpwYTV1WHQtSWNxam1aVFFEc2R1cThCZnFQUVVBTEdCcVJtbmtVdEhpWE5nQnVLckZfZ2h2VEo1OFE?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "d1471d8c2286",
+   "title": "JLL Sues Broker Who Left For CBRE For Breach Of Contract",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOd1h0aWlDWEZyaXdYeTRwMTlpQTJ5eWxMSC13bE5TNUx2T2NaTTAxWE9tSFlyS0RGTmN0OWF4TlVUX0lYVG9mSkxmbldqMnZYWVJhWUY2VmFFcmFzRFBZNmxyaWhwSlo5TnEtV1ZXVEhBMnFVT2xHR0ktT2hfc1R4dDRxSFZ2c05oZDNscllOWUJlcUpZX280aEsyOS1BZjk5WjczbHNRWUZqaGRpdVhvX21B?oc=5",
+   "source": "Bisnow",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-26T23:58:58Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "39fb6abcb30e",
+   "title": "Apple Patches for October 2026, (Mon, Oct 26th)",
+   "link": "https://isc.sans.edu/diary/rss/33458",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-10-26T23:34:37Z",
+   "summary": "Apple today released patches for 304 vulnerabilties. This number is still in line with prior Apple updates, and comes just about a month after the last apple update.",
+   "score": 3,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
   {
    "id": "627cc70bbf65",
    "title": "University of Copenhagen data breach exposes data of 525,000 people",
@@ -507,6 +587,23 @@
    ]
   },
   {
+   "id": "4034a8d6748f",
+   "title": "Optery Wins Transformational Anti-Phishing Award in Cyber Defense Magazine’s Top InfoSec Innovators Awards for 2026",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQUXpaRUlZZUNnbU51WlNZdzJWYzRJSEpuV3dFTTVSN19IaHNHLTZmSFY1RVY1RWxVUE93bzdCa1dyV3lleU9UUzVReDZQTlYwbkV5Y256X1hvNE9PSUdvSlJrSnFUYVhpMGpSZVZaQ1JDMnBGaGlJaHdxUnFoNnFFT3VfWVNHVUctV1ZYVnBIQUlJVUZPaTBidnBmQlAxeWlKeHBpYlln?oc=5",
+   "source": "Yahoo Finance",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-26T12:00:00Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Phishing"
+   ],
+   "why": [
+    "Phishing"
+   ]
+  },
+  {
    "id": "a5411bb33d7f",
    "title": "Two Critical Wasmtime Flaws Could Let Malicious WebAssembly Modules Escape Sandboxes",
    "link": "https://thehackernews.com/2026/10/two-critical-wasmtime-flaws-could-let.html",
@@ -752,10 +849,10 @@
    ]
   },
   {
-   "id": "b522ae2c9049",
+   "id": "a7b573fd199a",
    "title": "Global cyber attacks jump 48% as phishing rises",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE80ang2VlFwNzJWaVREYmJ0azd2Qmk4YWZWWnZKZ05JNzBscGtzU0RILUY1ekhUYVZ0VXIxRVFibG1hWklXS01HLWhXR3h6WTRhRTRYUWh3WDd4SmY2RG94LUxaakY4N1JjdFluMndYRnRleGx5N1R5bGVHRC1WM0U?oc=5",
-   "source": "IT Brief New Zealand",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPN01velluVEN6N3N6UXJIa2o2Tl9JUy1yU1hhaHROUWMtTG9oenI5WXc0Y2JCNnhnMHRUaGVHN0hFVzRxSlhLYm1jMU85WERXR2F4aXVDTjhZR2hiczJ1MkpSTVY1bHhLcGdaZkVLOFFNYlRQUFl2LTRQWkdPdjBqeDBiSDU1eVht?oc=5",
+   "source": "SecurityBrief Australia",
    "feed": "AU breach news",
    "region": "Global",
    "published": "2026-10-26T06:48:48Z",
@@ -769,8 +866,8 @@
    ],
    "also": [
     {
-     "source": "SecurityBrief Australia",
-     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPN01velluVEN6N3N6UXJIa2o2Tl9JUy1yU1hhaHROUWMtTG9oenI5WXc0Y2JCNnhnMHRUaGVHN0hFVzRxSlhLYm1jMU85WERXR2F4aXVDTjhZR2hiczJ1MkpSTVY1bHhLcGdaZkVLOFFNYlRQUFl2LTRQWkdPdjBqeDBiSDU1eVht?oc=5"
+     "source": "IT Brief New Zealand",
+     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE80ang2VlFwNzJWaVREYmJ0azd2Qmk4YWZWWnZKZ05JNzBscGtzU0RILUY1ekhUYVZ0VXIxRVFibG1hWklXS01HLWhXR3h6WTRhRTRYUWh3WDd4SmY2RG94LUxaakY4N1JjdFluMndYRnRleGx5N1R5bGVHRC1WM0U?oc=5"
     }
    ]
   },
@@ -888,31 +985,6 @@
    ]
   },
   {
-   "id": "36102dd5f699",
-   "title": "Stat dump: Data breaches impacting Aussies continue to rise, OAIC says",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNbmptSnQ2bmdybHEtNUxLREQyZ1dWWDlxb094Vld0a1VlQnpDU0FJUC1ZSll6LUpUWlc2TllHQ2JvWkNWZHNQb242Y0RFdUhyUmRUNXRtQXhjY1dqTEp6eVFycUxoODhoNXJfNklYSklpSjRlZ0VSRnVLc09qVXpnTjk0ZW1vVnRpZkJHZnltNVRxVUVCRmZ6R2VRYjhlbDRfZWtOdGx3MUVNVExocVE?oc=5",
-   "source": "Cyber Daily",
-   "feed": "OAIC / Privacy news",
-   "region": "AU",
-   "published": "2026-10-26T01:24:27Z",
-   "summary": "",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "Data breach"
-   ],
-   "why": [
-    "Australia",
-    "Data breach"
-   ],
-   "also": [
-    {
-     "source": "Mirage News",
-     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQMndFWjVKSEFOUHM5MEZadWJaNmxJblRzMV9pY01sSnhDcUxwWElUdUFCZ3FyT1pDNzlac0EyMHlRWWN1QzVPd3ExeFpZRzNTYVpwYTV1WHQtSWNxam1aVFFEc2R1cThCZnFQUVVBTEdCcVJtbmtVdEhpWE5nQnVLckZfZ2h2VEo1OFE?oc=5"
-    }
-   ]
-  },
-  {
    "id": "4294264f80f0",
    "title": "ACSC warns of critical vulnerabilities in Fortinet products",
    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPMVE3LVVaYmFLUUVQcWlSXzJUOWVvd21BX0wxMnJCUDJzQjVZT1dhb1hxc2Z2b3NtOHVrLU9CN1JLZ3NIX0JDMlV5MHAxWDJBaDVqOXkyLVV5UEFvNHRkMUtPLWlUeHAzNm1XeGFOYkdrUWN5eUhhWWN3R3F3MHViNlRiZ1lLMG14bEhEdlBzS0RtZE04TWlPVXBya3NnUF9HdXJ4TTB1cGpTWU0?oc=5",
@@ -940,6 +1012,46 @@
      "url": "https://www.cyber.gov.au/alert/critical-vulnerabilities-in-fortinet-products"
     }
    ]
+  },
+  {
+   "id": "5943b3ba0784",
+   "title": "CVE-2026-109618: PHP Group PHP — PHP Memory Corruption Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-109618",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-10-26T00:00:00Z",
+   "summary": "PHP contains an out-of-memory corruption vulnerability that allows for unauthenticated remote code execution. CISA remediation due 2026-10-29.",
+   "score": 4,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.9998
+  },
+  {
+   "id": "989022c91bd1",
+   "title": "CVE-2026-109619: PHP Group PHP — PHP Stale Internal Request-State Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-109619",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-10-26T00:00:00Z",
+   "summary": "PHP contains a stale internal request-state vulnerability that allows for unauthenticated remote code execution. CISA remediation due 2026-10-29.",
+   "score": 4,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 1.0
   },
   {
    "id": "be2f01b5050e",
@@ -7304,94 +7416,6 @@
    "region": "Global",
    "published": "2026-10-15T16:51:34Z",
    "summary": "This summit is laser-focused on the next generation of Zero Trust and Identity security, moving beyond theory to deliver actionable strategies. The post Watch Now: Zero Trust Strategies Summit – All Sessions Available on Demand appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "4de3942a6b01",
-   "title": "Magna Hospitality Data Breach: 385 GB of Data Stolen",
-   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1HaU9LT1EtbnNHTlZLcFJ1QjhQZU5FNEwyQjNtbV9adUZCR3RLX3Rfd3IwS1RmTmFEN2tLTVZMVkJ3V25XSjhQdjc1OU9xbWZFbFZRV2pMNkJ2YmNTYjZMX18wcXBLc2l1TU5MUmZvdVo0bGdpREE?oc=5",
-   "source": "Claim Depot",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-15T16:39:25Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "6ab9bdcb522c",
-   "title": "Silent Lynx Exploits WinRAR Flaw to Deploy Reverse Shell in CIS Government Attacks",
-   "link": "https://thehackernews.com/2026/10/silent-lynx-exploits-winrar-flaw-to.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-15T16:00:26Z",
-   "summary": "The threat actor known as Silent Lynx has been attributed to a fresh set of attacks targeting government organizations across the Commonwealth of Independent States (CIS). The activity, observed from June 2025 through August 2026, involves four different infection chains that make use of…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "295b94e919e7",
-   "title": "Vulnerability Management Isn't About the Score — It's About How It Applies to You",
-   "link": "https://www.darkreading.com/cybersecurity-operations/vulnerability-management-isnt-about-the-score-its-about-how-it-applies-to-you",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-15T15:17:18Z",
-   "summary": "Organizations need to move away from vendor-assigned, theoretical scores toward real exploit data specific to their environments.",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "067d7709e5cd",
-   "title": "Protect yourself and your family online",
-   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBGZm1IWFVNNjY2ZWZjeVY2ZmxrTWlMZmljeXlsM1NLZWpHaGozTU9CcV9NTU5sMDlvMmNOZThDZVJMd3ZQVlFOT3NwMEdpUUg2M0xoQjBSVkFjWkVGQ1dWQzZlYzl2T1VfdFFOLXpjeWtyZw?oc=5",
-   "source": "Australian Cyber Security",
-   "feed": "ACSC (via Google News)",
-   "region": "AU",
-   "published": "2026-10-15T15:12:12Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "Australia"
-   ],
-   "why": []
-  },
-  {
-   "id": "ba5ef20dc7e9",
-   "title": "Help TDS Linked to Hotejka as 20,000+ Cloudflare Pages Domains Host Tech Support Scams",
-   "link": "https://thehackernews.com/2026/10/help-tds-linked-to-hotejka-as-20000.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-15T14:11:36Z",
-   "summary": "A long-running Traffic Distribution System (TDS) known as Help TDS to a Russian-language affiliate program called Hotejka, which appears to be a rebrand of a traffic monetization operation dubbed ROI777. Help TDS is assessed to be active since at least 2017, offering PHP code templates to partners…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "5d774caabf5a",
-   "title": "Is AI pentesting as good as a human pentester?",
-   "link": "https://www.bleepingcomputer.com/news/security/is-ai-pentesting-as-good-as-a-human-pentester/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-15T14:01:11Z",
-   "summary": "AI pentesting can uncover vulnerabilities missed by human testers, but it also has limitations in consistency, risk assessment, and understanding business context. Intruder compares the strengths and weaknesses of both approaches and explains where AI agents can improve security testing. [...]",
    "score": 0,
    "tags": [],
    "why": []
