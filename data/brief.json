@@ -1,57 +1,58 @@
 {
- "date": "2026-10-27",
- "generated": "2026-10-26T22:49:01+00:00",
- "title": "Sec-Pulse brief - Tue 27 Oct",
+ "date": "2026-10-28",
+ "generated": "2026-10-27T22:27:56+00:00",
+ "title": "Sec-Pulse brief - Wed 28 Oct",
  "items": [
   {
-   "id": "00a30fec2178",
-   "title": "Mega breaches nearly triple as health sector tops Australia’s data breach count",
-   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNMFRnVl9kbjNqbUMtNThqSElVUkFibjJEd3F0RXRWSnhpVnlSOFJiS2NuSmx6M1FORjZkSFFvM19kWkNBSDRMWi1qWEpPT1hzenAtZUg2T3gwZFJ1YlpUdVZNQnEwVXlhTlRSYzY5blFNOUZHMlhCNk9mU21nN3U3WnJ6RnN5VmxSUlFQb0xzZGZLRnI5bGJHbmVBQk9PSnYtMHdscDVySDREdk0yZzFoeVNzMnBWaTZiTElOYmhLNGU3NzIxamNFM2dSZzdFQWdFSUM1UGh6MkRjanA4QzJn?oc=5",
+   "id": "6a6760a087af",
+   "title": "PHP2Shell Weaponized After Japanese Real Estate Extortion",
+   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQaG9pTV9JYXlkblhCSG1qejd5b2g0eFZ4TmtDLWthMV9oSlFWX1daekdNSi1TLTRrbFprSTJZQTB1QWNmMXBENmxxa3pvUXJUMy1qX2hRc3VjbU5oTkxzY0Y2OTJXWEZwREpnUVoyVE9uQ3ZMU1FQc2JuQldpbFNVRlcxTQ?oc=5",
+   "source": "SOCRadar",
+   "region": "Global",
+   "published": "2026-10-27T12:27:11Z",
+   "score": 14,
+   "tags": [
+    "Real estate",
+    "Ransomware"
+   ],
+   "summary": ""
+  },
+  {
+   "id": "94e63b69eea8",
+   "title": "Third-party cyber risk exposed by ZenTech ransomware breach",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQOTdDRDlIdS16dUktRjdRNEFnUFNwNHhTa28yMldqWjdDSnBISmEzd0Y0dkFtUDV0WUVEVUZOMmJHWjFlMlBwbmpIcDlWbGJOOEVyYlA4TVRXWkFMVGpWdDJ6UUZqN0FhV0JYcVBHd01LNVpseTE5Z3NkUDhaODJleXE5NWN3NjZseUlhLTBlQlo4MFRuNi04cVJ5eWVDdV9XRVdPRl9PYUhyd3ljVUVPeGdPbm4zSThBMUpjV1BB?oc=5",
+   "source": "Insurance Business",
+   "region": "Global",
+   "published": "2026-10-27T14:14:32Z",
+   "score": 13,
+   "tags": [
+    "Ransomware",
+    "Data breach",
+    "SaaS / cloud"
+   ],
+   "summary": ""
+  },
+  {
+   "id": "bf8c08bba0b1",
+   "title": "OAIC: Data breaches surge in Australia in H1 2026",
+   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQcVpOcHl3dlg0RUxlVnVuVVhjbHJnR2dKOU81UldIY19RNFFPRXJ6QTlwa2JwN0JKdHJfSG1fczlpVVp3M2FQdHZkWDRCQmZ5RTk5UzJpSDRfcGl6ZXdlZXBYaTJqYmRUQndIZkExLTBUa29kUERrT0ZfcEsta3JycUpZTQ?oc=5",
+   "source": "Mi-3.com.au.",
+   "region": "AU",
+   "published": "2026-10-27T01:56:32Z",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Data breach"
+   ],
+   "summary": ""
+  },
+  {
+   "id": "923aaf647e3d",
+   "title": "Booking platform hack exposes third-party cyber risk across Australian tourism sector",
+   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNa1F5eVVNc01vbkRMNWJ2LTIyY1hoTWFwWThsQmR2R0RjRWZMbUNBcmVRSTNPeVhOZ2VTdms4ZkFvRGxNOXd1eUk2UzZfdUxlY1VCNlZ1QXVyQWVxQUVCaWlaSXBxSHlDRUVReDNVX1JXLWp4ajByd18yalVMZ1Jvd0dWSFJlMExlTHpoVTdpQzJOSmtjOWlKalpfNXVaTzBXaU43M3V5TU81R2U0YzhPaFZHcTNBOXhjOE9GR2lsMzVvaXkySHpEd3drZE5MSzdhQl8wcmJRTDZHU0dBNnBFZg?oc=5",
    "source": "Insurance Business",
    "region": "AU",
-   "published": "2026-10-26T09:49:46Z",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "Data breach"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "36102dd5f699",
-   "title": "Stat dump: Data breaches impacting Aussies continue to rise, OAIC says",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNbmptSnQ2bmdybHEtNUxLREQyZ1dWWDlxb094Vld0a1VlQnpDU0FJUC1ZSll6LUpUWlc2TllHQ2JvWkNWZHNQb242Y0RFdUhyUmRUNXRtQXhjY1dqTEp6eVFycUxoODhoNXJfNklYSklpSjRlZ0VSRnVLc09qVXpnTjk0ZW1vVnRpZkJHZnltNVRxVUVCRmZ6R2VRYjhlbDRfZWtOdGx3MUVNVExocVE?oc=5",
-   "source": "Cyber Daily",
-   "region": "AU",
-   "published": "2026-10-26T01:24:27Z",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "Data breach"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "4294264f80f0",
-   "title": "ACSC warns of critical vulnerabilities in Fortinet products",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPMVE3LVVaYmFLUUVQcWlSXzJUOWVvd21BX0wxMnJCUDJzQjVZT1dhb1hxc2Z2b3NtOHVrLU9CN1JLZ3NIX0JDMlV5MHAxWDJBaDVqOXkyLVV5UEFvNHRkMUtPLWlUeHAzNm1XeGFOYkdrUWN5eUhhWWN3R3F3MHViNlRiZ1lLMG14bEhEdlBzS0RtZE04TWlPVXBya3NnUF9HdXJ4TTB1cGpTWU0?oc=5",
-   "source": "Australian Cyber Security Magazine",
-   "region": "AU",
-   "published": "2026-10-26T00:03:29Z",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "Edge devices"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "fe8ef43cf778",
-   "title": "Australia's worker surveillance laws 'dangerously out of date'",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQem15NlFUVnBCekludW5XYVhsWVVwMVozSFNxQmNFTWxJVTlEWWxqTC12ei1jRGNCVWJncXNKaHNmUXZORzlqcnctZG5GdVpidzBpdnZhZGYxM3haTXhyWTNMNm4zME9ueDItVEoxZkc1UTl2S3Q0ZmVpY1d5NWllMVlmNGlmY2JZeC1JVGxpaXoyX29wd0dXa3gxVU8zMVFlcXFleVFIWVNPRDZmMnZOQlhJTWxYVzRFdFZRSFBvVQ?oc=5",
-   "source": "Human Resources Director",
-   "region": "AU",
-   "published": "2026-10-26T05:52:56Z",
+   "published": "2026-10-27T08:43:14Z",
    "score": 12,
    "tags": [
     "Australia",
@@ -60,29 +61,26 @@
    "summary": ""
   },
   {
-   "id": "fbd9cb2b4455",
-   "title": "PHP2Shell security flaws now sucessfully exploited in the wild",
-   "link": "https://www.bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild/",
-   "source": "BleepingComputer",
+   "id": "f4d2a287e7ba",
+   "title": "Glasscock County Sheriff's Office cautions residents about real estate scam",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPVFdIZHc4V2Z0LWdxcFBvZUpxS3JGdmFxVEJ3WGNSUXZubWUtMEdidGtzMkVoM1Q0cUUxcHJqdTJFQ1A2a09Ydl91Y1JtVlBKSjZuSFI4YjFyOTFZY2wta3h2ZW1ZZlhuWW1EdVltc1AwaWwzQkp2VTBfMUZZYVJraHRpRWxtd21FWGVJSUFLM25kOUhTZWxR?oc=5",
+   "source": "Yahoo",
    "region": "Global",
-   "published": "2026-10-26T09:19:57Z",
-   "score": 11,
+   "published": "2026-10-27T17:25:09Z",
+   "score": 10,
    "tags": [
-    "Actively exploited",
-    "Vulnerability",
-    "SaaS / cloud"
+    "Real estate"
    ],
-   "summary": "Two critical RCE vulnerabilities (CVE-2026-109618 and CVE-2026-109619), collectively tracked as PHP2Shell, have been successfully exploited in the wild. [...]",
-   "epss": 1.0
+   "summary": ""
   }
  ],
  "stats": {
-  "recent": 51,
-  "au": 6,
-  "kev": 0
+  "recent": 72,
+  "au": 5,
+  "kev": 2
  },
  "lesson": {
-  "id": "1.9",
-  "title": "Tooling: triaging an EDR detection"
+  "id": "1.10",
+  "title": "Tooling: secure email gateway workflows"
  }
 }
