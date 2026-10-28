@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-28T05:45:31Z",
+ "generated": "2026-10-28T12:58:51Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,7 +28,7 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 4,
+   "count": 2,
    "error": null
   },
   {
@@ -100,11 +100,293 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 24,
+   "count": 26,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "7c22489c81a5",
+   "title": "Hackers now scanning systems for recently-patched Oracle flaw",
+   "link": "https://www.bleepingcomputer.com/news/security/hackers-now-scanning-systems-for-recently-patched-oracle-flaw/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-28T12:19:57Z",
+   "summary": "Attackers have begun probing the Internet for systems unpatched against a recently disclosed critical Oracle E-Business Suite (EBS) vulnerability. [...]",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "0d8d39d2f11b",
+   "title": "China-Linked Hackers Exploit PHP2Shell to Root Firewalls",
+   "link": "https://www.securityweek.com/china-linked-hackers-exploit-php2shell-to-root-firewalls/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-28T12:00:59Z",
+   "summary": "The attackers chained PHP2Shell and Fragnesia exploits and hacked two servers of a US government-affiliated organization. The post China-Linked Hackers Exploit PHP2Shell to Root Firewalls appeared first on SecurityWeek .",
+   "score": 3,
+   "tags": [
+    "Edge devices"
+   ],
+   "why": [
+    "Edge devices"
+   ]
+  },
+  {
+   "id": "42a9e60af11b",
+   "title": "Adobe Fixes 8 Critical Campaign Classic Flaws Allowing Code Execution and Security Bypass",
+   "link": "https://thehackernews.com/2026/10/adobe-fixes-8-critical-campaign-classic.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-28T11:15:51Z",
+   "summary": "Adobe has released patches to address multiple critical security flaws in Campaign Classic that, if successfully exploited, could result in arbitrary code execution, security feature bypass, and privilege escalation. The list of eight vulnerabilities is as follows - CVE-2026-104351 (CVSS score:…",
+   "score": 4,
+   "tags": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "9ebc7f16e54c",
+   "title": "Long-Hidden Flaws Patched in EPICS Research Facility Control Software",
+   "link": "https://www.securityweek.com/long-hidden-flaws-patched-in-epics-research-facility-control-software/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-28T10:48:00Z",
+   "summary": "Four EPICS Base flaws found by an autonomous system could let attackers crash processes at particle accelerators and fusion labs. The post Long-Hidden Flaws Patched in EPICS Research Facility Control Software appeared first on SecurityWeek .",
+   "score": 5,
+   "tags": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Vulnerability",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "aa5619127529",
+   "title": "CISA warns of hackers now exploiting critical Node2Shell flaw",
+   "link": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-hackers-now-exploiting-critical-node2shell-flaw/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-28T10:46:23Z",
+   "summary": "On Tuesday, the US Cybersecurity and Infrastructure Security Agency (CISA) confirmed that hackers have begun exploiting a critical Brotli vulnerability known as Node2Shell, Broccoli2Shell, and HTTP2Shell. [...]",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "169a3a02ba4a",
+   "title": "American Organizations Under Attack: Skyw4lker Device Code Phishing Campaign Exposed",
+   "link": "https://thehackernews.com/2026/10/american-organizations-under-attack.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-28T10:30:00Z",
+   "summary": "Modern phishing campaigns can compromise American businesses without relying on traditional credential theft. Attackers can abuse legitimate cloud services, authentication mechanisms, and trusted business workflows to gain access to corporate accounts while leaving fewer obvious signs behind.…",
+   "score": 12,
+   "tags": [
+    "Phishing",
+    "Data breach",
+    "Identity",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Phishing",
+    "Data breach",
+    "Identity",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "085573e20d77",
+   "title": "Nobody Trusts the Security Questionnaire. We Rely on It Anyway.",
+   "link": "https://www.securityweek.com/nobody-trusts-the-security-questionnaire-we-rely-on-it-anyway/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-28T10:30:00Z",
+   "summary": "The process that gates nearly every B2B deal is a self-assessment the sender distrusts and the receiver accepts. There is finally a better basis for trust between companies. The post Nobody Trusts the Security Questionnaire. We Rely on It Anyway. appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "56f1c438e294",
+   "title": "Secrets Management Firm Infisical Valued at $600 Million After $40 Million Raise",
+   "link": "https://www.securityweek.com/secrets-management-firm-infisical-valued-at-600-million-after-40-million-raise/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-28T09:48:24Z",
+   "summary": "The company will use the Series B funds to expand its platform for securing AI agents’ access to sensitive systems. The post Secrets Management Firm Infisical Valued at $600 Million After $40 Million Raise appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "965a65e0d849",
+   "title": "Nefilim and Hive ransomware affiliate gets 70 months in prison",
+   "link": "https://www.bleepingcomputer.com/news/security/nefilim-and-hive-ransomware-affiliate-gets-70-months-in-prison/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-28T09:43:15Z",
+   "summary": "A Ukrainian national was sentenced to 70 months in prison for his role in ransomware attacks targeting hospitals, government entities, and high-revenue businesses worldwide between 2018 and 2021. [...]",
+   "score": 4,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
+  },
+  {
+   "id": "3f9c6dce420c",
+   "title": "Hackers Start Probing Fresh Oracle EBS Vulnerability",
+   "link": "https://www.securityweek.com/hackers-start-probing-fresh-oracle-ebs-vulnerability/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-28T09:14:23Z",
+   "summary": "CVE-2026-101767 is an unauthenticated SQL injection that can be exploited for remote code execution. The post Hackers Start Probing Fresh Oracle EBS Vulnerability appeared first on SecurityWeek .",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0061
+  },
+  {
+   "id": "1ba8433aa36e",
+   "title": "Your real estate leads may not be the problem. Your response system might be.",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNRU5DdnNabl9nd2hfcUFadmk2aGNTR0F3VWV2ZUlKWktQUGN6SkZRcU5PcXpITUN4YzNRSlV1XzJ1eHhWY0YzUGF4TmU4T0RRd3ZFTE5zZ0J2NEltZFQyTktDY2VnalAwLTFzb3cwVTZJYWNUdG9pZE1mczloUmhCbTVnQ1c5ek5iZmNHQ0VQa1VycnRjVlJfenhNV1NxTHluOVpERFVxSloyZw?oc=5",
+   "source": "Real Estate Magazine Canada",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-28T09:01:12Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
+   "id": "21dec5f03b58",
+   "title": "CISA Warns of Node2Shell Exploitation as Honeypots Log Attack Attempts",
+   "link": "https://www.securityweek.com/cisa-warns-of-node2shell-exploitation-as-honeypots-log-attack-attempts/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-28T08:37:24Z",
+   "summary": "CISA added the Brotli flaw to its KEV catalog, and two honeypot operators logged attempts, including one that used a broken exploit. The post CISA Warns of Node2Shell Exploitation as Honeypots Log Attack Attempts appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "d75560f4cad5",
+   "title": "Anthropic's Unreleased AI Model Chains Flaws Into Working Chrome, Safari, Windows and Linux Exploits",
+   "link": "https://thehackernews.com/2026/10/anthropics-unreleased-ai-model-chains.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-28T08:15:07Z",
+   "summary": "An unreleased Anthropic AI model found security flaws in Chrome, Safari, Android, Windows, and Linux and chained them into working proof-of-concept exploits, the company said in its latest report. The exploits were built in the lab after the model was prompted, not seen in any real attack, and…",
+   "score": 3,
+   "tags": [
+    "SaaS / cloud"
+   ],
+   "why": [
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "6fcf621f852d",
+   "title": "FBI Seizes Virtualine Domain Over Alleged Criminal Hosting and Bitcoin Money Laundering",
+   "link": "https://thehackernews.com/2026/10/fbi-seizes-virtualine-domain-over.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-28T07:37:50Z",
+   "summary": "The U.S. Department of Justice (DoJ) on Tuesday announced the seizure of a domain associated with a bulletproof hosting provider (BPH) named Virtualine. The move was in response to the service being used to commit and facilitate prolific criminal activity, including \"the advertisement of sexually…",
+   "score": 2,
+   "tags": [
+    "Identity"
+   ],
+   "why": [
+    "Identity"
+   ]
+  },
+  {
+   "id": "697aeb2243e0",
+   "title": "Japan's GMO Offers $1 Million Bounty to Catch Hackers Behind FX Trading Cloud Breach",
+   "link": "https://thehackernews.com/2026/10/japans-gmo-offers-1-million-bounty-to.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-28T07:13:21Z",
+   "summary": "Japan's GMO Internet Group is offering up to $1 million in total for tips that help catch the attackers who breached its Onamae.com Desktop Cloud service, after refusing to pay an extortion demand. The reward program opened on October 28 and pays only if a tip helps lead to an arrest or an…",
+   "score": 9,
+   "tags": [
+    "Ransomware",
+    "Data breach",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Ransomware",
+    "Data breach",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "f01e6eed4371",
+   "title": "ShinyHunters-Exploited Oracle PeopleSoft Zero-Day Turns Out to Be Three Chained Flaws",
+   "link": "https://thehackernews.com/2026/10/shinyhunters-exploited-oracle.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-28T06:04:58Z",
+   "summary": "The critical Oracle PeopleSoft bug that ShinyHunters has exploited since May is not one flaw but three chained together, the researchers who reported it said this week. Oracle patched all three under a single identifier, CVE-2026-35273, in June. Its root is a server-side request forgery (SSRF)…",
+   "score": 15,
+   "tags": [
+    "Actively exploited",
+    "Ransomware",
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Actively exploited",
+    "Ransomware",
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "epss": 0.9668
+  },
   {
    "id": "271b83601f0c",
    "title": "Third Serengeti Sweep Tops 1,400 Arrests as Investigations Mature",
@@ -117,6 +399,27 @@
    "score": 0,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "dc166c047f57",
+   "title": "Adobe Commerce PolyShell Attacks Breach Hundreds of Stores as Brotli Exploit Traffic Emerges",
+   "link": "https://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-28T05:42:26Z",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added two vulnerabilities impacting Adobe Commerce and Magento, and Google's Brotli decoder library to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The vulnerabilities are…",
+   "score": 10,
+   "tags": [
+    "Actively exploited",
+    "Data breach",
+    "Vulnerability"
+   ],
+   "why": [
+    "Actively exploited",
+    "Data breach",
+    "Vulnerability"
+   ]
   },
   {
    "id": "8e015ae66abc",
@@ -241,7 +544,7 @@
    "feed": "Dark Reading",
    "region": "Global",
    "published": "2026-10-27T20:42:40Z",
-   "summary": "Main bombing sis getting a new look with a wide-scale, ongoing social engineering campaign that might be tied to the Black Basta ransomware gang.",
+   "summary": "Mail bombing is getting a new look with a wide-scale, ongoing social engineering campaign that might be tied to the Black Basta ransomware gang.",
    "score": 3,
    "tags": [
     "Ransomware"
@@ -463,6 +766,10 @@
     {
      "source": "The Hacker News",
      "url": "https://thehackernews.com/2026/10/unpatched-tailscale-ssh-flaws-could-let.html"
+    },
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/tailscale-patches-ssh-flaws-that-could.html"
     }
    ]
   },
@@ -7131,335 +7438,6 @@
    "why": [
     "Actively exploited",
     "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "a25cf59c6997",
-   "title": "Cyber's failure of imagination relates to the cost of waiting",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOaEt0aGtQblI2QnE1T0F6cTNfVk5IdktGUW80cGxjR2R3em1ldVlHb3hEaTlGanpCZ01id1hjLUZYMTN1Nl9Ya2tVUFBVNk9SUE1fUndocVhvWDVEMUZtTXlEX3VIQWctTUZkdmlNYVNIQ01DVm5Jdk1WY3RDQkJyZEt6bHdVdjFDMGpscGJPelpkZm1u?oc=5",
-   "source": "IT Brief Australia",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-19T00:49:00Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Phishing"
-   ],
-   "why": [
-    "Phishing"
-   ]
-  },
-  {
-   "id": "6fa2fc15ec28",
-   "title": "AI Breach of Australian Healthcare Website Sparks Regulation Debate",
-   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOXzE0Rl9tTjZmcEk4QXFPOTZoWmU5QnNUUk96a2NkOTN5WHJyeFNvSVh1OTlQeGdUS3l0QzRsZTZqYl9fZ04teEhXYlVza0tLZjNaQ05XckJCaEhrOVRqOFNVWHA4MDk0emRGcnV3SklQLXJBM2xITDFUam0zX245S194UUYwY2swMVRKN0NrNDZEVXlxcUxFdUpoMUNpSzBpUE55N2hjNW94QjNNYUhLUHpXT0toeUItWkQ2a1VadU53RFFlcHdZdDRCTGs0RjR2UGc?oc=5",
-   "source": "Carolina Political Review",
-   "feed": "AU breach news",
-   "region": "AU",
-   "published": "2026-10-18T23:07:18Z",
-   "summary": "",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "Data breach"
-   ],
-   "why": [
-    "Australia",
-    "Data breach"
-   ]
-  },
-  {
-   "id": "4579e8e957d5",
-   "title": "Australia 11th in Microsoft cyber report as phishing rises",
-   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNU1Rra2NmZnFBVmFhTnBid1djT1UydndLNDMzajFkd3djZEFOeF9CU3JwSXVTWjlEM3A4YW14SDB4LW5UelUwVXJaYVM4Nm1rc1VJSG9uOHJ6d1JCWDYxb0J1cWVvci1ySTZfVFItclFZczdsSmRHMm5tT180NTFocXBOVkVYb2tVdXhxdXQ3R1ZQczFlajBPNA?oc=5",
-   "source": "SecurityBrief Australia",
-   "feed": "AU breach news",
-   "region": "AU",
-   "published": "2026-10-18T22:30:00Z",
-   "summary": "",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "Phishing"
-   ],
-   "why": [
-    "Australia",
-    "Phishing"
-   ]
-  },
-  {
-   "id": "8431a59751b6",
-   "title": "Florida Man Sentenced In Texas Federal Court To Over 4 Years For $3M Real Estate Scam",
-   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOdzJsQzNQLXF5OHBtaWxzOGo1dzhTQUNMejc5SXJFSXpnOW1SY1BIQURpQVV2LVlua3YyWUFKa05TY3lpTlMyZmplemNDdHM0R3NsTjNESVRTVEFaM2hFT0tWNkI0ejEzcUlwMUJqbng1bHZLWVN4TGtCQXByWXNwOG1IdlFIQQ?oc=5",
-   "source": "AOL.com",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-18T14:33:19Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ],
-   "also": [
-    {
-     "source": "Tampa Free Press",
-     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQU09uQTFlMUhQSmMtOEp2cDFVOWhFN2k2bHFLbE5aWHo3bjJ5OERHbXBXU3NqSTJWMHBWbUlkajBQM2hGZE9iSVJsWFBfVU9ralA5WFM0TGlrZ1lxdGt4Q0FJTk9pR0Nob2tRN1lISmNYdEpveFR4MVh5bTc2VXlCLWI5SEJVWk1vVjhWZmlqcWhKeEg4SDBYU2N0VDlNU3lOdG9ibXBJNDhKNWxfbVE?oc=5"
-    }
-   ]
-  },
-  {
-   "id": "74ff0a30f9fe",
-   "title": "Hackers exploit SiteGuard WAF flaw to run commands as admins",
-   "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-siteguard-waf-flaw-to-run-commands-as-system-root/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-18T14:23:16Z",
-   "summary": "Attackers are targeting an OS command injection vulnerability in SiteGuard Server Edition that lets them execute commands as root or SYSTEM on affected servers. [...]",
-   "score": 1,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "d33178f3f117",
-   "title": "Orphaned VBA Projects Inside DWG Files: YARA Rule, (Sun, Oct 18th)",
-   "link": "https://isc.sans.edu/diary/rss/33434",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-10-18T12:59:30Z",
-   "summary": "Here is the YARA rule I used to detect \" Orphaned VBA Projects Inside DWG Files \".",
-   "score": 1,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "7e978702ff2e",
-   "title": "US Cybersecurity Job Postings Fall 26% as AI Security Engineer Demand Soars",
-   "link": "https://www.securityweek.com/us-cybersecurity-job-postings-fall-26-as-ai-security-engineer-demand-soars/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-18T11:00:00Z",
-   "summary": "CyberSN’s Cybersecurity Jobs Report provides visibility into the US cybersecurity job market. It’s a mixed bag. The post US Cybersecurity Job Postings Fall 26% as AI Security Engineer Demand Soars appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "a0eb11b81acb",
-   "title": "Silo Real Estate REA probe exposes unlicensed operator gap",
-   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOVXJDN0ZZSTYwczM4cWpDSzdTOGg4cVlscmQtSF8teGtRQ2hKMk0tR3R2YVVNSzl0N29xbnJZTmg5cUJybEJkQ3h6YzJUamFWalZ6RTNDTllleWk5a1g4eHhWVVctSmZJdW5hclJoa19SalQ0amk3M0tUbmk3Ry1GMzVIQ01kcWcyMWsyblVuaw?oc=5",
-   "source": "B2B News",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-17T20:40:54Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ]
-  },
-  {
-   "id": "74a44f824ba0",
-   "title": "Hackers breach Microsoft 365 tenants via ConnectWise supply-chain attack",
-   "link": "https://www.bleepingcomputer.com/news/security/hackers-breach-microsoft-365-tenants-via-connectwise-supply-chain-attack/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-17T15:18:51Z",
-   "summary": "ConnectWise has shut down customer access to its Cloud Backup service (formerly SkyKick Cloud Backup) after hackers accessed application identities and compromised Microsoft 365 tenants. [...]",
-   "score": 15,
-   "tags": [
-    "Real estate",
-    "Microsoft 365",
-    "Data breach"
-   ],
-   "why": [
-    "Real estate",
-    "Microsoft 365",
-    "Data breach"
-   ],
-   "also": [
-    {
-     "source": "LinkedIn",
-     "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPT3BaSGs5Y0R6NjR0RzRITVc2TGo1Yjd6aVFIamM0LWxzeEM2S1lhbEkxOWc0eGh6ZGY5XzNpQXNmcmoyWmtuQlRjN1NwQVJ5UER4TFh2ZEF1WXNWT0phNlJRUFJoY1c5Z3RBcHE0NXNMMlpTVndLeHBiYllHVUpDOUVmNzI0eEdBQzZZRg?oc=5"
-    },
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/hackers-use-compromised-connectwise.html"
-    },
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/connectwise-suspends-cloud-backup-after.html"
-    },
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/connectwise-suspends-cloud-services-in-response-to-cyberattack/"
-    }
-   ]
-  },
-  {
-   "id": "43fc56afbb27",
-   "title": "Drupal patches critical RCE flaws, warns exploits may emerge soon",
-   "link": "https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaws-warns-exploits-may-emerge-soon/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-17T14:32:48Z",
-   "summary": "Drupal has patched two critical vulnerabilities that could allow attackers to execute code remotely on websites running any supported version of the content management system. [...]",
-   "score": 5,
-   "tags": [
-    "Vulnerability",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Vulnerability",
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "7982482cbe3f",
-   "title": "Brad Thoreson, Seattle Real Estate Litigator | Buchalter",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQMTgzR0JpZlp5V0lfWGFmeHoxaDNjRmZCUEU3RXN4MjJ6Zm9PQW94UDhFbE5xSjZya3NPakpQVTVuTzljc3FUaVJLNXJ0WDkwbXRLemc3akRFc0FmQTFhM2lQb3lqMHJKaXBZUWlMeXd4UUJzYTVGaUNlajIzSDk4cDdJZjg1ME0yU3dUTlYwbElIX2piWFZ5elQtMktrOFZSNlczSHdWcw?oc=5",
-   "source": "Haute Living",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-17T12:51:40Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ]
-  },
-  {
-   "id": "1fae9cde44bf",
-   "title": "MALFEX npm Package 'imgdecode' Hides Shellcode Loader in Windows Native Addon",
-   "link": "https://thehackernews.com/2026/10/malfex-npm-package-imgdecode-hides.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-17T11:11:56Z",
-   "summary": "Cybersecurity researchers have discovered a malicious npm package that's part of a recently disclosed software supply chain attack campaign dubbed MALFEX. The package, named \"imgdecode,\" was uploaded to the package registry on September 30, 2026, by a user named \"malfexteste8.\" It has been…",
-   "score": 2,
-   "tags": [
-    "SaaS / cloud"
-   ],
-   "why": [
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "bd3a9d6713d9",
-   "title": "Napoleon Perdis reports data breach affecting 339,000 customers — ABC News Australia",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQQTlyS2xmT3B3ZEw5ajlYWl9hY1h0SGlGekJKR0JEM1piQm5ibFZtUENncWVUbUxhbUJNdXhRajBIX0stUlh2SG1pbnRqdDNkTzh5bUVGYTdaaTJiODFoYnJWYnN5X1c4bEJBWWVuWjUteUt0WEtqYi1kN2tqS0Y4NkpNbm8tekhiQlQyS3pDUmtOamozRG1aQURVVnRyTG5ieFFSMFVkUUlWWlFvaXc?oc=5",
-   "source": "UA.NEWS",
-   "feed": "AU breach news",
-   "region": "AU",
-   "published": "2026-10-17T06:44:13Z",
-   "summary": "",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "Data breach"
-   ],
-   "why": [
-    "Australia",
-    "Data breach"
-   ],
-   "also": [
-    {
-     "source": "tech-insider.org",
-     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNUTZsZ0l0WS1zQ3B5U3ZBNTRtRDM5TXRLaFVFa2NLLU1VRTNXWXl6czVrOVNiejYzSFRqOG5OeEh3OEEwWVVpZGhsVzhMNVZfZlJGdXVUMWUzaUFZU25hT1VqWjdmWGE2RmUzN2o0Z2E5VDFuTGxQNUt2QkVJMGtNM3I0REw?oc=5"
-    }
-   ]
-  },
-  {
-   "id": "a16c16916fa3",
-   "title": "Cosmetics company data breach affects 340,000 clients",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNajNCVDI4bzRXdy1CYy1vNjN6WXpDZS1tYkVyR2N6V2h0aGY2UEpwdlBKUVBENGo1Z2w1dDJsRjFMQXVkSjVEd3BEcGE2M0NydW1qMVM1NXE5QXJqdXd1ZWxDQ3laNEd5Z2VnWk9qU1lKcEtBcHVPSTd6VU5peFhlQ2xIQVpDMTB5UFRYMjdWdGpRdlVGMTVzX293WURHTE4zRVJpdQ?oc=5",
-   "source": "ABC News & Headlines – Australian Broadcasting Corporation",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-17T05:59:12Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "c935a65ca7c8",
-   "title": "Bandra luxe tower developer under fire for building plan breach | Mumbai news",
-   "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQTDJZSmVxM25UOUF5YXNmMTJSYXM3WmJnVERJUDVKUHZfYXJhNHJMLUVLd21hdnZRd0pEM012ODdiM3BfMXhGZnp4WjVnRDYxc2R0VHZQVDFUQUZvZ3pLUVRhNVcwc1pzMG5xck1zS0RlQTFHbmFxdjNqS0JmN2d4VWdjX0NQNEstY1dfdGF4YWlEMy0teVV2ZmZmRW4xVzNCbEgxZXhzTUNIX21YQ24yLWJmSTdVU1FwRU04RnI5bmdWeVFiTDRDb1JuZkRhRkVUY3YxTTRsNkNERTBaQWVsR3pBVWlvOFEyRFVJaWVDZ0R3R0HSAfgBQVVfeXFMTVNoejNnWDd6X3RNd0NEQ01xemZXMl9EVC1RYldSY3FNVlFvNEtMN2pCSFZyTklJbV9nU2ZLRHYxSkZ0cERhN0ZtWnNvcWVvQWNZeTRud2treUgtRjR4ZkZmSUhVRVZvQU15M1Zfbm1yX3JETEc1Z2pLcC1tZmNYSFFBbjBVMmVuWUNrVkgwcnBaX0ZPeE9vSmtaZUVlT216VFdURTR1RHpCLXpSYTZhWVVlcGdhM2tBcFd1ZGgzWGJkMWFaTjA3QUF4VW1xM1FhUG5YMkdpc285SVhJT0Raa2JybC1CVDBjUk1lbUxadkdpcC1aZWVDSUs?oc=5",
-   "source": "Hindustan Times",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-17T04:13:57Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "b0959b26007f",
-   "title": "Lawsuits accuse Chicago delivery robot companies of collecting biometric data",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNWGhFSTZQeVRGd1NPemRIMHpDUnY3ZTc1UDNqUDE4cDg5SEpfTFVOaDBHOHAyQTVrdy1ObFNWQnB5RzhMR3czVDl0Z3IzWEcwczYyMDI2bmRGMTR5M2lsUkxqTmZYTnNFYko4aUVGMGNjRkpndUpBa0g4RXl0REdZUUdSVkRpS0JZRnlHYlF3Y0g2QXM1NVVfcXV1WVNIb190UVBuZ1VaSGpBWnFGTThVVDlCZUo?oc=5",
-   "source": "WBEZ Chicago",
-   "feed": "OAIC / Privacy news",
-   "region": "Global",
-   "published": "2026-10-17T04:09:00Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "SaaS / cloud"
-   ],
-   "why": [
-    "SaaS / cloud"
-   ],
-   "also": [
-    {
-     "source": "CBS News",
-     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZUlLaEZuWWNYN0k4cS1lX3o1WmRkY2h0MW1aQjl2R05FekFoYm42WTFxU2EzRVlZb2RvaE9kU1N3cXFJX0hjbm1lT0QzemR2VlE4MzJIZU5DeHNKZHdtVzJDcnUwZGdhNWw5aDNONS1jaHhWRm5DaDdLN2JLS09Yd1U4WU1iRzJCVmRxdVpnUGdKS2dYdmNYU1Q3U28wZlh4c1psdg?oc=5"
-    }
-   ]
-  },
-  {
-   "id": "e0aab5cdf64d",
-   "title": "Killer of real estate agent in Duncan has day parole appeal denied",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPQnVabXI0b2hIRzQtd2s1cndWaHNlcllPdzBZOFhRdFFUZDRmZ3ZQcUNDQzJ1cUEzOWNkRGFhdURaSnNBQkROVlYxVTVqZHFRVFlPcHRTSHl6U24zMDg4djBUZGdUQ0oxTVFNbDY3bk5fd3hzMmstQUc2NEZyVDdSN2VpNnoyN0c0VUhER09lWWNpcWw3T2dZUkRMVFViZnQ4UXgtbnhyR3htdXdia1JiZXFQU2h2NEU?oc=5",
-   "source": "Times Colonist",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-17T04:00:00Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
    ]
   }
  ]
