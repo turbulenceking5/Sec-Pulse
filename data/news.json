@@ -1,17 +1,17 @@
 {
- "generated": "2026-10-27T22:27:45Z",
+ "generated": "2026-10-28T05:45:31Z",
  "sources": [
   {
    "name": "ACSC Alerts",
-   "ok": true,
-   "count": 3,
-   "error": null
+   "ok": false,
+   "count": 0,
+   "error": "TimeoutError: The read operation timed out"
   },
   {
    "name": "ACSC Advisories",
-   "ok": true,
+   "ok": false,
    "count": 0,
-   "error": null
+   "error": "TimeoutError: The read operation timed out"
   },
   {
    "name": "ACSC (via Google News)",
@@ -28,7 +28,7 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 5,
+   "count": 4,
    "error": null
   },
   {
@@ -40,7 +40,7 @@
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 3,
+   "count": 2,
    "error": null
   },
   {
@@ -52,7 +52,7 @@
   {
    "name": "CISA KEV",
    "ok": true,
-   "count": 21,
+   "count": 19,
    "error": null
   },
   {
@@ -100,7 +100,7 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 26,
+   "count": 24,
    "error": null
   }
  ],
@@ -114,6 +114,74 @@
    "region": "Global",
    "published": "2026-10-28T06:00:00Z",
    "summary": "Interpol's annual Operation Serengeti, now on its third iteration, led to 1,462 arrests across 20 African countries and the US, recovering $105 million in stolen funds.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "8e015ae66abc",
+   "title": "ISC Stormcast For Wednesday, October 28th, 2026 https://isc.sans.edu/podcastdetail/10154, (Wed, Oct 28th)",
+   "link": "https://isc.sans.edu/diary/rss/33464",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-10-28T02:30:11Z",
+   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "48d9bd4622a4",
+   "title": "Glasscock County Sheriff's Office cautions residents about real estate scam",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPOHo1VFMxMzMxbWFueGJ2NFF4VmltTnozM1NqdnYteTN6MDZ0UlR2M2JhR3hyQlMtc01FTmtFb0k5d0J4cDduY3dmcjRpek5QWXZ4N0J1T3NuZllVdEQyb1BNYzBHX0stSmRrbjFqVFBTT3dBbmZLVmhYR01IbkJXRVVPZGpRdGV3bGxjMlRXTmNReTlMaEtNOEFPUTV4MmthN3RmTGZpOXZiVkg5dll5cENYNkdjc0o2?oc=5",
+   "source": "newswest9.com",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-28T00:01:00Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ],
+   "also": [
+    {
+     "source": "Yahoo",
+     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPVFdIZHc4V2Z0LWdxcFBvZUpxS3JGdmFxVEJ3WGNSUXZubWUtMEdidGtzMkVoM1Q0cUUxcHJqdTJFQ1A2a09Ydl91Y1JtVlBKSjZuSFI4YjFyOTFZY2wta3h2ZW1ZZlhuWW1EdVltc1AwaWwzQkp2VTBfMUZZYVJraHRpRWxtd21FWGVJSUFLM25kOUhTZWxR?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "5246b1272668",
+   "title": "Japan's GMO urges customers to shut down PCs amid ransomware threat",
+   "link": "https://www.bleepingcomputer.com/news/security/japans-gmo-urges-customers-to-shut-down-pcs-amid-ransomware-threat/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-27T23:35:51Z",
+   "summary": "The GMO Group has urged customers to disconnect their systems from the internet and shut down computers after a threat actor who breached the company's Onamae Desktop Cloud threatened to launch a ransomware attack today. [...]",
+   "score": 7,
+   "tags": [
+    "Ransomware",
+    "Data breach"
+   ],
+   "why": [
+    "Ransomware",
+    "Data breach"
+   ]
+  },
+  {
+   "id": "dedf00d64727",
+   "title": "OpenAI's GPT-6.1 Terra is safer overall, but shows more destructive-action flags in tests",
+   "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/openais-gpt-61-terra-is-safer-overall-but-shows-more-destructive-action-flags-in-tests/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-27T22:43:27Z",
+   "summary": "OpenAI confirmed GPT-6.1 Terra is safer overall than some of its older models, but its safety testing also found other problems. [...]",
    "score": 0,
    "tags": [],
    "why": []
@@ -260,23 +328,6 @@
    "score": 0,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "f4d2a287e7ba",
-   "title": "Glasscock County Sheriff's Office cautions residents about real estate scam",
-   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPVFdIZHc4V2Z0LWdxcFBvZUpxS3JGdmFxVEJ3WGNSUXZubWUtMEdidGtzMkVoM1Q0cUUxcHJqdTJFQ1A2a09Ydl91Y1JtVlBKSjZuSFI4YjFyOTFZY2wta3h2ZW1ZZlhuWW1EdVltc1AwaWwzQkp2VTBfMUZZYVJraHRpRWxtd21FWGVJSUFLM25kOUhTZWxR?oc=5",
-   "source": "Yahoo",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-27T17:25:09Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ]
   },
   {
    "id": "d6b3b36b0050",
@@ -555,6 +606,21 @@
     "Vulnerability"
    ],
    "epss": 0.0053
+  },
+  {
+   "id": "21e6441e976b",
+   "title": "ASD releases seventh annual Cyber Threat Report 2025-26",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOWTlxOHhLem9qSXRua3dlU0c5WDZCaHdGSGZxejAtMmJ4MDNOaEIxNjFoMWRmcW9UaEZtb0R0RldWNDh1d3hFVFo0eXY2WE5od0xPcGlVRkxOQ3h0Q2dvRmJHOGpBb0FPSG1nWlNyWTJ5M3NVNXZaWmhnVkFIbFE2Yzlia2lNWTNQMlNQcFh3?oc=5",
+   "source": "Australian Cyber Security Centre",
+   "feed": "ACSC (via Google News)",
+   "region": "AU",
+   "published": "2026-10-27T12:00:00Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "Australia"
+   ],
+   "why": []
   },
   {
    "id": "c99aa3fd55df",
@@ -897,21 +963,6 @@
    "why": [
     "Ransomware"
    ]
-  },
-  {
-   "id": "21e6441e976b",
-   "title": "ASD releases seventh annual Cyber Threat Report 2025-26",
-   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOWTlxOHhLem9qSXRua3dlU0c5WDZCaHdGSGZxejAtMmJ4MDNOaEIxNjFoMWRmcW9UaEZtb0R0RldWNDh1d3hFVFo0eXY2WE5od0xPcGlVRkxOQ3h0Q2dvRmJHOGpBb0FPSG1nWlNyWTJ5M3NVNXZaWmhnVkFIbFE2Yzlia2lNWTNQMlNQcFh3?oc=5",
-   "source": "Australian Cyber Security",
-   "feed": "ACSC (via Google News)",
-   "region": "AU",
-   "published": "2026-10-27T04:39:47Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "Australia"
-   ],
-   "why": []
   },
   {
    "id": "968629f0ead3",
@@ -7409,85 +7460,6 @@
    ],
    "why": [
     "Real estate"
-   ]
-  },
-  {
-   "id": "c452fd369354",
-   "title": "Redfin, Rocket hit with lawsuit over alleged breach of employee data",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOaU1ibDI4b29SbG00NFliRHhCQmJwUGNsLTZnRDNNMklDM0E1UThXbGVJOXFRamhENGpBMmI3TEE3Si1TTWREb2pJbnNBeE1UYkZjYWNwRVhxSllIR3QxeG5ndjVaTHRjelFpT3VoVUd1Y3ZCbEVJandPTFZvekppTGZ3Ujg4MTNRRHVFdFBRajA2dldDaTRfQVBHWHhlQQ?oc=5",
-   "source": "The Spokesman-Review",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-16T23:52:00Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Data breach",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Data breach",
-    "SaaS / cloud"
-   ],
-   "also": [
-    {
-     "source": "Hoodline",
-     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQd0t2U3hybTRVbGZIWmt1MzlPaXJOZlBxYndTVTNFUWlJaDNxMDRZZkVoOWRITi1peV91NXhvUDl2bXNjZl95NjVtQmYxRmJoenBoY0lmdElMT3F1WFdGZGN5U0ZYMUExbkdEZlc2ZjdGNUhsVW10MzVhWllXZzl3M0o3VjNaUVNVRXhsRnp1Sm1CMzZselpyYkdpSl8?oc=5"
-    },
-    {
-     "source": "The Derrick",
-     "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPamluWTlWTVFWMmpJRnlZMk5OLXZlcFphTzFTamI3a1E5OTBCM1Z5MXRnSjhwa3JYV2QydHRJcDNraVhXXzRfVmtDMG5oRmxvZFN6ZDVzblVJQXA2OGpkel9ma1RicnZJOXBadzVEdEliR1hIc1QtSF9qRGxfcHRrZDlLRERaSDVINERKcndLQ0oxb05HZFl2bXgtTE91OUxxXzNTLXdKWGIwSjJIMDVYX1BZSVBaN1pNcmwyakVqM3p6Wlc1R1hrWjM3SzdpcUM5QjRFYkFNLWQwOGEwNUh0NkRPUU9ScHFkNEhTMkVHNkpmQkJvaFE?oc=5"
-    }
-   ]
-  },
-  {
-   "id": "1396deafd01c",
-   "title": "Rental scam alert warning: Scammer poses as homeowners to rent homes that aren't for rent in North Carolina",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQZ2pOWXpTRVV1V0ZHM2lhcWhrbHRHcmljdktqaHdVeGtQXzJrT1hZRlhMRXVjYVFNX3N1c3I1bWMzVWFaVDczLTBVWEw4YlhTV1lRa1ZlNDRLWVdkVUIxYTROSDZrSHB4UXZ1cXM4N1FERmxBMWVmUGdYbkRxUGpUWDVvb2dlZkRHU2VMSDgzSEMwSjBaR2dyLVBlTzlpM1BWVmZTamZudUZDUk9qU2pQaHdqaGNkV3Awalo00gG7AUFVX3lxTFBnak5ZelNFVXVXRkczaWFxaGtsdEdyaWN2S2pod1V4a1BfMmtPWFlGWExFdWNhUU1fc3VzcjVtYzNVYVpUNzMtMFVYTDhiWFNXWVFrVmU0NEtZV2RVQjFhNE5INmtIcHhRdnVxczg3UURGbEExZWZQZ1huRHFQalRYNW9vZ2VmREdTZUxIODNIQzBKMFpHZ3ItUGVPOWkzUFZWZlNqZm51RkNST2pTalBod2poY2RXcDBqWjQ?oc=5",
-   "source": "ABC11 News",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-16T21:43:52Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ]
-  },
-  {
-   "id": "15367a3259ff",
-   "title": "BeyondTrust Remote Support Zero-Day Continues Trend of Exploited Edge Bugs",
-   "link": "https://www.darkreading.com/endpoint-security/beyondtrust-remote-support-exploited-edge-bugs",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-16T20:34:37Z",
-   "summary": "Ivanti, Cisco, and Palo Alto Networks all had vulnerabilities in edge devices come under fire this week. Now BeyondTrust joins the group.",
-   "score": 7,
-   "tags": [
-    "Actively exploited",
-    "Edge devices"
-   ],
-   "why": [
-    "Actively exploited",
-    "Edge devices"
-   ],
-   "also": [
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/chinese-apt-exploited-beyondtrust-vulnerability-as-zero-day/"
-    },
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/china-linked-hackers-exploited.html"
-    },
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/beyondtrust-patches-zero-day-exploited-in-attacks-since-august/"
-    }
    ]
   }
  ]
