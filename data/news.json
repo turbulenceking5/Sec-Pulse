@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-28T12:58:51Z",
+ "generated": "2026-10-28T20:17:13Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -22,7 +22,7 @@
   {
    "name": "ASD / ACSC in the news",
    "ok": true,
-   "count": 3,
+   "count": 2,
    "error": null
   },
   {
@@ -34,13 +34,13 @@
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 7,
+   "count": 2,
    "error": null
   },
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 2,
+   "count": 1,
    "error": null
   },
   {
@@ -52,7 +52,7 @@
   {
    "name": "CISA KEV",
    "ok": true,
-   "count": 19,
+   "count": 21,
    "error": null
   },
   {
@@ -82,7 +82,7 @@
   {
    "name": "Microsoft Security Blog",
    "ok": true,
-   "count": 5,
+   "count": 6,
    "error": null
   },
   {
@@ -100,11 +100,347 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 26,
+   "count": 29,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "d9b49b7f0de2",
+   "title": "Discord to let search engines index public server messages",
+   "link": "https://www.bleepingcomputer.com/news/security/discord-to-let-search-engines-index-public-server-messages/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-28T18:44:16Z",
+   "summary": "Discord will allow search engines to index discussions in Discoverable Servers and make them accessible on the web to users outside the platform without an account or invitation. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "10e92bd49867",
+   "title": "Volt Typhoon Used Covert Silent Train Network in Four Zero-Day Exploitation Campaigns",
+   "link": "https://thehackernews.com/2026/10/volt-typhoon-used-covert-silent-train.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-28T18:08:33Z",
+   "summary": "The China-nexus cyber espionage group known as Volt Typhoon has been attributed to a now-disrupted covert access network dubbed Silent Train that has been put to use for zero-day exploitation and strategic access. \"First identified in late 2023, Silent Train uses rotating chains of compromised…",
+   "score": 5,
+   "tags": [
+    "Actively exploited"
+   ],
+   "why": [
+    "Actively exploited"
+   ],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/volt-typhoon-hides-zero-day-attacks-using-silent-train-framework/"
+    }
+   ]
+  },
+  {
+   "id": "99b2c80ef2ba",
+   "title": "Montreal grandparent scammer who fled to Central America pleads guilty in U.S. court",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPSlQ4d3E1RS0tZWgtSEJWTWI3YlVTYm1iaV9uR0lZbi1UdG9wUnI0ZmZyOWM5Z2RyZ3Z0eDhRUlJjSHVRdHZyVFVCajlWWERET2RzSTFfd19aQ2tnVXFBUDJQWVYyLXRzVkxDbHRwcVRhRTcybl9QbWF3bTNIb1FiZWNEUGt6NnpQ?oc=5",
+   "source": "CBC",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-28T17:27:12Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Microsoft 365"
+   ],
+   "why": [
+    "Microsoft 365"
+   ]
+  },
+  {
+   "id": "b057f3381d27",
+   "title": "Google to Allow One-Tap Android App Installs From Approved Third-Party Stores Outside U.S.",
+   "link": "https://thehackernews.com/2026/10/google-to-allow-one-tap-android-app.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-28T17:08:09Z",
+   "summary": "Third-party Android app stores can now apply to Google for permission to install apps with one tap, without Android's usual confirmation screens, and to update them in the background. To qualify, a store must pass identity checks and send Google its full catalog, along with every new app and…",
+   "score": 3,
+   "tags": [
+    "SaaS / cloud"
+   ],
+   "why": [
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "71d5dc0e2e25",
+   "title": "Veeam APJ Ransomware Webinar: 2 Execs, Zero Trust [2026]",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE4wWFluTTdQblBlYkhUV2cyMmo2bWdRTW9LT3BwUnRrX3hYNEplRlBuQkI1TkJ3XzZwUDZfaUQ5SW5mV2V2NEFUdTlKR09mV2JtalYtZEE3YzQyekFJUmJoZmxSWURWN0t3cGFXcG1tQ1pVc0ZydUkyWVd0NkIxZw?oc=5",
+   "source": "tech-insider.org",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-28T16:57:45Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
+  },
+  {
+   "id": "516ab6192d20",
+   "title": "Sony ISP subsidiary data breach exposes 2.5 million customer records",
+   "link": "https://www.bleepingcomputer.com/news/security/sony-isp-subsidiary-data-breach-exposes-25-million-customer-records/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-28T16:45:47Z",
+   "summary": "Sony Network Communications has confirmed a data breach that compromised approximately 2.5 million records containing current and former customers' personal information. [...]",
+   "score": 4,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "bce30872ee07",
+   "title": "Researcher Reveals How Logic Bugs Alone Cracked Microsoft Edge in $175,000 Pwn2Own Win",
+   "link": "https://thehackernews.com/2026/10/researcher-reveals-how-logic-bugs-alone.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-28T16:23:34Z",
+   "summary": "A chain of logic flaws, with no memory corruption, can turn a malicious web page into code running on a Windows computer outside Microsoft Edge's sandbox, a security researcher has shown. Orange Tsai of DEVCORE published the full method on October 28, five months after the chain won $175,000 at…",
+   "score": 2,
+   "tags": [
+    "SaaS / cloud"
+   ],
+   "why": [
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "cd96a1792e01",
+   "title": "Yet Another ClickFix Campaign, (Wed, Oct 28th)",
+   "link": "https://isc.sans.edu/diary/rss/33466",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-10-28T16:07:03Z",
+   "summary": "Introduction",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "eb73651e36ee",
+   "title": "PHP2Shell Attack Roots 25 Servers, Breaches U.S. Government-Affiliated Network",
+   "link": "https://thehackernews.com/2026/10/php2shell-attack-roots-25-servers.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-28T16:02:45Z",
+   "summary": "Cybersecurity researchers have disclosed details of what appears to be an artificial intelligence (AI)-assisted attack orchestrated by a suspected China-nexus threat actor that has leveraged the PHP2Shell vulnerabilities to breach exposed systems. The activity, which was observed on October 25,…",
+   "score": 4,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "02f39348974c",
+   "title": "The CISO’s evolving role: Protecting and defending in the agentic era",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/10/28/the-cisos-evolving-role-protecting-and-defending-in-the-agentic-era/",
+   "source": "Microsoft Security Blog",
+   "feed": "Microsoft Security Blog",
+   "region": "Global",
+   "published": "2026-10-28T16:00:00Z",
+   "summary": "As AI and agents reshape the enterprise, CISOs face two critical priorities: enabling innovation with the right identity and data guardrails, and modernizing defense to keep pace with AI-powered threats. Aarti Borkar shares how security leaders can approach both. The post The CISO’s evolving role:…",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "f424b83a0c00",
+   "title": "Ukrainian Hive and Nefilim Ransomware Affiliate Gets 70 Months in US Prison",
+   "link": "https://www.securityweek.com/ukrainian-hive-and-nefilim-ransomware-affiliate-gets-70-months-in-us-prison/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-28T15:05:06Z",
+   "summary": "Artem Stryzhak was sentenced to 70 months in prison after pleading guilty to using Nefilim ransomware in attacks. The post Ukrainian Hive and Nefilim Ransomware Affiliate Gets 70 Months in US Prison appeared first on SecurityWeek .",
+   "score": 4,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/nefilim-and-hive-ransomware-affiliate-gets-70-months-in-prison/"
+    }
+   ]
+  },
+  {
+   "id": "7f47388e611d",
+   "title": "Microsoft urges Entra ID admins to migrate users to passkeys",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-reminds-entra-id-admins-to-migrate-users-to-passkeys/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-28T14:48:32Z",
+   "summary": "Microsoft again asked Entra ID administrators to migrate users to phishing-resistant methods to avoid sign-in disruptions before it retires SMS and voice authentication in February 2027. [...]",
+   "score": 10,
+   "tags": [
+    "Phishing",
+    "Microsoft 365",
+    "Identity"
+   ],
+   "why": [
+    "Phishing",
+    "Microsoft 365",
+    "Identity"
+   ]
+  },
+  {
+   "id": "70a17c1d3a5b",
+   "title": "Attacker Relentlessly Scans for Credentials by Impersonating AI Bots",
+   "link": "https://www.darkreading.com/cyber-risk/attacker-impersonates-ai-bots-scans-credentials",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-28T14:37:52Z",
+   "summary": "The threat actor lurked behind bots posing as agents from OpenAI, Anthropic, Meta, and others to find exposed data.",
+   "score": 6,
+   "tags": [
+    "Data breach",
+    "Identity"
+   ],
+   "why": [
+    "Data breach",
+    "Identity"
+   ]
+  },
+  {
+   "id": "60ccb0bbd830",
+   "title": "InfraTrust report warns of exploited flaws in critical network infrastructure",
+   "link": "https://www.bleepingcomputer.com/news/security/infratrust-report-warns-of-exploited-flaws-in-critical-network-infrastructure/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-28T14:00:00Z",
+   "summary": "Attackers are actively exploiting vulnerabilities across critical network infrastructure, and PHP flaws known as \"PHP2Shell\" put the web management interfaces of firewalls, VPNs, application delivery controllers, and other appliances at risk. [...]",
+   "score": 5,
+   "tags": [
+    "Edge devices",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Edge devices",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "943e231b105b",
+   "title": "Upwind Security Raises $400 Million at $3.8 Billion Valuation",
+   "link": "https://www.securityweek.com/upwind-security-raises-400-million-at-3-8-billion-valuation/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-28T13:56:50Z",
+   "summary": "The massive funding round comes just days after reports emerged that Upwind had attracted acquisition interest from several companies, including Datadog The post Upwind Security Raises $400 Million at $3.8 Billion Valuation appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "219f99ac76bf",
+   "title": "Even after PHP2Shell, blast radius matters more than a CVSS score",
+   "link": "https://www.bleepingcomputer.com/news/security/even-after-php2shell-blast-radius-matters-more-than-a-cvss-score/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-28T13:50:59Z",
+   "summary": "PHP2Shell shows how quickly attackers can exploit critical vulnerabilities, often before organizations have time to patch. Token Security explains why limiting the access of service accounts, API keys, and AI agents is just as important as fixing vulnerabilities to reduce the damage from a breach.…",
+   "score": 4,
+   "tags": [
+    "Data breach",
+    "Vulnerability"
+   ],
+   "why": [
+    "Data breach",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "04dad7bd605d",
+   "title": "Chrome and Firefox Updates Patch Over 200 Vulnerabilities",
+   "link": "https://www.securityweek.com/chrome-and-firefox-updates-patch-over-200-vulnerabilities/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-28T13:39:35Z",
+   "summary": "The Chrome 156 update fixes 52 bugs, while Firefox 159 was rolled out with 167 security patches. The post Chrome and Firefox Updates Patch Over 200 Vulnerabilities appeared first on SecurityWeek .",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "84fd85017893",
+   "title": "TLS Flaws Found in GoAhead Web Server Used in Hundreds of Millions of Devices",
+   "link": "https://www.securityweek.com/tls-flaws-found-in-goahead-web-server-used-in-hundreds-of-millions-of-devices/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-28T13:10:34Z",
+   "summary": "FoxIO disclosed three GoAhead TLS bugs that can let revoked certificates through or expose some encrypted sessions to eavesdroppers. The post TLS Flaws Found in GoAhead Web Server Used in Hundreds of Millions of Devices appeared first on SecurityWeek .",
+   "score": 3,
+   "tags": [
+    "SaaS / cloud"
+   ],
+   "why": [
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "29d08fa787d9",
+   "title": "Hackers Target Critical Oracle E-Business Suite RCE Flaw Days After Security Patch",
+   "link": "https://thehackernews.com/2026/10/hackers-target-critical-oracle-e.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-28T12:48:03Z",
+   "summary": "Threat actors are beginning to probe for a newly patched critical vulnerability in Oracle E-Business Suite (EBS), according to threat intelligence firm Defused Cyber. The vulnerability in question is CVE-2026-101767 (CVSS score: 9.8) , a case of improper authentication in the Oracle Application…",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0061,
+   "also": [
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/hackers-start-probing-fresh-oracle-ebs-vulnerability/"
+    }
+   ]
+  },
   {
    "id": "7c22489c81a5",
    "title": "Hackers now scanning systems for recently-patched Oracle flaw",
@@ -140,6 +476,36 @@
    ]
   },
   {
+   "id": "eb93de238d98",
+   "title": "Critical 16-Year-Old UEFI Flaw Can Run Code Before Secure Boot on Network-Booting Servers",
+   "link": "https://thehackernews.com/2026/10/critical-16-year-old-uefi-flaw-can-run.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-28T11:50:00Z",
+   "summary": "A critical 16-year-old flaw in EDK II, the open-source code that most hardware makers use to build UEFI firmware, can allow an attacker to run code on a machine before its operating system loads, but only while the machine is booting over the network. UEFI firmware is the software that runs first…",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "ce5fe177d9da",
+   "title": "Wazuh and AI for Enhanced SOC Workflows",
+   "link": "https://thehackernews.com/2026/10/wazuh-and-ai-for-enhanced-soc-workflows.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-28T11:30:00Z",
+   "summary": "Artificial Intelligence (AI) has become one of this decade's defining technologies. From healthcare and finance to manufacturing and education, organizations increasingly rely on AI to automate repetitive tasks, uncover patterns hidden within large datasets, and support faster decision-making.…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
    "id": "42a9e60af11b",
    "title": "Adobe Fixes 8 Critical Campaign Classic Flaws Allowing Code Execution and Security Bypass",
    "link": "https://thehackernews.com/2026/10/adobe-fixes-8-critical-campaign-classic.html",
@@ -156,6 +522,24 @@
    "why": [
     "Vulnerability",
     "SaaS / cloud"
+   ],
+   "epss": 0.0057
+  },
+  {
+   "id": "41b911af3c8d",
+   "title": "JONATHAN TURLEY: Supreme Court must take Herridge case and protect reporters’ sources",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQck11cXpDLUlGaEZUdEJQU0loV2lVb2hORnAzRWZENEhjclFjZnQyX1FNSlJuR1RvalI4VDJNUmlDYmFUWktSU2s5a2tUTW15TkNiOC1ZU2cwZ3k1R1BWa1B0TFRWSzZoQnhFdFFZRGN4RWlNMjV3XzR3RDJpbWdNVHg0LTBqdnZjV2FiZEpVNUJLYTNCS1ZzZFprSDJ6V3dJRmNQWGszUnBwekRieTc3cExXdGZ2OFk?oc=5",
+   "source": "930 WFMD Free Talk",
+   "feed": "OAIC / Privacy news",
+   "region": "Global",
+   "published": "2026-10-28T10:49:45Z",
+   "summary": "",
+   "score": 4,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
    ]
   },
   {
@@ -244,41 +628,6 @@
    "why": []
   },
   {
-   "id": "965a65e0d849",
-   "title": "Nefilim and Hive ransomware affiliate gets 70 months in prison",
-   "link": "https://www.bleepingcomputer.com/news/security/nefilim-and-hive-ransomware-affiliate-gets-70-months-in-prison/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-28T09:43:15Z",
-   "summary": "A Ukrainian national was sentenced to 70 months in prison for his role in ransomware attacks targeting hospitals, government entities, and high-revenue businesses worldwide between 2018 and 2021. [...]",
-   "score": 4,
-   "tags": [
-    "Ransomware"
-   ],
-   "why": [
-    "Ransomware"
-   ]
-  },
-  {
-   "id": "3f9c6dce420c",
-   "title": "Hackers Start Probing Fresh Oracle EBS Vulnerability",
-   "link": "https://www.securityweek.com/hackers-start-probing-fresh-oracle-ebs-vulnerability/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-28T09:14:23Z",
-   "summary": "CVE-2026-101767 is an unauthenticated SQL injection that can be exploited for remote code execution. The post Hackers Start Probing Fresh Oracle EBS Vulnerability appeared first on SecurityWeek .",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.0061
-  },
-  {
    "id": "1ba8433aa36e",
    "title": "Your real estate leads may not be the problem. Your response system might be.",
    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNRU5DdnNabl9nd2hfcUFadmk2aGNTR0F3VWV2ZUlKWktQUGN6SkZRcU5PcXpITUN4YzNRSlV1XzJ1eHhWY0YzUGF4TmU4T0RRd3ZFTE5zZ0J2NEltZFQyTktDY2VnalAwLTFzb3cwVTZJYWNUdG9pZE1mczloUmhCbTVnQ1c5ek5iZmNHQ0VQa1VycnRjVlJfenhNV1NxTHluOVpERFVxSloyZw?oc=5",
@@ -307,6 +656,23 @@
    "score": 0,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "307120d03025",
+   "title": "Daishin Securities faces data breach of 38,490 customers; Bithumb and Mirae Asset Global Investments also hit by hacks",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9UY1owdTQ4SVpOYU8tZmw3czNJVVRacTlxaERzcS1PLV9wZ1JxZHF6R2VOYkYyQy1OZUhXbGRaUWIxSDk5NklNWmtHUzFXWjRoNXdUUnV4RWRYbXdRS1ZNcjR3?oc=5",
+   "source": "재경일보",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-28T08:30:04Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
   },
   {
    "id": "d75560f4cad5",
@@ -395,7 +761,7 @@
    "feed": "Dark Reading",
    "region": "Global",
    "published": "2026-10-28T06:00:00Z",
-   "summary": "Interpol's annual Operation Serengeti, now on its third iteration, led to 1,462 arrests across 20 African countries and the US, recovering $105 million in stolen funds.",
+   "summary": "Interpol's annual Operation Serengeti, now in its third iteration, led to 1,462 arrests across 20 African countries and the US, recovering $105 million in stolen funds.",
    "score": 0,
    "tags": [],
    "why": []
@@ -456,6 +822,48 @@
      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPVFdIZHc4V2Z0LWdxcFBvZUpxS3JGdmFxVEJ3WGNSUXZubWUtMEdidGtzMkVoM1Q0cUUxcHJqdTJFQ1A2a09Ydl91Y1JtVlBKSjZuSFI4YjFyOTFZY2wta3h2ZW1ZZlhuWW1EdVltc1AwaWwzQkp2VTBfMUZZYVJraHRpRWxtd21FWGVJSUFLM25kOUhTZWxR?oc=5"
     }
    ]
+  },
+  {
+   "id": "98eb0ea8b2ed",
+   "title": "CVE-2026-46300: Linux Kernel — Linux Kernel Missing Initialization of a Variable Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-46300",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-10-28T00:00:00Z",
+   "summary": "Linux Kernel contains a missing initialization of a variable vulnerability that could allow for unintended modification of page-cache-backed data via failure to preserve the shared-fragment marker during socket buffer coalescing, causing ESP input processing… CISA remediation due 2026-10-31.",
+   "score": 7,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Phishing",
+    "Vulnerability"
+   ],
+   "why": [
+    "Phishing",
+    "Vulnerability"
+   ],
+   "epss": 0.1019
+  },
+  {
+   "id": "ce69bcf7884b",
+   "title": "CVE-2026-41709: Broadcom VMware ESX — Broadcom VMWare ESX Insufficient Logging Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-41709",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-10-28T00:00:00Z",
+   "summary": "Broadcom VMWare ESX contains an insufficient logging vulnerability that could allow a malicious actor with admin access to perform certain operations without being logged. CISA remediation due 2026-11-11.",
+   "score": 4,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.003
   },
   {
    "id": "5246b1272668",
@@ -1435,7 +1843,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.3058
+   "epss": 0.5908
   },
   {
    "id": "a77dca8ee96e",
@@ -1455,7 +1863,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.5548
+   "epss": 0.8799
   },
   {
    "id": "d1471d8c2286",
@@ -1704,7 +2112,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.5548
+   "epss": 0.8799
   },
   {
    "id": "5e34561ea984",
@@ -2611,7 +3019,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.5548
+   "epss": 0.8799
   },
   {
    "id": "3a1a036ef73a",
@@ -3404,7 +3812,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0106
+   "epss": 0.013
   },
   {
    "id": "9121dd1ef642",
@@ -7007,437 +7415,6 @@
    ],
    "why": [
     "Actively exploited"
-   ]
-  },
-  {
-   "id": "10c7257940cc",
-   "title": "Inside the Underground Market for Know Your Client Services",
-   "link": "https://www.bleepingcomputer.com/news/security/inside-the-underground-market-for-know-your-client-services/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-19T14:00:10Z",
-   "summary": "Cybercriminals are selling forged identity documents, deepfake videos, and live verification services to help buyers bypass Know Your Client (KYC) checks. Flare examines how these underground services operate and the techniques used to create and maintain fraudulent verified accounts. [...]",
-   "score": 1,
-   "tags": [
-    "AI threats"
-   ],
-   "why": [
-    "AI threats"
-   ]
-  },
-  {
-   "id": "6e8696034a92",
-   "title": "The Evolving Cybersecurity Lexicon: Vulnerability Discovery to Resilience",
-   "link": "https://www.darkreading.com/vulnerabilities-threats/cybersecurity-lexicon-vulnerability-discovery-resilience",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-19T14:00:00Z",
-   "summary": "An industry-wide laser focus on vulnerabilities has left cybersecurity teams without enough room to strategize for resilience.",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "8fa11e4ab81b",
-   "title": "Are Pakistani Universities Safe From ShinyHunters Ransomware?",
-   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1RZ25FQTM5VTA0elg3SmRnNHozY1o4NEpva3p5WHBmZ1BObkRNV0FiNTRubnl5VWcwUVBIczVsQS0wQ0V2RjJkc0J0MGdCbzFBTWdxTmVUNjVtQ0JTbUdoS0N4SFJaZ1ZZdWRPTGFEdGl3WE0?oc=5",
-   "source": "TechJuice",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-19T13:53:45Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Ransomware"
-   ],
-   "why": [
-    "Ransomware"
-   ]
-  },
-  {
-   "id": "59b0e474cfa7",
-   "title": "F5 releases out-of-band patches for critical NGINX vulnerabilities",
-   "link": "https://www.bleepingcomputer.com/news/security/f5-releases-out-of-band-patches-for-critical-nginx-vulnerabilities/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-19T13:49:24Z",
-   "summary": "F5 has released out-of-band security patches to address multiple NGINX web server flaws, including three critical-severity vulnerabilities that can let attackers execute code on vulnerable systems. [...]",
-   "score": 4,
-   "tags": [
-    "Vulnerability",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Vulnerability",
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "5f2037864b2f",
-   "title": "Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site",
-   "link": "https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/",
-   "source": "Krebs on Security",
-   "feed": "Krebs on Security",
-   "region": "Global",
-   "published": "2026-10-19T13:48:56Z",
-   "summary": "U.S. federal investigators pursuing the ShinyHunters hacking group that recently stole highly sensitive data from the FBI have identified executives at two different ransomware negotiation firms who maintained unusually close relations with the extortion group, KrebsOnSecurity has learned. Sources…",
-   "score": 6,
-   "tags": [
-    "Ransomware",
-    "Vulnerability"
-   ],
-   "why": [
-    "Ransomware",
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "47f4fcfb349a",
-   "title": "GhostAction Attackers Plant Credential Stealer Disguised as Font in 94 GitHub Repositories",
-   "link": "https://thehackernews.com/2026/10/ghostaction-attackers-plant-credential.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-19T13:05:45Z",
-   "summary": "The threat actor behind the GhostAction supply chain attack has expanded beyond injecting malicious GitHub Actions workflows into compromised projects to phish open-source developers and deliver a stealer malware disguised within a fake font file. The latest evolution, detailed by…",
-   "score": 6,
-   "tags": [
-    "Identity",
-    "Vulnerability",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Identity",
-    "Vulnerability",
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "cd30eb68866b",
-   "title": "Agents are your newest insiders. Security must move at their speed.",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/10/19/agents-are-your-newest-insiders-security-must-move-at-their-speed/",
-   "source": "Microsoft Security Blog",
-   "feed": "Microsoft Security Blog",
-   "region": "Global",
-   "published": "2026-10-19T13:00:00Z",
-   "summary": "New capabilities in Microsoft 365 E7 and Project Perception help organizations contain agent risk and adapt protection continuously. The post Agents are your newest insiders. Security must move at their speed. appeared first on Microsoft Security Blog .",
-   "score": 5,
-   "tags": [
-    "Microsoft 365",
-    "Vulnerability"
-   ],
-   "why": [
-    "Microsoft 365",
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "1f63abf1d8df",
-   "title": "Microsoft fixes classic Outlook bug that hid Copilot buttons",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-bug-that-hid-copilot-buttons-in-classic-outlook/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-19T12:44:44Z",
-   "summary": "Microsoft has fixed a known issue that removed the Copilot Chat and Copilot buttons in the classic Outlook desktop mail client for some Windows users. [...]",
-   "score": 4,
-   "tags": [
-    "Microsoft 365"
-   ],
-   "why": [
-    "Microsoft 365"
-   ]
-  },
-  {
-   "id": "cb20c2f64e3a",
-   "title": "Apple Photos faceprint privacy lawsuit pared down a bit, will continue",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOVUdvNDg2Z2w5ZFAwZnhjR1V2cWVINk5IOU5MUFdoUENKNUFXY095REJqT2FFRDg4ZDUyRkIxYjBrUGowd2pMdEpLMnNHVWJncVE5b05YQnlzSjRUMDNkUkFCRHduQmFjeHJGRkFXejZ2cFFZYkFnVG9CWWVSSzVBWlZnREM5a2ZnNnAxLXNjV0lsbGx1N2h6bzBQMk5pOEJ2NGVvbkpUQkd5c2doVTZzbnJR?oc=5",
-   "source": "AppleInsider",
-   "feed": "OAIC / Privacy news",
-   "region": "Global",
-   "published": "2026-10-19T12:28:00Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "SaaS / cloud"
-   ],
-   "why": [
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "afb21bb14d6f",
-   "title": "Whopper of a data breach sees Burger King Japan expose over 11 million customer records",
-   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPOXN2ck12M0w0bnJFSFRwMmpEbjBTUUg5ZTV2MnZNeG9oYnZBdmtVWE9jcEVib3lUSnpBSXpZSmhZUzJxODhUTUkwVC1xRzhHRndNcE1Za3dnYTFNYzVPZ3dCQmdJUk5rMnhvcXVhZVVlRWpUaGRaWmJEbUhxVG84akZHNzdhZXhtdmZna1ZTb2hIT2QxeG1VVGRtV1JQWjl4M2U0M3BpZTA3SnBWRDBuTl9lclo3YzZYR19QNVM4dkxvN1VI?oc=5",
-   "source": "TechRadar",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-19T12:05:00Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "6e3176643ea9",
-   "title": "One Compromised Login Exposed Millions of California Students’ Records",
-   "link": "https://www.securityweek.com/one-compromised-login-exposed-millions-of-california-students-records/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-19T11:55:50Z",
-   "summary": "Intruders used compromised credentials to access an ETS SFTP server, copying records of California students back to 2006. The post One Compromised Login Exposed Millions of California Students’ Records appeared first on SecurityWeek .",
-   "score": 6,
-   "tags": [
-    "Data breach",
-    "Identity"
-   ],
-   "why": [
-    "Data breach",
-    "Identity"
-   ]
-  },
-  {
-   "id": "5ae38a63e473",
-   "title": "From Email-to-Case to the Boardroom: How Inherited Agents Break Governance Built for Software",
-   "link": "https://thehackernews.com/2026/10/from-email-to-case-to-boardroom-how.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-19T11:50:00Z",
-   "summary": "In Salesforce Agentforce, the recommended way to make an agent respond to events is a Flow: a record is created or a case is updated, and the Flow passes data into the agent's prompt. Separately, Email-to-Case and Web-to-Case turn inbound customer messages into case records; it is how airlines and…",
-   "score": 3,
-   "tags": [
-    "Vulnerability",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Vulnerability",
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "3e1eacecc51d",
-   "title": "Exploited Fortinet Bug Linked to Stealthy FortiGate Implant in Telecom Hack",
-   "link": "https://www.securityweek.com/exploited-fortinet-bug-linked-to-stealthy-fortigate-implant-in-telecom-hack/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-19T11:13:23Z",
-   "summary": "The persistent, stealthy FortiGate implant was deployed against a telecommunications organization. The post Exploited Fortinet Bug Linked to Stealthy FortiGate Implant in Telecom Hack appeared first on SecurityWeek .",
-   "score": 3,
-   "tags": [
-    "Edge devices"
-   ],
-   "why": [
-    "Edge devices"
-   ]
-  },
-  {
-   "id": "9d9b1cbb50ad",
-   "title": "Canada OSAP student grant ‘scam’ & why a Chandigarh real estate group filed defamation case over it",
-   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQV0o1dGQ5SWVNaFBWOUVkTFdIQ0FYU2dudzNhRlBxRVZqYVlUZTFlSGhNOEZjNmVnOUlKT190Vk96OEF5cDZIYzJpQmtwSWpiLW5BRkZmY3JuWnJhRTk0ODdWNklrQl9YazFNRWJaV3Iyb0N3SXpNUkRRY0NwdWx5UXYyQS0zdG5wODJsSDdnbDVqczhHQkNsaFhuWjBRZ29pTmFDSWlvdVhaNWNmZVVzZ2dKMFhRZXJoYkttSkRiaXdtc3F0MFdUZDNWdFBIYzTSAc8BQVVfeXFMUFdKNXRkOUllTWhQVjlFZExXSENBWFNnbnczYUZQcUVWamFZVGUxZUhoTThGYzZlZzlJSk9fdFZPejhBeXA2SGMyaUJrcElqYi1uQUZGZmNyblpyYUU5NDg3VjZJa0JfWGsxTUViWldyMm9Dd0l6TVJEUWNDcHVseVF2MkEtM3RucDgybEg3Z2w1anM4R0JDbGhYblowUWdvaU5hQ0lpb3VYWjVjZmVVc2dnSjBYUWVyaGJLbUpEYml3bXNxdDBXVGQzVnRQSGM0?oc=5",
-   "source": "ThePrint",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-19T10:38:35Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ]
-  },
-  {
-   "id": "0534f1906337",
-   "title": "Fake Web3 Accelerator Uses npm Packages to Spread Malware and Hijack AI Agent Traffic",
-   "link": "https://thehackernews.com/2026/10/fake-web3-accelerator-uses-npm-packages.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-19T10:06:40Z",
-   "summary": "A fake Web3 accelerator has been observed pushing information stealers and backdoors to Windows and macOS systems using malicious npm packages under the pretext of offering free artificial intelligence (AI) credits for Anthropic Claude and Google Gemini, coding tools, and security audits. \"The…",
-   "score": 2,
-   "tags": [
-    "Identity"
-   ],
-   "why": [
-    "Identity"
-   ],
-   "also": [
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/hackers-hijack-aomei-update-servers-to-secretly-spread-malware/"
-    }
-   ]
-  },
-  {
-   "id": "82c7537f544b",
-   "title": "MITRE ATT&CK v20 Catalogs AI Abuse, MFA Bypass, Water Utility Attacks",
-   "link": "https://www.securityweek.com/mitre-attck-v20-catalogs-ai-abuse-mfa-bypass-water-utility-attacks/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-19T09:37:04Z",
-   "summary": "Defenders get 15 new detection strategies, six for Enterprise and nine for ICS, backed by 38 analytics. The post MITRE ATT&CK v20 Catalogs AI Abuse, MFA Bypass, Water Utility Attacks appeared first on SecurityWeek .",
-   "score": 6,
-   "tags": [
-    "Microsoft 365",
-    "Identity"
-   ],
-   "why": [
-    "Microsoft 365",
-    "Identity"
-   ]
-  },
-  {
-   "id": "15156651e221",
-   "title": "Microsoft: October Windows Server updates break Exchange sign-in, mail flow",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-october-windows-server-updates-cause-exchange-issues/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-19T08:58:41Z",
-   "summary": "Microsoft has confirmed that this month's Windows Server security updates are causing OWA sign-in and mail delivery issues on some Exchange Server systems. [...]",
-   "score": 1,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "5c0bebf27f10",
-   "title": "Anthropic Acquires Confidential AI Startup Opaque Systems",
-   "link": "https://www.securityweek.com/anthropic-acquires-confidential-ai-startup-opaque-systems/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-19T07:45:25Z",
-   "summary": "Opaque Systems has developed technology that lets AI systems use sensitive data while keeping it protected by the underlying hardware. The post Anthropic Acquires Confidential AI Startup Opaque Systems appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "f519e0b522d7",
-   "title": "Unpatched Broadcom Wi-Fi Flaw Lets Attackers in Range Run Code as Root on Routers",
-   "link": "https://thehackernews.com/2026/10/unpatched-broadcom-wi-fi-flaw-lets.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-19T06:29:44Z",
-   "summary": "A flaw in Broadcom's Wi-Fi setup software lets an attacker within radio range run code as root on Broadcom-based routers, without the network password or any pairing step, security researcher Quentin Kaiser disclosed on October 16. He showed the attack working against home gateways supplied by…",
-   "score": 4,
-   "tags": [
-    "Identity",
-    "Vulnerability"
-   ],
-   "why": [
-    "Identity",
-    "Vulnerability"
-   ],
-   "also": [
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/critical-blockstrap-flaw-lets-hackers-run-code-on-magento-servers/"
-    }
-   ]
-  },
-  {
-   "id": "1de1c48ce23b",
-   "title": "OpenCode Console Breach May Have Exposed OpenAI, Anthropic, and Google API Keys",
-   "link": "https://thehackernews.com/2026/10/opencode-console-breach-may-have.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-19T06:07:08Z",
-   "summary": "An intruder reached a legacy system at OpenCode on the night of October 16 and may have exposed the third-party AI provider keys that users had saved in OpenCode Console, the company said. Console is OpenCode's optional hosted service: a workspace saves its own OpenAI, Anthropic, or Google key…",
-   "score": 6,
-   "tags": [
-    "Data breach",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Data breach",
-    "SaaS / cloud"
-   ],
-   "also": [
-    {
-     "source": "Startup Fortune",
-     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNLTRuYTBta3p6RENuTVRJdWlGTW9qV1pPYmdZWl9qR1BEN1k4czdONmx5elpCa3hfOTExaWJSRkQ5RHE4QVFjcmhxa3lSc1c2a0x5aVlCUThkTElreHkzbG81RG5lUGdzSkNCbU9JRmRIc0Fqb0hXNngxRG1vTmJGNmVuU2Nwclc1R3hONHFuWi1OSDhRUzNXalNIS21pb3gxeHZDVy1uSnd1bnpmYUwxdVNn?oc=5"
-    },
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/opencode-hack-exposes-api-keys-amid-ai-distillation-attacks/"
-    }
-   ]
-  },
-  {
-   "id": "caafe54b5f2d",
-   "title": "Exclusive: Aussie software giant Canva confirms third-party data incident",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQYmtuazQ2V1Zwa3ZCMnZjM0NHQVcyMWhiY3pDSFNISXdTMF8yckhnUjRJenlqaGVIX2RULUVwTVMzeGV2bUREUkVQLVNXODRxNzdkckhaR3NJWUllUXktY3VMNi1BaHVyQVJWeDhNdnU3T0ZnTFc1cTY0NDVzN2k4Wm12eU9kTWtJVW1ZN0pUQldvV2VPZ3UwTVNycVNEblQ0YnZxZ3lkak5rRmNpTGhRMThqRQ?oc=5",
-   "source": "Cyber Daily",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-19T06:00:50Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "SaaS / cloud"
-   ],
-   "why": [
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "a1b2348bf84a",
-   "title": "Woman loses over $15k in alleged rental scam despite viewing condo twice: ‘I saw the place with my own eyes’",
-   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPdGRORTBiam54WHlyVnFram84YTBmUzNCX1hNdDVUbW15UVdpNDJ6MWR1OVM0bklCVy1jTUdrSWpQaWhLSXh6QlZ6X2h5OTl3WTk4WEtfVktZUTI5SWtQczdoQzVGV0gyQ3Nnc1Q2VXkwd1pCcjM0MVY2VmIxcHBsR0RVamVBWHJxYkZoMUhuU3lZb1dFQnl5dlc1eFhXTkFZSkVsdmI3Ql9YQ1VzandZbkluSG1kUUoxMXdSQjN5V0dEQkoz?oc=5",
-   "source": "Stomp",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-19T05:36:58Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ]
-  },
-  {
-   "id": "3e41ca2a32fc",
-   "title": "98 zero-day flaws found at TrendAI hacking contest",
-   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPYXNOT3ZNNnFua1R5WVVKRTRRblgzTVdpOUdCZlRpMTYzbFVHcTRkWkpuZWhMcllQd2JFa0pXRGd2QlBOYWV2QlV3TmZlRmkyOXlsaEozYlN5ZDlHTWhQbUhFTjFub2xQZVA4a3gyWW1RWHpKTHE1RzkycU8xNnRDdnVQS2RMNWl2cUVyZktB?oc=5",
-   "source": "SecurityBrief Australia",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-19T02:38:00Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Actively exploited",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Actively exploited",
-    "SaaS / cloud"
    ]
   }
  ]
