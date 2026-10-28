@@ -1,72 +1,77 @@
 {
- "date": "2026-10-28",
- "generated": "2026-10-27T22:27:56+00:00",
- "title": "Sec-Pulse brief - Wed 28 Oct",
+ "date": "2026-10-29",
+ "generated": "2026-10-28T22:45:23+00:00",
+ "title": "Sec-Pulse brief - Thu 29 Oct",
  "items": [
   {
-   "id": "6a6760a087af",
-   "title": "PHP2Shell Weaponized After Japanese Real Estate Extortion",
-   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQaG9pTV9JYXlkblhCSG1qejd5b2g0eFZ4TmtDLWthMV9oSlFWX1daekdNSi1TLTRrbFprSTJZQTB1QWNmMXBENmxxa3pvUXJUMy1qX2hRc3VjbU5oTkxzY0Y2OTJXWEZwREpnUVoyVE9uQ3ZMU1FQc2JuQldpbFNVRlcxTQ?oc=5",
-   "source": "SOCRadar",
+   "id": "f01e6eed4371",
+   "title": "ShinyHunters-Exploited Oracle PeopleSoft Zero-Day Turns Out to Be Three Chained Flaws",
+   "link": "https://thehackernews.com/2026/10/shinyhunters-exploited-oracle.html",
+   "source": "The Hacker News",
    "region": "Global",
-   "published": "2026-10-27T12:27:11Z",
-   "score": 14,
+   "published": "2026-10-28T06:04:58Z",
+   "score": 15,
    "tags": [
-    "Real estate",
-    "Ransomware"
+    "Actively exploited",
+    "Ransomware",
+    "Vulnerability",
+    "SaaS / cloud"
    ],
-   "summary": ""
+   "summary": "The critical Oracle PeopleSoft bug that ShinyHunters has exploited since May is not one flaw but three chained together, the researchers who reported it said this week. Oracle patched all three under a single identifier, CVE-2026-35273, in June. Its root is a server-side request forgery (SSRF)…",
+   "epss": 0.9668
   },
   {
-   "id": "94e63b69eea8",
-   "title": "Third-party cyber risk exposed by ZenTech ransomware breach",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQOTdDRDlIdS16dUktRjdRNEFnUFNwNHhTa28yMldqWjdDSnBISmEzd0Y0dkFtUDV0WUVEVUZOMmJHWjFlMlBwbmpIcDlWbGJOOEVyYlA4TVRXWkFMVGpWdDJ6UUZqN0FhV0JYcVBHd01LNVpseTE5Z3NkUDhaODJleXE5NWN3NjZseUlhLTBlQlo4MFRuNi04cVJ5eWVDdV9XRVdPRl9PYUhyd3ljVUVPeGdPbm4zSThBMUpjV1BB?oc=5",
-   "source": "Insurance Business",
+   "id": "169a3a02ba4a",
+   "title": "American Organizations Under Attack: Skyw4lker Device Code Phishing Campaign Exposed",
+   "link": "https://thehackernews.com/2026/10/american-organizations-under-attack.html",
+   "source": "The Hacker News",
    "region": "Global",
-   "published": "2026-10-27T14:14:32Z",
-   "score": 13,
+   "published": "2026-10-28T10:30:00Z",
+   "score": 12,
    "tags": [
-    "Ransomware",
+    "Phishing",
+    "Data breach",
+    "Identity",
+    "SaaS / cloud"
+   ],
+   "summary": "Modern phishing campaigns can compromise American businesses without relying on traditional credential theft. Attackers can abuse legitimate cloud services, authentication mechanisms, and trusted business workflows to gain access to corporate accounts while leaving fewer obvious signs behind.…"
+  },
+  {
+   "id": "7b3172a92267",
+   "title": "Defendant’s third-party claim against plaintiff’s lawyer in breach of contract case dismissed",
+   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNekNKM2QtUDRBQ00tNmFodlhpR0tfRjRpTmdsZThCbXVMRjV4eS1oQk1yaFRqeWxSSjlRZVBkZjlqRDF1MmpXRjJYSjk4Z050WWo0MW91TUxreEZDSnF1TGRnZVE3X2h2RzhuX2NONHhKbUZYRzZUeGRGdHVvOEgtcDVPY2JCa2F2elF6R1VCaDkyMnlsUWZuM3dOSDM1a1JSZzAycHc4LXVnRkY4QldJeC1YaHNDemZEVDlYdnc1ZVZQLWhOQkF4YVB6OGRVWWdOUjJDY2w1Z082M1FX0gFYQVVfeXFMT2U4VWhhV1YzWWgxU2pJVzZ1T0dZcmVkbWpHSnNvS2x5RDl4U0FYMFc0dTR0RUxiNEhDVlR2amZ4YXNXczFVZ3pRUUVvcVBwOHcxenBvLWlubw?oc=5",
+   "source": "Law360 Canada",
+   "region": "Global",
+   "published": "2026-10-28T15:35:03Z",
+   "score": 10,
+   "tags": [
     "Data breach",
     "SaaS / cloud"
    ],
    "summary": ""
   },
   {
-   "id": "bf8c08bba0b1",
-   "title": "OAIC: Data breaches surge in Australia in H1 2026",
-   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQcVpOcHl3dlg0RUxlVnVuVVhjbHJnR2dKOU81UldIY19RNFFPRXJ6QTlwa2JwN0JKdHJfSG1fczlpVVp3M2FQdHZkWDRCQmZ5RTk5UzJpSDRfcGl6ZXdlZXBYaTJqYmRUQndIZkExLTBUa29kUERrT0ZfcEsta3JycUpZTQ?oc=5",
-   "source": "Mi-3.com.au.",
-   "region": "AU",
-   "published": "2026-10-27T01:56:32Z",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "Data breach"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "923aaf647e3d",
-   "title": "Booking platform hack exposes third-party cyber risk across Australian tourism sector",
-   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNa1F5eVVNc01vbkRMNWJ2LTIyY1hoTWFwWThsQmR2R0RjRWZMbUNBcmVRSTNPeVhOZ2VTdms4ZkFvRGxNOXd1eUk2UzZfdUxlY1VCNlZ1QXVyQWVxQUVCaWlaSXBxSHlDRUVReDNVX1JXLWp4ajByd18yalVMZ1Jvd0dWSFJlMExlTHpoVTdpQzJOSmtjOWlKalpfNXVaTzBXaU43M3V5TU81R2U0YzhPaFZHcTNBOXhjOE9GR2lsMzVvaXkySHpEd3drZE5MSzdhQl8wcmJRTDZHU0dBNnBFZg?oc=5",
-   "source": "Insurance Business",
-   "region": "AU",
-   "published": "2026-10-27T08:43:14Z",
-   "score": 12,
-   "tags": [
-    "Australia",
-    "SaaS / cloud"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "f4d2a287e7ba",
-   "title": "Glasscock County Sheriff's Office cautions residents about real estate scam",
-   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPVFdIZHc4V2Z0LWdxcFBvZUpxS3JGdmFxVEJ3WGNSUXZubWUtMEdidGtzMkVoM1Q0cUUxcHJqdTJFQ1A2a09Ydl91Y1JtVlBKSjZuSFI4YjFyOTFZY2wta3h2ZW1ZZlhuWW1EdVltc1AwaWwzQkp2VTBfMUZZYVJraHRpRWxtd21FWGVJSUFLM25kOUhTZWxR?oc=5",
-   "source": "Yahoo",
+   "id": "7f47388e611d",
+   "title": "Microsoft urges Entra ID admins to migrate users to passkeys",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-reminds-entra-id-admins-to-migrate-users-to-passkeys/",
+   "source": "BleepingComputer",
    "region": "Global",
-   "published": "2026-10-27T17:25:09Z",
+   "published": "2026-10-28T14:48:32Z",
+   "score": 10,
+   "tags": [
+    "Phishing",
+    "Microsoft 365",
+    "Identity"
+   ],
+   "summary": "Microsoft again asked Entra ID administrators to migrate users to phishing-resistant methods to avoid sign-in disruptions before it retires SMS and voice authentication in February 2027. [...]"
+  },
+  {
+   "id": "1ba8433aa36e",
+   "title": "Your real estate leads may not be the problem. Your response system might be.",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNRU5DdnNabl9nd2hfcUFadmk2aGNTR0F3VWV2ZUlKWktQUGN6SkZRcU5PcXpITUN4YzNRSlV1XzJ1eHhWY0YzUGF4TmU4T0RRd3ZFTE5zZ0J2NEltZFQyTktDY2VnalAwLTFzb3cwVTZJYWNUdG9pZE1mczloUmhCbTVnQ1c5ek5iZmNHQ0VQa1VycnRjVlJfenhNV1NxTHluOVpERFVxSloyZw?oc=5",
+   "source": "Real Estate Magazine Canada",
+   "region": "Global",
+   "published": "2026-10-28T09:01:12Z",
    "score": 10,
    "tags": [
     "Real estate"
@@ -75,12 +80,12 @@
   }
  ],
  "stats": {
-  "recent": 72,
-  "au": 5,
+  "recent": 60,
+  "au": 0,
   "kev": 2
  },
  "lesson": {
-  "id": "1.10",
-  "title": "Tooling: secure email gateway workflows"
+  "id": "2.1",
+  "title": "Asset discovery and vulnerability scanning"
  }
 }
