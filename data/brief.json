@@ -1,77 +1,76 @@
 {
- "date": "2026-10-29",
- "generated": "2026-10-28T22:45:23+00:00",
- "title": "Sec-Pulse brief - Thu 29 Oct",
+ "date": "2026-10-30",
+ "generated": "2026-10-29T22:54:03+00:00",
+ "title": "Sec-Pulse brief - Fri 30 Oct",
  "items": [
   {
-   "id": "f01e6eed4371",
-   "title": "ShinyHunters-Exploited Oracle PeopleSoft Zero-Day Turns Out to Be Three Chained Flaws",
-   "link": "https://thehackernews.com/2026/10/shinyhunters-exploited-oracle.html",
+   "id": "7325900e53d9",
+   "title": "ThreatsDay: Critical Firewall Flaws, Banking Trojans Rented, Weaponized PDF, Token Theft + 26 More Stories",
+   "link": "https://thehackernews.com/2026/10/threatsday-critical-firewall-flaws.html",
    "source": "The Hacker News",
    "region": "Global",
-   "published": "2026-10-28T06:04:58Z",
-   "score": 15,
+   "published": "2026-10-29T19:11:58Z",
+   "score": 11,
    "tags": [
-    "Actively exploited",
-    "Ransomware",
+    "Data breach",
+    "Identity",
+    "Edge devices",
+    "SaaS / cloud"
+   ],
+   "summary": "Some attacks take real skill. Others just need someone to leave a door open. This week has both. Exposed passwords, old bugs still getting exploited, and trusted software doing things it shouldn't. There's a strange mix of clever tricks and careless mistakes. Hackers are borrowing trust from…"
+  },
+  {
+   "id": "f4eff089be53",
+   "title": "Attackers Exploit PHP2Shell Flaws in Internet-Exposed Palo Alto Networks Management Interfaces",
+   "link": "https://thehackernews.com/2026/10/attackers-exploit-php2shell-flaws-in.html",
+   "source": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-29T05:50:17Z",
+   "score": 11,
+   "tags": [
+    "Data breach",
+    "Edge devices",
     "Vulnerability",
     "SaaS / cloud"
    ],
-   "summary": "The critical Oracle PeopleSoft bug that ShinyHunters has exploited since May is not one flaw but three chained together, the researchers who reported it said this week. Oracle patched all three under a single identifier, CVE-2026-35273, in June. Its root is a server-side request forgery (SSRF)…",
-   "epss": 0.9668
+   "summary": "Palo Alto Networks on Wednesday warned that threat actors are exploiting the recently patched PHP2Shell vulnerabilities against publicly-accessible management interfaces. \"Active exploitation has been observed targeting the Palo Alto Networks management interface exposed to the internet,\" the…"
   },
   {
-   "id": "169a3a02ba4a",
-   "title": "American Organizations Under Attack: Skyw4lker Device Code Phishing Campaign Exposed",
-   "link": "https://thehackernews.com/2026/10/american-organizations-under-attack.html",
+   "id": "083a1ea7d205",
+   "title": "Cisco Patches Actively Exploited ASA and FTD VPN Flaw That Can Crash Firewalls",
+   "link": "https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html",
    "source": "The Hacker News",
    "region": "Global",
-   "published": "2026-10-28T10:30:00Z",
-   "score": 12,
-   "tags": [
-    "Phishing",
-    "Data breach",
-    "Identity",
-    "SaaS / cloud"
-   ],
-   "summary": "Modern phishing campaigns can compromise American businesses without relying on traditional credential theft. Attackers can abuse legitimate cloud services, authentication mechanisms, and trusted business workflows to gain access to corporate accounts while leaving fewer obvious signs behind.…"
-  },
-  {
-   "id": "7b3172a92267",
-   "title": "Defendant’s third-party claim against plaintiff’s lawyer in breach of contract case dismissed",
-   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNekNKM2QtUDRBQ00tNmFodlhpR0tfRjRpTmdsZThCbXVMRjV4eS1oQk1yaFRqeWxSSjlRZVBkZjlqRDF1MmpXRjJYSjk4Z050WWo0MW91TUxreEZDSnF1TGRnZVE3X2h2RzhuX2NONHhKbUZYRzZUeGRGdHVvOEgtcDVPY2JCa2F2elF6R1VCaDkyMnlsUWZuM3dOSDM1a1JSZzAycHc4LXVnRkY4QldJeC1YaHNDemZEVDlYdnc1ZVZQLWhOQkF4YVB6OGRVWWdOUjJDY2w1Z082M1FX0gFYQVVfeXFMT2U4VWhhV1YzWWgxU2pJVzZ1T0dZcmVkbWpHSnNvS2x5RDl4U0FYMFc0dTR0RUxiNEhDVlR2amZ4YXNXczFVZ3pRUUVvcVBwOHcxenBvLWlubw?oc=5",
-   "source": "Law360 Canada",
-   "region": "Global",
-   "published": "2026-10-28T15:35:03Z",
+   "published": "2026-10-29T10:44:46Z",
    "score": 10,
    "tags": [
-    "Data breach",
-    "SaaS / cloud"
+    "Actively exploited",
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "summary": "Cisco has released patches to address a high-severity security flaw in Secure Firewall Adaptive Security Appliance (ASA) Software and Secure Firewall Threat Defense (FTD) Software that it said has been exploited in the wild. The vulnerability, tracked as CVE-2026-76418, is rated 8.6 on the CVSS…",
+   "epss": 0.0057
+  },
+  {
+   "id": "2597db37b948",
+   "title": "Rs 82-Cr CREST Scam: Court Denies Bail to Real Estate Developer Vikram Wadhwa CBI",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPNjliZ2VQRDdsYjFhaUV4OXZFWFBWUTMxTUQ2UnpTMWlDWDJJcTlZdllKUi1uYnJRLXRTOUtYSFo2MEZnemtlc1ZLUjNIRDRqTF94cTctSWVLU1FqcWtZQXpFb1pvUjZxdGVaQnJTZmhwdllaM2t3Yl80T3ctRm15UzZqR2hJcHdxcXlocG9ydE9xVFRTTEZOSVRPc1dVdzhfV3VpUUdiU0tLZTVsUi1NYVRVUGxGdw?oc=5",
+   "source": "www.thereportingtimes.com",
+   "region": "Global",
+   "published": "2026-10-29T10:34:40Z",
+   "score": 10,
+   "tags": [
+    "Real estate"
    ],
    "summary": ""
   },
   {
-   "id": "7f47388e611d",
-   "title": "Microsoft urges Entra ID admins to migrate users to passkeys",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-reminds-entra-id-admins-to-migrate-users-to-passkeys/",
-   "source": "BleepingComputer",
+   "id": "216c66fa9dd2",
+   "title": "At least 15 charged in California for alleged PH real estate scam",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPRFR6SmRqc0NUbnBHSFhBYkotNG1vTVVFUGlOR1NOZ29qenpSOXY5dllXRVdVcDlWYm9LdE9RdEVHeTRpRnYzLUlLSHhzYlg4RzVTdGZaWmZEQ1BKYjEyNk91dXJ5Q0oyYnFBU0xWSU0yajJfcW9hVTBHQjAtS2pTeXBHU2IzeG5MMkkxWGxIaGpzMm0xQnNwdENLcmZFSEFTd3EyU3BFeS1LbEhS?oc=5",
+   "source": "Rappler",
    "region": "Global",
-   "published": "2026-10-28T14:48:32Z",
-   "score": 10,
-   "tags": [
-    "Phishing",
-    "Microsoft 365",
-    "Identity"
-   ],
-   "summary": "Microsoft again asked Entra ID administrators to migrate users to phishing-resistant methods to avoid sign-in disruptions before it retires SMS and voice authentication in February 2027. [...]"
-  },
-  {
-   "id": "1ba8433aa36e",
-   "title": "Your real estate leads may not be the problem. Your response system might be.",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNRU5DdnNabl9nd2hfcUFadmk2aGNTR0F3VWV2ZUlKWktQUGN6SkZRcU5PcXpITUN4YzNRSlV1XzJ1eHhWY0YzUGF4TmU4T0RRd3ZFTE5zZ0J2NEltZFQyTktDY2VnalAwLTFzb3cwVTZJYWNUdG9pZE1mczloUmhCbTVnQ1c5ek5iZmNHQ0VQa1VycnRjVlJfenhNV1NxTHluOVpERFVxSloyZw?oc=5",
-   "source": "Real Estate Magazine Canada",
-   "region": "Global",
-   "published": "2026-10-28T09:01:12Z",
+   "published": "2026-10-29T03:39:22Z",
    "score": 10,
    "tags": [
     "Real estate"
@@ -80,12 +79,12 @@
   }
  ],
  "stats": {
-  "recent": 60,
+  "recent": 63,
   "au": 0,
   "kev": 2
  },
  "lesson": {
-  "id": "2.1",
-  "title": "Asset discovery and vulnerability scanning"
+  "id": "2.2",
+  "title": "Reading scan output and CVSS"
  }
 }
