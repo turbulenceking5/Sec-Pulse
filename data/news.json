@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-29T00:59:54Z",
+ "generated": "2026-10-29T10:01:13Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,13 +28,13 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 2,
+   "count": 3,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 5,
+   "count": 9,
    "error": null
   },
   {
@@ -106,6 +106,175 @@
  ],
  "items": [
   {
+   "id": "196b1e60527b",
+   "title": "Shadowy AI Relay Disables OpenAI Codex, Claude Code Sandboxes",
+   "link": "https://www.darkreading.com/threat-intelligence/ai-relay-service-openai-codex-claude-code-sandboxes",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-29T10:00:00Z",
+   "summary": "The enigmatic service is providing popular AI coding tools to mainland China and other regions where OpenAI and Anthropic products are not officially for sale — but with key security features turned off.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "77d976efa8e0",
+   "title": "Attackers Exploit Second Cisco Firewall VPN Zero-Day Since August",
+   "link": "https://www.securityweek.com/attackers-exploit-second-cisco-firewall-vpn-zero-day-since-august/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-29T09:47:10Z",
+   "summary": "Cisco on Wednesday released fixes for an exploited vulnerability affecting its Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) software. Tracked as CVE-2026-76418 and assigned a CVSS score of 8.6, the bug resides in the Remote Access SSL VPN service.…",
+   "score": 9,
+   "tags": [
+    "Actively exploited",
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "why": [
+    "Actively exploited",
+    "Edge devices",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "b3306983de00",
+   "title": "HHS Filing Puts iRhythm Data Breach Toll at 8.2 Million",
+   "link": "https://www.securityweek.com/hhs-filing-puts-irhythm-data-breach-toll-at-8-2-million/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-29T08:27:16Z",
+   "summary": "Hackers stole personal information and iRhythm account and device data from third-party-hosted business applications. The post HHS Filing Puts iRhythm Data Breach Toll at 8.2 Million appeared first on SecurityWeek .",
+   "score": 6,
+   "tags": [
+    "Data breach",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Data breach",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "aabd8e14b270",
+   "title": "Hackers Exploited Cisco SD-WAN Flaw to Plant Malware Built to Steal Encryption Keys",
+   "link": "https://thehackernews.com/2026/10/hackers-exploited-cisco-sd-wan-flaw-to.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-29T08:24:22Z",
+   "summary": "Hackers exploited a critical Cisco Catalyst SD-WAN flaw, fixed in February, to plant custom malware inside the systems that control an organization's SD-WAN network. The malware, called KeyDrift, is designed to copy the keys that encrypt traffic between sites and store them for later use, Cisco…",
+   "score": 3,
+   "tags": [
+    "Edge devices"
+   ],
+   "why": [
+    "Edge devices"
+   ]
+  },
+  {
+   "id": "ef44306c2f44",
+   "title": "Chinese Hackers Quietly Used Low-Severity ESXi Logging Flaw as Zero-Day",
+   "link": "https://www.securityweek.com/chinese-hackers-quietly-used-low-severity-esxi-logging-flaw-as-zero-day/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-29T08:01:05Z",
+   "summary": "CVE-2026-41709 allows attackers with administrative privileges to perform operations without being logged. The post Chinese Hackers Quietly Used Low-Severity ESXi Logging Flaw as Zero-Day appeared first on SecurityWeek .",
+   "score": 6,
+   "tags": [
+    "Actively exploited",
+    "Vulnerability"
+   ],
+   "why": [
+    "Actively exploited",
+    "Vulnerability"
+   ],
+   "epss": 0.003
+  },
+  {
+   "id": "75699bb6148a",
+   "title": "Cyber Vulnerabilities Besiege Italy, Absent Clear Cause",
+   "link": "https://www.darkreading.com/cybersecurity-analytics/cyber-vulnerabilities-besiege-italy",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-29T08:00:00Z",
+   "summary": "Researchers can't quite explain why cyber threats look so different in Italy compared to everywhere else.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "e91f33b06ca8",
+   "title": "China-Linked Hackers Exploited VMware ESX Zero-Day to Reduce Audit Trail Visibility",
+   "link": "https://thehackernews.com/2026/10/china-linked-hackers-exploited-vmware.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-29T06:22:33Z",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a security flaw impacting Broadcom VMware ESX to its Known Exploited Vulnerabilities (KEV) catalog, after CrowdStrike revealed that it had been weaponized by a China-nexus threat actor known as Warp Panda in…",
+   "score": 5,
+   "tags": [
+    "Actively exploited"
+   ],
+   "why": [
+    "Actively exploited"
+   ]
+  },
+  {
+   "id": "b38b4e0a9ae9",
+   "title": "Deploying a Local Ghidra Server for Your Malware Analysis Lab, (Thu, Oct 29th)",
+   "link": "https://isc.sans.edu/diary/rss/33470",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-10-29T06:17:41Z",
+   "summary": "Building your malware analysis lab is a key point before playing with malware. Today, thanks to virtualization, it&#;x26;#;39;s convenient to play with snapshots in your lab. Start a new investigation from a clean snapshot and take some more when you reached a critical step. But, if you need to…",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "f4eff089be53",
+   "title": "Attackers Exploit PHP2Shell Flaws in Internet-Exposed Palo Alto Networks Management Interfaces",
+   "link": "https://thehackernews.com/2026/10/attackers-exploit-php2shell-flaws-in.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-29T05:50:17Z",
+   "summary": "Palo Alto Networks on Wednesday warned that threat actors are exploiting the recently patched PHP2Shell vulnerabilities against publicly-accessible management interfaces. \"Active exploitation has been observed targeting the Palo Alto Networks management interface exposed to the internet,\" the…",
+   "score": 11,
+   "tags": [
+    "Data breach",
+    "Edge devices",
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Data breach",
+    "Edge devices",
+    "Vulnerability",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "971ff11eb5e1",
+   "title": "ISC Stormcast For Thursday, October 29th, 2026 https://isc.sans.edu/podcastdetail/10156, (Thu, Oct 29th)",
+   "link": "https://isc.sans.edu/diary/rss/33468",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-10-29T03:10:12Z",
+   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
+  {
    "id": "cd96a1792e01",
    "title": "Yet Another ClickFix Campaign, (Wed, Oct 28th)",
    "link": "https://isc.sans.edu/diary/rss/33466",
@@ -135,6 +304,10 @@
     "Data breach"
    ],
    "also": [
+    {
+     "source": "IT Brief Australia",
+     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPanpVdndXcjEwdENWWndnbFhyUkExZ29MVTB2bTg0N2dzZDNyQ3I0dWJXVHFiRy1FX3Eybm15QXY1ZGtOTVVRT2ZyQXNMM1ZtY1JNcG9vb2Y3MjF0aEwwdjJJamg5U0RNYVI2QzR0N01VNzRQb3BUS1RSdEJTMk5vX2Fvb2xNUGl3?oc=5"
+    },
     {
      "source": "Australia",
      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPQVl4bm03ejhwZWZ5VERCd1ZaVThObmg2dXA2bmNfUjlnSXJJOThzb2FVTTVJT2xWeXRGeGZ1WEZVVzBhZFo4aVpIbXAwMTRqZVVfeXdORXotQm1WZ0RES2YxSGlTWU5xNEh0VUFyWmhfZ00xaWpDdUVTQk5xSktBZ2g3WEwwVFQ0bEtGSkdZU0o?oc=5"
@@ -331,6 +504,25 @@
    ]
   },
   {
+   "id": "83b6a3b41dcd",
+   "title": "SafePay Ransomware Breached Over 600 Critical Infrastructure Organizations, CISA Warns",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOSEo3LVVMMGNIUHJXUnNxZTZTVTB4VjJBd29ibzk3b3BXd2tPeTBLdTIydnp3ZkJYc2s1RHMxeE1XTzNfcjhVR0JVTHE1QUpVdzM1dmlOQl93bVlqNFZMOFhTX1F3YVJGeE1LeEdocnF5TXpvR2U1d3FJOXVDUnRGdnpSZUhRX0dySi1ydDJaWUhvc1VlNGV6WmNkdWZhUHBtOHBibmZVdWl3Mk8xQmVPT0w1VGdaV0lHYVFHNW0wMFE0OGdYUk03Zg?oc=5",
+   "source": "CPO Magazine",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-28T16:00:00Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Ransomware",
+    "Data breach"
+   ],
+   "why": [
+    "Ransomware",
+    "Data breach"
+   ]
+  },
+  {
    "id": "02f39348974c",
    "title": "The CISO’s evolving role: Protecting and defending in the agentic era",
    "link": "https://www.microsoft.com/en-us/security/blog/2026/10/28/the-cisos-evolving-role-protecting-and-defending-in-the-agentic-era/",
@@ -383,6 +575,23 @@
      "source": "BleepingComputer",
      "url": "https://www.bleepingcomputer.com/news/security/nefilim-and-hive-ransomware-affiliate-gets-70-months-in-prison/"
     }
+   ]
+  },
+  {
+   "id": "a043a6e6f715",
+   "title": "National real estate brokerage enters Alabama market through partnership",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNTTRPUDlPdkVMRlgzT0V2RzNrbk91VklrTzEyd1pKV2M1NFNRZnFSVDgyWnQ5M2xMQWplc3pjTmR6ZFdHYk52MVZxUXc3UFJWNHlhTFE1cHdVQ3lza3ZWbVY4UEJUQXJUd1dDWDJKSUJSZzFZRC1BYWR0QkRxUXUtMk5rUlZyUWRDekcyOW5GSUU3UGppMmcxSGdRTllINzl1bjZ2aG9LdDRBSDh3Zm8zZFExSQ?oc=5",
+   "source": "AL.com",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-28T15:00:00Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
    ]
   },
   {
@@ -727,7 +936,7 @@
    "source": "Real Estate Magazine Canada",
    "feed": "Real estate cyber news",
    "region": "Global",
-   "published": "2026-10-28T09:01:12Z",
+   "published": "2026-10-28T09:05:06Z",
    "summary": "",
    "score": 10,
    "tags": [
@@ -1442,7 +1651,7 @@
   },
   {
    "id": "21e6441e976b",
-   "title": "ASD releases seventh annual Cyber Threat Report 2025-26",
+   "title": "ASD releases seventh annual Cyber Threat Report 2025-26 | CGA",
    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOWTlxOHhLem9qSXRua3dlU0c5WDZCaHdGSGZxejAtMmJ4MDNOaEIxNjFoMWRmcW9UaEZtb0R0RldWNDh1d3hFVFo0eXY2WE5od0xPcGlVRkxOQ3h0Q2dvRmJHOGpBb0FPSG1nWlNyWTJ5M3NVNXZaWmhnVkFIbFE2Yzlia2lNWTNQMlNQcFh3?oc=5",
    "source": "Australian Cyber Security Centre",
    "feed": "ACSC (via Google News)",
@@ -1520,6 +1729,23 @@
    "score": 0,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "8fa11e4ab81b",
+   "title": "Are Pakistani Universities Safe From ShinyHunters Ransomware?",
+   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1RZ25FQTM5VTA0elg3SmRnNHozY1o4NEpva3p5WHBmZ1BObkRNV0FiNTRubnl5VWcwUVBIczVsQS0wQ0V2RjJkc0J0MGdCbzFBTWdxTmVUNjVtQ0JTbUdoS0N4SFJaZ1ZZdWRPTGFEdGl3WE0?oc=5",
+   "source": "TechJuice",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-27T11:17:02Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
   },
   {
    "id": "60e8b957385d",
@@ -7162,282 +7388,6 @@
     "Vulnerability"
    ],
    "epss": 0.0182
-  },
-  {
-   "id": "d846792329f0",
-   "title": "CVE-2026-110936: Siemens Software Center — Siemens Software Center Uncontrolled Search Path Element Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-110936",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-10-20T00:00:00Z",
-   "summary": "Siemens Software Center contains an uncontrolled search path element vulnerability that could allow an authenticated local attacker to place a specially crafted DLL in a directory that the application searches, leading to arbitrary code execution with the… CISA remediation due 2026-11-03.",
-   "score": 4,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.0097
-  },
-  {
-   "id": "d3fd0ebf24cf",
-   "title": "Japan Faces New Wave Of AI-Powered Cyberattacks As Hackers Exploit Stolen Data",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPVHlXTGs1aElqalJKdnJtQWtQVVFjajhta1hmeVlmUjI4ckxQcmktbFlUQUNOY1l4cmF6UWpBOXhnVnpYeTVsUk53a3lEZUpCQmNTbWRzbFlfMkNwUGhKVFh4QWJTUXAtQlZEUUc2RTRRWXIxX054NF81azZYVXZ0TGV0cGlnSWpuN1pTb0VXa0ZZdHRiYndxZngyeW1vZlV2YnZLWG0xMWU3bWlPOUI4?oc=5",
-   "source": "ChannelNews.com.au",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-19T23:39:08Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "ebb9e952af5d",
-   "title": "AI strike team assembled after cyber breach",
-   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNN1NhcjgwZm1zb1FaYlRFX1czNjF3ME5tTVRYWXdIMDZYSmwzNzNRNXBieEJrYTRlQktoRFZGV19VQ2kyRExTQ0pKZXVxQ0dyWUVYY21VdDZLcHZiTURicm5PaTFuQ2FRREJ3SGhjeEVRQ2o5Zk5YZkxjbUFpNFhyQ1Fqa0ZGQmJIVF9pUEhqX1JqTjVLbDdrLWE2UTdXSFBOTExQUlFJUzhrODJ6ZkttY0Vqc3Y2ZmRIYWVGcjFzX1lXeTZHOHJrOVcxM0NCUQ?oc=5",
-   "source": "The Nightly",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-19T23:24:20Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "966e9a52ddea",
-   "title": "Opinion: SB 690 provided some relief against privacy act lawsuits, but work must continue",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOY1NGdXYtWnpBX2pvLWdLUnctLW9vRkVuMVMzZmZJMkp4N2YwemhreUxZamJxYVFqWXA1QXo5VHBOQ3QwVlQwM2pLd1ZhNE9vb3B2MmVZbXNNUXJMdEZjeXVCcUR4UlVnbHBpZTMzdXNJbFdiZHpSNDdRMTl6MlRKSk5rQXNwT01hMGdwS2ZERVhvMWZ0OFdRQVJWeVBZdmJHMW5F?oc=5",
-   "source": "The Business Journals",
-   "feed": "OAIC / Privacy news",
-   "region": "AU",
-   "published": "2026-10-19T22:36:00Z",
-   "summary": "",
-   "score": 12,
-   "tags": [
-    "Australia",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Australia",
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "5a8d0413be6f",
-   "title": "Nikkei discloses third data breach in a month, 1.8M records exposed",
-   "link": "https://www.bleepingcomputer.com/news/security/nikkei-discloses-third-data-breach-in-a-month-18m-records-exposed/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-19T21:49:48Z",
-   "summary": "Nikkei Inc. disclosed a new data breach, the third in about a month, that exposed 1.83 million personal information records. [...]",
-   "score": 4,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "61b131fce2a8",
-   "title": "California settles 23andMe data breach claims for US$6M",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPSUMxcldvUE9ZUnlMajRaMVJhekd1LUt3S3dVRzRIeHFXSW9idW51NUFtTE1wSTBfbGt0SWExdkM3azdkcm9oeVlJSnQydEg5SC1LelljNTlmTDdsRWVEVERrbFNFREt5RnFEWGs1THpWT01HdkJhN2hrN0ZfRkZqQnBOd21CZlp4aHBJaEQtNXF3cUFIc3VFVkN5V3lVcEcxbFZDVF8zWmx4WDVVckVDU2VnWmg?oc=5",
-   "source": "BNN Bloomberg",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-19T21:25:47Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ],
-   "also": [
-    {
-     "source": "CP24",
-     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNcG5DY0tsUTY3WEpfdjlqMk5GRDJCemY0UllObzJtNDZLaXoya2tXSk9wNjBCVlR0anRJOXpCYjB6V215akR1dW05UHJYQW9kSTZjbWt0ZUs4eDU4VDF2RVhud3RpV2M2cVJLU2lGbkV3THVPaEhSemxzZlNrMXlNWFlhT0kzXzlQaE1oenp6aFZCbC1SVlNIcnkybV92S1E?oc=5"
-    },
-    {
-     "source": "Rock Hill Herald",
-     "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1XNXdyOUE2X2NMa3RwdlpDSGlSRXE0RUdtbG5qZHZYbEp6b254c0pJd2JuTXF5VTJtZ1hBTVVmRWVXdVVBakJEN0wwUkFUZEpia21MUlhFNDBuemhBUVc0SW5qYWlKNjF4VFlUUGgtcmlxZw?oc=5"
-    },
-    {
-     "source": "Devdiscourse",
-     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPUEZYREsxWVg5UkdiTFZDbldEMk9JRFhpQWRGZ2h1TlBQbmF3aldlVW0tY3BBckJubDdjY0o4emNfS2txUVdQYjVfYWhidHhuQ0lTU21uenhQd2hhRmR2dkhaSjRvZEtxTjN0dnRUQTdiMHYtTWJobnFqUFU1aHAwbVhDT01rY09OSnRNMTd2TjU2NXhRbnZkbDk1NVNCZURja1dQYXFDSTd4NzVYZDk1OGY3ZmNOQXVtRnY3aUlWUdIBvwFBVV95cUxPUEZYREsxWVg5UkdiTFZDbldEMk9JRFhpQWRGZ2h1TlBQbmF3aldlVW0tY3BBckJubDdjY0o4emNfS2txUVdQYjVfYWhidHhuQ0lTU21uenhQd2hhRmR2dkhaSjRvZEtxTjN0dnRUQTdiMHYtTWJobnFqUFU1aHAwbVhDT01rY09OSnRNMTd2TjU2NXhRbnZkbDk1NVNCZURja1dQYXFDSTd4NzVYZDk1OGY3ZmNOQXVtRnY3aUlWUQ?oc=5"
-    }
-   ]
-  },
-  {
-   "id": "775a8ffb1a0d",
-   "title": "Frazer Ltd. Data Breach Lawsuit Investigation",
-   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5nVV9GaVBhNk1nRXBkTW1YN0RzcjJsSUpOVWl4aVFHUUJfaEFLRU41WUpDOFNNLWJHQ3h2VjJkYWNQLWxNSjZyTDdKVE5ISjZXb2FLblhhcWxtckE0dTRnenpkZWRDclBzX2djMVVaTldIUXZqSWR4Vw?oc=5",
-   "source": "Claim Depot",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-19T21:22:16Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Data breach",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Data breach",
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "cd2448e33b82",
-   "title": "Researchers Infiltrate Microsoft Tech Support Scam Operation",
-   "link": "https://www.darkreading.com/threat-intelligence/microsoft-tech-support-scam-operation",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-19T21:13:41Z",
-   "summary": "A large-scale scam operation impersonating Microsoft uses a malicious traffic distribution system (TDS) run by a Russian organization and abuses thousands of Cloudflare links.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "553c25ef7794",
-   "title": "'AdFection' Turns Ad Impressions Into Zero-Click Spyware Delivery",
-   "link": "https://www.darkreading.com/data-privacy/adfection-online-ads-spyware-delivery",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-19T19:55:01Z",
-   "summary": "Spyware vendors are exploiting targeted ad bidding in the digital ecosystem to identify and track individuals and organizations of interest.",
-   "score": 0,
-   "tags": [],
-   "why": [],
-   "also": [
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/israeli-ad-firm-doubled-as-candirus-zero-click-spyware-delivery-channel/"
-    },
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/zero-click-attacks-used-targeted-ads-to-deliver-candiru-spyware/"
-    },
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/citizen-lab-traces-zero-click-candiru.html"
-    }
-   ]
-  },
-  {
-   "id": "3e1278093e93",
-   "title": "ConnectWise Disables Cloud Backups Amid Concerns for Downstream MSPs",
-   "link": "https://www.darkreading.com/identity-access-management-security/connectwise-disables-cloud-backups-downstream-msps",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-19T19:19:33Z",
-   "summary": "Researchers say attackers authenticated into Microsoft 365 tenants using ConnectWise credentials; ConnectWise says customer impact remains unconfirmed.",
-   "score": 11,
-   "tags": [
-    "Real estate",
-    "Microsoft 365",
-    "Identity"
-   ],
-   "why": [
-    "Real estate",
-    "Microsoft 365",
-    "Identity"
-   ],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/connectwise-resets-credentials-as-cloud.html"
-    }
-   ]
-  },
-  {
-   "id": "06accfcb31a1",
-   "title": "Bullhorn takes staffing platform offline to contain cyberattack",
-   "link": "https://www.bleepingcomputer.com/news/security/bullhorn-takes-staffing-platform-offline-to-contain-cyberattack/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-19T18:51:13Z",
-   "summary": "Staffing software company Bullhorn has disabled access to its platform to contain a cyberattack that caused a system-wide outage. [...]",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "561dd3f2eda5",
-   "title": "Siemens Software Center Vulnerability Exploited in ClickFix Malware Attacks",
-   "link": "https://www.securityweek.com/siemens-software-center-vulnerability-exploited-in-clickfix-malware-attacks/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-19T18:15:39Z",
-   "summary": "Attackers paired a genuine, signed copy of Siemens Software Center with malicious DLLs to infect Windows PCs via ClickFix lures. The post Siemens Software Center Vulnerability Exploited in ClickFix Malware Attacks appeared first on SecurityWeek .",
-   "score": 5,
-   "tags": [
-    "Phishing",
-    "Vulnerability"
-   ],
-   "why": [
-    "Phishing",
-    "Vulnerability"
-   ],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/clickfix-attackers-exploit-siemens.html"
-    }
-   ]
-  },
-  {
-   "id": "52b0d35525c9",
-   "title": "Sabre Cybersecurity Stops Wire Fraud Attempt Targeting Central Ohio Real Estate Closing",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxORFZMUzgzdGhXYWozVGJtVzdkSFlPZEZCSGphODF1UC1jYlRtUnpGRTZXVTdFLXhkWjlfc0hCOGJDNnVjWF9JczhCNmlLcFJibHVxT1podlhZZE1RcUR1TVhTQkhqS09lT1pSYnNhLXo2QUNrQ25NSnE1MmhrWTgzdFlRTjA1TUJIRnpQUHNreWotMTd3TmJRY04tR21WSnVQblE5MFF1ZUJuLVZTMTQzcUM0MEZTeXM?oc=5",
-   "source": "Carroll County Mirror-Democrat",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-19T17:45:02Z",
-   "summary": "",
-   "score": 20,
-   "tags": [
-    "Real estate",
-    "BEC / payment fraud",
-    "Microsoft 365"
-   ],
-   "why": [
-    "Real estate",
-    "BEC / payment fraud",
-    "Microsoft 365"
-   ],
-   "also": [
-    {
-     "source": "mykxlg.com",
-     "url": "https://news.google.com/rss/articles/CBMimwJBVV95cUxOYVRfUW5GRF80cERsNTZOU2RreTM0YkJiYU9rakg0c242N3I1aDg3cUFqVmFEVHpFZ2xJeE5sTEkyMXY0UmZaU0RNZkhVQWpsS0JyRGlZYjNYWEtRZHJ0cFRycnAwQUhtX0kwYld0OTdCMHFnR3F5S3JKMVN6TklFd09WNHFkSmNtQk5MZUdzblh1VmlvWGhRYmdGLVBqVl9FVWdlTDFQdm0yRGJ1alczaHVuT1kwc1pScjVkei15SUFPWkhoTTVPZjUtMTYyTEdmTEo2Y2JiTnhHRXhHMEJCbFY1bm5NcEtYc2RwY1FheXNROVl3YllBNGZlX0FBMlNqUE4zNFpleHRZY2hXaEZSYnViYnc5NVEzQ01F?oc=5"
-    },
-    {
-     "source": "USA Today",
-     "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNZWdxVTR2dlRUM0pVbmhoWURaa016TWF3TGxrRTdRQTVESmctaHA4SFZlaVRRUDRZRGpnV2dkcmJ1clFxRmtTenUwNGtCanBUM25YT3A3c29GRnQwWDJqcVN3NExCdnZqUG9PWFIxelRKVGsxcjZtMklZUXlFZVg2T0xqN2RueTNWekZ2WlAzbDdFdVdzVTliN1dFRGZBVWtQNWxxWHN0Q1hWYUdxdDRkU0J3NzNNRlAycUFfWmlDcEJuUnBLamREakFFd3FuUkRqeVV6b0hB?oc=5"
-    }
-   ]
   }
  ]
 }
