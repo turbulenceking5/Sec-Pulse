@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-29T18:29:40Z",
+ "generated": "2026-10-29T22:53:24Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -40,7 +40,7 @@
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 3,
+   "count": 1,
    "error": null
   },
   {
@@ -52,7 +52,7 @@
   {
    "name": "CISA KEV",
    "ok": true,
-   "count": 17,
+   "count": 19,
    "error": null
   },
   {
@@ -100,11 +100,207 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 27,
+   "count": 28,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "7d9fa054e5fe",
+   "title": "Binance probes potential $5.8 billion crypto-theft hack",
+   "link": "https://www.bleepingcomputer.com/news/security/binance-probes-potential-58-billion-crypto-theft-hack/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-29T22:45:23Z",
+   "summary": "Cryptocurrency exchange Binance is investigating a potential security breach involving up to $5.8 billion in digital assets, in what could become the largest cryptocurrency hack in history. [...]",
+   "score": 3,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "a6d0e88b749c",
+   "title": "Hugging Face malware campaign returns to hijack GPUs for crypto mining",
+   "link": "https://www.bleepingcomputer.com/news/security/hugging-face-malware-campaign-returns-to-hijack-gpus-for-crypto-mining/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-29T22:09:24Z",
+   "summary": "A crypto-mining campaign abusing Hugging Face models returned days after takedown, hijacking GPU servers and planting backdoors, with one model downloaded over 28,000 times. Separately, a fake Solana starter kit on GitHub is positioned to trick AI coding agents into installing a NetSupport RAT.…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "17e71a11c730",
+   "title": "Japan Airlines suffers third-party data breach exposing passenger info",
+   "link": "https://www.bleepingcomputer.com/news/security/japan-airlines-suffers-third-party-data-breach-exposing-passenger-info/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-29T22:08:04Z",
+   "summary": "Japan Airlines (JAL) has announced that a data breach at Amadeus's Passenger Service System exposed the data of about 92,000 customers. [...]",
+   "score": 7,
+   "tags": [
+    "Data breach",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Data breach",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "fe7730fa4068",
+   "title": "Polymarket halts trading after crypto-draining script breach, $2.5M traced",
+   "link": "https://www.bleepingcomputer.com/news/security/polymarket-halts-trading-after-crypto-draining-script-breach-25m-traced/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-29T21:47:25Z",
+   "summary": "Prediction market platform Polymarket temporarily suspended trading on Thursday after hackers compromised a third-party service to distribute cryptocurrency-draining JavaScript, with approximately $2.5 million in assets traced to a suspected attacker wallet. [...]",
+   "score": 6,
+   "tags": [
+    "Data breach",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Data breach",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "cbcc5cbaf6f6",
+   "title": "Anthropic-Themed Phishing Emails Bypass Top Security Tools",
+   "link": "https://www.darkreading.com/cyberattacks-data-breaches/anthropic-phishing-emails-bypass-security-tools",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-29T21:21:56Z",
+   "summary": "Obvious phishing emails with numerous red flags are somehow getting past some of the industry-leading secure email gateway (SEG) products.",
+   "score": 4,
+   "tags": [
+    "Phishing"
+   ],
+   "why": [
+    "Phishing"
+   ]
+  },
+  {
+   "id": "68f0757a3373",
+   "title": "Rethinking Cybersecurity Awareness in the AI Era",
+   "link": "https://www.darkreading.com/cyber-risk/rethinking-cybersecurity-awareness-ai-era",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-29T20:15:37Z",
+   "summary": "This installment of the Reporters' Notebook video series discusses some of the trends and topics from Cybersecurity Awareness Month, from using AI for better training to educating next-generation workforces on modern risks and emerging threats.",
+   "score": 2,
+   "tags": [
+    "Vulnerability",
+    "AI threats"
+   ],
+   "why": [
+    "Vulnerability",
+    "AI threats"
+   ]
+  },
+  {
+   "id": "e692538b686e",
+   "title": "Fake crypto app on Apple App Store linked to $23K wallet theft",
+   "link": "https://www.bleepingcomputer.com/news/security/fake-crypto-app-on-apple-app-store-linked-to-23k-wallet-theft/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-29T19:23:41Z",
+   "summary": "A fake cryptocurrency trading app called Padre Terminal, previously available on the Apple App Store for iOS devices, has been linked to the theft of approximately $23,000 from 27 Solana wallets. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "7325900e53d9",
+   "title": "ThreatsDay: Critical Firewall Flaws, Banking Trojans Rented, Weaponized PDF, Token Theft + 26 More Stories",
+   "link": "https://thehackernews.com/2026/10/threatsday-critical-firewall-flaws.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-29T19:11:58Z",
+   "summary": "Some attacks take real skill. Others just need someone to leave a door open. This week has both. Exposed passwords, old bugs still getting exploited, and trusted software doing things it shouldn't. There's a strange mix of clever tricks and careless mistakes. Hackers are borrowing trust from…",
+   "score": 11,
+   "tags": [
+    "Data breach",
+    "Identity",
+    "Edge devices",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Data breach",
+    "Identity",
+    "Edge devices",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "ef51173644e1",
+   "title": "Jin Air Suffers Data Breach, 1,454 Members Affected : Business/Industry : JKN",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFA1LVZZNDBidEtwRnFWb0xXaDhRYmpUUGlURGJkUk92RVpQRXRpT3EyRjZDQjFhdjREU1VsSkVlSjl0bGtxMEgtUWQ4S3hYS3cycVd3eW8xaVhIT3l6UHlrTWFB?oc=5",
+   "source": "재경일보",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-29T18:45:00Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "1c94982561e9",
+   "title": "Client Alert: When AI-Generated Images Trigger Biometric Privacy Risks: New Lawsuits Highlight Emerging Compliance Challenges for Businesses",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNaEtTRGJGeTlNTFhzOFBycks4QlVZNVZqVHNwWVpIZEZUN0dZMGNRM2liU2lYbjlzSnh6NGZkenBydTlvOEtrbk0yQVBQUXJNQ1Z0VEZsamxvMTJ3eVpUckhZeERmbDN2b1R5NDRQSS10OXRJLS1vNGJRVnJXcFNMQU5waERNaFE0ek1TaHBUR1hCbklCN3pFWEpPcDJGd1lsQ0lsc2VYQ19MWmVybkZnQjVDT1cxazFxS3hF0gG7AUFVX3lxTE1oS1NEYkZ5OU1MWHM4UHJySzhCVVk1VmpUc3BZWkhkRlQ3R1kwY1EzaWJTaVhuOXNKeHo0ZmR6cHJ1OW84S2tuTTJBUFBRck1DVnRURmxqbG8xMnd5WlRySFl4RGZsM3ZvVHk0NFBJLXQ5dEktLW80YlFWcldwU0xBTnBoRE1oUTR6TVNocFRHWEJuSUI3ekVYSk9wMkZ3WWxDSWxzZVhDX0xaZXJuRmdCNUNPVzFrMXFLeEU?oc=5",
+   "source": "The National Law Review",
+   "feed": "OAIC / Privacy news",
+   "region": "Global",
+   "published": "2026-10-29T18:39:23Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "SaaS / cloud",
+    "AI threats"
+   ],
+   "why": [
+    "SaaS / cloud",
+    "AI threats"
+   ]
+  },
+  {
+   "id": "7c2b70bd7e3e",
+   "title": "Hackers exploit Cisco SD-WAN flaw to deploy custom KeyDrift malware",
+   "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-cisco-sd-wan-flaw-to-deploy-custom-keydrift-malware/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-29T18:38:26Z",
+   "summary": "A newly identified advanced persistent threat (APT) group tracked as UAT-11473 was observed exploiting CVE-2026-20127, an authentication-bypass flaw in Cisco Catalyst SD-WAN Controllers, to deploy a custom malware framework called KeyDrift. [...]",
+   "score": 6,
+   "tags": [
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "why": [
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "epss": 0.8929
+  },
   {
    "id": "2c3bc9054593",
    "title": "Claude Model Builds Exploits Across Major Browsers & OSes",
@@ -380,6 +576,23 @@
    ]
   },
   {
+   "id": "206c28748a43",
+   "title": "Pakistan court sentences human rights lawyer couple to 10 years in security breach case | World News",
+   "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxPRTFwLUNVcEcwU1FoeTJ1eDdyMVVRQTFsV0FMaHdiN2tXZDAwYWdoQXdpYVFRdERuTF9nWFNDa1ZUXzBmUlhteThiWHRVaklQbkpPTm5ieTVtS1VyQzhtLUlBQWFGMUhvOWdIOEJqVm5zeDJ2QnJySGdUbG1nTWpENnUySWZBTm5rRU1wX0NONGhhbk5CeXFOSXJJVzVIRGZJNFlpcm9DbHJkU2hYZW5vZGxMc2VMWDRUNUlQM3hobTZ4UU5nTmdxUzFiUmxUNVVQSUg1V002d010STZIcjhvTkxTLURoZk9VekR0dTJHam9ULWZ4YVJZTm9MODA3RHI1T05kYW9MVHJXam1EX2JxNFlB0gGSAkFVX3lxTE9FMXAtQ1VwRzBTUWh5MnV4N3IxVVFBMWxXQUxod2I3a1dkMDBhZ2hBd2lhUVF0RG5MX2dYU0NrVlRfMGZSWG15OGJYdFVqSVBuSk9ObmJ5NW1LVXJDOG0tSUFBYUYxSG85Z0g4QmpWbnN4MnZCcnJIZ1RsbWdNakQ2dTJJZkFObmtFTXBfQ040aGFuTkJ5cU5JcklXNUhEZkk0WWlyb0NscmRTaFhlbm9kbExzZUxYNFQ1SVAzeGhtNnhRTmdOZ3FTMWJSbFQ1VVBJSDVXTTZ3TXRJNkhyOG9OTFMtRGhmT1V6RHR1Mkdqb1QtZnhhUllOb0w4MDdEcjVPTmRhb0xUcldqbURfYnE0WUE?oc=5",
+   "source": "Hindustan Times",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-29T12:31:09Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
    "id": "15f712f3175d",
    "title": "Windows 11 KB5127936 update released with 41 changes and fixes",
    "link": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5127936-update-released-with-41-changes-and-fixes/",
@@ -417,7 +630,7 @@
    "feed": "The Hacker News",
    "region": "Global",
    "published": "2026-10-29T11:39:18Z",
-   "summary": "A flaw in Telegram for Android allowed an attacker to run code on a victim's phone via a voice call once the victim answered, according to security startup NebuSec. The attacker needed only an ordinary Telegram account. Telegram fixed the flaw in version 12.10.4 of the app, released in late…",
+   "summary": "A flaw in Telegram for Android could be chained with two other bugs to take full control of a victim's phone through a voice call, once the victim answered, according to security startup NebuSec. The attacker needed only an ordinary Telegram account. Telegram fixed the flaw in version 12.10.4 of…",
    "score": 0,
    "tags": [],
    "why": []
@@ -769,6 +982,65 @@
    "score": 1,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "926442692146",
+   "title": "CVE-2026-76418: Cisco Secure Firewall ASA Software and Cisco Secure FTD Software — Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-76418",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-10-29T00:00:00Z",
+   "summary": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software contains an unchecked return value to NULL pointer dereference vulnerability that could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a… CISA remediation due 2026-11-01.",
+   "score": 7,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "why": [
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "epss": 0.0057
+  },
+  {
+   "id": "2dc39333ee97",
+   "title": "CVE-2026-97229: GitLab Community Edition and Enterprise Edition — GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-97229",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-10-29T00:00:00Z",
+   "summary": "GitLab Community Edition and Enterprise Edition contain a integer overflow or wraparound vulnerability that could allow an unauthenticated user to execute arbitrary code on the GitLab server via a specially crafted regular expression in a CI/CD… CISA remediation due 2026-11-01.",
+   "score": 4,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.1843
+  },
+  {
+   "id": "ce178f6b65e4",
+   "title": "Survey: A third of consumers would replace their real estate agent with AI",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOcUxjRVpKNUY3UlVPWHhRWTdQeWVLQUlpcWwwMVNsbk41X3U2bWktTHRQbUo1SWcxRjVseG9PTEREdFFZQzVLQ1FFV3hieEhxeHVsbjVjTVVza2lnRmx1aXVjT055SGhXaW1ZM08xSjVzTFZrT2tERC1hZnd2Y1JnTWFVejZqa3RaamN3bTNqLXBTZ0hnRklMVnpNOTZmWkZ6R01TRkx5NzVqM0VHLUtnSjVzQTMzd0U?oc=5",
+   "source": "West Hawaii Today",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-28T23:05:00Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
   },
   {
    "id": "973b3109ef5f",
@@ -5590,6 +5862,12 @@
    "why": [
     "Australia",
     "Data breach"
+   ],
+   "also": [
+    {
+     "source": "Daily Mail",
+     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPdmM2bXNzNGljZHNfSlBvOHc2YTFfSVA0d2JSNDU1UWxyQzRaOVhwSzJiTVZpeFozQ1d4Nl8waWlnTEROWFlvOGs3SGtKdnpyVHREb3ViSUlBMnNnR05hNkpNeTRZUURIejhFSVNNS0d5VS1sWTVNamFQRnZsYlo1ZVVsQXRMZHJTSlRuQUt2d3VsbDhNY2JEZGRzUjg3czhTalFpRDFkONIBrAFBVV95cUxOeFFNNzd0YzVHTnVpVXN2NFE1OHJJR2FuQmp2eEpjalVwcXJocWR4WnBHZm9DS3BZdGNDU0xkaVBjMFROSks1dV9CalI3YThIemNNajFHdzVwSjlpVjU4bXU3VTgzRF9lZzZGTW5RLURJUmg3T0RQcGpDbUpMNXotU3B2MjY3NVVVUnFoV21zUDlmdDZ0TmVSUmR0RXJ4Wm5TeU02c19yMjFOVUtD?oc=5"
+    }
    ]
   },
   {
@@ -5905,25 +6183,6 @@
    ],
    "why": [
     "Data breach"
-   ]
-  },
-  {
-   "id": "761f95e757b0",
-   "title": "Major Australian government websites go offline after critical security flaws are uncovered using AI",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPdmM2bXNzNGljZHNfSlBvOHc2YTFfSVA0d2JSNDU1UWxyQzRaOVhwSzJiTVZpeFozQ1d4Nl8waWlnTEROWFlvOGs3SGtKdnpyVHREb3ViSUlBMnNnR05hNkpNeTRZUURIejhFSVNNS0d5VS1sWTVNamFQRnZsYlo1ZVVsQXRMZHJTSlRuQUt2d3VsbDhNY2JEZGRzUjg3czhTalFpRDFkONIBrAFBVV95cUxOeFFNNzd0YzVHTnVpVXN2NFE1OHJJR2FuQmp2eEpjalVwcXJocWR4WnBHZm9DS3BZdGNDU0xkaVBjMFROSks1dV9CalI3YThIemNNajFHdzVwSjlpVjU4bXU3VTgzRF9lZzZGTW5RLURJUmg3T0RQcGpDbUpMNXotU3B2MjY3NVVVUnFoV21zUDlmdDZ0TmVSUmR0RXJ4Wm5TeU02c19yMjFOVUtD?oc=5",
-   "source": "Daily Mail",
-   "feed": "ASD / ACSC in the news",
-   "region": "AU",
-   "published": "2026-10-21T22:38:38Z",
-   "summary": "",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Australia",
-    "SaaS / cloud"
    ]
   },
   {
@@ -7122,244 +7381,6 @@
    "region": "Global",
    "published": "2026-10-20T18:11:03Z",
    "summary": "OpenAI confirmed that its newer models are much better at writing and migrating software in older programming languages. [...]",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "937200821589",
-   "title": "Not Just a Selfie: The New BIPA Theory Aimed at Generative AI (via Passle)",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQcHlPV2ZOY3A2cUprRDA3eFdad2Znd3JSVkQ0M0NTemxQR3FRbkhFVlhMelZLR2FuNjdYNFFmbklxV3pUeC1sUkhVN3pIN09JOUVHWVV4Wmg4eW1ZakVMRDA1ZXBFTjZ6bDZnV2FSUWlWODg1c3kyOFVSTUFwcGtFMXZQVVA4NENsSF82aGw3aEdJVVIzNVZCMDlSX3l3aWZZZHVuczJMVQ?oc=5",
-   "source": "Frankfurt Kurnit Klein & Selz PC",
-   "feed": "OAIC / Privacy news",
-   "region": "Global",
-   "published": "2026-10-20T17:12:01Z",
-   "summary": "",
-   "score": 4,
-   "tags": [
-    "AI threats"
-   ],
-   "why": [
-    "AI threats"
-   ]
-  },
-  {
-   "id": "1530955429aa",
-   "title": "Eight eMudhra CA Keys Compromised, Triggering Emergency Fixes Across Browsers and Software",
-   "link": "https://thehackernews.com/2026/10/eight-emudhra-ca-keys-compromised.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-20T17:09:53Z",
-   "summary": "The private keys of eight eMudhra intermediate certificate authority (CA) certificates are compromised, Mozilla and Google's Chrome Root Program confirms on October 20. An intermediate CA signs the certificates that websites present, so anyone holding one of these keys could issue a certificate…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "f7a865abe770",
-   "title": "US Agencies Detail Incident Response Practices for Rogue AI Agents",
-   "link": "https://www.securityweek.com/us-agencies-detail-incident-response-practices-for-rogue-ai-agents/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-20T15:45:00Z",
-   "summary": "NIST, CISA and NSA share ten voluntary practices for preparing for, detecting, responding to, recovering from, and reporting rogue AI agent incidents. The post US Agencies Detail Incident Response Practices for Rogue AI Agents appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "53ddecf9f5b1",
-   "title": "Critical FortiSIEM Flaw Gets Public Exploit PoC for Unauthenticated Remote Code Execution",
-   "link": "https://thehackernews.com/2026/10/critical-fortisiem-flaw-gets-public.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-20T15:38:52Z",
-   "summary": "Cybersecurity researchers have released a proof-of-concept (PoC) exploit for a recently patched critical security flaw impacting Fortinet FortiSIEM that could result in arbitrary code execution. The vulnerability, tracked as CVE-2026-106173 (CVSS score: 9.4), is a critical path traversal flaw that…",
-   "score": 4,
-   "tags": [
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "why": [
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "epss": 0.01
-  },
-  {
-   "id": "dff178c340ad",
-   "title": "Close Identity Gaps in Software Development Before Unleashing AI",
-   "link": "https://www.darkreading.com/application-security/close-identity-gaps-sdlc-before-ai",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-20T15:35:45Z",
-   "summary": "Artificial intelligence is complicating security in the software development life cycle, but a Dark Reading roundtable found collaboration, better identity visibility, and reduced testing costs offer CISOs a way ahead.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "0d304799e621",
-   "title": "Qilin and INC Ransomware Groups Exploit Palo Alto Networks Flaw to Bypass MFA",
-   "link": "https://thehackernews.com/2026/10/qilin-and-inc-ransomware-groups-exploit.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-20T15:32:27Z",
-   "summary": "Palo Alto Networks has disclosed that it's continuing to observe exploitation of a now-patched security flaw impacting PAN-OS and Prisma Access by ransomware actors. The activity relates to CVE-2026-0257 (CVSS score: 7.8), an authentication bypass flaw that could be exploited by bad actors to set…",
-   "score": 13,
-   "tags": [
-    "Ransomware",
-    "Identity",
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "why": [
-    "Ransomware",
-    "Identity",
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "epss": 0.9501,
-   "also": [
-    {
-     "source": "Unit 42",
-     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQTUVTa0pZeTdwQS1ySmhSTV85cFBkeXdBOUFkWWFxeW9MOE9RNGtETVlwOEVXbkxxcmREUkNqVWlQNmh6VHJMMGZZTHBfdGhmTTNfaTh4S1gwMnZCdkhEdkJrYXBMb0NJOXJhT0U4R0lFVGJfYjNaREM3eFMxeU52bVdpUjhrbGc?oc=5"
-    }
-   ]
-  },
-  {
-   "id": "91169d021095",
-   "title": "Hackers Abuse AI Pen-Test Tool Cairn to Automate Massive Attack Spree",
-   "link": "https://www.darkreading.com/cyberattacks-data-breaches/hackers-abuse-ai-pen-test-tool-cairn",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-20T14:36:05Z",
-   "summary": "A Chinese-speaking attacker has compromised hundreds of websites across the globe, looting from big fish like John Deere, SharkNinja, and engine manufacturer Cummins.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "0dfa738d1635",
-   "title": "Hackers Use Autonomous AI Agents to Breach Company Websites, Target Over 1,200 Sites",
-   "link": "https://thehackernews.com/2026/10/hackers-use-autonomous-ai-agents-to.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-20T14:07:17Z",
-   "summary": "A Chinese-speaking criminal pointed autonomous AI agents at company websites and let them break in with almost no help, and a security researcher watched it happen because the operators left their control panels open on the internet. The agents tried more than 1,200 sites and reached websites…",
-   "score": 4,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "54e589c7063e",
-   "title": "CJIS v6.1 Compliance: 5 Practical Priorities for Agencies",
-   "link": "https://www.bleepingcomputer.com/news/security/cjis-v61-compliance-5-practical-priorities-for-agencies/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-20T13:51:00Z",
-   "summary": "CJIS v6.1 requires agencies to maintain strong authentication, account security, and audit controls while demonstrating ongoing compliance. Specops outlines five practical priorities covering MFA, account management, passwords, logging, and audit readiness. [...]",
-   "score": 2,
-   "tags": [
-    "Identity"
-   ],
-   "why": [
-    "Identity"
-   ]
-  },
-  {
-   "id": "4791d60cd7f6",
-   "title": "The Key to AI Software Security Isn’t Speed, It’s Maturity",
-   "link": "https://www.securityweek.com/the-key-to-ai-software-security-isnt-speed-its-maturity/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-20T13:34:23Z",
-   "summary": "Where your developers sit on the AI adoption scale has a real impact on how you are addressing security risk. The post The Key to AI Software Security Isn’t Speed, It’s Maturity appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "6d842945d1ee",
-   "title": "Redfin faces data breach class action lawsuit after incident",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQR1dVbUgzWkN1cl9fLTZXUV82NzVOLWs1eWpkUFBzczliaThIendGX0J0Y1hGd2lnZkp6SE1PRHRrclNOVVZZREVtVTdTRDdMcUpTU1RKWDFtZjBwbFF5WHQ2cDgwZG9jUkhkdGZSTmlJbUZQczY2NG1IWElXN2t1a25nNHJjaWFLNzNva0k3UjhseHZCUFFndE9hQnY4b3VzaFFnaQ?oc=5",
-   "source": "National Mortgage News",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-20T13:29:00Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Data breach",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Data breach",
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "b8cb67bf0a57",
-   "title": "Hacker gets 8 years for stealing $3.3 million from taxpayers",
-   "link": "https://www.bleepingcomputer.com/news/security/hacker-gets-8-years-for-stealing-33-million-from-taxpayers/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-20T13:18:36Z",
-   "summary": "A Nigerian national was sentenced to eight years in prison for his involvement in a series of spearphishing attacks targeting US tax preparation businesses since 2019. [...]",
-   "score": 3,
-   "tags": [
-    "Phishing"
-   ],
-   "why": [
-    "Phishing"
-   ]
-  },
-  {
-   "id": "cf21e83d251e",
-   "title": "Ahold Delhaize Restoring Services Disrupted by Cyberattack",
-   "link": "https://www.securityweek.com/ahold-delhaize-restoring-services-disrupted-by-cyberattack/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-20T13:02:18Z",
-   "summary": "The company has restored many websites and apps in Europe and expects e-commerce brands in the US to be restored in days. The post Ahold Delhaize Restoring Services Disrupted by Cyberattack appeared first on SecurityWeek .",
-   "score": 1,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "also": [
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/ahold-delhaize-cyberattack-affects-services-across-us-and-europe/"
-    }
-   ]
-  },
-  {
-   "id": "2f7a0f9a2ffb",
-   "title": "Pegasus Spyware Infection Confirmed on Serbian University Rector's iPhone Days Before Election",
-   "link": "https://thehackernews.com/2026/10/pegasus-spyware-infection-confirmed-on.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-20T12:59:44Z",
-   "summary": "The iPhone of Vladan Đokić, rector of the University of Belgrade and a prominent supporter of Serbia's student protest movement, was infected with NSO Group's Pegasus spyware in 2026, the Citizen Lab said on October 19. The finding came six days before Serbia's October 25 snap parliamentary…",
    "score": 0,
    "tags": [],
    "why": []
