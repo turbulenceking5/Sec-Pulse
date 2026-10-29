@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-28T22:44:44Z",
+ "generated": "2026-10-29T00:59:54Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -22,7 +22,7 @@
   {
    "name": "ASD / ACSC in the news",
    "ok": true,
-   "count": 2,
+   "count": 3,
    "error": null
   },
   {
@@ -34,7 +34,7 @@
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 4,
+   "count": 5,
    "error": null
   },
   {
@@ -52,7 +52,7 @@
   {
    "name": "CISA KEV",
    "ok": true,
-   "count": 21,
+   "count": 17,
    "error": null
   },
   {
@@ -70,7 +70,7 @@
   {
    "name": "Krebs on Security",
    "ok": true,
-   "count": 4,
+   "count": 3,
    "error": null
   },
   {
@@ -100,16 +100,29 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 29,
+   "count": 25,
    "error": null
   }
  ],
  "items": [
   {
-   "id": "075a7a4d56cd",
+   "id": "cd96a1792e01",
+   "title": "Yet Another ClickFix Campaign, (Wed, Oct 28th)",
+   "link": "https://isc.sans.edu/diary/rss/33466",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-10-29T00:42:15Z",
+   "summary": "Introduction",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "66f894f62d80",
    "title": "AML rules expose small firms to privacy breach risks",
-   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPQVl4bm03ejhwZWZ5VERCd1ZaVThObmg2dXA2bmNfUjlnSXJJOThzb2FVTTVJT2xWeXRGeGZ1WEZVVzBhZFo4aVpIbXAwMTRqZVVfeXdORXotQm1WZ0RES2YxSGlTWU5xNEh0VUFyWmhfZ00xaWpDdUVTQk5xSktBZ2g3WEwwVFQ0bEtGSkdZU0o?oc=5",
-   "source": "Australia",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNZUQwajNJZ1F2SkdsSlBoUElLejJscDhtcEFOV1c1X1BZWWVLdnh0VTlJdXZZenpFallsaWl4ZW10VnNvWF9jRzNXQVN1bUFkU1VhNUxfSlo0Ny1MM1pRSG05MlBXbkxJQlR1eVJzVUUwbUh2X05zUXBoaEdnaG5hY3k2UHlxR1dlYUtuOUF5Uzc?oc=5",
+   "source": "SecurityBrief Australia",
    "feed": "Real estate cyber news",
    "region": "Global",
    "published": "2026-10-28T21:00:00Z",
@@ -120,6 +133,12 @@
    ],
    "why": [
     "Data breach"
+   ],
+   "also": [
+    {
+     "source": "Australia",
+     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPQVl4bm03ejhwZWZ5VERCd1ZaVThObmg2dXA2bmNfUjlnSXJJOThzb2FVTTVJT2xWeXRGeGZ1WEZVVzBhZFo4aVpIbXAwMTRqZVVfeXdORXotQm1WZ0RES2YxSGlTWU5xNEh0VUFyWmhfZ00xaWpDdUVTQk5xSktBZ2g3WEwwVFQ0bEtGSkdZU0o?oc=5"
+    }
    ]
   },
   {
@@ -190,6 +209,23 @@
      "source": "BleepingComputer",
      "url": "https://www.bleepingcomputer.com/news/security/volt-typhoon-hides-zero-day-attacks-using-silent-train-framework/"
     }
+   ]
+  },
+  {
+   "id": "49137899b3ee",
+   "title": "China-Linked Cyberattack Forces Tampa’s ConnectWise to Shut Down Services",
+   "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBsTGJNVEIyNEg4VXZsdTJkaXZOSGFob3NEWXkwVGk1cHlIOFFITVc3U2VWZUdfclhUallENnlTYnlvb19adnBER2lZM3pHTjdCRDRXbUlvd0NkOC10dWNVS0c5QzFpdw?oc=5",
+   "source": "TBBW",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-28T17:58:34Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
    ]
   },
   {
@@ -278,19 +314,6 @@
    ]
   },
   {
-   "id": "cd96a1792e01",
-   "title": "Yet Another ClickFix Campaign, (Wed, Oct 28th)",
-   "link": "https://isc.sans.edu/diary/rss/33466",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-10-28T16:07:03Z",
-   "summary": "Introduction",
-   "score": 1,
-   "tags": [],
-   "why": []
-  },
-  {
    "id": "eb73651e36ee",
    "title": "PHP2Shell Attack Roots 25 Servers, Breaches U.S. Government-Affiliated Network",
    "link": "https://thehackernews.com/2026/10/php2shell-attack-roots-25-servers.html",
@@ -321,9 +344,9 @@
    "why": []
   },
   {
-   "id": "7b3172a92267",
+   "id": "e71944e022a1",
    "title": "Defendant’s third-party claim against plaintiff’s lawyer in breach of contract case dismissed",
-   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNekNKM2QtUDRBQ00tNmFodlhpR0tfRjRpTmdsZThCbXVMRjV4eS1oQk1yaFRqeWxSSjlRZVBkZjlqRDF1MmpXRjJYSjk4Z050WWo0MW91TUxreEZDSnF1TGRnZVE3X2h2RzhuX2NONHhKbUZYRzZUeGRGdHVvOEgtcDVPY2JCa2F2elF6R1VCaDkyMnlsUWZuM3dOSDM1a1JSZzAycHc4LXVnRkY4QldJeC1YaHNDemZEVDlYdnc1ZVZQLWhOQkF4YVB6OGRVWWdOUjJDY2w1Z082M1FX0gFYQVVfeXFMT2U4VWhhV1YzWWgxU2pJVzZ1T0dZcmVkbWpHSnNvS2x5RDl4U0FYMFc0dTR0RUxiNEhDVlR2amZ4YXNXczFVZ3pRUUVvcVBwOHcxenBvLWlubw?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPazRLdGxIWjlrYnhwS0d5ZDVSZlc1U3V4Mk8xQ2w5MmgteE55MzdackozaVBrWWpnakVoSW0xTzBJWXlYV2JmMU1NanlrSDQ4T29OYW5RVUFldWJOUXp2X21sOXVQNHZ0YllJN2lTclVnNEM2TUhPTkY2bmxvenB4WDBrQk9YaGcyLXN1M28tZEFwOWhIZ091RTR0OXhuSXoxTnMwRDBva2JtY0hzUW1obXFhQ2ZhNVJhRlJqWXZvYV9YZjlxMWtqbFJYWElpUlpDNC15aW52TmJyN3ZZ0gFYQVVfeXFMT2U4VWhhV1YzWWgxU2pJVzZ1T0dZcmVkbWpHSnNvS2x5RDl4U0FYMFc0dTR0RUxiNEhDVlR2amZ4YXNXczFVZ3pRUUVvcVBwOHcxenBvLWlubw?oc=5",
    "source": "Law360 Canada",
    "feed": "Real estate cyber news",
    "region": "Global",
@@ -869,6 +892,31 @@
    "score": 1,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "6994682f0ffb",
+   "title": "Australia severs criminal access to 180,000 computers after breaching Amadey malware backend",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQMGw3NElzaXhCSWRhb2RNZ1c0THBBMEtYYzVYSzlRY2Q1amRnX3FGcGtYVlNNYUR5dGQ4dk9fc2w5WTFDZWpsU290WlFiejBkb29IWmdQNVVzdUcycGhMRVEzQ2xWM3JGWE9LdUVMSzBoUjh0dnRvamJiZWhzTThOMzV5YnpzdF96NGhmUnAtNkdKYTN1Y2NHLTI0ZHhNSUJSal94LUFFZ19vbXBYWE9NWDlkTmVEdVA5UHpUUURR?oc=5",
+   "source": "news.lavx.hu",
+   "feed": "ASD / ACSC in the news",
+   "region": "AU",
+   "published": "2026-10-28T00:57:50Z",
+   "summary": "",
+   "score": 14,
+   "tags": [
+    "Australia",
+    "Data breach"
+   ],
+   "why": [
+    "Australia",
+    "Data breach"
+   ],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/australia-gets-into-amadey-malware.html"
+    }
+   ]
   },
   {
    "id": "48d9bd4622a4",
@@ -1545,23 +1593,6 @@
    "score": 0,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "1da67faa3c4a",
-   "title": "Australia Gets Into Amadey Malware Backend, Cuts Off Access to 180,000 Infected Computers",
-   "link": "https://thehackernews.com/2026/10/australia-gets-into-amadey-malware.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-27T09:33:06Z",
-   "summary": "A criminal using the Amadey malware can no longer access or steal data from 180,000 infected computers around the world, including some in Australia, the Australian Signals Directorate (ASD) says. The agency's operators gained access to the criminal's operation's backend and cut it off from those…",
-   "score": 5,
-   "tags": [
-    "Australia"
-   ],
-   "why": [
-    "Australia"
-   ]
   },
   {
    "id": "4b38edd6123c",
@@ -7406,23 +7437,6 @@
      "source": "USA Today",
      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNZWdxVTR2dlRUM0pVbmhoWURaa016TWF3TGxrRTdRQTVESmctaHA4SFZlaVRRUDRZRGpnV2dkcmJ1clFxRmtTenUwNGtCanBUM25YT3A3c29GRnQwWDJqcVN3NExCdnZqUG9PWFIxelRKVGsxcjZtMklZUXlFZVg2T0xqN2RueTNWekZ2WlAzbDdFdVdzVTliN1dFRGZBVWtQNWxxWHN0Q1hWYUdxdDRkU0J3NzNNRlAycUFfWmlDcEJuUnBLamREakFFd3FuUkRqeVV6b0hB?oc=5"
     }
-   ]
-  },
-  {
-   "id": "143bfdf19e2b",
-   "title": "Hackers Exploit Plex2Shell Flaws to Install Crypto Miners and Linux Proxy Backdoor",
-   "link": "https://thehackernews.com/2026/10/hackers-exploit-plex2shell-flaws-to.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-19T17:32:13Z",
-   "summary": "Threat actors have begun to exploit a chain of vulnerabilities in Plex Media Server to deploy cryptocurrency miners and reverse proxy software, a day after a proof-of-concept (PoC) went public. According to a researcher who goes by the online alias boredhackerblog, the exploitation activity…",
-   "score": 3,
-   "tags": [
-    "SaaS / cloud"
-   ],
-   "why": [
-    "SaaS / cloud"
    ]
   }
  ]
