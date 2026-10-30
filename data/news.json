@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T18:02:07Z",
+ "generated": "2026-10-30T22:23:24Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -22,7 +22,7 @@
   {
    "name": "ASD / ACSC in the news",
    "ok": true,
-   "count": 2,
+   "count": 1,
    "error": null
   },
   {
@@ -34,7 +34,7 @@
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 2,
+   "count": 3,
    "error": null
   },
   {
@@ -82,7 +82,7 @@
   {
    "name": "Microsoft Security Blog",
    "ok": true,
-   "count": 7,
+   "count": 8,
    "error": null
   },
   {
@@ -106,6 +106,95 @@
  ],
  "items": [
   {
+   "id": "f167e37bde6d",
+   "title": "Critical Linux kernel flaw allows remote root attacks on MPTCP servers",
+   "link": "https://www.bleepingcomputer.com/news/security/critical-linux-kernel-flaw-allows-remote-root-attacks-on-mptcp-servers/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-30T21:09:46Z",
+   "summary": "Security researchers at Anthropic have developed an exploit for a critical Linux kernel vulnerability that allows unauthenticated attackers to remotely execute commands as root on servers running Multipath TCP (MPTCP) listeners. [...]",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "ac7367a35b67",
+   "title": "Devs Hit by Trojanized Claude Code Extension for Cursor",
+   "link": "https://www.darkreading.com/cyberattacks-data-breaches/devs-trojanized-claude-code-extension-cursor",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-30T20:05:58Z",
+   "summary": "Two serious security issues hit Cursor on the same day, highlighting the risks for AI-powered integrated development environments (IDEs).",
+   "score": 0,
+   "tags": [],
+   "why": [],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/"
+    },
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html"
+    }
+   ]
+  },
+  {
+   "id": "7d21ebd6765f",
+   "title": "Client Alert: When AI-Generated Images Trigger Biometric Privacy Risks: New Lawsuits Highlight Emerging Compliance Challenges for Businesses",
+   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQVEZMNm1ROERhMFdlN2o3cjFDdTlKR1g1N1hGUmVtVkVyLW9RY093dlBBUGM1SDNQRjE4ejdEZElERVRSU2hkem15QnBRV0J6bExzQnpyelFmR192VjREaGtpMUFfcHA0TUs1cFlJR25RRGJfMDBSR0ZDWFJubzBoQTYyZjNaTW8?oc=5",
+   "source": "JD Supra",
+   "feed": "OAIC / Privacy news",
+   "region": "Global",
+   "published": "2026-10-30T17:45:46Z",
+   "summary": "",
+   "score": 4,
+   "tags": [
+    "AI threats"
+   ],
+   "why": [
+    "AI threats"
+   ],
+   "also": [
+    {
+     "source": "The National Law Review",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNaEtTRGJGeTlNTFhzOFBycks4QlVZNVZqVHNwWVpIZEZUN0dZMGNRM2liU2lYbjlzSnh6NGZkenBydTlvOEtrbk0yQVBQUXJNQ1Z0VEZsamxvMTJ3eVpUckhZeERmbDN2b1R5NDRQSS10OXRJLS1vNGJRVnJXcFNMQU5waERNaFE0ek1TaHBUR1hCbklCN3pFWEpPcDJGd1lsQ0lsc2VYQ19MWmVybkZnQjVDT1cxazFxS3hF0gG7AUFVX3lxTE1oS1NEYkZ5OU1MWHM4UHJySzhCVVk1VmpUc3BZWkhkRlQ3R1kwY1EzaWJTaVhuOXNKeHo0ZmR6cHJ1OW84S2tuTTJBUFBRck1DVnRURmxqbG8xMnd5WlRySFl4RGZsM3ZvVHk0NFBJLXQ5dEktLW80YlFWcldwU0xBTnBoRE1oUTR6TVNocFRHWEJuSUI3ekVYSk9wMkZ3WWxDSWxzZVhDX0xaZXJuRmdCNUNPVzFrMXFLeEU?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "46d8d781bead",
+   "title": "Chinese Hackers Use AI-Powered ARTEX to Target Over 200 Organizations Worldwide",
+   "link": "https://thehackernews.com/2026/10/chinese-hackers-use-ai-powered-artex-to.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-30T16:58:44Z",
+   "summary": "Chinese state-sponsored threat actors have been observed using a Go-based artificial intelligence (AI)-powered penetration testing framework called ARTEX in attacks aimed at high-value targets simultaneously. The activity has been attributed by CrowdStrike to a China-based \"targeted intrusion…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "ad4296e15ebc",
+   "title": "From help desk impersonation to AD CS abuse: Investigating ESC1 and ESC8 intrusion paths",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/10/30/help-desk-impersonation-ad-cs-abuse-investigating-esc1-esc8-intrusion-paths/",
+   "source": "Microsoft Security Blog",
+   "feed": "Microsoft Security Blog",
+   "region": "Global",
+   "published": "2026-10-30T16:11:44Z",
+   "summary": "Teams support impersonation led to remote access, malicious runtime execution, and Certificate Services abuse through authentication relay and Kerberos. The post From help desk impersonation to AD CS abuse: Investigating ESC1 and ESC8 intrusion paths appeared first on Microsoft Security Blog .",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
+  {
    "id": "e645dafde1d4",
    "title": "Trezor warns of suspected crypto-theft implant in hardware wallet",
    "link": "https://www.bleepingcomputer.com/news/security/trezor-warns-of-suspected-crypto-theft-implant-in-hardware-wallet/",
@@ -121,29 +210,6 @@
     {
      "source": "The Hacker News",
      "url": "https://thehackernews.com/2026/10/trezor-warns-of-suspected-hardware.html"
-    }
-   ]
-  },
-  {
-   "id": "7d21ebd6765f",
-   "title": "Client Alert: When AI-Generated Images Trigger Biometric Privacy Risks: New Lawsuits Highlight Emerging Compliance Challenges for Businesses",
-   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQVEZMNm1ROERhMFdlN2o3cjFDdTlKR1g1N1hGUmVtVkVyLW9RY093dlBBUGM1SDNQRjE4ejdEZElERVRSU2hkem15QnBRV0J6bExzQnpyelFmR192VjREaGtpMUFfcHA0TUs1cFlJR25RRGJfMDBSR0ZDWFJubzBoQTYyZjNaTW8?oc=5",
-   "source": "JD Supra",
-   "feed": "OAIC / Privacy news",
-   "region": "Global",
-   "published": "2026-10-30T15:55:54Z",
-   "summary": "",
-   "score": 4,
-   "tags": [
-    "AI threats"
-   ],
-   "why": [
-    "AI threats"
-   ],
-   "also": [
-    {
-     "source": "The National Law Review",
-     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNaEtTRGJGeTlNTFhzOFBycks4QlVZNVZqVHNwWVpIZEZUN0dZMGNRM2liU2lYbjlzSnh6NGZkenBydTlvOEtrbk0yQVBQUXJNQ1Z0VEZsamxvMTJ3eVpUckhZeERmbDN2b1R5NDRQSS10OXRJLS1vNGJRVnJXcFNMQU5waERNaFE0ek1TaHBUR1hCbklCN3pFWEpPcDJGd1lsQ0lsc2VYQ19MWmVybkZnQjVDT1cxazFxS3hF0gG7AUFVX3lxTE1oS1NEYkZ5OU1MWHM4UHJySzhCVVk1VmpUc3BZWkhkRlQ3R1kwY1EzaWJTaVhuOXNKeHo0ZmR6cHJ1OW84S2tuTTJBUFBRck1DVnRURmxqbG8xMnd5WlRySFl4RGZsM3ZvVHk0NFBJLXQ5dEktLW80YlFWcldwU0xBTnBoRE1oUTR6TVNocFRHWEJuSUI3ekVYSk9wMkZ3WWxDSWxzZVhDX0xaZXJuRmdCNUNPVzFrMXFLeEU?oc=5"
     }
    ]
   },
@@ -213,25 +279,6 @@
    ],
    "why": [
     "Data breach"
-   ]
-  },
-  {
-   "id": "96a0f026f2e0",
-   "title": "Malicious Claude Code extension on Cursor planted SSH backdoors",
-   "link": "https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-30T14:36:54Z",
-   "summary": "A malicious version of Anthropic's Claude Code VS Code extension was distributed through Cursor's extension marketplace for approximately 11 hours on October 29, exposing up to 5,000 developers to malware designed to install persistent SSH backdoors. [...]",
-   "score": 0,
-   "tags": [],
-   "why": [],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html"
-    }
    ]
   },
   {
@@ -360,6 +407,31 @@
    ]
   },
   {
+   "id": "261896c22277",
+   "title": "Polymarket Hack Drains $2.7M From 700 Users as Third-Party Breach Forces Trading Halt",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOTk81ZnJLVzBGN0dnVV9YTTU4OVRNcTJ1QV9EVXI0c1F3TWdPNnNCOVhQalJvWV84aFIyU0czcnR1dVhFN24waE1ZR3F1TkRXSFh3bHRMdDduVDBfc3NhVGdOTm0xVWZ3Qi1iOEd1dmlHY29MR2JWWFdIWHNMOUVvMXBFOURXN3g2WlB2VUhTMWFvRmUzZlhn?oc=5",
+   "source": "Yahoo Finance",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-30T12:02:15Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Data breach",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Data breach",
+    "SaaS / cloud"
+   ],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/polymarket-halts-trading-after-crypto-draining-script-breach-25m-traced/"
+    }
+   ]
+  },
+  {
    "id": "0e3774900031",
    "title": "Why Urgent Security Fixes Aren't Fixed. Observe, Prove, Act, Confirm Gets Them Moving",
    "link": "https://thehackernews.com/2026/10/why-urgent-security-fixes-arent-fixed.html",
@@ -456,19 +528,6 @@
    ]
   },
   {
-   "id": "93a6b87fe425",
-   "title": "Binance links $6.3 billion crypto theft to compromised DevOps laptop",
-   "link": "https://www.bleepingcomputer.com/news/security/binance-links-63-billion-crypto-theft-to-compromised-devops-laptop/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-30T09:18:13Z",
-   "summary": "Binance, the world's largest crypto exchange, has linked the theft of about $6.3 billion in cryptocurrency to a DevOps engineer's compromised laptop. [...]",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
    "id": "e40ec869602e",
    "title": "Threat Brief: Critical Vulnerabilities in PHP: CVE-2026-109618, CVE-2026-109619 (Updated October 29)",
    "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBaSXRUMkVsWkF3TjhoV29oTXdyZHhrMGZINFBHNVVrNmZubTA4SkFzMzlWMlNMLW15ZWdISDJYeURJbVdpTFB5ZzNTU21aazFfTmc4R0VkLWVyMVY4S1JRYTZ5UjJqWk82SlR5Q0ZMOTJrNEJVeXNV?oc=5",
@@ -551,6 +610,29 @@
    "score": 0,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "72c6b7a1a7d7",
+   "title": "Binance’s $6.3bn security breach exposes vulnerabilities in crypto custody",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPQlpOQlpGbFdBXzZVMHFRMWpGTUhqc1FSaHJSa1U5dkVBWWJ4M2RvU3dldm41b2pJRXJLM01QcnF4d0psaVJEWjBUcUMxR0xDMmx0WjRMR1VibnEzOGVUWUpCcVRod1h2Qk9xQzg0YWt4Y0JvZHRUdTQ3WmRldE5PNTNJajh1dmNVaFZBejFndWhKWS1UMEhDcnZzUlVabjhTdmZlTTdGNkhRTHVkS1IzcDgzWHc3UdIBuwFBVV95cUxPWFMxQURzZDllXzZlZ0xxcEpVSERNR1RGTGJ1WDhidkhhNXBSbk5yZ1g5VlQ1elRGMUdHXzctb2pWa093Q19hWnhGYjRLWENrR1JNM3Nhb0NUTmlsQmRJUnZDNWhoM3ZGYWk3RXZFTG9sVnNsazdITTZ2eF9MZDRWOWNFVmc4ZmJuZVpTN2EzNVphQks0T254cUQxZXlRNVRyRWRJMUE0bUt1SGcxeU9iVy1WaUJZSFNGUW5V?oc=5",
+   "source": "Businessday NG",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-30T08:12:48Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/binance-links-63-billion-crypto-theft-to-compromised-devops-laptop/"
+    }
+   ]
   },
   {
    "id": "f6a72b86d81b",
@@ -757,25 +839,6 @@
    "published": "2026-10-29T22:08:04Z",
    "summary": "Japan Airlines (JAL) has announced that a data breach at Amadeus's Passenger Service System exposed the data of about 92,000 customers. [...]",
    "score": 7,
-   "tags": [
-    "Data breach",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Data breach",
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "fe7730fa4068",
-   "title": "Polymarket halts trading after crypto-draining script breach, $2.5M traced",
-   "link": "https://www.bleepingcomputer.com/news/security/polymarket-halts-trading-after-crypto-draining-script-breach-25m-traced/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-29T21:47:25Z",
-   "summary": "Prediction market platform Polymarket temporarily suspended trading on Thursday after hackers compromised a third-party service to distribute cryptocurrency-draining JavaScript, with approximately $2.5 million in assets traced to a suspected attacker wallet. [...]",
-   "score": 6,
    "tags": [
     "Data breach",
     "SaaS / cloud"
@@ -7288,57 +7351,6 @@
     "Australia"
    ],
    "why": []
-  },
-  {
-   "id": "b81260804ad3",
-   "title": "Generative AI Is Erasing Behavioral Tells, Weakening Behavior-Only Detection, Proofpoint Reports",
-   "link": "https://thehackernews.com/2026/10/generative-ai-is-erasing-behavioral.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-21T11:53:34Z",
-   "summary": "Generative AI has changed what a malicious email looks like. Messages that once gave themselves away through clumsy wording, generic pretexts, and reused templates now arrive fluent, personalized, and unique to each recipient, and the behavioral signals email filters have relied on for years are…",
-   "score": 2,
-   "tags": [
-    "AI threats"
-   ],
-   "why": [
-    "AI threats"
-   ]
-  },
-  {
-   "id": "9b477066ea3b",
-   "title": "Browsers Block eMudhra Intermediate CAs Over Recoverable Private Keys",
-   "link": "https://www.securityweek.com/browsers-block-emudhra-intermediate-cas-over-recoverable-private-keys/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-21T11:22:05Z",
-   "summary": "The private keys associated with eight certificates were compromised, and root programs and trust stores are blocking them. The post Browsers Block eMudhra Intermediate CAs Over Recoverable Private Keys appeared first on SecurityWeek .",
-   "score": 2,
-   "tags": [
-    "Identity"
-   ],
-   "why": [
-    "Identity"
-   ]
-  },
-  {
-   "id": "e7f2884fd694",
-   "title": "Hackers steal children's data after company used 'Password1' to protect old account",
-   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1MWWRiQTlFUk1lZnVlUE9Udk5sYURFN0VndVZsS0E4NFlwOWxFZG9hMFllbTIyM3d2aUc3NmJYV0FkVXoyX1h5RzNIOHJ1MGNyLUFzWm0tdUlOU28?oc=5",
-   "source": "BBC",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-21T10:56:47Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "Identity"
-   ],
-   "why": [
-    "Identity"
-   ]
   }
  ]
 }
