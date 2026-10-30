@@ -1,0 +1,1151 @@
+{
+  "zones": [
+    {
+      "id": "internet",
+      "name": "Internet",
+      "rect": [-6.2, -6.0, -1.4, -3.8],
+      "desc": "Untrusted. Anything here can reach your public-facing services, so assume it's hostile. Firewall and gateway logs are your record of what came in from here."
+    },
+    {
+      "id": "cloud",
+      "name": "Cloud (SaaS)",
+      "rect": [1.4, -6.0, 6.2, -3.8],
+      "desc": "Email and files hosted by a provider. You don't run the servers, but you own the accounts, settings and logs (shared responsibility). Sign-in and audit logs come from the provider's admin portal."
+    },
+    {
+      "id": "dmz",
+      "name": "DMZ",
+      "rect": [-6.2, -3.0, -1.2, -0.6],
+      "desc": "Screened subnet for anything the internet must reach (web server, VPN). If one of these hosts is breached, segmentation should stop the attacker reaching the internal network."
+    },
+    {
+      "id": "soc",
+      "name": "Security",
+      "rect": [1.8, -3.0, 6.2, -0.6],
+      "desc": "Security tooling on its own segment: the SIEM collects logs from everything, and the EDR console manages the agents on every endpoint. Keep admin access to these tightly restricted."
+    },
+    {
+      "id": "lan",
+      "name": "Office LAN",
+      "rect": [-6.2, 1.4, -1.0, 5.2],
+      "desc": "User workstations and laptops. Most attacks start here (phishing, malicious downloads), which is why users shouldn't be able to reach servers on ports they don't need."
+    },
+    {
+      "id": "servers",
+      "name": "Server VLAN",
+      "rect": [1.0, 1.4, 6.2, 5.2],
+      "desc": "The crown jewels: identity (domain controller), shared files and the database. Only the systems and ports that need access should get it through the internal firewall."
+    }
+  ],
+  "nodes": [
+    {
+      "id": "attacker",
+      "name": "Attacker",
+      "short": "Attacker",
+      "kind": "attacker",
+      "zone": "internet",
+      "pos": [-5.0, -4.9],
+      "role": "The threat actor's infrastructure: a phishing site, a C2 server or a scanner. In real logs it's just an external IP or domain.",
+      "logs": "You see it indirectly: as a source IP in firewall, VPN and web logs, a sender in email logs, or a destination in proxy and DNS logs. Enrich it with threat intelligence (reputation, ASN, first seen).",
+      "lessons": ["1.2", "1.6"]
+    },
+    {
+      "id": "inet",
+      "name": "Internet",
+      "short": "Internet",
+      "kind": "internet",
+      "zone": "internet",
+      "pos": [-2.6, -4.9],
+      "role": "Everything outside your perimeter, including customers, partners and attackers.",
+      "logs": "None of your own. What you know about internet traffic comes from the devices at your edge: firewall, email gateway, VPN and web server.",
+      "lessons": ["1.1"]
+    },
+    {
+      "id": "seg",
+      "name": "Email security gateway",
+      "short": "Email GW",
+      "kind": "mail",
+      "zone": "cloud",
+      "pos": [2.6, -4.9],
+      "role": "Filters inbound and outbound email for spam, phishing and malware before it reaches mailboxes. Checks SPF, DKIM and DMARC, detonates attachments in a sandbox, and rewrites URLs.",
+      "logs": "Message trace: sender, recipient, subject, sending IP, authentication results, verdict and delivery action (delivered, quarantined, rejected). Also URL click logs, if URL rewriting is on.",
+      "lessons": ["1.5", "1.10"]
+    },
+    {
+      "id": "mail",
+      "name": "Cloud mailbox and files",
+      "short": "Cloud mail",
+      "kind": "cloud",
+      "zone": "cloud",
+      "pos": [5.0, -4.9],
+      "role": "Hosted email and file storage. Accounts here are a prime target: one stolen password with no MFA gives an attacker the mailbox and its whole history.",
+      "logs": "Sign-in logs (IP, location, device, MFA result), mailbox audit logs (inbox rules, forwarding, items accessed) and file sharing activity. Impossible-travel and new-inbox-rule alerts come from here.",
+      "lessons": ["1.5", "3.4"]
+    },
+    {
+      "id": "fw",
+      "name": "Perimeter firewall",
+      "short": "Firewall",
+      "kind": "firewall",
+      "pos": [0, -2.4],
+      "role": "Controls traffic between the internet, the DMZ and the internal network. Default deny inbound; only published services (web, VPN) are allowed in.",
+      "logs": "Allow and deny records with source and destination IP, port, protocol and bytes; NetFlow for traffic volumes. It shows that a connection happened, but not what was inside it (no URL or payload) unless it decrypts TLS.",
+      "lessons": ["1.1", "1.2"]
+    },
+    {
+      "id": "vpn",
+      "name": "VPN gateway",
+      "short": "VPN",
+      "kind": "vpn",
+      "zone": "dmz",
+      "pos": [-5.3, -1.8],
+      "role": "Lets staff connect to the internal network from home. Internet-facing appliances like this are a favourite initial access target, so patch them fast and require MFA.",
+      "logs": "Authentication attempts (user, source IP, success or failure, MFA), session start and end, and the internal IP assigned from the VPN pool. Brute force and password spraying show up here first.",
+      "lessons": ["2.4", "1.2"]
+    },
+    {
+      "id": "web",
+      "name": "Public web server",
+      "short": "Web",
+      "kind": "server",
+      "zone": "dmz",
+      "pos": [-3.7, -1.8],
+      "role": "Hosts the public property listings website, which reads from the database in the server VLAN.",
+      "logs": "Web access logs: every request with the client IP, method, full URL and parameters, status code and user agent. This is where SQL injection, directory traversal and scanning are visible.",
+      "lessons": ["2.3", "1.3"]
+    },
+    {
+      "id": "proxy",
+      "name": "Web proxy",
+      "short": "Proxy",
+      "kind": "server",
+      "zone": "dmz",
+      "pos": [-2.1, -1.8],
+      "role": "All outbound web traffic from the office goes through it, so it can block bad categories and domains and log every request.",
+      "logs": "Outbound requests per host: destination domain and URL, category, bytes in and out, timing. The best place to spot beaconing (regular, small connections) and downloads from new domains.",
+      "lessons": ["1.2", "1.4"]
+    },
+    {
+      "id": "ifw",
+      "name": "Internal firewall",
+      "short": "Internal FW",
+      "kind": "firewall",
+      "pos": [0, 0.4],
+      "role": "Segments the internal network: users, servers and security tools sit on separate VLANs and only the ports each one needs are allowed between them.",
+      "logs": "East-west traffic between VLANs: which host talked to which server, on which port. Lateral movement (SMB, RDP or WinRM from a workstation to many hosts) stands out here.",
+      "lessons": ["1.1", "2.4"]
+    },
+    {
+      "id": "siem",
+      "name": "SIEM",
+      "short": "SIEM",
+      "kind": "console",
+      "zone": "soc",
+      "pos": [3.0, -1.8],
+      "role": "Collects and correlates logs from every other device, raises alerts on detection rules and lets you search across everything at once.",
+      "logs": "Not a source itself: it's where you query everyone else's logs and see a timeline. Its value depends on which sources feed it and whether their clocks are in sync.",
+      "lessons": ["1.4", "1.8"]
+    },
+    {
+      "id": "edr",
+      "name": "EDR console",
+      "short": "EDR",
+      "kind": "console",
+      "zone": "soc",
+      "pos": [5.0, -1.8],
+      "role": "Manages the EDR agent on every workstation and server. Raises detections, shows process trees and can isolate a host from the network with one click.",
+      "logs": "Endpoint telemetry: process creation with parent and command line, file and registry changes, network connections per process. It answers 'which program did this?', which network logs can't.",
+      "lessons": ["1.4", "1.9"]
+    },
+    {
+      "id": "ws1",
+      "name": "Reception PC",
+      "short": "Reception",
+      "kind": "workstation",
+      "zone": "lan",
+      "pos": [-5.2, 2.6],
+      "role": "Front-desk workstation, used by several people. Shared accounts on PCs like this make it hard to tie actions to a person.",
+      "logs": "Windows Security log (4624/4625 logons, 4688 process creation if enabled), EDR telemetry, and browser history if you collect it.",
+      "lessons": ["1.3"]
+    },
+    {
+      "id": "ws2",
+      "name": "Sales laptop",
+      "short": "Sales",
+      "kind": "laptop",
+      "zone": "lan",
+      "pos": [-2.6, 2.6],
+      "role": "A property manager's laptop. It leaves the office, so it relies on the EDR agent and VPN rather than the perimeter for protection.",
+      "logs": "EDR telemetry and the Windows event logs. When it's off-site, proxy and firewall logs only see it while it's on the VPN.",
+      "lessons": ["1.3", "1.9"]
+    },
+    {
+      "id": "ws3",
+      "name": "Accounts PC",
+      "short": "Accounts",
+      "kind": "workstation",
+      "zone": "lan",
+      "pos": [-3.9, 4.2],
+      "role": "Used by the trust accounting team to pay settlements and refunds. A top target for business email compromise and payment redirection.",
+      "logs": "Windows logs and EDR, plus the accounts user's cloud sign-in and mailbox audit logs, which matter more for email fraud than the PC itself.",
+      "lessons": ["3.4"]
+    },
+    {
+      "id": "dc",
+      "name": "Domain controller",
+      "short": "DC",
+      "kind": "server",
+      "zone": "servers",
+      "pos": [2.6, 2.6],
+      "role": "Runs Active Directory (accounts, groups, policy) and internal DNS. Whoever controls it controls every domain-joined machine, so it's the attacker's main prize.",
+      "logs": "Kerberos and logon events (4768, 4769, 4771, 4776), account and group changes (4720, 4728, 4732, 4756), and DNS query logs if enabled.",
+      "lessons": ["1.3", "3.2"]
+    },
+    {
+      "id": "fs",
+      "name": "File server",
+      "short": "Files",
+      "kind": "server",
+      "zone": "servers",
+      "pos": [5.2, 2.6],
+      "role": "Shared drives: leases, contracts and tenant files. Ransomware targets it because encrypting it stops the whole office.",
+      "logs": "File access auditing (4663) if enabled, SMB sessions, and EDR telemetry. Mass renames and new file extensions are a classic ransomware signal.",
+      "lessons": ["3.3"]
+    },
+    {
+      "id": "db",
+      "name": "Database server",
+      "short": "DB",
+      "kind": "db",
+      "zone": "servers",
+      "pos": [3.9, 4.2],
+      "role": "Stores the listings site's data, including customer enquiries (names, emails, phone numbers). Only the web server should be able to connect to it.",
+      "logs": "Database audit logs (queries, logins, errors), if enabled. Large result sets or errors at odd times can confirm what an injection attack pulled out.",
+      "lessons": ["2.3", "4.2"]
+    }
+  ],
+  "links": [
+    ["attacker", "inet"],
+    ["inet", "fw"],
+    ["inet", "seg"],
+    ["seg", "mail"],
+    ["fw", "vpn"],
+    ["fw", "web"],
+    ["fw", "proxy"],
+    ["fw", "ifw"],
+    ["ifw", "siem"],
+    ["ifw", "edr"],
+    ["ifw", "ws1"],
+    ["ifw", "ws2"],
+    ["ifw", "ws3"],
+    ["ifw", "dc"],
+    ["ifw", "fs"],
+    ["ifw", "db"]
+  ],
+  "scenarios": [
+    {
+      "id": "bec",
+      "title": "Phishing to payment redirection",
+      "domain": 3,
+      "lessons": ["1.5", "1.10", "3.4", "3.3"],
+      "intro": "An email that looks like it's from a settlement agent reaches the accounts team. Follow it from inbox to bank transfer, and decide where to look and where to act.",
+      "steps": [
+        {
+          "story": "An email from 'the settlement agent' arrives. It came in from the internet, through the email gateway, and was delivered to the accounts mailbox.",
+          "show": [
+            {
+              "packet": ["attacker", "inet", "seg", "mail"]
+            },
+            {
+              "state": {
+                "mail": "bad"
+              }
+            }
+          ],
+          "type": "pick",
+          "q": "You need the sender, sending IP, SPF/DKIM/DMARC results and whether the message was delivered or quarantined. Which device's logs do you check first?",
+          "answer": "seg",
+          "explain": "The email gateway's message trace records every message with its authentication results and the delivery decision. The mailbox audit log tells you what the user did with it later, and the firewall never sees the email at all."
+        },
+        {
+          "story": "The trace shows: From settlements@examp1e.com, Authentication-Results: spf=pass dkim=pass dmarc=pass header.from=examp1e.com. The real agent's domain is example.com.",
+          "type": "choice",
+          "q": "What do the passing SPF, DKIM and DMARC results tell you?",
+          "options": [
+            "Only that the mail really came from examp1e.com, a look-alike domain the attacker controls",
+            "The email is genuine, because DMARC passed",
+            "The sending IP is on the real agent's allow list",
+            "Nothing, because DMARC can only pass if SPF fails"
+          ],
+          "answer": 0,
+          "explain": "Authentication proves the message came from the domain in the From header, not that the domain is trustworthy. Attackers register look-alikes (1 for l) and set up SPF, DKIM and DMARC so their mail passes. DMARC passes when SPF or DKIM passes and aligns with the From domain."
+        },
+        {
+          "story": "The user clicked the link and entered their password on a fake sign-in page. Two hours later the mailbox shows a sign-in from an overseas IP, and a new inbox rule moves any message containing 'invoice' or 'bank' to the RSS Feeds folder.",
+          "show": [
+            {
+              "packet": ["ws3", "ifw", "fw", "proxy", "fw", "inet", "attacker"]
+            },
+            {
+              "packet": ["attacker", "inet", "seg", "mail"]
+            }
+          ],
+          "type": "choice",
+          "q": "Why did the attacker create that inbox rule?",
+          "options": [
+            "To hide replies from the real parties, so they can hijack the conversation unnoticed",
+            "To copy the whole mailbox to their own server",
+            "To give the account global admin rights",
+            "To install persistence on the accounts PC"
+          ],
+          "answer": 0,
+          "explain": "Moving messages about invoices and banking to a folder nobody reads hides the genuine replies, so the attacker can impersonate the user and send 'updated bank details' without being noticed. ATT&CK calls this an email hiding rule (defence evasion). It lives in the cloud mailbox, not on the PC."
+        },
+        {
+          "story": "The attacker is still signed in to the mailbox and is replying to a buyer about their deposit.",
+          "type": "pick",
+          "q": "Contain the compromise. Which device do you act on first?",
+          "answer": "mail",
+          "explain": "The compromised asset is the cloud account, not the PC. Reset the password, revoke sessions and refresh tokens, enforce MFA and remove the inbox rule and any forwarding. Isolating the accounts PC alone would leave the attacker signed in to the mailbox from overseas.",
+          "after": [
+            {
+              "state": {
+                "mail": "contained"
+              }
+            }
+          ]
+        },
+        {
+          "story": "You find the buyer has already transferred a $60,000 deposit to the 'updated' bank account an hour ago.",
+          "type": "choice",
+          "q": "What is the most time-critical step now?",
+          "options": [
+            "Ask the business's bank and the buyer's bank to recall or freeze the transfer immediately",
+            "Notify the OAIC within 72 hours",
+            "Re-image the accounts PC",
+            "Wait for the forensic report before contacting the banks"
+          ],
+          "answer": 0,
+          "explain": "Money can usually only be recovered if the banks act within hours, before it's moved on. Then report it through ReportCyber. The NDB scheme gives 30 days to assess whether personal information was involved; 72 hours is the deadline for reporting a ransomware payment to ASD, which doesn't apply here."
+        }
+      ]
+    },
+    {
+      "id": "ransom",
+      "title": "Unpatched VPN to ransomware",
+      "domain": 1,
+      "lessons": ["1.2", "1.3", "1.7", "3.2", "3.3"],
+      "intro": "An attacker gets in through an internet-facing appliance and works towards encrypting the file server. Spot each stage and decide how to contain it.",
+      "steps": [
+        {
+          "story": "Firewall logs show thousands of connections to one internal service from a single external IP overnight, then a successful session. That device is two months behind on a critical patch listed in CISA's Known Exploited Vulnerabilities catalogue.",
+          "show": [
+            {
+              "packet": ["attacker", "inet", "fw", "vpn"]
+            }
+          ],
+          "type": "pick",
+          "q": "Tap the device the attacker used for initial access.",
+          "answer": "vpn",
+          "explain": "Internet-facing appliances like VPN gateways are a common initial access route because they're reachable from anywhere and often patched late. A KEV listing means attackers are already exploiting the flaw, so it jumps to the top of the patch queue.",
+          "after": [
+            {
+              "state": {
+                "vpn": "bad"
+              }
+            }
+          ]
+        },
+        {
+          "story": "The SIEM shows 4624 logon type 3 events on 12 servers and PCs within five minutes, all from 10.0.50.12 (an address in the VPN pool) and all using one help-desk account.",
+          "show": [
+            {
+              "packet": ["vpn", "fw", "ifw", "ws1"]
+            },
+            {
+              "packet": ["vpn", "fw", "ifw", "ws2"]
+            },
+            {
+              "state": {
+                "ws1": "bad",
+                "ws2": "bad"
+              }
+            }
+          ],
+          "type": "choice",
+          "q": "Which tactic does this activity show?",
+          "options": ["Lateral movement", "Exfiltration", "Initial access", "Persistence"],
+          "answer": 0,
+          "explain": "Type 3 is a network logon (SMB, for example). One account logging on to many hosts from one source in minutes is the attacker spreading through the network: lateral movement. Initial access already happened at the VPN."
+        },
+        {
+          "story": "The attacker wants domain admin rights so they can push ransomware to every machine at once.",
+          "type": "pick",
+          "q": "Which server is the attacker's real target at this stage?",
+          "answer": "dc",
+          "explain": "The domain controller runs Active Directory. With domain admin, an attacker can deploy software to every domain-joined machine through Group Policy or remote tools. Watch for group membership changes (4728, 4732, 4756) and protect admin accounts with tiering and MFA.",
+          "after": [
+            {
+              "packet": ["ws1", "ifw", "dc"]
+            },
+            {
+              "state": {
+                "dc": "bad"
+              }
+            }
+          ]
+        },
+        {
+          "story": "EDR alerts: thousands of files on the file server renamed with a new extension in two minutes, and the command vssadmin delete shadows /all /quiet ran.",
+          "show": [
+            {
+              "packet": ["dc", "ifw", "fs"]
+            },
+            {
+              "state": {
+                "fs": "bad"
+              }
+            },
+            {
+              "focus": "fs"
+            }
+          ],
+          "type": "choice",
+          "q": "What is the best first containment action?",
+          "options": [
+            "Isolate the affected hosts from the network with EDR, keeping them powered on",
+            "Power off every server immediately",
+            "Restore the file server from last night's backup straight away",
+            "Pay the ransom so the business can keep trading"
+          ],
+          "answer": 0,
+          "explain": "Network isolation stops the spread and keeps the attacker out, while leaving memory (encryption keys, running processes, network connections) available for forensics. Powering off destroys that volatile evidence. Restoring before eradication risks the attacker re-encrypting the restored data.",
+          "after": [
+            {
+              "focus": null
+            },
+            {
+              "state": {
+                "fs": "contained",
+                "dc": "contained",
+                "ws1": "contained",
+                "ws2": "contained",
+                "vpn": "contained"
+              }
+            }
+          ]
+        },
+        {
+          "story": "Management asks about reporting. The business turns over $8 million a year and is considering paying the ransom.",
+          "type": "choice",
+          "q": "If they pay, which reporting obligation applies under the Cyber Security Act 2024?",
+          "options": [
+            "Report the payment to ASD within 72 hours",
+            "Notify the OAIC within 72 hours of paying",
+            "Report to ASD within 30 days, only if personal data was stolen",
+            "No report is needed if the data was encrypted rather than stolen"
+          ],
+          "answer": 0,
+          "explain": "Businesses with annual turnover over $3 million must report a ransomware or extortion payment to ASD within 72 hours of making it (or of becoming aware it was made). This is separate from the NDB scheme: if personal information was accessed, they also have 30 days to assess whether serious harm is likely."
+        }
+      ]
+    },
+    {
+      "id": "sqli",
+      "title": "Web app to database breach",
+      "domain": 2,
+      "lessons": ["1.1", "2.2", "2.3", "2.4", "4.2"],
+      "intro": "Someone is attacking the public listings website. Find the evidence, name the flaw, prioritise the fix and work out the reporting duty.",
+      "steps": [
+        {
+          "story": "An IDS alert flags suspicious traffic to the public website from one external IP.",
+          "show": [
+            {
+              "packet": ["attacker", "inet", "fw", "web"]
+            },
+            {
+              "packet": ["attacker", "inet", "fw", "web"]
+            }
+          ],
+          "type": "pick",
+          "q": "Which device's logs show the exact requests, including the full URL and parameters?",
+          "answer": "web",
+          "explain": "Web server access logs record each request's method, URL, query string, status code and user agent. The firewall only records IPs, ports and bytes, and sees nothing inside HTTPS. The proxy handles outbound traffic from staff, not inbound traffic to the website."
+        },
+        {
+          "story": "The access log shows requests like GET /listings?id=42' OR '1'='1 and later /listings?id=42 UNION SELECT name,email,phone FROM enquiries--",
+          "show": [
+            {
+              "focus": "web"
+            }
+          ],
+          "type": "choice",
+          "q": "What kind of attack is this?",
+          "options": ["SQL injection", "Cross-site scripting", "Directory traversal", "Server-side request forgery"],
+          "answer": 0,
+          "explain": "The quote, OR '1'='1 and UNION SELECT are SQL injection: the attacker's input changes the database query. XSS injects script into pages, directory traversal uses ../ sequences to read files, and SSRF makes the server fetch URLs.",
+          "after": [
+            {
+              "focus": null
+            },
+            {
+              "packet": ["web", "fw", "ifw", "db"]
+            },
+            {
+              "packet": ["db", "ifw", "fw", "web", "fw", "inet", "attacker"]
+            },
+            {
+              "state": {
+                "web": "bad",
+                "db": "bad"
+              }
+            }
+          ]
+        },
+        {
+          "story": "The database returned the entire enquiries table: names, emails and phone numbers.",
+          "type": "choice",
+          "q": "Which fix removes this class of vulnerability at its source?",
+          "options": [
+            "Use parameterised queries (prepared statements) in the application",
+            "Add a web application firewall rule for UNION SELECT",
+            "Limit the id parameter to 10 characters",
+            "Serve the site over HTTPS only"
+          ],
+          "answer": 0,
+          "explain": "Parameterised queries keep user input as data, so it can never change the query. A WAF rule is a useful compensating control while the code is fixed, but attackers can often encode their way around it. Length limits and HTTPS don't stop injection."
+        },
+        {
+          "story": "The scanner rates the flaw CVSS 9.8 with the vector AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H.",
+          "type": "choice",
+          "q": "Which part of the vector explains why this is so urgent on an internet-facing site?",
+          "options": [
+            "AV:N, PR:N and UI:N: anyone on the internet can exploit it with no account and no user action",
+            "S:U: the scope is unchanged, so it spreads to other systems",
+            "A:H: it's known to be actively exploited",
+            "AC:L: the impact of the attack is low"
+          ],
+          "answer": 0,
+          "explain": "Attack vector Network, no privileges required and no user interaction means it can be exploited remotely by anyone. S:U means the impact stays within the vulnerable component; A:H is high availability impact (not exploitation status, which is what KEV and EPSS tell you); AC:L means low attack complexity, which makes it easier, not less serious."
+        },
+        {
+          "story": "The business confirms the stolen enquiries data belongs to about 4,000 customers.",
+          "type": "choice",
+          "q": "What does the Notifiable Data Breaches scheme require?",
+          "options": [
+            "Assess within 30 days whether serious harm is likely; if so, notify the OAIC and affected individuals as soon as practicable",
+            "Notify the OAIC within 72 hours, whatever the risk",
+            "Notify only if the data included financial details",
+            "Report to ASD within 72 hours instead of the OAIC"
+          ],
+          "answer": 0,
+          "explain": "Under the NDB scheme an organisation that suspects an eligible data breach has up to 30 days to assess it. If serious harm is likely, it must notify the OAIC and the affected individuals as soon as practicable. Contact details can enable targeted phishing and scams, so this is likely to qualify.",
+          "after": [
+            {
+              "state": {
+                "web": "contained",
+                "db": "contained"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "title": "Beaconing malware and DNS tunnelling",
+      "domain": 1,
+      "lessons": ["1.2", "1.3", "1.4", "1.9"],
+      "intro": "A laptop starts talking to the internet in a pattern that doesn't look human. Work out what it is, which tool tells you why, and how to stop it.",
+      "steps": [
+        {
+          "story": "Overnight, the proxy logs show the sales laptop contacting the same newly registered domain every 60 seconds (give or take 2), with small responses of identical size.",
+          "show": [
+            {
+              "packet": ["ws2", "ifw", "fw", "proxy", "fw", "inet", "attacker"],
+              "tone": "accent"
+            },
+            {
+              "packet": ["ws2", "ifw", "fw", "proxy", "fw", "inet", "attacker"],
+              "tone": "accent"
+            }
+          ],
+          "type": "choice",
+          "q": "What is this most likely to be?",
+          "options": ["Command-and-control beaconing", "Windows Update checking for patches", "Bulk data exfiltration", "A port scan of the laptop"],
+          "answer": 0,
+          "explain": "Regular intervals with small jitter, small uniform responses and a newly registered domain are the classic signs of C2 beaconing: malware checking in for instructions. Updates go to well-known vendor domains, exfiltration moves large volumes, and a scan comes from the outside in.",
+          "after": [
+            {
+              "state": {
+                "ws2": "bad"
+              }
+            }
+          ]
+        },
+        {
+          "story": "The proxy tells you which host and which domain, but not which program on the laptop is making the connections.",
+          "type": "pick",
+          "q": "Which tool shows you the process responsible?",
+          "answer": "edr",
+          "explain": "EDR records network connections per process, with the parent process and command line. Network logs from the proxy and firewalls stop at the host's IP address. Use the EDR process tree to find out how the malware started."
+        },
+        {
+          "story": "The EDR process tree: winword.exe → rundll32.exe C:\\Users\\Public\\upd.dll,Start, and rundll32.exe holds the connections to the domain.",
+          "show": [
+            {
+              "focus": "ws2"
+            }
+          ],
+          "type": "choice",
+          "q": "What does this process tree indicate?",
+          "options": [
+            "A malicious Office document used a built-in Windows binary to run the payload",
+            "A normal Word add-in loading at startup",
+            "Windows Defender scanning a downloaded file",
+            "The user installing software from the company portal"
+          ],
+          "answer": 0,
+          "explain": "Word shouldn't spawn rundll32, and a DLL in C:\\Users\\Public is a red flag. Using signed Windows binaries (living off the land) to run a payload helps malware blend in. Next, find the document's origin: likely an email attachment, so check the email gateway.",
+          "after": [
+            {
+              "focus": null
+            }
+          ]
+        },
+        {
+          "story": "Hours later, DNS logs on the domain controller show thousands of TXT queries from the laptop for long random-looking subdomains such as a9f3k2e8q1z7m4.examp1e.net.",
+          "show": [
+            {
+              "packet": ["ws2", "ifw", "dc"],
+              "tone": "accent"
+            },
+            {
+              "packet": ["ws2", "ifw", "dc"],
+              "tone": "accent"
+            }
+          ],
+          "type": "choice",
+          "q": "What is the most likely explanation?",
+          "options": [
+            "Data exfiltration or C2 tunnelled through DNS",
+            "A domain generation algorithm finding its C2 server",
+            "DNS cache poisoning of the domain controller",
+            "A DNS amplification DDoS attack"
+          ],
+          "answer": 0,
+          "explain": "High volumes of long, high-entropy subdomains under one domain (often TXT records) mean data is being encoded into the queries: DNS tunnelling. A DGA produces many different domains, not long subdomains of one. Amplification abuses open resolvers to flood a victim."
+        },
+        {
+          "story": "You've confirmed the laptop is compromised.",
+          "type": "pick",
+          "q": "Contain the threat. Tap the device you isolate.",
+          "answer": "ws2",
+          "explain": "Isolate the sales laptop with EDR network containment. It keeps the EDR connection so you can still investigate, but cuts it off from everything else. Then block the domain at the proxy and DNS, and sweep other hosts for the same IoCs (the domain, the DLL's hash and the rundll32 command line).",
+          "after": [
+            {
+              "state": {
+                "ws2": "contained"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mfa",
+      "title": "MFA fatigue to stolen session token",
+      "domain": 1,
+      "lessons": ["1.5", "1.6", "3.3", "2.6"],
+      "intro": "A property manager's account is under attack, first with a flood of MFA prompts and then with a phishing page that steals her session. Work out what each signal means, where to act and which control stops both.",
+      "steps": [
+        {
+          "story": "Just before midnight the property manager's phone receives 23 MFA push prompts in 15 minutes. She denies every one and reports it to you in the morning.",
+          "show": [
+            {
+              "state": {
+                "mail": "bad"
+              }
+            },
+            {
+              "focus": "mail"
+            }
+          ],
+          "type": "choice",
+          "q": "What do the prompts tell you?",
+          "options": [
+            "Someone already has her correct password and is trying to wear her down into approving a prompt",
+            "The MFA app is faulty and needs to be re-enrolled",
+            "Someone is password spraying the whole tenant",
+            "Her phone has malware that is generating the prompts"
+          ],
+          "answer": 0,
+          "explain": "A push prompt is normally only sent after the password has been accepted, so the attacker has her password. Flooding a user with prompts until one is approved is MFA fatigue (ATT&CK T1621, MFA request generation). Password spraying shows up as failed logins across many accounts, not prompts on one. Reset her password and check where else it was used."
+        },
+        {
+          "story": "You need the source IP, location, device and MFA result for each of those attempts.",
+          "type": "pick",
+          "q": "Which device records each sign-in attempt with those details?",
+          "answer": "mail",
+          "explain": "The cloud service's sign-in logs record every attempt with IP, location, device, client app and MFA result. The email gateway only sees email, and the firewall never sees these attempts: the attacker signs in to the cloud service directly, not through your network. The SIEM can show them too, but only if the cloud sign-in logs are fed into it.",
+          "after": [
+            {
+              "focus": null
+            }
+          ]
+        },
+        {
+          "story": "Her password was reset. Two days later she receives an email with a link to 'sign the lease renewal', enters her new password on the page and approves the MFA prompt as normal. Ten minutes later the sign-in log shows her session being used from a hosting-provider IP, with no MFA prompt, and a new inbox rule appears.",
+          "show": [
+            {
+              "packet": ["ws2", "ifw", "fw", "proxy", "fw", "inet", "attacker"],
+              "tone": "bad"
+            },
+            {
+              "state": {
+                "mail": "bad"
+              }
+            }
+          ],
+          "type": "choice",
+          "q": "How did the attacker get past MFA this time?",
+          "options": [
+            "An adversary-in-the-middle phishing page relayed her real sign-in and stole the session cookie issued after MFA",
+            "The attacker cloned her MFA app onto another phone",
+            "MFA was switched off when her password was reset",
+            "It's an impossible-travel false positive caused by her home VPN"
+          ],
+          "answer": 0,
+          "explain": "An adversary-in-the-middle (AiTM) phishing kit sits between the user and the real sign-in page, passes the password and MFA approval through, then keeps the session cookie the service issues (ATT&CK T1557 and T1539, then T1550.004 to reuse it). The attacker replays the cookie, so no new MFA prompt appears. An impossible-travel false positive wouldn't come with a new inbox rule."
+        },
+        {
+          "story": "The attacker is still using the stolen session to read her mail.",
+          "type": "pick",
+          "q": "Contain the compromise. Which device do you act on first?",
+          "answer": "mail",
+          "explain": "The stolen asset is the cloud session, not the laptop. In the cloud account: revoke all sessions and refresh tokens, reset the password, remove the inbox rule and any forwarding, and check for new MFA methods or app consents the attacker added. Don't assume a password reset alone ends existing sessions. Isolating the laptop does nothing to a cookie being replayed from the attacker's own machine.",
+          "after": [
+            {
+              "state": {
+                "mail": "contained"
+              }
+            }
+          ]
+        },
+        {
+          "story": "Management asks for one control that would have stopped both the prompt flood and the phishing page.",
+          "type": "choice",
+          "q": "Which control is it?",
+          "options": [
+            "Phishing-resistant MFA, such as FIDO2 security keys or passkeys",
+            "Number matching on push prompts",
+            "Replacing push prompts with SMS codes",
+            "An account lockout after five failed sign-ins"
+          ],
+          "answer": 0,
+          "explain": "Phishing-resistant MFA (FIDO2/WebAuthn) binds the sign-in to the real site's domain, so a proxy page can't relay it, and there's no push to approve by mistake. Number matching is the tempting answer: CISA recommends it as an interim fix for MFA fatigue, but an AiTM page simply shows the user the number to type. SMS codes are just as phishable. A lockout never triggers, because the password was correct."
+        }
+      ]
+    },
+    {
+      "id": "spray",
+      "title": "Password spraying against the VPN",
+      "domain": 1,
+      "lessons": ["1.2", "1.3", "2.6", "3.5"],
+      "intro": "Low-and-slow login failures hit the remote access service overnight, and one of them works. Find the evidence, name the attack, scope what the attacker did and fix the real cause.",
+      "steps": [
+        {
+          "story": "A SIEM rule fires on a high number of failed remote-access logins from the internet overnight.",
+          "show": [
+            {
+              "packet": ["attacker", "inet", "fw", "vpn"],
+              "tone": "bad"
+            },
+            {
+              "packet": ["attacker", "inet", "fw", "vpn"],
+              "tone": "bad"
+            }
+          ],
+          "type": "pick",
+          "q": "Which device's own logs show each attempt with the username, the external source IP and the result?",
+          "answer": "vpn",
+          "explain": "The VPN appliance authenticates the connection, so it logs the user, the real source IP, success or failure and MFA. The firewall only sees connections to the VPN's port, not usernames. If the VPN checks passwords against Active Directory, the domain controller logs failures too, but with the VPN appliance as the source, not the attacker's IP."
+        },
+        {
+          "story": "The VPN log shows 412 failures over six hours across 206 accounts, never more than two attempts per account (the lockout threshold is five), from 20 rotating IPs. Accounts that exist only in your directory, such as 'reception' and 'scanner', are among them.",
+          "type": "choice",
+          "q": "Which attack is this?",
+          "options": ["Password spraying", "Brute force against a single account", "Credential stuffing", "Pass-the-hash"],
+          "answer": 0,
+          "explain": "Trying one or two common passwords against many accounts, kept under the lockout threshold, is password spraying (ATT&CK T1110.003). Credential stuffing (T1110.004) replays username and password pairs leaked from other breaches, so it wouldn't include internal-only accounts like 'reception' that never existed anywhere else. Brute force hammers one account with many passwords and trips the lockout."
+        },
+        {
+          "story": "One attempt succeeded: the shared 'reception' account at 03:12, which had an MFA exception. The VPN gave the session the internal address 10.0.50.23.",
+          "show": [
+            {
+              "state": {
+                "vpn": "bad"
+              }
+            },
+            {
+              "packet": ["vpn", "fw", "ifw", "dc"],
+              "tone": "accent"
+            },
+            {
+              "packet": ["vpn", "fw", "ifw", "fs"],
+              "tone": "accent"
+            }
+          ],
+          "type": "pick",
+          "q": "Which device's logs show which internal servers 10.0.50.23 connected to, and on which ports?",
+          "answer": ["ifw", "fw"],
+          "explain": "Traffic from the VPN pool to the server VLAN crosses the perimeter firewall and then the internal firewall, so both log the connections (source, destination, port, bytes). The internal firewall is usually the better place, because it's where east-west traffic between VLANs is logged. The VPN log only shows the session, not where it went."
+        },
+        {
+          "story": "The connection logs show SMB sessions from 10.0.50.23 to the file server and LDAP queries to the domain controller. The session is still live.",
+          "type": "pick",
+          "q": "End the attacker's live session. Which device do you act on?",
+          "answer": "vpn",
+          "explain": "Terminate the session on the VPN appliance, then disable the 'reception' account on the domain controller and block the source IPs at the firewall. Disabling the account alone may not end a session that's already authenticated. Then hunt for what the session touched: the file shares opened and the accounts queried.",
+          "after": [
+            {
+              "state": {
+                "vpn": "contained"
+              }
+            }
+          ]
+        },
+        {
+          "story": "At the post-incident review, someone suggests the root cause was that the attacker's IPs weren't on the blocklist.",
+          "type": "choice",
+          "q": "What is the actual root cause?",
+          "domain": 3,
+          "options": [
+            "An MFA exception for a shared account on an internet-facing service",
+            "The attacker's IPs weren't blocked in advance",
+            "The lockout threshold of five attempts was too high",
+            "Staff hadn't done phishing awareness training"
+          ],
+          "answer": 0,
+          "explain": "Root cause is the underlying control failure: a shared account, with a password and no MFA, could sign in to remote access from the internet. ASD advises MFA on all external access services, and it's an Essential Eight control. Blocking IPs is reactive (they rotate), and a lower lockout threshold doesn't stop spraying, which stays under any threshold. No phishing was involved."
+        }
+      ]
+    },
+    {
+      "id": "insider",
+      "title": "Departing employee takes tenant files",
+      "domain": 3,
+      "lessons": ["1.3", "1.4", "3.2", "4.4", "4.2"],
+      "intro": "A property manager who has resigned starts moving large amounts of data off the network. Confirm what was taken, handle the evidence properly, involve the right people and work out the privacy obligations.",
+      "steps": [
+        {
+          "story": "A behaviour analytics rule flags a property manager who is serving her notice period: her laptop's outbound traffic at lunchtime was about 3 GB, against a usual 50 MB a day.",
+          "show": [
+            {
+              "packet": ["ws2", "ifw", "fw", "proxy", "fw", "inet"],
+              "tone": "bad"
+            },
+            {
+              "packet": ["ws2", "ifw", "fw", "proxy", "fw", "inet"],
+              "tone": "bad"
+            },
+            {
+              "state": {
+                "ws2": "bad"
+              }
+            }
+          ],
+          "type": "pick",
+          "q": "Which device's logs show the destination site and how many bytes the laptop sent to it?",
+          "answer": "proxy",
+          "explain": "The proxy logs each outbound request per host with the destination domain, URL category and bytes in and out, so it shows the uploads to a personal cloud storage site (ATT&CK T1567.002). The firewall sees bytes but only an IP address for a TLS connection, which for a big cloud provider tells you little."
+        },
+        {
+          "story": "The proxy shows uploads to a personal cloud storage account. You need to know which business files she took.",
+          "type": "pick",
+          "q": "Which device's audit logs show which shared-drive files her account opened this week?",
+          "answer": "fs",
+          "explain": "File access auditing on the file server (event 4663, if enabled) records each file her account read. EDR on the laptop can show which process uploaded data, but the file server is the record of what she accessed on the shares. The domain controller logs logons, not file reads.",
+          "after": [
+            {
+              "state": {
+                "fs": "bad"
+              }
+            },
+            {
+              "focus": "fs"
+            }
+          ]
+        },
+        {
+          "story": "The audit log shows 2,300 files copied from the rental applications folder in 40 minutes, including ID documents and payslips for applicants she never managed.",
+          "type": "choice",
+          "q": "Who do you bring in before anyone talks to her or touches her laptop?",
+          "options": [
+            "HR and legal, keeping it on a need-to-know basis",
+            "Her manager and team, to ask what she has been working on",
+            "All staff, as a reminder of the data handling policy",
+            "Nobody, until you have asked her about it directly"
+          ],
+          "answer": 0,
+          "explain": "Insider cases need HR (it's an employment matter) and legal early: they advise on evidence, legal hold, privilege and notification duties. Asking her team or the whole office risks tipping her off, so she deletes evidence or moves the data again. Confronting her yourself is HR and legal's decision, not the analyst's."
+        },
+        {
+          "story": "Legal expects court action to recover the files and asks you to preserve the laptop as evidence.",
+          "type": "choice",
+          "q": "How do you preserve it?",
+          "options": [
+            "Image the disk with a write blocker, hash the image with SHA-256 and record chain of custody",
+            "Copy her Documents folder to a USB drive and give it to HR",
+            "Re-image the laptop straight away so she can't delete anything",
+            "Ask her to delete the files from her cloud account and confirm by email"
+          ],
+          "answer": 0,
+          "explain": "A forensic image taken through a write blocker, hashed at collection and tracked with chain of custody (who, when, every transfer) is what makes evidence usable in court. If the laptop is running, capture memory first (it's more volatile than disk). A copied folder misses deleted files and metadata, and re-imaging destroys the evidence.",
+          "after": [
+            {
+              "state": {
+                "ws2": "contained"
+              }
+            }
+          ]
+        },
+        {
+          "story": "About 600 rental applicants are affected. She hasn't confirmed she has deleted the copies.",
+          "type": "choice",
+          "q": "What does the Notifiable Data Breaches scheme require?",
+          "domain": 4,
+          "options": [
+            "Assess within 30 days whether serious harm is likely; if so, notify the OAIC and affected individuals as soon as practicable",
+            "Nothing, because a staff member rather than an outside attacker took the data",
+            "Report it to ASD within 72 hours",
+            "Notify the OAIC only if more than 1,000 people are affected"
+          ],
+          "answer": 0,
+          "explain": "Unauthorised disclosure by an insider is still a data breach. ID documents and payslips create a real risk of identity fraud, so serious harm is likely unless remedial action (for example a verified deletion) prevents it. The employee records exemption covers the business's records about its own staff, not tenant data. The 72-hour report to ASD is for ransomware payments, and there's no minimum number of people."
+        }
+      ]
+    },
+    {
+      "id": "vulnpatch",
+      "title": "Patch week: from scan report to fix",
+      "domain": 2,
+      "lessons": ["2.1", "2.2", "2.4", "2.7", "4.1"],
+      "intro": "The monthly credentialed scan has finished. Decide what to fix first, check whether a finding is real, handle a system that can't be patched and report the results to the boss.",
+      "steps": [
+        {
+          "story": "The report's top findings: the VPN appliance has a CVSS 7.5 flaw that is listed in CISA's Known Exploited Vulnerabilities catalogue. The file server has a CVSS 9.8 flaw with no known exploit (EPSS 0.4%). The reception PC has a CVSS 8.8 browser flaw. The database has a medium finding.",
+          "show": [
+            {
+              "state": {
+                "vpn": "bad",
+                "fs": "bad",
+                "ws1": "bad",
+                "db": "bad"
+              }
+            }
+          ],
+          "type": "pick",
+          "q": "Which device do you patch first?",
+          "answer": "vpn",
+          "explain": "Severity isn't priority. The VPN flaw is being exploited in the wild (it's in KEV) and the appliance faces the internet, so it's the most likely way in. The Essential Eight expects internet-facing services to be patched within 48 hours when an exploit exists. The file server's 9.8 matters, but it's internal and has no known exploit, so it comes next.",
+          "after": [
+            {
+              "state": {
+                "vpn": "normal"
+              }
+            }
+          ]
+        },
+        {
+          "story": "The file server admin says the 9.8 finding is wrong: the vendor backported the fix in last month's update without changing the version number. The scanner's evidence is a version banner.",
+          "type": "choice",
+          "q": "What do you do with the finding?",
+          "options": [
+            "Check the installed patches or the vendor advisory, and mark it a false positive with that evidence if the fix is there",
+            "Close it as a false positive on the admin's word",
+            "Raise it to the top of the list because it's critical",
+            "Remove the file server from scan scope to stop the noise"
+          ],
+          "answer": 0,
+          "explain": "Banner checks on backported fixes are a classic false positive, but you validate before you close: compare the installed update against the vendor advisory, and record the evidence. Closing it on someone's word risks a false negative, which is the dangerous error. Taking the host out of scope creates a blind spot.",
+          "after": [
+            {
+              "state": {
+                "fs": "normal"
+              }
+            }
+          ]
+        },
+        {
+          "story": "The database runs a legacy module the vendor no longer supports. It can't be upgraded until next year's migration, so the medium finding will stay open.",
+          "type": "choice",
+          "q": "What is the best risk response for now?",
+          "options": [
+            "A compensating control (only the web server can reach it, on its one port, with monitoring) and a documented exception with an owner and an expiry date",
+            "Accept the risk permanently and stop reporting it",
+            "Exclude the database from scanning until it's migrated",
+            "Transfer the risk by relying on the business's cyber insurance"
+          ],
+          "answer": 0,
+          "explain": "When the primary fix isn't possible, a compensating control reduces the risk: restrict who can reach the server and watch for misuse. A time-limited exception with an owner and sign-off keeps it visible until the migration. Permanent acceptance and scan exclusions hide the risk, and insurance doesn't reduce the chance of a breach.",
+          "after": [
+            {
+              "packet": ["web", "fw", "ifw", "db"],
+              "tone": "ok"
+            },
+            {
+              "state": {
+                "db": "contained"
+              }
+            }
+          ]
+        },
+        {
+          "story": "The next rescan confirms the VPN fix. But the same browser flaw is back on the reception PC for the third month running, although it was patched each time.",
+          "type": "choice",
+          "q": "What does that recurrence most likely point to?",
+          "options": [
+            "A broken build or update process, such as an old golden image or an update policy that isn't applying",
+            "A false negative in the scanner",
+            "A zero-day vulnerability with no patch yet",
+            "Missing firewall rules on the reception PC"
+          ],
+          "answer": 0,
+          "explain": "A finding that keeps coming back after being fixed points to the process: a machine rebuilt from an outdated image, a shared PC that never receives update policy, or an update that's rolled back. Fix the process, not just the PC. A zero-day wouldn't have had a patch to apply in the first place.",
+          "after": [
+            {
+              "state": {
+                "ws1": "normal"
+              }
+            }
+          ]
+        },
+        {
+          "story": "The managing director wants a one-page monthly vulnerability update.",
+          "type": "choice",
+          "q": "What should it contain?",
+          "domain": 4,
+          "options": [
+            "The trend in critical and high findings, the share fixed within SLA, and the risks that need a decision, such as the database exception",
+            "Every open CVE with its CVSS vector",
+            "The scanner's raw export for each host",
+            "The number of findings closed this month, and nothing else"
+          ],
+          "answer": 0,
+          "explain": "Executives need trend, SLA performance and the decisions only they can make (accepting or funding a risk), in business terms. CVE lists and raw exports belong in the technical action plan for the admins. A single count with no trend or context doesn't show whether risk is going up or down."
+        }
+      ]
+    },
+    {
+      "id": "supply",
+      "title": "Trojanised software update",
+      "domain": 1,
+      "lessons": ["1.6", "1.7", "1.9", "3.3", "4.5"],
+      "intro": "A government advisory warns that a trusted vendor's update was trojanised. Hunt for it on your network, work out which indicators will last, recover cleanly and report it to the board.",
+      "steps": [
+        {
+          "story": "An ASD advisory says a widely used desktop accounting app's signed update, version 8.4.2, was trojanised in the vendor's build system. It lists file hashes, two C2 domains under examp1e.net and the malware's behaviour. Your accounts PCs auto-update the app.",
+          "show": [
+            {
+              "packet": ["inet", "fw", "proxy", "fw", "ifw", "ws3"],
+              "tone": "bad"
+            }
+          ],
+          "type": "choice",
+          "q": "Why wouldn't code signing checks or application control have blocked this update?",
+          "options": [
+            "The trojanised build was signed with the vendor's real certificate, so it looked like a trusted update",
+            "Application control only covers scripts, not executables",
+            "The update was delivered by email, which bypasses application control",
+            "The attacker turned off the EDR agent first"
+          ],
+          "answer": 0,
+          "explain": "In a software supply chain compromise (ATT&CK T1195.002) the attacker changes the product before it's signed and shipped, so the malicious version carries a valid vendor signature and passes checks that trust the publisher. Application control does cover executables; it's just set to trust that publisher. That's why behaviour-based detection and threat intel matter here."
+        },
+        {
+          "story": "You need to find every machine that has the trojanised version installed, using the hashes from the advisory.",
+          "type": "pick",
+          "q": "Which tool can search every endpoint for those file hashes right now?",
+          "answer": "edr",
+          "explain": "The EDR console holds file and process telemetry from every managed endpoint, and can sweep the whole fleet for a hash in minutes. The proxy and firewall only see network traffic, and the SIEM only has the endpoint data you've chosen to forward.",
+          "after": [
+            {
+              "packet": ["edr", "ifw", "ws3"],
+              "tone": "accent"
+            },
+            {
+              "packet": ["edr", "ifw", "ws1"],
+              "tone": "accent"
+            },
+            {
+              "state": {
+                "ws3": "bad"
+              }
+            }
+          ]
+        },
+        {
+          "story": "Only the accounts PC has version 8.4.2. The advisory says the malware waits up to a week before contacting its C2.",
+          "type": "pick",
+          "q": "Which tool lets you search the last 30 days of proxy, DNS and firewall logs for the C2 domains in one query?",
+          "answer": "siem",
+          "explain": "The SIEM aggregates the proxy, DNS and firewall logs, so one search covers every source and builds the timeline. Searching each device separately is slower, and the devices themselves may keep only a few days of logs. The search finds three requests to one of the domains from the accounts PC, all blocked by the proxy.",
+          "after": [
+            {
+              "packet": ["ws3", "ifw", "fw", "proxy"],
+              "tone": "bad"
+            }
+          ]
+        },
+        {
+          "story": "The vendor warns that new samples may use different hashes and domains.",
+          "type": "choice",
+          "q": "Which detection is the hardest for the attacker to get around?",
+          "options": [
+            "Behaviour: the accounting app starting unexpected child processes or contacting new domains",
+            "The file hash of the trojanised installer",
+            "The C2 domain names",
+            "The C2 servers' IP addresses"
+          ],
+          "answer": 0,
+          "explain": "On the Pyramid of Pain, hashes, IPs and domains are cheap for an attacker to change: rebuild the file or register a new domain and the indicator is dead. Behaviour (TTPs) is costly to change, because it's how the tool works. Use the advisory's IoCs for the sweep, and behaviour rules for detections that last."
+        },
+        {
+          "story": "The accounts PC never reached the C2, and EDR shows no other suspicious activity. The vendor has released a clean version 8.4.3.",
+          "type": "choice",
+          "q": "How do you recover the accounts PC?",
+          "options": [
+            "Rebuild it from a known-good image, install 8.4.3 and monitor it closely",
+            "Uninstall version 8.4.2 and keep using the PC",
+            "Restore it from last night's backup",
+            "Leave it as it is, because the C2 connection was blocked"
+          ],
+          "answer": 0,
+          "explain": "A trojanised app may have dropped other components, so rebuilding from a known-good image is the reliable way to eradicate it. Uninstalling the app can leave those behind. Last night's backup was taken after the bad update, so it's compromised too. A blocked C2 connection doesn't remove the malware.",
+          "after": [
+            {
+              "state": {
+                "ws3": "contained"
+              }
+            }
+          ]
+        },
+        {
+          "story": "You're writing the incident report for the board.",
+          "type": "choice",
+          "q": "Which sentence belongs in the executive summary?",
+          "domain": 4,
+          "options": [
+            "A trusted vendor's update contained malware; one PC was affected and rebuilt, no data loss has been found, and we recommend a vendor risk review",
+            "The trojanised installer's SHA-256 hash and both C2 domains",
+            "The EDR process tree showing what the installer ran",
+            "The attack was almost certainly carried out by a state-sponsored group"
+          ],
+          "answer": 0,
+          "explain": "An executive summary gives the board what happened, the impact, the current status and the decision or action needed, in plain language. Hashes, domains and process trees belong in the evidence and technical sections. Attribution shouldn't be speculated about in a report: state confirmed facts and label assumptions."
+        }
+      ]
+    }
+  ]
+}

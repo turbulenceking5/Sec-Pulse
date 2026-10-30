@@ -14,7 +14,7 @@
 <link rel="apple-touch-icon" href="assets/icons/icon-180.png?v=1">
 <link rel="icon" href="assets/icons/icon-192.png?v=1">
 <script>
-// Theme before first paint (no flash). sp_theme: "system" (default) | "dark" | "light". Re-run by the Settings picker.
+// Theme before first paint (no flash). sp_theme: "dark" | "light"; absent = follow the system. Re-run by the Settings picker.
 (function(){
   var mq = window.matchMedia ? matchMedia('(prefers-color-scheme: light)') : null;
   function apply(){
@@ -30,13 +30,14 @@
   if (mq){ try{ mq.addEventListener('change', apply); }catch(e){ try{ mq.addListener(apply); }catch(e2){} } }
 })();
 </script>
+<script type="importmap">{"imports": {"three": "./3d/vendor/three.module.min.js", "three/addons/": "./3d/vendor/addons/"}}</script>
 <style>
 :root{
   --bg:#0b1220; --surface:#121c2e; --surface2:#17243a; --border:#22314a;
   --text:#e6edf7; --muted:#8da2c0; --accent:#38e1c8; --accent-dim:rgba(56,225,200,.14); --accent-line:rgba(56,225,200,.4);
   --warn:#f5b84b; --danger:#ff6b6b; --ok:#5ad08a; --au:#f5b84b;
   --warn-dim:rgba(245,184,75,.1); --warn-line:rgba(245,184,75,.42); --danger-dim:rgba(255,107,107,.12); --danger-line:rgba(255,107,107,.42);
-  --ok-dim:rgba(90,208,138,.12); --on-accent:#06221d; --glass:rgba(11,18,32,.94);
+  --ok-dim:rgba(90,208,138,.12); --on-accent:#06221d; --on-danger:#2a0707; --glass:rgba(11,18,32,.94);
   --radius:14px; --nav-h:62px; color-scheme:dark;
 }
 /* Light theme: set on <html data-theme="light"> by the head script (System follows prefers-color-scheme). */
@@ -45,7 +46,7 @@
   --text:#0f1b2d; --muted:#53647c; --accent:#077a6b; --accent-dim:rgba(7,122,107,.1); --accent-line:rgba(7,122,107,.45);
   --warn:#9a5b00; --danger:#c42b2b; --ok:#1d7f45; --au:#9a5b00;
   --warn-dim:rgba(154,91,0,.08); --warn-line:rgba(154,91,0,.4); --danger-dim:rgba(196,43,43,.08); --danger-line:rgba(196,43,43,.4);
-  --ok-dim:rgba(29,127,69,.1); --on-accent:#ffffff; --glass:rgba(243,246,250,.94); color-scheme:light;
+  --ok-dim:rgba(29,127,69,.1); --on-accent:#ffffff; --on-danger:#ffffff; --glass:rgba(243,246,250,.94); color-scheme:light;
 }
 [hidden]{display:none!important}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
@@ -89,7 +90,7 @@ h2:first-child{margin-top:4px}
 .chip.on{background:var(--accent-dim);border-color:var(--accent);color:var(--accent)}
 .search{width:100%;margin:10px 0 12px;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:10px 12px;color:var(--text);font:inherit}
 .news-item{position:relative}
-.news-item.read{opacity:.62}
+.news-item.read .news-title{color:var(--muted)}
 .news-meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font-size:12px;color:var(--muted);margin-bottom:5px}
 .news-title{font-weight:600;font-size:15.5px;line-height:1.35;text-decoration:none;color:var(--text);display:block}
 .news-sum{font-size:13.5px;color:var(--muted);margin:6px 0 0;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
@@ -123,6 +124,7 @@ h2:first-child{margin-top:4px}
 .opt{display:block;width:100%;text-align:left;background:var(--surface2);border:1px solid var(--border);border-radius:12px;padding:11px 12px;margin-bottom:8px}
 .opt.correct{border-color:var(--ok);background:var(--ok-dim)}
 .opt.wrong{border-color:var(--danger);background:var(--danger-dim)}
+.opt.correct::before{content:"✓ ";color:var(--ok);font-weight:700}.opt.wrong::before{content:"✗ ";color:var(--danger);font-weight:700}
 .opt:disabled{cursor:default;color:var(--text)}
 .explain{font-size:13.5px;color:var(--muted);margin:4px 0 12px}
 .q-progress{font-size:12px;color:var(--muted);margin-bottom:6px}
@@ -131,9 +133,6 @@ h2:first-child{margin-top:4px}
 .flash{min-height:220px;display:flex;flex-direction:column;justify-content:center;text-align:center;padding:24px 18px}
 .flash .front,.flash-front{font-size:21px;font-weight:700}
 .flash-front{text-align:center;padding:6px 0 2px}
-.flash .back{font-size:15.5px;margin-top:16px;color:var(--text);border-top:1px solid var(--border);padding-top:16px}
-.grade{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-.grade .btn{padding:12px 6px}
 .boxes{display:flex;gap:6px;margin-top:10px}
 .boxes div{flex:1;text-align:center;background:var(--surface2);border-radius:8px;padding:6px 0;font-size:12px;color:var(--muted)}
 .boxes b{display:block;color:var(--text);font-size:15px}
@@ -144,7 +143,7 @@ nav{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--glass);ba
 nav button{flex:1;background:none;border:0;display:flex;flex-direction:column;align-items:center;gap:2px;font-size:11px;color:var(--muted);padding:4px 0;position:relative}
 nav button.on{color:var(--accent)}
 nav svg{width:24px;height:24px}
-.badge{position:absolute;top:0;left:calc(50% + 6px);background:var(--danger);color:#fff;font-size:10px;font-weight:700;border-radius:99px;padding:0 5px;min-width:16px;line-height:16px}
+.badge{position:absolute;top:0;left:calc(50% + 6px);background:var(--danger);color:var(--on-danger);font-size:10px;font-weight:700;border-radius:99px;padding:0 5px;min-width:16px;line-height:16px}
 
 /* sheet */
 #sheet{position:fixed;inset:0;z-index:50;background:var(--bg);overflow-y:auto;display:none;-webkit-overflow-scrolling:touch}
@@ -186,7 +185,7 @@ code{background:var(--surface2);padding:1px 6px;border-radius:6px;font-size:13px
 .rank-badge span{font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:.6px;margin-top:2px}
 .rank-badge.big{width:72px;height:72px}.rank-badge.big b{font-size:30px}
 .xp{color:var(--accent);font-weight:700;font-size:12.5px;white-space:nowrap}
-.skill{margin-bottom:12px}.skill:last-child{margin-bottom:0}
+.skill,.obj-row{margin-bottom:12px}.skill:last-child{margin-bottom:0}
 .ladder td{padding:7px 4px}.ladder tr.here td{color:var(--accent);font-weight:700}.ladder tr.locked td{color:var(--muted)}
 /* changelog / roadmap */
 .md h3{font-size:15px;margin:18px 0 6px}.md h3:first-child{margin-top:0}
@@ -223,13 +222,17 @@ html.ptr-on{overscroll-behavior-y:contain}
 .later-btn.on{color:var(--accent)}
 .later-btn svg{width:18px;height:18px}
 .news-item .news-meta{padding-right:66px}
+.tag.score{font-variant-numeric:tabular-nums}
+.exhibit-hint{font-size:12px;color:var(--muted);margin:-8px 0 12px;text-align:right}
+#exam-name .code{white-space:nowrap}
+.doc-btns .btn{padding:9px 6px;font-size:13.5px;white-space:nowrap}
 .note{margin-top:10px;padding:8px 10px;border-left:3px solid var(--warn);background:var(--warn-dim);border-radius:6px;font-size:13.5px;white-space:pre-wrap;overflow-wrap:anywhere}
 .note-edit textarea{width:100%;min-height:70px;resize:vertical;margin-top:10px}
 /* achievements, heatmap, accuracy trend, focus + backup cards, CVE links */
 .badges{display:grid;grid-template-columns:1fr 1fr;gap:8px}
 .badge-tile{display:flex;gap:8px;align-items:flex-start;background:var(--surface2);border:1px solid var(--border);border-radius:12px;padding:8px 10px;font-size:12.5px;line-height:1.35}
 .badge-tile .ic{font-size:20px;line-height:1.1;flex:none}
-.badge-tile.locked{opacity:.5}.badge-tile.locked .ic{filter:grayscale(1)}
+.badge-tile.locked{opacity:.68}.badge-tile.locked .ic{filter:grayscale(1)}
 .badge-tile b{display:block;font-size:13px}
 .heat{display:grid;grid-template-rows:repeat(7,1fr);grid-auto-flow:column;grid-auto-columns:1fr;gap:3px}
 .heat i{aspect-ratio:1;border-radius:3px;background:var(--surface2)}
@@ -249,6 +252,26 @@ html.ptr-on{overscroll-behavior-y:contain}
 .cves{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
 .cves a{text-decoration:none;color:var(--accent);border-color:var(--accent-line)}
 .seg{display:flex;gap:6px}.seg .btn{flex:1;padding:9px 6px}.seg .btn.on{background:var(--accent-dim);border-color:var(--accent);color:var(--accent)}
+/* 3D network labs: three.js canvas (3d/dist/lab.js) with HTML labels on top */
+/* Pinned under the sheet header (top set from its height in JS) so the network stays in view while the panel scrolls;
+   the spread shadow hides panel text sliding past its sides. */
+.lab-stage{position:sticky;top:0;z-index:1;height:min(42vh,400px);min-height:220px;border-radius:var(--radius);overflow:hidden;background:var(--surface);border:1px solid var(--border);
+  margin-bottom:16px;touch-action:none;box-shadow:0 0 0 16px var(--bg)}
+.lab-canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.lab-label,.lab-zone{position:absolute;left:0;top:0;white-space:nowrap;cursor:pointer;user-select:none;-webkit-user-select:none}
+.lab-label{z-index:1;font-size:10.5px;font-weight:600;padding:1px 5px;border-radius:6px;background:var(--glass);border:1px solid var(--border);color:var(--text)}
+.lab-label.sel{border-color:var(--accent);color:var(--accent)}
+.lab-label.bad{border-color:var(--danger);color:var(--danger)}
+.lab-label.contained{border-color:var(--ok);color:var(--ok)}
+.lab-label.contained::after{content:" 🔒";font-size:9px}
+.lab-zone{font-size:10px;text-transform:uppercase;letter-spacing:.8px;color:var(--muted);transform-origin:0 0}
+.lab-msg{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;color:var(--muted);font-size:13px}
+.lab-tools{position:absolute;right:6px;bottom:6px;z-index:2}
+.lab-tools button{background:var(--glass);border:1px solid var(--border);border-radius:10px;width:32px;height:32px;padding:0;font-size:16px;line-height:1}
+.lab-select{width:100%;font:inherit;color:var(--text);background:var(--surface2);border:1px solid var(--border);border-radius:12px;padding:10px 12px;margin:4px 0 8px}
+.lab-story{border-left:3px solid var(--accent-line);padding:2px 0 2px 10px;margin:0 0 10px;font-size:14px}
+.lab-row{display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:12px 14px;margin-bottom:8px}
+.lab-row .t{font-weight:700}
 </style>
 </head>
 <body>
@@ -278,15 +301,15 @@ html.ptr-on{overscroll-behavior-y:contain}
     <div id="brief-quests"></div>
     <div id="brief-exam" style="margin-top:10px"></div>
     <div id="brief-focus"></div>
-    <h2>Top for you</h2>
+    <h2 id="top-title">Top for you</h2>
     <div id="brief-top"><div class="empty">Loading news…</div></div>
     <div class="row small muted" id="brief-glance" style="flex-wrap:wrap;gap:6px"></div>
-    <h2 class="row"><span class="grow">Upcoming events</span><button class="linkish small" id="events-all" hidden>See all →</button></h2>
-    <div id="brief-events"></div>
     <h2>Today's CySA+ lesson</h2>
     <div id="brief-lesson"></div>
     <h2>Question of the day</h2>
     <div class="card" id="brief-qotd"></div>
+    <h2 class="row"><span class="grow">Upcoming events</span><button class="linkish small" id="events-all" hidden>See all →</button></h2>
+    <div id="brief-events"></div>
   </section>
 
   <section class="view" id="view-news">
@@ -310,7 +333,8 @@ html.ptr-on{overscroll-behavior-y:contain}
     <button class="btn block" id="timed-exam" style="margin-top:8px">⏱ Timed practice exam · 30 in 58 min</button>
     <button class="btn block" id="review-quiz" style="margin-top:8px">Review mistakes</button>
     <button class="btn block" id="pbq-practice" style="margin-top:8px" hidden>PBQ practice</button>
-    <div id="course-link"></div>
+    <button class="btn block" id="labs-btn" style="margin-top:8px" hidden>🌐 3D network labs</button>
+    <div id="course-link" style="margin-bottom:6px"></div>
     <div id="domains"></div>
   </section>
 
@@ -326,21 +350,21 @@ html.ptr-on{overscroll-behavior-y:contain}
   <button data-view="cards"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 2h12a2 2 0 0 1 2 2v12"/></svg>Cards<span class="badge" id="nav-due" hidden></span></button>
 </nav>
 
-<div id="sheet" role="dialog" aria-modal="true">
+<div id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title">
   <div id="sheet-head">
     <button class="icon-btn" id="sheet-close" aria-label="Close"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
     <div id="sheet-title"></div>
   </div>
   <div id="sheet-body"></div>
 </div>
-<div id="toast"></div>
+<div id="toast" role="status" aria-live="polite"></div>
 
 <script>
 'use strict';
 /* ---------- storage (per-device, wrapped so private mode never breaks the app) ---------- */
 const store = {
   get(k, d){ try{ const v = localStorage.getItem('sp_'+k); return v === null ? d : JSON.parse(v); }catch(e){ return d; } },
-  set(k, v){ try{ localStorage.setItem('sp_'+k, JSON.stringify(v)); }catch(e){} },
+  set(k, v){ if (k === 'read' || k === 'saved' || k === 'later') cardState.c = null; try{ localStorage.setItem('sp_'+k, JSON.stringify(v)); }catch(e){} },
   del(k){ try{ localStorage.removeItem('sp_'+k); }catch(e){} }
 };
 const $ = s => document.querySelector(s);
@@ -349,7 +373,9 @@ function toast(msg){ const t = $('#toast'); t.textContent = msg; t.classList.add
 
 /* ---------- dates: everything keyed to Brisbane time (no daylight saving) ---------- */
 const TZ = 'Australia/Brisbane';
-function todayKey(d = new Date()){ return new Intl.DateTimeFormat('en-CA', {timeZone: TZ}).format(d); }
+// Built from parts, not a locale's date format (en-CA's "YYYY-MM-DD" isn't guaranteed); every stored date key depends on it.
+const DATE_FMT = new Intl.DateTimeFormat('en-AU', {timeZone: TZ, year: 'numeric', month: '2-digit', day: '2-digit'});
+function todayKey(d = new Date()){ const p = Object.fromEntries(DATE_FMT.formatToParts(d).map(x => [x.type, x.value])); return `${p.year}-${p.month}-${p.day}`; }
 function addDays(key, n){ const d = new Date(key + 'T00:00:00Z'); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); }
 // Same as Python's date.toordinal(), so the app and the morning notification pick the same lesson.
 function ordinal(key){ return Math.floor(Date.parse(key + 'T00:00:00Z') / 864e5) + 719163; }
@@ -541,6 +567,7 @@ const BADGES = () => [
   {id: 'exam-pass', icon: '📈', name: 'Pass mark', desc: 'Estimated 750+ on a practice exam', test: c => c.hist.some(h => h.type === 'exam' && h.t && scaledScore(h.c, h.t) >= PASS_MARK)},
   {id: 'beat-clock', icon: '⏱️', name: 'Beat the clock', desc: 'Estimated 750+ on a timed exam, inside the time', test: c => c.hist.some(h => h.type === 'exam' && h.timed && !h.expired && h.t && scaledScore(h.c, h.t) >= PASS_MARK)},
   {id: 'quests-all', icon: '✅', name: 'Quest master', desc: 'Finish every daily quest in a day', test: c => c.questsAll},
+  {id: 'labs-all', icon: '🌐', name: 'Network defender', desc: 'Finish every 3D network lab', test: c => c.labsAll},
   {id: 'reader100', icon: '📰', name: 'Well informed', desc: 'Read 100 news stories', test: c => c.reads >= 100}
 ];
 function badgeCtx(){
@@ -548,7 +575,8 @@ function badgeCtx(){
   return {answered: qs.answered || 0, cards: Object.values(cardHist()).reduce((a, r) => a + ((r && r.right) || 0) + ((r && r.wrong) || 0), 0),
     box5: Object.values(st).filter(v => v && v.box === 5).length, best: (store.get('streak', {}) || {}).best || 0,
     lessons: store.get('lessons', {}) || {}, hist: Array.isArray(hist) ? hist.filter(Boolean) : [],
-    questsAll: QUESTS.every(x => q.done.includes(x.id)), reads: Array.isArray(reads) ? reads.length : 0};
+    questsAll: QUESTS.every(x => q.done.includes(x.id)),
+    labsAll: !!LABS && LABS.scenarios.length > 0 && LABS.scenarios.every(s => getLabs()[s.id]), reads: Array.isArray(reads) ? reads.length : 0};
 }
 function getBadges(){ const b = store.get('badges', null); return b && typeof b === 'object' && !Array.isArray(b) ? b : null; }
 let badgeBusy = false;
@@ -567,6 +595,20 @@ function badgesHtml(){
   const have = getBadges() || {}, all = BADGES(), n = all.filter(b => have[b.id]).length;
   return `<h2>Achievements · ${n}/${all.length}</h2><div class="badges" id="badges">${all.map(b => `<div class="badge-tile${have[b.id] ? '' : ' locked'}">
     <span class="ic">${b.icon}</span><div><b>${esc(b.name)}</b><span class="muted">${have[b.id] ? 'Earned ' + fmtKey(have[b.id], {day: 'numeric', month: 'short'}) : esc(b.desc)}</span></div></div>`).join('')}</div>`;
+}
+
+/* ---------- exam objectives coverage: bank questions seen / right per CS0-003 objective ---------- */
+function objectivesHtml(){
+  const bank = ALL_BANK(); if (!bank.length) return '';
+  const h = store.get('qhist', {}) || {}, by = {};
+  bank.forEach(q => { const o = String(q.objective || '?'), r = h[q.qid], e = by[o] || (by[o] = {n: 0, seen: 0, ok: 0, d: q.domain});
+    e.n++; if (r){ e.seen++; if (r.ok) e.ok++; } });
+  const rows = Object.keys(by).sort((a, b) => a.localeCompare(b, undefined, {numeric: true})).map(o => { const e = by[o], pct = e.seen ? Math.round(e.ok / e.seen * 100) : null;
+    return `<div class="obj-row"><div class="row small"><span class="grow">Objective ${esc(o)}</span>
+      <span class="muted">${e.seen}/${e.n} seen${pct === null ? '' : ` · <b style="color:${pct >= 80 ? 'var(--ok)' : pct >= 60 ? 'var(--warn)' : 'var(--danger)'}">${pct}% right</b>`}</span></div>
+      <div class="bar thin"><i style="width:${(e.seen / e.n * 100).toFixed(0)}%"></i></div></div>`; }).join('');
+  return `<h2>Exam objectives</h2><div class="card" id="objectives">${rows}
+    <p class="small muted" style="margin-bottom:0">From the question bank: how many questions per CS0-003 objective you've answered, and how many you got right the last time you answered them.</p></div>`;
 }
 
 /* ---------- progress history: activity heatmap (sp_days) and quiz accuracy trend (sp_quizHistory) ---------- */
@@ -591,9 +633,9 @@ function trendHtml(){
   const hist = store.get('quizHistory', []), rounds = (Array.isArray(hist) ? hist : []).filter(h => h && h.t > 0).slice(-20);
   if (rounds.length < 2) return `<div class="card small muted" id="trend-empty">Finish two or more quiz rounds to see your accuracy trend.</div>`;
   const W = 320, H = 120, L = 36, R = 8, T = 8, B = 16, pw = W - L - R, ph = H - T - B;
-  const x = i => L + (rounds.length === 1 ? pw / 2 : i * pw / (rounds.length - 1)), y = p => T + ph * (1 - p / 100);
+  const x = i => L + i * pw / (rounds.length - 1), y = p => T + ph * (1 - p / 100); // rounds.length >= 2 here
   const pcts = rounds.map(h => Math.round(h.c / h.t * 100)), avg = Math.round(pcts.reduce((a, b) => a + b, 0) / pcts.length);
-  const names = {quick: 'Quick quiz', exam: 'Practice exam', review: 'Review', pbq: 'PBQ round', drill: 'Domain drill'};
+  const names = {quick: 'Quick quiz', exam: 'Practice exam', review: 'Review', pbq: 'PBQ round', drill: 'Domain drill', lab: '3D lab'};
   const grid = [0, 50, 80, 100].map(p => `<line x1="${L}" x2="${W - R}" y1="${y(p)}" y2="${y(p)}" style="stroke:var(--border)" stroke-width="1"${p === 80 ? ' stroke-dasharray="4 3"' : ''}/>
     <text x="${L - 6}" y="${y(p) + 4}" text-anchor="end" font-size="10" style="fill:var(--muted)">${p}%</text>`).join('');
   const pts = pcts.map((p, i) => `${x(i).toFixed(1)},${y(p).toFixed(1)}`).join(' ');
@@ -627,6 +669,7 @@ function openProfile(){
       ${next ? `<div class="small" style="margin-top:4px">Next rank: <b>${esc(next[1])}</b> at Lv ${next[0]} (${xpForLevel(next[0]) - x.total} XP to go)</div>` : ''}</div></div>
     <h2>Skills</h2><div class="card">${skills}</div>
     ${badgesHtml()}
+    ${objectivesHtml()}
     <h2>Study activity</h2>${heatmapHtml()}
     <h2>Quiz accuracy</h2>${trendHtml()}
     <h2>How to earn XP</h2>
@@ -650,6 +693,13 @@ function openProfile(){
 let NEWS = {items: [], sources: [], generated: null};
 let CYSA = null;
 const ALL_Q = () => CYSA.lessons.flatMap(l => l.quiz.map((q, i) => ({...q, domain: l.domain, lesson: l.id, qid: l.id + '#' + i})));
+// Question bank (cysa.json `bank`): standalone questions tagged with a CS0-003 objective; qid "bank:<id>".
+const validBank = q => q && q.id && typeof q.q === 'string' && [1, 2, 3, 4].includes(q.domain) && Array.isArray(q.options) && q.options.length === 4
+  && Number.isInteger(q.answer) && q.answer >= 0 && q.answer < 4;
+const ALL_BANK = () => (CYSA && Array.isArray(CYSA.bank) ? CYSA.bank.filter(validBank) : []).map(q => ({...q, qid: 'bank:' + q.id}));
+// Every multiple-choice question: lesson quizzes first, then the bank, in file order. The question of the day
+// indexes this list, and send_brief.py's qotd_for() builds the same list - keep them in sync.
+const POOL = () => ALL_Q().concat(ALL_BANK());
 
 // fetch-news.yml runs at :17 past every third UTC hour; GitHub often starts it a few minutes late.
 function nextFetchIn(){
@@ -658,8 +708,9 @@ function nextFetchIn(){
   const m = Math.round((d - Date.now()) / 6e4);
   return m < 60 ? m + 'm' : Math.floor(m / 60) + 'h ' + (m % 60) + 'm';
 }
+let newsRendered = false;
 async function loadNews(manual){
-  const btn = $('#refresh-btn'), started = Date.now();
+  const btn = $('#refresh-btn'), started = Date.now(), prevGen = NEWS.generated;
   const known = new Set(NEWS.items.map(i => i.id));
   if (manual){ btn.classList.add('spin'); btn.disabled = true; }
   try{
@@ -679,6 +730,10 @@ async function loadNews(manual){
     setTimeout(() => { btn.classList.remove('spin'); btn.disabled = false; }, Math.max(0, 600 - (Date.now() - started)));
   }
   $('#updated').textContent = NEWS.generated ? 'updated ' + ago(NEWS.generated) : '';
+  // Coming back to the app re-fetches; only re-render if the news changed, so a half-typed note or an
+  // answered question of the day isn't wiped. Manual refresh and first load always render.
+  if (!manual && newsRendered && NEWS.generated === prevGen) return;
+  newsRendered = true;
   renderBrief(); renderNews();
 }
 async function loadCysa(){
@@ -716,9 +771,13 @@ function kevDuePill(i){
 }
 const LATER_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>';
 // opts.notes: show the note line (Saved filter). Called via .map(newsCard) too, so opts may be an index.
+// Read/saved/later parsed once, not per card (sp_read holds up to 1,500 ids); store.set() on those keys clears it.
+function cardState(){
+  if (!cardState.c){ const r = store.get('read', []); cardState.c = {read: new Set(Array.isArray(r) ? r : []), saved: store.get('saved', {}) || {}, later: store.get('later', {}) || {}}; }
+  return cardState.c;
+}
 function newsCard(i, opts){
-  const read = store.get('read', []).includes(i.id);
-  const saved = !!store.get('saved', {})[i.id], later = !!store.get('later', {})[i.id];
+  const cs = cardState(), read = cs.read.has(i.id), saved = !!cs.saved[i.id], later = !!cs.later[i.id];
   const notes = !!(opts && opts.notes);
   const tags = i.tags.filter(t => t !== 'Australia').slice(0, 4)
     .map(t => `<span class="tag ${HOT.has(t) ? 'hot' : RE.has(t) ? 're' : ''}">${esc(t)}</span>`).join('');
@@ -728,20 +787,21 @@ function newsCard(i, opts){
       ${i.region === 'AU' ? '<span class="pill au">AU</span>' : ''}
       <span>${esc(i.source)}</span><span>· ${ago(i.published)}</span>
       ${epss !== null ? `<span class="pill ${epss >= 0.5 ? 'danger' : ''} epss" title="EPSS: estimated chance of exploitation in the next 30 days">EPSS ${epssPct(epss)}</span>` : ''}
-      ${kevDuePill(i)}
-      <button class="pill why score" aria-label="Why this ranked">score ${esc(i.score ?? 0)}</button></div>
-    <a class="news-title" href="${esc(i.link)}" target="_blank" rel="noopener noreferrer">${esc(i.title)}</a>
+      ${kevDuePill(i)}</div>
+    <a class="news-title" href="${esc(isUrl(i.link) ? i.link : '#')}" target="_blank" rel="noopener noreferrer">${esc(i.title)}</a>
     ${i.summary ? `<p class="news-sum">${esc(i.summary)}</p>` : ''}
     ${cves.length ? `<div class="cves">${cves.map(c => `<a class="pill cve" href="${esc(nvdUrl(c))}" target="_blank" rel="noopener noreferrer">${esc(c)} ↗</a>`).join('')}</div>` : ''}
-    ${tags ? `<button class="tags why" aria-label="Why this ranked">${tags}</button>` : ''}
+    <button class="tags why" title="Why this ranked"><span class="tag score">score ${esc(i.score ?? 0)}</span>${tags}</button>
     ${also.length ? `<button class="also-btn">+${also.length} more source${also.length === 1 ? '' : 's'}</button>
       <ul class="also-list" hidden>${also.map(a => `<li><a href="${esc(a.url)}" target="_blank" rel="noopener noreferrer">${esc(a.source || hostOf(a.url))}</a></li>`).join('')}</ul>` : ''}
     ${notes ? '<div class="note-wrap"></div>' : ''}
     <button class="later-btn ${later ? 'on' : ''}" aria-label="Read later" aria-pressed="${later}" title="Read later">${LATER_SVG}</button>
-    <button class="save-btn ${saved ? 'on' : ''}" aria-label="Save">${saved ? '★' : '☆'}</button>
+    <button class="save-btn ${saved ? 'on' : ''}" aria-label="Save" aria-pressed="${saved}">${saved ? '★' : '☆'}</button>
   </div>`;
 }
-const findItem = id => NEWS.items.find(x => x.id === id) || store.get('saved', {})[id] || store.get('later', {})[id];
+// Also the stories shown in This morning's brief, which may not be in news.json (offline, or already aged out).
+let BRIEF_ITEMS = [];
+const findItem = id => NEWS.items.find(x => x.id === id) || BRIEF_ITEMS.find(x => x.id === id) || store.get('saved', {})[id] || store.get('later', {})[id];
 /* ---------- notes on saved stories (sp_notes, on this device only) ---------- */
 const NOTE_MAX = 500;
 function getNotes(){ const n = store.get('notes', {}); return n && typeof n === 'object' && !Array.isArray(n) ? n : {}; }
@@ -763,6 +823,16 @@ function drawNote(wrap, id, editing){
   };
   wrap.querySelector('.note-cancel').onclick = () => drawNote(wrap, id, false);
 }
+// Saved / Read later keep a full copy of the story. Returns the new state, or null if the story couldn't be found.
+function toggleOwn(key, id, btn, onMsg, offMsg){
+  const list = store.get(key, {}) || {};
+  if (list[id]) delete list[id];
+  else { const it = findItem(id); if (!it){ toast("Couldn't find that story to save"); return null; } list[id] = it; }
+  store.set(key, list);
+  const on = !!list[id]; btn.classList.toggle('on', on); btn.setAttribute('aria-pressed', on);
+  toast(on ? onMsg : offMsg);
+  return on;
+}
 function wireNewsList(root){
   root.querySelectorAll('.news-item').forEach(el => {
     const id = el.dataset.id;
@@ -773,22 +843,10 @@ function wireNewsList(root){
       el.classList.add('read'); el.querySelector('.dot')?.remove();
     });
     el.querySelector('.save-btn').addEventListener('click', e => {
-      const saved = store.get('saved', {});
-      if (saved[id]) delete saved[id];
-      else { const it = findItem(id); if (it) saved[id] = it; }
-      store.set('saved', saved);
-      e.currentTarget.classList.toggle('on', !!saved[id]);
-      e.currentTarget.textContent = saved[id] ? '★' : '☆';
-      toast(saved[id] ? 'Saved' : 'Removed from saved');
+      const on = toggleOwn('saved', id, e.currentTarget, 'Saved', 'Removed from saved');
+      if (on !== null) e.currentTarget.textContent = on ? '★' : '☆';
     });
-    el.querySelector('.later-btn').addEventListener('click', e => {
-      const later = store.get('later', {});
-      if (later[id]) delete later[id];
-      else { const it = findItem(id); if (it) later[id] = it; }
-      store.set('later', later);
-      const b = e.currentTarget; b.classList.toggle('on', !!later[id]); b.setAttribute('aria-pressed', !!later[id]);
-      toast(later[id] ? 'Added to Read later' : 'Removed from Read later');
-    });
+    el.querySelector('.later-btn').addEventListener('click', e => toggleOwn('later', id, e.currentTarget, 'Added to Read later', 'Removed from Read later'));
     const nw = el.querySelector('.note-wrap'); if (nw) drawNote(nw, id, false);
     el.querySelectorAll('.why').forEach(w => w.onclick = () => openWhy(id));
     const ab = el.querySelector('.also-btn');
@@ -816,16 +874,18 @@ async function loadSourcesCfg(){
   try{ const r = await fetch('scripts/sources.json?_=' + Date.now()); if (r.ok) SOURCES_CFG = await r.json(); }catch(e){}
   return SOURCES_CFG;
 }
+// Same rule as term_in() in fetch_news.py: a keyword matches at the start of a word ("aws" not in "flaws").
+const termIn = (t, text) => new RegExp('(^|[^a-z0-9])' + t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).test(text);
 // Mirrors score() in fetch_news.py: source weight + each matched group (weight, +1 if in the headline) + 2 if Australian.
 function explainScore(i, cfg){
   const rows = [], matched = new Set();
-  const hay = (' ' + i.title + ' ' + (i.summary || '') + ' ').toLowerCase(), head = (' ' + i.title + ' ').toLowerCase();
+  const hay = (i.title + ' ' + (i.summary || '')).toLowerCase(), head = i.title.toLowerCase();
   const src = (cfg.sources || []).find(s => s.name === i.feed);
   rows.push({label: 'Source weight · ' + (i.feed || i.source), pts: src ? (src.weight || 0) : 0});
   (cfg.keywords || []).forEach(g => {
-    const hits = (g.terms || []).filter(t => hay.includes(t));
+    const hits = (g.terms || []).filter(t => termIn(t, hay));
     if (!hits.length) return;
-    const inTitle = g.terms.some(t => head.includes(t));
+    const inTitle = g.terms.some(t => termIn(t, head));
     rows.push({label: g.tag, pts: (g.weight || 0) + (inTitle ? 1 : 0), terms: hits, inTitle});
     matched.add(g.tag);
   });
@@ -837,7 +897,8 @@ function explainScore(i, cfg){
 }
 async function openWhy(id){
   const i = findItem(id); if (!i) return;
-  const cfg = await loadSourcesCfg();
+  const seq = sheetSeq, cfg = await loadSourcesCfg();
+  if (seq !== sheetSeq) return; // another sheet opened while the keyword list loaded
   const m = getMuted();
   let body;
   if (cfg){
@@ -883,18 +944,18 @@ async function loadTodayBrief(){
   return b && Array.isArray(b.items) && b.date ? b : null;
 }
 function briefItems(b){
-  return b.items.filter(i => i && i.id && i.title).map(i => {
+  return BRIEF_ITEMS = b.items.filter(i => i && i.id && i.title).map(i => {
     const n = NEWS.items.find(x => x.id === i.id) || {};
     return {tags: [], score: 0, region: 'Global', published: b.generated, ...n, ...i,
-      link: i.link || n.link || 'https://news.google.com/search?q=' + encodeURIComponent(i.title),
+      link: [i.link, n.link].find(isUrl) || 'https://news.google.com/search?q=' + encodeURIComponent(i.title),
       summary: (n.summary || '').length > (i.summary || '').length ? n.summary : (i.summary || '')};
   });
 }
 async function openTodayBrief(){
   try{ history.replaceState(null, '', '#brief'); }catch(e){} // so reopening the app doesn't reopen this sheet
   openSheet("This morning's brief", '<div class="empty">Loading…</div>');
-  const b = await loadTodayBrief();
-  if (!$('#sheet').classList.contains('open')) return;
+  const seq = sheetSeq, b = await loadTodayBrief();
+  if (!sheetIs(seq)) return;
   if (!b){ $('#sheet-body').innerHTML = '<div class="card empty" id="today-empty">No morning brief yet. It arrives at about 7:25am Brisbane time.</div>'; return; }
   const items = briefItems(b), st = b.stats || {}, old = b.date !== todayKey();
   const when = fmtKey(b.date, {weekday: 'long', day: 'numeric', month: 'long'});
@@ -908,11 +969,14 @@ async function openTodayBrief(){
     ${CYSA ? '<h2>Question of the day</h2><div class="card" id="today-qotd"></div>' : ''}</div>`;
   wireNewsList($('#today-brief'));
   const lb = $('#today-lesson-btn'); if (lb) lb.onclick = () => openLesson(b.lesson.id);
-  if (CYSA){ const qs = ALL_Q(); renderQuiz($('#today-qotd'), [qs[(ordinal(b.date) * 7) % qs.length]], {single: true}); }
+  if (CYSA){ const qs = POOL(); renderQuiz($('#today-qotd'), [qs[(ordinal(b.date) * 7) % qs.length]], {single: true}); }
 }
+let TODAY_BRIEF = null;
 async function renderTodayLink(){
   const el = $('#brief-today'); if (!el) return;
   const b = await loadTodayBrief();
+  const had = TODAY_BRIEF && TODAY_BRIEF.generated; TODAY_BRIEF = b;
+  if (b && b.generated !== had) renderBrief(); // Top for you drops the brief's stories
   if (!b || b.date !== todayKey()){ el.innerHTML = ''; return; }
   el.innerHTML = `<button class="card row focus-card" id="today-open" style="margin-top:12px"><div class="grow small"><div style="font-weight:700">📰 This morning's brief</div>
     <div class="muted">${b.items.length} stories from your 7:25 notification</div></div><span class="pill accent">Read →</span></button>`;
@@ -1089,8 +1153,12 @@ function renderBrief(){
   $('#today-date').textContent = new Intl.DateTimeFormat('en-AU', {timeZone: TZ, weekday: 'long', day: 'numeric', month: 'long'}).format(new Date()) + ' · Brisbane';
   const within = hrs => NEWS.items.filter(i => Date.now() - Date.parse(i.published) < hrs * 36e5);
   const muted = getMuted(), fresh = hrs => within(hrs).filter(i => !isMuted(i, muted));
-  let pool = fresh(30); if (pool.length < 5) pool = fresh(72);
+  // Once today's brief exists, its stories are one tap away, so show the next best ones instead of repeating them.
+  const inBrief = new Set(TODAY_BRIEF && TODAY_BRIEF.date === todayKey() ? TODAY_BRIEF.items.map(i => i.id) : []);
+  const fresh2 = hrs => fresh(hrs).filter(i => !inBrief.has(i.id));
+  let pool = fresh2(30); if (pool.length < 5) pool = fresh2(72);
   const top = pool.sort((a, b) => rank(b) - rank(a)).slice(0, 5);
+  $('#top-title').textContent = inBrief.size ? 'More for you' : 'Top for you';
   const el = $('#brief-top');
   el.innerHTML = top.length ? top.map(newsCard).join('') : '<div class="empty">No news yet - it updates every few hours.</div>';
   wireNewsList(el);
@@ -1111,7 +1179,7 @@ function renderBrief(){
       <div class="small muted" style="margin-top:4px">${esc(lesson.summary.slice(0, 120))}…</div></div>
       ${done ? '<span class="pill accent">Done ✓</span>' : '<span class="pill accent">Start →</span>'}</div></button>`;
     $('#today-lesson').onclick = () => openLesson(lesson.id);
-    const qs = ALL_Q();
+    const qs = POOL();
     const q = qs[(ordinal(t) * 7) % qs.length];
     renderQuiz($('#brief-qotd'), [q], {single: true});
   }
@@ -1160,7 +1228,8 @@ function renderNews(){
   wireNewsList(el); wireNote();
   const more = $('#more'); if (more) more.onclick = () => { newsLimit += 40; renderNews(); };
 }
-$('#news-search').addEventListener('input', () => { newsLimit = 40; renderNews(); });
+let searchTimer = null;
+$('#news-search').addEventListener('input', () => { clearTimeout(searchTimer); searchTimer = setTimeout(() => { newsLimit = 40; renderNews(); }, 150); });
 
 /* ---------- Quiz engine ---------- */
 function recordAnswer(q, correct){
@@ -1184,7 +1253,7 @@ function recordAnswer(q, correct){
 function weakQuestions(){
   if (!CYSA) return [];
   const h = store.get('qhist', {}) || {};
-  return ALL_Q().concat(ALL_PBQ()).filter(q => { const r = h[q.qid]; return r && r.wrong > 0 && (!r.ok || r.wrong > r.right); })
+  return POOL().concat(ALL_PBQ()).filter(q => { const r = h[q.qid]; return r && r.wrong > 0 && (!r.ok || r.wrong > r.right); })
     .sort((a, b) => { const x = h[a.qid], y = h[b.qid];
       return (!!x.ok - !!y.ok) || ((y.wrong - y.right) - (x.wrong - x.right)) || String(y.last || '').localeCompare(String(x.last || '')); });
 }
@@ -1193,13 +1262,14 @@ function weakQuestions(){
 const mmss = sec => { sec = Math.max(0, Math.round(sec)); return Math.floor(sec / 60) + ':' + String(sec % 60).padStart(2, '0'); };
 function renderQuiz(root, questions, opts = {}){
   let idx = 0, correct = 0, nAnswered = 0, timer = null, ended = false;
-  const t0 = Date.now(), used = () => Math.min(opts.timeLimit || Infinity, (Date.now() - t0) / 1000);
+  let tDone = 0; // set when the last question is answered, so reading the result doesn't count as exam time
+  const t0 = Date.now(), used = () => Math.min(opts.timeLimit || Infinity, ((tDone || Date.now()) - t0) / 1000);
   const show = () => {
     const q = questions[idx];
-    const where = q.lesson ? ' · lesson ' + esc(q.lesson) : q.pbq ? ' · PBQ · domain ' + esc(q.domain) : '';
+    const where = q.lesson ? ' · lesson ' + esc(q.lesson) : q.pbq ? ' · PBQ · domain ' + esc(q.domain) : q.objective ? ' · objective ' + esc(q.objective) : '';
     const head = `${questions.length > 1 ? `<div class="q-progress">Question ${idx + 1} of ${questions.length}${where}</div>` : ''}
       <div class="q-text">${esc(q.q)}</div>${q.exhibit ? `<pre class="exhibit" tabindex="0" aria-label="Exhibit">${esc(q.exhibit)}</pre>` : ''}`;
-    if (q.type === 'order') return showOrder(q, head);
+    if (q.type === 'order'){ showOrder(q, head); return hintExhibit(); }
     const order = shuffle(q.options.map((o, i) => i)); // options are shuffled every time
     root.innerHTML = `${head}${order.map(i => `<button class="opt" data-i="${i}">${esc(q.options[i])}</button>`).join('')}
       <div class="explain" hidden></div><div class="q-next"></div>`;
@@ -1212,6 +1282,12 @@ function renderQuiz(root, questions, opts = {}){
       });
       answered(q, ok);
     });
+    hintExhibit();
+  };
+  // A wide exhibit scrolls sideways inside its box; say so, since the answer can depend on the clipped part.
+  const hintExhibit = () => {
+    const ex = root.querySelector('.exhibit');
+    if (ex && ex.scrollWidth > ex.clientWidth + 4) ex.insertAdjacentHTML('afterend', '<div class="exhibit-hint">Swipe the exhibit sideways to see the rest →</div>');
   };
   // Order PBQ: `items` are stored in the correct order, shown shuffled, moved with ▲/▼ (no drag, touch-friendly), then checked.
   const showOrder = (q, head) => {
@@ -1246,6 +1322,7 @@ function renderQuiz(root, questions, opts = {}){
   const answered = (q, ok, pre = '', post = '') => {
     if (ended) return;
     nAnswered++; if (ok) correct++;
+    if (nAnswered === questions.length && !tDone){ tDone = Date.now(); clearInterval(timer); }
     const xp = recordAnswer(q, ok);
     const ex = root.querySelector('.explain'); ex.hidden = false;
     ex.innerHTML = `<b style="color:${ok ? 'var(--ok)' : 'var(--danger)'}">${ok ? 'Correct.' : 'Not quite.'}</b>${xpTag(xp)} ${esc(pre)}${esc(q.explain)}${post}`;
@@ -1268,7 +1345,7 @@ function renderQuiz(root, questions, opts = {}){
   };
   if (opts.timeLimit){
     const tick = () => {
-      if (ended) return;
+      if (ended || tDone) return;
       if (!root.isConnected || !$('#sheet').classList.contains('open')){ clearInterval(timer); ended = true; return; }
       const left = opts.timeLimit - (Date.now() - t0) / 1000;
       opts.onTick && opts.onTick(Math.max(0, left));
@@ -1287,6 +1364,13 @@ function scaledHtml(c, t){
   return `<div class="scaled" id="scaled"><div class="small muted">Rough scaled estimate</div>
     <div><b style="color:${sc >= PASS_MARK ? 'var(--ok)' : 'var(--warn)'}">≈ ${sc}</b> <span class="muted">/ 900 · pass ${PASS_MARK}</span></div>
     <div class="small muted" style="margin-top:6px">Rough guide only. CompTIA doesn't publish how raw scores convert to its 100-900 scale, and the real exam adds PBQs, unscored items and different question weights. This simply maps 0% to 100 and 100% to 900 in a straight line.</div></div>`;
+}
+
+// Record a finished round in sp_quizHistory (last 100) and pay the round bonus.
+function logRound(rec, xp, label = 'Round complete'){
+  const h = store.get('quizHistory', []), hist = Array.isArray(h) ? h : [];
+  hist.push({date: todayKey(), ...rec}); store.set('quizHistory', hist.slice(-100));
+  const b = gainXP(xp); if (b) toast(`${label} +${b} XP`);
 }
 
 /* ---------- PBQs (performance-based questions): cysa.json `pbqs`, type "select" or "order" ---------- */
@@ -1311,7 +1395,7 @@ function renderLearn(){
     : `<button class="linkish small" style="margin-top:10px" id="course-set">Add your Udemy profile or course link →</button>`;
   const cs = $('#course-set'); if (cs) cs.onclick = () => openSettings('course-url');
   const done = store.get('lessons', {}), qs = store.get('qstats', {answered: 0, correct: 0, byDomain: {}});
-  $('#exam-name').textContent = CYSA.exam.name + ' (' + CYSA.exam.code + ')';
+  $('#exam-name').innerHTML = `${esc(CYSA.exam.name)} <span class="code">(${esc(CYSA.exam.code)})</span>`;
   const n = Object.keys(done).length;
   $('#exam-sub').textContent = `${n} of ${CYSA.lessons.length} lessons · ${qs.answered} question${qs.answered === 1 ? '' : 's'} answered`;
   $('#exam-acc').textContent = qs.answered ? Math.round(qs.correct / qs.answered * 100) + '% accuracy' : 'No quizzes yet';
@@ -1320,6 +1404,7 @@ function renderLearn(){
   $('#review-quiz').textContent = 'Review mistakes' + (nw ? ' · ' + nw : '');
   const np = ALL_PBQ().length, pb = $('#pbq-practice');
   pb.hidden = !np; pb.textContent = `PBQ practice · ${np} scenario${np === 1 ? '' : 's'}`;
+  const lb = $('#labs-btn'); lb.hidden = !LABS; if (LABS) lb.textContent = `🌐 3D network labs · ${LABS.scenarios.length} incidents`;
   $('#domains').innerHTML = CYSA.domains.map(d => {
     const ls = CYSA.lessons.filter(l => l.domain === d.id), dd = qs.byDomain[d.id];
     const nd = ls.filter(l => done[l.id]).length;
@@ -1336,11 +1421,23 @@ function renderLearn(){
   }).join('') + `<p class="small muted" style="margin-top:16px">${esc(CYSA.exam.note)}</p>`;
   $('#domains').querySelectorAll('.lesson-row').forEach(b => b.onclick = () => openLesson(b.dataset.l));
 }
+// Async loaders capture sheetSeq before awaiting and only write if it hasn't changed (another sheet may have opened).
+let sheetSeq = 0, sheetOpener = null;
+const sheetIs = n => n === sheetSeq && $('#sheet').classList.contains('open');
 function openSheet(title, html){
+  closeLabView(); sheetSeq++;
+  if (!$('#sheet').classList.contains('open')) sheetOpener = document.activeElement;
   $('#sheet-title').textContent = title; $('#sheet-body').innerHTML = html;
   $('#sheet').classList.add('open'); $('#sheet').scrollTop = 0; document.body.style.overflow = 'hidden';
+  try{ $('#sheet-close').focus({preventScroll: true}); }catch(e){}
 }
-function closeSheet(){ $('#sheet').classList.remove('open'); document.body.style.overflow = ''; renderLearn(); renderBrief(); renderNews(); }
+function closeSheet(){
+  closeLabView(); sheetSeq++; $('#sheet').classList.remove('open'); document.body.style.overflow = '';
+  renderLearn(); renderBrief(); renderNews();
+  try{ sheetOpener && sheetOpener.isConnected && sheetOpener.focus(); }catch(e){}
+  sheetOpener = null;
+}
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && $('#sheet').classList.contains('open')) closeSheet(); });
 $('#sheet-close').onclick = closeSheet;
 
 function openLesson(id){
@@ -1353,8 +1450,10 @@ function openLesson(id){
     <div class="box tip"><b>Exam tip</b>${esc(l.examTip)}</div>
     <div class="box job"><b>On the job</b>${esc(l.onTheJob)}</div>
     <div class="links"><a class="btn" href="${esc(ytSearch(l))}" target="_blank" rel="noopener noreferrer">▶ Videos on this topic</a>${courseUrl() ? `<a class="btn" href="${esc(courseUrl())}" target="_blank" rel="noopener noreferrer">🎓 My Udemy</a>` : ''}</div>
+    ${labsForLesson(l.id).map(x => `<button class="btn block lesson-lab" data-lab="${esc(x.id)}" style="margin-bottom:8px">🌐 Practise in 3D: ${esc(x.title)}</button>`).join('')}
     <h2>Check yourself</h2><div class="card" id="lesson-quiz"></div>
     <button class="btn block" id="mark-done" style="margin-top:6px">Mark as complete</button>`);
+  $('#sheet-body').querySelectorAll('.lesson-lab').forEach(b => b.onclick = () => openLab(b.dataset.lab));
   const quizQs = l.quiz.map((q, i) => ({...q, domain: l.domain, qid: l.id + '#' + i}));
   const complete = score => {
     const done = store.get('lessons', {}), first = !done[l.id];
@@ -1371,14 +1470,18 @@ function openLesson(id){
 // Timed exam: the real CS0-003 is up to 85 questions in 165 minutes; 30 questions at that pace is ~58 minutes.
 const EXAM_SECS = 58 * 60;
 function startQuiz(n, weighted, timed){
-  const all = ALL_Q();
+  const all = POOL(), h = store.get('qhist', {}) || {};
+  // Practice exams prefer questions you haven't answered, then ones you got wrong last time, so a score
+  // measures knowledge rather than recognition. Random within each group (the sort is stable).
+  const pri = q => { const r = h[q.qid]; return !r ? 0 : !r.ok ? 1 : 2; };
+  const freshFirst = qs => shuffle(qs).sort((a, b) => pri(a) - pri(b));
   let picked;
   if (weighted){
     // Spread questions across domains by exam weight.
     picked = [];
     CYSA.domains.forEach(d => {
       const k = Math.round(n * d.weight / 100);
-      picked.push(...shuffle(all.filter(q => q.domain === d.id)).slice(0, k));
+      picked.push(...freshFirst(all.filter(q => q.domain === d.id)).slice(0, k));
     });
     picked = shuffle(picked);
   } else picked = shuffle(all).slice(0, n);
@@ -1388,24 +1491,22 @@ function startQuiz(n, weighted, timed){
   renderQuiz($('#big-quiz'), picked, {timeLimit: timed || 0, onTick: left => { $('#sheet-title').textContent = `${title} · ${mmss(left)} left`; },
     onDone: (c, t, tm) => {
       if (weighted) $('#big-quiz').insertAdjacentHTML('beforeend', scaledHtml(c, t));
-      const h = store.get('quizHistory', []), rec = {date: todayKey(), c, t, type: weighted ? 'exam' : 'quick'};
+      const rec = {c, t, type: weighted ? 'exam' : 'quick'};
       if (tm) Object.assign(rec, {timed: true, secs: tm.secs, expired: tm.expired});
-      h.push(rec); store.set('quizHistory', h.slice(-100));
       if (tm) $('#sheet-title').textContent = title + (tm.expired ? " · time's up" : ' · done');
-      const b = gainXP(weighted ? XP.exam : XP.quiz); if (b) toast(`Round complete +${b} XP`);
+      logRound(rec, weighted ? XP.exam : XP.quiz);
     }});
 }
 // Domain drill: DRILL_N questions from one domain, missed ones first, then unseen, then the rest.
 function startDrill(id){
   const d = CYSA.domains.find(x => x.id === id); if (!d) return;
   const h = store.get('qhist', {}) || {}, pri = q => { const r = h[q.qid]; return !r ? 1 : (!r.ok || r.wrong > r.right) ? 0 : 2; };
-  const picked = shuffle(shuffle(ALL_Q().filter(q => q.domain === id)).sort((a, b) => pri(a) - pri(b)).slice(0, DRILL_N));
+  const picked = shuffle(shuffle(POOL().filter(q => q.domain === id)).sort((a, b) => pri(a) - pri(b)).slice(0, DRILL_N));
   if (!picked.length){ toast('No questions in this domain yet'); return; }
   openSheet(`Drill · Domain ${d.id}`, `<div class="card" id="big-quiz"></div>
     <p class="small muted">${esc(d.name)} (${d.weight}% of the exam): questions you've missed come first, then ones you haven't seen.</p>`);
   renderQuiz($('#big-quiz'), picked, {onDone: (c, t) => {
-    const hist = store.get('quizHistory', []); hist.push({date: todayKey(), c, t, type: 'drill', domain: id}); store.set('quizHistory', hist.slice(-100));
-    const b = gainXP(XP.quiz); if (b) toast(`Drill complete +${b} XP`);
+    logRound({c, t, type: 'drill', domain: id}, XP.quiz, 'Drill complete');
   }});
 }
 function startReview(){
@@ -1418,8 +1519,7 @@ function startReview(){
   openSheet('Review mistakes', `<div class="card" id="big-quiz"></div>
     <p class="small muted">${weak.length} question${weak.length === 1 ? '' : 's'} to review, most recent misses first (up to 10 per round). A question drops off once you get it right more often than wrong.</p>`);
   renderQuiz($('#big-quiz'), shuffle(weak.slice(0, 10)), {onDone: (c, t) => {
-    const h = store.get('quizHistory', []); h.push({date: todayKey(), c, t, type: 'review'}); store.set('quizHistory', h.slice(-100));
-    const b = gainXP(XP.quiz); if (b) toast(`Round complete +${b} XP`);
+    logRound({c, t, type: 'review'}, XP.quiz);
   }});
 }
 function startPBQ(){
@@ -1435,10 +1535,183 @@ function startPBQ(){
   openSheet('PBQ practice', `<div class="card" id="big-quiz"></div>
     <p class="small muted">Performance-based questions: read the exhibit (swipe it sideways if it's wide), then pick the answer or put the steps in order. ${all.length} in the bank, ${PBQ_ROUND} per round, unseen and missed ones first. Missed PBQs also go to Review mistakes.</p>`);
   renderQuiz($('#big-quiz'), picked, {onDone: (c, t) => {
-    const hist = store.get('quizHistory', []); hist.push({date: todayKey(), c, t, type: 'pbq'}); store.set('quizHistory', hist.slice(-100));
-    const b = gainXP(XP.quiz); if (b) toast(`Round complete +${b} XP`);
+    logRound({c, t, type: 'pbq'}, XP.quiz);
   }});
 }
+/* ---------- 3D network labs: data/labs.json, drawn by 3d/dist/lab.js (three.js, loaded only when a lab opens) ---------- */
+// The 3D module only draws; questions, answers and progress live here. Step qids are "lab:<scenario>#<step>".
+let LABS = null, labView = null, labPick = null;
+async function loadLabs(){
+  if (LABS) return LABS;
+  try{
+    const d = await (await fetch('data/labs.json?_=' + Date.now())).json();
+    if (d && Array.isArray(d.zones) && Array.isArray(d.nodes) && Array.isArray(d.scenarios)) LABS = d;
+  }catch(e){}
+  return LABS;
+}
+function getLabs(){ const l = store.get('labs', {}); return l && typeof l === 'object' && !Array.isArray(l) ? l : {}; }
+const labNode = id => LABS.nodes.find(n => n.id === id);
+const labZoneName = id => { const z = LABS.zones.find(x => x.id === id); return z ? z.name : 'Between zones'; };
+const labsForLesson = id => LABS ? LABS.scenarios.filter(s => (s.lessons || []).includes(id)) : [];
+function closeLabView(){ labPick = null; if (labView){ try{ labView.dispose(); }catch(e){} labView = null; } }
+// Theme tokens for the 3D scene (read once per mount; the scene has no CSS of its own).
+function labColors(){
+  const cs = getComputedStyle(document.documentElement), v = k => cs.getPropertyValue('--' + k).trim();
+  return {accent: v('accent'), danger: v('danger'), ok: v('ok'), warn: v('warn'), text: v('text'), muted: v('muted'), surface: v('surface2'), border: v('border')};
+}
+// Mount the 3D view in #lab-stage. Returns null (with a message) if the module or WebGL isn't available;
+// every lab still works from the device list then.
+async function mountLabView(seq){
+  const stage = $('#lab-stage');
+  let mod = null;
+  try{ mod = await import('./3d/dist/lab.js'); }catch(e){}
+  if (!sheetIs(seq)) return null;
+  const fail = msg => { stage.innerHTML = `<div class="lab-msg" id="lab-fallback">${esc(msg)}</div>`; return null; };
+  if (!mod) return fail("The 3D view couldn't load (it needs a connection the first time). You can still do the lab using the device list.");
+  stage.innerHTML = '';
+  try{ labView = mod.mountLab(stage, LABS, {colors: labColors(), onPick: (k, id) => labPick && labPick(k, id)}); }
+  catch(e){ labView = null; return fail("3D isn't available on this device (WebGL is turned off). You can still do the lab using the device list."); }
+  stage.insertAdjacentHTML('beforeend', '<div class="lab-tools"><button id="lab-home" aria-label="Reset view" title="Reset view">⟲</button></div>');
+  $('#lab-home').onclick = () => labView && labView.focus(null);
+  return labView;
+}
+function deviceSelect(){
+  const groups = LABS.zones.map(z => [z.name, LABS.nodes.filter(n => n.zone === z.id)]).concat([['Between zones', LABS.nodes.filter(n => !n.zone)]]);
+  return `<select class="lab-select" id="lab-select" aria-label="Device"><option value="">Choose a device…</option>${groups.filter(g => g[1].length)
+    .map(([name, ns]) => `<optgroup label="${esc(name)}">${ns.map(n => `<option value="${esc(n.id)}">${esc(n.name)}</option>`).join('')}</optgroup>`).join('')}</select>`;
+}
+function lessonLinks(ids){
+  const ls = (ids || []).map(id => CYSA && CYSA.lessons.find(l => l.id === id)).filter(Boolean);
+  return ls.length ? `<div class="small muted" style="margin-top:10px">Lessons</div><div class="links" style="margin-top:6px">${ls.map(l =>
+    `<button class="pill accent" data-lesson="${esc(l.id)}">${esc(l.id)} ${esc(l.title)}</button>`).join('')}</div>` : '';
+}
+const wireLessonLinks = root => root.querySelectorAll('[data-lesson]').forEach(b => b.onclick = () => openLesson(b.dataset.lesson));
+
+async function openLabs(){
+  openSheet('3D network labs', '<div class="card empty">Loading…</div>');
+  const seq = sheetSeq;
+  await loadLabs(); if (!sheetIs(seq)) return;
+  if (!LABS){ $('#sheet-body').innerHTML = `<div class="card empty" id="labs-empty">Couldn't load the labs. Check your connection and try again.</div>`; return; }
+  const done = getLabs();
+  $('#sheet-body').innerHTML = `<div id="labs-list"><p class="small muted" style="margin-top:0">A small office network in 3D. Explore it to learn what each device does and which logs it gives you, then work through incidents as the analyst: tap the device you'd check or contain, and answer the calls an analyst has to make. Answers count toward your accuracy, XP, quests and streak.</p>
+    <button class="lab-row" data-lab=""><span style="font-size:22px">🧭</span><span class="grow"><span class="t">Explore the network</span><br><span class="small muted">Tap any device or zone: its role, its logs and the lessons that cover it</span></span></button>
+    <h2>Incidents</h2>
+    ${LABS.scenarios.map(s => { const r = done[s.id]; return `<button class="lab-row" data-lab="${esc(s.id)}"><span class="check ${r ? 'done' : ''}">${r ? '✓' : ''}</span>
+      <span class="grow"><span class="t">${esc(s.title)}</span><br><span class="small muted">Domain ${esc(s.domain)} · ${s.steps.length} steps · lessons ${esc((s.lessons || []).join(', '))}</span></span>
+      ${r ? `<span class="pill">${r.best}/${r.t}</span>` : ''}</button>`; }).join('')}</div>`;
+  $('#sheet-body').querySelectorAll('[data-lab]').forEach(b => b.onclick = () => openLab(b.dataset.lab || null));
+}
+async function openLab(id){
+  await loadLabs();
+  const s = LABS && id ? LABS.scenarios.find(x => x.id === id) : null;
+  if (!LABS || (id && !s)) return openLabs();
+  openSheet(s ? s.title : 'Explore the network', `<div class="lab-stage" id="lab-stage"><div class="lab-msg">Loading 3D view…</div></div><div id="lab-panel"></div>`);
+  const seq = sheetSeq;
+  $('#lab-stage').style.top = $('#sheet-head').offsetHeight + 'px';
+  if (s) runLab(s, seq); else exploreLab(seq);
+}
+async function exploreLab(seq){
+  const panel = $('#lab-panel');
+  const intro = `<p class="small muted" style="margin-top:0">Drag to rotate, pinch to zoom. Tap a device or a zone name to learn about it.</p>`;
+  const pickRow = `<div class="small muted">Or choose a device:</div>${deviceSelect()}`;
+  const wire = () => { const sel = $('#lab-select'); sel.onchange = () => sel.value && showNode(sel.value); wireLessonLinks(panel); };
+  const showNode = id => {
+    const n = labNode(id); if (!n) return;
+    labView && labView.select(id);
+    panel.innerHTML = `<div class="card" id="lab-info"><div class="small muted">${esc(labZoneName(n.zone))}</div>
+      <div style="font-weight:700;font-size:17px;margin:2px 0 8px">${esc(n.name)}</div><div>${esc(n.role)}</div>
+      <div class="box tip"><b>What it tells an analyst</b>${esc(n.logs)}</div>${lessonLinks(n.lessons)}</div>${pickRow}`;
+    wire(); $('#lab-select').value = id;
+  };
+  const showZone = id => {
+    const z = LABS.zones.find(x => x.id === id); if (!z) return;
+    labView && labView.select(null);
+    const ns = LABS.nodes.filter(n => n.zone === id);
+    panel.innerHTML = `<div class="card" id="lab-info"><div class="small muted">Zone</div><div style="font-weight:700;font-size:17px;margin:2px 0 8px">${esc(z.name)}</div>
+      <div>${esc(z.desc)}</div>${ns.length ? `<div class="links" style="margin-top:10px">${ns.map(n => `<button class="pill" data-node="${esc(n.id)}">${esc(n.name)}</button>`).join('')}</div>` : ''}</div>${pickRow}`;
+    wire(); panel.querySelectorAll('[data-node]').forEach(b => b.onclick = () => showNode(b.dataset.node));
+  };
+  panel.innerHTML = intro + pickRow; wire();
+  labPick = (k, id) => k === 'node' ? showNode(id) : showZone(id);
+  await mountLabView(seq);
+}
+async function runLab(s, seq){
+  const panel = $('#lab-panel'), n = s.steps.length;
+  let i = 0, correct = 0;
+  // Run a step's animation list: {packet: [ids], tone}, {state: {id: "bad"|"contained"|"normal"}}, {focus: id|null}.
+  const act = async acts => {
+    for (const a of acts || []){
+      if (!sheetIs(seq) || !labView) return;
+      if (a.packet) await labView.packet(a.packet, a.tone || 'bad');
+      if (a.state) Object.entries(a.state).forEach(([id, st]) => labView.setState(id, st));
+      if ('focus' in a) await labView.focus(a.focus);
+    }
+  };
+  const step = async () => {
+    const st = s.steps[i], q = {domain: st.domain || s.domain, qid: `lab:${s.id}#${i}`};
+    labPick = null; labView && labView.select(null);
+    $('#sheet').scrollTop = 0; // the story starts right under the pinned 3D view
+    panel.innerHTML = `<div class="q-progress">Step ${i + 1} of ${n}</div><div class="lab-story" id="lab-story">${esc(st.story)}</div><div id="lab-q" hidden></div>`;
+    await act(st.show); if (!sheetIs(seq)) return;
+    const box = $('#lab-q'); box.hidden = false;
+    const answered = async (ok, pre = '') => {
+      if (ok) correct++;
+      const xp = recordAnswer(q, ok), ex = box.querySelector('.explain');
+      ex.hidden = false;
+      ex.innerHTML = `<b style="color:${ok ? 'var(--ok)' : 'var(--danger)'}">${ok ? 'Correct.' : 'Not quite.'}</b>${xpTag(xp)} ${esc(pre)}${esc(st.explain)}`;
+      const nb = document.createElement('button');
+      nb.className = 'btn primary block'; nb.id = 'lab-next'; nb.textContent = i === n - 1 ? 'See result' : 'Next'; nb.disabled = true;
+      box.querySelector('.q-next').appendChild(nb);
+      await act(st.after); if (!sheetIs(seq)) return;
+      nb.disabled = false;
+      nb.onclick = () => { if (++i < n) step(); else finish(); };
+    };
+    if (st.type === 'pick'){
+      box.innerHTML = `<div class="q-text">${esc(st.q)}</div><div class="small muted">${labView ? 'Tap the device in the 3D view, or choose it here:' : 'Choose a device:'}</div>
+        ${deviceSelect()}<button class="btn primary block" id="lab-confirm" disabled>Confirm</button><div class="explain" hidden></div><div class="q-next"></div>`;
+      const sel = $('#lab-select'), conf = $('#lab-confirm'), answers = [].concat(st.answer);
+      const choose = id => { sel.value = id || ''; conf.disabled = !id; conf.textContent = id ? 'Confirm: ' + labNode(id).name : 'Confirm'; labView && labView.select(id || null); };
+      labPick = (k, id) => { if (k === 'node') choose(id); };
+      sel.onchange = () => choose(sel.value);
+      conf.onclick = () => {
+        const pick = sel.value; if (!pick) return;
+        labPick = null; sel.disabled = true; conf.hidden = true;
+        const ok = answers.includes(pick);
+        if (!ok) labView && labView.select(answers[0]); // show where the answer was
+        answered(ok, ok ? '' : `You picked ${labNode(pick).name}; the answer is ${answers.map(a => labNode(a).name).join(' or ')}. `);
+      };
+    } else {
+      box.innerHTML = `<div class="q-text">${esc(st.q)}</div>${shuffle(st.options.map((o, k) => k)).map(k => `<button class="opt" data-i="${k}">${esc(st.options[k])}</button>`).join('')}
+        <div class="explain" hidden></div><div class="q-next"></div>`;
+      box.querySelectorAll('.opt').forEach(b => b.onclick = () => {
+        const pick = +b.dataset.i;
+        box.querySelectorAll('.opt').forEach(o => { o.disabled = true;
+          if (+o.dataset.i === st.answer) o.classList.add('correct'); else if (+o.dataset.i === pick) o.classList.add('wrong'); });
+        answered(pick === st.answer);
+      });
+    }
+  };
+  const finish = () => {
+    const labs = getLabs(), prev = labs[s.id];
+    labs[s.id] = {best: Math.max(correct, prev ? prev.best || 0 : 0), t: n, date: todayKey()};
+    store.set('labs', labs); // before logRound, so the badge check sees it
+    const pct = Math.round(correct / n * 100);
+    panel.innerHTML = `<div class="card" id="lab-result" style="text-align:center"><div style="font-size:40px;font-weight:800;color:var(--accent)">${pct}%</div>
+      <div>${correct} of ${n} calls right</div><div class="small muted" style="margin-top:6px">${pct === 100 ? 'Clean response: every call right.' : 'Read the explanations above again, then revisit the lessons below.'}</div>
+      <div style="text-align:left">${lessonLinks(s.lessons)}</div>
+      <div class="row" style="gap:8px;margin-top:8px"><button class="btn grow" id="lab-again">Try again</button><button class="btn primary grow" id="lab-all">All labs</button></div></div>`;
+    wireLessonLinks(panel);
+    $('#lab-again').onclick = () => openLab(s.id);
+    $('#lab-all').onclick = openLabs;
+    logRound({c: correct, t: n, type: 'lab', lab: s.id}, XP.quiz, 'Lab complete');
+  };
+  panel.innerHTML = `<div class="small muted">Domain ${esc(s.domain)} · ${n} steps</div><p>${esc(s.intro)}</p>
+    <button class="btn primary block" id="lab-start" disabled>Loading…</button>`;
+  await mountLabView(seq); if (!sheetIs(seq)) return;
+  const start = $('#lab-start'); start.disabled = false; start.textContent = 'Start';
+  start.onclick = step;
+}
+$('#labs-btn').onclick = openLabs;
 $('#pbq-practice').onclick = startPBQ;
 $('#review-quiz').onclick = startReview;
 $('#quick-quiz').onclick = () => startQuiz(10, false);
@@ -1486,7 +1759,8 @@ function renderCards(){
   const area = $('#cards-area');
   // A review/cram round that's finished hands back to the scheduled queue.
   if (cardRound && cardQueue && !cardQueue.length){ toast(cardRound === 'review' ? 'Missed-card review done' : cardRound === 'acronyms' ? 'Acronym drill done' : 'Cram done'); cardRound = null; cardQueue = null; }
-  if (!cardQueue) cardQueue = shuffle(dueCards()).map(c => ({...c}));
+  // Rebuild the scheduled queue when it runs dry: cards missed twice are due again today, and a new day brings new cards.
+  if (!cardQueue || (!cardRound && !cardQueue.length)) cardQueue = shuffle(dueCards()).map(c => ({...c}));
   const st = store.get('cards', {}), missed = missedCards().length;
   const boxes = [1, 2, 3, 4, 5].map(b => CYSA.cards.filter(c => st[c.id] && st[c.id].box === b).length);
   const unseen = CYSA.cards.filter(c => !st[c.id]).length;
@@ -1554,7 +1828,7 @@ function answerCard(c, ok){
   }
   // Wrong: ask once more at the end of this round (fresh options), then it waits in "Review missed cards".
   if (!ok && !c.retried) cardQueue.push({...c, retried: true});
-  markActivity(); renderStats();
+  markActivity(); renderStats(); // markActivity only re-renders stats on the day's first activity
   return gainXP(ok ? XP.cardRight : XP.cardWrong, String(c.domain), ['c', c.id]);
 }
 
@@ -1575,11 +1849,14 @@ function miniMd(src){
 }
 async function openDoc(title, path){
   openSheet(title, '<div class="empty">Loading…</div>');
+  const seq = sheetSeq;
+  let html;
   try{
     const r = await fetch(path + '?_=' + Date.now());
     if (!r.ok) throw new Error(r.status);
-    $('#sheet-body').innerHTML = `<div class="card md">${miniMd(await r.text())}</div>`;
-  }catch(e){ $('#sheet-body').innerHTML = '<div class="empty">Couldn\'t load this (offline?).</div>'; }
+    html = `<div class="card md">${miniMd(await r.text())}</div>`;
+  }catch(e){ html = '<div class="empty">Couldn\'t load this (offline?).</div>'; }
+  if (sheetIs(seq)) $('#sheet-body').innerHTML = html;
 }
 
 /* ---------- Web Push: the brief arrives as a notification from this app, and tapping it opens the app ---------- */
@@ -1653,7 +1930,7 @@ const themePref = () => { const p = store.get('theme', 'system'); return p === '
 function openSettings(focus){
   const rows = NEWS.sources.map(s => `<tr><td>${s.ok ? '✅' : '⚠️'}</td><td>${esc(s.name)}${s.error ? `<div class="small muted">${esc(s.error)}</div>` : ''}</td><td style="text-align:right">${s.count}</td></tr>`).join('');
   openSheet('Settings', `
-    <div class="row" style="gap:8px"><button class="btn grow" id="open-guide">How to use</button><button class="btn grow" id="open-changelog">What's new</button><button class="btn grow" id="open-roadmap">Roadmap</button></div>
+    <div class="row doc-btns" style="gap:8px"><button class="btn grow" id="open-guide">How to use</button><button class="btn grow" id="open-changelog">What's new</button><button class="btn grow" id="open-roadmap">Roadmap</button></div>
     <h2>Appearance</h2>
     <div class="card small">
       <div class="seg" id="theme-seg" role="group" aria-label="Theme">${THEMES.map(([k, l]) => `<button class="btn ${themePref() === k ? 'on' : ''}" data-t="${k}" aria-pressed="${themePref() === k}">${l}</button>`).join('')}</div>
@@ -1728,19 +2005,28 @@ function openSettings(focus){
   $('#open-guide').onclick = () => openDoc('How to use', 'GUIDE.md');
   $('#export').onclick = () => { exportBackup(); $('#backup-status').textContent = 'Last backup: ' + backupAgo(); };
   $('#import').onchange = async e => {
+    let entries;
     try{
       const data = JSON.parse(await e.target.files[0].text());
-      Object.entries(data).forEach(([k, v]) => { if (k.startsWith('sp_')) localStorage.setItem(k, v); });
-      applyTheme(); toast('Backup restored'); cardQueue = null; cardRound = null; closeSheet(); renderCards();
-    }catch(err){ toast('That file is not a Sec-Pulse backup'); }
+      entries = Object.entries(data && typeof data === 'object' ? data : {}).filter(([k, v]) => k.startsWith('sp_') && typeof v === 'string');
+    }catch(err){ entries = []; }
+    if (!entries.length){ toast('That file is not a Sec-Pulse backup'); return; }
+    // Replace, not merge: progress keys missing from the backup shouldn't survive from the current state.
+    try{ Object.keys(localStorage).filter(k => k.startsWith('sp_')).forEach(k => localStorage.removeItem(k)); entries.forEach(([k, v]) => localStorage.setItem(k, v)); }catch(err){}
+    afterStorageReplaced('Backup restored');
   };
   $('#reset').onclick = e => {
     const b = e.currentTarget;
     if (b.dataset.armed){
       try{ Object.keys(localStorage).filter(k => k.startsWith('sp_')).forEach(k => localStorage.removeItem(k)); }catch(err){}
-      applyTheme(); toast('Progress reset'); cardQueue = null; cardRound = null; closeSheet(); renderCards();
+      afterStorageReplaced('Progress reset');
     } else { b.dataset.armed = '1'; b.textContent = 'Tap again to erase all progress'; }
   };
+}
+// After Reset or Import: rebuild derived state (XP, day log, badges) the way boot does, or XP stays off until a restart.
+function afterStorageReplaced(msg){
+  cardState.c = null; seedXP(); seedDays(); checkBadges();
+  applyTheme(); toast(msg); cardQueue = null; cardRound = null; closeSheet(); renderCards();
 }
 $('#settings-btn').onclick = () => openSettings();
 $('#refresh-btn').onclick = () => loadNews(true);
@@ -1807,13 +2093,19 @@ $('#install-dismiss').onclick = () => { store.set('hintDismissed', true); $('#in
   persistStorage();
   await loadNews(false);
   renderLearn();
+  loadLabs().then(renderLearn);
   const start = location.hash.slice(1);
   if (['brief', 'news', 'learn', 'cards'].includes(start)) show(start);
   if (start === 'today'){ show('brief'); openTodayBrief(); }
   renderTodayLink();
 })();
 // Re-check for fresh news whenever the app comes back to the foreground.
-document.addEventListener('visibilitychange', () => { if (!document.hidden){ loadNews(false); renderTodayLink(); } });
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden) return;
+  if (!CYSA) loadCysa().then(() => { seedXP(); seedDays(); checkBadges(); renderLearn(); renderBrief(); }).catch(() => {}); // first launch was offline
+  if (!LABS) loadLabs().then(renderLearn);
+  loadNews(false); renderTodayLink();
+});
 if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
 </script>
 </body>

@@ -55,9 +55,18 @@ def lesson_for(day, lessons):
     return lessons[day.toordinal() % len(lessons)]
 
 
-def qotd_for(day, lessons):
-    """Question of the day; index.html's Brief shows ALL_Q()[(ordinal * 7) % n] from the same flattened list."""
-    qs = [q for lesson in lessons for q in lesson["quiz"]]
+def valid_bank(q):
+    """Same rule as validBank() in index.html."""
+    return (isinstance(q, dict) and q.get("id") and isinstance(q.get("q"), str) and q.get("domain") in (1, 2, 3, 4)
+            and isinstance(q.get("options"), list) and len(q["options"]) == 4
+            and isinstance(q.get("answer"), int) and 0 <= q["answer"] < 4)
+
+
+def qotd_for(day, cysa):
+    """Question of the day: index.html's POOL() (lesson quizzes, then valid bank questions, in file order),
+    indexed by (ordinal * 7) % n. Keep the two in sync."""
+    qs = [q for lesson in cysa["lessons"] for q in lesson["quiz"]]
+    qs += [q for q in cysa.get("bank", []) if valid_bank(q)]
     return qs[(day.toordinal() * 7) % len(qs)]
 
 
@@ -110,7 +119,10 @@ def send_webpush(title, body, tag, brief=None):
         b = shrink_brief(brief, limit)
         if fits(body, b):
             break
-    while not fits(body, b):
+    # Still too big (very long titles): drop stories from the end, then trim the body. Always terminates.
+    while not fits(body, b) and b and b.get("items"):
+        b = {**b, "items": b["items"][:-1]}
+    while not fits(body, b) and len(body) > 200:
         body = body[:-200].rstrip() + "…"
     body_payload = payload(body, b)
     # VAPID "sub" must be mailto: or a bare https://host; the app's origin keeps any e-mail out of the repo.
@@ -215,7 +227,7 @@ def main():
     lines.append("")
     lines.append(f"Last 30h: {len(recent)} items, {au_count} Australian, {kev_count} new CISA KEV entries.")
     lines.append(f"CySA+ focus: {lesson['id']} {lesson['title']}")
-    question = qotd_for(today, cysa["lessons"])["q"]
+    question = qotd_for(today, cysa)["q"]
     if len(question) > MAX_Q:
         question = question[:MAX_Q - 1].rstrip() + "…"
     lines.append(f"❓ {question} (answer in the app)")

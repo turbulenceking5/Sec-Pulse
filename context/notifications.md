@@ -11,7 +11,7 @@ How the morning brief and weekly digest reach the phone. What goes *in* them is 
 
 With both configured you get two notifications. The user removed `NTFY_TOPIC` on 2026-10-16 to keep only Web Push; adding it back re-enables ntfy with no code change. With neither configured the script logs `NTFY_TOPIC and WEBPUSH_SUBSCRIPTION not set - skipping notification` and exits 0.
 
-`notify()` tries every configured channel before raising `NotifyError`, so one broken channel doesn't block the other. The run then fails (GitHub e-mails the owner), but the send-once marker is still written if any channel delivered.
+`notify()` tries every configured channel before raising `NotifyError`, so one broken channel doesn't block the other. The run then fails (GitHub e-mails the owner), but if any channel delivered, the send-once marker is still written and committed (the commit step runs with `!cancelled()`).
 
 ## Web Push
 
@@ -53,7 +53,7 @@ Tapping the notification opens `#today` → `openTodayBrief()` (see [app.md](app
 GitHub starts scheduled runs late, often by hours: 3h19m on 2026-10-13, never on 10-14, 2h17m on 10-17. So the workflow is scheduled **four times**: 18:25, 19:25, 20:25 and 21:25 UTC (4:25, 5:25, 6:25, 7:25am Brisbane).
 - The **wait** job (no concurrency group, up to 250 min) skips straight away if `data/brief-sent.txt` already has today's date. Otherwise, on a scheduled run that started before 7:25am Brisbane (and no more than 4h before), it **sleeps until 7:25** before the **brief** job runs.
 - So the first run to start sends at 7:25 (or immediately, if GitHub delayed it past 7:25), and the later runs skip.
-- The brief job has its own concurrency group, `morning-brief`, so a second run only checks out after the first has pushed the marker. It's not in `news-data`, because a pending fetch there would cancel a pending brief. A clash with a concurrent Fetch news push on `news.json` is tolerated (`continue-on-error`); the brief still sends.
+- The brief job has its own concurrency group, `morning-brief`, and checks out the **branch tip** (`ref: github.ref_name`), not the commit the run was triggered on, so a run that queued behind the first one sees the marker it pushed. It's not in `news-data`, because a pending fetch there would cancel a pending brief. A clash with a concurrent Fetch news push on `news.json` is tolerated: this run's `news.json` stays uncommitted in the working tree, the brief is built from it, and it's discarded before the marker commit. If the fetch itself fails, the brief is sent from the last committed news.
 - Sleeping runners cost nothing on a public repo (unlimited Actions minutes).
 
 ## Send once a day

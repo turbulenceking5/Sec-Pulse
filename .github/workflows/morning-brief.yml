@@ -28,6 +28,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: ${{ github.ref_name }}   # the branch tip, not the commit the run was triggered on
           sparse-checkout: data/brief-sent.txt
           sparse-checkout-cone-mode: false
       - name: Skip if already sent, else wait until 7:25am Brisbane
@@ -55,13 +56,16 @@ jobs:
     if: needs.wait.outputs.skip != 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    # Briefs queue behind each other, so a second run checks out after the first has pushed brief-sent.txt
-    # and skips. (Not the news-data group: a pending fetch there would cancel a pending brief.)
+    # Briefs queue behind each other; a second run checks out the branch tip (ref below, not the trigger
+    # commit) after the first has pushed brief-sent.txt, and skips. Not the news-data group: a pending
+    # fetch there would cancel a pending brief.
     concurrency:
       group: morning-brief
       cancel-in-progress: false
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
       - name: Skip if another run already sent today's brief
         id: gate
         env:
@@ -80,10 +84,12 @@ jobs:
           python-version: "3.12"
       - name: Fetch fresh news first
         if: steps.gate.outputs.skip != 'true'
+        continue-on-error: true   # if the fetch breaks, send the brief from the last committed news
         run: python3 scripts/fetch_news.py
       - name: Commit news.json if it changed
         if: steps.gate.outputs.skip != 'true'
-        # A clash with a concurrent "Fetch news" push must not stop the brief: it still sends this fetch.
+        # A clash with a concurrent "Fetch news" push must not stop the brief. On a conflict this run's
+        # news.json stays in the working tree uncommitted, so the brief is still built from this fetch.
         continue-on-error: true
         run: |
           git config user.name "github-actions[bot]"
@@ -91,7 +97,7 @@ jobs:
           git add data/news.json
           if git diff --cached --quiet; then exit 0; fi
           git commit -m "Update news feed (morning brief)"
-          git pull --rebase origin "${GITHUB_REF_NAME}" && git push || { git rebase --abort 2>/dev/null; git reset --hard "origin/${GITHUB_REF_NAME}"; exit 1; }
+          git pull --rebase origin "${GITHUB_REF_NAME}" && git push || { git rebase --abort 2>/dev/null; git reset --soft HEAD~1; git restore --staged data/news.json; exit 1; }
       - name: Install Web Push library
         if: steps.gate.outputs.skip != 'true'
         # The one non-stdlib dependency, used only for Web Push to the Home Screen app. If PyPI is down,
@@ -108,10 +114,12 @@ jobs:
         # Scheduled and external-scheduler runs pass --once, so only the first one each day sends.
         run: python3 scripts/send_brief.py ${{ (github.event_name == 'schedule' || inputs.once) && '--once' || '' }}
       - name: Commit today's brief and sent marker
-        if: steps.gate.outputs.skip != 'true'
+        # !cancelled(): also when sending failed on one channel, so the marker another channel earned is pushed.
+        if: ${{ !cancelled() && steps.gate.outputs.skip != 'true' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -- data/news.json 2>/dev/null || true   # an uncommitted fetch (see above) mustn't block the pull
           for f in data/brief-sent.txt data/brief.json; do [ -f "$f" ] && git add "$f"; done
           if git diff --cached --quiet; then exit 0; fi
           git commit -m "Morning brief sent"

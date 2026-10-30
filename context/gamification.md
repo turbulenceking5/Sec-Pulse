@@ -11,7 +11,7 @@ The RPG-style layer over the study features in `index.html`: everything earns XP
 - **Seeding** (`seedXP()`, runs once after `cysa.json` loads when `sp_xp` doesn't exist): credits progress made before XP existed from `sp_lessons`, `sp_qhist`, `sp_cardhist` and `sp_read` at the same rates, so existing users don't restart at level 1. No daily or round bonuses are back-dated.
 - Quiz and card explanations show `+N XP` when XP was awarded.
 
-The **Analyst profile** (`openProfile()`, tap the rank card on the Brief) shows the level, rank, XP, streak and freezes, skills, achievements, the study-activity heatmap, the accuracy trend, the earning table and the rank ladder.
+The **Analyst profile** (`openProfile()`, tap the rank card on the Brief) shows the level, rank, XP, streak and freezes, skills, achievements, **exam objectives** coverage (`objectivesHtml()`: bank questions seen and right per CS0-003 objective), the study-activity heatmap, the accuracy trend, the earning table and the rank ladder.
 
 ## Daily quests
 Optional bonus goals, shown on the Brief under the rank card, that reset on the Brisbane date: answer 10 questions (+30), review 10 flashcards (+30), read 3 Australian stories (+20), finish a lesson (+40). Questions and cards count the *unique* ones answered today (`sp_xp.today.q`/`.c`), so repeats can't farm them. Australian stories and lessons are tracked in `sp_quests`. `checkQuests()` runs from `gainXP()` (and `questTick()`), pays each quest once a day and toasts. Tapping a quest jumps to Learn, Cards, the Australia filter or the next unfinished lesson. Defined in `QUESTS`.
@@ -35,6 +35,7 @@ One-off badges (`BADGES()`, `checkBadges()`, `sp_badges`), +25 XP each (`BADGE_X
 | ⏱️ Beat the clock | Estimated 750+ on a timed exam, inside the time |
 | ✅ Quest master | Every daily quest in one day |
 | 📰 Well informed | 100 news stories read |
+| 🌐 Network defender | Every 3D network lab finished (any score) |
 
 To add one: append to `BADGES()` with a permanent `id` and a `test(c)` over `badgeCtx()`. Existing users who already meet it get it (with XP and a toast) the next time `checkBadges()` runs.
 

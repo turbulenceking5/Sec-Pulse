@@ -30,5 +30,6 @@ jobs:
           git add data/news.json
           if git diff --cached --quiet; then echo "No changes"; exit 0; fi
           git commit -m "Update news feed"
-          git pull --rebase origin "${GITHUB_REF_NAME}"
-          git push
+          # Another workflow pushed news.json meanwhile: every copy differs (`generated`), so don't fight it.
+          # The next run (3h) fetches again.
+          git pull --rebase origin "${GITHUB_REF_NAME}" && git push || { git rebase --abort 2>/dev/null; echo "news.json changed upstream; skipping this commit"; exit 0; }

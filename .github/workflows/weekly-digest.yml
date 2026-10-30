@@ -22,8 +22,10 @@ jobs:
         with:
           python-version: "3.12"
       - name: Fetch fresh news first
+        continue-on-error: true   # if the fetch breaks, send the digest from the last committed news
         run: python3 scripts/fetch_news.py
       - name: Commit news.json if it changed
+        continue-on-error: true
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

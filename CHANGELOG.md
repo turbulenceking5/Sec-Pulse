@@ -1,5 +1,32 @@
 # Changelog
 
+## 2026-10-30: Five new 3D lab incidents
+- **Five new incidents** in the 3D network labs, bringing the total to nine: an MFA prompt flood followed by a phishing page that steals the session, password spraying against the VPN, a departing employee copying tenant files, a month of vulnerability scanning from report to fix, and a trojanised software update.
+- They cover lessons and topics no lab practised before: vulnerability prioritisation and exceptions, evidence handling, insider cases, indicators that last (the Pyramid of Pain) and reporting to executives.
+- **Study content:** lesson 2.6 now says the 48-hour patch window for internet-facing services applies from Essential Eight Maturity Level One, not only at higher levels.
+
+## 2026-10-27: 3D network labs
+- **3D network labs** on Learn: a small office network in 3D (internet, DMZ, office PCs, servers, security tools, cloud email) that you can rotate and zoom.
+- **Explore** it: tap any device to see what it does, which logs it gives an analyst and which lessons cover it.
+- **Four incidents** play out on the network step by step: phishing to payment redirection, an unpatched VPN to ransomware, a web app to database breach, and beaconing malware with DNS tunnelling. Tap the device you'd check or isolate, and make the analyst's calls. Answers count toward your accuracy, XP, quests and streak.
+- Lessons link to the incident that practises them (**🌐 Practise in 3D**), and finishing all four earns the 🌐 **Network defender** achievement.
+
+## 2026-10-21: 172 new exam questions
+- **Question bank:** 172 new CySA+ questions across all four domains (weighted like the exam), each tagged with its CS0-003 objective. Quick quizzes, practice and timed exams, domain drills, Review mistakes and the question of the day now draw from 253 questions instead of 81.
+- **Practice exams use questions you haven't seen first**, then ones you got wrong, so the score reflects what you know rather than what you remember.
+- **Exam objectives** on your profile: questions seen and the share right for each of the 15 CS0-003 objectives.
+
+## 2026-10-20: Fixes and polish from a full review
+- **Fixed:** after **Reset** or **Import**, levelling up stopped until you restarted the app. Import now replaces your progress properly and refuses files that aren't backups.
+- **Fixed:** Cards could say "All caught up" while cards were still due (missed cards, or a new day with the app left open).
+- **Fixed:** coming back to the app could wipe a note you were typing or an answered question of the day.
+- **Fixed:** a timed exam kept the clock running after the last answer, which could block the "Beat the clock" achievement.
+- **Faster on bad signal:** if the network is slow, the app shows your saved copy after 4 seconds instead of a blank screen.
+- **Brief:** "Top for you" becomes "More for you" once this morning's brief is in, so it doesn't repeat the same stories. The lesson and question of the day now sit above events.
+- **News:** the score now sits in the tag row, so cards are shorter. Scoring no longer mistakes "flaws" for AWS, "Central Ohio" for Microsoft Entra or "San Francisco" for Cisco, and US privacy stories are no longer tagged Australian.
+- **Study content:** clearer answers for the executive-summary, intel-levels, order-of-volatility, MTTR and ATT&CK cards, and better wrong options on three quiz questions.
+- **Also:** quiz answers are marked ✓/✗ (not just by colour), wide PBQ exhibits say they scroll, Esc closes screens, and the morning brief can no longer double-send or stall in rare failure cases.
+
 ## 2026-10-19: Upcoming events
 - **Upcoming events** on the Brief: the next cyber security conferences in Australia (BSides, CrikeyCon, AUSCERT, CyberCon, Gartner and more), with Queensland events marked "Near you". **See all** lists every event by month plus Brisbane meetups, and **+ Calendar** adds an event to your phone's calendar.
 

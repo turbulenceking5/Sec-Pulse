@@ -1,0 +1,16 @@
+{
+  "name": "sec-pulse-3d",
+  "private": true,
+  "description": "3D network labs for Sec-Pulse (three.js, TypeScript)",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "vendor": "cp node_modules/three/build/three.module.min.js vendor/ && cp node_modules/three/examples/jsm/controls/OrbitControls.js vendor/addons/controls/ && cp node_modules/three/LICENSE vendor/LICENSE"
+  },
+  "devDependencies": {
+    "@types/three": "0.170.0",
+    "three": "0.170.0",
+    "typescript": "5.6.3"
+  }
+}

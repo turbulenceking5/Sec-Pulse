@@ -8,7 +8,9 @@ const fs = require('fs');
 
 (async () => {
   fs.mkdirSync('shots', { recursive: true });
-  const browser = await chromium.launch(process.env.CHROMIUM_PATH ? { executablePath: process.env.CHROMIUM_PATH } : {});
+  // SwiftShader gives headless Chromium software WebGL, so the 3D network labs actually render.
+  const gl = ['--use-gl=angle', '--use-angle=swiftshader', '--enable-unsafe-swiftshader'];
+  const browser = await chromium.launch(process.env.CHROMIUM_PATH ? { executablePath: process.env.CHROMIUM_PATH, args: gl } : { args: gl });
   const page = await (await browser.newContext({ ...devices['iPhone 13'], colorScheme: 'dark' })).newPage();
   const errors = [], fails = [];
   const check = (ok, msg) => { console.log((ok ? 'PASS ' : 'FAIL ') + msg); if (!ok) fails.push(msg); };
@@ -25,7 +27,7 @@ const fs = require('fs');
   check(await page.locator('#review-empty').count() === 1, 'Review mistakes shows empty state with no history');
   await page.click('#sheet-close');
   await page.click('nav button[data-view=brief]');
-  const qotd = await page.evaluate(() => { const qs = ALL_Q(); const q = qs[(ordinal(todayKey()) * 7) % qs.length]; return { qid: q.qid, answer: q.answer }; });
+  const qotd = await page.evaluate(() => { const qs = POOL(); const q = qs[(ordinal(todayKey()) * 7) % qs.length]; return { qid: q.qid, answer: q.answer }; });
   await page.click(`#brief-qotd .opt:not([data-i="${qotd.answer}"]) >> nth=0`);
   check(!(await page.locator('#brief-qotd .explain').isHidden()), 'Question of the day shows explanation');
   const hist = await page.evaluate(id => JSON.parse(localStorage.getItem('sp_qhist') || '{}')[id], qotd.qid);
@@ -136,7 +138,7 @@ const fs = require('fs');
 
   // Why this ranked + mute a source.
   const src = await first.getAttribute('data-id').then(id => page.evaluate(id => NEWS.items.find(x => x.id === id).source, id));
-  await first.locator('.why.score').click();
+  await first.locator('.tags.why').click();
   await page.waitForSelector('#sheet.open .mute-btn');
   check((await page.textContent('#sheet-title')) === 'Why this ranked' && await page.locator('#sheet-body table tr').count() >= 2, 'Why this ranked shows a score breakdown');
   await page.screenshot({ path: 'shots/why.png' });
@@ -328,7 +330,7 @@ const fs = require('fs');
   check(await page.locator('#focus-card').count() === 1, 'Brief shows the weakest-domain focus card');
   const fd = await page.evaluate(() => focusDomain().d.id);
   await page.click('#focus-card');
-  check((await page.textContent('#sheet-title')) === 'Drill · Domain ' + fd && (await page.textContent('#big-quiz .q-progress')).includes('lesson ' + fd + '.'), 'Focus card opens a drill from that domain');
+  check((await page.textContent('#sheet-title')) === 'Drill · Domain ' + fd && /(lesson|objective) /.test(await page.textContent('#big-quiz .q-progress')) && (await page.textContent('#big-quiz .q-progress')).match(new RegExp('(lesson|objective) ' + fd + '\\.')), 'Focus card opens a drill from that domain');
   await page.click('#sheet-close');
 
   // Timed exam: countdown in the title, auto-finish at zero, abandoned if closed.
@@ -424,6 +426,84 @@ const fs = require('fs');
   check((await page.textContent('#sheet-title')) === 'Upcoming events' && await page.locator('#events-list .event').count() >= 10 && await page.locator('#events-list h2').count() >= 3, 'See all opens the events list grouped by month');
   await page.screenshot({ path: 'shots/events.png' });
   await page.click('#sheet-close');
+
+  // Review fixes (2026-10-20): Top for you skips the brief's stories, unsafe links are neutralised, the card queue refills,
+  // a timed exam stops its clock once everything is answered, and XP keeps working after Reset.
+  const dedupe = await page.evaluate(() => { const ids = new Set((TODAY_BRIEF ? TODAY_BRIEF.items : []).map(i => i.id));
+    return { title: $('#top-title').textContent, overlap: [...document.querySelectorAll('#brief-top .news-item')].some(c => ids.has(c.dataset.id)) }; });
+  check(dedupe.title === 'More for you' && !dedupe.overlap, "Top for you doesn't repeat this morning's brief");
+  check(await page.evaluate(() => newsCard({ id: 'x', title: 't', link: 'javascript:alert(1)', source: 's', published: new Date().toISOString(), score: 1, tags: [] }).includes('href="#"')), 'Non-http story links are neutralised');
+  const refill = await page.evaluate(() => { cardQueue = []; cardRound = null; const st = store.get('cards', {}); const id = CYSA.cards[0].id;
+    st[id] = { box: 1, due: todayKey() }; store.set('cards', st); renderCards(); return cardQueue.some(c => c.id === id) || $('#flash')?.dataset.card === id; });
+  check(refill, 'An empty card queue refills with cards due again today');
+  const timed = await page.evaluate(async () => { startQuiz(30, true, 600); const qs = document.querySelectorAll('#big-quiz .opt'); return !!qs.length; });
+  check(timed, 'Timed exam starts');
+  await page.click('#sheet-close');
+  const afterReset = await page.evaluate(() => { afterStorageReplaced('Progress reset'); return gainXP(10) === 10 && !!getXP(); });
+  check(afterReset, 'XP still works straight after Reset');
+
+  // Question bank: objective-tagged questions join every quiz; practice exams prefer unseen ones; profile shows objectives.
+  const bank = await page.evaluate(() => ({ n: ALL_BANK().length, raw: (CYSA.bank || []).length, pool: POOL().length, lessons: ALL_Q().length,
+    tagged: ALL_BANK().every(q => /^[1-4]\.\d$/.test(q.objective) && String(q.domain) === q.objective[0]) }));
+  check(bank.n >= 150 && bank.n === bank.raw && bank.pool === bank.lessons + bank.n && bank.tagged, `Question bank loads (${bank.n} questions), all tagged with a matching objective`);
+  const fresh = await page.evaluate(() => {
+    const h = {}; POOL().slice(0, 60).forEach(q => { h[q.qid] = { right: 1, wrong: 0, ok: true, last: todayKey() }; }); store.set('qhist', h);
+    startQuiz(30, true); const n = [...document.querySelectorAll('#big-quiz .q-progress')].length; closeSheet();
+    return n;
+  });
+  check(fresh === 1, 'Practice exam starts from the bigger pool');
+  const unseen = await page.evaluate(() => { const h = store.get('qhist', {}); const all = POOL();
+    const pri = q => { const r = h[q.qid]; return !r ? 0 : !r.ok ? 1 : 2; };
+    const byDom = d => all.filter(q => q.domain === d); // each domain has far more unseen questions than it needs
+    return CYSA.domains.every(d => byDom(d.id).filter(q => !h[q.qid]).length >= Math.round(30 * d.weight / 100)); });
+  check(unseen, 'Every domain has enough unseen questions for a fresh practice exam');
+  await page.click('#rank-card');
+  check(await page.locator('#objectives .obj-row').count() === 15, 'Profile shows coverage for all 15 exam objectives');
+  await page.click('#sheet-close');
+
+  // 3D network labs: explore, tap devices in 3D, play a scenario (wrong then right), progress, lesson links, cleanup.
+  await page.click('nav button[data-view=learn]');
+  await page.waitForSelector('#labs-btn:not([hidden])');
+  const labsData = await page.evaluate(() => LABS);
+  check(labsData.scenarios.length >= 4 && labsData.scenarios.every(sc => sc.steps.every(st => st.type === 'pick'
+    ? [].concat(st.answer).every(a => labsData.nodes.some(n => n.id === a)) : st.options.length === 4 && new Set(st.options).size === 4 && st.answer >= 0 && st.answer < 4)),
+    'labs.json: every pick answer is a real device and every choice has 4 distinct options');
+  check(labsData.scenarios.every(sc => sc.steps.every(st => [st.show, st.after].flat().filter(Boolean).every(a =>
+    (a.packet || []).concat(Object.keys(a.state || {}), a.focus ? [a.focus] : []).every(id => labsData.nodes.some(n => n.id === id))))),
+    'labs.json: every animation names real devices');
+  await page.click('#labs-btn');
+  await page.click('[data-lab=""]');
+  await page.waitForSelector('.lab-canvas', { timeout: 15000 });
+  await page.waitForTimeout(600);
+  check(await page.locator('.lab-label').count() === labsData.nodes.length, '3D lab draws a label for every device');
+  const dcBox = await page.locator('.lab-label', { hasText: /^DC$/ }).boundingBox();
+  await page.mouse.click(dcBox.x + dcBox.width / 2, dcBox.y + dcBox.height + 14); // the device itself, just below its label
+  await page.waitForTimeout(200);
+  check((await page.textContent('#lab-info')).includes('Active Directory'), 'Tapping a device in the 3D view shows what it does and its logs');
+  await page.screenshot({ path: 'shots/lab-explore.png' });
+  const sc0 = labsData.scenarios[0];
+  await page.evaluate(id => openLab(id), sc0.id);
+  await page.waitForSelector('#lab-start:not([disabled])');
+  check(await page.locator('.lab-canvas').count() === 1, 'Opening another lab disposes the old 3D view');
+  await page.click('#lab-start:not([disabled])');
+  for (const [k, st] of sc0.steps.entries()) {
+    await page.waitForSelector('#lab-q:not([hidden])', { timeout: 20000 });
+    if (st.type === 'pick') { await page.selectOption('#lab-select', k === 0 ? labsData.nodes.find(n => ![].concat(st.answer).includes(n.id)).id : [].concat(st.answer)[0]); await page.click('#lab-confirm'); }
+    else await page.locator('#lab-q .opt').filter({ hasText: st.options[st.answer] }).first().click();
+    await page.waitForSelector('#lab-next:not([disabled])', { timeout: 20000 });
+    if (k === 1) await page.screenshot({ path: 'shots/lab-step.png' });
+    await page.click('#lab-next');
+  }
+  await page.waitForSelector('#lab-result');
+  const labRes = await page.evaluate(id => ({ l: store.get('labs', {})[id], h: store.get('quizHistory', []).slice(-1)[0], q: store.get('qhist', {})[`lab:${id}#0`] }), sc0.id);
+  check(labRes.l && labRes.l.best === sc0.steps.length - 1 && labRes.h.type === 'lab' && labRes.q && labRes.q.wrong === 1,
+    'A finished lab stores its best score in sp_labs, logs a lab round and records each step');
+  await page.click('#sheet-close');
+  check(await page.locator('.lab-canvas').count() === 0, 'Closing the sheet disposes the 3D view');
+  await page.evaluate(id => openLesson(id), sc0.lessons[0]);
+  check(await page.locator(`.lesson-lab[data-lab="${sc0.id}"]`).count() === 1, 'A lesson links to the lab that practises it');
+  await page.click('#sheet-close');
+
   check(!(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth)), 'No horizontal scroll');
   check(errors.length === 0, 'No console/page errors' + (errors.length ? ': ' + errors.join(' | ') : ''));
 

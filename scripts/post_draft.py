@@ -51,13 +51,21 @@ def front_matter(text):
 
 
 def inline(s):
-    """Escape, then apply `code`, **bold**, *italic* and [text](https://link)."""
+    """Escape, then apply `code`, **bold**, *italic* and [text](https://link). Code spans are set aside
+    first so their contents aren't formatted; link URLs are already escaped (no double &amp;amp;) and may
+    contain balanced parentheses, e.g. Wikipedia's ..._(computing)."""
     s = html.escape(s, quote=False)
-    s = re.sub(r"`([^`]+)`", r"<code>\1</code>", s)
+    codes = []
+
+    def keep(m):
+        codes.append(f"<code>{m.group(1)}</code>")
+        return f"\x00{len(codes) - 1}\x00"
+    s = re.sub(r"`([^`]+)`", keep, s)
     s = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", s)
     s = re.sub(r"(?<![\w*])\*(?!\s)(.+?)(?<!\s)\*(?![\w*])", r"<em>\1</em>", s)
-    return re.sub(r"\[([^\]]+)\]\((https?://[^)\s]+)\)",
-                  lambda m: f'<a href="{html.escape(m.group(2))}">{m.group(1)}</a>', s)
+    s = re.sub(r"\[([^\]]+)\]\((https?://(?:[^()\s]|\([^()\s]*\))+)\)",
+               lambda m: f'<a href="{m.group(2).replace(chr(34), "&quot;")}">{m.group(1)}</a>', s)
+    return re.sub("\x00(\\d+)\x00", lambda m: codes[int(m.group(1))], s)
 
 
 def to_blocks(md):
@@ -158,7 +166,8 @@ def main():
         r = post(f"{API}/rest/v1.1/sites/{site}/posts/new", {
             "title": meta["title"], "content": content, "status": "draft",
             "categories": meta.get("category", ""), "tags": meta.get("tags", "")}, tok)
-        posted[name] = {"id": r["ID"], "url": r.get("URL", ""), "date": dt.date.today().isoformat()}
+        today = dt.datetime.now(dt.timezone(dt.timedelta(hours=10))).date()  # Brisbane, like everything else
+        posted[name] = {"id": r["ID"], "url": r.get("URL", ""), "date": today.isoformat()}
         print(f"Draft created: {meta['title']} (post {r['ID']}) - review it in WordPress → Posts → Drafts")
         with open(POSTED, "w") as f:  # save after each one, so a later failure doesn't resend earlier drafts
             json.dump(posted, f, indent=2)
