@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T22:23:24Z",
+ "generated": "2026-10-30T22:32:55Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -22,13 +22,13 @@
   {
    "name": "ASD / ACSC in the news",
    "ok": true,
-   "count": 1,
+   "count": 2,
    "error": null
   },
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 2,
+   "count": 3,
    "error": null
   },
   {
@@ -525,34 +525,6 @@
    ],
    "why": [
     "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "e40ec869602e",
-   "title": "Threat Brief: Critical Vulnerabilities in PHP: CVE-2026-109618, CVE-2026-109619 (Updated October 29)",
-   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBaSXRUMkVsWkF3TjhoV29oTXdyZHhrMGZINFBHNVVrNmZubTA4SkFzMzlWMlNMLW15ZWdISDJYeURJbVdpTFB5ZzNTU21aazFfTmc4R0VkLWVyMVY4S1JRYTZ5UjJqWk82SlR5Q0ZMOTJrNEJVeXNV?oc=5",
-   "source": "Unit 42",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-30T09:04:27Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 1.0,
-   "also": [
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild/"
-    },
-    {
-     "source": "SANS ISC",
-     "url": "https://isc.sans.edu/diary/rss/33440"
-    }
    ]
   },
   {
@@ -1504,6 +1476,34 @@
    "score": 0,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "e40ec869602e",
+   "title": "Threat Brief: Critical Vulnerabilities in PHP: CVE-2026-109618, CVE-2026-109619 (Updated October 29)",
+   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBaSXRUMkVsWkF3TjhoV29oTXdyZHhrMGZINFBHNVVrNmZubTA4SkFzMzlWMlNMLW15ZWdISDJYeURJbVdpTFB5ZzNTU21aazFfTmc4R0VkLWVyMVY4S1JRYTZ5UjJqWk82SlR5Q0ZMOTJrNEJVeXNV?oc=5",
+   "source": "Unit 42",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-29T07:00:00Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 1.0,
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild/"
+    },
+    {
+     "source": "SANS ISC",
+     "url": "https://isc.sans.edu/diary/rss/33440"
+    }
+   ]
   },
   {
    "id": "e91f33b06ca8",
