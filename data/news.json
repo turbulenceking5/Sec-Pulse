@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-29T22:53:24Z",
+ "generated": "2026-10-30T01:02:41Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -34,13 +34,13 @@
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 8,
+   "count": 6,
    "error": null
   },
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 1,
+   "count": 3,
    "error": null
   },
   {
@@ -52,7 +52,7 @@
   {
    "name": "CISA KEV",
    "ok": true,
-   "count": 19,
+   "count": 18,
    "error": null
   },
   {
@@ -100,11 +100,24 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 28,
+   "count": 25,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "7363e725b55a",
+   "title": "OpenAI doubles ChatGPT Pro usage limits after backlash over planned 50% cut",
+   "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-doubles-chatgpt-pro-usage-limits-after-backlash-over-planned-50-percent-cut/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-29T23:35:52Z",
+   "summary": "OpenAI says it won't reduce usage limits for the $100, $200, and $500 ChatGPT Pro plans, as well as Business Premium, and it also promised to keep Dots usage independent. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
   {
    "id": "7d9fa054e5fe",
    "title": "Binance probes potential $5.8 billion crypto-theft hack",
@@ -1104,6 +1117,29 @@
    ]
   },
   {
+   "id": "805c13bc3cd9",
+   "title": "Montreal grandparent scammer who fled to Central America pleads guilty in U.S. court",
+   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPSGp2R3ZYSjJzcWxBTDdQVXIxTnhsak9JUGx6YWRSOUFDQmtvcElmZmNGNDlKNE4xMnVVdFNEU2ZJU0FRZUFDZXp3YkljYUN4VTNxNmdCX3BVNDJVQ1oyTmhnUmdHaG41TUZfUXV0dkozNmU1WFBjWlZDeE5hUEdvMGJoX2Rqdw?oc=5",
+   "source": "Radio-Canada",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-28T20:03:16Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Microsoft 365"
+   ],
+   "why": [
+    "Microsoft 365"
+   ],
+   "also": [
+    {
+     "source": "CBC",
+     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPSlQ4d3E1RS0tZWgtSEJWTWI3YlVTYm1iaV9uR0lZbi1UdG9wUnI0ZmZyOWM5Z2RyZ3Z0eDhRUlJjSHVRdHZyVFVCajlWWERET2RzSTFfd19aQ2tnVXFBUDJQWVYyLXRzVkxDbHRwcVRhRTcybl9QbWF3bTNIb1FiZWNEUGt6NnpQ?oc=5"
+    }
+   ]
+  },
+  {
    "id": "89379326868d",
    "title": "GhostAction Hacking Wave Fizzles, but Attackers Lurk on in GitHub",
    "link": "https://www.darkreading.com/application-security/ghostaction-hacking-wave-fizzles-attackers-github",
@@ -1148,23 +1184,6 @@
    ],
    "why": [
     "Vulnerability"
-   ]
-  },
-  {
-   "id": "99b2c80ef2ba",
-   "title": "Montreal grandparent scammer who fled to Central America pleads guilty in U.S. court",
-   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPSlQ4d3E1RS0tZWgtSEJWTWI3YlVTYm1iaV9uR0lZbi1UdG9wUnI0ZmZyOWM5Z2RyZ3Z0eDhRUlJjSHVRdHZyVFVCajlWWERET2RzSTFfd19aQ2tnVXFBUDJQWVYyLXRzVkxDbHRwcVRhRTcybl9QbWF3bTNIb1FiZWNEUGt6NnpQ?oc=5",
-   "source": "CBC",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-28T17:27:12Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Microsoft 365"
-   ],
-   "why": [
-    "Microsoft 365"
    ]
   },
   {
@@ -3811,24 +3830,6 @@
    "why": []
   },
   {
-   "id": "0183bcddc2bf",
-   "title": "ASD raises alert for critical vulnerabilities in Fortinet products",
-   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOVlY3TWYzTnkxZzE1MEQzaDRlN3lidDdRY2ctY1JmaGI1VlJQdUNPN1JpZnR5QXpQSXY4T2ZPSFpaTWJvVUo5QVZIUjAteEVFRy1NQ2dOZzNoYkFnMW9Ma21jRTVkbW45MVpkQ0JxM2dfNEw3X1J6RXJxYWpURWtEN19Lei1kU3YyWkxGU3g1SE1LLVBBal9vMDk4UTZSVHpDVWc1VzhWOUo3VVpIWWZ2TjljQlhqQV9McFFrcFIwS3NhclhCSzlqQ2otazZUT2JYSnhN?oc=5",
-   "source": "Technology Decisions",
-   "feed": "ASD / ACSC in the news",
-   "region": "AU",
-   "published": "2026-10-26T02:05:38Z",
-   "summary": "",
-   "score": 8,
-   "tags": [
-    "Edge devices",
-    "Australia"
-   ],
-   "why": [
-    "Edge devices"
-   ]
-  },
-  {
    "id": "4294264f80f0",
    "title": "ACSC warns of critical vulnerabilities in Fortinet products",
    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPMVE3LVVaYmFLUUVQcWlSXzJUOWVvd21BX0wxMnJCUDJzQjVZT1dhb1hxc2Z2b3NtOHVrLU9CN1JLZ3NIX0JDMlV5MHAxWDJBaDVqOXkyLVV5UEFvNHRkMUtPLWlUeHAzNm1XeGFOYkdrUWN5eUhhWWN3R3F3MHViNlRiZ1lLMG14bEhEdlBzS0RtZE04TWlPVXBya3NnUF9HdXJ4TTB1cGpTWU0?oc=5",
@@ -5083,26 +5084,6 @@
    ]
   },
   {
-   "id": "665526c8fc50",
-   "title": "Critical vulnerabilities in Fortinet products",
-   "link": "https://www.cyber.gov.au/alert/critical-vulnerabilities-in-fortinet-products",
-   "source": "ACSC Alerts",
-   "feed": "ACSC Alerts",
-   "region": "AU",
-   "published": "2026-10-23T05:11:47Z",
-   "summary": "Fortinet have announced critical vulnerabilities in Fortinet products, and are releasing security updates which customers should implement as a priority.",
-   "score": 10,
-   "tags": [
-    "Edge devices",
-    "Vulnerability",
-    "Australia"
-   ],
-   "why": [
-    "Edge devices",
-    "Vulnerability"
-   ]
-  },
-  {
    "id": "26de9cb3727c",
    "title": "Is your password on the hackers’ hit list?",
    "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQbDRiSHEyNXBqcjE3eGFvZ0lyOEM1WnNSVVBPZngzQjcwTnBaOWg2YUVKY09IbFJfRGRTOEZ2NVJtX1JrYXRnWWlWdFd6NFdPNU03dmg0cmRTeS1UZFZQcnN4Q1NUV0QwOVlKVVV4aUZnVnFpMmlPanAyWnE3T1lDalJJTHJHNVprVEJZWDhNQ01FbW5kMXR6RFE5Q2g1aWZieC14X3h4UE9OTG1BX2JaVWluVHhUbXVGR1gteUlEZTNDa204VEEtdTlFbw?oc=5",
@@ -5867,6 +5848,14 @@
     {
      "source": "Daily Mail",
      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPdmM2bXNzNGljZHNfSlBvOHc2YTFfSVA0d2JSNDU1UWxyQzRaOVhwSzJiTVZpeFozQ1d4Nl8waWlnTEROWFlvOGs3SGtKdnpyVHREb3ViSUlBMnNnR05hNkpNeTRZUURIejhFSVNNS0d5VS1sWTVNamFQRnZsYlo1ZVVsQXRMZHJTSlRuQUt2d3VsbDhNY2JEZGRzUjg3czhTalFpRDFkONIBrAFBVV95cUxOeFFNNzd0YzVHTnVpVXN2NFE1OHJJR2FuQmp2eEpjalVwcXJocWR4WnBHZm9DS3BZdGNDU0xkaVBjMFROSks1dV9CalI3YThIemNNajFHdzVwSjlpVjU4bXU3VTgzRF9lZzZGTW5RLURJUmg3T0RQcGpDbUpMNXotU3B2MjY3NVVVUnFoV21zUDlmdDZ0TmVSUmR0RXJ4Wm5TeU02c19yMjFOVUtD?oc=5"
+    },
+    {
+     "source": "Free Malaysia Today",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQcFdROXpVZ1JrbDRkTFkwRnYxWkVfcGtXZVZPOWFuZ2hMaEtpNEUyS2xGaTFKTDVhYzB5YWRja1IxS195TnJOS1ZTdXJXOXZkT0pvRkJqLW4zNDczNG1pdVFNWGwxb1hzeWtfMFlrbUZzYmpNYnZMN0Z0VmxadzRNR2VGV1g4azVCc1dyeVl0dXEtNFk1Mkcxc3B5NnFIX2NfQjZOR1pPRTVLNlFPRVZvRXNDeDg?oc=5"
+    },
+    {
+     "source": "grafa.com",
+     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPVkNSY1BJbjlvUGZMUmZmTTF6S3g1S0o4S05NeF9CRXcwTkwtcXVWUFVreS1ZdnVZUzZubzFjTHIxS3dBR0VnTzI3RUpYYWJwYzVmdGpCYjZrVHdKX1pBa1UtQVA2YXFxY01nUndIdi16dHRjWEhWczdZRmN6VDFvT2huTFBIZHViMkZ3TU5WTE10Vk4tQW00?oc=5"
     }
    ]
   },
@@ -6045,25 +6034,6 @@
    ]
   },
   {
-   "id": "b4d6fa6b5fba",
-   "title": "Australian govt websites affected by PHP vulnerability",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQcFdROXpVZ1JrbDRkTFkwRnYxWkVfcGtXZVZPOWFuZ2hMaEtpNEUyS2xGaTFKTDVhYzB5YWRja1IxS195TnJOS1ZTdXJXOXZkT0pvRkJqLW4zNDczNG1pdVFNWGwxb1hzeWtfMFlrbUZzYmpNYnZMN0Z0VmxadzRNR2VGV1g4azVCc1dyeVl0dXEtNFk1Mkcxc3B5NnFIX2NfQjZOR1pPRTVLNlFPRVZvRXNDeDg?oc=5",
-   "source": "Free Malaysia Today",
-   "feed": "ASD / ACSC in the news",
-   "region": "AU",
-   "published": "2026-10-22T05:52:00Z",
-   "summary": "",
-   "score": 12,
-   "tags": [
-    "Australia",
-    "Vulnerability"
-   ],
-   "why": [
-    "Australia",
-    "Vulnerability"
-   ]
-  },
-  {
    "id": "a734856ab1ed",
    "title": "UAE Transitions 50% of Government Services to Agentic AI",
    "link": "https://www.darkreading.com/cybersecurity-operations/uae-transitions-50-government-services-agentic-ai",
@@ -6183,25 +6153,6 @@
    ],
    "why": [
     "Data breach"
-   ]
-  },
-  {
-   "id": "aae9d66cdeed",
-   "title": "Australian websites hit after AI finds PHP vulnerability",
-   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPVkNSY1BJbjlvUGZMUmZmTTF6S3g1S0o4S05NeF9CRXcwTkwtcXVWUFVreS1ZdnVZUzZubzFjTHIxS3dBR0VnTzI3RUpYYWJwYzVmdGpCYjZrVHdKX1pBa1UtQVA2YXFxY01nUndIdi16dHRjWEhWczdZRmN6VDFvT2huTFBIZHViMkZ3TU5WTE10Vk4tQW00?oc=5",
-   "source": "grafa.com",
-   "feed": "ASD / ACSC in the news",
-   "region": "AU",
-   "published": "2026-10-21T22:30:20Z",
-   "summary": "",
-   "score": 12,
-   "tags": [
-    "Australia",
-    "Vulnerability"
-   ],
-   "why": [
-    "Australia",
-    "Vulnerability"
    ]
   },
   {
@@ -7384,6 +7335,66 @@
    "score": 0,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "fb153a3119f4",
+   "title": "CVE-2026-106931: EG Secure Solutions SiteGuard Server Edition — EG Secure Solutions SiteGuard Server Edition OS Command Injection Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-106931",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-10-20T00:00:00Z",
+   "summary": "EG Secure Solutions SiteGuard Server Edition contains an OS command injection vulnerability which may allow an attacker to execute arbitrary OS commands with root or SYSTEM privileges on the system running the affected product. CISA remediation due 2026-10-23.",
+   "score": 4,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0253
+  },
+  {
+   "id": "17cca1785b07",
+   "title": "CVE-2026-96656: Plex Media Server — Plex Media Server External Control of File Name or Path Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-96656",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-10-20T00:00:00Z",
+   "summary": "Plex Media Server contains an external control of file name or path vulnerability which can allow an admin user to write arbitrary files that may be executed on load. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96655. CISA remediation due 2026-10-23.",
+   "score": 4,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0179
+  },
+  {
+   "id": "f8740efa0ba7",
+   "title": "CVE-2026-96655: Plex Media Server — Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-96655",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-10-20T00:00:00Z",
+   "summary": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability that could allow an authenticated user to request arbitrary internal or external addresses via the '/video/:/transcode/universal' path parameter. This vulnerability can be chained… CISA remediation due 2026-11-03.",
+   "score": 4,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0164
   }
  ]
 }
