@@ -1,84 +1,90 @@
 {
- "date": "2026-10-25",
- "generated": "2026-10-24T21:25:21+00:00",
- "title": "Sec-Pulse brief - Sun 25 Oct",
+ "date": "2026-10-30",
+ "generated": "2026-10-29T22:54:03+00:00",
+ "title": "Sec-Pulse brief - Fri 30 Oct",
  "items": [
   {
-   "id": "31b1dfffebc6",
-   "title": "Police Warn Of Another Rental Scam",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9GWGRMY1p6b0k4aENnR2d5VndxWXcwVy15SlkxS1ZBWHdnUHRRUUF3Q051T0cyaUx1LTFuWDZlLTk2bDYtTXFNdnVJaG1weW9lLXN6TTdfVWdHdXFuQ3RoWEFoTGszMkQ3YllReQ?oc=5",
-   "source": "Bernews",
-   "region": "Global",
-   "published": "2026-10-24T12:43:12Z",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "015a882ee274",
-   "title": "Exposed Infrastructure Reveals How Ransomware Affiliates Used AI Agents to Execute Intrusions",
-   "link": "https://thehackernews.com/2026/10/exposed-infrastructure-reveals-how.html",
+   "id": "7325900e53d9",
+   "title": "ThreatsDay: Critical Firewall Flaws, Banking Trojans Rented, Weaponized PDF, Token Theft + 26 More Stories",
+   "link": "https://thehackernews.com/2026/10/threatsday-critical-firewall-flaws.html",
    "source": "The Hacker News",
    "region": "Global",
-   "published": "2026-10-23T17:50:47Z",
+   "published": "2026-10-29T19:11:58Z",
    "score": 11,
    "tags": [
-    "Microsoft 365",
-    "Ransomware",
-    "Data breach"
-   ],
-   "summary": "Cybersecurity researchers have discovered an artificial intelligence (AI)-driven intrusion ecosystem run by affiliates of the INC and The Gentlemen ransomware groups. Central to the operation is an \"Autonomous Red Team Kill Chain Framework\" referred to as Phantom. The threat actor is assessed to…"
-  },
-  {
-   "id": "1175c0d5e99e",
-   "title": "Devika Group: A Legacy of Over 70 Years in Real Estate",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPUjZwR2xicW9fQW95UzZ3LUJucjFSU19MTi1uNlBkcHJveUxyN3VZZXQ0NjlZbGNKUjRVN09BdGs1WVlMam9rMGtuM2NhSzkzdjNpQlpRMGtGRVh5akVTc2NORm5kREVLZm90b2UyeFdNQUE4VG13QjZaVUNtYk1IdXBOTGM4MnhJZ0gzU0JaQlQ1UkpDOE1FekZxQlfSAaIBQVVfeXFMUGlrQnJ4djBNbjdxRmlRNlh3aGFvM05rNFlsM01RUXVhWmZIcVNRSHZ6clNLcXRnQ3ZHYkFUNzNSZTlOZl9ybS1CR1J3WlhQWFVwVlFyM3lDR0c1MWhfeGxwRXdsREp6M0NvbEhwQTFXaGJySDRIX1ZlQjM1RHgxSWJKMkNsaUhocXRZQjdzWVFFeFQ0dUZmd3Y5TVVya0hyb2xR?oc=5",
-   "source": "Lokmat Times",
-   "region": "Global",
-   "published": "2026-10-23T18:54:53Z",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "236d78f8360c",
-   "title": "#TSRUpdatez: Back in 2023, real estate influencer #CesarPina was arrested in connection with a real estate scam. Three years later, he has pleaded guilty. ____________________________________ According to @6abcactionnews, Pina pleaded guilty on",
-   "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9QNTBxN2drcng5NVJ3amlfRFF6c2V0WnoxNzBHa2Y2bkUydEd5bkZkVXQ1NVdMTC1jSS1wMEpsQ05iU25HREtfS29NazFXdlhFaWc?oc=5",
-   "source": "Instagram",
-   "region": "Global",
-   "published": "2026-10-23T15:31:19Z",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "838b4b1ce253",
-   "title": "CISA Flags Two Actively Exploited Critical Flaws in Collabora Online and Arista VeloCloud",
-   "link": "https://thehackernews.com/2026/10/cisa-flags-two-actively-exploited.html",
-   "source": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-24T06:25:57Z",
-   "score": 8,
-   "tags": [
-    "Actively exploited",
+    "Data breach",
+    "Identity",
+    "Edge devices",
     "SaaS / cloud"
    ],
-   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added two vulnerabilities impacting Collabora Online Built-in CODE Server and Arista VeloCloud Orchestrator (VCO) to its Known Exploited Vulnerabilities (KEV), citing reports of active exploitation in the wild. The…"
+   "summary": "Some attacks take real skill. Others just need someone to leave a door open. This week has both. Exposed passwords, old bugs still getting exploited, and trusted software doing things it shouldn't. There's a strange mix of clever tricks and careless mistakes. Hackers are borrowing trust from…"
+  },
+  {
+   "id": "f4eff089be53",
+   "title": "Attackers Exploit PHP2Shell Flaws in Internet-Exposed Palo Alto Networks Management Interfaces",
+   "link": "https://thehackernews.com/2026/10/attackers-exploit-php2shell-flaws-in.html",
+   "source": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-29T05:50:17Z",
+   "score": 11,
+   "tags": [
+    "Data breach",
+    "Edge devices",
+    "Vulnerability",
+    "SaaS / cloud"
+   ],
+   "summary": "Palo Alto Networks on Wednesday warned that threat actors are exploiting the recently patched PHP2Shell vulnerabilities against publicly-accessible management interfaces. \"Active exploitation has been observed targeting the Palo Alto Networks management interface exposed to the internet,\" the…"
+  },
+  {
+   "id": "083a1ea7d205",
+   "title": "Cisco Patches Actively Exploited ASA and FTD VPN Flaw That Can Crash Firewalls",
+   "link": "https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html",
+   "source": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-29T10:44:46Z",
+   "score": 10,
+   "tags": [
+    "Actively exploited",
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "summary": "Cisco has released patches to address a high-severity security flaw in Secure Firewall Adaptive Security Appliance (ASA) Software and Secure Firewall Threat Defense (FTD) Software that it said has been exploited in the wild. The vulnerability, tracked as CVE-2026-76418, is rated 8.6 on the CVSS…",
+   "epss": 0.0057
+  },
+  {
+   "id": "2597db37b948",
+   "title": "Rs 82-Cr CREST Scam: Court Denies Bail to Real Estate Developer Vikram Wadhwa CBI",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPNjliZ2VQRDdsYjFhaUV4OXZFWFBWUTMxTUQ2UnpTMWlDWDJJcTlZdllKUi1uYnJRLXRTOUtYSFo2MEZnemtlc1ZLUjNIRDRqTF94cTctSWVLU1FqcWtZQXpFb1pvUjZxdGVaQnJTZmhwdllaM2t3Yl80T3ctRm15UzZqR2hJcHdxcXlocG9ydE9xVFRTTEZOSVRPc1dVdzhfV3VpUUdiU0tLZTVsUi1NYVRVUGxGdw?oc=5",
+   "source": "www.thereportingtimes.com",
+   "region": "Global",
+   "published": "2026-10-29T10:34:40Z",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "summary": ""
+  },
+  {
+   "id": "216c66fa9dd2",
+   "title": "At least 15 charged in California for alleged PH real estate scam",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPRFR6SmRqc0NUbnBHSFhBYkotNG1vTVVFUGlOR1NOZ29qenpSOXY5dllXRVdVcDlWYm9LdE9RdEVHeTRpRnYzLUlLSHhzYlg4RzVTdGZaWmZEQ1BKYjEyNk91dXJ5Q0oyYnFBU0xWSU0yajJfcW9hVTBHQjAtS2pTeXBHU2IzeG5MMkkxWGxIaGpzMm0xQnNwdENLcmZFSEFTd3EyU3BFeS1LbEhS?oc=5",
+   "source": "Rappler",
+   "region": "Global",
+   "published": "2026-10-29T03:39:22Z",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "summary": ""
   }
  ],
  "stats": {
-  "recent": 20,
+  "recent": 63,
   "au": 0,
-  "kev": 0
+  "kev": 2
  },
  "lesson": {
-  "id": "1.7",
-  "title": "Frameworks: ATT&CK, Kill Chain, Diamond Model"
+  "id": "2.2",
+  "title": "Reading scan output and CVSS"
  }
 }
