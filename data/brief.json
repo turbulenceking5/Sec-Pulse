@@ -1,90 +1,86 @@
 {
- "date": "2026-10-30",
- "generated": "2026-10-29T22:54:03+00:00",
- "title": "Sec-Pulse brief - Fri 30 Oct",
+ "date": "2026-10-31",
+ "generated": "2026-10-30T22:33:33+00:00",
+ "title": "Sec-Pulse brief - Sat 31 Oct",
  "items": [
   {
-   "id": "7325900e53d9",
-   "title": "ThreatsDay: Critical Firewall Flaws, Banking Trojans Rented, Weaponized PDF, Token Theft + 26 More Stories",
-   "link": "https://thehackernews.com/2026/10/threatsday-critical-firewall-flaws.html",
-   "source": "The Hacker News",
+   "id": "2c5a66cbba23",
+   "title": "AI Scams and Deepfakes in Real Estate",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQZHdhdHFiTEt3eTlvaEs1bkF3QXJHaHJsakNUMVpWUV9teGI4RDVQQXVmYmF2VjBObHFaanB5dThPNXZjZkZ3X0RhWTNVWjZCcU5YT3hpcFk1OXdjUkE2MlRibUFaSlI3X1hFS29wbGI2UUsyOTE4Y182RWF5b2l5WFhqRXU?oc=5",
+   "source": "Syosset Advance",
    "region": "Global",
-   "published": "2026-10-29T19:11:58Z",
-   "score": 11,
+   "published": "2026-10-30T08:37:49Z",
+   "score": 12,
    "tags": [
-    "Data breach",
-    "Identity",
-    "Edge devices",
-    "SaaS / cloud"
+    "Real estate",
+    "AI threats"
    ],
-   "summary": "Some attacks take real skill. Others just need someone to leave a door open. This week has both. Exposed passwords, old bugs still getting exploited, and trusted software doing things it shouldn't. There's a strange mix of clever tricks and careless mistakes. Hackers are borrowing trust from…"
+   "summary": ""
   },
   {
-   "id": "f4eff089be53",
-   "title": "Attackers Exploit PHP2Shell Flaws in Internet-Exposed Palo Alto Networks Management Interfaces",
-   "link": "https://thehackernews.com/2026/10/attackers-exploit-php2shell-flaws-in.html",
-   "source": "The Hacker News",
+   "id": "261896c22277",
+   "title": "Polymarket Hack Drains $2.7M From 700 Users as Third-Party Breach Forces Trading Halt",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOTk81ZnJLVzBGN0dnVV9YTTU4OVRNcTJ1QV9EVXI0c1F3TWdPNnNCOVhQalJvWV84aFIyU0czcnR1dVhFN24waE1ZR3F1TkRXSFh3bHRMdDduVDBfc3NhVGdOTm0xVWZ3Qi1iOEd1dmlHY29MR2JWWFdIWHNMOUVvMXBFOURXN3g2WlB2VUhTMWFvRmUzZlhn?oc=5",
+   "source": "Yahoo Finance",
    "region": "Global",
-   "published": "2026-10-29T05:50:17Z",
-   "score": 11,
+   "published": "2026-10-30T12:02:15Z",
+   "score": 10,
    "tags": [
     "Data breach",
-    "Edge devices",
-    "Vulnerability",
     "SaaS / cloud"
    ],
-   "summary": "Palo Alto Networks on Wednesday warned that threat actors are exploiting the recently patched PHP2Shell vulnerabilities against publicly-accessible management interfaces. \"Active exploitation has been observed targeting the Palo Alto Networks management interface exposed to the internet,\" the…"
+   "summary": ""
   },
   {
-   "id": "083a1ea7d205",
-   "title": "Cisco Patches Actively Exploited ASA and FTD VPN Flaw That Can Crash Firewalls",
-   "link": "https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html",
+   "id": "5100bc6323f0",
+   "title": "CISA Adds Actively Exploited GitLab RCE and Cisco Firewall DoS Flaws to KEV",
+   "link": "https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html",
    "source": "The Hacker News",
    "region": "Global",
-   "published": "2026-10-29T10:44:46Z",
+   "published": "2026-10-30T07:27:05Z",
    "score": 10,
    "tags": [
     "Actively exploited",
     "Edge devices",
     "Vulnerability"
    ],
-   "summary": "Cisco has released patches to address a high-severity security flaw in Secure Firewall Adaptive Security Appliance (ASA) Software and Secure Firewall Threat Defense (FTD) Software that it said has been exploited in the wild. The vulnerability, tracked as CVE-2026-76418, is rated 8.6 on the CVSS…",
-   "epss": 0.0057
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added two security flaws impacting Cisco and GitLab software to its Known Exploited Vulnerabilities (KEV), citing evidence of active exploitation. The vulnerabilities are listed below - CVE-2026-97229 (CVSS score: 10.0) -…",
+   "epss": 0.2657
   },
   {
-   "id": "2597db37b948",
-   "title": "Rs 82-Cr CREST Scam: Court Denies Bail to Real Estate Developer Vikram Wadhwa CBI",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPNjliZ2VQRDdsYjFhaUV4OXZFWFBWUTMxTUQ2UnpTMWlDWDJJcTlZdllKUi1uYnJRLXRTOUtYSFo2MEZnemtlc1ZLUjNIRDRqTF94cTctSWVLU1FqcWtZQXpFb1pvUjZxdGVaQnJTZmhwdllaM2t3Yl80T3ctRm15UzZqR2hJcHdxcXlocG9ydE9xVFRTTEZOSVRPc1dVdzhfV3VpUUdiU0tLZTVsUi1NYVRVUGxGdw?oc=5",
-   "source": "www.thereportingtimes.com",
+   "id": "72c6b7a1a7d7",
+   "title": "Binance’s $6.3bn security breach exposes vulnerabilities in crypto custody",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPQlpOQlpGbFdBXzZVMHFRMWpGTUhqc1FSaHJSa1U5dkVBWWJ4M2RvU3dldm41b2pJRXJLM01QcnF4d0psaVJEWjBUcUMxR0xDMmx0WjRMR1VibnEzOGVUWUpCcVRod1h2Qk9xQzg0YWt4Y0JvZHRUdTQ3WmRldE5PNTNJajh1dmNVaFZBejFndWhKWS1UMEhDcnZzUlVabjhTdmZlTTdGNkhRTHVkS1IzcDgzWHc3UdIBuwFBVV95cUxPWFMxQURzZDllXzZlZ0xxcEpVSERNR1RGTGJ1WDhidkhhNXBSbk5yZ1g5VlQ1elRGMUdHXzctb2pWa093Q19hWnhGYjRLWENrR1JNM3Nhb0NUTmlsQmRJUnZDNWhoM3ZGYWk3RXZFTG9sVnNsazdITTZ2eF9MZDRWOWNFVmc4ZmJuZVpTN2EzNVphQks0T254cUQxZXlRNVRyRWRJMUE0bUt1SGcxeU9iVy1WaUJZSFNGUW5V?oc=5",
+   "source": "Businessday NG",
    "region": "Global",
-   "published": "2026-10-29T10:34:40Z",
-   "score": 10,
+   "published": "2026-10-30T08:12:48Z",
+   "score": 7,
    "tags": [
-    "Real estate"
+    "Data breach"
    ],
    "summary": ""
   },
   {
-   "id": "216c66fa9dd2",
-   "title": "At least 15 charged in California for alleged PH real estate scam",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPRFR6SmRqc0NUbnBHSFhBYkotNG1vTVVFUGlOR1NOZ29qenpSOXY5dllXRVdVcDlWYm9LdE9RdEVHeTRpRnYzLUlLSHhzYlg4RzVTdGZaWmZEQ1BKYjEyNk91dXJ5Q0oyYnFBU0xWSU0yajJfcW9hVTBHQjAtS2pTeXBHU2IzeG5MMkkxWGxIaGpzMm0xQnNwdENLcmZFSEFTd3EyU3BFeS1LbEhS?oc=5",
-   "source": "Rappler",
+   "id": "7ebd48a169f3",
+   "title": "Hackers breach GS E&C system, leak resident data in South Korea",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQVUUtNmlIZk9fX2E2b0dYS1NCMmNMbnpqVFZ4YkpDMDlyQjdBYVAzSFFJMWpmU0s5Y04tWWxkRDNxV2U2bS1jREVGRTFhTmx1UGVKcF9tek03SE9QNzh5TUwxY0NUVVRyQ1kzbGd5RUNVYkZGbDZnNDZJRWM1Wm5tWU5jRkTSAZgBQVVfeXFMTjJoRE1BRlZFV1gwOG40TVUtckdZTDc4ekh0ODJpZmFUdWxCbWNULVZVWkdRV1M2cEQyOG5JQXZYNVdGNVF3b1U5blBQMUhYYWRzZWJfUnFESTBRMS12NjFnZ0JyTGNYMFNhOXVIRUpqZ0JmSl9tc2lwbi01V1JIWVVqcFc3SDBIUmQ5cGhrRUpOYmgwcTdndE0?oc=5",
+   "source": "Chosunbiz",
    "region": "Global",
-   "published": "2026-10-29T03:39:22Z",
-   "score": 10,
+   "published": "2026-10-30T07:39:00Z",
+   "score": 7,
    "tags": [
-    "Real estate"
+    "Data breach"
    ],
    "summary": ""
   }
  ],
  "stats": {
-  "recent": 63,
+  "recent": 47,
   "au": 0,
   "kev": 2
  },
  "lesson": {
-  "id": "2.2",
-  "title": "Reading scan output and CVSS"
+  "id": "2.3",
+  "title": "Common vulnerability types"
  }
 }
