@@ -104,10 +104,11 @@ This is exam prep, so wrong facts are worse than missing ones. When adding or ed
 |---|---|---|
 | CS0-003 domains and weights (33/30/20/17) | `domains` | Oct 2026 (initial build) |
 | Pass mark 750 on a 100–900 scale | `index.html` quiz copy | Oct 2026 |
-| NDB scheme: assess suspected breaches within 30 days; notify OAIC + individuals as soon as practicable | 4.2, card c58, labs.json (sqli, bec) | Oct 2026 |
+| NDB scheme: assess suspected breaches within 30 days; notify OAIC + individuals as soon as practicable | 4.2, card c58, labs.json (sqli, bec, insider) | Oct 2026 |
 | Cyber Security Act 2024: ransomware/extortion payment report to ASD within 72h, turnover > $3M | 4.2, card c59, labs.json (ransom, bec) | Oct 2026 |
 | ACSC hotline 1300 CYBER1, ReportCyber at cyber.gov.au | 3.1, 3.4, card c53 | Oct 2026 |
-| Essential Eight list and maturity level descriptions | 2.6, card c41 | Oct 2026 |
+| Essential Eight list and maturity level descriptions (48h patching of internet-facing services when a working exploit exists or the vendor rates it critical applies from Maturity Level One) | 2.6, card c41, labs.json (vulnpatch) | Oct 2026 |
+| NDB scheme: the employee records exemption covers a business's records about its own staff, not customer or tenant data; remedial action that prevents serious harm can make a breach non-notifiable | labs.json (insider) | Oct 2026 |
 | Windows event ID meanings and 4624 logon types | cards c82–c93 | Oct 2026 |
 | OWASP Top 10 (2021): broken access control #1 | 2.3 | Oct 2026 (OWASP may publish a newer list) |
 | CVSS v3.1 metric groups (Base/Temporal/Environmental; v4.0 renames Temporal to Threat) and example vector scores | cards c108–c111, PBQ p06 | Oct 2026 |

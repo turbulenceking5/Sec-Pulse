@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-10-30: Five new 3D lab incidents
+- **Five new incidents** in the 3D network labs, bringing the total to nine: an MFA prompt flood followed by a phishing page that steals the session, password spraying against the VPN, a departing employee copying tenant files, a month of vulnerability scanning from report to fix, and a trojanised software update.
+- They cover lessons and topics no lab practised before: vulnerability prioritisation and exceptions, evidence handling, insider cases, indicators that last (the Pyramid of Pain) and reporting to executives.
+- **Study content:** lesson 2.6 now says the 48-hour patch window for internet-facing services applies from Essential Eight Maturity Level One, not only at higher levels.
+
 ## 2026-10-27: 3D network labs
 - **3D network labs** on Learn: a small office network in 3D (internet, DMZ, office PCs, servers, security tools, cloud email) that you can rotate and zoom.
 - **Explore** it: tap any device to see what it does, which logs it gives an analyst and which lessons cover it.

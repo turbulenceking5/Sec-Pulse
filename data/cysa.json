@@ -302,7 +302,7 @@
       "id": "2.6", "domain": 2, "title": "AU bonus: the Essential Eight",
       "summary": "ASD's Essential Eight is the baseline Australian organisations are measured against. It is not CySA+ exam content, but you will be asked about it at work constantly.",
       "points": [
-        "1. Patch applications - especially internet-facing ones, fast (within 48 hours when an exploit exists, at higher maturity).",
+        "1. Patch applications - especially internet-facing ones, fast (within 48 hours when a working exploit exists or the vendor rates the flaw critical, from Maturity Level One up).",
         "2. Patch operating systems - same idea for OS and firmware; replace unsupported versions.",
         "3. Multi-factor authentication - phishing-resistant MFA is expected at higher maturity levels.",
         "4. Restrict administrative privileges - least privilege, separate admin accounts, no admin browsing or email.",
