@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T01:02:41Z",
+ "generated": "2026-10-30T10:04:39Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -22,31 +22,31 @@
   {
    "name": "ASD / ACSC in the news",
    "ok": true,
-   "count": 3,
+   "count": 2,
    "error": null
   },
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 2,
+   "count": 6,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 6,
+   "count": 5,
    "error": null
   },
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 3,
+   "count": 1,
    "error": null
   },
   {
    "name": "iTnews Security",
    "ok": true,
-   "count": 1,
+   "count": 0,
    "error": null
   },
   {
@@ -100,11 +100,228 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 25,
+   "count": 26,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "aedf51642ecf",
+   "title": "$2 Million+ Drained From Polymarket Traders in New Supply Chain Attack",
+   "link": "https://www.securityweek.com/2-million-drained-from-polymarket-traders-in-new-supply-chain-attack/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-30T09:41:36Z",
+   "summary": "Malicious code linked to a website monitoring tool was designed to hijack logged-in Polymarket sessions and siphon user funds. The post $2 Million+ Drained From Polymarket Traders in New Supply Chain Attack appeared first on SecurityWeek .",
+   "score": 3,
+   "tags": [
+    "SaaS / cloud"
+   ],
+   "why": [
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "93a6b87fe425",
+   "title": "Binance links $6.3 billion crypto theft to compromised DevOps laptop",
+   "link": "https://www.bleepingcomputer.com/news/security/binance-links-63-billion-crypto-theft-to-compromised-devops-laptop/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-30T09:18:13Z",
+   "summary": "Binance, the world's largest crypto exchange, has linked the theft of about $6.3 billion in cryptocurrency to a DevOps engineer's compromised laptop. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "e40ec869602e",
+   "title": "Threat Brief: Critical Vulnerabilities in PHP: CVE-2026-109618, CVE-2026-109619 (Updated October 29)",
+   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBaSXRUMkVsWkF3TjhoV29oTXdyZHhrMGZINFBHNVVrNmZubTA4SkFzMzlWMlNMLW15ZWdISDJYeURJbVdpTFB5ZzNTU21aazFfTmc4R0VkLWVyMVY4S1JRYTZ5UjJqWk82SlR5Q0ZMOTJrNEJVeXNV?oc=5",
+   "source": "Unit 42",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-30T09:04:27Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 1.0,
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild/"
+    },
+    {
+     "source": "SANS ISC",
+     "url": "https://isc.sans.edu/diary/rss/33440"
+    }
+   ]
+  },
+  {
+   "id": "d0d43ed2d289",
+   "title": "TeamViewer Flaw Could Let Malicious Hosts Take Over Support Technicians’ Machines",
+   "link": "https://www.securityweek.com/teamviewer-flaw-could-let-malicious-hosts-take-over-support-technicians-machines/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-30T08:44:49Z",
+   "summary": "An integer overflow tracked as CVE-2026-111585 could be used to execute arbitrary code on the viewer’s system. The post TeamViewer Flaw Could Let Malicious Hosts Take Over Support Technicians’ Machines appeared first on SecurityWeek .",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0029
+  },
+  {
+   "id": "3bb9ba7c2b0a",
+   "title": "$6 Billion Binance Hack Bears Hallmarks of North Korea’s TraderTraitor",
+   "link": "https://www.securityweek.com/6-billion-binance-hack-bears-hallmarks-of-north-koreas-tradertraitor/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-30T08:16:26Z",
+   "summary": "Blockchain analysts link the record crypto theft to North Korean hackers, as Binance probes a possibly compromised engineer laptop. The post $6 Billion Binance Hack Bears Hallmarks of North Korea’s TraderTraitor appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "f6a72b86d81b",
+   "title": "As Russia's Cyberwar Evolves, Belarus Steps Forward",
+   "link": "https://www.darkreading.com/physical-security/russia-cyber-war-belarus-steps-forward",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-30T08:00:00Z",
+   "summary": "The \"FrostyNeighbor\" advanced persistent threat (APT) launched a destructive attack in Ukraine and is raising concerns about deeper alignment with Russian cyber objectives.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "6d2a0802c49f",
+   "title": "Hackers Actively Exploit Highly Critical Drupal Commerce Core Authorization Bypass Flaw",
+   "link": "https://thehackernews.com/2026/10/hackers-actively-exploit-highly.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-30T07:45:30Z",
+   "summary": "Drupal has warned that threat actors are exploiting a \"highly critical\" security flaw in its Commerce Core component. The vulnerability, tracked as CVE-2026-118539 (CVSS score: N/A), is a case of missing authorization affecting Commerce Core versions from 0.0.0 to 2.41 and from 3.0.0 to 3.3.13.…",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "7ebd48a169f3",
+   "title": "Hackers breach GS E&C system, leak resident data in South Korea",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQVUUtNmlIZk9fX2E2b0dYS1NCMmNMbnpqVFZ4YkpDMDlyQjdBYVAzSFFJMWpmU0s5Y04tWWxkRDNxV2U2bS1jREVGRTFhTmx1UGVKcF9tek03SE9QNzh5TUwxY0NUVVRyQ1kzbGd5RUNVYkZGbDZnNDZJRWM1Wm5tWU5jRkTSAZgBQVVfeXFMTjJoRE1BRlZFV1gwOG40TVUtckdZTDc4ekh0ODJpZmFUdWxCbWNULVZVWkdRV1M2cEQyOG5JQXZYNVdGNVF3b1U5blBQMUhYYWRzZWJfUnFESTBRMS12NjFnZ0JyTGNYMFNhOXVIRUpqZ0JmSl9tc2lwbi01V1JIWVVqcFc3SDBIUmQ5cGhrRUpOYmgwcTdndE0?oc=5",
+   "source": "Chosunbiz",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-30T07:39:00Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "5100bc6323f0",
+   "title": "CISA Adds Actively Exploited GitLab RCE and Cisco Firewall DoS Flaws to KEV",
+   "link": "https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-30T07:27:05Z",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added two security flaws impacting Cisco and GitLab software to its Known Exploited Vulnerabilities (KEV), citing evidence of active exploitation. The vulnerabilities are listed below - CVE-2026-97229 (CVSS score: 10.0) -…",
+   "score": 10,
+   "tags": [
+    "Actively exploited",
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "why": [
+    "Actively exploited",
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "epss": 0.1843,
+   "also": [
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/max-severity-gitlab-vulnerability-exploited-against-alpine-linux/"
+    },
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/attacker-tried-to-exploit-alpine-linuxs.html"
+    }
+   ]
+  },
+  {
+   "id": "e241d72b3ce9",
+   "title": "AI Scams and Deepfakes in Real Estate",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNV0VpRENDODZ5LXo3VmZkaXRtUkdSWE5Dbk1wMlBKNWkwVEpyN3FRMmR0TTJBaGhtZ3dvbUlNZHlKV2p5OHplS1dra3A1czJOeDAwZmhEQkU4ekZ3OTd4Mzl3WVE3dGhoa2pjX2xNcjl3U1Vzbm03TUNkbHpkNmpUajBwc3Q?oc=5",
+   "source": "Mid-Island Times",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-30T04:27:42Z",
+   "summary": "",
+   "score": 12,
+   "tags": [
+    "Real estate",
+    "AI threats"
+   ],
+   "why": [
+    "Real estate",
+    "AI threats"
+   ]
+  },
+  {
+   "id": "1dad8889ea72",
+   "title": "Binance Suffers Security Breach Affecting $6.3 Billion in Assets, Nearly $3 Billion Frozen",
+   "link": "https://thehackernews.com/2026/10/binance-suffers-security-breach.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-30T04:14:59Z",
+   "summary": "Cryptocurrency giant Binance said on Thursday that a \"security incident\" on its platform has impacted about $6.3 billion worth of assets. The world's biggest cryptocurrency exchange said nearly $3 billion of those assets have been frozen on-chain so far. Tether and Circle said they have frozen…",
+   "score": 4,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "208ac926eb0f",
+   "title": "ISC Stormcast For Friday, October 30th, 2026 https://isc.sans.edu/podcastdetail/10158, (Fri, Oct 30th)",
+   "link": "https://isc.sans.edu/diary/rss/33472",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-10-30T03:30:17Z",
+   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
   {
    "id": "7363e725b55a",
    "title": "OpenAI doubles ChatGPT Pro usage limits after backlash over planned 50% cut",
@@ -117,6 +334,23 @@
    "score": 0,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "cd22e95cc203",
+   "title": "AI Puts Defenders on the Clock, Says ASD",
+   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1sNVY5OFNnRGhZeW1fYXp4Zk1LSFlpOU9ONFBkS1kybzBQbGo4RV9mRlVlMjA2NjBYbkdYWGtWS3ZIMFpLakRJUXN5RjdDRGF0R251c05nRTN2RElhN2xsTzJhanFhU2t3blFXaHZoMERHdzRz?oc=5",
+   "source": "IDM.net.au",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-29T23:29:48Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Microsoft 365"
+   ],
+   "why": [
+    "Microsoft 365"
+   ]
   },
   {
    "id": "7d9fa054e5fe",
@@ -212,15 +446,9 @@
    "region": "Global",
    "published": "2026-10-29T20:15:37Z",
    "summary": "This installment of the Reporters' Notebook video series discusses some of the trends and topics from Cybersecurity Awareness Month, from using AI for better training to educating next-generation workforces on modern risks and emerging threats.",
-   "score": 2,
-   "tags": [
-    "Vulnerability",
-    "AI threats"
-   ],
-   "why": [
-    "Vulnerability",
-    "AI threats"
-   ]
+   "score": 0,
+   "tags": [],
+   "why": []
   },
   {
    "id": "e692538b686e",
@@ -244,18 +472,16 @@
    "region": "Global",
    "published": "2026-10-29T19:11:58Z",
    "summary": "Some attacks take real skill. Others just need someone to leave a door open. This week has both. Exposed passwords, old bugs still getting exploited, and trusted software doing things it shouldn't. There's a strange mix of clever tricks and careless mistakes. Hackers are borrowing trust from…",
-   "score": 11,
+   "score": 8,
    "tags": [
     "Data breach",
     "Identity",
-    "Edge devices",
-    "SaaS / cloud"
+    "Edge devices"
    ],
    "why": [
     "Data breach",
     "Identity",
-    "Edge devices",
-    "SaaS / cloud"
+    "Edge devices"
    ]
   },
   {
@@ -455,13 +681,9 @@
    "region": "Global",
    "published": "2026-10-29T15:00:00Z",
    "summary": "Unpatched voting machines, unverifiable QR-coded ballots, and AI-driven influence campaigns leave US elections short of secure. The post How Secure Are US Elections? Voting Machine Risks and the Growing Threat of AI appeared first on SecurityWeek .",
-   "score": 1,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
+   "score": 0,
+   "tags": [],
+   "why": []
   },
   {
    "id": "f34fb5d0be19",
@@ -472,13 +694,9 @@
    "region": "Global",
    "published": "2026-10-29T14:35:40Z",
    "summary": "Microsoft has resolved a known issue that prevents non-admin users from connecting to devices via Remote Desktop when the \"Administrator protection\" security feature is enabled. [...]",
-   "score": 4,
-   "tags": [
-    "Phishing"
-   ],
-   "why": [
-    "Phishing"
-   ]
+   "score": 0,
+   "tags": [],
+   "why": []
   },
   {
    "id": "67386231cf52",
@@ -489,14 +707,12 @@
    "region": "Global",
    "published": "2026-10-29T14:18:03Z",
    "summary": "Cisco open sourced Project Quarry, a rule language for detecting AI agent attacks that only emerge across sequences of benign actions. The post Cisco Open Sources Quarry to Catch AI Agent Attacks Hidden in Harmless Steps appeared first on SecurityWeek .",
-   "score": 5,
+   "score": 3,
    "tags": [
-    "Edge devices",
-    "Vulnerability"
+    "Edge devices"
    ],
    "why": [
-    "Edge devices",
-    "Vulnerability"
+    "Edge devices"
    ]
   },
   {
@@ -521,16 +737,14 @@
    "region": "Global",
    "published": "2026-10-29T13:59:48Z",
    "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies to patch a high-severity Linux kernel privilege escalation bug that attackers are chaining with the PHP2Shell flaws in the wild. [...]",
-   "score": 7,
+   "score": 5,
    "tags": [
     "Actively exploited",
-    "Vulnerability",
-    "SaaS / cloud"
+    "Vulnerability"
    ],
    "why": [
     "Actively exploited",
-    "Vulnerability",
-    "SaaS / cloud"
+    "Vulnerability"
    ]
   },
   {
@@ -542,14 +756,12 @@
    "region": "Global",
    "published": "2026-10-29T13:42:52Z",
    "summary": "The flaws could lead to arbitrary code execution, authorization bypasses, and privilege escalation. The post Adobe, Veeam, Juniper Networks Patch Critical Vulnerabilities appeared first on SecurityWeek .",
-   "score": 4,
+   "score": 2,
    "tags": [
-    "Vulnerability",
-    "SaaS / cloud"
+    "Vulnerability"
    ],
    "why": [
-    "Vulnerability",
-    "SaaS / cloud"
+    "Vulnerability"
    ]
   },
   {
@@ -814,24 +1026,6 @@
    "why": []
   },
   {
-   "id": "9ac8296dadd7",
-   "title": "Attacker Tried to Exploit Alpine Linux’s GitLab via CVSS 10.0 Flaw Its Ruby Left Open",
-   "link": "https://thehackernews.com/2026/10/attacker-tried-to-exploit-alpine-linuxs.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-29T09:05:39Z",
-   "summary": "An attacker tried to exploit a critical GitLab vulnerability on the Alpine Linux project's own GitLab server a week after GitLab released a fix, Alpine Linux said on 28 October. The flaw, CVE-2026-97229 (CVSS score: 10.0), can let an attacker run code on a GitLab server through a crafted regular…",
-   "score": 1,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.1843
-  },
-  {
    "id": "b3306983de00",
    "title": "HHS Filing Puts iRhythm Data Breach Toll at 8.2 Million",
    "link": "https://www.securityweek.com/hhs-filing-puts-irhythm-data-breach-toll-at-8-2-million/",
@@ -939,18 +1133,16 @@
    "region": "Global",
    "published": "2026-10-29T05:50:17Z",
    "summary": "Palo Alto Networks on Wednesday warned that threat actors are exploiting the recently patched PHP2Shell vulnerabilities against publicly-accessible management interfaces. \"Active exploitation has been observed targeting the Palo Alto Networks management interface exposed to the internet,\" the…",
-   "score": 11,
+   "score": 8,
    "tags": [
     "Data breach",
     "Edge devices",
-    "Vulnerability",
-    "SaaS / cloud"
+    "Vulnerability"
    ],
    "why": [
     "Data breach",
     "Edge devices",
-    "Vulnerability",
-    "SaaS / cloud"
+    "Vulnerability"
    ]
   },
   {
@@ -1077,11 +1269,11 @@
    "title": "AML rules expose small firms to privacy breach risks",
    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNZUQwajNJZ1F2SkdsSlBoUElLejJscDhtcEFOV1c1X1BZWWVLdnh0VTlJdXZZenpFallsaWl4ZW10VnNvWF9jRzNXQVN1bUFkU1VhNUxfSlo0Ny1MM1pRSG05MlBXbkxJQlR1eVJzVUUwbUh2X05zUXBoaEdnaG5hY3k2UHlxR1dlYUtuOUF5Uzc?oc=5",
    "source": "SecurityBrief Australia",
-   "feed": "Real estate cyber news",
+   "feed": "OAIC / Privacy news",
    "region": "Global",
    "published": "2026-10-28T21:00:00Z",
    "summary": "",
-   "score": 7,
+   "score": 6,
    "tags": [
     "Data breach"
    ],
@@ -1108,13 +1300,9 @@
    "region": "Global",
    "published": "2026-10-28T20:47:22Z",
    "summary": "U.S. law enforcement has seized the primary domain of Virtualine, a bulletproof hosting service advertised on cybercrime forums for facilitating illegal activities. [...]",
-   "score": 1,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
+   "score": 0,
+   "tags": [],
+   "why": []
   },
   {
    "id": "805c13bc3cd9",
@@ -1229,13 +1417,9 @@
    "region": "Global",
    "published": "2026-10-28T16:23:34Z",
    "summary": "A chain of logic flaws, with no memory corruption, can turn a malicious web page into code running on a Windows computer outside Microsoft Edge's sandbox, a security researcher has shown. Orange Tsai of DEVCORE published the full method on October 28, five months after the chain won $175,000 at…",
-   "score": 2,
-   "tags": [
-    "SaaS / cloud"
-   ],
-   "why": [
-    "SaaS / cloud"
-   ]
+   "score": 0,
+   "tags": [],
+   "why": []
   },
   {
    "id": "eb73651e36ee",
@@ -1525,6 +1709,35 @@
    ]
   },
   {
+   "id": "d6d77f075d62",
+   "title": "Japanese internet giant GMO tells customers to shut down and disconnect PCs from the internet following data breach and ransomware threat",
+   "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNcFhFeDRGWEstS25fZnJwTGNRWmgzZlFiY1EzSHlCTW9XNWpfN2FlbUhFa0RyejBPWlBRa19oT1BncnR2UnNHaHBoTEY4Sk93TDBIaVYtazhGNnhHeWJGUk9jZUZoTExvbFB5VE9JQ3EzcWVUcHRFaVIwM0laQUtwSExNNWRCdktfdnBDM2M0UUpuUkNMRlZXdGNtWlloNGdLUXVLRGdOU3hfTktSNUVUM2JXQ2tFWXJNWlVMRmhRNXVPdmpPSFBVOEQxWXFKWXZjZmMyYktoTHNZdVRsTV9wQ1Vja29XWkhVcGFVai1KU3BNS1VsLXBrOGtOVXhHS2U1bV9PV3dzVQ?oc=5",
+   "source": "TechRadar",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-28T12:15:00Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Ransomware",
+    "Data breach"
+   ],
+   "why": [
+    "Ransomware",
+    "Data breach"
+   ],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/japans-gmo-urges-customers-to-shut-down-pcs-amid-ransomware-threat/"
+    },
+    {
+     "source": "https://tech-insider.org/",
+     "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPbWVhLTJtMUtsSHFPQUdpanFmcmhUYVV6NVVwR29KeGhpTWxBTVVyU0x2NHJ2RFhKX21EOWpOU1lBMmxydG13UjNIcDhXN0tEYzZ5blZZMnhWcll6MUlPNkpUSE1sVDVQc0hIVDZOblVUaldlWk0yel9oYWUwNnpCU25IY3J1VE1kYnRrRHE5aktsUGNUR2E2RlJ3?oc=5"
+    }
+   ]
+  },
+  {
    "id": "0d8d39d2f11b",
    "title": "China-Linked Hackers Exploit PHP2Shell to Root Firewalls",
    "link": "https://www.securityweek.com/china-linked-hackers-exploit-php2shell-to-root-firewalls/",
@@ -1550,13 +1763,9 @@
    "region": "Global",
    "published": "2026-10-28T11:50:00Z",
    "summary": "A critical 16-year-old flaw in EDK II, the open-source code that most hardware makers use to build UEFI firmware, can allow an attacker to run code on a machine before its operating system loads, but only while the machine is booting over the network. UEFI firmware is the software that runs first…",
-   "score": 1,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
+   "score": 0,
+   "tags": [],
+   "why": []
   },
   {
    "id": "ce5fe177d9da",
@@ -1580,14 +1789,12 @@
    "region": "Global",
    "published": "2026-10-28T11:15:51Z",
    "summary": "Adobe has released patches to address multiple critical security flaws in Campaign Classic that, if successfully exploited, could result in arbitrary code execution, security feature bypass, and privilege escalation. The list of eight vulnerabilities is as follows - CVE-2026-104351 (CVSS score:…",
-   "score": 4,
+   "score": 1,
    "tags": [
-    "Vulnerability",
-    "SaaS / cloud"
+    "Vulnerability"
    ],
    "why": [
-    "Vulnerability",
-    "SaaS / cloud"
+    "Vulnerability"
    ],
    "epss": 0.0057
   },
@@ -1915,28 +2122,6 @@
    ]
   },
   {
-   "id": "98eb0ea8b2ed",
-   "title": "CVE-2026-46300: Linux Kernel — Linux Kernel Missing Initialization of a Variable Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-46300",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-10-28T00:00:00Z",
-   "summary": "Linux Kernel contains a missing initialization of a variable vulnerability that could allow for unintended modification of page-cache-backed data via failure to preserve the shared-fragment marker during socket buffer coalescing, causing ESP input processing… CISA remediation due 2026-10-31.",
-   "score": 7,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Phishing",
-    "Vulnerability"
-   ],
-   "why": [
-    "Phishing",
-    "Vulnerability"
-   ],
-   "epss": 0.1572
-  },
-  {
    "id": "ce69bcf7884b",
    "title": "CVE-2026-41709: Broadcom VMware ESX — Broadcom VMWare ESX Insufficient Logging Vulnerability",
    "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-41709",
@@ -1957,23 +2142,24 @@
    "epss": 0.0076
   },
   {
-   "id": "5246b1272668",
-   "title": "Japan's GMO urges customers to shut down PCs amid ransomware threat",
-   "link": "https://www.bleepingcomputer.com/news/security/japans-gmo-urges-customers-to-shut-down-pcs-amid-ransomware-threat/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
+   "id": "98eb0ea8b2ed",
+   "title": "CVE-2026-46300: Linux Kernel — Linux Kernel Missing Initialization of a Variable Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-46300",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
    "region": "Global",
-   "published": "2026-10-27T23:35:51Z",
-   "summary": "The GMO Group has urged customers to disconnect their systems from the internet and shut down computers after a threat actor who breached the company's Onamae Desktop Cloud threatened to launch a ransomware attack today. [...]",
-   "score": 7,
+   "published": "2026-10-28T00:00:00Z",
+   "summary": "Linux Kernel contains a missing initialization of a variable vulnerability that could allow for unintended modification of page-cache-backed data via failure to preserve the shared-fragment marker during socket buffer coalescing, causing ESP input processing… CISA remediation due 2026-10-31.",
+   "score": 4,
    "tags": [
-    "Ransomware",
-    "Data breach"
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
    ],
    "why": [
-    "Ransomware",
-    "Data breach"
-   ]
+    "Vulnerability"
+   ],
+   "epss": 0.1572
   },
   {
    "id": "dedf00d64727",
@@ -2616,23 +2802,6 @@
    ],
    "why": [
     "Vulnerability"
-   ]
-  },
-  {
-   "id": "245c5884bdd5",
-   "title": "GMO Internet Warns of Noon Ransomware, $50M Demand [2026]",
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPbWVhLTJtMUtsSHFPQUdpanFmcmhUYVV6NVVwR29KeGhpTWxBTVVyU0x2NHJ2RFhKX21EOWpOU1lBMmxydG13UjNIcDhXN0tEYzZ5blZZMnhWcll6MUlPNkpUSE1sVDVQc0hIVDZOblVUaldlWk0yel9oYWUwNnpCU25IY3J1VE1kYnRrRHE5aktsUGNUR2E2RlJ3?oc=5",
-   "source": "https://tech-insider.org/",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-27T09:03:38Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Ransomware"
-   ],
-   "why": [
-    "Ransomware"
    ]
   },
   {
@@ -3555,34 +3724,6 @@
    "why": []
   },
   {
-   "id": "fbd9cb2b4455",
-   "title": "PHP2Shell security flaws now sucessfully exploited in the wild",
-   "link": "https://www.bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-26T09:19:57Z",
-   "summary": "Two critical RCE vulnerabilities (CVE-2026-109618 and CVE-2026-109619), collectively tracked as PHP2Shell, have been successfully exploited in the wild. [...]",
-   "score": 11,
-   "tags": [
-    "Actively exploited",
-    "Vulnerability",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Actively exploited",
-    "Vulnerability",
-    "SaaS / cloud"
-   ],
-   "epss": 1.0,
-   "also": [
-    {
-     "source": "SANS ISC",
-     "url": "https://isc.sans.edu/diary/rss/33440"
-    }
-   ]
-  },
-  {
    "id": "5d7d269f0ceb",
    "title": "HIPAA Ransomware Recovery: 13 Steps, 90 Min [2026]",
    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOWkw3V3RhbHFrYlZZcmJuUVhLeFV6MnpDc0lpb2NodTVmcmtlamlqSzkyRm5HQXRXd3lrMjduTUVGSW8zUGZ1a09pUTgyeFBoQ3pzMWk5OS1tdXo3S1pBVW54djc5SERSNUZjdzM2eDBHbHFia2E4UjdoOUhJd1lxN1VKcVpTU3BVRmhR?oc=5",
@@ -4332,16 +4473,14 @@
    "region": "Global",
    "published": "2026-10-23T18:12:19Z",
    "summary": "Microsoft Threat Intelligence analyzes the LiteLLM 1.107.0 compromise, including Python startup hooks, credential theft, remote code loading, detections, and mitigations. The post Inside the LiteLLM 1.107.0 supply chain compromise: Credential theft through Python startup hooks appeared first on…",
-   "score": 9,
+   "score": 7,
    "tags": [
     "Identity",
-    "SaaS / cloud",
-    "AI threats"
+    "SaaS / cloud"
    ],
    "why": [
     "Identity",
-    "SaaS / cloud",
-    "AI threats"
+    "SaaS / cloud"
    ],
    "also": [
     {
@@ -7220,181 +7359,6 @@
    "score": 0,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "f6d2274058e5",
-   "title": "Critical vulnerabilities in PHP",
-   "link": "https://www.cyber.gov.au/alert/critical-vulnerabilities-in-php",
-   "source": "ACSC Alerts",
-   "feed": "ACSC Alerts",
-   "region": "AU",
-   "published": "2026-10-21T03:01:26Z",
-   "summary": "A security release for two critical PHP vulnerabilities is set for public disclosure on 22 October 2026. PHP is widely used to power web applications.",
-   "score": 6,
-   "tags": [
-    "Australia"
-   ],
-   "why": []
-  },
-  {
-   "id": "e6c707c06a8b",
-   "title": "ISC Stormcast For Wednesday, October 21st, 2026 https://isc.sans.edu/podcastdetail/10144, (Wed, Oct 21st)",
-   "link": "https://isc.sans.edu/diary/rss/33438",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-10-21T02:00:03Z",
-   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
-   "score": 1,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "7a020fdc3830",
-   "title": "Mozilla, Google, Apple block compromised eMudhra CA certificates",
-   "link": "https://www.bleepingcomputer.com/news/security/mozilla-google-apple-block-compromised-emudhra-ca-certificates/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-21T00:46:42Z",
-   "summary": "Certificate authority eMudhra revoked eight compromised intermediate certificates after researchers found their private keys were so weak that anyone could recover them almost instantly and use them to forge trusted certificates for legitimate websites. [...]",
-   "score": 0,
-   "tags": [],
-   "why": [],
-   "also": [
-    {
-     "source": "Dark Reading",
-     "url": "https://www.darkreading.com/cyber-risk/tech-giants-emudhra-certificates-compromised-keys"
-    }
-   ]
-  },
-  {
-   "id": "acbdae47d822",
-   "title": "Homeless Queensland man blasts $480-a-week driveway rental",
-   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQRUs3N2MtM3Q4Z1NhM25MclFzQ2Iyb3NQN0hfTXBxT0x0cE8tTWdUVGkzR0dWZGVrMjdvbzhQRGxFTFpXY195SjMtejYtcnhCRDllbTFtaEdTWjZ0N1YzVDRkXzF2aW0wQW1sWXByNU00OUJ3TWtyaDdvTGZFU1JOUDI3ZmhfcjJOaDhSVHVlSDh3TnNSTEE?oc=5",
-   "source": "Real Estate",
-   "feed": "Real estate cyber news",
-   "region": "AU",
-   "published": "2026-10-20T22:14:11Z",
-   "summary": "",
-   "score": 17,
-   "tags": [
-    "Real estate",
-    "Australia"
-   ],
-   "why": [
-    "Real estate",
-    "Australia"
-   ]
-  },
-  {
-   "id": "aa2f36ffa3be",
-   "title": "Zeabur shutting down after second security breach in two months",
-   "link": "https://www.bleepingcomputer.com/news/security/zeabur-shutting-down-after-second-security-breach-in-two-months/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-20T19:33:02Z",
-   "summary": "Development platform Zeabur has disclosed details of a cybersecurity incident in which an attacker used leaked internal credentials stored in plaintext to compromise its infrastructure and steal over 3.2 million environment variable records and information for 321,810 accounts. [...]",
-   "score": 6,
-   "tags": [
-    "Data breach",
-    "Identity"
-   ],
-   "why": [
-    "Data breach",
-    "Identity"
-   ]
-  },
-  {
-   "id": "89526558312a",
-   "title": "Greenfield police warn of real estate scam on Facebook",
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNcWNwX3JrMXpicl9YVUFQcGZwYXhpU25GcnliNU5XQWhaNThIRHJYanh2YU5hQmlJZnVwdmVTUHlyMzdUZV9tUWxiNTlYSXJQVngzdm9vRExjZldrdkxsY01HM0NpbGh6dExOWDRockxHbHY4MlMwbFlkODFhTWo4Nms3WXVFdy0yOEpoX0dITWdHNU8xalh5Q24xdUpVb096?oc=5",
-   "source": "Scioto Valley Guardian",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-20T18:13:02Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ]
-  },
-  {
-   "id": "2bcaf37a740b",
-   "title": "OpenAI says GPT-6.1 Sol is dramatically better at migrating legacy code",
-   "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-says-gpt-61-sol-is-dramatically-better-at-migrating-legacy-code/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-20T18:11:03Z",
-   "summary": "OpenAI confirmed that its newer models are much better at writing and migrating software in older programming languages. [...]",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "fb153a3119f4",
-   "title": "CVE-2026-106931: EG Secure Solutions SiteGuard Server Edition — EG Secure Solutions SiteGuard Server Edition OS Command Injection Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-106931",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-10-20T00:00:00Z",
-   "summary": "EG Secure Solutions SiteGuard Server Edition contains an OS command injection vulnerability which may allow an attacker to execute arbitrary OS commands with root or SYSTEM privileges on the system running the affected product. CISA remediation due 2026-10-23.",
-   "score": 4,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.0253
-  },
-  {
-   "id": "17cca1785b07",
-   "title": "CVE-2026-96656: Plex Media Server — Plex Media Server External Control of File Name or Path Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-96656",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-10-20T00:00:00Z",
-   "summary": "Plex Media Server contains an external control of file name or path vulnerability which can allow an admin user to write arbitrary files that may be executed on load. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96655. CISA remediation due 2026-10-23.",
-   "score": 4,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.0179
-  },
-  {
-   "id": "f8740efa0ba7",
-   "title": "CVE-2026-96655: Plex Media Server — Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-96655",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-10-20T00:00:00Z",
-   "summary": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability that could allow an authenticated user to request arbitrary internal or external addresses via the '/video/:/transcode/universal' path parameter. This vulnerability can be chained… CISA remediation due 2026-11-03.",
-   "score": 4,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.0164
   }
  ]
 }
