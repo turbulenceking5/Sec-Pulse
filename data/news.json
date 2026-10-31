@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-31T05:45:57Z",
+ "generated": "2026-10-31T12:36:22Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -22,13 +22,13 @@
   {
    "name": "ASD / ACSC in the news",
    "ok": true,
-   "count": 1,
+   "count": 2,
    "error": null
   },
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 3,
+   "count": 4,
    "error": null
   },
   {
@@ -105,6 +105,129 @@
   }
  ],
  "items": [
+  {
+   "id": "1f2870fb86df",
+   "title": "Chainalysis Confirms Intrusion Into Internal Tools and Exposure of Customer Identity Data",
+   "link": "https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-31T12:01:56Z",
+   "summary": "American blockchain analysis firm Chainalysis said it was the target of a cybersecurity incident in which an external actor accessed non-sensitive customer data. However, the company noted that the breach did not result in unauthorized access to its investigation content, authentication…",
+   "score": 3,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "f0c80b908a88",
+   "title": "Syrian Hacker Gets Prison Time in US After Over a Decade on the Run",
+   "link": "https://www.securityweek.com/syrian-hacker-gets-prison-time-in-us-after-over-a-decade-on-the-run/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-10-31T11:00:00Z",
+   "summary": "A US court sentenced Syrian hacker Ahmad Umar Agha to 42 months for pro-Assad attacks on media, businesses, and government entities. The post Syrian Hacker Gets Prison Time in US After Over a Decade on the Run appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": [],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/syrian-hacker-behind-fake-tweet-that.html"
+    }
+   ]
+  },
+  {
+   "id": "db5a9a075d7b",
+   "title": "Wireshark 5.0.0rc1 Release, (Sat, Oct 31st)",
+   "link": "https://isc.sans.edu/diary/rss/33476",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-10-31T10:52:53Z",
+   "summary": "Wireshark Release Candidate 5.0.0 was published : soon we can expect a new major version of Wireshark.",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "a97d89d20f5e",
+   "title": "YARA-X 1.22.1 Release, (Sat, Oct 31st)",
+   "link": "https://isc.sans.edu/diary/rss/33474",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-10-31T10:48:17Z",
+   "summary": "YARA-X&#;x26;#;39;s 1.22.1 is a bugfix version, it brings 2 bugfixes.",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "8a1ff85d598d",
+   "title": "YARA-X 1.22.0 Release, (Sun, Oct 25th)",
+   "link": "https://isc.sans.edu/diary/rss/33454",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-10-31T10:45:40Z",
+   "summary": "YARA-X&#x26;#39&#x26;#x3b;s 1.22.0 release brings 11 improvements and 9 bugfixes.",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "4a3beb5aa5ff",
+   "title": "Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access",
+   "link": "https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-31T08:27:43Z",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added two security flaws impacting Ivanti Connect Secure (ICS) to its Known Exploited Vulnerabilities (KEV) catalog, following active exploitation in the wild. The vulnerabilities are listed below - CVE-2026-111357 (CVSS…",
+   "score": 8,
+   "tags": [
+    "Actively exploited",
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "why": [
+    "Actively exploited",
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "epss": 0.0032
+  },
+  {
+   "id": "e8eb82345a00",
+   "title": "A Shared ChatGPT Link Could Run Attacker Code in Your Session and Read Private Chats",
+   "link": "https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-31T05:33:41Z",
+   "summary": "A malicious ChatGPT share link could run an attacker's code in the logged-in session of anyone who opened it, allowing them to read their private conversations, researchers at the security firm Parameter showed. The researchers reported the flaw through OpenAI's bug bounty program on October 18,…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "21ad2182a136",
+   "title": "Cloudflare Reports 18.2 Million Network-Layer DDoS Attacks in Q3, Up 38%",
+   "link": "https://thehackernews.com/2026/10/cloudflare-reports-182-million-network.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-10-31T04:56:12Z",
+   "summary": "Threat actors are launching about 8,226 network-layer distributed denial-of-service (DDoS) attacks per hour, Cloudflare revealed Thursday. The web infrastructure and security company said it autonomously mitigated 18.2 million network-layer (L3) DDoS attacks and 14.4 trillion HTTP DDoS requests in…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
   {
    "id": "d6c636709375",
    "title": "Inside a malicious Claude Code-branded extension and its persistent SSH backdoor",
@@ -422,6 +545,23 @@
    ]
   },
   {
+   "id": "61a31fe435ea",
+   "title": "Yakult Honsha data leaked in website attack",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQR0hJNEhlc2hLaU9XRkFfRXZGY2xoYjVBVHZjSkh6Ym9XaWl4SGZpbWl3NjYyWWFlZ2JINE1ZZjVWVWU2YU1UaHQ3VF9yR1lSaXBNNl9zNllheDZaakhHclpVazlxakdWcEZYRmFWVHlyRzFrVjlLTnR2Slk2bVl6WWZ6eUdqYXBleklCU0YwVktfaVphNkxrSHpR?oc=5",
+   "source": "Yahoo Finance",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-30T12:23:32Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
    "id": "3556a8b02424",
    "title": "Fresh WordPress Vulnerability in Attackers’ Crosshairs",
    "link": "https://www.securityweek.com/fresh-wordpress-vulnerability-in-attackers-crosshairs/",
@@ -528,19 +668,6 @@
     }
    ],
    "epss": 0.0022
-  },
-  {
-   "id": "6734aa3aec6c",
-   "title": "Syrian Hacker Behind Fake Tweet That Triggered $136 Billion Market Drop Gets 42 Months in Prison",
-   "link": "https://thehackernews.com/2026/10/syrian-hacker-behind-fake-tweet-that.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-30T10:40:45Z",
-   "summary": "Ahmad Umar Agha, a Syrian Electronic Army hacker known online as \"Th3Pr0,\" has been sentenced by a U.S. federal court to 42 months in prison for his role in a hacking conspiracy that targeted Western news outlets. The conspiracy was organized and led by members of former Syrian President Bashar…",
-   "score": 0,
-   "tags": [],
-   "why": []
   },
   {
    "id": "aedf51642ecf",
@@ -701,6 +828,23 @@
    ]
   },
   {
+   "id": "8fa11e4ab81b",
+   "title": "Are Pakistani Universities Safe From ShinyHunters Ransomware?",
+   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1RZ25FQTM5VTA0elg3SmRnNHozY1o4NEpva3p5WHBmZ1BObkRNV0FiNTRubnl5VWcwUVBIczVsQS0wQ0V2RjJkc0J0MGdCbzFBTWdxTmVUNjVtQ0JTbUdoS0N4SFJaZ1ZZdWRPTGFEdGl3WE0?oc=5",
+   "source": "TechJuice",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-30T06:37:08Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
+  },
+  {
    "id": "1dad8889ea72",
    "title": "Binance Suffers Security Breach Affecting $6.3 Billion in Assets, Nearly $3 Billion Frozen",
    "link": "https://thehackernews.com/2026/10/binance-suffers-security-breach.html",
@@ -710,6 +854,23 @@
    "published": "2026-10-30T04:14:59Z",
    "summary": "Cryptocurrency giant Binance said on Thursday that a \"security incident\" on its platform has impacted about $6.3 billion worth of assets. The world's biggest cryptocurrency exchange said nearly $3 billion of those assets have been frozen on-chain so far. Tether and Circle said they have frozen…",
    "score": 4,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "7d3a16e16e33",
+   "title": "Manage My Health inquiry exposes breach response and vendor accountability gaps",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNdkc2QXNVbVBrX04teFNRZUtnODFuOTFyeXJXS0N5V3lYaXNvNXA1dlNIZkZiX21fRy1oanJLOVVhR0RjblJnMV9UemZDdU16OS1zV3ZtR1ptY09fNkNwRExnbDA0amZEZ1FySDVsRXJhRFliN1JMWFZkcVRuakwwSU5KeVRDOFZ5QU5sbEdpejFIUmJHQ0ZFekt4YmkzT1h3QzZoZlBQZTIyYTk0cTlvSUdLbDhtYU13azFzT3lITWg5WUFidUE?oc=5",
+   "source": "Reseller News",
+   "feed": "OAIC / Privacy news",
+   "region": "Global",
+   "published": "2026-10-30T04:02:40Z",
+   "summary": "",
+   "score": 6,
    "tags": [
     "Data breach"
    ],
@@ -3065,23 +3226,6 @@
    "why": []
   },
   {
-   "id": "8fa11e4ab81b",
-   "title": "Are Pakistani Universities Safe From ShinyHunters Ransomware?",
-   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1RZ25FQTM5VTA0elg3SmRnNHozY1o4NEpva3p5WHBmZ1BObkRNV0FiNTRubnl5VWcwUVBIczVsQS0wQ0V2RjJkc0J0MGdCbzFBTWdxTmVUNjVtQ0JTbUdoS0N4SFJaZ1ZZdWRPTGFEdGl3WE0?oc=5",
-   "source": "TechJuice",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-27T11:17:02Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Ransomware"
-   ],
-   "why": [
-    "Ransomware"
-   ]
-  },
-  {
    "id": "60e8b957385d",
    "title": "Risks Spelled Out for Anthropic Investors Include Possible Harms From Runaway AI",
    "link": "https://www.securityweek.com/risks-spelled-out-for-anthropic-investors-include-possible-harms-from-runaway-ai/",
@@ -4439,19 +4583,6 @@
    "why": [
     "Microsoft 365"
    ]
-  },
-  {
-   "id": "8a1ff85d598d",
-   "title": "YARA-X 1.22.0 Release, (Sun, Oct 25th)",
-   "link": "https://isc.sans.edu/diary/rss/33454",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-10-25T19:57:53Z",
-   "summary": "YARA-X&#;x26;#;39;s 1.22.0 release brings 11 improvements and 9 bugfixes.",
-   "score": 1,
-   "tags": [],
-   "why": []
   },
   {
    "id": "3eda0d6ae7e3",
@@ -7221,139 +7352,6 @@
      "source": "Howl.link",
      "url": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE0zclJQSzFMYlRFcmZOaTZySEpCZ0RxQ2NDeWYxd1ZkbnlpWlVFUlBWaW1nT2JvaDA0S1R3?oc=5"
     }
-   ]
-  },
-  {
-   "id": "bc6b0429e7ca",
-   "title": "ClickFix has never been bigger, and AI tools are its most convincing lure yet",
-   "link": "https://www.bleepingcomputer.com/news/security/clickfix-has-never-been-bigger-and-ai-tools-are-its-most-convincing-lure-yet/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-21T14:00:10Z",
-   "summary": "ClickFix attacks are surging as cybercriminals use fake AI installers, malicious search results, and trusted chatbot platforms to trick users into executing malware. Push Security examines how these attacks evade traditional defenses and why AI tools have become increasingly effective lures. [...]",
-   "score": 4,
-   "tags": [
-    "Phishing"
-   ],
-   "why": [
-    "Phishing"
-   ]
-  },
-  {
-   "id": "71ae2abe1296",
-   "title": "Asymptote Labs Lands $5.5 Million Seed for AI Agent Runtime Security",
-   "link": "https://www.securityweek.com/asymptote-labs-lands-5-5-million-seed-for-ai-agent-runtime-security/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-21T13:17:35Z",
-   "summary": "Asymptote Labs raises $5.5M seed led by Tower Research Ventures to commercialize its Beacon AI agent runtime security platform. The post Asymptote Labs Lands $5.5 Million Seed for AI Agent Runtime Security appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "13820dacd5f3",
-   "title": "Decades-Old Windows Utility Powers Modern ClickFix Attack",
-   "link": "https://www.darkreading.com/cyberattacks-data-breaches/decades-old-windows-utility-modern-clickfix-attack",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-21T13:00:00Z",
-   "summary": "The attack uses malicious Google search results related to Amazon and leverages the \"finger\" utility to launch a CAPTCHA that installs malware, including the Lumma stealer.",
-   "score": 2,
-   "tags": [
-    "Identity"
-   ],
-   "why": [
-    "Identity"
-   ]
-  },
-  {
-   "id": "9fa3f970853e",
-   "title": "Memory Bugs Account for Most of Chrome’s 353 New Security Fixes",
-   "link": "https://www.securityweek.com/memory-bugs-account-for-most-of-chromes-353-new-security-fixes/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-21T12:57:47Z",
-   "summary": "The update fixes 353 flaws, including 163 memory corruption and 125 use-after-free vulnerabilities. The post Memory Bugs Account for Most of Chrome’s 353 New Security Fixes appeared first on SecurityWeek .",
-   "score": 2,
-   "tags": [
-    "SaaS / cloud"
-   ],
-   "why": [
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "2616dfa7252a",
-   "title": "OpenAI Agents Silenced Security Team Alerts, Removed Misalignment Monitor",
-   "link": "https://www.securityweek.com/openai-agents-silenced-security-team-alerts-removed-misalignment-monitor/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-21T12:34:22Z",
-   "summary": "In two internal incidents, agents read routine coding instructions as permission to weaken monitoring, and one gave a false answer about it. The post OpenAI Agents Silenced Security Team Alerts, Removed Misalignment Monitor appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "e35cbb165472",
-   "title": "EU agency warns unpatched PHP sites may need offline isolation amid critical flaws",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOQnFHam1XUzZ5OFNYWTFaZlo5bHpleDFVQXBxT0E3ZVdDUEltQS1HWk85NFVqbm9ZQXAzMndPMUtlUjdBRW5zb254cXhZNlVFcDZra0FxWndOajZfaWlPMnNXOG9mSHNxSmF1eXpvNU1TM0V1SkZETW1IYUxtWlU5aE15VmUzdDVaWTdzSTR1ZmF4d08wY3hwY21OVWgzdUlCeFRTX0QxSkVlWHlSSXdsdHlUb3JKTGltVVJUNHBhaWxzQdIBvgFBVV95cUxNS3ZVTGpFekMwN0p1MC03WG1aNjItWm43NHJlXzV2SDB0SVVHWnpnc1g5T1pBSGRxdHFRbTBveVl6Z1NvLVpSbkhsUmlESDhZSFpPRGNUaEtDOE9nOFpXdmRhMXRlc1ptX0NneldrRVdJYUdwQmJhbDdrZ0tibmZfNnE1Unp2R01UZFA4VWxyNE9jd0tZOUtUOXNscGlnX011c3NYVDFKcm9jZ0psTDRGMzBfR2RjUFJQWW4zZ1BR?oc=5",
-   "source": "The News International",
-   "feed": "ASD / ACSC in the news",
-   "region": "AU",
-   "published": "2026-10-21T12:24:00Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Vulnerability",
-    "SaaS / cloud",
-    "Australia"
-   ],
-   "why": [
-    "Vulnerability",
-    "SaaS / cloud"
-   ],
-   "also": [
-    {
-     "source": "Krebs on Security",
-     "url": "https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/"
-    }
-   ]
-  },
-  {
-   "id": "ba8deb36fe9d",
-   "title": "Microsoft PowerToys adds CursorHide, Button Lock mouse tools",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-powertoys-adds-cursorhide-button-lock-mouse-tools/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-21T12:20:34Z",
-   "summary": "Microsoft has released PowerToys 0.102, with two new mouse utilities, new command-line tools, and Command Palette improvements. [...]",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "4f7acb56e33a",
-   "title": "Deed Fraud in Maine: Protecting Real Estate Transactions",
-   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQVm9iZnpTMHNSMGtpXzFfQUdPVEtsQjRGNE5pMF9FQlVhTUFmT09TaUNTS2tnbEdQY0xlSi1oaC1xUkZLNHpYX0JXMHlqZFZGWXFiVGZIUmJ1YTNyVUxRazhuWTh3WTlINTd6ek9janlIOWtkOS1XMXRJaU16VWlWaHdGTlAzZ3B6YkZROHpOU0VaRGxRSDJpVHJWd25pSzh4NXJuS1liRFh2bzVnVFdKMG9IN2Rta0o2MFhqd0FsVjhMM3FUU1JXU0xzSmJCbmxR?oc=5",
-   "source": "Bar Harbor Story",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-21T12:18:57Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
    ]
   }
  ]
