@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-30T22:32:55Z",
+ "generated": "2026-10-31T05:45:57Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -22,7 +22,7 @@
   {
    "name": "ASD / ACSC in the news",
    "ok": true,
-   "count": 2,
+   "count": 1,
    "error": null
   },
   {
@@ -34,7 +34,7 @@
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 3,
+   "count": 1,
    "error": null
   },
   {
@@ -52,7 +52,7 @@
   {
    "name": "CISA KEV",
    "ok": true,
-   "count": 20,
+   "count": 18,
    "error": null
   },
   {
@@ -82,7 +82,7 @@
   {
    "name": "Microsoft Security Blog",
    "ok": true,
-   "count": 8,
+   "count": 9,
    "error": null
   },
   {
@@ -100,11 +100,30 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 28,
+   "count": 26,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "d6c636709375",
+   "title": "Inside a malicious Claude Code-branded extension and its persistent SSH backdoor",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/10/30/inside-malicious-claude-code-branded-cursor-extension-persistent-ssh-backdoor/",
+   "source": "Microsoft Security Blog",
+   "feed": "Microsoft Security Blog",
+   "region": "Global",
+   "published": "2026-10-31T01:02:57Z",
+   "summary": "Microsoft analyzes a malicious Claude Code–branded extension, its persistent SSH backdoor, and guidance to detect and remediate it. The post Inside a malicious Claude Code-branded extension and its persistent SSH backdoor appeared first on Microsoft Security Blog .",
+   "score": 1,
+   "tags": [],
+   "why": [],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/"
+    }
+   ]
+  },
   {
    "id": "f167e37bde6d",
    "title": "Critical Linux kernel flaw allows remote root attacks on MPTCP servers",
@@ -144,6 +163,19 @@
      "url": "https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html"
     }
    ]
+  },
+  {
+   "id": "983cd7433fe6",
+   "title": "Behind the Scenes of How Operation Blackout Went Down",
+   "link": "https://www.darkreading.com/cybersecurity-operations/behind-the-scenes-how-operation-blackout-went-down",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-10-30T19:46:08Z",
+   "summary": "A recent law enforcement operation to dismantle harmful scam centers was a big success. A threat intelligence expert walks us through what happened and why he wants more of the same.",
+   "score": 0,
+   "tags": [],
+   "why": []
   },
   {
    "id": "7d21ebd6765f",
@@ -755,9 +787,9 @@
    "why": []
   },
   {
-   "id": "cd22e95cc203",
+   "id": "0a79d6139344",
    "title": "AI Puts Defenders on the Clock, Says ASD",
-   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1sNVY5OFNnRGhZeW1fYXp4Zk1LSFlpOU9ONFBkS1kybzBQbGo4RV9mRlVlMjA2NjBYbkdYWGtWS3ZIMFpLakRJUXN5RjdDRGF0R251c05nRTN2RElhN2xsTzJhanFhU2t3blFXaHZoMERHdzRz?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE05R1QwNzJBb0g0d2J5WVZPNmt6Uko1NFpxYkE3QzEwRy15c25VaXJpRk5PMDdOQ08xVDFlOW56emRjcmdTb2t6elJxelBOUFpnS1IwVXYyNm5iNVlsV2RIbEduYTh6R004MnhNdWE0bWVVbmZXeGxqYkJjcw?oc=5",
    "source": "IDM.net.au",
    "feed": "AU breach news",
    "region": "Global",
@@ -2953,9 +2985,9 @@
   },
   {
    "id": "21e6441e976b",
-   "title": "ASD releases seventh annual Cyber Threat Report 2025-26 | CGA",
+   "title": "ASD releases seventh annual Cyber Threat Report 2025-26",
    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOWTlxOHhLem9qSXRua3dlU0c5WDZCaHdGSGZxejAtMmJ4MDNOaEIxNjFoMWRmcW9UaEZtb0R0RldWNDh1d3hFVFo0eXY2WE5od0xPcGlVRkxOQ3h0Q2dvRmJHOGpBb0FPSG1nWlNyWTJ5M3NVNXZaWmhnVkFIbFE2Yzlia2lNWTNQMlNQcFh3?oc=5",
-   "source": "Australian Cyber Security Centre",
+   "source": "Cyber.gov.au",
    "feed": "ACSC (via Google News)",
    "region": "AU",
    "published": "2026-10-27T12:00:00Z",
@@ -7323,34 +7355,6 @@
    "why": [
     "Real estate"
    ]
-  },
-  {
-   "id": "c7a020f274e0",
-   "title": "China-Aligned Bronze Sandcastle Abuses Sandboxie DLL Sideloading to Deploy Backdoors",
-   "link": "https://thehackernews.com/2026/10/china-aligned-bronze-sandcastle-abuses.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-21T12:05:00Z",
-   "summary": "Cybersecurity researchers have disclosed details of a previously undocumented China-aligned threat cluster known as Bronze Sandcastle that has been observed targeting organizations in Asia and Africa since mid-2025. \"The most distinctive technical marker for Bronze Sandcastle is its consistent use…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "21956da9d15b",
-   "title": "Critical vulnerabilities in PHP | CGA",
-   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE81OHpLdWRyeFdnclNtbnlfMnF5YXp2SlFybTQ2aTh3RVB5RHQtOXJiTGlpXzl1eEZQaURMRWN4MnBSa3ktWjZQd3NwM3ZnWWNHcXd2bTFRaC1OYzZXOGxicklacVNXMms2MHpCbkhXcw?oc=5",
-   "source": "Australian Cyber Security",
-   "feed": "ACSC (via Google News)",
-   "region": "AU",
-   "published": "2026-10-21T12:00:00Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "Australia"
-   ],
-   "why": []
   }
  ]
 }
