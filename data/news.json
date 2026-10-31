@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-31T12:36:22Z",
+ "generated": "2026-10-31T19:19:31Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,13 +28,13 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 4,
+   "count": 2,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 1,
+   "count": 2,
    "error": null
   },
   {
@@ -82,7 +82,7 @@
   {
    "name": "Microsoft Security Blog",
    "ok": true,
-   "count": 9,
+   "count": 8,
    "error": null
   },
   {
@@ -105,6 +105,125 @@
   }
  ],
  "items": [
+  {
+   "id": "7aba56861a08",
+   "title": "Haverford police reports: $3,000 lost in Facebook real estate scam",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPejFzUXhoNndXakhXb0lpZnVEbDNvZVdrblFCRHN0a2hGYVdfMTlnV2xYQVNQdkd5YXB0ZHZlaDJES1h4TGRPVmRTRk1iMUluR1JzMTY5SlRpMk9rMm05RFVlNk5YM1BLZ1dfM3FIRzlmR3h1cGlEclhiZlBkcUJmYnBTb3hncHc0RUljejhqY0R2RjdyTXdjZ2phUmo0Sy1VdDZ2Xw?oc=5",
+   "source": "Delco Times",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-31T19:01:13Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
+   "id": "ba55b05e53ea",
+   "title": "Northflank security breach leads to abuse of customers' AI API keys",
+   "link": "https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-31T18:01:12Z",
+   "summary": "Cloud application hosting platform Northflank is warning customers to rotate all credentials and secrets stored on its platform after a security breach led to unauthorized use of customers' AI API keys. [...]",
+   "score": 6,
+   "tags": [
+    "Data breach",
+    "Identity"
+   ],
+   "why": [
+    "Data breach",
+    "Identity"
+   ]
+  },
+  {
+   "id": "845cf24b8961",
+   "title": "New Android SMS of Death exploit can remotely crash unpatched phones",
+   "link": "https://www.bleepingcomputer.com/news/security/new-android-sms-of-death-exploit-can-remotely-crash-unpatched-phones/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-31T15:35:11Z",
+   "summary": "A security researcher has released a proof-of-concept exploit for a recently patched Android vulnerability, dubbed \"SMS of Death\" and tracked as CVE-2026-58882, that lets attackers remotely disrupt cellular service or crash phones by sending a specially crafted text message. [...]",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "3aeaf157a5b5",
+   "title": "'We thought you were dead': Landlord targeted in fake will scam by former real estate boss",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVU5lOXNUSWFZMlR4cjk3N0tHMXpCMlJTd2d2M0lJa1dPeDVYNDJLR3JLMGVLZFdQT2J1Q05iQkZyUXV1NElOTEhZOHJNZWk5UmhRUWZDNGdfYWx5YTFrV1pwd1g5UUY0NldDaTJUWUZJUml2U3FQUjEyMUMxN1JvUGpDdXNreTRWN01hbjUxN1lWSFk4SGFhRk9Od0VuTF9NaWpqTUhEMFAwY2QwYzNPNzRwTmRRS2I0OU5UWjFNdUw?oc=5",
+   "source": "Stuff",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-31T15:00:00Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
+   "id": "b35f9e575d4b",
+   "title": "Reddit to lock content behind logins to fight scrapers",
+   "link": "https://www.bleepingcomputer.com/news/security/reddit-to-lock-content-behind-logins-to-fight-scrapers/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-31T14:05:15Z",
+   "summary": "Reddit announced in a post by co-founder Steve Huffman that the site will gradually become a \"logged-in service,\" offering limited access to visitors without accounts. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "4e3b797fd4a7",
+   "title": "From Beginner to Bug Hunter: Learning Cybersecurity in the AI Era.",
+   "link": "https://www.bleepingcomputer.com/news/security/from-beginner-to-bug-hunter-learning-cybersecurity-in-the-ai-era/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-31T13:10:19Z",
+   "summary": "AI-generated vulnerability reports are overwhelming some bug bounty programs, making it harder for aspiring security researchers to know where to start. TryHackMe explains how beginners can build practical cybersecurity skills, use AI responsibly, and produce reproducible findings that stand up to…",
+   "score": 2,
+   "tags": [
+    "Vulnerability",
+    "AI threats"
+   ],
+   "why": [
+    "Vulnerability",
+    "AI threats"
+   ]
+  },
+  {
+   "id": "a291b7051796",
+   "title": "Chainalysis discloses data breach from \"offensive agentic techniques\"",
+   "link": "https://www.bleepingcomputer.com/news/security/chainalysis-discloses-data-breach-from-offensive-agentic-techniques/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-10-31T12:50:09Z",
+   "summary": "Blockchain analytics firm Chainalysis disclosed a data breach after attackers used \"offensive agentic techniques\" to access internal systems and tools, exposing customer names, email addresses, user IDs, and organizational roles. [...]",
+   "score": 4,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
   {
    "id": "1f2870fb86df",
    "title": "Chainalysis Confirms Intrusion Into Internal Tools and Exposure of Customer Identity Data",
@@ -200,7 +319,7 @@
     "Edge devices",
     "Vulnerability"
    ],
-   "epss": 0.0032
+   "epss": 0.0053
   },
   {
    "id": "e8eb82345a00",
@@ -667,7 +786,7 @@
      "url": "https://thehackernews.com/2026/10/hackers-actively-exploit-highly.html"
     }
    ],
-   "epss": 0.0022
+   "epss": 0.0031
   },
   {
    "id": "aedf51642ecf",
@@ -815,7 +934,7 @@
     "Edge devices",
     "Vulnerability"
    ],
-   "epss": 0.2657,
+   "epss": 0.273,
    "also": [
     {
      "source": "SecurityWeek",
@@ -932,7 +1051,7 @@
     "Edge devices",
     "Vulnerability"
    ],
-   "epss": 0.0032
+   "epss": 0.0053
   },
   {
    "id": "7363e725b55a",
@@ -1214,7 +1333,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0044
+   "epss": 0.0046
   },
   {
    "id": "efbb1c68eb20",
@@ -1530,7 +1649,7 @@
     "Edge devices",
     "Vulnerability"
    ],
-   "epss": 0.0091,
+   "epss": 0.0082,
    "also": [
     {
      "source": "BleepingComputer",
@@ -1791,7 +1910,7 @@
     "Edge devices",
     "Vulnerability"
    ],
-   "epss": 0.0091
+   "epss": 0.0082
   },
   {
    "id": "2dc39333ee97",
@@ -1811,7 +1930,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.2657
+   "epss": 0.273
   },
   {
    "id": "ce178f6b65e4",
@@ -1848,10 +1967,10 @@
    ]
   },
   {
-   "id": "66f894f62d80",
+   "id": "075a7a4d56cd",
    "title": "AML rules expose small firms to privacy breach risks",
-   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNZUQwajNJZ1F2SkdsSlBoUElLejJscDhtcEFOV1c1X1BZWWVLdnh0VTlJdXZZenpFallsaWl4ZW10VnNvWF9jRzNXQVN1bUFkU1VhNUxfSlo0Ny1MM1pRSG05MlBXbkxJQlR1eVJzVUUwbUh2X05zUXBoaEdnaG5hY3k2UHlxR1dlYUtuOUF5Uzc?oc=5",
-   "source": "SecurityBrief Australia",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPQVl4bm03ejhwZWZ5VERCd1ZaVThObmg2dXA2bmNfUjlnSXJJOThzb2FVTTVJT2xWeXRGeGZ1WEZVVzBhZFo4aVpIbXAwMTRqZVVfeXdORXotQm1WZ0RES2YxSGlTWU5xNEh0VUFyWmhfZ00xaWpDdUVTQk5xSktBZ2g3WEwwVFQ0bEtGSkdZU0o?oc=5",
+   "source": "Australia",
    "feed": "OAIC / Privacy news",
    "region": "Global",
    "published": "2026-10-28T21:00:00Z",
@@ -1869,8 +1988,8 @@
      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPanpVdndXcjEwdENWWndnbFhyUkExZ29MVTB2bTg0N2dzZDNyQ3I0dWJXVHFiRy1FX3Eybm15QXY1ZGtOTVVRT2ZyQXNMM1ZtY1JNcG9vb2Y3MjF0aEwwdjJJamg5U0RNYVI2QzR0N01VNzRQb3BUS1RSdEJTMk5vX2Fvb2xNUGl3?oc=5"
     },
     {
-     "source": "Australia",
-     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPQVl4bm03ejhwZWZ5VERCd1ZaVThObmg2dXA2bmNfUjlnSXJJOThzb2FVTTVJT2xWeXRGeGZ1WEZVVzBhZFo4aVpIbXAwMTRqZVVfeXdORXotQm1WZ0RES2YxSGlTWU5xNEh0VUFyWmhfZ00xaWpDdUVTQk5xSktBZ2g3WEwwVFQ0bEtGSkdZU0o?oc=5"
+     "source": "SecurityBrief Australia",
+     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNZUQwajNJZ1F2SkdsSlBoUElLejJscDhtcEFOV1c1X1BZWWVLdnh0VTlJdXZZenpFallsaWl4ZW10VnNvWF9jRzNXQVN1bUFkU1VhNUxfSlo0Ny1MM1pRSG05MlBXbkxJQlR1eVJzVUUwbUh2X05zUXBoaEdnaG5hY3k2UHlxR1dlYUtuOUF5Uzc?oc=5"
     }
    ]
   },
@@ -7227,131 +7346,6 @@
    "why": [
     "Australia",
     "Data breach"
-   ]
-  },
-  {
-   "id": "b716aa6739b4",
-   "title": "Optiv Launches CyberBOT Cybersecurity Awareness Training Program",
-   "link": "https://www.darkreading.com/cybersecurity-operations/optiv-launches-cyberbot-cybersecurity-awareness-training-program",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-21T15:44:48Z",
-   "summary": "Hands-on sessions provide educators, nonprofits, and community leaders with an accessible resource to foster year-round cyber awareness and build more resilient communities.",
-   "score": 1,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "ce8b3bbcd62b",
-   "title": "Survey Finds High-Profile Executives Feel Untouchable as Digital Exposure Turns Into Physical Risk",
-   "link": "https://www.darkreading.com/cybersecurity-operations/360-privacy-survey-high-profile-executives-feel-untouchable",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-21T15:29:09Z",
-   "summary": "360 Privacy finds more than 8 in 10 security and wealth professionals say cybersecurity and physical security can no longer be separated.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "a45dacf80c10",
-   "title": "‘Context Bombs’ Cut AI Attack Success by Misleading Agents With Fake Targets",
-   "link": "https://www.securityweek.com/context-bombs-cut-ai-attack-success-by-misleading-agents-with-fake-targets/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-21T15:00:00Z",
-   "summary": "Deceptive prompts lure AI agents into decoys and dead ends, cutting attack success by up to 91% in tests and raising the cost of a successful attack 23-fold. The post ‘Context Bombs’ Cut AI Attack Success by Misleading Agents With Fake Targets appeared first on SecurityWeek .",
-   "score": 3,
-   "tags": [
-    "Phishing"
-   ],
-   "why": [
-    "Phishing"
-   ]
-  },
-  {
-   "id": "edba974544e3",
-   "title": "Encore Enterprises Data Breach Lawsuit Investigation",
-   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPdDdGWDFrMjZmS1E0QkVMbnQxMW1ybGc0M0xsTmhBaTlWUVAwenU1aWU2TDhxSmJjMTd1UHlDdlZSV2V1eGZrZkdWNXRWdXppcXQ0SmEtUFFCSHN2OFlfTUIwUnY4NzlFcjc1RE1nVlk4bVp3NWQ0N1JYNWhEZURGRVo0UQ?oc=5",
-   "source": "Claim Depot",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-21T14:57:23Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Data breach",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Data breach",
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "70887b981d7a",
-   "title": "Encore Enterprises Data Breach Exposes Social Security Numbers and Health Info",
-   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBZckZQLWxUZ1lmSnI4bTNmRTRXcGoxazBfb1htVGlxYUFCWnJReXN6WmxGZXZfMGFPN19Sek5YYlBZaHFscFZZdGcwN1J2TEtjN3F1NmV5U3VtYVRwWklZb19ON0lzNnlRY0l6UXg3cw?oc=5",
-   "source": "Claim Depot",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-21T14:52:44Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "67c1ab51681c",
-   "title": "High-Severity Flaws Exploited in Three Days as Ransomware Dominates Q3: Rapid7",
-   "link": "https://www.securityweek.com/high-severity-flaws-exploited-in-three-days-as-ransomware-dominates-q3-rapid7/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-21T14:45:00Z",
-   "summary": "Rapid7’s Q3 analysis finds high-severity flaws exploited within three days on average, while AI appeared in just 8% of tracked incidents. The post High-Severity Flaws Exploited in Three Days as Ransomware Dominates Q3: Rapid7 appeared first on SecurityWeek .",
-   "score": 7,
-   "tags": [
-    "Ransomware",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Ransomware",
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "d852900f1baa",
-   "title": "Feds Issues Advisory About SafePay Ransomware Group",
-   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQS3g0MWM0dm16Yk9oOXV0ejhHdW9pcEhuNWtQZmpOS0dPYmtiazhTSkNQbjIzTzN0bXh4Z1RkZDBoWjlkdHR0TXMzN0RYVlpxbXJIcUVFczdIM1VObVBMN0RST3ZFeVZHYlFreDFKZ01Bb2VJWXZ3M2lDODNRZ2FKaEFCb3JDRmJC?oc=5",
-   "source": "The HIPAA Journal",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-21T14:05:53Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Ransomware"
-   ],
-   "why": [
-    "Ransomware"
-   ],
-   "also": [
-    {
-     "source": "Howl.link",
-     "url": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE0zclJQSzFMYlRFcmZOaTZySEpCZ0RxQ2NDeWYxd1ZkbnlpWlVFUlBWaW1nT2JvaDA0S1R3?oc=5"
-    }
    ]
   }
  ]
