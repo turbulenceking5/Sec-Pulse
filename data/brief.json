@@ -1,73 +1,72 @@
 {
- "date": "2026-10-31",
- "generated": "2026-10-30T22:33:33+00:00",
- "title": "Sec-Pulse brief - Sat 31 Oct",
+ "date": "2026-11-01",
+ "generated": "2026-10-31T21:47:16+00:00",
+ "title": "Sec-Pulse brief - Sun 01 Nov",
  "items": [
   {
-   "id": "2c5a66cbba23",
-   "title": "AI Scams and Deepfakes in Real Estate",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQZHdhdHFiTEt3eTlvaEs1bkF3QXJHaHJsakNUMVpWUV9teGI4RDVQQXVmYmF2VjBObHFaanB5dThPNXZjZkZ3X0RhWTNVWjZCcU5YT3hpcFk1OXdjUkE2MlRibUFaSlI3X1hFS29wbGI2UUsyOTE4Y182RWF5b2l5WFhqRXU?oc=5",
-   "source": "Syosset Advance",
+   "id": "7aba56861a08",
+   "title": "Haverford police reports: $3,000 lost in Facebook real estate scam",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPejFzUXhoNndXakhXb0lpZnVEbDNvZVdrblFCRHN0a2hGYVdfMTlnV2xYQVNQdkd5YXB0ZHZlaDJES1h4TGRPVmRTRk1iMUluR1JzMTY5SlRpMk9rMm05RFVlNk5YM1BLZ1dfM3FIRzlmR3h1cGlEclhiZlBkcUJmYnBTb3hncHc0RUljejhqY0R2RjdyTXdjZ2phUmo0Sy1VdDZ2Xw?oc=5",
+   "source": "Delco Times",
    "region": "Global",
-   "published": "2026-10-30T08:37:49Z",
-   "score": 12,
-   "tags": [
-    "Real estate",
-    "AI threats"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "261896c22277",
-   "title": "Polymarket Hack Drains $2.7M From 700 Users as Third-Party Breach Forces Trading Halt",
-   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOTk81ZnJLVzBGN0dnVV9YTTU4OVRNcTJ1QV9EVXI0c1F3TWdPNnNCOVhQalJvWV84aFIyU0czcnR1dVhFN24waE1ZR3F1TkRXSFh3bHRMdDduVDBfc3NhVGdOTm0xVWZ3Qi1iOEd1dmlHY29MR2JWWFdIWHNMOUVvMXBFOURXN3g2WlB2VUhTMWFvRmUzZlhn?oc=5",
-   "source": "Yahoo Finance",
-   "region": "Global",
-   "published": "2026-10-30T12:02:15Z",
+   "published": "2026-10-31T19:01:13Z",
    "score": 10,
    "tags": [
-    "Data breach",
-    "SaaS / cloud"
+    "Real estate"
    ],
    "summary": ""
   },
   {
-   "id": "5100bc6323f0",
-   "title": "CISA Adds Actively Exploited GitLab RCE and Cisco Firewall DoS Flaws to KEV",
-   "link": "https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html",
+   "id": "3aeaf157a5b5",
+   "title": "'We thought you were dead': Landlord targeted in fake will scam by former real estate boss",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVU5lOXNUSWFZMlR4cjk3N0tHMXpCMlJTd2d2M0lJa1dPeDVYNDJLR3JLMGVLZFdQT2J1Q05iQkZyUXV1NElOTEhZOHJNZWk5UmhRUWZDNGdfYWx5YTFrV1pwd1g5UUY0NldDaTJUWUZJUml2U3FQUjEyMUMxN1JvUGpDdXNreTRWN01hbjUxN1lWSFk4SGFhRk9Od0VuTF9NaWpqTUhEMFAwY2QwYzNPNzRwTmRRS2I0OU5UWjFNdUw?oc=5",
+   "source": "Stuff",
+   "region": "Global",
+   "published": "2026-10-31T15:00:00Z",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "summary": ""
+  },
+  {
+   "id": "4a3beb5aa5ff",
+   "title": "Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access",
+   "link": "https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html",
    "source": "The Hacker News",
    "region": "Global",
-   "published": "2026-10-30T07:27:05Z",
-   "score": 10,
+   "published": "2026-10-31T08:27:43Z",
+   "score": 8,
    "tags": [
     "Actively exploited",
     "Edge devices",
     "Vulnerability"
    ],
-   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added two security flaws impacting Cisco and GitLab software to its Known Exploited Vulnerabilities (KEV), citing evidence of active exploitation. The vulnerabilities are listed below - CVE-2026-97229 (CVSS score: 10.0) -…",
-   "epss": 0.2657
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added two security flaws impacting Ivanti Connect Secure (ICS) to its Known Exploited Vulnerabilities (KEV) catalog, following active exploitation in the wild. The vulnerabilities are listed below - CVE-2026-111357 (CVSS…",
+   "epss": 0.0053
   },
   {
-   "id": "72c6b7a1a7d7",
-   "title": "Binance’s $6.3bn security breach exposes vulnerabilities in crypto custody",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPQlpOQlpGbFdBXzZVMHFRMWpGTUhqc1FSaHJSa1U5dkVBWWJ4M2RvU3dldm41b2pJRXJLM01QcnF4d0psaVJEWjBUcUMxR0xDMmx0WjRMR1VibnEzOGVUWUpCcVRod1h2Qk9xQzg0YWt4Y0JvZHRUdTQ3WmRldE5PNTNJajh1dmNVaFZBejFndWhKWS1UMEhDcnZzUlVabjhTdmZlTTdGNkhRTHVkS1IzcDgzWHc3UdIBuwFBVV95cUxPWFMxQURzZDllXzZlZ0xxcEpVSERNR1RGTGJ1WDhidkhhNXBSbk5yZ1g5VlQ1elRGMUdHXzctb2pWa093Q19hWnhGYjRLWENrR1JNM3Nhb0NUTmlsQmRJUnZDNWhoM3ZGYWk3RXZFTG9sVnNsazdITTZ2eF9MZDRWOWNFVmc4ZmJuZVpTN2EzNVphQks0T254cUQxZXlRNVRyRWRJMUE0bUt1SGcxeU9iVy1WaUJZSFNGUW5V?oc=5",
-   "source": "Businessday NG",
+   "id": "ba55b05e53ea",
+   "title": "Northflank security breach leads to abuse of customers' AI API keys",
+   "link": "https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys/",
+   "source": "BleepingComputer",
    "region": "Global",
-   "published": "2026-10-30T08:12:48Z",
-   "score": 7,
+   "published": "2026-10-31T18:01:12Z",
+   "score": 6,
    "tags": [
-    "Data breach"
+    "Data breach",
+    "Identity"
    ],
-   "summary": ""
+   "summary": "Cloud application hosting platform Northflank is warning customers to rotate all credentials and secrets stored on its platform after a security breach led to unauthorized use of customers' AI API keys. [...]"
   },
   {
-   "id": "7ebd48a169f3",
-   "title": "Hackers breach GS E&C system, leak resident data in South Korea",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQVUUtNmlIZk9fX2E2b0dYS1NCMmNMbnpqVFZ4YkpDMDlyQjdBYVAzSFFJMWpmU0s5Y04tWWxkRDNxV2U2bS1jREVGRTFhTmx1UGVKcF9tek03SE9QNzh5TUwxY0NUVVRyQ1kzbGd5RUNVYkZGbDZnNDZJRWM1Wm5tWU5jRkTSAZgBQVVfeXFMTjJoRE1BRlZFV1gwOG40TVUtckdZTDc4ekh0ODJpZmFUdWxCbWNULVZVWkdRV1M2cEQyOG5JQXZYNVdGNVF3b1U5blBQMUhYYWRzZWJfUnFESTBRMS12NjFnZ0JyTGNYMFNhOXVIRUpqZ0JmSl9tc2lwbi01V1JIWVVqcFc3SDBIUmQ5cGhrRUpOYmgwcTdndE0?oc=5",
-   "source": "Chosunbiz",
+   "id": "cc0e1787addb",
+   "title": "NPC probes data breach",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOOEE5WEYtRXhZS3NFdXVPMkZHTVRCZTFwUWk3LTRnQ00xcmZIeTBtTXR5WjdjQ085QzJHY2tfV1NqaWtJVkhJRTdOOXJ0cWZudUU3NUMzZm43SUNpR2o1bGF1U1JDV0ZOeThCNTVEZldsM2phQ2xNTmFXQ1JIRWNsTU4xNjbSAYQBQVVfeXFMTjhBOVhGLUV4WUtzRXV1TzJGR01UQmUxcFFpNy00Z0NNMXJmSHkwbU10eVo3Y0NPOUMyR2NrX1dTamlrSVZISUU3TjlydHFmbnVFNzVDM2ZuN0lDaUdqNWxhdVNSQ1dGTnk4QjU1RGZXbDNqYUNsTU5hV0NSSEVjbE1OMTY2?oc=5",
+   "source": "Philstar.com",
    "region": "Global",
-   "published": "2026-10-30T07:39:00Z",
-   "score": 7,
+   "published": "2026-10-31T16:00:00Z",
+   "score": 6,
    "tags": [
     "Data breach"
    ],
@@ -75,12 +74,12 @@
   }
  ],
  "stats": {
-  "recent": 47,
+  "recent": 25,
   "au": 0,
-  "kev": 2
+  "kev": 0
  },
  "lesson": {
-  "id": "2.3",
-  "title": "Common vulnerability types"
+  "id": "2.4",
+  "title": "Controls, mitigation and risk"
  }
 }
