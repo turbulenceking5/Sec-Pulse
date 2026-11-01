@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-01T00:08:59Z",
+ "generated": "2026-11-01T06:10:35Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -22,7 +22,7 @@
   {
    "name": "ASD / ACSC in the news",
    "ok": true,
-   "count": 2,
+   "count": 1,
    "error": null
   },
   {
@@ -34,7 +34,7 @@
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 2,
+   "count": 4,
    "error": null
   },
   {
@@ -106,6 +106,29 @@
  ],
  "items": [
   {
+   "id": "c6bade5b91e7",
+   "title": "Fake will scam: ex-real estate boss targeted landlord's home",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNUjRZb202VHNYNVRDblNFMmFzdUhpY1lndDdWcU1fc1VIS1JqaU01cGRWX3NuODctamt1aGFybnVwVm4yeUNGRnBveElPWTd3S0NORXJwRWt2MEViUTRGZjN2M3ZwTElJYTZwRUlsVnRmbVhpV1QyQlMxQkVqRFhTeFZfRGh3cWlzczdKbGRETQ?oc=5",
+   "source": "B2B News",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-01T01:44:05Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ],
+   "also": [
+    {
+     "source": "Stuff",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVU5lOXNUSWFZMlR4cjk3N0tHMXpCMlJTd2d2M0lJa1dPeDVYNDJLR3JLMGVLZFdQT2J1Q05iQkZyUXV1NElOTEhZOHJNZWk5UmhRUWZDNGdfYWx5YTFrV1pwd1g5UUY0NldDaTJUWUZJUml2U3FQUjEyMUMxN1JvUGpDdXNreTRWN01hbjUxN1lWSFk4SGFhRk9Od0VuTF9NaWpqTUhEMFAwY2QwYzNPNzRwTmRRS2I0OU5UWjFNdUw?oc=5"
+    }
+   ]
+  },
+  {
    "id": "7aba56861a08",
    "title": "Haverford police reports: $3,000 lost in Facebook real estate scam",
    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPejFzUXhoNndXakhXb0lpZnVEbDNvZVdrblFCRHN0a2hGYVdfMTlnV2xYQVNQdkd5YXB0ZHZlaDJES1h4TGRPVmRTRk1iMUluR1JzMTY5SlRpMk9rMm05RFVlNk5YM1BLZ1dfM3FIRzlmR3h1cGlEclhiZlBkcUJmYnBTb3hncHc0RUljejhqY0R2RjdyTXdjZ2phUmo0Sy1VdDZ2Xw?oc=5",
@@ -176,23 +199,6 @@
    ]
   },
   {
-   "id": "3aeaf157a5b5",
-   "title": "'We thought you were dead': Landlord targeted in fake will scam by former real estate boss",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVU5lOXNUSWFZMlR4cjk3N0tHMXpCMlJTd2d2M0lJa1dPeDVYNDJLR3JLMGVLZFdQT2J1Q05iQkZyUXV1NElOTEhZOHJNZWk5UmhRUWZDNGdfYWx5YTFrV1pwd1g5UUY0NldDaTJUWUZJUml2U3FQUjEyMUMxN1JvUGpDdXNreTRWN01hbjUxN1lWSFk4SGFhRk9Od0VuTF9NaWpqTUhEMFAwY2QwYzNPNzRwTmRRS2I0OU5UWjFNdUw?oc=5",
-   "source": "Stuff",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-31T15:00:00Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ]
-  },
-  {
    "id": "b35f9e575d4b",
    "title": "Reddit to lock content behind logins to fight scrapers",
    "link": "https://www.bleepingcomputer.com/news/security/reddit-to-lock-content-behind-logins-to-fight-scrapers/",
@@ -239,6 +245,12 @@
    ],
    "why": [
     "Data breach"
+   ],
+   "also": [
+    {
+     "source": "The 420.in",
+     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNbERqNExfX19UeHU2MDBlUWhRUVdtb2FLWkhuaDJfWlM3NVdYMDRZQV9nNmhUQXc1dERYd1ZoVWtRajZ4V1BxM0hnemZuZEc3SERoOHNyRGRXekxsR3F2U3k2LUZ4SkVFekxhY2RTU2FXVW0xOVMwNE52R3l6cXVJaWoxakU2cXNsUXhJTkx1dEhaVzNHSHBxNVdsUmRoLWpVNXh5TzB1X2JNOGdPQ2tNZA?oc=5"
+    }
    ]
   },
   {
@@ -366,7 +378,7 @@
   },
   {
    "id": "b239bbb37a2a",
-   "title": "Bay Street Law Firm Data Breach: 4 Firms Hit [2026]",
+   "title": "Bay Street Breach: 4 Law Firms, 31,000 Files [2026]",
    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOV0o0Z0xRZnlydlNnaWRqdWFaZHY2Z29WcVdMZzlDZ2wweUdsSVZIUW55MGZtQ2xTa1VDRlNiLXBpMEE0czlQbnl1bm5RRzEyTE1iWTI3RGM5d1gwb1JWVDBsZ3I5YzJoQU93emowTHk1bWdpb1lFdVVtSmh0cUM5YUM0Z21kRW9NMlpBRw?oc=5",
    "source": "tech-insider.org",
    "feed": "AU breach news",
@@ -452,6 +464,23 @@
    "score": 0,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "91c13e8ccb38",
+   "title": "Lethbridge police suspend Crime Stoppers ties after data breach, Calgary continues taking tips",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPMGVkQzFRR0JfYjUtRzhDUVN6MVZSYk9kbFJjdGpqWTZ4SFowNDUxejlONl9HREk5aml1a0Nici1ydHlDTkhTbkhfYzdMMkdNdlV0WEdmcGlwZTd2cGxIenQ4dllIX2RuREV1VUVTRHUwY3RpU2hsN09oLTBJZmliYTg1UlVrQkpxM0xfaXBTZ3pFUm5OM2ZKQ1pqbEtxb2RwWHdpbVBULVpWSjhnUUptVG5RalhRNGdBWFNEVFNPN292NXktU0U5WUhhUEh2Zw?oc=5",
+   "source": "CTV News",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-10-30T18:39:45Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
   },
   {
    "id": "7d21ebd6765f",
@@ -7320,25 +7349,6 @@
    "score": 0,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "2cd8b2bd53ed",
-   "title": "OpenAI's GPT-6 Agent Removed Safety Monitoring, Then Falsely Denied Doing So",
-   "link": "https://thehackernews.com/2026/10/openais-gpt-6-agent-removed-safety.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-21T16:33:47Z",
-   "summary": "OpenAI has revealed that two artificial intelligence (AI) agents powered by GPT-6.1 Sol and GPT-6 Astra weakened misalignment monitoring while making requested software changes during two internal coding tasks. The AI company said the incident took place on October 3 and 6, 2026, for Sol and…",
-   "score": 0,
-   "tags": [],
-   "why": [],
-   "also": [
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/openai-agents-disabled-safety-monitoring-one-lied-about-it/"
-    }
-   ]
   }
  ]
 }
