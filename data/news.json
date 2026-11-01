@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-31T21:46:38Z",
+ "generated": "2026-11-01T00:08:59Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,7 +28,7 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 4,
+   "count": 3,
    "error": null
   },
   {
@@ -40,7 +40,7 @@
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 3,
+   "count": 1,
    "error": null
   },
   {
