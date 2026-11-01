@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-01T06:10:35Z",
+ "generated": "2026-11-01T13:28:47Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -22,25 +22,25 @@
   {
    "name": "ASD / ACSC in the news",
    "ok": true,
-   "count": 1,
+   "count": 2,
    "error": null
   },
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 3,
+   "count": 5,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 4,
+   "count": 3,
    "error": null
   },
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 1,
+   "count": 2,
    "error": null
   },
   {
@@ -105,6 +105,96 @@
   }
  ],
  "items": [
+  {
+   "id": "1d293ae9cead",
+   "title": "Northstar Security Exits Stealth With $7M to Expose Toxic Risk Combinations",
+   "link": "https://www.securityweek.com/northstar-security-exits-stealth-with-7m-to-expose-toxic-risk-combinations/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-01T11:15:00Z",
+   "summary": "The startup maps how identities, assets and vulnerabilities connect, and uses AI agents to find and fix risky combinations of issues. The post Northstar Security Exits Stealth With $7M to Expose Toxic Risk Combinations appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "ec58a4fc51d4",
+   "title": "OneNote File Extraction, (Sun, Nov 1st)",
+   "link": "https://isc.sans.edu/diary/rss/33478",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-11-01T09:12:23Z",
+   "summary": "Recently, I had to extract embedded files from a set of OneNote files (extension .one).",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "c1c20131973a",
+   "title": "CVSS 10.0 LXD, MicroCloud Flaw Lets Attackers Impersonate Trusted Clients Without a Private Key",
+   "link": "https://thehackernews.com/2026/11/critical-lxd-and-microcloud-flaw-cvss.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-01T08:51:31Z",
+   "summary": "A critical flaw in Canonical's LXD and MicroCloud let an attacker log in as a trusted client without holding that client's private key. To do it, the attacker had to reach their HTTPS API over the network and have the trusted client's public certificate. Once in, the attacker would act as that…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "2a3e4a8e199c",
+   "title": "Hackers Steal About $2.7 Million From Polymarket Traders via Hijacked DebugBear Script",
+   "link": "https://thehackernews.com/2026/11/hackers-steal-about-27-million-from.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-01T07:25:40Z",
+   "summary": "Malicious code on the website of prediction market Polymarket sold some signed-in traders' positions and moved their funds to the hackers on October 29. The code had replaced a page-speed script that the site loaded from an outside company. Polymarket says it is refunding about $2.7 million to 726…",
+   "score": 0,
+   "tags": [],
+   "why": [],
+   "also": [
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/2-million-drained-from-polymarket-traders-in-new-supply-chain-attack/"
+    }
+   ]
+  },
+  {
+   "id": "be08e34bf976",
+   "title": "NetamLoader Malware Targets Government Windows 10 Systems in Asia via .NET Injection",
+   "link": "https://thehackernews.com/2026/11/netamloader-malware-targets-government.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-01T07:02:58Z",
+   "summary": "Cybersecurity researchers have disclosed details of what has been described as a \"highly sophisticated infection chain\" targeting government organizations in Asia. The activity, detailed by Kaspersky this week, targeted a custom Windows 10 build used exclusively by government entities in Asia and…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "81a61c3f94c3",
+   "title": "An AI found a 14-year-old hole in PHP. Australian government sites went dark for a night. The PHP nobody can patch is the part that lasts.",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNR09DYnZEWExURFFKaXBxWW11TGZRS1JZajlVaWxjZTUtZlNWR2N5dUR1dF9WUk5DWWllRE5LaWRrQ2FnREpPS3ZpTFFHWVNrWTYwU2ozSUZYcmFtNlVZTW1iVmtVVDQxcW15Tmc4V29uR3h0aVJKSmRxVVFaVVBZTHFOMWhvTHRBRUh4NmRlejRBN3ktRTh0ZjBBalI?oc=5",
+   "source": "Webcoda",
+   "feed": "AU breach news",
+   "region": "AU",
+   "published": "2026-11-01T06:14:20Z",
+   "summary": "",
+   "score": 11,
+   "tags": [
+    "Australia",
+    "Vulnerability"
+   ],
+   "why": [
+    "Australia",
+    "Vulnerability"
+   ]
+  },
   {
    "id": "c6bade5b91e7",
    "title": "Fake will scam: ex-real estate boss targeted landlord's home",
@@ -532,6 +622,23 @@
    "why": []
   },
   {
+   "id": "ffa77920fa75",
+   "title": "How Data Breach Fallout Will Impact GMO Internet Group Stock Investors",
+   "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPSVZacF9hbmo1Sl8wdlh1bTV1RTFvVktYNFJRbnB0RUdDQ0Rzei1IMF9BdERKcXZKcEFNUzBkRmloWnRONUhfWlhoQXF2WmdlOXdNRFNQTmJZa01WZmpQNUtvTU0xdVVrV25zZ0ZZMjJGSDZuYV9KT0dWOFZTQ0ZScngta09PSFhFalJsd3FFREF0ZlR4M0o4YzlpQ2o0cHJfczdPaHk3SDhnU1J5bXFza1U4eEU2UG91Q0E3QkZuX2owaGZNUEhfZHprR0k5X1VoeTlab0s5a0Q4QzdzdGfSAd4BQVVfeXFMT0lWWnBfYW5qNUpfMHZYdW01dUUxb1ZLWDRSUW5wdEVHQ0NEc3otSDBfQXRESnF2SnBBTVMwZEZpaFp0TjVIX1pYaEFxdlpnZTl3TURTUE5iWWtNVmZqUDVLb01NMXVVa1duc2dGWTIyRkg2bmFfSk9HVjhWU0NGUnJ4LWtPT0hYRWpSbHdxRURBdGZUeDNKOGM5aUNqNHByX3M3T2h5N0g4Z1NSeW1xc2tVOHhFNlBvdUNBN0JGbl9qMGhmTVBIX2R6a0dJOV9VaHk5Wm9LOWtEOEM3c3Rn?oc=5",
+   "source": "Simply Wall St",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-30T16:05:49Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
    "id": "e645dafde1d4",
    "title": "Trezor warns of suspected crypto-theft implant in hardware wallet",
    "link": "https://www.bleepingcomputer.com/news/security/trezor-warns-of-suspected-crypto-theft-implant-in-hardware-wallet/",
@@ -852,23 +959,6 @@
    "epss": 0.0031
   },
   {
-   "id": "aedf51642ecf",
-   "title": "$2 Million+ Drained From Polymarket Traders in New Supply Chain Attack",
-   "link": "https://www.securityweek.com/2-million-drained-from-polymarket-traders-in-new-supply-chain-attack/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-30T09:41:36Z",
-   "summary": "Malicious code linked to a website monitoring tool was designed to hijack logged-in Polymarket sessions and siphon user funds. The post $2 Million+ Drained From Polymarket Traders in New Supply Chain Attack appeared first on SecurityWeek .",
-   "score": 3,
-   "tags": [
-    "SaaS / cloud"
-   ],
-   "why": [
-    "SaaS / cloud"
-   ]
-  },
-  {
    "id": "d0d43ed2d289",
    "title": "TeamViewer Flaw Could Let Malicious Hosts Take Over Support Technicians’ Machines",
    "link": "https://www.securityweek.com/teamviewer-flaw-could-let-malicious-hosts-take-over-support-technicians-machines/",
@@ -912,19 +1002,6 @@
    ]
   },
   {
-   "id": "3bb9ba7c2b0a",
-   "title": "$6 Billion Binance Hack Bears Hallmarks of North Korea’s TraderTraitor",
-   "link": "https://www.securityweek.com/6-billion-binance-hack-bears-hallmarks-of-north-koreas-tradertraitor/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-30T08:16:26Z",
-   "summary": "Blockchain analysts link the record crypto theft to North Korean hackers, as Binance probes a possibly compromised engineer laptop. The post $6 Billion Binance Hack Bears Hallmarks of North Korea’s TraderTraitor appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
    "id": "72c6b7a1a7d7",
    "title": "Binance’s $6.3bn security breach exposes vulnerabilities in crypto custody",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPQlpOQlpGbFdBXzZVMHFRMWpGTUhqc1FSaHJSa1U5dkVBWWJ4M2RvU3dldm41b2pJRXJLM01QcnF4d0psaVJEWjBUcUMxR0xDMmx0WjRMR1VibnEzOGVUWUpCcVRod1h2Qk9xQzg0YWt4Y0JvZHRUdTQ3WmRldE5PNTNJajh1dmNVaFZBejFndWhKWS1UMEhDcnZzUlVabjhTdmZlTTdGNkhRTHVkS1IzcDgzWHc3UdIBuwFBVV95cUxPWFMxQURzZDllXzZlZ0xxcEpVSERNR1RGTGJ1WDhidkhhNXBSbk5yZ1g5VlQ1elRGMUdHXzctb2pWa093Q19hWnhGYjRLWENrR1JNM3Nhb0NUTmlsQmRJUnZDNWhoM3ZGYWk3RXZFTG9sVnNsazdITTZ2eF9MZDRWOWNFVmc4ZmJuZVpTN2EzNVphQks0T254cUQxZXlRNVRyRWRJMUE0bUt1SGcxeU9iVy1WaUJZSFNGUW5V?oc=5",
@@ -944,6 +1021,14 @@
     {
      "source": "BleepingComputer",
      "url": "https://www.bleepingcomputer.com/news/security/binance-links-63-billion-crypto-theft-to-compromised-devops-laptop/"
+    },
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html"
+    },
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/6-billion-binance-hack-bears-hallmarks-of-north-koreas-tradertraitor/"
     }
    ]
   },
@@ -959,6 +1044,29 @@
    "score": 0,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "ac0c5b5d1670",
+   "title": "Binance Hack: US$3B Frozen After US$6.3B Breach [2026]",
+   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQd0FnVXhkdjNmeGxqellLc0FTd0FzUFA3RzhpWWplNjg5aWk2OWZSRmRjTUdScXZ3UXhJS05XODVZUkNiTkpjR1g1cTJ0S1dxeWhpMDhueGV6RTJ3S090d3FuMlRKd3lzRnlqdWFQU3l4SFBuMTl5U2Z4eDhWaDBlRWh3?oc=5",
+   "source": "tech-insider.org",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-30T07:57:37Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/binance-suffers-security-breach.html"
+    }
+   ]
   },
   {
    "id": "7ebd48a169f3",
@@ -1041,23 +1149,6 @@
    ],
    "why": [
     "Ransomware"
-   ]
-  },
-  {
-   "id": "1dad8889ea72",
-   "title": "Binance Suffers Security Breach Affecting $6.3 Billion in Assets, Nearly $3 Billion Frozen",
-   "link": "https://thehackernews.com/2026/10/binance-suffers-security-breach.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-30T04:14:59Z",
-   "summary": "Cryptocurrency giant Binance said on Thursday that a \"security incident\" on its platform has impacted about $6.3 billion worth of assets. The world's biggest cryptocurrency exchange said nearly $3 billion of those assets have been frozen on-chain so far. Tether and Circle said they have frozen…",
-   "score": 4,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
    ]
   },
   {
@@ -7244,111 +7335,6 @@
    "why": [
     "Vulnerability"
    ]
-  },
-  {
-   "id": "25f995d0be20",
-   "title": "SafePay Ransomware: SafeBreach Coverage for CISA Alert AA26-293A",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOWThfa0U0YTBhNExNSjNCVFJSbVRYMWxVMUZLSnJHNGFJcFhXQ0pjbWpQN00xQmwyWExEbjU0Q21rQnJwTEM1Q2tRTTFlU0pSSGw0U1otNEZZc2Y4X0ZwcWlBU0g2WDZkMUxqY0ZSQnhDSTZXd3JYYk1ibi0yQ1REQ2xrNzNXaG50T2pLM1lZYmNfbFJRZEJmc0I5cU83OXpnRjFpXw?oc=5",
-   "source": "Security Boulevard",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-21T18:49:02Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Ransomware",
-    "Data breach"
-   ],
-   "why": [
-    "Ransomware",
-    "Data breach"
-   ]
-  },
-  {
-   "id": "71f0485320c6",
-   "title": "CISA: Hackers chain Plex flaws in Plex2Shell attacks to breach servers",
-   "link": "https://www.bleepingcomputer.com/news/security/cisa-hackers-chain-plex-flaws-in-plex2shell-attacks-to-breach-servers/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-21T18:34:42Z",
-   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) is warning that attackers are actively exploiting four vulnerabilities in Plex Media Server. [...]",
-   "score": 7,
-   "tags": [
-    "Data breach",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Data breach",
-    "SaaS / cloud"
-   ],
-   "also": [
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/plex2shell-exploit-chain-weaponized-against-plex-servers-hours-after-disclosure/"
-    }
-   ]
-  },
-  {
-   "id": "80aac9868cd3",
-   "title": "AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/",
-   "source": "Microsoft Security Blog",
-   "feed": "Microsoft Security Blog",
-   "region": "Global",
-   "published": "2026-10-21T18:23:55Z",
-   "summary": "Storm-0940 used ARTEX agentic AI to accelerate a ConnectWise supply chain compromise, enabling application credential abuse across Microsoft 365 environments. The post AI-driven, large-scale nation-state campaign using ARTEX enables supply chain compromise appeared first on Microsoft Security Blog .",
-   "score": 9,
-   "tags": [
-    "Microsoft 365",
-    "Identity",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Microsoft 365",
-    "Identity",
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "86b95972d873",
-   "title": "JUST IN: Meta Ordered to Pay Whopping $25 Billion Privacy Breach Settlement",
-   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNTWJEUWM0Rk1sOUZDOVpTd1JpZzQ0eTFqWUd4UndPQ2JSWER4bG9NWTJDQVV4aVZBNEptdEtXVGk0NDFXYW1LYkJRY2YwT2g3YUlOZHp1bk90QWgzRlktOTNjVGZ4c29PNEdVT1d6b3dNendiaXdWT3BtYlR5X1hTb2V0aUxBNDNyZkxyeTY0T1JKQ0xpSHpKSXVOUEJXNGc?oc=5",
-   "source": "Yahoo Finance",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-21T18:15:14Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/meta-ordered-to-pay-25-billion-after.html"
-    },
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/meta-ordered-to-pay-new-mexico-25-billion-for-deceiving-users-about-privacy-on-facebook/"
-    }
-   ]
-  },
-  {
-   "id": "a124b567afcf",
-   "title": "OVHcloud GitHub Compromise Tied to GlassWorm Threat Actors",
-   "link": "https://www.darkreading.com/cyberattacks-data-breaches/ovhcloud-github-compromise-glassworm-threat-actors",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-21T16:50:15Z",
-   "summary": "A developer's GitHub account that was compromised several months earlier was used to push malicious code to unsuspecting users.",
-   "score": 0,
-   "tags": [],
-   "why": []
   }
  ]
 }
