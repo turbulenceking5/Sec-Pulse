@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-01T19:42:57Z",
+ "generated": "2026-11-01T22:14:25Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,13 +28,13 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 2,
+   "count": 5,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 6,
+   "count": 4,
    "error": null
   },
   {
@@ -105,6 +105,25 @@
   }
  ],
  "items": [
+  {
+   "id": "7f9f6a0c6108",
+   "title": "Australia news live: Qantas seeks answers on data breach, storm prompts asthma warning, property values fall further",
+   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFA4WnZCUGNOOFdYN1dVOW1HQXIwRHhuZWtoeUp6U05SY3JpbGZGUEZOX3hxcHpLSTJQd24zdEl4U3IxalAzalhaVWUxTnNMY3Frdm5Z?oc=5",
+   "source": "شبكة تواصل الإخبارية",
+   "feed": "AU breach news",
+   "region": "AU",
+   "published": "2026-11-01T19:36:58Z",
+   "summary": "",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Data breach"
+   ],
+   "why": [
+    "Australia",
+    "Data breach"
+   ]
+  },
   {
    "id": "b7d5e53da907",
    "title": "The Russian Frontline Scam: How Nairobi Agencies Lure Victims into Military Contracts",
@@ -1116,6 +1135,10 @@
     {
      "source": "SecurityWeek",
      "url": "https://www.securityweek.com/6-billion-binance-hack-bears-hallmarks-of-north-koreas-tradertraitor/"
+    },
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/fbi-links-63-billion-binance-crypto-heist-to-north-korean-hackers/"
     }
    ]
   },
@@ -7325,19 +7348,6 @@
    "region": "Global",
    "published": "2026-10-21T20:31:48Z",
    "summary": "North Korean hackers are using a post-quantum cryptographic mechanism to secure malicious payload delivery in new operations that combine old and new malware. [...]",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "f6f763b9dab2",
-   "title": "Marvell, Microsoft & Oracle Work to Standardize Data Center Hardware Security",
-   "link": "https://www.darkreading.com/cloud-security/marvell-microsoft-oracle-standardize-data-center-hardware-security",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-21T20:14:42Z",
-   "summary": "The effort is aimed at standardizing a NIST FIPS 140-3 Level 3 integrated HSM for cloud and hyperscale data center infrastructure.",
    "score": 0,
    "tags": [],
    "why": []
