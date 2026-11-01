@@ -1,8 +1,62 @@
 {
- "date": "2026-11-01",
- "generated": "2026-10-31T21:47:16+00:00",
- "title": "Sec-Pulse brief - Sun 01 Nov",
+ "date": "2026-11-02",
+ "generated": "2026-11-01T22:15:05+00:00",
+ "title": "Sec-Pulse brief - Mon 02 Nov",
  "items": [
+  {
+   "id": "7f9f6a0c6108",
+   "title": "Australia news live: Qantas seeks answers on data breach, storm prompts asthma warning, property values fall further",
+   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFA4WnZCUGNOOFdYN1dVOW1HQXIwRHhuZWtoeUp6U05SY3JpbGZGUEZOX3hxcHpLSTJQd24zdEl4U3IxalAzalhaVWUxTnNMY3Frdm5Z?oc=5",
+   "source": "شبكة تواصل الإخبارية",
+   "region": "AU",
+   "published": "2026-11-01T19:36:58Z",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Data breach"
+   ],
+   "summary": ""
+  },
+  {
+   "id": "81a61c3f94c3",
+   "title": "An AI found a 14-year-old hole in PHP. Australian government sites went dark for a night. The PHP nobody can patch is the part that lasts.",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNR09DYnZEWExURFFKaXBxWW11TGZRS1JZajlVaWxjZTUtZlNWR2N5dUR1dF9WUk5DWWllRE5LaWRrQ2FnREpPS3ZpTFFHWVNrWTYwU2ozSUZYcmFtNlVZTW1iVmtVVDQxcW15Tmc4V29uR3h0aVJKSmRxVVFaVVBZTHFOMWhvTHRBRUh4NmRlejRBN3ktRTh0ZjBBalI?oc=5",
+   "source": "Webcoda",
+   "region": "AU",
+   "published": "2026-11-01T06:14:20Z",
+   "score": 11,
+   "tags": [
+    "Australia",
+    "Vulnerability"
+   ],
+   "summary": ""
+  },
+  {
+   "id": "2189f5cb91ab",
+   "title": "The legendary 1980s leading man who lost his entire life savings to a devastating real estate scam",
+   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOMWsxSzZnYldHcVNfemZnWFRtRGpHUTJBS3hlT1ZlaVRYalREd1FmZFMxbXdGRTR6dXVGcVBZRm9tOVVRWjBULWZCN3hfc2ZUcjVLbEtXb0hOSUtEeTlndUx2Tm9FOXFmeTFJMnFnN2Zydy00QXUtcGRVckVBbUlvUklnMkgyMk5ESnFOWnFVaTVWUFBBNTZFSlUwYnpwN0RIOVM3dlRYWndHajJScERac0Z0VmpLRFhFZVUyOHFDQnF4b1dqMVB4eE01NWMxbVlMWW9tbEZn?oc=5",
+   "source": "www.hellomagazine.com",
+   "region": "Global",
+   "published": "2026-11-01T14:30:00Z",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "summary": ""
+  },
+  {
+   "id": "93097e9b2335",
+   "title": "Fake Will Scam: Real Estate Boss Claimed Landlord Was Dead",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE50NzByTEhBU0VnZmV3MkxUQTdsXzVlMDBocDZPNkpTdFlLWXNkSEhaWEpmdjdTdndPYUxyMEVsZ1ZIb0pldFJyR01vMGE0N2FfMHg2Q1ZlZDRwNk9GdlJCT2F4aWo3V04td29RQm1YMG9GRV9JZjU4R3lRd0dJdw?oc=5",
+   "source": "Property Noise",
+   "region": "Global",
+   "published": "2026-11-01T04:26:08Z",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "summary": ""
+  },
   {
    "id": "7aba56861a08",
    "title": "Haverford police reports: $3,000 lost in Facebook real estate scam",
@@ -15,71 +69,15 @@
     "Real estate"
    ],
    "summary": ""
-  },
-  {
-   "id": "3aeaf157a5b5",
-   "title": "'We thought you were dead': Landlord targeted in fake will scam by former real estate boss",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVU5lOXNUSWFZMlR4cjk3N0tHMXpCMlJTd2d2M0lJa1dPeDVYNDJLR3JLMGVLZFdQT2J1Q05iQkZyUXV1NElOTEhZOHJNZWk5UmhRUWZDNGdfYWx5YTFrV1pwd1g5UUY0NldDaTJUWUZJUml2U3FQUjEyMUMxN1JvUGpDdXNreTRWN01hbjUxN1lWSFk4SGFhRk9Od0VuTF9NaWpqTUhEMFAwY2QwYzNPNzRwTmRRS2I0OU5UWjFNdUw?oc=5",
-   "source": "Stuff",
-   "region": "Global",
-   "published": "2026-10-31T15:00:00Z",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "4a3beb5aa5ff",
-   "title": "Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access",
-   "link": "https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html",
-   "source": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-31T08:27:43Z",
-   "score": 8,
-   "tags": [
-    "Actively exploited",
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added two security flaws impacting Ivanti Connect Secure (ICS) to its Known Exploited Vulnerabilities (KEV) catalog, following active exploitation in the wild. The vulnerabilities are listed below - CVE-2026-111357 (CVSS…",
-   "epss": 0.0053
-  },
-  {
-   "id": "ba55b05e53ea",
-   "title": "Northflank security breach leads to abuse of customers' AI API keys",
-   "link": "https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys/",
-   "source": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-31T18:01:12Z",
-   "score": 6,
-   "tags": [
-    "Data breach",
-    "Identity"
-   ],
-   "summary": "Cloud application hosting platform Northflank is warning customers to rotate all credentials and secrets stored on its platform after a security breach led to unauthorized use of customers' AI API keys. [...]"
-  },
-  {
-   "id": "cc0e1787addb",
-   "title": "NPC probes data breach",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOOEE5WEYtRXhZS3NFdXVPMkZHTVRCZTFwUWk3LTRnQ00xcmZIeTBtTXR5WjdjQ085QzJHY2tfV1NqaWtJVkhJRTdOOXJ0cWZudUU3NUMzZm43SUNpR2o1bGF1U1JDV0ZOeThCNTVEZldsM2phQ2xNTmFXQ1JIRWNsTU4xNjbSAYQBQVVfeXFMTjhBOVhGLUV4WUtzRXV1TzJGR01UQmUxcFFpNy00Z0NNMXJmSHkwbU10eVo3Y0NPOUMyR2NrX1dTamlrSVZISUU3TjlydHFmbnVFNzVDM2ZuN0lDaUdqNWxhdVNSQ1dGTnk4QjU1RGZXbDNqYUNsTU5hV0NSSEVjbE1OMTY2?oc=5",
-   "source": "Philstar.com",
-   "region": "Global",
-   "published": "2026-10-31T16:00:00Z",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "summary": ""
   }
  ],
  "stats": {
-  "recent": 25,
-  "au": 0,
+  "recent": 14,
+  "au": 2,
   "kev": 0
  },
  "lesson": {
-  "id": "2.4",
-  "title": "Controls, mitigation and risk"
+  "id": "2.5",
+  "title": "Attack surface, SDLC and threat modelling"
  }
 }
