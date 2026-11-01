@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-01T13:28:47Z",
+ "generated": "2026-11-01T14:38:13Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,13 +28,13 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 5,
+   "count": 6,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 3,
+   "count": 4,
    "error": null
   },
   {
@@ -105,6 +105,36 @@
   }
  ],
  "items": [
+  {
+   "id": "2189f5cb91ab",
+   "title": "The legendary 1980s leading man who lost his entire life savings to a devastating real estate scam",
+   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOMWsxSzZnYldHcVNfemZnWFRtRGpHUTJBS3hlT1ZlaVRYalREd1FmZFMxbXdGRTR6dXVGcVBZRm9tOVVRWjBULWZCN3hfc2ZUcjVLbEtXb0hOSUtEeTlndUx2Tm9FOXFmeTFJMnFnN2Zydy00QXUtcGRVckVBbUlvUklnMkgyMk5ESnFOWnFVaTVWUFBBNTZFSlUwYnpwN0RIOVM3dlRYWndHajJScERac0Z0VmpLRFhFZVUyOHFDQnF4b1dqMVB4eE01NWMxbVlMWW9tbEZn?oc=5",
+   "source": "www.hellomagazine.com",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-01T14:30:00Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
+   "id": "d15dc155427a",
+   "title": "OpenAI says it's doubling Pro usage limits and bringing Work features to Chat",
+   "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-says-its-doubling-pro-usage-limits-and-bringing-work-features-to-chat/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-01T13:53:11Z",
+   "summary": "OpenAI has just confirmed that it's rolling out ChatGPT Work capabilities directly into regular Chat, while also combining usage allowances across ChatGPT and Codex. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
   {
    "id": "1d293ae9cead",
    "title": "Northstar Security Exits Stealth With $7M to Expose Toxic Risk Combinations",
@@ -500,6 +530,23 @@
      "source": "BleepingComputer",
      "url": "https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/"
     }
+   ]
+  },
+  {
+   "id": "db64d19c8c2e",
+   "title": "Strategies to Counter the Ransomware Threat in APJ",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPSDJ2SVVxbklYcjZuTndreF82WUpGZXd3RG1JalBfQU9rSjFzaVVIR2MxckNtRXI2cmxsOG1EU3JfNmdPNG55eDdqLWlQbFBvTVotaUNZOVBFR2FZYzZMY0Jjb3dtcEVNc2R4NjMtWHp5OUdSdEdWTld5XzBNeFpWLXU1X1NSVW1pWlZKeHA4Sk9ZOU5nZ2xN?oc=5",
+   "source": "iTnews",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-10-30T21:34:07Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
    ]
   },
   {
@@ -7278,57 +7325,6 @@
    "published": "2026-10-21T19:54:57Z",
    "summary": "",
    "score": 4,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "a0e99a083080",
-   "title": "Some N.L. government sites taken offline due to 'global cybersecurity vulnerability'",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQbmUwR1hmeDdOX2wyUmMwRkNKWmh4b2pVS3lveHAyTC1FUWxUeVYydF9pdUhoeG1TYjU1bi15YkdXV04xbEhZQ2lmRkJBM3hQaVVJbHhlNmstY05KcExqNWZuVEFHUFF3RjlFa05fNDlEdGVkQk1qeDFheGdvOFFfVVlPTmFtaW5Yck9fOW1vX1JjS0dITnY3NThoWEFjMGtqdnNKQW5CY1p2UQ?oc=5",
-   "source": "CBC",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-21T19:52:37Z",
-   "summary": "",
-   "score": 4,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "5f2ddb413304",
-   "title": "'PHP2Shell' Bugs Signal Red Alert for Security Industry",
-   "link": "https://www.darkreading.com/application-security/php2shell-bugs-red-alert-security-industry",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-21T19:19:17Z",
-   "summary": "Security teams are scrambling to remediate two critical PHP vulnerabilities following leaked details and reports of exploitation attempts.",
-   "score": 3,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "a9726704f0fa",
-   "title": "Critical GitLab Flaw (CVSS 10.0) Could Allow Unauthenticated RCE Across 12 Years of Releases",
-   "link": "https://thehackernews.com/2026/10/critical-gitlab-flaw-cvss-100-could.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-21T18:57:34Z",
-   "summary": "GitLab released fixes on October 21 for a flaw that lets an attacker run code on a self-managed server without logging in, and it affects every version of the software going back to 7.0, released in 2014. The fix matters even for administrators who patched nine days earlier: the October 12 update…",
-   "score": 2,
    "tags": [
     "Vulnerability"
    ],
