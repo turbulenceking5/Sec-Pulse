@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-01T14:38:13Z",
+ "generated": "2026-11-01T19:42:57Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,19 +28,19 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 6,
+   "count": 2,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 4,
+   "count": 6,
    "error": null
   },
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 2,
+   "count": 1,
    "error": null
   },
   {
@@ -105,6 +105,42 @@
   }
  ],
  "items": [
+  {
+   "id": "b7d5e53da907",
+   "title": "The Russian Frontline Scam: How Nairobi Agencies Lure Victims into Military Contracts",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPMzlfTFp3a0hUOEVGU2kzSGNRUmxnYWZDN1FkTW9haTNxMGhrMW4zblA3dlp4TzBRYnNSektDWERhZFI5NkdXajg2MHBRcGJyZ0E1b2JudDhQSTVJaXVKYTB5R3hIYUlqWTdsbTJrdWhvM1hYX2I1WGtSYXBUVmd2UUVHR1lfWUNweWZuWjJJM1Q5T1U2REpKSW9oR1ZLZDlJNzkzcTFGVmlvMjlyU0dtemtrTQ?oc=5",
+   "source": "Mwakilishi.com",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-01T15:16:00Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Phishing"
+   ],
+   "why": [
+    "Phishing"
+   ]
+  },
+  {
+   "id": "af6ffe74845e",
+   "title": "Alpine Linux rebuilds GitLab after attempted RCE attack",
+   "link": "https://www.bleepingcomputer.com/news/security/alpine-linux-rebuilds-gitlab-after-attempted-rce-attack/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-01T15:11:21Z",
+   "summary": "Hackers attempted to exploit a critical GitLab vulnerability in Alpine Linux's development infrastructure on October 20-21, prompting the open-source project to rebuild its GitLab server and reset all passwords over concerns of a possible compromise. [...]",
+   "score": 4,
+   "tags": [
+    "Identity",
+    "Vulnerability"
+   ],
+   "why": [
+    "Identity",
+    "Vulnerability"
+   ]
+  },
   {
    "id": "2189f5cb91ab",
    "title": "The legendary 1980s leading man who lost his entire life savings to a devastating real estate scam",
@@ -226,13 +262,13 @@
    ]
   },
   {
-   "id": "c6bade5b91e7",
-   "title": "Fake will scam: ex-real estate boss targeted landlord's home",
-   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNUjRZb202VHNYNVRDblNFMmFzdUhpY1lndDdWcU1fc1VIS1JqaU01cGRWX3NuODctamt1aGFybnVwVm4yeUNGRnBveElPWTd3S0NORXJwRWt2MEViUTRGZjN2M3ZwTElJYTZwRUlsVnRmbVhpV1QyQlMxQkVqRFhTeFZfRGh3cWlzczdKbGRETQ?oc=5",
-   "source": "B2B News",
+   "id": "93097e9b2335",
+   "title": "Fake Will Scam: Real Estate Boss Claimed Landlord Was Dead",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE50NzByTEhBU0VnZmV3MkxUQTdsXzVlMDBocDZPNkpTdFlLWXNkSEhaWEpmdjdTdndPYUxyMEVsZ1ZIb0pldFJyR01vMGE0N2FfMHg2Q1ZlZDRwNk9GdlJCT2F4aWo3V04td29RQm1YMG9GRV9JZjU4R3lRd0dJdw?oc=5",
+   "source": "Property Noise",
    "feed": "Real estate cyber news",
    "region": "Global",
-   "published": "2026-11-01T01:44:05Z",
+   "published": "2026-11-01T04:26:08Z",
    "summary": "",
    "score": 10,
    "tags": [
@@ -242,6 +278,10 @@
     "Real estate"
    ],
    "also": [
+    {
+     "source": "B2B News",
+     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNUjRZb202VHNYNVRDblNFMmFzdUhpY1lndDdWcU1fc1VIS1JqaU01cGRWX3NuODctamt1aGFybnVwVm4yeUNGRnBveElPWTd3S0NORXJwRWt2MEViUTRGZjN2M3ZwTElJYTZwRUlsVnRmbVhpV1QyQlMxQkVqRFhTeFZfRGh3cWlzczdKbGRETQ?oc=5"
+    },
     {
      "source": "Stuff",
      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVU5lOXNUSWFZMlR4cjk3N0tHMXpCMlJTd2d2M0lJa1dPeDVYNDJLR3JLMGVLZFdQT2J1Q05iQkZyUXV1NElOTEhZOHJNZWk5UmhRUWZDNGdfYWx5YTFrV1pwd1g5UUY0NldDaTJUWUZJUml2U3FQUjEyMUMxN1JvUGpDdXNreTRWN01hbjUxN1lWSFk4SGFhRk9Od0VuTF9NaWpqTUhEMFAwY2QwYzNPNzRwTmRRS2I0OU5UWjFNdUw?oc=5"
@@ -7301,36 +7341,6 @@
    "score": 0,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "04b5c5ae9150",
-   "title": "Cloud Security Alliance Survey Finds Data Loss Prevention Often Detects Data Loss Only After It Happens",
-   "link": "https://www.darkreading.com/cloud-security/cloud-security-alliance-survey-data-loss-prevention-detects-data-loss",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-21T20:03:14Z",
-   "summary": "Research finds that, among respondents experiencing data loss, only 16% said DLP blocked their most significant incidents before data left the organization.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "e85c7b673e3f",
-   "title": "Websites taken down worldwide as critical cyber-security update issued",
-   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE8yYkJ1a0hkTXBMWUxzUGRNam81RzlXVTd0THJ2cWlvbVd4VmlNQ0ZzeHV0b21aR21mazJNTXAwSjRqN3VoNzgydHplRmRUamltaFJSUmZvcXBUZDg?oc=5",
-   "source": "BBC",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-21T19:54:57Z",
-   "summary": "",
-   "score": 4,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
   }
  ]
 }
