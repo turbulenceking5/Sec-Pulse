@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-02T00:46:34Z",
+ "generated": "2026-11-02T11:12:59Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -16,25 +16,25 @@
   {
    "name": "ACSC (via Google News)",
    "ok": true,
-   "count": 3,
+   "count": 1,
    "error": null
   },
   {
    "name": "ASD / ACSC in the news",
    "ok": true,
-   "count": 3,
+   "count": 1,
    "error": null
   },
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 5,
+   "count": 6,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 7,
+   "count": 6,
    "error": null
   },
   {
@@ -82,7 +82,7 @@
   {
    "name": "Microsoft Security Blog",
    "ok": true,
-   "count": 8,
+   "count": 0,
    "error": null
   },
   {
@@ -106,13 +106,182 @@
  ],
  "items": [
   {
-   "id": "c6820715fc5e",
+   "id": "2e0eed251125",
+   "title": "Chainalysis Discloses Data Breach Following AI-Driven Cyberattack",
+   "link": "https://www.securityweek.com/chainalysis-discloses-data-breach-following-ai-driven-cyberattack/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-02T10:27:49Z",
+   "summary": "The attackers used offensive agentic techniques to access the company’s systems and internal tools. The post Chainalysis Discloses Data Breach Following AI-Driven Cyberattack appeared first on SecurityWeek .",
+   "score": 4,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "357136bfe66d",
+   "title": "Ivanti patches two more Connect Secure zero-days chained in attacks",
+   "link": "https://www.bleepingcomputer.com/news/security/ivanti-patches-two-more-connect-secure-zero-days-chained-in-attacks/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-02T09:33:26Z",
+   "summary": "Ivanti released security updates to patch two more Connect Secure (ICS) remote access gateway flaws that have been chained in zero-day attacks since at least October 1. [...]",
+   "score": 10,
+   "tags": [
+    "Actively exploited",
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "why": [
+    "Actively exploited",
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "also": [
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/ivanti-patches-two-more-zero-days-exploited-in-connect-secure-attack-chain/"
+    },
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html"
+    }
+   ],
+   "epss": 0.0053
+  },
+  {
+   "id": "ff9c9693b43d",
+   "title": "Polymarket Returns $3.9 Million to Traders as DebugBear Cites DNS Hijack",
+   "link": "https://www.securityweek.com/polymarket-returns-3-9-million-to-traders-as-debugbear-cites-dns-hijack/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-02T09:33:15Z",
+   "summary": "DebugBear says its DNS records were compromised via its domain registrar, and early findings show a single customer was targeted. The post Polymarket Returns $3.9 Million to Traders as DebugBear Cites DNS Hijack appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": [],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/hackers-steal-about-27-million-from.html"
+    },
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/2-million-drained-from-polymarket-traders-in-new-supply-chain-attack/"
+    }
+   ]
+  },
+  {
+   "id": "1befc30403b6",
+   "title": "FBI Flags Over 600 Addresses Tied to North Korea’s Binance Heist",
+   "link": "https://www.securityweek.com/fbi-flags-over-600-addresses-tied-to-north-koreas-binance-heist/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-02T08:40:36Z",
+   "summary": "The FBI has officially pinned the $6 billion Binance hack on North Korea’s TraderTraitor as the attackers launder the stolen crypto. The post FBI Flags Over 600 Addresses Tied to North Korea’s Binance Heist appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "2ad683677a7f",
+   "title": "HYBE suffers data breach of current and former employees, including resident registration and passport numbers",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE01ZTRuNGt1RExTWnFpMnF0b21hdjJ0MWNWaHZQLTlYcDN3RVcwRnBuN1RMZDAtZldVUWpROXlRZ0ZERUw4bTZndW9pQmxYeHZLMUNKUDM1SWdZRk5ZRDB1SDln?oc=5",
+   "source": "재경일보",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-02T08:35:04Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "92da4cc48672",
+   "title": "Qantas Amadeus Data Breach: 5 Airlines Probe [2026]",
+   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPbDQ4WXljWkhNQmdsMUdhdFozdHdpU3h6YU5uVGlJV1hDN2tZUEEwb3hCNDh4NFZNb013dmE2c2szcXg5TGdnaGNmOTlnNU44bkd3Qjgwak5EbUltY181SGFlbk5DRmh1LUlPanNkdEFTS1NnRk1FR1M5UHNWc1hHTXRmYXFET00?oc=5",
+   "source": "tech-insider.org",
+   "feed": "AU breach news",
+   "region": "AU",
+   "published": "2026-11-02T07:59:04Z",
+   "summary": "",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Data breach"
+   ],
+   "why": [
+    "Australia",
+    "Data breach"
+   ],
+   "also": [
+    {
+     "source": "Homeland411",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPM0ZQYUNsVTFheUdjaEdpVkJjVUxQam15SlpLZmp0bHpoZDItNFFCT0ZTZE8ybHZCQUdxODc1aTVOZ1dicWNncGlHSDFNNFdEN3RwcEhibXlUOW5qeUt3YTYwdFRQYlZpcE9FLWdSM1ZleERnS2FGX0FMWW9ybFpPeUktdzQwb0d0ZThoUDQ4aW16dw?oc=5"
+    },
+    {
+     "source": "B2B News",
+     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPMXRUeFVjal9hX3Jwa3hDWHdwWU16aENjRHcyTFdZaUozZzRuSXdNaTBOWDEwc2sweHZPdzYwNDQ4R1ZNMVRVYVZQOU1RaFNmcHp5dGtYQlVJOEFrVlk4ZzVYT1NOdHdHOTA2ODNrYjhNRVNuQ0lEY3dESlYzT2I5MUFVV2JEUUNhdlVpM3NVMA?oc=5"
+    },
+    {
+     "source": "Yahoo News Australia",
+     "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBtS1JBYzhyWWRJTENGeVNvQUFCSzlvamtncVFFZWhudC1pWDljMFBIY3ZCMWFUSkNRNjlhNUV2T0NsMDczZEhRVmloYUZJdWRaNktvcERpVXdnTi1GRjdRRm9ZMmhqdUVzRTJHUWNkbWd3amNVZHlJTDk1OVQ?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "9068a344a035",
+   "title": "New VOLTA Infostealer Uses Claude, Gemini, and Kimi AI to Rank Victims by Financial Value",
+   "link": "https://thehackernews.com/2026/11/new-volta-infostealer-uses-claude.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-02T05:51:07Z",
+   "summary": "Cybersecurity researchers have discovered a new Windows infostealer malware called VOLTA-AUTODOXER (aka VOLTA) that makes use of a large language model (LLM) to rank a victim's stolen data by their monetization value. Like other typical stealer families, VOLTA is equipped to harvest passwords and…",
+   "score": 7,
+   "tags": [
+    "Data breach",
+    "Identity",
+    "AI threats"
+   ],
+   "why": [
+    "Data breach",
+    "Identity",
+    "AI threats"
+   ]
+  },
+  {
+   "id": "d0dae30d7bd0",
+   "title": "ISC Stormcast For Monday, November 2nd, 2026 https://isc.sans.edu/podcastdetail/10160, (Mon, Nov 2nd)",
+   "link": "https://isc.sans.edu/diary/rss/33480",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-11-02T02:00:03Z",
+   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "009f8af18306",
    "title": "Airlines flying in and out of Australian airports impacted by customer data breach",
-   "link": "https://news.google.com/rss/articles/CBMimAJBVV95cUxQSzZBa055TVY5NFFnQ2xqTnladWlNN0lrNENRc3ppa0hETVlNdG1YN05NdGJOcXQ0ZWJzZFlJcVE2eGNjUVVwcjhRcktwNlpyTG9OMWM2TGpST21uWUN3NzBreDRESVcxZXRiMDYxa2d2amFrdGxHOTJRdkN6VlVzMHNSTWVGNkkxWTYtN2VfbU10QUtRbzk5SEczcnZ5bW9TdmstZHRJcW1LeGozSUtiWTNtN1NlVk1TVmd3NmZGbEVFY2dqc1ozS0otMTBNeGFqakFnVVFmaXhMbUJEVEVvYWdDSmVuMk50SlRVSTQzSHdRU0pnRDVaTldqcHlpZXRuWmZ2M1NPdWhBOGpxMmNhM0VXX29lLXA30gGeAkFVX3lxTE9JLWVCS1U1VnFMODlla0JxNk5OcEFra1E4SVdsZVh0ZGdQX0hRWF8xcFhjb2dYV3lfNENOTFpuSmxTYkF5Q0RvNmRXRDhieF9RZXJmaHhycE5nbEtXVExLaHBhaDZONlpqdmc0VWdZM0x1TDlubU1JTFRxbjVWUE9TM1lpcHQzaDdKWXhyYXZaYXZ2TEkwVjlSLUpESndYN05aZ2RTekk3LWxkRjc4dTRmUTQ4a0RlUE82VXRubzBxMG5MbnhaWGU3Y1d5ZmxTT2NUSV9WcGhueHRpdHBLbUtoQWE2SkxBaEhOOWhhQVA2V21ZdVY5M28xUEtSZ1NyYTY3dFI2Mk5aLUFCWm1BdXYyaHdhVkNBOUxYYmF5Nmc?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMitgJBVV95cUxPSDhScVdBWG1wVV8ybVdHMk1GZWxVLTlJaUpDZ0lfdk9HeFkzdDVESk5sU3BzclpLcGdlMmJ2NXhnMHhKQTR4UzNSYjVPeDlQd0VLdHlhV3Bqa05vc3JxZnhGTjQ3TlJqM1BVZGEtQ0J3OExlUkwzQzNEakxYMUh2TFlzSGZ3Z1d0dWpVMURKV2pyU3BuWHcyOXZVc3dwOXJhYW5ScTZDU2xRY0ZjQTFVQk5kMTV2MFc4NFJtc0drTEwwZnpHQVNkLVFwelludkFyakFtZzFWenVHdGpCdHNBZmt5VXVVZTlLeDhOWDZ6V2RjeHJ6Vi15aDBkVFdJUHZua0tjTnBtRU53UWxfVXhNQzVXOWpSWTJjZTA5X3ZadzYzMHd0d3A1RGZCVmJrNkxvTUlZc3dn0gG2AkFVX3lxTE9IOFJxV0FYbXBVXzJtV0cyTUZlbFUtOUlpSkNnSV92T0d4WTN0NURKTmxTcHNyWktwZ2UyYnY1eGcweEpBNHhTM1JiNU94OVB3RUt0eWFXcGprTm9zcnFmeEZONDdOUmozUFVkYS1DQnc4TGVSTDNDM0RqTFgxSHZMWXNIZndnV3R1alUxREpXanJTcG5YdzI5dlVzd3A5cmFhblJxNkNTbFFjRmNBMVVCTmQxNXYwVzg0Um1zR2tMTDBmekdBU2QtUXB6WW52QXJqQW1nMVZ6dUd0akJ0c0Fma3lVdVVlOUt4OE5YNnpXZGN4cnpWLXloMGRUV0lQdm5rS2NOcG1FTndRbF9VeE1DNVc5alJZMmNlMDlfdlp3NjMwd3R3cDVEZkJWYms2TG9NSVlzd2c?oc=5",
    "source": "News24",
    "feed": "ASD / ACSC in the news",
    "region": "AU",
-   "published": "2026-11-01T23:37:35Z",
+   "published": "2026-11-01T23:36:40Z",
    "summary": "",
    "score": 14,
    "tags": [
@@ -281,25 +450,6 @@
    "score": 0,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "2a3e4a8e199c",
-   "title": "Hackers Steal About $2.7 Million From Polymarket Traders via Hijacked DebugBear Script",
-   "link": "https://thehackernews.com/2026/11/hackers-steal-about-27-million-from.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-01T07:25:40Z",
-   "summary": "Malicious code on the website of prediction market Polymarket sold some signed-in traders' positions and moved their funds to the hackers on October 29. The code had replaced a page-speed script that the site loaded from an outside company. Polymarket says it is refunding about $2.7 million to 726…",
-   "score": 0,
-   "tags": [],
-   "why": [],
-   "also": [
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/2-million-drained-from-polymarket-traders-in-new-supply-chain-attack/"
-    }
-   ]
   },
   {
    "id": "be08e34bf976",
@@ -559,28 +709,6 @@
    "score": 1,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "4a3beb5aa5ff",
-   "title": "Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access",
-   "link": "https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-31T08:27:43Z",
-   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added two security flaws impacting Ivanti Connect Secure (ICS) to its Known Exploited Vulnerabilities (KEV) catalog, following active exploitation in the wild. The vulnerabilities are listed below - CVE-2026-111357 (CVSS…",
-   "score": 8,
-   "tags": [
-    "Actively exploited",
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "why": [
-    "Actively exploited",
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "epss": 0.0053
   },
   {
    "id": "e8eb82345a00",
@@ -7225,131 +7353,6 @@
    "why": [
     "Australia",
     "Data breach"
-   ]
-  },
-  {
-   "id": "9ce38517c308",
-   "title": "PHP Foundation admits ‘structural failure’ delayed critical security fix",
-   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOYjYtUmlhdlE5WmdwcFU2djY5YXVaZDBjaWU4d3RYSTBmUDdfcVI5NzUydDNSZ2xlLUtjZ3FfbVNfbi1kNy16N0k4WFhhc2xuM3p3Y2hHRGZmWnJqRWdkakM0OExsLXlFSkgxUnJDMHpSal8zeFl0NDMzWU5VY0dLNkRTYlgtaWp4RlJ2b2FKVFJoa0p0QTdwaUdzclUya1BBb1FCNVAwcDhHWjZWLUQ1Sko3TDdZUUh3d1kzWllRZHEyRVcxOHpiS0RtUTFvbUE?oc=5",
-   "source": "TradingView",
-   "feed": "ASD / ACSC in the news",
-   "region": "AU",
-   "published": "2026-10-22T00:44:00Z",
-   "summary": "",
-   "score": 9,
-   "tags": [
-    "Phishing",
-    "Australia"
-   ],
-   "why": [
-    "Phishing"
-   ]
-  },
-  {
-   "id": "e967f8d5c5f8",
-   "title": "PingCAP Breach Exposed Customer Business Data and Potentially Sensitive Logs · cyber.hendryadrian.com",
-   "link": "https://news.google.com/rss/articles/CBMiO0FVX3lxTE5uU2l6TU1QR2NJSzl1aXJPVUNCMTBTOWRJaDM1UGhpTzh2Q1puWXNwMkhNTDI4cGp4MHlZ?oc=5",
-   "source": "Howl.link",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-22T00:40:41Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "832124389031",
-   "title": "Google Chrome adds Gemini-powered scam detection, warns users of ClickFix attacks",
-   "link": "https://www.bleepingcomputer.com/news/google/google-chrome-adds-gemini-powered-scam-detection-warns-users-of-clickfix-attacks/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-21T22:16:26Z",
-   "summary": "Chrome is getting new scam protections that use Gemini to detect deceptive websites and warn users when they copy suspicious commands from ClickFix attacks. [...]",
-   "score": 0,
-   "tags": [],
-   "why": [],
-   "also": [
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/google-hardens-chrome-against-clickfix-attacks-insecure-http-connections/"
-    },
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/google-chrome-adds-clickfix-warnings-to.html"
-    }
-   ]
-  },
-  {
-   "id": "407ba0a1ad60",
-   "title": "SafePay ransomware group has targeted hundreds this year, US agencies say",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNMDJYS3lvNVVTVHRuZGJ6VlByYWN3NF8tRERYSm1fa1VjTTBzODNpeElTWm1lNU9PVFczcHRYX2NnZDc2VGcwd2NsS0F6b3U0UkhKSVlmQnJCQ0lsY3loZF9rV05IWUJvTGdEY0dwTlFfR1VSdVU2bHpkbUtRQ25fci1Id3FtelVxOXYxTDZRNElsNV9lejFtTTZyNWRvY1VVS0JUSHRteGMteXpqYl9jWGNRajNQZG9jT0pnMWFQaHNON28?oc=5",
-   "source": "Reuters",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-21T21:50:23Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Ransomware"
-   ],
-   "why": [
-    "Ransomware"
-   ],
-   "also": [
-    {
-     "source": "Devdiscourse",
-     "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQV2trd1VWek1Nb1FKRVdQVDcwam44ckgxLTltZ0podGktQkVtcTd1N1pyUTdzNG14b2tNQzYzRmRkWXVTVmxlNm1XbU5YS2tacHRPb1FCZ0RvLTBoOS1uX1luYll4MUNFa212MGxBYUhLcU9KVTBHUnBBaFh2c2kyWWJDRm9Lcm9jajhmV2hIQzFPRzBVSDU2d0wwb1NlNGpHU29vS1hqcXRtRVRncnVXTVIwWXpWakJhck56ellCQkRFTVExcWR2eUtBc9IB0AFBVV95cUxPZWdsVTVZaHVIOTEwTThoNkNOLU1lQ1RYZHNrU3dYcEp2NHBmRWJnbkJucWhhRzJNZ1JYOXNMWVAxVUxRZDJlbFVqU3FEYjRRWkRPTW9Qekt0ZEVrSEh2Sk9xenYyRlRIYUhMTVFZbDV1TTdZcG1mRU1zNk14UkY2dTd6OHF0LXNlMzBNa1hPeXB0TmgzRUJTYUROZThBRkZaaEQzR2Z3eU51bUlHV3Y0cGtoU1puRHBNZ2x2LWNfZFF4OWJ5alVfTHN2RHRvdE0x?oc=5"
-    },
-    {
-     "source": "WKZO",
-     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPbUVhRzhyR0FIcEljR1BWOG9FZTdzZkg2Y3VrN0RFMjBXdTRVSjBqMXkyTzg4aWdSajJzXzZhejhETUxvdDRtUHlpQTB3ZVFkVVR4dFduU0JxdzhzQ0xFd1NqQzUtUE9MZ0h3YjhMVEkweVNEZUUtNGNoZ1JEd2FPandmampSOUJQaTlpeUkzWUtVeVZlRmVvZVJzRU1pMEpvQXhB?oc=5"
-    }
-   ]
-  },
-  {
-   "id": "e9fd60a700e2",
-   "title": "Japan's Onamae Desktop Cloud hacked, up to 27,000 servers affected",
-   "link": "https://www.bleepingcomputer.com/news/security/japans-onamae-desktop-cloud-hacked-up-to-27-000-servers-affected/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-21T21:43:27Z",
-   "summary": "Hackers compromised the infrastructure of Onamae Desktop Cloud, a popular provider of VPS services in Japan, and installed malware on up to 26,739 customers' servers. [...]",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "2b3e5a4b3e81",
-   "title": "SafePay ransomware group targets critical infrastructure",
-   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNQ040Q1ZzVzk1TWpxWHZfNGFiQ2xFRVVUZWZjN0JjckV0ZVNFQjdzRW5iTHNrRzNMbUN0eHZuUFlaRXJULXpYSW1SXzlPakhvTE5SYUhMQm5rN1B5MVlOTEFaNGdxanJkd3M1MU4wZFpxemY1VFM2LUJEWFZlUmI5VWVnUnlyZXFfZ1VHNjlmTQ?oc=5",
-   "source": "SC Media",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-21T21:42:41Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Ransomware"
-   ],
-   "why": [
-    "Ransomware"
-   ],
-   "also": [
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/cisa-and-fbi-safepay-ransomware-has-hit-over-600-critical-infrastructure-organizations/"
-    },
-    {
-     "source": "Cybersecurity Dive",
-     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQWElmNk5keXBOZG9JQ0hRSnB2WjU0RklnU1RvZFBLcWRPWjFmZGxBN3VWSzgyZGRwaGlSYmticTNmTUFsYTgyTmZBVXVPZk1iX2Q3bjBsLTF2d3RCdDdBNE5RQWVDWVVwZlhQSkVnaDFxMmdfYmxYYkJIRDEtMjcyOTBfREp6ZkprTjlEY2doQjNiMXBwWUdpeW5JbE9QQllBS0h2dkNyR2daTmtCNkFB?oc=5"
-    }
    ]
   }
  ]
