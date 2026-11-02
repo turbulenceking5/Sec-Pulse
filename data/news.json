@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-01T22:14:25Z",
+ "generated": "2026-11-02T00:46:34Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -22,7 +22,7 @@
   {
    "name": "ASD / ACSC in the news",
    "ok": true,
-   "count": 2,
+   "count": 3,
    "error": null
   },
   {
@@ -34,7 +34,7 @@
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 4,
+   "count": 7,
    "error": null
   },
   {
@@ -105,6 +105,59 @@
   }
  ],
  "items": [
+  {
+   "id": "c6820715fc5e",
+   "title": "Airlines flying in and out of Australian airports impacted by customer data breach",
+   "link": "https://news.google.com/rss/articles/CBMimAJBVV95cUxQSzZBa055TVY5NFFnQ2xqTnladWlNN0lrNENRc3ppa0hETVlNdG1YN05NdGJOcXQ0ZWJzZFlJcVE2eGNjUVVwcjhRcktwNlpyTG9OMWM2TGpST21uWUN3NzBreDRESVcxZXRiMDYxa2d2amFrdGxHOTJRdkN6VlVzMHNSTWVGNkkxWTYtN2VfbU10QUtRbzk5SEczcnZ5bW9TdmstZHRJcW1LeGozSUtiWTNtN1NlVk1TVmd3NmZGbEVFY2dqc1ozS0otMTBNeGFqakFnVVFmaXhMbUJEVEVvYWdDSmVuMk50SlRVSTQzSHdRU0pnRDVaTldqcHlpZXRuWmZ2M1NPdWhBOGpxMmNhM0VXX29lLXA30gGeAkFVX3lxTE9JLWVCS1U1VnFMODlla0JxNk5OcEFra1E4SVdsZVh0ZGdQX0hRWF8xcFhjb2dYV3lfNENOTFpuSmxTYkF5Q0RvNmRXRDhieF9RZXJmaHhycE5nbEtXVExLaHBhaDZONlpqdmc0VWdZM0x1TDlubU1JTFRxbjVWUE9TM1lpcHQzaDdKWXhyYXZaYXZ2TEkwVjlSLUpESndYN05aZ2RTekk3LWxkRjc4dTRmUTQ4a0RlUE82VXRubzBxMG5MbnhaWGU3Y1d5ZmxTT2NUSV9WcGhueHRpdHBLbUtoQWE2SkxBaEhOOWhhQVA2V21ZdVY5M28xUEtSZ1NyYTY3dFI2Mk5aLUFCWm1BdXYyaHdhVkNBOUxYYmF5Nmc?oc=5",
+   "source": "News24",
+   "feed": "ASD / ACSC in the news",
+   "region": "AU",
+   "published": "2026-11-01T23:37:35Z",
+   "summary": "",
+   "score": 14,
+   "tags": [
+    "Australia",
+    "Data breach"
+   ],
+   "why": [
+    "Australia",
+    "Data breach"
+   ]
+  },
+  {
+   "id": "758c901c3f8b",
+   "title": "AI agents don’t need bad intent to breach your systems",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOdF92TzBRUWZtb2VCd0pzNHJOTldsRENsc2dwejU3Y3RUZFVSXzBHeThjWHFrR3pQSTRnR2FGTG9QWTVMd1F2UURvUUZoaHdQVXBYMmxfdkJJYkhUcVRIZmFKTTdSNXBya1R2VmR0UEs4V04xbGJlaUlha01xRXVIS1dzTllGcEFOQUFmcUoyX05BMGozaUQtag?oc=5",
+   "source": "Cybersecurity Insiders",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-01T22:10:45Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "0b45cf28b86a",
+   "title": "Korea Real Estate Convergence Society to Hold Korea-China International Academic Seminar at KINTEX on Nov. 4",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBoUXlxTUktNFUzbUFKdjJLZ28wejJxRENjVnRBV3lmR1RxM1B3R2Nac0RJQm5EX3E3MUxVeDFNTHE3bHQ1OWZ6aXlTQzFsUUJxUjBHRmJDWGhueVZDaE9NbENESVU?oc=5",
+   "source": "아시아경제",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-01T21:20:00Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
   {
    "id": "7f9f6a0c6108",
    "title": "Australia news live: Qantas seeks answers on data breach, storm prompts asthma warning, property values fall further",
@@ -7298,59 +7351,6 @@
      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQWElmNk5keXBOZG9JQ0hRSnB2WjU0RklnU1RvZFBLcWRPWjFmZGxBN3VWSzgyZGRwaGlSYmticTNmTUFsYTgyTmZBVXVPZk1iX2Q3bjBsLTF2d3RCdDdBNE5RQWVDWVVwZlhQSkVnaDFxMmdfYmxYYkJIRDEtMjcyOTBfREp6ZkprTjlEY2doQjNiMXBwWUdpeW5JbE9QQllBS0h2dkNyR2daTmtCNkFB?oc=5"
     }
    ]
-  },
-  {
-   "id": "7bcbd743c3f7",
-   "title": "TiDB Breach Exposes Flawed Cloud Security Assumptions",
-   "link": "https://www.darkreading.com/cloud-security/tidb-breach-flawed-cloud-security",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-21T21:15:39Z",
-   "summary": "Cloud providers may be storing sensitive customer data, without either party knowing it. But when a provider is breached, the unseen information comes to light.",
-   "score": 4,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "0dbd162481ab",
-   "title": "COLUMN: The real estate scam landscape is changing. Northeast Colorado homeowners need to be ready",
-   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQZVVGZ1RvYzk4dkxsaFFVU1pyeGxLclBEWUg4X3F0SncxeWpESEstNnVWR1lleGJlZ2hBTWRIZGxrS08zNUhFV190U2Z4YjkwV2JiR2FEdTFWeF9NdFoxZzZNazJ6TEZ2d05xOGJ5bXVCZk1uNnRFbGVRSEhROE91aUY1TGRCQldtV2RxYTRZWFdKcnpXU1JnaGRvMHAxVDkwdGpzWm55QWhtU3Y0cm1FcVN0ZHhxZlFzTnZhWE9TVW8xM0hJaC1MNm9HNjhyLVM2SzgwQkVJcw?oc=5",
-   "source": "The Fort Morgan Times",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-21T21:14:34Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ],
-   "also": [
-    {
-     "source": "Journal-Advocate",
-     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNblp4NW9vN1hvbFFMdVpUSWhrbTVGWlNqNi1PWUdkYjJfM2R4OVcwTnY1dHdhcURtWHdkekVwR1dEeTRiZjFYNVY2aWxzTWYwUUVzcDhJbHJRUVhpTmd1X1kxZWMwOTc5THFjakJsSFpGTG9rblgwMHI2aHdYeGZLbFFad3o3TjlOWFV3b3JpNklUbUphSFpSMVVBUzdDT0ktM1VnVThZVk1zMmpoYkJ5Qks1Mzhua21vMmcwdmpHeWtURUxYTE5vYkR5eE9MeHN6SHd6VlpHeTM?oc=5"
-    }
-   ]
-  },
-  {
-   "id": "3371acd3dcb3",
-   "title": "Lazarus hackers use post-quantum cryptography for malware delivery",
-   "link": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-use-post-quantum-cryptography-for-malware-delivery/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-21T20:31:48Z",
-   "summary": "North Korean hackers are using a post-quantum cryptographic mechanism to secure malicious payload delivery in new operations that combine old and new malware. [...]",
-   "score": 0,
-   "tags": [],
-   "why": []
   }
  ]
 }
