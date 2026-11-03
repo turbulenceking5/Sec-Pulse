@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-03T17:05:20Z",
+ "generated": "2026-11-03T23:25:57Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,7 +28,7 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 5,
+   "count": 8,
    "error": null
   },
   {
@@ -40,7 +40,7 @@
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 1,
+   "count": 0,
    "error": null
   },
   {
@@ -52,7 +52,7 @@
   {
    "name": "CISA KEV",
    "ok": true,
-   "count": 18,
+   "count": 19,
    "error": null
   },
   {
@@ -82,7 +82,7 @@
   {
    "name": "Microsoft Security Blog",
    "ok": true,
-   "count": 8,
+   "count": 10,
    "error": null
   },
   {
@@ -100,31 +100,232 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 27,
+   "count": 28,
    "error": null
   }
  ],
  "items": [
   {
-   "id": "310fe7a6e4c3",
-   "title": "Google Warns LLMjacking Attacks Are Costing Some Enterprises Up to $1 Million in Cloud Charges",
-   "link": "https://thehackernews.com/2026/11/google-warns-llmjacking-attacks-are.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
+   "id": "daaea0ee15c2",
+   "title": "Cybercrime squad investigating 'major' NSW Health data breach",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQbEF0UHRLaThtNXJqS2JIMFJsbkFDTWxlSE5mVWlJLU1fdFJZeGZXRk9idExLdHIzcjMydVFvZU1fNld0aVljeXR0TUVWNEo4ZlYwOWdhZjF1RzczQXhPb3Zoa0IwWXpFYVB0akZNLUUxSDZ3Um5RdnZDOGxRcXNiUEt4V3hTS3JkUTNMdndJOGVpMlJWNUl2U2xFdnJiNG56ZW5LRXJBbm8?oc=5",
+   "source": "SBS",
+   "feed": "AU breach news",
    "region": "Global",
-   "published": "2026-11-03T15:41:53Z",
-   "summary": "Google on Monday warned that threat actors are hijacking enterprise access to Large Language Models (LLMs) to fraudulently leverage expensive computing resources and AI services. The tactic is called LLMjacking, a form of resource hijacking adapted for the LLM era, where an attacker obtains an API…",
+   "published": "2026-11-03T23:22:00Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ],
+   "also": [
+    {
+     "source": "ABC News & Headlines – Australian Broadcasting Corporation",
+     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOUlprYTFMV2c5elRudzVVRXRQbWdLdGxlbFBiU1dKcTBMMGxlTlFKNl9WZnJpVmhHMEhxcDU3a28xQlQwNzBhcnFpckM5OVF1cmxQUk5hd29xNGttdW1wcVpTeVJqdjNOSE01ZS1UVV9xOWhCdENrY1FMWVo1YlhQbjBxdHk3VjRLSVNkQ0JxRDJsbTFMa0RsX1JyajNWN21zVF9Tb3dpaW1rSXJxekFVVl9EUQ?oc=5"
+    },
+    {
+     "source": "Nine.com.au",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPSmtqWTNkWW1lZ2VKOGhrQ3FXNDRCRkZsR21QV0ljLUdiMXgxcWFGbXJ2OG9zYV9obDI3TDVnWWJLZGc4LVluOTNtNzZCdE5iNDhfTTI4b2trYVZ5Y1N1Z0ZLUGVacXdYQXB1TXhscUhCRWhfSUZ1VDJ5ckc2TnMxVFltbjhTRUFiSmdFZ19mMXA5XzlxS0lnNVFpNVNic243WVNUemJLU3lTWnZxNGF5TVRTM1BaZVBSUm43UFdLSHE?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "b0a8ea5b6986",
+   "title": "Hackers hijack cPGuard autoupdate to deploy backdoor, steal data",
+   "link": "https://www.bleepingcomputer.com/news/security/hackers-hijack-cpguard-autoupdate-to-deploy-backdoor-steal-data/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-03T22:18:50Z",
+   "summary": "Attackers have compromised the update infrastructure for the cPGuard web security suite to distribute a backdoor and a data-stealing script. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "699d6dc9b64e",
+   "title": "Germany Busts 'Crime-as-a-Service' Investment Fraud Outfit",
+   "link": "https://www.darkreading.com/cybersecurity-operations/germany-crime-service-investment-fraud",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-03T21:57:12Z",
+   "summary": "German police led a multinational probe that exposed an alleged crime-as-a-service provider supplying fraudulent trading platforms to investment scammers.",
+   "score": 3,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "27b11b637919",
+   "title": "WorkOS says attacker used ARTEX AI to breach internal sales app",
+   "link": "https://www.bleepingcomputer.com/news/security/workos-says-attacker-used-artex-ai-to-breach-internal-sales-app/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-03T21:28:44Z",
+   "summary": "Developer platform WorkOS suffered a data breach after a threat actor accessed business contact records and summaries of customer communications. [...]",
+   "score": 4,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "9673cbefb102",
+   "title": "Binance identifies cause of $6.34 billion security breach",
+   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQYzRPX1RZenJhcmxxa2JIRW9VRWFzQXM5eEhwM0lNVExVZFlsZ3JFSzV4U3lTZy12MVRfbC1ZRGlkS3M1cmZXdTZILXJKMU5LMnFmc1I1MDVjSG8wcDc3SEpBWFFuQ19MUHZ4S1BMekVPU3lEZ2xHUFhsV2d2WWM5cm9qMA?oc=5",
+   "source": "Ticker News",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-03T20:37:27Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "317e8557e095",
+   "title": "Binance says fake job interview led to $6.3 billion crypto heist",
+   "link": "https://www.bleepingcomputer.com/news/security/binance-says-fake-job-interview-led-to-63-billion-crypto-heist/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-03T20:05:50Z",
+   "summary": "Cryptocurrency exchange Binance says North Korean hackers used a fake job interview to trick an employee into installing malware that ultimately let them compromise the company's wallet infrastructure and steal about $6.34 billion in digital assets. [...]",
+   "score": 0,
+   "tags": [],
+   "why": [],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/binance-reveals-how-fake-job-interviews.html"
+    }
+   ]
+  },
+  {
+   "id": "77eef035ebfc",
+   "title": "Google: LLMjacking attacks rack up $1 million in cloud AI charges",
+   "link": "https://www.bleepingcomputer.com/news/security/google-llmjacking-attacks-rack-up-1-million-in-cloud-ai-charges/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-03T18:51:04Z",
+   "summary": "Large language model hijacking attacks, also known as LLMjacking, are generating large fraudulent cloud charges, with some organizations losing more than $100,000 per day. [...]",
    "score": 2,
    "tags": [
     "AI threats"
    ],
    "why": [
     "AI threats"
+   ],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/google-warns-llmjacking-attacks-are.html"
+    }
+   ]
+  },
+  {
+   "id": "9ca07b46843b",
+   "title": "mSecure Warns Users to Change Passwords, Reset 2FA and Passkeys After Suspicious Activity",
+   "link": "https://thehackernews.com/2026/11/msecure-warns-users-to-change-passwords.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-03T18:46:38Z",
+   "summary": "Customers of the mSecure password manager are being urged to act now to protect the confidential information they store in it, possibly by changing passwords, resetting two-factor authentication (2FA), and removing passkeys. The warning came in an email sent on November 3 in the name of developer…",
+   "score": 3,
+   "tags": [
+    "Identity"
+   ],
+   "why": [
+    "Identity"
+   ]
+  },
+  {
+   "id": "8afc2fab5966",
+   "title": "Chainstack Reports Production Systems Breach Exposing Customer Data and Password Hashes",
+   "link": "https://thehackernews.com/2026/11/chainstack-reports-production-systems.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-03T18:16:19Z",
+   "summary": "Blockchain infrastructure provider Chainstack on Tuesday disclosed that it was targeted in a cyber attack that allowed an unauthorized party to gain access to some parts of its infrastructure. The incident is assessed to be part of a large-scale, artificial intelligence (AI)-powered attack…",
+   "score": 7,
+   "tags": [
+    "Data breach",
+    "Identity"
+   ],
+   "why": [
+    "Data breach",
+    "Identity"
+   ]
+  },
+  {
+   "id": "86c38c1e82c9",
+   "title": "Fake-download campaign uses trojanized installers to deliver monetization payloads",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/03/fake-download-campaign-uses-trojanized-installers-deliver-monetization-payloads/",
+   "source": "Microsoft Security Blog",
+   "feed": "Microsoft Security Blog",
+   "region": "Global",
+   "published": "2026-11-03T17:32:47Z",
+   "summary": "Microsoft Threat Intelligence tracks a fake-download campaign that uses trojanized Inno installers to deliver multiple monetization offers and provides detection and investigation guidance across the complete installer session. The post Fake-download campaign uses trojanized installers to deliver…",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "263a6ac2e13a",
+   "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for AI Agent Management Platforms",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/03/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-ai-agent-management-platforms/",
+   "source": "Microsoft Security Blog",
+   "feed": "Microsoft Security Blog",
+   "region": "Global",
+   "published": "2026-11-03T17:00:00Z",
+   "summary": "Read why Gartner named Microsoft a Leader in the inaugural 2026 Magic Quadrant for AI Agent Management Platforms. The post Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for AI Agent Management Platforms appeared first on Microsoft Security Blog .",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "bc96c130a163",
+   "title": "Barracuda Flaws Could Be Chained to Bypass Authorization and Gain Root Access",
+   "link": "https://thehackernews.com/2026/11/barracuda-flaws-could-be-chained-to.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-03T15:59:19Z",
+   "summary": "Barracuda has disclosed details of two vulnerabilities affecting its products that, if chained together, could allow an attacker to bypass authorization controls and gain root access to a susceptible device. The vulnerabilities, a pre-authentication authorization bypass vulnerability and a command…",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/barracuda-warns-of-critical-flaws-allowing-root-access-to-devices/"
+    }
    ]
   },
   {
    "id": "47887f1443ad",
-   "title": "9 Cyber Awareness Tips That Actually Match Today’s Maze of Threats",
+   "title": "9 Cyber Awareness Tips That Actually Match Today's Maze of Threats",
    "link": "https://www.darkreading.com/cyber-risk/9-cyber-awareness-tips-todays-maze-threats",
    "source": "Dark Reading",
    "feed": "Dark Reading",
@@ -137,7 +338,7 @@
   },
   {
    "id": "a32b51d8e118",
-   "title": "LLMJacking Emerges as Thriving Cybercriminal Enterprise",
+   "title": "LLMjacking Emerges as Thriving Cybercriminal Enterprise",
    "link": "https://www.darkreading.com/cloud-security/llmjacking-thriving-cybercriminal-enterprise",
    "source": "Dark Reading",
    "feed": "Dark Reading",
@@ -167,23 +368,6 @@
    ],
    "why": [
     "Identity"
-   ]
-  },
-  {
-   "id": "36b3d0baf9aa",
-   "title": "Barracuda warns of critical flaws allowing root access to devices",
-   "link": "https://www.bleepingcomputer.com/news/security/barracuda-warns-of-critical-flaws-allowing-root-access-to-devices/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-03T15:06:16Z",
-   "summary": "Cybersecurity company Barracuda Networks warned customers to patch two vulnerabilities that can let attackers run commands with root privileges. [...]",
-   "score": 1,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
    ]
   },
   {
@@ -395,7 +579,7 @@
    "source": "Pragativadi",
    "feed": "Real estate cyber news",
    "region": "Global",
-   "published": "2026-11-03T10:12:55Z",
+   "published": "2026-11-03T10:14:16Z",
    "summary": "",
    "score": 10,
    "tags": [
@@ -482,6 +666,12 @@
    ],
    "why": [
     "Data breach"
+   ],
+   "also": [
+    {
+     "source": "Dark Reading",
+     "url": "https://www.darkreading.com/ics-ot-security/fresh-european-fridge-attacks-cold-chain-security"
+    }
    ]
   },
   {
@@ -671,6 +861,26 @@
    "why": []
   },
   {
+   "id": "b87761b9d725",
+   "title": "CVE-2026-119977: WordPress WordPress Core — WordPress WordPress Core Time-of-check Time-of-use (TOCTOU) Race Condition Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-119977",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-11-03T00:00:00Z",
+   "summary": "WordPress WordPress Core contains a time-of-check time-of-use (TOCTOU) race condition vulnerability that could allow unauthenticated attackers to execute code on the server during the upgrade window. This is due to predictable, web-accessible staging paths… CISA remediation due 2026-11-06.",
+   "score": 4,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.006
+  },
+  {
    "id": "741b956a33b1",
    "title": "After RMS breach, hotel guests became phishing targets — ABC News Australia",
    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOcF9ULV9rWEI1WVBoRFU2TUdNQkVUdWVZYllDZTNVaUViRG5vekNzUXRkYjUyUTF2dGU5czBReGpTMmo5UGZ6SnpDMTZFTklEWmNYU3R6N2g3OU1BNVlYOC1rSE5DaGJXZ2xBQjdWUjY3NDRjMmhVSjVaWmlTWVNpcWVnbmgxWmdBcFpBdkdiVUJVa3VCVkRnWW5Vel9Sb3hXVjlENWo3N3ZYU1g4U1dF?oc=5",
@@ -736,6 +946,23 @@
    ],
    "why": [
     "Data breach"
+   ]
+  },
+  {
+   "id": "4368c1c16054",
+   "title": "Mulund Real Estate Broker Allegedly Kidnapped, Threatened At Gunpoint Over Loan Dispute; 4 Booked",
+   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPYUJZRUROQjlnTGwzM2EzT0tYN2hLU2t4LVp3Q25hTGhUUVZydU1USzRNS3M1N0I2OWU5bFdKZ3MydG4tdU1WX0dGNEdwVGVxZ1NENEZoejZXN2NITGJ0S2xOaTNLVG5fQ2djQ25UZllnYWQ3SGpicXRVZWVxZmRIU2drdmMyRlI5dlhlS3BpdkFURjZkRmliVmE2V2xDSWFFZ1JpX1lCaC1xekIzd0RZaERhZ3dTZkNUY25xUHZLaHdfSUgzRXFEVThGZHo3S0XSAdQBQVVfeXFMTUt0UU0xd3Z2aGl6cXFrQ2ZuTWJlVlkwUXBSbWY1MDBqQnJpaW9lSUxXTU8zM085cHNUMWdhOFB2THpsckxsZy1BSVlHVVBfZWVqUU1iR1Zwa1p3SmM4UVpJdzRuNUpfMzd3NDVTLUNmWEdEcndHVTVXdUZCZzhtUzdDbEk5ZGFKZjFnNHhCdlh3bENQcFV5dFJJTktPY1czRTY4NjBlVnBDY1RoSVhjZDliaHNfQjgzUktNQ2taSlFDcHVVMHlBYnE5UEJjMUhnajVuVWQ?oc=5",
+   "source": "Free Press Journal",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-02T20:31:53Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
    ]
   },
   {
@@ -1200,8 +1427,7 @@
      "source": "The Hacker News",
      "url": "https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html"
     }
-   ],
-   "epss": 0.0053
+   ]
   },
   {
    "id": "ff9c9693b43d",
@@ -7018,203 +7244,6 @@
      "source": "The Hacker News",
      "url": "https://thehackernews.com/2026/10/php2shell-two-unpatched-critical-php.html"
     }
-   ]
-  },
-  {
-   "id": "02ff45f6a801",
-   "title": "SafePay: #StopRansomware campaign of joint cybersecurity advisory",
-   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQYXpRSFlvaENiRldxNmtFVlpXdnBmWFlBdlN1WW9BN1UwZ2RDNVhpamxuVXNuTVdaX1FqNWE4dmNhTXdiNDBFbUxDTEJfRWJhTEgzTDRzM1FHSGhEVFAwUm9uQnREWXc5eXlkZHNoMWlCNktQbmFsaHRYLVdLZFhEeGZkaGRWSXpTdlloQ0dGWnprQnc?oc=5",
-   "source": "Planet Biometrics",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-23T11:18:33Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Ransomware"
-   ],
-   "why": [
-    "Ransomware"
-   ]
-  },
-  {
-   "id": "713a68aa818f",
-   "title": "China APT Uses AI Pentest Tool Artex in ConnectWise Attacks",
-   "link": "https://www.securityweek.com/china-apt-uses-ai-pentest-tool-artex-in-connectwise-attacks/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-23T10:31:16Z",
-   "summary": "The state-sponsored hackers targeted hundreds of organizations and gained privileged access to some environments. The post China APT Uses AI Pentest Tool Artex in ConnectWise Attacks appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "8640974c8b86",
-   "title": "ISC Stormcast For Friday, October 23rd, 2026 https://isc.sans.edu/podcastdetail/10148, (Fri, Oct 23rd)",
-   "link": "https://isc.sans.edu/diary/rss/33448",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-10-23T10:25:11Z",
-   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
-   "score": 1,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "68d41bab13b9",
-   "title": "Trends In Healthcare Data Breach Statistics",
-   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9PMzZZbVJzWV9lV0JPWXBJOW9BSmI2eElLWHNxWVAtTkhyNnoydUdqTDRnNzE0X056UTE2WW9nakR1UTkxR0ZzX3pMVmdqb2Vjb095eHpIM1Bva0UtTXphRnh5bkpuaDBNQWNvamd5Z2E?oc=5",
-   "source": "The HIPAA Journal",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-23T09:52:45Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "3a89e69463ce",
-   "title": "Critical Flaw in Python’s Popular Pillow Image Library Allows Code Execution via a Crafted Image",
-   "link": "https://thehackernews.com/2026/10/critical-flaw-in-pythons-popular-pillow.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-23T09:36:00Z",
-   "summary": "Pillow, the most widely used image library for Python, can be made to run operating system commands on a server by specifying the name of a file it is told to open. The flaw, CVE-2026-112900, is in the way Pillow handles EPS images, which it opens by passing the file's name to Ghostscript, a…",
-   "score": 1,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.013
-  },
-  {
-   "id": "9121dd1ef642",
-   "title": "Australia's Cyber Agency Flags Critical Vulnerabilities In Fortinet, One Of The Biggest Global Cybersecurity Vendors",
-   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNXzFUX3huMnZRb29WQmtlVFFSVW1YNWtlSmViZEZKWV9zNzkxLWIyOTl3NS02MXFkbEZ2VmxVRU4xanRUOTFWTXI0dUNUNzVzR3FXaFVyaXdEcFk1eUJ5S015ZjI5blNXRlRvSElmX1d6M1VtUGwzTHdSYm41c3g1LXkxTEJPY25fR2RvdkxEUTJheG5tRmp4TmViNjhOd3VxX1RyMENmNURieVd0MkxVMjRLY05velRFT1FjajR3UnZTQWlfYkpoM3ljUlE1VHJsY2tXVVpUZ0lNcEtMb3Z3?oc=5",
-   "source": "OfficeChai",
-   "feed": "ASD / ACSC in the news",
-   "region": "AU",
-   "published": "2026-10-23T09:28:05Z",
-   "summary": "",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "Edge devices"
-   ],
-   "why": [
-    "Australia",
-    "Edge devices"
-   ]
-  },
-  {
-   "id": "91eee45eab64",
-   "title": "Azul issues urgent Java security updates following eMudhra certificate compromise",
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQcXZwSjVrQ3Zvb2dxLWJoMHJRZ0dPeE5qNW9nUWJCSzllMEJxY3RjYjN6aGYzSGhQcng2aGhmTHVmMnJVQ3Awa1dJNUFBazFLMTVVXzBoZ2xLUHVCU2hkUTVRQlo4YzV4cUIzSWxKRjRpZDhXVDRsQW9sQTdOVUtLTmJDczAtRVFfYmZvM2F3Mlp4QUwxRE0tQ21VYWFvMExpYlltb09TczJNVDZtQnZqQl9tVXBURzJaaU5UUFlSdF9lbkUyMlpfTQ?oc=5",
-   "source": "Australian Cyber Security Magazine",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-23T08:57:00Z",
-   "summary": "",
-   "score": 4,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "38a5498a23eb",
-   "title": "Capcom Breach: 11.77M CAPCOM IDs Exposed, Act Now [2026]",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5jN1ozM09EQl9IbE8tZElaQURyRFQ5VW5FSmVPZFQ4YUExNTFZYW5zam9oN0VCUDJpbW1xMHQyNzY0NE5fMTEyVC1lVkpfXzhWVGZ0YVIxY1QtdUZiUi1qQk9IZmRxZEg2emlSM244VWxyRGhDcnJXbzU0WHNSMjQ?oc=5",
-   "source": "https://tech-insider.org/",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-23T08:50:03Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "a2a9e372db7b",
-   "title": "Researchers Demonstrate Node2Shell RCE Exploit on Node.js Build Using Crafted Brotli Data",
-   "link": "https://thehackernews.com/2026/10/researchers-demonstrate-node2shell-rce.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-23T08:40:43Z",
-   "summary": "Malicious Brotli data can make an application on an official build of Node.js run attacker-supplied code, security researchers at Imperva have demonstrated. Their \"Node2Shell\" proof of concept ran code on the official Node.js 24.22.0 image for Linux arm64, with no debugger or custom build, by…",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "6f084559d703",
-   "title": "Critical x402 SDK Flaw Could Let Malicious APIs Drain AI Agents’ Token Balances",
-   "link": "https://thehackernews.com/2026/10/critical-x402-sdk-flaw-could-let.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-23T08:35:45Z",
-   "summary": "AI agents paying for API calls with the x402 SDKs could sign a payment for their full balance of a supported token if a malicious API asked for it, security firm V12 said on October 22. The cause was the SDKs' default client, which set no spending limit until releases on August 18 added one. The…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "962b531106f2",
-   "title": "11 Million Impacted by Capcom Data Breach",
-   "link": "https://www.securityweek.com/11-million-impacted-by-capcom-data-breach/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-23T08:34:14Z",
-   "summary": "The hackers stole 11 million email addresses from CAPCOM ID and changed the login passwords for 196 accounts. The post 11 Million Impacted by Capcom Data Breach appeared first on SecurityWeek .",
-   "score": 6,
-   "tags": [
-    "Data breach",
-    "Identity"
-   ],
-   "why": [
-    "Data breach",
-    "Identity"
-   ]
-  },
-  {
-   "id": "53aff77a38e1",
-   "title": "PHP flaws trigger outage fears & retail fraud warnings",
-   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNLU1KbG43ai1iWXUyaHcyNFUya1JfOWxSM3lFUzByakFHNUJFSmZXbWp3bUxRd0FIT3lRLTVheml5OXpFN2hwV094QXNHN1dwNU1OSWVkWG1WTVdkUE9UM1R6SDZNd0RzSTNZVk9JOG4wT2xsNkFRZ0xBb1VjM1F2dzIydV9BdVlDb3Z4Q2FTQQ?oc=5",
-   "source": "SecurityBrief UK",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-23T08:15:00Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "SaaS / cloud"
-   ],
-   "why": [
-    "SaaS / cloud"
    ]
   }
  ]
