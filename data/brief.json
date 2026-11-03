@@ -1,8 +1,36 @@
 {
- "date": "2026-11-02",
- "generated": "2026-11-01T22:15:05+00:00",
- "title": "Sec-Pulse brief - Mon 02 Nov",
+ "date": "2026-11-03",
+ "generated": "2026-11-03T01:07:59+00:00",
+ "title": "Sec-Pulse brief - Tue 03 Nov",
  "items": [
+  {
+   "id": "e4169b3d5b34",
+   "title": "Qantas customer data possibly exposed in Amadeus hack",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNNC12c0JOSzJtRDlZWnVMLUgwZ20xUy1fMDhOa1NrdWZhRzlNTmVGdUZnSUpObE9aMnAxd0tOODNEU1BRaW1DRU5mYjJOdVNSQWQwckVVcF9uNk1hUGhqdFhhdnJJYS1WR0Q2ZTBlVWFNS3hfeENhRUtVaHNNa25kektIajRDVS1NYWRsNzZoVmd0Mzdienc0Mi1yeVQ?oc=5",
+   "source": "Australian Aviation",
+   "region": "AU",
+   "published": "2026-11-02T19:52:30Z",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Data breach"
+   ],
+   "summary": ""
+  },
+  {
+   "id": "009f8af18306",
+   "title": "Airlines flying in and out of Australian airports impacted by customer data breach",
+   "link": "https://news.google.com/rss/articles/CBMitgJBVV95cUxPSDhScVdBWG1wVV8ybVdHMk1GZWxVLTlJaUpDZ0lfdk9HeFkzdDVESk5sU3BzclpLcGdlMmJ2NXhnMHhKQTR4UzNSYjVPeDlQd0VLdHlhV3Bqa05vc3JxZnhGTjQ3TlJqM1BVZGEtQ0J3OExlUkwzQzNEakxYMUh2TFlzSGZ3Z1d0dWpVMURKV2pyU3BuWHcyOXZVc3dwOXJhYW5ScTZDU2xRY0ZjQTFVQk5kMTV2MFc4NFJtc0drTEwwZnpHQVNkLVFwelludkFyakFtZzFWenVHdGpCdHNBZmt5VXVVZTlLeDhOWDZ6V2RjeHJ6Vi15aDBkVFdJUHZua0tjTnBtRU53UWxfVXhNQzVXOWpSWTJjZTA5X3ZadzYzMHd0d3A1RGZCVmJrNkxvTUlZc3dn0gG2AkFVX3lxTE9IOFJxV0FYbXBVXzJtV0cyTUZlbFUtOUlpSkNnSV92T0d4WTN0NURKTmxTcHNyWktwZ2UyYnY1eGcweEpBNHhTM1JiNU94OVB3RUt0eWFXcGprTm9zcnFmeEZONDdOUmozUFVkYS1DQnc4TGVSTDNDM0RqTFgxSHZMWXNIZndnV3R1alUxREpXanJTcG5YdzI5dlVzd3A5cmFhblJxNkNTbFFjRmNBMVVCTmQxNXYwVzg0Um1zR2tMTDBmekdBU2QtUXB6WW52QXJqQW1nMVZ6dUd0akJ0c0Fma3lVdVVlOUt4OE5YNnpXZGN4cnpWLXloMGRUV0lQdm5rS2NOcG1FTndRbF9VeE1DNVc5alJZMmNlMDlfdlp3NjMwd3R3cDVEZkJWYms2TG9NSVlzd2c?oc=5",
+   "source": "News24",
+   "region": "AU",
+   "published": "2026-11-01T23:36:40Z",
+   "score": 14,
+   "tags": [
+    "Australia",
+    "Data breach"
+   ],
+   "summary": ""
+  },
   {
    "id": "7f9f6a0c6108",
    "title": "Australia news live: Qantas seeks answers on data breach, storm prompts asthma warning, property values fall further",
@@ -18,66 +46,44 @@
    "summary": ""
   },
   {
-   "id": "81a61c3f94c3",
-   "title": "An AI found a 14-year-old hole in PHP. Australian government sites went dark for a night. The PHP nobody can patch is the part that lasts.",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNR09DYnZEWExURFFKaXBxWW11TGZRS1JZajlVaWxjZTUtZlNWR2N5dUR1dF9WUk5DWWllRE5LaWRrQ2FnREpPS3ZpTFFHWVNrWTYwU2ozSUZYcmFtNlVZTW1iVmtVVDQxcW15Tmc4V29uR3h0aVJKSmRxVVFaVVBZTHFOMWhvTHRBRUh4NmRlejRBN3ktRTh0ZjBBalI?oc=5",
-   "source": "Webcoda",
-   "region": "AU",
-   "published": "2026-11-01T06:14:20Z",
-   "score": 11,
+   "id": "357136bfe66d",
+   "title": "Ivanti patches two more Connect Secure zero-days chained in attacks",
+   "link": "https://www.bleepingcomputer.com/news/security/ivanti-patches-two-more-connect-secure-zero-days-chained-in-attacks/",
+   "source": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-02T09:33:26Z",
+   "score": 10,
    "tags": [
-    "Australia",
+    "Actively exploited",
+    "Edge devices",
     "Vulnerability"
    ],
-   "summary": ""
+   "summary": "Ivanti released security updates to patch two more Connect Secure (ICS) remote access gateway flaws that have been chained in zero-day attacks since at least October 1. [...]",
+   "epss": 0.0053
   },
   {
-   "id": "2189f5cb91ab",
-   "title": "The legendary 1980s leading man who lost his entire life savings to a devastating real estate scam",
-   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOMWsxSzZnYldHcVNfemZnWFRtRGpHUTJBS3hlT1ZlaVRYalREd1FmZFMxbXdGRTR6dXVGcVBZRm9tOVVRWjBULWZCN3hfc2ZUcjVLbEtXb0hOSUtEeTlndUx2Tm9FOXFmeTFJMnFnN2Zydy00QXUtcGRVckVBbUlvUklnMkgyMk5ESnFOWnFVaTVWUFBBNTZFSlUwYnpwN0RIOVM3dlRYWndHajJScERac0Z0VmpLRFhFZVUyOHFDQnF4b1dqMVB4eE01NWMxbVlMWW9tbEZn?oc=5",
-   "source": "www.hellomagazine.com",
+   "id": "7398c8fe0a0b",
+   "title": "Over 1,000 GitLab servers vulnerable to ongoing RCE attacks",
+   "link": "https://www.bleepingcomputer.com/news/security/over-1-000-gitlab-servers-vulnerable-to-code-execution-attacks/",
+   "source": "BleepingComputer",
    "region": "Global",
-   "published": "2026-11-01T14:30:00Z",
-   "score": 10,
+   "published": "2026-11-02T12:47:00Z",
+   "score": 9,
    "tags": [
-    "Real estate"
+    "Actively exploited",
+    "Data breach",
+    "Vulnerability"
    ],
-   "summary": ""
-  },
-  {
-   "id": "93097e9b2335",
-   "title": "Fake Will Scam: Real Estate Boss Claimed Landlord Was Dead",
-   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE50NzByTEhBU0VnZmV3MkxUQTdsXzVlMDBocDZPNkpTdFlLWXNkSEhaWEpmdjdTdndPYUxyMEVsZ1ZIb0pldFJyR01vMGE0N2FfMHg2Q1ZlZDRwNk9GdlJCT2F4aWo3V04td29RQm1YMG9GRV9JZjU4R3lRd0dJdw?oc=5",
-   "source": "Property Noise",
-   "region": "Global",
-   "published": "2026-11-01T04:26:08Z",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "7aba56861a08",
-   "title": "Haverford police reports: $3,000 lost in Facebook real estate scam",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPejFzUXhoNndXakhXb0lpZnVEbDNvZVdrblFCRHN0a2hGYVdfMTlnV2xYQVNQdkd5YXB0ZHZlaDJES1h4TGRPVmRTRk1iMUluR1JzMTY5SlRpMk9rMm05RFVlNk5YM1BLZ1dfM3FIRzlmR3h1cGlEclhiZlBkcUJmYnBTb3hncHc0RUljejhqY0R2RjdyTXdjZ2phUmo0Sy1VdDZ2Xw?oc=5",
-   "source": "Delco Times",
-   "region": "Global",
-   "published": "2026-10-31T19:01:13Z",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "summary": ""
+   "summary": "Over 1,000 Internet-exposed GitLab servers are still unpatched against a maximum-severity flaw actively exploited in remote code execution attacks. [...]"
   }
  ],
  "stats": {
-  "recent": 14,
-  "au": 2,
+  "recent": 39,
+  "au": 3,
   "kev": 0
  },
  "lesson": {
-  "id": "2.5",
-  "title": "Attack surface, SDLC and threat modelling"
+  "id": "2.6",
+  "title": "AU bonus: the Essential Eight"
  }
 }
