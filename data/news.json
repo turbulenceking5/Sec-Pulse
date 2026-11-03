@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-03T01:07:21Z",
+ "generated": "2026-11-03T06:51:27Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -22,19 +22,19 @@
   {
    "name": "ASD / ACSC in the news",
    "ok": true,
-   "count": 1,
+   "count": 2,
    "error": null
   },
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 5,
+   "count": 4,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 5,
+   "count": 3,
    "error": null
   },
   {
@@ -70,7 +70,7 @@
   {
    "name": "Krebs on Security",
    "ok": true,
-   "count": 2,
+   "count": 3,
    "error": null
   },
   {
@@ -82,7 +82,7 @@
   {
    "name": "Microsoft Security Blog",
    "ok": true,
-   "count": 9,
+   "count": 0,
    "error": null
   },
   {
@@ -100,11 +100,115 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 25,
+   "count": 26,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "3e6bc640da57",
+   "title": "Attackers Exploit Critical Siemens IoT2050 Flaw to Plant Remote Command Backdoors",
+   "link": "https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-03T05:34:41Z",
+   "summary": "A maximum-severity security flaw impacting Siemens SIMATIC IoT2050 Advanced devices has come under active exploitation, VulnCheck has revealed. The vulnerability, tracked as CVE-2026-58115 (CVSS score: 10.0), is a case of missing authentication for a critical function that could be exploited by an…",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0095
+  },
+  {
+   "id": "d4042f8de11d",
+   "title": "Attackers Target Unpatched CryptoPayment Gateway Flaw That Can Expose Wallet Credentials",
+   "link": "https://thehackernews.com/2026/11/attackers-target-unpatched.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-03T05:34:37Z",
+   "summary": "Threat actors are attempting to exploit an unpatched maximum-severity security vulnerability in the CryptoPayment Gateway WordPress plugin, according to findings from Defused Cyber. The vulnerability in question is CVE-2026-81648, which carries a CVSS score of 10.0. Successful exploitation of the…",
+   "score": 4,
+   "tags": [
+    "Identity",
+    "Vulnerability"
+   ],
+   "why": [
+    "Identity",
+    "Vulnerability"
+   ],
+   "epss": 0.005
+  },
+  {
+   "id": "d7db938afd31",
+   "title": "Lancashire law firm closed by regulator weeks after conveyancing breach",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOUWFFSnBIcEs5M05ZSDV4WV94czh4OFk5WmowVEdkWEVxVnc5STRFa2hyeDY5cm02VUdJcDBoUlFCQ2d1dlFCLW9RekxTc2dqa1VtNGxEdTZTdzNhQnRNX1VUdXFTTVB4dWh4Q3l5ZG03LVpwVXhpWWV5M25XQmU1NDVvUXN0OXVhRlBnX2NDaHFJeXZtRmtMWGRMVUg1WVdqdm5Pdlh4S29Rdw?oc=5",
+   "source": "Lancashire Telegraph",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-03T05:00:00Z",
+   "summary": "",
+   "score": 14,
+   "tags": [
+    "Real estate",
+    "Data breach"
+   ],
+   "why": [
+    "Real estate",
+    "Data breach"
+   ]
+  },
+  {
+   "id": "3b6a51103bfa",
+   "title": "Tech Firms Dismantle Botnet That Turned 1.3M TV Boxes Into Proxies",
+   "link": "https://krebsonsecurity.com/2026/11/tech-firms-dismantle-botnet-that-turned-1-3m-tv-boxes-into-proxies/",
+   "source": "Krebs on Security",
+   "feed": "Krebs on Security",
+   "region": "Global",
+   "published": "2026-11-03T02:24:31Z",
+   "summary": "Google said today it worked with industry partners to dismantle a botnet made up of more than 1.3 million Android TV set-top boxes that ship with malicious software which secretly rents the user's Internet connection out to strangers and conducts advertising fraud. Experts involved in the takedown…",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "d67f6a348091",
+   "title": "ISC Stormcast For Tuesday, November 3rd, 2026 https://isc.sans.edu/podcastdetail/10162, (Tue, Nov 3rd)",
+   "link": "https://isc.sans.edu/diary/rss/33484",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-11-03T02:00:02Z",
+   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "741b956a33b1",
+   "title": "After RMS breach, hotel guests became phishing targets — ABC News Australia",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOcF9ULV9rWEI1WVBoRFU2TUdNQkVUdWVZYllDZTNVaUViRG5vekNzUXRkYjUyUTF2dGU5czBReGpTMmo5UGZ6SnpDMTZFTklEWmNYU3R6N2g3OU1BNVlYOC1rSE5DaGJXZ2xBQjdWUjY3NDRjMmhVSjVaWmlTWVNpcWVnbmgxWmdBcFpBdkdiVUJVa3VCVkRnWW5Vel9Sb3hXVjlENWo3N3ZYU1g4U1dF?oc=5",
+   "source": "UA.NEWS",
+   "feed": "AU breach news",
+   "region": "AU",
+   "published": "2026-11-02T22:52:21Z",
+   "summary": "",
+   "score": 17,
+   "tags": [
+    "Australia",
+    "Phishing",
+    "Data breach"
+   ],
+   "why": [
+    "Australia",
+    "Phishing",
+    "Data breach"
+   ]
+  },
   {
    "id": "8158b1dc7416",
    "title": "One Compromised Laptop, Billions Lost: The Binance Attack-Path Warning",
@@ -176,7 +280,7 @@
    "source": "Australian Aviation",
    "feed": "AU breach news",
    "region": "AU",
-   "published": "2026-11-02T19:52:30Z",
+   "published": "2026-11-02T20:00:29Z",
    "summary": "",
    "score": 13,
    "tags": [
@@ -433,13 +537,13 @@
   },
   {
    "id": "adcc13fa97b8",
-   "title": "Revolve Data Breach Impacts at Least 180,000 People",
+   "title": "Revolve Data Breach Impacts at Least 200,000 People",
    "link": "https://www.securityweek.com/revolve-data-breach-impacts-at-least-180000-people/",
    "source": "SecurityWeek",
    "feed": "SecurityWeek",
    "region": "Global",
    "published": "2026-11-02T13:35:21Z",
-   "summary": "Hackers accessed its online shopping platform and stole customers’ personal and payment card information. The post Revolve Data Breach Impacts at Least 180,000 People appeared first on SecurityWeek .",
+   "summary": "Hackers accessed its online shopping platform and stole customers’ personal and payment card information. The post Revolve Data Breach Impacts at Least 200,000 People appeared first on SecurityWeek .",
    "score": 4,
    "tags": [
     "Data breach"
@@ -480,6 +584,23 @@
     "Actively exploited",
     "Data breach",
     "Vulnerability"
+   ]
+  },
+  {
+   "id": "cef785d82660",
+   "title": "Binance sees $5 billion in outflows after record $6.3 billion breach",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQTmdtSl9wQmJVZmNHTWM4U1Rxd1hOU1JxU2tUQ0lLTGVTbUZPVENXS1MzMEItUjN0ZHVuY2FLS0ExRV8tNVNkLUVzbS1ZcTZaX1JhNnJ3RkMyNkVodmlwWGg3czdleHhxeWotWV9nVDU5Z2J0RnU4Znlma0s0bkpkT004cENDX1c2RGF4Y2RSYUlwTEdGUEVaTDVCNC1iOWVTbTMySW1zdmZvUnk2NXRyTEJBbEZYbVU?oc=5",
+   "source": "Invezz",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-02T12:10:45Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
    ]
   },
   {
@@ -1690,8 +1811,7 @@
      "source": "The Hacker News",
      "url": "https://thehackernews.com/2026/10/hackers-actively-exploit-highly.html"
     }
-   ],
-   "epss": 0.0031
+   ]
   },
   {
    "id": "d0d43ed2d289",
@@ -7165,144 +7285,6 @@
    "score": 0,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "a45e553ca30b",
-   "title": "ThreatsDay: AI Secrets Leak, PingCAP Source Theft, Signal Hang-Up Flaw, Laravel Auth Bypass + 21 More",
-   "link": "https://thehackernews.com/2026/10/threatsday-ai-secrets-leak-pingcap.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-22T17:45:44Z",
-   "summary": "This week has already been rough for cybersecurity. Critical PHP and GitLab RCE flaws, serious Linux security bugs, compromised eMudhra certificates, a Node.js RCE flaw, a hacked LiteLLM release, and hundreds of hijacked Tor relays. That's a lot to deal with in just a few days. And the week isn't…",
-   "score": 5,
-   "tags": [
-    "Vulnerability",
-    "SaaS / cloud",
-    "AI threats"
-   ],
-   "why": [
-    "Vulnerability",
-    "SaaS / cloud",
-    "AI threats"
-   ],
-   "also": [
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/signal-vulnerability-lets-malicious-callers-block-hang-ups/"
-    }
-   ]
-  },
-  {
-   "id": "eebdb3f4f6ae",
-   "title": "Two CVSS 9.0 Linux KSMBD RCE Flaws Disclosed on Public Mailing Lists Before Kernel Fixes",
-   "link": "https://thehackernews.com/2026/10/two-cvss-90-linux-ksmbd-rce-flaws.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-22T17:01:53Z",
-   "summary": "Linux servers running KSMBD, the kernel's built-in SMB server, are exposed to two publicly reported remote code execution flaws rated 9.0 by Trend Micro's Zero Day Initiative, with no fix yet in the mainline kernel. One of them, ZDI-CAN-33774, can be triggered before any network authentication.…",
-   "score": 12,
-   "tags": [
-    "Actively exploited",
-    "Data breach",
-    "Vulnerability",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Actively exploited",
-    "Data breach",
-    "Vulnerability",
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "475cb77c6a8a",
-   "title": "Side Letter: First through the breach",
-   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOUmh1NnAwZ1pfUy1ZV3hzMklXODFPdTZOTTBrYVdpbmdHa1RrSEZfTVhEb3JrQm9qT25xU2Z4TU9VU0R5dXRPQ01fb3NEMlJJUHU2Qk5EZWMxdjJVRUI4ODh3SUo1U25xblFfeExlTjY2aDNpaG5MaTEySDRuS0RDME9ObS1EMWM?oc=5",
-   "source": "PEI Private Equity",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-22T16:25:06Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "0563a66ccd63",
-   "title": "Microsoft shares how to fix broken Exchange Online EWS apps",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-shares-how-to-fix-broken-exchange-online-ews-apps/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-22T15:49:32Z",
-   "summary": "Microsoft says IT admins can re-enable the retired Exchange Web Services (EWS) API in Exchange Online to fix EWS apps that have stopped working. [...]",
-   "score": 4,
-   "tags": [
-    "Microsoft 365"
-   ],
-   "why": [
-    "Microsoft 365"
-   ]
-  },
-  {
-   "id": "dcda11bca225",
-   "title": "Hacker Conversations: Corey Thuen and the Evil Bit",
-   "link": "https://www.securityweek.com/hacker-conversations-corey-thuen-and-the-evil-bit/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-22T14:31:34Z",
-   "summary": "Corey Thuen hires hackers for what he calls ‘the evil bit’ — an adversarial streak he believes is either there or it isn’t. The post Hacker Conversations: Corey Thuen and the Evil Bit appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "7e3771f19983",
-   "title": "Hacking attempts surge as websites race to patch PHP issues",
-   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNYVFEcnJyOU9GWU9vRUVnRXktMHVtNzhiSVMza1o5YTFRbzh1cFV2SGREOUNWZHlFaVUtaVlhZXp5VHMtcWhsdFNpbE5zRzM0ZE45SmcyVHFpb1BGcWVTcUl0aURBTHBMS1hSVmwxa3M5dEVoNnhUVl9NZ3Z2czVGTVlSanFyNENVZElB?oc=5",
-   "source": "ABC News & Headlines – Australian Broadcasting Corporation",
-   "feed": "ASD / ACSC in the news",
-   "region": "AU",
-   "published": "2026-10-22T14:22:54Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Vulnerability",
-    "Australia"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/php-issues-emergency-patches-for-two.html"
-    }
-   ]
-  },
-  {
-   "id": "3c321f073d20",
-   "title": "As AI Risks Grow, Insurers Split on Covering the Damage",
-   "link": "https://www.darkreading.com/cyber-risk/cyber-insurance-covering-ai-damage",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-22T14:21:22Z",
-   "summary": "Some build specialized agentic AI coverage, while major carriers quietly exclude it — leaving enterprises exposed without their knowledge.",
-   "score": 3,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
   }
  ]
 }
