@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-02T21:43:21Z",
+ "generated": "2026-11-03T01:07:21Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -22,13 +22,13 @@
   {
    "name": "ASD / ACSC in the news",
    "ok": true,
-   "count": 2,
+   "count": 1,
    "error": null
   },
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 6,
+   "count": 5,
    "error": null
   },
   {
@@ -100,11 +100,28 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 26,
+   "count": 25,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "8158b1dc7416",
+   "title": "One Compromised Laptop, Billions Lost: The Binance Attack-Path Warning",
+   "link": "https://www.darkreading.com/cyberattacks-data-breaches/binance-hack-test-attack-paths",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-02T22:27:24Z",
+   "summary": "The record theft shows how weak system separation, inadequate controls, and untested attack possibilities can turn one breach into systemic loss.",
+   "score": 3,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
   {
    "id": "f6edbcaffade",
    "title": "Chinese hackers use ARTEX AI in automated attacks against 200 orgs",
@@ -117,6 +134,23 @@
    "score": 0,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "a2f567a52025",
+   "title": "Kelowna man files proposed class-action lawsuit over More Rewards data breach",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPYkNZa0pwY2tJS0Q4Qy00UFkzZUJvdFZtSXRycFRVbzRsNGEzSVhxeEJUdHZpTHFQMXVWME5WeW1SMmE5SENSbHZWMXRvb0M1OWJ0dEp0cEhFUnpSRnREa0NkYnZaY0o4SncxRzY1MEZZeXN5aE9JRktaOVdtQmw1UU9fR0VlR0J5ZXdrN1RvcEYwczRTZGdxa3FWR2RpNU5KQkl4Y25wNVdhRUYzdHZfUzV2RFVrWTh3VzFCRWwyaGo?oc=5",
+   "source": "Castanet",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-02T21:23:52Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
   },
   {
    "id": "73b73a473518",
@@ -2546,8 +2580,7 @@
      "source": "The Hacker News",
      "url": "https://thehackernews.com/2026/10/hackers-exploited-cisco-sd-wan-flaw-to.html"
     }
-   ],
-   "epss": 0.8929
+   ]
   },
   {
    "id": "cf3544e85171",
@@ -7269,46 +7302,6 @@
    ],
    "why": [
     "Data breach"
-   ]
-  },
-  {
-   "id": "92b876190d73",
-   "title": "Machine speed attacks require machine speed detection and response",
-   "link": "https://www.bleepingcomputer.com/news/security/machine-speed-attacks-require-machine-speed-detection-and-response/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-22T14:02:12Z",
-   "summary": "Attackers can steal credentials and begin exfiltrating data within minutes, often before security teams can respond. Exaforce examines real-world attacks involving stolen GitHub tokens, malicious AI installers, and MFA phishing, explaining why faster detection and automated containment are…",
-   "score": 6,
-   "tags": [
-    "Phishing",
-    "Identity",
-    "Vulnerability"
-   ],
-   "why": [
-    "Phishing",
-    "Identity",
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "c78f9791369d",
-   "title": "Amazon says PHP2Shell exploitation began 4 days before patches",
-   "link": "https://www.bleepingcomputer.com/news/security/amazon-says-php2shell-exploitation-began-4-days-before-patches/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-22T13:09:12Z",
-   "summary": "Security researchers at Amazon Threat Intelligence say attackers began targeting the PHP2Shell flaws four days before security patches were released on Wednesday. [...]",
-   "score": 4,
-   "tags": [
-    "Vulnerability",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Vulnerability",
-    "SaaS / cloud"
    ]
   }
  ]
