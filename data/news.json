@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-03T23:25:57Z",
+ "generated": "2026-11-03T23:32:57Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,13 +28,13 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 8,
+   "count": 9,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 6,
+   "count": 5,
    "error": null
   },
   {
@@ -100,7 +100,7 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 28,
+   "count": 27,
    "error": null
   }
  ],
