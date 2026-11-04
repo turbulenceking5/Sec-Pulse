@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-04T17:16:44Z",
+ "generated": "2026-11-04T23:41:32Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,19 +28,19 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 7,
+   "count": 9,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 3,
+   "count": 6,
    "error": null
   },
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 1,
+   "count": 2,
    "error": null
   },
   {
@@ -52,7 +52,7 @@
   {
    "name": "CISA KEV",
    "ok": true,
-   "count": 13,
+   "count": 14,
    "error": null
   },
   {
@@ -100,11 +100,205 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 24,
+   "count": 26,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "1b4641ca3728",
+   "title": "Critical Rails Bug Threatens to Derail Vulnerable Servers",
+   "link": "https://www.darkreading.com/application-security/critical-rails-bug-derail-vulnerable-servers",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-04T21:48:18Z",
+   "summary": "An attacker could write arbitrary files and read sensitive files via images uploaded to the Rails Active Storage ImageMagick integration, possibly positioning a threat actor for lateral movement.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "de7887560061",
+   "title": "Vercel rolls out new protection against stolen session cookie attacks",
+   "link": "https://www.bleepingcomputer.com/news/security/vercel-rolls-out-new-protection-against-stolen-session-cookie-attacks/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-04T21:31:18Z",
+   "summary": "Vercel is gradually rolling out Device Bound Session Credentials (DBSC) on its platform as a key defense against information stealer malware. [...]",
+   "score": 2,
+   "tags": [
+    "Identity"
+   ],
+   "why": [
+    "Identity"
+   ]
+  },
+  {
+   "id": "0fd87eaf33b4",
+   "title": "Zyxel fixes zero-day exploited to hack nearly 1,000 network switches",
+   "link": "https://www.bleepingcomputer.com/news/security/zyxel-fixes-zero-day-exploited-to-hack-nearly-1-000-network-switches/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-04T20:58:19Z",
+   "summary": "Zyxel has patched a zero-day vulnerability in its GS1900 series network switches that hackers exploited to compromise nearly 1,000 devices worldwide and steal configuration files and credentials. [...]",
+   "score": 8,
+   "tags": [
+    "Actively exploited",
+    "Identity",
+    "Vulnerability"
+   ],
+   "why": [
+    "Actively exploited",
+    "Identity",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "e65d9eaeac4d",
+   "title": "Central Okanagan Crime Stoppers suspends online tips after national breach",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOdS1oV2liTVJ5d1E3YmtzbmQzbDZiMmhFNEJka0RORVh6Zzd6cWpfRDQ2X3RERTJqaVVBd084LWItRFhjMTJzTnd3cW5jb1llSnUzU2VjaE5SX1JOYUlreFdKNFdyRDMxRVc2N2VqNVFycnJQQm91anJlTXJNZEFnSmd1N19sQXZhcVFBWDl1S0pMdFRxVWdKYlZRWHBfM2VFRzZRclJTV1cwTmVaWTRQdEUxUlMxVW5ZaFFCbg?oc=5",
+   "source": "Castanet",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-04T20:50:48Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "1413af0079f4",
+   "title": "DreamHost confirms data breach exposed FTP logins and webmail sessions",
+   "link": "https://www.bleepingcomputer.com/news/security/dreamhost-confirms-data-breach-exposed-ftp-logins-and-webmail-sessions/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-04T19:05:19Z",
+   "summary": "DreamHost is warning of a data breach after attackers gained access to its File Manager platform for two months and stole customers' FTP/SFTP usernames and passwords. [...]",
+   "score": 6,
+   "tags": [
+    "Data breach",
+    "Identity"
+   ],
+   "why": [
+    "Data breach",
+    "Identity"
+   ]
+  },
+  {
+   "id": "e3c1ad189764",
+   "title": "David Jones in breach of rent agreements, landlord Scentre Group says",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQQzRVTUlCbXNEdlIxWVctWVJib3poZGdPNUhVZF9sSDNoYWNaSkZabGFCRG9iekZZVTVxNkRCakNMNjVtSi0zMjFtVHRCVDVYb0QydnNOQk5USXM1aEEwaU9RdWxUV29XbmZNYkVOYkNpbklweEZaM3hQYXIxYW51RWVsNkxzNFlBeVNDdnZub25aNkpNcy1KQkRwX2UzZw?oc=5",
+   "source": "Lawyerly",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-04T18:56:14Z",
+   "summary": "",
+   "score": 14,
+   "tags": [
+    "Real estate",
+    "Data breach"
+   ],
+   "why": [
+    "Real estate",
+    "Data breach"
+   ]
+  },
+  {
+   "id": "459126c5823c",
+   "title": "Mother and son found dead after 50 million won voice phishing scam linked to Korean criminal ring in Kazakhstan",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBISnl0VEFqWVB1RkltTU1xOEh5NWxVYTFHU0FETVAySFphQlZ6dHVqOGQ5dm1xT0h1Rlg3V2l4ZHdzeXFValNiazVOMktfdlB6dWtBWlUwcXlzUzJxTW1XNUV3?oc=5",
+   "source": "재경일보",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-04T18:15:00Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Phishing"
+   ],
+   "why": [
+    "Phishing"
+   ]
+  },
+  {
+   "id": "c8cd90e23e8d",
+   "title": "OAIC draws line under investigation into court recording breach",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOcFJ6Y25NSTFReWc0UmNnaHJkQlcxZ2dqcTdMTkxRbEo5ZFIweVM1eGZkQ0QyZGdjN09NWGpINGRsSlRuVDV0YmlmY0l6WkRIb2FTcTRiRl9yZ0dVckFVdG45eENPa0UzOGU0cEI0ajBTRjdMYUI5RXNWbVN1dnJTcGliUnpWYTljbUFGOWNLY1ZVRVZ3aWZITlVmeGpKNF9kNVd0UWxzN0ZrOVhSb1E?oc=5",
+   "source": "Lawyers Weekly",
+   "feed": "OAIC / Privacy news",
+   "region": "AU",
+   "published": "2026-11-04T18:04:32Z",
+   "summary": "",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Data breach"
+   ],
+   "why": [
+    "Australia",
+    "Data breach"
+   ]
+  },
+  {
+   "id": "801b944f5621",
+   "title": "Cyberattack disrupts blood storage refrigeration systems in France",
+   "link": "https://www.bleepingcomputer.com/news/security/cyberattack-disrupts-blood-storage-refrigeration-systems-in-france/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-04T18:02:56Z",
+   "summary": "France's national blood service has confirmed that a cyberattack targeting a refrigeration equipment provider raised temperature and defrost settings at three of its facilities, threatening stored blood products. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "3632eace057e",
+   "title": "Debian and Ubuntu APT Flaw Lets MitM Attackers Swap Verified Packages and Run Code as Root",
+   "link": "https://thehackernews.com/2026/11/debian-and-ubuntu-apt-flaw-lets-mitm.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-04T17:00:46Z",
+   "summary": "A flaw in APT, the package manager for Debian and Ubuntu, allows an attacker who can modify package downloads to swap a checked package for their own. The attacker's code then runs as root, according to advisories that Debian, Ubuntu, and APT's developers published on November 4. The attack needs…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "1b9b96d402ef",
+   "title": "SonicWall Won't Patch EoL GMS Flaws That Could Expose Files, Alter Database Records",
+   "link": "https://thehackernews.com/2026/11/sonicwall-wont-patch-eol-gms-flaws-that.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-04T17:00:38Z",
+   "summary": "SonicWall has warned of two vulnerabilities impacting end-of-life Global Management System (GMS) systems that it said will not be patched. Details of the security flaws, which affect SonicWall GMS 9.5.2 and earlier versions, are below - CVE-2026-109593 (CVSS score: 9.1) - An unauthenticated file…",
+   "score": 5,
+   "tags": [
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "why": [
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "epss": 0.0052,
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-unpatched-flaws-in-end-of-life-gms-software/"
+    }
+   ]
+  },
   {
    "id": "9c8bdd95a7d5",
    "title": "NIKKE PC game launcher hacked to spread remote access, data-stealing malware",
@@ -124,7 +318,7 @@
   },
   {
    "id": "99f6b8af600a",
-   "title": "Google, Partners Disrupts 1.3 Million-Device-Strong XCPE Botnet",
+   "title": "Google, Partners Disrupt 1.3 Million-Device-Strong XCPE Botnet",
    "link": "https://www.darkreading.com/endpoint-security/google-13-million-device-strong-xcpe-botnet",
    "source": "Dark Reading",
    "feed": "Dark Reading",
@@ -139,6 +333,23 @@
      "source": "The Hacker News",
      "url": "https://thehackernews.com/2026/11/google-disrupts-13-million-device.html"
     }
+   ]
+  },
+  {
+   "id": "78de6ffe4e2d",
+   "title": "Researchers Uncover Prompt Adware Hidden in OpenAI Codex Jailbreak Toolkit",
+   "link": "https://thehackernews.com/2026/11/researchers-uncover-prompt-adware.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-04T16:06:43Z",
+   "summary": "Cybersecurity researchers have disclosed details of an OpenAI Codex jailbreak bundle that's designed to modify an artificial intelligence (AI) agent's trusted instructions to insert advertisements for a third-party AI gateway. The phenomenon has been codenamed prompt adware by Check Point…",
+   "score": 2,
+   "tags": [
+    "SaaS / cloud"
+   ],
+   "why": [
+    "SaaS / cloud"
    ]
   },
   {
@@ -183,25 +394,6 @@
    "why": [
     "Phishing",
     "Identity"
-   ]
-  },
-  {
-   "id": "63cdf286f06a",
-   "title": "SonicWall warns of unpatched flaws in end-of-life GMS software",
-   "link": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-unpatched-flaws-in-end-of-life-gms-software/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-04T14:42:25Z",
-   "summary": "SonicWall warned customers of two security flaws affecting end-of-life Global Management System (GMS) systems that will not be patched. [...]",
-   "score": 4,
-   "tags": [
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "why": [
-    "Edge devices",
-    "Vulnerability"
    ]
   },
   {
@@ -640,6 +832,23 @@
    ]
   },
   {
+   "id": "f767524af35b",
+   "title": "Major breach targets dental data",
+   "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQQ0pkWjBWNklCdlpGcFFMTy05UkMtMlZqRFppVTJrT3gwV05SazNuRFJLTHpyd2VTdmQzek4zdlJzdk1VLUc3OFpMWGZJMzM4MU5QVmNpTXcyUkM3TVhrc3c2UTlvUE14dzNYb0o5R0hwTEhTX3FCdDV5eDFJdEgtVV95Q0RjTmZLTVlIbEVRd3U2X0dQTVdBLVVXdTVjbmdNaE5PM1plQ0xfck51ZTg2SzJIbUpBNlZjTFpMMEhWWWNNcTlucFdUOGJFeklpTGlxaUF5UlBqU05hRzFfNTJpTlI5OTZOMmwxZ1dDQ2t2N0toNHZBWk5ab2o2cHl5ZkHSAYQCQVVfeXFMTkc4NHgtLUJnZi1wZHJhX0RtT2ZqUXBsQXZGUThmcWFEYXU3dE13UXhaMGt3dnc3QmlFM1pkUEpjcE1qY180MWpteHdGTzFNSnBwSEFCTXRwZEcyaWNMTmw2c1Q5MEZ5Q01VVjJhcHljejJjTDVRSXpzVER3dE9aNW5HOXBQQjRfcUE1NzZpREVwUFBybWx6U2FFVXItWHJBN3dSRFhnSFN3ZHVETnBYZW5sRTBLMVQyMzc0cFo5Rmo4Z0hKV21ydUd6MnNHRFpKWDJKdlZzcFhrRmhPWEJVMmc2Mm8xR0tyNVk2d1NKekVUbzBvaTNsZUxxSnlPTi1oenFpaUE?oc=5",
+   "source": "News.com.au",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-04T05:03:28Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
    "id": "7aa5af4c407c",
    "title": "ISC Stormcast For Wednesday, November 4th, 2026 https://isc.sans.edu/podcastdetail/10164, (Wed, Nov 4th)",
    "link": "https://isc.sans.edu/diary/rss/33486",
@@ -687,6 +896,26 @@
     "Phishing",
     "Identity"
    ]
+  },
+  {
+   "id": "eaa8d66bc6fe",
+   "title": "CVE-2024-27834: Apple Multiple Products — Apple Multiple Products Improper Authentication Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-27834",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-11-04T00:00:00Z",
+   "summary": "Apple iOS, iPadOS, macOS, Safari, tvOS and watchOS 10.5 contain an improper authentication vulnerability which could allow an attacker with arbitrary read and write capability to bypass pointer authentication. CISA remediation due 2026-11-18.",
+   "score": 4,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.006
   },
   {
    "id": "699d6dc9b64e",
@@ -1110,7 +1339,7 @@
    "source": "Crypto News Australia",
    "feed": "AU breach news",
    "region": "Global",
-   "published": "2026-11-03T10:07:30Z",
+   "published": "2026-11-03T10:12:32Z",
    "summary": "",
    "score": 6,
    "tags": [
@@ -2035,6 +2264,25 @@
    "score": 1,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "009f8af18306",
+   "title": "Airlines flying in and out of Australian airports impacted by customer data breach",
+   "link": "https://news.google.com/rss/articles/CBMitgJBVV95cUxPSDhScVdBWG1wVV8ybVdHMk1GZWxVLTlJaUpDZ0lfdk9HeFkzdDVESk5sU3BzclpLcGdlMmJ2NXhnMHhKQTR4UzNSYjVPeDlQd0VLdHlhV3Bqa05vc3JxZnhGTjQ3TlJqM1BVZGEtQ0J3OExlUkwzQzNEakxYMUh2TFlzSGZ3Z1d0dWpVMURKV2pyU3BuWHcyOXZVc3dwOXJhYW5ScTZDU2xRY0ZjQTFVQk5kMTV2MFc4NFJtc0drTEwwZnpHQVNkLVFwelludkFyakFtZzFWenVHdGpCdHNBZmt5VXVVZTlLeDhOWDZ6V2RjeHJ6Vi15aDBkVFdJUHZua0tjTnBtRU53UWxfVXhNQzVXOWpSWTJjZTA5X3ZadzYzMHd0d3A1RGZCVmJrNkxvTUlZc3dn0gG2AkFVX3lxTE9IOFJxV0FYbXBVXzJtV0cyTUZlbFUtOUlpSkNnSV92T0d4WTN0NURKTmxTcHNyWktwZ2UyYnY1eGcweEpBNHhTM1JiNU94OVB3RUt0eWFXcGprTm9zcnFmeEZONDdOUmozUFVkYS1DQnc4TGVSTDNDM0RqTFgxSHZMWXNIZndnV3R1alUxREpXanJTcG5YdzI5dlVzd3A5cmFhblJxNkNTbFFjRmNBMVVCTmQxNXYwVzg0Um1zR2tMTDBmekdBU2QtUXB6WW52QXJqQW1nMVZ6dUd0akJ0c0Fma3lVdVVlOUt4OE5YNnpXZGN4cnpWLXloMGRUV0lQdm5rS2NOcG1FTndRbF9VeE1DNVc5alJZMmNlMDlfdlp3NjMwd3R3cDVEZkJWYms2TG9NSVlzd2c?oc=5",
+   "source": "News24",
+   "feed": "ASD / ACSC in the news",
+   "region": "AU",
+   "published": "2026-11-01T23:36:40Z",
+   "summary": "",
+   "score": 14,
+   "tags": [
+    "Australia",
+    "Data breach"
+   ],
+   "why": [
+    "Australia",
+    "Data breach"
+   ]
   },
   {
    "id": "758c901c3f8b",
@@ -6910,255 +7158,6 @@
     {
      "source": "SecurityWeek",
      "url": "https://www.securityweek.com/php2shell-patches-land-as-first-exploitation-attempts-hit-sensors/"
-    }
-   ]
-  },
-  {
-   "id": "9d2f15233c7c",
-   "title": "What Does DaVita (DVA) Ransomware Settlement Mean For Investors?",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPZU9zV0s2TUJvem4zUVlfaUZWY0RnMWd5V0FFT1prVnhtWkxzVFl0UTVZejM5NVJXMDhjNW1UXzlBbTB1ai1fZ3hQcjNiSGUtWnUwVU8wSktLSExFNEIxeVlNTng0VXg0d3lvWmowUW9PM1A4c21QcGxtckNfN3NsNk9VT00xQjRERGdaQ1B2dkdablFwU1RhMm9tUjFNN1R4dl9FMUE3TUtOZ0F2V0dLc3AxOHIxVGUxVFpOaDd6c3p5QdIBxwFBVV95cUxQWVFHWWJUcE00czItM2V1aXl2MHRKMmIwRjMxdUtNWkw3RGNPMnRJQ01YQ2hCejlIRks5TEFBVF9oSmVlZWNDVmVSYXVfUnRWckYydU1laDVrQ0RZZ1NJU0FXckVUNnAwYjJoVE5taHl4MU9FSEdBZk5XYUJTZ0RscFZkTDY2N0JndXY3MHQ2VFhMU0tvaVM4dTE1ZHFCalBYekkwa3pZczJqdng2NGJQT0pfWHQxSHJKOHVrMlRGbkNxcDdibkE0?oc=5",
-   "source": "Simply Wall Street",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-25T16:09:45Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Ransomware"
-   ],
-   "why": [
-    "Ransomware"
-   ]
-  },
-  {
-   "id": "e85723a0f677",
-   "title": "Former Unit 8200 Officers Raise $34 Million for Agentic SecOps Startup Mave",
-   "link": "https://www.securityweek.com/former-unit-8200-officers-raise-34-million-for-agentic-secops-startup-mave/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-25T11:00:00Z",
-   "summary": "Founded in 2025 by Unit 8200 alumni, Tel Aviv-based Mave uses AI agents to investigate alerts across existing security stacks. The post Former Unit 8200 Officers Raise $34 Million for Agentic SecOps Startup Mave appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "f50e0c216840",
-   "title": "Set Up HIPAA Microsoft 365 Backup: 13 Steps, 90 Min [2026]",
-   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9NbnRYTGJkTVF5TzdCRTc2azBkeEw0XzBHcHhkVnQ0NjltTGlDRktuVzdwVnFrTWd3ZUVsNDVlWkVDQXdCWVdfQ1hLRnladUk1V3puekowbG0zdjJFd0UteUIwQVFITUZhck9jWEtZZU55X1B4RzR3bGtB?oc=5",
-   "source": "tech-insider.org",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-25T09:23:34Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Microsoft 365"
-   ],
-   "why": [
-    "Microsoft 365"
-   ]
-  },
-  {
-   "id": "5d0e99bc982d",
-   "title": "OpenAI AI Agents Demonstrate VM Escapes and Secret Cross-Sandbox Communication",
-   "link": "https://thehackernews.com/2026/10/openai-ai-agents-demonstrate-vm-escapes.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-25T06:54:29Z",
-   "summary": "OpenAI has announced plans to conduct frontier model training with no live internet access, as it resumes reinforcement learning (RL) training and internal inference of its most advanced AI models. \"Based on the current state of alignment research, monitoring systems, and the security of internet…",
-   "score": 1,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "9d4de0cc29cf",
-   "title": "At least 12 states face cyberattacks on their water systems, sources say",
-   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNYWtBaEpyZlBiQmtRT25NRWJ0RnNOSmdNVDN0V2hSdG9nSFV5OUhfUzh4ZnJNU3F6eXZhUy1EM2ZTU2pmYlpHUGxYeEhhTWFtSElTMTFtamlLZGFyeEJJVk41V1pLUEQtQXZpNGtoUGprX3FNMkl3S3FwbUthVkVjOXJ6eVVpM3hDckpnclZJeXpiamdaMXfSAZsBQVVfeXFMT01wLUJCeTF5MXpBRWh1UXg5SFlhUDdRYmZYVFVkcjI5bVltdEh5TlkwV1FMLV91REt5djJSeUxNb3A4ZXJuVWhrZGNlSWxRTmpQbHFldm1TYk41dGdvT0FuQTBHbE96bENKaDRWWWc1QUxEV0xlM0ZQT05aakZ1MnNIbG9feTZnUUp3SVJPVVdNaWJnZVNDZlVtUEE?oc=5",
-   "source": "ABC News - Breaking News, Latest News and Videos",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-24T23:06:00Z",
-   "summary": "",
-   "score": 4,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "31b1dfffebc6",
-   "title": "Police Warn Of Another Rental Scam",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9GWGRMY1p6b0k4aENnR2d5VndxWXcwVy15SlkxS1ZBWHdnUHRRUUF3Q051T0cyaUx1LTFuWDZlLTk2bDYtTXFNdnVJaG1weW9lLXN6TTdfVWdHdXFuQ3RoWEFoTGszMkQ3YllReQ?oc=5",
-   "source": "Bernews",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-24T12:43:12Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ]
-  },
-  {
-   "id": "a0a9e49aec28",
-   "title": "Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software",
-   "link": "https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-24T11:09:29Z",
-   "summary": "A memory-corruption flaw in Google's Brotli decoder sits in many programs that unpack Brotli-compressed data, among them Bun, Microsoft's .NET, the Python Brotli and brotlicffi packages, and Envoy proxies set up to decompress Brotli. Tracked as CVE-2026-111497, the flaw allows crafted compressed…",
-   "score": 4,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.8264
-  },
-  {
-   "id": "3a1a036ef73a",
-   "title": "Leaked LiteLLM Master Key Let Attackers Steal GitHub Tokens and Hijack Release Pipeline",
-   "link": "https://thehackernews.com/2026/10/leaked-litellm-master-key-let-attackers.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-24T11:03:33Z",
-   "summary": "LiteLLM on Friday revealed that an Agent Platform master key accidentally published to a public GitHub repository in late May 2026 ultimately allowed the threat actor to push a malicious version of the popular Python package. \"On May 27, 2026, a configuration file was committed to the public…",
-   "score": 6,
-   "tags": [
-    "Data breach",
-    "AI threats"
-   ],
-   "why": [
-    "Data breach",
-    "AI threats"
-   ],
-   "also": [
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/litellm-release-pipeline-hacked-to-distribute-info-stealer-malware/"
-    },
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/hackers-hijack-five-ovhcloud-cli.html"
-    }
-   ]
-  },
-  {
-   "id": "afec56c7243a",
-   "title": "Google Says Gmail and Photos Data Shared With AI Search Could Be Used for Targeted Ads",
-   "link": "https://thehackernews.com/2026/10/google-says-gmail-and-photos-data.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-24T10:36:33Z",
-   "summary": "Google has updated its privacy policy to spell out that using personalized artificial intelligence (AI) features in Search or Gemini could allow the company to serve targeted ads to users based on their activity on other connected Google services. \"You may choose to allow certain Google services,…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "94d51fe2d204",
-   "title": "Researchers Push Over 2 Million Updates to Remotely Disable Popcorn Time Updater That Could Fuel a Botnet",
-   "link": "https://thehackernews.com/2026/10/researchers-push-over-2-million-updates.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-24T09:04:24Z",
-   "summary": "Between November 2025 and March 2026, the Dutch security firm Eye Security pushed more than 2 million updates to computers it did not own to switch off a background updater that it said could have allowed an outsider to take over the machine. The updater belongs to Time4Popcorn, an abandoned copy…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "838b4b1ce253",
-   "title": "CISA Flags Two Actively Exploited Critical Flaws in Collabora Online and Arista VeloCloud",
-   "link": "https://thehackernews.com/2026/10/cisa-flags-two-actively-exploited.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-24T06:25:57Z",
-   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added two vulnerabilities impacting Collabora Online Built-in CODE Server and Arista VeloCloud Orchestrator (VCO) to its Known Exploited Vulnerabilities (KEV), citing reports of active exploitation in the wild. The…",
-   "score": 8,
-   "tags": [
-    "Actively exploited",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Actively exploited",
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "5e53559c0e73",
-   "title": "North Korean Hacking Group Lazarus Spotted Preparing Attacks Exploiting PHP Vulnerability",
-   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9LQXlTd0p4ZldkT1B0bWtvRDNIbjB2ZzBjaGRVMWZLLUVmQXRkVzlUeDlpMUEyS2sxSS1VNk4zVV9kdld6eDEzZHBIX1FYRHJ1dHFCQ3RtSjd1VWQ2VGdlVTJJUGRhOGpndW5Jd3Zn?oc=5",
-   "source": "news.sbs.co.kr",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-24T01:37:34Z",
-   "summary": "",
-   "score": 4,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "78e6b44f5a3d",
-   "title": "Trust Is Not What It Seems — and Fraudsters Are Counting on It",
-   "link": "https://www.darkreading.com/cyber-risk/trust-is-not-what-it-seems-and-fraudsters-are-counting-on-it",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-23T20:57:56Z",
-   "summary": "Threat actors don't need to rely on malware to breach organizations anymore. They're simply calling help desks and politely asking for access, with a little help from artificial intelligence.",
-   "score": 3,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "201a6bfc4c9c",
-   "title": "Abandoned Popcorn Time app exposed millions of devices to RCE attacks",
-   "link": "https://www.bleepingcomputer.com/news/security/abandoned-popcorn-time-app-exposed-millions-of-device-to-rce-attacks/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-23T20:55:05Z",
-   "summary": "Researchers remotely disabled a vulnerable updater in the abandoned Time4Popcorn app, a fork of the Popcorn Time BitTorrent client, closing a security flaw that could have allowed attackers to execute malicious code with elevated privileges on millions of computers. [...]",
-   "score": 6,
-   "tags": [
-    "Data breach",
-    "Vulnerability"
-   ],
-   "why": [
-    "Data breach",
-    "Vulnerability"
-   ],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/researchers-push-over-2-million-updates.html"
     }
    ]
   }
