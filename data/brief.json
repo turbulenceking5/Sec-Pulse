@@ -1,30 +1,15 @@
 {
- "date": "2026-11-04",
- "generated": "2026-11-03T23:33:37+00:00",
- "title": "Sec-Pulse brief - Wed 04 Nov",
+ "date": "2026-11-05",
+ "generated": "2026-11-04T23:50:46+00:00",
+ "title": "Sec-Pulse brief - Thu 05 Nov",
  "items": [
   {
-   "id": "741b956a33b1",
-   "title": "After RMS breach, hotel guests became phishing targets — ABC News Australia",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOcF9ULV9rWEI1WVBoRFU2TUdNQkVUdWVZYllDZTNVaUViRG5vekNzUXRkYjUyUTF2dGU5czBReGpTMmo5UGZ6SnpDMTZFTklEWmNYU3R6N2g3OU1BNVlYOC1rSE5DaGJXZ2xBQjdWUjY3NDRjMmhVSjVaWmlTWVNpcWVnbmgxWmdBcFpBdkdiVUJVa3VCVkRnWW5Vel9Sb3hXVjlENWo3N3ZYU1g4U1dF?oc=5",
-   "source": "UA.NEWS",
-   "region": "AU",
-   "published": "2026-11-02T22:52:21Z",
-   "score": 17,
-   "tags": [
-    "Australia",
-    "Phishing",
-    "Data breach"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "d7db938afd31",
-   "title": "Lancashire law firm closed by regulator weeks after conveyancing breach",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOUWFFSnBIcEs5M05ZSDV4WV94czh4OFk5WmowVEdkWEVxVnc5STRFa2hyeDY5cm02VUdJcDBoUlFCQ2d1dlFCLW9RekxTc2dqa1VtNGxEdTZTdzNhQnRNX1VUdXFTTVB4dWh4Q3l5ZG03LVpwVXhpWWV5M25XQmU1NDVvUXN0OXVhRlBnX2NDaHFJeXZtRmtMWGRMVUg1WVdqdm5Pdlh4S29Rdw?oc=5",
-   "source": "Lancashire Telegraph",
+   "id": "e3c1ad189764",
+   "title": "David Jones in breach of rent agreements, landlord Scentre Group says",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQQzRVTUlCbXNEdlIxWVctWVJib3poZGdPNUhVZF9sSDNoYWNaSkZabGFCRG9iekZZVTVxNkRCakNMNjVtSi0zMjFtVHRCVDVYb0QydnNOQk5USXM1aEEwaU9RdWxUV29XbmZNYkVOYkNpbklweEZaM3hQYXIxYW51RWVsNkxzNFlBeVNDdnZub25aNkpNcy1KQkRwX2UzZw?oc=5",
+   "source": "Lawyerly",
    "region": "Global",
-   "published": "2026-11-03T05:00:00Z",
+   "published": "2026-11-04T18:56:14Z",
    "score": 14,
    "tags": [
     "Real estate",
@@ -33,12 +18,12 @@
    "summary": ""
   },
   {
-   "id": "e4169b3d5b34",
-   "title": "Qantas customer data possibly exposed in Amadeus hack",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNNC12c0JOSzJtRDlZWnVMLUgwZ20xUy1fMDhOa1NrdWZhRzlNTmVGdUZnSUpObE9aMnAxd0tOODNEU1BRaW1DRU5mYjJOdVNSQWQwckVVcF9uNk1hUGhqdFhhdnJJYS1WR0Q2ZTBlVWFNS3hfeENhRUtVaHNNa25kektIajRDVS1NYWRsNzZoVmd0Mzdienc0Mi1yeVQ?oc=5",
-   "source": "Australian Aviation",
+   "id": "c8cd90e23e8d",
+   "title": "OAIC draws line under investigation into court recording breach",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOcFJ6Y25NSTFReWc0UmNnaHJkQlcxZ2dqcTdMTkxRbEo5ZFIweVM1eGZkQ0QyZGdjN09NWGpINGRsSlRuVDV0YmlmY0l6WkRIb2FTcTRiRl9yZ0dVckFVdG45eENPa0UzOGU0cEI0ajBTRjdMYUI5RXNWbVN1dnJTcGliUnpWYTljbUFGOWNLY1ZVRVZ3aWZITlVmeGpKNF9kNVd0UWxzN0ZrOVhSb1E?oc=5",
+   "source": "Lawyers Weekly",
    "region": "AU",
-   "published": "2026-11-02T20:00:29Z",
+   "published": "2026-11-04T18:04:32Z",
    "score": 13,
    "tags": [
     "Australia",
@@ -47,28 +32,44 @@
    "summary": ""
   },
   {
-   "id": "04e343b8e5e5",
-   "title": "Bhubaneswar Couple Held for Rs 1.47 Crore Real Estate Fraud",
-   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPSWhvV1hFYnF6Z1cwNkJXZXdrM09IYk9Dam1ONGJmd3ZCaXFYMkF2elpscG5hMlVJZUJSZDlvbFFBQlc1Y2RfOGd4MlNVOWJsVUVNQ2dPa2tlVXdMOUtBVFBEdW95OENIRm1YMWZ5NFZmQ09sMnNBZmxtRUpISWVzVTdFMzRKaDNIMWs1bQ?oc=5",
-   "source": "Pragativadi",
-   "region": "Global",
-   "published": "2026-11-03T10:14:16Z",
-   "score": 10,
+   "id": "36f45dbba305",
+   "title": "Exclusive: Dozens of Australian hotels potentially impacted by alleged IHG Hotels & Resorts breach",
+   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPaDdPWVpNSDItVk90aXYxNnk3Z3dhNjctR0ZTV3dVUXpiWDZwQzg3Y0JFWEVJS1ZSbFVzUTFjaTgtYi1xZ1pLbU81UmcxOUIyNDk2dS1tTnY1Q0RGQWtSQ3J2RExRTTU0T2g3cU0zeTFSQVpvbUJDWGRjQVJhVFNtQ21NaVVkamNIVFNuRE5uYTZZeUZkeXlUdGs2TWc5R3ZoVW4xTnZIUnZDTkhyeFRzQnoxWW14ajMwSEhqdmJxSmlfWmRoYnZPcWh1UXpkQTJCRFE?oc=5",
+   "source": "Cyber Daily",
+   "region": "AU",
+   "published": "2026-11-04T05:16:32Z",
+   "score": 13,
    "tags": [
-    "Real estate"
+    "Australia",
+    "Data breach"
    ],
    "summary": ""
   },
   {
-   "id": "3b1211ea12d3",
-   "title": "Real Estate Lecturer Arrested for 12.5 Billion Won Auction Scam",
-   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBrTGItVW9RV2dpcnQzU3R6TDE0NDhvN0dDdEd6SkhqNHQtWnVFZk5YclVVdXd2NXFkQ3pNdExqOFR3ZHFhNVdSNHVYLVBaYWlsclRuR1NuTzBVdE51Si1rZmdzSEJPWXg0T0hHTkZB0gFmQVVfeXFMUHdHSzR3NzBvTi1obGhWRWhyNm1ZWmxtU1J6ektqVTVMSFAwWmplbUYxWGR4dW9jQmZucFFwcEhheHFsQlZld0o4WWk5SHpHU3d3QnRvVnpXSkREaXNYZkM4dHFyRWpR?oc=5",
-   "source": "SBS 뉴스",
+   "id": "0fd87eaf33b4",
+   "title": "Zyxel fixes zero-day exploited to hack nearly 1,000 network switches",
+   "link": "https://www.bleepingcomputer.com/news/security/zyxel-fixes-zero-day-exploited-to-hack-nearly-1-000-network-switches/",
+   "source": "BleepingComputer",
    "region": "Global",
-   "published": "2026-11-03T07:41:37Z",
-   "score": 10,
+   "published": "2026-11-04T20:58:19Z",
+   "score": 8,
    "tags": [
-    "Real estate"
+    "Actively exploited",
+    "Identity",
+    "Vulnerability"
+   ],
+   "summary": "Zyxel has patched a zero-day vulnerability in its GS1900 series network switches that hackers exploited to compromise nearly 1,000 devices worldwide and steal configuration files and credentials. [...]"
+  },
+  {
+   "id": "e65d9eaeac4d",
+   "title": "Central Okanagan Crime Stoppers suspends online tips after national breach",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOdS1oV2liTVJ5d1E3YmtzbmQzbDZiMmhFNEJka0RORVh6Zzd6cWpfRDQ2X3RERTJqaVVBd084LWItRFhjMTJzTnd3cW5jb1llSnUzU2VjaE5SX1JOYUlreFdKNFdyRDMxRVc2N2VqNVFycnJQQm91anJlTXJNZEFnSmd1N19sQXZhcVFBWDl1S0pMdFRxVWdKYlZRWHBfM2VFRzZRclJTV1cwTmVaWTRQdEUxUlMxVW5ZaFFCbg?oc=5",
+   "source": "Castanet",
+   "region": "Global",
+   "published": "2026-11-04T20:50:48Z",
+   "score": 7,
+   "tags": [
+    "Data breach"
    ],
    "summary": ""
   }
@@ -79,7 +80,7 @@
   "kev": 1
  },
  "lesson": {
-  "id": "2.7",
-  "title": "Tooling: reading a vulnerability scan report"
+  "id": "3.1",
+  "title": "The incident response lifecycle"
  }
 }
