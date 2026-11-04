@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-03T23:32:57Z",
+ "generated": "2026-11-04T06:27:58Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -16,7 +16,7 @@
   {
    "name": "ACSC (via Google News)",
    "ok": true,
-   "count": 0,
+   "count": 1,
    "error": null
   },
   {
@@ -28,7 +28,7 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 9,
+   "count": 8,
    "error": null
   },
   {
@@ -52,7 +52,7 @@
   {
    "name": "CISA KEV",
    "ok": true,
-   "count": 19,
+   "count": 13,
    "error": null
   },
   {
@@ -100,19 +100,38 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 27,
+   "count": 21,
    "error": null
   }
  ],
  "items": [
   {
-   "id": "daaea0ee15c2",
-   "title": "Cybercrime squad investigating 'major' NSW Health data breach",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQbEF0UHRLaThtNXJqS2JIMFJsbkFDTWxlSE5mVWlJLU1fdFJZeGZXRk9idExLdHIzcjMydVFvZU1fNld0aVljeXR0TUVWNEo4ZlYwOWdhZjF1RzczQXhPb3Zoa0IwWXpFYVB0akZNLUUxSDZ3Um5RdnZDOGxRcXNiUEt4V3hTS3JkUTNMdndJOGVpMlJWNUl2U2xFdnJiNG56ZW5LRXJBbm8?oc=5",
-   "source": "SBS",
+   "id": "236b5dd398ac",
+   "title": "Exclusive: Dozens of Australian hotels potentially impacted by alleged IHG Hotels & Resorts breach",
+   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOdGFhdFpZTmtkOU8tX3NCcEtlRGNkMVY3cE42aTVqX1BvN1hlZXVpWjBZLTdCREhJaUE3RlVIUFF0blBlcjY0azNwbVJfRnNLRzdCYzNCVTFCYjlWb2UwU0drbVQ4bmNkckR3ZTFPcFlMZU5ZN3FrVzZNMUx0UVR0bzdHMW1NQU53bjAzTllFbHBlSEJVODE1el9zWlRaYUlzUzhGZFZkczZfNXQyb0VHWTdSVHdSNWJQNWlDZTVxa0d0OFFrNE8yTXdJc181SHdmQWVvWHNvOUhFRzhwOFdVSnp2UmU?oc=5",
+   "source": "Cyber Daily",
+   "feed": "AU breach news",
+   "region": "AU",
+   "published": "2026-11-04T05:18:01Z",
+   "summary": "",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Data breach"
+   ],
+   "why": [
+    "Australia",
+    "Data breach"
+   ]
+  },
+  {
+   "id": "8cf9d66aebfa",
+   "title": "Police investigating NSW Health cyber breach",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOZXJIbVlGYmw0TEN5RG1PeXZpMTFQS1hLejNTczhiU1ZNbTBVUmZSbV9mT0xydUhHR25udEpXNW5XUkQ2X25SYUhqR200TXQ5TUJud21lQVJMZzlrdkMtLWUzbzRTRm8ycVEzdFh3UkdZMEVVUWNCNFBDRW0yMWRHMG4yOHBCU0FqRU1uRlFTMA?oc=5",
+   "source": "Medical Republic",
    "feed": "AU breach news",
    "region": "Global",
-   "published": "2026-11-03T23:22:00Z",
+   "published": "2026-11-04T05:12:10Z",
    "summary": "",
    "score": 6,
    "tags": [
@@ -123,13 +142,47 @@
    ],
    "also": [
     {
-     "source": "ABC News & Headlines – Australian Broadcasting Corporation",
-     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOUlprYTFMV2c5elRudzVVRXRQbWdLdGxlbFBiU1dKcTBMMGxlTlFKNl9WZnJpVmhHMEhxcDU3a28xQlQwNzBhcnFpckM5OVF1cmxQUk5hd29xNGttdW1wcVpTeVJqdjNOSE01ZS1UVV9xOWhCdENrY1FMWVo1YlhQbjBxdHk3VjRLSVNkQ0JxRDJsbTFMa0RsX1JyajNWN21zVF9Tb3dpaW1rSXJxekFVVl9EUQ?oc=5"
-    },
-    {
      "source": "Nine.com.au",
      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPSmtqWTNkWW1lZ2VKOGhrQ3FXNDRCRkZsR21QV0ljLUdiMXgxcWFGbXJ2OG9zYV9obDI3TDVnWWJLZGc4LVluOTNtNzZCdE5iNDhfTTI4b2trYVZ5Y1N1Z0ZLUGVacXdYQXB1TXhscUhCRWhfSUZ1VDJ5ckc2TnMxVFltbjhTRUFiSmdFZ19mMXA5XzlxS0lnNVFpNVNic243WVNUemJLU3lTWnZxNGF5TVRTM1BaZVBSUm43UFdLSHE?oc=5"
+    },
+    {
+     "source": "SBS",
+     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQbEF0UHRLaThtNXJqS2JIMFJsbkFDTWxlSE5mVWlJLU1fdFJZeGZXRk9idExLdHIzcjMydVFvZU1fNld0aVljeXR0TUVWNEo4ZlYwOWdhZjF1RzczQXhPb3Zoa0IwWXpFYVB0akZNLUUxSDZ3Um5RdnZDOGxRcXNiUEt4V3hTS3JkUTNMdndJOGVpMlJWNUl2U2xFdnJiNG56ZW5LRXJBbm8?oc=5"
+    },
+    {
+     "source": "ABC News & Headlines – Australian Broadcasting Corporation",
+     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOUlprYTFMV2c5elRudzVVRXRQbWdLdGxlbFBiU1dKcTBMMGxlTlFKNl9WZnJpVmhHMEhxcDU3a28xQlQwNzBhcnFpckM5OVF1cmxQUk5hd29xNGttdW1wcVpTeVJqdjNOSE01ZS1UVV9xOWhCdENrY1FMWVo1YlhQbjBxdHk3VjRLSVNkQ0JxRDJsbTFMa0RsX1JyajNWN21zVF9Tb3dpaW1rSXJxekFVVl9EUQ?oc=5"
     }
+   ]
+  },
+  {
+   "id": "7aa5af4c407c",
+   "title": "ISC Stormcast For Wednesday, November 4th, 2026 https://isc.sans.edu/podcastdetail/10164, (Wed, Nov 4th)",
+   "link": "https://isc.sans.edu/diary/rss/33486",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-11-04T02:10:02Z",
+   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "ed421e39d30b",
+   "title": "Philippine Migrant Worker Data Likely Leaked in 69GB Government Breach",
+   "link": "https://www.darkreading.com/cyberattacks-data-breaches/philippine-migrant-worker-data-69gb-government-breach",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-04T02:00:00Z",
+   "summary": "An unknown operator appears to have exfiltrated SQL Server backups from the Philippine Overseas Employment Administration in under a half hour.",
+   "score": 4,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
    ]
   },
   {
@@ -163,6 +216,23 @@
    ]
   },
   {
+   "id": "9673cbefb102",
+   "title": "Binance identifies cause of $6.34 billion security breach",
+   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQYzRPX1RZenJhcmxxa2JIRW9VRWFzQXM5eEhwM0lNVExVZFlsZ3JFSzV4U3lTZy12MVRfbC1ZRGlkS3M1cmZXdTZILXJKMU5LMnFmc1I1MDVjSG8wcDc3SEpBWFFuQ19MUHZ4S1BMekVPU3lEZ2xHUFhsV2d2WWM5cm9qMA?oc=5",
+   "source": "Ticker News",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-03T21:47:21Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
    "id": "27b11b637919",
    "title": "WorkOS says attacker used ARTEX AI to breach internal sales app",
    "link": "https://www.bleepingcomputer.com/news/security/workos-says-attacker-used-artex-ai-to-breach-internal-sales-app/",
@@ -172,23 +242,6 @@
    "published": "2026-11-03T21:28:44Z",
    "summary": "Developer platform WorkOS suffered a data breach after a threat actor accessed business contact records and summaries of customer communications. [...]",
    "score": 4,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "9673cbefb102",
-   "title": "Binance identifies cause of $6.34 billion security breach",
-   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQYzRPX1RZenJhcmxxa2JIRW9VRWFzQXM5eEhwM0lNVExVZFlsZ3JFSzV4U3lTZy12MVRfbC1ZRGlkS3M1cmZXdTZILXJKMU5LMnFmc1I1MDVjSG8wcDc3SEpBWFFuQ19MUHZ4S1BMekVPU3lEZ2xHUFhsV2d2WWM5cm9qMA?oc=5",
-   "source": "Ticker News",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-11-03T20:37:27Z",
-   "summary": "",
-   "score": 6,
    "tags": [
     "Data breach"
    ],
@@ -571,6 +624,21 @@
    "why": [
     "Data breach"
    ]
+  },
+  {
+   "id": "473a15d4d63f",
+   "title": "Think you know how to make a secure passphrase?",
+   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9lS0tndmt5MFpSbmR0YVZwZkxlRnZ5RkZ3ZkhzdFo4Vl8tNjN5QnJxMUwwSDN2YmFJemVqWndGRGhzOUx2cXJfWWJURmVEa1JrQjd6RGNBeGZ3QThoOWc?oc=5",
+   "source": "Cyber.gov.au",
+   "feed": "ACSC (via Google News)",
+   "region": "AU",
+   "published": "2026-11-03T10:18:38Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "Australia"
+   ],
+   "why": []
   },
   {
    "id": "04e343b8e5e5",
@@ -7157,94 +7225,6 @@
    "score": 0,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "180b23b05e8e",
-   "title": "Capcom data breach confirmed — around 11.7 million accounts thought to have been affected",
-   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOdW56TmhrMHpqWU0weVhOdlBYYmdXZ08xbFlaanI3c3RhbHl1aEROcGlWQi02UXJ6M0xTYXBUd3psQy1YSXRJSjZkVS1iYmhPaHI1cy15VG5mUlFMS2hHNnBRMlJZbmM0TW8zSXhrMVhfcDE2ZjZhNTZIa2s2SEpxRktCSnNaUGNpUTBORmNUTkVNWHRTYU90SXRVLXNaRGZtbVU0Wkg3NXRTNGQ4THF2TFN4TDJfSVZWWXpyQ29xbGJHQjBC?oc=5",
-   "source": "TechRadar",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-23T12:44:04Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ],
-   "also": [
-    {
-     "source": "GamesIndustry.biz",
-     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOaEdyM0o4enJVZERVMXBnQmE0Y1NITE5wWFRnUmQ4dDYtVDAzYlEySVF3MGtmdGFsOUs3MVFadUF3b2N6NEFrSWl4U1B4NFJhUUtOSExtUU9LTlNCdDhyWU5ISWxqT3hMXzV6MnlJb1dfcXRaY1Rvc1A2bVlib0oyamdxbHloc2p5Qjl5YkNlLTZ3S2lnY0pDY2RUbERUNF9iVU53?oc=5"
-    }
-   ]
-  },
-  {
-   "id": "1a82da6a7e05",
-   "title": "Managing AI token consumption for operational resilience",
-   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNZ09Ic1VnakNRakQwNzdCdWJURzlzYzEzaXZ3bGgwNGRrSkl3cVNSaUtyV2pXWDFSTEc3WXZ3TkFVRjJCYXdMUl8zODJwZmxFY3Z5aUZSdDNrbWwyckdOSjlWSkUzVXgza0IwYnFDekhReXVXMUNYWVZfQzlPV3Nma1FlcG1kQWVFNlJvdjMwZFQzcDAzRE5pcA?oc=5",
-   "source": "Australian Cyber Security",
-   "feed": "ACSC (via Google News)",
-   "region": "AU",
-   "published": "2026-10-23T12:00:00Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "Australia"
-   ],
-   "why": []
-  },
-  {
-   "id": "ba1a1addd0c2",
-   "title": "AI Agents as Insider Threats: Inside Microsoft's Bet on a Unified Security Stack",
-   "link": "https://www.darkreading.com/cybersecurity-operations/ai-agents-insider-threats-inside-microsoft-unified-security-stack",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-23T11:38:28Z",
-   "summary": "Microsoft's Project Perception adds Guardian Agents to monitor and contain anomalous AI agents, but experts warn that policing unpredictable agents with other agents may compound — not contain — the risk.",
-   "score": 1,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "3bc9a46d2904",
-   "title": "PHP Warns of Another Unpatched RCE Risk Two Days After Emergency PHP2Shell Patches",
-   "link": "https://thehackernews.com/2026/10/urgent-php-warns-of-another-unpatched.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-23T11:25:43Z",
-   "summary": "PHP has warned of another way an attacker could run code on a web server, two days after it shipped emergency fixes for the critical PHP2Shell flaws. The new issue, assigned CVE-2026-115560, affects only web applications configured in an unusual way, and PHP considers it an unlikely risk.The…",
-   "score": 4,
-   "tags": [
-    "Vulnerability",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Vulnerability",
-    "SaaS / cloud"
-   ],
-   "also": [
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/php-warns-admins-of-two-critical-flaws-emergency-patches-coming-tomorrow/"
-    },
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/php-issues-emergency-patches-for-two.html"
-    },
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/php2shell-two-unpatched-critical-php.html"
-    }
-   ]
   }
  ]
 }
