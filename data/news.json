@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-04T23:50:09Z",
+ "generated": "2026-11-05T06:51:09Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -16,7 +16,7 @@
   {
    "name": "ACSC (via Google News)",
    "ok": true,
-   "count": 1,
+   "count": 5,
    "error": null
   },
   {
@@ -28,19 +28,19 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 8,
+   "count": 9,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 6,
+   "count": 5,
    "error": null
   },
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 2,
+   "count": 4,
    "error": null
   },
   {
@@ -70,7 +70,7 @@
   {
    "name": "Krebs on Security",
    "ok": true,
-   "count": 2,
+   "count": 3,
    "error": null
   },
   {
@@ -105,6 +105,151 @@
   }
  ],
  "items": [
+  {
+   "id": "2a5b7d5a686a",
+   "title": "Hackers Exploit Patched Apple Flaw to Deliver Info-Stealing Malware, CISA Says",
+   "link": "https://thehackernews.com/2026/11/hackers-exploit-patched-apple-flaw-to.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-05T05:17:04Z",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a medium-severity security flaw impacting multiple Apple operating systems to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation. The vulnerability in question is…",
+   "score": 6,
+   "tags": [
+    "Actively exploited",
+    "Vulnerability"
+   ],
+   "why": [
+    "Actively exploited",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "49bf8b366c47",
+   "title": "Want to Rent an Internet Address at the White House?",
+   "link": "https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house/",
+   "source": "Krebs on Security",
+   "feed": "Krebs on Security",
+   "region": "Global",
+   "published": "2026-11-05T04:36:17Z",
+   "summary": "Several staffers at the White House are using computers or mobile devices equipped with residential proxy services that render their internet address available for others to rent, security experts warned today. One of the proxy services is a Russian company whose founder's web hosting business was…",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "25c3eda20cfe",
+   "title": "OpenAI AI Pipeline Generates 948 Linux Root Escalation Exploits in 30-Hour Run",
+   "link": "https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-05T04:31:16Z",
+   "summary": "OpenAI on Wednesday detailed a pipeline that employed an upcoming cyber-focused artificial intelligence (AI) model to validate and patch 948 local privilege escalation vulnerabilities in Linux for $1.2 million in API costs. \"Our prototype identified and analyzed 2,308 candidate Linux kernel…",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "09f8380d8b60",
+   "title": "New guidance on open-weight AI models",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1xYWxNM3RQX0k5QU10VVNzMVJId1JLRlkzM29lM1Z4ZlZIem5RZENrTXNCcVJnUkV0dHd4WWtYNGc4RVo0WWVkQnRtR2VpNFpZaE5iVnc4Ym5Nd1VWTjNhaGxQcXJtdTcxelFldnk4WGx6WkhWV1E?oc=5",
+   "source": "Cyber.gov.au",
+   "feed": "ACSC (via Google News)",
+   "region": "AU",
+   "published": "2026-11-05T02:56:53Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "Australia"
+   ],
+   "why": []
+  },
+  {
+   "id": "287e28256566",
+   "title": "Open-weight AI models: Selecting, deploying and operating open-weight AI Models securely",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPd1l1bUpyTEFhWEtweFl2cEJUbHktZkY4bG1lbEcyR3hKWWN1cDhoMDBaVndpZU56NkY1c0x1VFNaYTBRNmFsTTE4aEdyUldOMzhaZFVmdC1ZekZxNEJzcXVmMl9LaXRkNndCZk9HUUJidHRzLWJ2eHZ1UTBZOHUxM0tRS1RWWGpKSXktRDZzSDdnRzl2QTI5bmNaVXVhUXUybkg4X3JfZ21abDdnMFZuQU8yVC01bUVSTVR2Y0xKY20?oc=5",
+   "source": "Cyber.gov.au",
+   "feed": "ACSC (via Google News)",
+   "region": "AU",
+   "published": "2026-11-05T02:56:53Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "Australia"
+   ],
+   "why": []
+  },
+  {
+   "id": "308e50955905",
+   "title": "Open-weight AI models: Opportunities and cyber security risks",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQRW5FNFF0al9LT1NZOXR6RGs2SjNJaVhRZHJPZDRMclBvMVBhZU0zYzlDR0V2N2NTS1hBQTZPMjFZTkRtbnhLcUxhTTNPbEFDSzBFYjF3NmIwVEdiMlZzTTlmSXROb2tJdlFRdWx2NzVuZWdvX0ktVURITlNWYnB2ME1uZkhyVXd0eVJLUEROU0VfTlZ6cU1wS195c2Z6QQ?oc=5",
+   "source": "Cyber.gov.au",
+   "feed": "ACSC (via Google News)",
+   "region": "AU",
+   "published": "2026-11-05T02:56:53Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "Australia"
+   ],
+   "why": []
+  },
+  {
+   "id": "d79523f094d2",
+   "title": "OAIC won’t take action against court transcriber over data breach",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQWmtzYk9MWlkwSUdjOFB2RHc0bEtVMEMxU2gtcTBCQ3E1VnVmcU1XaDhuS0llZ05oU2g0Y2tZMFNzbHVfc3diZ1Z1dXR2ME84NExNZi1mYTgxckhMaVBGSVowTElDLUtEdVhLZlpxUC1HVlN0U1R6aWRiaXFYUE8tSkhrQldiRGZJcHJERDNWMmxzTjdDbmFPbzdnRVo3dlViRTNwRE5lV3JTZEE?oc=5",
+   "source": "Lawyerly",
+   "feed": "OAIC / Privacy news",
+   "region": "AU",
+   "published": "2026-11-05T00:57:11Z",
+   "summary": "",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Data breach"
+   ],
+   "why": [
+    "Australia",
+    "Data breach"
+   ]
+  },
+  {
+   "id": "24d32865db44",
+   "title": "Court data breach escapes further investigation",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPRS1nUm9CcnJlNjBUdzd1aGZ4RjVSTHdiN3lzbTNYNFhNS0RXMmVOSjVMSURvdGN3SU1CaUpIejFkQnNmMEZfaHdSZC1PMVdaNU5FN3MtOUdVc2thSzBjdE4zX1BrNnBPOGpqeEhtS0puVjduWjE2UjVIQk9mOGJSY2lWUFhJQWE3Qm9nNzJhTFQ?oc=5",
+   "source": "Information Age | ACS",
+   "feed": "OAIC / Privacy news",
+   "region": "Global",
+   "published": "2026-11-05T00:27:22Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "d7e6bb525bb5",
+   "title": "Updated guidance supports vendor talks on post-quantum cryptography",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOQW04NTBhSVQ0NnViTHNCZzNKeDRXUHUxeDNLODl2UmpwSWVrOWhwaHdwcnR6YXNKMDQ5c0M3Y1NONFhfOGhvQ1AxYnRqXzRMOU00cHVuSjlMbEFsQUlOVlI3VW55cndLbzVGemdKYkhqZVdKVGJqRm5NbndhNi1oRXVMWU1BbDBzNFhBUzN5ejV3MmphdWEwNU5nNnZzdw?oc=5",
+   "source": "Cyber.gov.au",
+   "feed": "ACSC (via Google News)",
+   "region": "AU",
+   "published": "2026-11-05T00:03:49Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "Australia"
+   ],
+   "why": []
+  },
   {
    "id": "1b4641ca3728",
    "title": "Critical Rails Bug Threatens to Derail Vulnerable Servers",
@@ -199,7 +344,7 @@
    "source": "Lawyerly",
    "feed": "Real estate cyber news",
    "region": "Global",
-   "published": "2026-11-04T18:56:14Z",
+   "published": "2026-11-04T18:57:06Z",
    "summary": "",
    "score": 14,
    "tags": [
@@ -417,7 +562,7 @@
    "feed": "The Hacker News",
    "region": "Global",
    "published": "2026-11-04T14:27:52Z",
-   "summary": "The Russia-linked threat actor known as APT29 is said to be behind a large-scale watering hole campaign targeting iOS and Android users through compromised websites, fake domains, and a supply chain attack involving a Ukrainian web analytics service called Plerdy SEO Tracker. \"The injected…",
+   "summary": "The Russia-linked threat actor known as APT29 is presumed to be behind a large-scale watering hole campaign targeting iOS and Android users through compromised websites, fake domains, and a supply chain attack involving a Ukrainian web analytics service called Plerdy SEO Tracker. \"The injected…",
    "score": 2,
    "tags": [
     "SaaS / cloud"
@@ -691,9 +836,9 @@
    "why": []
   },
   {
-   "id": "c9145a733bde",
+   "id": "2f39b34ce05f",
    "title": "Data breaches hit record scale as cyber cover gap persists",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxORkJvNnJ1a1hhNnpGSUJfdTFPVV9iRXdSdWlaN0lCVUdueUdmczRYMmxSZzdxa1NtSFE5aXVkQmxyVktXUDdXbWZrdW5kUUdPUVQxNG9DU0JPemdzRlpxa01EenBHaktxcnFpbzRreDZVbDFyZkR6Z0J5OWdDSTZCVks4aUtKNGdPYTM0Sjc5b3hha3RlS0d3SnluLWF6TkYycG5jX2hLY1UtX1lRQXY2dlhBVHhKSmlFNFZXYjBB?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOUk9QV2pXdFB1RkMzSzE5dzRWbUNqNDZWM1E2cTRURWo0SUl1WUdnWTlSTFBtZFdEaUtfb1UyaG5KcmZpRVZ1Q1owTTZEVi1HaEd5eVNCTjhUc25YYzlySF9PSWxoalBqTkItUTlJd2FVOUtTTDBGdy1iWElWb0locHRVVWpsVlVzelVuTTNoUWQ2RU5XVUN4SGtDZDMxRkp0V05LTnNhZWN1ZjFVd0Nhcy14SEVpTkx6WFVzUGwyNzA4Sm8x?oc=5",
    "source": "Insurance Business",
    "feed": "OAIC / Privacy news",
    "region": "Global",
@@ -2266,13 +2411,13 @@
    "why": []
   },
   {
-   "id": "009f8af18306",
+   "id": "516a0f8b14f6",
    "title": "Airlines flying in and out of Australian airports impacted by customer data breach",
-   "link": "https://news.google.com/rss/articles/CBMitgJBVV95cUxPSDhScVdBWG1wVV8ybVdHMk1GZWxVLTlJaUpDZ0lfdk9HeFkzdDVESk5sU3BzclpLcGdlMmJ2NXhnMHhKQTR4UzNSYjVPeDlQd0VLdHlhV3Bqa05vc3JxZnhGTjQ3TlJqM1BVZGEtQ0J3OExlUkwzQzNEakxYMUh2TFlzSGZ3Z1d0dWpVMURKV2pyU3BuWHcyOXZVc3dwOXJhYW5ScTZDU2xRY0ZjQTFVQk5kMTV2MFc4NFJtc0drTEwwZnpHQVNkLVFwelludkFyakFtZzFWenVHdGpCdHNBZmt5VXVVZTlLeDhOWDZ6V2RjeHJ6Vi15aDBkVFdJUHZua0tjTnBtRU53UWxfVXhNQzVXOWpSWTJjZTA5X3ZadzYzMHd0d3A1RGZCVmJrNkxvTUlZc3dn0gG2AkFVX3lxTE9IOFJxV0FYbXBVXzJtV0cyTUZlbFUtOUlpSkNnSV92T0d4WTN0NURKTmxTcHNyWktwZ2UyYnY1eGcweEpBNHhTM1JiNU94OVB3RUt0eWFXcGprTm9zcnFmeEZONDdOUmozUFVkYS1DQnc4TGVSTDNDM0RqTFgxSHZMWXNIZndnV3R1alUxREpXanJTcG5YdzI5dlVzd3A5cmFhblJxNkNTbFFjRmNBMVVCTmQxNXYwVzg0Um1zR2tMTDBmekdBU2QtUXB6WW52QXJqQW1nMVZ6dUd0akJ0c0Fma3lVdVVlOUt4OE5YNnpXZGN4cnpWLXloMGRUV0lQdm5rS2NOcG1FTndRbF9VeE1DNVc5alJZMmNlMDlfdlp3NjMwd3R3cDVEZkJWYms2TG9NSVlzd2c?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMisAJBVV95cUxPSFRDSmNEVC0wYW9FREllUEE5dk1Ca2dmOEFFWWROVnhObkVkNHoyU3BpcThSXzduZGx1WlFIY1pkZ2lqM3BVUWhfRi01OFByRjRWbEp4MG1UYmU3M2lJVG5LVVZlYThkLThHU2NjNnZNXzJTSDk1Yk9PeS1jekdpelZIcWVuSTJOMV8tTzVfMmM4MUl5ZEw5S09JTHJ1ZVZQc0tMeWNENWI4LVdpWlhXTTVvQS1YR1ZiYXRuUkhpMkhVRmY4NTlFN2I5Q0Q5VEtZZGw5RzRiUHR3QmNrTlVMbEJFZVVhWkFpSFhGT0VaR2pHanFEblVzQTV0VElkY3M3SGJVN2tEUE5wV0NpMjZTRjNlb2xqRnFacmJReEtwU3M0OFZJamp2NTZZLWFuSXlJ0gG2AkFVX3lxTE9IOFJxV0FYbXBVXzJtV0cyTUZlbFUtOUlpSkNnSV92T0d4WTN0NURKTmxTcHNyWktwZ2UyYnY1eGcweEpBNHhTM1JiNU94OVB3RUt0eWFXcGprTm9zcnFmeEZONDdOUmozUFVkYS1DQnc4TGVSTDNDM0RqTFgxSHZMWXNIZndnV3R1alUxREpXanJTcG5YdzI5dlVzd3A5cmFhblJxNkNTbFFjRmNBMVVCTmQxNXYwVzg0Um1zR2tMTDBmekdBU2QtUXB6WW52QXJqQW1nMVZ6dUd0akJ0c0Fma3lVdVVlOUt4OE5YNnpXZGN4cnpWLXloMGRUV0lQdm5rS2NOcG1FTndRbF9VeE1DNVc5alJZMmNlMDlfdlp3NjMwd3R3cDVEZkJWYms2TG9NSVlzd2c?oc=5",
    "source": "News24",
    "feed": "ASD / ACSC in the news",
    "region": "AU",
-   "published": "2026-11-01T23:36:40Z",
+   "published": "2026-11-01T23:34:51Z",
    "summary": "",
    "score": 14,
    "tags": [
@@ -6947,217 +7092,6 @@
     {
      "source": "BleepingComputer",
      "url": "https://www.bleepingcomputer.com/news/security/ai-coding-agents-hijacked-using-agentsmd-file-in-downloads-folder/"
-    }
-   ]
-  },
-  {
-   "id": "fe8ef43cf778",
-   "title": "Australia's worker surveillance laws 'dangerously out of date'",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQem15NlFUVnBCekludW5XYVhsWVVwMVozSFNxQmNFTWxJVTlEWWxqTC12ei1jRGNCVWJncXNKaHNmUXZORzlqcnctZG5GdVpidzBpdnZhZGYxM3haTXhyWTNMNm4zME9ueDItVEoxZkc1UTl2S3Q0ZmVpY1d5NWllMVlmNGlmY2JZeC1JVGxpaXoyX29wd0dXa3gxVU8zMVFlcXFleVFIWVNPRDZmMnZOQlhJTWxYVzRFdFZRSFBvVQ?oc=5",
-   "source": "Human Resources Director",
-   "feed": "OAIC / Privacy news",
-   "region": "AU",
-   "published": "2026-10-26T05:52:56Z",
-   "summary": "",
-   "score": 12,
-   "tags": [
-    "Australia",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Australia",
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "c00e1f440542",
-   "title": "Was Bathurst RSL Hit by Qilin Ransomware? Here’s What We Know So Far",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOT2l2TG95bERjblhacEZNMjFhRnpwWU9IdmFVTllXZjVBTzhlTDQzVTFZZEZoVENHaF9ONFZic1ZheFNMVm9CdUNVLXBHOFcxOWNJUHFOeDVrdHFzeHZYQ1l5UU1yMFp1aUtDcy0zQmpEUFc4amJqSXNiMThoTHc1WmZjUDRBZzZkMEFSUFNCYlp6N0hKdE1zY21ITFhiVFhmTThwUlVsQ3VjNnZ6R1hIdg?oc=5",
-   "source": "Kalkine Media",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-26T05:14:00Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Ransomware"
-   ],
-   "why": [
-    "Ransomware"
-   ],
-   "also": [
-    {
-     "source": "shattered.io",
-     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPV1o0SXZ1eEJCRjFvU1FWaDBXRy1kTTVnRUZaVVA2UVZISzdvNzMwa1ZUeXNMWWRzVEtXMVZudW53RmUyM1JrbG5ic3pZVWR4Vi1lOGxYNFREbFZJRkROYnhnRjZXQ2pEM2ZWU2ZXanRia0xCQ1VNZXd3OUFtNUw4ZUxn?oc=5"
-    },
-    {
-     "source": "https://tech-insider.org/",
-     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNM1dQQTljZjBCNXNZdmEzb0Frb2ZLQUp2R2hFSUoxZS1kVmxBNGo2a2x3VTRyQVFXeTdXYUN1Q1lhLUdZSXpjdG03RU50aHdzaFVsOXpSSHJqN2xlWFEwX0tKR0Y1Vld4MHgxMlJqTFVoSHhieGVHTXBjYXNWYW9jM0tRa0FZbnV0dkttN0ZR?oc=5"
-    }
-   ]
-  },
-  {
-   "id": "ed7d6d4a9492",
-   "title": "Healthcare data breaches hit record high",
-   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5qdF9ud05fTjdsdndGSUhtdDlkNUJIVXBZMEZiY2dpb0NFTU5DdU45ZHpROWJVVzFoaVIxaXd6bmFkTGphRWNrWkdyTEFRVW84TENUT0xUMEJwY212eG1faTdfQ2kyQW02bmN3Q1I3QngtdXc?oc=5",
-   "source": "Australian Journal of Pharmacy",
-   "feed": "OAIC / Privacy news",
-   "region": "Global",
-   "published": "2026-10-26T03:58:22Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "a9d5557b92f4",
-   "title": "ISC Stormcast For Monday, October 26th, 2026 https://isc.sans.edu/podcastdetail/10150, (Mon, Oct 26th)",
-   "link": "https://isc.sans.edu/diary/rss/33456",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-10-26T03:30:12Z",
-   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
-   "score": 1,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "4294264f80f0",
-   "title": "ACSC warns of critical vulnerabilities in Fortinet products",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPMVE3LVVaYmFLUUVQcWlSXzJUOWVvd21BX0wxMnJCUDJzQjVZT1dhb1hxc2Z2b3NtOHVrLU9CN1JLZ3NIX0JDMlV5MHAxWDJBaDVqOXkyLVV5UEFvNHRkMUtPLWlUeHAzNm1XeGFOYkdrUWN5eUhhWWN3R3F3MHViNlRiZ1lLMG14bEhEdlBzS0RtZE04TWlPVXBya3NnUF9HdXJ4TTB1cGpTWU0?oc=5",
-   "source": "Australian Cyber Security Magazine",
-   "feed": "ASD / ACSC in the news",
-   "region": "AU",
-   "published": "2026-10-26T00:03:29Z",
-   "summary": "",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "Edge devices"
-   ],
-   "why": [
-    "Australia",
-    "Edge devices"
-   ],
-   "also": [
-    {
-     "source": "Technology Decisions",
-     "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOVlY3TWYzTnkxZzE1MEQzaDRlN3lidDdRY2ctY1JmaGI1VlJQdUNPN1JpZnR5QXpQSXY4T2ZPSFpaTWJvVUo5QVZIUjAteEVFRy1NQ2dOZzNoYkFnMW9Ma21jRTVkbW45MVpkQ0JxM2dfNEw3X1J6RXJxYWpURWtEN19Lei1kU3YyWkxGU3g1SE1LLVBBal9vMDk4UTZSVHpDVWc1VzhWOUo3VVpIWWZ2TjljQlhqQV9McFFrcFIwS3NhclhCSzlqQ2otazZUT2JYSnhN?oc=5"
-    },
-    {
-     "source": "ACSC Alerts",
-     "url": "https://www.cyber.gov.au/alert/critical-vulnerabilities-in-fortinet-products"
-    }
-   ]
-  },
-  {
-   "id": "5943b3ba0784",
-   "title": "CVE-2026-109618: PHP Group PHP — PHP Memory Corruption Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-109618",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-10-26T00:00:00Z",
-   "summary": "PHP contains an out-of-memory corruption vulnerability that allows for unauthenticated remote code execution. CISA remediation due 2026-10-29.",
-   "score": 4,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 1.0
-  },
-  {
-   "id": "989022c91bd1",
-   "title": "CVE-2026-109619: PHP Group PHP — PHP Stale Internal Request-State Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-109619",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-10-26T00:00:00Z",
-   "summary": "PHP contains a stale internal request-state vulnerability that allows for unauthenticated remote code execution. CISA remediation due 2026-10-29.",
-   "score": 4,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 1.0
-  },
-  {
-   "id": "be2f01b5050e",
-   "title": "Why Is Microsoft (MSFT) Central To AI Cyberattacks And Digital Patient Twins?",
-   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPT085aEdGQ3ZtY1pCUWxURy14N1ZnaHNsaER2RTlWWGxJU2tnbVQ0Q2tQZVMwNXMzeHlKS1Z0VnZfb09tYzhtTm01dS0tdkpjMmNDSkNiNXZLUHJBSEtqYUFYbFFoV0RnX3M5SXRGV3BNSkJOeVBMYTRRa3U3Sl9hSTVhUkFza1BWR2ZKdktaRkdkZk1SekZNaw?oc=5",
-   "source": "Yahoo Finance",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-25T22:06:28Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Microsoft 365"
-   ],
-   "why": [
-    "Microsoft 365"
-   ]
-  },
-  {
-   "id": "3eda0d6ae7e3",
-   "title": "PHP2Shell Exploitation Attempts Continue Amid Suspected N. Korea Global Scanning Activity",
-   "link": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-25T17:19:46Z",
-   "summary": "In an update, Palo Alto Networks Unit 42 said it's retracting its earlier assessment that the post-compromise activity targeting the European government agency involved the exploitation of the PHP2Shell flaws. \"What researchers saw was an attack against a European government agency executed in the…",
-   "score": 4,
-   "tags": [
-    "Edge devices",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Edge devices",
-    "SaaS / cloud"
-   ],
-   "also": [
-    {
-     "source": "Unit 42",
-     "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBaSXRUMkVsWkF3TjhoV29oTXdyZHhrMGZINFBHNVVrNmZubTA4SkFzMzlWMlNMLW15ZWdISDJYeURJbVdpTFB5ZzNTU21aazFfTmc4R0VkLWVyMVY4S1JRYTZ5UjJqWk82SlR5Q0ZMOTJrNEJVeXNV?oc=5"
-    },
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/php2shell-mass-exploitation-looms-for-leaked-critical-php-flaws/"
-    },
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/"
-    },
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/php-issues-emergency-patches-for-two.html"
-    },
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/php2shell-two-unpatched-critical-php.html"
-    },
-    {
-     "source": "SANS ISC",
-     "url": "https://isc.sans.edu/diary/rss/33440"
-    },
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/php2shell-patches-land-as-first-exploitation-attempts-hit-sensors/"
     }
    ]
   }
