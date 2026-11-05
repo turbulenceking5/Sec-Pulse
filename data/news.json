@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-05T23:39:40Z",
+ "generated": "2026-11-05T23:45:13Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,7 +28,7 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 9,
+   "count": 10,
    "error": null
   },
   {
@@ -626,6 +626,21 @@
    ]
   },
   {
+   "id": "287e28256566",
+   "title": "Open-weight AI models: Selecting, deploying and operating open-weight AI Models securely",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPd1l1bUpyTEFhWEtweFl2cEJUbHktZkY4bG1lbEcyR3hKWWN1cDhoMDBaVndpZU56NkY1c0x1VFNaYTBRNmFsTTE4aEdyUldOMzhaZFVmdC1ZekZxNEJzcXVmMl9LaXRkNndCZk9HUUJidHRzLWJ2eHZ1UTBZOHUxM0tRS1RWWGpKSXktRDZzSDdnRzl2QTI5bmNaVXVhUXUybkg4X3JfZ21abDdnMFZuQU8yVC01bUVSTVR2Y0xKY20?oc=5",
+   "source": "Cyber.gov.au",
+   "feed": "ACSC (via Google News)",
+   "region": "AU",
+   "published": "2026-11-05T12:00:00Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "Australia"
+   ],
+   "why": []
+  },
+  {
    "id": "9d72fd7ac53b",
    "title": "Court Upholds 423.6 Billion Won Fine Against Coupang for Data Breach : Society : JKN",
    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE15OENsYXVuSm5VTk1UTElkTldJeXd4TWRuRGFjZTlleWE1bW9ZSE5VS1NIbzBoU2FkazNpRGVQXzRnTzJkYzFBU04tZ0dDTll2T2F0M3NTOHIyNmFzUTNGMkNn?oc=5",
@@ -808,21 +823,6 @@
    "feed": "ACSC (via Google News)",
    "region": "AU",
    "published": "2026-11-05T08:05:22Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "Australia"
-   ],
-   "why": []
-  },
-  {
-   "id": "287e28256566",
-   "title": "Open-weight AI models: Selecting, deploying and operating open-weight AI Models securely",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPd1l1bUpyTEFhWEtweFl2cEJUbHktZkY4bG1lbEcyR3hKWWN1cDhoMDBaVndpZU56NkY1c0x1VFNaYTBRNmFsTTE4aEdyUldOMzhaZFVmdC1ZekZxNEJzcXVmMl9LaXRkNndCZk9HUUJidHRzLWJ2eHZ1UTBZOHUxM0tRS1RWWGpKSXktRDZzSDdnRzl2QTI5bmNaVXVhUXUybkg4X3JfZ21abDdnMFZuQU8yVC01bUVSTVR2Y0xKY20?oc=5",
-   "source": "Cyber.gov.au",
-   "feed": "ACSC (via Google News)",
-   "region": "AU",
-   "published": "2026-11-05T08:05:21Z",
    "summary": "",
    "score": 5,
    "tags": [
@@ -1577,9 +1577,9 @@
    "epss": 0.0116
   },
   {
-   "id": "36f45dbba305",
+   "id": "19ce3797bde4",
    "title": "Exclusive: Dozens of Australian hotels potentially impacted by alleged IHG Hotels & Resorts breach",
-   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPaDdPWVpNSDItVk90aXYxNnk3Z3dhNjctR0ZTV3dVUXpiWDZwQzg3Y0JFWEVJS1ZSbFVzUTFjaTgtYi1xZ1pLbU81UmcxOUIyNDk2dS1tTnY1Q0RGQWtSQ3J2RExRTTU0T2g3cU0zeTFSQVpvbUJDWGRjQVJhVFNtQ21NaVVkamNIVFNuRE5uYTZZeUZkeXlUdGs2TWc5R3ZoVW4xTnZIUnZDTkhyeFRzQnoxWW14ajMwSEhqdmJxSmlfWmRoYnZPcWh1UXpkQTJCRFE?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPRDc0RDMzRUh6WEZkbWlYSmJQQm45amFXY3ZKMXFmZkxjWlVxdW5XUDNMQ1YyYXIzMnNNNnNEVEFrSnVRSzNsUGpaQ1I3TDZWOGVFZ2V2TWRLeW83Sk92SFN3Zm1kTzFJZTBDSTlJcXhLak9mRXQyX19yN3ozb01MbHVfSUx2Y29wNFBidEdNT1NyNlRFTmQtemNBV0lwaUEyWWI5WWtWczQzUF9fVS1yTXVlcDBfMEVVWnVIbzdCRGhjRmx2QVpORlZnU1Z1RWp6a3lBNDBNbWdLS2xvUkE?oc=5",
    "source": "Cyber Daily",
    "feed": "AU breach news",
    "region": "AU",
@@ -1725,6 +1725,19 @@
     "Vulnerability"
    ],
    "epss": 0.0141
+  },
+  {
+   "id": "df7c4721e4f5",
+   "title": "Fresh European Fridge Attacks Put Cold-Chain Security in Focus",
+   "link": "https://www.darkreading.com/ics-ot-security/fresh-european-fridge-attacks-cold-chain-security",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-03T22:16:49Z",
+   "summary": "Beyond food storage, the same combination of Internet connectivity, remote access, and inadequate security practices can put temperature-controlled infrastructure across other critical sectors at risk.",
+   "score": 0,
+   "tags": [],
+   "why": []
   },
   {
    "id": "699d6dc9b64e",
@@ -2369,6 +2382,25 @@
     "Data breach"
    ],
    "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "c6820715fc5e",
+   "title": "Airlines flying in and out of Australian airports impacted by customer data breach",
+   "link": "https://news.google.com/rss/articles/CBMimAJBVV95cUxQSzZBa055TVY5NFFnQ2xqTnladWlNN0lrNENRc3ppa0hETVlNdG1YN05NdGJOcXQ0ZWJzZFlJcVE2eGNjUVVwcjhRcktwNlpyTG9OMWM2TGpST21uWUN3NzBreDRESVcxZXRiMDYxa2d2amFrdGxHOTJRdkN6VlVzMHNSTWVGNkkxWTYtN2VfbU10QUtRbzk5SEczcnZ5bW9TdmstZHRJcW1LeGozSUtiWTNtN1NlVk1TVmd3NmZGbEVFY2dqc1ozS0otMTBNeGFqakFnVVFmaXhMbUJEVEVvYWdDSmVuMk50SlRVSTQzSHdRU0pnRDVaTldqcHlpZXRuWmZ2M1NPdWhBOGpxMmNhM0VXX29lLXA30gGeAkFVX3lxTE9JLWVCS1U1VnFMODlla0JxNk5OcEFra1E4SVdsZVh0ZGdQX0hRWF8xcFhjb2dYV3lfNENOTFpuSmxTYkF5Q0RvNmRXRDhieF9RZXJmaHhycE5nbEtXVExLaHBhaDZONlpqdmc0VWdZM0x1TDlubU1JTFRxbjVWUE9TM1lpcHQzaDdKWXhyYXZaYXZ2TEkwVjlSLUpESndYN05aZ2RTekk3LWxkRjc4dTRmUTQ4a0RlUE82VXRubzBxMG5MbnhaWGU3Y1d5ZmxTT2NUSV9WcGhueHRpdHBLbUtoQWE2SkxBaEhOOWhhQVA2V21ZdVY5M28xUEtSZ1NyYTY3dFI2Mk5aLUFCWm1BdXYyaHdhVkNBOUxYYmF5Nmc?oc=5",
+   "source": "News24",
+   "feed": "ASD / ACSC in the news",
+   "region": "AU",
+   "published": "2026-11-03T03:34:16Z",
+   "summary": "",
+   "score": 14,
+   "tags": [
+    "Australia",
+    "Data breach"
+   ],
+   "why": [
+    "Australia",
     "Data breach"
    ]
   },
@@ -7025,40 +7057,6 @@
    ],
    "why": [
     "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "9b6153963ef5",
-   "title": "Former pentester used ARTEX AI to steal 8.2 million data records",
-   "link": "https://www.bleepingcomputer.com/news/security/former-pentester-used-artex-ai-to-steal-82-million-data-records/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-26T21:08:28Z",
-   "summary": "South Korean police identified seven suspects linked to a cybercrime operation that breached more than 90 organizations in the country, with ARTEX AI pentesting framework used in most of the attacks. [...]",
-   "score": 3,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "c25a5812afa3",
-   "title": "In-the-Wild Attack Abuses AI Agents' Trust in Markdown",
-   "link": "https://www.darkreading.com/application-security/in-the-wild-attack-ai-agents-trust-markdown",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-26T20:59:26Z",
-   "summary": "A new AI agent prompt injection technique exploits how coding assistants consume local instruction files, blurring the line between text documents and executable actions.",
-   "score": 1,
-   "tags": [
-    "AI threats"
-   ],
-   "why": [
-    "AI threats"
    ]
   }
  ]
