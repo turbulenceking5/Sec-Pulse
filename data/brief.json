@@ -1,15 +1,30 @@
 {
- "date": "2026-11-06",
- "generated": "2026-11-05T23:45:23+00:00",
- "title": "Sec-Pulse brief - Fri 06 Nov",
+ "date": "2026-11-07",
+ "generated": "2026-11-06T23:22:05+00:00",
+ "title": "Sec-Pulse brief - Sat 07 Nov",
  "items": [
+  {
+   "id": "e2845eccbac1",
+   "title": "Threat actors use agentic AI tooling to find and abuse exposed secrets",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/05/threat-actors-use-agentic-ai-tooling-to-find-and-abuse-exposed-secrets/",
+   "source": "Microsoft Security Blog",
+   "region": "Global",
+   "published": "2026-11-05T23:46:50Z",
+   "score": 13,
+   "tags": [
+    "Real estate",
+    "Data breach",
+    "Identity"
+   ],
+   "summary": "Microsoft Threat Intelligence has observed threat actors using the agentic offensive security framework ARTEX to search GitHub for OAuth application secrets, which can be used to compromise the associated OAuth application and perform authenticated actions in the application’s tenant. Agents…"
+  },
   {
    "id": "2a3e05365557",
    "title": "News - Qantas customer data exposed in cyber attack on reservation provider",
    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPWlAyalFEYkNpRlJCaThpUUdHSnlSc2lFVGJZNkR2dDB0djRuVlpBX3QyZ2pqcTZYMGtNZUxDT3g3RmVHRFFCMTZsamVtSnlhVzFtckNzekVmTzhuNmc4MENOMmt3dGlOYkpaaW9GYVh1cWx3LW9aUUtmSmM5X2p5UFg1SXFqU3d5MERaTjlqU2ozREFvX3Vlb0poVC05dElMa2hwblRB?oc=5",
    "source": "teiss",
    "region": "AU",
-   "published": "2026-11-05T12:06:07Z",
+   "published": "2026-11-05T18:57:45Z",
    "score": 13,
    "tags": [
     "Australia",
@@ -18,69 +33,54 @@
    "summary": ""
   },
   {
-   "id": "c5c5ae7af26f",
-   "title": "OAIC Ends VIQ Inquiry Despite Court Data Breach Finding",
-   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1YMGxrYldOYk1MY2s3Q3NqMVk2M1NnOHAtSUo5QW90WE9XeGVzNThLcFVJVWQzc25VdXNUWXV5ck1Ua0JDbU9KQWZRNy1OemdWUkM3RWdZYlXSAVhBVV95cUxNWDBsa2JXTmJNTGNrN0NzajFZNjNTZzhwLUlKOUFvdFhPV3hlczU4S3BVSVVkM3NuVXVzVFl1eXJNVGtCQ21PSkFmUTctTnpnVlJDN0VnWWJV?oc=5",
-   "source": "Law360",
-   "region": "AU",
-   "published": "2026-11-05T09:22:42Z",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "Data breach"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "e3c1ad189764",
-   "title": "David Jones in breach of rent agreements, landlord Scentre Group says",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQQzRVTUlCbXNEdlIxWVctWVJib3poZGdPNUhVZF9sSDNoYWNaSkZabGFCRG9iekZZVTVxNkRCakNMNjVtSi0zMjFtVHRCVDVYb0QydnNOQk5USXM1aEEwaU9RdWxUV29XbmZNYkVOYkNpbklweEZaM3hQYXIxYW51RWVsNkxzNFlBeVNDdnZub25aNkpNcy1KQkRwX2UzZw?oc=5",
-   "source": "Lawyerly",
+   "id": "05112641c600",
+   "title": "Relentless consumer spending risks triggering more RBA rate hikes for struggling mortgage holders",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQTUk4SFdRWE1lQ3dwM2lfU2szV3VzcENJWVdJcWRBOFZZTVkwc21mZzM1VVg3YmhvenljWXZsZ0lQSkNFczY4VHRwM1pzbkpqemhtaG9CdkJMY2xIVlhoM1YydnhBVUxzUGtrbk9SRUJ0VmlLM09FZFA3RDNMRThjYzNmemtHOUlIb1JMb2hYMUpCT0I5TTJyak9ZYnN6MEEycWZ2SW51c0tQQktEakZTWnBoQml6dC16b0dvMDB0NWtvMHhLN1ZVdWpXNFBpUQ?oc=5",
+   "source": "Real Estate",
    "region": "Global",
-   "published": "2026-11-04T18:57:06Z",
-   "score": 14,
+   "published": "2026-11-05T23:57:48Z",
+   "score": 10,
    "tags": [
-    "Real estate",
-    "Data breach"
+    "Real estate"
    ],
    "summary": ""
   },
   {
-   "id": "d79523f094d2",
-   "title": "OAIC won’t take action against court transcriber over data breach",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQWmtzYk9MWlkwSUdjOFB2RHc0bEtVMEMxU2gtcTBCQ3E1VnVmcU1XaDhuS0llZ05oU2g0Y2tZMFNzbHVfc3diZ1Z1dXR2ME84NExNZi1mYTgxckhMaVBGSVowTElDLUtEdVhLZlpxUC1HVlN0U1R6aWRiaXFYUE8tSkhrQldiRGZJcHJERDNWMmxzTjdDbmFPbzdnRVo3dlViRTNwRE5lV3JTZEE?oc=5",
-   "source": "Lawyerly",
-   "region": "AU",
-   "published": "2026-11-05T00:57:11Z",
-   "score": 13,
+   "id": "e4ff33774933",
+   "title": "BVK's Office Raided In Widening Investigation After Big Losses In U.S. Real Estate",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPZFF4MFR1ZVhmTlhJUFFJVFRCOF90MmwzR21UdjVZT0E4R0dlYndnM2RibzdKOEpObXo5YnBROUNKc0JWa1lMYmE1dlFVZV9FU09zUmN5bGgxMTVPemtOcENNbnEwYWtOeXFvTFVRYWpzeTNzRnhmZ0FwUmdzYkZ4TTNlN2NheFJ5ZWxFZXhna3VnN3FmUHpPVktEdmVXSGFjMlF1b2ZwUjk2dEwtZWVROExPMVhFUTU2ZVZyYUxnSndXemdFR3pR?oc=5",
+   "source": "Bisnow",
+   "region": "Global",
+   "published": "2026-11-05T17:43:05Z",
+   "score": 10,
    "tags": [
-    "Australia",
-    "Data breach"
+    "Real estate"
    ],
    "summary": ""
   },
   {
-   "id": "c8cd90e23e8d",
-   "title": "OAIC draws line under investigation into court recording breach",
-   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOcFJ6Y25NSTFReWc0UmNnaHJkQlcxZ2dqcTdMTkxRbEo5ZFIweVM1eGZkQ0QyZGdjN09NWGpINGRsSlRuVDV0YmlmY0l6WkRIb2FTcTRiRl9yZ0dVckFVdG45eENPa0UzOGU0cEI0ajBTRjdMYUI5RXNWbVN1dnJTcGliUnpWYTljbUFGOWNLY1ZVRVZ3aWZITlVmeGpKNF9kNVd0UWxzN0ZrOVhSb1E?oc=5",
-   "source": "Lawyers Weekly",
-   "region": "AU",
-   "published": "2026-11-04T18:04:32Z",
-   "score": 13,
+   "id": "3819f6707361",
+   "title": "In Other News: Trezor Implant, LLMJacking Bills Hit $1M, SAP Flaws Weaponized Within Days",
+   "link": "https://www.securityweek.com/in-other-news-trezor-implant-llmjacking-bills-hit-1m-sap-flaws-weaponized-within-days/",
+   "source": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-06T14:40:09Z",
+   "score": 8,
    "tags": [
-    "Australia",
-    "Data breach"
+    "Ransomware",
+    "Data breach",
+    "AI threats"
    ],
-   "summary": ""
+   "summary": "Noteworthy stories that might have slipped under the radar: Synology warns about NAS ransomware attacks, Flowise ‘hello’ attacks, Chainalysis breach impact expands. The post In Other News: Trezor Implant, LLMJacking Bills Hit $1M, SAP Flaws Weaponized Within Days appeared first on SecurityWeek ."
   }
  ],
  "stats": {
-  "recent": 58,
-  "au": 8,
-  "kev": 0
+  "recent": 49,
+  "au": 1,
+  "kev": 1
  },
  "lesson": {
-  "id": "3.2",
-  "title": "Detection, analysis and evidence handling"
+  "id": "3.3",
+  "title": "Containment, eradication and recovery"
  }
 }
