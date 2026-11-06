@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-05T23:45:13Z",
+ "generated": "2026-11-06T06:51:08Z",
  "sources": [
   {
    "name": "ACSC Alerts",
-   "ok": true,
-   "count": 1,
-   "error": null
+   "ok": false,
+   "count": 0,
+   "error": "TimeoutError: The read operation timed out"
   },
   {
    "name": "ACSC Advisories",
-   "ok": true,
+   "ok": false,
    "count": 0,
-   "error": null
+   "error": "TimeoutError: The read operation timed out"
   },
   {
    "name": "ACSC (via Google News)",
@@ -22,7 +22,7 @@
   {
    "name": "ASD / ACSC in the news",
    "ok": true,
-   "count": 2,
+   "count": 1,
    "error": null
   },
   {
@@ -34,7 +34,7 @@
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 5,
+   "count": 4,
    "error": null
   },
   {
@@ -105,6 +105,83 @@
   }
  ],
  "items": [
+  {
+   "id": "5d7c1511e0dd",
+   "title": "3 Charged in Scheme to Use AI to Impersonate CEOs and Attorneys to Steal $129 Million",
+   "link": "https://www.securityweek.com/3-charged-in-scheme-to-use-ai-to-impersonate-ceos-and-attorneys-to-steal-129-million/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-06T03:03:29Z",
+   "summary": "The trio, who have nicknames that include “Rocky Balboa,” “Superman Cash” and “Fat Boy,” often targeted the companies’ accounting departments. The post 3 Charged in Scheme to Use AI to Impersonate CEOs and Attorneys to Steal $129 Million appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "6ed44c5da57e",
+   "title": "ISC Stormcast For Friday, November 6th, 2026 https://isc.sans.edu/podcastdetail/10168, (Fri, Nov 6th)",
+   "link": "https://isc.sans.edu/diary/rss/33494",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-11-06T02:00:02Z",
+   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "97d7db0e7e4a",
+   "title": "FBI, CISA warn of cyberattacks targeting refrigeration systems",
+   "link": "https://www.bleepingcomputer.com/news/security/fbi-cisa-warn-of-cyberattacks-targeting-refrigeration-systems/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-06T00:56:44Z",
+   "summary": "The FBI and CISA warn that hackers are actively targeting industrial refrigeration and cold-chain monitoring systems worldwide, potentially causing food spoilage, equipment damage, and fire hazards. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "e2845eccbac1",
+   "title": "Threat actors use agentic AI tooling to find and abuse exposed secrets",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/05/threat-actors-use-agentic-ai-tooling-to-find-and-abuse-exposed-secrets/",
+   "source": "Microsoft Security Blog",
+   "feed": "Microsoft Security Blog",
+   "region": "Global",
+   "published": "2026-11-05T23:46:50Z",
+   "summary": "Microsoft Threat Intelligence has observed threat actors using the agentic offensive security framework ARTEX to search GitHub for OAuth application secrets, which can be used to compromise the associated OAuth application and perform authenticated actions in the application’s tenant. Agents…",
+   "score": 13,
+   "tags": [
+    "Real estate",
+    "Data breach",
+    "Identity"
+   ],
+   "why": [
+    "Real estate",
+    "Data breach",
+    "Identity"
+   ]
+  },
+  {
+   "id": "ed0831e3bc93",
+   "title": "Southport and Nottingham attack victims demand end to data breaches",
+   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPRlJ2dlhZMzVsZk53NnFDejdaQkJsUmhpNmREOExieFZJSE9xaEo1VFhSMzg1Y0wtWXNuTDNxVUtLdkppVXM3dmYxNEtVMGJtUDZiRVRSNGgxRlRXNXk2QlBTclloeXJoaW5KS3JLZnp0aFBIdUlWQ1ptbWE5R1lFLXp4UEUwejZrWHRB?oc=5",
+   "source": "Yahoo News Australia",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-05T23:13:30Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
   {
    "id": "c5d8bcb2d057",
    "title": "US Government Email Systems Open to Abuse Thanks to Typos",
@@ -221,20 +298,48 @@
    ]
   },
   {
-   "id": "ed0831e3bc93",
-   "title": "Southport and Nottingham attack victims demand end to data breaches",
-   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPRlJ2dlhZMzVsZk53NnFDejdaQkJsUmhpNmREOExieFZJSE9xaEo1VFhSMzg1Y0wtWXNuTDNxVUtLdkppVXM3dmYxNEtVMGJtUDZiRVRSNGgxRlRXNXk2QlBTclloeXJoaW5KS3JLZnp0aFBIdUlWQ1ptbWE5R1lFLXp4UEUwejZrWHRB?oc=5",
-   "source": "Yahoo News Australia",
+   "id": "2a3e05365557",
+   "title": "News - Qantas customer data exposed in cyber attack on reservation provider",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPWlAyalFEYkNpRlJCaThpUUdHSnlSc2lFVGJZNkR2dDB0djRuVlpBX3QyZ2pqcTZYMGtNZUxDT3g3RmVHRFFCMTZsamVtSnlhVzFtckNzekVmTzhuNmc4MENOMmt3dGlOYkpaaW9GYVh1cWx3LW9aUUtmSmM5X2p5UFg1SXFqU3d5MERaTjlqU2ozREFvX3Vlb0poVC05dElMa2hwblRB?oc=5",
+   "source": "teiss",
    "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-11-05T17:52:23Z",
+   "region": "AU",
+   "published": "2026-11-05T18:57:45Z",
    "summary": "",
-   "score": 6,
+   "score": 13,
    "tags": [
+    "Australia",
     "Data breach"
    ],
    "why": [
+    "Australia",
     "Data breach"
+   ],
+   "also": [
+    {
+     "source": "Australian Aviation",
+     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNNC12c0JOSzJtRDlZWnVMLUgwZ20xUy1fMDhOa1NrdWZhRzlNTmVGdUZnSUpObE9aMnAxd0tOODNEU1BRaW1DRU5mYjJOdVNSQWQwckVVcF9uNk1hUGhqdFhhdnJJYS1WR0Q2ZTBlVWFNS3hfeENhRUtVaHNNa25kektIajRDVS1NYWRsNzZoVmd0Mzdienc0Mi1yeVQ?oc=5"
+    },
+    {
+     "source": "7NEWS",
+     "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQeFNVX0NJY21XUENQeDl3TlBQeWtOMXJFQ3d5cmw0YkZQXzJFaUpVd21sTkRxMk5ld0RQdVFMc2RjT1JuRWpPS2psdTZCRmw4QlNuV2ZWbmJnRS1rUlNDeXdudFo1cm1aR1h3LXUxNzFjazAzaENyN2VMZnRJYkoycFpySkEwXzdwZV8xMkRoM0w3YlM1azlBbVF5d0ZaeHN5MGIwQXNfREU2c193SWtsWld0X3dxNl9aYzJqYWdNell1UDI1Ql9ya3l3bzNCR25uZmpqRzFrLS1yUdIB3wFBVV95cUxNajBIaUpqSVp2OHN1RHFzb3A4eXhGcG9KdF9XWFB4RWVKUHpOS3BMZWdFa0d1cFd4NW82ZUtTTzhWZFZnNktGb29xT0ZHMGx6MGVjUTl5TTdxSHp3amRUN3lTaWlnNUJQWGRjS2JZaFhoMGI2N3RnVkt5Xy1ob0ZwRER5QUpncmphZjF2TXBuWEdmRWR6Y0xsSTQwUmE1N0JOc1hGTTFERG1lakVUZkZXczVJQ2xpVHdsalpLemNEbTZvaExqblRFMjdNVktJVkd1Y3ZZa2ItOEk1U0VIQ2Q4?oc=5"
+    },
+    {
+     "source": "tech-insider.org",
+     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPbDQ4WXljWkhNQmdsMUdhdFozdHdpU3h6YU5uVGlJV1hDN2tZUEEwb3hCNDh4NFZNb013dmE2c2szcXg5TGdnaGNmOTlnNU44bkd3Qjgwak5EbUltY181SGFlbk5DRmh1LUlPanNkdEFTS1NnRk1FR1M5UHNWc1hHTXRmYXFET00?oc=5"
+    },
+    {
+     "source": "Homeland411",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPM0ZQYUNsVTFheUdjaEdpVkJjVUxQam15SlpLZmp0bHpoZDItNFFCT0ZTZE8ybHZCQUdxODc1aTVOZ1dicWNncGlHSDFNNFdEN3RwcEhibXlUOW5qeUt3YTYwdFRQYlZpcE9FLWdSM1ZleERnS2FGX0FMWW9ybFpPeUktdzQwb0d0ZThoUDQ4aW16dw?oc=5"
+    },
+    {
+     "source": "B2B News",
+     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPMXRUeFVjal9hX3Jwa3hDWHdwWU16aENjRHcyTFdZaUozZzRuSXdNaTBOWDEwc2sweHZPdzYwNDQ4R1ZNMVRVYVZQOU1RaFNmcHp5dGtYQlVJOEFrVlk4ZzVYT1NOdHdHOTA2ODNrYjhNRVNuQ0lEY3dESlYzT2I5MUFVV2JEUUNhdlVpM3NVMA?oc=5"
+    },
+    {
+     "source": "Yahoo News Australia",
+     "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBtS1JBYzhyWWRJTENGeVNvQUFCSzlvamtncVFFZWhudC1pWDljMFBIY3ZCMWFUSkNRNjlhNUV2T0NsMDczZEhRVmloYUZJdWRaNktvcERpVXdnTi1GRjdRRm9ZMmhqdUVzRTJHUWNkbWd3amNVZHlJTDk1OVQ?oc=5"
+    }
    ]
   },
   {
@@ -328,6 +433,23 @@
    "score": 0,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "1b13e6c7ec1c",
+   "title": "Ransomware attacks jump 23% as industrial firms hit",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPQTNxa0NwU2hGTDAwem5XeWxJQ3ZQRnlGb1hFQ3ZtQnFVeFBJbUJhaXo4U1RqVG4tbEpLNDZYZVVXZHRNcG10QTlaRjJub29INm15RXRoSEU3djJCaDgzSjN5T25XUmJlQVp3ajZrXzFhMUZlbG9RVnJQZjRPU0ZhWFN6VkM1UlJsWm1mQ0RR?oc=5",
+   "source": "SecurityBrief Australia",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-05T16:45:00Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
   },
   {
    "id": "3fe484f436f5",
@@ -578,51 +700,6 @@
    ],
    "why": [
     "Vulnerability"
-   ]
-  },
-  {
-   "id": "2a3e05365557",
-   "title": "News - Qantas customer data exposed in cyber attack on reservation provider",
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPWlAyalFEYkNpRlJCaThpUUdHSnlSc2lFVGJZNkR2dDB0djRuVlpBX3QyZ2pqcTZYMGtNZUxDT3g3RmVHRFFCMTZsamVtSnlhVzFtckNzekVmTzhuNmc4MENOMmt3dGlOYkpaaW9GYVh1cWx3LW9aUUtmSmM5X2p5UFg1SXFqU3d5MERaTjlqU2ozREFvX3Vlb0poVC05dElMa2hwblRB?oc=5",
-   "source": "teiss",
-   "feed": "AU breach news",
-   "region": "AU",
-   "published": "2026-11-05T12:06:07Z",
-   "summary": "",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "Data breach"
-   ],
-   "why": [
-    "Australia",
-    "Data breach"
-   ],
-   "also": [
-    {
-     "source": "Australian Aviation",
-     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNNC12c0JOSzJtRDlZWnVMLUgwZ20xUy1fMDhOa1NrdWZhRzlNTmVGdUZnSUpObE9aMnAxd0tOODNEU1BRaW1DRU5mYjJOdVNSQWQwckVVcF9uNk1hUGhqdFhhdnJJYS1WR0Q2ZTBlVWFNS3hfeENhRUtVaHNNa25kektIajRDVS1NYWRsNzZoVmd0Mzdienc0Mi1yeVQ?oc=5"
-    },
-    {
-     "source": "7NEWS",
-     "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQeFNVX0NJY21XUENQeDl3TlBQeWtOMXJFQ3d5cmw0YkZQXzJFaUpVd21sTkRxMk5ld0RQdVFMc2RjT1JuRWpPS2psdTZCRmw4QlNuV2ZWbmJnRS1rUlNDeXdudFo1cm1aR1h3LXUxNzFjazAzaENyN2VMZnRJYkoycFpySkEwXzdwZV8xMkRoM0w3YlM1azlBbVF5d0ZaeHN5MGIwQXNfREU2c193SWtsWld0X3dxNl9aYzJqYWdNell1UDI1Ql9ya3l3bzNCR25uZmpqRzFrLS1yUdIB3wFBVV95cUxNajBIaUpqSVp2OHN1RHFzb3A4eXhGcG9KdF9XWFB4RWVKUHpOS3BMZWdFa0d1cFd4NW82ZUtTTzhWZFZnNktGb29xT0ZHMGx6MGVjUTl5TTdxSHp3amRUN3lTaWlnNUJQWGRjS2JZaFhoMGI2N3RnVkt5Xy1ob0ZwRER5QUpncmphZjF2TXBuWEdmRWR6Y0xsSTQwUmE1N0JOc1hGTTFERG1lakVUZkZXczVJQ2xpVHdsalpLemNEbTZvaExqblRFMjdNVktJVkd1Y3ZZa2ItOEk1U0VIQ2Q4?oc=5"
-    },
-    {
-     "source": "tech-insider.org",
-     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPbDQ4WXljWkhNQmdsMUdhdFozdHdpU3h6YU5uVGlJV1hDN2tZUEEwb3hCNDh4NFZNb013dmE2c2szcXg5TGdnaGNmOTlnNU44bkd3Qjgwak5EbUltY181SGFlbk5DRmh1LUlPanNkdEFTS1NnRk1FR1M5UHNWc1hHTXRmYXFET00?oc=5"
-    },
-    {
-     "source": "Homeland411",
-     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPM0ZQYUNsVTFheUdjaEdpVkJjVUxQam15SlpLZmp0bHpoZDItNFFCT0ZTZE8ybHZCQUdxODc1aTVOZ1dicWNncGlHSDFNNFdEN3RwcEhibXlUOW5qeUt3YTYwdFRQYlZpcE9FLWdSM1ZleERnS2FGX0FMWW9ybFpPeUktdzQwb0d0ZThoUDQ4aW16dw?oc=5"
-    },
-    {
-     "source": "B2B News",
-     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPMXRUeFVjal9hX3Jwa3hDWHdwWU16aENjRHcyTFdZaUozZzRuSXdNaTBOWDEwc2sweHZPdzYwNDQ4R1ZNMVRVYVZQOU1RaFNmcHp5dGtYQlVJOEFrVlk4ZzVYT1NOdHdHOTA2ODNrYjhNRVNuQ0lEY3dESlYzT2I5MUFVV2JEUUNhdlVpM3NVMA?oc=5"
-    },
-    {
-     "source": "Yahoo News Australia",
-     "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBtS1JBYzhyWWRJTENGeVNvQUFCSzlvamtncVFFZWhudC1pWDljMFBIY3ZCMWFUSkNRNjlhNUV2T0NsMDczZEhRVmloYUZJdWRaNktvcERpVXdnTi1GRjdRRm9ZMmhqdUVzRTJHUWNkbWd3amNVZHlJTDk1OVQ?oc=5"
-    }
    ]
   },
   {
@@ -6977,87 +7054,6 @@
     "Vulnerability"
    ],
    "epss": 0.8264
-  },
-  {
-   "id": "d1471d8c2286",
-   "title": "JLL Sues Broker Who Left For CBRE For Breach Of Contract",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOd1h0aWlDWEZyaXdYeTRwMTlpQTJ5eWxMSC13bE5TNUx2T2NaTTAxWE9tSFlyS0RGTmN0OWF4TlVUX0lYVG9mSkxmbldqMnZYWVJhWUY2VmFFcmFzRFBZNmxyaWhwSlo5TnEtV1ZXVEhBMnFVT2xHR0ktT2hfc1R4dDRxSFZ2c05oZDNscllOWUJlcUpZX280aEsyOS1BZjk5WjczbHNRWUZqaGRpdVhvX21B?oc=5",
-   "source": "Bisnow",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-26T23:58:58Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "627cc70bbf65",
-   "title": "University of Copenhagen data breach exposes data of 525,000 people",
-   "link": "https://www.bleepingcomputer.com/news/security/university-of-copenhagen-data-breach-exposes-data-of-525-000-people/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-26T22:20:36Z",
-   "summary": "The University of Copenhagen in Denmark confirmed that hackers accessed one of its test environments containing personal data belonging to 525,000 people. [...]",
-   "score": 4,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "532c627e1367",
-   "title": "Arm Holdings (ARM) Faces Jury Breach Ruling As It Unveils Server Security Tie Up",
-   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQeWZXZnF0LWJ1ZkFSU1ZFb1JUZmtmTkFTMDBKaGJhYVBNTl9vOEUxMkFFNW5NRlItcW91ZjhKSHlyekRCUFJlNEloeENJYTFjOXJWS1VZdjZ2d0dIZTIwcHNuY0s5Zmc1YkoxWmJFUlVyemhXaHZuU1VQS2JUd20wbVRFR1pwbTlRckNfRm02QjYwdzVPeDZF?oc=5",
-   "source": "Yahoo Finance",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-26T22:15:37Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "5d6c647af363",
-   "title": "Risks & Rewards: How AI Is Redefining the CISO's Role",
-   "link": "https://www.darkreading.com/cybersecurity-careers/risks-rewards-ai-redefining-ciso-role",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-26T21:44:33Z",
-   "summary": "Nvidia security executive Mark Weatherford says CISOs must help business leaders weigh AI's pros and cons, and ensure those deploying it own the risks.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "0778ad851565",
-   "title": "Small Business Supports Legislation to Stop Lawsuit Abuse",
-   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNNmxHd0dQejkzUEZBWGpwYUU3VkVPbjViTlZRSHpSbFBoYkZSU294cDFQUE0xR01EWks1aVZUWFZybWtMYVpSYkN4RVE2YXNaR01mcENxSHVNV0VvUnJXaUZjcVFkTllEaUNhZTNJRVVvaGNfblFQYXZWSjZiLW5ZV2IxQXVEUHJHMEQzQnRNSVAySkVNOHVDNkRiWDNRXzg?oc=5",
-   "source": "NFIB",
-   "feed": "OAIC / Privacy news",
-   "region": "Global",
-   "published": "2026-10-26T21:20:38Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "SaaS / cloud"
-   ],
-   "why": [
-    "SaaS / cloud"
-   ]
   }
  ]
 }
