@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-06T16:46:58Z",
+ "generated": "2026-11-06T23:11:38Z",
  "sources": [
   {
    "name": "ACSC Alerts",
-   "ok": false,
-   "count": 0,
-   "error": "TimeoutError: The read operation timed out"
+   "ok": true,
+   "count": 1,
+   "error": null
   },
   {
    "name": "ACSC Advisories",
-   "ok": false,
+   "ok": true,
    "count": 0,
-   "error": "TimeoutError: The read operation timed out"
+   "error": null
   },
   {
    "name": "ACSC (via Google News)",
@@ -28,13 +28,13 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 9,
+   "count": 6,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 5,
+   "count": 4,
    "error": null
   },
   {
@@ -52,7 +52,7 @@
   {
    "name": "CISA KEV",
    "ok": true,
-   "count": 14,
+   "count": 15,
    "error": null
   },
   {
@@ -100,11 +100,139 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 28,
+   "count": 29,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "b99b441690fc",
+   "title": "Runaway AI hacking agent behind WorkOS breach after escaping sandbox",
+   "link": "https://www.bleepingcomputer.com/news/security/runaway-ai-hacking-agent-behind-workos-breach-after-escaping-sandbox/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-06T22:27:25Z",
+   "summary": "WorkOS says an AI-powered hacking agent that breached its internal sales application and accessed customer information was operated by a security researcher who claims the tool escaped its testing environment and unintentionally attacked the company. [...]",
+   "score": 4,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "b63212099f3b",
+   "title": "UK Wades Into Tech Sovereignty Amid AI Policy Changes",
+   "link": "https://www.darkreading.com/cybersecurity-operations/uk-tech-sovereignty-ai-policy",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-06T21:27:36Z",
+   "summary": "The UK is betting on domestic AI and cyber investment to reduce reliance on US tech — but security leaders question whether the funding is too fragmented and too late.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "ba147c5fc5c9",
+   "title": "OpenAI's new GPT-6 Cyber AI finds 81 Firefox flaws, 948 Linux bugs",
+   "link": "https://www.bleepingcomputer.com/news/security/openais-new-gpt-6-cyber-ai-finds-81-firefox-flaws-948-linux-bugs/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-06T20:24:19Z",
+   "summary": "OpenAI has revealed GPT-6 Cyber, a new artificial intelligence model that has discovered 81 previously unknown high-severity Firefox vulnerabilities and developed working exploits for 948 distinct Linux kernel flaws. [...]",
+   "score": 0,
+   "tags": [],
+   "why": [],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/openai-launches-gpt-6-cyber-after-ai.html"
+    }
+   ]
+  },
+  {
+   "id": "a97be9095b72",
+   "title": "Fake security tools on GitHub push backdoors and infostealers",
+   "link": "https://www.bleepingcomputer.com/news/security/fake-security-tools-on-github-push-backdoors-and-infostealers/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-06T18:46:52Z",
+   "summary": "Cybersecurity professionals are being targeted with infected security projects on GitHub that deploy a backdoor and information stealer malware. [...]",
+   "score": 3,
+   "tags": [
+    "Identity"
+   ],
+   "why": [
+    "Identity"
+   ]
+  },
+  {
+   "id": "d9a0f8bfa397",
+   "title": "Japan Announces Emergency Cybersecurity Package Following a Wave of Attacks",
+   "link": "https://www.securityweek.com/japan-announces-emergency-cybersecurity-package-following-a-wave-of-attacks/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-06T18:28:41Z",
+   "summary": "The emergency package comes after dozens of companies and government agencies were hit by unauthorized access to their systems and leaks of client data, prompting uneasiness across Japan. The post Japan Announces Emergency Cybersecurity Package Following a Wave of Attacks appeared first on…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "3c3dad9eec40",
+   "title": "AI Gave Your Incident Archive a Second Job",
+   "link": "https://www.darkreading.com/cyber-risk/ai-gave-your-incident-archive-second-job",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-06T18:27:30Z",
+   "summary": "Security records are increasingly being used by vendors to train their models, creating new risks for enterprises.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "c4daeac5c98c",
+   "title": "QNAP says hackers breaching NAS devices in Plex2Shell attacks",
+   "link": "https://www.bleepingcomputer.com/news/security/qnap-says-hackers-breaching-nas-devices-in-plex2shell-attacks/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-06T17:04:23Z",
+   "summary": "QNAP urges users to update Plex Media Server to the latest version available in the QNAP App Center, as hackers are exploiting the Plex2Shell vulnerability chain. [...]",
+   "score": 5,
+   "tags": [
+    "Data breach",
+    "Vulnerability"
+   ],
+   "why": [
+    "Data breach",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "9fe769e3c933",
+   "title": "Installing the Fix for an Exploited WordPress Flaw Can Expose Some Sites One Last Time",
+   "link": "https://thehackernews.com/2026/11/installing-fix-for-exploited-wordpress.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-06T16:08:38Z",
+   "summary": "Some WordPress sites can still be attacked while they install the fix for an actively exploited flaw, according to Umut Bayram, the Picus Security researcher who found it. The update that installs the fix still unpacks its files using the site's old, unpatched code, so an attacker who strikes at…",
+   "score": 4,
+   "tags": [
+    "Actively exploited"
+   ],
+   "why": [
+    "Actively exploited"
+   ]
+  },
   {
    "id": "af6d1b8b9d25",
    "title": "Veeam warns of Software Appliance boot failures on AMD EPYC hosts",
@@ -117,6 +245,26 @@
    "score": 0,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "a40dff3d749a",
+   "title": "Hackers Target OpenSSH SSHole Flaw Within Hours of Disclosure, Gain Root on Honeypot",
+   "link": "https://thehackernews.com/2026/11/hackers-exploited-openssh-sshole-flaw.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-06T15:21:49Z",
+   "summary": "Threat actors are attempting to exploit a recently disclosed security flaw impacting OpenSSH that can enable sign-ins to accounts that have no password set, according to Previdian. The vulnerability, tracked as CVE-2026-123158 (CVSS score: 8.1) and codenamed SSHole (or *sshole), impacts Linux…",
+   "score": 3,
+   "tags": [
+    "Identity",
+    "Vulnerability"
+   ],
+   "why": [
+    "Identity",
+    "Vulnerability"
+   ],
+   "epss": 0.0098
   },
   {
    "id": "3647bbef0072",
@@ -229,6 +377,23 @@
    "score": 0,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "d08e923c132e",
+   "title": "Parents warned to be on alert after school data breach",
+   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9yMlllVldoV2h3UjZJbkpPLVNpZ2lqZ1A2bnFqY2ZsbkRCSkR0RThxZ3ZUZUQwRldqR3FKYTNSX0swYk5iLVdfbnRlekNxOGVrYXF4MzI2dVNjSm8?oc=5",
+   "source": "BBC",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-06T13:15:50Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
   },
   {
    "id": "3450626e3180",
@@ -478,6 +643,29 @@
    "why": []
   },
   {
+   "id": "7340dbad9c1e",
+   "title": "CVE-2026-19868: SonicWall SonicOS SSLVPN — SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-19868",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-11-06T00:00:00Z",
+   "summary": "SonicWall SonicOS SSLVPN contains a use of single-factor authentication vulnerability that may allow a user with valid credentials for an alternate authentication method to bypass SAML authentication controls. Successful exploitation may also bypass… CISA remediation due 2026-11-20.",
+   "score": 9,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Identity",
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "why": [
+    "Identity",
+    "Edge devices",
+    "Vulnerability"
+   ]
+  },
+  {
    "id": "05112641c600",
    "title": "Relentless consumer spending risks triggering more RBA rate hikes for struggling mortgage holders",
    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQTUk4SFdRWE1lQ3dwM2lfU2szV3VzcENJWVdJcWRBOFZZTVkwc21mZzM1VVg3YmhvenljWXZsZ0lQSkNFczY4VHRwM1pzbkpqemhtaG9CdkJMY2xIVlhoM1YydnhBVUxzUGtrbk9SRUJ0VmlLM09FZFA3RDNMRThjYzNmemtHOUlIb1JMb2hYMUpCT0I5TTJyak9ZYnN6MEEycWZ2SW51c0tQQktEakZTWnBoQml6dC16b0dvMDB0NWtvMHhLN1ZVdWpXNFBpUQ?oc=5",
@@ -531,6 +719,19 @@
    "why": [
     "Data breach"
    ]
+  },
+  {
+   "id": "7bee44827e17",
+   "title": "Operação de influência russa tem como alvo generalizado a América Latina",
+   "link": "https://www.darkreading.com/cyberattacks-data-breaches/opera-o-de-influ-ncia-russa-tem-como-alvo-generalizado-a-am-rica-latina",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-05T22:13:23Z",
+   "summary": "A operação, que contou com o uso de inteligência artificial, utilizou e-mails falsos, documentos governamentais falsificados e a criação de uma organização local para atacar escolas no Peru e no Equador, entre outras ações.",
+   "score": 0,
+   "tags": [],
+   "why": []
   },
   {
    "id": "c5d8bcb2d057",
@@ -1024,7 +1225,7 @@
   },
   {
    "id": "287e28256566",
-   "title": "Open-weight AI models: Selecting, deploying and operating open-weight AI Models securely",
+   "title": "Open-weight AI models: Selecting, deploying and operating open-weight AI models securely",
    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPd1l1bUpyTEFhWEtweFl2cEJUbHktZkY4bG1lbEcyR3hKWWN1cDhoMDBaVndpZU56NkY1c0x1VFNaYTBRNmFsTTE4aEdyUldOMzhaZFVmdC1ZekZxNEJzcXVmMl9LaXRkNndCZk9HUUJidHRzLWJ2eHZ1UTBZOHUxM0tRS1RWWGpKSXktRDZzSDdnRzl2QTI5bmNaVXVhUXUybkg4X3JfZ21abDdnMFZuQU8yVC01bUVSTVR2Y0xKY20?oc=5",
    "source": "Cyber.gov.au",
    "feed": "ACSC (via Google News)",
@@ -2770,6 +2971,25 @@
     "Data breach"
    ],
    "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "c6820715fc5e",
+   "title": "Airlines flying in and out of Australian airports impacted by customer data breach",
+   "link": "https://news.google.com/rss/articles/CBMimAJBVV95cUxQSzZBa055TVY5NFFnQ2xqTnladWlNN0lrNENRc3ppa0hETVlNdG1YN05NdGJOcXQ0ZWJzZFlJcVE2eGNjUVVwcjhRcktwNlpyTG9OMWM2TGpST21uWUN3NzBreDRESVcxZXRiMDYxa2d2amFrdGxHOTJRdkN6VlVzMHNSTWVGNkkxWTYtN2VfbU10QUtRbzk5SEczcnZ5bW9TdmstZHRJcW1LeGozSUtiWTNtN1NlVk1TVmd3NmZGbEVFY2dqc1ozS0otMTBNeGFqakFnVVFmaXhMbUJEVEVvYWdDSmVuMk50SlRVSTQzSHdRU0pnRDVaTldqcHlpZXRuWmZ2M1NPdWhBOGpxMmNhM0VXX29lLXA30gGeAkFVX3lxTE9JLWVCS1U1VnFMODlla0JxNk5OcEFra1E4SVdsZVh0ZGdQX0hRWF8xcFhjb2dYV3lfNENOTFpuSmxTYkF5Q0RvNmRXRDhieF9RZXJmaHhycE5nbEtXVExLaHBhaDZONlpqdmc0VWdZM0x1TDlubU1JTFRxbjVWUE9TM1lpcHQzaDdKWXhyYXZaYXZ2TEkwVjlSLUpESndYN05aZ2RTekk3LWxkRjc4dTRmUTQ4a0RlUE82VXRubzBxMG5MbnhaWGU3Y1d5ZmxTT2NUSV9WcGhueHRpdHBLbUtoQWE2SkxBaEhOOWhhQVA2V21ZdVY5M28xUEtSZ1NyYTY3dFI2Mk5aLUFCWm1BdXYyaHdhVkNBOUxYYmF5Nmc?oc=5",
+   "source": "News24",
+   "feed": "ASD / ACSC in the news",
+   "region": "AU",
+   "published": "2026-11-03T03:34:16Z",
+   "summary": "",
+   "score": 14,
+   "tags": [
+    "Australia",
+    "Data breach"
+   ],
+   "why": [
+    "Australia",
     "Data breach"
    ]
   },
@@ -6819,231 +7039,6 @@
    "why": [
     "Real estate",
     "Ransomware"
-   ]
-  },
-  {
-   "id": "a6006728be28",
-   "title": "Microsoft Authenticator Flaw Let Permissionless Android Apps Steal Work Account Tokens",
-   "link": "https://thehackernews.com/2026/10/microsoft-authenticator-flaw-let.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-27T12:09:50Z",
-   "summary": "Microsoft has fixed a flaw in its Authenticator app for Android that let a malicious app with no permissions pose as a trusted Microsoft app, such as Teams, and collect sign-in tokens for a victim's work account. Microsoft tracks the flaw as CVE-2026-80097 and fixed it in Authenticator for Android…",
-   "score": 1,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.0053
-  },
-  {
-   "id": "21e6441e976b",
-   "title": "ASD releases seventh annual Cyber Threat Report 2025-26",
-   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOWTlxOHhLem9qSXRua3dlU0c5WDZCaHdGSGZxejAtMmJ4MDNOaEIxNjFoMWRmcW9UaEZtb0R0RldWNDh1d3hFVFo0eXY2WE5od0xPcGlVRkxOQ3h0Q2dvRmJHOGpBb0FPSG1nWlNyWTJ5M3NVNXZaWmhnVkFIbFE2Yzlia2lNWTNQMlNQcFh3?oc=5",
-   "source": "Cyber.gov.au",
-   "feed": "ACSC (via Google News)",
-   "region": "AU",
-   "published": "2026-10-27T12:00:00Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "Australia"
-   ],
-   "why": []
-  },
-  {
-   "id": "c99aa3fd55df",
-   "title": "iOS, macOS 27.2 Patch 286 Bugs; Fix for Exploited Flaw Backported to iOS 18",
-   "link": "https://www.securityweek.com/ios-macos-27-2-patch-286-bugs-fix-for-exploited-flaw-backported-to-ios-18/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-27T11:49:57Z",
-   "summary": "Apple patched 286 vulnerabilities in iOS and macOS 27.2 and brought the fix for an exploited CoreGraphics zero-day to older iPhones. The post iOS, macOS 27.2 Patch 286 Bugs; Fix for Exploited Flaw Backported to iOS 18 appeared first on SecurityWeek .",
-   "score": 6,
-   "tags": [
-    "Actively exploited",
-    "Vulnerability"
-   ],
-   "why": [
-    "Actively exploited",
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "3fba9192c925",
-   "title": "Keystone to Destroy 18,835 Hardware Wallets After Hackers Steal Device Verification Key",
-   "link": "https://thehackernews.com/2026/10/keystone-to-destroy-18835-hardware.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-27T11:46:00Z",
-   "summary": "An attacker who gained access to Keystone's website obtained the key that its hardware wallets use to prove they are genuine, the company said in a statement on October 26. Someone with that key could build counterfeit devices that pass the online check owners use to verify a Keystone. A buyer who…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "1ce9ccf10a03",
-   "title": "AI-Generated Fake Login Pages Are Making Account Takeovers Easier",
-   "link": "https://thehackernews.com/2026/10/ai-generated-fake-login-pages-are.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-27T11:32:46Z",
-   "summary": "Fake login pages are nothing new, but generative AI is making them easier to build and more convincing. Attackers can recreate familiar login screens, impersonate trusted brands and tailor phishing attempts to specific employees or organizations. Some fake login pages go beyond stealing passwords.…",
-   "score": 7,
-   "tags": [
-    "Phishing",
-    "Identity",
-    "AI threats"
-   ],
-   "why": [
-    "Phishing",
-    "Identity",
-    "AI threats"
-   ]
-  },
-  {
-   "id": "cf5c346fcefd",
-   "title": "Lazarus Abuses South Korean Security Software to Deploy Malware Using Post-Quantum Encryption",
-   "link": "https://thehackernews.com/2026/10/lazarus-abuses-south-korean-security.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-27T11:32:31Z",
-   "summary": "The North Korea-linked Lazarus Group has been attributed to a cyber espionage campaign dubbed Operation FlashHole targeting at least three organizations in South Korea spanning the construction, software, and wire-communication equipment manufacturing sectors. According to Russian cybersecurity…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "60e8b957385d",
-   "title": "Risks Spelled Out for Anthropic Investors Include Possible Harms From Runaway AI",
-   "link": "https://www.securityweek.com/risks-spelled-out-for-anthropic-investors-include-possible-harms-from-runaway-ai/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-27T10:44:20Z",
-   "summary": "Anthropic presents its own initial public offering as a step toward mitigating the risks it believes AI poses. The post Risks Spelled Out for Anthropic Investors Include Possible Harms From Runaway AI appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "181378638961",
-   "title": "Apple backports CoreGraphics zero-day patches to older iPhones",
-   "link": "https://www.bleepingcomputer.com/news/apple/apple-backports-coregraphics-zero-day-patches-to-older-iphones/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-27T10:36:12Z",
-   "summary": "​Apple has backported security patches released last month to older iPhones and iPads, addressing a zero-day bug exploited in \"extremely sophisticated\" targeted attacks on iOS devices. [...]",
-   "score": 7,
-   "tags": [
-    "Actively exploited",
-    "Vulnerability"
-   ],
-   "why": [
-    "Actively exploited",
-    "Vulnerability"
-   ],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/apple-backports-fix-for-exploited.html"
-    }
-   ]
-  },
-  {
-   "id": "177d2de823fd",
-   "title": "This is Fine: What NetScaler Zero-Days Tell Us About the New Normal",
-   "link": "https://www.securityweek.com/this-is-fine-what-netscaler-zero-days-tell-us-about-the-new-normal/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-27T10:02:24Z",
-   "summary": "Keep your patch management pipelines primed in case another round of Citrix NetScaler patches get released soon. The post This is Fine: What NetScaler Zero-Days Tell Us About the New Normal appeared first on SecurityWeek .",
-   "score": 9,
-   "tags": [
-    "Actively exploited",
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "why": [
-    "Actively exploited",
-    "Edge devices",
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "b7087025de0e",
-   "title": "Dead Popcorn Time Updater Put Millions of Computers at Risk of Takeover",
-   "link": "https://www.securityweek.com/dead-popcorn-time-updater-put-millions-of-computers-at-risk-of-takeover/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-27T09:44:50Z",
-   "summary": "Running at system boot, it periodically polled the update domain to execute any code served, with full privileges. The post Dead Popcorn Time Updater Put Millions of Computers at Risk of Takeover appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "4b38edd6123c",
-   "title": "Energy giant ENGIE discloses data breach affecting customers",
-   "link": "https://www.bleepingcomputer.com/news/security/energy-giant-engie-discloses-data-breach-affecting-customers/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-27T09:25:50Z",
-   "summary": "French energy giant ENGIE, one of the world's largest power and natural gas providers, confirmed that attackers stole customer data after breaching a marketing platform used by business partners. [...]",
-   "score": 4,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "9acf4c367c76",
-   "title": "Southern Cross Credit Union asks AI agent to handle account balance requests",
-   "link": "https://www.itnews.com.au/news/southern-cross-credit-union-asks-ai-agent-to-handle-account-balance-requests-629940?utm_source=feed&utm_medium=rss&utm_campaign=iTnews+Business+feed",
-   "source": "iTnews Security",
-   "feed": "iTnews Security",
-   "region": "AU",
-   "published": "2026-10-27T09:16:00Z",
-   "summary": "Built on Agentforce Voice.",
-   "score": 4,
-   "tags": [
-    "Vulnerability",
-    "Australia"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "923aaf647e3d",
-   "title": "Booking platform hack exposes third-party cyber risk across Australian tourism sector",
-   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNa1F5eVVNc01vbkRMNWJ2LTIyY1hoTWFwWThsQmR2R0RjRWZMbUNBcmVRSTNPeVhOZ2VTdms4ZkFvRGxNOXd1eUk2UzZfdUxlY1VCNlZ1QXVyQWVxQUVCaWlaSXBxSHlDRUVReDNVX1JXLWp4ajByd18yalVMZ1Jvd0dWSFJlMExlTHpoVTdpQzJOSmtjOWlKalpfNXVaTzBXaU43M3V5TU81R2U0YzhPaFZHcTNBOXhjOE9GR2lsMzVvaXkySHpEd3drZE5MSzdhQl8wcmJRTDZHU0dBNnBFZg?oc=5",
-   "source": "Insurance Business",
-   "feed": "OAIC / Privacy news",
-   "region": "AU",
-   "published": "2026-10-27T08:43:14Z",
-   "summary": "",
-   "score": 12,
-   "tags": [
-    "Australia",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Australia",
-    "SaaS / cloud"
    ]
   }
  ]
