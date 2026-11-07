@@ -1,30 +1,15 @@
 {
- "date": "2026-11-07",
- "generated": "2026-11-06T23:22:05+00:00",
- "title": "Sec-Pulse brief - Sat 07 Nov",
+ "date": "2026-11-08",
+ "generated": "2026-11-07T22:09:02+00:00",
+ "title": "Sec-Pulse brief - Sun 08 Nov",
  "items": [
   {
-   "id": "e2845eccbac1",
-   "title": "Threat actors use agentic AI tooling to find and abuse exposed secrets",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/05/threat-actors-use-agentic-ai-tooling-to-find-and-abuse-exposed-secrets/",
-   "source": "Microsoft Security Blog",
-   "region": "Global",
-   "published": "2026-11-05T23:46:50Z",
-   "score": 13,
-   "tags": [
-    "Real estate",
-    "Data breach",
-    "Identity"
-   ],
-   "summary": "Microsoft Threat Intelligence has observed threat actors using the agentic offensive security framework ARTEX to search GitHub for OAuth application secrets, which can be used to compromise the associated OAuth application and perform authenticated actions in the application’s tenant. Agents…"
-  },
-  {
-   "id": "2a3e05365557",
-   "title": "News - Qantas customer data exposed in cyber attack on reservation provider",
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPWlAyalFEYkNpRlJCaThpUUdHSnlSc2lFVGJZNkR2dDB0djRuVlpBX3QyZ2pqcTZYMGtNZUxDT3g3RmVHRFFCMTZsamVtSnlhVzFtckNzekVmTzhuNmc4MENOMmt3dGlOYkpaaW9GYVh1cWx3LW9aUUtmSmM5X2p5UFg1SXFqU3d5MERaTjlqU2ozREFvX3Vlb0poVC05dElMa2hwblRB?oc=5",
-   "source": "teiss",
+   "id": "b2c7f8529c12",
+   "title": "Amadeus Security Breach Affects Qantas",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1VLWtMdXloZXA0UWlxbXEwOWNITmFhd2tpbHV0cGJQai1JS19NNVhGX1dUTDdTOU1aVmlvV25hYVJEWXVUdkxGNlhWNW1pazFmcFoyZ0hKbkdrcEc5UngxanlnVTlibS1BZEVvYmxnRW9aUQ?oc=5",
+   "source": "Travel Radar",
    "region": "AU",
-   "published": "2026-11-05T18:57:45Z",
+   "published": "2026-11-07T11:12:00Z",
    "score": 13,
    "tags": [
     "Australia",
@@ -33,54 +18,70 @@
    "summary": ""
   },
   {
-   "id": "05112641c600",
-   "title": "Relentless consumer spending risks triggering more RBA rate hikes for struggling mortgage holders",
-   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQTUk4SFdRWE1lQ3dwM2lfU2szV3VzcENJWVdJcWRBOFZZTVkwc21mZzM1VVg3YmhvenljWXZsZ0lQSkNFczY4VHRwM1pzbkpqemhtaG9CdkJMY2xIVlhoM1YydnhBVUxzUGtrbk9SRUJ0VmlLM09FZFA3RDNMRThjYzNmemtHOUlIb1JMb2hYMUpCT0I5TTJyak9ZYnN6MEEycWZ2SW51c0tQQktEakZTWnBoQml6dC16b0dvMDB0NWtvMHhLN1ZVdWpXNFBpUQ?oc=5",
-   "source": "Real Estate",
-   "region": "Global",
-   "published": "2026-11-05T23:57:48Z",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "e4ff33774933",
-   "title": "BVK's Office Raided In Widening Investigation After Big Losses In U.S. Real Estate",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPZFF4MFR1ZVhmTlhJUFFJVFRCOF90MmwzR21UdjVZT0E4R0dlYndnM2RibzdKOEpObXo5YnBROUNKc0JWa1lMYmE1dlFVZV9FU09zUmN5bGgxMTVPemtOcENNbnEwYWtOeXFvTFVRYWpzeTNzRnhmZ0FwUmdzYkZ4TTNlN2NheFJ5ZWxFZXhna3VnN3FmUHpPVktEdmVXSGFjMlF1b2ZwUjk2dEwtZWVROExPMVhFUTU2ZVZyYUxnSndXemdFR3pR?oc=5",
-   "source": "Bisnow",
-   "region": "Global",
-   "published": "2026-11-05T17:43:05Z",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "3819f6707361",
-   "title": "In Other News: Trezor Implant, LLMJacking Bills Hit $1M, SAP Flaws Weaponized Within Days",
-   "link": "https://www.securityweek.com/in-other-news-trezor-implant-llmjacking-bills-hit-1m-sap-flaws-weaponized-within-days/",
+   "id": "986edfc864db",
+   "title": "SonicWall Patches Exploited SonicOS Vulnerability That Weakens VPN Logins",
+   "link": "https://www.securityweek.com/sonicwall-patches-exploited-sonicos-bug-that-weakens-vpn-logins/",
    "source": "SecurityWeek",
    "region": "Global",
-   "published": "2026-11-06T14:40:09Z",
-   "score": 8,
+   "published": "2026-11-07T10:16:23Z",
+   "score": 7,
    "tags": [
-    "Ransomware",
-    "Data breach",
-    "AI threats"
+    "Identity",
+    "Edge devices",
+    "Vulnerability"
    ],
-   "summary": "Noteworthy stories that might have slipped under the radar: Synology warns about NAS ransomware attacks, Flowise ‘hello’ attacks, Chainalysis breach impact expands. The post In Other News: Trezor Implant, LLMJacking Bills Hit $1M, SAP Flaws Weaponized Within Days appeared first on SecurityWeek ."
+   "summary": "CVE-2026-19868 can let attackers holding credentials for a different login method get past SAML checks, including SAML-enforced MFA. The post SonicWall Patches Exploited SonicOS Vulnerability That Weakens VPN Logins appeared first on SecurityWeek .",
+   "epss": 0.0062
+  },
+  {
+   "id": "2468829c5bbe",
+   "title": "NPC probing government data leaks",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQeGRVU0lYMGpYbjRfclQwa1hmdWtpYjBaeUJOYXF1SHZxRzJRTmdmcFRiZVNwZHM0bFA4MDFJTkFsdE1ySlhSNW9VZ2RvSUtKdk9hTHc4bUlialRqQjNhenhHRjNMNlphSHVPb2pMZkdoLVZwa19kTHptMU9TejAwUXllM0Y5Zm1qYkJCUjd4U1pxb1VGUW5F0gGXAUFVX3lxTFB4ZFVTSVgwalhuNF9yVDBrWGZ1a2liMFp5Qk5hcXVIdnFHMlFOZ2ZwVGJlU3BkczRsUDgwMUlOQWx0TXJKWFI1b1VnZG9JS0p2T2FMdzhtSWJqVGpCM2F6eEdGM0w2WmFIdU9vakxmR2gtVnBrX2RMem0xT1N6MDBReWUzRjlmbWpiQkJSN3hTWnFvVUZRbkU?oc=5",
+   "source": "Philstar.com",
+   "region": "Global",
+   "published": "2026-11-07T16:00:00Z",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "summary": ""
+  },
+  {
+   "id": "ca1a9396bb65",
+   "title": "SonicWall warns of new SSL-VPN MFA bypass flaw exploited in attacks",
+   "link": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/",
+   "source": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-07T00:00:55Z",
+   "score": 7,
+   "tags": [
+    "Identity",
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "summary": "SonicWall has released security updates to fix seven vulnerabilities in SonicOS firewalls, including an SSL-VPN authentication bypass flaw exploited in attacks. [...]"
+  },
+  {
+   "id": "6a96ed110a9e",
+   "title": "Mirae Asset Data Breach: 35,255 Staff Hit [2026]",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPYnVHMi1vMERlQlhYWmdlMk9kbE9ETkxkbTFGNk9jUW50WndQc21wejh5ZFc0amFsbGtXNzBEYzhDTE5MOUZ6dkpyRFl1c19DeWt5Ujlka1A0X2d2ZEoyVm9vV3JjekhaNjRtWnJJUVFzSVlxbkZQaGRIZDc0eFlYQkpxMHRoalhBVGVhWkNsdHFON1VIcWFV?oc=5",
+   "source": "https://tech-insider.org/",
+   "region": "Global",
+   "published": "2026-11-07T08:36:06Z",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "summary": ""
   }
  ],
  "stats": {
-  "recent": 49,
+  "recent": 16,
   "au": 1,
-  "kev": 1
+  "kev": 0
  },
  "lesson": {
-  "id": "3.3",
-  "title": "Containment, eradication and recovery"
+  "id": "3.4",
+  "title": "AU bonus: BEC and payment redirection playbook"
  }
 }
