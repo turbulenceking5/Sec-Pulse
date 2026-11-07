@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-07T13:05:59Z",
+ "generated": "2026-11-07T19:26:31Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,19 +28,19 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 5,
+   "count": 6,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 3,
+   "count": 4,
    "error": null
   },
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 4,
+   "count": 5,
    "error": null
   },
   {
@@ -100,11 +100,58 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 26,
+   "count": 27,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "2468829c5bbe",
+   "title": "NPC probing government data leaks",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQeGRVU0lYMGpYbjRfclQwa1hmdWtpYjBaeUJOYXF1SHZxRzJRTmdmcFRiZVNwZHM0bFA4MDFJTkFsdE1ySlhSNW9VZ2RvSUtKdk9hTHc4bUlialRqQjNhenhHRjNMNlphSHVPb2pMZkdoLVZwa19kTHptMU9TejAwUXllM0Y5Zm1qYkJCUjd4U1pxb1VGUW5F0gGXAUFVX3lxTFB4ZFVTSVgwalhuNF9yVDBrWGZ1a2liMFp5Qk5hcXVIdnFHMlFOZ2ZwVGJlU3BkczRsUDgwMUlOQWx0TXJKWFI1b1VnZG9JS0p2T2FMdzhtSWJqVGpCM2F6eEdGM0w2WmFIdU9vakxmR2gtVnBrX2RMem0xT1N6MDBReWUzRjlmbWpiQkJSN3hTWnFvVUZRbkU?oc=5",
+   "source": "Philstar.com",
+   "feed": "OAIC / Privacy news",
+   "region": "Global",
+   "published": "2026-11-07T16:00:00Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "ded94754be20",
+   "title": "Hackers pull off $133 million French bank heist via service provider",
+   "link": "https://www.bleepingcomputer.com/news/security/hackers-pull-off-133-million-french-bank-heist-via-service-provider/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-07T15:25:35Z",
+   "summary": "French cooperative bank Crédit Mutuel Arkéa was targeted in a cyberattack that enabled fraudulent transactions of up to $133 million, forcing it to respond by suspending certain systems.v [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "5a765cf499c2",
+   "title": "CTM360 Exposes Fake Gift Card Scams Exploiting Trusted Brands",
+   "link": "https://www.bleepingcomputer.com/news/security/ctm360-exposes-fake-gift-card-scams-exploiting-trusted-brands/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-07T14:10:19Z",
+   "summary": "Scammers are impersonating major brands and celebrities to lure consumers into fake gift card giveaways that collect personal information and trigger unwanted subscriptions. CTM360 reveals how these campaigns use deceptive verification steps and affiliate networks to generate revenue without…",
+   "score": 3,
+   "tags": [
+    "Phishing"
+   ],
+   "why": [
+    "Phishing"
+   ]
+  },
   {
    "id": "b2c7f8529c12",
    "title": "Amadeus Security Breach Affects Qantas",
@@ -143,7 +190,8 @@
     "Identity",
     "Edge devices",
     "Vulnerability"
-   ]
+   ],
+   "epss": 0.0062
   },
   {
    "id": "6a96ed110a9e",
@@ -771,7 +819,8 @@
     "Identity",
     "Edge devices",
     "Vulnerability"
-   ]
+   ],
+   "epss": 0.0062
   },
   {
    "id": "05112641c600",
@@ -1197,6 +1246,23 @@
    "why": [
     "Edge devices",
     "Vulnerability"
+   ]
+  },
+  {
+   "id": "00defbefbe33",
+   "title": "Best Free Antivirus: 13-Step Ransomware Test, 90 Min [2026]",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPZkdZSUZBRFlzcHNmLXZqLUlST2lsS3RVRk11aWdNdG1yZlRBZG9ITXZfWVlJWmNnYVdENkk5WWhkdExUMXlHOEpmSUpMZ2FCYVB0SVowVTg5WHF0T3VPUmlBNDZaQ2d4dHg4OUNwNFJ5YXR0Si1ZSmREeER4OGkwdXZ1cnFvSkZ2cjZ2Rw?oc=5",
+   "source": "tech-insider.org",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-05T15:02:54Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
    ]
   },
   {
@@ -4046,7 +4112,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0019
+   "epss": 0.0035
   },
   {
    "id": "b35f9e575d4b",
@@ -6952,92 +7018,6 @@
    ],
    "why": [
     "Vulnerability",
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "94e63b69eea8",
-   "title": "Third-party cyber risk exposed by ZenTech ransomware breach",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQOTdDRDlIdS16dUktRjdRNEFnUFNwNHhTa28yMldqWjdDSnBISmEzd0Y0dkFtUDV0WUVEVUZOMmJHWjFlMlBwbmpIcDlWbGJOOEVyYlA4TVRXWkFMVGpWdDJ6UUZqN0FhV0JYcVBHd01LNVpseTE5Z3NkUDhaODJleXE5NWN3NjZseUlhLTBlQlo4MFRuNi04cVJ5eWVDdV9XRVdPRl9PYUhyd3ljVUVPeGdPbm4zSThBMUpjV1BB?oc=5",
-   "source": "Insurance Business",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-27T14:14:32Z",
-   "summary": "",
-   "score": 13,
-   "tags": [
-    "Ransomware",
-    "Data breach",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Ransomware",
-    "Data breach",
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "eeae20ed2a5a",
-   "title": "Tailscale warns of SSH flaws allowing root privilege escalation",
-   "link": "https://www.bleepingcomputer.com/news/security/tailscale-warns-of-serious-ssh-flaws-allowing-root-privilege-escalation/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-27T14:09:46Z",
-   "summary": "The Tailscale security team is working to patch almost a dozen security vulnerabilities that could be exploited to steal credentials, crash servers, gain root privileges, and more. [...]",
-   "score": 7,
-   "tags": [
-    "Identity",
-    "Vulnerability",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Identity",
-    "Vulnerability",
-    "SaaS / cloud"
-   ],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/unpatched-tailscale-ssh-flaws-could-let.html"
-    },
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/tailscale-patches-ssh-flaws-that-could.html"
-    }
-   ]
-  },
-  {
-   "id": "b611ff4c270c",
-   "title": "The Huntress Tragic Quadrant: Ranking Threats Hitting Businesses Hardest",
-   "link": "https://www.bleepingcomputer.com/news/security/the-huntress-tragic-quadrant-ranking-threats-hitting-businesses-hardest/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-27T14:01:11Z",
-   "summary": "Attackers are increasingly abusing legitimate IT tools, Microsoft 365 sessions, and everyday workflows to compromise businesses without triggering traditional defenses. Huntress Labs ranks the threats hitting organizations hardest, highlighting which attack techniques deserve immediate attention…",
-   "score": 3,
-   "tags": [
-    "Microsoft 365"
-   ],
-   "why": [
-    "Microsoft 365"
-   ]
-  },
-  {
-   "id": "ae042a0b53b2",
-   "title": "GoAhead TLS Flaws Allow Revoked Client Certificates and Enable Session Decryption",
-   "link": "https://thehackernews.com/2026/10/goahead-tls-flaws-allow-revoked-client.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-27T13:59:48Z",
-   "summary": "The GoAhead embedded web server loaded a certificate revocation list into its default TLS backend but never turned revocation checking on, so a revoked client certificate could still pass login on affected setups. The flaw is in builds that use the OpenSSL backend with mutual-TLS, where the server…",
-   "score": 3,
-   "tags": [
-    "SaaS / cloud"
-   ],
-   "why": [
     "SaaS / cloud"
    ]
   }
