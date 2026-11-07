@@ -1,10 +1,10 @@
 {
- "generated": "2026-11-06T23:21:56Z",
+ "generated": "2026-11-07T06:01:41Z",
  "sources": [
   {
    "name": "ACSC Alerts",
    "ok": true,
-   "count": 1,
+   "count": 0,
    "error": null
   },
   {
@@ -28,7 +28,7 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 5,
+   "count": 3,
    "error": null
   },
   {
@@ -52,7 +52,7 @@
   {
    "name": "CISA KEV",
    "ok": true,
-   "count": 15,
+   "count": 13,
    "error": null
   },
   {
@@ -100,11 +100,45 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 28,
+   "count": 26,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "e115b44724e2",
+   "title": "ARTEX abuse expands as cybercriminals target financial sector",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/06/artex-abuse-expands-as-cybercriminals-target-financial-sector/",
+   "source": "Microsoft Security Blog",
+   "feed": "Microsoft Security Blog",
+   "region": "Global",
+   "published": "2026-11-07T02:44:34Z",
+   "summary": "In October 2026, the financially motivated threat actor Storm-3358 began targeting organizations in the financial sector using the agentic AI offensive framework ARTEX. The post ARTEX abuse expands as cybercriminals target financial sector appeared first on Microsoft Security Blog .",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "ca1a9396bb65",
+   "title": "SonicWall warns of new SSL-VPN MFA bypass flaw exploited in attacks",
+   "link": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-07T00:00:55Z",
+   "summary": "SonicWall has released security updates to fix seven vulnerabilities in SonicOS firewalls, including an SSL-VPN authentication bypass flaw exploited in attacks. [...]",
+   "score": 7,
+   "tags": [
+    "Identity",
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "why": [
+    "Identity",
+    "Edge devices",
+    "Vulnerability"
+   ]
+  },
   {
    "id": "b99b441690fc",
    "title": "Runaway AI hacking agent behind WorkOS breach after escaping sandbox",
@@ -1224,8 +1258,23 @@
    ]
   },
   {
+   "id": "308e50955905",
+   "title": "Open-weight AI models: Opportunities and cyber security risks",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQRW5FNFF0al9LT1NZOXR6RGs2SjNJaVhRZHJPZDRMclBvMVBhZU0zYzlDR0V2N2NTS1hBQTZPMjFZTkRtbnhLcUxhTTNPbEFDSzBFYjF3NmIwVEdiMlZzTTlmSXROb2tJdlFRdWx2NzVuZWdvX0ktVURITlNWYnB2ME1uZkhyVXd0eVJLUEROU0VfTlZ6cU1wS195c2Z6QQ?oc=5",
+   "source": "Cyber.gov.au",
+   "feed": "ACSC (via Google News)",
+   "region": "AU",
+   "published": "2026-11-05T12:00:00Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "Australia"
+   ],
+   "why": []
+  },
+  {
    "id": "287e28256566",
-   "title": "Open-weight AI models: Selecting, deploying and operating open-weight AI Models securely",
+   "title": "Open-weight AI models: Selecting, deploying and operating open-weight AI models securely",
    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPd1l1bUpyTEFhWEtweFl2cEJUbHktZkY4bG1lbEcyR3hKWWN1cDhoMDBaVndpZU56NkY1c0x1VFNaYTBRNmFsTTE4aEdyUldOMzhaZFVmdC1ZekZxNEJzcXVmMl9LaXRkNndCZk9HUUJidHRzLWJ2eHZ1UTBZOHUxM0tRS1RWWGpKSXktRDZzSDdnRzl2QTI5bmNaVXVhUXUybkg4X3JfZ21abDdnMFZuQU8yVC01bUVSTVR2Y0xKY20?oc=5",
    "source": "Cyber.gov.au",
    "feed": "ACSC (via Google News)",
@@ -1338,21 +1387,6 @@
    "summary": "October 2026 brought another wave of cyber threats targeting US businesses, with attackers exploiting trusted platforms, legitimate authentication processes, and everyday business workflows. For enterprises, these campaigns raise the stakes beyond individual security incidents, increasing the risk…",
    "score": 0,
    "tags": [],
-   "why": []
-  },
-  {
-   "id": "308e50955905",
-   "title": "Open-weight AI models: Opportunities and cyber security risks",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQRW5FNFF0al9LT1NZOXR6RGs2SjNJaVhRZHJPZDRMclBvMVBhZU0zYzlDR0V2N2NTS1hBQTZPMjFZTkRtbnhLcUxhTTNPbEFDSzBFYjF3NmIwVEdiMlZzTTlmSXROb2tJdlFRdWx2NzVuZWdvX0ktVURITlNWYnB2ME1uZkhyVXd0eVJLUEROU0VfTlZ6cU1wS195c2Z6QQ?oc=5",
-   "source": "Cyber.gov.au",
-   "feed": "ACSC (via Google News)",
-   "region": "AU",
-   "published": "2026-11-05T09:44:53Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "Australia"
-   ],
    "why": []
   },
   {
@@ -7002,45 +7036,6 @@
    "why": [
     "Data breach"
    ]
-  },
-  {
-   "id": "6a6760a087af",
-   "title": "PHP2Shell Weaponized After Japanese Real Estate Extortion",
-   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQaG9pTV9JYXlkblhCSG1qejd5b2g0eFZ4TmtDLWthMV9oSlFWX1daekdNSi1TLTRrbFprSTJZQTB1QWNmMXBENmxxa3pvUXJUMy1qX2hRc3VjbU5oTkxzY0Y2OTJXWEZwREpnUVoyVE9uQ3ZMU1FQc2JuQldpbFNVRlcxTQ?oc=5",
-   "source": "SOCRadar",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-27T12:27:11Z",
-   "summary": "",
-   "score": 14,
-   "tags": [
-    "Real estate",
-    "Ransomware"
-   ],
-   "why": [
-    "Real estate",
-    "Ransomware"
-   ]
-  },
-  {
-   "id": "44a5cf1a9a6f",
-   "title": "CVE-2026-48356: Adobe Commerce and Magento — Adobe Commerce and Magento Unrestricted Upload of File with Dangerous Type Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-48356",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-10-27T00:00:00Z",
-   "summary": "Adobe Commerce and Magento contain an unrestricted upload of file with dangerous type vulnerability that could result in arbitrary code execution in the context of the current user, potentially gaining elevated access or control over the victim's account or… CISA remediation due 2026-11-10.",
-   "score": 4,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.4747
   }
  ]
 }
