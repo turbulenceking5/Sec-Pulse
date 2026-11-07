@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-07T06:01:41Z",
+ "generated": "2026-11-07T13:05:59Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,13 +28,13 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 3,
+   "count": 5,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 4,
+   "count": 3,
    "error": null
   },
   {
@@ -105,6 +105,80 @@
   }
  ],
  "items": [
+  {
+   "id": "b2c7f8529c12",
+   "title": "Amadeus Security Breach Affects Qantas",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1VLWtMdXloZXA0UWlxbXEwOWNITmFhd2tpbHV0cGJQai1JS19NNVhGX1dUTDdTOU1aVmlvV25hYVJEWXVUdkxGNlhWNW1pazFmcFoyZ0hKbkdrcEc5UngxanlnVTlibS1BZEVvYmxnRW9aUQ?oc=5",
+   "source": "Travel Radar",
+   "feed": "AU breach news",
+   "region": "AU",
+   "published": "2026-11-07T11:12:00Z",
+   "summary": "",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Data breach"
+   ],
+   "why": [
+    "Australia",
+    "Data breach"
+   ]
+  },
+  {
+   "id": "986edfc864db",
+   "title": "SonicWall Patches Exploited SonicOS Vulnerability That Weakens VPN Logins",
+   "link": "https://www.securityweek.com/sonicwall-patches-exploited-sonicos-bug-that-weakens-vpn-logins/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-07T10:16:23Z",
+   "summary": "CVE-2026-19868 can let attackers holding credentials for a different login method get past SAML checks, including SAML-enforced MFA. The post SonicWall Patches Exploited SonicOS Vulnerability That Weakens VPN Logins appeared first on SecurityWeek .",
+   "score": 7,
+   "tags": [
+    "Identity",
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "why": [
+    "Identity",
+    "Edge devices",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "6a96ed110a9e",
+   "title": "Mirae Asset Data Breach: 35,255 Staff Hit [2026]",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPYnVHMi1vMERlQlhYWmdlMk9kbE9ETkxkbTFGNk9jUW50WndQc21wejh5ZFc0amFsbGtXNzBEYzhDTE5MOUZ6dkpyRFl1c19DeWt5Ujlka1A0X2d2ZEoyVm9vV3JjekhaNjRtWnJJUVFzSVlxbkZQaGRIZDc0eFlYQkpxMHRoalhBVGVhWkNsdHFON1VIcWFV?oc=5",
+   "source": "https://tech-insider.org/",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-07T08:36:06Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "804a43c3361e",
+   "title": "Claude Code's “Don't Ask Again” File Exposes Passwords and Keys in 1,122 Public Copies on GitHub",
+   "link": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-07T06:44:17Z",
+   "summary": "Passwords and API keys that developers typed into commands they approved in Claude Code are sitting in public GitHub repositories, where anyone can read them. When a user selects \"Yes, and don't ask again,\" Anthropic's AI coding assistant can save the command, word-for-word, including the secret,…",
+   "score": 3,
+   "tags": [
+    "Identity"
+   ],
+   "why": [
+    "Identity"
+   ]
+  },
   {
    "id": "e115b44724e2",
    "title": "ARTEX abuse expands as cybercriminals target financial sector",
@@ -1390,25 +1464,6 @@
    "why": []
   },
   {
-   "id": "c5c5ae7af26f",
-   "title": "OAIC Ends VIQ Inquiry Despite Court Data Breach Finding",
-   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1YMGxrYldOYk1MY2s3Q3NqMVk2M1NnOHAtSUo5QW90WE9XeGVzNThLcFVJVWQzc25VdXNUWXV5ck1Ua0JDbU9KQWZRNy1OemdWUkM3RWdZYlXSAVhBVV95cUxNWDBsa2JXTmJNTGNrN0NzajFZNjNTZzhwLUlKOUFvdFhPV3hlczU4S3BVSVVkM3NuVXVzVFl1eXJNVGtCQ21PSkFmUTctTnpnVlJDN0VnWWJV?oc=5",
-   "source": "Law360",
-   "feed": "OAIC / Privacy news",
-   "region": "AU",
-   "published": "2026-11-05T09:22:42Z",
-   "summary": "",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "Data breach"
-   ],
-   "why": [
-    "Australia",
-    "Data breach"
-   ]
-  },
-  {
    "id": "da77af0f435f",
    "title": "GhostMap Android flaw lets malicious app trigger persistent boot loop",
    "link": "https://www.bleepingcomputer.com/news/security/ghostmap-android-flaw-lets-malicious-app-trigger-persistent-boot-loop/",
@@ -1420,6 +1475,25 @@
    "score": 0,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "91bf32470902",
+   "title": "OAIC Ends VIQ Inquiry Despite Court Data Breach Finding",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOMWh6VWVHUU9LTmZ2aVJuN1c5dDkwcXNmU3RtRDJ1YTY1bmF1VDVrMVJNUWFxNElDQ1gwSTcxU3B5ZDBNMVVqM0I1WF9LS1dhNm1YT3RRSHgxd096V2gwc21rdkM3ckdodDcwa0Z2T3FJbWZJTHlqN0VockFUNDBuajRRbDIzREZzNFZjYkFqY2didU9PYy16VjNPb9IBWEFVX3lxTE1YMGxrYldOYk1MY2s3Q3NqMVk2M1NnOHAtSUo5QW90WE9XeGVzNThLcFVJVWQzc25VdXNUWXV5ck1Ua0JDbU9KQWZRNy1OemdWUkM3RWdZYlU?oc=5",
+   "source": "Law360",
+   "feed": "OAIC / Privacy news",
+   "region": "AU",
+   "published": "2026-11-05T09:14:40Z",
+   "summary": "",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Data breach"
+   ],
+   "why": [
+    "Australia",
+    "Data breach"
+   ]
   },
   {
    "id": "96a1ace9f58c",
@@ -6965,76 +7039,6 @@
    ],
    "why": [
     "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "41ce8592d3fb",
-   "title": "Vendor Key Leak Puts Data of 238,000 Denver Health Plan Members at Risk",
-   "link": "https://www.securityweek.com/vendor-key-leak-puts-data-of-238000-denver-health-plan-members-at-risk/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-27T13:30:28Z",
-   "summary": "A leaked SquareML access key could have been used to access a database containing personal and health information. The post Vendor Key Leak Puts Data of 238,000 Denver Health Plan Members at Risk appeared first on SecurityWeek .",
-   "score": 3,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "243406f675bd",
-   "title": "HPE Patches Dozens of Critical Flaws in Networking Products",
-   "link": "https://www.securityweek.com/hpe-patches-dozens-of-critical-flaws-in-networking-products/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-27T13:13:58Z",
-   "summary": "Eight max-severity security defects could lead to remote code execution and authentication bypass. The post HPE Patches Dozens of Critical Flaws in Networking Products appeared first on SecurityWeek .",
-   "score": 5,
-   "tags": [
-    "Vulnerability",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Vulnerability",
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "43a91f583017",
-   "title": "Kenya's Cyber Threats Surge 14.45 Percent to 2.6 Billion Events in a Single Quarter",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOUGJQM0FKTVpxNDFGMDE1X0pwMm11RWU2dWs3emRiT0w2Z2ZqR3pMS0tEdlpLclBzeGFfSldiZFJjeGNsM0cxTUF3Q3VORzRFWUpraXpCNG01SS1uUHJ3V0N1QTlZZWs1Ni1pWHlEcFlsM0tHem1EZjJyZWEyOWhvY21mYUt5aGctMEdGY2xac19MMWNwX0gwTG91ZXlCUG5ULUlWamdIYjZPNnAyZ1dUQl80S2J0QlJLZ1Qw?oc=5",
-   "source": "Mwakilishi.com",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-27T12:59:51Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "19c61499cbc2",
-   "title": "First Breach Completes First Test Flight of Long Range Strike Drone",
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQai1OWTkxTEtQMi10QUlreTVBNnZ5WUtEeVotbV9EMDVWV0dkbjcyR2g4RDVlRlp3azM5a1FRXzk4TUk5UEpCZTJQa0Y1SGVTclN0Qy1RbWtWcmxPakhIZjhoY1Q4S2d3b3RONEJxZWxNZXF0TmhLdGhBZzBaRXZVbkNFNUFUVmk0OEVza1YxVjdzYkp5X3lxRXZ3?oc=5",
-   "source": "Yahoo Finance",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-27T12:31:00Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
    ]
   }
  ]
