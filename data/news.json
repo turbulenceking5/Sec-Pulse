@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-08T00:39:15Z",
+ "generated": "2026-11-08T10:26:00Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,19 +28,19 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 6,
+   "count": 5,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 4,
+   "count": 5,
    "error": null
   },
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 5,
+   "count": 4,
    "error": null
   },
   {
@@ -105,6 +105,23 @@
   }
  ],
  "items": [
+  {
+   "id": "7c469530840f",
+   "title": "Aussie recycled toilet paper brand Who Gives a Crap discloses data breach",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOa01IQjFkWGxNaTBZSFNMMENBWHloTzZKTE9RWTNmdUFfeVlfY1dXeUhocFhWWnM0VUN6eXVfQjR5dzVDUDV5N2Q1UHlSLUp1VU1leWhRYXVvRTU2aE9xLUpPZlNtWklSd3M5TG9JNTA3MjBoai1ONVo1aUxHRDhTbnNqRGNjaEtlaUIzWHpJeVF4eFVhZU1TcDFVdmpScjZaTXkycVpQZ1RpaFBMX3QwTFUzSXF5RTF3dzJmZVRvTU1Wc1JEUHNN?oc=5",
+   "source": "Cyber Daily",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-08T00:40:45Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
   {
    "id": "2468829c5bbe",
    "title": "NPC probing government data leaks",
@@ -1428,6 +1445,21 @@
    "why": []
   },
   {
+   "id": "d7e6bb525bb5",
+   "title": "Updated guidance supports vendor talks on post-quantum cryptography",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOQW04NTBhSVQ0NnViTHNCZzNKeDRXUHUxeDNLODl2UmpwSWVrOWhwaHdwcnR6YXNKMDQ5c0M3Y1NONFhfOGhvQ1AxYnRqXzRMOU00cHVuSjlMbEFsQUlOVlI3VW55cndLbzVGemdKYkhqZVdKVGJqRm5NbndhNi1oRXVMWU1BbDBzNFhBUzN5ejV3MmphdWEwNU5nNnZzdw?oc=5",
+   "source": "Cyber.gov.au",
+   "feed": "ACSC (via Google News)",
+   "region": "AU",
+   "published": "2026-11-05T12:00:00Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "Australia"
+   ],
+   "why": []
+  },
+  {
    "id": "9d72fd7ac53b",
    "title": "Court Upholds 423.6 Billion Won Fine Against Coupang for Data Breach : Society : JKN",
    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE15OENsYXVuSm5VTk1UTElkTldJeXd4TWRuRGFjZTlleWE1bW9ZSE5VS1NIbzBoU2FkazNpRGVQXzRnTzJkYzFBU04tZ0dDTll2T2F0M3NTOHIyNmFzUTNGMkNn?oc=5",
@@ -1603,6 +1635,23 @@
    "why": []
   },
   {
+   "id": "d740af7ccc27",
+   "title": "California Sets Ground Rules for AI in Real Estate CE: Here’s What Agents Should Know",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFByZHBBTHFLaEFZWTFnSFVBdzZMZzhnRjFZY0xRYnltX3NjUXlEbGZIRHJFUVVQVENXR2RWeGotZXpidUlvZHpqYkdOOEp6Vk04Q09wcjFuT3VyeGJHQWE0bUtOck95OTByTjlxeFhOSGp1T3BkVS05TWU2cjZwZlU?oc=5",
+   "source": "Sacramento Bee",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-05T08:00:00Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
    "id": "a665869d02d2",
    "title": "Zyxel GS1900 Patch Fails to Block Zero-Day Exploit Allowing Root Command Execution",
    "link": "https://thehackernews.com/2026/11/zyxel-gs1900-patch-fails-to-block-zero.html",
@@ -1705,21 +1754,6 @@
    "why": [
     "Data breach"
    ]
-  },
-  {
-   "id": "d7e6bb525bb5",
-   "title": "Updated guidance supports vendor talks on post-quantum cryptography",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOQW04NTBhSVQ0NnViTHNCZzNKeDRXUHUxeDNLODl2UmpwSWVrOWhwaHdwcnR6YXNKMDQ5c0M3Y1NONFhfOGhvQ1AxYnRqXzRMOU00cHVuSjlMbEFsQUlOVlI3VW55cndLbzVGemdKYkhqZVdKVGJqRm5NbndhNi1oRXVMWU1BbDBzNFhBUzN5ejV3MmphdWEwNU5nNnZzdw?oc=5",
-   "source": "Cyber.gov.au",
-   "feed": "ACSC (via Google News)",
-   "region": "AU",
-   "published": "2026-11-05T00:03:49Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "Australia"
-   ],
-   "why": []
   },
   {
    "id": "1b4641ca3728",
@@ -2281,9 +2315,9 @@
    "why": []
   },
   {
-   "id": "2f39b34ce05f",
+   "id": "c9145a733bde",
    "title": "Data breaches hit record scale as cyber cover gap persists",
-   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOUk9QV2pXdFB1RkMzSzE5dzRWbUNqNDZWM1E2cTRURWo0SUl1WUdnWTlSTFBtZFdEaUtfb1UyaG5KcmZpRVZ1Q1owTTZEVi1HaEd5eVNCTjhUc25YYzlySF9PSWxoalBqTkItUTlJd2FVOUtTTDBGdy1iWElWb0locHRVVWpsVlVzelVuTTNoUWQ2RU5XVUN4SGtDZDMxRkp0V05LTnNhZWN1ZjFVd0Nhcy14SEVpTkx6WFVzUGwyNzA4Sm8x?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxORkJvNnJ1a1hhNnpGSUJfdTFPVV9iRXdSdWlaN0lCVUdueUdmczRYMmxSZzdxa1NtSFE5aXVkQmxyVktXUDdXbWZrdW5kUUdPUVQxNG9DU0JPemdzRlpxa01EenBHaktxcnFpbzRreDZVbDFyZkR6Z0J5OWdDSTZCVks4aUtKNGdPYTM0Sjc5b3hha3RlS0d3SnluLWF6TkYycG5jX2hLY1UtX1lRQXY2dlhBVHhKSmlFNFZXYjBB?oc=5",
    "source": "Insurance Business",
    "feed": "OAIC / Privacy news",
    "region": "Global",
@@ -6982,42 +7016,6 @@
    ],
    "why": [
     "Data breach",
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "bf75d536c908",
-   "title": "Ex-employee files Redfin data breach class action over retained data",
-   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQQk01b0RPanFraGxBVXdHR0Z1dXVna2ozYVV6N1lORy1hNy02MjRUdnBYU1pjZHE3bFowZTZsWHhKRjdsTWhVYzRtODlCbVBlNTQwR1paR1BOcy1mRGx0OUdRbm1qU0k3Q1NRMlBXd3oxLWFhNjQ4YkMzY20yMkdJdV8xVDN5VEVBUjVjSUZOMEltMmRwb3RkWERLSDB2VmdodjhwdEZLYks2R1pCQmlneVROZHhheVJ2OC1HdWVyMnE2Vi13a1h2OEl3?oc=5",
-   "source": "Top Class Actions",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-27T16:05:51Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "820476dc1929",
-   "title": "Tailscale Rushes Patches After Uncoordinated Disclosure of ‘Tailworm’ Flaws",
-   "link": "https://www.securityweek.com/tailscale-rushes-patches-after-uncoordinated-disclosure-of-tailworm-flaws/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-27T15:26:12Z",
-   "summary": "Tailscale is preparing a patch for Tailscale SSH flaws whose details went public over the weekend, before any fixes had been released. The post Tailscale Rushes Patches After Uncoordinated Disclosure of ‘Tailworm’ Flaws appeared first on SecurityWeek .",
-   "score": 5,
-   "tags": [
-    "Vulnerability",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Vulnerability",
     "SaaS / cloud"
    ]
   }
