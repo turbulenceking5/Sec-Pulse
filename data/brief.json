@@ -1,87 +1,69 @@
 {
- "date": "2026-11-08",
- "generated": "2026-11-07T22:09:02+00:00",
- "title": "Sec-Pulse brief - Sun 08 Nov",
+ "date": "2026-11-09",
+ "generated": "2026-11-08T22:19:22+00:00",
+ "title": "Sec-Pulse brief - Mon 09 Nov",
  "items": [
   {
-   "id": "b2c7f8529c12",
-   "title": "Amadeus Security Breach Affects Qantas",
-   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1VLWtMdXloZXA0UWlxbXEwOWNITmFhd2tpbHV0cGJQai1JS19NNVhGX1dUTDdTOU1aVmlvV25hYVJEWXVUdkxGNlhWNW1pazFmcFoyZ0hKbkdrcEc5UngxanlnVTlibS1BZEVvYmxnRW9aUQ?oc=5",
-   "source": "Travel Radar",
-   "region": "AU",
-   "published": "2026-11-07T11:12:00Z",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "Data breach"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "986edfc864db",
-   "title": "SonicWall Patches Exploited SonicOS Vulnerability That Weakens VPN Logins",
-   "link": "https://www.securityweek.com/sonicwall-patches-exploited-sonicos-bug-that-weakens-vpn-logins/",
-   "source": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-07T10:16:23Z",
-   "score": 7,
-   "tags": [
-    "Identity",
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "summary": "CVE-2026-19868 can let attackers holding credentials for a different login method get past SAML checks, including SAML-enforced MFA. The post SonicWall Patches Exploited SonicOS Vulnerability That Weakens VPN Logins appeared first on SecurityWeek .",
-   "epss": 0.0062
-  },
-  {
-   "id": "2468829c5bbe",
-   "title": "NPC probing government data leaks",
-   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQeGRVU0lYMGpYbjRfclQwa1hmdWtpYjBaeUJOYXF1SHZxRzJRTmdmcFRiZVNwZHM0bFA4MDFJTkFsdE1ySlhSNW9VZ2RvSUtKdk9hTHc4bUlialRqQjNhenhHRjNMNlphSHVPb2pMZkdoLVZwa19kTHptMU9TejAwUXllM0Y5Zm1qYkJCUjd4U1pxb1VGUW5F0gGXAUFVX3lxTFB4ZFVTSVgwalhuNF9yVDBrWGZ1a2liMFp5Qk5hcXVIdnFHMlFOZ2ZwVGJlU3BkczRsUDgwMUlOQWx0TXJKWFI1b1VnZG9JS0p2T2FMdzhtSWJqVGpCM2F6eEdGM0w2WmFIdU9vakxmR2gtVnBrX2RMem0xT1N6MDBReWUzRjlmbWpiQkJSN3hTWnFvVUZRbkU?oc=5",
-   "source": "Philstar.com",
-   "region": "Global",
-   "published": "2026-11-07T16:00:00Z",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "ca1a9396bb65",
-   "title": "SonicWall warns of new SSL-VPN MFA bypass flaw exploited in attacks",
-   "link": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/",
+   "id": "840fc9184c68",
+   "title": "Iris Ohyama data cloud breach exposes info of 7.7 million customers",
+   "link": "https://www.bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers/",
    "source": "BleepingComputer",
    "region": "Global",
-   "published": "2026-11-07T00:00:55Z",
-   "score": 7,
+   "published": "2026-11-08T15:43:08Z",
+   "score": 6,
    "tags": [
-    "Identity",
-    "Edge devices",
-    "Vulnerability"
+    "Data breach",
+    "SaaS / cloud"
    ],
-   "summary": "SonicWall has released security updates to fix seven vulnerabilities in SonicOS firewalls, including an SSL-VPN authentication bypass flaw exploited in attacks. [...]"
+   "summary": "Japanese manufacturer Iris Ohyama, the operator of the Iris Plaza shopping platform, disclosed that personal information belonging to about 7.7 million people may have been exposed after unauthorized access to a third-party cloud service the company used. [...]"
   },
   {
-   "id": "6a96ed110a9e",
-   "title": "Mirae Asset Data Breach: 35,255 Staff Hit [2026]",
-   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPYnVHMi1vMERlQlhYWmdlMk9kbE9ETkxkbTFGNk9jUW50WndQc21wejh5ZFc0amFsbGtXNzBEYzhDTE5MOUZ6dkpyRFl1c19DeWt5Ujlka1A0X2d2ZEoyVm9vV3JjekhaNjRtWnJJUVFzSVlxbkZQaGRIZDc0eFlYQkpxMHRoalhBVGVhWkNsdHFON1VIcWFV?oc=5",
-   "source": "https://tech-insider.org/",
+   "id": "4c6744ea789b",
+   "title": "Scans for Sshole Vulnerability (CVE-2026-123158), (Sun, Nov 8th)",
+   "link": "https://isc.sans.edu/diary/rss/33498",
+   "source": "SANS ISC",
    "region": "Global",
-   "published": "2026-11-07T08:36:06Z",
+   "published": "2026-11-08T15:44:33Z",
+   "score": 5,
+   "tags": [
+    "Identity",
+    "Vulnerability"
+   ],
+   "summary": "Our honeypots use \"Cowrie\" to collect SSH data. With the emergence of the \"sshole\" vulnerability last week, we are now seeing an increase in attempts to exploit the vulnerability. Our data is a bit limited in this respect. Our honeypots collect only the first 255 characters of SSH passwords.…",
+   "epss": 0.0101
+  },
+  {
+   "id": "7c469530840f",
+   "title": "Aussie recycled toilet paper brand Who Gives a Crap discloses data breach",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOa01IQjFkWGxNaTBZSFNMMENBWHloTzZKTE9RWTNmdUFfeVlfY1dXeUhocFhWWnM0VUN6eXVfQjR5dzVDUDV5N2Q1UHlSLUp1VU1leWhRYXVvRTU2aE9xLUpPZlNtWklSd3M5TG9JNTA3MjBoai1ONVo1aUxHRDhTbnNqRGNjaEtlaUIzWHpJeVF4eFVhZU1TcDFVdmpScjZaTXkycVpQZ1RpaFBMX3QwTFUzSXF5RTF3dzJmZVRvTU1Wc1JEUHNN?oc=5",
+   "source": "Cyber Daily",
+   "region": "Global",
+   "published": "2026-11-08T00:40:45Z",
    "score": 6,
    "tags": [
     "Data breach"
    ],
    "summary": ""
+  },
+  {
+   "id": "9c037607d0d5",
+   "title": "Brava Security Emerges From Stealth With $15 Million in Funding",
+   "link": "https://www.securityweek.com/brava-security-emerges-from-stealth-with-15-million-in-funding/",
+   "source": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-08T12:14:00Z",
+   "score": 0,
+   "tags": [],
+   "summary": "Its multi-agent AI platform generates the telemetry an attack would produce to fix gaps in enterprise defenses. The post Brava Security Emerges From Stealth With $15 Million in Funding appeared first on SecurityWeek ."
   }
  ],
  "stats": {
-  "recent": 16,
-  "au": 1,
+  "recent": 4,
+  "au": 0,
   "kev": 0
  },
  "lesson": {
-  "id": "3.4",
-  "title": "AU bonus: BEC and payment redirection playbook"
+  "id": "3.5",
+  "title": "Preparation and post-incident activity"
  }
 }
