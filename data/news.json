@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-08T17:56:31Z",
+ "generated": "2026-11-08T22:08:55Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,13 +28,13 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 5,
+   "count": 6,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 5,
+   "count": 4,
    "error": null
   },
   {
@@ -178,6 +178,12 @@
    ],
    "why": [
     "Data breach"
+   ],
+   "also": [
+    {
+     "source": "ABC News & Headlines – Australian Broadcasting Corporation",
+     "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBOVXB4czlhUkZrcDJ4N3NEZUI0aEFmSENrNjdNTFp5QmEzQWs1RXBxcG9DMnVLY3FzVk1qSkFNOWFING9BLXhHc0hody1lTnNJRC0xRWZrMEZUMVF4TW84SFJ0V0F0QmlTWGZuNV9VRW9ocnloT200ZTZR?oc=5"
+    }
    ]
   },
   {
@@ -283,6 +289,23 @@
    ],
    "why": [
     "Data breach"
+   ]
+  },
+  {
+   "id": "a2509b45dccf",
+   "title": "Acronis research reveals how Qilin ransomware targets virtual infrastructure",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOZ2JqZkViUmYxTm1RcUlyMVVsb2hDb0I4Sm9seTd2aTlULUFjSUFGcFZSRVFieGVpU1lNME9fTkNCZDhRS3Bwd0RNWnJidkxjcFJOZHhFQzBRc1NESXlSWGtoQWhhS1NmZk1OeXl6aGJERzNZeFllZGxKak83ajJHSGtFVVdncEdhUWZKMm4tNW5QWjdzd3ppWU1DT1dKRnI3akJkQzBCakFXRUpFQ2NFSzNB?oc=5",
+   "source": "Acronis",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-07T07:12:08Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
    ]
   },
   {
@@ -914,6 +937,21 @@
     "Data breach",
     "Identity"
    ]
+  },
+  {
+   "id": "5b823cf6ae4b",
+   "title": "Think you know about updates? Take our quiz.",
+   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBzVFdNU0FYeE1oTDhISGEwVDRQdXFLb1lkZ0dtMmxoc2pqanE0TFRmYjFlaDVxdGxHM3lVbm1XMnBkMVNHeTZMdG94QmdTMkh6QVNXTWloTnM?oc=5",
+   "source": "Cyber.gov.au",
+   "feed": "ACSC (via Google News)",
+   "region": "AU",
+   "published": "2026-11-05T23:23:42Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "Australia"
+   ],
+   "why": []
   },
   {
    "id": "ed0831e3bc93",
@@ -6990,36 +7028,6 @@
    "score": 0,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "a8008ad652a3",
-   "title": "Beware the Slasher: AI Could Kill Off Cybersecurity Pros' Skills",
-   "link": "https://www.darkreading.com/cybersecurity-operations/ai-kill-off-cybersecurity-pros-skills",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-27T17:43:07Z",
-   "summary": "Nathan Hamiel outlines potential SecOps horror in the AI midst, as core technical capabilities go the way of reading an atlas or remembering phone numbers.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "d6b3b36b0050",
-   "title": "SpaceXAI class action lawsuit claims Grok AI tool violates Illinois privacy law",
-   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOZzF5ckxxS3kxZWg3Y2o1RS1wUU1OeVF0dWJvWEVrM2xOZWd2M19oOGoxcmlXdWNXS28zX0s1UUp5bkFMcG16WndWZ3VxMmFieE8zNE5sLUVpTjBpRGF1NlJDLWJ2TDNpZ1dDdnEtblVkMUNqazFvMDZEMmFobXhJUUhEVGhYcFY0U0RiTUdxdTZvbV9aQ0NuaWt1UktRYV9PTzlCZjF3Q0hFNUFWQmFqcThyejNMOXF5bXA4RWU4MjVNOWJfYUNhaW1TN253SkdqVW05UVgyQ0k?oc=5",
-   "source": "Top Class Actions",
-   "feed": "OAIC / Privacy news",
-   "region": "Global",
-   "published": "2026-10-27T17:05:37Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "SaaS / cloud"
-   ],
-   "why": [
-    "SaaS / cloud"
-   ]
   }
  ]
 }
