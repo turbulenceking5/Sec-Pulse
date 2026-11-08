@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-07T22:08:52Z",
+ "generated": "2026-11-08T00:39:15Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -34,7 +34,7 @@
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 3,
+   "count": 4,
    "error": null
   },
   {
