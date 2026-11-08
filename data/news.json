@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-08T10:26:00Z",
+ "generated": "2026-11-08T14:39:54Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -34,7 +34,7 @@
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 5,
+   "count": 4,
    "error": null
   },
   {
@@ -105,6 +105,19 @@
   }
  ],
  "items": [
+  {
+   "id": "9c037607d0d5",
+   "title": "Brava Security Emerges From Stealth With $15 Million in Funding",
+   "link": "https://www.securityweek.com/brava-security-emerges-from-stealth-with-15-million-in-funding/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-08T12:14:00Z",
+   "summary": "Its multi-agent AI platform generates the telemetry an attack would produce to fix gaps in enterprise defenses. The post Brava Security Emerges From Stealth With $15 Million in Funding appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
   {
    "id": "7c469530840f",
    "title": "Aussie recycled toilet paper brand Who Gives a Crap discloses data breach",
@@ -437,7 +450,7 @@
     "Identity",
     "Vulnerability"
    ],
-   "epss": 0.0098
+   "epss": 0.0101
   },
   {
    "id": "3647bbef0072",
@@ -663,7 +676,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0073
+   "epss": 0.0038
   },
   {
    "id": "cea41b0360f6",
@@ -6998,25 +7011,6 @@
    ],
    "why": [
     "Identity"
-   ]
-  },
-  {
-   "id": "db852607b136",
-   "title": "Warp discloses breach exposing AI agent logs, user telemetry data",
-   "link": "https://www.bleepingcomputer.com/news/security/warp-discloses-breach-exposing-ai-agent-logs-user-telemetry-data/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-27T16:15:39Z",
-   "summary": "Agent decision logs and telemetry data belonging to Warp agentic development environment users were exposed in an attack on a third-party vendor in the project's infrastructure. [...]",
-   "score": 6,
-   "tags": [
-    "Data breach",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Data breach",
-    "SaaS / cloud"
    ]
   }
  ]
