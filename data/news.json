@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-08T22:19:11Z",
+ "generated": "2026-11-09T06:36:33Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,13 +28,13 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 6,
+   "count": 7,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 4,
+   "count": 3,
    "error": null
   },
   {
@@ -106,6 +106,99 @@
  ],
  "items": [
   {
+   "id": "3d5dfb277e1d",
+   "title": "CISA Flags SonicWall SonicOS MFA Bypass Flaw Amid Reports of Possible Exploitation",
+   "link": "https://thehackernews.com/2026/11/cisa-flags-sonicwall-sonicos-mfa-bypass.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-09T06:05:24Z",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a high-severity vulnerability impacting SonicWall SonicOS to its Known Exploited Vulnerabilities (KEV) catalog, following reports that it said may have been exploited in real-world attacks. The vulnerability, tracked as…",
+   "score": 11,
+   "tags": [
+    "Actively exploited",
+    "Identity",
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "why": [
+    "Actively exploited",
+    "Identity",
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "also": [
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/sonicwall-patches-exploited-sonicos-bug-that-weakens-vpn-logins/"
+    },
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/"
+    }
+   ],
+   "epss": 0.0062
+  },
+  {
+   "id": "afec0fe2ee1d",
+   "title": "Weekly Recap: Breach contained and Burdett acquisition completed",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNdHJqTmUwbDdjcEphVDJuM193RmNaWWdyYllTdGpOLUpQRWNEOUZ5cldYMG9GWC1uX2d2cDF3elpLeHlpWFZDMEJaYTdtMlY2eTlLdlFNMi1hc3I1emQwSmktM2ZVZFRBUXI0ZGpjZzRwWTc3STI5T1doMVBhRGVaMW1UU1pZZ01XcGdlbVNfME5LS2ZjanZQUC1PV1BDMDJfSHh4NXRWNDJDZm40emZEX2tMemNPUWJtY29FS25iOVRhenM?oc=5",
+   "source": "TradingView",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-09T05:00:00Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "95a81488e3cd",
+   "title": "ISC Stormcast For Monday, November 9th, 2026 https://isc.sans.edu/podcastdetail/10170, (Mon, Nov 9th)",
+   "link": "https://isc.sans.edu/diary/rss/33500",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-11-09T02:05:10Z",
+   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "b4154e477dec",
+   "title": "Who Gives A Crap data breach raises questions over third-party security risks",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPcWxMSUlMdlNwQjFOT29ORTJoVFMyNkZrNk8wN0dPYl95dnBwUXBtcm83U2F5RkxiNGpoRXJ1Yy1tRlJGZ05vY2xXR2swb3JDWEtNSjg1aktrTUdONWdIWWNLNW1mdGNtUE1md2ZPcGY0QVdNV1RmZVBrYW9DQ3lQdFVESy1RZzhvUk9xWGl3Q1dKY01ENUNXQXBBSEhWU3hYUEhza1hpWlI2SWlsT3BZWTBZUWFpSEZmU09jTVdaSzFYYkppejdlQXlNRm0yUQ?oc=5",
+   "source": "SmartCompany",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-09T00:23:25Z",
+   "summary": "",
+   "score": 9,
+   "tags": [
+    "Data breach",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Data breach",
+    "SaaS / cloud"
+   ],
+   "also": [
+    {
+     "source": "Cyber Daily",
+     "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOa01IQjFkWGxNaTBZSFNMMENBWHloTzZKTE9RWTNmdUFfeVlfY1dXeUhocFhWWnM0VUN6eXVfQjR5dzVDUDV5N2Q1UHlSLUp1VU1leWhRYXVvRTU2aE9xLUpPZlNtWklSd3M5TG9JNTA3MjBoai1ONVo1aUxHRDhTbnNqRGNjaEtlaUIzWHpJeVF4eFVhZU1TcDFVdmpScjZaTXkycVpQZ1RpaFBMX3QwTFUzSXF5RTF3dzJmZVRvTU1Wc1JEUHNN?oc=5"
+    },
+    {
+     "source": "ABC News & Headlines – Australian Broadcasting Corporation",
+     "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBOVXB4czlhUkZrcDJ4N3NEZUI0aEFmSENrNjdNTFp5QmEzQWs1RXBxcG9DMnVLY3FzVk1qSkFNOWFING9BLXhHc0hody1lTnNJRC0xRWZrMEZUMVF4TW84SFJ0V0F0QmlTWGZuNV9VRW9ocnloT200ZTZR?oc=5"
+    }
+   ]
+  },
+  {
    "id": "4c6744ea789b",
    "title": "Scans for Sshole Vulnerability (CVE-2026-123158), (Sun, Nov 8th)",
    "link": "https://isc.sans.edu/diary/rss/33498",
@@ -151,6 +244,21 @@
    ]
   },
   {
+   "id": "3f3f7bcfecec",
+   "title": "Think you know about backups? Take our quiz.",
+   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBZMHZNZDBwTnZDY2RDcXUzamhiZGdhMlJzd25ZZllFN0plUWxVeEpFZXotenI2VFNiaEYzemxnN1ozT254RGZPeFVscFk0LTN0U192OEJRN2w?oc=5",
+   "source": "Cyber.gov.au",
+   "feed": "ACSC (via Google News)",
+   "region": "AU",
+   "published": "2026-11-08T15:30:55Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "Australia"
+   ],
+   "why": []
+  },
+  {
    "id": "9c037607d0d5",
    "title": "Brava Security Emerges From Stealth With $15 Million in Funding",
    "link": "https://www.securityweek.com/brava-security-emerges-from-stealth-with-15-million-in-funding/",
@@ -162,29 +270,6 @@
    "score": 0,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "7c469530840f",
-   "title": "Aussie recycled toilet paper brand Who Gives a Crap discloses data breach",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOa01IQjFkWGxNaTBZSFNMMENBWHloTzZKTE9RWTNmdUFfeVlfY1dXeUhocFhWWnM0VUN6eXVfQjR5dzVDUDV5N2Q1UHlSLUp1VU1leWhRYXVvRTU2aE9xLUpPZlNtWklSd3M5TG9JNTA3MjBoai1ONVo1aUxHRDhTbnNqRGNjaEtlaUIzWHpJeVF4eFVhZU1TcDFVdmpScjZaTXkycVpQZ1RpaFBMX3QwTFUzSXF5RTF3dzJmZVRvTU1Wc1JEUHNN?oc=5",
-   "source": "Cyber Daily",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-11-08T00:40:45Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ],
-   "also": [
-    {
-     "source": "ABC News & Headlines – Australian Broadcasting Corporation",
-     "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBOVXB4czlhUkZrcDJ4N3NEZUI0aEFmSENrNjdNTFp5QmEzQWs1RXBxcG9DMnVLY3FzVk1qSkFNOWFING9BLXhHc0hody1lTnNJRC0xRWZrMEZUMVF4TW84SFJ0V0F0QmlTWGZuNV9VRW9ocnloT200ZTZR?oc=5"
-    }
-   ]
   },
   {
    "id": "2468829c5bbe",
@@ -253,28 +338,6 @@
    ]
   },
   {
-   "id": "986edfc864db",
-   "title": "SonicWall Patches Exploited SonicOS Vulnerability That Weakens VPN Logins",
-   "link": "https://www.securityweek.com/sonicwall-patches-exploited-sonicos-bug-that-weakens-vpn-logins/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-07T10:16:23Z",
-   "summary": "CVE-2026-19868 can let attackers holding credentials for a different login method get past SAML checks, including SAML-enforced MFA. The post SonicWall Patches Exploited SonicOS Vulnerability That Weakens VPN Logins appeared first on SecurityWeek .",
-   "score": 7,
-   "tags": [
-    "Identity",
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "why": [
-    "Identity",
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "epss": 0.0062
-  },
-  {
    "id": "6a96ed110a9e",
    "title": "Mirae Asset Data Breach: 35,255 Staff Hit [2026]",
    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPYnVHMi1vMERlQlhYWmdlMk9kbE9ETkxkbTFGNk9jUW50WndQc21wejh5ZFc0amFsbGtXNzBEYzhDTE5MOUZ6dkpyRFl1c19DeWt5Ujlka1A0X2d2ZEoyVm9vV3JjekhaNjRtWnJJUVFzSVlxbkZQaGRIZDc0eFlYQkpxMHRoalhBVGVhWkNsdHFON1VIcWFV?oc=5",
@@ -337,27 +400,6 @@
    "score": 1,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "ca1a9396bb65",
-   "title": "SonicWall warns of new SSL-VPN MFA bypass flaw exploited in attacks",
-   "link": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-07T00:00:55Z",
-   "summary": "SonicWall has released security updates to fix seven vulnerabilities in SonicOS firewalls, including an SSL-VPN authentication bypass flaw exploited in attacks. [...]",
-   "score": 7,
-   "tags": [
-    "Identity",
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "why": [
-    "Identity",
-    "Edge devices",
-    "Vulnerability"
-   ]
   },
   {
    "id": "b99b441690fc",
@@ -1536,6 +1578,21 @@
    "why": []
   },
   {
+   "id": "09f8380d8b60",
+   "title": "New guidance on open-weight AI models",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1xYWxNM3RQX0k5QU10VVNzMVJId1JLRlkzM29lM1Z4ZlZIem5RZENrTXNCcVJnUkV0dHd4WWtYNGc4RVo0WWVkQnRtR2VpNFpZaE5iVnc4Ym5Nd1VWTjNhaGxQcXJtdTcxelFldnk4WGx6WkhWV1E?oc=5",
+   "source": "Cyber.gov.au",
+   "feed": "ACSC (via Google News)",
+   "region": "AU",
+   "published": "2026-11-05T12:00:00Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "Australia"
+   ],
+   "why": []
+  },
+  {
    "id": "9d72fd7ac53b",
    "title": "Court Upholds 423.6 Billion Won Fine Against Coupang for Data Breach : Society : JKN",
    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE15OENsYXVuSm5VTk1UTElkTldJeXd4TWRuRGFjZTlleWE1bW9ZSE5VS1NIbzBoU2FkazNpRGVQXzRnTzJkYzFBU04tZ0dDTll2T2F0M3NTOHIyNmFzUTNGMkNn?oc=5",
@@ -1693,21 +1750,6 @@
    "summary": "The Indian Computer Emergency Response Team (CERT-In) has disclosed that an artificial intelligence (AI)-assisted threat actor it tracks as Crafty Falcon is targeting organizations in the Banking, Financial Services, and Insurance (BFSI) sectors in the country. Describing the threat as active and…",
    "score": 0,
    "tags": [],
-   "why": []
-  },
-  {
-   "id": "09f8380d8b60",
-   "title": "New guidance on open-weight AI models",
-   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1xYWxNM3RQX0k5QU10VVNzMVJId1JLRlkzM29lM1Z4ZlZIem5RZENrTXNCcVJnUkV0dHd4WWtYNGc4RVo0WWVkQnRtR2VpNFpZaE5iVnc4Ym5Nd1VWTjNhaGxQcXJtdTcxelFldnk4WGx6WkhWV1E?oc=5",
-   "source": "Cyber.gov.au",
-   "feed": "ACSC (via Google News)",
-   "region": "AU",
-   "published": "2026-11-05T08:05:22Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "Australia"
-   ],
    "why": []
   },
   {
@@ -6998,36 +7040,6 @@
     "Microsoft 365",
     "SaaS / cloud"
    ]
-  },
-  {
-   "id": "d09366a97fc8",
-   "title": "CyberStrikeAI Uses 44 AI Agents to Automate Hacking Operations Against Japan Targets",
-   "link": "https://thehackernews.com/2026/10/cyberstrikeai-uses-44-ai-agents-to.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-27T18:26:46Z",
-   "summary": "Cybersecurity researchers have disclosed details of three cyber attacks targeting organizations in Japan in which artificial intelligence (AI) was a key element, either in the driving seat or to assist a human operator. TrendAI, which analyzed three exposed server environments used by threat…",
-   "score": 3,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "9df47a48bc7e",
-   "title": "Microsoft releases Windows OOB updates to distrust eMudhra certificates",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-oob-updates-to-distrust-emudhra-certificates/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-27T18:20:28Z",
-   "summary": "Microsoft has released out-of-band (OOB) Windows updates to remove trust in certificates tied to compromised eMudhra certificate authority keys, protecting systems that do not receive automatic certificate trust updates. [...]",
-   "score": 0,
-   "tags": [],
-   "why": []
   }
  ]
 }
