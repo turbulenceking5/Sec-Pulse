@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-09T19:50:59Z",
+ "generated": "2026-11-10T01:41:55Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -34,7 +34,7 @@
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 4,
+   "count": 5,
    "error": null
   },
   {
@@ -52,7 +52,7 @@
   {
    "name": "CISA KEV",
    "ok": true,
-   "count": 16,
+   "count": 15,
    "error": null
   },
   {
@@ -100,11 +100,177 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 28,
+   "count": 27,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "48d9ef3d98d6",
+   "title": "Vanderbilt University hit in BYOD ransomware attack, data theft claimed",
+   "link": "https://www.bleepingcomputer.com/news/security/vanderbilt-university-hit-in-byod-ransomware-attack-data-theft-claimed/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-09T23:52:12Z",
+   "summary": "Vanderbilt University warns it is responding to a cyberattack claimed by the BYOD ransomware gang, which claims to have encrypted the university's databases and stolen sensitive student, employee, and research data. [...]",
+   "score": 4,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
+  },
+  {
+   "id": "5ba181da5626",
+   "title": "Data Breach Website Blog Form",
+   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxON0tkRTN3UzUxRVlCczlDZk9NRGFpMGlUUm55V3RfT25ETkRfYjJLZG55ODhvc2dvQ2VicnowZDNIak9PY1VFQzVQVDlzUFNuZ0g3MkthZGhPVU9OZnJFR3lhMW03NmhJa0FydjhqNzNHMlAtRnRQd0liZFZXTnFvZUZvSXFSQU93d1E?oc=5",
+   "source": "Strauss Borrelli PLLC",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-09T22:59:50Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "f3685ddf97c0",
+   "title": "Rental scam shows fake listings to real homes in Simcoe County",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVDczbWNJMFdWYWpOdEREM0IzeEdac2p6ZkZ1eGY3dVQ1czBmZ21hYTB0TlEtMFB6YlNtbF9MSDI4NUkwZzM3clA1M1JPVmkzZ3piRTZwUWFuMjk3MVBqdWlKbmhCSFZmcy02Z1VHY1FvSlY0MGxuMnZlVmpsUUM2a05ETGNiSThkR3M2cGtHWkcyVzdyUVdXX3JWNUx6NEVHalVv?oc=5",
+   "source": "CTV News",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-09T22:36:47Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ],
+   "also": [
+    {
+     "source": "Barrie News",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPLTNWUkdyUk5DMzFWWnZiRVdFTUlXMjNHVlpLdFp5M1VRc2xFMDF2b3h1YjNzSDE2eVB2RWdFc25NTjlXZW5McWVTRUNSbE4yWk5raGtOZ3dQcUJ6MXcwQkxnRHk2Wk84eGJqdEE2QTJrVEhjSV9lRDZDVy1TU2hudGRTYklGSERsMGo4X3pvRkE1cG8xaV91c1ZGMy1pUTAycUo2YWVuSnBSdlFlRnc?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "fb65eccd7583",
+   "title": "SEGA newsletter data breach exposes 2.2 million email addresses",
+   "link": "https://www.bleepingcomputer.com/news/security/sega-newsletter-data-breach-exposes-22-million-email-addresses/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-09T22:09:33Z",
+   "summary": "Japanese gaming giant SEGA has disclosed that a data breach at its third-party newsletter provider, ARARA, exposed the email addresses of 2.2 million newsletter subscribers. [...]",
+   "score": 6,
+   "tags": [
+    "Data breach",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Data breach",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "907718f8d430",
+   "title": "CISA Announces Enhanced Reporting Form for Cyber Incidents",
+   "link": "https://www.darkreading.com/cyberattacks-data-breaches/cisa-announces-enhanced-reporting-form-cyber-incidents",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-09T21:38:20Z",
+   "summary": "New questionnaire captures critical data and information that improves the agency’s ability to assess incidents, identify trends and prioritize response actions.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "8d206c962ee8",
+   "title": "N-able takes cloud platform offline after 30+ \"zero-days\" published",
+   "link": "https://www.bleepingcomputer.com/news/security/n-able-takes-cloud-platform-offline-after-30-plus-zero-days-published/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-09T21:26:25Z",
+   "summary": "N-able has taken its hosted N-central environments offline and urged on-premises customers to shut down their servers after a security researcher publicly disclosed more than 30 alleged zero-day vulnerabilities, including exploits that could let attackers take over vulnerable systems. [...]",
+   "score": 5,
+   "tags": [
+    "Actively exploited"
+   ],
+   "why": [
+    "Actively exploited"
+   ]
+  },
+  {
+   "id": "b9b072a1ed15",
+   "title": "York University breach exposed personal information dating to 2007",
+   "link": "https://www.bleepingcomputer.com/news/security/york-university-breach-exposed-personal-information-dating-to-2007/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-09T21:22:31Z",
+   "summary": "York University has announced it suffered a cybersecurity incident in which a threat actor stole personal information people submitted through online forms. [...]",
+   "score": 4,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "eae4ff98ab3e",
+   "title": "Microsoft Fixes RCE Bug in Windows Paint After Weeks of Confusion",
+   "link": "https://www.darkreading.com/application-security/microsoft-rce-bug-windows-paint-confusion",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-09T21:12:24Z",
+   "summary": "Last month, Microsoft disclosed a vulnerability in Microsoft Paint, but messaging regarding a patch was unclear.",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "527a69512361",
+   "title": "Black Hat India 2026 Makes a Landmark Debut in Bengaluru, Bringing the Global Cybersecurity Community to India",
+   "link": "https://www.darkreading.com/cybersecurity-operations/black-hat-india-2026-landmark-debut",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-09T20:19:56Z",
+   "summary": "Inaugural edition by Informa Markets in India brings together leading researchers, security practitioners and industry decision makers for four days of cutting-edge research, technical exchange and strategic dialogue.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "5bce94b89cfb",
+   "title": "FORGE Lab uses agentic tools to identify memory safety issues in Rust",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/09/forge-lab-uses-agentic-tools-to-identify-memory-safety-issues-in-rust/",
+   "source": "Microsoft Security Blog",
+   "feed": "Microsoft Security Blog",
+   "region": "Global",
+   "published": "2026-11-09T20:17:31Z",
+   "summary": "Microsoft FORGE Lab researchers found memory-safety bugs in Rust's core and std libraries, including cases where safe Rust code can trigger undefined behavior. Using Hyenas, FORGE's frontier research version of codename MDASH, the team investigated three patterns of misplaced trust in unsafe code…",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
   {
    "id": "02a7e474c8bd",
    "title": "Property owners warned about dangerous new scam after Texas man admits to $1.5 million fraud targeting investment real estate",
@@ -306,7 +472,7 @@
    "source": "Lawyerly",
    "feed": "Real estate cyber news",
    "region": "Global",
-   "published": "2026-11-09T15:58:30Z",
+   "published": "2026-11-09T16:00:20Z",
    "summary": "",
    "score": 7,
    "tags": [
@@ -562,6 +728,10 @@
     {
      "source": "Cyber Daily",
      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPYmxnRi1GdWgxSjM3S3Byc2JEZ0drMDFIeGg1QUZIVzl4YkhBeW5tVHpvSTB6UmZLcHJMZkVvVGpIdTJNYmpQYklhN1BOVkJFdTJ2U0RjQndhRloyX0kxY2I4YVlPTjNxLWNETl8yNnJ0VkJEbWVyekZiLVFiVXlEVVpBQlhfWEVnb2U5WXFGVjg2YVd0Yi1PZW5fM0ppMlBBOWFZS0MzSURtVFd2enRJM3VEV0Y?oc=5"
+    },
+    {
+     "source": "SC Media",
+     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPWEdMaHQ5cWtwajB6MVJTTkdjWGQ5QlBCa2VjT0RKNFNqM2dzdnNUMGNPb2g0QWY3QXNPM095LWJUTF9PdFgyRUh4UHJHLVJqNzVoRmlWZkZhVFZSOFpPUG1NQzBNOEtTQkRHakJjVjJSUXd4TlEtNkdSU3hjYlhPQk53N09UVXFBTEJQUjRDZURidkpEWDA2VFVKdXFwa254U1E?oc=5"
     }
    ]
   },
@@ -812,6 +982,26 @@
     "Vulnerability"
    ],
    "epss": 0.0101
+  },
+  {
+   "id": "2464fd9dd158",
+   "title": "CVE-2026-123218: IBM Aspera Faspex — IBM Aspera Faspex Incorrect Authorization Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-123218",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-11-09T00:00:00Z",
+   "summary": "IBM Aspera Faspex contains an incorrect authorization vulnerability that could allow an authenticated user to craft a specific message to bypass authorization, causing privilege escalations. CISA remediation due 2026-11-12.",
+   "score": 4,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.004
   },
   {
    "id": "840fc9184c68",
@@ -6803,208 +6993,6 @@
    "why": [
     "Data breach",
     "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "c5cb56f9b754",
-   "title": "AI Takes Root in Hospital Corridors, Raises Security Stakes",
-   "link": "https://www.darkreading.com/cybersecurity-operations/ai-root-hospital-corridors-raised-security-stakes",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-28T15:29:06Z",
-   "summary": "Artificial intelligence is everywhere in healthcare, from doctors' intake forms to cancer screenings. But in some cases, life-and-death uses are outpacing cybersecurity.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "f424b83a0c00",
-   "title": "Ukrainian Hive and Nefilim Ransomware Affiliate Gets 70 Months in US Prison",
-   "link": "https://www.securityweek.com/ukrainian-hive-and-nefilim-ransomware-affiliate-gets-70-months-in-us-prison/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-28T15:05:06Z",
-   "summary": "Artem Stryzhak was sentenced to 70 months in prison after pleading guilty to using Nefilim ransomware in attacks. The post Ukrainian Hive and Nefilim Ransomware Affiliate Gets 70 Months in US Prison appeared first on SecurityWeek .",
-   "score": 4,
-   "tags": [
-    "Ransomware"
-   ],
-   "why": [
-    "Ransomware"
-   ],
-   "also": [
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/nefilim-and-hive-ransomware-affiliate-gets-70-months-in-prison/"
-    }
-   ]
-  },
-  {
-   "id": "a043a6e6f715",
-   "title": "National real estate brokerage enters Alabama market through partnership",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNTTRPUDlPdkVMRlgzT0V2RzNrbk91VklrTzEyd1pKV2M1NFNRZnFSVDgyWnQ5M2xMQWplc3pjTmR6ZFdHYk52MVZxUXc3UFJWNHlhTFE1cHdVQ3lza3ZWbVY4UEJUQXJUd1dDWDJKSUJSZzFZRC1BYWR0QkRxUXUtMk5rUlZyUWRDekcyOW5GSUU3UGppMmcxSGdRTllINzl1bjZ2aG9LdDRBSDh3Zm8zZFExSQ?oc=5",
-   "source": "AL.com",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-28T15:00:00Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ]
-  },
-  {
-   "id": "7f47388e611d",
-   "title": "Microsoft urges Entra ID admins to migrate users to passkeys",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-reminds-entra-id-admins-to-migrate-users-to-passkeys/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-28T14:48:32Z",
-   "summary": "Microsoft again asked Entra ID administrators to migrate users to phishing-resistant methods to avoid sign-in disruptions before it retires SMS and voice authentication in February 2027. [...]",
-   "score": 10,
-   "tags": [
-    "Phishing",
-    "Microsoft 365",
-    "Identity"
-   ],
-   "why": [
-    "Phishing",
-    "Microsoft 365",
-    "Identity"
-   ]
-  },
-  {
-   "id": "70a17c1d3a5b",
-   "title": "Attacker Relentlessly Scans for Credentials by Impersonating AI Bots",
-   "link": "https://www.darkreading.com/cyber-risk/attacker-impersonates-ai-bots-scans-credentials",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-28T14:37:52Z",
-   "summary": "The threat actor lurked behind bots posing as agents from OpenAI, Anthropic, Meta, and others to find exposed data.",
-   "score": 6,
-   "tags": [
-    "Data breach",
-    "Identity"
-   ],
-   "why": [
-    "Data breach",
-    "Identity"
-   ]
-  },
-  {
-   "id": "60ccb0bbd830",
-   "title": "InfraTrust report warns of exploited flaws in critical network infrastructure",
-   "link": "https://www.bleepingcomputer.com/news/security/infratrust-report-warns-of-exploited-flaws-in-critical-network-infrastructure/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-28T14:00:00Z",
-   "summary": "Attackers are actively exploiting vulnerabilities across critical network infrastructure, and PHP flaws known as \"PHP2Shell\" put the web management interfaces of firewalls, VPNs, application delivery controllers, and other appliances at risk. [...]",
-   "score": 5,
-   "tags": [
-    "Edge devices",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Edge devices",
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "943e231b105b",
-   "title": "Upwind Security Raises $400 Million at $3.8 Billion Valuation",
-   "link": "https://www.securityweek.com/upwind-security-raises-400-million-at-3-8-billion-valuation/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-28T13:56:50Z",
-   "summary": "The massive funding round comes just days after reports emerged that Upwind had attracted acquisition interest from several companies, including Datadog The post Upwind Security Raises $400 Million at $3.8 Billion Valuation appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "219f99ac76bf",
-   "title": "Even after PHP2Shell, blast radius matters more than a CVSS score",
-   "link": "https://www.bleepingcomputer.com/news/security/even-after-php2shell-blast-radius-matters-more-than-a-cvss-score/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-28T13:50:59Z",
-   "summary": "PHP2Shell shows how quickly attackers can exploit critical vulnerabilities, often before organizations have time to patch. Token Security explains why limiting the access of service accounts, API keys, and AI agents is just as important as fixing vulnerabilities to reduce the damage from a breach.…",
-   "score": 4,
-   "tags": [
-    "Data breach",
-    "Vulnerability"
-   ],
-   "why": [
-    "Data breach",
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "04dad7bd605d",
-   "title": "Chrome and Firefox Updates Patch Over 200 Vulnerabilities",
-   "link": "https://www.securityweek.com/chrome-and-firefox-updates-patch-over-200-vulnerabilities/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-28T13:39:35Z",
-   "summary": "The Chrome 156 update fixes 52 bugs, while Firefox 159 was rolled out with 167 security patches. The post Chrome and Firefox Updates Patch Over 200 Vulnerabilities appeared first on SecurityWeek .",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "84fd85017893",
-   "title": "TLS Flaws Found in GoAhead Web Server Used in Hundreds of Millions of Devices",
-   "link": "https://www.securityweek.com/tls-flaws-found-in-goahead-web-server-used-in-hundreds-of-millions-of-devices/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-28T13:10:34Z",
-   "summary": "FoxIO disclosed three GoAhead TLS bugs that can let revoked certificates through or expose some encrypted sessions to eavesdroppers. The post TLS Flaws Found in GoAhead Web Server Used in Hundreds of Millions of Devices appeared first on SecurityWeek .",
-   "score": 3,
-   "tags": [
-    "SaaS / cloud"
-   ],
-   "why": [
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "29d08fa787d9",
-   "title": "Hackers Target Critical Oracle E-Business Suite RCE Flaw Days After Security Patch",
-   "link": "https://thehackernews.com/2026/10/hackers-target-critical-oracle-e.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-28T12:48:03Z",
-   "summary": "Threat actors are beginning to probe for a newly patched critical vulnerability in Oracle E-Business Suite (EBS), according to threat intelligence firm Defused Cyber. The vulnerability in question is CVE-2026-101767 (CVSS score: 9.8) , a case of improper authentication in the Oracle Application…",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.0061,
-   "also": [
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/hackers-start-probing-fresh-oracle-ebs-vulnerability/"
-    }
    ]
   }
  ]
