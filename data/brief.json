@@ -1,69 +1,84 @@
 {
- "date": "2026-11-09",
- "generated": "2026-11-08T22:19:22+00:00",
- "title": "Sec-Pulse brief - Mon 09 Nov",
+ "date": "2026-11-10",
+ "generated": "2026-11-10T01:42:05+00:00",
+ "title": "Sec-Pulse brief - Tue 10 Nov",
  "items": [
   {
-   "id": "840fc9184c68",
-   "title": "Iris Ohyama data cloud breach exposes info of 7.7 million customers",
-   "link": "https://www.bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers/",
-   "source": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-08T15:43:08Z",
-   "score": 6,
+   "id": "ea7d22111047",
+   "title": "OAIC still probing Latitude breach, class action investigation ‘well underway’",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZll1LXU4VTkxa2Ftbko4aERMYklQV0VWdmM3aTV0YnVjdFB6ZjNKV1dvYTBvN09oTF81UHpldEVjR0hNYmlZUGpKOGQzNVRPY1BMa2U2MERGWFBFRWhFWXFWNGt6Y2VuaWdLYW9RRUZpbW9GRDM3TVl2MHN5TXhPYlV3bDZVdlJ2WjdveklzOXdzS1ZHTkRMeVZPdFhmU1RhdkZveg?oc=5",
+   "source": "Lawyerly",
+   "region": "AU",
+   "published": "2026-11-09T19:19:51Z",
+   "score": 13,
    "tags": [
-    "Data breach",
-    "SaaS / cloud"
-   ],
-   "summary": "Japanese manufacturer Iris Ohyama, the operator of the Iris Plaza shopping platform, disclosed that personal information belonging to about 7.7 million people may have been exposed after unauthorized access to a third-party cloud service the company used. [...]"
-  },
-  {
-   "id": "4c6744ea789b",
-   "title": "Scans for Sshole Vulnerability (CVE-2026-123158), (Sun, Nov 8th)",
-   "link": "https://isc.sans.edu/diary/rss/33498",
-   "source": "SANS ISC",
-   "region": "Global",
-   "published": "2026-11-08T15:44:33Z",
-   "score": 5,
-   "tags": [
-    "Identity",
-    "Vulnerability"
-   ],
-   "summary": "Our honeypots use \"Cowrie\" to collect SSH data. With the emergence of the \"sshole\" vulnerability last week, we are now seeing an increase in attempts to exploit the vulnerability. Our data is a bit limited in this respect. Our honeypots collect only the first 255 characters of SSH passwords.…",
-   "epss": 0.0101
-  },
-  {
-   "id": "7c469530840f",
-   "title": "Aussie recycled toilet paper brand Who Gives a Crap discloses data breach",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOa01IQjFkWGxNaTBZSFNMMENBWHloTzZKTE9RWTNmdUFfeVlfY1dXeUhocFhWWnM0VUN6eXVfQjR5dzVDUDV5N2Q1UHlSLUp1VU1leWhRYXVvRTU2aE9xLUpPZlNtWklSd3M5TG9JNTA3MjBoai1ONVo1aUxHRDhTbnNqRGNjaEtlaUIzWHpJeVF4eFVhZU1TcDFVdmpScjZaTXkycVpQZ1RpaFBMX3QwTFUzSXF5RTF3dzJmZVRvTU1Wc1JEUHNN?oc=5",
-   "source": "Cyber Daily",
-   "region": "Global",
-   "published": "2026-11-08T00:40:45Z",
-   "score": 6,
-   "tags": [
+    "Australia",
     "Data breach"
    ],
    "summary": ""
   },
   {
-   "id": "9c037607d0d5",
-   "title": "Brava Security Emerges From Stealth With $15 Million in Funding",
-   "link": "https://www.securityweek.com/brava-security-emerges-from-stealth-with-15-million-in-funding/",
-   "source": "SecurityWeek",
+   "id": "ee82be2e9953",
+   "title": "Who Gives A Crap: Data breach at ethical toilet paper company exposes customer information across UK, US and Australia",
+   "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPVi1FSHRrNUlXcW9qRXFtU3dpN2w5Zk5WVVl6NkJaSThhR3Nxd1pvS1pmbk45SjRQc3RuLVRPM2ZLQktwRGpITzV0ZWRWOG5oMVNfODFlb2o4SzRFMFZTVXNQd1JWNU5zT0RXWFJNa2wzTUI0eGNEQjM3TGF3M2JUZUdFOWZ4U3Y0VDBwbUtleHJCcklvOXRnMDBYMEduSmV5YzdOZWNXREp6eV9mNm1TbHczRWd6SHRlYWNLQk9naUhCRU1FWGxFakxBUFBPNjZGQmlra1VDU29HdEFyTkNiTUROdlpSMTFwSWl3?oc=5",
+   "source": "TechRadar",
+   "region": "AU",
+   "published": "2026-11-09T10:53:40Z",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Data breach"
+   ],
+   "summary": ""
+  },
+  {
+   "id": "c814a312aa03",
+   "title": "News - Australian healthcare provider suffers ransomware attack, patient records stolen",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNVlRQaXBwc2xWdVdSU1dpU0s2aF9yUW40Q25GN3R5djBha0c4T3dkR3dZNjhxdWg3TkRWVkZhRW5oY18yRDZtYktzNW5Lek1hVVRReWl6NjFSVk45UFRDaEZoUW5iaU5hajM2WEcyREZBOXRWa29CNHpXamh3cHRnZ1NlSXBQVUI0Q3pjdjZjX0M4MHdIb21DOVFUcDVadE9Ibm1zajQtWHdjanhQQXdtaTZOZVg?oc=5",
+   "source": "teiss",
+   "region": "AU",
+   "published": "2026-11-09T10:41:20Z",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Ransomware"
+   ],
+   "summary": ""
+  },
+  {
+   "id": "f3685ddf97c0",
+   "title": "Rental scam shows fake listings to real homes in Simcoe County",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVDczbWNJMFdWYWpOdEREM0IzeEdac2p6ZkZ1eGY3dVQ1czBmZ21hYTB0TlEtMFB6YlNtbF9MSDI4NUkwZzM3clA1M1JPVmkzZ3piRTZwUWFuMjk3MVBqdWlKbmhCSFZmcy02Z1VHY1FvSlY0MGxuMnZlVmpsUUM2a05ETGNiSThkR3M2cGtHWkcyVzdyUVdXX3JWNUx6NEVHalVv?oc=5",
+   "source": "CTV News",
    "region": "Global",
-   "published": "2026-11-08T12:14:00Z",
-   "score": 0,
-   "tags": [],
-   "summary": "Its multi-agent AI platform generates the telemetry an attack would produce to fix gaps in enterprise defenses. The post Brava Security Emerges From Stealth With $15 Million in Funding appeared first on SecurityWeek ."
+   "published": "2026-11-09T22:36:47Z",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "summary": ""
+  },
+  {
+   "id": "02a7e474c8bd",
+   "title": "Property owners warned about dangerous new scam after Texas man admits to $1.5 million fraud targeting investment real estate",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNd3l5U0NXVmNBaEFCN0hsSkFWMWhqMUZ5MTdJbkVqN201NFQ4UFMwd3lsYzZlWWVLdG1UbE1GdjFwRXgtUm02eGpFUk5vdE9Xb204ZzZWdnotQndZbFNQU3h2eC1JWG5namtaNElRRE1SR2F3c3dpaXpLc1VqQVhpWXpwbm14bUhEeDgwLWdDU2s3ODdNNHRtY19rSnBJeWwySlVoRtIBqgFBVV95cUxNNDZCZFJRZmxORG9ST2dzcmhTS3pneXJXNFQ5LU1VMmhtX19yYy1GV1NGa3RUdWtkZUhKWTRSUS1RZ1Rfc0JJSlJ6ME5Dd0tUaEpwR2h3MkFkT3QzZmpzNnl0VkdGXzBTclprMUZFN3FUTHZJVi1MYXFWNEZRWG1rVzBncUwzNzlyLU9iZVZMMDVHWEFUWGs1RXpzbTY0c1Q0bEtXeV9ZRVdhUQ?oc=5",
+   "source": "Daily Mail",
+   "region": "Global",
+   "published": "2026-11-09T19:27:37Z",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "summary": ""
   }
  ],
  "stats": {
-  "recent": 4,
-  "au": 0,
-  "kev": 0
+  "recent": 52,
+  "au": 4,
+  "kev": 4
  },
  "lesson": {
-  "id": "3.5",
-  "title": "Preparation and post-incident activity"
+  "id": "4.1",
+  "title": "Vulnerability reporting and metrics"
  }
 }
