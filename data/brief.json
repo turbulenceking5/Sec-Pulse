@@ -1,8 +1,36 @@
 {
- "date": "2026-11-10",
- "generated": "2026-11-10T01:42:05+00:00",
- "title": "Sec-Pulse brief - Tue 10 Nov",
+ "date": "2026-11-11",
+ "generated": "2026-11-10T23:37:01+00:00",
+ "title": "Sec-Pulse brief - Wed 11 Nov",
  "items": [
+  {
+   "id": "3afb070999e9",
+   "title": "Australia to launch AI safety regulator after OpenAI's breach of a government portal",
+   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQVW1wcmNyejJ0azJVVHZrdUFhYklBTWkzVmNGUUZYa1c1VlBxWWxMMGIzc1haVTY0V21IX0VMd0FTcXp2SmtudGV1cG1ucFpBSllIY3V6QWpCcS1FUnF1WkVUV0VPTDJlZGVGTUctb08yWmU4b3BuTUdLZWJDZ01MakpQTjBvRk91SjhxaE95eU5aZklGQklVZ2M2aDFVZ1RrdUdLSEJUMWRxM2YybTU0VjkzdHV0aXdqSWtiR2JTZzdYQWtyU2ZOWUZyMURQbUJNN09LWXQzSWl0YndLVGgteQ?oc=5",
+   "source": "Audacy",
+   "region": "AU",
+   "published": "2026-11-10T05:02:00Z",
+   "score": 14,
+   "tags": [
+    "Australia",
+    "Data breach"
+   ],
+   "summary": ""
+  },
+  {
+   "id": "047b6b78b3ab",
+   "title": "Australia tightens AI oversight rules after OpenAI government breach",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOenU4WXNoTkJTLTZPbmNkbW1ubWJORmJqSmNGWFd5ZGg1a1JrUXowYVhmSTRKLWo1cWFKQUJyZklyRVdvbzM1Z1pfWFF4SWd1QzA0amExQzMyM0Rzang2TDZ2bWRvUjZnLW5WcW1FLS1TTjRBWXFoX1Iyd2Q5TEJvbG55M29IaVozWlNac1JpdTFtT2d0bUZpTmtYeFZpMzJ0ZDA4UWQxWmRkZWVDX3JBRHlKN1XSAbQBQVVfeXFMTnp1OFlzaE5CUy02T25jZG1tbm1iTkZiakpjRlhXeWRoNWtSa1F6MGFYZkk0Si1qNXFhSkFCcmZJckVXb28zNWdaX1hReElndUMwNGphMUMzMjNEc2p4Nkw2dm1kb1I2Zy1uVnFtRS0tU040QVlxaF9SMndkOUxCb2xueTNvSGlaM1pTWnNSaXUxbU9ndG1GaU5rWHhWaTMydGQwOFFkMVpkZGVlQ19yQUR5SjdV?oc=5",
+   "source": "Al Jazeera",
+   "region": "AU",
+   "published": "2026-11-10T07:05:39Z",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Data breach"
+   ],
+   "summary": ""
+  },
   {
    "id": "ea7d22111047",
    "title": "OAIC still probing Latitude breach, class action investigation ‘well underway’",
@@ -18,67 +46,43 @@
    "summary": ""
   },
   {
-   "id": "ee82be2e9953",
-   "title": "Who Gives A Crap: Data breach at ethical toilet paper company exposes customer information across UK, US and Australia",
-   "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPVi1FSHRrNUlXcW9qRXFtU3dpN2w5Zk5WVVl6NkJaSThhR3Nxd1pvS1pmbk45SjRQc3RuLVRPM2ZLQktwRGpITzV0ZWRWOG5oMVNfODFlb2o4SzRFMFZTVXNQd1JWNU5zT0RXWFJNa2wzTUI0eGNEQjM3TGF3M2JUZUdFOWZ4U3Y0VDBwbUtleHJCcklvOXRnMDBYMEduSmV5YzdOZWNXREp6eV9mNm1TbHczRWd6SHRlYWNLQk9naUhCRU1FWGxFakxBUFBPNjZGQmlra1VDU29HdEFyTkNiTUROdlpSMTFwSWl3?oc=5",
-   "source": "TechRadar",
-   "region": "AU",
-   "published": "2026-11-09T10:53:40Z",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "Data breach"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "c814a312aa03",
-   "title": "News - Australian healthcare provider suffers ransomware attack, patient records stolen",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNVlRQaXBwc2xWdVdSU1dpU0s2aF9yUW40Q25GN3R5djBha0c4T3dkR3dZNjhxdWg3TkRWVkZhRW5oY18yRDZtYktzNW5Lek1hVVRReWl6NjFSVk45UFRDaEZoUW5iaU5hajM2WEcyREZBOXRWa29CNHpXamh3cHRnZ1NlSXBQVUI0Q3pjdjZjX0M4MHdIb21DOVFUcDVadE9Ibm1zajQtWHdjanhQQXdtaTZOZVg?oc=5",
-   "source": "teiss",
-   "region": "AU",
-   "published": "2026-11-09T10:41:20Z",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "Ransomware"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "f3685ddf97c0",
-   "title": "Rental scam shows fake listings to real homes in Simcoe County",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVDczbWNJMFdWYWpOdEREM0IzeEdac2p6ZkZ1eGY3dVQ1czBmZ21hYTB0TlEtMFB6YlNtbF9MSDI4NUkwZzM3clA1M1JPVmkzZ3piRTZwUWFuMjk3MVBqdWlKbmhCSFZmcy02Z1VHY1FvSlY0MGxuMnZlVmpsUUM2a05ETGNiSThkR3M2cGtHWkcyVzdyUVdXX3JWNUx6NEVHalVv?oc=5",
-   "source": "CTV News",
+   "id": "008f66d06450",
+   "title": "Exploited Outlook Zero-Day Among 1,094 Flaws Patched by Microsoft",
+   "link": "https://www.securityweek.com/exploited-outlook-zero-day-among-1094-flaws-patched-by-microsoft/",
+   "source": "SecurityWeek",
    "region": "Global",
-   "published": "2026-11-09T22:36:47Z",
-   "score": 10,
+   "published": "2026-11-10T19:19:46Z",
+   "score": 11,
    "tags": [
-    "Real estate"
+    "Actively exploited",
+    "Microsoft 365",
+    "Vulnerability"
    ],
-   "summary": ""
+   "summary": "CVE-2026-124194 is the Outlook zero-day for which Microsoft says it’s aware of active exploitation. The post Exploited Outlook Zero-Day Among 1,094 Flaws Patched by Microsoft appeared first on SecurityWeek ."
   },
   {
-   "id": "02a7e474c8bd",
-   "title": "Property owners warned about dangerous new scam after Texas man admits to $1.5 million fraud targeting investment real estate",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNd3l5U0NXVmNBaEFCN0hsSkFWMWhqMUZ5MTdJbkVqN201NFQ4UFMwd3lsYzZlWWVLdG1UbE1GdjFwRXgtUm02eGpFUk5vdE9Xb204ZzZWdnotQndZbFNQU3h2eC1JWG5namtaNElRRE1SR2F3c3dpaXpLc1VqQVhpWXpwbm14bUhEeDgwLWdDU2s3ODdNNHRtY19rSnBJeWwySlVoRtIBqgFBVV95cUxNNDZCZFJRZmxORG9ST2dzcmhTS3pneXJXNFQ5LU1VMmhtX19yYy1GV1NGa3RUdWtkZUhKWTRSUS1RZ1Rfc0JJSlJ6ME5Dd0tUaEpwR2h3MkFkT3QzZmpzNnl0VkdGXzBTclprMUZFN3FUTHZJVi1MYXFWNEZRWG1rVzBncUwzNzlyLU9iZVZMMDVHWEFUWGs1RXpzbTY0c1Q0bEtXeV9ZRVdhUQ?oc=5",
-   "source": "Daily Mail",
+   "id": "50eb1dccf495",
+   "title": "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws-outlook-zero-day/",
+   "source": "BleepingComputer",
    "region": "Global",
-   "published": "2026-11-09T19:27:37Z",
-   "score": 10,
+   "published": "2026-11-10T19:07:36Z",
+   "score": 11,
    "tags": [
-    "Real estate"
+    "Actively exploited",
+    "Microsoft 365",
+    "Vulnerability"
    ],
-   "summary": ""
+   "summary": "Today is Microsoft's November 2026 Patch Tuesday, with security updates addressing a record-breaking 1,235 flaws, including one actively exploited Microsoft Outlook zero-day vulnerability. [...]"
   }
  ],
  "stats": {
-  "recent": 52,
-  "au": 4,
-  "kev": 4
+  "recent": 75,
+  "au": 3,
+  "kev": 6
  },
  "lesson": {
-  "id": "4.1",
-  "title": "Vulnerability reporting and metrics"
+  "id": "4.2",
+  "title": "Incident reporting and communication"
  }
 }
