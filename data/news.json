@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-10T21:19:05Z",
+ "generated": "2026-11-10T23:36:50Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -34,7 +34,7 @@
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 7,
+   "count": 8,
    "error": null
   },
   {
@@ -70,7 +70,7 @@
   {
    "name": "Krebs on Security",
    "ok": true,
-   "count": 2,
+   "count": 3,
    "error": null
   },
   {
@@ -106,6 +106,103 @@
  ],
  "items": [
   {
+   "id": "95f883361cdc",
+   "title": "November Patch Tuesday: An Overflowing Cornucopia of CVEs",
+   "link": "https://www.darkreading.com/vulnerabilities-threats/november-patch-tuesday-cornucopia-cves",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-10T22:26:51Z",
+   "summary": "Microsoft serves up an actively exploited Outlook zero-day, and a wave of critical Exchange, SharePoint, Windows Search, and LDAP bugs that exhausted defenders need to prioritize fast.",
+   "score": 9,
+   "tags": [
+    "Actively exploited",
+    "Microsoft 365",
+    "Vulnerability"
+   ],
+   "why": [
+    "Actively exploited",
+    "Microsoft 365",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "16367edd00b6",
+   "title": "Railway breach leads to $740,000 in fraudulent AI charges",
+   "link": "https://www.bleepingcomputer.com/news/apple/railway-breach-leads-to-740-000-in-fraudulent-ai-charges/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-10T22:20:19Z",
+   "summary": "Cloud hosting provider Railway says hackers exploited vulnerabilities in its infrastructure to steal customer authentication secrets and generate approximately $740,000 in fraudulent AI usage, potentially exposing credentials for up to 100,000 workspaces. [...]",
+   "score": 6,
+   "tags": [
+    "Data breach",
+    "Identity"
+   ],
+   "why": [
+    "Data breach",
+    "Identity"
+   ]
+  },
+  {
+   "id": "9364f9baac68",
+   "title": "Microsoft Fixes Nearly 1,100 Security Vulnerabilities",
+   "link": "https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/",
+   "source": "Krebs on Security",
+   "feed": "Krebs on Security",
+   "region": "Global",
+   "published": "2026-11-10T21:55:03Z",
+   "summary": "Microsoft did another four-digit patch drop today, releasing updates to fix almost 1,100 security vulnerabilities in its Windows operating systems and supported software. This month's Patch Tuesday addresses 63 critical flaws -- including a zero-day in Microsoft Outlook -- and comes amid important…",
+   "score": 9,
+   "tags": [
+    "Actively exploited",
+    "Microsoft 365",
+    "Vulnerability"
+   ],
+   "why": [
+    "Actively exploited",
+    "Microsoft 365",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "6149d6298002",
+   "title": "Real estate fraudster who cheated poor 83-year-old woman out of NYC brownstone learns his fate",
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPTUE3Q1Blc3V0cE1rRXd5TGlnT21wYWQwYl9GTXFRTXN2OW9yZWZBMzhsYnhRSDZKTUNIWTBXUlhiWXFIQkNRMWdHQWVzX2dNMVhyN1hpcWNQV1hhTUdCblpJNFE5YVp4OHdLMXZGcHVyTjFqRUplYmlDRml1Q3JZSnRsMGxCX0JGYzZ1eEJHNk5FcXdNUkhOak1FcjJSTWpTUjRORFhYbjZwTFlIcU9tdXJZcTZrTkdnTXprbmVwR3NzSjNiSzBobmdnN0M?oc=5",
+   "source": "New York Post",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-10T21:46:00Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
+   "id": "c9d200a425c2",
+   "title": "Artex: The AI Pen-Test Tool Hackers Turned Into a Weapon",
+   "link": "https://www.darkreading.com/cyberattacks-data-breaches/artex-ai-pen-test-tool-hackers-weapon",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-10T21:01:14Z",
+   "summary": "Forks of the open source Artex framework, along with 45 similar pen-testing tools, remain capable of executing credential attacks and cloud breaches at machine speed across multiple industries.",
+   "score": 5,
+   "tags": [
+    "Data breach",
+    "Identity"
+   ],
+   "why": [
+    "Data breach",
+    "Identity"
+   ]
+  },
+  {
    "id": "230bcad0faf3",
    "title": "Japanese furniture giant Nitori says hackers stole 37.6M customer records",
    "link": "https://www.bleepingcomputer.com/news/security/japanese-furniture-giant-nitori-says-hackers-stole-376m-customer-records/",
@@ -114,6 +211,19 @@
    "region": "Global",
    "published": "2026-11-10T20:54:55Z",
    "summary": "Nitori, a major Japanese furniture and home accessories retailer, discovered that an attacker accessed a system on its network and may have stolen 37.62 million customer records. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "6922144e7a8d",
+   "title": "F-Secure Identifies 26 Ways AI Can Harm Consumers, and Where to Stop Them",
+   "link": "https://www.darkreading.com/application-security/f-secure-26-ways-ai-harm-consumers-where-to-stop-them",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-10T20:41:45Z",
+   "summary": "New AI Harms Taxonomy traces how harm moves through AI systems, from misleading chatbot answers to compromised autonomous agents, and identifies where defenses can intervene.",
    "score": 0,
    "tags": [],
    "why": []
@@ -3380,7 +3490,13 @@
    "summary": "The large-scale watering hole campaign has been targeting entities in the US and Europe, mainly in Ukraine. The post Russia-Linked Hackers Hit iOS, Android Devices With Exploit Chains via Watering Holes appeared first on SecurityWeek .",
    "score": 0,
    "tags": [],
-   "why": []
+   "why": [],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/hackers-use-n-day-exploits-in-zero-click-attacks-on-ios-android-devices/"
+    }
+   ]
   },
   {
    "id": "1981b067cd83",
@@ -3425,6 +3541,12 @@
    "why": [
     "Australia",
     "Data breach"
+   ],
+   "also": [
+    {
+     "source": "Lawyerly",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQWmtzYk9MWlkwSUdjOFB2RHc0bEtVMEMxU2gtcTBCQ3E1VnVmcU1XaDhuS0llZ05oU2g0Y2tZMFNzbHVfc3diZ1Z1dXR2ME84NExNZi1mYTgxckhMaVBGSVowTElDLUtEdVhLZlpxUC1HVlN0U1R6aWRiaXFYUE8tSkhrQldiRGZJcHJERDNWMmxzTjdDbmFPbzdnRVo3dlViRTNwRE5lV3JTZEE?oc=5"
+    }
    ]
   },
   {
@@ -3518,42 +3640,6 @@
    "score": 1,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "d79523f094d2",
-   "title": "OAIC won’t take action against court transcriber over data breach",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQWmtzYk9MWlkwSUdjOFB2RHc0bEtVMEMxU2gtcTBCQ3E1VnVmcU1XaDhuS0llZ05oU2g0Y2tZMFNzbHVfc3diZ1Z1dXR2ME84NExNZi1mYTgxckhMaVBGSVowTElDLUtEdVhLZlpxUC1HVlN0U1R6aWRiaXFYUE8tSkhrQldiRGZJcHJERDNWMmxzTjdDbmFPbzdnRVo3dlViRTNwRE5lV3JTZEE?oc=5",
-   "source": "Lawyerly",
-   "feed": "OAIC / Privacy news",
-   "region": "AU",
-   "published": "2026-11-05T00:57:11Z",
-   "summary": "",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "Data breach"
-   ],
-   "why": [
-    "Australia",
-    "Data breach"
-   ]
-  },
-  {
-   "id": "24d32865db44",
-   "title": "Court data breach escapes further investigation",
-   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPRS1nUm9CcnJlNjBUdzd1aGZ4RjVSTHdiN3lzbTNYNFhNS0RXMmVOSjVMSURvdGN3SU1CaUpIejFkQnNmMEZfaHdSZC1PMVdaNU5FN3MtOUdVc2thSzBjdE4zX1BrNnBPOGpqeEhtS0puVjduWjE2UjVIQk9mOGJSY2lWUFhJQWE3Qm9nNzJhTFQ?oc=5",
-   "source": "Information Age | ACS",
-   "feed": "OAIC / Privacy news",
-   "region": "Global",
-   "published": "2026-11-05T00:27:22Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
   },
   {
    "id": "1b4641ca3728",
@@ -3674,6 +3760,12 @@
    "why": [
     "Australia",
     "Data breach"
+   ],
+   "also": [
+    {
+     "source": "Information Age | ACS",
+     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPRS1nUm9CcnJlNjBUdzd1aGZ4RjVSTHdiN3lzbTNYNFhNS0RXMmVOSjVMSURvdGN3SU1CaUpIejFkQnNmMEZfaHdSZC1PMVdaNU5FN3MtOUdVc2thSzBjdE4zX1BrNnBPOGpqeEhtS0puVjduWjE2UjVIQk9mOGJSY2lWUFhJQWE3Qm9nNzJhTFQ?oc=5"
+    }
    ]
   },
   {
@@ -4063,19 +4155,6 @@
    "region": "Global",
    "published": "2026-11-04T10:36:32Z",
    "summary": "Binance’s first incident report traces the record theft to a months-long campaign that compromised three engineers’ computers. The post Rigged Coding Assignment, Abused AI Tool Opened Path to $6 Billion Binance Heist appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "955f969e9dae",
-   "title": "Hackers use n-day exploits in zero-click attacks on iOS, Android devices",
-   "link": "https://www.bleepingcomputer.com/news/security/hackers-use-n-day-exploits-in-zero-click-attacks-on-ios-android-devices/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-04T09:39:54Z",
-   "summary": "A large-scale watering hole attack associated with Russian hackers has been targeting iOS and Android users visiting compromised sites or fake ones impersonating legitimate portals. [...]",
    "score": 0,
    "tags": [],
    "why": []
@@ -7008,49 +7087,6 @@
     "Identity",
     "Edge devices"
    ]
-  },
-  {
-   "id": "ef51173644e1",
-   "title": "Jin Air Suffers Data Breach, 1,454 Members Affected : Business/Industry : JKN",
-   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFA1LVZZNDBidEtwRnFWb0xXaDhRYmpUUGlURGJkUk92RVpQRXRpT3EyRjZDQjFhdjREU1VsSkVlSjl0bGtxMEgtUWQ4S3hYS3cycVd3eW8xaVhIT3l6UHlrTWFB?oc=5",
-   "source": "재경일보",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-29T18:45:00Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "2c3bc9054593",
-   "title": "Claude Model Builds Exploits Across Major Browsers & OSes",
-   "link": "https://www.darkreading.com/application-security/claude-model-exploits-major-browsers-oses",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-10-29T18:15:59Z",
-   "summary": "An unreleased version of the AI model has found and chained multiple vulnerabilities in Chrome, Safari, Android, Windows, and Linux, Anthropic says.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "39a633755f1e",
-   "title": "When Risk Becomes Personal: What Security Leaders Can Learn From a Cancer Diagnosis",
-   "link": "https://www.securityweek.com/when-risk-becomes-personal-what-security-leaders-can-learn-from-a-cancer-diagnosis/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-29T16:30:00Z",
-   "summary": "Risk managers are trained to spot weak signals, plan for disruption and make hard decisions under uncertainty. But the discipline looks different when the risk is not a system or an enterprise, but you. The post When Risk Becomes Personal: What Security Leaders Can Learn From a Cancer Diagnosis…",
-   "score": 0,
-   "tags": [],
-   "why": []
   }
  ]
 }
