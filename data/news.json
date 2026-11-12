@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-11T17:10:07Z",
+ "generated": "2026-11-12T00:45:40Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -16,7 +16,7 @@
   {
    "name": "ACSC (via Google News)",
    "ok": true,
-   "count": 5,
+   "count": 6,
    "error": null
   },
   {
@@ -34,7 +34,7 @@
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 6,
+   "count": 8,
    "error": null
   },
   {
@@ -52,7 +52,7 @@
   {
    "name": "CISA KEV",
    "ok": true,
-   "count": 19,
+   "count": 17,
    "error": null
   },
   {
@@ -70,7 +70,7 @@
   {
    "name": "Krebs on Security",
    "ok": true,
-   "count": 3,
+   "count": 4,
    "error": null
   },
   {
@@ -100,27 +100,233 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 28,
+   "count": 25,
    "error": null
   }
  ],
  "items": [
   {
-   "id": "1f64e51f33da",
-   "title": "PH privacy body verifying reported data leaks in gov't agencies",
-   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNOUZ2dC0wWGZPUTlxRzZveWN6S2UyOERQTGpIQkJXeThMbmdPYmo1NURPWWl0OUw1Rm8walFMUlllWlRNY3FqcldsRnRtd0NxaHpfWVhzQl9ScjR3dmFpckNBaHNVZWJNb2RpZThpUFh1c0xsbl84NDdiOTNYV0txRXp2a0c0VVIzRzlEaDQ2YnZQMWY5MDQtOQ?oc=5",
-   "source": "Philippine News Agency",
-   "feed": "OAIC / Privacy news",
+   "id": "09ebecc42123",
+   "title": "Japan Pushes Emergency Funding for Cybersecurity as AI-Assisted Breaches Rise",
+   "link": "https://www.darkreading.com/cybersecurity-operations/japan-emergency-funding-cybersecurity-ai-assisted-breaches",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
    "region": "Global",
-   "published": "2026-11-11T16:51:03Z",
-   "summary": "",
-   "score": 6,
+   "published": "2026-11-12T00:00:00Z",
+   "summary": "The package adds public-private cyber responders, an AI-focused team run by the economic ministry, and more leeway to use the government's new active cyber-defense powers.",
+   "score": 4,
    "tags": [
     "Data breach"
    ],
    "why": [
     "Data breach"
    ]
+  },
+  {
+   "id": "7f241c94ac84",
+   "title": "Baker Tilly notifies clients of data breach at third-party provider",
+   "link": "https://www.bleepingcomputer.com/news/security/baker-tilly-notifies-clients-of-data-breach-at-third-party-provider/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-11T23:01:31Z",
+   "summary": "The Baker Tilly Advisory Group is notifying clients that a data breach has compromised certain personal information about them and their dependents. [...]",
+   "score": 7,
+   "tags": [
+    "Data breach",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Data breach",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "ccdd6c7f3ffe",
+   "title": "Active ScreenConnect attacks breach MSPs, impact dozens of organizations",
+   "link": "https://www.bleepingcomputer.com/news/security/active-screenconnect-attacks-breach-msps-impact-dozens-of-organizations/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-11T22:56:21Z",
+   "summary": "ConnectWise is investigating an active malware campaign targeting managed service providers (MSPs) that uses compromised ScreenConnect environments to deploy rogue remote-access clients to customer devices. [...]",
+   "score": 4,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ],
+   "also": [
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/over-a-dozen-organizations-hit-in-qubole-supply-chain-attack/"
+    }
+   ]
+  },
+  {
+   "id": "d79ecdbae1ec",
+   "title": "Secure AI testing to reduce unauthorised access",
+   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQNXhSNHdyREJQSDEwM2d4c0tubU9QM2FVM2xZTENXQTBiZjZQdWN4bmNuSTJZdTBqQ2xwVTFIRTdFeDA5NEg1aTFDSEJRZ0xKcHB4Y1pKX0RfZGtMRnVaenRMOExxWjJfZnZ2aUd3TXNkUEhfSEhsX2dRLUlpOWwwblI0UQ?oc=5",
+   "source": "Cyber.gov.au",
+   "feed": "ACSC (via Google News)",
+   "region": "AU",
+   "published": "2026-11-11T22:35:19Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "Australia"
+   ],
+   "why": []
+  },
+  {
+   "id": "bcbd3a3cc803",
+   "title": "Attackers Say 'Hello' to a Different Scale of Cloud Attack",
+   "link": "https://www.darkreading.com/cloud-security/attackers-hello-scale-cloud-attack",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-11T21:44:04Z",
+   "summary": "Researchers dubbed an attack chain \"Greeter\" after discovering that attackers deliberately covered their trail by leaving \"hello\" messages in logs.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "a4a34375ee4e",
+   "title": "eMudhra revokes 8 more CA certificates after private key mishap",
+   "link": "https://www.bleepingcomputer.com/news/security/emudhra-revokes-8-more-ca-certificates-after-private-key-mishap/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-11T21:27:40Z",
+   "summary": "Certificate authority eMudhra has revoked eight additional intermediate CA certificates after an investigation into its recent certificate security incident found improper handling of private keys during the certificate-generation process. [...]",
+   "score": 0,
+   "tags": [],
+   "why": [],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/emudhra-revokes-8-more-cas-it.html"
+    }
+   ]
+  },
+  {
+   "id": "c5c797f8dc87",
+   "title": "AI Raises the Stakes for Cyber Resilience",
+   "link": "https://www.darkreading.com/cyber-risk/ai-raises-stakes-cyber-resilience",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-11T21:20:41Z",
+   "summary": "An organization's ability to quickly recover from a business disruption will be a competitive advantage in an era of AI-driven threats and business enablement.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "4555dea14647",
+   "title": "Notion says Fireworks breach exposed customer AI chat transcripts",
+   "link": "https://www.bleepingcomputer.com/news/security/notion-says-fireworks-breach-exposed-customer-ai-chat-transcripts/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-11T20:54:20Z",
+   "summary": "Notion, the digital workspace platform, disclosed that a security breach at its AI infrastructure provider, Fireworks AI, exposed Notion AI chat transcripts in a small number of workspaces. [...]",
+   "score": 4,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html"
+    }
+   ]
+  },
+  {
+   "id": "878d82803a6e",
+   "title": "Westchester investor charged over $5.7M real estate scam",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPQkItdzc2emdfdi1hS092aVliUnUtcUFZZ1dPWmtGVGxWalVMQ1owVUwwLUJ3aVJTbXhSLXJmSHFBUmw2R0pmYUJyajRFVnd1ZDVSRHE1ZTlyZlNmU3JTNU5ULVgyUkp5VVl6Z2hLdFZ4X1BXdzc0X0dOUkhhUmNHcUF0WXBjaXZfSURMT0c1VlZWYmZlbk9fUFNkencwdm5EX19sYWZhQ0xVbDhhdjlmYXV3SQ?oc=5",
+   "source": "The Real Deal",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-11T20:30:00Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
+   "id": "3c5e2d75ed5c",
+   "title": "The global socket: how threat actors are weaponizing GSocket for stealthy C2",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/11/global-socket-how-threat-actors-weaponizing-gsocket-stealthy-c2/",
+   "source": "Microsoft Security Blog",
+   "feed": "Microsoft Security Blog",
+   "region": "Global",
+   "published": "2026-11-11T19:49:57Z",
+   "summary": "Threat actors are deploying GSocket on compromised Linux servers to keep encrypted remote access after the original vulnerability is patched. Learn how to detect, investigate, and remediate this activity. The post The global socket: how threat actors are weaponizing GSocket for stealthy C2…",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "6da26adf46a9",
+   "title": "Microsoft Patch Tuesday November 2026, (Tue, Nov 10th)",
+   "link": "https://isc.sans.edu/diary/rss/33508",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-11-11T18:28:43Z",
+   "summary": "Microsoft continues its AI-induced patch surge, addressing 1,260 different vulnerabilities this month. 68 of these vulnerabilities are considered critical. 167 of the vulnerabilities are Chromium issues affecting Microsoft Edge.",
+   "score": 3,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "8cdc4a0f74c8",
+   "title": "Who Runs the Ransomware Group Qilin?",
+   "link": "https://krebsonsecurity.com/2026/11/who-runs-the-ransomware-group-qilin/",
+   "source": "Krebs on Security",
+   "feed": "Krebs on Security",
+   "region": "Global",
+   "published": "2026-11-11T18:06:01Z",
+   "summary": "The cybercrime group Qilin has emerged as the world's most active ransomware affiliate program, claiming at least 365 victim organizations in the past three months alone. But even top Russian hackers make operational security mistakes, and the administrator of Qilin has made a few key missteps…",
+   "score": 5,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
+  },
+  {
+   "id": "e564f8c52313",
+   "title": "Lessons from 59 Linux Kernel Bug Reports",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/11/lessons-from-59-linux-kernel-bug-reports/",
+   "source": "Microsoft Security Blog",
+   "feed": "Microsoft Security Blog",
+   "region": "Global",
+   "published": "2026-11-11T16:55:00Z",
+   "summary": "Microsoft FORGE Lab researchers used codename MDASH to investigate Linux kernel vulnerabilities, resulting in 59 upstream bug reports, 33 assigned CVEs, and 38 merged fixes. The research includes eight demonstrated local root privilege-escalation exploits and examines the challenges of turning…",
+   "score": 1,
+   "tags": [],
+   "why": []
   },
   {
    "id": "f9a315b08895",
@@ -321,19 +527,6 @@
    "why": []
   },
   {
-   "id": "b80a24c89312",
-   "title": "eMudhra Revokes 8 More CAs It Previously Declared Unaffected by Key Compromise",
-   "link": "https://thehackernews.com/2026/11/emudhra-revokes-8-more-cas-it.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-11T12:00:53Z",
-   "summary": "The in-house Python script behind eMudhra's October key compromise has now cost the company 8 more of its intermediate certificate authorities (CAs), even though it did not weaken their keys. Each intermediate CA has its own private key, which the company uses to sign the certificates it issues.…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
    "id": "21b7ddf6e1b0",
    "title": "Bay Raises $50 Million to Control What Enterprise AI Agents Can Do",
    "link": "https://www.securityweek.com/bay-raises-50-million-to-control-what-enterprise-ai-agents-can-do/",
@@ -427,6 +620,12 @@
    "why": [
     "Microsoft 365",
     "Vulnerability"
+   ],
+   "also": [
+    {
+     "source": "Dark Reading",
+     "url": "https://www.darkreading.com/application-security/microsoft-rce-bug-windows-paint-confusion"
+    }
    ]
   },
   {
@@ -511,6 +710,23 @@
    "epss": 0.0039
   },
   {
+   "id": "1f64e51f33da",
+   "title": "PH privacy body verifying reported data leaks in gov't agencies",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNOUZ2dC0wWGZPUTlxRzZveWN6S2UyOERQTGpIQkJXeThMbmdPYmo1NURPWWl0OUw1Rm8walFMUlllWlRNY3FqcldsRnRtd0NxaHpfWVhzQl9ScjR3dmFpckNBaHNVZWJNb2RpZThpUFh1c0xsbl84NDdiOTNYV0txRXp2a0c0VVIzRzlEaDQ2YnZQMWY5MDQtOQ?oc=5",
+   "source": "Philippine News Agency",
+   "feed": "OAIC / Privacy news",
+   "region": "Global",
+   "published": "2026-11-11T04:50:50Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
    "id": "3dbba83e1a7e",
    "title": "Rubrik expands AWS cyber recovery tools for cloud apps",
    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNVVdWUFA2MFZMRDRUSF8wYmlidWRCUW14ckIxS2ZqbThsaEg4cHJZdFZiYkJhT0JDT3pWUXF0NWotbTFRLUVyQTB5UTlRclpROEkxNGFvR2tBNVdVVGMyUGNPRTVqSUt4SHd3UDgzU2tIdVRVR3EzNGdmX1ExbmtKMFZmVnRDQ0RUYVQw?oc=5",
@@ -539,6 +755,37 @@
    "score": 1,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "5a2a3d784c74",
+   "title": "North Canton police warn of rental scam using fake listings on legitimate real estate sites",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQbWRob2F4SkhKMm96cHpUdEVnVC1CWGtrTWFKN1dUMzdQYXNtNE1PUXBuSEFyZUlMTWxrenBaUzNmR2ZwUlhSalZnNFlZNXpLYXFjVDdmcmM3Mm5EOFE2RHMxMGFYcno3LVZhV0Q1OERsY2o4ZHVSQ3l0bS02bUwtRzlGbTVWNnl4MnltQVJCaWdFcjktcklrRU9HUHN3MktTdk1pV1lQVHdNeUszTGhybk0wWnkxamltdGpubmR3SEprcVU?oc=5",
+   "source": "Cleveland 19 News",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-11T00:05:13Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ],
+   "also": [
+    {
+     "source": "CTV News",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVDczbWNJMFdWYWpOdEREM0IzeEdac2p6ZkZ1eGY3dVQ1czBmZ21hYTB0TlEtMFB6YlNtbF9MSDI4NUkwZzM3clA1M1JPVmkzZ3piRTZwUWFuMjk3MVBqdWlKbmhCSFZmcy02Z1VHY1FvSlY0MGxuMnZlVmpsUUM2a05ETGNiSThkR3M2cGtHWkcyVzdyUVdXX3JWNUx6NEVHalVv?oc=5"
+    },
+    {
+     "source": "Barrie News",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPLTNWUkdyUk5DMzFWWnZiRVdFTUlXMjNHVlpLdFp5M1VRc2xFMDF2b3h1YjNzSDE2eVB2RWdFc25NTjlXZW5McWVTRUNSbE4yWk5raGtOZ3dQcUJ6MXcwQkxnRHk2Wk84eGJqdEE2QTJrVEhjSV9lRDZDVy1TU2hudGRTYklGSERsMGo4X3pvRkE1cG8xaV91c1ZGMy1pUTAycUo2YWVuSnBSdlFlRnc?oc=5"
+    },
+    {
+     "source": "MidlandToday.ca",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOSnc3S1p4WVBhaElUd1JhRFMteTctOU8zNGNXWG9YcjFid3IzblU1ZkZDU193RmFJVGlmZHVrTTdINmMzdlpOMFZsN1NLYVhuLVJ1V01wbTc3N3kxVXJKcEdFaHJZQzhmcnRMWGRYOWNZR29mT3VmclZGb3pKbmF0OTI2WHEtZ2NkZzFqd0hpZFF6X2lSUW4wZS1HVW5sSkg3TWsweWtQS1J2NFBmdnc?oc=5"
+    }
+   ]
   },
   {
    "id": "f91527c7bf88",
@@ -816,23 +1063,6 @@
    ]
   },
   {
-   "id": "6da26adf46a9",
-   "title": "Microsoft Patch Tuesday November 2027 , (Tue, Nov 10th)",
-   "link": "https://isc.sans.edu/diary/rss/33508",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-11-10T19:09:32Z",
-   "summary": "Microsoft continues its AI-induced patch surge, addressing 1,260 different vulnerabilities this month. 68 of these vulnerabilities are considered critical. 167 of the vulnerabilities are Chromium issues affecting Microsoft Edge.",
-   "score": 3,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
    "id": "50eb1dccf495",
    "title": "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day",
    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws-outlook-zero-day/",
@@ -1045,23 +1275,6 @@
    ]
   },
   {
-   "id": "7646e96e2e7b",
-   "title": "Fireworks AI Confirms Wider Breach Affecting Customer Datasets, Model Weights and Notion AI Chats",
-   "link": "https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-10T15:33:59Z",
-   "summary": "Fireworks AI disclosed on Monday that its investigation into a security incident first reported early last month uncovered further malicious activity, affecting account and billing information, alongside secrets, datasets, and incomplete models for a \"limited set of accounts.\" In a notice…",
-   "score": 4,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
    "id": "74f31cae8a39",
    "title": "Ransomware recovery is now a client retention metric",
    "link": "https://www.bleepingcomputer.com/news/security/ransomware-recovery-is-now-a-client-retention-metric/",
@@ -1129,25 +1342,6 @@
    ],
    "why": [
     "Data breach"
-   ]
-  },
-  {
-   "id": "e7a8a4d2bbbe",
-   "title": "Over a Dozen Organizations Hit in Qubole Supply Chain Attack",
-   "link": "https://www.securityweek.com/over-a-dozen-organizations-hit-in-qubole-supply-chain-attack/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-10T13:27:44Z",
-   "summary": "Hackers used compromised Qubole IAM credentials to steal customer files, secrets, keys, environment variables, and credentials. The post Over a Dozen Organizations Hit in Qubole Supply Chain Attack appeared first on SecurityWeek .",
-   "score": 5,
-   "tags": [
-    "Identity",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Identity",
-    "SaaS / cloud"
    ]
   },
   {
@@ -1308,6 +1502,10 @@
     {
      "source": "BleepingComputer",
      "url": "https://www.bleepingcomputer.com/news/security/n-able-takes-cloud-platform-offline-after-30-plus-zero-days-published/"
+    },
+    {
+     "source": "Dark Reading",
+     "url": "https://www.darkreading.com/endpoint-security/n-able-n-central-offline-33-flaws"
     }
    ]
   },
@@ -1713,33 +1911,6 @@
    ]
   },
   {
-   "id": "f3685ddf97c0",
-   "title": "Rental scam shows fake listings to real homes in Simcoe County",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVDczbWNJMFdWYWpOdEREM0IzeEdac2p6ZkZ1eGY3dVQ1czBmZ21hYTB0TlEtMFB6YlNtbF9MSDI4NUkwZzM3clA1M1JPVmkzZ3piRTZwUWFuMjk3MVBqdWlKbmhCSFZmcy02Z1VHY1FvSlY0MGxuMnZlVmpsUUM2a05ETGNiSThkR3M2cGtHWkcyVzdyUVdXX3JWNUx6NEVHalVv?oc=5",
-   "source": "CTV News",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-09T22:36:47Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ],
-   "also": [
-    {
-     "source": "Barrie News",
-     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPLTNWUkdyUk5DMzFWWnZiRVdFTUlXMjNHVlpLdFp5M1VRc2xFMDF2b3h1YjNzSDE2eVB2RWdFc25NTjlXZW5McWVTRUNSbE4yWk5raGtOZ3dQcUJ6MXcwQkxnRHk2Wk84eGJqdEE2QTJrVEhjSV9lRDZDVy1TU2hudGRTYklGSERsMGo4X3pvRkE1cG8xaV91c1ZGMy1pUTAycUo2YWVuSnBSdlFlRnc?oc=5"
-    },
-    {
-     "source": "MidlandToday.ca",
-     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOSnc3S1p4WVBhaElUd1JhRFMteTctOU8zNGNXWG9YcjFid3IzblU1ZkZDU193RmFJVGlmZHVrTTdINmMzdlpOMFZsN1NLYVhuLVJ1V01wbTc3N3kxVXJKcEdFaHJZQzhmcnRMWGRYOWNZR29mT3VmclZGb3pKbmF0OTI2WHEtZ2NkZzFqd0hpZFF6X2lSUW4wZS1HVW5sSkg3TWsweWtQS1J2NFBmdnc?oc=5"
-    }
-   ]
-  },
-  {
    "id": "fb65eccd7583",
    "title": "SEGA newsletter data breach exposes 2.2 million email addresses",
    "link": "https://www.bleepingcomputer.com/news/security/sega-newsletter-data-breach-exposes-22-million-email-addresses/",
@@ -1786,23 +1957,6 @@
    ],
    "why": [
     "Data breach"
-   ]
-  },
-  {
-   "id": "eae4ff98ab3e",
-   "title": "Microsoft Fixes RCE Bug in Windows Paint After Weeks of Confusion",
-   "link": "https://www.darkreading.com/application-security/microsoft-rce-bug-windows-paint-confusion",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-11-09T21:12:24Z",
-   "summary": "Last month, Microsoft disclosed a vulnerability in Microsoft Paint, but messaging regarding a patch was unclear.",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
    ]
   },
   {
@@ -6898,156 +7052,6 @@
    ],
    "why": [
     "Vulnerability"
-   ]
-  },
-  {
-   "id": "6473fc7702e5",
-   "title": "WordPress RCE Flaw Draws Nearly 63,000 Attack Attempts in Just 24 Hours",
-   "link": "https://thehackernews.com/2026/10/wordpress-rce-flaw-draws-nearly-63000.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-10-30T14:08:14Z",
-   "summary": "Threat actors have been observed attempting to exploit a high-severity security flaw in WordPress Core shortly after patches were released. The vulnerability, which does not have a CVE identifier, relates to a case of remote code execution impacting WordPress Core versions 4.7 through 7.1.3. It…",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "27c3e9ac8130",
-   "title": "SS7 and Diameter Attacks: How Signaling Flaws Expose Your Phone",
-   "link": "https://www.bleepingcomputer.com/news/security/ss7-and-diameter-attacks-how-signaling-flaws-expose-your-phone/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-30T14:00:10Z",
-   "summary": "Flaws in SS7 and Diameter signaling protocols can allow attackers to track phone locations, intercept calls and SMS verification codes, and impersonate subscribers without compromising their devices. Cape explains how these attacks exploit trust between networks and how its security-focused mobile…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "8258efe8a7ee",
-   "title": "Passkeys Are Better Than Passwords. But They Are Not Enough.",
-   "link": "https://www.securityweek.com/passkeys-are-better-than-passwords-but-they-are-not-enough/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-30T14:00:00Z",
-   "summary": "As organizations eliminate passwords, attackers will adapt. Instead of attacking the authenticator directly, they will look for opportunities around it. The post Passkeys Are Better Than Passwords. But They Are Not Enough. appeared first on SecurityWeek .",
-   "score": 3,
-   "tags": [
-    "Identity"
-   ],
-   "why": [
-    "Identity"
-   ]
-  },
-  {
-   "id": "4119054fab74",
-   "title": "Bulletproof Host Virtualine Loses Its Domain to FBI Seizure",
-   "link": "https://www.securityweek.com/bulletproof-host-virtualine-loses-its-domain-to-fbi-seizure/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-30T13:36:12Z",
-   "summary": "It allowed customers to host hack-for-hire services, supported ransomware and infostealer operators, and accepted crypto payments. The post Bulletproof Host Virtualine Loses Its Domain to FBI Seizure appeared first on SecurityWeek .",
-   "score": 5,
-   "tags": [
-    "Ransomware",
-    "Identity"
-   ],
-   "why": [
-    "Ransomware",
-    "Identity"
-   ],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/fbi-seizes-virtualine-domain-over.html"
-    }
-   ]
-  },
-  {
-   "id": "09382f93624b",
-   "title": "CISA says max severity GitLab flaw now exploited in the wild",
-   "link": "https://www.bleepingcomputer.com/news/security/hackers-now-exploiting-max-severity-gitlab-flaw-in-attacks/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-10-30T13:00:32Z",
-   "summary": "Attackers have started exploiting a maximum-severity GitLab vulnerability patched earlier this month, according to the US Cybersecurity and Infrastructure Security Agency (CISA). [...]",
-   "score": 6,
-   "tags": [
-    "Actively exploited",
-    "Vulnerability"
-   ],
-   "why": [
-    "Actively exploited",
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "61a31fe435ea",
-   "title": "Yakult Honsha data leaked in website attack",
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQR0hJNEhlc2hLaU9XRkFfRXZGY2xoYjVBVHZjSkh6Ym9XaWl4SGZpbWl3NjYyWWFlZ2JINE1ZZjVWVWU2YU1UaHQ3VF9yR1lSaXBNNl9zNllheDZaakhHclpVazlxakdWcEZYRmFWVHlyRzFrVjlLTnR2Slk2bVl6WWZ6eUdqYXBleklCU0YwVktfaVphNkxrSHpR?oc=5",
-   "source": "Yahoo Finance",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-10-30T12:23:32Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "3556a8b02424",
-   "title": "Fresh WordPress Vulnerability in Attackers’ Crosshairs",
-   "link": "https://www.securityweek.com/fresh-wordpress-vulnerability-in-attackers-crosshairs/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-10-30T12:04:13Z",
-   "summary": "Threat actors are attempting to exploit a high-severity unauthenticated race condition leading to remote code execution. The post Fresh WordPress Vulnerability in Attackers’ Crosshairs appeared first on SecurityWeek .",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "261896c22277",
-   "title": "Polymarket Hack Drains $2.7M From 700 Users as Third-Party Breach Forces Trading Halt",
-   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOTk81ZnJLVzBGN0dnVV9YTTU4OVRNcTJ1QV9EVXI0c1F3TWdPNnNCOVhQalJvWV84aFIyU0czcnR1dVhFN24waE1ZR3F1TkRXSFh3bHRMdDduVDBfc3NhVGdOTm0xVWZ3Qi1iOEd1dmlHY29MR2JWWFdIWHNMOUVvMXBFOURXN3g2WlB2VUhTMWFvRmUzZlhn?oc=5",
-   "source": "Yahoo Finance",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-10-30T12:02:15Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Data breach",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Data breach",
-    "SaaS / cloud"
-   ],
-   "also": [
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/polymarket-halts-trading-after-crypto-draining-script-breach-25m-traced/"
-    }
    ]
   }
  ]
