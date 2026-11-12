@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-12T19:56:40Z",
+ "generated": "2026-11-12T23:43:59Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,19 +28,19 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 6,
+   "count": 7,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 9,
+   "count": 8,
    "error": null
   },
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 4,
+   "count": 3,
    "error": null
   },
   {
@@ -100,11 +100,91 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 31,
+   "count": 30,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "55b74c42c28f",
+   "title": "Global Microsoft Outage Disrupts Outlook, Teams and Cloud Services as Company Works to Restore Servers",
+   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNWnJ4Mk9DaXhNLUJUZ2M0c2JVR2c5VGJONjhneUItdTljMjAwR1dkaUQ0aUlqNExxOGhuemhQZUJoeGtNMW1hUVhBOFkzYWtGZW0yU2U4QUktMlRwRGxzakpEUGpCRnFTeHVkZE1RellFdVBqcmxfQkxhdV90Y2tKYVkzMTlVdm50TUM3bXNUa0hNTW1ZRjJzNENrcmQyLUtjQnhHOUp1VTVXSUNrdHlPWDdLSFduNUpVejNERE1pbWpiXzFFZUtzN2JtQ3pwSjlCUGRLQ3Jpeks2bG9yVU1KRW8yNA?oc=5",
+   "source": "Australian Cyber Security Magazine",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-12T22:44:55Z",
+   "summary": "",
+   "score": 9,
+   "tags": [
+    "Microsoft 365",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Microsoft 365",
+    "SaaS / cloud"
+   ],
+   "also": [
+    {
+     "source": "iTnews",
+     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNVVNUcWRjeTdJbVVIWThoZ2VmY1E3Y0pubVVLLTVVem80S2Q5NzB3VnVKdjEwZDlIV1pId0Z0ZUhOMGNfeFpVaW9ydVVOb00xQ2dZZVpYV1UtT3JaRVhEV1lubEQ5ME1Md0J6eS1UWHVGM29waTNLaklZN1lFbWtJZjNTNzlmZkVfMWMtTjRR?oc=5"
+    },
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/microsoft-365-outage-disrupts-outlook-exchange-online-and-teams/"
+    },
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/microsoft/massive-microsoft-365-outage-disrupts-outlook-teams-copilot-worldwide/"
+    }
+   ]
+  },
+  {
+   "id": "674c4b85088a",
+   "title": "Hackers compromise 4,800 GitHub accounts to steal cloud credentials",
+   "link": "https://www.bleepingcomputer.com/news/security/hackers-compromise-4-800-github-accounts-to-steal-cloud-credentials/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-12T22:25:30Z",
+   "summary": "A new campaign dubbed 'wfx-loot' has unfolded on GitHub where threat actors used 4,837 compromised accounts to probe 61,764 repositories, open pull requests, and push secrets-stealing malware. [...]",
+   "score": 3,
+   "tags": [
+    "Identity"
+   ],
+   "why": [
+    "Identity"
+   ]
+  },
+  {
+   "id": "39360acccba0",
+   "title": "Cyber Experts Weigh In: How to Fight Artex & AntiFox",
+   "link": "https://www.darkreading.com/cybersecurity-operations/cyber-experts-fight-artex-antifox",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-12T21:18:52Z",
+   "summary": "Cybercriminals using agentic pen-testing tools is a proverbial genie out of the bottle at this point, so enterprises need to get a defense plan in place right away.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "43b2bb31ce77",
+   "title": "Extortion Group Luna Moth Flits Into Law Firms a Second Time",
+   "link": "https://www.darkreading.com/data-privacy/extortion-luna-moth-law-firms-second-time",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-12T20:09:41Z",
+   "summary": "The cybercriminals are retargeting law firms that refused to pay its first ransom, with a social engineering con aimed at stealing Microsoft access tokens.",
+   "score": 4,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
+  },
   {
    "id": "5e7c3d53ea73",
    "title": "New N-able \"4EverAble2Shell\" zero-day exploited hours after PoC released",
@@ -122,23 +202,6 @@
    "why": [
     "Actively exploited",
     "Vulnerability"
-   ]
-  },
-  {
-   "id": "11e9d453b397",
-   "title": "Microsoft users caught up in global M365 outage",
-   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNVVNUcWRjeTdJbVVIWThoZ2VmY1E3Y0pubVVLLTVVem80S2Q5NzB3VnVKdjEwZDlIV1pId0Z0ZUhOMGNfeFpVaW9ydVVOb00xQ2dZZVpYV1UtT3JaRVhEV1lubEQ5ME1Md0J6eS1UWHVGM29waTNLaklZN1lFbWtJZjNTNzlmZkVfMWMtTjRR?oc=5",
-   "source": "iTnews",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-11-12T19:28:00Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Microsoft 365"
-   ],
-   "why": [
-    "Microsoft 365"
    ]
   },
   {
@@ -436,6 +499,12 @@
    ],
    "why": [
     "Vulnerability"
+   ],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/new-worm-like-sckit-malware-targets-msps-in-screenconnect-attacks/"
+    }
    ]
   },
   {
@@ -937,6 +1006,19 @@
      "url": "https://thehackernews.com/2026/11/screenconnect-attacks-target-at-least.html"
     }
    ]
+  },
+  {
+   "id": "b8f3cb130e06",
+   "title": "AIを活用したサイバー攻撃の増加を受け、日本がサイバーセキュリティへの緊急資金拠出を推進",
+   "link": "https://www.darkreading.com/cybersecurity-operations/japan-emergency-funding-cybersecurity-ai-assisted-breaches-japanese",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-11T22:14:44Z",
+   "summary": "この対策パッケージには、官民合同のサイバー対応チーム、経済省が主導するAI専門チーム、および政府の新たな能動的サイバー防衛権限の行使に関する裁量の拡大が含まれている。",
+   "score": 0,
+   "tags": [],
+   "why": []
   },
   {
    "id": "5a2a3d784c74",
@@ -7059,76 +7141,6 @@
    "score": 1,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "758c901c3f8b",
-   "title": "AI agents don’t need bad intent to breach your systems",
-   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOdF92TzBRUWZtb2VCd0pzNHJOTldsRENsc2dwejU3Y3RUZFVSXzBHeThjWHFrR3pQSTRnR2FGTG9QWTVMd1F2UURvUUZoaHdQVXBYMmxfdkJJYkhUcVRIZmFKTTdSNXBya1R2VmR0UEs4V04xbGJlaUlha01xRXVIS1dzTllGcEFOQUFmcUoyX05BMGozaUQtag?oc=5",
-   "source": "Cybersecurity Insiders",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-11-01T22:10:45Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "0b45cf28b86a",
-   "title": "Korea Real Estate Convergence Society to Hold Korea-China International Academic Seminar at KINTEX on Nov. 4",
-   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBoUXlxTUktNFUzbUFKdjJLZ28wejJxRENjVnRBV3lmR1RxM1B3R2Nac0RJQm5EX3E3MUxVeDFNTHE3bHQ1OWZ6aXlTQzFsUUJxUjBHRmJDWGhueVZDaE9NbENESVU?oc=5",
-   "source": "아시아경제",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-01T21:20:00Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ]
-  },
-  {
-   "id": "7f9f6a0c6108",
-   "title": "Australia news live: Qantas seeks answers on data breach, storm prompts asthma warning, property values fall further",
-   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFA4WnZCUGNOOFdYN1dVOW1HQXIwRHhuZWtoeUp6U05SY3JpbGZGUEZOX3hxcHpLSTJQd24zdEl4U3IxalAzalhaVWUxTnNMY3Frdm5Z?oc=5",
-   "source": "شبكة تواصل الإخبارية",
-   "feed": "AU breach news",
-   "region": "AU",
-   "published": "2026-11-01T19:36:58Z",
-   "summary": "",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "Data breach"
-   ],
-   "why": [
-    "Australia",
-    "Data breach"
-   ]
-  },
-  {
-   "id": "b7d5e53da907",
-   "title": "The Russian Frontline Scam: How Nairobi Agencies Lure Victims into Military Contracts",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPMzlfTFp3a0hUOEVGU2kzSGNRUmxnYWZDN1FkTW9haTNxMGhrMW4zblA3dlp4TzBRYnNSektDWERhZFI5NkdXajg2MHBRcGJyZ0E1b2JudDhQSTVJaXVKYTB5R3hIYUlqWTdsbTJrdWhvM1hYX2I1WGtSYXBUVmd2UUVHR1lfWUNweWZuWjJJM1Q5T1U2REpKSW9oR1ZLZDlJNzkzcTFGVmlvMjlyU0dtemtrTQ?oc=5",
-   "source": "Mwakilishi.com",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-01T15:16:00Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Phishing"
-   ],
-   "why": [
-    "Phishing"
-   ]
   }
  ]
 }
