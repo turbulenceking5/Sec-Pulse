@@ -1,15 +1,29 @@
 {
- "date": "2026-11-12",
- "generated": "2026-11-12T00:54:29+00:00",
- "title": "Sec-Pulse brief - Thu 12 Nov",
+ "date": "2026-11-13",
+ "generated": "2026-11-12T23:44:09+00:00",
+ "title": "Sec-Pulse brief - Fri 13 Nov",
  "items": [
   {
-   "id": "878d82803a6e",
-   "title": "Westchester investor charged over $5.7M real estate scam",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPQkItdzc2emdfdi1hS092aVliUnUtcUFZZ1dPWmtGVGxWalVMQ1owVUwwLUJ3aVJTbXhSLXJmSHFBUmw2R0pmYUJyajRFVnd1ZDVSRHE1ZTlyZlNmU3JTNU5ULVgyUkp5VVl6Z2hLdFZ4X1BXdzc0X0dOUkhhUmNHcUF0WXBjaXZfSURMT0c1VlZWYmZlbk9fUFNkencwdm5EX19sYWZhQ0xVbDhhdjlmYXV3SQ?oc=5",
-   "source": "The Real Deal",
+   "id": "eae8c383bc42",
+   "title": "Australia cyber attacks rise 39% as ransomware grows",
+   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNWHRidkhlTEhDYm8xUkgxUFpmODVlSno4Wm84TFdxY21hZzYyamRhSThlckNhcGdmSnRGN1ZXVVRBUWg4MlA1dVBQN0VuM2h6TmQ3OURZMGxXTWtkVm5WS0VLV3RINFhVaXZPMUdHMkdBZXpBdWoxTzlBekluR1hYUmxwTWxtSDg?oc=5",
+   "source": "IT Brief Australia",
+   "region": "AU",
+   "published": "2026-11-12T01:28:45Z",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Ransomware"
+   ],
+   "summary": ""
+  },
+  {
+   "id": "18a4c5a20ed8",
+   "title": "New York Man Accused Of Defrauding Investors Of Over $5 Million In Real Estate Scam",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOaXNrMUxIM1ROQjBiTXItRWxIaEJVUGYwYmxfV3NPQjNvNHFUampXa2x6QmdYelh4RFc0WHFfeklMS09VU2dXYkpjSkJpNGtFeF9ScEVndXNEVm81ZDAwUDFIUFFnajFyQTlIeDdnaHFPRHFhd3k3eW14V1VOT0E3WFd2SThiNHFLLVlsVTRwQUV6YnJSaVI0cjhTdVJ1cm5VaEJfRVU4S3BHYWY4T0ZKU2l1b056TExkQUxYZGFnOHc4UQ?oc=5",
+   "source": "News Mobile",
    "region": "Global",
-   "published": "2026-11-11T20:30:00Z",
+   "published": "2026-11-12T11:23:48Z",
    "score": 10,
    "tags": [
     "Real estate"
@@ -17,50 +31,31 @@
    "summary": ""
   },
   {
-   "id": "008f66d06450",
-   "title": "Exploited Outlook Zero-Day Among 1,094 Flaws Patched by Microsoft",
-   "link": "https://www.securityweek.com/exploited-outlook-zero-day-among-1094-flaws-patched-by-microsoft/",
-   "source": "SecurityWeek",
+   "id": "55b74c42c28f",
+   "title": "Global Microsoft Outage Disrupts Outlook, Teams and Cloud Services as Company Works to Restore Servers",
+   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNWnJ4Mk9DaXhNLUJUZ2M0c2JVR2c5VGJONjhneUItdTljMjAwR1dkaUQ0aUlqNExxOGhuemhQZUJoeGtNMW1hUVhBOFkzYWtGZW0yU2U4QUktMlRwRGxzakpEUGpCRnFTeHVkZE1RellFdVBqcmxfQkxhdV90Y2tKYVkzMTlVdm50TUM3bXNUa0hNTW1ZRjJzNENrcmQyLUtjQnhHOUp1VTVXSUNrdHlPWDdLSFduNUpVejNERE1pbWpiXzFFZUtzN2JtQ3pwSjlCUGRLQ3Jpeks2bG9yVU1KRW8yNA?oc=5",
+   "source": "Australian Cyber Security Magazine",
    "region": "Global",
-   "published": "2026-11-10T19:19:46Z",
-   "score": 11,
+   "published": "2026-11-12T22:44:55Z",
+   "score": 9,
    "tags": [
-    "Actively exploited",
     "Microsoft 365",
-    "Vulnerability"
+    "SaaS / cloud"
    ],
-   "summary": "CVE-2026-124194 is the Outlook zero-day for which Microsoft says it’s aware of active exploitation. The post Exploited Outlook Zero-Day Among 1,094 Flaws Patched by Microsoft appeared first on SecurityWeek ."
+   "summary": ""
   },
   {
-   "id": "50eb1dccf495",
-   "title": "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws-outlook-zero-day/",
-   "source": "BleepingComputer",
+   "id": "b7c7c5708e23",
+   "title": "Telangana High Court Issues Notice to Spectra Group Over Alleged 5,000 Crore Real Estate Scam",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQMFY0QkxCSFpvSmNiaTZKaXN4RlctWHZIOFNEWXJZbXJhc2pORGJOSEN3am1EM1hSM2ZhaEp1elo3NEVyY1d1b0l3YXoxMk9fUnl5VVBvaEw5VHp4bU9qZUkyeGN1THk2cEJDWjlrb1RUSE9XMWhRcXdWWHp5QWVZQ1N6LWo4UkgzVUxWdWFoekw5WGZMOWY3QnRsZkM1d096cTVvMjk2Szl1dm5NdURoTA?oc=5",
+   "source": "The 420.in",
    "region": "Global",
-   "published": "2026-11-10T19:07:36Z",
-   "score": 11,
-   "tags": [
-    "Actively exploited",
-    "Microsoft 365",
-    "Vulnerability"
-   ],
-   "summary": "Today is Microsoft's November 2026 Patch Tuesday, with security updates addressing a record-breaking 1,235 flaws, including one actively exploited Microsoft Outlook zero-day vulnerability. [...]"
-  },
-  {
-   "id": "cd6455aacef5",
-   "title": "Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches",
-   "link": "https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html",
-   "source": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-11T06:04:02Z",
+   "published": "2026-11-12T01:41:31Z",
    "score": 10,
    "tags": [
-    "Actively exploited",
-    "Edge devices",
-    "Vulnerability"
+    "Real estate"
    ],
-   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) Tuesday added two security flaws impacting Cisco BroadWorks and Openwave Messaging Webtop Media Transcoder to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. Details of the vulnerabilities…",
-   "epss": 0.0039
+   "summary": ""
   },
   {
    "id": "5a2a3d784c74",
@@ -68,7 +63,7 @@
    "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQbWRob2F4SkhKMm96cHpUdEVnVC1CWGtrTWFKN1dUMzdQYXNtNE1PUXBuSEFyZUlMTWxrenBaUzNmR2ZwUlhSalZnNFlZNXpLYXFjVDdmcmM3Mm5EOFE2RHMxMGFYcno3LVZhV0Q1OERsY2o4ZHVSQ3l0bS02bUwtRzlGbTVWNnl4MnltQVJCaWdFcjktcklrRU9HUHN3MktTdk1pV1lQVHdNeUszTGhybk0wWnkxamltdGpubmR3SEprcVU?oc=5",
    "source": "Cleveland 19 News",
    "region": "Global",
-   "published": "2026-11-11T00:05:13Z",
+   "published": "2026-11-11T21:58:27Z",
    "score": 10,
    "tags": [
     "Real estate"
@@ -77,12 +72,12 @@
   }
  ],
  "stats": {
-  "recent": 55,
-  "au": 1,
+  "recent": 61,
+  "au": 2,
   "kev": 0
  },
  "lesson": {
-  "id": "4.3",
-  "title": "Security metrics and KPIs"
+  "id": "4.4",
+  "title": "Stakeholder communication and escalation"
  }
 }
