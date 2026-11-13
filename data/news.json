@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-13T01:50:41Z",
+ "generated": "2026-11-13T11:02:07Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -34,13 +34,13 @@
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 6,
+   "count": 4,
    "error": null
   },
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 3,
+   "count": 2,
    "error": null
   },
   {
@@ -75,9 +75,9 @@
   },
   {
    "name": "SANS ISC",
-   "ok": true,
-   "count": 10,
-   "error": null
+   "ok": false,
+   "count": 0,
+   "error": "ParseError: syntax error: line 1, column 0"
   },
   {
    "name": "Microsoft Security Blog",
@@ -106,6 +106,207 @@
  ],
  "items": [
   {
+   "id": "e4df5d0ce341",
+   "title": "Law Enforcement Disrupts Gootloader, CastleRAT, and StealC Infrastructure",
+   "link": "https://www.securityweek.com/law-enforcement-disrupts-gootloader-castlerat-and-stealc-infrastructure/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-13T10:48:40Z",
+   "summary": "Investigators seized 235 servers and 257 domains, along with 6.4 million victim credentials as part of Operation Endgame. The post Law Enforcement Disrupts Gootloader, CastleRAT, and StealC Infrastructure appeared first on SecurityWeek .",
+   "score": 2,
+   "tags": [
+    "Identity"
+   ],
+   "why": [
+    "Identity"
+   ],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/police-dismantles-gootloader-castlerat-stealc-malware-infrastructure/"
+    }
+   ]
+  },
+  {
+   "id": "e49e186a5eab",
+   "title": "Check Point warns of zero-day flaw exploited for root access",
+   "link": "https://www.bleepingcomputer.com/news/security/check-point-patches-zero-day-that-lets-hackers-get-root-access/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-13T10:44:22Z",
+   "summary": "Check Point Software has released emergency hotfixes to address a high-severity flaw that hackers have been exploiting to gain root privileges and establish persistence on vulnerable devices since late October. [...]",
+   "score": 5,
+   "tags": [
+    "Actively exploited"
+   ],
+   "why": [
+    "Actively exploited"
+   ],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html"
+    },
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/php2shell-exploited-in-destructive-check-point-gateway-attacks/"
+    }
+   ]
+  },
+  {
+   "id": "d20b2da13e92",
+   "title": "Citrix Patches 10 Critical NetScaler Vulnerabilities",
+   "link": "https://www.securityweek.com/citrix-patches-10-critical-netscaler-vulnerabilities/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-13T09:36:56Z",
+   "summary": "Successful exploitation could lead to unexpected behavior or denial-of-service (DoS) conditions. The post Citrix Patches 10 Critical NetScaler Vulnerabilities appeared first on SecurityWeek .",
+   "score": 5,
+   "tags": [
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "why": [
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/citrix-patches-12-netscaler-and-secure.html"
+    }
+   ]
+  },
+  {
+   "id": "8762a201a24f",
+   "title": "Microsoft confirms Windows activation failures after November updates",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-windows-activation-failures-after-november-updates/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-13T09:36:18Z",
+   "summary": "Microsoft has confirmed that this month's Patch Tuesday security updates are causing Windows activation and licensing failures with 0x80041008 error codes. [...]",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "e4b47e3b9b3e",
+   "title": "OpenAI Unveils Daybreak Red Team, Defense Factory Security Tools",
+   "link": "https://www.securityweek.com/openai-unveils-daybreak-red-team-defense-factory-security-tools/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-13T09:21:01Z",
+   "summary": "Daybreak Red Team pentests web applications with AI agents, while Defense Factory investigates security findings and prepares patches. The post OpenAI Unveils Daybreak Red Team, Defense Factory Security Tools appeared first on SecurityWeek .",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "0b5efb819342",
+   "title": "Nightmare Eclipse Drops Windows Zero-Day Exploit ‘SignDrop’",
+   "link": "https://www.securityweek.com/nightmare-eclipse-drops-windows-zero-day-exploit-signdrop/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-13T08:50:36Z",
+   "summary": "It abuses CLFS and Windows Defender to trigger arbitrary file creation in the context of the antimalware process. The post Nightmare Eclipse Drops Windows Zero-Day Exploit ‘SignDrop’ appeared first on SecurityWeek .",
+   "score": 8,
+   "tags": [
+    "Actively exploited",
+    "Microsoft 365"
+   ],
+   "why": [
+    "Actively exploited",
+    "Microsoft 365"
+   ]
+  },
+  {
+   "id": "3ff055feac94",
+   "title": "Police arrest 354 suspects in dark web cybercrime crackdown",
+   "link": "https://www.bleepingcomputer.com/news/security/police-arrest-354-vendors-buyers-in-global-cybercrime-crackdown/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-13T08:34:20Z",
+   "summary": "Authorities arrested 354 suspects in a joint international operation targeting vendors and buyers on the Archetyp, Nemesis, Tor2Door, Bohemia, and Kingdom dark web marketplaces. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "76cf8ad9a547",
+   "title": "\"A 1,400-pyeong plot of land turns out to have 178 owners\"… Im Ye-jin fell victim to a planned real estate scam [Star Issue]",
+   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5fSFp4c2hTaU1mSXBtRlMyMncyb05NVzBKY2lXZlo4TlNSRG5HRkIwRHl2dGNkZ0ZYN18xdlZ3dVJVMDlKc0lHXzBMdkFZNjh5M3VDWktCVHFZOHlRa1BlVDFpR2JpTnNCZmotdzR6RmRTX2p2Q3hz?oc=5",
+   "source": "스타뉴스",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-13T07:40:25Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
+   "id": "9e0cc84d062d",
+   "title": "Hackers Exploit N-central Flaws to Infect 21 Servers, Including 19 Running Hotfix 2",
+   "link": "https://thehackernews.com/2026/11/hackers-exploit-n-central-flaws-to.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-13T05:43:28Z",
+   "summary": "N-able on Thursday said it's taking additional precautions in the wake of public disclosure of a new set of flaws tracked as 4EverAble2Shell and Agent2Shell. \"We are restricting certain N-central features and integrations,\" the company said in a Thursday update. \"These measures may affect some…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "8a4edd5bbc78",
+   "title": "A global Microsoft 365 outage has hit millions – what happened and when will it be fixed?",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORzFTSUdWUkpoWUk1Z2FULTd2ZmRRUmVINTBTZjNUVEdtT3BBNUxxck1ZcXFQenhma1F5RG5BZXIwVkItZWhaWGl2dHlzVWRTZkIza0Y3QWVyd1hlSUo0dUo0XzRzOTFiZnJYelhtakN2R1VJOU5oUzY2MHVGSko3MTF1ZXE2T0tRY1lCMWc5M1ZBeFpfZ0ZVbV8waldfVlByNlE?oc=5",
+   "source": "The Guardian",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-13T04:46:00Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Microsoft 365"
+   ],
+   "why": [
+    "Microsoft 365"
+   ]
+  },
+  {
+   "id": "589fccee67c2",
+   "title": "FBI Says US Seized $1.2 Billion Worth of Cryptocurrency Stolen From Binance",
+   "link": "https://www.securityweek.com/fbi-says-us-seized-1-2-billion-worth-of-cryptocurrency-stolen-from-binance/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-13T02:28:21Z",
+   "summary": "Also Thursday, the FBI blamed North Korea for a separate social engineering scheme that officials say resulted in the theft of $400 million worth of cryptocurrency. The post FBI Says US Seized $1.2 Billion Worth of Cryptocurrency Stolen From Binance appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
    "id": "26d7ff7cc2c0",
    "title": "Kakao Enterprise Says Email Bodies, Attachments Leaked in Breach",
    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPLXI5dzg1S1Y2S0cxemNqNGZiZElZeEZMOHJUQ1lBY2R1VWFqU3ZTcTktaUVWSkI3YTROTVVyLU5rZFZTMk11UnB1ZUh1SDNjaGRnLXl1RnpXZkk2WW1oMFRGOWFEQ0ZBN0ZwZnZQZ25xVGZBTUFXcFpidVlhdTg1U1FoLXlvUFlRREk3d0Z6VDMtLXVqTE5WOGNqbzFmcTY0?oc=5",
@@ -121,6 +322,19 @@
    "why": [
     "Data breach"
    ]
+  },
+  {
+   "id": "e9f16b1caffc",
+   "title": "Getting Past the Post-Quantum Cryptography Discovery Phase",
+   "link": "https://www.darkreading.com/cybersecurity-operations/getting-past-post-quantum-cryptography-discovery",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-12T22:46:05Z",
+   "summary": "Most organizations haven't sorted out their cryptographic estate enough to even know where they'd start with post-quantum cryptography (PQC).",
+   "score": 0,
+   "tags": [],
+   "why": []
   },
   {
    "id": "55b74c42c28f",
@@ -160,6 +374,10 @@
     {
      "source": "ABC News & Headlines – Australian Broadcasting Corporation",
      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE85YnlCLTZVeTRvd0R0c0JvQUJqTUlyT2xBanhqUkdTZEVfb2lhWlREUXRxMk1RemdyWmRsb1hoMzBsdDYxbWVYd2VqME9FRklZREJubmIwc0pfYmd4dlNQdm9fWkZHWDZBTWVWNGpTbVFsUnl1T21SeTJfWUtGQQ?oc=5"
+    },
+    {
+     "source": "Reuters",
+     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPQWpWeUZnbllhcFk4WktZS0s3T1N6T3k3Vnhhd3pfSE9SWF9iRmRIQUljdHZXN0UtWS1uZS1rbUNZSlVPd1NXLXRtVUVtc3NQNTgxMVFMWjVnT3pPb09EX1g1YUx3WkF2VHk0bUMwWlhkRHdpT0JFRE5SQ3pQRkdmSnpUOHNXLUo1dXNSY3lFdkpSdU5laDdwSlhWRDVnNjBFcUh2Y0FwMXNldE8tSFpPaw?oc=5"
     }
    ]
   },
@@ -244,6 +462,12 @@
    "why": [
     "Actively exploited",
     "Vulnerability"
+   ],
+   "also": [
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/hackers-exploit-new-n-central-zero-day-hours-after-poc-publication/"
+    }
    ]
   },
   {
@@ -373,25 +597,6 @@
    ]
   },
   {
-   "id": "c398aa3e9226",
-   "title": "Citrix Patches 12 NetScaler and Secure Access Client Flaws, Including Authentication Bypass",
-   "link": "https://thehackernews.com/2026/11/citrix-patches-12-netscaler-and-secure.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-12T15:38:49Z",
-   "summary": "Citrix has released patches for multiple critical security flaws impacting NetScaler ADC, Citrix NetScaler Gateway, and NetScaler Console that could lead to denial-of-service (DoS) or an authentication bypass. The critical vulnerabilities that impact NetScaler ADC and NetScaler Gateway are listed…",
-   "score": 5,
-   "tags": [
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "why": [
-    "Edge devices",
-    "Vulnerability"
-   ]
-  },
-  {
    "id": "16b72427cf58",
    "title": "Apache Patches Critical HTTP Server RCE Found by Anthropic, Google",
    "link": "https://www.securityweek.com/apache-patches-critical-http-server-rce-found-by-anthropic-google/",
@@ -431,19 +636,6 @@
    "why": [
     "Phishing"
    ]
-  },
-  {
-   "id": "62ff99ae778b",
-   "title": "Police dismantle Gootloader, CastleRAT, StealC malware infrastructure",
-   "link": "https://www.bleepingcomputer.com/news/security/police-dismantles-gootloader-castlerat-stealc-malware-infrastructure/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-12T15:07:20Z",
-   "summary": "Europol and law enforcement partners from nine countries have seized hundreds of servers and domains used by the Gootloader, CastleRAT, and StealC malware operations. [...]",
-   "score": 0,
-   "tags": [],
-   "why": []
   },
   {
    "id": "28ab9a11f837",
@@ -1663,7 +1855,7 @@
    "source": "Philippine News Agency",
    "feed": "OAIC / Privacy news",
    "region": "Global",
-   "published": "2026-11-11T04:43:00Z",
+   "published": "2026-11-11T04:49:26Z",
    "summary": "",
    "score": 6,
    "tags": [
@@ -6939,210 +7131,6 @@
    "published": "2026-11-02T12:10:45Z",
    "summary": "",
    "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "ad2df65419af",
-   "title": "Critical Langflow Flaws Could Let Unauthenticated Attackers Run Code on Servers",
-   "link": "https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-02T11:50:00Z",
-   "summary": "Two critical flaws in Langflow could let a remote attacker with no account bypass authentication or run arbitrary code, IBM said last week. Langflow is an open-source tool for building AI agents and workflows, and its vulnerability reports go to IBM. Every release from 1.0.0 through 1.12.8 has the…",
-   "score": 1,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "c477f1812588",
-   "title": "Is Your SOC Ready for AI Agents? A Maturity Check Before You Deploy",
-   "link": "https://thehackernews.com/2026/11/is-your-soc-ready-for-ai-agents.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-02T11:30:00Z",
-   "summary": "Forty percent of security teams now use AI every day, and another 56% are testing it. Only 4% have no plans to adopt it, according to Prophet Security's State of AI in Security Operations 2026 survey of more than 250 CISOs, SOC leaders and practitioners. For the teams still testing, the next…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "fe787079c468",
-   "title": "Malicious Claude Code Extension Served in Cursor Supply Chain Attack",
-   "link": "https://www.securityweek.com/malicious-claude-code-extension-served-in-cursor-supply-chain-attack/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-02T11:29:39Z",
-   "summary": "The extension performed host reconnaissance and attempted to create a reverse SSH tunnel. The post Malicious Claude Code Extension Served in Cursor Supply Chain Attack appeared first on SecurityWeek .",
-   "score": 3,
-   "tags": [
-    "SaaS / cloud"
-   ],
-   "why": [
-    "SaaS / cloud"
-   ],
-   "also": [
-    {
-     "source": "Dark Reading",
-     "url": "https://www.darkreading.com/cyberattacks-data-breaches/devs-trojanized-claude-code-extension-cursor"
-    },
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/"
-    },
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html"
-    }
-   ]
-  },
-  {
-   "id": "d596e3f2bace",
-   "title": "Attackers Pose as IT Support on Microsoft Teams, Abuse AD CS to Steal Company Data",
-   "link": "https://thehackernews.com/2026/11/attackers-pose-as-it-support-on.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-02T11:08:45Z",
-   "summary": "Attackers posing as IT support on Microsoft Teams talked employees into giving them remote control of their PCs. They then used insecure Active Directory Certificate Services (AD CS) settings to obtain login certificates for privileged accounts, including one for a domain controller. Microsoft…",
-   "score": 4,
-   "tags": [
-    "Microsoft 365"
-   ],
-   "why": [
-    "Microsoft 365"
-   ]
-  },
-  {
-   "id": "87a25e1b557b",
-   "title": "Government Linux Servers Targeted With SysGoRAT and Suspected AI-Generated Scripts",
-   "link": "https://thehackernews.com/2026/11/government-linux-servers-targeted-with.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-02T10:49:59Z",
-   "summary": "Cybersecurity researchers have disclosed details of a cyber espionage campaign specifically targeting Linux infrastructure associated with government entities and state-affiliated infrastructure. The activity, observed by Palo Alto Networks Unit 42 between October 2025 and April 2026, has been…",
-   "score": 4,
-   "tags": [
-    "Edge devices",
-    "AI threats"
-   ],
-   "why": [
-    "Edge devices",
-    "AI threats"
-   ]
-  },
-  {
-   "id": "2e0eed251125",
-   "title": "Chainalysis Discloses Data Breach Following AI-Driven Cyberattack",
-   "link": "https://www.securityweek.com/chainalysis-discloses-data-breach-following-ai-driven-cyberattack/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-02T10:27:49Z",
-   "summary": "The attackers used offensive agentic techniques to access the company’s systems and internal tools. The post Chainalysis Discloses Data Breach Following AI-Driven Cyberattack appeared first on SecurityWeek .",
-   "score": 4,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "357136bfe66d",
-   "title": "Ivanti patches two more Connect Secure zero-days chained in attacks",
-   "link": "https://www.bleepingcomputer.com/news/security/ivanti-patches-two-more-connect-secure-zero-days-chained-in-attacks/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-02T09:33:26Z",
-   "summary": "Ivanti released security updates to patch two more Connect Secure (ICS) remote access gateway flaws that have been chained in zero-day attacks since at least October 1. [...]",
-   "score": 10,
-   "tags": [
-    "Actively exploited",
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "why": [
-    "Actively exploited",
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "also": [
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/ivanti-patches-two-more-zero-days-exploited-in-connect-secure-attack-chain/"
-    },
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html"
-    }
-   ]
-  },
-  {
-   "id": "ff9c9693b43d",
-   "title": "Polymarket Returns $3.9 Million to Traders as DebugBear Cites DNS Hijack",
-   "link": "https://www.securityweek.com/polymarket-returns-3-9-million-to-traders-as-debugbear-cites-dns-hijack/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-02T09:33:15Z",
-   "summary": "DebugBear says its DNS records were compromised via its domain registrar, and early findings show a single customer was targeted. The post Polymarket Returns $3.9 Million to Traders as DebugBear Cites DNS Hijack appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": [],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/11/hackers-steal-about-27-million-from.html"
-    },
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/2-million-drained-from-polymarket-traders-in-new-supply-chain-attack/"
-    }
-   ]
-  },
-  {
-   "id": "1befc30403b6",
-   "title": "FBI Flags Over 600 Addresses Tied to North Korea’s Binance Heist",
-   "link": "https://www.securityweek.com/fbi-flags-over-600-addresses-tied-to-north-koreas-binance-heist/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-02T08:40:36Z",
-   "summary": "The FBI has officially pinned the $6 billion Binance hack on North Korea’s TraderTraitor as the attackers launder the stolen crypto. The post FBI Flags Over 600 Addresses Tied to North Korea’s Binance Heist appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": [],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html"
-    }
-   ]
-  },
-  {
-   "id": "2ad683677a7f",
-   "title": "HYBE suffers data breach of current and former employees, including resident registration and passport numbers",
-   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE01ZTRuNGt1RExTWnFpMnF0b21hdjJ0MWNWaHZQLTlYcDN3RVcwRnBuN1RMZDAtZldVUWpROXlRZ0ZERUw4bTZndW9pQmxYeHZLMUNKUDM1SWdZRk5ZRDB1SDln?oc=5",
-   "source": "재경일보",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-02T08:35:04Z",
-   "summary": "",
-   "score": 7,
    "tags": [
     "Data breach"
    ],
