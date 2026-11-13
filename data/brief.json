@@ -1,34 +1,60 @@
 {
- "date": "2026-11-13",
- "generated": "2026-11-12T23:44:09+00:00",
- "title": "Sec-Pulse brief - Fri 13 Nov",
+ "date": "2026-11-14",
+ "generated": "2026-11-13T23:46:14+00:00",
+ "title": "Sec-Pulse brief - Sat 14 Nov",
  "items": [
   {
-   "id": "eae8c383bc42",
-   "title": "Australia cyber attacks rise 39% as ransomware grows",
-   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNWHRidkhlTEhDYm8xUkgxUFpmODVlSno4Wm84TFdxY21hZzYyamRhSThlckNhcGdmSnRGN1ZXVVRBUWg4MlA1dVBQN0VuM2h6TmQ3OURZMGxXTWtkVm5WS0VLV3RINFhVaXZPMUdHMkdBZXpBdWoxTzlBekluR1hYUmxwTWxtSDg?oc=5",
-   "source": "IT Brief Australia",
-   "region": "AU",
-   "published": "2026-11-12T01:28:45Z",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "Ransomware"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "18a4c5a20ed8",
-   "title": "New York Man Accused Of Defrauding Investors Of Over $5 Million In Real Estate Scam",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOaXNrMUxIM1ROQjBiTXItRWxIaEJVUGYwYmxfV3NPQjNvNHFUampXa2x6QmdYelh4RFc0WHFfeklMS09VU2dXYkpjSkJpNGtFeF9ScEVndXNEVm81ZDAwUDFIUFFnajFyQTlIeDdnaHFPRHFhd3k3eW14V1VOT0E3WFd2SThiNHFLLVlsVTRwQUV6YnJSaVI0cjhTdVJ1cm5VaEJfRVU4S3BHYWY4T0ZKU2l1b056TExkQUxYZGFnOHc4UQ?oc=5",
-   "source": "News Mobile",
+   "id": "fa2dbd672e87",
+   "title": "Phillipsburg Police Warn Residents of Fake Rental Listing Scams on TikTok and Social Media",
+   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOUjdRRm9hSnBhUGhEOGo2VGRFdk5MdWJ0WG9aMHNQWGloLXA1YUIwYW1SZ29hVVZ1QjhyMW9EVG9ibnZwU2NBQ0tudW1CMllCM0lGeHl6b2ExdzMybDNkX3BwY0VuWjlFeVotMGFmbVlkZ2drUmtlUWpMZHZYNE4yaXNIb3JPdFRHVmhjZFRpVkM3cl9mVllJNmxTSk80MFQ2cTVWdkZmcGdfWnBRd3RsRkdicTlfTXF1VjZyVW5tSTd1MVU1V0FjNXVCYnpkaDltN3FOM0JDXzJCUQ?oc=5",
+   "source": "TAPinto",
    "region": "Global",
-   "published": "2026-11-12T11:23:48Z",
+   "published": "2026-11-13T21:27:06Z",
    "score": 10,
    "tags": [
     "Real estate"
    ],
    "summary": ""
+  },
+  {
+   "id": "bd6202421982",
+   "title": "Waiter Says Contractor Scam Cost Him $40K, Then Builds Rentals With $13K Monthly Cash Flow. ‘I Don’t Want To Go Back To Being On The Hustle’",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPYVNaLWpURWtvRVR3WHBxSzczWGtsLUVGTEgtc1pjcDNwZjVNanJmc3VZekVBYzNwTFd3T0FlUFc5VjhaLWRMZmFTTkdiclBuMU9QQlA0OW0wT0swUzN1dnc4RFh1QlhuN21zNC1mZVpZY3pOaUlwajg2d1NVREZ4S0Jlb3AxWEtYYldzempYRkEyRTdha0xDaS1n?oc=5",
+   "source": "Yahoo Finance",
+   "region": "Global",
+   "published": "2026-11-13T15:00:07Z",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "summary": ""
+  },
+  {
+   "id": "76cf8ad9a547",
+   "title": "\"A 1,400-pyeong plot of land turns out to have 178 owners\"… Im Ye-jin fell victim to a planned real estate scam [Star Issue]",
+   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5fSFp4c2hTaU1mSXBtRlMyMncyb05NVzBKY2lXZlo4TlNSRG5HRkIwRHl2dGNkZ0ZYN18xdlZ3dVJVMDlKc0lHXzBMdkFZNjh5M3VDWktCVHFZOHlRa1BlVDFpR2JpTnNCZmotdzR6RmRTX2p2Q3hz?oc=5",
+   "source": "스타뉴스",
+   "region": "Global",
+   "published": "2026-11-13T07:40:25Z",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "summary": ""
+  },
+  {
+   "id": "db3fd3a5adb8",
+   "title": "How one AI agent exposed five critical enterprise security gaps",
+   "link": "https://www.bleepingcomputer.com/news/security/how-one-ai-agent-exposed-five-critical-enterprise-security-gaps/",
+   "source": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-13T15:01:11Z",
+   "score": 9,
+   "tags": [
+    "BEC / payment fraud",
+    "Data breach"
+   ],
+   "summary": "An AI agent built to automate invoice processing could be manipulated into changing vendor bank details through a malicious email, without triggering traditional security alerts. Token Security examines five critical AI agent security gaps and shares practical guidance from industry security…"
   },
   {
    "id": "55b74c42c28f",
@@ -43,41 +69,15 @@
     "SaaS / cloud"
    ],
    "summary": ""
-  },
-  {
-   "id": "b7c7c5708e23",
-   "title": "Telangana High Court Issues Notice to Spectra Group Over Alleged 5,000 Crore Real Estate Scam",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQMFY0QkxCSFpvSmNiaTZKaXN4RlctWHZIOFNEWXJZbXJhc2pORGJOSEN3am1EM1hSM2ZhaEp1elo3NEVyY1d1b0l3YXoxMk9fUnl5VVBvaEw5VHp4bU9qZUkyeGN1THk2cEJDWjlrb1RUSE9XMWhRcXdWWHp5QWVZQ1N6LWo4UkgzVUxWdWFoekw5WGZMOWY3QnRsZkM1d096cTVvMjk2Szl1dm5NdURoTA?oc=5",
-   "source": "The 420.in",
-   "region": "Global",
-   "published": "2026-11-12T01:41:31Z",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "5a2a3d784c74",
-   "title": "North Canton police warn of rental scam using fake listings on legitimate real estate sites",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQbWRob2F4SkhKMm96cHpUdEVnVC1CWGtrTWFKN1dUMzdQYXNtNE1PUXBuSEFyZUlMTWxrenBaUzNmR2ZwUlhSalZnNFlZNXpLYXFjVDdmcmM3Mm5EOFE2RHMxMGFYcno3LVZhV0Q1OERsY2o4ZHVSQ3l0bS02bUwtRzlGbTVWNnl4MnltQVJCaWdFcjktcklrRU9HUHN3MktTdk1pV1lQVHdNeUszTGhybk0wWnkxamltdGpubmR3SEprcVU?oc=5",
-   "source": "Cleveland 19 News",
-   "region": "Global",
-   "published": "2026-11-11T21:58:27Z",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "summary": ""
   }
  ],
  "stats": {
-  "recent": 61,
-  "au": 2,
-  "kev": 0
+  "recent": 43,
+  "au": 0,
+  "kev": 2
  },
  "lesson": {
-  "id": "4.4",
-  "title": "Stakeholder communication and escalation"
+  "id": "4.5",
+  "title": "Writing an incident report"
  }
 }
