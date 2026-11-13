@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-13T19:44:41Z",
+ "generated": "2026-11-13T23:46:03Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -100,11 +100,99 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 30,
+   "count": 29,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "11d7cc16194d",
+   "title": "FAA Ground Stop Issued Due to ‘Extraordinary Circumstances’",
+   "link": "https://www.securityweek.com/faa-ground-stop-issued-due-to-extraordinary-circumstances/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-13T21:33:27Z",
+   "summary": "Federal officials have yet to say what caused the communications disruption or whether they are investigating a possible cyberattack. The post FAA Ground Stop Issued Due to ‘Extraordinary Circumstances’ appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "78498214505c",
+   "title": "SCKit abuses ScreenConnect to deploy remote access and target technician sessions",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/13/sckit-abuses-screenconnect-deploy-remote-access-target-technician-sessions/",
+   "source": "Microsoft Security Blog",
+   "feed": "Microsoft Security Blog",
+   "region": "Global",
+   "published": "2026-11-13T21:31:44Z",
+   "summary": "SCKit abuses ScreenConnect to deploy unauthorized remote access and target technicians. Explore the attack chain, mitigations, and Microsoft Defender XDR hunting. The post SCKit abuses ScreenConnect to deploy remote access and target technician sessions appeared first on Microsoft Security Blog .",
+   "score": 4,
+   "tags": [
+    "Microsoft 365"
+   ],
+   "why": [
+    "Microsoft 365"
+   ],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/sckit-malware-targets-screenconnect.html"
+    },
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/new-worm-like-sckit-malware-targets-msps-in-screenconnect-attacks/"
+    }
+   ]
+  },
+  {
+   "id": "fa2dbd672e87",
+   "title": "Phillipsburg Police Warn Residents of Fake Rental Listing Scams on TikTok and Social Media",
+   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOUjdRRm9hSnBhUGhEOGo2VGRFdk5MdWJ0WG9aMHNQWGloLXA1YUIwYW1SZ29hVVZ1QjhyMW9EVG9ibnZwU2NBQ0tudW1CMllCM0lGeHl6b2ExdzMybDNkX3BwY0VuWjlFeVotMGFmbVlkZ2drUmtlUWpMZHZYNE4yaXNIb3JPdFRHVmhjZFRpVkM3cl9mVllJNmxTSk80MFQ2cTVWdkZmcGdfWnBRd3RsRkdicTlfTXF1VjZyVW5tSTd1MVU1V0FjNXVCYnpkaDltN3FOM0JDXzJCUQ?oc=5",
+   "source": "TAPinto",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-13T21:27:06Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ],
+   "also": [
+    {
+     "source": "Cleveland 19 News",
+     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQbWRob2F4SkhKMm96cHpUdEVnVC1CWGtrTWFKN1dUMzdQYXNtNE1PUXBuSEFyZUlMTWxrenBaUzNmR2ZwUlhSalZnNFlZNXpLYXFjVDdmcmM3Mm5EOFE2RHMxMGFYcno3LVZhV0Q1OERsY2o4ZHVSQ3l0bS02bUwtRzlGbTVWNnl4MnltQVJCaWdFcjktcklrRU9HUHN3MktTdk1pV1lQVHdNeUszTGhybk0wWnkxamltdGpubmR3SEprcVU?oc=5"
+    },
+    {
+     "source": "CTV News",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVDczbWNJMFdWYWpOdEREM0IzeEdac2p6ZkZ1eGY3dVQ1czBmZ21hYTB0TlEtMFB6YlNtbF9MSDI4NUkwZzM3clA1M1JPVmkzZ3piRTZwUWFuMjk3MVBqdWlKbmhCSFZmcy02Z1VHY1FvSlY0MGxuMnZlVmpsUUM2a05ETGNiSThkR3M2cGtHWkcyVzdyUVdXX3JWNUx6NEVHalVv?oc=5"
+    },
+    {
+     "source": "Barrie News",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPLTNWUkdyUk5DMzFWWnZiRVdFTUlXMjNHVlpLdFp5M1VRc2xFMDF2b3h1YjNzSDE2eVB2RWdFc25NTjlXZW5McWVTRUNSbE4yWk5raGtOZ3dQcUJ6MXcwQkxnRHk2Wk84eGJqdEE2QTJrVEhjSV9lRDZDVy1TU2hudGRTYklGSERsMGo4X3pvRkE1cG8xaV91c1ZGMy1pUTAycUo2YWVuSnBSdlFlRnc?oc=5"
+    },
+    {
+     "source": "MidlandToday.ca",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOSnc3S1p4WVBhaElUd1JhRFMteTctOU8zNGNXWG9YcjFid3IzblU1ZkZDU193RmFJVGlmZHVrTTdINmMzdlpOMFZsN1NLYVhuLVJ1V01wbTc3N3kxVXJKcEdFaHJZQzhmcnRMWGRYOWNZR29mT3VmclZGb3pKbmF0OTI2WHEtZ2NkZzFqd0hpZFF6X2lSUW4wZS1HVW5sSkg3TWsweWtQS1J2NFBmdnc?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "e12779d5806a",
+   "title": "ArcticRAT Cybercrime Gang Profiles Victim Finances With AI",
+   "link": "https://www.darkreading.com/mobile-security/arcticrat-cybercrime-gang-profiles-victim-finances-ai",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-13T20:20:27Z",
+   "summary": "The Android malware has expanded from focusing on crypto theft to full device control, and the attackers have added advanced analysis of stolen information.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
   {
    "id": "ee274201614e",
    "title": "Trezor confirms crypto-stealing implants in three wallets, releases fix",
@@ -152,6 +240,23 @@
    ],
    "why": [
     "Vulnerability"
+   ]
+  },
+  {
+   "id": "8a4edd5bbc78",
+   "title": "A global Microsoft 365 outage has hit millions – what happened and when will it be fixed?",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORzFTSUdWUkpoWUk1Z2FULTd2ZmRRUmVINTBTZjNUVEdtT3BBNUxxck1ZcXFQenhma1F5RG5BZXIwVkItZWhaWGl2dHlzVWRTZkIza0Y3QWVyd1hlSUo0dUo0XzRzOTFiZnJYelhtakN2R1VJOU5oUzY2MHVGSko3MTF1ZXE2T0tRY1lCMWc5M1ZBeFpfZ0ZVbV8waldfVlByNlE?oc=5",
+   "source": "The Guardian",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-13T16:44:00Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Microsoft 365"
+   ],
+   "why": [
+    "Microsoft 365"
    ]
   },
   {
@@ -210,10 +315,10 @@
    ]
   },
   {
-   "id": "0c840f5fceb9",
-   "title": "Waiter Says Contractor Scam Cost Him $40K, Then Builds Rentals With $13K Monthly Cash Flow. ‘I Don’t Want",
-   "link": "https://news.google.com/rss/articles/CBMisAJBVV95cUxNNGdVNVBlcUFrZFBaSXlIakRROXdlT1JrSWs4dnFOVUNnY2RIVDY4YlIxajBBUmxLUDZJNXpkNGpUVFFlbkIyYUlsNng3YXR4aGUycUhzZ2pSSGp5Uy1xTzNhaEJwWTRFcllrUFMtNlVBM3pnM05VVnlGVmx4ekJZMk9IUHVsMFJqZFFSTDFOaEVmcll3YjBUaEw2QkdFZ2gxeDBQUGk5bmxPaDVXTzlHNlNyMGhEQk1pR19nb09MM0JVN2FzemlBS3JtWWZKdTl0V1B6SkY1T2JyM1FVUzVsakc0ZVRseEQwRnpJdndZNUNaZ3dZQ1lQQ0c0YUlySDQwWTJxRWNKa0pNanNZNHlzeVR6Z0taWFRZaThETnlIUHJiWG1sWmNaMFprUjEzemlF?oc=5",
-   "source": "Benzinga",
+   "id": "bd6202421982",
+   "title": "Waiter Says Contractor Scam Cost Him $40K, Then Builds Rentals With $13K Monthly Cash Flow. ‘I Don’t Want To Go Back To Being On The Hustle’",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPYVNaLWpURWtvRVR3WHBxSzczWGtsLUVGTEgtc1pjcDNwZjVNanJmc3VZekVBYzNwTFd3T0FlUFc5VjhaLWRMZmFTTkdiclBuMU9QQlA0OW0wT0swUzN1dnc4RFh1QlhuN21zNC1mZVpZY3pOaUlwajg2d1NVREZ4S0Jlb3AxWEtYYldzempYRkEyRTdha0xDaS1n?oc=5",
+   "source": "Yahoo Finance",
    "feed": "Real estate cyber news",
    "region": "Global",
    "published": "2026-11-13T15:00:07Z",
@@ -224,6 +329,12 @@
    ],
    "why": [
     "Real estate"
+   ],
+   "also": [
+    {
+     "source": "Benzinga",
+     "url": "https://news.google.com/rss/articles/CBMisAJBVV95cUxNNGdVNVBlcUFrZFBaSXlIakRROXdlT1JrSWs4dnFOVUNnY2RIVDY4YlIxajBBUmxLUDZJNXpkNGpUVFFlbkIyYUlsNng3YXR4aGUycUhzZ2pSSGp5Uy1xTzNhaEJwWTRFcllrUFMtNlVBM3pnM05VVnlGVmx4ekJZMk9IUHVsMFJqZFFSTDFOaEVmcll3YjBUaEw2QkdFZ2gxeDBQUGk5bmxPaDVXTzlHNlNyMGhEQk1pR19nb09MM0JVN2FzemlBS3JtWWZKdTl0V1B6SkY1T2JyM1FVUzVsakc0ZVRseEQwRnpJdndZNUNaZ3dZQ1lQQ0c0YUlySDQwWTJxRWNKa0pNanNZNHlzeVR6Z0taWFRZaThETnlIUHJiWG1sWmNaMFprUjEzemlF?oc=5"
+    }
    ]
   },
   {
@@ -503,23 +614,6 @@
    "score": 0,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "8a4edd5bbc78",
-   "title": "A global Microsoft 365 outage has hit millions – what happened and when will it be fixed?",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORzFTSUdWUkpoWUk1Z2FULTd2ZmRRUmVINTBTZjNUVEdtT3BBNUxxck1ZcXFQenhma1F5RG5BZXIwVkItZWhaWGl2dHlzVWRTZkIza0Y3QWVyd1hlSUo0dUo0XzRzOTFiZnJYelhtakN2R1VJOU5oUzY2MHVGSko3MTF1ZXE2T0tRY1lCMWc5M1ZBeFpfZ0ZVbV8waldfVlByNlE?oc=5",
-   "source": "The Guardian",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-11-13T04:46:00Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Microsoft 365"
-   ],
-   "why": [
-    "Microsoft 365"
-   ]
   },
   {
    "id": "6b2047aad824",
@@ -1008,29 +1102,6 @@
    "score": 0,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "daa356fef18a",
-   "title": "SCKit Malware Turns ScreenConnect Support Sessions Into Potential MSP Attack Paths",
-   "link": "https://thehackernews.com/2026/11/sckit-malware-targets-screenconnect.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-12T13:08:28Z",
-   "summary": "The ongoing campaign targeting ConnectWise ScreenConnect deployments involves the exploitation of a now-patched critical security flaw in the remote access software, and not a new vulnerability, it has emerged. Blackpoint Cyber's Adversary Pursuit Group (APG), which shared the details with The…",
-   "score": 1,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "also": [
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/new-worm-like-sckit-malware-targets-msps-in-screenconnect-attacks/"
-    }
-   ]
   },
   {
    "id": "e4ff54ce4df9",
@@ -1552,37 +1623,6 @@
    "score": 0,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "5a2a3d784c74",
-   "title": "North Canton police warn of rental scam using fake listings on legitimate real estate sites",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQbWRob2F4SkhKMm96cHpUdEVnVC1CWGtrTWFKN1dUMzdQYXNtNE1PUXBuSEFyZUlMTWxrenBaUzNmR2ZwUlhSalZnNFlZNXpLYXFjVDdmcmM3Mm5EOFE2RHMxMGFYcno3LVZhV0Q1OERsY2o4ZHVSQ3l0bS02bUwtRzlGbTVWNnl4MnltQVJCaWdFcjktcklrRU9HUHN3MktTdk1pV1lQVHdNeUszTGhybk0wWnkxamltdGpubmR3SEprcVU?oc=5",
-   "source": "Cleveland 19 News",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-11T21:58:27Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ],
-   "also": [
-    {
-     "source": "CTV News",
-     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVDczbWNJMFdWYWpOdEREM0IzeEdac2p6ZkZ1eGY3dVQ1czBmZ21hYTB0TlEtMFB6YlNtbF9MSDI4NUkwZzM3clA1M1JPVmkzZ3piRTZwUWFuMjk3MVBqdWlKbmhCSFZmcy02Z1VHY1FvSlY0MGxuMnZlVmpsUUM2a05ETGNiSThkR3M2cGtHWkcyVzdyUVdXX3JWNUx6NEVHalVv?oc=5"
-    },
-    {
-     "source": "Barrie News",
-     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPLTNWUkdyUk5DMzFWWnZiRVdFTUlXMjNHVlpLdFp5M1VRc2xFMDF2b3h1YjNzSDE2eVB2RWdFc25NTjlXZW5McWVTRUNSbE4yWk5raGtOZ3dQcUJ6MXcwQkxnRHk2Wk84eGJqdEE2QTJrVEhjSV9lRDZDVy1TU2hudGRTYklGSERsMGo4X3pvRkE1cG8xaV91c1ZGMy1pUTAycUo2YWVuSnBSdlFlRnc?oc=5"
-    },
-    {
-     "source": "MidlandToday.ca",
-     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOSnc3S1p4WVBhaElUd1JhRFMteTctOU8zNGNXWG9YcjFid3IzblU1ZkZDU193RmFJVGlmZHVrTTdINmMzdlpOMFZsN1NLYVhuLVJ1V01wbTc3N3kxVXJKcEdFaHJZQzhmcnRMWGRYOWNZR29mT3VmclZGb3pKbmF0OTI2WHEtZ2NkZzFqd0hpZFF6X2lSUW4wZS1HVW5sSkg3TWsweWtQS1J2NFBmdnc?oc=5"
-    }
-   ]
   },
   {
    "id": "bcbd3a3cc803",
@@ -7130,40 +7170,6 @@
    ],
    "why": [
     "Data breach"
-   ]
-  },
-  {
-   "id": "4368c1c16054",
-   "title": "Mulund Real Estate Broker Allegedly Kidnapped, Threatened At Gunpoint Over Loan Dispute; 4 Booked",
-   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPYUJZRUROQjlnTGwzM2EzT0tYN2hLU2t4LVp3Q25hTGhUUVZydU1USzRNS3M1N0I2OWU5bFdKZ3MydG4tdU1WX0dGNEdwVGVxZ1NENEZoejZXN2NITGJ0S2xOaTNLVG5fQ2djQ25UZllnYWQ3SGpicXRVZWVxZmRIU2drdmMyRlI5dlhlS3BpdkFURjZkRmliVmE2V2xDSWFFZ1JpX1lCaC1xekIzd0RZaERhZ3dTZkNUY25xUHZLaHdfSUgzRXFEVThGZHo3S0XSAdQBQVVfeXFMTUt0UU0xd3Z2aGl6cXFrQ2ZuTWJlVlkwUXBSbWY1MDBqQnJpaW9lSUxXTU8zM085cHNUMWdhOFB2THpsckxsZy1BSVlHVVBfZWVqUU1iR1Zwa1p3SmM4UVpJdzRuNUpfMzd3NDVTLUNmWEdEcndHVTVXdUZCZzhtUzdDbEk5ZGFKZjFnNHhCdlh3bENQcFV5dFJJTktPY1czRTY4NjBlVnBDY1RoSVhjZDliaHNfQjgzUktNQ2taSlFDcHVVMHlBYnE5UEJjMUhnajVuVWQ?oc=5",
-   "source": "Free Press Journal",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-02T20:31:53Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ]
-  },
-  {
-   "id": "73b73a473518",
-   "title": "What exploited vulnerabilities have in common: A data-driven analysis of real-world attacks",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/02/exploited-vulnerabilities-common-data-driven-analysis-real-world-attacks/",
-   "source": "Microsoft Security Blog",
-   "feed": "Microsoft Security Blog",
-   "region": "Global",
-   "published": "2026-11-02T20:20:59Z",
-   "summary": "Real-world exploitation concentrates in a small, high-impact subset of CVEs. Learn how defenders can prioritize vulnerabilities based on exploitation likelihood, exposure, and potential blast radius. The post What exploited vulnerabilities have in common: A data-driven analysis of real-world…",
-   "score": 4,
-   "tags": [
-    "Microsoft 365"
-   ],
-   "why": [
-    "Microsoft 365"
    ]
   }
  ]
