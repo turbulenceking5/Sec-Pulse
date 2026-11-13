@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-12T23:43:59Z",
+ "generated": "2026-11-13T01:50:41Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,13 +28,13 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 7,
+   "count": 8,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 8,
+   "count": 6,
    "error": null
   },
   {
@@ -52,7 +52,7 @@
   {
    "name": "CISA KEV",
    "ok": true,
-   "count": 17,
+   "count": 15,
    "error": null
   },
   {
@@ -100,11 +100,28 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 30,
+   "count": 28,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "26d7ff7cc2c0",
+   "title": "Kakao Enterprise Says Email Bodies, Attachments Leaked in Breach",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPLXI5dzg1S1Y2S0cxemNqNGZiZElZeEZMOHJUQ1lBY2R1VWFqU3ZTcTktaUVWSkI3YTROTVVyLU5rZFZTMk11UnB1ZUh1SDNjaGRnLXl1RnpXZkk2WW1oMFRGOWFEQ0ZBN0ZwZnZQZ25xVGZBTUFXcFpidVlhdTg1U1FoLXlvUFlRREk3d0Z6VDMtLXVqTE5WOGNqbzFmcTY0?oc=5",
+   "source": "Seoul Economic Daily",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-13T00:15:16Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
   {
    "id": "55b74c42c28f",
    "title": "Global Microsoft Outage Disrupts Outlook, Teams and Cloud Services as Company Works to Restore Servers",
@@ -135,7 +152,32 @@
     {
      "source": "BleepingComputer",
      "url": "https://www.bleepingcomputer.com/news/microsoft/massive-microsoft-365-outage-disrupts-outlook-teams-copilot-worldwide/"
+    },
+    {
+     "source": "Forbes Australia",
+     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOSF96MnVFTzVDUmYxMkYtdkRNWHFmdXdSS1dpSzVwcUozSHdUSC1wbmJkSmZMbF91YnlCb3pWaThRcmxodUVPakgxZVU1aTJWdXhKNENjeHVUTktxX2tDcUtNb3lDTHlpN3ctNG91ZURjWFlyNks2eFc2VjNody1zZ194S1RKdTRlWmg4?oc=5"
+    },
+    {
+     "source": "ABC News & Headlines – Australian Broadcasting Corporation",
+     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE85YnlCLTZVeTRvd0R0c0JvQUJqTUlyT2xBanhqUkdTZEVfb2lhWlREUXRxMk1RemdyWmRsb1hoMzBsdDYxbWVYd2VqME9FRklZREJubmIwc0pfYmd4dlNQdm9fWkZHWDZBTWVWNGpTbVFsUnl1T21SeTJfWUtGQQ?oc=5"
     }
+   ]
+  },
+  {
+   "id": "8937f32d7136",
+   "title": "'No indication' Outlook outage caused by cyber attack, Microsoft says",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQa3d4WUpneFA2OVBxXy1NbkgyOFJZSzFZRTgtYjloejloV09jWGstNS1zcU9KM3JVNlpXeEYyVHRrOGZndVRrWktSNmVoaGNfUWVzd3RDd0wweVpWSHR4Y3YxTk9BNm9nLWZRU2p0VlBTNDZxSW5laFZZb3RCcWFvMjJBdk9ybnBWb3dTV2cxT3E?oc=5",
+   "source": "ABC News & Headlines – Australian Broadcasting Corporation",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-12T22:25:47Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Microsoft 365"
+   ],
+   "why": [
+    "Microsoft 365"
    ]
   },
   {
@@ -7107,40 +7149,6 @@
    "why": [
     "Data breach"
    ]
-  },
-  {
-   "id": "9068a344a035",
-   "title": "New VOLTA Infostealer Uses Claude, Gemini, and Kimi AI to Rank Victims by Financial Value",
-   "link": "https://thehackernews.com/2026/11/new-volta-infostealer-uses-claude.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-02T05:51:07Z",
-   "summary": "Cybersecurity researchers have discovered a new Windows infostealer malware called VOLTA-AUTODOXER (aka VOLTA) that makes use of a large language model (LLM) to rank a victim's stolen data by their monetization value. Like other typical stealer families, VOLTA is equipped to harvest passwords and…",
-   "score": 7,
-   "tags": [
-    "Data breach",
-    "Identity",
-    "AI threats"
-   ],
-   "why": [
-    "Data breach",
-    "Identity",
-    "AI threats"
-   ]
-  },
-  {
-   "id": "d0dae30d7bd0",
-   "title": "ISC Stormcast For Monday, November 2nd, 2026 https://isc.sans.edu/podcastdetail/10160, (Mon, Nov 2nd)",
-   "link": "https://isc.sans.edu/diary/rss/33480",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-11-02T02:00:03Z",
-   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
-   "score": 1,
-   "tags": [],
-   "why": []
   }
  ]
 }
