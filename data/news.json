@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-13T11:02:07Z",
+ "generated": "2026-11-13T19:44:41Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,13 +28,13 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 8,
+   "count": 7,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 4,
+   "count": 6,
    "error": null
   },
   {
@@ -52,7 +52,7 @@
   {
    "name": "CISA KEV",
    "ok": true,
-   "count": 15,
+   "count": 17,
    "error": null
   },
   {
@@ -75,9 +75,9 @@
   },
   {
    "name": "SANS ISC",
-   "ok": false,
-   "count": 0,
-   "error": "ParseError: syntax error: line 1, column 0"
+   "ok": true,
+   "count": 10,
+   "error": null
   },
   {
    "name": "Microsoft Security Blog",
@@ -100,28 +100,251 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 28,
+   "count": 30,
    "error": null
   }
  ],
  "items": [
   {
-   "id": "e4df5d0ce341",
-   "title": "Law Enforcement Disrupts Gootloader, CastleRAT, and StealC Infrastructure",
-   "link": "https://www.securityweek.com/law-enforcement-disrupts-gootloader-castlerat-and-stealc-infrastructure/",
+   "id": "ee274201614e",
+   "title": "Trezor confirms crypto-stealing implants in three wallets, releases fix",
+   "link": "https://www.bleepingcomputer.com/news/cryptocurrency/trezor-confirms-crypto-stealing-implants-in-three-wallets-releases-fix/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-13T19:38:36Z",
+   "summary": "Cryptocurrency hardware wallet maker Trezor has confirmed that three Safe 5 devices sold by Southeast Asian reseller CryptoBilis contained malicious hardware implants designed to steal wallet recovery phrases and send them to attackers over cellular networks. [...]",
+   "score": 0,
+   "tags": [],
+   "why": [],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/trezor-confirms-hidden-hardware.html"
+    }
+   ]
+  },
+  {
+   "id": "f6f4a6d64aa8",
+   "title": "German military drone operations disrupted by cyberattack",
+   "link": "https://www.bleepingcomputer.com/news/security/german-military-drone-operations-disrupted-by-cyberattack/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-13T17:31:56Z",
+   "summary": "German defense technology company Quantum Systems confirmed that it detected an incident in late October that was part of an active cyberattack by \"hostile actors.\" [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "e05f7a78ce38",
+   "title": "PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE",
+   "link": "https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-13T16:53:08Z",
+   "summary": "A type confusion flaw in PostgreSQL lets a database user who can create objects run code on the server. Updates released yesterday fix it, along with 51 other security flaws. Full protection from this flaw also requires rebuilding any C-language extensions installed on the server. The flaw,…",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "fb5ac890be2a",
+   "title": "New Mior and Skyfall Attacks Let Rogue Cloud Hosts Steal Secrets From AMD SEV-SNP VMs",
+   "link": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-13T15:27:05Z",
+   "summary": "Two attacks made public this week allow a malicious host to read data inside AMD SEV-SNP-protected virtual machines (VMs), which are built to keep the server's operator out. One of them, Mior, can also modify a VM's memory and fake the signed report confirming which software it runs. Both need…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "c3cb9f990617",
+   "title": "In Other News: New CISA Director Nominee, Connected Car Hacking, Baker Tilly Data Breach",
+   "link": "https://www.securityweek.com/in-other-news-new-cisa-director-nominee-connected-car-hacking-baker-tilly-data-breach/",
    "source": "SecurityWeek",
    "feed": "SecurityWeek",
    "region": "Global",
-   "published": "2026-11-13T10:48:40Z",
-   "summary": "Investigators seized 235 servers and 257 domains, along with 6.4 million victim credentials as part of Operation Endgame. The post Law Enforcement Disrupts Gootloader, CastleRAT, and StealC Infrastructure appeared first on SecurityWeek .",
+   "published": "2026-11-13T15:20:00Z",
+   "summary": "Noteworthy stories that might have slipped under the radar: Siemens details security advisory policy, OpenAI Codex backdoor risk, Microsoft warns of model weight backdoors. The post In Other News: New CISA Director Nominee, Connected Car Hacking, Baker Tilly Data Breach appeared first on…",
+   "score": 4,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/baker-tilly-notifies-clients-of-data-breach-at-third-party-provider/"
+    }
+   ]
+  },
+  {
+   "id": "db3fd3a5adb8",
+   "title": "How one AI agent exposed five critical enterprise security gaps",
+   "link": "https://www.bleepingcomputer.com/news/security/how-one-ai-agent-exposed-five-critical-enterprise-security-gaps/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-13T15:01:11Z",
+   "summary": "An AI agent built to automate invoice processing could be manipulated into changing vendor bank details through a malicious email, without triggering traditional security alerts. Token Security examines five critical AI agent security gaps and shares practical guidance from industry security…",
+   "score": 9,
+   "tags": [
+    "BEC / payment fraud",
+    "Data breach"
+   ],
+   "why": [
+    "BEC / payment fraud",
+    "Data breach"
+   ]
+  },
+  {
+   "id": "0c840f5fceb9",
+   "title": "Waiter Says Contractor Scam Cost Him $40K, Then Builds Rentals With $13K Monthly Cash Flow. ‘I Don’t Want",
+   "link": "https://news.google.com/rss/articles/CBMisAJBVV95cUxNNGdVNVBlcUFrZFBaSXlIakRROXdlT1JrSWs4dnFOVUNnY2RIVDY4YlIxajBBUmxLUDZJNXpkNGpUVFFlbkIyYUlsNng3YXR4aGUycUhzZ2pSSGp5Uy1xTzNhaEJwWTRFcllrUFMtNlVBM3pnM05VVnlGVmx4ekJZMk9IUHVsMFJqZFFSTDFOaEVmcll3YjBUaEw2QkdFZ2gxeDBQUGk5bmxPaDVXTzlHNlNyMGhEQk1pR19nb09MM0JVN2FzemlBS3JtWWZKdTl0V1B6SkY1T2JyM1FVUzVsakc0ZVRseEQwRnpJdndZNUNaZ3dZQ1lQQ0c0YUlySDQwWTJxRWNKa0pNanNZNHlzeVR6Z0taWFRZaThETnlIUHJiWG1sWmNaMFprUjEzemlF?oc=5",
+   "source": "Benzinga",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-13T15:00:07Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
+   "id": "c6e1d6a77271",
+   "title": "FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
+   "link": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-13T14:28:58Z",
+   "summary": "The U.S. Federal Bureau of Investigation (FBI) has established that threat actors tied to the Democratic People's Republic of Korea (DPRK aka North Korea) have stolen more than $400 million worth of cryptocurrency as part of a social engineering scheme codenamed FaceStealer in the last 18 months.…",
    "score": 2,
    "tags": [
+    "AI threats"
+   ],
+   "why": [
+    "AI threats"
+   ]
+  },
+  {
+   "id": "fff233faf327",
+   "title": "Attackers in Binance Breach Targeted Known Weakness, Missing Controls",
+   "link": "https://www.darkreading.com/cybersecurity-operations/attackers-binance-breach-targeted-weakness-missing-controls",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-13T13:00:00Z",
+   "summary": "Blockchain complexities, such as attacker-deployed sweepers, hobble security controls designed to limit the damage of an exchange compromise.",
+   "score": 4,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "4084f96e5a59",
+   "title": "Apify Confirms Customer Data Accessed in Cyberattack",
+   "link": "https://www.securityweek.com/apify-confirms-customer-data-accessed-in-cyberattack/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-13T12:41:01Z",
+   "summary": "The web scraping company says an intruder accessed customer accounts and obtained personal information or stored data. The post Apify Confirms Customer Data Accessed in Cyberattack appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "293c69c9ee5b",
+   "title": "Microsoft says November security updates cause printing issues",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-says-november-security-updates-cause-printing-issues/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-13T12:27:40Z",
+   "summary": "Microsoft warned customers earlier this week that the November 2026 security updates may break printing for documents with complex formatting. [...]",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "527326996071",
+   "title": "SilentAir Hackers Intercept Calls, SMS From Inside Mobile Networks",
+   "link": "https://www.securityweek.com/silentair-hackers-intercept-calls-sms-from-inside-mobile-networks/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-13T12:20:28Z",
+   "summary": "Enea says SilentAir hijacked mobile network nodes to intercept calls and messages, with Taiwanese subscribers the primary targets. The post SilentAir Hackers Intercept Calls, SMS From Inside Mobile Networks appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": [],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/silentair-hijacks-asian-telecom.html"
+    }
+   ]
+  },
+  {
+   "id": "fe3ab0485c82",
+   "title": "When an AI Agent Goes Wrong, Can You Stop It?",
+   "link": "https://thehackernews.com/2026/11/when-ai-agent-goes-wrong-can-you-stop-it.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-13T11:52:31Z",
+   "summary": "Suppose an AI agent is asked to sort support tickets and look up account details. A ticket contains instructions that lead the agent to export records to an unfamiliar destination. The agent can make the request because its identity has access to the records and its connected tools allow the…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "5df4bf07aed5",
+   "title": "Operation Endgame Takes Down Gootloader, CastleRAT and StealC Servers, Seizes 6.4M Stolen Logins",
+   "link": "https://thehackernews.com/2026/11/operation-endgame-takes-down-gootloader.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-13T10:55:03Z",
+   "summary": "An international police operation took down servers behind Gootloader, CastleRAT and StealC this week. Criminals used the three malware tools to gain access to computers, steal passwords, and launch ransomware attacks. Police also seized about 6.4 million stolen logins belonging to more than…",
+   "score": 5,
+   "tags": [
+    "Ransomware",
     "Identity"
    ],
    "why": [
+    "Ransomware",
     "Identity"
    ],
    "also": [
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/law-enforcement-disrupts-gootloader-castlerat-and-stealc-infrastructure/"
+    },
     {
      "source": "BleepingComputer",
      "url": "https://www.bleepingcomputer.com/news/security/police-dismantles-gootloader-castlerat-stealc-malware-infrastructure/"
@@ -152,8 +375,13 @@
     {
      "source": "SecurityWeek",
      "url": "https://www.securityweek.com/php2shell-exploited-in-destructive-check-point-gateway-attacks/"
+    },
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/"
     }
-   ]
+   ],
+   "epss": 0.0127
   },
   {
    "id": "d20b2da13e92",
@@ -294,6 +522,23 @@
    ]
   },
   {
+   "id": "6b2047aad824",
+   "title": "Macfinger ClickFix campaign sends DownTheDRAIN infostealer for macOS, (Fri, Nov 13th)",
+   "link": "https://isc.sans.edu/diary/rss/33518",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-11-13T03:41:41Z",
+   "summary": "Introduction",
+   "score": 4,
+   "tags": [
+    "Identity"
+   ],
+   "why": [
+    "Identity"
+   ]
+  },
+  {
    "id": "589fccee67c2",
    "title": "FBI Says US Seized $1.2 Billion Worth of Cryptocurrency Stolen From Binance",
    "link": "https://www.securityweek.com/fbi-says-us-seized-1-2-billion-worth-of-cryptocurrency-stolen-from-binance/",
@@ -303,6 +548,19 @@
    "published": "2026-11-13T02:28:21Z",
    "summary": "Also Thursday, the FBI blamed North Korea for a separate social engineering scheme that officials say resulted in the theft of $400 million worth of cryptocurrency. The post FBI Says US Seized $1.2 Billion Worth of Cryptocurrency Stolen From Binance appeared first on SecurityWeek .",
    "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "34edbf5084ab",
+   "title": "ISC Stormcast For Friday, November 13th, 2026 https://isc.sans.edu/podcastdetail/10178, (Fri, Nov 13th)",
+   "link": "https://isc.sans.edu/diary/rss/33516",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-11-13T02:00:03Z",
+   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
+   "score": 1,
    "tags": [],
    "why": []
   },
@@ -322,6 +580,48 @@
    "why": [
     "Data breach"
    ]
+  },
+  {
+   "id": "79fc68065bf3",
+   "title": "CVE-2026-123039: Check Point Multiple Products — Check Point Multiple Products Incorrect Permission Assignment for Critical Resource Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-123039",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-11-13T00:00:00Z",
+   "summary": "Check Point Firewall, Multi-Domain Security Management Server, Scalable Platforms, Security Gateway, and Security Management Server contain an incorrect permissions assignment for critical resources vulnerability when the Gaia OS DynamicCLI daemon runs as… CISA remediation due 2026-11-16.",
+   "score": 6,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "why": [
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "epss": 0.0127
+  },
+  {
+   "id": "dd9560d2d329",
+   "title": "CVE-2026-114713: UnrealIRCd UnrealIRCd — UnrealIRCd Improper Neutralization of Delimiters Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-114713",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-11-13T00:00:00Z",
+   "summary": "UnrealIRCd UnrealIRCd contains an improper neutralization of delimiters vulnerability that allows any user on a network with two or more linked servers to inject server-to-server commands that are executed with server authority. CISA remediation due 2026-11-16.",
+   "score": 4,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.003
   },
   {
    "id": "e9f16b1caffc",
@@ -378,24 +678,15 @@
     {
      "source": "Reuters",
      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPQWpWeUZnbllhcFk4WktZS0s3T1N6T3k3Vnhhd3pfSE9SWF9iRmRIQUljdHZXN0UtWS1uZS1rbUNZSlVPd1NXLXRtVUVtc3NQNTgxMVFMWjVnT3pPb09EX1g1YUx3WkF2VHk0bUMwWlhkRHdpT0JFRE5SQ3pQRkdmSnpUOHNXLUo1dXNSY3lFdkpSdU5laDdwSlhWRDVnNjBFcUh2Y0FwMXNldE8tSFpPaw?oc=5"
+    },
+    {
+     "source": "ABC News & Headlines – Australian Broadcasting Corporation",
+     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQa3d4WUpneFA2OVBxXy1NbkgyOFJZSzFZRTgtYjloejloV09jWGstNS1zcU9KM3JVNlpXeEYyVHRrOGZndVRrWktSNmVoaGNfUWVzd3RDd0wweVpWSHR4Y3YxTk9BNm9nLWZRU2p0VlBTNDZxSW5laFZZb3RCcWFvMjJBdk9ybnBWb3dTV2cxT3E?oc=5"
+    },
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/microsoft-struggles-to-restore-email-and-other-services-in-a-global-outage/"
     }
-   ]
-  },
-  {
-   "id": "8937f32d7136",
-   "title": "'No indication' Outlook outage caused by cyber attack, Microsoft says",
-   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQa3d4WUpneFA2OVBxXy1NbkgyOFJZSzFZRTgtYjloejloV09jWGstNS1zcU9KM3JVNlpXeEYyVHRrOGZndVRrWktSNmVoaGNfUWVzd3RDd0wweVpWSHR4Y3YxTk9BNm9nLWZRU2p0VlBTNDZxSW5laFZZb3RCcWFvMjJBdk9ybnBWb3dTV2cxT3E?oc=5",
-   "source": "ABC News & Headlines – Australian Broadcasting Corporation",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-11-12T22:25:47Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Microsoft 365"
-   ],
-   "why": [
-    "Microsoft 365"
    ]
   },
   {
@@ -612,7 +903,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.004,
+   "epss": 0.0041,
    "also": [
     {
      "source": "The Hacker News",
@@ -1056,9 +1347,9 @@
    ]
   },
   {
-   "id": "84aa5fceb0ee",
+   "id": "54cb94cd2739",
    "title": "Shukran data breach: Dubai’s Landmark Group investigating cyber incident",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQT3ppOEpUVTZYU0RPcWo4eHp4NGNyQndOUXhYeXlOTUZGWUlvQUlCdW5vR1JWQ1RGUElvSHhIYVdaYnp6Q0tickVwZEdqRGRsMmZTTVpzLUpHd0Jtek1OazBEWGs0cmJrbkJ6WnJWT1RneWpDNkR6ZklSOUpPRm9KaFA3akxvX2dSOXpkZXZTNzlReWFQbWdqSjRKaFhodUF1Qm5zSmh2RU5rMHJvc0l6YUFKalVyQ3BmTkFDb1hONWI?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPRkZBV0FvdllpajFFNmdLZ19KaW1fRWpqV2tlNkZNQVZFQVJ4YUxUVTNHc19WT0ZNT2RlaHFlZlI3U1JiT3BlMF9yZFB4LU14cU1ZbWViM0JpbDBjVVJ0OFk3ZzJuR3Q4eUVRNG9LOXdMYnlfeHczbHVKZkZ4alBweTRnRHhzUkR5MVIydEtidGg2ZXFrWUNaTVc1d0hvMUFiNGt6T2R0UWV4MXRGLU5aU00zSEQ?oc=5",
    "source": "Arabian Business",
    "feed": "Real estate cyber news",
    "region": "Global",
@@ -1196,25 +1487,6 @@
    ]
   },
   {
-   "id": "7f241c94ac84",
-   "title": "Baker Tilly notifies clients of data breach at third-party provider",
-   "link": "https://www.bleepingcomputer.com/news/security/baker-tilly-notifies-clients-of-data-breach-at-third-party-provider/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-11T23:01:31Z",
-   "summary": "The Baker Tilly Advisory Group is notifying clients that a data breach has compromised certain personal information about them and their dependents. [...]",
-   "score": 7,
-   "tags": [
-    "Data breach",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Data breach",
-    "SaaS / cloud"
-   ]
-  },
-  {
    "id": "ccdd6c7f3ffe",
    "title": "Active ScreenConnect attacks breach MSPs, impact dozens of organizations",
    "link": "https://www.bleepingcomputer.com/news/security/active-screenconnect-attacks-breach-msps-impact-dozens-of-organizations/",
@@ -1238,6 +1510,33 @@
     {
      "source": "The Hacker News",
      "url": "https://thehackernews.com/2026/11/screenconnect-attacks-target-at-least.html"
+    }
+   ]
+  },
+  {
+   "id": "bdfd395a0359",
+   "title": "NPC Confirms Data Breach In 10 Government Agencies",
+   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPLVhhTWpSMVlaWHhMVjFqYVFYUmN4MjhNdEwzeEVsWUo4bWVCTnY5NFlYcHcyY09zTWYwN1llWVFESENhTjJ0bHJfSUIyUXdac1BBRnVWREpvTm1fQlRUbUctU090ZGxxMnZiUExXaDBXZ05HQS1JYWU3aGptc3ltMENLemdyb2lHMVE?oc=5",
+   "source": "OneNews.PH",
+   "feed": "OAIC / Privacy news",
+   "region": "Global",
+   "published": "2026-11-11T22:49:12Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ],
+   "also": [
+    {
+     "source": "https://mytv.ph/",
+     "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxORlZtcGwzRVcyMVZfbFhma1EwTTV6ODNsLXhSZUpCVnRSeWpXSzd2Yzg5UXNMdjE5N0tyNkdNblh4MWhCZU5YaG1VWm9sR2Y4X0FGbmhPOFZwWTdQa0R0M2dKbm03eDYtZXdUVms1Sl96WXhYdWlHZzRnWnpGc1RtSXhDVTZ1WFp4MlBVX3hQZUpNT3NRLTY4dDJpd256MnpnTmhSeVhqMGZiSU1FbkdialJFRTRaZTQ?oc=5"
+    },
+    {
+     "source": "GMA Network",
+     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPXzhNQ1JVdFZ4NW5Uc0xEUTczdHhON1ppS3pmWlRWemJXVE9FUVZzR1BSSjRmRHJrWGo2NXVkamF0anllVlVjYnRka29MVXduWkxOX0FzV0JWWHJTVTBXTWIxX1R6eGhheks1OFRDWWc0Slh6Qkl3S0dLYmJraVBnNWhlQ2hLaDVYdGhJYXVRcjcwZzVNNmVJLWpVWDZkSUpWOE1wU3RnYU54RGFsMXcwdmVtSXBWX3VwU3V3TUxGRHVzaFJ1OWRZZS1B0gHKAUFVX3lxTE9fOE1DUlV0Vng1blRzTERRNzN0eE43WmlLemZaVFZ6YldUT0VRVnNHUFJKNGZEcmtYajY1dWRqYXRqeWVWVWNidGRrb0xVd25aTE5fQXNXQlZYclNVMFdNYjFfVHp4aGF6SzU4VENZZzRKWHpCSXdLR0tiYmtpUGc1aGVDaEtoNVh0aElhdVFyNzBnNU02ZUktalVYNmRJSlY4TXBTdGdhTnhEYWwxdzB2ZW1JcFZfdXBTdXdNTEZEdXNoUnU5ZFllLUE?oc=5"
     }
    ]
   },
@@ -1381,6 +1680,19 @@
    ]
   },
   {
+   "id": "2cf87a19124d",
+   "title": "As Test Takers Turn to AI for Answers, Exam Security Must Catch Up",
+   "link": "https://www.darkreading.com/cybersecurity-operations/test-takers-ai-exam-security-catch-up",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-11T20:27:00Z",
+   "summary": "It's hard to detect whether someone is using artificial intelligence (AI) to cheat on IT certification exams, but new tools and processes are emerging to boost trust.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
    "id": "be138bf98864",
    "title": "DXC’s Xchanging Subsidiary Falls Prey to Ransomware Attack",
    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBNS3RzQUhseGVlT2U3TEc4dnVOS3VaMXVqMVVjRUVlYUlMdUV0YUY0S3ZybHYtS0JEUG9KMVk0MS04c05DVkdfY0RqRmRwRnpVVllMZjhVTHRUWXdTU1g5MWl30gFiQVVfeXFMUE1LdHNBSGx4ZWVPZTdMRzh2dU5LdVoxdWoxVWNFRWVhSUx1RXRhRjRLdnJsdi1LQkRQb0oxWTQxLThzTkNWR19jRGpGZHBGelVWWUxmOFVMdFRZd1NTWDkxaXc?oc=5",
@@ -1510,29 +1822,6 @@
     "Vulnerability"
    ],
    "epss": 0.0041
-  },
-  {
-   "id": "5f7be9301b56",
-   "title": "Data breach alert: NPC warns Filipinos as 10 gov’t agencies report cyber incidents",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxORlZtcGwzRVcyMVZfbFhma1EwTTV6ODNsLXhSZUpCVnRSeWpXSzd2Yzg5UXNMdjE5N0tyNkdNblh4MWhCZU5YaG1VWm9sR2Y4X0FGbmhPOFZwWTdQa0R0M2dKbm03eDYtZXdUVms1Sl96WXhYdWlHZzRnWnpGc1RtSXhDVTZ1WFp4MlBVX3hQZUpNT3NRLTY4dDJpd256MnpnTmhSeVhqMGZiSU1FbkdialJFRTRaZTQ?oc=5",
-   "source": "https://mytv.ph/",
-   "feed": "OAIC / Privacy news",
-   "region": "Global",
-   "published": "2026-11-11T16:00:00Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ],
-   "also": [
-    {
-     "source": "GMA Network",
-     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPXzhNQ1JVdFZ4NW5Uc0xEUTczdHhON1ppS3pmWlRWemJXVE9FUVZzR1BSSjRmRHJrWGo2NXVkamF0anllVlVjYnRka29MVXduWkxOX0FzV0JWWHJTVTBXTWIxX1R6eGhheks1OFRDWWc0Slh6Qkl3S0dLYmJraVBnNWhlQ2hLaDVYdGhJYXVRcjcwZzVNNmVJLWpVWDZkSUpWOE1wU3RnYU54RGFsMXcwdmVtSXBWX3VwU3V3TUxGRHVzaFJ1OWRZZS1B0gHKAUFVX3lxTE9fOE1DUlV0Vng1blRzTERRNzN0eE43WmlLemZaVFZ6YldUT0VRVnNHUFJKNGZEcmtYajY1dWRqYXRqeWVWVWNidGRrb0xVd25aTE5fQXNXQlZYclNVMFdNYjFfVHp4aGF6SzU4VENZZzRKWHpCSXdLR0tiYmtpUGc1aGVDaEtoNVh0aElhdVFyNzBnNU02ZUktalVYNmRJSlY4TXBTdGdhTnhEYWwxdzB2ZW1JcFZfdXBTdXdNTEZEdXNoUnU5ZFllLUE?oc=5"
-    }
-   ]
   },
   {
    "id": "9c9df925add3",
@@ -2856,7 +3145,7 @@
     "Edge devices",
     "Vulnerability"
    ],
-   "epss": 0.0082
+   "epss": 0.0098
   },
   {
    "id": "255a7e2e04ea",
@@ -2878,7 +3167,7 @@
     "Edge devices",
     "Vulnerability"
    ],
-   "epss": 0.062
+   "epss": 0.0908
   },
   {
    "id": "0c134491b82b",
@@ -2918,7 +3207,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0893
+   "epss": 0.1095
   },
   {
    "id": "9272d747390f",
@@ -6875,267 +7164,6 @@
    ],
    "why": [
     "Microsoft 365"
-   ]
-  },
-  {
-   "id": "313624391a22",
-   "title": "Phishing and fiction: The human is not the control",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNNHdkSjRiQmFjWS0yZHkwWHlsRFdiR0lMTF9tRVEzZ1dLWFpkbmQ1ZVJZRThMamJOZV95M2pYVk1rVzlLTjlQd05fb2VZbXlEMExPWU5ZVmhuTnBaSGJyWllBcDdzd28zN1hXOW5nZ2pFQ0ZVTl9tZ0ZVSkFNRFUwVmNnYWxHUE91SGU1X1VWRmlibkFV?oc=5",
-   "source": "Cyber Daily",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-11-02T20:01:05Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Phishing"
-   ],
-   "why": [
-    "Phishing"
-   ]
-  },
-  {
-   "id": "b9a8fe94cb9b",
-   "title": "Fintech platform Sageworks taken offline after suspected cyberattack",
-   "link": "https://www.bleepingcomputer.com/news/security/fintech-platform-sageworks-taken-offline-after-suspected-cyberattack/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-02T19:00:45Z",
-   "summary": "Financial technology company Abrigo has restored its Sageworks risk management application, except for borrower-facing capabilities, following an outage triggered by \"irregular activity\" in its environment. [...]",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "65afadf0cbc2",
-   "title": "⚡ Weekly Recap: Critical CVEs, Linux DDoS Botnet, Device-Code Phishing, Android Spyware and More",
-   "link": "https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-02T16:57:56Z",
-   "summary": "Some attacks this week didn't need much of a trick. A fake support call, a trusted extension, a shared link, or a device with no password. Small things that people barely think about. Yet each was enough to cause serious trouble. Then there were the bigger messes. Billions stolen, hidden networks…",
-   "score": 6,
-   "tags": [
-    "Phishing",
-    "Identity"
-   ],
-   "why": [
-    "Phishing",
-    "Identity"
-   ]
-  },
-  {
-   "id": "2eeac1917f7b",
-   "title": "Stryker cuts outlook as cyber attack blow on supply lingers",
-   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPZWZNVmNEM2taRVFmRHBwbXJFLUNROFBIVWdRT0hydWpnSDA4bU81VU5UaXlmanBPT1ZSM3BMcWxzYzV3dkR5aEVrNXlZMHhQaXNGUWVVRi1yc1lyUzJRSVlwdkNfdDAwN2YtaXpsNzlsXy1FWktsOHBPM0NFWThlSDBlUEt2UElnUnJV?oc=5",
-   "source": "Crain's Grand Rapids Business",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-02T15:32:00Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Microsoft 365"
-   ],
-   "why": [
-    "Microsoft 365"
-   ]
-  },
-  {
-   "id": "5ea1d647d005",
-   "title": "Your Mobile Carrier Stores Your Call Logs for Years",
-   "link": "https://www.bleepingcomputer.com/news/security/your-mobile-carrier-stores-your-call-logs-for-years/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-02T15:01:11Z",
-   "summary": "Mobile carriers can retain years of call and text metadata, exposing sensitive details about customers' relationships, locations, and daily routines if breached. Cape examines the privacy risks of long-term telecom data retention and how its mobile service reduces exposure by automatically…",
-   "score": 3,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "c0b0ac944847",
-   "title": "Cybersecurity M&A Roundup: 37 Deals Announced in October 2026",
-   "link": "https://www.securityweek.com/cybersecurity-ma-roundup-37-deals-announced-in-october-2026/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-02T15:01:11Z",
-   "summary": "Significant cybersecurity deals were announced by Absolute Security, Aikido, Anthropic, Cohere, Hex-Rays, and Proofpoint. The post Cybersecurity M&A Roundup: 37 Deals Announced in October 2026 appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "6c5cf422a94b",
-   "title": "Microsoft's AI Risk Report Misses This Key Detail",
-   "link": "https://www.darkreading.com/cyberattacks-data-breaches/microsoft-ai-cyber-risk-report-miss",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-11-02T15:00:00Z",
-   "summary": "The latest \"Digital Defense Report\" identifies government agencies as prime targets for AI attacks but doesn't mention that they are broadly being targeted through Microsoft bugs.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "1d21aa666ff1",
-   "title": "Mutipath TCP: Use and Detection, (Mon, Nov 2nd)",
-   "link": "https://isc.sans.edu/diary/rss/33482",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-11-02T14:52:05Z",
-   "summary": "Last week, an often-ignored&#;x26;#;xc2;&#;x26;#;xa0;TCP option, introduced in 2020, made the news due to a new vulnerability in Linux&#;x26;#;39;s implementation (RFC&#;x26;#;xc2;&#;x26;#;xa0;8684, &#;x26;#;xc2;&#;x26;#;xa0;CVE-2026-98432)",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.0076,
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/10/linux-kernel-tcp-flaw-with-98-cvss.html"
-    }
-   ]
-  },
-  {
-   "id": "39749d757eb1",
-   "title": "DarkBlinders Compromises Israeli Target and Iraqi Kurdish Government Cloud Environment",
-   "link": "https://thehackernews.com/2026/11/darkblinders-compromises-israeli-target.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-02T14:46:05Z",
-   "summary": "Cybersecurity researchers have disclosed details of a cyber espionage campaign targeting Israel and the Kurdistan Region of Iraq by an Iran state-aligned threat actor between August and October 2026. According to a report published by Dream Research Labs, the campaign has led to the compromise of…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "36bb83401e5a",
-   "title": "Florida Student Aid Website Hack Puts Data of 4.9 Million People at Risk",
-   "link": "https://www.securityweek.com/florida-student-aid-website-hack-puts-data-of-4-9-million-people-at-risk/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-02T14:44:18Z",
-   "summary": "The Florida Department of Education says SSNs and other personal data may have been exposed in a breach of its financial aid website. The post Florida Student Aid Website Hack Puts Data of 4.9 Million People at Risk appeared first on SecurityWeek .",
-   "score": 3,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "cab04cab3c66",
-   "title": "Hackers disrupt refrigeration systems at European supermarkets",
-   "link": "https://www.bleepingcomputer.com/news/security/hackers-disrupt-refrigeration-systems-at-european-supermarkets/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-02T14:28:39Z",
-   "summary": "A cyberattack on refrigeration systems has disrupted stores run by multiple supermarket chains across several European countries after hackers remotely changed temperature settings on freezers and cooling systems. [...]",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "96515b09df3b",
-   "title": "PapRAT Cyber-Espionage Campaign Leaves a 'Bitter' Taste in South Asia",
-   "link": "https://www.darkreading.com/cyberattacks-data-breaches/paprat-cyberespionage-campaign-bitter-south-asia",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-11-02T14:00:00Z",
-   "summary": "Organizations in the region face growing cyberattacks from the known India-linked threat group, which leverages legitimate Windows functionality in three distinct attack chains.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "5e44eebabf29",
-   "title": "Microsoft fixes Smart App Control broken by October Windows update",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-smart-app-control-broken-by-october-windows-update/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-02T13:57:29Z",
-   "summary": "Microsoft has resolved a known issue that prevented some users from activating the Smart App Control security feature after installing the October 2026 KB5127648 Windows 11 security update. [...]",
-   "score": 1,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "adcc13fa97b8",
-   "title": "Revolve Data Breach Impacts at Least 200,000 People",
-   "link": "https://www.securityweek.com/revolve-data-breach-impacts-at-least-180000-people/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-02T13:35:21Z",
-   "summary": "Hackers accessed its online shopping platform and stole customers’ personal and payment card information. The post Revolve Data Breach Impacts at Least 200,000 People appeared first on SecurityWeek .",
-   "score": 4,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "7398c8fe0a0b",
-   "title": "Over 1,000 GitLab servers vulnerable to ongoing RCE attacks",
-   "link": "https://www.bleepingcomputer.com/news/security/over-1-000-gitlab-servers-vulnerable-to-code-execution-attacks/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-02T12:47:00Z",
-   "summary": "Over 1,000 Internet-exposed GitLab servers are still unpatched against a maximum-severity flaw actively exploited in remote code execution attacks. [...]",
-   "score": 9,
-   "tags": [
-    "Actively exploited",
-    "Data breach",
-    "Vulnerability"
-   ],
-   "why": [
-    "Actively exploited",
-    "Data breach",
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "cef785d82660",
-   "title": "Binance sees $5 billion in outflows after record $6.3 billion breach",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQTmdtSl9wQmJVZmNHTWM4U1Rxd1hOU1JxU2tUQ0lLTGVTbUZPVENXS1MzMEItUjN0ZHVuY2FLS0ExRV8tNVNkLUVzbS1ZcTZaX1JhNnJ3RkMyNkVodmlwWGg3czdleHhxeWotWV9nVDU5Z2J0RnU4Znlma0s0bkpkT004cENDX1c2RGF4Y2RSYUlwTEdGUEVaTDVCNC1iOWVTbTMySW1zdmZvUnk2NXRyTEJBbEZYbVU?oc=5",
-   "source": "Invezz",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-11-02T12:10:45Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
    ]
   }
  ]
