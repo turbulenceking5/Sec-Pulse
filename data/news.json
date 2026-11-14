@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-14T10:29:27Z",
+ "generated": "2026-11-14T18:07:04Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -34,13 +34,13 @@
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 5,
+   "count": 4,
    "error": null
   },
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 2,
+   "count": 3,
    "error": null
   },
   {
@@ -105,6 +105,137 @@
   }
  ],
  "items": [
+  {
+   "id": "403e4bdfaeb6",
+   "title": "Cursor confirms security breach led to malicious Claude Code extension",
+   "link": "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-14T17:27:25Z",
+   "summary": "Cursor confirmed it suffered a security breach that let hackers distribute a malicious Claude Code extension through its marketplace after stealing credentials from AI infrastructure provider Fireworks AI. [...]",
+   "score": 6,
+   "tags": [
+    "Data breach",
+    "Identity"
+   ],
+   "why": [
+    "Data breach",
+    "Identity"
+   ]
+  },
+  {
+   "id": "e253199b5be0",
+   "title": "US disrupts North Korean campaign behind $400 million crypto theft",
+   "link": "https://www.bleepingcomputer.com/news/security/us-disrupts-north-korean-campaign-behind-400-million-crypto-theft/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-14T15:15:49Z",
+   "summary": "The U.S. government has disrupted a North Korean social engineering campaign called 'FaceStealer', responsible for stealing more than $400 million in cryptocurrency. [...]",
+   "score": 0,
+   "tags": [],
+   "why": [],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html"
+    }
+   ]
+  },
+  {
+   "id": "3772cdf174b0",
+   "title": "Is AI Making Us Worse at Cybersecurity?",
+   "link": "https://www.securityweek.com/is-ai-making-us-worse-at-cybersecurity/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-14T14:00:00Z",
+   "summary": "Overreliance on AI could erode the creativity, clear communication, and critical thinking security teams need when there’s no playbook. The post Is AI Making Us Worse at Cybersecurity? appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "0c5acc0e47d3",
+   "title": "Inje University Reports Breach of 24,000 Personal Records",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNbGlZZUo5ZlpSQ2lxNDdkN0FoZEFLRUlBSEZQc3RyLTVuTDJMNHBLcnhuRFluWHd3RXRrYjRvR0NTU0VMNnZWSVY1NUkzZzJuNDhIR3Rkd1RIdTlMRnY1UV8zVkVhWWxkNHBZYmxJNFJXdzNNVGg2SlkwUE5HVmVSU2ZycnAxeGIwU2dLS0p5TWl3VDRuX0pJZ2JZUWgxd0k?oc=5",
+   "source": "Seoul Economic Daily",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-14T12:54:01Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "b58e8e6c37ed",
+   "title": "Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection",
+   "link": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-14T12:38:35Z",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added a high-severity security flaw impacting UnrealIRCd, an open-source Internet Relay Chat (IRC) server, to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation. The vulnerability,…",
+   "score": 5,
+   "tags": [
+    "Actively exploited",
+    "Vulnerability"
+   ],
+   "why": [
+    "Actively exploited",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "81d88180e85b",
+   "title": "New York Man Allegedly Gambled Using a $5.7M Real Estate Scam",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQXdvRDVieTlHdlozbEF4S0t0R21tMXJOeXo2UlZPYzVocWZGNG1YLWdId2FQUVZfa0hLbVM4eDN5VEV4b2c2ckZJRjA5SWIxa1BvMWJjS3htR1R0UmprZHhvVF8zN21abE5ZdGpSbjhSZFE2RnlCTlRCYTd4RGRZQ2hDVzFtVTFFSUV0MkJTQ20yakhnUkU2cHdFekVuclpKTEFlamtiblVVYnplUjVtNERyQkRoNFk?oc=5",
+   "source": "PokerNews",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-14T12:00:00Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ],
+   "also": [
+    {
+     "source": "News Mobile",
+     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOaXNrMUxIM1ROQjBiTXItRWxIaEJVUGYwYmxfV3NPQjNvNHFUampXa2x6QmdYelh4RFc0WHFfeklMS09VU2dXYkpjSkJpNGtFeF9ScEVndXNEVm81ZDAwUDFIUFFnajFyQTlIeDdnaHFPRHFhd3k3eW14V1VOT0E3WFd2SThiNHFLLVlsVTRwQUV6YnJSaVI0cjhTdVJ1cm5VaEJfRVU4S3BHYWY4T0ZKU2l1b056TExkQUxYZGFnOHc4UQ?oc=5"
+    },
+    {
+     "source": "The Real Deal",
+     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPQkItdzc2emdfdi1hS092aVliUnUtcUFZZ1dPWmtGVGxWalVMQ1owVUwwLUJ3aVJTbXhSLXJmSHFBUmw2R0pmYUJyajRFVnd1ZDVSRHE1ZTlyZlNmU3JTNU5ULVgyUkp5VVl6Z2hLdFZ4X1BXdzc0X0dOUkhhUmNHcUF0WXBjaXZfSURMT0c1VlZWYmZlbk9fUFNkencwdm5EX19sYWZhQ0xVbDhhdjlmYXV3SQ?oc=5"
+    },
+    {
+     "source": "Daily Mail",
+     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNd3l5U0NXVmNBaEFCN0hsSkFWMWhqMUZ5MTdJbkVqN201NFQ4UFMwd3lsYzZlWWVLdG1UbE1GdjFwRXgtUm02eGpFUk5vdE9Xb204ZzZWdnotQndZbFNQU3h2eC1JWG5namtaNElRRE1SR2F3c3dpaXpLc1VqQVhpWXpwbm14bUhEeDgwLWdDU2s3ODdNNHRtY19rSnBJeWwySlVoRtIBqgFBVV95cUxNNDZCZFJRZmxORG9ST2dzcmhTS3pneXJXNFQ5LU1VMmhtX19yYy1GV1NGa3RUdWtkZUhKWTRSUS1RZ1Rfc0JJSlJ6ME5Dd0tUaEpwR2h3MkFkT3QzZmpzNnl0VkdGXzBTclprMUZFN3FUTHZJVi1MYXFWNEZRWG1rVzBncUwzNzlyLU9iZVZMMDVHWEFUWGs1RXpzbTY0c1Q0bEtXeV9ZRVdhUQ?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "f694138aff43",
+   "title": "Apple Reveals How Secure Exclaves Shield Camera and Microphone Data",
+   "link": "https://www.securityweek.com/apple-reveals-how-secure-exclaves-shield-camera-and-microphone-data/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-14T11:00:00Z",
+   "summary": "The tech giant has detailed the architecture designed to isolate ambient sensor data from the main OS on HomeView and new iPhones. The post Apple Reveals How Secure Exclaves Shield Camera and Microphone Data appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
   {
    "id": "271096a5ff8c",
    "title": "KOMSCO regional gift certificate platform \"Chak\" suffers personal data breach affecting 3,083 users",
@@ -348,23 +479,6 @@
      "source": "Benzinga",
      "url": "https://news.google.com/rss/articles/CBMisAJBVV95cUxNNGdVNVBlcUFrZFBaSXlIakRROXdlT1JrSWs4dnFOVUNnY2RIVDY4YlIxajBBUmxLUDZJNXpkNGpUVFFlbkIyYUlsNng3YXR4aGUycUhzZ2pSSGp5Uy1xTzNhaEJwWTRFcllrUFMtNlVBM3pnM05VVnlGVmx4ekJZMk9IUHVsMFJqZFFSTDFOaEVmcll3YjBUaEw2QkdFZ2gxeDBQUGk5bmxPaDVXTzlHNlNyMGhEQk1pR19nb09MM0JVN2FzemlBS3JtWWZKdTl0V1B6SkY1T2JyM1FVUzVsakc0ZVRseEQwRnpJdndZNUNaZ3dZQ1lQQ0c0YUlySDQwWTJxRWNKa0pNanNZNHlzeVR6Z0taWFRZaThETnlIUHJiWG1sWmNaMFprUjEzemlF?oc=5"
     }
-   ]
-  },
-  {
-   "id": "c6e1d6a77271",
-   "title": "FBI Says North Korean Hackers Stole Over $400 Million in Crypto Using Deepfake Video Calls",
-   "link": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-13T14:28:58Z",
-   "summary": "The U.S. Federal Bureau of Investigation (FBI) has established that threat actors tied to the Democratic People's Republic of Korea (DPRK aka North Korea) have stolen more than $400 million worth of cryptocurrency as part of a social engineering scheme codenamed FaceStealer in the last 18 months.…",
-   "score": 2,
-   "tags": [
-    "AI threats"
-   ],
-   "why": [
-    "AI threats"
    ]
   },
   {
@@ -724,7 +838,7 @@
     "Edge devices",
     "Vulnerability"
    ],
-   "epss": 0.0127
+   "epss": 0.0219
   },
   {
    "id": "dd9560d2d329",
@@ -744,7 +858,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.003
+   "epss": 0.0051
   },
   {
    "id": "e9f16b1caffc",
@@ -1026,7 +1140,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0041,
+   "epss": 0.0133,
    "also": [
     {
      "source": "The Hacker News",
@@ -1238,23 +1352,6 @@
    ]
   },
   {
-   "id": "18a4c5a20ed8",
-   "title": "New York Man Accused Of Defrauding Investors Of Over $5 Million In Real Estate Scam",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOaXNrMUxIM1ROQjBiTXItRWxIaEJVUGYwYmxfV3NPQjNvNHFUampXa2x6QmdYelh4RFc0WHFfeklMS09VU2dXYkpjSkJpNGtFeF9ScEVndXNEVm81ZDAwUDFIUFFnajFyQTlIeDdnaHFPRHFhd3k3eW14V1VOT0E3WFd2SThiNHFLLVlsVTRwQUV6YnJSaVI0cjhTdVJ1cm5VaEJfRVU4S3BHYWY4T0ZKU2l1b056TExkQUxYZGFnOHc4UQ?oc=5",
-   "source": "News Mobile",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-12T11:23:48Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ]
-  },
-  {
    "id": "9b952a7f4c5d",
    "title": "Inside an AI Attack Against a US Retailer",
    "link": "https://www.darkreading.com/cyberattacks-data-breaches/inside-ai-attack-us-retailer",
@@ -1359,7 +1456,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0071
+   "epss": 0.0074
   },
   {
    "id": "3773dc5512fb",
@@ -1418,7 +1515,7 @@
    "id": "d79ecdbae1ec",
    "title": "Secure AI testing to reduce unauthorised access | CGA",
    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQNXhSNHdyREJQSDEwM2d4c0tubU9QM2FVM2xZTENXQTBiZjZQdWN4bmNuSTJZdTBqQ2xwVTFIRTdFeDA5NEg1aTFDSEJRZ0xKcHB4Y1pKX0RfZGtMRnVaenRMOExxWjJfZnZ2aUd3TXNkUEhfSEhsX2dRLUlpOWwwblI0UQ?oc=5",
-   "source": "Cyber.gov.au",
+   "source": "Australian Cyber Security",
    "feed": "ACSC (via Google News)",
    "region": "AU",
    "published": "2026-11-12T07:10:12Z",
@@ -1722,29 +1819,6 @@
     {
      "source": "SecurityWeek",
      "url": "https://www.securityweek.com/notion-customer-data-compromised-in-fireworks-ai-hack/"
-    }
-   ]
-  },
-  {
-   "id": "878d82803a6e",
-   "title": "Westchester man charged over $5.7M real estate investment scam",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPQkItdzc2emdfdi1hS092aVliUnUtcUFZZ1dPWmtGVGxWalVMQ1owVUwwLUJ3aVJTbXhSLXJmSHFBUmw2R0pmYUJyajRFVnd1ZDVSRHE1ZTlyZlNmU3JTNU5ULVgyUkp5VVl6Z2hLdFZ4X1BXdzc0X0dOUkhhUmNHcUF0WXBjaXZfSURMT0c1VlZWYmZlbk9fUFNkencwdm5EX19sYWZhQ0xVbDhhdjlmYXV3SQ?oc=5",
-   "source": "The Real Deal",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-11T20:30:00Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ],
-   "also": [
-    {
-     "source": "Daily Mail",
-     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNd3l5U0NXVmNBaEFCN0hsSkFWMWhqMUZ5MTdJbkVqN201NFQ4UFMwd3lsYzZlWWVLdG1UbE1GdjFwRXgtUm02eGpFUk5vdE9Xb204ZzZWdnotQndZbFNQU3h2eC1JWG5namtaNElRRE1SR2F3c3dpaXpLc1VqQVhpWXpwbm14bUhEeDgwLWdDU2s3ODdNNHRtY19rSnBJeWwySlVoRtIBqgFBVV95cUxNNDZCZFJRZmxORG9ST2dzcmhTS3pneXJXNFQ5LU1VMmhtX19yYy1GV1NGa3RUdWtkZUhKWTRSUS1RZ1Rfc0JJSlJ6ME5Dd0tUaEpwR2h3MkFkT3QzZmpzNnl0VkdGXzBTclprMUZFN3FUTHZJVi1MYXFWNEZRWG1rVzBncUwzNzlyLU9iZVZMMDVHWEFUWGs1RXpzbTY0c1Q0bEtXeV9ZRVdhUQ?oc=5"
     }
    ]
   },
@@ -7037,7 +7111,7 @@
     "Identity",
     "Vulnerability"
    ],
-   "epss": 0.005
+   "epss": 0.0215
   },
   {
    "id": "d7db938afd31",
@@ -7090,87 +7164,6 @@
    ],
    "why": [
     "Real estate"
-   ]
-  },
-  {
-   "id": "3b6a51103bfa",
-   "title": "Tech Firms Dismantle Botnet That Turned 1.3M TV Boxes Into Proxies",
-   "link": "https://krebsonsecurity.com/2026/11/tech-firms-dismantle-botnet-that-turned-1-3m-tv-boxes-into-proxies/",
-   "source": "Krebs on Security",
-   "feed": "Krebs on Security",
-   "region": "Global",
-   "published": "2026-11-03T02:24:31Z",
-   "summary": "Google said today it worked with industry partners to dismantle a botnet made up of more than 1.3 million Android TV set-top boxes that ship with malicious software which secretly rents the user's Internet connection out to strangers and conducts advertising fraud. Experts involved in the takedown…",
-   "score": 1,
-   "tags": [],
-   "why": [],
-   "also": [
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/google-dismantles-xcpe-botnet-of-1-3-million-android-devices/"
-    },
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/google-disrupts-million-device-xcpe-android-malware-botnet-bans-tv-box-maker/"
-    },
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/11/google-disrupts-13-million-device.html"
-    }
-   ]
-  },
-  {
-   "id": "d67f6a348091",
-   "title": "ISC Stormcast For Tuesday, November 3rd, 2026 https://isc.sans.edu/podcastdetail/10162, (Tue, Nov 3rd)",
-   "link": "https://isc.sans.edu/diary/rss/33484",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-11-03T02:00:02Z",
-   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
-   "score": 1,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "b87761b9d725",
-   "title": "CVE-2026-119977: WordPress WordPress Core — WordPress WordPress Core Time-of-check Time-of-use (TOCTOU) Race Condition Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-119977",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-11-03T00:00:00Z",
-   "summary": "WordPress WordPress Core contains a time-of-check time-of-use (TOCTOU) race condition vulnerability that could allow unauthenticated attackers to execute code on the server during the upgrade window. This is due to predictable, web-accessible staging paths… CISA remediation due 2026-11-06.",
-   "score": 4,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.012
-  },
-  {
-   "id": "741b956a33b1",
-   "title": "After RMS breach, hotel guests became phishing targets — ABC News Australia",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOcF9ULV9rWEI1WVBoRFU2TUdNQkVUdWVZYllDZTNVaUViRG5vekNzUXRkYjUyUTF2dGU5czBReGpTMmo5UGZ6SnpDMTZFTklEWmNYU3R6N2g3OU1BNVlYOC1rSE5DaGJXZ2xBQjdWUjY3NDRjMmhVSjVaWmlTWVNpcWVnbmgxWmdBcFpBdkdiVUJVa3VCVkRnWW5Vel9Sb3hXVjlENWo3N3ZYU1g4U1dF?oc=5",
-   "source": "UA.NEWS",
-   "feed": "AU breach news",
-   "region": "AU",
-   "published": "2026-11-02T22:52:21Z",
-   "summary": "",
-   "score": 17,
-   "tags": [
-    "Australia",
-    "Phishing",
-    "Data breach"
-   ],
-   "why": [
-    "Australia",
-    "Phishing",
-    "Data breach"
    ]
   }
  ]
