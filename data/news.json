@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-14T18:07:04Z",
+ "generated": "2026-11-14T22:27:18Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,7 +28,7 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 7,
+   "count": 6,
    "error": null
   },
   {
@@ -40,7 +40,7 @@
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 3,
+   "count": 2,
    "error": null
   },
   {
@@ -190,6 +190,23 @@
    "why": [
     "Actively exploited",
     "Vulnerability"
+   ]
+  },
+  {
+   "id": "99062c68fbbc",
+   "title": "Names, phone numbers, and addresses exposed... Yellow Umbrella announces personal data breach",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFA5SC1aTTFlY1Y2RHQtbFF4TVQ2UzlCLW9iOUJ2Qm9mai1wMVRpOVlxeldWcHR6Y0xoV3pYSzVNMVg1S3pkWUV1X3RCNUlsZk1YSmdQSGtIM1FQYnFIZmJxVUpn?oc=5",
+   "source": "재경일보",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-14T12:05:03Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
    ]
   },
   {
@@ -7147,23 +7164,6 @@
    ],
    "why": [
     "Data breach"
-   ]
-  },
-  {
-   "id": "df25e1100743",
-   "title": "Opinion | The ‘creative class’ was one big real estate scam",
-   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxORzNDeW1RYTU2VnpyVy1tUUxfdUExWnkzRGlvczV2ZE9hM1cyWWlhMktNZmVyYVhkYll1eXNqQm1ZWVFoRVZKcVJhd3Rha3VmZ1pMTHc0S0ozNVMxdTRJTjFXYzBmY3I0cUU3S2FqMVZIdWdaTHA3SjdlMHNNckZoTTJUSlhXZw?oc=5",
-   "source": "The Boston Globe",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-03T03:00:00Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
    ]
   }
  ]
