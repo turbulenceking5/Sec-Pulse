@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-14T01:27:40Z",
+ "generated": "2026-11-14T10:29:27Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,13 +28,13 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 9,
+   "count": 7,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 6,
+   "count": 5,
    "error": null
   },
   {
@@ -105,6 +105,36 @@
   }
  ],
  "items": [
+  {
+   "id": "271096a5ff8c",
+   "title": "KOMSCO regional gift certificate platform \"Chak\" suffers personal data breach affecting 3,083 users",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB5TmpBcHFoQmI0VTZpcklMOU8tRmZiNTRiN21vUWVCUnJfakd5dU00WlNHcGFDUFBrejFub01HWmJGNk1pTk1hMDQ2eUx2MDZieXYybnRYRHA4R1k3LTFWMDdn?oc=5",
+   "source": "재경일보",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-14T09:55:04Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "9cdb1de4d486",
+   "title": "No Signs of Hacking in FAA Ground Stop as FBI Reportedly Probes Software Update",
+   "link": "https://www.securityweek.com/no-signs-of-hacking-in-faa-ground-stop-as-fbi-reportedly-probes-software-update/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-14T08:40:22Z",
+   "summary": "Officials say there is no evidence of a cyberattack behind the nationwide FAA outage, which may have been caused by a software update. The post No Signs of Hacking in FAA Ground Stop as FBI Reportedly Probes Software Update appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
   {
    "id": "11d7cc16194d",
    "title": "FAA Ground Stop Issued Due to ‘Extraordinary Circumstances’",
@@ -474,8 +504,7 @@
      "source": "BleepingComputer",
      "url": "https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/"
     }
-   ],
-   "epss": 0.0127
+   ]
   },
   {
    "id": "d20b2da13e92",
@@ -1387,7 +1416,7 @@
   },
   {
    "id": "d79ecdbae1ec",
-   "title": "Secure AI testing to reduce unauthorised access",
+   "title": "Secure AI testing to reduce unauthorised access | CGA",
    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQNXhSNHdyREJQSDEwM2d4c0tubU9QM2FVM2xZTENXQTBiZjZQdWN4bmNuSTJZdTBqQ2xwVTFIRTdFeDA5NEg1aTFDSEJRZ0xKcHB4Y1pKX0RfZGtMRnVaenRMOExxWjJfZnZ2aUd3TXNkUEhfSEhsX2dRLUlpOWwwblI0UQ?oc=5",
    "source": "Cyber.gov.au",
    "feed": "ACSC (via Google News)",
@@ -7143,36 +7172,6 @@
     "Phishing",
     "Data breach"
    ]
-  },
-  {
-   "id": "8158b1dc7416",
-   "title": "One Compromised Laptop, Billions Lost: The Binance Attack-Path Warning",
-   "link": "https://www.darkreading.com/cyberattacks-data-breaches/binance-hack-test-attack-paths",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-11-02T22:27:24Z",
-   "summary": "The record theft shows how weak system separation, inadequate controls, and untested attack possibilities can turn one breach into systemic loss.",
-   "score": 3,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "f6edbcaffade",
-   "title": "Chinese hackers use ARTEX AI in automated attacks against 200 orgs",
-   "link": "https://www.bleepingcomputer.com/news/security/chinese-hackers-use-artex-ai-in-automated-attacks-against-200-orgs/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-02T21:40:14Z",
-   "summary": "Chinese hackers used ARTEX, an open-source, multi-agent AI penetration-testing framework, in attacks against more than 200 organizations across 14 countries. [...]",
-   "score": 0,
-   "tags": [],
-   "why": []
   }
  ]
 }
