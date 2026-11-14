@@ -1,8 +1,21 @@
 {
- "date": "2026-11-14",
- "generated": "2026-11-13T23:46:14+00:00",
- "title": "Sec-Pulse brief - Sat 14 Nov",
+ "date": "2026-11-15",
+ "generated": "2026-11-14T22:38:55+00:00",
+ "title": "Sec-Pulse brief - Sun 15 Nov",
  "items": [
+  {
+   "id": "81d88180e85b",
+   "title": "New York Man Allegedly Gambled Using a $5.7M Real Estate Scam",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQXdvRDVieTlHdlozbEF4S0t0R21tMXJOeXo2UlZPYzVocWZGNG1YLWdId2FQUVZfa0hLbVM4eDN5VEV4b2c2ckZJRjA5SWIxa1BvMWJjS3htR1R0UmprZHhvVF8zN21abE5ZdGpSbjhSZFE2RnlCTlRCYTd4RGRZQ2hDVzFtVTFFSUV0MkJTQ20yakhnUkU2cHdFekVuclpKTEFlamtiblVVYnplUjVtNERyQkRoNFk?oc=5",
+   "source": "PokerNews",
+   "region": "Global",
+   "published": "2026-11-14T12:00:00Z",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "summary": ""
+  },
   {
    "id": "fa2dbd672e87",
    "title": "Phillipsburg Police Warn Residents of Fake Rental Listing Scams on TikTok and Social Media",
@@ -17,67 +30,52 @@
    "summary": ""
   },
   {
-   "id": "bd6202421982",
-   "title": "Waiter Says Contractor Scam Cost Him $40K, Then Builds Rentals With $13K Monthly Cash Flow. ‘I Don’t Want To Go Back To Being On The Hustle’",
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPYVNaLWpURWtvRVR3WHBxSzczWGtsLUVGTEgtc1pjcDNwZjVNanJmc3VZekVBYzNwTFd3T0FlUFc5VjhaLWRMZmFTTkdiclBuMU9QQlA0OW0wT0swUzN1dnc4RFh1QlhuN21zNC1mZVpZY3pOaUlwajg2d1NVREZ4S0Jlb3AxWEtYYldzempYRkEyRTdha0xDaS1n?oc=5",
-   "source": "Yahoo Finance",
+   "id": "0c5acc0e47d3",
+   "title": "Inje University Reports Breach of 24,000 Personal Records",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNbGlZZUo5ZlpSQ2lxNDdkN0FoZEFLRUlBSEZQc3RyLTVuTDJMNHBLcnhuRFluWHd3RXRrYjRvR0NTU0VMNnZWSVY1NUkzZzJuNDhIR3Rkd1RIdTlMRnY1UV8zVkVhWWxkNHBZYmxJNFJXdzNNVGg2SlkwUE5HVmVSU2ZycnAxeGIwU2dLS0p5TWl3VDRuX0pJZ2JZUWgxd0k?oc=5",
+   "source": "Seoul Economic Daily",
    "region": "Global",
-   "published": "2026-11-13T15:00:07Z",
-   "score": 10,
+   "published": "2026-11-14T12:54:01Z",
+   "score": 7,
    "tags": [
-    "Real estate"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "76cf8ad9a547",
-   "title": "\"A 1,400-pyeong plot of land turns out to have 178 owners\"… Im Ye-jin fell victim to a planned real estate scam [Star Issue]",
-   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5fSFp4c2hTaU1mSXBtRlMyMncyb05NVzBKY2lXZlo4TlNSRG5HRkIwRHl2dGNkZ0ZYN18xdlZ3dVJVMDlKc0lHXzBMdkFZNjh5M3VDWktCVHFZOHlRa1BlVDFpR2JpTnNCZmotdzR6RmRTX2p2Q3hz?oc=5",
-   "source": "스타뉴스",
-   "region": "Global",
-   "published": "2026-11-13T07:40:25Z",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "db3fd3a5adb8",
-   "title": "How one AI agent exposed five critical enterprise security gaps",
-   "link": "https://www.bleepingcomputer.com/news/security/how-one-ai-agent-exposed-five-critical-enterprise-security-gaps/",
-   "source": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-13T15:01:11Z",
-   "score": 9,
-   "tags": [
-    "BEC / payment fraud",
     "Data breach"
    ],
-   "summary": "An AI agent built to automate invoice processing could be manipulated into changing vendor bank details through a malicious email, without triggering traditional security alerts. Token Security examines five critical AI agent security gaps and shares practical guidance from industry security…"
+   "summary": ""
   },
   {
-   "id": "55b74c42c28f",
-   "title": "Global Microsoft Outage Disrupts Outlook, Teams and Cloud Services as Company Works to Restore Servers",
-   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNWnJ4Mk9DaXhNLUJUZ2M0c2JVR2c5VGJONjhneUItdTljMjAwR1dkaUQ0aUlqNExxOGhuemhQZUJoeGtNMW1hUVhBOFkzYWtGZW0yU2U4QUktMlRwRGxzakpEUGpCRnFTeHVkZE1RellFdVBqcmxfQkxhdV90Y2tKYVkzMTlVdm50TUM3bXNUa0hNTW1ZRjJzNENrcmQyLUtjQnhHOUp1VTVXSUNrdHlPWDdLSFduNUpVejNERE1pbWpiXzFFZUtzN2JtQ3pwSjlCUGRLQ3Jpeks2bG9yVU1KRW8yNA?oc=5",
-   "source": "Australian Cyber Security Magazine",
+   "id": "99062c68fbbc",
+   "title": "Names, phone numbers, and addresses exposed... Yellow Umbrella announces personal data breach",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFA5SC1aTTFlY1Y2RHQtbFF4TVQ2UzlCLW9iOUJ2Qm9mai1wMVRpOVlxeldWcHR6Y0xoV3pYSzVNMVg1S3pkWUV1X3RCNUlsZk1YSmdQSGtIM1FQYnFIZmJxVUpn?oc=5",
+   "source": "재경일보",
    "region": "Global",
-   "published": "2026-11-12T22:44:55Z",
-   "score": 9,
+   "published": "2026-11-14T12:05:03Z",
+   "score": 7,
    "tags": [
-    "Microsoft 365",
-    "SaaS / cloud"
+    "Data breach"
+   ],
+   "summary": ""
+  },
+  {
+   "id": "271096a5ff8c",
+   "title": "KOMSCO regional gift certificate platform \"Chak\" suffers personal data breach affecting 3,083 users",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB5TmpBcHFoQmI0VTZpcklMOU8tRmZiNTRiN21vUWVCUnJfakd5dU00WlNHcGFDUFBrejFub01HWmJGNk1pTk1hMDQ2eUx2MDZieXYybnRYRHA4R1k3LTFWMDdn?oc=5",
+   "source": "재경일보",
+   "region": "Global",
+   "published": "2026-11-14T09:55:04Z",
+   "score": 7,
+   "tags": [
+    "Data breach"
    ],
    "summary": ""
   }
  ],
  "stats": {
-  "recent": 43,
+  "recent": 17,
   "au": 0,
-  "kev": 2
+  "kev": 0
  },
  "lesson": {
-  "id": "4.5",
-  "title": "Writing an incident report"
+  "id": "1.1",
+  "title": "Architecture concepts for analysts"
  }
 }
