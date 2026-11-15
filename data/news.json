@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-15T06:37:36Z",
+ "generated": "2026-11-15T15:08:36Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -34,7 +34,7 @@
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 5,
+   "count": 7,
    "error": null
   },
   {
@@ -106,20 +106,64 @@
  ],
  "items": [
   {
-   "id": "f97e23f3d1f8",
-   "title": "Peter Pan platform confirms leak of customer data after Apartmentner breach",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPMDNmcEpuM1RYMUZpNE1xRTV3bjh3YWtsTXFpZ2VTNnMyNUtBTElUT1czV1ROR1hwQXdpOGI1dnlwZDFEMUE3eXBRUkJRbTRSWnFmVGZOMWZpbWhhYWdXMUx6WUNMWC1jSG1EdHFJT0tKTXA5VjkzbzBtTnBneFlqVlh6X1nSAZgBQVVfeXFMUEQ4QkV1RXMwcVBjdlZLSUxvdFQyVEp6aTdPSVdQbmR1VXZlYlZwZFk4ZjNLSkZGRjdOV0FTbDRPeEFRR3dRMzRaYnIyU2MwMVpYbDhUQWQ1SEQ1ZWlPTVBuOUtJN3Njc1k0Q2V1SWo0MzZQLXV1YUxJdi1aZjhud0JoOVJ0MVlxc2MzeVJxX2JMV3RzOTJMM1I?oc=5",
-   "source": "Chosunbiz",
+   "id": "c8b26857299e",
+   "title": "Pentagon Renames CDAO ‘Super Intelligence Office’",
+   "link": "https://www.securityweek.com/pentagon-renames-cdao-super-intelligence-office/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-15T12:51:33Z",
+   "summary": "The move follows President Trump’s order to replace “artificial intelligence” with “super intelligence” in executive branch communications. The post Pentagon Renames CDAO ‘Super Intelligence Office’ appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "04c1c102f5a7",
+   "title": "Italy Fines Meta €805 Million Over Facebook's Android Gallery Access Without Explicit Consent",
+   "link": "https://thehackernews.com/2026/11/italy-fines-meta-805-million-over.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-15T11:27:31Z",
+   "summary": "Meta was fined €805 million in Italy yesterday over a Facebook for Android feature that suggests photos and videos from users' phone galleries for them to post. The Garante, Italy's data protection authority, found that the feature was enabled by default and that the app accessed Italian users'…",
+   "score": 0,
+   "tags": [],
+   "why": [],
+   "also": [
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/meta-fined-887-million-in-italy-over-android-gallery-photos-and-videos-on-facebook/"
+    }
+   ]
+  },
+  {
+   "id": "218548befcc9",
+   "title": "Real estate platform 'Peter Pan' hit by data breach, leaking names, phone numbers and emails",
+   "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1DRnoyUTROTXBmSDFXTDdpX0xfLTVaZXRrMDlsaVF1QU8yeTdWLUJ2RzlNdGFOM3owcWVLSlk1VXBIZzZ4dng1Q2RfX0ZBWkJWN3FpTlQ4Zw?oc=5",
+   "source": "헤럴드경제",
    "feed": "Real estate cyber news",
    "region": "Global",
-   "published": "2026-11-15T06:16:00Z",
+   "published": "2026-11-15T05:24:50Z",
    "summary": "",
-   "score": 7,
+   "score": 14,
    "tags": [
+    "Real estate",
     "Data breach"
    ],
    "why": [
+    "Real estate",
     "Data breach"
+   ],
+   "also": [
+    {
+     "source": "Chosunbiz",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPMDNmcEpuM1RYMUZpNE1xRTV3bjh3YWtsTXFpZ2VTNnMyNUtBTElUT1czV1ROR1hwQXdpOGI1dnlwZDFEMUE3eXBRUkJRbTRSWnFmVGZOMWZpbWhhYWdXMUx6WUNMWC1jSG1EdHFJT0tKTXA5VjkzbzBtTnBneFlqVlh6X1nSAZgBQVVfeXFMUEQ4QkV1RXMwcVBjdlZLSUxvdFQyVEp6aTdPSVdQbmR1VXZlYlZwZFk4ZjNLSkZGRjdOV0FTbDRPeEFRR3dRMzRaYnIyU2MwMVpYbDhUQWQ1SEQ1ZWlPTVBuOUtJN3Njc1k0Q2V1SWo0MzZQLXV1YUxJdi1aZjhud0JoOVJ0MVlxc2MzeVJxX2JMV3RzOTJMM1I?oc=5"
+    },
+    {
+     "source": "재경일보",
+     "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFA5SC1aTTFlY1Y2RHQtbFF4TVQ2UzlCLW9iOUJ2Qm9mai1wMVRpOVlxeldWcHR6Y0xoV3pYSzVNMVg1S3pkWUV1X3RCNUlsZk1YSmdQSGtIM1FQYnFIZmJxVUpn?oc=5"
+    }
    ]
   },
   {
@@ -156,6 +200,12 @@
    "why": [
     "Data breach",
     "Identity"
+   ],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html"
+    }
    ]
   },
   {
@@ -224,23 +274,6 @@
    "why": [
     "Actively exploited",
     "Vulnerability"
-   ]
-  },
-  {
-   "id": "99062c68fbbc",
-   "title": "Names, phone numbers, and addresses exposed... Yellow Umbrella announces personal data breach",
-   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFA5SC1aTTFlY1Y2RHQtbFF4TVQ2UzlCLW9iOUJ2Qm9mai1wMVRpOVlxeldWcHR6Y0xoV3pYSzVNMVg1S3pkWUV1X3RCNUlsZk1YSmdQSGtIM1FQYnFIZmJxVUpn?oc=5",
-   "source": "재경일보",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-14T12:05:03Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
    ]
   },
   {
@@ -1191,7 +1224,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0133,
+   "epss": 0.0153,
    "also": [
     {
      "source": "The Hacker News",
@@ -7143,26 +7176,6 @@
     "Vulnerability"
    ],
    "epss": 0.0089
-  },
-  {
-   "id": "d4042f8de11d",
-   "title": "Attackers Target Unpatched CryptoPayment Gateway Flaw That Can Expose Wallet Credentials",
-   "link": "https://thehackernews.com/2026/11/attackers-target-unpatched.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-03T05:34:37Z",
-   "summary": "Threat actors are attempting to exploit an unpatched maximum-severity security vulnerability in the CryptoPayment Gateway WordPress plugin, according to findings from Defused Cyber. The vulnerability in question is CVE-2026-81648, which carries a CVSS score of 10.0. Successful exploitation of the…",
-   "score": 4,
-   "tags": [
-    "Identity",
-    "Vulnerability"
-   ],
-   "why": [
-    "Identity",
-    "Vulnerability"
-   ],
-   "epss": 0.0215
   }
  ]
 }
