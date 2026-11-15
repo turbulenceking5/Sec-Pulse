@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-15T16:23:09Z",
+ "generated": "2026-11-15T22:51:05Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,13 +28,13 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 3,
+   "count": 1,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 7,
+   "count": 6,
    "error": null
   },
   {
@@ -100,11 +100,43 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 26,
+   "count": 25,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "4201db3ac682",
+   "title": "FBI warns ARTEX AI hacking tool is powering global cyberattacks",
+   "link": "https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-15T18:29:53Z",
+   "summary": "The FBI is warning that hackers are using an AI-powered penetration testing framework called ARTEX to automate cyberattacks against organizations worldwide, including a recent ConnectWise supply-chain breach that compromised Microsoft 365 customer environments. [...]",
+   "score": 6,
+   "tags": [
+    "Microsoft 365",
+    "Data breach"
+   ],
+   "why": [
+    "Microsoft 365",
+    "Data breach"
+   ]
+  },
+  {
+   "id": "989c0561410e",
+   "title": "YARA-X 1.23.0 Release, (Sun, Nov 15th)",
+   "link": "https://isc.sans.edu/diary/rss/33496",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-11-15T18:17:27Z",
+   "summary": "YARA-X&#x26;#39&#x26;#x3b;s 1.23.0 release brings 4 improvements and 16 bugfixes.",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
   {
    "id": "bbb8a6727085",
    "title": "TSMC employee data breach linked to cloud provider",
@@ -7145,36 +7177,6 @@
      "url": "https://www.bleepingcomputer.com/news/security/synology-warns-customers-of-ongoing-c3rb3r-ransomware-attacks/"
     }
    ]
-  },
-  {
-   "id": "3b1211ea12d3",
-   "title": "Real Estate Lecturer Arrested for 12.5 Billion Won Auction Scam",
-   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBrTGItVW9RV2dpcnQzU3R6TDE0NDhvN0dDdEd6SkhqNHQtWnVFZk5YclVVdXd2NXFkQ3pNdExqOFR3ZHFhNVdSNHVYLVBaYWlsclRuR1NuTzBVdE51Si1rZmdzSEJPWXg0T0hHTkZB0gFmQVVfeXFMUHdHSzR3NzBvTi1obGhWRWhyNm1ZWmxtU1J6ektqVTVMSFAwWmplbUYxWGR4dW9jQmZucFFwcEhheHFsQlZld0o4WWk5SHpHU3d3QnRvVnpXSkREaXNYZkM4dHFyRWpR?oc=5",
-   "source": "SBS 뉴스",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-03T07:41:37Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ]
-  },
-  {
-   "id": "36d509a3e525",
-   "title": "New Wave of Refrigeration Cyberattacks Hits Supermarkets Across Europe, Forcing Stores to Pull Food",
-   "link": "https://thehackernews.com/2026/11/second-wave-of-cyberattacks-hits.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-03T07:27:07Z",
-   "summary": "Attackers remotely changed the settings on refrigeration controls at supermarkets in Belgium, Sweden, Estonia and other European countries overnight into Monday, November 2, warming fridges and freezers. No chain reported more than several dozen affected stores, and some had to throw away chilled…",
-   "score": 0,
-   "tags": [],
-   "why": []
   }
  ]
 }
