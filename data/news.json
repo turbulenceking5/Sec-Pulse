@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-15T15:08:36Z",
+ "generated": "2026-11-15T16:23:09Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -100,11 +100,28 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 27,
+   "count": 26,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "bbb8a6727085",
+   "title": "TSMC employee data breach linked to cloud provider",
+   "link": "https://www.bleepingcomputer.com/news/security/tsmc-employee-data-breach-linked-to-cloud-provider/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-15T15:23:48Z",
+   "summary": "Taiwan Semiconductor Manufacturing Company (TSMC) confirmed that personal employee data has been leaked online after a threat actor put 6.9GB of information allegedly stolen from the company up for auction. [...]",
+   "score": 4,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
   {
    "id": "c8b26857299e",
    "title": "Pentagon Renames CDAO ‘Super Intelligence Office’",
@@ -7158,24 +7175,6 @@
    "score": 0,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "3e6bc640da57",
-   "title": "Attackers Exploit Critical Siemens IoT2050 Flaw to Plant Remote Command Backdoors",
-   "link": "https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-03T05:34:41Z",
-   "summary": "A maximum-severity security flaw impacting Siemens SIMATIC IoT2050 Advanced devices has come under active exploitation, VulnCheck has revealed. The vulnerability, tracked as CVE-2026-58115 (CVSS score: 10.0), is a case of missing authentication for a critical function that could be exploited by an…",
-   "score": 1,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.0089
   }
  ]
 }
