@@ -1,15 +1,29 @@
 {
- "date": "2026-11-15",
- "generated": "2026-11-14T22:38:55+00:00",
- "title": "Sec-Pulse brief - Sun 15 Nov",
+ "date": "2026-11-16",
+ "generated": "2026-11-15T23:02:35+00:00",
+ "title": "Sec-Pulse brief - Mon 16 Nov",
  "items": [
   {
-   "id": "81d88180e85b",
-   "title": "New York Man Allegedly Gambled Using a $5.7M Real Estate Scam",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQXdvRDVieTlHdlozbEF4S0t0R21tMXJOeXo2UlZPYzVocWZGNG1YLWdId2FQUVZfa0hLbVM4eDN5VEV4b2c2ckZJRjA5SWIxa1BvMWJjS3htR1R0UmprZHhvVF8zN21abE5ZdGpSbjhSZFE2RnlCTlRCYTd4RGRZQ2hDVzFtVTFFSUV0MkJTQ20yakhnUkU2cHdFekVuclpKTEFlamtiblVVYnplUjVtNERyQkRoNFk?oc=5",
-   "source": "PokerNews",
+   "id": "218548befcc9",
+   "title": "Real estate platform 'Peter Pan' hit by data breach, leaking names, phone numbers and emails",
+   "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1DRnoyUTROTXBmSDFXTDdpX0xfLTVaZXRrMDlsaVF1QU8yeTdWLUJ2RzlNdGFOM3owcWVLSlk1VXBIZzZ4dng1Q2RfX0ZBWkJWN3FpTlQ4Zw?oc=5",
+   "source": "헤럴드경제",
    "region": "Global",
-   "published": "2026-11-14T12:00:00Z",
+   "published": "2026-11-15T05:24:50Z",
+   "score": 14,
+   "tags": [
+    "Real estate",
+    "Data breach"
+   ],
+   "summary": ""
+  },
+  {
+   "id": "32161bd81bcd",
+   "title": "Hanyang Cyber University to expand real estate graduate program with AI tracks",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQbnk0M0VBbUx0LU1iQUZVX21YelRiQmJ5ME1xYnBLTU45aF8ycW1RWkZzX1pVVlBEMFJRaEZuLXVJRXJISE1GS3otdG15bG1ad19ZYTQtMjk0TGhURXFsbGhCY2NoT2k2ZC1Zcm9kdXhQbEdPVE5SUmY5YzcwT05aVG9YTjU5TXRKMG5fMGZ2M0pFQVR20gGUAUFVX3lxTFBueTQzRUFtTHQtTWJBRlVfbVh6VGJCYnkwTXFicEtNTjloXzJxbVFaRnNfWlVWUEQwUlFoRm4tdUlFckhITUZLei10bXlsbVp3X1lhNC0yOTRMaFRFcWxsaEJjY2hPaTZkLVlyb2R1eFBsR09UTlJSZjljNzBPTlpUb1hONTlNdEowbl8wZnYzSkVBVHY?oc=5",
+   "source": "Chosunbiz",
+   "region": "Global",
+   "published": "2026-11-15T01:50:00Z",
    "score": 10,
    "tags": [
     "Real estate"
@@ -17,65 +31,54 @@
    "summary": ""
   },
   {
-   "id": "fa2dbd672e87",
-   "title": "Phillipsburg Police Warn Residents of Fake Rental Listing Scams on TikTok and Social Media",
-   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOUjdRRm9hSnBhUGhEOGo2VGRFdk5MdWJ0WG9aMHNQWGloLXA1YUIwYW1SZ29hVVZ1QjhyMW9EVG9ibnZwU2NBQ0tudW1CMllCM0lGeHl6b2ExdzMybDNkX3BwY0VuWjlFeVotMGFmbVlkZ2drUmtlUWpMZHZYNE4yaXNIb3JPdFRHVmhjZFRpVkM3cl9mVllJNmxTSk80MFQ2cTVWdkZmcGdfWnBRd3RsRkdicTlfTXF1VjZyVW5tSTd1MVU1V0FjNXVCYnpkaDltN3FOM0JDXzJCUQ?oc=5",
-   "source": "TAPinto",
+   "id": "4201db3ac682",
+   "title": "FBI warns ARTEX AI hacking tool is powering global cyberattacks",
+   "link": "https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/",
+   "source": "BleepingComputer",
    "region": "Global",
-   "published": "2026-11-13T21:27:06Z",
-   "score": 10,
+   "published": "2026-11-15T18:29:53Z",
+   "score": 6,
    "tags": [
-    "Real estate"
+    "Microsoft 365",
+    "Data breach"
    ],
-   "summary": ""
+   "summary": "The FBI is warning that hackers are using an AI-powered penetration testing framework called ARTEX to automate cyberattacks against organizations worldwide, including a recent ConnectWise supply-chain breach that compromised Microsoft 365 customer environments. [...]"
   },
   {
-   "id": "0c5acc0e47d3",
-   "title": "Inje University Reports Breach of 24,000 Personal Records",
-   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNbGlZZUo5ZlpSQ2lxNDdkN0FoZEFLRUlBSEZQc3RyLTVuTDJMNHBLcnhuRFluWHd3RXRrYjRvR0NTU0VMNnZWSVY1NUkzZzJuNDhIR3Rkd1RIdTlMRnY1UV8zVkVhWWxkNHBZYmxJNFJXdzNNVGg2SlkwUE5HVmVSU2ZycnAxeGIwU2dLS0p5TWl3VDRuX0pJZ2JZUWgxd0k?oc=5",
-   "source": "Seoul Economic Daily",
+   "id": "403e4bdfaeb6",
+   "title": "Cursor confirms security breach led to malicious Claude Code extension",
+   "link": "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/",
+   "source": "BleepingComputer",
    "region": "Global",
-   "published": "2026-11-14T12:54:01Z",
-   "score": 7,
+   "published": "2026-11-14T17:27:25Z",
+   "score": 6,
+   "tags": [
+    "Data breach",
+    "Identity"
+   ],
+   "summary": "Cursor confirmed it suffered a security breach that let hackers distribute a malicious Claude Code extension through its marketplace after stealing credentials from AI infrastructure provider Fireworks AI. [...]"
+  },
+  {
+   "id": "bbb8a6727085",
+   "title": "TSMC employee data breach linked to cloud provider",
+   "link": "https://www.bleepingcomputer.com/news/security/tsmc-employee-data-breach-linked-to-cloud-provider/",
+   "source": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-15T15:23:48Z",
+   "score": 4,
    "tags": [
     "Data breach"
    ],
-   "summary": ""
-  },
-  {
-   "id": "99062c68fbbc",
-   "title": "Names, phone numbers, and addresses exposed... Yellow Umbrella announces personal data breach",
-   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFA5SC1aTTFlY1Y2RHQtbFF4TVQ2UzlCLW9iOUJ2Qm9mai1wMVRpOVlxeldWcHR6Y0xoV3pYSzVNMVg1S3pkWUV1X3RCNUlsZk1YSmdQSGtIM1FQYnFIZmJxVUpn?oc=5",
-   "source": "재경일보",
-   "region": "Global",
-   "published": "2026-11-14T12:05:03Z",
-   "score": 7,
-   "tags": [
-    "Data breach"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "271096a5ff8c",
-   "title": "KOMSCO regional gift certificate platform \"Chak\" suffers personal data breach affecting 3,083 users",
-   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB5TmpBcHFoQmI0VTZpcklMOU8tRmZiNTRiN21vUWVCUnJfakd5dU00WlNHcGFDUFBrejFub01HWmJGNk1pTk1hMDQ2eUx2MDZieXYybnRYRHA4R1k3LTFWMDdn?oc=5",
-   "source": "재경일보",
-   "region": "Global",
-   "published": "2026-11-14T09:55:04Z",
-   "score": 7,
-   "tags": [
-    "Data breach"
-   ],
-   "summary": ""
+   "summary": "Taiwan Semiconductor Manufacturing Company (TSMC) confirmed that personal employee data has been leaked online after a threat actor put 6.9GB of information allegedly stolen from the company up for auction. [...]"
   }
  ],
  "stats": {
-  "recent": 17,
+  "recent": 8,
   "au": 0,
   "kev": 0
  },
  "lesson": {
-  "id": "1.1",
-  "title": "Architecture concepts for analysts"
+  "id": "1.2",
+  "title": "Indicators of malicious activity: network"
  }
 }
