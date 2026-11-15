@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-14T22:38:46Z",
+ "generated": "2026-11-15T06:37:36Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,13 +28,13 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 6,
+   "count": 3,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 4,
+   "count": 5,
    "error": null
   },
   {
@@ -105,6 +105,40 @@
   }
  ],
  "items": [
+  {
+   "id": "f97e23f3d1f8",
+   "title": "Peter Pan platform confirms leak of customer data after Apartmentner breach",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPMDNmcEpuM1RYMUZpNE1xRTV3bjh3YWtsTXFpZ2VTNnMyNUtBTElUT1czV1ROR1hwQXdpOGI1dnlwZDFEMUE3eXBRUkJRbTRSWnFmVGZOMWZpbWhhYWdXMUx6WUNMWC1jSG1EdHFJT0tKTXA5VjkzbzBtTnBneFlqVlh6X1nSAZgBQVVfeXFMUEQ4QkV1RXMwcVBjdlZLSUxvdFQyVEp6aTdPSVdQbmR1VXZlYlZwZFk4ZjNLSkZGRjdOV0FTbDRPeEFRR3dRMzRaYnIyU2MwMVpYbDhUQWQ1SEQ1ZWlPTVBuOUtJN3Njc1k0Q2V1SWo0MzZQLXV1YUxJdi1aZjhud0JoOVJ0MVlxc2MzeVJxX2JMV3RzOTJMM1I?oc=5",
+   "source": "Chosunbiz",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-15T06:16:00Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "32161bd81bcd",
+   "title": "Hanyang Cyber University to expand real estate graduate program with AI tracks",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQbnk0M0VBbUx0LU1iQUZVX21YelRiQmJ5ME1xYnBLTU45aF8ycW1RWkZzX1pVVlBEMFJRaEZuLXVJRXJISE1GS3otdG15bG1ad19ZYTQtMjk0TGhURXFsbGhCY2NoT2k2ZC1Zcm9kdXhQbEdPVE5SUmY5YzcwT05aVG9YTjU5TXRKMG5fMGZ2M0pFQVR20gGUAUFVX3lxTFBueTQzRUFtTHQtTWJBRlVfbVh6VGJCYnkwTXFicEtNTjloXzJxbVFaRnNfWlVWUEQwUlFoRm4tdUlFckhITUZLei10bXlsbVp3X1lhNC0yOTRMaFRFcWxsaEJjY2hPaTZkLVlyb2R1eFBsR09UTlJSZjljNzBPTlpUb1hONTlNdEowbl8wZnYzSkVBVHY?oc=5",
+   "source": "Chosunbiz",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-15T01:50:00Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
   {
    "id": "403e4bdfaeb6",
    "title": "Cursor confirms security breach led to malicious Claude Code extension",
@@ -1315,6 +1349,21 @@
    ]
   },
   {
+   "id": "d79ecdbae1ec",
+   "title": "Secure AI testing to reduce unauthorised access | CGA",
+   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQNXhSNHdyREJQSDEwM2d4c0tubU9QM2FVM2xZTENXQTBiZjZQdWN4bmNuSTJZdTBqQ2xwVTFIRTdFeDA5NEg1aTFDSEJRZ0xKcHB4Y1pKX0RfZGtMRnVaenRMOExxWjJfZnZ2aUd3TXNkUEhfSEhsX2dRLUlpOWwwblI0UQ?oc=5",
+   "source": "Australian Cyber Security",
+   "feed": "ACSC (via Google News)",
+   "region": "AU",
+   "published": "2026-11-12T12:00:00Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "Australia"
+   ],
+   "why": []
+  },
+  {
    "id": "6b1c381ae9eb",
    "title": "Exploit Attempts for GPUStack Authentication Bypass (CVE-2026-102895), (Thu, Nov 12th)",
    "link": "https://isc.sans.edu/diary/rss/33514",
@@ -1526,21 +1575,6 @@
    "summary": "A flaw fixed in Node.js this week lets unauthenticated clients crash servers that use the runtime's built-in HTTP/2 support on the 24.x and 26.x release lines. A second HTTP/2 flaw can cause a server to send a client pieces of its memory, including responses intended for other connections. Fixed…",
    "score": 0,
    "tags": [],
-   "why": []
-  },
-  {
-   "id": "d79ecdbae1ec",
-   "title": "Secure AI testing to reduce unauthorised access | CGA",
-   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQNXhSNHdyREJQSDEwM2d4c0tubU9QM2FVM2xZTENXQTBiZjZQdWN4bmNuSTJZdTBqQ2xwVTFIRTdFeDA5NEg1aTFDSEJRZ0xKcHB4Y1pKX0RfZGtMRnVaenRMOExxWjJfZnZ2aUd3TXNkUEhfSEhsX2dRLUlpOWwwblI0UQ?oc=5",
-   "source": "Australian Cyber Security",
-   "feed": "ACSC (via Google News)",
-   "region": "AU",
-   "published": "2026-11-12T07:10:12Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "Australia"
-   ],
    "why": []
   },
   {
@@ -7129,42 +7163,6 @@
     "Vulnerability"
    ],
    "epss": 0.0215
-  },
-  {
-   "id": "d7db938afd31",
-   "title": "Lancashire law firm closed by regulator weeks after conveyancing breach",
-   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOUWFFSnBIcEs5M05ZSDV4WV94czh4OFk5WmowVEdkWEVxVnc5STRFa2hyeDY5cm02VUdJcDBoUlFCQ2d1dlFCLW9RekxTc2dqa1VtNGxEdTZTdzNhQnRNX1VUdXFTTVB4dWh4Q3l5ZG03LVpwVXhpWWV5M25XQmU1NDVvUXN0OXVhRlBnX2NDaHFJeXZtRmtMWGRMVUg1WVdqdm5Pdlh4S29Rdw?oc=5",
-   "source": "Lancashire Telegraph",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-03T05:00:00Z",
-   "summary": "",
-   "score": 14,
-   "tags": [
-    "Real estate",
-    "Data breach"
-   ],
-   "why": [
-    "Real estate",
-    "Data breach"
-   ]
-  },
-  {
-   "id": "263e62846d76",
-   "title": "J.B. Hunt Data Breach Lawsuit: 4 Class Actions [2026]",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOTzlnNVFKdWRUS2xmbnFOay1hN3ZHX0RvSkNaSUFDWVlHT2J3ekxXV1BBcVBJQmctd1ZzTlFZeDZtQjRZZl9Cbi1GeVB0cC1pTUN0UVZFbzRYVE5KWkdDQlZ2Q3k1U1RQdnBhdEtuNG9DNTNqTGhOemMwS1BneEhNbWxPMlpaNUdqZzZ0dHdTMEV1dFVKbGd3RGttX0xvVkJLWGc?oc=5",
-   "source": "shattered.io",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-11-03T03:57:23Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
   }
  ]
 }
