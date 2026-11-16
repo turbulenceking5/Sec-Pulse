@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-15T23:02:25Z",
+ "generated": "2026-11-16T06:33:51Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,19 +28,19 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 1,
+   "count": 0,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 6,
+   "count": 7,
    "error": null
   },
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 2,
+   "count": 3,
    "error": null
   },
   {
@@ -75,9 +75,9 @@
   },
   {
    "name": "SANS ISC",
-   "ok": false,
-   "count": 0,
-   "error": "ParseError: syntax error: line 1, column 0"
+   "ok": true,
+   "count": 10,
+   "error": null
   },
   {
    "name": "Microsoft Security Blog",
@@ -105,6 +105,36 @@
   }
  ],
  "items": [
+  {
+   "id": "9869401c8599",
+   "title": "Bunjang Reports Data Breach at Outsourced Call Center",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQbU9MSjdrYXlMUmJUYll6N0thVW90b2tMR1dUM3NpdU96NWZJbFNJWWp5eFk0c1dvdFhicE5HMHpXamtlX292TGRvOVJSdEppY1p6ZW1rT2g0RVh5YkRKX3I1c0lYb0dMTlQ1djlqOVI0emZoSWVZMVFNUlR3ZWQ0Ulc4cEx5YnRhenhyTXFsVmg3eC1UQ3lHRVlXQWI?oc=5",
+   "source": "Seoul Economic Daily",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-16T04:32:00Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "201de7464188",
+   "title": "ISC Stormcast For Monday, November 16th, 2026 https://isc.sans.edu/podcastdetail/10180, (Mon, Nov 16th)",
+   "link": "https://isc.sans.edu/diary/rss/33520",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-11-16T02:00:05Z",
+   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
   {
    "id": "4201db3ac682",
    "title": "FBI warns ARTEX AI hacking tool is powering global cyberattacks",
@@ -7127,54 +7157,6 @@
     {
      "source": "BleepingComputer",
      "url": "https://www.bleepingcomputer.com/news/security/btcpay-server-warns-of-hot-wallet-thefts-targeting-outdated-instances/"
-    }
-   ]
-  },
-  {
-   "id": "f9c39fb133ac",
-   "title": "Over 100 European Stores Hit as Supermarket Fridge Attacks Return",
-   "link": "https://www.securityweek.com/over-100-european-stores-hit-as-supermarket-fridge-attacks-resume/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-03T07:43:24Z",
-   "summary": "Attackers again tampered with internet-exposed refrigeration controllers, this time at stores in Belgium, Sweden, Ireland and beyond. The post Over 100 European Stores Hit as Supermarket Fridge Attacks Return appeared first on SecurityWeek .",
-   "score": 3,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ],
-   "also": [
-    {
-     "source": "Dark Reading",
-     "url": "https://www.darkreading.com/ics-ot-security/fresh-european-fridge-attacks-cold-chain-security"
-    }
-   ]
-  },
-  {
-   "id": "d108c8cad61e",
-   "title": "Synology NAS Devices Targeted in Ransomware Attacks Exploiting Patched DSM Flaw",
-   "link": "https://thehackernews.com/2026/11/synology-nas-devices-targeted-in.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-03T07:43:07Z",
-   "summary": "Synology is urging customers to update the DiskStation Manager (DSM) software powering its Network Attached Storage (NAS) devices following ransomware attacks. The Taiwanese vendor said it observed threat actors exploiting a vulnerability patched in December 2024 to target devices running outdated…",
-   "score": 6,
-   "tags": [
-    "Ransomware",
-    "Vulnerability"
-   ],
-   "why": [
-    "Ransomware",
-    "Vulnerability"
-   ],
-   "also": [
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/synology-warns-customers-of-ongoing-c3rb3r-ransomware-attacks/"
     }
    ]
   }
