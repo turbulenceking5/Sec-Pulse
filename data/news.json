@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-16T06:33:51Z",
+ "generated": "2026-11-16T19:38:11Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,13 +28,13 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 0,
+   "count": 2,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 7,
+   "count": 6,
    "error": null
   },
   {
@@ -100,11 +100,549 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 25,
+   "count": 26,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "9c11c754eaec",
+   "title": "'Sleeper Agent' Tactic Hides Payloads in Open-Weight AI Models",
+   "link": "https://www.darkreading.com/vulnerabilities-threats/sleeper-agent-tactic-payloads-open-weight-ai-models",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-16T19:10:03Z",
+   "summary": "Malware can lurk inside just 0.00001% of a neural network. How, then, can any user tell it's there?",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "18b00fe2b40c",
+   "title": "Microsoft says months-old bug caused global Microsoft 365 outage",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-says-months-old-bug-caused-global-microsoft-365-outage/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-16T16:43:24Z",
+   "summary": "Microsoft says a software bug introduced in July caused last week's worldwide Microsoft 365 outage, triggering a cascading failure that left more than 80% of its networking gateway servers unresponsive. [...]",
+   "score": 4,
+   "tags": [
+    "Microsoft 365"
+   ],
+   "why": [
+    "Microsoft 365"
+   ],
+   "also": [
+    {
+     "source": "ABC News & Headlines – Australian Broadcasting Corporation",
+     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQa3d4WUpneFA2OVBxXy1NbkgyOFJZSzFZRTgtYjloejloV09jWGstNS1zcU9KM3JVNlpXeEYyVHRrOGZndVRrWktSNmVoaGNfUWVzd3RDd0wweVpWSHR4Y3YxTk9BNm9nLWZRU2p0VlBTNDZxSW5laFZZb3RCcWFvMjJBdk9ybnBWb3dTV2cxT3E?oc=5"
+    },
+    {
+     "source": "The Guardian",
+     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORzFTSUdWUkpoWUk1Z2FULTd2ZmRRUmVINTBTZjNUVEdtT3BBNUxxck1ZcXFQenhma1F5RG5BZXIwVkItZWhaWGl2dHlzVWRTZkIza0Y3QWVyd1hlSUo0dUo0XzRzOTFiZnJYelhtakN2R1VJOU5oUzY2MHVGSko3MTF1ZXE2T0tRY1lCMWc5M1ZBeFpfZ0ZVbV8waldfVlByNlE?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "10d373a62ac2",
+   "title": "China-Nexus Actors Breach 10 Organizations in AI-Driven Attacks",
+   "link": "https://www.darkreading.com/cyberattacks-data-breaches/china-nexus-actors-breach-10-organizations-ai-driven-attacks",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-16T16:36:55Z",
+   "summary": "Attackers used Cairn once again in autonomous attacks that targeted advanced manufacturing and defense sectors, as well as civil and human rights organizations.",
+   "score": 4,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "67c2edf75728",
+   "title": "Cursor Supply Chain Attack Started at Fireworks AI",
+   "link": "https://www.securityweek.com/cursor-supply-chain-attack-started-at-fireworks/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-16T15:45:43Z",
+   "summary": "The attacker stole an access key from Fireworks and used it to exfiltrate credentials that enabled them to push malicious Claude Code extension copies. The post Cursor Supply Chain Attack Started at Fireworks AI appeared first on SecurityWeek .",
+   "score": 5,
+   "tags": [
+    "Identity",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Identity",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "d29e040f4044",
+   "title": "Fandango says hackers stole payment card details from checkout pages",
+   "link": "https://www.bleepingcomputer.com/news/security/fandango-says-hackers-stole-payment-card-details-from-checkout-pages/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-16T15:44:21Z",
+   "summary": "Ticket seller Fandango Media is notifying customers about a data breach that exposed payment card details entered on its checkout pages. [...]",
+   "score": 3,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "eea617c7ce17",
+   "title": "Google Project Zero Sets Course for 30-Day Disclosure Deadline",
+   "link": "https://www.securityweek.com/google-project-zero-sets-course-for-30-day-disclosure-deadline/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-16T15:31:25Z",
+   "summary": "It will move to a 60-day vulnerability disclosure window in February 2027 and to a 30-day window in January 2028. The post Google Project Zero Sets Course for 30-Day Disclosure Deadline appeared first on SecurityWeek .",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "0f4c5e346584",
+   "title": "Barracuda Hacked Amid Surge in Artex-Powered Cyberattacks",
+   "link": "https://www.securityweek.com/barracuda-hacked-amid-surge-in-artex-powered-cyberattacks/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-16T15:07:32Z",
+   "summary": "Chinese threat actors are broadly adopting the agentic AI penetration testing framework to accelerate their attacks. The post Barracuda Hacked Amid Surge in Artex-Powered Cyberattacks appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "3a77ece90e01",
+   "title": "Why Real Estate's Biggest AI Fans Keep The Tech On A Short Leash",
+   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1vblk3cDg5MW1uY3hiQ1ZfdEotVWRVQ0x5T2phbmxqNWIxLXNzTThqTm80ZXdtTzZqbkRQYVNnZXJ4elVyWFZQM2I4TVY2Y1dzakQzbTFONGdlRGd0eVFTZjFhY05TZ1RvQThr?oc=5",
+   "source": "Inman Real Estate News",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-16T15:05:28Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
+   "id": "1cea14202697",
+   "title": "7 Tips For Complying with CJIS Password and MFA Requirements",
+   "link": "https://www.bleepingcomputer.com/news/security/7-tips-for-complying-with-cjis-password-and-mfa-requirements/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-16T15:01:11Z",
+   "summary": "The FBI's latest CJIS Security Policy requires law enforcement agencies to strengthen password protections and enforce MFA across privileged and non-privileged accounts. Specops Software outlines seven practical steps to meet these requirements, block compromised passwords, and maintain…",
+   "score": 3,
+   "tags": [
+    "Identity"
+   ],
+   "why": [
+    "Identity"
+   ]
+  },
+  {
+   "id": "0e301630114f",
+   "title": "Coles supermarket cyber attack: Australia’s retailer investigates security breach",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQSXpFc19rczVHUHdEdjRyQ1NRNnl2andUaEV6UUdjVDUzaVR3SmtZSU5FR0VKQnpNTjd5Zm83SV9qaU1mN3ZIUXZZRGU1M1l5clpzMjNEYVFlWGo2RThRR2dleXdVSThYUjVwcmZVYUY0NVdTUTNuSmF3d1E0M3F6eHZtTXhUaklLMFE5dV8yUm9DcC1DT3E3RjhYSQ?oc=5",
+   "source": "Beinsure",
+   "feed": "AU breach news",
+   "region": "AU",
+   "published": "2026-11-16T15:00:00Z",
+   "summary": "",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Data breach"
+   ],
+   "why": [
+    "Australia",
+    "Data breach"
+   ]
+  },
+  {
+   "id": "d7e9b1f3d5d7",
+   "title": "Hackers Breach Government Email System, Access 300 Accounts",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNZ1o5MVg3V2V3dTFwRTNzdU0tMk5iVFR6YVJUd1lId0VzYjJtY3JDbWh1S3BCN2lMMDBBSGJQaVpHa0FtZXVPU19CeUk0a3VqaURWUVFMSGxWYXN0Y0owN3RNRENFWFk4Tzg0UkdZYXNJMzJUdm51NlZrMnNGalI1d0lmZWFjakFkWllCNWN2aUkwRGlFWWVNUnc1dFVxemstYUE?oc=5",
+   "source": "Seoul Economic Daily",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-16T14:48:32Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "4a1b61ed5d0b",
+   "title": "ED Seizes ₹26.43 Crore Real Estate Project Linked to Ex-Chh…",
+   "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPcW9aTW44ZXZfT2k2V0xtMTR6SHk5X3NwX1NnTzU2ZktGU1RlTzZOWXBIMlNOaEFsYkYzZERyTDJwbGhWRkg0N2tYNTEwVm9uNDE4Qk00emVMcEFqMnFLdHFBRmlxcUpoOC0tRGJaZTJCNUEtaTNxZE1Ddlg1NWU2aTh0a1pHRERTM0xrS0dTVTU1aTd3bDdxLWRHX2FIS25kbVlXbjBMRVJNeGhzdDlZaTJiaWFEbEVXRDc3eGtkblNTM1pxU1B2a05Bai1oNW1EMHhnZzA2VEM0T2NucWNFOHJmekZqb0F5V3I2Y0tHYVRrRmRTaDVrYVo4X1lYaG1PNDJYbnE4SUh0dw?oc=5",
+   "source": "Gujarat Samachar",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-16T14:14:39Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
+   "id": "5adf36e942de",
+   "title": "Google Finds Hackers Using AI Agents to Build and Run Exploits From Software Patches",
+   "link": "https://thehackernews.com/2026/11/google-finds-hackers-using-ai-agents-to.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-16T14:00:00Z",
+   "summary": "Google on Monday revealed that adversarial use of artificial intelligence (AI) by threat actors has gone beyond manual prompting to deploying autonomous multi-agent offensive frameworks like ARTEX, CAIRN, CyberStrikeAI, and PentAGI to execute multi-stage intrusions at greater operational velocity.…",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "2e40619c86da",
+   "title": "Google warns that fully-automated AI attacks are coming soon",
+   "link": "https://www.bleepingcomputer.com/news/security/google-warns-that-fully-automated-ai-attacks-are-coming-soon/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-16T14:00:00Z",
+   "summary": "Threat actors are now relying on agentic workflows powered by AI-based offensive frameworks to automate vulnerability discovery and exploitation, accelerating attacks to machine speed. [...]",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "f9828b77234b",
+   "title": "⚡ Weekly Recap: N-able 0-Days, Windows 0-Days, Chrome 0-Days, Fridge 0-Days, and More Bad Days",
+   "link": "https://thehackernews.com/2026/11/weekly-recap-n-able-0-days-windows-0.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-16T13:27:20Z",
+   "summary": "A default password opened doors it never should have. A trusted update delivered malware. Even a security feature became a way to break in. Different stories, same problem: the things meant to protect us aren't always doing their job. Meanwhile, AI is making bug hunting faster, old flaws are still…",
+   "score": 7,
+   "tags": [
+    "Actively exploited",
+    "Identity"
+   ],
+   "why": [
+    "Actively exploited",
+    "Identity"
+   ]
+  },
+  {
+   "id": "1515975bd342",
+   "title": "Scans for LiteLLM/Starlette (CVE-2026-42271, CVE-2026-48710), (Mon, Nov 16th)",
+   "link": "https://isc.sans.edu/diary/rss/33522",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-11-16T13:11:04Z",
+   "summary": "This weekend, we started seeing requests for /mcp-rest/test/tools/list hitting our honeypots. These requests appear to attempt to exploit CVE-2026-42271 and CVE-2026-48710. Horizon3.ai published a short write-up about how these vulnerabilities can be chained to achieve remote code execution…",
+   "score": 5,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.9144
+  },
+  {
+   "id": "a1dd8f56b81d",
+   "title": "Microsoft: Windows Server 2016 reaches end of support in 60 days",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2016-reaches-end-of-support-in-60-days/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-16T12:53:18Z",
+   "summary": "Microsoft has reminded customers again that Windows Server 2016 will stop receiving security updates after it reaches the end of support in two months. [...]",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "79abf73e84bb",
+   "title": "Telegram Widgets Hit by RCE Demos, Malware Warning Days After Launch",
+   "link": "https://www.securityweek.com/telegram-widgets-hit-by-rce-demos-malware-warning-days-after-launch/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-16T12:48:03Z",
+   "summary": "Kaspersky suspects exploitation of Telegram’s new widgets to deliver WebRAT, as researchers demo RCE and Pavel Durov disputes the claims. The post Telegram Widgets Hit by RCE Demos, Malware Warning Days After Launch appeared first on SecurityWeek .",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "119c79e2a817",
+   "title": "Six Unpatched Danfoss Refrigeration Controller Flaws Could Allow Remote Takeover Without Login",
+   "link": "https://thehackernews.com/2026/11/six-unpatched-danfoss-refrigeration.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-16T12:34:21Z",
+   "summary": "Six flaws in Danfoss AK-SM800A refrigeration controllers could let a remote attacker take over a controller without logging in, Dutch security consultancy Midnight Blue said earlier this week. No patch is available, and the researchers say the newest firmware, version 5.4.0, does not fix the…",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "8c37ef3c2776",
+   "title": "Retadup Worm Resurfaces 7 Years After Takedown to Spread CoffeeLoader Malware",
+   "link": "https://thehackernews.com/2026/11/retadup-worm-resurfaces-7-years-after.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-16T12:33:18Z",
+   "summary": "Cybersecurity researchers have disclosed details of a new variant of CoffeeLoader, a malware designed to deliver additional payloads to infected machines. \"On launch, the NSIS-based installer executable dropped a file named '7z.dll' into a temporary directory and ran it through rundll32.exe,\"…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "7a50b6f63907",
+   "title": "Australian retail giant Coles investigates cybersecurity incident",
+   "link": "https://www.bleepingcomputer.com/news/security/australian-retail-giant-coles-investigates-cybersecurity-incident/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-16T11:18:09Z",
+   "summary": "Coles Group Limited, Australia's second-largest retailer, is investigating what it described as a \"cyber security incident\" that has not impacted the company's stores. [...]",
+   "score": 5,
+   "tags": [
+    "Australia"
+   ],
+   "why": [
+    "Australia"
+   ]
+  },
+  {
+   "id": "f67825a82ae8",
+   "title": "Recent UnrealIRCd Vulnerability Exploited in Attacks",
+   "link": "https://www.securityweek.com/recent-unrealircd-vulnerability-exploited-in-attacks/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-16T11:15:48Z",
+   "summary": "Tracked as CVE-2026-114713, the high-severity flaw allows attackers to execute commands with server/IRCOp privileges. The post Recent UnrealIRCd Vulnerability Exploited in Attacks appeared first on SecurityWeek .",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0051
+  },
+  {
+   "id": "2b1b80c8b882",
+   "title": "Hackers Probe Newly Disclosed Flaws in Copeland Refrigeration Controllers",
+   "link": "https://www.securityweek.com/hackers-probe-newly-disclosed-flaws-in-copeland-refrigeration-controllers/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-16T11:05:42Z",
+   "summary": "Vulncheck disclosed 14 vulnerabilities affecting Copeland XWEB EVO controllers, including two that threat actors quickly targeted. The post Hackers Probe Newly Disclosed Flaws in Copeland Refrigeration Controllers appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "9d8b7182f62b",
+   "title": "Uber Data Breach Impacts 150,000 People",
+   "link": "https://www.securityweek.com/uber-data-breach-impacts-150000-people/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-16T11:02:48Z",
+   "summary": "Hackers compromised a third-party services provider and stole names, addresses, and driver’s license numbers. The post Uber Data Breach Impacts 150,000 People appeared first on SecurityWeek .",
+   "score": 6,
+   "tags": [
+    "Data breach",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Data breach",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "b9812e4ced01",
+   "title": "Anthropic’s Claude Fable 5.2 blocks fewer security tasks, while Mythos gets better at finding bugs",
+   "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropics-claude-fable-52-blocks-fewer-security-tasks-while-mythos-gets-better-at-finding-bugs/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-16T11:00:00Z",
+   "summary": "Anthropic recently rolled out Claude Mythos 5.2 to selected partners and Fable 5.2 to regular users, with improvements to coding and reasoning. But we also noticed some interesting cybersecurity changes. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "f0b3319bef62",
+   "title": "SANSAR Linux Cryptomining Malware Uses Modified NVIDIA Library to Hide GPU Activity",
+   "link": "https://thehackernews.com/2026/11/sansar-linux-cryptomining-malware-uses.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-16T09:32:57Z",
+   "summary": "A financially motivated threat activity cluster tracked as REF3364 has been attributed to a Linux-focused cryptocurrency mining operation that tampers with the readings used to detect high GPU workloads. Central to the intrusion is a toolkit called SANSAR, a Rust-based orchestrator that receives…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "7d4f6584a3c9",
+   "title": "New NoisyTCP vulnerability lets attackers crash Linux servers",
+   "link": "https://www.bleepingcomputer.com/news/linux/new-noisytcp-linux-kernel-flaw-lets-attackers-crash-servers/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-16T09:30:04Z",
+   "summary": "An 11-year-old Linux kernel vulnerability, dubbed NoisyTCP, affects almost all Linux distributions and lets attackers crash systems running Nginx, Apache, and SSH servers with default configurations. [...]",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "aaca3d274aab",
+   "title": "Tor Updates DoS Defenses Again as Relay Attacks Continue",
+   "link": "https://www.securityweek.com/tor-updates-dos-defenses-again-as-relay-attacks-continue/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-16T08:55:32Z",
+   "summary": "Tor 0.4.9.17 patches several security issues, including one related to how built-in DoS protections deal with IPv6. The post Tor Updates DoS Defenses Again as Relay Attacks Continue appeared first on SecurityWeek .",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "a60b8a453d05",
+   "title": "Microsoft pushes Windows emergency updates to fix activation failures",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-new-windows-emergency-updates-fix-activation-licensing-failures/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-16T08:26:52Z",
+   "summary": "Microsoft has released emergency out-of-band updates to fix Windows activation and licensing failures caused by this month's security updates. [...]",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "47ca43e224a0",
+   "title": "Microsoft Rules Out Cyberattack in Outage, Warns of Phishing Campaign",
+   "link": "https://www.securityweek.com/microsoft-rules-out-cyberattack-in-outage-warns-of-phishing-campaign/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-16T08:15:12Z",
+   "summary": "Phishing emails posing as Microsoft 365 service notices referenced the real outage incident and threatened to delete held messages. The post Microsoft Rules Out Cyberattack in Outage, Warns of Phishing Campaign appeared first on SecurityWeek .",
+   "score": 7,
+   "tags": [
+    "Phishing",
+    "Microsoft 365"
+   ],
+   "why": [
+    "Phishing",
+    "Microsoft 365"
+   ]
+  },
+  {
+   "id": "f159cf23a7b2",
+   "title": "Amazon Uncovers AI Agent Campaign Targeting LiteLLM, Dify, and Other Apps for API Keys",
+   "link": "https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-16T07:34:21Z",
+   "summary": "Attackers' AI agents have been hunting for weak spots in internet-exposed AI apps such as LiteLLM, One API, and Dify to steal the AI provider keys stored inside, according to the agents' own records. The records, which Amazon's threat intelligence team captured with decoy servers, describe stolen…",
+   "score": 3,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "1a13d7025b37",
+   "title": "BO Team Exploits Log4Shell in VMware vCenter, Compromises Russian Firm's Code-Signing Server",
+   "link": "https://thehackernews.com/2026/11/bo-team-exploits-log4shell-in-vmware.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-16T06:53:34Z",
+   "summary": "An investigation into suspicious activity within a Russian software developer's network has uncovered a months-long compromise of its development infrastructure and a software code-signing server. The activity, documented by Kaspersky's ICS CERT team after it was contacted by the affected…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
   {
    "id": "9869401c8599",
    "title": "Bunjang Reports Data Breach at Outsourced Call Center",
@@ -512,7 +1050,7 @@
    "feed": "Dark Reading",
    "region": "Global",
    "published": "2026-11-13T20:20:27Z",
-   "summary": "The Android malware has expanded from focusing on crypto theft to full device control, and the attackers have added advanced analysis of stolen information.",
+   "summary": "The Android malware has expanded from focusing on cryptocurrency theft to full device control, and the attackers have added advanced analysis of stolen information.",
    "score": 0,
    "tags": [],
    "why": []
@@ -564,23 +1102,6 @@
    ],
    "why": [
     "Vulnerability"
-   ]
-  },
-  {
-   "id": "8a4edd5bbc78",
-   "title": "A global Microsoft 365 outage has hit millions – what happened and when will it be fixed?",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORzFTSUdWUkpoWUk1Z2FULTd2ZmRRUmVINTBTZjNUVEdtT3BBNUxxck1ZcXFQenhma1F5RG5BZXIwVkItZWhaWGl2dHlzVWRTZkIza0Y3QWVyd1hlSUo0dUo0XzRzOTFiZnJYelhtakN2R1VJOU5oUzY2MHVGSko3MTF1ZXE2T0tRY1lCMWc5M1ZBeFpfZ0ZVbV8waldfVlByNlE?oc=5",
-   "source": "The Guardian",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-11-13T16:44:00Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Microsoft 365"
-   ],
-   "why": [
-    "Microsoft 365"
    ]
   },
   {
@@ -1186,8 +1707,7 @@
      "source": "The Hacker News",
      "url": "https://thehackernews.com/2026/11/sap-patches-four-cvss-100-flaws.html"
     }
-   ],
-   "epss": 0.0051
+   ]
   },
   {
    "id": "950205e16691",
@@ -1303,7 +1823,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0153,
+   "epss": 0.0158,
    "also": [
     {
      "source": "The Hacker News",
@@ -3095,6 +3615,23 @@
    ],
    "why": [
     "Vulnerability"
+   ]
+  },
+  {
+   "id": "211a494237a6",
+   "title": "Philippines confirms data breaches involving 10 government agencies",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNU2NuTk5vTzRKLTFTNlRicXhPZkpLb004RkkzbVgtRC1PMnUyQkgtbDVzTXozUDdkaEtxSlFjb21hQVBaMmQtYzVZY0RZdHRGOUp2T29lcFNBSDVyS1pTQ3hNdmFNZk41SXo1R05MNF92VUVLYlNNdG9UdXRuUFlaMGdFOGViVnFQNHdJMndXT0ZLUjI2NFB2U2gxZVZ5TmhhRGdGUHY3ZkJzZkFmNWwtUXlsYy02cHNuTzhFMHYtUmHSAdYBQVVfeXFMTUxIRUdLNVNrNWctZjU1NjVBdFZZUGFkYWw2ZmlnWnNtOTZMNzAycFQ4aUFQOEg0RjNhSTZuQzNwUEJwSG5CeHprNE1iY0VZdVJaZi1FRVg2RzVsOW5LVTc0cU1TS2toZGV0TGFxNDJPUkRQNlZsVmtrWjJNTDkyUno2QmVzejBNeHlid09WR081THhCWkZ0ZTkxcEUwN01ZQ0YwNUJkSUx0b3lFcjczc3lPOEgzNHVVdzlmallFSHpRTjdwcVpLR0h6Mk05Sk0zT0FWekdvZw?oc=5",
+   "source": "Gulf News",
+   "feed": "OAIC / Privacy news",
+   "region": "Global",
+   "published": "2026-11-10T12:43:22Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
    ]
   },
   {
@@ -6622,543 +7159,6 @@
    "score": 1,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "ed421e39d30b",
-   "title": "Philippine Migrant Worker Data Likely Leaked in 69GB Government Breach",
-   "link": "https://www.darkreading.com/cyberattacks-data-breaches/philippine-migrant-worker-data-69gb-government-breach",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-11-04T02:00:00Z",
-   "summary": "An unknown operator appears to have exfiltrated SQL Server backups from the Philippine Overseas Employment Administration in under a half hour.",
-   "score": 4,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "5ce5c8d2c37f",
-   "title": "Phishing-Resistant Isn't Enough; Yubico Takes Aim at Identity-Verification Gap",
-   "link": "https://www.darkreading.com/identity-access-management-security/beyond-phishing-resistant-yubico-identity-verification-gap",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-11-04T01:05:40Z",
-   "summary": "The new YubiID service bridges identity verification with credential enrollment and recovery across existing identity platforms, closing an important authentication gap. Plus: post-quantum YubiKey beta.",
-   "score": 6,
-   "tags": [
-    "Phishing",
-    "Identity"
-   ],
-   "why": [
-    "Phishing",
-    "Identity"
-   ]
-  },
-  {
-   "id": "eaa8d66bc6fe",
-   "title": "CVE-2024-27834: Apple Multiple Products — Apple Multiple Products Improper Authentication Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-27834",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-11-04T00:00:00Z",
-   "summary": "Apple iOS, iPadOS, macOS, Safari, tvOS and watchOS 10.5 contain an improper authentication vulnerability which could allow an attacker with arbitrary read and write capability to bypass pointer authentication. CISA remediation due 2026-11-18.",
-   "score": 4,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.015
-  },
-  {
-   "id": "699d6dc9b64e",
-   "title": "Germany Busts 'Crime-as-a-Service' Investment Fraud Outfit",
-   "link": "https://www.darkreading.com/cybersecurity-operations/germany-crime-service-investment-fraud",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-11-03T21:57:12Z",
-   "summary": "Authorities seized more than 100 servers and arrested seven as part of a crackdown on a fraud network spanning more than 50 countries.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "9673cbefb102",
-   "title": "Binance identifies cause of $6.34 billion security breach",
-   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQYzRPX1RZenJhcmxxa2JIRW9VRWFzQXM5eEhwM0lNVExVZFlsZ3JFSzV4U3lTZy12MVRfbC1ZRGlkS3M1cmZXdTZILXJKMU5LMnFmc1I1MDVjSG8wcDc3SEpBWFFuQ19MUHZ4S1BMekVPU3lEZ2xHUFhsV2d2WWM5cm9qMA?oc=5",
-   "source": "Ticker News",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-11-03T21:47:21Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "27b11b637919",
-   "title": "WorkOS says attacker used ARTEX AI to breach internal sales app",
-   "link": "https://www.bleepingcomputer.com/news/security/workos-says-attacker-used-artex-ai-to-breach-internal-sales-app/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-03T21:28:44Z",
-   "summary": "Developer platform WorkOS suffered a data breach after a threat actor accessed business contact records and summaries of customer communications. [...]",
-   "score": 4,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "e4511049ba29",
-   "title": "GJ Gardner barred from breach of contract claims, ex-franchisee says",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOUlhBQmM5V3FienV5cklHNVN3bFRvOWJDd01hRnNpWWFUY19ZbGJEbUdVYlp2eFlvc082eHBLZThHcGlIWjRaZFNxNHJRU1JYZlkyTmR5OHctWFkwakY1alJ6M2FCZW4ySFZEWWN0aWdtUnIwejY4WldDUmpZNDNXTzdhQmtkMG4yNlktOUQxYnRvd1hvRmJLcjBKVGM?oc=5",
-   "source": "Lawyerly",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-03T21:04:12Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "317e8557e095",
-   "title": "Binance says fake job interview led to $6.3 billion crypto heist",
-   "link": "https://www.bleepingcomputer.com/news/security/binance-says-fake-job-interview-led-to-63-billion-crypto-heist/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-03T20:05:50Z",
-   "summary": "Cryptocurrency exchange Binance says North Korean hackers used a fake job interview to trick an employee into installing malware that ultimately let them compromise the company's wallet infrastructure and steal about $6.34 billion in digital assets. [...]",
-   "score": 0,
-   "tags": [],
-   "why": [],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/11/binance-reveals-how-fake-job-interviews.html"
-    }
-   ]
-  },
-  {
-   "id": "77eef035ebfc",
-   "title": "Google: LLMjacking attacks rack up $1 million in cloud AI charges",
-   "link": "https://www.bleepingcomputer.com/news/security/google-llmjacking-attacks-rack-up-1-million-in-cloud-ai-charges/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-03T18:51:04Z",
-   "summary": "Large language model hijacking attacks, also known as LLMjacking, are generating large fraudulent cloud charges, with some organizations losing more than $100,000 per day. [...]",
-   "score": 2,
-   "tags": [
-    "AI threats"
-   ],
-   "why": [
-    "AI threats"
-   ],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/11/google-warns-llmjacking-attacks-are.html"
-    }
-   ]
-  },
-  {
-   "id": "8afc2fab5966",
-   "title": "Chainstack Reports Production Systems Breach Exposing Customer Data and Password Hashes",
-   "link": "https://thehackernews.com/2026/11/chainstack-reports-production-systems.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-03T18:16:19Z",
-   "summary": "Blockchain infrastructure provider Chainstack on Tuesday disclosed that it was targeted in a cyber attack that allowed an unauthorized party to gain access to some parts of its infrastructure. The incident is assessed to be part of a large-scale, artificial intelligence (AI)-powered attack…",
-   "score": 7,
-   "tags": [
-    "Data breach",
-    "Identity"
-   ],
-   "why": [
-    "Data breach",
-    "Identity"
-   ]
-  },
-  {
-   "id": "86c38c1e82c9",
-   "title": "Fake-download campaign uses trojanized installers to deliver monetization payloads",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/03/fake-download-campaign-uses-trojanized-installers-deliver-monetization-payloads/",
-   "source": "Microsoft Security Blog",
-   "feed": "Microsoft Security Blog",
-   "region": "Global",
-   "published": "2026-11-03T17:32:47Z",
-   "summary": "Microsoft Threat Intelligence tracks a fake-download campaign that uses trojanized Inno installers to deliver multiple monetization offers and provides detection and investigation guidance across the complete installer session. The post Fake-download campaign uses trojanized installers to deliver…",
-   "score": 1,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "263a6ac2e13a",
-   "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for AI Agent Management Platforms",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/03/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-ai-agent-management-platforms/",
-   "source": "Microsoft Security Blog",
-   "feed": "Microsoft Security Blog",
-   "region": "Global",
-   "published": "2026-11-03T17:00:00Z",
-   "summary": "Read why Gartner named Microsoft a Leader in the inaugural 2026 Magic Quadrant for AI Agent Management Platforms. The post Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for AI Agent Management Platforms appeared first on Microsoft Security Blog .",
-   "score": 1,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "47887f1443ad",
-   "title": "9 Cyber Awareness Tips That Actually Match Today's Maze of Threats",
-   "link": "https://www.darkreading.com/cyber-risk/9-cyber-awareness-tips-todays-maze-threats",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-11-03T15:38:20Z",
-   "summary": "Practical guidance on safer search, stronger login security, better executive protection, and other habits can reduce enterprise risk.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "a32b51d8e118",
-   "title": "LLMjacking Emerges as Thriving Cybercriminal Enterprise",
-   "link": "https://www.darkreading.com/cloud-security/llmjacking-thriving-cybercriminal-enterprise",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-11-03T15:35:50Z",
-   "summary": "Cybercriminals have turned reselling cloud access to LLMs into a lucrative business model, with some victims paying as much as $1 million in resource consumption before access was revoked.",
-   "score": 2,
-   "tags": [
-    "AI threats"
-   ],
-   "why": [
-    "AI threats"
-   ]
-  },
-  {
-   "id": "63d055e30b47",
-   "title": "cPGuard Update Channel Hijacked to Backdoor Linux Servers and Collect Password Hashes",
-   "link": "https://thehackernews.com/2026/11/cpguard-update-channel-hijacked-to.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-03T15:16:32Z",
-   "summary": "An attacker broke into the update system of the cPGuard security tool on November 2 and used it to send a malicious script to customers' Linux servers. The script installed a backdoor and collected password hashes and other sensitive files from servers that ran it, cPGuard maker OPSSHIELD said in…",
-   "score": 3,
-   "tags": [
-    "Identity"
-   ],
-   "why": [
-    "Identity"
-   ]
-  },
-  {
-   "id": "f6282e8c323a",
-   "title": "Gartner Predicts SOCs Will Have 50% More Engineers Than Analysts by 2028",
-   "link": "https://www.bleepingcomputer.com/news/security/gartner-predicts-socs-will-have-50-percent-more-engineers-than-analysts-by-2028/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-03T15:00:10Z",
-   "summary": "Gartner predicts that security operations centers will have 50% more engineers than analysts by 2028 as AI agents take over routine alert handling. Prophet Security examines how AI is reshaping SOC roles, from analyst responsibilities and detection engineering to threat hunting and exposure…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "ed61802f64c7",
-   "title": "Frontline Education Data Breach Impacts Over 1.3 Million",
-   "link": "https://www.securityweek.com/frontline-education-data-breach-impacts-over-1-3-million/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-03T14:32:38Z",
-   "summary": "Hackers exploited a flaw in third-party software and stole the personal information of school district staff and students. The post Frontline Education Data Breach Impacts Over 1.3 Million appeared first on SecurityWeek .",
-   "score": 6,
-   "tags": [
-    "Data breach",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Data breach",
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "b981c2f988c9",
-   "title": "CrowdStrike Reportedly Paying $495 Million for AI Security Firms Fiddler, Dreadnode",
-   "link": "https://www.securityweek.com/crowdstrike-reportedly-paying-495-million-for-ai-security-firms-fiddler-dreadnode/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-03T14:12:44Z",
-   "summary": "The acquisitions will add AI agent observability and automated AI security testing capabilities to the CrowdStrike Falcon platform. The post CrowdStrike Reportedly Paying $495 Million for AI Security Firms Fiddler, Dreadnode appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "c136875d05ca",
-   "title": "UK school estate hit by 3AM ransomware in suspected AI-assisted attack",
-   "link": "https://www.bleepingcomputer.com/news/security/uk-school-estate-hit-by-3am-ransomware-in-suspected-ai-assisted-attack/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-03T14:00:00Z",
-   "summary": "A 3AM ransomware affiliate targeted a school estate in the UK and successfully encrypted around 37 of nearly 50 machines reached from an unmanaged host. [...]",
-   "score": 4,
-   "tags": [
-    "Ransomware"
-   ],
-   "why": [
-    "Ransomware"
-   ],
-   "also": [
-    {
-     "source": "Dark Reading",
-     "url": "https://www.darkreading.com/data-privacy/3am-affiliate-ai-loops-european-school-attack"
-    }
-   ]
-  },
-  {
-   "id": "06b26e44f1d6",
-   "title": "Police seizes over 100 servers in investment scam crackdown",
-   "link": "https://www.bleepingcomputer.com/news/security/police-seizes-over-100-servers-in-investment-scam-crackdown/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-03T13:33:49Z",
-   "summary": "European law enforcement authorities arrested seven suspects and seized more than 100 servers in a joint action targeting an unnamed company suspected of providing fraudulent trading websites to criminal gangs. [...]",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "14152597814e",
-   "title": "Android’s November 2026 Updates Patch Over 200 Vulnerabilities",
-   "link": "https://www.securityweek.com/androids-november-2026-updates-patch-over-200-vulnerabilities/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-03T12:21:49Z",
-   "summary": "The most severe is a critical flaw in Framework leading to remote code execution without user interaction. The post Android’s November 2026 Updates Patch Over 200 Vulnerabilities appeared first on SecurityWeek .",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "5c6c31b6a9d3",
-   "title": "Critical Node-RED Flaw Exploited in Attacks",
-   "link": "https://www.securityweek.com/critical-node-red-flaw-exploited-in-attacks/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-03T12:10:19Z",
-   "summary": "Multiple attacks from the same IP address attempted to deploy various payloads, including a Linux bot and webshells. The post Critical Node-RED Flaw Exploited in Attacks appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "8ede56d402c1",
-   "title": "Google adds new $250,000 Cloud VRP reward for Root-in-Cloud bugs",
-   "link": "https://www.bleepingcomputer.com/news/google/google-adds-new-250-000-cloud-vrp-reward-for-root-in-cloud-bugs/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-03T12:05:52Z",
-   "summary": "Google has expanded its Cloud Vulnerability Reward Program (VRP) with a new top-tier reward for high-impact architectural security flaws. [...]",
-   "score": 1,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "also": [
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/google-introduces-250000-root-in-cloud-bug-bounty-reward/"
-    }
-   ]
-  },
-  {
-   "id": "77f64f32faf5",
-   "title": "Red Hat Patches 9.8-Rated Linux TCP RCE Flaw While Ubuntu Releases Fixes for Testing",
-   "link": "https://thehackernews.com/2026/11/red-hat-patches-98-rated-linux-tcp-rce.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-03T11:23:53Z",
-   "summary": "Fixed kernels for a use-after-free vulnerability in the Linux kernel's IPv4 TCP code are now available for Red Hat Enterprise Linux 8, 9, and 10, while Ubuntu's fixes for its three newest long-term-support releases remain in its opt-in testing channel with no date for a regular update. The flaw,…",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "20c9c9965d29",
-   "title": "The 4 Elements of Exposure Prioritization and How to Operationalize Them",
-   "link": "https://thehackernews.com/2026/11/the-4-elements-of-exposure.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-03T11:18:20Z",
-   "summary": "Your team is remediating more vulnerabilities than ever, yet your breach risk has barely changed. You’re spending too much time and effort on exposures attackers may never exploit, while higher-risk exposures sit, waiting in the queue. Gartner®’s report on exposure prioritization states that fewer…",
-   "score": 3,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "3ce297811edf",
-   "title": "Russia-Aligned Gorbag Hackers Exploit WinRAR Flaw to Deploy Data-Stealing Malware",
-   "link": "https://thehackernews.com/2026/11/russia-aligned-gorbag-hackers-exploit.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-03T11:00:45Z",
-   "summary": "A Russia-aligned threat actor known as Gorbag has been observed using simple information stealer malware in attacks targeting Ukrainian organizations. \"Active since at least February 2025, the group has focused exclusively on Ukrainian targets, with a clear preference for law enforcement and…",
-   "score": 2,
-   "tags": [
-    "Identity"
-   ],
-   "why": [
-    "Identity"
-   ]
-  },
-  {
-   "id": "8491f2b2e054",
-   "title": "Harvard University data breach exposed info of 851,000 accounts",
-   "link": "https://www.bleepingcomputer.com/news/security/harvard-university-data-breach-exposed-info-of-851-000-accounts/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-03T10:53:25Z",
-   "summary": "Hackers who breached Harvard University's Alumni Affairs and Development systems in November 2025 stole data linked to more than 850,000 unique email addresses, according to breach notification service Have I Been Pwned. [...]",
-   "score": 4,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "473a15d4d63f",
-   "title": "Think you know how to make a secure passphrase?",
-   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9lS0tndmt5MFpSbmR0YVZwZkxlRnZ5RkZ3ZkhzdFo4Vl8tNjN5QnJxMUwwSDN2YmFJemVqWndGRGhzOUx2cXJfWWJURmVEa1JrQjd6RGNBeGZ3QThoOWc?oc=5",
-   "source": "Cyber.gov.au",
-   "feed": "ACSC (via Google News)",
-   "region": "AU",
-   "published": "2026-11-03T10:18:38Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "Australia"
-   ],
-   "why": []
-  },
-  {
-   "id": "04e343b8e5e5",
-   "title": "Bhubaneswar Couple Held for Rs 1.47 Crore Real Estate Fraud",
-   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPSWhvV1hFYnF6Z1cwNkJXZXdrM09IYk9Dam1ONGJmd3ZCaXFYMkF2elpscG5hMlVJZUJSZDlvbFFBQlc1Y2RfOGd4MlNVOWJsVUVNQ2dPa2tlVXdMOUtBVFBEdW95OENIRm1YMWZ5NFZmQ09sMnNBZmxtRUpISWVzVTdFMzRKaDNIMWs1bQ?oc=5",
-   "source": "Pragativadi",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-03T10:14:16Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ]
-  },
-  {
-   "id": "71fcb561223c",
-   "title": "Brazil’s Largest Crypto Exchange Hit by Security Breach Days After Binance Hack",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPSTZWdVBLZGFxdHdGWmFXczJ3aEdsOWdBaEF3SXhvSmdtTG13SG5jTkxmV0Z2eXhNRjZXWjB3UnZnczRxQjhzTzFwVGE3aDZHRV9TdHdHWmYyeGRqNGJHZThWTUFpVkZ0MjJvLVVweVUyTmNwbWI2bWVpR3Fmd1I5RGdRRllHN2xPalVVNDJ3Q2o2dU5hUkstM0YtbFJTMlBpa2c2MWJpMXBjdFZoeFpRMWFZa0hZbWRO?oc=5",
-   "source": "Crypto News Australia",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-11-03T10:12:32Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "0658f100b664",
-   "title": "NATO’s Crossed Swords Exercise Brings AI Agents Into Cyber Operations Training",
-   "link": "https://www.securityweek.com/natos-crossed-swords-exercise-brings-ai-agents-into-cyber-operations-training/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-03T08:49:03Z",
-   "summary": "The NATO CCDCOE exercise in Estonia introduces AI agents and OpenAI Daybreak into joint cyber and kinetic operations training. The post NATO’s Crossed Swords Exercise Brings AI Agents Into Cyber Operations Training appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "07d9937fab38",
-   "title": "Hackers Exploit BTCPay Server Flaw to Steal Bitcoin and Litecoin From Hot Wallets",
-   "link": "https://thehackernews.com/2026/11/hackers-exploit-btcpay-server-flaw-to.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-03T08:31:48Z",
-   "summary": "BTCPay Server, a self-hosted, open-source cryptocurrency payment processor, has urged users to install the latest version of its software in response to reports of Bitcoin and Litecoin being stolen from hot wallets on instances running older versions. \"Our investigation found that these attacks…",
-   "score": 0,
-   "tags": [],
-   "why": [],
-   "also": [
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/btcpay-server-warns-of-hot-wallet-thefts-targeting-outdated-instances/"
-    }
-   ]
   }
  ]
 }
