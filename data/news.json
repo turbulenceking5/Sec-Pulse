@@ -1,10 +1,10 @@
 {
- "generated": "2026-11-17T01:56:00Z",
+ "generated": "2026-11-17T03:55:23Z",
  "sources": [
   {
    "name": "ACSC Alerts",
    "ok": true,
-   "count": 0,
+   "count": 1,
    "error": null
   },
   {
@@ -16,7 +16,7 @@
   {
    "name": "ACSC (via Google News)",
    "ok": true,
-   "count": 1,
+   "count": 2,
    "error": null
   },
   {
@@ -28,19 +28,19 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 1,
+   "count": 2,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 8,
+   "count": 9,
    "error": null
   },
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 2,
+   "count": 1,
    "error": null
   },
   {
@@ -100,11 +100,67 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 26,
+   "count": 25,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "e65b54b96a12",
+   "title": "ISC Stormcast For Tuesday, November 17th, 2026 https://isc.sans.edu/podcastdetail/10182, (Tue, Nov 17th)",
+   "link": "https://isc.sans.edu/diary/rss/33524",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-11-17T02:05:15Z",
+   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "fa8a2a790942",
+   "title": "Vulnerabilities are moving quickly, so patch, protect, prevent",
+   "link": "https://www.cyber.gov.au/alert/vulnerabilities-are-moving-quickly-so-patch-protect-prevent",
+   "source": "ACSC Alerts",
+   "feed": "ACSC Alerts",
+   "region": "AU",
+   "published": "2026-11-17T01:41:43Z",
+   "summary": "Actions organisations can take to identify internet-exposed systems, address vulnerabilities and reduce cyber security risk.",
+   "score": 11,
+   "tags": [
+    "Data breach",
+    "Vulnerability",
+    "Australia"
+   ],
+   "why": [
+    "Data breach",
+    "Vulnerability"
+   ],
+   "also": [
+    {
+     "source": "Australian Cyber Security",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQWDZUR0oyZ1NOSnlOamdoNEVsQjRmNGwzUGg1TnlpUjlwV0g0SUZsMnR5THNrM25QVkhOTU5vRzhTTXBudW9ieGxfVEN1c18xNnU5YVk1Qk1PZEc4WGEyRkNfd0w3WDg4NUd5c3BIbWJ2VmpyUUJXWGlYem9WT3BWTENQUjUxV2JKdElwRHREYmJuWDZC?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "30a1887c7494",
+   "title": "Actress Im Ye-jin reveals real estate scam: Jeju land bought for 50 million won worth 800,000 won after 15 years, with 178 co-owners",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1CQWdObnA2OV9VamoxOG1hQXc5YnZVeWE3OWVUb2RsaERabmhzZDExN25ReDE2UWZaeC1jb1FOMU9hOTN4WEkyY25CdzUwMThtemVGWGU2XzV3RTlPVzFZNGxR?oc=5",
+   "source": "재경일보",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-17T01:35:04Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
   {
    "id": "3099ffeb8eda",
    "title": "High volume phishing campaign uses Microsoft 365 outage lures to target multiple industry sectors",
@@ -230,6 +286,25 @@
    ]
   },
   {
+   "id": "216fe6e5abb4",
+   "title": "Australian businesses pay ransomware demands more often",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNM1pJTjd1cGlZNldmVG5BY0czU1JRanlLQU9US1hfNlRJSFdWYllNZ1diZ2NnWHYydWxzNUo4amxidGNYWk1iYWV2NkI0STQwOFlmeTZCdkZBekRkR0MxcGx2Y01JR0FRYXRuR3lxajZfTmw1SnVpcjV0TnZPQXdqRXRhZ0JneGJkeUxVd2lmWXNUQnNq?oc=5",
+   "source": "SecurityBrief Australia",
+   "feed": "AU breach news",
+   "region": "AU",
+   "published": "2026-11-16T21:00:00Z",
+   "summary": "",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Ransomware"
+   ],
+   "why": [
+    "Australia",
+    "Ransomware"
+   ]
+  },
+  {
    "id": "f7229d91014f",
    "title": "California sues OpenAI over AI agents escaping sandboxes, hacking firms",
    "link": "https://www.bleepingcomputer.com/news/security/california-sues-openai-over-ai-agents-escaping-sandboxes-hacking-firms/",
@@ -338,6 +413,12 @@
    "why": [
     "Identity",
     "SaaS / cloud"
+   ],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-infects-major-brands-sites-with-malware/"
+    }
    ]
   },
   {
@@ -7088,62 +7169,6 @@
    "why": [
     "Identity",
     "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "493913be8a05",
-   "title": "Chrome 157 Rolls Out With 213 Security Fixes, Seven Rated Critical",
-   "link": "https://www.securityweek.com/chrome-157-rolls-out-with-213-security-fixes-seven-rated-critical/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-04T10:38:46Z",
-   "summary": "The browser update resolves dozens of memory safety bugs and incorrect/missing authorization issues. The post Chrome 157 Rolls Out With 213 Security Fixes, Seven Rated Critical appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "76f398aa937f",
-   "title": "Rigged Coding Assignment, Abused AI Tool Opened Path to $6 Billion Binance Heist",
-   "link": "https://www.securityweek.com/rigged-coding-assignment-abused-ai-tool-opened-path-to-6-billion-binance-heist/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-04T10:36:32Z",
-   "summary": "Binance’s first incident report traces the record theft to a months-long campaign that compromised three engineers’ computers. The post Rigged Coding Assignment, Abused AI Tool Opened Path to $6 Billion Binance Heist appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "68960d2138eb",
-   "title": "North Korea Launches Missiles Toward the Sea as Pyongyang Protests Against US Claims on Binance Hack",
-   "link": "https://www.securityweek.com/north-korea-launches-missiles-toward-the-sea-as-pyongyang-protests-against-us-claims-on-binance-hack/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-04T09:23:22Z",
-   "summary": "In recent months, North Korea has accelerated its weapons tests in a likely bid to increase its leverage in potential diplomacy with the US. The post North Korea Launches Missiles Toward the Sea as Pyongyang Protests Against US Claims on Binance Hack appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "c9145a733bde",
-   "title": "Data breaches hit record scale as cyber cover gap persists",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxORkJvNnJ1a1hhNnpGSUJfdTFPVV9iRXdSdWlaN0lCVUdueUdmczRYMmxSZzdxa1NtSFE5aXVkQmxyVktXUDdXbWZrdW5kUUdPUVQxNG9DU0JPemdzRlpxa01EenBHaktxcnFpbzRreDZVbDFyZkR6Z0J5OWdDSTZCVks4aUtKNGdPYTM0Sjc5b3hha3RlS0d3SnluLWF6TkYycG5jX2hLY1UtX1lRQXY2dlhBVHhKSmlFNFZXYjBB?oc=5",
-   "source": "Insurance Business",
-   "feed": "OAIC / Privacy news",
-   "region": "Global",
-   "published": "2026-11-04T08:43:46Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
    ]
   }
  ]
