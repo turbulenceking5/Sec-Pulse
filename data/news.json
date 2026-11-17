@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-16T19:38:11Z",
+ "generated": "2026-11-17T01:56:00Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,19 +28,19 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 2,
+   "count": 1,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 6,
+   "count": 8,
    "error": null
   },
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 3,
+   "count": 2,
    "error": null
   },
   {
@@ -106,6 +106,192 @@
  ],
  "items": [
   {
+   "id": "3099ffeb8eda",
+   "title": "High volume phishing campaign uses Microsoft 365 outage lures to target multiple industry sectors",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/16/high-volume-phishing-campaign-uses-microsoft-365-outage-lures-target-multiple-industry-sectors-2/",
+   "source": "Microsoft Security Blog",
+   "feed": "Microsoft Security Blog",
+   "region": "Global",
+   "published": "2026-11-17T00:08:41Z",
+   "summary": "Microsoft Threat Intelligence observed a high-volume phishing campaign using Microsoft 365 outage-themed lures to target organizations across multiple sectors worldwide. The post High volume phishing campaign uses Microsoft 365 outage lures to target multiple industry sectors appeared first on…",
+   "score": 9,
+   "tags": [
+    "Phishing",
+    "Microsoft 365"
+   ],
+   "why": [
+    "Phishing",
+    "Microsoft 365"
+   ],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-says-months-old-bug-caused-global-microsoft-365-outage/"
+    },
+    {
+     "source": "ABC News & Headlines – Australian Broadcasting Corporation",
+     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQa3d4WUpneFA2OVBxXy1NbkgyOFJZSzFZRTgtYjloejloV09jWGstNS1zcU9KM3JVNlpXeEYyVHRrOGZndVRrWktSNmVoaGNfUWVzd3RDd0wweVpWSHR4Y3YxTk9BNm9nLWZRU2p0VlBTNDZxSW5laFZZb3RCcWFvMjJBdk9ybnBWb3dTV2cxT3E?oc=5"
+    },
+    {
+     "source": "The Guardian",
+     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORzFTSUdWUkpoWUk1Z2FULTd2ZmRRUmVINTBTZjNUVEdtT3BBNUxxck1ZcXFQenhma1F5RG5BZXIwVkItZWhaWGl2dHlzVWRTZkIza0Y3QWVyd1hlSUo0dUo0XzRzOTFiZnJYelhtakN2R1VJOU5oUzY2MHVGSko3MTF1ZXE2T0tRY1lCMWc5M1ZBeFpfZ0ZVbV8waldfVlByNlE?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "60f99194645f",
+   "title": "Gemini AI agents repeatedly bypassed safeguards to attack real website",
+   "link": "https://www.bleepingcomputer.com/news/security/gemini-ai-agents-repeatedly-bypassed-safeguards-to-attack-real-website/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-16T22:54:00Z",
+   "summary": "Google's Gemini AI agents repeatedly attempted to hack a real organization's website during AI model safety testing, finding ways to circumvent increasingly restrictive security controls designed to prevent them from accessing live systems. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "e0623f01c193",
+   "title": "Alma Realty Data Breach Lawsuit Investigation",
+   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1MeDZuNzVMSktNTHdGajBIM0lWbExPZW1DbURRd0dDRlhqV2pEa2dXS0VLWGVwS242SU41WVRSSExpbVFDUk1JYzRBQk9nMS1mRDBxZHBJaGZIWmtpUFNKeGVWR1JUSEs0dk9GUFlzS1JSd0xOdkNPeUF3?oc=5",
+   "source": "Claim Depot",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-16T22:09:39Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "7d60008a7168",
+   "title": "Alma Realty Corp. Data Breach Exposes Sensitive Resident Data",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA5THVkd2ZOS2VEZ2w5Q3FxVGh4R3BOdHEyR2loRUg4OFFqU1dIemp5YTh3ZWdlLU51UTNXMkc3TkNFMHRBUG5UZGNxSDJMNVMxRVE1enpwZjk3YWxJY1VYT09DWkkydnQzUFE?oc=5",
+   "source": "Claim Depot",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-16T22:04:39Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "8652e5cc5bda",
+   "title": "Serial Scam Suspect Accused Of Committing More Real Estate Fraud While On Bond: Report",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQdnJ3ZlFHZXNwdWV3T0kwNnc0cnJ1M2UyeXNLNFlTdnhYQjJIalhiQU4wSGhOV3RDTlEyMU9WNUg3YUthaENTVEdzU09teGJfWVg4clFmYmhZSUFUSUYtVEdUNE5mYnllUkxxUTN5MkxFYS1YV2tLYnViZlhQRTJ6ZFJyUFViX0hnZy15aGNIX19GVnRKcHZGaDB0TFJib0FJeXJrZkNCUG1JYmdvbklpMWU2bWc?oc=5",
+   "source": "Patch",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-16T21:50:47Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
+   "id": "6cd4bc50c4fa",
+   "title": "Google Project Zero cuts bug disclosures to 30 days amid AI threats",
+   "link": "https://www.bleepingcomputer.com/news/security/google-project-zero-cuts-bug-disclosure-deadline-to-30-days-amid-ai-threats/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-16T21:31:44Z",
+   "summary": "Google Project Zero will replace its \"90+30\" disclosure policy with shorter, fixed deadlines in response to AI-accelerated vulnerability discovery and exploitation. [...]",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "also": [
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/google-project-zero-sets-course-for-30-day-disclosure-deadline/"
+    },
+    {
+     "source": "Dark Reading",
+     "url": "https://www.darkreading.com/vulnerabilities-threats/google-project-zero-bug-disclosure-deadlines"
+    }
+   ]
+  },
+  {
+   "id": "f7229d91014f",
+   "title": "California sues OpenAI over AI agents escaping sandboxes, hacking firms",
+   "link": "https://www.bleepingcomputer.com/news/security/california-sues-openai-over-ai-agents-escaping-sandboxes-hacking-firms/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-16T20:59:44Z",
+   "summary": "California Attorney General Rob Bonta sued OpenAI on Monday, alleging the company knowingly continued testing advanced artificial intelligence models despite repeated security failures that allowed autonomous AI agents to escape isolated environments and launch cyberattacks against real-world…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "6fd5298e49ba",
+   "title": "Trump Administration Moves to Block China From Indirect Access to American AI Technology",
+   "link": "https://www.securityweek.com/trump-administration-moves-to-block-china-from-indirect-access-to-american-ai-technology/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-16T20:00:00Z",
+   "summary": "Under the new rule, overseas data centers that serve companies in countries including China, Russia, Iran and Cuba are required to identify their end users. The post Trump Administration Moves to Block China From Indirect Access to American AI Technology appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "f66e964ba9d3",
+   "title": "Barracuda links cloud breach to ARTEX AI-powered cyberattack",
+   "link": "https://www.bleepingcomputer.com/news/security/barracuda-links-cloud-breach-to-artex-ai-powered-cyberattack/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-16T19:57:13Z",
+   "summary": "Hackers who breached the cloud environment of network and email security company Barracuda earlier this month used a stolen cloud access key and the ARTEX AI penetration testing framework. [...]",
+   "score": 4,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "9899fc2c80e3",
+   "title": "Ransomware Attacks Increase Behind AI, But Payments Decline",
+   "link": "https://www.darkreading.com/threat-intelligence/ransomware-attacks-increase-ai-payments-decline",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-16T19:56:05Z",
+   "summary": "Large language models and other AI systems allow a growing number of ransomware groups to create convincing phishing emails and identify sensitive data quickly.",
+   "score": 7,
+   "tags": [
+    "Phishing",
+    "Ransomware"
+   ],
+   "why": [
+    "Phishing",
+    "Ransomware"
+   ]
+  },
+  {
    "id": "9c11c754eaec",
    "title": "'Sleeper Agent' Tactic Hides Payloads in Open-Weight AI Models",
    "link": "https://www.darkreading.com/vulnerabilities-threats/sleeper-agent-tactic-payloads-open-weight-ai-models",
@@ -117,33 +303,6 @@
    "score": 0,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "18b00fe2b40c",
-   "title": "Microsoft says months-old bug caused global Microsoft 365 outage",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-says-months-old-bug-caused-global-microsoft-365-outage/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-16T16:43:24Z",
-   "summary": "Microsoft says a software bug introduced in July caused last week's worldwide Microsoft 365 outage, triggering a cascading failure that left more than 80% of its networking gateway servers unresponsive. [...]",
-   "score": 4,
-   "tags": [
-    "Microsoft 365"
-   ],
-   "why": [
-    "Microsoft 365"
-   ],
-   "also": [
-    {
-     "source": "ABC News & Headlines – Australian Broadcasting Corporation",
-     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQa3d4WUpneFA2OVBxXy1NbkgyOFJZSzFZRTgtYjloejloV09jWGstNS1zcU9KM3JVNlpXeEYyVHRrOGZndVRrWktSNmVoaGNfUWVzd3RDd0wweVpWSHR4Y3YxTk9BNm9nLWZRU2p0VlBTNDZxSW5laFZZb3RCcWFvMjJBdk9ybnBWb3dTV2cxT3E?oc=5"
-    },
-    {
-     "source": "The Guardian",
-     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORzFTSUdWUkpoWUk1Z2FULTd2ZmRRUmVINTBTZjNUVEdtT3BBNUxxck1ZcXFQenhma1F5RG5BZXIwVkItZWhaWGl2dHlzVWRTZkIza0Y3QWVyd1hlSUo0dUo0XzRzOTFiZnJYelhtakN2R1VJOU5oUzY2MHVGSko3MTF1ZXE2T0tRY1lCMWc5M1ZBeFpfZ0ZVbV8waldfVlByNlE?oc=5"
-    }
-   ]
   },
   {
    "id": "10d373a62ac2",
@@ -199,23 +358,6 @@
    ]
   },
   {
-   "id": "eea617c7ce17",
-   "title": "Google Project Zero Sets Course for 30-Day Disclosure Deadline",
-   "link": "https://www.securityweek.com/google-project-zero-sets-course-for-30-day-disclosure-deadline/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-16T15:31:25Z",
-   "summary": "It will move to a 60-day vulnerability disclosure window in February 2027 and to a 30-day window in January 2028. The post Google Project Zero Sets Course for 30-Day Disclosure Deadline appeared first on SecurityWeek .",
-   "score": 1,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
    "id": "0f4c5e346584",
    "title": "Barracuda Hacked Amid Surge in Artex-Powered Cyberattacks",
    "link": "https://www.securityweek.com/barracuda-hacked-amid-surge-in-artex-powered-cyberattacks/",
@@ -246,6 +388,25 @@
    ]
   },
   {
+   "id": "0e301630114f",
+   "title": "Coles supermarket cyber attack: Australia’s retailer investigates security breach",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQSXpFc19rczVHUHdEdjRyQ1NRNnl2andUaEV6UUdjVDUzaVR3SmtZSU5FR0VKQnpNTjd5Zm83SV9qaU1mN3ZIUXZZRGU1M1l5clpzMjNEYVFlWGo2RThRR2dleXdVSThYUjVwcmZVYUY0NVdTUTNuSmF3d1E0M3F6eHZtTXhUaklLMFE5dV8yUm9DcC1DT3E3RjhYSQ?oc=5",
+   "source": "Beinsure",
+   "feed": "AU breach news",
+   "region": "AU",
+   "published": "2026-11-16T15:04:44Z",
+   "summary": "",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Data breach"
+   ],
+   "why": [
+    "Australia",
+    "Data breach"
+   ]
+  },
+  {
    "id": "1cea14202697",
    "title": "7 Tips For Complying with CJIS Password and MFA Requirements",
    "link": "https://www.bleepingcomputer.com/news/security/7-tips-for-complying-with-cjis-password-and-mfa-requirements/",
@@ -260,25 +421,6 @@
    ],
    "why": [
     "Identity"
-   ]
-  },
-  {
-   "id": "0e301630114f",
-   "title": "Coles supermarket cyber attack: Australia’s retailer investigates security breach",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQSXpFc19rczVHUHdEdjRyQ1NRNnl2andUaEV6UUdjVDUzaVR3SmtZSU5FR0VKQnpNTjd5Zm83SV9qaU1mN3ZIUXZZRGU1M1l5clpzMjNEYVFlWGo2RThRR2dleXdVSThYUjVwcmZVYUY0NVdTUTNuSmF3d1E0M3F6eHZtTXhUaklLMFE5dV8yUm9DcC1DT3E3RjhYSQ?oc=5",
-   "source": "Beinsure",
-   "feed": "AU breach news",
-   "region": "AU",
-   "published": "2026-11-16T15:00:00Z",
-   "summary": "",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "Data breach"
-   ],
-   "why": [
-    "Australia",
-    "Data breach"
    ]
   },
   {
@@ -300,7 +442,7 @@
   },
   {
    "id": "4a1b61ed5d0b",
-   "title": "ED Seizes ₹26.43 Crore Real Estate Project Linked to Ex-Chh…",
+   "title": "ED Seizes ₹26.43 Crore Real Estate Project Linked to Ex-Chhattisgarh CM Bhupesh Baghel's Son in Liquor Scam",
    "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPcW9aTW44ZXZfT2k2V0xtMTR6SHk5X3NwX1NnTzU2ZktGU1RlTzZOWXBIMlNOaEFsYkYzZERyTDJwbGhWRkg0N2tYNTEwVm9uNDE4Qk00emVMcEFqMnFLdHFBRmlxcUpoOC0tRGJaZTJCNUEtaTNxZE1Ddlg1NWU2aTh0a1pHRERTM0xrS0dTVTU1aTd3bDdxLWRHX2FIS25kbVlXbjBMRVJNeGhzdDlZaTJiaWFEbEVXRDc3eGtkblNTM1pxU1B2a05Bai1oNW1EMHhnZzA2VEM0T2NucWNFOHJmekZqb0F5V3I2Y0tHYVRrRmRTaDVrYVo4X1lYaG1PNDJYbnE4SUh0dw?oc=5",
    "source": "Gujarat Samachar",
    "feed": "Real estate cyber news",
@@ -611,6 +753,12 @@
    "why": [
     "Phishing",
     "Microsoft 365"
+   ],
+   "also": [
+    {
+     "source": "Arabian Business",
+     "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNYTJRazlTeEVnbDdCZ09fNjU2c0VsMGZLMjlkMGIzMVZ0d1RPUkNrLWJhQTdqekZvQVhEWXhkY2hXdFE2Z2tuLW5zeGJtRlA2MGhpS3M0MmVtbVBjSnh2N1ZvNzUwVy1kUkhnV0RsV09DbW5YSk1UTWpmczhRX2wxRFpKWjFRb0RtazFNYkVYbnhUTGs3YzRfakprV1NGcjByU2Flekl5Y2VQVWFVcmVSeDJ3QkJ2WHlTMERVS0JkTllIV0xIQmtQcFNNU2Zmc28?oc=5"
+    }
    ]
   },
   {
@@ -6997,168 +7145,6 @@
    "why": [
     "Data breach"
    ]
-  },
-  {
-   "id": "1f8acdc5d8c6",
-   "title": "Meta Shares Top Muse Bug Bounty Findings as Payouts Reach $1.2 Million",
-   "link": "https://www.securityweek.com/meta-shares-top-muse-bug-bounty-findings-as-payouts-reach-1-2-million/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-04T08:27:05Z",
-   "summary": "A $300,000 award went to a pre-launch flaw that exposed conversations and tokens on internal Muse test VMs used by Meta staff. The post Meta Shares Top Muse Bug Bounty Findings as Payouts Reach $1.2 Million appeared first on SecurityWeek .",
-   "score": 3,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "40a5a2749a72",
-   "title": "Russian Police Arrest 3 Suspected VasyGrek Hackers, Dismantle Criminal Infrastructure",
-   "link": "https://thehackernews.com/2026/11/russian-police-arrest-3-suspected.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-04T08:17:11Z",
-   "summary": "Russian authorities have arrested three suspected members of a threat group known as VasyGrek and dismantled its criminal infrastructure. Also known as Fluffy Wolf, the threat actor has a history of targeting Russian and international companies since 2016. The Ministry of Internal Affairs of the…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "32c90d2f0958",
-   "title": "Google Issues Patches for Critical Android Flaw That Could Allow RCE Without User Interaction",
-   "link": "https://thehackernews.com/2026/11/google-patches-critical-android-flaw.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-04T07:46:15Z",
-   "summary": "A critical Android flaw could allow an attacker to run code on a phone without any user action remotely, Google said in its November security bulletin. The flaw, CVE-2026-58868, affects Android 14 through 17. Phones get the fix with security patch level 2026-11-01 or later, which phone makers and…",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.0039
-  },
-  {
-   "id": "349817163ae5",
-   "title": "CISA Confirms Hackers Exploiting WordPress Core Flaw During Software Upgrades",
-   "link": "https://thehackernews.com/2026/11/cisa-confirms-hackers-exploiting.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-04T05:43:11Z",
-   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a security flaw in WordPress Core to the Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The high-severity vulnerability, tracked as CVE-2026-119977 (CVSS score: 8.1), is a case of…",
-   "score": 5,
-   "tags": [
-    "Actively exploited",
-    "Vulnerability"
-   ],
-   "why": [
-    "Actively exploited",
-    "Vulnerability"
-   ],
-   "epss": 0.012
-  },
-  {
-   "id": "19ce3797bde4",
-   "title": "Exclusive: Dozens of Australian hotels potentially impacted by alleged IHG Hotels & Resorts breach",
-   "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPRDc0RDMzRUh6WEZkbWlYSmJQQm45amFXY3ZKMXFmZkxjWlVxdW5XUDNMQ1YyYXIzMnNNNnNEVEFrSnVRSzNsUGpaQ1I3TDZWOGVFZ2V2TWRLeW83Sk92SFN3Zm1kTzFJZTBDSTlJcXhLak9mRXQyX19yN3ozb01MbHVfSUx2Y29wNFBidEdNT1NyNlRFTmQtemNBV0lwaUEyWWI5WWtWczQzUF9fVS1yTXVlcDBfMEVVWnVIbzdCRGhjRmx2QVpORlZnU1Z1RWp6a3lBNDBNbWdLS2xvUkE?oc=5",
-   "source": "Cyber Daily",
-   "feed": "AU breach news",
-   "region": "AU",
-   "published": "2026-11-04T05:16:32Z",
-   "summary": "",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "Data breach"
-   ],
-   "why": [
-    "Australia",
-    "Data breach"
-   ],
-   "also": [
-    {
-     "source": "News24",
-     "url": "https://news.google.com/rss/articles/CBMitgJBVV95cUxPSDhScVdBWG1wVV8ybVdHMk1GZWxVLTlJaUpDZ0lfdk9HeFkzdDVESk5sU3BzclpLcGdlMmJ2NXhnMHhKQTR4UzNSYjVPeDlQd0VLdHlhV3Bqa05vc3JxZnhGTjQ3TlJqM1BVZGEtQ0J3OExlUkwzQzNEakxYMUh2TFlzSGZ3Z1d0dWpVMURKV2pyU3BuWHcyOXZVc3dwOXJhYW5ScTZDU2xRY0ZjQTFVQk5kMTV2MFc4NFJtc0drTEwwZnpHQVNkLVFwelludkFyakFtZzFWenVHdGpCdHNBZmt5VXVVZTlLeDhOWDZ6V2RjeHJ6Vi15aDBkVFdJUHZua0tjTnBtRU53UWxfVXhNQzVXOWpSWTJjZTA5X3ZadzYzMHd0d3A1RGZCVmJrNkxvTUlZc3dn0gG2AkFVX3lxTE9IOFJxV0FYbXBVXzJtV0cyTUZlbFUtOUlpSkNnSV92T0d4WTN0NURKTmxTcHNyWktwZ2UyYnY1eGcweEpBNHhTM1JiNU94OVB3RUt0eWFXcGprTm9zcnFmeEZONDdOUmozUFVkYS1DQnc4TGVSTDNDM0RqTFgxSHZMWXNIZndnV3R1alUxREpXanJTcG5YdzI5dlVzd3A5cmFhblJxNkNTbFFjRmNBMVVCTmQxNXYwVzg0Um1zR2tMTDBmekdBU2QtUXB6WW52QXJqQW1nMVZ6dUd0akJ0c0Fma3lVdVVlOUt4OE5YNnpXZGN4cnpWLXloMGRUV0lQdm5rS2NOcG1FTndRbF9VeE1DNVc5alJZMmNlMDlfdlp3NjMwd3R3cDVEZkJWYms2TG9NSVlzd2c?oc=5"
-    },
-    {
-     "source": "News24",
-     "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxPSS1lQktVNVZxTDg5ZWtCcTZOTnBBa2tROElXbGVYdGRnUF9IUVhfMXBYY29nWFd5XzRDTkxabkpsU2JBeUNEbzZkV0Q4YnhfUWVyZmh4cnBOZ2xLV1RMS2hwYWg2TjZaanZnNFVnWTNMdUw5bm1NSUxUcW41VlBPUzNZaXB0M2g3Sll4cmF2WmF2dkxJMFY5Ui1KREp3WDdOWmdkU3pJNy1sZEY3OHU0ZlE0OGtEZVBPNlV0bm8wcTBuTG54WlhlN2NXeWZsU09jVElfVnBobnh0aXRwS21LaEFhNkpMQWhITjloYUFQNldtWXVWOTNvMVBLUmdTcmE2N3RSNjJOWi1BQlptQXV2Mmh3YVZDQTlMWGJheTZn0gGeAkFVX3lxTE9JLWVCS1U1VnFMODlla0JxNk5OcEFra1E4SVdsZVh0ZGdQX0hRWF8xcFhjb2dYV3lfNENOTFpuSmxTYkF5Q0RvNmRXRDhieF9RZXJmaHhycE5nbEtXVExLaHBhaDZONlpqdmc0VWdZM0x1TDlubU1JTFRxbjVWUE9TM1lpcHQzaDdKWXhyYXZaYXZ2TEkwVjlSLUpESndYN05aZ2RTekk3LWxkRjc4dTRmUTQ4a0RlUE82VXRubzBxMG5MbnhaWGU3Y1d5ZmxTT2NUSV9WcGhueHRpdHBLbUtoQWE2SkxBaEhOOWhhQVA2V21ZdVY5M28xUEtSZ1NyYTY3dFI2Mk5aLUFCWm1BdXYyaHdhVkNBOUxYYmF5Nmc?oc=5"
-    },
-    {
-     "source": "News24",
-     "url": "https://news.google.com/rss/articles/CBMimAJBVV95cUxQSzZBa055TVY5NFFnQ2xqTnladWlNN0lrNENRc3ppa0hETVlNdG1YN05NdGJOcXQ0ZWJzZFlJcVE2eGNjUVVwcjhRcktwNlpyTG9OMWM2TGpST21uWUN3NzBreDRESVcxZXRiMDYxa2d2amFrdGxHOTJRdkN6VlVzMHNSTWVGNkkxWTYtN2VfbU10QUtRbzk5SEczcnZ5bW9TdmstZHRJcW1LeGozSUtiWTNtN1NlVk1TVmd3NmZGbEVFY2dqc1ozS0otMTBNeGFqakFnVVFmaXhMbUJEVEVvYWdDSmVuMk50SlRVSTQzSHdRU0pnRDVaTldqcHlpZXRuWmZ2M1NPdWhBOGpxMmNhM0VXX29lLXA30gGeAkFVX3lxTE9JLWVCS1U1VnFMODlla0JxNk5OcEFra1E4SVdsZVh0ZGdQX0hRWF8xcFhjb2dYV3lfNENOTFpuSmxTYkF5Q0RvNmRXRDhieF9RZXJmaHhycE5nbEtXVExLaHBhaDZONlpqdmc0VWdZM0x1TDlubU1JTFRxbjVWUE9TM1lpcHQzaDdKWXhyYXZaYXZ2TEkwVjlSLUpESndYN05aZ2RTekk3LWxkRjc4dTRmUTQ4a0RlUE82VXRubzBxMG5MbnhaWGU3Y1d5ZmxTT2NUSV9WcGhueHRpdHBLbUtoQWE2SkxBaEhOOWhhQVA2V21ZdVY5M28xUEtSZ1NyYTY3dFI2Mk5aLUFCWm1BdXYyaHdhVkNBOUxYYmF5Nmc?oc=5"
-    }
-   ]
-  },
-  {
-   "id": "8cf9d66aebfa",
-   "title": "Police investigating NSW Health cyber breach",
-   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOZXJIbVlGYmw0TEN5RG1PeXZpMTFQS1hLejNTczhiU1ZNbTBVUmZSbV9mT0xydUhHR25udEpXNW5XUkQ2X25SYUhqR200TXQ5TUJud21lQVJMZzlrdkMtLWUzbzRTRm8ycVEzdFh3UkdZMEVVUWNCNFBDRW0yMWRHMG4yOHBCU0FqRU1uRlFTMA?oc=5",
-   "source": "Medical Republic",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-11-04T05:12:10Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ],
-   "also": [
-    {
-     "source": "Nine.com.au",
-     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPSmtqWTNkWW1lZ2VKOGhrQ3FXNDRCRkZsR21QV0ljLUdiMXgxcWFGbXJ2OG9zYV9obDI3TDVnWWJLZGc4LVluOTNtNzZCdE5iNDhfTTI4b2trYVZ5Y1N1Z0ZLUGVacXdYQXB1TXhscUhCRWhfSUZ1VDJ5ckc2TnMxVFltbjhTRUFiSmdFZ19mMXA5XzlxS0lnNVFpNVNic243WVNUemJLU3lTWnZxNGF5TVRTM1BaZVBSUm43UFdLSHE?oc=5"
-    },
-    {
-     "source": "SBS",
-     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQbEF0UHRLaThtNXJqS2JIMFJsbkFDTWxlSE5mVWlJLU1fdFJZeGZXRk9idExLdHIzcjMydVFvZU1fNld0aVljeXR0TUVWNEo4ZlYwOWdhZjF1RzczQXhPb3Zoa0IwWXpFYVB0akZNLUUxSDZ3Um5RdnZDOGxRcXNiUEt4V3hTS3JkUTNMdndJOGVpMlJWNUl2U2xFdnJiNG56ZW5LRXJBbm8?oc=5"
-    },
-    {
-     "source": "ABC News & Headlines – Australian Broadcasting Corporation",
-     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOUlprYTFMV2c5elRudzVVRXRQbWdLdGxlbFBiU1dKcTBMMGxlTlFKNl9WZnJpVmhHMEhxcDU3a28xQlQwNzBhcnFpckM5OVF1cmxQUk5hd29xNGttdW1wcVpTeVJqdjNOSE01ZS1UVV9xOWhCdENrY1FMWVo1YlhQbjBxdHk3VjRLSVNkQ0JxRDJsbTFMa0RsX1JyajNWN21zVF9Tb3dpaW1rSXJxekFVVl9EUQ?oc=5"
-    }
-   ]
-  },
-  {
-   "id": "f767524af35b",
-   "title": "Major breach targets dental data",
-   "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQQ0pkWjBWNklCdlpGcFFMTy05UkMtMlZqRFppVTJrT3gwV05SazNuRFJLTHpyd2VTdmQzek4zdlJzdk1VLUc3OFpMWGZJMzM4MU5QVmNpTXcyUkM3TVhrc3c2UTlvUE14dzNYb0o5R0hwTEhTX3FCdDV5eDFJdEgtVV95Q0RjTmZLTVlIbEVRd3U2X0dQTVdBLVVXdTVjbmdNaE5PM1plQ0xfck51ZTg2SzJIbUpBNlZjTFpMMEhWWWNNcTlucFdUOGJFeklpTGlxaUF5UlBqU05hRzFfNTJpTlI5OTZOMmwxZ1dDQ2t2N0toNHZBWk5ab2o2cHl5ZkHSAYQCQVVfeXFMTkc4NHgtLUJnZi1wZHJhX0RtT2ZqUXBsQXZGUThmcWFEYXU3dE13UXhaMGt3dnc3QmlFM1pkUEpjcE1qY180MWpteHdGTzFNSnBwSEFCTXRwZEcyaWNMTmw2c1Q5MEZ5Q01VVjJhcHljejJjTDVRSXpzVER3dE9aNW5HOXBQQjRfcUE1NzZpREVwUFBybWx6U2FFVXItWHJBN3dSRFhnSFN3ZHVETnBYZW5sRTBLMVQyMzc0cFo5Rmo4Z0hKV21ydUd6MnNHRFpKWDJKdlZzcFhrRmhPWEJVMmc2Mm8xR0tyNVk2d1NKekVUbzBvaTNsZUxxSnlPTi1oenFpaUE?oc=5",
-   "source": "News.com.au",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-11-04T05:03:28Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "7aa5af4c407c",
-   "title": "ISC Stormcast For Wednesday, November 4th, 2026 https://isc.sans.edu/podcastdetail/10164, (Wed, Nov 4th)",
-   "link": "https://isc.sans.edu/diary/rss/33486",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-11-04T02:10:02Z",
-   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
-   "score": 1,
-   "tags": [],
-   "why": []
   }
  ]
 }
