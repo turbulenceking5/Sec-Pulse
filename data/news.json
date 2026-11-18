@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-17T16:03:47Z",
+ "generated": "2026-11-18T00:58:39Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -22,7 +22,7 @@
   {
    "name": "ASD / ACSC in the news",
    "ok": true,
-   "count": 1,
+   "count": 2,
    "error": null
   },
   {
@@ -40,13 +40,13 @@
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 1,
+   "count": 0,
    "error": null
   },
   {
    "name": "iTnews Security",
    "ok": true,
-   "count": 0,
+   "count": 1,
    "error": null
   },
   {
@@ -100,11 +100,325 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 26,
+   "count": 25,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "0f91631aef35",
+   "title": "ACSC warns vulnerabilities are being exploited quickly, urges organisations to patch and reduce exposure",
+   "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQcUVkSHN6eU5vQTZjT3BfVlI0M0FsOWo4RERNcDgyTWhKaHhhWkUzWnh6OXR3MlBjX1B6U1dsT3hyeUJIX296MGlKQXFFYkNEMlVaa0psOWx5TGN0MnVZZEI3aEg2bmItWmxUZE5FRndyaHFYZGp0d21qYWxRYTFnenJuZ1JVWHY5LXNfYXZBQ004eXN0bTdrc3ZnQ2pRYklqeEF6LUxWdXNuM2c1RDM1RXBraEwxNVE5YVJtVnNXNDl4dlNRQ1ZEWjhuSDE2cmFscFAyc0J0YXA2VVBndUdzWURpYy1uUQ?oc=5",
+   "source": "Australian Cyber Security Magazine",
+   "feed": "ASD / ACSC in the news",
+   "region": "AU",
+   "published": "2026-11-17T23:44:02Z",
+   "summary": "",
+   "score": 12,
+   "tags": [
+    "Australia",
+    "Vulnerability"
+   ],
+   "why": [
+    "Australia",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "126567e065a7",
+   "title": "Critical Java4Shell flaw allows RCE attacks on major Java applications",
+   "link": "https://www.bleepingcomputer.com/news/security/critical-java4shell-flaw-allows-rce-attacks-on-major-java-applications/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-17T23:04:21Z",
+   "summary": "A critical vulnerability dubbed Java4Shell in OpenJDK, the open-source implementation of Java, can allow unauthenticated attackers to remotely execute code on popular enterprise applications, including Jenkins, Atlassian Jira, Confluence, and Keycloak. [...]",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "46a6b0b05c4e",
+   "title": "Optimizely Malware Attacks Highlight Third-Party Vendor Risks",
+   "link": "https://www.darkreading.com/cyber-risk/optimizely-malware-attacks-third-party-vendor-risks",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-17T22:34:22Z",
+   "summary": "At least 178 organizations, including several major brands, unwittingly exposed website visitors to hydra-like malware via a third-party platform.",
+   "score": 6,
+   "tags": [
+    "Data breach",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Data breach",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "ddec81ba80b1",
+   "title": "Cloud keys leaked in Docker Hub images are stolen within seconds",
+   "link": "https://www.bleepingcomputer.com/news/security/cloud-keys-leaked-in-docker-hub-images-are-stolen-within-seconds/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-17T21:27:17Z",
+   "summary": "Credentials and access secrets exposed in public Docker Hub images are being extracted and exploited by attackers within as little as eight seconds of publication. [...]",
+   "score": 6,
+   "tags": [
+    "Data breach",
+    "Identity"
+   ],
+   "why": [
+    "Data breach",
+    "Identity"
+   ]
+  },
+  {
+   "id": "9a9fd83f91ed",
+   "title": "ANZ uses AI to move 1.7PB data platform to AWS",
+   "link": "https://www.itnews.com.au/news/anz-uses-ai-to-move-17pb-data-platform-to-aws-630399?utm_source=feed&utm_medium=rss&utm_campaign=iTnews+Business+feed",
+   "source": "iTnews Security",
+   "feed": "iTnews Security",
+   "region": "AU",
+   "published": "2026-11-17T21:05:00Z",
+   "summary": "Retires legacy Hadoop environment in one-third of the expected time.",
+   "score": 6,
+   "tags": [
+    "SaaS / cloud",
+    "Australia"
+   ],
+   "why": [
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "ba36bcaaae49",
+   "title": "'TheMailer' Phishing Kit Puts AI in the Driver's Seat",
+   "link": "https://www.darkreading.com/perimeter/themailer-phishing-kit-ai-drivers-seat",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-17T20:58:13Z",
+   "summary": "The commercial kit uses attacker-supplied AI models to personalize lures, evade spam filters, and scale campaigns to tens of thousands of targets.",
+   "score": 4,
+   "tags": [
+    "Phishing"
+   ],
+   "why": [
+    "Phishing"
+   ]
+  },
+  {
+   "id": "1dff6dd6c93a",
+   "title": "Japan takes Fugaku supercomputer offlline after cyberattack",
+   "link": "https://www.bleepingcomputer.com/news/security/japan-takes-fugaku-supercomputer-offlline-after-cyberattack/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-17T20:51:21Z",
+   "summary": "The Fugaku supercomputer operated by Japan's RIKEN Center for Computational Science has been taken offline following a security breach. [...]",
+   "score": 3,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "6b530aaeb2ca",
+   "title": "Researchers Claim Two RCE Exploits That Bypass Telegram’s New Android Defenses",
+   "link": "https://thehackernews.com/2026/11/researchers-claim-two-rce-exploits-that.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-17T19:34:20Z",
+   "summary": "A malicious widget can bypass the security filter that Telegram added to its Android app last week and run code outside it, according to NebuSec, a security company. Widgets are small interactive blocks that bots send inside chat messages, and their JavaScript runs on the user's phone. The…",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "6b76a35deee9",
+   "title": "Apple reports outages affecting iCloud Mail, AppleCare and more",
+   "link": "https://www.bleepingcomputer.com/news/apple/apple-reports-outages-affecting-icloud-mail-applecare-and-more/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-17T19:24:07Z",
+   "summary": "Apple is reporting service disruptions affecting several of its services, including iCloud Mail, iCloud Account & Sign In, Apple School Manager, and Schoolwork. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "e7c273fee4ff",
+   "title": "Cursor Traces Malicious Claude Code Extension to Third-Party Breach",
+   "link": "https://www.darkreading.com/application-security/cursor-malicious-claude-code-extension-third-party-breach",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-17T18:38:37Z",
+   "summary": "A compromised key issued to AI infrastructure provider Fireworks was used by threat actors to access Cursor data and credentials.",
+   "score": 9,
+   "tags": [
+    "Data breach",
+    "Identity",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Data breach",
+    "Identity",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "a2076d4177b9",
+   "title": "Researchers hijack Hugging Face account for popular Kokoro AI model",
+   "link": "https://www.bleepingcomputer.com/news/security/researchers-hijack-hugging-face-account-for-popular-kokoro-ai-model/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-17T18:21:24Z",
+   "summary": "A Lack of ownership verification on the Hugging Face platform allowed researchers to take control of Kokoro, a text-to-speech model used in projects from Google, NVIDIA, AMD, Intel, and Amazon Web Services. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "b420612fe6cb",
+   "title": "AI Framework Autonomously Weaponized Flaws in Real Attacks, Google Says",
+   "link": "https://www.securityweek.com/ai-framework-autonomously-weaponized-flaws-in-real-attacks-google-says/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-17T18:16:17Z",
+   "summary": "Threat actors are deploying multi-agent offensive frameworks to increase the velocity of multi-stage intrusions. The post AI Framework Autonomously Weaponized Flaws in Real Attacks, Google Says appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "0c7617c3ded4",
+   "title": "Security for the agentic era, powered by Microsoft Perception",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/17/security-for-the-agentic-era-powered-by-microsoft-perception/",
+   "source": "Microsoft Security Blog",
+   "feed": "Microsoft Security Blog",
+   "region": "Global",
+   "published": "2026-11-17T18:14:00Z",
+   "summary": "Read about updates to Microsoft Perception and the new Microsoft Security cyber stack to defend against threats, secure agents, and protect your digital estate. The post Security for the agentic era, powered by Microsoft Perception appeared first on Microsoft Security Blog .",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "20ae607048a2",
+   "title": "FBI sounds alarm over AI hacking tool that can breach US networks in under three hours | Hindustan Times",
+   "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQSGNLdTRlWnh5OUFjQkpENndyQ2lWOHlYdzZOUTVFcTkxU25BMVliQnVKSEgzV25lNTNzSkdYSC1XR3lTeEl4QU9nN3RSNDV3VjRPUGIzcTFwOXNCc0JPNW9WT0U0Mm1FbzNHSVlRV1JyNnZCRGFTcTM1elJRQzlESVdTMlJTS0M0dVNpOFNBZTdyWjd5TXNuT0VVVEEzekhFTmVjN2NROEotQ0VrQmxBOFFjcURMYjUwNUhnR0g0bE1ucy12ei0zVDN6N0hwVFM2WFI5bHdablM2a1ZwRzk2eEotRlBrQ28ycEd6R2hySUtTaGtnbUHSAfsBQVVfeXFMUDhDaXQyWnpxR3lVZl9URVU4NDlzWlZPRFpSUmkxNXlUbUxLNkZ0bkFZaEdLOGdWcGJ6WmhzOGRPWmFoTFdxLUJoNW9DT3cyeTVzeFFXdXA4eG9rbGhHRHJ3eDFyS0lNT1dpaHMxWTZOSkFTMEtlRUZxWEVFQzQ4cDg4TXVHcU9Kb3NCekhIbnAyaGVYcFlCVV9maWpqWTdrX0tkck9NZG16TnpOTmw2bWE1S0FaOGgyMnBSVmV3ZzlWeEpVTGIzZlVEMjZZQkM5c3lJa2tQbEZhYWlqQ1lWZFpjTkFHa2pHQUFUdDhmLWVrUGtSREYzRXlDOW8?oc=5",
+   "source": "Hindustan Times",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-17T18:07:36Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "6b32b3a76586",
+   "title": "Tor releases emergency update amid ongoing DDoS attack",
+   "link": "https://www.bleepingcomputer.com/news/security/tor-releases-emergency-update-amid-ongoing-ddos-attack/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-17T18:04:15Z",
+   "summary": "The Tor Project has released a security update for its network relay software to increase defenses against an ongoing distributed denial-of-service attack that it says has overwhelmed relays and affected most operators. [...]",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "faee8e17ad3c",
+   "title": "Pennington County restores public access to real estate records after cyber incident",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOOUVqMllsMzhtQzVSM1RmOW5fUS1WdWxhSGRJSGhjZFhyR1ctbnNhWTQ2WDhVT21jRi1NUHdLTTMzdTlBR2RNQmJ0b2NZVkxrX21vTmxub0oyS0hZbzN5TXFFaXktdzlPVV9wd3loMkVqVUJwWTlPTFpGQ28wU1N3ZmtYaUMwSmY0d3JyV1ZpenlIX1IxOEVERU51d3VpTTZSRWU2VjlNU1YzdlFreVNJUEpmbTRSazDSAcsBQVVfeXFMTWNrOHhIY09wR2NZbnRSbjhadENsOWV6bWJXaG93NDNLOFBkcjU4RHhyYkF3Rkh2QXBzckNZcVRfNjRmT3RmRXlvcW8yQnkzSUM1T1BRcVBQVjNCOEZGRl9YbHd4eEZlNWdjMWNZTnctdEM0MHF0Vm5QVkVKcm54U19Wb0RqWmVYeU9FRUo3ZjVtT3BCa0llMHVNaEs2WnctdmRsS1dxNnRPT0hpbm5sWUtCUS1YTTlxNUVrVTItUEZVdmkxMUsxT0htTm8?oc=5",
+   "source": "KOTA Territory News",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-17T17:49:00Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
+   "id": "3241c5d0e909",
+   "title": "Flipper Devices launches $399 ‘Flipper One’ Linux-based multi-tool",
+   "link": "https://www.bleepingcomputer.com/news/hardware/flipper-devices-launches-399-flipper-one-linux-based-multi-tool/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-17T16:00:00Z",
+   "summary": "Flipper Devices, the company behind the popular Flipper Zero pentesting device, has launched a crowdfunding campaign for Flipper One, a portable Linux computer and networking multi-tool. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "7a7b2eaa4aa9",
+   "title": "Oracle to Patch 11 Java Flaws Today as Critical OpenJDK RCE (CVE-2026-114938) Report Emerges",
+   "link": "https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-17T15:17:36Z",
+   "summary": "Oracle is preparing to release security patches for 11 vulnerabilities in Java SE on Tuesday, November 17, 2026, all of which may be exploited remotely without authentication, as separate reports warn of a potentially critical remote code execution (RCE) flaw affecting OpenJDK. The 11…",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "033b7c10af0d",
+   "title": "Trigram Campaign Impersonates About 50 AI and Blockchain Brands to Target Devs with Infostealers",
+   "link": "https://thehackernews.com/2026/11/trigram-campaign-impersonates-about-50.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-17T15:17:28Z",
+   "summary": "Artificial intelligence (AI), blockchain, and logistics sectors across Europe and the U.S. have emerged as the target of a large-scale, industrialized campaign dubbed Trigram. \"Trigram is a large-scale campaign that impersonates about 50 brands in the blockchain and AI sectors, to trick developers…",
+   "score": 3,
+   "tags": [
+    "Identity"
+   ],
+   "why": [
+    "Identity"
+   ]
+  },
   {
    "id": "148f7e8fc320",
    "title": "Inside Modern Phishing Kits Built to Steal Microsoft 365 Sessions",
@@ -122,6 +436,23 @@
    "why": [
     "Phishing",
     "Microsoft 365"
+   ]
+  },
+  {
+   "id": "2a3576b7db96",
+   "title": "The risks of device code authentication for AI coding agents",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/17/the-risks-of-device-code-authentication-for-ai-coding-agents/",
+   "source": "Microsoft Security Blog",
+   "feed": "Microsoft Security Blog",
+   "region": "Global",
+   "published": "2026-11-17T15:00:00Z",
+   "summary": "Lab research shows how device code phishing, a technique that applies to any device-flow client, can extend to AI coding agents, using GitHub Copilot CLI as an illustrative example. The post The risks of device code authentication for AI coding agents appeared first on Microsoft Security Blog .",
+   "score": 4,
+   "tags": [
+    "Phishing"
+   ],
+   "why": [
+    "Phishing"
    ]
   },
   {
@@ -593,6 +924,26 @@
    ]
   },
   {
+   "id": "7ca8ed11e02a",
+   "title": "CVE-2026-115731: Perforce Puppet Enterprise — Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-115731",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-11-17T00:00:00Z",
+   "summary": "Perforce Puppet Enterprise contains a deserialization of untrusted data vulnerability in Puppet’s report-processing code that allows a client with any CA-signed agent certificate to execute arbitrary code on the Puppet Server as the service user by… CISA remediation due 2026-12-01.",
+   "score": 4,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0037
+  },
+  {
    "id": "e4eeca90a4e3",
    "title": "Dragos reports 20 Australian industrial ransomware incidents in Q3 2026",
    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNSEU3UTEzaDJ1WTdCYTdObXNzY2NnYjhTV0YxSEs1ejlSTzdXZ3Ffd1lJZzNzXzJ6LVR1QzVzcFZtUUlpei12djNGWlA2VUlFbUhxOHRGRGJTb0o2T2NGT1JGYnk5Q1lkcUEyNjBkbmRxTG5CQ0oxLXJmWGZCaXV2eVIwTURKdXZRWWdkT0xWZ0hLZGFMRXVBLUUzWHoxbjhqLU5JRGZoYXJvZlRVY1NJSk5OUXJuWnl3Uk4w?oc=5",
@@ -753,7 +1104,7 @@
   },
   {
    "id": "9899fc2c80e3",
-   "title": "Ransomware Attacks Increase Behind AI, But Payments Decline",
+   "title": "Ransomware Attacks Increase Behind AI, but Payments Decline",
    "link": "https://www.darkreading.com/threat-intelligence/ransomware-attacks-increase-ai-payments-decline",
    "source": "Dark Reading",
    "feed": "Dark Reading",
@@ -923,7 +1274,7 @@
   },
   {
    "id": "4a1b61ed5d0b",
-   "title": "ED Seizes ₹26.43 Crore Real Estate Project Linked to Ex-Chhattisgarh CM Bhupesh Baghel's Son in Liquor Scam",
+   "title": "ED Seizes ₹26.43 Crore Real Estate Project Linked to Ex-Chh…",
    "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPcW9aTW44ZXZfT2k2V0xtMTR6SHk5X3NwX1NnTzU2ZktGU1RlTzZOWXBIMlNOaEFsYkYzZERyTDJwbGhWRkg0N2tYNTEwVm9uNDE4Qk00emVMcEFqMnFLdHFBRmlxcUpoOC0tRGJaZTJCNUEtaTNxZE1Ddlg1NWU2aTh0a1pHRERTM0xrS0dTVTU1aTd3bDdxLWRHX2FIS25kbVlXbjBMRVJNeGhzdDlZaTJiaWFEbEVXRDc3eGtkblNTM1pxU1B2a05Bai1oNW1EMHhnZzA2VEM0T2NucWNFOHJmekZqb0F5V3I2Y0tHYVRrRmRTaDVrYVo4X1lYaG1PNDJYbnE4SUh0dw?oc=5",
    "source": "Gujarat Samachar",
    "feed": "Real estate cyber news",
@@ -6821,354 +7172,6 @@
     "Australia"
    ],
    "why": []
-  },
-  {
-   "id": "d7e6bb525bb5",
-   "title": "Updated guidance supports vendor talks on post-quantum cryptography",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOQW04NTBhSVQ0NnViTHNCZzNKeDRXUHUxeDNLODl2UmpwSWVrOWhwaHdwcnR6YXNKMDQ5c0M3Y1NONFhfOGhvQ1AxYnRqXzRMOU00cHVuSjlMbEFsQUlOVlI3VW55cndLbzVGemdKYkhqZVdKVGJqRm5NbndhNi1oRXVMWU1BbDBzNFhBUzN5ejV3MmphdWEwNU5nNnZzdw?oc=5",
-   "source": "Cyber.gov.au",
-   "feed": "ACSC (via Google News)",
-   "region": "AU",
-   "published": "2026-11-05T12:00:00Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "Australia"
-   ],
-   "why": []
-  },
-  {
-   "id": "9d72fd7ac53b",
-   "title": "Court Upholds 423.6 Billion Won Fine Against Coupang for Data Breach : Society : JKN",
-   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE15OENsYXVuSm5VTk1UTElkTldJeXd4TWRuRGFjZTlleWE1bW9ZSE5VS1NIbzBoU2FkazNpRGVQXzRnTzJkYzFBU04tZ0dDTll2T2F0M3NTOHIyNmFzUTNGMkNn?oc=5",
-   "source": "재경일보",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-05T11:40:04Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "0d5406532cee",
-   "title": "ISC Stormcast For Thursday, November 5th, 2026 https://isc.sans.edu/podcastdetail/10166, (Thu, Nov 5th)",
-   "link": "https://isc.sans.edu/diary/rss/33490",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-11-05T11:25:11Z",
-   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
-   "score": 1,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "bcd0f8e51ff4",
-   "title": "The Agent Smith Dilemma: Governing Agentic Identities",
-   "link": "https://www.securityweek.com/the-agent-smith-dilemma-governing-agentic-identities/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-05T11:15:00Z",
-   "summary": "Every autonomous AI agent deployed across your enterprise today is a new proxy identity operating inside your perimeter. The post The Agent Smith Dilemma: Governing Agentic Identities appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "a190c692796e",
-   "title": "CISO Conversations: Ryan Davis – The Unknown Is Where Security Meets Reality",
-   "link": "https://www.securityweek.com/ciso-conversations-ryan-davis-the-unknown-is-where-security-meets-reality/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-05T11:00:00Z",
-   "summary": "Ryan Davis went from hacking his school’s network to running security at New Charter Technologies. What worries him now is shadow AI. The post CISO Conversations: Ryan Davis – The Unknown Is Where Security Meets Reality appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "806a92e4d68b",
-   "title": "Zyxel Switch Hacks Blamed on Patched Flaw Actually Exploited a Zero-Day",
-   "link": "https://www.securityweek.com/zyxel-switch-hacks-blamed-on-patched-flaw-actually-exploited-a-zero-day/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-05T10:56:41Z",
-   "summary": "Tracked as CVE-2026-107441, the out-of-bounds write flaw could allow attackers to execute OS commands via crafted HTTP requests. The post Zyxel Switch Hacks Blamed on Patched Flaw Actually Exploited a Zero-Day appeared first on SecurityWeek .",
-   "score": 7,
-   "tags": [
-    "Actively exploited",
-    "Vulnerability"
-   ],
-   "why": [
-    "Actively exploited",
-    "Vulnerability"
-   ],
-   "epss": 0.0029,
-   "also": [
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/zyxel-fixes-zero-day-exploited-to-hack-nearly-1-000-network-switches/"
-    },
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/11/zyxel-gs1900-patch-fails-to-block-zero.html"
-    }
-   ]
-  },
-  {
-   "id": "68af6446b07c",
-   "title": "Russia-Linked Hackers Hit iOS, Android Devices With Exploit Chains via Watering Holes",
-   "link": "https://www.securityweek.com/russia-linked-hackers-hit-ios-android-devices-with-exploit-chains-via-watering-holes/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-05T10:37:13Z",
-   "summary": "The large-scale watering hole campaign has been targeting entities in the US and Europe, mainly in Ukraine. The post Russia-Linked Hackers Hit iOS, Android Devices With Exploit Chains via Watering Holes appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": [],
-   "also": [
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/hackers-use-n-day-exploits-in-zero-click-attacks-on-ios-android-devices/"
-    }
-   ]
-  },
-  {
-   "id": "1981b067cd83",
-   "title": "5 Active Cyber Threats That Put US Enterprises at Risk in October 2026",
-   "link": "https://thehackernews.com/2026/11/5-active-cyber-threats-that-put-us.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-05T10:06:19Z",
-   "summary": "October 2026 brought another wave of cyber threats targeting US businesses, with attackers exploiting trusted platforms, legitimate authentication processes, and everyday business workflows. For enterprises, these campaigns raise the stakes beyond individual security incidents, increasing the risk…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "da77af0f435f",
-   "title": "GhostMap Android flaw lets malicious app trigger persistent boot loop",
-   "link": "https://www.bleepingcomputer.com/news/security/ghostmap-android-flaw-lets-malicious-app-trigger-persistent-boot-loop/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-05T09:18:29Z",
-   "summary": "Attackers can force Android devices into a continuous boot loop using a specially crafted app that requires no permissions and only needs to be installed. [...]",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "91bf32470902",
-   "title": "OAIC Ends VIQ Inquiry Despite Court Data Breach Finding",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOMWh6VWVHUU9LTmZ2aVJuN1c5dDkwcXNmU3RtRDJ1YTY1bmF1VDVrMVJNUWFxNElDQ1gwSTcxU3B5ZDBNMVVqM0I1WF9LS1dhNm1YT3RRSHgxd096V2gwc21rdkM3ckdodDcwa0Z2T3FJbWZJTHlqN0VockFUNDBuajRRbDIzREZzNFZjYkFqY2didU9PYy16VjNPb9IBWEFVX3lxTE1YMGxrYldOYk1MY2s3Q3NqMVk2M1NnOHAtSUo5QW90WE9XeGVzNThLcFVJVWQzc25VdXNUWXV5ck1Ua0JDbU9KQWZRNy1OemdWUkM3RWdZYlU?oc=5",
-   "source": "Law360",
-   "feed": "OAIC / Privacy news",
-   "region": "AU",
-   "published": "2026-11-05T09:14:40Z",
-   "summary": "",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "Data breach"
-   ],
-   "why": [
-    "Australia",
-    "Data breach"
-   ],
-   "also": [
-    {
-     "source": "Lawyerly",
-     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQWmtzYk9MWlkwSUdjOFB2RHc0bEtVMEMxU2gtcTBCQ3E1VnVmcU1XaDhuS0llZ05oU2g0Y2tZMFNzbHVfc3diZ1Z1dXR2ME84NExNZi1mYTgxckhMaVBGSVowTElDLUtEdVhLZlpxUC1HVlN0U1R6aWRiaXFYUE8tSkhrQldiRGZJcHJERDNWMmxzTjdDbmFPbzdnRVo3dlViRTNwRE5lV3JTZEE?oc=5"
-    }
-   ]
-  },
-  {
-   "id": "96a1ace9f58c",
-   "title": "Apple to Start Scanning Publicly Shared iCloud Photos and Files for Harmful Content",
-   "link": "https://thehackernews.com/2026/11/apple-to-start-scanning-publicly-shared.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-05T09:13:28Z",
-   "summary": "Apple has revealed that it plans to start checking public iCloud links for harmful content starting with iOS 27.3, iPadOS 27.3, macOS 27.3, and visionOS 27.3. The change specifically applies to scenarios where users share iCloud content, such as photos in iCloud Photos or files in iCloud Drive, by…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "4f9bb7c1ff8e",
-   "title": "CERT-In Flags AI-Driven Attacks as Backdoored ARTEX Exposes 62 Consoles to Root Access",
-   "link": "https://thehackernews.com/2026/11/backdoored-docker-image-for-artex-ai.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-05T08:42:03Z",
-   "summary": "The Indian Computer Emergency Response Team (CERT-In) has disclosed that an artificial intelligence (AI)-assisted threat actor it tracks as Crafty Falcon is targeting organizations in the Banking, Financial Services, and Insurance (BFSI) sectors in the country. Describing the threat as active and…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "d740af7ccc27",
-   "title": "California Sets Ground Rules for AI in Real Estate CE: Here’s What Agents Should Know",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFByZHBBTHFLaEFZWTFnSFVBdzZMZzhnRjFZY0xRYnltX3NjUXlEbGZIRHJFUVVQVENXR2RWeGotZXpidUlvZHpqYkdOOEp6Vk04Q09wcjFuT3VyeGJHQWE0bUtOck95OTByTjlxeFhOSGp1T3BkVS05TWU2cjZwZlU?oc=5",
-   "source": "Sacramento Bee",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-05T08:00:00Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ]
-  },
-  {
-   "id": "2a5b7d5a686a",
-   "title": "Hackers Exploit Patched Apple Flaw to Deliver Info-Stealing Malware, CISA Says",
-   "link": "https://thehackernews.com/2026/11/hackers-exploit-patched-apple-flaw-to.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-05T05:17:04Z",
-   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a medium-severity security flaw impacting multiple Apple operating systems to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation. The vulnerability in question is…",
-   "score": 6,
-   "tags": [
-    "Actively exploited",
-    "Vulnerability"
-   ],
-   "why": [
-    "Actively exploited",
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "4fa977fbb1ad",
-   "title": "No critical data leakage reported in suspected cyberattack on regional organisation - Naivalarua",
-   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQUk1vNTVUWXBheDEtVEpCX2NlLVJ1RTRYOTdfWjlyTE1wYUxoLWdLWllTNkMwbmNFS2x6WEFiRG0xMGlvdUt3UVhGb0pjaTM4UnpDTlRVYmlzaDlRcUFKc1VNZ2tEWjFxenRuQ3lYU0Q0QUNGQ3FkMmUzamhQdUtHaWhyUWlHZ2IyeUd0WkxJaVFuU09Oc2xzdUtsZ2JTa1lJRnJCaF9hZ3oyNTlaSGxTVXgtdWxRNkpiZE45ZE1TamIwUGJpZkx4c1d3aG0?oc=5",
-   "source": "Fijivillage",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-11-05T04:42:58Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "49bf8b366c47",
-   "title": "Want to Rent an Internet Address at the White House?",
-   "link": "https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house/",
-   "source": "Krebs on Security",
-   "feed": "Krebs on Security",
-   "region": "Global",
-   "published": "2026-11-05T04:36:17Z",
-   "summary": "Several staffers at the White House are using computers or mobile devices equipped with residential proxy services that render their internet address available for others to rent, security experts warned today. One of the proxy services is a Russian company whose founder's web hosting business was…",
-   "score": 1,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "1b4641ca3728",
-   "title": "Critical Rails Bug Threatens to Derail Vulnerable Servers",
-   "link": "https://www.darkreading.com/application-security/critical-rails-bug-derail-vulnerable-servers",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-11-04T21:48:18Z",
-   "summary": "An attacker could write arbitrary files and read sensitive files via images uploaded to the Rails Active Storage ImageMagick integration, possibly positioning a threat actor for lateral movement.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "de7887560061",
-   "title": "Vercel rolls out new protection against stolen session cookie attacks",
-   "link": "https://www.bleepingcomputer.com/news/security/vercel-rolls-out-new-protection-against-stolen-session-cookie-attacks/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-04T21:31:18Z",
-   "summary": "Vercel is gradually rolling out Device Bound Session Credentials (DBSC) on its platform as a key defense against information stealer malware. [...]",
-   "score": 2,
-   "tags": [
-    "Identity"
-   ],
-   "why": [
-    "Identity"
-   ]
-  },
-  {
-   "id": "e65d9eaeac4d",
-   "title": "Central Okanagan Crime Stoppers suspends online tips after national breach",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOdS1oV2liTVJ5d1E3YmtzbmQzbDZiMmhFNEJka0RORVh6Zzd6cWpfRDQ2X3RERTJqaVVBd084LWItRFhjMTJzTnd3cW5jb1llSnUzU2VjaE5SX1JOYUlreFdKNFdyRDMxRVc2N2VqNVFycnJQQm91anJlTXJNZEFnSmd1N19sQXZhcVFBWDl1S0pMdFRxVWdKYlZRWHBfM2VFRzZRclJTV1cwTmVaWTRQdEUxUlMxVW5ZaFFCbg?oc=5",
-   "source": "Castanet",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-04T20:50:48Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "1413af0079f4",
-   "title": "DreamHost confirms data breach exposed FTP logins and webmail sessions",
-   "link": "https://www.bleepingcomputer.com/news/security/dreamhost-confirms-data-breach-exposed-ftp-logins-and-webmail-sessions/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-04T19:05:19Z",
-   "summary": "DreamHost is warning of a data breach after attackers gained access to its File Manager platform for two months and stole customers' FTP/SFTP usernames and passwords. [...]",
-   "score": 6,
-   "tags": [
-    "Data breach",
-    "Identity"
-   ],
-   "why": [
-    "Data breach",
-    "Identity"
-   ]
-  },
-  {
-   "id": "e3c1ad189764",
-   "title": "David Jones in breach of rent agreements, landlord Scentre Group says",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQQzRVTUlCbXNEdlIxWVctWVJib3poZGdPNUhVZF9sSDNoYWNaSkZabGFCRG9iekZZVTVxNkRCakNMNjVtSi0zMjFtVHRCVDVYb0QydnNOQk5USXM1aEEwaU9RdWxUV29XbmZNYkVOYkNpbklweEZaM3hQYXIxYW51RWVsNkxzNFlBeVNDdnZub25aNkpNcy1KQkRwX2UzZw?oc=5",
-   "source": "Lawyerly",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-04T18:57:06Z",
-   "summary": "",
-   "score": 14,
-   "tags": [
-    "Real estate",
-    "Data breach"
-   ],
-   "why": [
-    "Real estate",
-    "Data breach"
-   ]
   }
  ]
 }
