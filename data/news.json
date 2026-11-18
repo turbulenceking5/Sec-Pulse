@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-18T01:05:54Z",
+ "generated": "2026-11-18T11:46:53Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -15,26 +15,26 @@
   },
   {
    "name": "ACSC (via Google News)",
-   "ok": true,
-   "count": 2,
-   "error": null
+   "ok": false,
+   "count": 0,
+   "error": "HTTPError: HTTP Error 429: Too Many Requests"
   },
   {
    "name": "ASD / ACSC in the news",
-   "ok": true,
-   "count": 2,
-   "error": null
-  },
-  {
-   "name": "AU breach news",
    "ok": true,
    "count": 3,
    "error": null
   },
   {
+   "name": "AU breach news",
+   "ok": true,
+   "count": 4,
+   "error": null
+  },
+  {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 7,
+   "count": 6,
    "error": null
   },
   {
@@ -105,6 +105,246 @@
   }
  ],
  "items": [
+  {
+   "id": "aa9ca93e66e2",
+   "title": "Microsoft Agent Framework Releases Poisoned With Credential Stealer",
+   "link": "https://www.securityweek.com/microsoft-agent-framework-releases-poisoned-with-credential-stealer/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-18T11:05:39Z",
+   "summary": "Versions 1.26.1 and 1.26.2 of agent-framework on PyPI steal Azure, Azure DevOps, and GitHub Actions credentials when Python starts. The post Microsoft Agent Framework Releases Poisoned With Credential Stealer appeared first on SecurityWeek .",
+   "score": 5,
+   "tags": [
+    "Identity",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Identity",
+    "SaaS / cloud"
+   ],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/attackers-compromise-microsofts-agent.html"
+    }
+   ]
+  },
+  {
+   "id": "94321d4b37d6",
+   "title": "Critical Perforce Puppet RCE Exploited in Attacks",
+   "link": "https://www.securityweek.com/critical-perforce-puppet-rce-exploited-in-attacks/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-18T10:37:08Z",
+   "summary": "Tracked as CVE-2026-115731, it allows a client that holds any CA-signed agent certificate to execute code on the server. The post Critical Perforce Puppet RCE Exploited in Attacks appeared first on SecurityWeek .",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0037
+  },
+  {
+   "id": "4f4cc6f19074",
+   "title": "Apache warns of Roller RCE vulnerability exploited in attacks",
+   "link": "https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-18T10:35:05Z",
+   "summary": "Apache has released security updates to address a critical Roller flaw that threat actors are exploiting to gain code execution on vulnerable servers. [...]",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "2fea44ab2915",
+   "title": "Employers told to patch critical Java flaw immediately as AI-found bug hits staff login systems",
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQTTJMNDcwTFFoQVRjMDA1YUJsakl4VUo5Tkplak5jbklfMGNkSng5UDMtU1lza2ppQW5GTUR3M0RUNDE1R1F1V1BmUENkOWVyRnAtRUV0MTJBU2NNaVEwUklzV3JoYktucXRRRWh6YlAxNHNMZExrWjBPY2RGTjB4dnVXY2V5ZGtDOGx5X1VPdE5id1J4MzAzRzlNLS1nMlFEUnlvT05LRXZKd21Ya09mTG5pamR1dFhDSWM3bmVSanRteWlKLVgzVld2Z2ZTNkFib3hBMVdJM3U?oc=5",
+   "source": "Human Resources Director",
+   "feed": "ASD / ACSC in the news",
+   "region": "AU",
+   "published": "2026-11-18T10:05:34Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Vulnerability",
+    "Australia"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "4ccf67b96d4a",
+   "title": "Microsoft announces Windows Server 2028 with hardened security",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-announces-windows-server-2028-with-hardened-security/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-18T09:24:31Z",
+   "summary": "Microsoft has announced Windows Server 2028, the next major release of its server operating system, at the Ignite 2026 conference on Tuesday. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "0dd01d7b3913",
+   "title": "Oracle Patches 950 Vulnerabilities With November 2026 CSPU",
+   "link": "https://www.securityweek.com/oracle-patches-640-vulnerabilities-with-november-2026-cspu/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-18T08:47:18Z",
+   "summary": "Over 300 patches address unauthenticated, remotely exploitable flaws, while 62 fix critical-severity flaws. The post Oracle Patches 950 Vulnerabilities With November 2026 CSPU appeared first on SecurityWeek .",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "25f152a1b586",
+   "title": "Hackers Exploiting Critical Puppet RCE Flaw Affecting Enterprise Management Servers",
+   "link": "https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-18T08:24:31Z",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a critical security flaw impacting Perforce Puppet, an enterprise infrastructure-as-code (IaC) and configuration management platform, to its Known Exploited Vulnerabilities (KEV) catalog, citing reports of active…",
+   "score": 6,
+   "tags": [
+    "Actively exploited",
+    "Vulnerability"
+   ],
+   "why": [
+    "Actively exploited",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "1db641aaef44",
+   "title": "CISA Urges Immediate Patching of Java4Shell Flaw That Could Allow Remote Code Execution",
+   "link": "https://thehackernews.com/2026/11/cisa-urges-immediate-patching-of.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-18T08:24:23Z",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has urged organizations to immediately patch a newly disclosed critical security flaw impacting Oracle Java. The flaw, tracked as CVE-2026-114938 (CVSS score: 8.1), refers to a case of out-of-bounds write that can lead to…",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "0ad69605a849",
+   "title": "British Scattered Spider hacker sentenced to 6 years in prison",
+   "link": "https://www.bleepingcomputer.com/news/security/british-scattered-spider-hacker-sentenced-to-6-years-in-prison/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-18T08:24:18Z",
+   "summary": "A leader of the Scattered Spider cybercrime collective has been sentenced to six years in prison in the United States for stealing millions in cryptocurrency and conspiring to hack a dozen companies. [...]",
+   "score": 4,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
+  },
+  {
+   "id": "c5f6c87fa0f7",
+   "title": "Java4Shell Vulnerability Puts Many Enterprise Applications at Risk of Takeover",
+   "link": "https://www.securityweek.com/java4shell-vulnerability-puts-many-enterprise-applications-at-risk-of-takeover/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-18T07:43:34Z",
+   "summary": "Calif demonstrated remote code execution in Jira, Jenkins and Keycloak, while VulnCheck says real-world RCE requires per-target work The post Java4Shell Vulnerability Puts Many Enterprise Applications at Risk of Takeover appeared first on SecurityWeek .",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "ee9a23761ba0",
+   "title": "Russian COLD RELIC Hackers Use Stolen Google Workspace Data to Breach Second U.S. Organization",
+   "link": "https://thehackernews.com/2026/11/russian-cold-relic-hackers-use-stolen.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-18T05:58:04Z",
+   "summary": "The Russia-linked cyber espionage group known as Cold Relic (formerly COLDRIVER and UNC4057) has been observed weaponizing a single cloud compromise into a launchpad for a series of linked intrusions resulting in third-party compromise. Google's Mandiant and Threat Intelligence Group (GTIG) said…",
+   "score": 7,
+   "tags": [
+    "Data breach",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Data breach",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "223101d57350",
+   "title": "Java4Shell Flaw (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak and More",
+   "link": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-18T04:27:41Z",
+   "summary": "A Java flaw called Java4Shell can let attackers without an account run their own code on Jira, Jenkins, Keycloak, and three other widely used applications, says Calif, the security research firm that disclosed it this week. The flaw is present in Java 17.0.6 and later, and the vulnerable code runs…",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "19347567d0aa",
+   "title": "Classified Communications Network at the National Security Agency Goes Down, Defense Official Says",
+   "link": "https://www.securityweek.com/classified-communications-network-at-the-national-security-agency-goes-down-defense-official-says/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-18T02:15:07Z",
+   "summary": "The problem disrupted the operations of NSANet, a classified internal network used by employees of the agency. The post Classified Communications Network at the National Security Agency Goes Down, Defense Official Says appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "308973400f63",
+   "title": "ISC Stormcast For Wednesday, November 18th, 2026 https://isc.sans.edu/podcastdetail/10184, (Wed, Nov 18th)",
+   "link": "https://isc.sans.edu/diary/rss/33528",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-11-18T02:00:03Z",
+   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
   {
    "id": "0f91631aef35",
    "title": "ACSC warns vulnerabilities are being exploited quickly, urges organisations to patch and reduce exposure",
@@ -224,6 +464,23 @@
    "published": "2026-11-17T20:51:21Z",
    "summary": "The Fugaku supercomputer operated by Japan's RIKEN Center for Computational Science has been taken offline following a security breach. [...]",
    "score": 3,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "f6779802b43f",
+   "title": "Coles and Woolworths shoppers issued urgent warning after cyber breach and gift card theft",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQc1BiZDh0ek9yUWtaUmVIWTFubW9TeFBkYUJjdndUN3lEeGpabnd3UE9WNEE2M1pnR1VQR0dMWXRMc05rd3FIOHFqd181QzF5UXhiaEtZekVzRFExS3NwSDdpbU9SMHFQOFpHVVRieVJRdzdETjhKZnVVa3VHWnRKV1JYalh6WF9LZzZCSm5faGNGUkU2ZTZpbWdHZFFyQ0VyMWVNdGRDZTEyUFR0Ujc3R3JPZzhnZkt2TzRZWHZ1THRqZw?oc=5",
+   "source": "Nine.com.au",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-17T20:32:49Z",
+   "summary": "",
+   "score": 6,
    "tags": [
     "Data breach"
    ],
@@ -724,6 +981,12 @@
    "why": [
     "Vulnerability",
     "SaaS / cloud"
+   ],
+   "also": [
+    {
+     "source": "Krebs on Security",
+     "url": "https://krebsonsecurity.com/2026/11/attackers-used-optimizely-to-a-b-test-malware-on-top-websites/"
+    }
    ]
   },
   {
@@ -6907,271 +7170,6 @@
    "why": [
     "Ransomware"
    ]
-  },
-  {
-   "id": "3fe484f436f5",
-   "title": "OpenSSH Issues Emergency Fix for Flaw Letting Long Passwords Bypass SSH Auth on Alpine Linux",
-   "link": "https://thehackernews.com/2026/11/openssh-issues-emergency-fix-for-flaw.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-05T16:42:46Z",
-   "summary": "Attackers can log in to accounts that have no password, such as SSH key-only accounts, on some Alpine Linux servers running the standard openssh-server package. They need network access to the server, an account name, and a password between 257 and 1,024 bytes long. OpenSSH, which rates the flaw…",
-   "score": 3,
-   "tags": [
-    "Identity"
-   ],
-   "why": [
-    "Identity"
-   ]
-  },
-  {
-   "id": "306be99284dc",
-   "title": "Researchers Bypass ChatGPT Lockdown Mode to Exfiltrate Chats Without User Interaction",
-   "link": "https://thehackernews.com/2026/11/researchers-bypass-chatgpt-lockdown.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-05T16:42:32Z",
-   "summary": "Cybersecurity researchers have disclosed details of a now-patched vulnerability that could be exploited to bypass Lockdown Mode protections in OpenAI ChatGPT. Lockdown Mode was introduced by the artificial intelligence (AI) company in June 2026 as an optional setting to minimize data exfiltration…",
-   "score": 1,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "e1bd03e0c6c6",
-   "title": "​Enforcement Directorate Uncovers ₹90-Crore Real Estate Scam in Bengaluru",
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNZlRGdjBXZFdoS0xDeGdvbU5WZ242U2tiZXFYSWsxNVc5SkVLcnRQVk5uSnc4SG44Ni0xbkdWVEt1Wlp3dG4xTnJ6UmNGcWtQOFFyZjJ2eDd5TU1hOElTdHM0VnlscFJXbUxwcjZ4WGtxRnY0M0szLV9QSVRrdlZDNEpTSmZCa3JxY3I1ekkzck1BYzhZbXlxaGhZdkFndTUt?oc=5",
-   "source": "The 420.in",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-05T16:09:48Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ]
-  },
-  {
-   "id": "302fe04b9508",
-   "title": "Email threat landscape: Q3 2026 trends and insights",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/05/email-threat-landscape-q3-2026-trends-and-insights/",
-   "source": "Microsoft Security Blog",
-   "feed": "Microsoft Security Blog",
-   "region": "Global",
-   "published": "2026-11-05T16:00:00Z",
-   "summary": "Microsoft Threat Intelligence observed a sharp rise in email-based phishing activity at the end of Q3 2026 (July – September), even as QR code phishing declined, CAPTCHA-gated phishing recovered, and malicious messages spoofing familiar business-service sender domains exposed risks associated with…",
-   "score": 7,
-   "tags": [
-    "Phishing",
-    "Data breach"
-   ],
-   "why": [
-    "Phishing",
-    "Data breach"
-   ]
-  },
-  {
-   "id": "63a4e5fb9a82",
-   "title": "Vulnerability Scans for Older Cisco IOS Vulnerability / Opt-Out Headers, (Thu, Nov 5th)",
-   "link": "https://isc.sans.edu/diary/rss/33492",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-11-05T15:29:08Z",
-   "summary": "This morning, I was browsing our honeypot data for any new and existing PHP exploit attempts. Instead, I first ran into some GeoServer exploits, but found them to be too boring to write up. This Cisco IOS exploit attempt was a bit more interesting. Still nothing new. I suspect this is for…",
-   "score": 6,
-   "tags": [
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "why": [
-    "Edge devices",
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "00defbefbe33",
-   "title": "Best Free Antivirus: 13-Step Ransomware Test, 90 Min [2026]",
-   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPZkdZSUZBRFlzcHNmLXZqLUlST2lsS3RVRk11aWdNdG1yZlRBZG9ITXZfWVlJWmNnYVdENkk5WWhkdExUMXlHOEpmSUpMZ2FCYVB0SVowVTg5WHF0T3VPUmlBNDZaQ2d4dHg4OUNwNFJ5YXR0Si1ZSmREeER4OGkwdXZ1cnFvSkZ2cjZ2Rw?oc=5",
-   "source": "tech-insider.org",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-11-05T15:02:54Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Ransomware"
-   ],
-   "why": [
-    "Ransomware"
-   ]
-  },
-  {
-   "id": "dad53d7e3ed5",
-   "title": "Closing the Identity Gap at the Service Desk",
-   "link": "https://www.bleepingcomputer.com/news/security/closing-the-identity-gap-at-the-service-desk/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-05T15:00:10Z",
-   "summary": "Attackers target IT service desks to bypass MFA by impersonating employees and convincing staff to reset passwords or register new authentication devices. Specops Software explains why traditional identity verification methods are no longer sufficient and how organizations can secure account…",
-   "score": 2,
-   "tags": [
-    "Identity"
-   ],
-   "why": [
-    "Identity"
-   ]
-  },
-  {
-   "id": "59043a855535",
-   "title": "ThreatsDay: Apache OFBiz RCE, DreamHost Breach, DeFi Site Hijacks + 17 More Stories",
-   "link": "https://thehackernews.com/2026/11/threatsday-apache-ofbiz-rce-dreamhost.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-05T14:41:10Z",
-   "summary": "How much damage can someone do without breaking much? Quite a lot, it seems. A stolen login can open doors across several systems. A trusted setting can be used to lock people out. Even a simple file copy can reach places it shouldn't. And while new tools are helping find security holes faster,…",
-   "score": 6,
-   "tags": [
-    "Data breach",
-    "Vulnerability"
-   ],
-   "why": [
-    "Data breach",
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "2dacffdc48c8",
-   "title": "Bank Phishing Sites Show Fake ‘Suspended’ Pages to Evade Takedowns",
-   "link": "https://www.securityweek.com/bank-phishing-sites-show-fake-suspended-pages-to-evade-takedowns/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-05T13:22:12Z",
-   "summary": "More than 200 sites were seen serving phishing content to first-time visitors but not to those who revisit. The post Bank Phishing Sites Show Fake ‘Suspended’ Pages to Evade Takedowns appeared first on SecurityWeek .",
-   "score": 4,
-   "tags": [
-    "Phishing"
-   ],
-   "why": [
-    "Phishing"
-   ]
-  },
-  {
-   "id": "8384bfde04a0",
-   "title": "Cyberattack Hits French Blood Bank Site but No Blood Products Are Compromised",
-   "link": "https://www.securityweek.com/cyberattack-hits-french-blood-bank-site-but-no-blood-products-are-compromised/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-05T12:58:32Z",
-   "summary": "The incident comes after supermarkets in a number of European countries reported this week that their fridges and freezers warmed up after they were remotely hacked. The post Cyberattack Hits French Blood Bank Site but No Blood Products Are Compromised appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "1779cfdf0141",
-   "title": "Cisco, WatchGuard Release Patches; SonicWall Won’t Fix GMS Flaws",
-   "link": "https://www.securityweek.com/cisco-watchguard-release-patches-sonicwall-wont-fix-gms-flaws/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-05T12:33:49Z",
-   "summary": "Cisco patched an RCE in UCS Central Software; WatchGuard fixed authentication and MitM flaws. The post Cisco, WatchGuard Release Patches; SonicWall Won’t Fix GMS Flaws appeared first on SecurityWeek .",
-   "score": 5,
-   "tags": [
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "why": [
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/11/sonicwall-wont-patch-eol-gms-flaws-that.html"
-    },
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-unpatched-flaws-in-end-of-life-gms-software/"
-    }
-   ]
-  },
-  {
-   "id": "5d4d03269391",
-   "title": "Is Your Exposure Management Platform Leaving You Exposed? Five Tests to Find Out",
-   "link": "https://thehackernews.com/2026/11/is-your-exposure-management-platform.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-05T12:25:00Z",
-   "summary": "A critical finding can move through several security tools and still leave the organization exposed. The vulnerability has a severity score, and a ticket has reached the queue. Progress then depends on information the finding may lack: who owns the system, whether attackers can reach it, what…",
-   "score": 5,
-   "tags": [
-    "Data breach",
-    "Vulnerability"
-   ],
-   "why": [
-    "Data breach",
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "287e28256566",
-   "title": "Open-weight AI models: Selecting, deploying and operating open-weight AI models securely",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPd1l1bUpyTEFhWEtweFl2cEJUbHktZkY4bG1lbEcyR3hKWWN1cDhoMDBaVndpZU56NkY1c0x1VFNaYTBRNmFsTTE4aEdyUldOMzhaZFVmdC1ZekZxNEJzcXVmMl9LaXRkNndCZk9HUUJidHRzLWJ2eHZ1UTBZOHUxM0tRS1RWWGpKSXktRDZzSDdnRzl2QTI5bmNaVXVhUXUybkg4X3JfZ21abDdnMFZuQU8yVC01bUVSTVR2Y0xKY20?oc=5",
-   "source": "Cyber.gov.au",
-   "feed": "ACSC (via Google News)",
-   "region": "AU",
-   "published": "2026-11-05T12:00:00Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "Australia"
-   ],
-   "why": []
-  },
-  {
-   "id": "09f8380d8b60",
-   "title": "New guidance on open-weight AI models",
-   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1xYWxNM3RQX0k5QU10VVNzMVJId1JLRlkzM29lM1Z4ZlZIem5RZENrTXNCcVJnUkV0dHd4WWtYNGc4RVo0WWVkQnRtR2VpNFpZaE5iVnc4Ym5Nd1VWTjNhaGxQcXJtdTcxelFldnk4WGx6WkhWV1E?oc=5",
-   "source": "Cyber.gov.au",
-   "feed": "ACSC (via Google News)",
-   "region": "AU",
-   "published": "2026-11-05T12:00:00Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "Australia"
-   ],
-   "why": []
-  },
-  {
-   "id": "308e50955905",
-   "title": "Open-weight AI models: Opportunities and cyber security risks",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQRW5FNFF0al9LT1NZOXR6RGs2SjNJaVhRZHJPZDRMclBvMVBhZU0zYzlDR0V2N2NTS1hBQTZPMjFZTkRtbnhLcUxhTTNPbEFDSzBFYjF3NmIwVEdiMlZzTTlmSXROb2tJdlFRdWx2NzVuZWdvX0ktVURITlNWYnB2ME1uZkhyVXd0eVJLUEROU0VfTlZ6cU1wS195c2Z6QQ?oc=5",
-   "source": "Cyber.gov.au",
-   "feed": "ACSC (via Google News)",
-   "region": "AU",
-   "published": "2026-11-05T12:00:00Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "Australia"
-   ],
-   "why": []
   }
  ]
 }
