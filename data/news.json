@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-18T11:46:53Z",
+ "generated": "2026-11-18T20:35:19Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -15,9 +15,9 @@
   },
   {
    "name": "ACSC (via Google News)",
-   "ok": false,
-   "count": 0,
-   "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   "ok": true,
+   "count": 2,
+   "error": null
   },
   {
    "name": "ASD / ACSC in the news",
@@ -28,13 +28,13 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 4,
+   "count": 3,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 6,
+   "count": 4,
    "error": null
   },
   {
@@ -52,7 +52,7 @@
   {
    "name": "CISA KEV",
    "ok": true,
-   "count": 15,
+   "count": 19,
    "error": null
   },
   {
@@ -100,11 +100,323 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 24,
+   "count": 30,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "ea9ba29c0015",
+   "title": "Java4Shell, NGINX2Shell and more: Why we are not at \"Yellow\", (Wed, Nov 18th)",
+   "link": "https://isc.sans.edu/diary/rss/33532",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-11-18T19:54:50Z",
+   "summary": "About a month ago, we went to Infocon Yellow for the first time in a few years. We decided to address the php2shell vulnerability and alert our readers to its significant impact. Following php2shell, we had a number of vulnerabilities and events that may also have scored high enough to trigger an…",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "9f639cd35360",
+   "title": "Data breach impacts 40 Irish credit unions in reported IT provider hack",
+   "link": "https://www.bleepingcomputer.com/news/security/data-breach-impacts-40-irish-credit-unions-in-reported-it-provider-hack/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-18T19:39:33Z",
+   "summary": "A reported cyberattack on Wellington IT has exposed sensitive information belonging to members of 50 credit unions, the majority of which are located in Ireland. [...]",
+   "score": 4,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "fb8b318a049e",
+   "title": "10-Year-Old NGINX HTTP/2 Flaw Lets Unauthenticated Attackers Execute Code on Servers",
+   "link": "https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-18T18:31:17Z",
+   "summary": "A flaw in NGINX's HTTP/2 support can allow an attacker to run code on servers with HTTP/2 enabled, without needing to log in. The decade-old flaw, CVE-2026-123007, dubbed \"nginx2root,\" has been present in NGINX's open-source code since version 1.9.5, released on September 22, 2015. Fixed versions…",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "11aa6bef2bfb",
+   "title": "F5 Warns 6 Critical BIG-IP Flaws Can Crash Traffic in Specific Setups, May Allow RCE",
+   "link": "https://thehackernews.com/2026/11/f5-warns-6-critical-big-ip-flaws-can.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-18T18:15:39Z",
+   "summary": "Six critical vulnerabilities in F5 BIG-IP allow an attacker to crash the Traffic Management Microkernel (TMM) without logging in, disrupting traffic until the TMM restarts. Each flaw needs a specific setup on a virtual server: an iRule that uses a particular command, or an APM policy that includes…",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "9c40ff9a7698",
+   "title": "Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required",
+   "link": "https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-18T17:10:45Z",
+   "summary": "A critical security flaw in Apache Roller, an open-source, Java-based blogging platform, has come under active exploitation in the wild, according to the Apache Software Foundation (ASF) The vulnerability, tracked as CVE-2026-129448 (CVSS score: 9.8), is a case of unauthenticated deserialization…",
+   "score": 6,
+   "tags": [
+    "Actively exploited",
+    "Vulnerability"
+   ],
+   "why": [
+    "Actively exploited",
+    "Vulnerability"
+   ],
+   "epss": 0.0164,
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks/"
+    }
+   ]
+  },
+  {
+   "id": "4007647799e1",
+   "title": "VeroSecurity Raises $11 Million for AI Security Engineering Platform",
+   "link": "https://www.securityweek.com/verosecurity-raises-11-million-for-ai-security-engineering-platform/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-18T15:30:42Z",
+   "summary": "AI Security Engineering is a new and essential security discipline now being brought into focus by VeroSecurity. The post VeroSecurity Raises $11 Million for AI Security Engineering Platform appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "8e8debc4b233",
+   "title": "From Deepfakes to Helpdesk Impersonation: Why Stronger Verification Matters",
+   "link": "https://www.bleepingcomputer.com/news/security/from-deepfakes-to-helpdesk-impersonation-why-stronger-verification-matters/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-18T15:00:10Z",
+   "summary": "Attackers are using deepfakes, helpdesk impersonation, and fake IT support requests to deceive employees and gain unauthorized access to corporate systems. Specops Software examines real-world attacks and explains how stronger identity verification can help organizations prevent social engineering…",
+   "score": 2,
+   "tags": [
+    "AI threats"
+   ],
+   "why": [
+    "AI threats"
+   ]
+  },
+  {
+   "id": "55016e2da81b",
+   "title": "New EggStreme Malware Variant Goes Silent to Evade Security Tools in Government Attacks",
+   "link": "https://thehackernews.com/2026/11/eggstreme-hackers-rebuild-malware-with.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-18T14:11:28Z",
+   "summary": "The suspected Chinese advanced persistent threat (APT) group behind the sophisticated EggStreme malware has rebuilt its toolkit as it continues to target government organizations in the Philippines. \"When attackers are exposed, the cheap response is to rotate,\" Bitdefender said in a technical…",
+   "score": 3,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "8368f9805644",
+   "title": "Major Brazilian Signature Apps Enable RCE & Fraud",
+   "link": "https://www.darkreading.com/vulnerabilities-threats/major-brazilian-signature-app-rce-fraud",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-18T14:00:00Z",
+   "summary": "Government-sanctioned authentication middleware is used for exceptionally important legal documents, yet it's often rife with RCE bugs.",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "dfcd48a830ee",
+   "title": "Russian APT Poses as Employee of Hacked Firm to Breach Another US Organization",
+   "link": "https://www.securityweek.com/russian-apt-poses-as-employee-of-hacked-firm-to-breach-another-us-organization/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-18T13:33:47Z",
+   "summary": "Star Blizzard weaponized data and identities stolen in late 2025 to phish and compromise a US organization. The post Russian APT Poses as Employee of Hacked Firm to Breach Another US Organization appeared first on SecurityWeek .",
+   "score": 4,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "2c1ddb51a4dc",
+   "title": "Last of Five Defendants Sentenced in US Scattered Spider Hacking Case",
+   "link": "https://www.securityweek.com/last-of-five-defendants-sentenced-in-us-scattered-spider-hacking-case/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-18T13:19:32Z",
+   "summary": "British national Tyler Robert Buchanan has been sentenced to 6 years in prison in the United States, the DOJ announced. The post Last of Five Defendants Sentenced in US Scattered Spider Hacking Case appeared first on SecurityWeek .",
+   "score": 4,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/british-scattered-spider-hacker-sentenced-to-6-years-in-prison/"
+    }
+   ]
+  },
+  {
+   "id": "74d12e442320",
+   "title": "New Attack Bypasses TPM Lockout to Crack Windows Hello and BitLocker PINs in Days, Not Years",
+   "link": "https://thehackernews.com/2026/11/flash-chip-attack-bypasses-tpm-lockout.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-18T12:28:30Z",
+   "summary": "On AMD-based PCs and some Intel PCs, the TPM lockout for Windows Hello and BitLocker PINs can be reset by someone who opens the PC's case, researchers at Technische Universität Berlin say. That leaves short PINs open to guessing. In lab tests, the researchers found a four-digit Hello PIN on an AMD…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "c9f8dc26d8d0",
+   "title": "AI Pentesting Checklist for Web Apps: 15 Questions to Ask Before Choosing a Vendor",
+   "link": "https://thehackernews.com/2026/11/ai-pentesting-checklist-for-web-apps-15.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-18T12:15:00Z",
+   "summary": "TL;DR Attackers move first. On average, exploitation now starts before a patch exists (Mandiant M-Trends 2026). In 1H 2026, 23% of vulnerabilities VulnCheck added to its exploited list were hit on or before disclosure day. AI pentesting vendors aren't interchangeable. Most look convincing in a…",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "ddb3ea43dd74",
+   "title": "Microsoft Takes Perception Agentic Security Platform Out of Preview",
+   "link": "https://www.securityweek.com/microsoft-takes-perception-agentic-security-platform-out-of-preview/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-18T12:14:23Z",
+   "summary": "Four blue team agents and the Recon Agent are now generally available, while integrations and vulnerability shielding are in preview. The post Microsoft Takes Perception Agentic Security Platform Out of Preview appeared first on SecurityWeek .",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "also": [
+    {
+     "source": "Microsoft Security Blog",
+     "url": "https://www.microsoft.com/en-us/security/blog/2026/11/17/security-for-the-agentic-era-powered-by-microsoft-perception/"
+    }
+   ]
+  },
+  {
+   "id": "2df0fcea5ad6",
+   "title": "CISO Conversations: Patti Degnan – Part of the Job Is Deciding What Not to Do",
+   "link": "https://www.securityweek.com/ciso-conversations-patti-degnan-part-of-the-job-is-deciding-what-not-to-do/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-18T12:00:00Z",
+   "summary": "Patti Degnan’s identity was stolen in 2006. It set her on a path to the CISO seat at endpoint security firm Glow. The post CISO Conversations: Patti Degnan – Part of the Job Is Deciding What Not to Do appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "223101d57350",
+   "title": "Java4Shell Flaw (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak and More",
+   "link": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-18T11:55:49Z",
+   "summary": "A Java flaw called Java4Shell can let attackers without an account run their own code on Jira, Jenkins, Keycloak, and three other widely used applications, says Calif, the security research firm that disclosed it this week. The flaw is present in Java 17.0.6 and later, and the vulnerable code runs…",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0073
+  },
+  {
+   "id": "57cf485fa921",
+   "title": "Dizigom illegal streaming service with 21M monthly visits shuts down",
+   "link": "https://www.bleepingcomputer.com/news/security/dizigom-illegal-streaming-service-with-21m-monthly-visits-shuts-down/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-18T11:50:25Z",
+   "summary": "The Alliance for Creativity and Entertainment (ACE) has announced the shutdown of Dizigom, one of Turkey's largest piracy sites, after a settlement agreement with the site's operators. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "ac7a12437b59",
+   "title": "Chrome 158 Patches 204 Vulnerabilities",
+   "link": "https://www.securityweek.com/chrome-158-patches-204-vulnerabilities/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-18T11:43:22Z",
+   "summary": "Google handed out $11,000 for five externally reported flaws but has yet to determine the amounts to be paid for 36 bugs. The post Chrome 158 Patches 204 Vulnerabilities appeared first on SecurityWeek .",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
   {
    "id": "aa9ca93e66e2",
    "title": "Microsoft Agent Framework Releases Poisoned With Credential Stealer",
@@ -127,8 +439,25 @@
     {
      "source": "The Hacker News",
      "url": "https://thehackernews.com/2026/11/attackers-compromise-microsofts-agent.html"
+    },
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/microsofts-agent-framework-pypi-package-compromised-to-steal-credentials/"
     }
    ]
+  },
+  {
+   "id": "63ab0fd18797",
+   "title": "Quality Isn’t The Main Worry About AI Pentesting — Data Privacy and Production Safety Are",
+   "link": "https://thehackernews.com/2026/11/quality-isnt-main-worry-about-ai.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-18T11:03:57Z",
+   "summary": "AI is speeding up how software is built, which means more code, more changes, and more chances for vulnerabilities to reach production. It's speeding up how attackers find and exploit them too, with time-to-exploit now down to a single day. Security testing has to keep up with both. AI pentesting…",
+   "score": 0,
+   "tags": [],
+   "why": []
   },
   {
    "id": "94321d4b37d6",
@@ -146,29 +475,12 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0037
+   "epss": 0.0069
   },
   {
-   "id": "4f4cc6f19074",
-   "title": "Apache warns of Roller RCE vulnerability exploited in attacks",
-   "link": "https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-18T10:35:05Z",
-   "summary": "Apache has released security updates to address a critical Roller flaw that threat actors are exploiting to gain code execution on vulnerable servers. [...]",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "2fea44ab2915",
+   "id": "1b1d514c9cb5",
    "title": "Employers told to patch critical Java flaw immediately as AI-found bug hits staff login systems",
-   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQTTJMNDcwTFFoQVRjMDA1YUJsakl4VUo5Tkplak5jbklfMGNkSng5UDMtU1lza2ppQW5GTUR3M0RUNDE1R1F1V1BmUENkOWVyRnAtRUV0MTJBU2NNaVEwUklzV3JoYktucXRRRWh6YlAxNHNMZExrWjBPY2RGTjB4dnVXY2V5ZGtDOGx5X1VPdE5id1J4MzAzRzlNLS1nMlFEUnlvT05LRXZKd21Ya09mTG5pamR1dFhDSWM3bmVSanRteWlKLVgzVld2Z2ZTNkFib3hBMVdJM3U?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxON2E0M29raG1wbXZOajRaSlk2RDBZRkk5bUN6ZnRsWjJDN3NsVWtvb0ZPZEcwRTNVNE9RSHpjQjFsOWFHUnBzb0hxbVhpaHJSV3EzYlBqSnpUQ1k4LThzWXROLTAyYjRCMkZ3VjQwTWQ1cjZGNUFxdDRyWXMzZHAzbFcwbDV0cmhBNlV4NFRpRFNsOEdjYWhmbzdESTRLNWVVaDZ1NEFvSS1oalpWZU52VFJTZlBDM0JsNC0xdE52WlhDdE84RGZjaEZrWER2V1NtSXo5eFpKZW0?oc=5",
    "source": "Human Resources Director",
    "feed": "ASD / ACSC in the news",
    "region": "AU",
@@ -247,40 +559,34 @@
    ],
    "why": [
     "Vulnerability"
-   ]
-  },
-  {
-   "id": "0ad69605a849",
-   "title": "British Scattered Spider hacker sentenced to 6 years in prison",
-   "link": "https://www.bleepingcomputer.com/news/security/british-scattered-spider-hacker-sentenced-to-6-years-in-prison/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-18T08:24:18Z",
-   "summary": "A leader of the Scattered Spider cybercrime collective has been sentenced to six years in prison in the United States for stealing millions in cryptocurrency and conspiring to hack a dozen companies. [...]",
-   "score": 4,
-   "tags": [
-    "Ransomware"
    ],
-   "why": [
-    "Ransomware"
-   ]
+   "epss": 0.0073
   },
   {
    "id": "c5f6c87fa0f7",
-   "title": "Java4Shell Vulnerability Puts Many Enterprise Applications at Risk of Takeover",
+   "title": "Java4Shell Vulnerability Puts Enterprise Applications at Risk of Takeover",
    "link": "https://www.securityweek.com/java4shell-vulnerability-puts-many-enterprise-applications-at-risk-of-takeover/",
    "source": "SecurityWeek",
    "feed": "SecurityWeek",
    "region": "Global",
    "published": "2026-11-18T07:43:34Z",
-   "summary": "Calif demonstrated remote code execution in Jira, Jenkins and Keycloak, while VulnCheck says real-world RCE requires per-target work The post Java4Shell Vulnerability Puts Many Enterprise Applications at Risk of Takeover appeared first on SecurityWeek .",
+   "summary": "Calif demonstrated remote code execution in Jira, Jenkins and Keycloak, while VulnCheck says real-world RCE requires per-target work The post Java4Shell Vulnerability Puts Enterprise Applications at Risk of Takeover appeared first on SecurityWeek .",
    "score": 2,
    "tags": [
     "Vulnerability"
    ],
    "why": [
     "Vulnerability"
+   ],
+   "also": [
+    {
+     "source": "Dark Reading",
+     "url": "https://www.darkreading.com/vulnerabilities-threats/java4shell-flaw-threatens-global-java-application-ecosystem"
+    },
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/critical-java4shell-flaw-allows-rce-attacks-on-major-java-applications/"
+    }
    ]
   },
   {
@@ -300,23 +606,6 @@
    "why": [
     "Data breach",
     "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "223101d57350",
-   "title": "Java4Shell Flaw (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak and More",
-   "link": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-18T04:27:41Z",
-   "summary": "A Java flaw called Java4Shell can let attackers without an account run their own code on Jira, Jenkins, Keycloak, and three other widely used applications, says Calif, the security research firm that disclosed it this week. The flaw is present in Java 17.0.6 and later, and the vulnerable code runs…",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
    ]
   },
   {
@@ -346,6 +635,86 @@
    "why": []
   },
   {
+   "id": "175ea91a08c8",
+   "title": "CVE-2024-10441: Synology DiskStation Manager (DSM) — Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2024-10441",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-11-18T00:00:00Z",
+   "summary": "Synology DSM contains an improper encoding or escaping of output vulnerability in the system plugin daemon in Synology BeeStation OS (BSM) that could allow a remote attacker to execute arbitrary code via unspecified vectors. CISA remediation due 2026-11-21.",
+   "score": 4,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0125
+  },
+  {
+   "id": "2767467965fb",
+   "title": "CVE-2026-40217: BerriAI LiteLLM — BerriAI LiteLLM Unprotected Alternate Channel Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-40217",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-11-18T00:00:00Z",
+   "summary": "BerriAI LiteLLM contains an unprotected alternate channel vulnerability that could allow remote attackers to execute arbitrary code via bytecode rewriting at the /guardrails/test_custom_code URI. CISA remediation due 2026-12-02.",
+   "score": 4,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.1702
+  },
+  {
+   "id": "816726b4adb7",
+   "title": "CVE-2026-90817: Vanderbilt University Research Electronic Data Capture (REDCap) — Vanderbilt University Research Electronic Data Capture (REDCap) Code Injection Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-90817",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-11-18T00:00:00Z",
+   "summary": "Vanderbilt University Research Electronic Data Capture (REDCap) contains a code injection vulnerability which could allow an unauthenticated attacker to execute arbitrary code on the server. An attacker could exploit this via crafted HTTP requests that… CISA remediation due 2026-11-21.",
+   "score": 4,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0375
+  },
+  {
+   "id": "ab9bbe7f3a56",
+   "title": "CVE-2026-90436: Apache Axis — Apache Axis Unsafe Reflection Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-90436",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-11-18T00:00:00Z",
+   "summary": "Apache Axis contains an unsafe reflection vulnerability that could allow an unauthenticated remote attacker to execute arbitrary code via a crafted SOAP fault message that causes Axis to load and instantiate an attacker-specified class when a suitable class… CISA remediation due 2026-11-21.",
+   "score": 4,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0113
+  },
+  {
    "id": "0f91631aef35",
    "title": "ACSC warns vulnerabilities are being exploited quickly, urges organisations to patch and reduce exposure",
    "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQcUVkSHN6eU5vQTZjT3BfVlI0M0FsOWo4RERNcDgyTWhKaHhhWkUzWnh6OXR3MlBjX1B6U1dsT3hyeUJIX296MGlKQXFFYkNEMlVaa0psOWx5TGN0MnVZZEI3aEg2bmItWmxUZE5FRndyaHFYZGp0d21qYWxRYTFnenJuZ1JVWHY5LXNfYXZBQ004eXN0bTdrc3ZnQ2pRYklqeEF6LUxWdXNuM2c1RDM1RXBraEwxNVE5YVJtVnNXNDl4dlNRQ1ZEWjhuSDE2cmFscFAyc0J0YXA2VVBndUdzWURpYy1uUQ?oc=5",
@@ -361,23 +730,6 @@
    ],
    "why": [
     "Australia",
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "126567e065a7",
-   "title": "Critical Java4Shell flaw allows RCE attacks on major Java applications",
-   "link": "https://www.bleepingcomputer.com/news/security/critical-java4shell-flaw-allows-rce-attacks-on-major-java-applications/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-17T23:04:21Z",
-   "summary": "A critical vulnerability dubbed Java4Shell in OpenJDK, the open-source implementation of Java, can allow unauthenticated attackers to remotely execute code on popular enterprise applications, including Jenkins, Atlassian Jira, Confluence, and Keycloak. [...]",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
     "Vulnerability"
    ]
   },
@@ -520,7 +872,7 @@
   },
   {
    "id": "e7c273fee4ff",
-   "title": "Cursor Traces Malicious Claude Code Extension to Third-Party Breach",
+   "title": "Cursor Traces Malicious Claude Code Extensions to Third-Party Breach",
    "link": "https://www.darkreading.com/application-security/cursor-malicious-claude-code-extension-third-party-breach",
    "source": "Dark Reading",
    "feed": "Dark Reading",
@@ -562,19 +914,6 @@
    "published": "2026-11-17T18:16:17Z",
    "summary": "Threat actors are deploying multi-agent offensive frameworks to increase the velocity of multi-stage intrusions. The post AI Framework Autonomously Weaponized Flaws in Real Attacks, Google Says appeared first on SecurityWeek .",
    "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "0c7617c3ded4",
-   "title": "Security for the agentic era, powered by Microsoft Perception",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/17/security-for-the-agentic-era-powered-by-microsoft-perception/",
-   "source": "Microsoft Security Blog",
-   "feed": "Microsoft Security Blog",
-   "region": "Global",
-   "published": "2026-11-17T18:14:00Z",
-   "summary": "Read about updates to Microsoft Perception and the new Microsoft Security cyber stack to defend against threats, secure agents, and protect your digital estate. The post Security for the agentic era, powered by Microsoft Perception appeared first on Microsoft Security Blog .",
-   "score": 1,
    "tags": [],
    "why": []
   },
@@ -657,7 +996,8 @@
    ],
    "why": [
     "Vulnerability"
-   ]
+   ],
+   "epss": 0.0073
   },
   {
    "id": "033b7c10af0d",
@@ -791,7 +1131,7 @@
    "feed": "Dark Reading",
    "region": "Global",
    "published": "2026-11-17T13:12:56Z",
-   "summary": "Two AI agents, separately over a five-day period, autonomously tried to access connected applications, including Google Calendar, Gmail, Slack, and GitHub, without account owner approval.",
+   "summary": "Two AI agents, separately over a five-day period, autonomously tried to access connected applications, including Google Calendar, Gmail, Slack, and GitHub, without account owner permission.",
    "score": 0,
    "tags": [],
    "why": []
@@ -1114,7 +1454,7 @@
    ],
    "also": [
     {
-     "source": "Australian Cyber Security",
+     "source": "cyber.gov",
      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQWDZUR0oyZ1NOSnlOamdoNEVsQjRmNGwzUGg1TnlpUjlwV0g0SUZsMnR5THNrM25QVkhOTU5vRzhTTXBudW9ieGxfVEN1c18xNnU5YVk1Qk1PZEc4WGEyRkNfd0w3WDg4NUd5c3BIbWJ2VmpyUUJXWGlYem9WT3BWTENQUjUxV2JKdElwRHREYmJuWDZC?oc=5"
     }
    ]
@@ -1204,7 +1544,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0037
+   "epss": 0.0069
   },
   {
    "id": "e4eeca90a4e3",
@@ -2224,7 +2564,7 @@
    "feed": "Dark Reading",
    "region": "Global",
    "published": "2026-11-13T22:27:00Z",
-   "summary": "It's hard to detect whether someone is using artificial intelligence (AI) to cheat on IT certification exams, but new tools and processes are emerging to boost trust.",
+   "summary": "It's hard to detect whether someone is using artificial intelligence to cheat on IT certification exams, but new tools and processes are emerging to boost trust.",
    "score": 0,
    "tags": [],
    "why": []
@@ -3244,7 +3584,7 @@
   },
   {
    "id": "d79ecdbae1ec",
-   "title": "Secure AI testing to reduce unauthorised access | CGA",
+   "title": "Secure AI testing to reduce unauthorised access",
    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQNXhSNHdyREJQSDEwM2d4c0tubU9QM2FVM2xZTENXQTBiZjZQdWN4bmNuSTJZdTBqQ2xwVTFIRTdFeDA5NEg1aTFDSEJRZ0xKcHB4Y1pKX0RfZGtMRnVaenRMOExxWjJfZnZ2aUd3TXNkUEhfSEhsX2dRLUlpOWwwblI0UQ?oc=5",
    "source": "Australian Cyber Security",
    "feed": "ACSC (via Google News)",
@@ -3273,7 +3613,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0052
+   "epss": 0.0573
   },
   {
    "id": "4fb3f4a554eb",
@@ -6080,7 +6420,7 @@
     "Identity",
     "Vulnerability"
    ],
-   "epss": 0.0247
+   "epss": 0.2208
   },
   {
    "id": "a4fa5d886e28",
@@ -6100,7 +6440,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0052
+   "epss": 0.0573
   },
   {
    "id": "52a8685b69f8",
@@ -6849,326 +7189,6 @@
     "Real estate",
     "Data breach",
     "Identity"
-   ]
-  },
-  {
-   "id": "5b823cf6ae4b",
-   "title": "Think you know about updates? Take our quiz.",
-   "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBzVFdNU0FYeE1oTDhISGEwVDRQdXFLb1lkZ0dtMmxoc2pqanE0TFRmYjFlaDVxdGxHM3lVbm1XMnBkMVNHeTZMdG94QmdTMkh6QVNXTWloTnM?oc=5",
-   "source": "Cyber.gov.au",
-   "feed": "ACSC (via Google News)",
-   "region": "AU",
-   "published": "2026-11-05T23:23:42Z",
-   "summary": "",
-   "score": 5,
-   "tags": [
-    "Australia"
-   ],
-   "why": []
-  },
-  {
-   "id": "ed0831e3bc93",
-   "title": "Southport and Nottingham attack victims demand end to data breaches",
-   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPRlJ2dlhZMzVsZk53NnFDejdaQkJsUmhpNmREOExieFZJSE9xaEo1VFhSMzg1Y0wtWXNuTDNxVUtLdkppVXM3dmYxNEtVMGJtUDZiRVRSNGgxRlRXNXk2QlBTclloeXJoaW5KS3JLZnp0aFBIdUlWQ1ptbWE5R1lFLXp4UEUwejZrWHRB?oc=5",
-   "source": "Yahoo News Australia",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-11-05T23:13:30Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "7bee44827e17",
-   "title": "Operação de influência russa tem como alvo generalizado a América Latina",
-   "link": "https://www.darkreading.com/cyberattacks-data-breaches/opera-o-de-influ-ncia-russa-tem-como-alvo-generalizado-a-am-rica-latina",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-11-05T22:13:23Z",
-   "summary": "A operação, que contou com o uso de inteligência artificial, utilizou e-mails falsos, documentos governamentais falsificados e a criação de uma organização local para atacar escolas no Peru e no Equador, entre outras ações.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "c5d8bcb2d057",
-   "title": "US Government Email Systems Open to Abuse Thanks to Typos",
-   "link": "https://www.darkreading.com/cybersecurity-operations/us-government-email-systems-abuse-typos",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-11-05T21:35:05Z",
-   "summary": "Erroneous or outdated DNS records can give attackers surprising powers over organizations' email systems.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "886e9406677f",
-   "title": "Fake OpenAI, SpaceX events used to steal Microsoft, Google accounts",
-   "link": "https://www.bleepingcomputer.com/news/security/fake-openai-spacex-events-used-to-steal-microsoft-google-accounts/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-05T21:30:30Z",
-   "summary": "Hackers are using fake OpenAI, SpaceX, and Anthropic event invitations to lure employees into phishing attacks, using two different phishing-as-a-service platforms to steal Microsoft and Google account credentials and authentication sessions. [...]",
-   "score": 5,
-   "tags": [
-    "Phishing",
-    "Identity"
-   ],
-   "why": [
-    "Phishing",
-    "Identity"
-   ]
-  },
-  {
-   "id": "6ae54b5becb8",
-   "title": "What We Missed: Knicks Phishing Test Goes Out of Bounds",
-   "link": "https://www.darkreading.com/cyber-risk/what-we-missed-knicks-phishing-test-out-of-bounds",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-11-05T21:00:47Z",
-   "summary": "In this video conversation, Dark Reading editors discuss some of the news they didn't get a chance to cover, from an ill-conceived phishing simulation to a hacktivist attack on a US government agency.",
-   "score": 4,
-   "tags": [
-    "Phishing"
-   ],
-   "why": [
-    "Phishing"
-   ]
-  },
-  {
-   "id": "58f4053a1bb9",
-   "title": "Nearly 1.5 million exposed secrets targeted in new revocation program",
-   "link": "https://www.bleepingcomputer.com/news/security/truffle-security-launches-program-to-revoke-14-million-live-secrets/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-05T20:15:08Z",
-   "summary": "Truffle Security has launched the Secrets Revocation Program, a free initiative that helps API key issuers revoke 1.4 million publicly exposed secrets that remain valid. [...]",
-   "score": 4,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "8c41ea535686",
-   "title": "APT29's Watering Holes Target Thousands of Mobile Users",
-   "link": "https://www.darkreading.com/mobile-security/apt29-watering-holes-target-mobile-users",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-11-05T20:05:39Z",
-   "summary": "After compromising websites, the Russian state-sponsored threat group is fingerprinting victims, then harvesting information from the interesting ones.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "73f17e7befba",
-   "title": "Consumers Drop Cambridge Management Data Breach Suit",
-   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQVEZ3d1FicE1iZG9ya2ZKNEpMa1BUdW9oS2RuRG15bEFRWDFibFhyWHoyUFppbVZSOWlLRmg3RzIxVFgzQ2laZUlRYzdESjVHNGxKTXhfS0NvX2RqVDFKMDNrMVJ3ZENZNk8xT185MDJjMnIwNks4dVJ1aVFlUzFlZ09HdGNDWEdkOHRjMV9UZUpkck9QQ3FsNWhKSFo5SFN1cW9Hb3NqeHVHWVNDdjZBSlFzSlZpVFdhT3BIZmxYcW5hbERM0gFzQVVfeXFMTTlUZDk0MENJNnk0UnB2VmxQNWNia2FTVjRLRHBFbVl6Yi0wS0E2OWlad0NkRTBwM2xxYVVWX2QyVnRzWHRDZUlxNnlLQ3pGZE0wOWh6WEMxX294SXBCRFFoTjZHTVc1OTM5OEMyaEVsZHFrSQ?oc=5",
-   "source": "Law360",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-05T19:47:32Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "7e637a2f9fd7",
-   "title": "OpenAI’s GPT-6 Astra silently obstructed safety research tasks",
-   "link": "https://www.bleepingcomputer.com/news/security/openais-gpt-6-astra-silently-obstructed-safety-research-tasks/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-05T19:24:26Z",
-   "summary": "OpenAI has disclosed another AI alignment incident where GPT-6 Astra was found to sometimes quietly withhold help on safety research. [...]",
-   "score": 0,
-   "tags": [],
-   "why": [],
-   "also": [
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/openai-finds-gpt-6-astra-quietly-holding-back-on-internal-red-teaming-exploit-tasks/"
-    }
-   ]
-  },
-  {
-   "id": "2a3e05365557",
-   "title": "News - Qantas customer data exposed in cyber attack on reservation provider",
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPWlAyalFEYkNpRlJCaThpUUdHSnlSc2lFVGJZNkR2dDB0djRuVlpBX3QyZ2pqcTZYMGtNZUxDT3g3RmVHRFFCMTZsamVtSnlhVzFtckNzekVmTzhuNmc4MENOMmt3dGlOYkpaaW9GYVh1cWx3LW9aUUtmSmM5X2p5UFg1SXFqU3d5MERaTjlqU2ozREFvX3Vlb0poVC05dElMa2hwblRB?oc=5",
-   "source": "teiss",
-   "feed": "AU breach news",
-   "region": "AU",
-   "published": "2026-11-05T18:57:45Z",
-   "summary": "",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "Data breach"
-   ],
-   "why": [
-    "Australia",
-    "Data breach"
-   ],
-   "also": [
-    {
-     "source": "Australian Aviation",
-     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNNC12c0JOSzJtRDlZWnVMLUgwZ20xUy1fMDhOa1NrdWZhRzlNTmVGdUZnSUpObE9aMnAxd0tOODNEU1BRaW1DRU5mYjJOdVNSQWQwckVVcF9uNk1hUGhqdFhhdnJJYS1WR0Q2ZTBlVWFNS3hfeENhRUtVaHNNa25kektIajRDVS1NYWRsNzZoVmd0Mzdienc0Mi1yeVQ?oc=5"
-    },
-    {
-     "source": "7NEWS",
-     "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQeFNVX0NJY21XUENQeDl3TlBQeWtOMXJFQ3d5cmw0YkZQXzJFaUpVd21sTkRxMk5ld0RQdVFMc2RjT1JuRWpPS2psdTZCRmw4QlNuV2ZWbmJnRS1rUlNDeXdudFo1cm1aR1h3LXUxNzFjazAzaENyN2VMZnRJYkoycFpySkEwXzdwZV8xMkRoM0w3YlM1azlBbVF5d0ZaeHN5MGIwQXNfREU2c193SWtsWld0X3dxNl9aYzJqYWdNell1UDI1Ql9ya3l3bzNCR25uZmpqRzFrLS1yUdIB3wFBVV95cUxNajBIaUpqSVp2OHN1RHFzb3A4eXhGcG9KdF9XWFB4RWVKUHpOS3BMZWdFa0d1cFd4NW82ZUtTTzhWZFZnNktGb29xT0ZHMGx6MGVjUTl5TTdxSHp3amRUN3lTaWlnNUJQWGRjS2JZaFhoMGI2N3RnVkt5Xy1ob0ZwRER5QUpncmphZjF2TXBuWEdmRWR6Y0xsSTQwUmE1N0JOc1hGTTFERG1lakVUZkZXczVJQ2xpVHdsalpLemNEbTZvaExqblRFMjdNVktJVkd1Y3ZZa2ItOEk1U0VIQ2Q4?oc=5"
-    },
-    {
-     "source": "tech-insider.org",
-     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPbDQ4WXljWkhNQmdsMUdhdFozdHdpU3h6YU5uVGlJV1hDN2tZUEEwb3hCNDh4NFZNb013dmE2c2szcXg5TGdnaGNmOTlnNU44bkd3Qjgwak5EbUltY181SGFlbk5DRmh1LUlPanNkdEFTS1NnRk1FR1M5UHNWc1hHTXRmYXFET00?oc=5"
-    },
-    {
-     "source": "Homeland411",
-     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPM0ZQYUNsVTFheUdjaEdpVkJjVUxQam15SlpLZmp0bHpoZDItNFFCT0ZTZE8ybHZCQUdxODc1aTVOZ1dicWNncGlHSDFNNFdEN3RwcEhibXlUOW5qeUt3YTYwdFRQYlZpcE9FLWdSM1ZleERnS2FGX0FMWW9ybFpPeUktdzQwb0d0ZThoUDQ4aW16dw?oc=5"
-    },
-    {
-     "source": "B2B News",
-     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPMXRUeFVjal9hX3Jwa3hDWHdwWU16aENjRHcyTFdZaUozZzRuSXdNaTBOWDEwc2sweHZPdzYwNDQ4R1ZNMVRVYVZQOU1RaFNmcHp5dGtYQlVJOEFrVlk4ZzVYT1NOdHdHOTA2ODNrYjhNRVNuQ0lEY3dESlYzT2I5MUFVV2JEUUNhdlVpM3NVMA?oc=5"
-    },
-    {
-     "source": "Yahoo News Australia",
-     "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBtS1JBYzhyWWRJTENGeVNvQUFCSzlvamtncVFFZWhudC1pWDljMFBIY3ZCMWFUSkNRNjlhNUV2T0NsMDczZEhRVmloYUZJdWRaNktvcERpVXdnTi1GRjdRRm9ZMmhqdUVzRTJHUWNkbWd3amNVZHlJTDk1OVQ?oc=5"
-    }
-   ]
-  },
-  {
-   "id": "671b07a9ce2d",
-   "title": "OpenSSH flaw lets attackers log into password-disabled Linux accounts",
-   "link": "https://www.bleepingcomputer.com/news/security/openssh-flaw-lets-attackers-log-into-password-disabled-linux-accounts/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-05T17:45:29Z",
-   "summary": "A newly disclosed OpenSSH vulnerability dubbed \"*sshole\" allows attackers to log in to certain Alpine Linux and other musl-based Linux accounts that are configured to block password authentication, simply by entering an oversized password. [...]",
-   "score": 4,
-   "tags": [
-    "Identity",
-    "Vulnerability"
-   ],
-   "why": [
-    "Identity",
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "e4ff33774933",
-   "title": "BVK's Office Raided In Widening Investigation After Big Losses In U.S. Real Estate",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPZFF4MFR1ZVhmTlhJUFFJVFRCOF90MmwzR21UdjVZT0E4R0dlYndnM2RibzdKOEpObXo5YnBROUNKc0JWa1lMYmE1dlFVZV9FU09zUmN5bGgxMTVPemtOcENNbnEwYWtOeXFvTFVRYWpzeTNzRnhmZ0FwUmdzYkZ4TTNlN2NheFJ5ZWxFZXhna3VnN3FmUHpPVktEdmVXSGFjMlF1b2ZwUjk2dEwtZWVROExPMVhFUTU2ZVZyYUxnSndXemdFR3pR?oc=5",
-   "source": "Bisnow",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-05T17:43:05Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ]
-  },
-  {
-   "id": "3347a00667c5",
-   "title": "AI Agents Got Root on Linux via 948 Kernel Flaws in OpenAI Research",
-   "link": "https://www.securityweek.com/ai-agents-got-root-on-linux-via-948-kernel-flaws-in-openai-research/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-05T17:32:37Z",
-   "summary": "An unreleased OpenAI cyber model found and exploited 948 distinct Linux kernel privilege escalation bugs for about $1.2 million. The post AI Agents Got Root on Linux via 948 Kernel Flaws in OpenAI Research appeared first on SecurityWeek .",
-   "score": 1,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html"
-    }
-   ]
-  },
-  {
-   "id": "ccc66eb25631",
-   "title": "New investments to reduce on-premises security risk",
-   "link": "https://techcommunity.microsoft.com/blog/microsoft-security-blog/new-investments-to-reduce-on-premises-security-risk/4570381",
-   "source": "Microsoft Security Blog",
-   "feed": "Microsoft Security Blog",
-   "region": "Global",
-   "published": "2026-11-05T17:10:14Z",
-   "summary": "We’re announcing a new on-premises security initiative, bringing together guidance, migration, and product investments. The post New investments to reduce on-premises security risk appeared first on Microsoft Security Blog .",
-   "score": 1,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "1a39a444dba6",
-   "title": "​​​​What’s new in Microsoft Security: November 2026",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/05/whats-new-in-microsoft-security-november-2026/",
-   "source": "Microsoft Security Blog",
-   "feed": "Microsoft Security Blog",
-   "region": "Global",
-   "published": "2026-11-05T17:00:00Z",
-   "summary": "Microsoft Security’s November 2026 updates strengthen AI agent security, least privilege, threat protection, and exposure management. The post ​​​​What’s new in Microsoft Security: November 2026 appeared first on Microsoft Security Blog .",
-   "score": 1,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "d5adbe76452f",
-   "title": "SecurityDataPipeline.com Launches as a New Educational Resource for the AI Era",
-   "link": "https://www.darkreading.com/cybersecurity-operations/securitydatapipeline-com-launches-as-a-new-educational-resource-for-the-ai-era",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-11-05T16:48:36Z",
-   "summary": "The ungated resource explains how security data pipelines reduce SIEM ingestion costs, preserve detection coverage, and prepare the data layer for AI-driven security operations.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "1b13e6c7ec1c",
-   "title": "Ransomware attacks jump 23% as industrial firms hit",
-   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPQTNxa0NwU2hGTDAwem5XeWxJQ3ZQRnlGb1hFQ3ZtQnFVeFBJbUJhaXo4U1RqVG4tbEpLNDZYZVVXZHRNcG10QTlaRjJub29INm15RXRoSEU3djJCaDgzSjN5T25XUmJlQVp3ajZrXzFhMUZlbG9RVnJQZjRPU0ZhWFN6VkM1UlJsWm1mQ0RR?oc=5",
-   "source": "SecurityBrief Australia",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-11-05T16:45:00Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Ransomware"
-   ],
-   "why": [
-    "Ransomware"
    ]
   }
  ]
