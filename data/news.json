@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-18T00:58:39Z",
+ "generated": "2026-11-18T01:05:54Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -100,7 +100,7 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 25,
+   "count": 24,
    "error": null
   }
  ],
