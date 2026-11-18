@@ -1,29 +1,57 @@
 {
- "date": "2026-11-17",
- "generated": "2026-11-17T01:56:13+00:00",
- "title": "Sec-Pulse brief - Tue 17 Nov",
+ "date": "2026-11-18",
+ "generated": "2026-11-18T01:06:03+00:00",
+ "title": "Sec-Pulse brief - Wed 18 Nov",
  "items": [
   {
-   "id": "0e301630114f",
-   "title": "Coles supermarket cyber attack: Australia’s retailer investigates security breach",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQSXpFc19rczVHUHdEdjRyQ1NRNnl2andUaEV6UUdjVDUzaVR3SmtZSU5FR0VKQnpNTjd5Zm83SV9qaU1mN3ZIUXZZRGU1M1l5clpzMjNEYVFlWGo2RThRR2dleXdVSThYUjVwcmZVYUY0NVdTUTNuSmF3d1E0M3F6eHZtTXhUaklLMFE5dV8yUm9DcC1DT3E3RjhYSQ?oc=5",
-   "source": "Beinsure",
+   "id": "0f91631aef35",
+   "title": "ACSC warns vulnerabilities are being exploited quickly, urges organisations to patch and reduce exposure",
+   "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQcUVkSHN6eU5vQTZjT3BfVlI0M0FsOWo4RERNcDgyTWhKaHhhWkUzWnh6OXR3MlBjX1B6U1dsT3hyeUJIX296MGlKQXFFYkNEMlVaa0psOWx5TGN0MnVZZEI3aEg2bmItWmxUZE5FRndyaHFYZGp0d21qYWxRYTFnenJuZ1JVWHY5LXNfYXZBQ004eXN0bTdrc3ZnQ2pRYklqeEF6LUxWdXNuM2c1RDM1RXBraEwxNVE5YVJtVnNXNDl4dlNRQ1ZEWjhuSDE2cmFscFAyc0J0YXA2VVBndUdzWURpYy1uUQ?oc=5",
+   "source": "Australian Cyber Security Magazine",
    "region": "AU",
-   "published": "2026-11-16T15:04:44Z",
+   "published": "2026-11-17T23:44:02Z",
+   "score": 12,
+   "tags": [
+    "Australia",
+    "Vulnerability"
+   ],
+   "summary": ""
+  },
+  {
+   "id": "e4eeca90a4e3",
+   "title": "Dragos reports 20 Australian industrial ransomware incidents in Q3 2026",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNSEU3UTEzaDJ1WTdCYTdObXNzY2NnYjhTV0YxSEs1ejlSTzdXZ3Ffd1lJZzNzXzJ6LVR1QzVzcFZtUUlpei12djNGWlA2VUlFbUhxOHRGRGJTb0o2T2NGT1JGYnk5Q1lkcUEyNjBkbmRxTG5CQ0oxLXJmWGZCaXV2eVIwTURKdXZRWWdkT0xWZ0hLZGFMRXVBLUUzWHoxbjhqLU5JRGZoYXJvZlRVY1NJSk5OUXJuWnl3Uk4w?oc=5",
+   "source": "Australian Cyber Security Magazine",
+   "region": "AU",
+   "published": "2026-11-16T23:46:24Z",
    "score": 13,
    "tags": [
     "Australia",
-    "Data breach"
+    "Ransomware"
    ],
    "summary": ""
   },
   {
-   "id": "8652e5cc5bda",
-   "title": "Serial Scam Suspect Accused Of Committing More Real Estate Fraud While On Bond: Report",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQdnJ3ZlFHZXNwdWV3T0kwNnc0cnJ1M2UyeXNLNFlTdnhYQjJIalhiQU4wSGhOV3RDTlEyMU9WNUg3YUthaENTVEdzU09teGJfWVg4clFmYmhZSUFUSUYtVEdUNE5mYnllUkxxUTN5MkxFYS1YV2tLYnViZlhQRTJ6ZFJyUFViX0hnZy15aGNIX19GVnRKcHZGaDB0TFJib0FJeXJrZkNCUG1JYmdvbklpMWU2bWc?oc=5",
-   "source": "Patch",
+   "id": "216fe6e5abb4",
+   "title": "Australian businesses pay ransomware demands more often",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNM1pJTjd1cGlZNldmVG5BY0czU1JRanlLQU9US1hfNlRJSFdWYllNZ1diZ2NnWHYydWxzNUo4amxidGNYWk1iYWV2NkI0STQwOFlmeTZCdkZBekRkR0MxcGx2Y01JR0FRYXRuR3lxajZfTmw1SnVpcjV0TnZPQXdqRXRhZ0JneGJkeUxVd2lmWXNUQnNq?oc=5",
+   "source": "SecurityBrief Australia",
+   "region": "AU",
+   "published": "2026-11-16T21:00:00Z",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Ransomware"
+   ],
+   "summary": ""
+  },
+  {
+   "id": "faee8e17ad3c",
+   "title": "Pennington County restores public access to real estate records after cyber incident",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOOUVqMllsMzhtQzVSM1RmOW5fUS1WdWxhSGRJSGhjZFhyR1ctbnNhWTQ2WDhVT21jRi1NUHdLTTMzdTlBR2RNQmJ0b2NZVkxrX21vTmxub0oyS0hZbzN5TXFFaXktdzlPVV9wd3loMkVqVUJwWTlPTFpGQ28wU1N3ZmtYaUMwSmY0d3JyV1ZpenlIX1IxOEVERU51d3VpTTZSRWU2VjlNU1YzdlFreVNJUEpmbTRSazDSAcsBQVVfeXFMTWNrOHhIY09wR2NZbnRSbjhadENsOWV6bWJXaG93NDNLOFBkcjU4RHhyYkF3Rkh2QXBzckNZcVRfNjRmT3RmRXlvcW8yQnkzSUM1T1BRcVBQVjNCOEZGRl9YbHd4eEZlNWdjMWNZTnctdEM0MHF0Vm5QVkVKcm54U19Wb0RqWmVYeU9FRUo3ZjVtT3BCa0llMHVNaEs2WnctdmRsS1dxNnRPT0hpbm5sWUtCUS1YTTlxNUVrVTItUEZVdmkxMUsxT0htTm8?oc=5",
+   "source": "KOTA Territory News",
    "region": "Global",
-   "published": "2026-11-16T21:50:47Z",
+   "published": "2026-11-17T17:49:00Z",
    "score": 10,
    "tags": [
     "Real estate"
@@ -31,53 +59,28 @@
    "summary": ""
   },
   {
-   "id": "3a77ece90e01",
-   "title": "Why Real Estate's Biggest AI Fans Keep The Tech On A Short Leash",
-   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1vblk3cDg5MW1uY3hiQ1ZfdEotVWRVQ0x5T2phbmxqNWIxLXNzTThqTm80ZXdtTzZqbkRQYVNnZXJ4elVyWFZQM2I4TVY2Y1dzakQzbTFONGdlRGd0eVFTZjFhY05TZ1RvQThr?oc=5",
-   "source": "Inman Real Estate News",
-   "region": "Global",
-   "published": "2026-11-16T15:05:28Z",
-   "score": 10,
+   "id": "fa8a2a790942",
+   "title": "Vulnerabilities are moving quickly, so patch, protect, prevent",
+   "link": "https://www.cyber.gov.au/alert/vulnerabilities-are-moving-quickly-so-patch-protect-prevent",
+   "source": "ACSC Alerts",
+   "region": "AU",
+   "published": "2026-11-17T01:41:43Z",
+   "score": 11,
    "tags": [
-    "Real estate"
+    "Data breach",
+    "Vulnerability",
+    "Australia"
    ],
-   "summary": ""
-  },
-  {
-   "id": "4a1b61ed5d0b",
-   "title": "ED Seizes ₹26.43 Crore Real Estate Project Linked to Ex-Chhattisgarh CM Bhupesh Baghel's Son in Liquor Scam",
-   "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPcW9aTW44ZXZfT2k2V0xtMTR6SHk5X3NwX1NnTzU2ZktGU1RlTzZOWXBIMlNOaEFsYkYzZERyTDJwbGhWRkg0N2tYNTEwVm9uNDE4Qk00emVMcEFqMnFLdHFBRmlxcUpoOC0tRGJaZTJCNUEtaTNxZE1Ddlg1NWU2aTh0a1pHRERTM0xrS0dTVTU1aTd3bDdxLWRHX2FIS25kbVlXbjBMRVJNeGhzdDlZaTJiaWFEbEVXRDc3eGtkblNTM1pxU1B2a05Bai1oNW1EMHhnZzA2VEM0T2NucWNFOHJmekZqb0F5V3I2Y0tHYVRrRmRTaDVrYVo4X1lYaG1PNDJYbnE4SUh0dw?oc=5",
-   "source": "Gujarat Samachar",
-   "region": "Global",
-   "published": "2026-11-16T14:14:39Z",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "3099ffeb8eda",
-   "title": "High volume phishing campaign uses Microsoft 365 outage lures to target multiple industry sectors",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/16/high-volume-phishing-campaign-uses-microsoft-365-outage-lures-target-multiple-industry-sectors-2/",
-   "source": "Microsoft Security Blog",
-   "region": "Global",
-   "published": "2026-11-17T00:08:41Z",
-   "score": 9,
-   "tags": [
-    "Phishing",
-    "Microsoft 365"
-   ],
-   "summary": "Microsoft Threat Intelligence observed a high-volume phishing campaign using Microsoft 365 outage-themed lures to target organizations across multiple sectors worldwide. The post High volume phishing campaign uses Microsoft 365 outage lures to target multiple industry sectors appeared first on…"
+   "summary": "Actions organisations can take to identify internet-exposed systems, address vulnerabilities and reduce cyber security risk."
   }
  ],
  "stats": {
-  "recent": 42,
-  "au": 1,
-  "kev": 0
+  "recent": 60,
+  "au": 6,
+  "kev": 1
  },
  "lesson": {
-  "id": "1.3",
-  "title": "Indicators of malicious activity: host and application"
+  "id": "1.4",
+  "title": "Analyst tools: SIEM, SOAR, EDR and friends"
  }
 }
