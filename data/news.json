@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-18T20:35:19Z",
+ "generated": "2026-11-19T00:37:26Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -34,7 +34,7 @@
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 4,
+   "count": 5,
    "error": null
   },
   {
@@ -52,7 +52,7 @@
   {
    "name": "CISA KEV",
    "ok": true,
-   "count": 19,
+   "count": 18,
    "error": null
   },
   {
@@ -100,11 +100,109 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 30,
+   "count": 29,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "0664e41e0092",
+   "title": "Winnipeg real estate industry professionals divided on proposed AI rules on staging homes",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNRDB2djNnVTVTN3NXT0NpUDZLNHpZM2lnVVZ5b3JlLThzTU5iVmozQmY3bXlfekVLQVJPcHRmQ1YwMFRqNFh3cGdKV252NmZERVpXZ3k4WVhxRjAtMnlsbm5ST05TMzBEaGRia0c5NlJWOTJ0YUsyUE1oWUlMNUVfVnY5SEo4aUNmcE92MmNjdW1MVnRtMF9zN2RR?oc=5",
+   "source": "CityNews Winnipeg",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-19T00:30:35Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
+   "id": "b326b8531a92",
+   "title": "Ukraine, FBI arrest ransomware gang members tied to $40M in ransoms",
+   "link": "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-18T23:08:33Z",
+   "summary": "Ukrainian authorities, working with the FBI, have arrested four suspected members of an international ransomware organization linked to more than $40.5 million in ransom payments from at least 28 companies worldwide. [...]",
+   "score": 4,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
+  },
+  {
+   "id": "84415312a0a7",
+   "title": "Russia's Cold Relic APT Turns One Cloud Breach Into Another",
+   "link": "https://www.darkreading.com/cyberattacks-data-breaches/cold-relic-turns-one-cloud-breach-into-another",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-18T21:59:46Z",
+   "summary": "The Russia-linked threat group is using data stolen from one victim to target others via convincing impersonations and social engineering attacks.",
+   "score": 4,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "ede0adf4c578",
+   "title": "Coinbase blocks $4.7 million in transfers to Elon Musk deepfake scam",
+   "link": "https://www.bleepingcomputer.com/news/security/coinbase-blocks-47-million-in-transfers-to-elon-musk-deepfake-scam/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-18T20:49:32Z",
+   "summary": "Coinbase says it blocked $4.7 million in cryptocurrency transfers to scammers promoting a fake giveaway using an AI-generated deepfake of Elon Musk during a Tesla livestream that attracted more than 500,000 viewers. [...]",
+   "score": 2,
+   "tags": [
+    "AI threats"
+   ],
+   "why": [
+    "AI threats"
+   ]
+  },
+  {
+   "id": "cebfa689962e",
+   "title": "Strike Graph Launches Integration AI to Automate Continuous Compliance Evidence Using Any Existing Tool",
+   "link": "https://www.darkreading.com/cyber-risk/strike-graph-launches-integration-ai-to-automate-continuous-compliance-evidence-using-any-existing-tool",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-18T20:45:49Z",
+   "summary": "New agentic AI solution leverages APIs to collect compliance evidence from systems and applies it to over 30 frameworks with no duplicate work.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "27e5f548c7a1",
+   "title": "AttackIQ Research Reveals How Iranian Cyber Groups Hand Off Network Access to Enable Destructive Attacks",
+   "link": "https://www.darkreading.com/threat-intelligence/attackiq-research-reveals-iranian-cyber-groups",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-18T20:38:42Z",
+   "summary": "Analysis of 20 Iranian state-sponsored threat groups details how espionage, ransomware, and hacktivism intersect in state-backed cyber campaigns.",
+   "score": 3,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
+  },
   {
    "id": "ea9ba29c0015",
    "title": "Java4Shell, NGINX2Shell and more: Why we are not at \"Yellow\", (Wed, Nov 18th)",
@@ -478,24 +576,6 @@
    "epss": 0.0069
   },
   {
-   "id": "1b1d514c9cb5",
-   "title": "Employers told to patch critical Java flaw immediately as AI-found bug hits staff login systems",
-   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxON2E0M29raG1wbXZOajRaSlk2RDBZRkk5bUN6ZnRsWjJDN3NsVWtvb0ZPZEcwRTNVNE9RSHpjQjFsOWFHUnBzb0hxbVhpaHJSV3EzYlBqSnpUQ1k4LThzWXROLTAyYjRCMkZ3VjQwTWQ1cjZGNUFxdDRyWXMzZHAzbFcwbDV0cmhBNlV4NFRpRFNsOEdjYWhmbzdESTRLNWVVaDZ1NEFvSS1oalpWZU52VFJTZlBDM0JsNC0xdE52WlhDdE84RGZjaEZrWER2V1NtSXo5eFpKZW0?oc=5",
-   "source": "Human Resources Director",
-   "feed": "ASD / ACSC in the news",
-   "region": "AU",
-   "published": "2026-11-18T10:05:34Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Vulnerability",
-    "Australia"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
    "id": "4ccf67b96d4a",
    "title": "Microsoft announces Windows Server 2028 with hardened security",
    "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-announces-windows-server-2028-with-hardened-security/",
@@ -606,6 +686,30 @@
    "why": [
     "Data breach",
     "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "09d99f19208e",
+   "title": "Employers told to patch critical Java flaw immediately as AI-found bug hits staff login systems",
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPeDlLLVJuR1FwSDd0bzVYVEpvdGpaT0NGMGlfM0hCNGJVRVQwbV9jdGdfNEFmWEUtdElIMGFndWlNNWNrVVB2dFZLMHgwT3Z5YThEdlJGdXFRWFNYTjBwbHc5a1VDUnowR1A4VnJNbHFHWTZCVHRwOFhKZnRBaTZKaml4QmFFX0ZKSmxOUUVNbXlqUUZvS21xNDZkWVNJY1NOdzRvZzFuQUpfelpLVnROanRENkhCUE9NMVdReVhhNzNZc2h3dHA0a2pGSWw0djlqSmFOR2w1cHU?oc=5",
+   "source": "HRM New Zealand",
+   "feed": "ASD / ACSC in the news",
+   "region": "AU",
+   "published": "2026-11-18T05:29:54Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Vulnerability",
+    "Australia"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "also": [
+    {
+     "source": "Human Resources Director",
+     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxON2E0M29raG1wbXZOajRaSlk2RDBZRkk5bUN6ZnRsWjJDN3NsVWtvb0ZPZEcwRTNVNE9RSHpjQjFsOWFHUnBzb0hxbVhpaHJSV3EzYlBqSnpUQ1k4LThzWXROLTAyYjRCMkZ3VjQwTWQ1cjZGNUFxdDRyWXMzZHAzbFcwbDV0cmhBNlV4NFRpRFNsOEdjYWhmbzdESTRLNWVVaDZ1NEFvSS1oalpWZU52VFJTZlBDM0JsNC0xdE52WlhDdE84RGZjaEZrWER2V1NtSXo5eFpKZW0?oc=5"
+    }
    ]
   },
   {
@@ -1341,6 +1445,23 @@
    "score": 0,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "e700863690ce",
+   "title": "Data Breach Website Blog Form",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQLUNCN2R6NkJfSWhRUW5IdEMwR1FWMUppLTRIc0hQRFYtVTBYR0hGOW9HbUw4ZllKd1BNSGdZbW5nakh3cDlFclF6YzF6SnFWSVNkNlhrWFA4SV9TMVczQVFHb1phWHZ3cnlqYnhLVGZNbFZiMUptUHRQcVN4dWZaSXBBTC1IWHZT?oc=5",
+   "source": "Strauss Borrelli PLLC",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-17T08:00:00Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
   },
   {
    "id": "d51a92f2bc9a",
@@ -4081,33 +4202,6 @@
    "why": []
   },
   {
-   "id": "4555dea14647",
-   "title": "Notion says Fireworks breach exposed customer AI chat transcripts",
-   "link": "https://www.bleepingcomputer.com/news/security/notion-says-fireworks-breach-exposed-customer-ai-chat-transcripts/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-11T20:54:20Z",
-   "summary": "Notion, the digital workspace platform, disclosed that a security breach at its AI infrastructure provider, Fireworks AI, exposed Notion AI chat transcripts in a small number of workspaces. [...]",
-   "score": 4,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html"
-    },
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/notion-customer-data-compromised-in-fireworks-ai-hack/"
-    }
-   ]
-  },
-  {
    "id": "be138bf98864",
    "title": "DXC’s Xchanging Subsidiary Falls Prey to Ransomware Attack",
    "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBNS3RzQUhseGVlT2U3TEc4dnVOS3VaMXVqMVVjRUVlYUlMdUV0YUY0S3ZybHYtS0JEUG9KMVk0MS04c05DVkdfY0RqRmRwRnpVVllMZjhVTHRUWXdTU1g5MWl30gFiQVVfeXFMUE1LdHNBSGx4ZWVPZTdMRzh2dU5LdVoxdWoxVWNFRWVhSUx1RXRhRjRLdnJsdi1LQkRQb0oxWTQxLThzTkNWR19jRGpGZHBGelVWWUxmOFVMdFRZd1NTWDkxaXc?oc=5",
@@ -5379,6 +5473,20 @@
    ],
    "why": [
     "Data breach"
+   ],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/notion-says-fireworks-breach-exposed-customer-ai-chat-transcripts/"
+    },
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html"
+    },
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/notion-customer-data-compromised-in-fireworks-ai-hack/"
+    }
    ]
   },
   {
@@ -5464,25 +5572,6 @@
    ]
   },
   {
-   "id": "047b6b78b3ab",
-   "title": "Australia tightens AI oversight rules after OpenAI government breach",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOenU4WXNoTkJTLTZPbmNkbW1ubWJORmJqSmNGWFd5ZGg1a1JrUXowYVhmSTRKLWo1cWFKQUJyZklyRVdvbzM1Z1pfWFF4SWd1QzA0amExQzMyM0Rzang2TDZ2bWRvUjZnLW5WcW1FLS1TTjRBWXFoX1Iyd2Q5TEJvbG55M29IaVozWlNac1JpdTFtT2d0bUZpTmtYeFZpMzJ0ZDA4UWQxWmRkZWVDX3JBRHlKN1XSAbQBQVVfeXFMTnp1OFlzaE5CUy02T25jZG1tbm1iTkZiakpjRlhXeWRoNWtSa1F6MGFYZkk0Si1qNXFhSkFCcmZJckVXb28zNWdaX1hReElndUMwNGphMUMzMjNEc2p4Nkw2dm1kb1I2Zy1uVnFtRS0tU040QVlxaF9SMndkOUxCb2xueTNvSGlaM1pTWnNSaXUxbU9ndG1GaU5rWHhWaTMydGQwOFFkMVpkZGVlQ19yQUR5SjdV?oc=5",
-   "source": "Al Jazeera",
-   "feed": "AU breach news",
-   "region": "AU",
-   "published": "2026-11-10T07:05:39Z",
-   "summary": "",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "Data breach"
-   ],
-   "why": [
-    "Australia",
-    "Data breach"
-   ]
-  },
-  {
    "id": "b579a343e6b6",
    "title": "CISA Warns of Active Exploitation of OpenSSH, GPUStack, FreeSWITCH, and IBM Flaws",
    "link": "https://thehackernews.com/2026/11/cisa-warns-of-active-exploitation-of.html",
@@ -5522,6 +5611,12 @@
    "why": [
     "Australia",
     "Data breach"
+   ],
+   "also": [
+    {
+     "source": "Al Jazeera",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOenU4WXNoTkJTLTZPbmNkbW1ubWJORmJqSmNGWFd5ZGg1a1JrUXowYVhmSTRKLWo1cWFKQUJyZklyRVdvbzM1Z1pfWFF4SWd1QzA0amExQzMyM0Rzang2TDZ2bWRvUjZnLW5WcW1FLS1TTjRBWXFoX1Iyd2Q5TEJvbG55M29IaVozWlNac1JpdTFtT2d0bUZpTmtYeFZpMzJ0ZDA4UWQxWmRkZWVDX3JBRHlKN1XSAbQBQVVfeXFMTnp1OFlzaE5CUy02T25jZG1tbm1iTkZiakpjRlhXeWRoNWtSa1F6MGFYZkk0Si1qNXFhSkFCcmZJckVXb28zNWdaX1hReElndUMwNGphMUMzMjNEc2p4Nkw2dm1kb1I2Zy1uVnFtRS0tU040QVlxaF9SMndkOUxCb2xueTNvSGlaM1pTWnNSaXUxbU9ndG1GaU5rWHhWaTMydGQwOFFkMVpkZGVlQ19yQUR5SjdV?oc=5"
+    }
    ]
   },
   {
@@ -5709,23 +5804,6 @@
    "score": 0,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "5ba181da5626",
-   "title": "Data Breach Website Blog Form",
-   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxON0tkRTN3UzUxRVlCczlDZk9NRGFpMGlUUm55V3RfT25ETkRfYjJLZG55ODhvc2dvQ2VicnowZDNIak9PY1VFQzVQVDlzUFNuZ0g3MkthZGhPVU9OZnJFR3lhMW03NmhJa0FydjhqNzNHMlAtRnRQd0liZFZXTnFvZUZvSXFSQU93d1E?oc=5",
-   "source": "Strauss Borrelli PLLC",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-09T22:59:50Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
   },
   {
    "id": "fb65eccd7583",
@@ -7115,81 +7193,6 @@
    "score": 1,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "97d7db0e7e4a",
-   "title": "FBI, CISA warn of cyberattacks targeting refrigeration systems",
-   "link": "https://www.bleepingcomputer.com/news/security/fbi-cisa-warn-of-cyberattacks-targeting-refrigeration-systems/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-06T00:56:44Z",
-   "summary": "The FBI and CISA warn that hackers are actively targeting industrial refrigeration and cold-chain monitoring systems worldwide, potentially causing food spoilage, equipment damage, and fire hazards. [...]",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "7340dbad9c1e",
-   "title": "CVE-2026-19868: SonicWall SonicOS SSLVPN — SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-19868",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-11-06T00:00:00Z",
-   "summary": "SonicWall SonicOS SSLVPN contains a use of single-factor authentication vulnerability that may allow a user with valid credentials for an alternate authentication method to bypass SAML authentication controls. Successful exploitation may also bypass… CISA remediation due 2026-11-20.",
-   "score": 9,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Identity",
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "why": [
-    "Identity",
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "epss": 0.0053
-  },
-  {
-   "id": "05112641c600",
-   "title": "Relentless consumer spending risks triggering more RBA rate hikes for struggling mortgage holders",
-   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQTUk4SFdRWE1lQ3dwM2lfU2szV3VzcENJWVdJcWRBOFZZTVkwc21mZzM1VVg3YmhvenljWXZsZ0lQSkNFczY4VHRwM1pzbkpqemhtaG9CdkJMY2xIVlhoM1YydnhBVUxzUGtrbk9SRUJ0VmlLM09FZFA3RDNMRThjYzNmemtHOUlIb1JMb2hYMUpCT0I5TTJyak9ZYnN6MEEycWZ2SW51c0tQQktEakZTWnBoQml6dC16b0dvMDB0NWtvMHhLN1ZVdWpXNFBpUQ?oc=5",
-   "source": "Real Estate",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-05T23:57:48Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ]
-  },
-  {
-   "id": "e2845eccbac1",
-   "title": "Threat actors use agentic AI tooling to find and abuse exposed secrets",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/05/threat-actors-use-agentic-ai-tooling-to-find-and-abuse-exposed-secrets/",
-   "source": "Microsoft Security Blog",
-   "feed": "Microsoft Security Blog",
-   "region": "Global",
-   "published": "2026-11-05T23:46:50Z",
-   "summary": "Microsoft Threat Intelligence has observed threat actors using the agentic offensive security framework ARTEX to search GitHub for OAuth application secrets, which can be used to compromise the associated OAuth application and perform authenticated actions in the application’s tenant. Agents…",
-   "score": 13,
-   "tags": [
-    "Real estate",
-    "Data breach",
-    "Identity"
-   ],
-   "why": [
-    "Real estate",
-    "Data breach",
-    "Identity"
-   ]
   }
  ]
 }
