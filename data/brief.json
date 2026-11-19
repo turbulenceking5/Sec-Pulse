@@ -1,8 +1,21 @@
 {
- "date": "2026-11-18",
- "generated": "2026-11-18T01:06:03+00:00",
- "title": "Sec-Pulse brief - Wed 18 Nov",
+ "date": "2026-11-19",
+ "generated": "2026-11-19T00:37:39+00:00",
+ "title": "Sec-Pulse brief - Thu 19 Nov",
  "items": [
+  {
+   "id": "0664e41e0092",
+   "title": "Winnipeg real estate industry professionals divided on proposed AI rules on staging homes",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNRDB2djNnVTVTN3NXT0NpUDZLNHpZM2lnVVZ5b3JlLThzTU5iVmozQmY3bXlfekVLQVJPcHRmQ1YwMFRqNFh3cGdKV252NmZERVpXZ3k4WVhxRjAtMnlsbm5ST05TMzBEaGRia0c5NlJWOTJ0YUsyUE1oWUlMNUVfVnY5SEo4aUNmcE92MmNjdW1MVnRtMF9zN2RR?oc=5",
+   "source": "CityNews Winnipeg",
+   "region": "Global",
+   "published": "2026-11-19T00:30:35Z",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "summary": ""
+  },
   {
    "id": "0f91631aef35",
    "title": "ACSC warns vulnerabilities are being exploited quickly, urges organisations to patch and reduce exposure",
@@ -18,69 +31,56 @@
    "summary": ""
   },
   {
-   "id": "e4eeca90a4e3",
-   "title": "Dragos reports 20 Australian industrial ransomware incidents in Q3 2026",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNSEU3UTEzaDJ1WTdCYTdObXNzY2NnYjhTV0YxSEs1ejlSTzdXZ3Ffd1lJZzNzXzJ6LVR1QzVzcFZtUUlpei12djNGWlA2VUlFbUhxOHRGRGJTb0o2T2NGT1JGYnk5Q1lkcUEyNjBkbmRxTG5CQ0oxLXJmWGZCaXV2eVIwTURKdXZRWWdkT0xWZ0hLZGFMRXVBLUUzWHoxbjhqLU5JRGZoYXJvZlRVY1NJSk5OUXJuWnl3Uk4w?oc=5",
-   "source": "Australian Cyber Security Magazine",
-   "region": "AU",
-   "published": "2026-11-16T23:46:24Z",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "Ransomware"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "216fe6e5abb4",
-   "title": "Australian businesses pay ransomware demands more often",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNM1pJTjd1cGlZNldmVG5BY0czU1JRanlLQU9US1hfNlRJSFdWYllNZ1diZ2NnWHYydWxzNUo4amxidGNYWk1iYWV2NkI0STQwOFlmeTZCdkZBekRkR0MxcGx2Y01JR0FRYXRuR3lxajZfTmw1SnVpcjV0TnZPQXdqRXRhZ0JneGJkeUxVd2lmWXNUQnNq?oc=5",
-   "source": "SecurityBrief Australia",
-   "region": "AU",
-   "published": "2026-11-16T21:00:00Z",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "Ransomware"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "faee8e17ad3c",
-   "title": "Pennington County restores public access to real estate records after cyber incident",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOOUVqMllsMzhtQzVSM1RmOW5fUS1WdWxhSGRJSGhjZFhyR1ctbnNhWTQ2WDhVT21jRi1NUHdLTTMzdTlBR2RNQmJ0b2NZVkxrX21vTmxub0oyS0hZbzN5TXFFaXktdzlPVV9wd3loMkVqVUJwWTlPTFpGQ28wU1N3ZmtYaUMwSmY0d3JyV1ZpenlIX1IxOEVERU51d3VpTTZSRWU2VjlNU1YzdlFreVNJUEpmbTRSazDSAcsBQVVfeXFMTWNrOHhIY09wR2NZbnRSbjhadENsOWV6bWJXaG93NDNLOFBkcjU4RHhyYkF3Rkh2QXBzckNZcVRfNjRmT3RmRXlvcW8yQnkzSUM1T1BRcVBQVjNCOEZGRl9YbHd4eEZlNWdjMWNZTnctdEM0MHF0Vm5QVkVKcm54U19Wb0RqWmVYeU9FRUo3ZjVtT3BCa0llMHVNaEs2WnctdmRsS1dxNnRPT0hpbm5sWUtCUS1YTTlxNUVrVTItUEZVdmkxMUsxT0htTm8?oc=5",
-   "source": "KOTA Territory News",
+   "id": "e7c273fee4ff",
+   "title": "Cursor Traces Malicious Claude Code Extensions to Third-Party Breach",
+   "link": "https://www.darkreading.com/application-security/cursor-malicious-claude-code-extension-third-party-breach",
+   "source": "Dark Reading",
    "region": "Global",
-   "published": "2026-11-17T17:49:00Z",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "fa8a2a790942",
-   "title": "Vulnerabilities are moving quickly, so patch, protect, prevent",
-   "link": "https://www.cyber.gov.au/alert/vulnerabilities-are-moving-quickly-so-patch-protect-prevent",
-   "source": "ACSC Alerts",
-   "region": "AU",
-   "published": "2026-11-17T01:41:43Z",
-   "score": 11,
+   "published": "2026-11-17T18:38:37Z",
+   "score": 9,
    "tags": [
     "Data breach",
+    "Identity",
+    "SaaS / cloud"
+   ],
+   "summary": "A compromised key issued to AI infrastructure provider Fireworks was used by threat actors to access Cursor data and credentials."
+  },
+  {
+   "id": "ee9a23761ba0",
+   "title": "Russian COLD RELIC Hackers Use Stolen Google Workspace Data to Breach Second U.S. Organization",
+   "link": "https://thehackernews.com/2026/11/russian-cold-relic-hackers-use-stolen.html",
+   "source": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-18T05:58:04Z",
+   "score": 7,
+   "tags": [
+    "Data breach",
+    "SaaS / cloud"
+   ],
+   "summary": "The Russia-linked cyber espionage group known as Cold Relic (formerly COLDRIVER and UNC4057) has been observed weaponizing a single cloud compromise into a launchpad for a series of linked intrusions resulting in third-party compromise. Google's Mandiant and Threat Intelligence Group (GTIG) said…"
+  },
+  {
+   "id": "09d99f19208e",
+   "title": "Employers told to patch critical Java flaw immediately as AI-found bug hits staff login systems",
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPeDlLLVJuR1FwSDd0bzVYVEpvdGpaT0NGMGlfM0hCNGJVRVQwbV9jdGdfNEFmWEUtdElIMGFndWlNNWNrVVB2dFZLMHgwT3Z5YThEdlJGdXFRWFNYTjBwbHc5a1VDUnowR1A4VnJNbHFHWTZCVHRwOFhKZnRBaTZKaml4QmFFX0ZKSmxOUUVNbXlqUUZvS21xNDZkWVNJY1NOdzRvZzFuQUpfelpLVnROanRENkhCUE9NMVdReVhhNzNZc2h3dHA0a2pGSWw0djlqSmFOR2w1cHU?oc=5",
+   "source": "HRM New Zealand",
+   "region": "AU",
+   "published": "2026-11-18T05:29:54Z",
+   "score": 7,
+   "tags": [
     "Vulnerability",
     "Australia"
    ],
-   "summary": "Actions organisations can take to identify internet-exposed systems, address vulnerabilities and reduce cyber security risk."
+   "summary": ""
   }
  ],
  "stats": {
-  "recent": 60,
-  "au": 6,
-  "kev": 1
+  "recent": 50,
+  "au": 3,
+  "kev": 4
  },
  "lesson": {
-  "id": "1.4",
-  "title": "Analyst tools: SIEM, SOAR, EDR and friends"
+  "id": "1.5",
+  "title": "Email analysis: headers, SPF, DKIM, DMARC"
  }
 }
