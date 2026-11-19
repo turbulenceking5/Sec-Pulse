@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-19T11:43:33Z",
+ "generated": "2026-11-19T20:40:14Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -16,31 +16,31 @@
   {
    "name": "ACSC (via Google News)",
    "ok": true,
-   "count": 2,
+   "count": 1,
    "error": null
   },
   {
    "name": "ASD / ACSC in the news",
    "ok": true,
-   "count": 4,
+   "count": 3,
    "error": null
   },
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 6,
+   "count": 3,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 6,
+   "count": 5,
    "error": null
   },
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 0,
+   "count": 1,
    "error": null
   },
   {
@@ -100,11 +100,339 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 29,
+   "count": 31,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "dfb731a44487",
+   "title": "Navigating Vulnerability Hysteria in the AI Era",
+   "link": "https://www.darkreading.com/vulnerabilities-threats/navigating-vulnerability-hysteria-ai-era",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-19T19:46:44Z",
+   "summary": "This installment of the Reporters' Notebook video series examines the fallout from recent high-severity flaw disclosures, exploring how fears of AI-assisted exploits trigger widespread panic, operational disruptions, and growing warning fatigue.",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "bd2996802132",
+   "title": "Newly Patched VMware vCenter Flaw Exploited as Zero-Day by Chinese APT",
+   "link": "https://www.securityweek.com/newly-patched-vmware-vcenter-flaw-exploited-as-zero-day-by-chinese-apt/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-19T19:21:06Z",
+   "summary": "Google says a China-linked espionage group exploited a critical VMware vCenter authentication bypass before Broadcom released a patch. The post Newly Patched VMware vCenter Flaw Exploited as Zero-Day by Chinese APT appeared first on SecurityWeek .",
+   "score": 7,
+   "tags": [
+    "Actively exploited",
+    "Vulnerability"
+   ],
+   "why": [
+    "Actively exploited",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "53e4a59238e8",
+   "title": "ThreatsDay: GPT-6.2 Jailbreak Flaws, BubbleLoader PNG Malware, $500M Ransom Demands + 17 More Stories",
+   "link": "https://thehackernews.com/2026/11/threatsday-gpt-62-jailbreak-flaws.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-19T18:47:58Z",
+   "summary": "The easiest way to fool someone is to give them something they already expect. A job offer. A message about a service outage. A familiar app. Nothing looks strange at first. And that's the problem. This week's stories show how ordinary things are being used to steal data, spread malware, and get…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "1977168802e4",
+   "title": "Transport for London breach exposes 265,000 Oyster card users' data",
+   "link": "https://www.bleepingcomputer.com/news/security/transport-for-london-breach-exposes-265-000-oyster-card-users-data/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-19T18:20:01Z",
+   "summary": "Transport for London (TfL) has announced that around 265,000 Oyster photocard customers may have had their account details exposed in a data breach. [...]",
+   "score": 4,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "648f4746253c",
+   "title": "phpAfterShell Explained: How Hackers Could Turn a PHP Session Flaw Into Code Execution",
+   "link": "https://thehackernews.com/2026/11/phpaftershell-explained-how-hackers.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-19T16:59:56Z",
+   "summary": "PHP's default file-based session storage can be made to return objects an attacker chose, by cutting off a session write at the right moment. When combined with a second weakness, such as a suitable gadget chain in the app, those objects can allow the attacker to run code on the server. Today's…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "c5e7bc1c4238",
+   "title": "PHP security updates fix 18 flaws, including critical RCE bugs",
+   "link": "https://www.bleepingcomputer.com/news/security/php-security-updates-fix-18-flaws-including-critical-rce-bugs/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-19T16:28:23Z",
+   "summary": "The PHP development team released security updates addressing 18 vulnerabilities, including critical flaws that could allow unauthenticated attackers to remotely execute code on vulnerable servers. [...]",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html"
+    },
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/php-readies-critical-security-updates-to-patch-another-rce-flaw/"
+    }
+   ]
+  },
+  {
+   "id": "3049d4149a83",
+   "title": "PHP Patches Seven Critical RCE Vulnerabilities",
+   "link": "https://www.securityweek.com/php-patches-seven-critical-rce-vulnerabilities/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-19T15:54:20Z",
+   "summary": "Successful exploitation could allow attackers to crash the worker process and execute code with the PHP worker’s privileges. The post PHP Patches Seven Critical RCE Vulnerabilities appeared first on SecurityWeek .",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "7008c485fa38",
+   "title": "Critical VMware vCenter Flaw (CVSS 9.8) Lets Network Attackers Bypass Authentication",
+   "link": "https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-19T15:11:06Z",
+   "summary": "A critical flaw in VMware vCenter lets an attacker with network access bypass authentication and gain unauthorized access to the system, Broadcom, which owns VMware, said in an advisory published today. Fixed versions are out for all supported branches, and the company lists no workaround. vCenter…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "75044bab3e73",
+   "title": "Five warning signs of ransomware breach before encryption or data theft",
+   "link": "https://www.bleepingcomputer.com/news/security/five-warning-signs-of-ransomware-breach-before-encryption-or-data-theft/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-19T15:00:10Z",
+   "summary": "Ransomware attacks often involve credential theft, lateral movement, and attempts to disable security controls long before encryption begins. Acronis examines five warning signs that can help defenders detect intrusions earlier, contain malicious activity, and protect critical systems and backups.…",
+   "score": 13,
+   "tags": [
+    "Microsoft 365",
+    "Ransomware",
+    "Data breach",
+    "Identity"
+   ],
+   "why": [
+    "Microsoft 365",
+    "Ransomware",
+    "Data breach",
+    "Identity"
+   ]
+  },
+  {
+   "id": "7cc3b724b66a",
+   "title": "Critical NGINX ‘NGINX2Root’ bugs let attackers hijack servers",
+   "link": "https://www.bleepingcomputer.com/news/security/critical-nginx-nginx2root-bugs-let-attackers-hijack-servers/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-19T14:57:24Z",
+   "summary": "Two critical NGINX vulnerabilities dubbed \"nginx2root\" allow unauthenticated attackers to execute code remotely on vulnerable web servers, with researchers demonstrating how the flaws can be chained with a Linux kernel bug to gain root access. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "b596fa3e6614",
+   "title": "Why Palo Alto Networks could benefit from rising cyber threats",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPaUlMV0E0dDlMbU5oNmpDOUtWaFplbEc4cFdZUGI5aUZOaUtQZjM5Y0x0REVoNUNVTFh6d0VKYmlSV2VRTmxMcUtmcnE3UDIzZlUwVzF5QkFvelAySXpwTU56Zk15NGdLeElkNlY0dGR2dGxhUjYxQ3pTWkQ0R01PMElVTTV0R0szQ0h1UENGd0FRcjJUREFFSllVTUVqRzdkbVhTTDNUTUNETGlkOXc?oc=5",
+   "source": "Yahoo Finance",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-19T14:53:31Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Edge devices"
+   ],
+   "why": [
+    "Edge devices"
+   ],
+   "also": [
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/palo-alto-networks-to-buy-ai-startup-applied-compute-for-4-5-billion/"
+    }
+   ]
+  },
+  {
+   "id": "6e1cc48f217d",
+   "title": "Drupal Patches Critical Installer Flaw That Could Give Unauthenticated Attackers Control of Sites",
+   "link": "https://thehackernews.com/2026/11/drupal-patches-critical-installer-flaw.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-19T14:33:06Z",
+   "summary": "Under specific conditions, a critical vulnerability in Drupal core can allow an attacker without login credentials to use the built-in installer to attempt to reinstall a site. That can lead to a site takeover or remote code execution, and the project rates the vulnerable configurations as…",
+   "score": 4,
+   "tags": [
+    "Identity",
+    "Vulnerability"
+   ],
+   "why": [
+    "Identity",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "4f4f9e0dd0e0",
+   "title": "Why Holiday Security Can't Wait for Black Friday",
+   "link": "https://www.darkreading.com/cybersecurity-operations/why-holiday-security-cant-wait-black-friday",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-19T14:00:00Z",
+   "summary": "Bot-driven fraud and holiday social engineering attacks stretch across many weeks, straining security teams and small businesses alike.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "5e668a30271b",
+   "title": "Hackers Exploit Cisco Expressway Vulnerability Soon After PoC Release",
+   "link": "https://www.securityweek.com/hackers-exploit-cisco-expressway-vulnerability-soon-after-poc-release/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-19T13:12:20Z",
+   "summary": "Attackers hacked clustered Cisco Expressway devices at a Russian organization and prepared tooling for lateral movement. The post Hackers Exploit Cisco Expressway Vulnerability Soon After PoC Release appeared first on SecurityWeek .",
+   "score": 5,
+   "tags": [
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "why": [
+    "Edge devices",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "df5a560c1b8f",
+   "title": "Drupal patches critical RCE flaw, warns exploits may surface quickly",
+   "link": "https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaw-warns-exploits-may-surface-quickly/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-19T13:08:08Z",
+   "summary": "The Drupal Security Team has patched a critical remote code execution vulnerability that can let attackers take over vulnerable sites. [...]",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "b7f6d70bce90",
+   "title": "StepSecurity Secures $20 Million to Expand Supply Chain Protection",
+   "link": "https://www.securityweek.com/stepsecurity-secures-20-million-to-expand-supply-chain-protection/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-19T12:23:34Z",
+   "summary": "The company will use the funds to accelerate the development and distribution of its security platform. The post StepSecurity Secures $20 Million to Expand Supply Chain Protection appeared first on SecurityWeek .",
+   "score": 3,
+   "tags": [
+    "SaaS / cloud"
+   ],
+   "why": [
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "4fc5c33492cc",
+   "title": "The Governance Gap in Open-Weight AI and What to Do About It",
+   "link": "https://www.securityweek.com/the-governance-gap-in-open-weight-ai-and-what-to-do-about-it/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-19T12:00:00Z",
+   "summary": "Lower costs, data privacy, and greater control are driving open-weight AI adoption, but many organizations are not addressing the risks that come with it. The post The Governance Gap in Open-Weight AI and What to Do About It appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "193208e89084",
+   "title": "Everything Is a Web Application, Including Your Firewall",
+   "link": "https://thehackernews.com/2026/11/everything-is-web-application-including.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-19T11:52:23Z",
+   "summary": "One of the early targets of PHP2Shell exploitation was the firewall. On October 28, Palo Alto Networks confirmed that attackers were exploiting the two PHP vulnerabilities, CVE-2026-109618 and CVE-2026-109619, against PAN-OS management interfaces exposed to the internet. Both flaws let anyone…",
+   "score": 9,
+   "tags": [
+    "Data breach",
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "why": [
+    "Data breach",
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "epss": 1.0
+  },
+  {
+   "id": "937f390d6b18",
+   "title": "Microsoft tests new Edge Lockdown Mode that disables GPU APIs",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-new-edge-lockdown-mode-that-disables-gpu-apis/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-19T11:46:00Z",
+   "summary": "Microsoft is developing a new Edge security feature to reduce the attack surface by disabling the WebGL, WebGL2, and WebGPU APIs. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
   {
    "id": "2aa6fa29c77a",
    "title": "Splunk Patches Nearly 140 Flaws Across Three Core Products",
@@ -190,6 +518,12 @@
    "why": [
     "Ransomware",
     "Data breach"
+   ],
+   "also": [
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/nvidia-responds-to-gentlemen-ransomware-claim/"
+    }
    ]
   },
   {
@@ -272,27 +606,10 @@
    "feed": "Dark Reading",
    "region": "Global",
    "published": "2026-11-19T08:00:00Z",
-   "summary": "Nigeria faced more than double the cyber threats of the previous year, with Angola and Kenya also in the top-5 most attacked countries globally.",
+   "summary": "Nigeria faced more than double the cyber threats of the previous year, with Angola and Kenya also in the top 5 most-attacked countries globally.",
    "score": 0,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "e2e32d524f45",
-   "title": "PHP Readies Critical Security Updates to Patch Another RCE Flaw",
-   "link": "https://www.securityweek.com/php-readies-critical-security-updates-to-patch-another-rce-flaw/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-19T07:45:17Z",
-   "summary": "Affecting the session upload progress, CVE-2026-115560 was publicly disclosed two days after PHP2Shell patches landed. The post PHP Readies Critical Security Updates to Patch Another RCE Flaw appeared first on SecurityWeek .",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
   },
   {
    "id": "d1202d3392a4",
@@ -350,23 +667,6 @@
      "source": "cyber.gov",
      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQWDZUR0oyZ1NOSnlOamdoNEVsQjRmNGwzUGg1TnlpUjlwV0g0SUZsMnR5THNrM25QVkhOTU5vRzhTTXBudW9ieGxfVEN1c18xNnU5YVk1Qk1PZEc4WGEyRkNfd0w3WDg4NUd5c3BIbWJ2VmpyUUJXWGlYem9WT3BWTENQUjUxV2JKdElwRHREYmJuWDZC?oc=5"
     }
-   ]
-  },
-  {
-   "id": "5128ef422750",
-   "title": "Palo Alto Networks to Buy AI Startup Applied Compute for $4.5 Billion",
-   "link": "https://www.securityweek.com/palo-alto-networks-to-buy-ai-startup-applied-compute-for-4-5-billion/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-19T03:25:23Z",
-   "summary": "The all-stock deal will give the cybersecurity company a platform for fine-tuning and running open-weight AI models in public and sovereign clouds. The post Palo Alto Networks to Buy AI Startup Applied Compute for $4.5 Billion appeared first on SecurityWeek .",
-   "score": 3,
-   "tags": [
-    "Edge devices"
-   ],
-   "why": [
-    "Edge devices"
    ]
   },
   {
@@ -454,7 +754,7 @@
    "feed": "Dark Reading",
    "region": "Global",
    "published": "2026-11-18T21:59:46Z",
-   "summary": "The Russia-linked threat group is using data stolen from one victim to target others via convincing impersonations and social engineering attacks.",
+   "summary": "The state-sponsored threat group is using data stolen from one victim to target others via convincing impersonations and social engineering attacks.",
    "score": 4,
    "tags": [
     "Data breach"
@@ -528,6 +828,23 @@
    ]
   },
   {
+   "id": "1d6a0a86aa01",
+   "title": "Health authorities in better position after Lapu Lapu privacy breach: Commissioner",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPQmVWOVVRaVF2R25mNUFXMHJKdnJjOXFlS2JmSmQtT0U1ZW5nVUY0bGpfRTY1NDhZc0VTcGNjblU3NzA0Yi1CNm9kU3JTWUFJbll5OEpES0pBczlGMVY0VDU1WGI0TmNadjhYTVFLODB3bEVuQjR2OWRsSkwyUEYwZWlkSFltQ2diVGJRSWJNNGJUYXdWYllIbkE1bDZZWWE3SldZTklfNkRqRWFHeW1KOUtZaw?oc=5",
+   "source": "Parksville Qualicum News",
+   "feed": "OAIC / Privacy news",
+   "region": "Global",
+   "published": "2026-11-18T19:53:01Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
    "id": "9f639cd35360",
    "title": "Data breach impacts 40 Irish credit unions in reported IT provider hack",
    "link": "https://www.bleepingcomputer.com/news/security/data-breach-impacts-40-irish-credit-unions-in-reported-it-provider-hack/",
@@ -559,7 +876,8 @@
    ],
    "why": [
     "Vulnerability"
-   ]
+   ],
+   "epss": 0.0636
   },
   {
    "id": "11aa6bef2bfb",
@@ -596,11 +914,15 @@
     "Actively exploited",
     "Vulnerability"
    ],
-   "epss": 0.0164,
+   "epss": 0.0119,
    "also": [
     {
      "source": "BleepingComputer",
      "url": "https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks/"
+    },
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/critical-apache-roller-axis-vulnerabilities-exploited-in-attacks/"
     }
    ]
   },
@@ -790,7 +1112,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0073
+   "epss": 0.0075
   },
   {
    "id": "57cf485fa921",
@@ -947,7 +1269,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0073
+   "epss": 0.0075
   },
   {
    "id": "c5f6c87fa0f7",
@@ -1086,7 +1408,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0125
+   "epss": 0.0215
   },
   {
    "id": "2767467965fb",
@@ -1106,7 +1428,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.1702
+   "epss": 0.6191
   },
   {
    "id": "816726b4adb7",
@@ -1126,7 +1448,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0375
+   "epss": 0.2519
   },
   {
    "id": "ab9bbe7f3a56",
@@ -1146,7 +1468,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0113
+   "epss": 0.0177
   },
   {
    "id": "0f91631aef35",
@@ -1386,13 +1708,13 @@
    ]
   },
   {
-   "id": "faee8e17ad3c",
+   "id": "1f16d1dbf5a6",
    "title": "Pennington County restores public access to real estate records after cyber incident",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOOUVqMllsMzhtQzVSM1RmOW5fUS1WdWxhSGRJSGhjZFhyR1ctbnNhWTQ2WDhVT21jRi1NUHdLTTMzdTlBR2RNQmJ0b2NZVkxrX21vTmxub0oyS0hZbzN5TXFFaXktdzlPVV9wd3loMkVqVUJwWTlPTFpGQ28wU1N3ZmtYaUMwSmY0d3JyV1ZpenlIX1IxOEVERU51d3VpTTZSRWU2VjlNU1YzdlFreVNJUEpmbTRSazDSAcsBQVVfeXFMTWNrOHhIY09wR2NZbnRSbjhadENsOWV6bWJXaG93NDNLOFBkcjU4RHhyYkF3Rkh2QXBzckNZcVRfNjRmT3RmRXlvcW8yQnkzSUM1T1BRcVBQVjNCOEZGRl9YbHd4eEZlNWdjMWNZTnctdEM0MHF0Vm5QVkVKcm54U19Wb0RqWmVYeU9FRUo3ZjVtT3BCa0llMHVNaEs2WnctdmRsS1dxNnRPT0hpbm5sWUtCUS1YTTlxNUVrVTItUEZVdmkxMUsxT0htTm8?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNY2s4eEhjT3BHY1ludFJuOFp0Q2w5ZXptYldob3c0M0s4UGRyNThEeHJiQXdGSHZBcHNyQ1lxVF82NGZPdGZFeW9xbzJCeTNJQzVPUFFxUFBWM0I4RkZGX1hsd3h4RmU1Z2MxY1lOdy10QzQwcXRWblBWRUpybnhTX1ZvRGpaZVh5T0VFSjdmNW1PcEJrSWUwdU1oSzZady12ZGxLV3E2dE9PSGlubmxZS0JRLVhNOXE1RWtVMi1QRlV2aTExSzFPSG1Ob9IBywFBVV95cUxNY2s4eEhjT3BHY1ludFJuOFp0Q2w5ZXptYldob3c0M0s4UGRyNThEeHJiQXdGSHZBcHNyQ1lxVF82NGZPdGZFeW9xbzJCeTNJQzVPUFFxUFBWM0I4RkZGX1hsd3h4RmU1Z2MxY1lOdy10QzQwcXRWblBWRUpybnhTX1ZvRGpaZVh5T0VFSjdmNW1PcEJrSWUwdU1oSzZady12ZGxLV3E2dE9PSGlubmxZS0JRLVhNOXE1RWtVMi1QRlV2aTExSzFPSG1Obw?oc=5",
    "source": "KOTA Territory News",
    "feed": "Real estate cyber news",
    "region": "Global",
-   "published": "2026-11-17T17:49:00Z",
+   "published": "2026-11-17T17:56:10Z",
    "summary": "",
    "score": 10,
    "tags": [
@@ -1431,7 +1753,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0073
+   "epss": 0.0075
   },
   {
    "id": "033b7c10af0d",
@@ -6928,284 +7250,6 @@
     "Data breach",
     "SaaS / cloud"
    ]
-  },
-  {
-   "id": "9c037607d0d5",
-   "title": "Brava Security Emerges From Stealth With $15 Million in Funding",
-   "link": "https://www.securityweek.com/brava-security-emerges-from-stealth-with-15-million-in-funding/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-08T12:14:00Z",
-   "summary": "Its multi-agent AI platform generates the telemetry an attack would produce to fix gaps in enterprise defenses. The post Brava Security Emerges From Stealth With $15 Million in Funding appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "2468829c5bbe",
-   "title": "NPC probing government data leaks",
-   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQeGRVU0lYMGpYbjRfclQwa1hmdWtpYjBaeUJOYXF1SHZxRzJRTmdmcFRiZVNwZHM0bFA4MDFJTkFsdE1ySlhSNW9VZ2RvSUtKdk9hTHc4bUlialRqQjNhenhHRjNMNlphSHVPb2pMZkdoLVZwa19kTHptMU9TejAwUXllM0Y5Zm1qYkJCUjd4U1pxb1VGUW5F0gGXAUFVX3lxTFB4ZFVTSVgwalhuNF9yVDBrWGZ1a2liMFp5Qk5hcXVIdnFHMlFOZ2ZwVGJlU3BkczRsUDgwMUlOQWx0TXJKWFI1b1VnZG9JS0p2T2FMdzhtSWJqVGpCM2F6eEdGM0w2WmFIdU9vakxmR2gtVnBrX2RMem0xT1N6MDBReWUzRjlmbWpiQkJSN3hTWnFvVUZRbkU?oc=5",
-   "source": "Philstar.com",
-   "feed": "OAIC / Privacy news",
-   "region": "Global",
-   "published": "2026-11-07T16:00:00Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "ded94754be20",
-   "title": "Hackers pull off $133 million French bank heist via service provider",
-   "link": "https://www.bleepingcomputer.com/news/security/hackers-pull-off-133-million-french-bank-heist-via-service-provider/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-07T15:25:35Z",
-   "summary": "French cooperative bank Crédit Mutuel Arkéa was targeted in a cyberattack that enabled fraudulent transactions of up to $133 million, forcing it to respond by suspending certain systems.v [...]",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "5a765cf499c2",
-   "title": "CTM360 Exposes Fake Gift Card Scams Exploiting Trusted Brands",
-   "link": "https://www.bleepingcomputer.com/news/security/ctm360-exposes-fake-gift-card-scams-exploiting-trusted-brands/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-07T14:10:19Z",
-   "summary": "Scammers are impersonating major brands and celebrities to lure consumers into fake gift card giveaways that collect personal information and trigger unwanted subscriptions. CTM360 reveals how these campaigns use deceptive verification steps and affiliate networks to generate revenue without…",
-   "score": 3,
-   "tags": [
-    "Phishing"
-   ],
-   "why": [
-    "Phishing"
-   ]
-  },
-  {
-   "id": "b2c7f8529c12",
-   "title": "Amadeus Security Breach Affects Qantas",
-   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1VLWtMdXloZXA0UWlxbXEwOWNITmFhd2tpbHV0cGJQai1JS19NNVhGX1dUTDdTOU1aVmlvV25hYVJEWXVUdkxGNlhWNW1pazFmcFoyZ0hKbkdrcEc5UngxanlnVTlibS1BZEVvYmxnRW9aUQ?oc=5",
-   "source": "Travel Radar",
-   "feed": "AU breach news",
-   "region": "AU",
-   "published": "2026-11-07T11:12:00Z",
-   "summary": "",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "Data breach"
-   ],
-   "why": [
-    "Australia",
-    "Data breach"
-   ]
-  },
-  {
-   "id": "6a96ed110a9e",
-   "title": "Mirae Asset Data Breach: 35,255 Staff Hit [2026]",
-   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPYnVHMi1vMERlQlhYWmdlMk9kbE9ETkxkbTFGNk9jUW50WndQc21wejh5ZFc0amFsbGtXNzBEYzhDTE5MOUZ6dkpyRFl1c19DeWt5Ujlka1A0X2d2ZEoyVm9vV3JjekhaNjRtWnJJUVFzSVlxbkZQaGRIZDc0eFlYQkpxMHRoalhBVGVhWkNsdHFON1VIcWFV?oc=5",
-   "source": "https://tech-insider.org/",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-11-07T08:36:06Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "a2509b45dccf",
-   "title": "Acronis research reveals how Qilin ransomware targets virtual infrastructure",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOZ2JqZkViUmYxTm1RcUlyMVVsb2hDb0I4Sm9seTd2aTlULUFjSUFGcFZSRVFieGVpU1lNME9fTkNCZDhRS3Bwd0RNWnJidkxjcFJOZHhFQzBRc1NESXlSWGtoQWhhS1NmZk1OeXl6aGJERzNZeFllZGxKak83ajJHSGtFVVdncEdhUWZKMm4tNW5QWjdzd3ppWU1DT1dKRnI3akJkQzBCakFXRUpFQ2NFSzNB?oc=5",
-   "source": "Acronis",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-11-07T07:12:08Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Ransomware"
-   ],
-   "why": [
-    "Ransomware"
-   ]
-  },
-  {
-   "id": "804a43c3361e",
-   "title": "Claude Code's “Don't Ask Again” File Exposes Passwords and Keys in 1,122 Public Copies on GitHub",
-   "link": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-07T06:44:17Z",
-   "summary": "Passwords and API keys that developers typed into commands they approved in Claude Code are sitting in public GitHub repositories, where anyone can read them. When a user selects \"Yes, and don't ask again,\" Anthropic's AI coding assistant can save the command, word-for-word, including the secret,…",
-   "score": 3,
-   "tags": [
-    "Identity"
-   ],
-   "why": [
-    "Identity"
-   ]
-  },
-  {
-   "id": "e115b44724e2",
-   "title": "ARTEX abuse expands as cybercriminals target financial sector",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/06/artex-abuse-expands-as-cybercriminals-target-financial-sector/",
-   "source": "Microsoft Security Blog",
-   "feed": "Microsoft Security Blog",
-   "region": "Global",
-   "published": "2026-11-07T02:44:34Z",
-   "summary": "In October 2026, the financially motivated threat actor Storm-3358 began targeting organizations in the financial sector using the agentic AI offensive framework ARTEX. The post ARTEX abuse expands as cybercriminals target financial sector appeared first on Microsoft Security Blog .",
-   "score": 1,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "b99b441690fc",
-   "title": "Runaway AI hacking agent behind WorkOS breach after escaping sandbox",
-   "link": "https://www.bleepingcomputer.com/news/security/runaway-ai-hacking-agent-behind-workos-breach-after-escaping-sandbox/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-06T22:27:25Z",
-   "summary": "WorkOS says an AI-powered hacking agent that breached its internal sales application and accessed customer information was operated by a security researcher who claims the tool escaped its testing environment and unintentionally attacked the company. [...]",
-   "score": 4,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "b63212099f3b",
-   "title": "UK Wades Into Tech Sovereignty Amid AI Policy Changes",
-   "link": "https://www.darkreading.com/cybersecurity-operations/uk-tech-sovereignty-ai-policy",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-11-06T21:27:36Z",
-   "summary": "The UK is betting on domestic AI and cyber investment to reduce reliance on US tech — but security leaders question whether the funding is too fragmented and too late.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "ba147c5fc5c9",
-   "title": "OpenAI's new GPT-6 Cyber AI finds 81 Firefox flaws, 948 Linux bugs",
-   "link": "https://www.bleepingcomputer.com/news/security/openais-new-gpt-6-cyber-ai-finds-81-firefox-flaws-948-linux-bugs/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-06T20:24:19Z",
-   "summary": "OpenAI has revealed GPT-6 Cyber, a new artificial intelligence model that has discovered 81 previously unknown high-severity Firefox vulnerabilities and developed working exploits for 948 distinct Linux kernel flaws. [...]",
-   "score": 0,
-   "tags": [],
-   "why": [],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/11/openai-launches-gpt-6-cyber-after-ai.html"
-    }
-   ]
-  },
-  {
-   "id": "a97be9095b72",
-   "title": "Fake security tools on GitHub push backdoors and infostealers",
-   "link": "https://www.bleepingcomputer.com/news/security/fake-security-tools-on-github-push-backdoors-and-infostealers/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-06T18:46:52Z",
-   "summary": "Cybersecurity professionals are being targeted with infected security projects on GitHub that deploy a backdoor and information stealer malware. [...]",
-   "score": 3,
-   "tags": [
-    "Identity"
-   ],
-   "why": [
-    "Identity"
-   ]
-  },
-  {
-   "id": "d9a0f8bfa397",
-   "title": "Japan Announces Emergency Cybersecurity Package Following a Wave of Attacks",
-   "link": "https://www.securityweek.com/japan-announces-emergency-cybersecurity-package-following-a-wave-of-attacks/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-06T18:28:41Z",
-   "summary": "The emergency package comes after dozens of companies and government agencies were hit by unauthorized access to their systems and leaks of client data, prompting uneasiness across Japan. The post Japan Announces Emergency Cybersecurity Package Following a Wave of Attacks appeared first on…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "3c3dad9eec40",
-   "title": "AI Gave Your Incident Archive a Second Job",
-   "link": "https://www.darkreading.com/cyber-risk/ai-gave-your-incident-archive-second-job",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-11-06T18:27:30Z",
-   "summary": "Security records are increasingly being used by vendors to train their models, creating new risks for enterprises.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "9fe769e3c933",
-   "title": "Installing the Fix for an Exploited WordPress Flaw Can Expose Some Sites One Last Time",
-   "link": "https://thehackernews.com/2026/11/installing-fix-for-exploited-wordpress.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-06T16:08:38Z",
-   "summary": "Some WordPress sites can still be attacked while they install the fix for an actively exploited flaw, according to Umut Bayram, the Picus Security researcher who found it. The update that installs the fix still unpacks its files using the site's old, unpatched code, so an attacker who strikes at…",
-   "score": 4,
-   "tags": [
-    "Actively exploited"
-   ],
-   "why": [
-    "Actively exploited"
-   ]
-  },
-  {
-   "id": "af6d1b8b9d25",
-   "title": "Veeam warns of Software Appliance boot failures on AMD EPYC hosts",
-   "link": "https://www.bleepingcomputer.com/news/security/veeam-software-appliance-vms-fail-to-boot-on-amd-epyc-hosts/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-06T15:25:31Z",
-   "summary": "​Veeam warned customers about boot failures affecting Software Appliance virtual machines (VMs) on hosts with AMD EPYC processors. [...]",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "3647bbef0072",
-   "title": "IMSI vs IMEI: What Your Phone Broadcasts and Who Can Read It",
-   "link": "https://www.bleepingcomputer.com/news/security/imsi-vs-imei-what-your-phone-broadcasts-and-who-can-read-it/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-06T15:00:10Z",
-   "summary": "IMSI and IMEI are IDs your phone shares with networks. Learn how they differ, how attackers get them, and why rotating your IMSI blunts tracking. [...]",
-   "score": 0,
-   "tags": [],
-   "why": []
   }
  ]
 }
