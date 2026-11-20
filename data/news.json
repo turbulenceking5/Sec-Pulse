@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-19T20:40:14Z",
+ "generated": "2026-11-20T00:45:26Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -34,13 +34,13 @@
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 5,
+   "count": 4,
    "error": null
   },
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 1,
+   "count": 0,
    "error": null
   },
   {
@@ -106,6 +106,91 @@
  ],
  "items": [
   {
+   "id": "c5e24a06d395",
+   "title": "VMware patches vCenter zero-day exploited in attacks since September",
+   "link": "https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-20T00:26:25Z",
+   "summary": "Broadcom has released security updates to fix a critical VMware vCenter Server authentication bypass vulnerability that Chinese-linked hackers have exploited in zero-day attacks since September 2026. [...]",
+   "score": 7,
+   "tags": [
+    "Actively exploited",
+    "Vulnerability"
+   ],
+   "why": [
+    "Actively exploited",
+    "Vulnerability"
+   ],
+   "also": [
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/newly-patched-vmware-vcenter-flaw-exploited-as-zero-day-by-chinese-apt/"
+    }
+   ]
+  },
+  {
+   "id": "5e65458c080e",
+   "title": "Qwen Incidents Show Self-Hosted AI Models Need Stronger Steering",
+   "link": "https://www.darkreading.com/cyber-risk/qwen-incidents-self-hosted-ai-models-stronger-steering",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-19T22:40:03Z",
+   "summary": "Companies deploying AI agents have the illusion of control, but several incidents demonstrate that businesses need to be ready to enforce directions.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "df29d71aedcb",
+   "title": "Hackers steal data of 1.6 million SBC Medical Group customers",
+   "link": "https://www.bleepingcomputer.com/news/security/hackers-steal-data-of-16-million-sbc-medical-group-customers/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-19T22:25:42Z",
+   "summary": "SBC Medical Group has warned in a filing with the U.S. Securities and Exchange Commission (SEC) that two cybersecurity incidents exposed sensitive customer and employee information, including personal data belonging to 1.6 million people. [...]",
+   "score": 3,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "3797ecb529a5",
+   "title": "ASUS warns of critical hard-coded key flaw in Control Center Express",
+   "link": "https://www.bleepingcomputer.com/news/security/asus-warns-of-critical-hard-coded-key-flaw-in-control-center-express/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-19T21:15:59Z",
+   "summary": "ASUS released Control Center Express v1.7.29 to fix three critical vulnerabilities that could let remote attackers gain administrative control of the management console and the devices it manages. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "150f8fb55446",
+   "title": "Second Norwegian Energy Company Breached in Two Days",
+   "link": "https://www.darkreading.com/cyberattacks-data-breaches/second-norwegian-energy-company-breached",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-19T20:14:15Z",
+   "summary": "No specific link has been drawn between the two incidents, though they certainly sing the same notes.",
+   "score": 4,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
    "id": "dfb731a44487",
    "title": "Navigating Vulnerability Hysteria in the AI Era",
    "link": "https://www.darkreading.com/vulnerabilities-threats/navigating-vulnerability-hysteria-ai-era",
@@ -119,25 +204,6 @@
     "Vulnerability"
    ],
    "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "bd2996802132",
-   "title": "Newly Patched VMware vCenter Flaw Exploited as Zero-Day by Chinese APT",
-   "link": "https://www.securityweek.com/newly-patched-vmware-vcenter-flaw-exploited-as-zero-day-by-chinese-apt/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-19T19:21:06Z",
-   "summary": "Google says a China-linked espionage group exploited a critical VMware vCenter authentication bypass before Broadcom released a patch. The post Newly Patched VMware vCenter Flaw Exploited as Zero-Day by Chinese APT appeared first on SecurityWeek .",
-   "score": 7,
-   "tags": [
-    "Actively exploited",
-    "Vulnerability"
-   ],
-   "why": [
-    "Actively exploited",
     "Vulnerability"
    ]
   },
@@ -208,6 +274,10 @@
     {
      "source": "SecurityWeek",
      "url": "https://www.securityweek.com/php-readies-critical-security-updates-to-patch-another-rce-flaw/"
+    },
+    {
+     "source": "Dark Reading",
+     "url": "https://www.darkreading.com/application-security/critical-php-flaws-code-execution-panic-php2shell"
     }
    ]
   },
@@ -862,6 +932,30 @@
    ]
   },
   {
+   "id": "1b1d514c9cb5",
+   "title": "Employers told to patch critical Java flaw immediately as AI-found bug hits staff login systems",
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxON2E0M29raG1wbXZOajRaSlk2RDBZRkk5bUN6ZnRsWjJDN3NsVWtvb0ZPZEcwRTNVNE9RSHpjQjFsOWFHUnBzb0hxbVhpaHJSV3EzYlBqSnpUQ1k4LThzWXROLTAyYjRCMkZ3VjQwTWQ1cjZGNUFxdDRyWXMzZHAzbFcwbDV0cmhBNlV4NFRpRFNsOEdjYWhmbzdESTRLNWVVaDZ1NEFvSS1oalpWZU52VFJTZlBDM0JsNC0xdE52WlhDdE84RGZjaEZrWER2V1NtSXo5eFpKZW0?oc=5",
+   "source": "Human Resources Director",
+   "feed": "ASD / ACSC in the news",
+   "region": "AU",
+   "published": "2026-11-18T19:08:48Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Vulnerability",
+    "Australia"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "also": [
+    {
+     "source": "HRM New Zealand",
+     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPeDlLLVJuR1FwSDd0bzVYVEpvdGpaT0NGMGlfM0hCNGJVRVQwbV9jdGdfNEFmWEUtdElIMGFndWlNNWNrVVB2dFZLMHgwT3Z5YThEdlJGdXFRWFNYTjBwbHc5a1VDUnowR1A4VnJNbHFHWTZCVHRwOFhKZnRBaTZKaml4QmFFX0ZKSmxOUUVNbXlqUUZvS21xNDZkWVNJY1NOdzRvZzFuQUpfelpLVnROanRENkhCUE9NMVdReVhhNzNZc2h3dHA0a2pGSWw0djlqSmFOR2w1cHU?oc=5"
+    }
+   ]
+  },
+  {
    "id": "fb8b318a049e",
    "title": "10-Year-Old NGINX HTTP/2 Flaw Lets Unauthenticated Attackers Execute Code on Servers",
    "link": "https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html",
@@ -1299,34 +1393,6 @@
    ]
   },
   {
-   "id": "7136ac7a9136",
-   "title": "Employers told to patch critical Java flaw immediately as AI-found bug hits staff login systems",
-   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNdkRfMkQ1d0pTbVpoT2dUOU9QdWQ3MmZHYnZ0cnJsaEp0bWQtdFZPOWx0RVpGVnFnSDVxU1A4dFFYajMtRUE3Y1lmRDEwVlQtTDVZeHJRbk5WcjkyMThiSDA4MWNaYjNRUTZTSnBXamxsRGwxbmpQbnFwMDRKRDJmQkhkMDVmNmptM3hrOUlvSXE4ckc1SFB0Q1B4cFF5c2lzVUN1SlFPTFFfa2lzOExXUVZmcHRUUjJUNmpNTjlKY19WdVBCamFEbWcweU9aSHVVMUlnNmMzTXg?oc=5",
-   "source": "Human Resources Director",
-   "feed": "ASD / ACSC in the news",
-   "region": "AU",
-   "published": "2026-11-18T06:21:04Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Vulnerability",
-    "Australia"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "also": [
-    {
-     "source": "Human Resources Director",
-     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxON2E0M29raG1wbXZOajRaSlk2RDBZRkk5bUN6ZnRsWjJDN3NsVWtvb0ZPZEcwRTNVNE9RSHpjQjFsOWFHUnBzb0hxbVhpaHJSV3EzYlBqSnpUQ1k4LThzWXROLTAyYjRCMkZ3VjQwTWQ1cjZGNUFxdDRyWXMzZHAzbFcwbDV0cmhBNlV4NFRpRFNsOEdjYWhmbzdESTRLNWVVaDZ1NEFvSS1oalpWZU52VFJTZlBDM0JsNC0xdE52WlhDdE84RGZjaEZrWER2V1NtSXo5eFpKZW0?oc=5"
-    },
-    {
-     "source": "HRM New Zealand",
-     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPeDlLLVJuR1FwSDd0bzVYVEpvdGpaT0NGMGlfM0hCNGJVRVQwbV9jdGdfNEFmWEUtdElIMGFndWlNNWNrVVB2dFZLMHgwT3Z5YThEdlJGdXFRWFNYTjBwbHc5a1VDUnowR1A4VnJNbHFHWTZCVHRwOFhKZnRBaTZKaml4QmFFX0ZKSmxOUUVNbXlqUUZvS21xNDZkWVNJY1NOdzRvZzFuQUpfelpLVnROanRENkhCUE9NMVdReVhhNzNZc2h3dHA0a2pGSWw0djlqSmFOR2w1cHU?oc=5"
-    }
-   ]
-  },
-  {
    "id": "ee9a23761ba0",
    "title": "Russian COLD RELIC Hackers Use Stolen Google Workspace Data to Breach Second U.S. Organization",
    "link": "https://thehackernews.com/2026/11/russian-cold-relic-hackers-use-stolen.html",
@@ -1722,6 +1788,25 @@
    ],
    "why": [
     "Real estate"
+   ]
+  },
+  {
+   "id": "75051cdcdb59",
+   "title": "Visa Confirms Third-Party Cyberattack as Ransomware Gang \"n0n\" Targets Financial Giants",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNVlc4OHQ5TUJQMWgza2RFM2JvSXkzVUFvT1V0aTNLdThudm1qM2VMdGRHendLLWdFbjE5RzJDS040c3RlekpjTFFlQWY1cDMtQWZyZ0dwaDFWTnBwZlBZYTZQZ2JyOEZYZFgydXltUUpMaHhhOElxa3lwVzZ1Mzg0cC1BSmxyV2ZfcVFZTDRRbWdJd3hPbk1YNDRtVnVEUkVQTUo2MXRaQUFtQUxzRWd1a29TQnRSQTBENHgxag?oc=5",
+   "source": "OODA Loop",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-17T17:05:15Z",
+   "summary": "",
+   "score": 9,
+   "tags": [
+    "Ransomware",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Ransomware",
+    "SaaS / cloud"
    ]
   },
   {
@@ -7149,107 +7234,6 @@
    "score": 1,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "0955fa7f8eb5",
-   "title": "CVE-2026-116779: SignalWire FreeSwitch — SignalWire FreeSwitch Code Injection Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-116779",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-11-09T00:00:00Z",
-   "summary": "SignalWire FreeSwitch contains a code injection vulnerability that permits configuration and credential disclosure, arbitrary call control, and command execution. CISA remediation due 2026-11-12.",
-   "score": 6,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Identity",
-    "Vulnerability"
-   ],
-   "why": [
-    "Identity",
-    "Vulnerability"
-   ],
-   "epss": 0.2208
-  },
-  {
-   "id": "a4fa5d886e28",
-   "title": "CVE-2026-102895: GPUStack GPUStack — GPUStack Improper Authentication Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-102895",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-11-09T00:00:00Z",
-   "summary": "GPUStack contains an improper authentication vulnerability which could allow unauthenticated administrative access, including user and model changes, persistent administrator API-key creation, disclosure of worker and cloud-provider secrets, and code… CISA remediation due 2026-11-12.",
-   "score": 4,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.0573
-  },
-  {
-   "id": "52a8685b69f8",
-   "title": "CVE-2026-123158: OpenBSD OpenSSH — OpenBSD OpenSSH Unexpected Status Code or Return Value Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-123158",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-11-09T00:00:00Z",
-   "summary": "OpenBSD OpenSSH on Linux contains an unexpected status code or return value vulnerability that could allow for authentication bypass. CISA remediation due 2026-11-12.",
-   "score": 4,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.189
-  },
-  {
-   "id": "2464fd9dd158",
-   "title": "CVE-2026-123218: IBM Aspera Faspex — IBM Aspera Faspex Incorrect Authorization Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-123218",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-11-09T00:00:00Z",
-   "summary": "IBM Aspera Faspex contains an incorrect authorization vulnerability that could allow an authenticated user to craft a specific message to bypass authorization, causing privilege escalations. CISA remediation due 2026-11-12.",
-   "score": 4,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.0053
-  },
-  {
-   "id": "840fc9184c68",
-   "title": "Iris Ohyama data cloud breach exposes info of 7.7 million customers",
-   "link": "https://www.bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-08T15:43:08Z",
-   "summary": "Japanese manufacturer Iris Ohyama, the operator of the Iris Plaza shopping platform, disclosed that personal information belonging to about 7.7 million people may have been exposed after unauthorized access to a third-party cloud service the company used. [...]",
-   "score": 6,
-   "tags": [
-    "Data breach",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Data breach",
-    "SaaS / cloud"
-   ]
   }
  ]
 }
