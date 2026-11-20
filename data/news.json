@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-20T02:20:59Z",
+ "generated": "2026-11-20T11:43:50Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -22,19 +22,19 @@
   {
    "name": "ASD / ACSC in the news",
    "ok": true,
-   "count": 3,
+   "count": 5,
    "error": null
   },
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 4,
+   "count": 7,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 3,
+   "count": 4,
    "error": null
   },
   {
@@ -70,7 +70,7 @@
   {
    "name": "Krebs on Security",
    "ok": true,
-   "count": 4,
+   "count": 3,
    "error": null
   },
   {
@@ -100,11 +100,277 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 31,
+   "count": 33,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "3827cbac510e",
+   "title": "SBC Medical Group Data Breach Impacts Over 2 Million",
+   "link": "https://www.securityweek.com/sbc-medical-group-data-breach-impacts-over-2-million/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-20T11:36:51Z",
+   "summary": "Threat actors accessed databases containing customer information associated with clinics in Japan. The post SBC Medical Group Data Breach Impacts Over 2 Million appeared first on SecurityWeek .",
+   "score": 4,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/hackers-steal-data-of-16-million-sbc-medical-group-customers/"
+    }
+   ]
+  },
+  {
+   "id": "6a744f24eada",
+   "title": "F5 releases emergency patches for critical BIG-IP RCE flaws",
+   "link": "https://www.bleepingcomputer.com/news/security/f5-releases-emergency-patches-for-critical-big-ip-rce-flaws/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-20T10:57:43Z",
+   "summary": "US cybersecurity company F5 warned customers to patch five critical BIG-IP vulnerabilities that attackers can exploit to trigger denial-of-service (DoS) or gain remote code execution. [...]",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/f5-warns-6-critical-big-ip-flaws-can.html"
+    }
+   ]
+  },
+  {
+   "id": "2be32b97a1a6",
+   "title": "European Commission Confirms AI-Assisted Cyberattack Disrupted Services",
+   "link": "https://www.securityweek.com/european-commission-confirms-ai-assisted-cyberattack-disrupted-services/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-20T10:51:42Z",
+   "summary": "The Commission took certain services offline to contain the incident, but it has no evidence of a data breach. The post European Commission Confirms AI-Assisted Cyberattack Disrupted Services appeared first on SecurityWeek .",
+   "score": 3,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "b6dced9e8be0",
+   "title": "SonicWall Warns Gen 6 Firewalls Won't Get Security Patches, Even for Critical Flaws",
+   "link": "https://thehackernews.com/2026/11/sonicwall-warns-gen-6-firewalls-wont.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-20T10:38:22Z",
+   "summary": "SonicWall has urged all customers still running Generation 6 firewalls to retire and replace them immediately and stop exposing the devices on the internet edge, citing security risks fueled by AI-assisted attacks. \"Attackers now use automation and AI to find and exploit unsupported edge devices…",
+   "score": 5,
+   "tags": [
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "why": [
+    "Edge devices",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "f5b6ed0f978c",
+   "title": "Ruby Patches Ruby2Shell Vulnerability That Could Lead to RCE",
+   "link": "https://www.securityweek.com/ruby-patches-ruby2shell-vulnerability-that-could-lead-to-rce/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-20T10:34:10Z",
+   "summary": "Tracked as CVE-2026-132825, the bug is a heap-based buffer overflow that could lead to remote code execution (RCE). The post Ruby Patches Ruby2Shell Vulnerability That Could Lead to RCE appeared first on SecurityWeek .",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0017,
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/ruby-releases-fixes-for-7-regex-and.html"
+    }
+   ]
+  },
+  {
+   "id": "c9ddefa65f50",
+   "title": "Hackers Exploit Critical Cisco Expressway Flaw, Breach Four Devices and Reach Internal Network",
+   "link": "https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-20T10:32:50Z",
+   "summary": "Threat actors have been observed exploiting a recently disclosed critical security flaw in Cisco Expressway to breach a Russian organization shortly after the public release of a proof-of-concept (PoC) exploit. The activity involves the exploitation of CVE-2026-76466 (CVSS score: 9.8), a…",
+   "score": 8,
+   "tags": [
+    "Data breach",
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "why": [
+    "Data breach",
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "epss": 0.0042,
+   "also": [
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/hackers-exploit-cisco-expressway-vulnerability-soon-after-poc-release/"
+    }
+   ]
+  },
+  {
+   "id": "09d3f14eaae7",
+   "title": "Windows 11 KB5132057 update released with 28 changes and fixes",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5132057-update-released-with-28-changes-and-fixes/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-20T09:25:35Z",
+   "summary": "Microsoft released the KB5132057 November Windows 11 preview update, which comes with 28 changes, including improvements to Windows Search, Windows Hello, and the Run dialog. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "1842d6db44a6",
+   "title": "N-able Blames Service Disruption on Cyberattack",
+   "link": "https://www.securityweek.com/n-able-blames-service-disruption-on-cyberattack/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-20T09:08:35Z",
+   "summary": "The incident affected Mail Assure and SpamExperts Hosted Cloud and could have led to credential theft. The post N-able Blames Service Disruption on Cyberattack appeared first on SecurityWeek .",
+   "score": 2,
+   "tags": [
+    "Identity"
+   ],
+   "why": [
+    "Identity"
+   ]
+  },
+  {
+   "id": "009f6643a854",
+   "title": "JPMorgan, Visa, Mastercard Cite Third-Party Incidents Amid Data Leak",
+   "link": "https://www.securityweek.com/jpmorgan-visa-mastercard-cite-third-party-incidents-amid-data-leak/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-20T07:35:46Z",
+   "summary": "The companies point to third-party providers after the N0n extortion group leaked data allegedly tied to their customers. The post JPMorgan, Visa, Mastercard Cite Third-Party Incidents Amid Data Leak appeared first on SecurityWeek .",
+   "score": 10,
+   "tags": [
+    "Ransomware",
+    "Data breach",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Ransomware",
+    "Data breach",
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "ba74506a96ac",
+   "title": "ROMULUS ClickFix Attacks Deliver RAT That Can Spy on Users and Control PCs",
+   "link": "https://thehackernews.com/2026/11/romulus-clickfix-attacks-deliver-rat.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-20T07:11:39Z",
+   "summary": "Threat actors have been observed using the ROMULUS ClickFix malware delivery platform to deliver a previously undocumented remote access trojan (RAT) that shares similarities with CNCMachineRMS. \"ROMULUS likely operates as a delivery service, distributing CNCMachineRMS and Legion Loader through…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "c63b78669bf8",
+   "title": "UK MPs Warn of Cyber Risks as Coles Investigates Breach",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9fNGtWblJtMk9MNzVyUWZWeGMyS1dLYlY5NEFBT1drVk9VQVdYQTRva2JudWZNcy13QTNPUHVqSTJDQUYweE9BdG5ZYW8ya21aRlNtWUlHMjY2WjI1SjRXbGJHTEVGY3BScjJZalJybjRkaEtRWXc?oc=5",
+   "source": "cwibc.co.id",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-20T06:43:54Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "fa700a4eb8ce",
+   "title": "New Unpatched Windows 0-Day FastUnlock Lets Someone Holding a Locked PC Run Programs on It",
+   "link": "https://thehackernews.com/2026/11/new-unpatched-windows-0-day-fastunlock.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-20T05:30:01Z",
+   "summary": "A newly disclosed unpatched zero-day technique called FastUnlock lets someone with physical access to a locked Windows computer start programs without signing in. Whoever uses it gets only a limited account, not administrator control of the machine. The method was posted yesterday by a researcher…",
+   "score": 5,
+   "tags": [
+    "Actively exploited"
+   ],
+   "why": [
+    "Actively exploited"
+   ]
+  },
+  {
+   "id": "75ef3449bb34",
+   "title": "Exclusive: Hitachi Vantara informs employees, including Aussies, of data breach",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPTHRDV1k5QU1sYVgwLUhWZGd1SEg4ZlJuSUVuZnNLQ09uRWswdjFSaTc0WDN1eGdST0daYnFLUDgzdzUwU0hLeTF5RXo5b0VBamlXaG1icmtLRnBKZWx3Y1oxZFItSzdxT0E3ZTEtRVlMdzNBNjh1Z0txTUE0TEJKUkFGVTZtdVZqOFdnWDFseDZWanBCZjhPVFc4bmxJQ1FJUXZZUERQVUlPbWhhRmJiUWRtT1BUVWZN?oc=5",
+   "source": "Cyber Daily",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-20T05:23:24Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "429b470350f4",
+   "title": "Rocket Mortgage Fined $6.7M By NYDFS Over Cyber Lapses",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPMjZqOXRicHh2YmE4aWVmNWNJQmh2ejZ4aDFRR2VwUF9zMGZVNHhuVUp2NFpxMUo0b0FWbnhlT0RKWHh6WFJrRUFTb1FoM2E0bWFiTWVPai1vMXhSMWczY1RqOGM4LWxyY2ZaX3N0QTd0RjFJaGNOVkdtQmduVC1FQXNhcXY4Snphdjl1QTA2NlhlcnY2NkVPbGpQenJrNjQ5Wm9KVXBjMzQzMzU2VEN2cm5VQ3Jrb1dPeEgwczNRRGo0VUx6VVHSAXNBVV95cUxOVnJsMG1RbW1oTjhUM0VwX19nTTR1cWZnT3lGY1RBTmkwenZOMnlFczMzVUp2ekZQeHNmU0NUeGJjR2wzMFJkYXR5bGVuejZ0d1l6N0JicmlfZm1OazhlbVEwdGR4YVFHNHdxY3pGWTVyY3dj?oc=5",
+   "source": "Law360",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-20T02:40:21Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
   {
    "id": "e60f53cef3c6",
    "title": "ISC Stormcast For Friday, November 20th, 2026 https://isc.sans.edu/podcastdetail/10188, (Fri, Nov 20th)",
@@ -119,13 +385,13 @@
    "why": []
   },
   {
-   "id": "79612d7d295c",
+   "id": "9306f26c4757",
    "title": "Medicare breach review prompts AI collaboration demand",
-   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSEdEWGhIMTBSZXRPUFdtNVUyd1pzYkpNUWltMDFiNzVUalZnSDhxUlRkV3BjdkNMV0hHMk45TnB2Q3NzOXM1cDFrZ0lNRFpWMW9wcGl0RWZCdVBwZ0FPSzRLX2owZElyWnFDOWRCUGFESTNxSkFFVUh1Z2RxNzRMQ2xBMnF5SXR4aHdfMVJtRQ?oc=5",
-   "source": "https://aapnews.aap.com.au/",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0tUC1SQ0ZRMVNMb284WVZZWjczbkZDZGxQUGpNZXpHM21GeDZ5S0pia0tpQWRSVE5kU2lodnBJV3hJS1lVWld3NnA5RTFqdVNfelhhek5GUnNINGcwd1MtSnhsMERpWmNkWEhWMFg1T1l2NFJqLVVSbXFUOUQyN0k?oc=5",
+   "source": "Yahoo News Australia",
    "feed": "ASD / ACSC in the news",
    "region": "AU",
-   "published": "2026-11-20T01:58:57Z",
+   "published": "2026-11-20T01:54:42Z",
    "summary": "",
    "score": 9,
    "tags": [
@@ -134,6 +400,12 @@
    ],
    "why": [
     "Data breach"
+   ],
+   "also": [
+    {
+     "source": "https://aapnews.aap.com.au/",
+     "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSEdEWGhIMTBSZXRPUFdtNVUyd1pzYkpNUWltMDFiNzVUalZnSDhxUlRkV3BjdkNMV0hHMk45TnB2Q3NzOXM1cDFrZ0lNRFpWMW9wcGl0RWZCdVBwZ0FPSzRLX2owZElyWnFDOWRCUGFESTNxSkFFVUh1Z2RxNzRMQ2xBMnF5SXR4aHdfMVJtRQ?oc=5"
+    }
    ]
   },
   {
@@ -158,7 +430,32 @@
     {
      "source": "SecurityWeek",
      "url": "https://www.securityweek.com/newly-patched-vmware-vcenter-flaw-exploited-as-zero-day-by-chinese-apt/"
+    },
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html"
+    },
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html"
     }
+   ]
+  },
+  {
+   "id": "2f9c8bfc0431",
+   "title": "Thousands of customers have data leaked after cyberattack at Visa, Mastercard and US banking giant",
+   "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOX3d4ajVGSjB1ZFJKQmZTd1BmODVSbEhoOEFTVUZtVHVGRUJQYkhEVlhnX01mdWRHa2tINWpoOWNUSWlxNFhsUWdHb1lYRVdqZThoV19hMG55ZmZyM0dFUlp3Z1dpYUlpUUtwaTRzRElGQ1Zod0RGUmZzV0drcXBlTGI2ZlRWLWJBQUJjQ0dGbkZVUDExclNpUDRQdmZZYVV2RE1kMjc3WnczcFgtRGNxVGtZdGljQWU5UjdTNTcyc3RIWm9sQ0Nmall1NUhDeWk5SVV1YnBGRXhXakxPRTYydjE4OFFTUDd4?oc=5",
+   "source": "Nine.com.au",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-19T23:17:27Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
    ]
   },
   {
@@ -173,23 +470,6 @@
    "score": 0,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "df29d71aedcb",
-   "title": "Hackers steal data of 1.6 million SBC Medical Group customers",
-   "link": "https://www.bleepingcomputer.com/news/security/hackers-steal-data-of-16-million-sbc-medical-group-customers/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-19T22:25:42Z",
-   "summary": "SBC Medical Group has warned in a filing with the U.S. Securities and Exchange Commission (SEC) that two cybersecurity incidents exposed sensitive customer and employee information, including personal data belonging to 1.6 million people. [...]",
-   "score": 3,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
   },
   {
    "id": "3797ecb529a5",
@@ -330,19 +610,6 @@
    ]
   },
   {
-   "id": "7008c485fa38",
-   "title": "Critical VMware vCenter Flaw (CVSS 9.8) Lets Network Attackers Bypass Authentication",
-   "link": "https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-19T15:11:06Z",
-   "summary": "A critical flaw in VMware vCenter lets an attacker with network access bypass authentication and gain unauthorized access to the system, Broadcom, which owns VMware, said in an advisory published today. Fixed versions are out for all supported branches, and the company lists no workaround. vCenter…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
    "id": "75044bab3e73",
    "title": "Five warning signs of ransomware breach before encryption or data theft",
    "link": "https://www.bleepingcomputer.com/news/security/five-warning-signs-of-ransomware-breach-before-encryption-or-data-theft/",
@@ -432,25 +699,6 @@
    "score": 0,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "5e668a30271b",
-   "title": "Hackers Exploit Cisco Expressway Vulnerability Soon After PoC Release",
-   "link": "https://www.securityweek.com/hackers-exploit-cisco-expressway-vulnerability-soon-after-poc-release/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-19T13:12:20Z",
-   "summary": "Attackers hacked clustered Cisco Expressway devices at a Russian organization and prepared tooling for lateral movement. The post Hackers Exploit Cisco Expressway Vulnerability Soon After PoC Release appeared first on SecurityWeek .",
-   "score": 5,
-   "tags": [
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "why": [
-    "Edge devices",
-    "Vulnerability"
-   ]
   },
   {
    "id": "df5a560c1b8f",
@@ -642,23 +890,6 @@
    ],
    "why": [
     "Edge devices"
-   ]
-  },
-  {
-   "id": "ef3cecb6fd50",
-   "title": "Ruby Releases Fixes for 7 Regex and String Flaws, Warns 5 Have Proof-of-Concept RCE",
-   "link": "https://thehackernews.com/2026/11/ruby-releases-fixes-for-7-regex-and.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-19T08:42:11Z",
-   "summary": "Ruby contains seven memory-safety flaws in its regular expression engine and its string case-conversion code. For five of them, its maintainers say, proof-of-concept exploits, or PoCs, have shown that crafted input can run code on the machine. \"We are aware of PoCs that prove some of them can be…",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
    ]
   },
   {
@@ -865,6 +1096,23 @@
    ]
   },
   {
+   "id": "8279636dce8a",
+   "title": "TfL photocard breach exposes 265,000 customers",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE80WmJDU1M5SVREODQtdHVteFZsRklyMzdleW16OWJ5RTZ3YmYtSFFfVUM5eGE1NEVLdFBwUXVtRm5OckhacXMzYnpVZ2pyQmJhSnRyN2FzUDZwRFk1aVZ5cHI1MmtUbXdKeC1ocUdBNVRCME9MNERERHctY2ZRdw?oc=5",
+   "source": "Yahoo News Australia",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-18T20:49:58Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
    "id": "ede0adf4c578",
    "title": "Coinbase blocks $4.7 million in transfers to Elon Musk deepfake scam",
    "link": "https://www.bleepingcomputer.com/news/security/coinbase-blocks-47-million-in-transfers-to-elon-musk-deepfake-scam/",
@@ -963,30 +1211,6 @@
    ]
   },
   {
-   "id": "1b1d514c9cb5",
-   "title": "Employers told to patch critical Java flaw immediately as AI-found bug hits staff login systems",
-   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxON2E0M29raG1wbXZOajRaSlk2RDBZRkk5bUN6ZnRsWjJDN3NsVWtvb0ZPZEcwRTNVNE9RSHpjQjFsOWFHUnBzb0hxbVhpaHJSV3EzYlBqSnpUQ1k4LThzWXROLTAyYjRCMkZ3VjQwTWQ1cjZGNUFxdDRyWXMzZHAzbFcwbDV0cmhBNlV4NFRpRFNsOEdjYWhmbzdESTRLNWVVaDZ1NEFvSS1oalpWZU52VFJTZlBDM0JsNC0xdE52WlhDdE84RGZjaEZrWER2V1NtSXo5eFpKZW0?oc=5",
-   "source": "Human Resources Director",
-   "feed": "ASD / ACSC in the news",
-   "region": "AU",
-   "published": "2026-11-18T19:08:48Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Vulnerability",
-    "Australia"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "also": [
-    {
-     "source": "HRM New Zealand",
-     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPeDlLLVJuR1FwSDd0bzVYVEpvdGpaT0NGMGlfM0hCNGJVRVQwbV9jdGdfNEFmWEUtdElIMGFndWlNNWNrVVB2dFZLMHgwT3Z5YThEdlJGdXFRWFNYTjBwbHc5a1VDUnowR1A4VnJNbHFHWTZCVHRwOFhKZnRBaTZKaml4QmFFX0ZKSmxOUUVNbXlqUUZvS21xNDZkWVNJY1NOdzRvZzFuQUpfelpLVnROanRENkhCUE9NMVdReVhhNzNZc2h3dHA0a2pGSWw0djlqSmFOR2w1cHU?oc=5"
-    }
-   ]
-  },
-  {
    "id": "fb8b318a049e",
    "title": "10-Year-Old NGINX HTTP/2 Flaw Lets Unauthenticated Attackers Execute Code on Servers",
    "link": "https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html",
@@ -1003,23 +1227,6 @@
     "Vulnerability"
    ],
    "epss": 0.0636
-  },
-  {
-   "id": "11aa6bef2bfb",
-   "title": "F5 Warns 6 Critical BIG-IP Flaws Can Crash Traffic in Specific Setups, May Allow RCE",
-   "link": "https://thehackernews.com/2026/11/f5-warns-6-critical-big-ip-flaws-can.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-18T18:15:39Z",
-   "summary": "Six critical vulnerabilities in F5 BIG-IP allow an attacker to crash the Traffic Management Microkernel (TMM) without logging in, disrupting traffic until the TMM restarts. Each flaw needs a specific setup on a virtual server: an iRule that uses a particular command, or an APM policy that includes…",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
   },
   {
    "id": "9c40ff9a7698",
@@ -1420,6 +1627,30 @@
     {
      "source": "BleepingComputer",
      "url": "https://www.bleepingcomputer.com/news/security/critical-java4shell-flaw-allows-rce-attacks-on-major-java-applications/"
+    }
+   ]
+  },
+  {
+   "id": "7136ac7a9136",
+   "title": "Employers told to patch critical Java flaw immediately as AI-found bug hits staff login systems",
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNdkRfMkQ1d0pTbVpoT2dUOU9QdWQ3MmZHYnZ0cnJsaEp0bWQtdFZPOWx0RVpGVnFnSDVxU1A4dFFYajMtRUE3Y1lmRDEwVlQtTDVZeHJRbk5WcjkyMThiSDA4MWNaYjNRUTZTSnBXamxsRGwxbmpQbnFwMDRKRDJmQkhkMDVmNmptM3hrOUlvSXE4ckc1SFB0Q1B4cFF5c2lzVUN1SlFPTFFfa2lzOExXUVZmcHRUUjJUNmpNTjlKY19WdVBCamFEbWcweU9aSHVVMUlnNmMzTXg?oc=5",
+   "source": "Human Resources Director",
+   "feed": "ASD / ACSC in the news",
+   "region": "AU",
+   "published": "2026-11-18T06:21:04Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Vulnerability",
+    "Australia"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "also": [
+    {
+     "source": "HRM New Zealand",
+     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPeDlLLVJuR1FwSDd0bzVYVEpvdGpaT0NGMGlfM0hCNGJVRVQwbV9jdGdfNEFmWEUtdElIMGFndWlNNWNrVVB2dFZLMHgwT3Z5YThEdlJGdXFRWFNYTjBwbHc5a1VDUnowR1A4VnJNbHFHWTZCVHRwOFhKZnRBaTZKaml4QmFFX0ZKSmxOUUVNbXlqUUZvS21xNDZkWVNJY1NOdzRvZzFuQUpfelpLVnROanRENkhCUE9NMVdReVhhNzNZc2h3dHA0a2pGSWw0djlqSmFOR2w1cHU?oc=5"
     }
    ]
   },
@@ -7020,217 +7251,6 @@
    "published": "2026-11-09T11:20:09Z",
    "summary": "Hackers stole personal, health, and insurance information, including Social Security numbers, from the company’s internal systems. The post Amplifon Americas Data Breach Impacts 1.3 Million appeared first on SecurityWeek .",
    "score": 4,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "a02fb0af2916",
-   "title": "Web3Auth Flaw Exploited to Steal Keplr Crypto, Provider Empties Other Wallets for Safety",
-   "link": "https://thehackernews.com/2026/11/web3auth-flaw-exploited-to-steal-keplr.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-09T10:56:25Z",
-   "summary": "Some people who set up a Keplr crypto wallet with their Google or Apple account have had money stolen by an attacker. Keplr uses a company called Web3Auth to run that Google and Apple sign-in. The attacker used a security flaw at that company to reach the wallets, both companies said late last…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "ee82be2e9953",
-   "title": "Who Gives A Crap: Data breach at ethical toilet paper company exposes customer information across UK, US and Australia",
-   "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPVi1FSHRrNUlXcW9qRXFtU3dpN2w5Zk5WVVl6NkJaSThhR3Nxd1pvS1pmbk45SjRQc3RuLVRPM2ZLQktwRGpITzV0ZWRWOG5oMVNfODFlb2o4SzRFMFZTVXNQd1JWNU5zT0RXWFJNa2wzTUI0eGNEQjM3TGF3M2JUZUdFOWZ4U3Y0VDBwbUtleHJCcklvOXRnMDBYMEduSmV5YzdOZWNXREp6eV9mNm1TbHczRWd6SHRlYWNLQk9naUhCRU1FWGxFakxBUFBPNjZGQmlra1VDU29HdEFyTkNiTUROdlpSMTFwSWl3?oc=5",
-   "source": "TechRadar",
-   "feed": "AU breach news",
-   "region": "AU",
-   "published": "2026-11-09T10:53:40Z",
-   "summary": "",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "Data breach"
-   ],
-   "why": [
-    "Australia",
-    "Data breach"
-   ],
-   "also": [
-    {
-     "source": "SmartCompany",
-     "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPcWxMSUlMdlNwQjFOT29ORTJoVFMyNkZrNk8wN0dPYl95dnBwUXBtcm83U2F5RkxiNGpoRXJ1Yy1tRlJGZ05vY2xXR2swb3JDWEtNSjg1aktrTUdONWdIWWNLNW1mdGNtUE1md2ZPcGY0QVdNV1RmZVBrYW9DQ3lQdFVESy1RZzhvUk9xWGl3Q1dKY01ENUNXQXBBSEhWU3hYUEhza1hpWlI2SWlsT3BZWTBZUWFpSEZmU09jTVdaSzFYYkppejdlQXlNRm0yUQ?oc=5"
-    },
-    {
-     "source": "Cyber Daily",
-     "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOa01IQjFkWGxNaTBZSFNMMENBWHloTzZKTE9RWTNmdUFfeVlfY1dXeUhocFhWWnM0VUN6eXVfQjR5dzVDUDV5N2Q1UHlSLUp1VU1leWhRYXVvRTU2aE9xLUpPZlNtWklSd3M5TG9JNTA3MjBoai1ONVo1aUxHRDhTbnNqRGNjaEtlaUIzWHpJeVF4eFVhZU1TcDFVdmpScjZaTXkycVpQZ1RpaFBMX3QwTFUzSXF5RTF3dzJmZVRvTU1Wc1JEUHNN?oc=5"
-    },
-    {
-     "source": "ABC News & Headlines – Australian Broadcasting Corporation",
-     "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBOVXB4czlhUkZrcDJ4N3NEZUI0aEFmSENrNjdNTFp5QmEzQWs1RXBxcG9DMnVLY3FzVk1qSkFNOWFING9BLXhHc0hody1lTnNJRC0xRWZrMEZUMVF4TW84SFJ0V0F0QmlTWGZuNV9VRW9ocnloT200ZTZR?oc=5"
-    },
-    {
-     "source": "Cyber Daily",
-     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPYmxnRi1GdWgxSjM3S3Byc2JEZ0drMDFIeGg1QUZIVzl4YkhBeW5tVHpvSTB6UmZLcHJMZkVvVGpIdTJNYmpQYklhN1BOVkJFdTJ2U0RjQndhRloyX0kxY2I4YVlPTjNxLWNETl8yNnJ0VkJEbWVyekZiLVFiVXlEVVpBQlhfWEVnb2U5WXFGVjg2YVd0Yi1PZW5fM0ppMlBBOWFZS0MzSURtVFd2enRJM3VEV0Y?oc=5"
-    },
-    {
-     "source": "SC Media",
-     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPWEdMaHQ5cWtwajB6MVJTTkdjWGQ5QlBCa2VjT0RKNFNqM2dzdnNUMGNPb2g0QWY3QXNPM095LWJUTF9PdFgyRUh4UHJHLVJqNzVoRmlWZkZhVFZSOFpPUG1NQzBNOEtTQkRHakJjVjJSUXd4TlEtNkdSU3hjYlhPQk53N09UVXFBTEJQUjRDZURidkpEWDA2VFVKdXFwa254U1E?oc=5"
-    }
-   ]
-  },
-  {
-   "id": "c814a312aa03",
-   "title": "News - Australian healthcare provider suffers ransomware attack, patient records stolen",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNVlRQaXBwc2xWdVdSU1dpU0s2aF9yUW40Q25GN3R5djBha0c4T3dkR3dZNjhxdWg3TkRWVkZhRW5oY18yRDZtYktzNW5Lek1hVVRReWl6NjFSVk45UFRDaEZoUW5iaU5hajM2WEcyREZBOXRWa29CNHpXamh3cHRnZ1NlSXBQVUI0Q3pjdjZjX0M4MHdIb21DOVFUcDVadE9Ibm1zajQtWHdjanhQQXdtaTZOZVg?oc=5",
-   "source": "teiss",
-   "feed": "AU breach news",
-   "region": "AU",
-   "published": "2026-11-09T10:41:20Z",
-   "summary": "",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "Ransomware"
-   ],
-   "why": [
-    "Australia",
-    "Ransomware"
-   ]
-  },
-  {
-   "id": "3c0c651efea8",
-   "title": "Over 3 Million People Hit by Frontline Education Data Breach",
-   "link": "https://www.securityweek.com/3-million-people-hit-by-frontline-education-data-breach/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-09T10:09:02Z",
-   "summary": "Frontline Education told Indiana regulators that its August data breach affected over 3 million school district staff and students. The post Over 3 Million People Hit by Frontline Education Data Breach appeared first on SecurityWeek .",
-   "score": 4,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "62af4291e17c",
-   "title": "LNbits Urges All Operators to Shut Down Their Bitcoin Lightning Wallet Servers Amid Attacks",
-   "link": "https://thehackernews.com/2026/11/lnbits-urges-all-operators-to-shut-down.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-09T10:01:21Z",
-   "summary": "Everyone running LNbits, a free, open-source Bitcoin Lightning wallet system, should shut down their servers now because of a wave of attacks, the project said yesterday. It has several security fixes to release and asked operators to be careful until they are out. One operator said new accounts…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "e8082cc54dfb",
-   "title": "Taiwan-Based Hacker Used BOSSAI AI Agents to Steal Taipei Emergency Dispatch Records",
-   "link": "https://thehackernews.com/2026/11/taiwan-based-hacker-used-bossai-ai.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-09T09:01:50Z",
-   "summary": "A single attacker using AI agents pulled emergency dispatch records covering seven Taipei districts, researchers at Acronis's Threat Research Unit said last week. The agents also found a Taipei fire department platform exposing patient data from 2018, including ECG readings and ambulance video…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "33c824e20702",
-   "title": "Google DeepMind’s AI Agents Make 1024-Bit RSA Keys Cheaper to Attack",
-   "link": "https://www.securityweek.com/google-deepminds-ai-agents-make-1024-bit-rsa-keys-cheaper-to-attack/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-09T08:35:50Z",
-   "summary": "Working with cryptographers, DeepMind’s AI agents cut the cost of forging RSA-1024 signatures and found a cheaper way to factor keys. The post Google DeepMind’s AI Agents Make 1024-Bit RSA Keys Cheaper to Attack appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "a2c922a06d73",
-   "title": "Former OpenAI Engineer Pleads Not Guilty to Planting Covert Device in Executive Meeting Room",
-   "link": "https://thehackernews.com/2026/11/former-openai-engineer-pleads-not.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-09T07:05:48Z",
-   "summary": "The OpenAI engineer who was arrested and charged last month for planting a covert audio recording device in the company's office has pleaded not guilty. According to reports from Bloomberg and CNBC, Saudi national Abdulrahman Alfozan made an appearance in San Francisco federal court on Friday,…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "df6a1e5a88d8",
-   "title": "U.S. Agencies Warn Refrigeration Controller Attacks Could Cause Fires and Inventory Losses",
-   "link": "https://thehackernews.com/2026/11/us-agencies-warn-refrigeration.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-09T06:15:10Z",
-   "summary": "U.S. government agencies have warned that threat actors are actively targeting industrial refrigeration and cold-chain monitoring systems globally with an aim to cause service disruptions, fire hazards, and loss of inventory. \"The actors may exploit vulnerabilities or weaknesses in unpatched or…",
-   "score": 0,
-   "tags": [],
-   "why": [],
-   "also": [
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/us-agencies-urge-organizations-to-harden-refrigeration-controllers/"
-    }
-   ]
-  },
-  {
-   "id": "3d5dfb277e1d",
-   "title": "CISA Flags SonicWall SonicOS MFA Bypass Flaw Amid Reports of Possible Exploitation",
-   "link": "https://thehackernews.com/2026/11/cisa-flags-sonicwall-sonicos-mfa-bypass.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-09T06:05:24Z",
-   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a high-severity vulnerability impacting SonicWall SonicOS to its Known Exploited Vulnerabilities (KEV) catalog, following reports that it said may have been exploited in real-world attacks. The vulnerability, tracked as…",
-   "score": 11,
-   "tags": [
-    "Actively exploited",
-    "Identity",
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "why": [
-    "Actively exploited",
-    "Identity",
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "also": [
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/sonicwall-patches-exploited-sonicos-bug-that-weakens-vpn-logins/"
-    },
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/"
-    }
-   ]
-  },
-  {
-   "id": "afec0fe2ee1d",
-   "title": "Weekly Recap: Breach contained and Burdett acquisition completed",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNdHJqTmUwbDdjcEphVDJuM193RmNaWWdyYllTdGpOLUpQRWNEOUZ5cldYMG9GWC1uX2d2cDF3elpLeHlpWFZDMEJaYTdtMlY2eTlLdlFNMi1hc3I1emQwSmktM2ZVZFRBUXI0ZGpjZzRwWTc3STI5T1doMVBhRGVaMW1UU1pZZ01XcGdlbVNfME5LS2ZjanZQUC1PV1BDMDJfSHh4NXRWNDJDZm40emZEX2tMemNPUWJtY29FS25iOVRhenM?oc=5",
-   "source": "TradingView",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-11-09T05:00:00Z",
-   "summary": "",
-   "score": 6,
    "tags": [
     "Data breach"
    ],
