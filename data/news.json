@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-21T00:04:43Z",
+ "generated": "2026-11-21T02:18:54Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -22,25 +22,25 @@
   {
    "name": "ASD / ACSC in the news",
    "ok": true,
-   "count": 3,
+   "count": 4,
    "error": null
   },
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 6,
+   "count": 8,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 5,
+   "count": 8,
    "error": null
   },
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 2,
+   "count": 1,
    "error": null
   },
   {
@@ -70,14 +70,14 @@
   {
    "name": "Krebs on Security",
    "ok": true,
-   "count": 3,
+   "count": 4,
    "error": null
   },
   {
    "name": "SANS ISC",
-   "ok": false,
-   "count": 0,
-   "error": "ParseError: syntax error: line 1, column 0"
+   "ok": true,
+   "count": 10,
+   "error": null
   },
   {
    "name": "Microsoft Security Blog",
@@ -105,6 +105,59 @@
   }
  ],
  "items": [
+  {
+   "id": "93138fbb4db2",
+   "title": "CTO of ‘RansomwareHelp’ Indicted for Wire Fraud",
+   "link": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
+   "source": "Krebs on Security",
+   "feed": "Krebs on Security",
+   "region": "Global",
+   "published": "2026-11-21T00:36:39Z",
+   "summary": "The chief technology officer and co-founder of ransomwarehelp.com, a six year old Florida business that claimed to use \"advanced cryptographic tools\" to restore data locked by ransomware, has been charged with wire fraud after an FBI sting operation found the company was simply paying the…",
+   "score": 11,
+   "tags": [
+    "BEC / payment fraud",
+    "Ransomware"
+   ],
+   "why": [
+    "BEC / payment fraud",
+    "Ransomware"
+   ]
+  },
+  {
+   "id": "e89dc6d3c200",
+   "title": "Palo Alto Sees Rising Cyber Budgets Amid AI Threats As Firms Tap ‘Emergency Funds’; CEO Nikesh Arora Says Applied Compute Bet Could Dwarf Cybersecurity Business",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOa2NyRXVicTc3dzNmc2lGTHJRbDBvVUpycnh0SHh2ZUItNVhHYXY5WVpLeWtzekdHR1U2M1dELTlRbGI4aWlUUFpGRGZJQ21MWFhfZ0tWOGhmTjRzSzF2MFhRSlUtWC1qTlp3dnF4NmpYcFMzMlhZRC1tb0dKOXhEd1V0QlAtUnMxcnA5RlUxOHJXMWg4ZXc?oc=5",
+   "source": "Yahoo Finance",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-21T00:30:00Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Edge devices"
+   ],
+   "why": [
+    "Edge devices"
+   ]
+  },
+  {
+   "id": "e017025f543b",
+   "title": "Hackers breach US agriculture department's farmer payment system that handles loans, insurance: Report | Hindustan Times",
+   "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPd1QzWm9tZFhGekkyZjFFazBjNVNsS0F3Vnl0eE0tMmV1ZllZVzIxZ0VfOFRBVzRJVEU4UHFpMUxNbjZmT2hWeTcwaldhcy1GY251d09sQVhYYmN2OHpudXFZNnUyNGZFUW1JX044QnIxbHU3aE5kZm9ZNTFfSktFWU1BMnl6eVlSUVltb0dvcFU2bGZWUmpoZ1hJQ0dTOVdheU9fVDhIcFVSSWlXRGpGcF9BOVZvV283aDlRaE5MdGFMZ2dKWmxFcGE5ZXRZV2Mybng0eDNkTUpDMFlPZjJoS0s2bHBmdUdsOXN5WEJ2OW9TRWhyOHRxMjVvN0FZTm_SAYQCQVVfeXFMUEdESF9yQXFLanNIdUI4ajhqUFozVGZTSU5BZlVydnV0djFSbExOM1pBcHRVN3NGSnFpajB3R0NoWEowVTJvN0MyVXE0WmdPYXZkMlZsaHZHSThWT2pzdm9ReEkxM3A0bmJqMEtoV2dhYjJtN2pGczFhakdJdExNZkQzOVAtb2xMbHFtQlBadEhHM1FfbFMtTk8ydk1DclFfbUxuOWp0bkE4UC0yTVlZWlNBOWpTcm5kcl9qQkh1R1VFbWwxVHNybUlnT3hjYUhpdWtPUXdhT1JScHBNU0FvNkNyNmZyWlloNDB0cmV4bkc0N09BQWhmSks4OWxIM0FCU2otYkQ?oc=5",
+   "source": "Hindustan Times",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-21T00:04:33Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
   {
    "id": "7995d8c6dbe3",
    "title": "Real estate influencers sued by N.J. authorities for allegedly scamming $1.5M from investors",
@@ -489,6 +542,23 @@
    ]
   },
   {
+   "id": "e5e1b7c9c1fc",
+   "title": "Toronto real estate brokerage registration suspended after buyers say deposits not returned",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQaXAycG5JWG1kN2Y3MXllZnRvb2xKS214SUc4OXA1ZXYxc3BqaGdMTFJjbUc1Um5yaXAyOXA5RDhLaWFXb2lhZjBDX1BqYTJualdtSkJ0aE5jRzFZTmdNRGVJd1VHdXlRcUlGai01ZUYwUS13UmxIS1RXalZndTItbjdMUERTcmNiOU05LWZrNHJkWnFteXN1TGF1TTM4Z1B6NGlzTXBR?oc=5",
+   "source": "Global News",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-20T11:00:20Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
    "id": "6a744f24eada",
    "title": "F5 releases emergency patches for critical BIG-IP RCE flaws",
    "link": "https://www.bleepingcomputer.com/news/security/f5-releases-emergency-patches-for-critical-big-ip-rce-flaws/",
@@ -754,13 +824,26 @@
    ]
   },
   {
-   "id": "3acd3a7dfce1",
+   "id": "e60f53cef3c6",
+   "title": "ISC Stormcast For Friday, November 20th, 2026 https://isc.sans.edu/podcastdetail/10188, (Fri, Nov 20th)",
+   "link": "https://isc.sans.edu/diary/rss/33538",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-11-20T02:00:02Z",
+   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "9306f26c4757",
    "title": "Medicare breach review prompts AI collaboration demand",
-   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPMlpRVHk5dDJadHhaX2h5b3RubFo1NklXSmM2Y19rZVV2LVo2dFpoa2VUekdoUmMxTzJrVTFOT1ZpdUpQTVYzNS1HdHRSUXozV2k4SENQczdkRWI0YmUydnNENklDQzNxTk9YS3JyOWNmMlpJT3Fod3RiSzN5VWpGX0ZOamF0ZXM?oc=5",
-   "source": "inkl",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0tUC1SQ0ZRMVNMb284WVZZWjczbkZDZGxQUGpNZXpHM21GeDZ5S0pia0tpQWRSVE5kU2lodnBJV3hJS1lVWld3NnA5RTFqdVNfelhhek5GUnNINGcwd1MtSnhsMERpWmNkWEhWMFg1T1l2NFJqLVVSbXFUOUQyN0k?oc=5",
+   "source": "Yahoo News Australia",
    "feed": "ASD / ACSC in the news",
    "region": "AU",
-   "published": "2026-11-20T02:00:41Z",
+   "published": "2026-11-20T01:54:00Z",
    "summary": "",
    "score": 9,
    "tags": [
@@ -776,23 +859,10 @@
      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSEdEWGhIMTBSZXRPUFdtNVUyd1pzYkpNUWltMDFiNzVUalZnSDhxUlRkV3BjdkNMV0hHMk45TnB2Q3NzOXM1cDFrZ0lNRFpWMW9wcGl0RWZCdVBwZ0FPSzRLX2owZElyWnFDOWRCUGFESTNxSkFFVUh1Z2RxNzRMQ2xBMnF5SXR4aHdfMVJtRQ?oc=5"
     },
     {
-     "source": "Yahoo News Australia",
-     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0tUC1SQ0ZRMVNMb284WVZZWjczbkZDZGxQUGpNZXpHM21GeDZ5S0pia0tpQWRSVE5kU2lodnBJV3hJS1lVWld3NnA5RTFqdVNfelhhek5GUnNINGcwd1MtSnhsMERpWmNkWEhWMFg1T1l2NFJqLVVSbXFUOUQyN0k?oc=5"
+     "source": "inkl",
+     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPMlpRVHk5dDJadHhaX2h5b3RubFo1NklXSmM2Y19rZVV2LVo2dFpoa2VUekdoUmMxTzJrVTFOT1ZpdUpQTVYzNS1HdHRSUXozV2k4SENQczdkRWI0YmUydnNENklDQzNxTk9YS3JyOWNmMlpJT3Fod3RiSzN5VWpGX0ZOamF0ZXM?oc=5"
     }
    ]
-  },
-  {
-   "id": "e60f53cef3c6",
-   "title": "ISC Stormcast For Friday, November 20th, 2026 https://isc.sans.edu/podcastdetail/10188, (Fri, Nov 20th)",
-   "link": "https://isc.sans.edu/diary/rss/33538",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-11-20T02:00:02Z",
-   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
-   "score": 1,
-   "tags": [],
-   "why": []
   },
   {
    "id": "5eeea3c7e1ab",
@@ -1412,6 +1482,34 @@
    ]
   },
   {
+   "id": "6a6a681d4810",
+   "title": "Patch, protect, prevent: ASD issues cyber alert",
+   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9XRENHX3hLc0pwOUxibmtURzNHOHNlRkxQLVk3SHNiSDVuTGlaQ2lHc1gwYlZLR1cwYUZmdWdzMk9kdnNHWWU1akktR0pnUUVYSzAxeG8xQXkzRDA1U2s0emhtemNOWmY1X0tZTGMwRVhRYkVjNjFiXw?oc=5",
+   "source": "Australian Journal of Pharmacy",
+   "feed": "ASD / ACSC in the news",
+   "region": "AU",
+   "published": "2026-11-19T03:31:03Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Vulnerability",
+    "Australia"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "also": [
+    {
+     "source": "ACSC Alerts",
+     "url": "https://www.cyber.gov.au/alert/vulnerabilities-are-moving-quickly-so-patch-protect-prevent"
+    },
+    {
+     "source": "cyber.gov",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQWDZUR0oyZ1NOSnlOamdoNEVsQjRmNGwzUGg1TnlpUjlwV0g0SUZsMnR5THNrM25QVkhOTU5vRzhTTXBudW9ieGxfVEN1c18xNnU5YVk1Qk1PZEc4WGEyRkNfd0w3WDg4NUd5c3BIbWJ2VmpyUUJXWGlYem9WT3BWTENQUjUxV2JKdElwRHREYmJuWDZC?oc=5"
+    }
+   ]
+  },
+  {
    "id": "124ed4a5f3b2",
    "title": "ISC Stormcast For Thursday, November 19th, 2026 https://isc.sans.edu/podcastdetail/10186, (Thu, Nov 19th)",
    "link": "https://isc.sans.edu/diary/rss/33536",
@@ -1486,6 +1584,25 @@
    ],
    "why": [
     "Ransomware"
+   ]
+  },
+  {
+   "id": "3dd5d84cea3d",
+   "title": "Nvidia Probes Breach of Partner As Ransomware Group Claims It Stole Data",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQQVQ0cFpST2trdVNzUS0wXzNGUlVaM0dSYTZUdUpTakdISVFLT0Y2NVo0SlJQWUFGTGlxQXJMd3hLSUlqYzhhUGpudGwwSnRaaFpVOVVfNWl3MDMyVnZBV1B3b3JiNlJQR0s0MDRQdjlZM0tvRXRkZGZxMEllN09IMEZsZ3piZ2piT3RaRmtNcFc1QzMwRFdQMnV1RVVadzRadDBsdk56SVVTWmRnTEE?oc=5",
+   "source": "PCMag Australia",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-18T22:18:37Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Ransomware",
+    "Data breach"
+   ],
+   "why": [
+    "Ransomware",
+    "Data breach"
    ]
   },
   {
@@ -2924,36 +3041,6 @@
    "score": 1,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "fa8a2a790942",
-   "title": "Vulnerabilities are moving quickly, so patch, protect, prevent",
-   "link": "https://www.cyber.gov.au/alert/vulnerabilities-are-moving-quickly-so-patch-protect-prevent",
-   "source": "ACSC Alerts",
-   "feed": "ACSC Alerts",
-   "region": "AU",
-   "published": "2026-11-17T01:41:43Z",
-   "summary": "Actions organisations can take to identify internet-exposed systems, address vulnerabilities and reduce cyber security risk.",
-   "score": 11,
-   "tags": [
-    "Data breach",
-    "Vulnerability",
-    "Australia"
-   ],
-   "why": [
-    "Data breach",
-    "Vulnerability"
-   ],
-   "also": [
-    {
-     "source": "cyber.gov",
-     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQWDZUR0oyZ1NOSnlOamdoNEVsQjRmNGwzUGg1TnlpUjlwV0g0SUZsMnR5THNrM25QVkhOTU5vRzhTTXBudW9ieGxfVEN1c18xNnU5YVk1Qk1PZEc4WGEyRkNfd0w3WDg4NUd5c3BIbWJ2VmpyUUJXWGlYem9WT3BWTENQUjUxV2JKdElwRHREYmJuWDZC?oc=5"
-    },
-    {
-     "source": "Australian Journal of Pharmacy",
-     "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9XRENHX3hLc0pwOUxibmtURzNHOHNlRkxQLVk3SHNiSDVuTGlaQ2lHc1gwYlZLR1cwYUZmdWdzMk9kdnNHWWU1akktR0pnUUVYSzAxeG8xQXkzRDA1U2s0emhtemNOWmY1X0tZTGMwRVhRYkVjNjFiXw?oc=5"
-    }
-   ]
   },
   {
    "id": "30a1887c7494",
@@ -7243,81 +7330,6 @@
    "why": [
     "Data breach",
     "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "907718f8d430",
-   "title": "CISA Announces Enhanced Reporting Form for Cyber Incidents",
-   "link": "https://www.darkreading.com/cyberattacks-data-breaches/cisa-announces-enhanced-reporting-form-cyber-incidents",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-11-09T21:38:20Z",
-   "summary": "New questionnaire captures critical data and information that improves the agency’s ability to assess incidents, identify trends and prioritize response actions.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "b9b072a1ed15",
-   "title": "York University breach exposed personal information dating to 2007",
-   "link": "https://www.bleepingcomputer.com/news/security/york-university-breach-exposed-personal-information-dating-to-2007/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-09T21:22:31Z",
-   "summary": "York University has announced it suffered a cybersecurity incident in which a threat actor stole personal information people submitted through online forms. [...]",
-   "score": 4,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "527a69512361",
-   "title": "Black Hat India 2026 Makes a Landmark Debut in Bengaluru, Bringing the Global Cybersecurity Community to India",
-   "link": "https://www.darkreading.com/cybersecurity-operations/black-hat-india-2026-landmark-debut",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-11-09T20:19:56Z",
-   "summary": "Inaugural edition by Informa Markets in India brings together leading researchers, security practitioners and industry decision makers for four days of cutting-edge research, technical exchange and strategic dialogue.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "5bce94b89cfb",
-   "title": "FORGE Lab uses agentic tools to identify memory safety issues in Rust",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/09/forge-lab-uses-agentic-tools-to-identify-memory-safety-issues-in-rust/",
-   "source": "Microsoft Security Blog",
-   "feed": "Microsoft Security Blog",
-   "region": "Global",
-   "published": "2026-11-09T20:17:31Z",
-   "summary": "Microsoft FORGE Lab researchers found memory-safety bugs in Rust's core and std libraries, including cases where safe Rust code can trigger undefined behavior. Using Hyenas, FORGE's frontier research version of codename MDASH, the team investigated three patterns of misplaced trust in unsafe code…",
-   "score": 1,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "ea7d22111047",
-   "title": "OAIC still probing Latitude breach, class action investigation ‘well underway’",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZll1LXU4VTkxa2Ftbko4aERMYklQV0VWdmM3aTV0YnVjdFB6ZjNKV1dvYTBvN09oTF81UHpldEVjR0hNYmlZUGpKOGQzNVRPY1BMa2U2MERGWFBFRWhFWXFWNGt6Y2VuaWdLYW9RRUZpbW9GRDM3TVl2MHN5TXhPYlV3bDZVdlJ2WjdveklzOXdzS1ZHTkRMeVZPdFhmU1RhdkZveg?oc=5",
-   "source": "Lawyerly",
-   "feed": "OAIC / Privacy news",
-   "region": "AU",
-   "published": "2026-11-09T19:19:51Z",
-   "summary": "",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "Data breach"
-   ],
-   "why": [
-    "Australia",
-    "Data breach"
    ]
   }
  ]
