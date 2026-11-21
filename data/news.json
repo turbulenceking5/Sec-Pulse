@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-21T02:18:54Z",
+ "generated": "2026-11-21T11:07:30Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -16,7 +16,7 @@
   {
    "name": "ACSC (via Google News)",
    "ok": true,
-   "count": 1,
+   "count": 2,
    "error": null
   },
   {
@@ -28,13 +28,13 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 8,
+   "count": 11,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 8,
+   "count": 6,
    "error": null
   },
   {
@@ -105,6 +105,73 @@
   }
  ],
  "items": [
+  {
+   "id": "9da47b8efcbb",
+   "title": "Signal Blocks AI Agents From Reading Private Chats via Screenshots on Android and iOS",
+   "link": "https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-21T08:49:20Z",
+   "summary": "Signal has announced that it will restrict screenshots by default to stop artificial intelligence (AI) agents from reading private chats on Android and iOS devices, but conceded that the protection is \"incomplete.\" The feature applies to agentic systems built into iOS 27 and on Android versions…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "a3eac34b29cf",
+   "title": "Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge",
+   "link": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-21T08:49:13Z",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added four flaws impacting Apache Roller, Cisco Expressway, SAP NetWeaver, and Broadcom VMware vCenter to its Known Exploited Vulnerabilities (KEV), citing evidence of active exploitation. The vulnerabilities are listed…",
+   "score": 7,
+   "tags": [
+    "Actively exploited",
+    "Edge devices"
+   ],
+   "why": [
+    "Actively exploited",
+    "Edge devices"
+   ]
+  },
+  {
+   "id": "52d06926aff8",
+   "title": "Think you know MFA? Challenge yourself with our quiz.",
+   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBaR2doZ29Hc05Kc19fNlJpVUN4elhNQllCeXk3NkNWWENrZkNRaGktUk5BZWZaMXpvblZvZXZfQ2pLT0ZHem53blhuVGZud1NEaFdJ?oc=5",
+   "source": "cyber.gov",
+   "feed": "ACSC (via Google News)",
+   "region": "AU",
+   "published": "2026-11-21T03:48:18Z",
+   "summary": "",
+   "score": 8,
+   "tags": [
+    "Identity",
+    "Australia"
+   ],
+   "why": [
+    "Identity"
+   ]
+  },
+  {
+   "id": "cb32594e359d",
+   "title": "FBI database hacked for second time in months, breach targets US crime records | Hindustan Times",
+   "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPYWwtNVJKRFFZMk93RVNkLXJiRW9ncU4xVzBWdGJGTi0xRU5OQ0t0ZjlBcWhXUXZ4UEpDeDhqN1J2YUVNcUJ6WUZJTjY3THZ0VmR3MkJuN04xR2pDMGlMVG5BUW5MT283aEU4RWVtTHV3STk1emNLT3F1QkxDSVYwdUdmM0tZZGRqeDE0LTZDUmN4eFFGY0hpWktadkVKOV9qVmtvRHNZSHNacEdndEhiQjhxZE5KaEZPSDA3VEozdHlPTFgzWmo4Qmxia1Ywc1g2Vkl5enhKOTNiNnNsV1Z3SVhB0gHnAUFVX3lxTE9KMWl3YWliWHI5REdYeHFkMm44eGFNTWItSTMwQ3pTOEtiN0I1dXRiV3U1NUEtNGFpOWlUWVlvVnhiSkp1T0FFcTJ2eWZQbnE3eXBYUURWWnVOSllBRXpRTl8yUTVqQWw2d0xTOXFMbzJ2aHRYcHdRTFE5WVh4ZDlsZGpuQjZIekY3bEY2NUMxVGFqVnVxbExJeFNUMC1yRnlYdF9DWWEyM1dwNXBvcHUyVTB6NG9nU1hYYWV1TGpHX3MwOFMzVW80X0tkTXZQdHhZYUpaazlsNEdrXzhkMlBrRHRONTlrcw?oc=5",
+   "source": "Hindustan Times",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-21T02:48:06Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
   {
    "id": "93138fbb4db2",
    "title": "CTO of ‘RansomwareHelp’ Indicted for Wire Fraud",
@@ -268,7 +335,7 @@
    "feed": "The Hacker News",
    "region": "Global",
    "published": "2026-11-20T17:57:20Z",
-   "summary": "Meta-owned WhatsApp has addressed security vulnerabilities, including one impacting its Android app that it suspects may have been exploited in connection with scam messages. The vulnerability, tracked as CVE-2026-23871, has been described as a case of incomplete validation of external ad-reply…",
+   "summary": "Meta-owned WhatsApp has addressed security vulnerabilities, including one impacting its Android app that it suspects may have been exploited in connection with scam messages. The vulnerability, tracked as CVE-2026-23871 (CVSS score: 3.5), has been described as a case of incomplete validation of…",
    "score": 2,
    "tags": [
     "Vulnerability"
@@ -542,6 +609,31 @@
    ]
   },
   {
+   "id": "2f74a529b9c0",
+   "title": "Visa and Mastercard cyberattack: were Australians affected? Leaked files list Australia, but no card numbers",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxObkY2N3V1aFVhRmRlWXcxYjZ3M2pLSWx4YUNOMjZwXzJCRF85U1I3dXh1TVZXM0FMMTZ2eGg1WUZZbk1UcTF3WFFZdi1iU0hkZi05LXBDaklMUV96MVNNZUI3czdIcG5GZVViTnFwMEw4empmX0Z5YWRQdzhra1h3NDJmMFJoLVptNGYxOXpBZmFURVk1aHZkeHcyWGFEay1Db2E0SlQ2SlRDZzVp?oc=5",
+   "source": "Nacionale",
+   "feed": "AU breach news",
+   "region": "AU",
+   "published": "2026-11-20T11:32:14Z",
+   "summary": "",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Data breach"
+   ],
+   "why": [
+    "Australia",
+    "Data breach"
+   ],
+   "also": [
+    {
+     "source": "Adelaide Now",
+     "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPTG41a19HTi1paUppVkdiOFk1TEdwSlJxMUpzem9TaFJBTHJxbVM4Y3JZVW1vbTFPb2N0cXlDQkhUcXprUExYTnNaVzQyNE9TNWQyb3NIM2RtbFZFdV9zSmZqd05kNHZ1UF9oTk1YYVNQZFdNRUtwcEZoWkctTExIZElsekZHVlZZb05LRDN1bG5ZVVJGbGhVTHV6ak5xdThqSENSTUdoeTZEOWJzMkdRRndSWTBnaXVpazhTZEJSUjV3WE1oRmFRRVFYZHJUYzNpbEhrcm81ck5ZZFdDNXdKb3ZPSlY?oc=5"
+    }
+   ]
+  },
+  {
    "id": "e5e1b7c9c1fc",
    "title": "Toronto real estate brokerage registration suspended after buyers say deposits not returned",
    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQaXAycG5JWG1kN2Y3MXllZnRvb2xKS214SUc4OXA1ZXYxc3BqaGdMTFJjbUc1Um5yaXAyOXA5RDhLaWFXb2lhZjBDX1BqYTJualdtSkJ0aE5jRzFZTmdNRGVJd1VHdXlRcUlGai01ZUYwUS13UmxIS1RXalZndTItbjdMUERTcmNiOU05LWZrNHJkWnFteXN1TGF1TTM4Z1B6NGlzTXBR?oc=5",
@@ -807,13 +899,13 @@
    ]
   },
   {
-   "id": "429b470350f4",
+   "id": "09a6cf8a3f86",
    "title": "Rocket Mortgage Fined $6.7M By NYDFS Over Cyber Lapses",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPMjZqOXRicHh2YmE4aWVmNWNJQmh2ejZ4aDFRR2VwUF9zMGZVNHhuVUp2NFpxMUo0b0FWbnhlT0RKWHh6WFJrRUFTb1FoM2E0bWFiTWVPai1vMXhSMWczY1RqOGM4LWxyY2ZaX3N0QTd0RjFJaGNOVkdtQmduVC1FQXNhcXY4Snphdjl1QTA2NlhlcnY2NkVPbGpQenJrNjQ5Wm9KVXBjMzQzMzU2VEN2cm5VQ3Jrb1dPeEgwczNRRGo0VUx6VVHSAXNBVV95cUxOVnJsMG1RbW1oTjhUM0VwX19nTTR1cWZnT3lGY1RBTmkwenZOMnlFczMzVUp2ekZQeHNmU0NUeGJjR2wzMFJkYXR5bGVuejZ0d1l6N0JicmlfZm1OazhlbVEwdGR4YVFHNHdxY3pGWTVyY3dj?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5WcmwwbVFtbWhOOFQzRXBfX2dNNHVxZmdPeUZjVEFOaTB6dk4yeUVzMzNVSnZ6RlB4c2ZTQ1R4YmNHbDMwUmRhdHlsZW56NnR3WXo3QmJyaV9mbU5rOGVtUTB0ZHhhUUc0d3FjekZZNXJjd2PSAXNBVV95cUxOVnJsMG1RbW1oTjhUM0VwX19nTTR1cWZnT3lGY1RBTmkwenZOMnlFczMzVUp2ekZQeHNmU0NUeGJjR2wzMFJkYXR5bGVuejZ0d1l6N0JicmlfZm1OazhlbVEwdGR4YVFHNHdxY3pGWTVyY3dj?oc=5",
    "source": "Law360",
    "feed": "Real estate cyber news",
    "region": "Global",
-   "published": "2026-11-20T02:40:21Z",
+   "published": "2026-11-20T02:40:00Z",
    "summary": "",
    "score": 10,
    "tags": [
@@ -1226,6 +1318,29 @@
    ]
   },
   {
+   "id": "d56b670d7ed1",
+   "title": "Oyster photocard holders’ personal data accessed in TfL breach",
+   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE8wazZKVHZmWTJScmNVUl8tUmkwOFBjbDdyeGQ3UnBvRVhnX2pScS01OU5pdzdiMTd3S2RmWllaSHN6dkltT01pV2FiR1lyLWpHcmstcDE0R0c1SzQ?oc=5",
+   "source": "BBC",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-19T12:38:18Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ],
+   "also": [
+    {
+     "source": "Yahoo News Australia",
+     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE80WmJDU1M5SVREODQtdHVteFZsRklyMzdleW16OWJ5RTZ3YmYtSFFfVUM5eGE1NEVLdFBwUXVtRm5OckhacXMzYnpVZ2pyQmJhSnRyN2FzUDZwRFk1aVZ5cHI1MmtUbXdKeC1ocUdBNVRCME9MNERERHctY2ZRdw?oc=5"
+    }
+   ]
+  },
+  {
    "id": "b7f6d70bce90",
    "title": "StepSecurity Secures $20 Million to Expand Supply Chain Protection",
    "link": "https://www.securityweek.com/stepsecurity-secures-20-million-to-expand-supply-chain-protection/",
@@ -1240,6 +1355,23 @@
    ],
    "why": [
     "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "844b82a5d0bb",
+   "title": "EU Commission hit by large-scale cyberattack with data leakage unknown",
+   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBtLUZRUHR6b3hQcXZQM1JVMWd0NXMxT2xkMDVvV2dEQ0p4SldhWXpOY1loWWRfRFpHbnNYN25aWE5ldUZwLURydmZabFBldDQteWlNb1BFeEt0QldMVXBOYm1jMFZVMFc3eFdUSFJIekRoMC1SRk5WRHFn?oc=5",
+   "source": "Yahoo News Australia",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-19T12:20:01Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
    ]
   },
   {
@@ -1615,23 +1747,6 @@
    "published": "2026-11-18T21:59:46Z",
    "summary": "The state-sponsored threat group is using data stolen from one victim to target others via convincing impersonations and social engineering attacks.",
    "score": 4,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "8279636dce8a",
-   "title": "TfL photocard breach exposes 265,000 customers",
-   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE80WmJDU1M5SVREODQtdHVteFZsRklyMzdleW16OWJ5RTZ3YmYtSFFfVUM5eGE1NEVLdFBwUXVtRm5OckhacXMzYnpVZ2pyQmJhSnRyN2FzUDZwRFk1aVZ5cHI1MmtUbXdKeC1ocUdBNVRCME9MNERERHctY2ZRdw?oc=5",
-   "source": "Yahoo News Australia",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-11-18T20:49:58Z",
-   "summary": "",
-   "score": 6,
    "tags": [
     "Data breach"
    ],
@@ -7222,115 +7337,6 @@
     "Vulnerability"
    ],
    "epss": 0.0908
-  },
-  {
-   "id": "0c134491b82b",
-   "title": "CVE-2026-111793: Openwave Messaging Limited Webtop Media Transcoder — Openwave Messaging Limited Webtop Media Transcoder Incorrect Resource Transfer Between Spheres Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-111793",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-11-10T00:00:00Z",
-   "summary": "Openwave Messaging Limited Webtop Media Transcoder contains an incorrect resource transfer between spheres vulnerability that may allow an authenticated user to process and convert unintended document types if bypassing the Webmail experience. CISA remediation due 2026-11-24.",
-   "score": 4,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.0064
-  },
-  {
-   "id": "87cee7be5686",
-   "title": "CVE-2026-116606: Barracuda Networks Barracuda Email Security Gateway (ESG) — Barracuda Networks Email Security Gateway (ESG) Authentication Bypass Using an Alternate Path or Channel Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-116606",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-11-10T00:00:00Z",
-   "summary": "Barracuda Networks Email Security Gateway (ESG) contains an authentication bypass using an alternate path or channel that could allow an unauthenticated remote attacker to invoke a configuration-import function and restore a crafted, compatible backup… CISA remediation due 2026-11-13.",
-   "score": 4,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.1095
-  },
-  {
-   "id": "9272d747390f",
-   "title": "CVE-2026-125350: Google Chromium — Google Chromium Use-After-Free Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-125350",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-11-10T00:00:00Z",
-   "summary": "Google Chromium contains a use-after-free vulnerability in the XML component that could allow a remote attacker to execute arbitrary code inside the sandbox via a specially crafted webpage. This vulnerability could affect multiple web browsers that utilize… CISA remediation due 2026-11-24.",
-   "score": 4,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.0096
-  },
-  {
-   "id": "48d9ef3d98d6",
-   "title": "Vanderbilt University hit in BYOD ransomware attack, data theft claimed",
-   "link": "https://www.bleepingcomputer.com/news/security/vanderbilt-university-hit-in-byod-ransomware-attack-data-theft-claimed/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-09T23:52:12Z",
-   "summary": "Vanderbilt University warns it is responding to a cyberattack claimed by the BYOD ransomware gang, which claims to have encrypted the university's databases and stolen sensitive student, employee, and research data. [...]",
-   "score": 4,
-   "tags": [
-    "Ransomware"
-   ],
-   "why": [
-    "Ransomware"
-   ]
-  },
-  {
-   "id": "ccc69e15df6f",
-   "title": "People Are Getting Weird About AI",
-   "link": "https://www.darkreading.com/cyber-risk/people-are-getting-weird-about-ai",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-11-09T23:06:22Z",
-   "summary": "Dark Reading Confidential Episode 22: You can love AI without being blind to cybersecurity being sacrificed for utility. The tendency for humans to anthropomorphize the conversations and interactions we're having with AI is growing into potential delusion.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "fb65eccd7583",
-   "title": "SEGA newsletter data breach exposes 2.2 million email addresses",
-   "link": "https://www.bleepingcomputer.com/news/security/sega-newsletter-data-breach-exposes-22-million-email-addresses/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-09T22:09:33Z",
-   "summary": "Japanese gaming giant SEGA has disclosed that a data breach at its third-party newsletter provider, ARARA, exposed the email addresses of 2.2 million newsletter subscribers. [...]",
-   "score": 6,
-   "tags": [
-    "Data breach",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Data breach",
-    "SaaS / cloud"
-   ]
   }
  ]
 }
