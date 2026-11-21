@@ -1,21 +1,50 @@
 {
- "date": "2026-11-21",
- "generated": "2026-11-21T00:05:05+00:00",
- "title": "Sec-Pulse brief - Sat 21 Nov",
+ "date": "2026-11-22",
+ "generated": "2026-11-21T23:30:39+00:00",
+ "title": "Sec-Pulse brief - Sun 22 Nov",
  "items": [
   {
-   "id": "37b96e651a9e",
-   "title": "Joint trial question in Medibank data breach cases deferred",
-   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPVGhnYThwa0VaOEY1VXJodXdmNi04MWJOSW1DT1BacElQaGRoZ1hzREN2bmttVzJheEVBaG5DMG9BSXlLZklVOGFFclh6aHZyTjhscFRKcXF0cEVhTm1CSFZKaGh3X2h5V0J0aTlSRTZtVk14cm9QaDlJOVRPaGR4TGZqdWRsUDI1dUd0cC1kQzdHRHRPRWo0?oc=5",
-   "source": "Lawyerly",
-   "region": "AU",
-   "published": "2026-11-20T14:32:56Z",
-   "score": 13,
+   "id": "1e1dbef95d66",
+   "title": "Microsoft Entra Connect Health flaw exploited to steal tenant data",
+   "link": "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/",
+   "source": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-21T18:01:58Z",
+   "score": 15,
    "tags": [
-    "Australia",
-    "Data breach"
+    "Real estate",
+    "Microsoft 365",
+    "Data breach",
+    "Vulnerability"
+   ],
+   "summary": "Microsoft is warning organizations that it suffered a data breach after attackers exploited a vulnerability in its Entra Connect Health service to gain unauthorized access to administrator email addresses and tenant configuration information. [...]"
+  },
+  {
+   "id": "12c1b3dc2b59",
+   "title": "Gurugram: 32nd Avenue's directors among four arrested in ₹32.4 lakh real estate fraud",
+   "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNUTFiajZteWF0d3lMZWRvdmRJdndUT2ZraUd3V2hYWlB1VU1icFNzWEV5SWYwZmlyV2NuaHdZQzAwQVMyMFFmQ3dXWUVyTFpiLTRxMGp0MmJJQndRYlBFYVZ3S05WT2VOa2pMVDJ4TmMzZzJEemxvTnNxN0dlMlJfMkVWLUJ5RUtWTzhhRDBQXzJNT0huRDU5Mk00Sml5ZVZ4V0ZxZV9Pb1cwREk5aGdWek5MWnJGbzhYLXh3d0xPSDNUMlRzMVYyWFhPdGtGSDY1Mk1OQnRIQlNzd0RnbW5LWjRpZlZLS2PSAewBQVVfeXFMUE52OFRhYWF4ZnVOYzB5eGlpWWpfUEV6ZUducXpMZGNLUVpYM3VlSE1UUnJpdXNmeVlvYVFrUkhwckdZRmM1ZEJsZXhKWDJLTEtENEwxT2lUY085TEVzWVp0b2ZwT2xTX3ZLLUJIOU9PTTlEN3Yzbno4TDF1VDNlOVp5cjdFc3dBUnlSYUJ3WElrYlNlTmZYM0FBVHdDRi0zbWllVU13SjZkTlBzTjd3QmtpLVpiWGNCQ01Za0xGZzIxMHpMeDd6RUFSLUdQdk5KdnpsWU1wd3JWbUJtdDlSWlB1cHZmbUZ0SFU0eGY?oc=5",
+   "source": "ET Realty",
+   "region": "Global",
+   "published": "2026-11-21T15:04:03Z",
+   "score": 10,
+   "tags": [
+    "Real estate"
    ],
    "summary": ""
+  },
+  {
+   "id": "93138fbb4db2",
+   "title": "CTO of ‘RansomwareHelp’ Indicted for Wire Fraud",
+   "link": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
+   "source": "Krebs on Security",
+   "region": "Global",
+   "published": "2026-11-21T00:36:39Z",
+   "score": 11,
+   "tags": [
+    "BEC / payment fraud",
+    "Ransomware"
+   ],
+   "summary": "The chief technology officer and co-founder of ransomwarehelp.com, a six year old Florida business that claimed to use \"advanced cryptographic tools\" to restore data locked by ransomware, has been charged with wire fraud after an FBI sting operation found the company was simply paying the…"
   },
   {
    "id": "7995d8c6dbe3",
@@ -31,54 +60,27 @@
    "summary": ""
   },
   {
-   "id": "68b36fa55ded",
-   "title": "The golden age of real estate?",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBvWTNDUFIwdi03NjRmWkJqMjFrcTFVM01vcmVWVG1QcFRidGxvWkQ0WXdYQU1sM205MGc5VmV3VVh5R2pibHB4Z3lhUWFzMElPNlpIaTMybUlPRVZFS3hOdi1VZ1VIeHhXU3cwUU03WThZN2dNeUg2ZTNTeUFaNE0?oc=5",
-   "source": "Macfarlanes",
-   "region": "Global",
-   "published": "2026-11-20T14:45:56Z",
-   "score": 10,
+   "id": "52d06926aff8",
+   "title": "Think you know MFA? Challenge yourself with our quiz.",
+   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBaR2doZ29Hc05Kc19fNlJpVUN4elhNQllCeXk3NkNWWENrZkNRaGktUk5BZWZaMXpvblZvZXZfQ2pLT0ZHem53blhuVGZud1NEaFdJ?oc=5",
+   "source": "cyber.gov",
+   "region": "AU",
+   "published": "2026-11-21T03:48:18Z",
+   "score": 8,
    "tags": [
-    "Real estate"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "009f6643a854",
-   "title": "JPMorgan, Visa, Mastercard Cite Third-Party Incidents Amid Data Leak",
-   "link": "https://www.securityweek.com/jpmorgan-visa-mastercard-cite-third-party-incidents-amid-data-leak/",
-   "source": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-20T07:35:46Z",
-   "score": 10,
-   "tags": [
-    "Ransomware",
-    "Data breach",
-    "SaaS / cloud"
-   ],
-   "summary": "The companies point to third-party providers after the N0n extortion group leaked data allegedly tied to their customers. The post JPMorgan, Visa, Mastercard Cite Third-Party Incidents Amid Data Leak appeared first on SecurityWeek ."
-  },
-  {
-   "id": "429b470350f4",
-   "title": "Rocket Mortgage Fined $6.7M By NYDFS Over Cyber Lapses",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPMjZqOXRicHh2YmE4aWVmNWNJQmh2ejZ4aDFRR2VwUF9zMGZVNHhuVUp2NFpxMUo0b0FWbnhlT0RKWHh6WFJrRUFTb1FoM2E0bWFiTWVPai1vMXhSMWczY1RqOGM4LWxyY2ZaX3N0QTd0RjFJaGNOVkdtQmduVC1FQXNhcXY4Snphdjl1QTA2NlhlcnY2NkVPbGpQenJrNjQ5Wm9KVXBjMzQzMzU2VEN2cm5VQ3Jrb1dPeEgwczNRRGo0VUx6VVHSAXNBVV95cUxOVnJsMG1RbW1oTjhUM0VwX19nTTR1cWZnT3lGY1RBTmkwenZOMnlFczMzVUp2ekZQeHNmU0NUeGJjR2wzMFJkYXR5bGVuejZ0d1l6N0JicmlfZm1OazhlbVEwdGR4YVFHNHdxY3pGWTVyY3dj?oc=5",
-   "source": "Law360",
-   "region": "Global",
-   "published": "2026-11-20T02:40:21Z",
-   "score": 10,
-   "tags": [
-    "Real estate"
+    "Identity",
+    "Australia"
    ],
    "summary": ""
   }
  ],
  "stats": {
-  "recent": 46,
-  "au": 2,
-  "kev": 4
+  "recent": 22,
+  "au": 1,
+  "kev": 0
  },
  "lesson": {
-  "id": "1.7",
-  "title": "Frameworks: ATT&CK, Kill Chain, Diamond Model"
+  "id": "1.8",
+  "title": "Process improvement and automation"
  }
 }
