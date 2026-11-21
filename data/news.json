@@ -1,47 +1,47 @@
 {
- "generated": "2026-11-21T19:19:01Z",
+ "generated": "2026-11-21T23:30:30Z",
  "sources": [
   {
    "name": "ACSC Alerts",
-   "ok": false,
-   "count": 0,
-   "error": "HTTPError: HTTP Error 403: Forbidden"
+   "ok": true,
+   "count": 1,
+   "error": null
   },
   {
    "name": "ACSC Advisories",
-   "ok": false,
+   "ok": true,
    "count": 0,
-   "error": "HTTPError: HTTP Error 403: Forbidden"
+   "error": null
   },
   {
    "name": "ACSC (via Google News)",
-   "ok": false,
-   "count": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "count": 2,
+   "error": null
   },
   {
    "name": "ASD / ACSC in the news",
-   "ok": false,
-   "count": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "count": 4,
+   "error": null
   },
   {
    "name": "AU breach news",
-   "ok": false,
-   "count": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "count": 8,
+   "error": null
   },
   {
    "name": "Real estate cyber news",
-   "ok": false,
-   "count": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "count": 6,
+   "error": null
   },
   {
    "name": "OAIC / Privacy news",
-   "ok": false,
-   "count": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "count": 1,
+   "error": null
   },
   {
    "name": "iTnews Security",
@@ -106,6 +106,25 @@
  ],
  "items": [
   {
+   "id": "9f2af01a2aa9",
+   "title": "Rackspace Spot breach let hackers access customer Kubernetes secrets",
+   "link": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-21T22:59:58Z",
+   "summary": "Rackspace warned customers that hackers breached its Rackspace Spot cloud platform using compromised credentials, allowing them to deploy unauthorized workloads and access Kubernetes secrets in customer clusters. [...]",
+   "score": 6,
+   "tags": [
+    "Data breach",
+    "Identity"
+   ],
+   "why": [
+    "Data breach",
+    "Identity"
+   ]
+  },
+  {
    "id": "1e1dbef95d66",
    "title": "Microsoft Entra Connect Health flaw exploited to steal tenant data",
    "link": "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/",
@@ -140,6 +159,23 @@
    "score": 0,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "12c1b3dc2b59",
+   "title": "Gurugram: 32nd Avenue's directors among four arrested in ₹32.4 lakh real estate fraud",
+   "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNUTFiajZteWF0d3lMZWRvdmRJdndUT2ZraUd3V2hYWlB1VU1icFNzWEV5SWYwZmlyV2NuaHdZQzAwQVMyMFFmQ3dXWUVyTFpiLTRxMGp0MmJJQndRYlBFYVZ3S05WT2VOa2pMVDJ4TmMzZzJEemxvTnNxN0dlMlJfMkVWLUJ5RUtWTzhhRDBQXzJNT0huRDU5Mk00Sml5ZVZ4V0ZxZV9Pb1cwREk5aGdWek5MWnJGbzhYLXh3d0xPSDNUMlRzMVYyWFhPdGtGSDY1Mk1OQnRIQlNzd0RnbW5LWjRpZlZLS2PSAewBQVVfeXFMUE52OFRhYWF4ZnVOYzB5eGlpWWpfUEV6ZUducXpMZGNLUVpYM3VlSE1UUnJpdXNmeVlvYVFrUkhwckdZRmM1ZEJsZXhKWDJLTEtENEwxT2lUY085TEVzWVp0b2ZwT2xTX3ZLLUJIOU9PTTlEN3Yzbno4TDF1VDNlOVp5cjdFc3dBUnlSYUJ3WElrYlNlTmZYM0FBVHdDRi0zbWllVU13SjZkTlBzTjd3QmtpLVpiWGNCQ01Za0xGZzIxMHpMeDd6RUFSLUdQdk5KdnpsWU1wd3JWbUJtdDlSWlB1cHZmbUZ0SFU0eGY?oc=5",
+   "source": "ET Realty",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-21T15:04:03Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
   },
   {
    "id": "6231e48f3bee",
@@ -237,6 +273,23 @@
    "why": [
     "Actively exploited",
     "Edge devices"
+   ]
+  },
+  {
+   "id": "4149ec36bc8f",
+   "title": "Several of Ireland’s biggest credit unions inform members of data breach after cyber attack",
+   "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOampNa21XN1lROHplX2tzcEdrUG1uRDBMQVhPcHpfazZ6X0hETVRfT1NJMmdvWmdiMVI4RUlDUkR0b25DSTZvTTdBLW9KOWxpanFQWEFDZjN2UzZZNHZ2Y205NVFRRHkyZkVIazNBS21VUzB0TWt3bUFCeHg4VFVuZ3BwcGE0VHo5eVN1SVo1ZXNxa3dTb1ZkdTU3TG1uUWpscV9kNGxKMEFIUk1ZSG1aVlFMVHZtNklzSFdrWW1XbFVYZERZQkl5V2FOdnlpbEQtZGpjTVJGdGpGSkZfcHc?oc=5",
+   "source": "Irish Independent",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-21T05:30:00Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
    ]
   },
   {
@@ -451,13 +504,13 @@
    "why": [
     "Vulnerability"
    ],
+   "epss": 0.0048,
    "also": [
     {
      "source": "SecurityWeek",
      "url": "https://www.securityweek.com/whatsapp-fixes-flaw-uncovered-while-disrupting-scam-campaign/"
     }
-   ],
-   "epss": 0.0048
+   ]
   },
   {
    "id": "0abe4221510a",
@@ -524,27 +577,25 @@
    ]
   },
   {
-   "id": "bbc19bb6f991",
-   "title": "Vendor data breach exposes Chase, Visa, Mastercard customer info",
-   "link": "https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
+   "id": "31ead9d1ebe9",
+   "title": "Real Estate Broker Tied To Westchester Property Deed Theft Scheme Lied About Felony Convictions: AG",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQd29aUU5WUGVlVlhqOGVzRXNTai1Wbkx5aS1zdThfMENEb2JtTEFmekVkd2I3aDBOTHhqOE1CM0xEb0Q3SGIzdGlFRG4xY29VdDh3ckEwaF9BenhHTFB0VGdzZ1VQRXNSRGE0QUJlckR5RGViNlc4NlgycHhiY0JMZlFXakJoTGQ4Z2NBblhMOFFFWlBtRENMUU1taHlPQWJXT0lfSWZCbHJCRldVOUY4UW9Ic9IB5AFBVV95cUxQM2ZDQjFQQXVreWg5cFZhUXl1ZkRHVEZtT2Q2SWVQRk9hSWhoNnpTX0lGWV9RdTIyNi1pSVRrbnNQdXh3OFlQaVVaQWVwdDNnZ2FsS3hZSHU1bmxLR1hBdXE0aWN0WTdQaUVKODE3Qk9DS1FhbTBac3RidUVWdWs3cWk4ZnpsZVE4TWw5SnBWV3I5UWhDYVh1MkNNRThVeUhzNGw5Sy1XOFdfd3ZCY0xCMWdBQS1WM1lJeEJHbGFMTW9EZEZhQUF5eURtWkdodG9mOG1rcTNsWUUxNUcxWnFmcFFiaEQ?oc=5",
+   "source": "Patch",
+   "feed": "Real estate cyber news",
    "region": "Global",
-   "published": "2026-11-20T15:58:06Z",
-   "summary": "J.P. Morgan Chase warned it suffered a data breach after a cyberattack at a third-party service provider exposed customers' personal information and marketing data. [...]",
-   "score": 6,
+   "published": "2026-11-20T16:37:48Z",
+   "summary": "",
+   "score": 10,
    "tags": [
-    "Data breach",
-    "SaaS / cloud"
+    "Real estate"
    ],
    "why": [
-    "Data breach",
-    "SaaS / cloud"
+    "Real estate"
    ],
    "also": [
     {
-     "source": "Nine.com.au",
-     "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOX3d4ajVGSjB1ZFJKQmZTd1BmODVSbEhoOEFTVUZtVHVGRUJQYkhEVlhnX01mdWRHa2tINWpoOWNUSWlxNFhsUWdHb1lYRVdqZThoV19hMG55ZmZyM0dFUlp3Z1dpYUlpUUtwaTRzRElGQ1Zod0RGUmZzV0drcXBlTGI2ZlRWLWJBQUJjQ0dGbkZVUDExclNpUDRQdmZZYVV2RE1kMjc3WnczcFgtRGNxVGtZdGljQWU5UjdTNTcyc3RIWm9sQ0Nmall1NUhDeWk5SVV1YnBGRXhXakxPRTYydjE4OFFTUDd4?oc=5"
+     "source": "The Journal News | lohud.com",
+     "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQdDRlSzdpV2dZOVdwbHA5V0twRFRtb0k5a0V5RHlxR3BUVzIzanMtZTdJbGFTYWxsUmhjeG01TG5nY2JJbVpyVW9ITzQtZF9mamtaTTk3NFc5UkpUQUU1VXptY0Q3QXR2RktRcUlna1R3ZFdVdXphMjRlendQWjlVMnl1ZWpRQlktQmFnZW9wUnBvRzFGUW1rSXJWQWVyNHB4UVRNeEl1YXBtakYwUmszVzhOQXplaVRsUENjVWszQXFSRFFLejVYdHpCMUZEZWVCZGpfMmIzZjRSMXdtX1VfSzEwR3lUS09PaUFrTkUyTW4xelV1VWc?oc=5"
     }
    ]
   },
@@ -682,6 +733,25 @@
    "why": []
   },
   {
+   "id": "0385119f4283",
+   "title": "5 ways to outsmart AI-generated fraud schemes in real estate",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPb2pVS3VVb19nNmU5WjU4VXNTMk1yWmROZ1htcDQ4UU9vQUJOQ0Z4eURyQThNY1IxWXBVb1QxUVdJN2hBME5Jd01MQTJ5WnFRWTVDUXhrVG9pa2ktZU93Y3gzVlFWa1Q3cVRRN0xNaExRTFdJeUhITk1IZHJJTWFRQWhpNHU2eTBpQmtXYg?oc=5",
+   "source": "REJournals",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-20T12:03:59Z",
+   "summary": "",
+   "score": 12,
+   "tags": [
+    "Real estate",
+    "AI threats"
+   ],
+   "why": [
+    "Real estate",
+    "AI threats"
+   ]
+  },
+  {
    "id": "d9e0b261f408",
    "title": "The Path to AI Autonomy in the SOC",
    "link": "https://thehackernews.com/2026/11/the-path-to-ai-autonomy-in-soc.html",
@@ -739,6 +809,42 @@
     {
      "source": "Adelaide Now",
      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPTG41a19HTi1paUppVkdiOFk1TEdwSlJxMUpzem9TaFJBTHJxbVM4Y3JZVW1vbTFPb2N0cXlDQkhUcXprUExYTnNaVzQyNE9TNWQyb3NIM2RtbFZFdV9zSmZqd05kNHZ1UF9oTk1YYVNQZFdNRUtwcEZoWkctTExIZElsekZHVlZZb05LRDN1bG5ZVVJGbGhVTHV6ak5xdThqSENSTUdoeTZEOWJzMkdRRndSWTBnaXVpazhTZEJSUjV3WE1oRmFRRVFYZHJUYzNpbEhrcm81ck5ZZFdDNXdKb3ZPSlY?oc=5"
+    },
+    {
+     "source": "TechRadar",
+     "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNWTlmR05oUGZmZ0ZRc2EzY2xLR0x1dEh4NmdMeEZ0Y3dScno1M3lkcU15VEN0eXYySDBfOTBZUmNrcGpLRzVWNnBheHVLNU5SbGlvQWpTSEZUdXo3eUlOUWRDSzR1LUNNWEQ5bHMwM0tkM29fMEdQbVhtbloxNkVVbEpoQ3NxRkQ2d25BcGpTczM5NVQyUF9XTVRKdDhQT0VaN2Q2cThHZjh6Z0RySllMN0pUVGhpd0thYUVkbmZXbHNhRXFJUTM3M1pia1hmNTN4bWZ2eUd3?oc=5"
+    },
+    {
+     "source": "TechSpot",
+     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQR2pxamJfUzVYMzF0N3BXdGFfcmV6Yl84UWNlRGkycmlkM2VYR3hnc1JJS0dMSFN2a2dVUUpGM1lsTFk5NnJ0QmcwMEY3LTJJT21PQ3VIY0NORkJ3RWRKak5SQ1pPX0djVDVueGdnUGkwWWhfNEctRldvVTAwWmpqMUxkcXZZTWY0SGFqMHVRTXZzeEpfbXF2TXVIT3A?oc=5"
+    },
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/jpmorgan-visa-mastercard-cite-third-party-incidents-amid-data-leak/"
+    },
+    {
+     "source": "Yahoo Finance",
+     "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNS2R0aHc1VDVIQ3QxYjZFTmdYTktsYjBPdUFfUlY4UVZPekNOSTVwS1JWR1hoVkVlTXFIdFNwakdEMHlXWlpWNWhMdWlZNHZjSTczR2hFUm02M3BBOG1sRzhDVlE1cTlPa1ppNWRack1rMTNfelJpWlJleENsVGhwYlFwdWZUaGd2TjQ1OG9rMzh2TzlEVE1mZmhyQVI2RTFkN25BVnFLNjRlUHBma29Gc05WVHBrTjVhaGNlQzlSaXlDZm9sOGhNZw?oc=5"
+    },
+    {
+     "source": "iTnews",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQ1FhZko4YjNScFVfVmhmWHVBQkFmdnRtUzZWQUJEbHhFejd5MEswWmwxSmVjTUU0cnp3SFB2N2RXZ0dPRmJyTjg2dlZhd3FqVVFJWEh5NERnVXdIcjVlbU5XbFI5U0pEU2I2R3ppRVZfWUpIOEk4WU93ZlpNN2lxVnlRMEFHZF9IRGg4dW1UMURBTzltNEVSOV9ydWhEa1plR0lHRWs3clhPQXBIR2VF?oc=5"
+    },
+    {
+     "source": "OODA Loop",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNVlc4OHQ5TUJQMWgza2RFM2JvSXkzVUFvT1V0aTNLdThudm1qM2VMdGRHendLLWdFbjE5RzJDS040c3RlekpjTFFlQWY1cDMtQWZyZ0dwaDFWTnBwZlBZYTZQZ2JyOEZYZFgydXltUUpMaHhhOElxa3lwVzZ1Mzg0cC1BSmxyV2ZfcVFZTDRRbWdJd3hPbk1YNDRtVnVEUkVQTUo2MXRaQUFtQUxzRWd1a29TQnRSQTBENHgxag?oc=5"
+    },
+    {
+     "source": "Dark Reading",
+     "url": "https://www.darkreading.com/cyber-risk/optimizely-malware-attacks-third-party-vendor-risks"
+    },
+    {
+     "source": "Gulf News",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOZGNmSUdtSGtJYmdUanllbVhpQ0J4VXBwYWlZczdsRUFiSXhlVGZDekNNckJRd3NYd3NKOGRGOFVIX3gwX0h4TVFNQUZNVndRMC1tTDBqYkpfb1RJdlZnaGRsM0tRZmZXUGNpbjBsVTUtdUVxUE5UeEg3ZG5jQWl5Y0JlUFByRGk5emNHalQzQ2ZwbVE1V09EREFOaGVYZEw1elh5RVlBVWlPSzNfQlkzc3VGZ2pYUdIByAFBVV95cUxNNG53M0VpcG15YXRoNEV1TkVOTUFLTWljaHZGQTVUbDA1alQ0Q3ZDQ3lwVHk3ZHhBaTIycE9wMHRXWDFlSkFJeTY2YVhMbllyNVZZbHczdnNBUXNHMWdlVlNTazFMTkxucFNZT0FXYmc0aE16bVpBVzZwWDhPblJKcGdEbThJbmRydGNfaG9IbTAzWGp6dUV0RXgzSmlJcTRIalQzVmdyNVlWN1RtUF9TZEVHcjFsMVRJYjJ6UUhObkxveXRpNGdEeQ?oc=5"
+    },
+    {
+     "source": "The Original PC Doctor",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOSEVqcUFQM3l0MHR3RVBuTXpCNWxzMDg0UjNNQm95enFKRWoxRXNjYmNTVFB5VHZ3S3REb04xWnBpWjMtbm40cXJ0UmpqSGF2el8tUnROelZMbW5NRUJyV0JxMEx3dFR5Nk1hRWpJQTRxSDIwOXo5ODZ2QlQ1cDRGY1lTSS0?oc=5"
     }
    ]
   },
@@ -901,46 +1007,20 @@
    ]
   },
   {
-   "id": "009f6643a854",
-   "title": "JPMorgan, Visa, Mastercard Cite Third-Party Incidents Amid Data Leak",
-   "link": "https://www.securityweek.com/jpmorgan-visa-mastercard-cite-third-party-incidents-amid-data-leak/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
+   "id": "8ab170603bb7",
+   "title": "More Than A Quarter Of Ransomware Victims Need Six Weeks To Recover",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNTGZRYWNrYWZITHIzeVJOWnJqb0JDc3pmWDFQaVdQUndGT19tVC1VdGlIVkVsSU15QUVZeGZEOVYza2tqeUlfMVJ6MTRIVEhBcXZqZGlhYTZueU9hQ3o4eDZnVzVoV2F3SkJNSFRJU1dsM2xfektFWHRqY2djbG1yc2F2OHBCMjFVNVB4UWZ2aHNXVEUxZ0Iw?oc=5",
+   "source": "SMBtech",
+   "feed": "AU breach news",
    "region": "Global",
-   "published": "2026-11-20T07:35:46Z",
-   "summary": "The companies point to third-party providers after the N0n extortion group leaked data allegedly tied to their customers. The post JPMorgan, Visa, Mastercard Cite Third-Party Incidents Amid Data Leak appeared first on SecurityWeek .",
-   "score": 10,
+   "published": "2026-11-20T07:41:46Z",
+   "summary": "",
+   "score": 6,
    "tags": [
-    "Ransomware",
-    "Data breach",
-    "SaaS / cloud"
+    "Ransomware"
    ],
    "why": [
-    "Ransomware",
-    "Data breach",
-    "SaaS / cloud"
-   ],
-   "also": [
-    {
-     "source": "Yahoo Finance",
-     "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNS2R0aHc1VDVIQ3QxYjZFTmdYTktsYjBPdUFfUlY4UVZPekNOSTVwS1JWR1hoVkVlTXFIdFNwakdEMHlXWlpWNWhMdWlZNHZjSTczR2hFUm02M3BBOG1sRzhDVlE1cTlPa1ppNWRack1rMTNfelJpWlJleENsVGhwYlFwdWZUaGd2TjQ1OG9rMzh2TzlEVE1mZmhyQVI2RTFkN25BVnFLNjRlUHBma29Gc05WVHBrTjVhaGNlQzlSaXlDZm9sOGhNZw?oc=5"
-    },
-    {
-     "source": "iTnews",
-     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQ1FhZko4YjNScFVfVmhmWHVBQkFmdnRtUzZWQUJEbHhFejd5MEswWmwxSmVjTUU0cnp3SFB2N2RXZ0dPRmJyTjg2dlZhd3FqVVFJWEh5NERnVXdIcjVlbU5XbFI5U0pEU2I2R3ppRVZfWUpIOEk4WU93ZlpNN2lxVnlRMEFHZF9IRGg4dW1UMURBTzltNEVSOV9ydWhEa1plR0lHRWs3clhPQXBIR2VF?oc=5"
-    },
-    {
-     "source": "OODA Loop",
-     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNVlc4OHQ5TUJQMWgza2RFM2JvSXkzVUFvT1V0aTNLdThudm1qM2VMdGRHendLLWdFbjE5RzJDS040c3RlekpjTFFlQWY1cDMtQWZyZ0dwaDFWTnBwZlBZYTZQZ2JyOEZYZFgydXltUUpMaHhhOElxa3lwVzZ1Mzg0cC1BSmxyV2ZfcVFZTDRRbWdJd3hPbk1YNDRtVnVEUkVQTUo2MXRaQUFtQUxzRWd1a29TQnRSQTBENHgxag?oc=5"
-    },
-    {
-     "source": "Dark Reading",
-     "url": "https://www.darkreading.com/cyber-risk/optimizely-malware-attacks-third-party-vendor-risks"
-    },
-    {
-     "source": "Gulf News",
-     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOZGNmSUdtSGtJYmdUanllbVhpQ0J4VXBwYWlZczdsRUFiSXhlVGZDekNNckJRd3NYd3NKOGRGOFVIX3gwX0h4TVFNQUZNVndRMC1tTDBqYkpfb1RJdlZnaGRsM0tRZmZXUGNpbjBsVTUtdUVxUE5UeEg3ZG5jQWl5Y0JlUFByRGk5emNHalQzQ2ZwbVE1V09EREFOaGVYZEw1elh5RVlBVWlPSzNfQlkzc3VGZ2pYUdIByAFBVV95cUxNNG53M0VpcG15YXRoNEV1TkVOTUFLTWljaHZGQTVUbDA1alQ0Q3ZDQ3lwVHk3ZHhBaTIycE9wMHRXWDFlSkFJeTY2YVhMbllyNVZZbHczdnNBUXNHMWdlVlNTazFMTkxucFNZT0FXYmc0aE16bVpBVzZwWDhPblJKcGdEbThJbmRydGNfaG9IbTAzWGp6dUV0RXgzSmlJcTRIalQzVmdyNVlWN1RtUF9TZEVHcjFsMVRJYjJ6UUhObkxveXRpNGdEeQ?oc=5"
-    }
+    "Ransomware"
    ]
   },
   {
@@ -7238,88 +7318,6 @@
      "source": "SecurityWeek",
      "url": "https://www.securityweek.com/notion-customer-data-compromised-in-fireworks-ai-hack/"
     }
-   ]
-  },
-  {
-   "id": "7e1f9b33c691",
-   "title": "Google patches eighth Chrome zero-day exploited in attacks this year",
-   "link": "https://www.bleepingcomputer.com/news/security/google-patches-eighth-chrome-zero-day-exploited-in-attacks-this-year/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-10T08:51:25Z",
-   "summary": "Google has released emergency security updates to patch a new Chrome vulnerability exploited in zero-day attacks, the eighth such flaw since the start of the year. [...]",
-   "score": 7,
-   "tags": [
-    "Actively exploited",
-    "Vulnerability"
-   ],
-   "why": [
-    "Actively exploited",
-    "Vulnerability"
-   ],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/11/google-issues-chrome-security-update.html"
-    },
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/chrome-update-patches-exploited-xml-zero-day-eighth-this-year/"
-    }
-   ]
-  },
-  {
-   "id": "0ddfad592557",
-   "title": "The Swallow That Saved a Victim From a Voice Phishing Scam",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQZFlBTnJ0VU0yUkU2SC1jUlNvX1cxTGwwU3JPVTdobEJzR1FqNU1IM0t1N2NQdG5QaXN3SGtDcnFFRVo3SkNQMjhabXhzMDh4RjlLTC11clNQNjVudTFzdV9EUWdjQlNnSnp3X25aQ3RaSExJV3poZUxfV1JzQlFCd3l1SWxLRHVRcnh1Z21jaV9yMVZRSW5EdVJqUjZzVzBLZHc?oc=5",
-   "source": "Seoul Economic Daily",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-10T08:48:14Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Phishing"
-   ],
-   "why": [
-    "Phishing"
-   ]
-  },
-  {
-   "id": "0e6f77f0820c",
-   "title": "Anthropic's Claude Fable 5.2 Beats GPT-6 Cyber in Multi-Stage Cyberattack Benchmark",
-   "link": "https://thehackernews.com/2026/11/anthropics-claude-fable-52-beats-gpt-6.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-10T08:16:14Z",
-   "summary": "Anthropic on Monday released Claude Fable 5.2 and Claude Mythos 5.2 models, which it said exhibit improvements in coding, reasoning, and vision. During pre-release training, the large language models (LLMs) helped its engineers \"complete otherwise-infeasible software migrations, designed three…",
-   "score": 1,
-   "tags": [
-    "AI threats"
-   ],
-   "why": [
-    "AI threats"
-   ]
-  },
-  {
-   "id": "7d2482c88528",
-   "title": "Fireworks AI discloses new breach after cloud provider hack",
-   "link": "https://www.bleepingcomputer.com/news/security/fireworks-ai-discloses-new-breach-after-cloud-provider-hack/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-10T07:49:58Z",
-   "summary": "AI infrastructure startup Fireworks has disclosed a new security breach in which attackers accessed its development machines after breaching a third-party cloud provider. [...]",
-   "score": 6,
-   "tags": [
-    "Data breach",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Data breach",
-    "SaaS / cloud"
    ]
   }
  ]
