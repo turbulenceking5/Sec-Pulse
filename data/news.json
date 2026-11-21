@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-20T20:24:45Z",
+ "generated": "2026-11-21T00:04:43Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -22,19 +22,19 @@
   {
    "name": "ASD / ACSC in the news",
    "ok": true,
-   "count": 4,
+   "count": 3,
    "error": null
   },
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 5,
+   "count": 6,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 4,
+   "count": 5,
    "error": null
   },
   {
@@ -52,7 +52,7 @@
   {
    "name": "CISA KEV",
    "ok": true,
-   "count": 22,
+   "count": 21,
    "error": null
   },
   {
@@ -75,9 +75,9 @@
   },
   {
    "name": "SANS ISC",
-   "ok": true,
-   "count": 10,
-   "error": null
+   "ok": false,
+   "count": 0,
+   "error": "ParseError: syntax error: line 1, column 0"
   },
   {
    "name": "Microsoft Security Blog",
@@ -100,11 +100,66 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 37,
+   "count": 36,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "7995d8c6dbe3",
+   "title": "Real estate influencers sued by N.J. authorities for allegedly scamming $1.5M from investors",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOcWotLVFZX1h4S2VTNzF6c2hOc0p0dXJqTzF4a2N0c1dPNjJhNjE5UDlGRlh2X2lfOE1BMFl1M3lVR056eTZKVzFILVJXU0pwWmFyZ25jMW8xVWM3dkVpb3p1dlFQclc2Q2l0b2g1UDlOcmZGd3pPR1FzWDQxdG1NOXYyNk1Tbmx2YUlvWHVRQ3lHNEZDRUV4UFM1aVdmdURwSy11cW0yTjg1SUhfdjBSMlln?oc=5",
+   "source": "Inquirer.com",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-20T22:15:01Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
+   "id": "a9aa37ceddf1",
+   "title": "China's 'Armory Castle' Lays Siege to VMware vCenter Zero-Day",
+   "link": "https://www.darkreading.com/cyberattacks-data-breaches/china-armory-castle-vmware-vcenter-zero-day",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-20T21:03:27Z",
+   "summary": "During the last wave of major VMware vCenter security updates, a China-nexus threat group likely already had its next zero-day up its sleeve.",
+   "score": 6,
+   "tags": [
+    "Actively exploited",
+    "Vulnerability"
+   ],
+   "why": [
+    "Actively exploited",
+    "Vulnerability"
+   ],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/"
+    },
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/newly-patched-vmware-vcenter-flaw-exploited-as-zero-day-by-chinese-apt/"
+    },
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html"
+    },
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html"
+    }
+   ],
+   "epss": 0.0084
+  },
   {
    "id": "b590886e6c3d",
    "title": "State Privacy Patchwork Expands Again — Preparing for 2027",
@@ -313,7 +368,7 @@
   },
   {
    "id": "37b96e651a9e",
-   "title": "Judge defers joint trial question in Medibank data breach cases",
+   "title": "Joint trial question in Medibank data breach cases deferred",
    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPVGhnYThwa0VaOEY1VXJodXdmNi04MWJOSW1DT1BacElQaGRoZ1hzREN2bmttVzJheEVBaG5DMG9BSXlLZklVOGFFclh6aHZyTjhscFRKcXF0cEVhTm1CSFZKaGh3X2h5V0J0aTlSRTZtVk14cm9QaDlJOVRPaGR4TGZqdWRsUDI1dUd0cC1kQzdHRHRPRWo0?oc=5",
    "source": "Lawyerly",
    "feed": "OAIC / Privacy news",
@@ -610,6 +665,10 @@
     {
      "source": "Dark Reading",
      "url": "https://www.darkreading.com/cyber-risk/optimizely-malware-attacks-third-party-vendor-risks"
+    },
+    {
+     "source": "Gulf News",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOZGNmSUdtSGtJYmdUanllbVhpQ0J4VXBwYWlZczdsRUFiSXhlVGZDekNNckJRd3NYd3NKOGRGOFVIX3gwX0h4TVFNQUZNVndRMC1tTDBqYkpfb1RJdlZnaGRsM0tRZmZXUGNpbjBsVTUtdUVxUE5UeEg3ZG5jQWl5Y0JlUFByRGk5emNHalQzQ2ZwbVE1V09EREFOaGVYZEw1elh5RVlBVWlPSzNfQlkzc3VGZ2pYUdIByAFBVV95cUxNNG53M0VpcG15YXRoNEV1TkVOTUFLTWljaHZGQTVUbDA1alQ0Q3ZDQ3lwVHk3ZHhBaTIycE9wMHRXWDFlSkFJeTY2YVhMbllyNVZZbHczdnNBUXNHMWdlVlNTazFMTkxucFNZT0FXYmc0aE16bVpBVzZwWDhPblJKcGdEbThJbmRydGNfaG9IbTAzWGp6dUV0RXgzSmlJcTRIalQzVmdyNVlWN1RtUF9TZEVHcjFsMVRJYjJ6UUhObkxveXRpNGdEeQ?oc=5"
     }
    ]
   },
@@ -695,26 +754,13 @@
    ]
   },
   {
-   "id": "e60f53cef3c6",
-   "title": "ISC Stormcast For Friday, November 20th, 2026 https://isc.sans.edu/podcastdetail/10188, (Fri, Nov 20th)",
-   "link": "https://isc.sans.edu/diary/rss/33538",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-11-20T02:00:02Z",
-   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
-   "score": 1,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "9306f26c4757",
+   "id": "3acd3a7dfce1",
    "title": "Medicare breach review prompts AI collaboration demand",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0tUC1SQ0ZRMVNMb284WVZZWjczbkZDZGxQUGpNZXpHM21GeDZ5S0pia0tpQWRSVE5kU2lodnBJV3hJS1lVWld3NnA5RTFqdVNfelhhek5GUnNINGcwd1MtSnhsMERpWmNkWEhWMFg1T1l2NFJqLVVSbXFUOUQyN0k?oc=5",
-   "source": "Yahoo News Australia",
+   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPMlpRVHk5dDJadHhaX2h5b3RubFo1NklXSmM2Y19rZVV2LVo2dFpoa2VUekdoUmMxTzJrVTFOT1ZpdUpQTVYzNS1HdHRSUXozV2k4SENQczdkRWI0YmUydnNENklDQzNxTk9YS3JyOWNmMlpJT3Fod3RiSzN5VWpGX0ZOamF0ZXM?oc=5",
+   "source": "inkl",
    "feed": "ASD / ACSC in the news",
    "region": "AU",
-   "published": "2026-11-20T01:54:00Z",
+   "published": "2026-11-20T02:00:41Z",
    "summary": "",
    "score": 9,
    "tags": [
@@ -728,42 +774,25 @@
     {
      "source": "https://aapnews.aap.com.au/",
      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSEdEWGhIMTBSZXRPUFdtNVUyd1pzYkpNUWltMDFiNzVUalZnSDhxUlRkV3BjdkNMV0hHMk45TnB2Q3NzOXM1cDFrZ0lNRFpWMW9wcGl0RWZCdVBwZ0FPSzRLX2owZElyWnFDOWRCUGFESTNxSkFFVUh1Z2RxNzRMQ2xBMnF5SXR4aHdfMVJtRQ?oc=5"
+    },
+    {
+     "source": "Yahoo News Australia",
+     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0tUC1SQ0ZRMVNMb284WVZZWjczbkZDZGxQUGpNZXpHM21GeDZ5S0pia0tpQWRSVE5kU2lodnBJV3hJS1lVWld3NnA5RTFqdVNfelhhek5GUnNINGcwd1MtSnhsMERpWmNkWEhWMFg1T1l2NFJqLVVSbXFUOUQyN0k?oc=5"
     }
    ]
   },
   {
-   "id": "c5e24a06d395",
-   "title": "VMware patches vCenter zero-day exploited in attacks since September",
-   "link": "https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
+   "id": "e60f53cef3c6",
+   "title": "ISC Stormcast For Friday, November 20th, 2026 https://isc.sans.edu/podcastdetail/10188, (Fri, Nov 20th)",
+   "link": "https://isc.sans.edu/diary/rss/33538",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
    "region": "Global",
-   "published": "2026-11-20T00:26:25Z",
-   "summary": "Broadcom has released security updates to fix a critical VMware vCenter Server authentication bypass vulnerability that Chinese-linked hackers have exploited in zero-day attacks since September 2026. [...]",
-   "score": 7,
-   "tags": [
-    "Actively exploited",
-    "Vulnerability"
-   ],
-   "why": [
-    "Actively exploited",
-    "Vulnerability"
-   ],
-   "also": [
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/newly-patched-vmware-vcenter-flaw-exploited-as-zero-day-by-chinese-apt/"
-    },
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html"
-    },
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html"
-    }
-   ],
-   "epss": 0.0084
+   "published": "2026-11-20T02:00:02Z",
+   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
+   "score": 1,
+   "tags": [],
+   "why": []
   },
   {
    "id": "5eeea3c7e1ab",
@@ -1110,6 +1139,23 @@
    ]
   },
   {
+   "id": "d65bf60cb1f2",
+   "title": "Visa data breach exposes premium cardholder data",
+   "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBfUUl2N3lyTjdmWEJDdUcyRlFBcnV4aWpJREZpa0tYN1l0aEI3MVFjN050SjhwcnRZa050MnZocHJIemVxb2prM21mQzFIU1cxcG9nZ2ItSTlSZHgxUjQtRkxqdw?oc=5",
+   "source": "Cybernews",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-19T12:49:09Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
    "id": "b7f6d70bce90",
    "title": "StepSecurity Secures $20 Million to Expand Supply Chain Protection",
    "link": "https://www.securityweek.com/stepsecurity-secures-20-million-to-expand-supply-chain-protection/",
@@ -1363,34 +1409,6 @@
    ],
    "why": [
     "Real estate"
-   ]
-  },
-  {
-   "id": "6a6a681d4810",
-   "title": "Patch, protect, prevent: ASD issues cyber alert",
-   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9XRENHX3hLc0pwOUxibmtURzNHOHNlRkxQLVk3SHNiSDVuTGlaQ2lHc1gwYlZLR1cwYUZmdWdzMk9kdnNHWWU1akktR0pnUUVYSzAxeG8xQXkzRDA1U2s0emhtemNOWmY1X0tZTGMwRVhRYkVjNjFiXw?oc=5",
-   "source": "Australian Journal of Pharmacy",
-   "feed": "ASD / ACSC in the news",
-   "region": "AU",
-   "published": "2026-11-19T03:31:03Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Vulnerability",
-    "Australia"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "also": [
-    {
-     "source": "ACSC Alerts",
-     "url": "https://www.cyber.gov.au/alert/vulnerabilities-are-moving-quickly-so-patch-protect-prevent"
-    },
-    {
-     "source": "cyber.gov",
-     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQWDZUR0oyZ1NOSnlOamdoNEVsQjRmNGwzUGg1TnlpUjlwV0g0SUZsMnR5THNrM25QVkhOTU5vRzhTTXBudW9ieGxfVEN1c18xNnU5YVk1Qk1PZEc4WGEyRkNfd0w3WDg4NUd5c3BIbWJ2VmpyUUJXWGlYem9WT3BWTENQUjUxV2JKdElwRHREYmJuWDZC?oc=5"
-    }
    ]
   },
   {
@@ -2906,6 +2924,36 @@
    "score": 1,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "fa8a2a790942",
+   "title": "Vulnerabilities are moving quickly, so patch, protect, prevent",
+   "link": "https://www.cyber.gov.au/alert/vulnerabilities-are-moving-quickly-so-patch-protect-prevent",
+   "source": "ACSC Alerts",
+   "feed": "ACSC Alerts",
+   "region": "AU",
+   "published": "2026-11-17T01:41:43Z",
+   "summary": "Actions organisations can take to identify internet-exposed systems, address vulnerabilities and reduce cyber security risk.",
+   "score": 11,
+   "tags": [
+    "Data breach",
+    "Vulnerability",
+    "Australia"
+   ],
+   "why": [
+    "Data breach",
+    "Vulnerability"
+   ],
+   "also": [
+    {
+     "source": "cyber.gov",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQWDZUR0oyZ1NOSnlOamdoNEVsQjRmNGwzUGg1TnlpUjlwV0g0SUZsMnR5THNrM25QVkhOTU5vRzhTTXBudW9ieGxfVEN1c18xNnU5YVk1Qk1PZEc4WGEyRkNfd0w3WDg4NUd5c3BIbWJ2VmpyUUJXWGlYem9WT3BWTENQUjUxV2JKdElwRHREYmJuWDZC?oc=5"
+    },
+    {
+     "source": "Australian Journal of Pharmacy",
+     "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9XRENHX3hLc0pwOUxibmtURzNHOHNlRkxQLVk3SHNiSDVuTGlaQ2lHc1gwYlZLR1cwYUZmdWdzMk9kdnNHWWU1akktR0pnUUVYSzAxeG8xQXkzRDA1U2s0emhtemNOWmY1X0tZTGMwRVhRYkVjNjFiXw?oc=5"
+    }
+   ]
   },
   {
    "id": "30a1887c7494",
@@ -7271,32 +7319,6 @@
     "Australia",
     "Data breach"
    ]
-  },
-  {
-   "id": "49097f3f34ac",
-   "title": "Attackers Searching for SAP Netweaver Webshells, (Mon, Nov 9th)",
-   "link": "https://isc.sans.edu/diary/rss/33502",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-11-09T18:18:15Z",
-   "summary": "Just saw a new (to me) URL in our honeypot data today:",
-   "score": 1,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "adccb074fbff",
-   "title": "Attackers Crash Claude's 'Office Party' Flaw to Run Malicious Code on Linux",
-   "link": "https://www.darkreading.com/endpoint-security/attackers-claude-office-party-flaw-malicious-code-linux",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-11-09T18:08:30Z",
-   "summary": "Attackers can exploit a flaw in Claude's document-processing tool by creating a temporary file that Anthropic's AI assistant can access and run on a user's machine.",
-   "score": 0,
-   "tags": [],
-   "why": []
   }
  ]
 }
