@@ -1,47 +1,47 @@
 {
- "generated": "2026-11-21T11:07:30Z",
+ "generated": "2026-11-21T19:19:01Z",
  "sources": [
   {
    "name": "ACSC Alerts",
-   "ok": true,
-   "count": 1,
-   "error": null
+   "ok": false,
+   "count": 0,
+   "error": "HTTPError: HTTP Error 403: Forbidden"
   },
   {
    "name": "ACSC Advisories",
-   "ok": true,
+   "ok": false,
    "count": 0,
-   "error": null
+   "error": "HTTPError: HTTP Error 403: Forbidden"
   },
   {
    "name": "ACSC (via Google News)",
-   "ok": true,
-   "count": 2,
-   "error": null
+   "ok": false,
+   "count": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "ASD / ACSC in the news",
-   "ok": true,
-   "count": 4,
-   "error": null
+   "ok": false,
+   "count": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "AU breach news",
-   "ok": true,
-   "count": 11,
-   "error": null
+   "ok": false,
+   "count": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "Real estate cyber news",
-   "ok": true,
-   "count": 6,
-   "error": null
+   "ok": false,
+   "count": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "OAIC / Privacy news",
-   "ok": true,
-   "count": 1,
-   "error": null
+   "ok": false,
+   "count": 0,
+   "error": "HTTPError: HTTP Error 503: Service Unavailable"
   },
   {
    "name": "iTnews Security",
@@ -100,11 +100,113 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 36,
+   "count": 37,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "1e1dbef95d66",
+   "title": "Microsoft Entra Connect Health flaw exploited to steal tenant data",
+   "link": "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-21T18:01:58Z",
+   "summary": "Microsoft is warning organizations that it suffered a data breach after attackers exploited a vulnerability in its Entra Connect Health service to gain unauthorized access to administrator email addresses and tenant configuration information. [...]",
+   "score": 15,
+   "tags": [
+    "Real estate",
+    "Microsoft 365",
+    "Data breach",
+    "Vulnerability"
+   ],
+   "why": [
+    "Real estate",
+    "Microsoft 365",
+    "Data breach",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "4b6021947b3e",
+   "title": "BADBOX botnet returns with record-breaking 40 billion daily ad requests",
+   "link": "https://www.bleepingcomputer.com/news/security/badbox-30-botnet-returns-with-record-breaking-40-billion-daily-ad-requests/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-21T15:17:27Z",
+   "summary": "The BADBOX malware found in a broad range of generic Android TV boxes has returned to large-scale ad-fraud operations following last year's disruptions. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "6231e48f3bee",
+   "title": "Amazon: China-Linked Hackers’ AI Agents Exploited Medical Software Zero-Day",
+   "link": "https://www.securityweek.com/amazon-china-linked-hackers-ai-agents-exploited-medical-software-zero-day/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-21T12:08:50Z",
+   "summary": "A threat actor used autonomous Cairn AI agents to discover and exploit a critical MONAI Label vulnerability. The post Amazon: China-Linked Hackers’ AI Agents Exploited Medical Software Zero-Day appeared first on SecurityWeek .",
+   "score": 6,
+   "tags": [
+    "Actively exploited",
+    "Vulnerability"
+   ],
+   "why": [
+    "Actively exploited",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "0ad755f2681c",
+   "title": "A Single Malicious Webpage Let Researchers Hijack Meta Muse and Access Private Chats",
+   "link": "https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-21T11:53:07Z",
+   "summary": "A malicious webpage could extract a Meta Muse user's private conversations and stored memories from the assistant without triggering any approval prompt, researchers have shown. The same attack could be extended to reach the credentials Muse stores for the user's connected accounts. The work was a…",
+   "score": 2,
+   "tags": [
+    "Identity"
+   ],
+   "why": [
+    "Identity"
+   ]
+  },
+  {
+   "id": "761885e6c02d",
+   "title": "GnuPG Warns Critical GPGME Flaw Could Expose App Data via Malicious OpenPGP Keys",
+   "link": "https://thehackernews.com/2026/11/gnupg-warns-critical-gpgme-flaw-could.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-21T11:05:53Z",
+   "summary": "A malicious OpenPGP key with an unusually long user ID can trigger a critical memory bug in GPGME, the standard library that programs use to work with GnuPG. The GnuPG project warned yesterday that the flaw could be used to steal data from affected applications and has released fixed versions. The…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "16765aea3bd9",
+   "title": "Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access",
+   "link": "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-21T11:03:17Z",
+   "summary": "Suspected China-linked hackers used autonomous AI agents to find a previously unknown flaw in MONAI Label, an open-source medical imaging server, and gain root access to a university server, Amazon Threat Intelligence said this week. The flaw allows an attacker with no account to write files…",
+   "score": 5,
+   "tags": [
+    "Actively exploited"
+   ],
+   "why": [
+    "Actively exploited"
+   ]
+  },
   {
    "id": "9da47b8efcbb",
    "title": "Signal Blocks AI Agents From Reading Private Chats via Screenshots on Android and iOS",
@@ -170,6 +272,12 @@
    ],
    "why": [
     "Data breach"
+   ],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/"
+    }
    ]
   },
   {
@@ -278,7 +386,7 @@
      "url": "https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html"
     }
    ],
-   "epss": 0.0084
+   "epss": 0.0299
   },
   {
    "id": "b590886e6c3d",
@@ -348,7 +456,8 @@
      "source": "SecurityWeek",
      "url": "https://www.securityweek.com/whatsapp-fixes-flaw-uncovered-while-disrupting-scam-campaign/"
     }
-   ]
+   ],
+   "epss": 0.0048
   },
   {
    "id": "0abe4221510a",
@@ -557,7 +666,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0015
+   "epss": 0.0019
   },
   {
    "id": "fc7b1a32d55e",
@@ -725,7 +834,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0019,
+   "epss": 0.0198,
    "also": [
     {
      "source": "The Hacker News",
@@ -753,7 +862,7 @@
     "Edge devices",
     "Vulnerability"
    ],
-   "epss": 0.0042,
+   "epss": 0.0219,
    "also": [
     {
      "source": "SecurityWeek",
@@ -978,7 +1087,7 @@
     "Edge devices",
     "Vulnerability"
    ],
-   "epss": 0.0042
+   "epss": 0.0219
   },
   {
    "id": "8c4a7c3d1402",
@@ -998,7 +1107,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0119
+   "epss": 0.0546
   },
   {
    "id": "5c82ea4b1c9d",
@@ -1018,7 +1127,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0084
+   "epss": 0.0299
   },
   {
    "id": "7f0512cdfd03",
@@ -1038,7 +1147,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0028
+   "epss": 0.0071
   },
   {
    "id": "5e65458c080e",
@@ -1176,7 +1285,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.5643,
+   "epss": 0.7112,
    "also": [
     {
      "source": "BleepingComputer",
@@ -1868,7 +1977,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0603
+   "epss": 0.2986
   },
   {
    "id": "9c40ff9a7698",
@@ -1888,7 +1997,7 @@
     "Actively exploited",
     "Vulnerability"
    ],
-   "epss": 0.0119,
+   "epss": 0.0546,
    "also": [
     {
      "source": "BleepingComputer",
@@ -2086,7 +2195,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0091
+   "epss": 0.4564
   },
   {
    "id": "57cf485fa921",
@@ -2176,7 +2285,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0069
+   "epss": 0.0123
   },
   {
    "id": "4ccf67b96d4a",
@@ -2243,7 +2352,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0091
+   "epss": 0.4564
   },
   {
    "id": "c5f6c87fa0f7",
@@ -2378,7 +2487,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0242
+   "epss": 0.0313
   },
   {
    "id": "2767467965fb",
@@ -2398,7 +2507,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.689
+   "epss": 0.78
   },
   {
    "id": "816726b4adb7",
@@ -2418,7 +2527,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.2566
+   "epss": 0.334
   },
   {
    "id": "ab9bbe7f3a56",
@@ -2438,7 +2547,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0183
+   "epss": 0.0381
   },
   {
    "id": "0f91631aef35",
@@ -2457,6 +2566,25 @@
    "why": [
     "Australia",
     "Vulnerability"
+   ]
+  },
+  {
+   "id": "46a6b0b05c4e",
+   "title": "Optimizely Malware Attacks Highlight Third-Party Vendor Risks",
+   "link": "https://www.darkreading.com/cyber-risk/optimizely-malware-attacks-third-party-vendor-risks",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-17T22:34:22Z",
+   "summary": "At least 178 organizations, including several major brands, unwittingly exposed website visitors to hydra-like malware via a third-party platform.",
+   "score": 6,
+   "tags": [
+    "Data breach",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Data breach",
+    "SaaS / cloud"
    ]
   },
   {
@@ -2704,7 +2832,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0091
+   "epss": 0.4564
   },
   {
    "id": "033b7c10af0d",
@@ -3242,7 +3370,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0069
+   "epss": 0.0123
   },
   {
    "id": "a6c1fed3171b",
@@ -3794,7 +3922,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0047
+   "epss": 0.0115
   },
   {
    "id": "2b1b80c8b882",
@@ -4875,7 +5003,7 @@
     "Edge devices",
     "Vulnerability"
    ],
-   "epss": 0.0194
+   "epss": 0.0327
   },
   {
    "id": "dd9560d2d329",
@@ -4895,7 +5023,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0047
+   "epss": 0.0115
   },
   {
    "id": "e9f16b1caffc",
@@ -5182,7 +5310,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0158,
+   "epss": 0.1582,
    "also": [
     {
      "source": "The Hacker News",
@@ -5370,7 +5498,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0573
+   "epss": 0.1879
   },
   {
    "id": "4fb3f4a554eb",
@@ -5513,7 +5641,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0074
+   "epss": 0.0088
   },
   {
    "id": "3773dc5512fb",
@@ -5953,7 +6081,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0041
+   "epss": 0.0051
   },
   {
    "id": "9c9df925add3",
@@ -6590,7 +6718,7 @@
     "Microsoft 365",
     "Vulnerability"
    ],
-   "epss": 0.0162
+   "epss": 0.0194
   },
   {
    "id": "b958c2272095",
@@ -7193,150 +7321,6 @@
     "Data breach",
     "SaaS / cloud"
    ]
-  },
-  {
-   "id": "b579a343e6b6",
-   "title": "CISA Warns of Active Exploitation of OpenSSH, GPUStack, FreeSWITCH, and IBM Flaws",
-   "link": "https://thehackernews.com/2026/11/cisa-warns-of-active-exploitation-of.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-10T06:31:42Z",
-   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday added four security flaws impacting GPUStack, SignalWire FreeSwitch, OpenBSD OpenSSH, and IBM Aspera Faspex to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The vulnerabilities…",
-   "score": 4,
-   "tags": [
-    "Actively exploited"
-   ],
-   "why": [
-    "Actively exploited"
-   ],
-   "also": [
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/ibm-aspera-faspex-signalwire-freeswitch-vulnerabilities-exploited-in-attacks/"
-    }
-   ]
-  },
-  {
-   "id": "3afb070999e9",
-   "title": "Australia to launch AI safety regulator after OpenAI's breach of a government portal",
-   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQVW1wcmNyejJ0azJVVHZrdUFhYklBTWkzVmNGUUZYa1c1VlBxWWxMMGIzc1haVTY0V21IX0VMd0FTcXp2SmtudGV1cG1ucFpBSllIY3V6QWpCcS1FUnF1WkVUV0VPTDJlZGVGTUctb08yWmU4b3BuTUdLZWJDZ01MakpQTjBvRk91SjhxaE95eU5aZklGQklVZ2M2aDFVZ1RrdUdLSEJUMWRxM2YybTU0VjkzdHV0aXdqSWtiR2JTZzdYQWtyU2ZOWUZyMURQbUJNN09LWXQzSWl0YndLVGgteQ?oc=5",
-   "source": "Audacy",
-   "feed": "Real estate cyber news",
-   "region": "AU",
-   "published": "2026-11-10T05:02:00Z",
-   "summary": "",
-   "score": 14,
-   "tags": [
-    "Australia",
-    "Data breach"
-   ],
-   "why": [
-    "Australia",
-    "Data breach"
-   ],
-   "also": [
-    {
-     "source": "Al Jazeera",
-     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOenU4WXNoTkJTLTZPbmNkbW1ubWJORmJqSmNGWFd5ZGg1a1JrUXowYVhmSTRKLWo1cWFKQUJyZklyRVdvbzM1Z1pfWFF4SWd1QzA0amExQzMyM0Rzang2TDZ2bWRvUjZnLW5WcW1FLS1TTjRBWXFoX1Iyd2Q5TEJvbG55M29IaVozWlNac1JpdTFtT2d0bUZpTmtYeFZpMzJ0ZDA4UWQxWmRkZWVDX3JBRHlKN1XSAbQBQVVfeXFMTnp1OFlzaE5CUy02T25jZG1tbm1iTkZiakpjRlhXeWRoNWtSa1F6MGFYZkk0Si1qNXFhSkFCcmZJckVXb28zNWdaX1hReElndUMwNGphMUMzMjNEc2p4Nkw2dm1kb1I2Zy1uVnFtRS0tU040QVlxaF9SMndkOUxCb2xueTNvSGlaM1pTWnNSaXUxbU9ndG1GaU5rWHhWaTMydGQwOFFkMVpkZGVlQ19yQUR5SjdV?oc=5"
-    }
-   ]
-  },
-  {
-   "id": "231ca9f8e489",
-   "title": "ISC Stormcast For Tuesday, November 10th, 2026 https://isc.sans.edu/podcastdetail/10172, (Tue, Nov 10th)",
-   "link": "https://isc.sans.edu/diary/rss/33504",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-11-10T02:00:02Z",
-   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
-   "score": 1,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "33a90a059e5b",
-   "title": "Tucson landowner loses $10,000 in deed fraud as FBI reports increase in real estate scam losses",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOWV92Z0cxWW5leW4xTGt5Y291YndETFBmZk83VURBZDllOXBJcXNTWUpmNS1jbGM2LWlSWEN0WHpUWlpjMUhJUXRwOVJDdVFsZWZ5TlFIUmNXRjU4YWF0RXBaZzJSQTVjOUg5Sm5mRnNmYmROQU56N1FPaVM4dHRmaHFpc0RKUWlwY2djZUczSEdwSHNrczc1WjBzMUkzVkx0QVY3OFNEeDdneUVHeXR3S2FLQlVCQmJu0gHMAUFVX3lxTE0wbHlqR241Mk9nY2VQcFM2NFFPblJFQ2FYSkVmYnhRSjdJRXVmdl9QNm1LamNINk9CTGFnRmlxZUc2RUV2X08yY1ZpTmFNZlM4Z2stQi1vMFZCWF9IWHFWMnRZMlQ5VWt3NXZuQTFTa3h6ZklvNVVOWkVPNHgwU1BBeEVNUzVVUGtMdUhtMkEyM0tMcDBlTV9qX1J3dThvVDVLSUNKc0NfUFpDb1VzVENoRXQtRUlSRzhlUU5JblVLNU0yaU9mWU1OcEZ2MA?oc=5",
-   "source": "KOLD",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-10T01:48:00Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ]
-  },
-  {
-   "id": "fe16241dfb0c",
-   "title": "CVE-2026-124194: Microsoft Office — Microsoft Office Outlook Missing User Interaction for Potentially Unsafe Action Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-124194",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-11-10T00:00:00Z",
-   "summary": "Microsoft Office Outlook contains a missing user interaction for potentially unsafe action vulnerability that allows an unauthorized attacker to perform spoofing over a network. CISA remediation due 2026-11-24.",
-   "score": 8,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Microsoft 365",
-    "Vulnerability"
-   ],
-   "why": [
-    "Microsoft 365",
-    "Vulnerability"
-   ],
-   "epss": 0.0162
-  },
-  {
-   "id": "588033e85e3e",
-   "title": "CVE-2026-20320: Cisco BroadWorks — Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-20320",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-11-10T00:00:00Z",
-   "summary": "Cisco BroadWorks contains an improper restriction of XML external entity reference vulnerability that could allow an unauthenticated, remote attacker to read sensitive configuration information on an affected system. CISA remediation due 2026-11-24.",
-   "score": 7,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "why": [
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "epss": 0.0098
-  },
-  {
-   "id": "255a7e2e04ea",
-   "title": "CVE-2026-111560: Barracuda Networks Multiple Products — Barracuda Networks Multiple Products OS Command Injection Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-111560",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-11-10T00:00:00Z",
-   "summary": "Barracuda Networks Email Security Gateway (ESG), Load Balancer, Application Delivery Controller (ADC), Message Archiver (BMA), WAF Control Center (WCC), Web Application Firewall (WAF), and Web Security Gateway (WSG) contain an OS command injection… CISA remediation due 2026-11-13.",
-   "score": 6,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "why": [
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "epss": 0.0908
   }
  ]
 }
