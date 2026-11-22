@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T01:21:39Z",
+ "generated": "2026-11-22T11:28:47Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -22,7 +22,7 @@
   {
    "name": "ASD / ACSC in the news",
    "ok": true,
-   "count": 4,
+   "count": 2,
    "error": null
   },
   {
@@ -105,6 +105,70 @@
   }
  ],
  "items": [
+  {
+   "id": "ea51b7bd2b69",
+   "title": "On the 22nd, President Lee Jae Myung repeatedly refuted the suspicion of breach of trust in the Daej..",
+   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBlSUZvQ2ZzWnJ2ODNGdEJadEQ2SDVqR0duQ3ZfUWFZY0hhdTVBOHFVRVNKV2dhZ1ZFR0NmekgxZzhZNl9tdmhUMTFSblpsQmFVWU1j?oc=5",
+   "source": "매일경제",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-22T09:13:12Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "78074d39dfa2",
+   "title": "OpenRouter Drops 3 Providers After Researchers Catch Months of Prompt Theft at AI Hosting Firms",
+   "link": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-22T05:06:55Z",
+   "summary": "Attackers stole data from inside three AI inference providers for months, and none of the three knew until researchers told them, the industrial cybersecurity company Dragos said this week. Some of the stolen requests were flagged as Zero Data Retention, the setting that is supposed to mean a…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "0be8ff22df4a",
+   "title": "Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in Popular Apps",
+   "link": "https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-22T05:03:41Z",
+   "summary": "A now-patched flaw in Ghostscript allows a crafted file to escape the program's security sandbox and run commands on the server that processes it. Ghostscript is the interpreter that many Linux servers use to convert uploaded PDFs, PostScript files, and images into other formats, often without the…",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "670ffd6d4560",
+   "title": "Cloud Service Providers Uganda: 2026 Licensing and Data Compliance Guide",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNZzhOaG13VUhRVzZLTy12MTJ3Zl9oX1gwMDhOVFMzSlhMSW5PZGRKcXV3a1JtZnBkMXZtUXNFaVpMRlBaa0JEQm96U1JCMUFvNFU0ZnNNZ1VKUmFsRDFPMU04WkVqVGpYcC14MXpQajhjMkdUQTdIYWNabVU4MlRJSm5sZHpYRy1XY2k2eGZkSTNwUk5rZ3c?oc=5",
+   "source": "Global Advisory Experts",
+   "feed": "OAIC / Privacy news",
+   "region": "Global",
+   "published": "2026-11-22T03:12:33Z",
+   "summary": "",
+   "score": 5,
+   "tags": [
+    "SaaS / cloud"
+   ],
+   "why": [
+    "SaaS / cloud"
+   ]
+  },
   {
    "id": "43303fd5c2cb",
    "title": "Chase data breach lawsuit: can customers sue when a vendor attack may have exposed names and emails",
@@ -815,6 +879,23 @@
    "why": []
   },
   {
+   "id": "c7d9950003bc",
+   "title": "Cyberattack against Equinor is over with no data breach or impact on production",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQOGFpRW5fZVQ2NkN4Zl9aSE1BTHFfT19sZXdFQ0hyWTJRNnQ2ZXdCOVFvZ1JNY21fWHFRUG03dlhuejI4Qk5WaXphTzZvQ3VxZGluOFNFWngxOFJENkNxR2JGY1pmQ2lXMTlBdzJyR2lBRzhrTGpxem5sdl9rMVZ3RmxFaV9kVHR0SlB4UC1UZjdsblRwSy1HRmdZbkFfb2cxeE9hdVEwUHN1RlAzRmlkWUZxY3ZOaEJTeWFZdUpoQQ?oc=5",
+   "source": "Offshore Energy",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-20T12:04:31Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
    "id": "0385119f4283",
    "title": "5 ways to outsmart AI-generated fraud schemes in real estate",
    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPb2pVS3VVb19nNmU5WjU4VXNTMk1yWmROZ1htcDQ4UU9vQUJOQ0Z4eURyQThNY1IxWXBVb1QxUVdJN2hBME5Jd01MQTJ5WnFRWTVDUXhrVG9pa2ktZU93Y3gzVlFWa1Q3cVRRN0xNaExRTFdJeUhITk1IZHJJTWFRQWhpNHU2eTBpQmtXYg?oc=5",
@@ -1170,6 +1251,23 @@
    ]
   },
   {
+   "id": "47bc6fb0681f",
+   "title": "Ransomware Victims Face Weeks Of Downtime As Attackers Target Backups",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPMk0yUGhTTWIxNXgyVGRnUEtaV2U4UHFWRHRNd0NUZGVNaENZQWg3UTNZcklmNnozUF9SdHpqM3pudy1JN2Y3LXRLMXB0YjlBY3o0LTVqUVFNcHRyczN5VXdQcHdLV3owc1dFSmlJQmtEOXExd19mMXNnMlhKT1BpV05fMGk1ZU5jV0t4bXB6UkFVdDZ2UlJxWlF3?oc=5",
+   "source": "SMBtech",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-20T03:04:51Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
+  },
+  {
    "id": "b5a7a13c2c4f",
    "title": "Rocket Mortgage Fined $6.7M By NYDFS Over Cyber Lapses",
    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQV1Zqd3dyR3JPc0l0OUJkcHZmMFcyTFJlbnZqendHcklfQV9CSm5hMjUybVlxYVR0Q3J1SVdwQjUwTEFra2k0ZHAzcW5iQnJ0N3pudVVBYXQtSjB4Z0tQR3hwQWcySDBibm84N3ZXYWd3NEZrWVg1UjJaM3VsV3l0NVMweGd0eDNjYThWbXpweEJvSnZtWDBqaUdDQ1pMbV9aVDdhWXRkVTF6X18ycU41aHJMSGE3Z9IBc0FVX3lxTE5WcmwwbVFtbWhOOFQzRXBfX2dNNHVxZmdPeUZjVEFOaTB6dk4yeUVzMzNVSnZ6RlB4c2ZTQ1R4YmNHbDMwUmRhdHlsZW56NnR3WXo3QmJyaV9mbU5rOGVtUTB0ZHhhUUc0d3FjekZZNXJjd2M?oc=5",
@@ -1187,26 +1285,13 @@
    ]
   },
   {
-   "id": "e60f53cef3c6",
-   "title": "ISC Stormcast For Friday, November 20th, 2026 https://isc.sans.edu/podcastdetail/10188, (Fri, Nov 20th)",
-   "link": "https://isc.sans.edu/diary/rss/33538",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-11-20T02:00:02Z",
-   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
-   "score": 1,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "9306f26c4757",
+   "id": "3acd3a7dfce1",
    "title": "Medicare breach review prompts AI collaboration demand",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0tUC1SQ0ZRMVNMb284WVZZWjczbkZDZGxQUGpNZXpHM21GeDZ5S0pia0tpQWRSVE5kU2lodnBJV3hJS1lVWld3NnA5RTFqdVNfelhhek5GUnNINGcwd1MtSnhsMERpWmNkWEhWMFg1T1l2NFJqLVVSbXFUOUQyN0k?oc=5",
-   "source": "Yahoo News Australia",
+   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPMlpRVHk5dDJadHhaX2h5b3RubFo1NklXSmM2Y19rZVV2LVo2dFpoa2VUekdoUmMxTzJrVTFOT1ZpdUpQTVYzNS1HdHRSUXozV2k4SENQczdkRWI0YmUydnNENklDQzNxTk9YS3JyOWNmMlpJT3Fod3RiSzN5VWpGX0ZOamF0ZXM?oc=5",
+   "source": "inkl",
    "feed": "ASD / ACSC in the news",
    "region": "AU",
-   "published": "2026-11-20T01:54:00Z",
+   "published": "2026-11-20T02:00:40Z",
    "summary": "",
    "score": 9,
    "tags": [
@@ -1222,10 +1307,23 @@
      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSEdEWGhIMTBSZXRPUFdtNVUyd1pzYkpNUWltMDFiNzVUalZnSDhxUlRkV3BjdkNMV0hHMk45TnB2Q3NzOXM1cDFrZ0lNRFpWMW9wcGl0RWZCdVBwZ0FPSzRLX2owZElyWnFDOWRCUGFESTNxSkFFVUh1Z2RxNzRMQ2xBMnF5SXR4aHdfMVJtRQ?oc=5"
     },
     {
-     "source": "inkl",
-     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPMlpRVHk5dDJadHhaX2h5b3RubFo1NklXSmM2Y19rZVV2LVo2dFpoa2VUekdoUmMxTzJrVTFOT1ZpdUpQTVYzNS1HdHRSUXozV2k4SENQczdkRWI0YmUydnNENklDQzNxTk9YS3JyOWNmMlpJT3Fod3RiSzN5VWpGX0ZOamF0ZXM?oc=5"
+     "source": "Yahoo News Australia",
+     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0tUC1SQ0ZRMVNMb284WVZZWjczbkZDZGxQUGpNZXpHM21GeDZ5S0pia0tpQWRSVE5kU2lodnBJV3hJS1lVWld3NnA5RTFqdVNfelhhek5GUnNINGcwd1MtSnhsMERpWmNkWEhWMFg1T1l2NFJqLVVSbXFUOUQyN0k?oc=5"
     }
    ]
+  },
+  {
+   "id": "e60f53cef3c6",
+   "title": "ISC Stormcast For Friday, November 20th, 2026 https://isc.sans.edu/podcastdetail/10188, (Fri, Nov 20th)",
+   "link": "https://isc.sans.edu/diary/rss/33538",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-11-20T02:00:02Z",
+   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
+   "score": 1,
+   "tags": [],
+   "why": []
   },
   {
    "id": "5eeea3c7e1ab",
@@ -7192,106 +7290,6 @@
    ],
    "why": [
     "Vulnerability"
-   ]
-  },
-  {
-   "id": "211a494237a6",
-   "title": "Philippines confirms data breaches involving 10 government agencies",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNU2NuTk5vTzRKLTFTNlRicXhPZkpLb004RkkzbVgtRC1PMnUyQkgtbDVzTXozUDdkaEtxSlFjb21hQVBaMmQtYzVZY0RZdHRGOUp2T29lcFNBSDVyS1pTQ3hNdmFNZk41SXo1R05MNF92VUVLYlNNdG9UdXRuUFlaMGdFOGViVnFQNHdJMndXT0ZLUjI2NFB2U2gxZVZ5TmhhRGdGUHY3ZkJzZkFmNWwtUXlsYy02cHNuTzhFMHYtUmHSAdYBQVVfeXFMTUxIRUdLNVNrNWctZjU1NjVBdFZZUGFkYWw2ZmlnWnNtOTZMNzAycFQ4aUFQOEg0RjNhSTZuQzNwUEJwSG5CeHprNE1iY0VZdVJaZi1FRVg2RzVsOW5LVTc0cU1TS2toZGV0TGFxNDJPUkRQNlZsVmtrWjJNTDkyUno2QmVzejBNeHlid09WR081THhCWkZ0ZTkxcEUwN01ZQ0YwNUJkSUx0b3lFcjczc3lPOEgzNHVVdzlmallFSHpRTjdwcVpLR0h6Mk05Sk0zT0FWekdvZw?oc=5",
-   "source": "Gulf News",
-   "feed": "OAIC / Privacy news",
-   "region": "Global",
-   "published": "2026-11-10T12:43:22Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "037628398b09",
-   "title": "Anthropic Rolls Out Mythos 5.2 With Improved Bug Hunting, Fewer Sandbox Escapes",
-   "link": "https://www.securityweek.com/anthropic-rolls-out-mythos-5-2-with-improved-bug-hunting-fewer-sandbox-escapes/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-10T12:17:13Z",
-   "summary": "Anthropic says Mythos 5.2 improves vulnerability discovery while showing a lower tendency to escape sandboxes in controlled tests. The post Anthropic Rolls Out Mythos 5.2 With Improved Bug Hunting, Fewer Sandbox Escapes appeared first on SecurityWeek .",
-   "score": 1,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "3badf33b9e63",
-   "title": "Beyond the Alert: The Case for Rich Network Data",
-   "link": "https://thehackernews.com/2026/11/beyond-alert-case-for-rich-network-data.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-10T11:38:13Z",
-   "summary": "At some point your security will fail. This isn’t pessimism. It’s not because your team and tools aren’t sophisticated enough. It’s the reason we have detections in the first place. And, it’s why once we accept that prevention has its limits, we arrive at an interdiction strategy: finding and…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "ba7507c6f20e",
-   "title": "Apple Patches iMessage Group Chat Privacy Flaws and Bluetooth Pairing Vulnerabilities",
-   "link": "https://thehackernews.com/2026/11/apple-patches-imessage-group-chat.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-10T10:16:51Z",
-   "summary": "An iMessage flaw could let a remote attacker join a group chat and receive its messages, Apple said yesterday, and it released updates to fix it. The updates also fix a separate iMessage flaw that could let someone added to a group access messages sent before they joined. As of today, other…",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "7d35c70e6708",
-   "title": "Russian Turla Hackers Use New Cereal Malware to Steal Emails From Government Exchange Servers",
-   "link": "https://thehackernews.com/2026/11/russian-turla-hackers-use-new-cereal.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-10T10:07:29Z",
-   "summary": "The Russia-aligned state-sponsored threat actor known as Turla (aka Snake) is wielding a previously undocumented cyber espionage toolset called Cereal that's used to break into victims' Microsoft Exchange servers with an aim to surreptitiously collect emails. According to an ESET report shared…",
-   "score": 0,
-   "tags": [],
-   "why": [],
-   "also": [
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/turla-hackers-use-new-ceral-malware-to-spy-on-govt-exchange-servers/"
-    }
-   ]
-  },
-  {
-   "id": "f2a042c90471",
-   "title": "Government adopts Rapid Review recommendations after Medicare breach",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNa0tpMzNkcnplckg5QXktLWJYT0w4aVFHa1Q1LVcwTTVTNWxfVVFVaUM4OXUyOU9mSlhTLUdzTUR4LXNYVDF1d3otOTFGemExQkFqeHpET3lJOFBiTWYyT2Z2M3hLWm96em1pZnFNZGVfelZPSVpsaEhva0ZDWG5XOEJnX1NHUGE3YzdCYUZWSUpIZk9UVzYxS2hmdjZaMkdNSjdJMEZTQ0tZdFVUQUhmSEdWV3FnQQ?oc=5",
-   "source": "ARNnet",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-11-10T10:02:35Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
    ]
   }
  ]
