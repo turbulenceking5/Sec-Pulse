@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T19:43:39Z",
+ "generated": "2026-11-22T23:42:35Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -15,33 +15,33 @@
   },
   {
    "name": "ACSC (via Google News)",
-   "ok": false,
-   "count": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "count": 1,
+   "error": null
   },
   {
    "name": "ASD / ACSC in the news",
-   "ok": false,
-   "count": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "count": 2,
+   "error": null
   },
   {
    "name": "AU breach news",
-   "ok": false,
-   "count": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "count": 8,
+   "error": null
   },
   {
    "name": "Real estate cyber news",
-   "ok": false,
-   "count": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "count": 6,
+   "error": null
   },
   {
    "name": "OAIC / Privacy news",
-   "ok": false,
-   "count": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "count": 1,
+   "error": null
   },
   {
    "name": "iTnews Security",
@@ -105,6 +105,40 @@
   }
  ],
  "items": [
+  {
+   "id": "8228bee34334",
+   "title": "KEPCO Data Breach Exposes 1.52 Million Records, Including Power Grid Procurement Files",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQM1FRUk5LZF9CUzQxRXVPM1cxaERaS18tV1RvaklqNEVVVXA5b3dYREpNdzVjMzFFUXFxZWxNMmd4S3YwVUpTZEx5MnhySzBCdThtWnBOdHBaZUpXS2hQN1dTMWw0SXVXZDZsZU9qbnRGRHVkWjZHdjRqNXBqbGd6NUZncVZEbEI5VjJTYlZCWlJWRFFGbGRKYXdDZEdSZw?oc=5",
+   "source": "Seoul Economic Daily",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-22T20:30:05Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "de8cd31c4430",
+   "title": "Oneida County real estate: See all residential properties sold, Nov. 9-15",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQVUpfd3VnWG4xR0RTYXNaUHBGNmh5ZDlEQmFVNVV6blRnT3RWcTY1UnZPUDdnSHNaNHhqeUlqNnprMzgzRzd5by1BVWJHZmozRjJHMFV0RzlPMG83eU1TYzVIX3Ria195U1ozUTJDNVJoSzJWQnJWbjV2dHpJOE5fSTU5S2RzWWt2VGwwLTdTWGtZUnV3SUVMRllMZkRfQmctX1VDUUVKN0VOYVBTR1FCaUhaemUtZDJ3WWpyWW5xcmJ6dw?oc=5",
+   "source": "Syracuse.com",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-22T20:26:00Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
   {
    "id": "e84afceb005f",
    "title": "Hackers exploit GL.iNet cloud flaw to infect routers, KVM devices",
@@ -821,6 +855,39 @@
    ]
   },
   {
+   "id": "2e982444db05",
+   "title": "JPMorgan, Visa, and Mastercard customer data leaked on the dark web by \"n0n\" ransomware group",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQR2pxamJfUzVYMzF0N3BXdGFfcmV6Yl84UWNlRGkycmlkM2VYR3hnc1JJS0dMSFN2a2dVUUpGM1lsTFk5NnJ0QmcwMEY3LTJJT21PQ3VIY0NORkJ3RWRKak5SQ1pPX0djVDVueGdnUGkwWWhfNEctRldvVTAwWmpqMUxkcXZZTWY0SGFqMHVRTXZzeEpfbXF2TXVIT3A?oc=5",
+   "source": "TechSpot",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-20T15:12:00Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Ransomware",
+    "Data breach"
+   ],
+   "why": [
+    "Ransomware",
+    "Data breach"
+   ],
+   "also": [
+    {
+     "source": "Yahoo News Australia",
+     "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5BdU1oWVJsckYxZy1sSlh2TUNVRzN3SnF0ZjVwVHVHTXZqM2E2dVBVNk8xcm1ZUS1Nd1JTQnAycW5NWlp4T1hmcDc3U3BLSTBQM0MxdGFrTHhhR1NoenFpcG5qMFgyRXA1M1V1SlZyMmREdmROTmw4?oc=5"
+    },
+    {
+     "source": "iTnews",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQ1FhZko4YjNScFVfVmhmWHVBQkFmdnRtUzZWQUJEbHhFejd5MEswWmwxSmVjTUU0cnp3SFB2N2RXZ0dPRmJyTjg2dlZhd3FqVVFJWEh5NERnVXdIcjVlbU5XbFI5U0pEU2I2R3ppRVZfWUpIOEk4WU93ZlpNN2lxVnlRMEFHZF9IRGg4dW1UMURBTzltNEVSOV9ydWhEa1plR0lHRWs3clhPQXBIR2VF?oc=5"
+    },
+    {
+     "source": "Dark Reading",
+     "url": "https://www.darkreading.com/cyber-risk/optimizely-malware-attacks-third-party-vendor-risks"
+    }
+   ]
+  },
+  {
    "id": "19cca4f1450a",
    "title": "Still tracking company passwords in spreadsheets? You’re flying blind.",
    "link": "https://www.bleepingcomputer.com/news/security/still-tracking-company-passwords-in-spreadsheets-youre-flying-blind/",
@@ -885,6 +952,19 @@
     "Australia",
     "Data breach"
    ]
+  },
+  {
+   "id": "d5ce378b68b4",
+   "title": "Microsoft Debuts Offensive, Defensive Security Tools for the AI Era",
+   "link": "https://www.darkreading.com/endpoint-security/microsoft-offense-defense-ai-security-tools",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-20T13:51:30Z",
+   "summary": "Microsoft announces new AI agent security tools and transparency standards to protect enterprise systems at its Ignite technical conference.",
+   "score": 0,
+   "tags": [],
+   "why": []
   },
   {
    "id": "d9a325150570",
@@ -2921,25 +3001,6 @@
    "why": [
     "Australia",
     "Vulnerability"
-   ]
-  },
-  {
-   "id": "46a6b0b05c4e",
-   "title": "Optimizely Malware Attacks Highlight Third-Party Vendor Risks",
-   "link": "https://www.darkreading.com/cyber-risk/optimizely-malware-attacks-third-party-vendor-risks",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-11-17T22:34:22Z",
-   "summary": "At least 178 organizations, including several major brands, unwittingly exposed website visitors to hydra-like malware via a third-party platform.",
-   "score": 6,
-   "tags": [
-    "Data breach",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Data breach",
-    "SaaS / cloud"
    ]
   },
   {
@@ -7243,68 +7304,6 @@
    "score": 0,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "0eb55bf1598e",
-   "title": "Attackers Exploit AhsayCBS Flaws to Deploy Sandbox-Evading Python Backdoor",
-   "link": "https://thehackernews.com/2026/11/attackers-exploit-ahsaycbs-flaws-to.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-10T16:00:55Z",
-   "summary": "Cybersecurity researchers have disclosed details of an attack that exploited two now-patched vulnerabilities in AhsayCBS to deliver a Python-based implant. The activity, observed by Huntress in early October 2026, involves the exploitation of a chain comprising CVE-2026-105133 and CVE-2026-105134…",
-   "score": 3,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.8448
-  },
-  {
-   "id": "89d6f6254d42",
-   "title": "Binance warns of iOS flaw that could leak crypto wallet secrets",
-   "link": "https://www.bleepingcomputer.com/news/security/binance-warns-of-ios-flaw-that-could-leak-crypto-wallet-secrets/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-10T15:59:19Z",
-   "summary": "Binance is warning about a vulnerability in Apple's iOS 26.7.1, 27.0.1, and 27.2 that could allow third-party apps to read private files stored by other apps, including cryptocurrency seed phrases, secret keys, and login credentials. [...]",
-   "score": 5,
-   "tags": [
-    "Identity",
-    "Vulnerability",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Identity",
-    "Vulnerability",
-    "SaaS / cloud"
-   ],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/11/binance-warns-of-ios-sandbox-escape.html"
-    }
-   ]
-  },
-  {
-   "id": "7e413807cc2f",
-   "title": "Blind Eagle Uses Fake Court Notices to Deliver Remote Access Trojan Across Latin America",
-   "link": "https://thehackernews.com/2026/11/blind-eagle-uses-fake-court-notices-to.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-10T15:58:44Z",
-   "summary": "The threat actor known as Blind Eagle has resurfaced with a new campaign targeting organizations in Latin America through judicial and administrative-themed phishing lures to deliver a remote access trojan (RAT) that shares its lineage with AsyncRAT and DCRat. \"The campaign uses Portuguese and…",
-   "score": 3,
-   "tags": [
-    "Phishing"
-   ],
-   "why": [
-    "Phishing"
-   ]
   }
  ]
 }
