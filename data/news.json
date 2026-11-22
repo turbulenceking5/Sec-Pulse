@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T11:28:47Z",
+ "generated": "2026-11-22T15:48:50Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -40,7 +40,7 @@
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 1,
+   "count": 2,
    "error": null
   },
   {
@@ -105,6 +105,42 @@
   }
  ],
  "items": [
+  {
+   "id": "855a50efe0f3",
+   "title": "Cleverbridge warns hackers stole credit card numbers, CVVs in data breach",
+   "link": "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-22T15:43:04Z",
+   "summary": "E-commerce platform Cleverbridge is warning that hackers breached its systems and stole customers' payment card information, including credit card numbers and CVV security codes. [...]",
+   "score": 4,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "2361e0929a29",
+   "title": "Signal to block Siri, Gemini AI from capturing chats on iOS, Android",
+   "link": "https://www.bleepingcomputer.com/news/security/signal-to-block-siri-gemini-ai-from-capturing-chats-on-ios-android/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-22T15:15:25Z",
+   "summary": "Signal has announced new protections that block screenshots on iOS 27 and prevent AI assistants from capturing conversations on supported Android devices. [...]",
+   "score": 0,
+   "tags": [],
+   "why": [],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html"
+    }
+   ]
+  },
   {
    "id": "ea51b7bd2b69",
    "title": "On the 22nd, President Lee Jae Myung repeatedly refuted the suspicion of breach of trust in the Daej..",
@@ -390,19 +426,6 @@
    ]
   },
   {
-   "id": "9da47b8efcbb",
-   "title": "Signal Blocks AI Agents From Reading Private Chats via Screenshots on Android and iOS",
-   "link": "https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-21T08:49:20Z",
-   "summary": "Signal has announced that it will restrict screenshots by default to stop artificial intelligence (AI) agents from reading private chats on Android and iOS devices, but conceded that the protection is \"incomplete.\" The feature applies to agentic systems built into iOS 27 and on Android versions…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
    "id": "a3eac34b29cf",
    "title": "Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge",
    "link": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html",
@@ -550,6 +573,23 @@
    ]
   },
   {
+   "id": "b268d6548b03",
+   "title": "Visa and Mastercard Data Leak: How to Spot the Fake \"Your Card Is Compromised\" Calls That Follow",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOSEVqcUFQM3l0MHR3RVBuTXpCNWxzMDg0UjNNQm95enFKRWoxRXNjYmNTVFB5VHZ3S3REb04xWnBpWjMtbm40cXJ0UmpqSGF2el8tUnROelZMbW5NRUJyV0JxMEx3dFR5Nk1hRWpJQTRxSDIwOXo5ODZ2QlQ1cDRGY1lTSS0?oc=5",
+   "source": "The Original PC Doctor",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-20T21:06:41Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
    "id": "a9aa37ceddf1",
    "title": "China's 'Armory Castle' Lays Siege to VMware vCenter Zero-Day",
    "link": "https://www.darkreading.com/cyberattacks-data-breaches/china-armory-castle-vmware-vcenter-zero-day",
@@ -585,16 +625,16 @@
      "url": "https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html"
     }
    ],
-   "epss": 0.0299
+   "epss": 0.0353
   },
   {
-   "id": "b590886e6c3d",
+   "id": "70e504b47fd2",
    "title": "State Privacy Patchwork Expands Again — Preparing for 2027",
-   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOSjVtVDRGbkZOeUpNQW4tUWFseHNIRHcteVZ3UVBXUHFENW9FaEh1eklUTjk3aERlR2xhbThRWXliUWN4emJVT1Bnb2lna2hiYlZpY0J4VmtTNm0wZUFVMFc1RVVUbE9CcmRaRm1fdEZYaXBLeTJXRWJSem1HYm9UQkE3ekhTejg?oc=5",
-   "source": "JD Supra",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOY2hLdlZoZHJNSy1RcXZSR3k4MkJQUVd1SnJRREg0ZkdINnhNbERvYS1abzIzQ1hzSGdBa3RnZXZpYnBqTVNnZlNSQ25mVWtpRlhqcnpIZS1yWHJnRE5KN0FtcGdtbjV1OWR3NnlTaE5EU2VTVmhrX2NldExNYURXbXY3MXRpOGE5OHd0dg?oc=5",
+   "source": "Wiley Rein",
    "feed": "OAIC / Privacy news",
    "region": "Global",
-   "published": "2026-11-20T19:36:32Z",
+   "published": "2026-11-20T19:30:59Z",
    "summary": "",
    "score": 4,
    "tags": [
@@ -602,6 +642,12 @@
    ],
    "why": [
     "Vulnerability"
+   ],
+   "also": [
+    {
+     "source": "JD Supra",
+     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOSjVtVDRGbkZOeUpNQW4tUWFseHNIRHcteVZ3UVBXUHFENW9FaEh1eklUTjk3aERlR2xhbThRWXliUWN4emJVT1Bnb2lna2hiYlZpY0J4VmtTNm0wZUFVMFc1RVVUbE9CcmRaRm1fdEZYaXBLeTJXRWJSem1HYm9UQkE3ekhTejg?oc=5"
+    }
    ]
   },
   {
@@ -1387,7 +1433,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0299
+   "epss": 0.0353
   },
   {
    "id": "7f0512cdfd03",
@@ -1545,7 +1591,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.7112,
+   "epss": 0.7311,
    "also": [
     {
      "source": "BleepingComputer",
@@ -2237,7 +2283,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.2986
+   "epss": 0.2778
   },
   {
    "id": "9c40ff9a7698",
@@ -2787,7 +2833,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.334
+   "epss": 0.3433
   },
   {
    "id": "ab9bbe7f3a56",
@@ -2826,6 +2872,25 @@
    "why": [
     "Australia",
     "Vulnerability"
+   ]
+  },
+  {
+   "id": "46a6b0b05c4e",
+   "title": "Optimizely Malware Attacks Highlight Third-Party Vendor Risks",
+   "link": "https://www.darkreading.com/cyber-risk/optimizely-malware-attacks-third-party-vendor-risks",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-17T22:34:22Z",
+   "summary": "At least 178 organizations, including several major brands, unwittingly exposed website visitors to hydra-like malware via a third-party platform.",
+   "score": 6,
+   "tags": [
+    "Data breach",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Data breach",
+    "SaaS / cloud"
    ]
   },
   {
@@ -7243,53 +7308,6 @@
      "source": "BleepingComputer",
      "url": "https://www.bleepingcomputer.com/news/security/sap-patches-four-maximum-severity-security-vulnerabilities/"
     }
-   ]
-  },
-  {
-   "id": "b4ef2d22935d",
-   "title": "Japan’s data breach surge puts cyber insurance adequacy in focus",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNd0dhQ0lCcGNZRUtNbHJJMW8zLWJqRlAzSmkxdzhUd0FicDgtZEtsUkQ0Ynk0SThxQzBEMFNZZDhsdUpzTXVNV3hHRzhLVzMyUTJiZmxVZFc5U2dEWTgtSXh2bHNGbXcwbGFVWW1qREZwMDBUa0gtMG1vb3FWZnpwU1dPRlBvUHBKY0JLelh6VlRxcUt3c29oRW1QR3hkaFZKLTNIdjRWWVVkZVVkd2Ezc0cyZXI2cmRxN1ZMYUl0SklpdTBlc1p3?oc=5",
-   "source": "Insurance Business",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-11-10T14:26:01Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "b18e440d8eb0",
-   "title": "AI Makes Reverse Engineering Mainstream Software & Malware Far Easier",
-   "link": "https://www.darkreading.com/application-security/ai-reverse-engineering-apps",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-11-10T13:00:00Z",
-   "summary": "Researchers unpacked, mapped, and recreated complex software and the Turla malware, raising opportunities and concerns for organizations and cybersecurity analysts.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "4197e6ee024c",
-   "title": "Apple Patches Everyting: November 2026 Edition, (Tue, Nov 10th)",
-   "link": "https://isc.sans.edu/diary/rss/33506",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-11-10T12:48:55Z",
-   "summary": "",
-   "score": 3,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
    ]
   }
  ]
