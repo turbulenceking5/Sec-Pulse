@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-21T23:30:30Z",
+ "generated": "2026-11-22T01:21:39Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -34,7 +34,7 @@
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 6,
+   "count": 5,
    "error": null
   },
   {
@@ -106,6 +106,58 @@
  ],
  "items": [
   {
+   "id": "43303fd5c2cb",
+   "title": "Chase data breach lawsuit: can customers sue when a vendor attack may have exposed names and emails",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNOVZ1c09ibklQNkJlUlhBN3F2a0ZGcElDRU9KanhBRnNTMmlMVVpsM3dZRFI1bWwwSHZMaExjWEY3Mkw0bmlTVl9SQUxoUVhMS3FTc0tQSGh2bXVFRmZJVldQNmFVV2NnVEZOb1g2VHVNN1ZQWVVOWWd3MU5tempkeElkYXVoOHEz?oc=5",
+   "source": "Hassan KOHEN",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-22T01:11:04Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info/"
+    },
+    {
+     "source": "Yahoo News Australia",
+     "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5BdU1oWVJsckYxZy1sSlh2TUNVRzN3SnF0ZjVwVHVHTXZqM2E2dVBVNk8xcm1ZUS1Nd1JTQnAycW5NWlp4T1hmcDc3U3BLSTBQM0MxdGFrTHhhR1NoenFpcG5qMFgyRXA1M1V1SlZyMmREdmROTmw4?oc=5"
+    },
+    {
+     "source": "Gulf News",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOZGNmSUdtSGtJYmdUanllbVhpQ0J4VXBwYWlZczdsRUFiSXhlVGZDekNNckJRd3NYd3NKOGRGOFVIX3gwX0h4TVFNQUZNVndRMC1tTDBqYkpfb1RJdlZnaGRsM0tRZmZXUGNpbjBsVTUtdUVxUE5UeEg3ZG5jQWl5Y0JlUFByRGk5emNHalQzQ2ZwbVE1V09EREFOaGVYZEw1elh5RVlBVWlPSzNfQlkzc3VGZ2pYUdIByAFBVV95cUxNNG53M0VpcG15YXRoNEV1TkVOTUFLTWljaHZGQTVUbDA1alQ0Q3ZDQ3lwVHk3ZHhBaTIycE9wMHRXWDFlSkFJeTY2YVhMbllyNVZZbHczdnNBUXNHMWdlVlNTazFMTkxucFNZT0FXYmc0aE16bVpBVzZwWDhPblJKcGdEbThJbmRydGNfaG9IbTAzWGp6dUV0RXgzSmlJcTRIalQzVmdyNVlWN1RtUF9TZEVHcjFsMVRJYjJ6UUhObkxveXRpNGdEeQ?oc=5"
+    },
+    {
+     "source": "iTnews",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQ1FhZko4YjNScFVfVmhmWHVBQkFmdnRtUzZWQUJEbHhFejd5MEswWmwxSmVjTUU0cnp3SFB2N2RXZ0dPRmJyTjg2dlZhd3FqVVFJWEh5NERnVXdIcjVlbU5XbFI5U0pEU2I2R3ppRVZfWUpIOEk4WU93ZlpNN2lxVnlRMEFHZF9IRGg4dW1UMURBTzltNEVSOV9ydWhEa1plR0lHRWs3clhPQXBIR2VF?oc=5"
+    },
+    {
+     "source": "Dark Reading",
+     "url": "https://www.darkreading.com/cyber-risk/optimizely-malware-attacks-third-party-vendor-risks"
+    }
+   ]
+  },
+  {
+   "id": "aeb7ef21f8ed",
+   "title": "FBI Investigating Apparent Hack of Its Key National Criminal Justice Database, AP Source Says",
+   "link": "https://www.securityweek.com/fbi-investigating-apparent-hack-of-its-key-national-criminal-justice-database-ap-source-says/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-22T00:53:02Z",
+   "summary": "The FBI is investigating an apparent hack of a national law enforcement database that it maintains. The post FBI Investigating Apparent Hack of Its Key National Criminal Justice Database, AP Source Says appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
    "id": "9f2af01a2aa9",
    "title": "Rackspace Spot breach let hackers access customer Kubernetes secrets",
    "link": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/",
@@ -176,6 +228,36 @@
    "why": [
     "Real estate"
    ]
+  },
+  {
+   "id": "efef5bd50b96",
+   "title": "FBI reportedly hacked again, this time targeting nationwide police database",
+   "link": "https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-21T14:26:04Z",
+   "summary": "FBI systems have reportedly been breached for the second time in two months, this time targeting the agency's National Crime Information Center (NCIC), which is used to share information between local, state, and federal law enforcement agencies. [...]",
+   "score": 3,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "45e8d2f82c3e",
+   "title": "President Trump Taps Kirsten Davies as National Cyber Director",
+   "link": "https://www.securityweek.com/president-trump-taps-kirsten-davies-as-national-cyber-director/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-21T13:00:00Z",
+   "summary": "White House says the battle-tested cyber leader will drive an America First cyber strategy. The post President Trump Taps Kirsten Davies as National Cyber Director appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
   },
   {
    "id": "6231e48f3bee",
@@ -1088,13 +1170,13 @@
    ]
   },
   {
-   "id": "09a6cf8a3f86",
+   "id": "b5a7a13c2c4f",
    "title": "Rocket Mortgage Fined $6.7M By NYDFS Over Cyber Lapses",
-   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5WcmwwbVFtbWhOOFQzRXBfX2dNNHVxZmdPeUZjVEFOaTB6dk4yeUVzMzNVSnZ6RlB4c2ZTQ1R4YmNHbDMwUmRhdHlsZW56NnR3WXo3QmJyaV9mbU5rOGVtUTB0ZHhhUUc0d3FjekZZNXJjd2PSAXNBVV95cUxOVnJsMG1RbW1oTjhUM0VwX19nTTR1cWZnT3lGY1RBTmkwenZOMnlFczMzVUp2ekZQeHNmU0NUeGJjR2wzMFJkYXR5bGVuejZ0d1l6N0JicmlfZm1OazhlbVEwdGR4YVFHNHdxY3pGWTVyY3dj?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQV1Zqd3dyR3JPc0l0OUJkcHZmMFcyTFJlbnZqendHcklfQV9CSm5hMjUybVlxYVR0Q3J1SVdwQjUwTEFra2k0ZHAzcW5iQnJ0N3pudVVBYXQtSjB4Z0tQR3hwQWcySDBibm84N3ZXYWd3NEZrWVg1UjJaM3VsV3l0NVMweGd0eDNjYThWbXpweEJvSnZtWDBqaUdDQ1pMbV9aVDdhWXRkVTF6X18ycU41aHJMSGE3Z9IBc0FVX3lxTE5WcmwwbVFtbWhOOFQzRXBfX2dNNHVxZmdPeUZjVEFOaTB6dk4yeUVzMzNVSnZ6RlB4c2ZTQ1R4YmNHbDMwUmRhdHlsZW56NnR3WXo3QmJyaV9mbU5rOGVtUTB0ZHhhUUc0d3FjekZZNXJjd2M?oc=5",
    "source": "Law360",
    "feed": "Real estate cyber news",
    "region": "Global",
-   "published": "2026-11-20T02:40:00Z",
+   "published": "2026-11-20T02:40:21Z",
    "summary": "",
    "score": 10,
    "tags": [
@@ -2646,25 +2728,6 @@
    "why": [
     "Australia",
     "Vulnerability"
-   ]
-  },
-  {
-   "id": "46a6b0b05c4e",
-   "title": "Optimizely Malware Attacks Highlight Third-Party Vendor Risks",
-   "link": "https://www.darkreading.com/cyber-risk/optimizely-malware-attacks-third-party-vendor-risks",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-11-17T22:34:22Z",
-   "summary": "At least 178 organizations, including several major brands, unwittingly exposed website visitors to hydra-like malware via a third-party platform.",
-   "score": 6,
-   "tags": [
-    "Data breach",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Data breach",
-    "SaaS / cloud"
    ]
   },
   {
@@ -7229,95 +7292,6 @@
    ],
    "why": [
     "Data breach"
-   ]
-  },
-  {
-   "id": "1f6bc1af5305",
-   "title": "N-able Takes N-central Offline as Researcher Drops Over 30 Zero-Days",
-   "link": "https://www.securityweek.com/n-able-takes-n-central-offline-as-researcher-drops-over-30-zero-days/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-10T09:56:28Z",
-   "summary": "Attackers could exploit the flaws for remote code execution, credential theft, and administrator account creation. The post N-able Takes N-central Offline as Researcher Drops Over 30 Zero-Days appeared first on SecurityWeek .",
-   "score": 8,
-   "tags": [
-    "Actively exploited",
-    "Identity",
-    "Vulnerability"
-   ],
-   "why": [
-    "Actively exploited",
-    "Identity",
-    "Vulnerability"
-   ],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/11/n-able-takes-hosted-n-central-offline.html"
-    },
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/n-able-takes-cloud-platform-offline-after-30-plus-zero-days-published/"
-    },
-    {
-     "source": "Dark Reading",
-     "url": "https://www.darkreading.com/endpoint-security/n-able-n-central-offline-33-flaws"
-    }
-   ]
-  },
-  {
-   "id": "e56a3763b149",
-   "title": "France Blames Iran for Sabotage Attack on Refrigeration Controllers at About 700 Retail Sites",
-   "link": "https://thehackernews.com/2026/11/france-blames-iran-for-sabotage-attack.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-10T09:08:20Z",
-   "summary": "An October cyberattack on refrigeration controllers at about 700 French retail sites was carried out by a cyber unit of Iran's Islamic Revolutionary Guard Corps (IRGC), the French government said yesterday. The attackers broke into controllers on the night of October 11 and changed their defrost…",
-   "score": 0,
-   "tags": [],
-   "why": [],
-   "also": [
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/france-blames-iran-for-a-cyberattack-that-heated-supermarket-refrigerators/"
-    },
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/france-blames-iranian-hackers-for-supermarket-attacks-that-sparked-fires/"
-    }
-   ]
-  },
-  {
-   "id": "ce83705dd1bf",
-   "title": "Fireworks AI reports second breach as Oct. 24 cloud attack exposed customer files",
-   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQODRianplbjlWd0RkTlhPSW9hNXlxd0RETXVidF9ad216ZnhXYTJEX1BiU2ZpdlEtM3cxcXM5ZHdXUldvNW42LVdtdnlMWUZnU1RXX2NpbGM1SzFQR3d0SmhvUHhIaG50UURmNlpHRUY5bGQ0UXJHcGlYbVBSN0MtRlRsWkJGT1FMQlNDV2E1SGUyQQ?oc=5",
-   "source": "Briefs Finance",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-10T09:00:00Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ],
-   "also": [
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/notion-says-fireworks-breach-exposed-customer-ai-chat-transcripts/"
-    },
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html"
-    },
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/notion-customer-data-compromised-in-fireworks-ai-hack/"
-    }
    ]
   }
  ]
