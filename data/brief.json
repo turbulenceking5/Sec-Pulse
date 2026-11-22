@@ -1,7 +1,7 @@
 {
- "date": "2026-11-22",
- "generated": "2026-11-21T23:30:39+00:00",
- "title": "Sec-Pulse brief - Sun 22 Nov",
+ "date": "2026-11-23",
+ "generated": "2026-11-22T23:42:46+00:00",
+ "title": "Sec-Pulse brief - Mon 23 Nov",
  "items": [
   {
    "id": "1e1dbef95d66",
@@ -20,12 +20,12 @@
    "summary": "Microsoft is warning organizations that it suffered a data breach after attackers exploited a vulnerability in its Entra Connect Health service to gain unauthorized access to administrator email addresses and tenant configuration information. [...]"
   },
   {
-   "id": "12c1b3dc2b59",
-   "title": "Gurugram: 32nd Avenue's directors among four arrested in ₹32.4 lakh real estate fraud",
-   "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNUTFiajZteWF0d3lMZWRvdmRJdndUT2ZraUd3V2hYWlB1VU1icFNzWEV5SWYwZmlyV2NuaHdZQzAwQVMyMFFmQ3dXWUVyTFpiLTRxMGp0MmJJQndRYlBFYVZ3S05WT2VOa2pMVDJ4TmMzZzJEemxvTnNxN0dlMlJfMkVWLUJ5RUtWTzhhRDBQXzJNT0huRDU5Mk00Sml5ZVZ4V0ZxZV9Pb1cwREk5aGdWek5MWnJGbzhYLXh3d0xPSDNUMlRzMVYyWFhPdGtGSDY1Mk1OQnRIQlNzd0RnbW5LWjRpZlZLS2PSAewBQVVfeXFMUE52OFRhYWF4ZnVOYzB5eGlpWWpfUEV6ZUducXpMZGNLUVpYM3VlSE1UUnJpdXNmeVlvYVFrUkhwckdZRmM1ZEJsZXhKWDJLTEtENEwxT2lUY085TEVzWVp0b2ZwT2xTX3ZLLUJIOU9PTTlEN3Yzbno4TDF1VDNlOVp5cjdFc3dBUnlSYUJ3WElrYlNlTmZYM0FBVHdDRi0zbWllVU13SjZkTlBzTjd3QmtpLVpiWGNCQ01Za0xGZzIxMHpMeDd6RUFSLUdQdk5KdnpsWU1wd3JWbUJtdDlSWlB1cHZmbUZ0SFU0eGY?oc=5",
-   "source": "ET Realty",
+   "id": "de8cd31c4430",
+   "title": "Oneida County real estate: See all residential properties sold, Nov. 9-15",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQVUpfd3VnWG4xR0RTYXNaUHBGNmh5ZDlEQmFVNVV6blRnT3RWcTY1UnZPUDdnSHNaNHhqeUlqNnprMzgzRzd5by1BVWJHZmozRjJHMFV0RzlPMG83eU1TYzVIX3Ria195U1ozUTJDNVJoSzJWQnJWbjV2dHpJOE5fSTU5S2RzWWt2VGwwLTdTWGtZUnV3SUVMRllMZkRfQmctX1VDUUVKN0VOYVBTR1FCaUhaemUtZDJ3WWpyWW5xcmJ6dw?oc=5",
+   "source": "Syracuse.com",
    "region": "Global",
-   "published": "2026-11-21T15:04:03Z",
+   "published": "2026-11-22T20:26:00Z",
    "score": 10,
    "tags": [
     "Real estate"
@@ -33,54 +33,52 @@
    "summary": ""
   },
   {
-   "id": "93138fbb4db2",
-   "title": "CTO of ‘RansomwareHelp’ Indicted for Wire Fraud",
-   "link": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
-   "source": "Krebs on Security",
+   "id": "8228bee34334",
+   "title": "KEPCO Data Breach Exposes 1.52 Million Records, Including Power Grid Procurement Files",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQM1FRUk5LZF9CUzQxRXVPM1cxaERaS18tV1RvaklqNEVVVXA5b3dYREpNdzVjMzFFUXFxZWxNMmd4S3YwVUpTZEx5MnhySzBCdThtWnBOdHBaZUpXS2hQN1dTMWw0SXVXZDZsZU9qbnRGRHVkWjZHdjRqNXBqbGd6NUZncVZEbEI5VjJTYlZCWlJWRFFGbGRKYXdDZEdSZw?oc=5",
+   "source": "Seoul Economic Daily",
    "region": "Global",
-   "published": "2026-11-21T00:36:39Z",
-   "score": 11,
+   "published": "2026-11-22T20:30:05Z",
+   "score": 7,
    "tags": [
-    "BEC / payment fraud",
-    "Ransomware"
-   ],
-   "summary": "The chief technology officer and co-founder of ransomwarehelp.com, a six year old Florida business that claimed to use \"advanced cryptographic tools\" to restore data locked by ransomware, has been charged with wire fraud after an FBI sting operation found the company was simply paying the…"
-  },
-  {
-   "id": "7995d8c6dbe3",
-   "title": "Real estate influencers sued by N.J. authorities for allegedly scamming $1.5M from investors",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOcWotLVFZX1h4S2VTNzF6c2hOc0p0dXJqTzF4a2N0c1dPNjJhNjE5UDlGRlh2X2lfOE1BMFl1M3lVR056eTZKVzFILVJXU0pwWmFyZ25jMW8xVWM3dkVpb3p1dlFQclc2Q2l0b2g1UDlOcmZGd3pPR1FzWDQxdG1NOXYyNk1Tbmx2YUlvWHVRQ3lHNEZDRUV4UFM1aVdmdURwSy11cW0yTjg1SUhfdjBSMlln?oc=5",
-   "source": "Inquirer.com",
-   "region": "Global",
-   "published": "2026-11-20T22:15:01Z",
-   "score": 10,
-   "tags": [
-    "Real estate"
+    "Data breach"
    ],
    "summary": ""
   },
   {
-   "id": "52d06926aff8",
-   "title": "Think you know MFA? Challenge yourself with our quiz.",
-   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBaR2doZ29Hc05Kc19fNlJpVUN4elhNQllCeXk3NkNWWENrZkNRaGktUk5BZWZaMXpvblZvZXZfQ2pLT0ZHem53blhuVGZud1NEaFdJ?oc=5",
-   "source": "cyber.gov",
-   "region": "AU",
-   "published": "2026-11-21T03:48:18Z",
-   "score": 8,
+   "id": "ea51b7bd2b69",
+   "title": "On the 22nd, President Lee Jae Myung repeatedly refuted the suspicion of breach of trust in the Daej..",
+   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBlSUZvQ2ZzWnJ2ODNGdEJadEQ2SDVqR0duQ3ZfUWFZY0hhdTVBOHFVRVNKV2dhZ1ZFR0NmekgxZzhZNl9tdmhUMTFSblpsQmFVWU1j?oc=5",
+   "source": "매일경제",
+   "region": "Global",
+   "published": "2026-11-22T09:13:12Z",
+   "score": 7,
    "tags": [
-    "Identity",
-    "Australia"
+    "Data breach"
+   ],
+   "summary": ""
+  },
+  {
+   "id": "43303fd5c2cb",
+   "title": "Chase data breach lawsuit: can customers sue when a vendor attack may have exposed names and emails",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNOVZ1c09ibklQNkJlUlhBN3F2a0ZGcElDRU9KanhBRnNTMmlMVVpsM3dZRFI1bWwwSHZMaExjWEY3Mkw0bmlTVl9SQUxoUVhMS3FTc0tQSGh2bXVFRmZJVldQNmFVV2NnVEZOb1g2VHVNN1ZQWVVOWWd3MU5tempkeElkYXVoOHEz?oc=5",
+   "source": "Hassan KOHEN",
+   "region": "Global",
+   "published": "2026-11-22T01:11:04Z",
+   "score": 7,
+   "tags": [
+    "Data breach"
    ],
    "summary": ""
   }
  ],
  "stats": {
-  "recent": 22,
-  "au": 1,
+  "recent": 14,
+  "au": 0,
   "kev": 0
  },
  "lesson": {
-  "id": "1.8",
-  "title": "Process improvement and automation"
+  "id": "1.9",
+  "title": "Tooling: triaging an EDR detection"
  }
 }
