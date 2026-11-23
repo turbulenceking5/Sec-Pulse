@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T23:42:35Z",
+ "generated": "2026-11-23T01:46:07Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -21,20 +21,20 @@
   },
   {
    "name": "ASD / ACSC in the news",
-   "ok": true,
-   "count": 2,
-   "error": null
+   "ok": false,
+   "count": 0,
+   "error": "HTTPError: HTTP Error 429: Too Many Requests"
   },
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 8,
+   "count": 7,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 6,
+   "count": 7,
    "error": null
   },
   {
@@ -100,7 +100,7 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 37,
+   "count": 35,
    "error": null
   }
  ],
@@ -1443,13 +1443,13 @@
    ]
   },
   {
-   "id": "b5a7a13c2c4f",
+   "id": "09a6cf8a3f86",
    "title": "Rocket Mortgage Fined $6.7M By NYDFS Over Cyber Lapses",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQV1Zqd3dyR3JPc0l0OUJkcHZmMFcyTFJlbnZqendHcklfQV9CSm5hMjUybVlxYVR0Q3J1SVdwQjUwTEFra2k0ZHAzcW5iQnJ0N3pudVVBYXQtSjB4Z0tQR3hwQWcySDBibm84N3ZXYWd3NEZrWVg1UjJaM3VsV3l0NVMweGd0eDNjYThWbXpweEJvSnZtWDBqaUdDQ1pMbV9aVDdhWXRkVTF6X18ycU41aHJMSGE3Z9IBc0FVX3lxTE5WcmwwbVFtbWhOOFQzRXBfX2dNNHVxZmdPeUZjVEFOaTB6dk4yeUVzMzNVSnZ6RlB4c2ZTQ1R4YmNHbDMwUmRhdHlsZW56NnR3WXo3QmJyaV9mbU5rOGVtUTB0ZHhhUUc0d3FjekZZNXJjd2M?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5WcmwwbVFtbWhOOFQzRXBfX2dNNHVxZmdPeUZjVEFOaTB6dk4yeUVzMzNVSnZ6RlB4c2ZTQ1R4YmNHbDMwUmRhdHlsZW56NnR3WXo3QmJyaV9mbU5rOGVtUTB0ZHhhUUc0d3FjekZZNXJjd2PSAXNBVV95cUxOVnJsMG1RbW1oTjhUM0VwX19nTTR1cWZnT3lGY1RBTmkwenZOMnlFczMzVUp2ekZQeHNmU0NUeGJjR2wzMFJkYXR5bGVuejZ0d1l6N0JicmlfZm1OazhlbVEwdGR4YVFHNHdxY3pGWTVyY3dj?oc=5",
    "source": "Law360",
    "feed": "Real estate cyber news",
    "region": "Global",
-   "published": "2026-11-20T02:40:21Z",
+   "published": "2026-11-20T02:40:00Z",
    "summary": "",
    "score": 10,
    "tags": [
