@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-23T01:46:07Z",
+ "generated": "2026-11-23T12:50:01Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -21,26 +21,26 @@
   },
   {
    "name": "ASD / ACSC in the news",
-   "ok": false,
-   "count": 0,
-   "error": "HTTPError: HTTP Error 429: Too Many Requests"
+   "ok": true,
+   "count": 3,
+   "error": null
   },
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 7,
+   "count": 4,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 7,
+   "count": 10,
    "error": null
   },
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 1,
+   "count": 2,
    "error": null
   },
   {
@@ -100,11 +100,317 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 35,
+   "count": 36,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "33d65726f50e",
+   "title": "Hackers Exploit Critical ScreenConnect Flaw to Hijack MSP Technician PCs Without Warning",
+   "link": "https://thehackernews.com/2026/11/hackers-exploit-critical-screenconnect.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-23T12:41:04Z",
+   "summary": "Threat actors are exploiting a now-patched security flaw in ConnectWise ScreenConnect to target managed service provider (MSP) servers. The activity revolves around CVE-2026-84869 (CVSS score: 9.9), a critical ScreenConnect client flaw that allows a guest to transfer and execute a malicious…",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0117,
+   "also": [
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/msp-screenconnect-servers-targeted-in-month-long-campaign/"
+    }
+   ]
+  },
+  {
+   "id": "759d50b40080",
+   "title": "N-able Discloses Critical Mail Assure Vulnerability Found During Breach Investigation",
+   "link": "https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-23T12:28:09Z",
+   "summary": "N-able yesterday disclosed a critical flaw it found while investigating the breach of its Mail Assure and SpamExperts Hosted Cloud, an email filtering service it runs for managed service providers. The bug, tracked as CVE-2026-134624, is a server-side request forgery (SSRF) flaw. It allowed a user…",
+   "score": 6,
+   "tags": [
+    "Data breach",
+    "Vulnerability"
+   ],
+   "why": [
+    "Data breach",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "17e792aba6bb",
+   "title": "AI Inference Providers Failed to Detect Hacking and Prompt Theft, Says Dragos",
+   "link": "https://www.securityweek.com/ai-inference-providers-failed-to-detect-hacking-and-prompt-theft-says-dragos/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-23T12:16:20Z",
+   "summary": "Dragos uncovered undetected intrusions at three AI inference providers using nearly two million prompts sent to AI services. The post AI Inference Providers Failed to Detect Hacking and Prompt Theft, Says Dragos appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "f8665cc5b1ef",
+   "title": "Call center operator gets 8 years for helping scam 30,000 Americans",
+   "link": "https://www.bleepingcomputer.com/news/security/call-center-operator-gets-8-years-for-helping-scam-30-000-americans/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-23T12:02:23Z",
+   "summary": "A Peruvian call center operator was sentenced to eight years in prison for stealing millions of dollars from over 30,000 Spanish-speaking US residents in a years-long government-impersonation fraud scheme. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "5339acd0f179",
+   "title": "Cyber incident at third-party online supplier to Next - but retail giant says no customer personal data compromised",
+   "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNRHlaTk1ISFFuX19IUUg5bTB6MjdWY3QybFV3SmxnOEMyQlgzay1zNktnQXR5ZFRvRGJKVXNaMHNlN3NYU21XemdSU1YtRHRQcER3c29BT1VlRE9XeXVCOTBwVzFGLU4zVlE5blRCVGFmaGttSi1aN1dIOFBSTXRiMDlUWDRiWGUyZFBBdjctUE1KdWdiTl9xZDlUdXFVVE5GdHgyWERYY0llOGlpdTR4bkNBRkNITzhYUm9abFhJOXRGOG1PMEs0WlNYMklYZmpIa0lVX01oOFNmTFJfV2N6b2hDRTl1d2xlRG5wRg?oc=5",
+   "source": "Insider Media Ltd",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-23T11:50:20Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "SaaS / cloud"
+   ],
+   "why": [
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "c412b57f8a94",
+   "title": "BadBox 3.0 Ad Fraud Operation Generating 40 Billion Daily Bid Requests Disrupted",
+   "link": "https://www.securityweek.com/badbox-3-0-ad-fraud-operation-generating-40-billion-daily-bid-requests-disrupted/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-23T11:44:18Z",
+   "summary": "Backdoors on low-cost consumer devices served modules for ad fraud and for turning devices into residential proxies. The post BadBox 3.0 Ad Fraud Operation Generating 40 Billion Daily Bid Requests Disrupted appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": [],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/badbox-30-botnet-returns-with-record-breaking-40-billion-daily-ad-requests/"
+    }
+   ]
+  },
+  {
+   "id": "bc11c30f893a",
+   "title": "SAP NetWeaver, Cisco Expressway Flaws Exploited in Attacks",
+   "link": "https://www.securityweek.com/sap-netweaver-cisco-expressway-flaws-exploited-in-attacks/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-23T11:35:15Z",
+   "summary": "Threat actors could exploit them to leak or modify server information and to execute commands as root. The post SAP NetWeaver, Cisco Expressway Flaws Exploited in Attacks appeared first on SecurityWeek .",
+   "score": 3,
+   "tags": [
+    "Edge devices"
+   ],
+   "why": [
+    "Edge devices"
+   ]
+  },
+  {
+   "id": "710e26685963",
+   "title": "CrowdStrike to Acquire Zscaler in $43.9 Billion Deal",
+   "link": "https://www.securityweek.com/crowdstrike-to-acquire-zscaler-in-43-9-billion-deal/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-23T11:31:44Z",
+   "summary": "CrowdStrike expects the combined company to have more than $10 billion in annual recurring revenue. The post CrowdStrike to Acquire Zscaler in $43.9 Billion Deal appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "1ce23f24eebf",
+   "title": "Nationwide boosts cyber support for conveyancers, solicitors and mortgage intermediaries",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOUHBfNk1lMWVQT1hMb1QzNWtXcVVVRVl4cWZ4a2FOTG5RMXFMa1MyR3JxLU0xRHhNcEVZQlFmdHlGWV9oN2pWSE04NTJVdy15VnduNVM5X2VJQjZ3U0FGUXMyUXBuMk5OdnlFck12V2lPb195T2x0NVh4VFVMX1ZzSUp2V09KaEtMMk5tbTYza28zbEVXSzlGTi13YlRtYXhsN1lyRk82SmhxNU45cjczbGY2TFBMNDNsS3dwLTFUdW12MWhs?oc=5",
+   "source": "The Intermediary",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-23T10:53:33Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
+   "id": "31afdc96e80b",
+   "title": "Hackers Exploit Critical ASP.NET Anti-CSRF Library Flaw Allowing Unauthenticated RCE",
+   "link": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-23T09:11:56Z",
+   "summary": "Cybersecurity researchers have urged users to discontinue using a legacy ASP.NET anti-CSRF library named Idunno.AntiCsrf (\"Idunno.AntiCsrf.dll\") following the discovery of a critical vulnerability that has been exploited in the wild. The vulnerability, tracked as CVE-2026-131914, carries a CVSS…",
+   "score": 6,
+   "tags": [
+    "Actively exploited",
+    "Vulnerability"
+   ],
+   "why": [
+    "Actively exploited",
+    "Vulnerability"
+   ],
+   "epss": 0.0061
+  },
+  {
+   "id": "d0dd2916cf58",
+   "title": "Microsoft confirms Windows printing issues affecting Forcepoint users",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-printing-issues-after-kb5132043-windows-hotpatch/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-23T09:11:15Z",
+   "summary": "Microsoft confirmed printing issues on systems running Forcepoint DLP software after installing the KB5132043 November 2026 Windows 11 hotpatch. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "791422e9c323",
+   "title": "Hackers Exploited GL.iNet Cloud Flaw to Install Malware on Routers and KVM Devices",
+   "link": "https://thehackernews.com/2026/11/hackers-exploited-glinet-cloud-flaw-to.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-23T09:04:08Z",
+   "summary": "Hackers exploited a vulnerability in GL.iNet's GoodCloud remote management service to install malware on some customer routers and KVM devices, the maker of travel routers and remote-access KVM hardware said in a security notice updated today. The company identified and fixed the flaw on Friday…",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/"
+    }
+   ]
+  },
+  {
+   "id": "80927b607c9d",
+   "title": "AI-Assisted Cyber Attacks Trigger Unauthorized Payments at Indian Banks and Fintech Firms",
+   "link": "https://thehackernews.com/2026/11/ai-assisted-cyberattacks-trigger.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-23T08:24:15Z",
+   "summary": "The Indian Computer Emergency Response Team (CERT-In) has warned that threat actors are carrying out artificial intelligence (AI)-assisted cyber attacks targeting information and communication technology (ICT) assets in the country. This unsanctioned activity has resulted in unauthorized financial…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "5d81d8091009",
+   "title": "CISA flags critical Cisco RCE flaw as actively exploited in attacks",
+   "link": "https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-23T07:44:19Z",
+   "summary": "The US Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies that attackers are now exploiting a recently patched critical Cisco Expressway vulnerability in the wild. [...]",
+   "score": 10,
+   "tags": [
+    "Actively exploited",
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "why": [
+    "Actively exploited",
+    "Edge devices",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "76b5e595ffb3",
+   "title": "EIDL fraud — Kansas Real Estate Operator Indicted for $300K Scam and $500K Tax Evasion",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPNjlVc2tTekRONng0VklCMzl6SjZPSXlKVkstaFhOaTRVMFFrY3JrcElLdHhCUkwxZ0ZRdnZHQ1pOSGZxNkN4aFllZzdBRzNNaFhXWkZoelpLcFlRZXBJWm1aenE2QTU3blFWbWZfckw3TzVFOFRVTU56eDJTckdjblB6Mm12bWp3NEVjdGpaQnJlZEtH?oc=5",
+   "source": "The Korea Daily",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-23T05:45:54Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
+   "id": "ae910d97181c",
+   "title": "FCCPC shuts Lagos estate firm over property breach",
+   "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFB3S1hDM3ZpLUg2Yzk2Ml9ZQ19KeWw2TU1HSUVlUDU3WENvMVdVRXJTWjIzMXQtYnM0ZWRmVUhOWWpFRDF0ZXRUdy1ha19fMkc1c1FkRExLV0VDT0RjWDFzVGZIM1QwUHdVMGhMRF90VnU5TGo1MlZreklJMA?oc=5",
+   "source": "Punch Newspapers",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-23T03:57:27Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "8b4c486f30e6",
+   "title": "Following Curators, Now Employees… Personal Data Breach Expands at Kurly : Society : JKN",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBkclVMQnM4eXRZOVZ4U0pienBLblBScnZ6NWFQeU0xcTFkRTlIcjlmVVlYQk15ME01Z2hDVHVhZ0xEdXVyYlhUTE4zLUtyZ1dKSUFuVHdLcVhYT0lveW95cktn?oc=5",
+   "source": "재경일보",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-23T03:30:06Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "4a7e4b34034f",
+   "title": "ISC Stormcast For Monday, November 23rd, 2026 https://isc.sans.edu/podcastdetail/10190, (Mon, Nov 23rd)",
+   "link": "https://isc.sans.edu/diary/rss/33548",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-11-23T02:00:04Z",
+   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
   {
    "id": "8228bee34334",
    "title": "KEPCO Data Breach Exposes 1.52 Million Records, Including Power Grid Procurement Files",
@@ -140,23 +446,6 @@
    ]
   },
   {
-   "id": "e84afceb005f",
-   "title": "Hackers exploit GL.iNet cloud flaw to infect routers, KVM devices",
-   "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-22T18:45:37Z",
-   "summary": "GL.iNet has confirmed that hackers exploited a vulnerability in its cloud remote management services to install custom malware on customers' routers and KVM devices, with some affected users reporting backdoors and reverse shells giving remote access to infected devices. [...]",
-   "score": 1,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
    "id": "f6ee8bdc262f",
    "title": "A brief history of syslog timestamps, (Sun, Nov 22nd)",
    "link": "https://isc.sans.edu/diary/rss/33530",
@@ -168,6 +457,23 @@
    "score": 1,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "5cb853167678",
+   "title": "Madison County real estate: See all residential properties sold, Nov. 9-15",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPYkpKREVjLVVjT1lwMXpvX09rNlZxYUMwd3pqQndsQTZ4T1N6d0h4ODNtT3R0R0xqQjMyN1h6eTNKN1RLQWpyYmtkWDlZZVhvZTdRcFpJR2NMd0N0QkgwOVhOeDRZR2pLWWFDUXp4Q0x3NUM4RDZDODNFakxlcEFYNFFRZFZEZFhqMjd6aEV2TzBwbDRzMTdoM2haSktNVWJZdk15b3lYdlhhUU1kSEVhNC1jeTVPZlZuQXdNWDJiTG9YN1E?oc=5",
+   "source": "Syracuse.com",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-22T16:46:00Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
   },
   {
    "id": "855a50efe0f3",
@@ -364,19 +670,6 @@
    ]
   },
   {
-   "id": "4b6021947b3e",
-   "title": "BADBOX botnet returns with record-breaking 40 billion daily ad requests",
-   "link": "https://www.bleepingcomputer.com/news/security/badbox-30-botnet-returns-with-record-breaking-40-billion-daily-ad-requests/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-21T15:17:27Z",
-   "summary": "The BADBOX malware found in a broad range of generic Android TV boxes has returned to large-scale ad-fraud operations following last year's disruptions. [...]",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
    "id": "12c1b3dc2b59",
    "title": "Gurugram: 32nd Avenue's directors among four arrested in ₹32.4 lakh real estate fraud",
    "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNUTFiajZteWF0d3lMZWRvdmRJdndUT2ZraUd3V2hYWlB1VU1icFNzWEV5SWYwZmlyV2NuaHdZQzAwQVMyMFFmQ3dXWUVyTFpiLTRxMGp0MmJJQndRYlBFYVZ3S05WT2VOa2pMVDJ4TmMzZzJEemxvTnNxN0dlMlJfMkVWLUJ5RUtWTzhhRDBQXzJNT0huRDU5Mk00Sml5ZVZ4V0ZxZV9Pb1cwREk5aGdWek5MWnJGbzhYLXh3d0xPSDNUMlRzMVYyWFhPdGtGSDY1Mk1OQnRIQlNzd0RnbW5LWjRpZlZLS2PSAewBQVVfeXFMUE52OFRhYWF4ZnVOYzB5eGlpWWpfUEV6ZUducXpMZGNLUVpYM3VlSE1UUnJpdXNmeVlvYVFrUkhwckdZRmM1ZEJsZXhKWDJLTEtENEwxT2lUY085TEVzWVp0b2ZwT2xTX3ZLLUJIOU9PTTlEN3Yzbno4TDF1VDNlOVp5cjdFc3dBUnlSYUJ3WElrYlNlTmZYM0FBVHdDRi0zbWllVU13SjZkTlBzTjd3QmtpLVpiWGNCQ01Za0xGZzIxMHpMeDd6RUFSLUdQdk5KdnpsWU1wd3JWbUJtdDlSWlB1cHZmbUZ0SFU0eGY?oc=5",
@@ -526,6 +819,23 @@
    ]
   },
   {
+   "id": "be138bf98864",
+   "title": "DXC’s Xchanging Subsidiary Falls Prey to Ransomware Attack",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBNS3RzQUhseGVlT2U3TEc4dnVOS3VaMXVqMVVjRUVlYUlMdUV0YUY0S3ZybHYtS0JEUG9KMVk0MS04c05DVkdfY0RqRmRwRnpVVllMZjhVTHRUWXdTU1g5MWl30gFiQVVfeXFMUE1LdHNBSGx4ZWVPZTdMRzh2dU5LdVoxdWoxVWNFRWVhSUx1RXRhRjRLdnJsdi1LQkRQb0oxWTQxLThzTkNWR19jRGpGZHBGelVWWUxmOFVMdFRZd1NTWDkxaXc?oc=5",
+   "source": "CISO MAG",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-21T04:09:57Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
+  },
+  {
    "id": "52d06926aff8",
    "title": "Think you know MFA? Challenge yourself with our quiz.",
    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBaR2doZ29Hc05Kc19fNlJpVUN4elhNQllCeXk3NkNWWENrZkNRaGktUk5BZWZaMXpvblZvZXZfQ2pLT0ZHem53blhuVGZud1NEaFdJ?oc=5",
@@ -565,6 +875,19 @@
      "url": "https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/"
     }
    ]
+  },
+  {
+   "id": "a03f51601e71",
+   "title": "How Security Vendors Are Tackling Access-Control Challenges for AI Agents",
+   "link": "https://www.darkreading.com/identity-access-management-security/ai-agents-bring-enterprises-new-access-control-challenges",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-21T01:31:23Z",
+   "summary": "Identity, runtime and development controls are converging as enterprises are tasked with keeping agents within their assigned tasks. But vendors' approaches vary, so CISOs face a choice.",
+   "score": 0,
+   "tags": [],
+   "why": []
   },
   {
    "id": "93138fbb4db2",
@@ -950,6 +1273,23 @@
    ],
    "why": [
     "Australia",
+    "Data breach"
+   ]
+  },
+  {
+   "id": "42ce6e36548a",
+   "title": "Boeing data breach allegations put decades of data at risk",
+   "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5nTm1WRHBjOEppa052WXlIMnVNX05rSEdDQnJsZ0VTVWRVRVNjWmRzSDNqbDBGYS1RMDY1WERPUzlZN3k5Z3R5bF9STkR6aWRaSnA4RGNqc0JZZVBRQjQxdG0yX3ZKNmFfVjBnVDhOVXRVOUdkTzhRaUVITQ?oc=5",
+   "source": "Cybernews",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-20T14:19:11Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
     "Data breach"
    ]
   },
@@ -3355,24 +3695,6 @@
    "score": 0,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "6ad116b5c12b",
-   "title": "MSP ScreenConnect Servers Targeted in Month-Long Campaign",
-   "link": "https://www.securityweek.com/msp-screenconnect-servers-targeted-in-month-long-campaign/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-17T13:24:43Z",
-   "summary": "More than 40 servers received over 688,000 requests exploiting CVE-2026-84869 to execute guest-pushed files. The post MSP ScreenConnect Servers Targeted in Month-Long Campaign appeared first on SecurityWeek .",
-   "score": 1,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.0117
   },
   {
    "id": "46f2978c7d8e",
@@ -6382,23 +6704,6 @@
    "why": []
   },
   {
-   "id": "be138bf98864",
-   "title": "DXC’s Xchanging Subsidiary Falls Prey to Ransomware Attack",
-   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBNS3RzQUhseGVlT2U3TEc4dnVOS3VaMXVqMVVjRUVlYUlMdUV0YUY0S3ZybHYtS0JEUG9KMVk0MS04c05DVkdfY0RqRmRwRnpVVllMZjhVTHRUWXdTU1g5MWl30gFiQVVfeXFMUE1LdHNBSGx4ZWVPZTdMRzh2dU5LdVoxdWoxVWNFRWVhSUx1RXRhRjRLdnJsdi1LQkRQb0oxWTQxLThzTkNWR19jRGpGZHBGelVWWUxmOFVMdFRZd1NTWDkxaXc?oc=5",
-   "source": "CISO Mag",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-11-11T20:17:54Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Ransomware"
-   ],
-   "why": [
-    "Ransomware"
-   ]
-  },
-  {
    "id": "3c5e2d75ed5c",
    "title": "The global socket: how threat actors are weaponizing GSocket for stealthy C2",
    "link": "https://www.microsoft.com/en-us/security/blog/2026/11/11/global-socket-how-threat-actors-weaponizing-gsocket-stealthy-c2/",
@@ -6981,329 +7286,6 @@
    "why": [
     "Real estate"
    ]
-  },
-  {
-   "id": "c9d200a425c2",
-   "title": "Artex: The AI Pen-Test Tool Hackers Turned Into a Weapon",
-   "link": "https://www.darkreading.com/cyberattacks-data-breaches/artex-ai-pen-test-tool-hackers-weapon",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-11-10T21:01:14Z",
-   "summary": "Forks of the open source Artex framework, along with 45 similar pen-testing tools, remain capable of executing credential attacks and cloud breaches at machine speed across multiple industries.",
-   "score": 5,
-   "tags": [
-    "Data breach",
-    "Identity"
-   ],
-   "why": [
-    "Data breach",
-    "Identity"
-   ]
-  },
-  {
-   "id": "230bcad0faf3",
-   "title": "Japanese furniture giant Nitori says hackers stole 37.6M customer records",
-   "link": "https://www.bleepingcomputer.com/news/security/japanese-furniture-giant-nitori-says-hackers-stole-376m-customer-records/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-10T20:54:55Z",
-   "summary": "Nitori, a major Japanese furniture and home accessories retailer, discovered that an attacker accessed a system on its network and may have stolen 37.62 million customer records. [...]",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "6922144e7a8d",
-   "title": "F-Secure Identifies 26 Ways AI Can Harm Consumers, and Where to Stop Them",
-   "link": "https://www.darkreading.com/application-security/f-secure-26-ways-ai-harm-consumers-where-to-stop-them",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-11-10T20:41:45Z",
-   "summary": "New AI Harms Taxonomy traces how harm moves through AI systems, from misleading chatbot answers to compromised autonomous agents, and identifies where defenses can intervene.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "8ec6ef10a10a",
-   "title": "Checkmarx Appoints Kobi Sivilya as Chief Information Security Officer",
-   "link": "https://www.darkreading.com/cybersecurity-careers/checkmarx-appoints-kobi-sivilya-chief-information-security-officer",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-11-10T20:35:34Z",
-   "summary": "Sivilya brings deep cybersecurity and technology leadership to Checkmarx as AI transforms software development.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "d6fe2bb7d331",
-   "title": "How to Assess OT Incident Response Preparedness",
-   "link": "https://www.darkreading.com/ics-ot-security/assess-ot-incident-response-preparedness",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-11-10T20:18:43Z",
-   "summary": "Cloud Range's free 28-question OT Cyber Readiness Assessment helps organizations identify gaps in operational technology (OT) incident response.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "9814f0299437",
-   "title": "Microsoft releases Windows 10 KB5131096 extended security update",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-10-kb5131096-extended-security-update/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-10T20:04:36Z",
-   "summary": "Microsoft released the Windows 10 KB5131096 extended security update, which includes this month's November 2026 Patch Tuesday fixes and a few bug fixes and changes. [...]",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "09de80ae0aa4",
-   "title": "Hackers exploit trusted AWS access to breach multiple cloud environments",
-   "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-trusted-aws-access-to-breach-multiple-cloud-environments/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-10T19:31:11Z",
-   "summary": "A threat actor used compromised identity and access management (IAM) credentials for a Qubole big data platform's AWS account to access and exfiltrate data from multiple customers' AWS environments. [...]",
-   "score": 9,
-   "tags": [
-    "Data breach",
-    "Identity",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Data breach",
-    "Identity",
-    "SaaS / cloud"
-   ],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/11/hackers-exploit-quboles-trusted-aws.html"
-    }
-   ]
-  },
-  {
-   "id": "b86930e18372",
-   "title": "Git Patches Flaw That Lets Malicious Repositories Execute Code During Recursive Clones",
-   "link": "https://thehackernews.com/2026/11/git-patches-flaw-that-lets-malicious.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-10T19:23:10Z",
-   "summary": "A flaw in Git can let a malicious repository run an attacker's code on a computer that clones it recursively, together with its submodules. The Git project fixed it this week in Git 2.56.1, with matching fixes for the 2.50 through 2.55 series in 2.50.2, 2.51.3, 2.52.1, 2.53.1, 2.54.1 and 2.55.1.…",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "008f66d06450",
-   "title": "Exploited Outlook Zero-Day Among 1,094 Flaws Patched by Microsoft",
-   "link": "https://www.securityweek.com/exploited-outlook-zero-day-among-1094-flaws-patched-by-microsoft/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-10T19:19:46Z",
-   "summary": "CVE-2026-124194 is the Outlook zero-day for which Microsoft says it’s aware of active exploitation. The post Exploited Outlook Zero-Day Among 1,094 Flaws Patched by Microsoft appeared first on SecurityWeek .",
-   "score": 11,
-   "tags": [
-    "Actively exploited",
-    "Microsoft 365",
-    "Vulnerability"
-   ],
-   "why": [
-    "Actively exploited",
-    "Microsoft 365",
-    "Vulnerability"
-   ],
-   "epss": 0.0194
-  },
-  {
-   "id": "b958c2272095",
-   "title": "SGLang RCE Exploit Breaches NEAR AI, Steals Data From 18 Agents and About 100 Users",
-   "link": "https://thehackernews.com/2026/11/sglang-rce-exploit-breaches-near-ai.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-10T19:19:39Z",
-   "summary": "An attacker exploited a remote code execution flaw in SGLang, an open-source inference engine, and ran code on one of NEAR AI's inference servers last Sunday. The attacker could also have seen requests being processed on that server that day, including requests sent in confidential mode, the…",
-   "score": 6,
-   "tags": [
-    "Data breach",
-    "Vulnerability"
-   ],
-   "why": [
-    "Data breach",
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "50eb1dccf495",
-   "title": "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws-outlook-zero-day/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-10T19:07:36Z",
-   "summary": "Today is Microsoft's November 2026 Patch Tuesday, with security updates addressing a record-breaking 1,235 flaws, including one actively exploited Microsoft Outlook zero-day vulnerability. [...]",
-   "score": 11,
-   "tags": [
-    "Actively exploited",
-    "Microsoft 365",
-    "Vulnerability"
-   ],
-   "why": [
-    "Actively exploited",
-    "Microsoft 365",
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "80496ac2144f",
-   "title": "AI Coding Agents Leak Thousands of Secrets to GitHub",
-   "link": "https://www.darkreading.com/cyber-risk/ai-coding-agents-leak-secrets-github",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-11-10T18:46:22Z",
-   "summary": "A command in Claude Code inadvertently saves files with credentials and other sensitive data to public Git repositories, creating security gaps for organizations.",
-   "score": 2,
-   "tags": [
-    "Identity"
-   ],
-   "why": [
-    "Identity"
-   ]
-  },
-  {
-   "id": "33bc3cf0f92e",
-   "title": "Windows 11 KB5132061 & KB5131087 cumulative updates released",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5132061-and-kb5131087-cumulative-updates-released/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-10T18:33:26Z",
-   "summary": "Microsoft has released the Patch Tuesday Windows 11 and cumulative updates for versions 26H2/25H2/24H2 and 23H2 to fix security vulnerabilities and bugs, and add new features. [...]",
-   "score": 1,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "9398616ade4d",
-   "title": "Hackers Exploit Critical Xen Orchestra Auth Bypass Flaw to Gain Admin Access",
-   "link": "https://thehackernews.com/2026/11/hackers-exploit-critical-xen-orchestra.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-10T18:12:21Z",
-   "summary": "French software company Vates VMS has warned of a critical security vulnerability in Xen Orchestra that it said is being actively exploited in the wild. The authentication bypass flaw, which does not yet have a CVE identifier, is tracked as VSA-2026-062. \"REST cookie parsing turns…",
-   "score": 5,
-   "tags": [
-    "Actively exploited",
-    "Vulnerability"
-   ],
-   "why": [
-    "Actively exploited",
-    "Vulnerability"
-   ],
-   "also": [
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/critical-xen-orchestra-auth-bypass-flaw-exploited-to-hijack-vm-servers/"
-    },
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/critical-xen-orchestra-flaws-exploited-in-attacks/"
-    },
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-barracuda-email-security-gateway-flaws-to-get-root-access/"
-    }
-   ]
-  },
-  {
-   "id": "4893b7f6453d",
-   "title": "Adobe Patches 110 Vulnerabilities Across 9 Products",
-   "link": "https://www.securityweek.com/adobe-patches-110-vulnerabilities-across-9-products/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-10T18:11:54Z",
-   "summary": "Adobe has fixed vulnerabilities in AEM, Premiere, Photoshop, After Effects, Connect, Audition, Dimension, Content Credentials SDK, and Media Encoder. The post Adobe Patches 110 Vulnerabilities Across 9 Products appeared first on SecurityWeek .",
-   "score": 4,
-   "tags": [
-    "Identity",
-    "Vulnerability"
-   ],
-   "why": [
-    "Identity",
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "3ac35ff64736",
-   "title": "Three China-Nexus Espionage Campaigns Linked Through Sparrow Malware Ecosystem",
-   "link": "https://thehackernews.com/2026/11/three-china-nexus-espionage-campaigns.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-10T17:43:23Z",
-   "summary": "Three distinct threat activity clusters with shared infrastructure and malware code similarities have been observed targeting telecommunications providers, government organizations, military entities, research institutions, and critical infrastructure across Latin America, Asia, and Europe over…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "cc845d87e813",
-   "title": "Software Transparency Is Changing: Allan Friedman on SBOM, AI BOMs and What Comes Next",
-   "link": "https://www.securityweek.com/software-transparency-is-changing-allan-friedman-on-sbom-ai-boms-and-what-comes-next/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-10T16:45:00Z",
-   "summary": "SBOM pioneer Allan Friedman joined the SecurityWeek Podcast to discuss why knowing what is inside software is only the beginning, how AI is complicating software supply chain visibility, and what organizations should be doing with SBOM data once they have it. The post Software Transparency Is…",
-   "score": 2,
-   "tags": [
-    "SaaS / cloud"
-   ],
-   "why": [
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "38532208b5af",
-   "title": "Google Widens Gemini 4 Carbon Access After AI Agents Verify Signal Code",
-   "link": "https://www.securityweek.com/google-widens-gemini-4-carbon-access-after-ai-agents-verify-signal-code/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-10T16:42:02Z",
-   "summary": "Google opened Carbon to paying developers and businesses as DeepMind used agents built on it to prove libsignal security guarantees. The post Google Widens Gemini 4 Carbon Access After AI Agents Verify Signal Code appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
   }
  ]
 }
