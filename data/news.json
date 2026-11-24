@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-24T02:14:26Z",
+ "generated": "2026-11-24T04:00:11Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -15,33 +15,33 @@
   },
   {
    "name": "ACSC (via Google News)",
-   "ok": false,
-   "count": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "count": 1,
+   "error": null
   },
   {
    "name": "ASD / ACSC in the news",
-   "ok": false,
-   "count": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "count": 3,
+   "error": null
   },
   {
    "name": "AU breach news",
-   "ok": false,
-   "count": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "count": 5,
+   "error": null
   },
   {
    "name": "Real estate cyber news",
-   "ok": false,
-   "count": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "count": 6,
+   "error": null
   },
   {
    "name": "OAIC / Privacy news",
-   "ok": false,
-   "count": 0,
-   "error": "HTTPError: HTTP Error 503: Service Unavailable"
+   "ok": true,
+   "count": 2,
+   "error": null
   },
   {
    "name": "iTnews Security",
@@ -106,6 +106,19 @@
  ],
  "items": [
   {
+   "id": "74976701e761",
+   "title": "Scanning from Subnet 109.160.32.0/24, (Mon, Nov 23rd)",
+   "link": "https://isc.sans.edu/diary/rss/33550",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-11-24T02:32:00Z",
+   "summary": "This subnet is assigned to a web hosting and virtual private server (VPS) provider BANATSYNC SRL with AS198364, located in Timisoara, Romania. This graph shows the DShield sensor activity over the past 90 days for this subnet and it is still ongoing as of this writing.",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
+  {
    "id": "732957406cb2",
    "title": "ISC Stormcast For Tuesday, November 24th, 2026 https://isc.sans.edu/podcastdetail/10192, (Tue, Nov 24th)",
    "link": "https://isc.sans.edu/diary/rss/33552",
@@ -117,6 +130,23 @@
    "score": 1,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "5064ec7b7a58",
+   "title": "Yuma Hospital Settles Ransomware Suit for $1.985M",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPWmVMcUJYdTUzZlU0VkdIUDRQdE14dXVjTm51STBPOFUtMHZVYnFvRjRJSjhZbWM4R1RhbGZETkVLQzdXMDlXOUNCdTVZSGlEQkhCTjdFYmhDOS11ZkFsRU1vajhlZi0xZHVXbGpPMlVQTEFFdVhsaWlBWVVYNlZxUXJHRlA3cHhkYkQtcnBKM2tuLXhzSkZGOGdKWGFkVFZ3THc?oc=5",
+   "source": "Wisevoter",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-24T01:14:19Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
   },
   {
    "id": "6a57f5edfd55",
@@ -147,6 +177,33 @@
     {
      "source": "SecurityWeek",
      "url": "https://www.securityweek.com/crowdstrike-to-acquire-zscaler-in-43-9-billion-deal/"
+    }
+   ]
+  },
+  {
+   "id": "9856865c98e6",
+   "title": "South Korea’s power giant KEPCO confirms data breach impacting 1.5 million",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQS3RGRXNXRkdWZGhsZTlPRVBjZWNjenNCc2VEZV9mSlV6bWlfaXpGa214b0ZGSmd6NVRRZk5UQzhkQ25iT1huVWNFaXBGNVZJSnprVktrSkVEUjdiR0Z3YlhITF9wX3NFTDhMX2VpaUdqQU5VM1FmV3lmYl9XSDNBZFk0am5KQVR3V242dG83VmJGOUxQeEVRMWZmdlR5SE1Qdko1MWpmLUJOTGEtR2ZzNVlWTFkwd2JHd3d5RQ?oc=5",
+   "source": "BleepingComputer",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-23T20:54:51Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ],
+   "also": [
+    {
+     "source": "Seoul Economic Daily",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQM1FRUk5LZF9CUzQxRXVPM1cxaERaS18tV1RvaklqNEVVVXA5b3dYREpNdzVjMzFFUXFxZWxNMmd4S3YwVUpTZEx5MnhySzBCdThtWnBOdHBaZUpXS2hQN1dTMWw0SXVXZDZsZU9qbnRGRHVkWjZHdjRqNXBqbGd6NUZncVZEbEI5VjJTYlZCWlJWRFFGbGRKYXdDZEdSZw?oc=5"
+    },
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/south-koreas-power-giant-kepco-confirms-data-breach-impacting-15-million/"
     }
    ]
   },
@@ -225,6 +282,23 @@
    ]
   },
   {
+   "id": "915f3346d793",
+   "title": "Acadia Health Data Breach: Ademi LLP Investigates Claims for Possible Damages Suffered by Customers",
+   "link": "https://news.google.com/rss/articles/CBMiogJBVV95cUxPZE5oNWpxeW5WdzQyMHQxSjlLUEpFRmdNQWlVamdvdFdidU1ZOW5lYUR3TjJYSG15dno4enQ4WVhVQlhwSExqazJoT2J1RE1FU2c5TmZZMmRMbzU1R1lLSHNrOVFZZnp0eC1hcmdVcmlod08xc2hJNFZ5MzA0UDFTdVdhN1NtUXZVYUlYNUZqLU9UMVRaOFBYRV9QVEw5c05YUE1ZSWNRRmZ1YVFEUW5NZy00aVdSNUpweGhaRVMxa01zNVN2ZEF2UWtFYzBLZnNJNkdjdk1vZUZmSkVFelJBRVAwanBWdDVNdEtHSzNtSDZ4VUtvWG9zbnVEcE14VXlKa0ZkX1ZkSTdTSVdGd2ZUdndVRTFhcEF3SG03alJrTTBqdw?oc=5",
+   "source": "GlobeNewswire",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-23T17:55:49Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
    "id": "5e9db5537b61",
    "title": "Behind the Alias: How One Researcher Unmasked a Decade of Ransomware Actors",
    "link": "https://www.darkreading.com/cybersecurity-operations/alias-researcher-unmasked-ransomware-actors",
@@ -259,6 +333,25 @@
    ]
   },
   {
+   "id": "a73df680ca27",
+   "title": "Nvidia confirms it is investigating possible third-party data breach, says it will 'continue to monitor the situation'",
+   "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNc0R3ZHJxQWkzbFAxc3NFV3ZsR0lOYjRpaDdySTVfTFNZcGJpb2xBdEtzLUwzZ3paZnBkUUZJZzdxdUxuZkdGc3hDQ3VXNTBFY2pmZHU5cF83OXlVYlVvRXJvbDdUYk5DeGFZajg0WkhGUTJtTGdyNGo4YWVlS1pNLXhPXy1ENUVCbU5RdzYyLVpJd0lRTG1ZUjh3MXZaOHpvakg2TkRDUmlrUk5nRDAtNmNKaWx6dlc1Y2JMdFcyX0NsNEx2anIwbE5vdUwxZ3lBY0VBeWxyUGM5cGhyVFNFT2dZb1VFbkpCN2c?oc=5",
+   "source": "TechRadar",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-23T17:05:00Z",
+   "summary": "",
+   "score": 9,
+   "tags": [
+    "Data breach",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Data breach",
+    "SaaS / cloud"
+   ]
+  },
+  {
    "id": "0af9a7510182",
    "title": "GlobeTopper loses $2.5 million after hackers steal $70k in gift cards",
    "link": "https://www.bleepingcomputer.com/news/security/globetopper-loses-25-million-after-hackers-steal-70k-in-gift-cards/",
@@ -270,6 +363,23 @@
    "score": 0,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "aa5656ac595b",
+   "title": "Keeper Security launches emergency breach response service",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPaU9meURLSkd6R1NGT0xwZlIwTGdubHlucDY4MVhBWk9GYlVFdmpTdTk1Nk4tYndXYmliLUVVR19idS1HZE1FWkNGMGJTQlBhUWVfNEJ3UE43RGJvZmRYZENCQVl6N0hXd2tFREtJRnltamVWRUZPQ3FuMDZJUDQ4WVpKcFRObDdhc3lOX2lXM2ZERFc0LWc?oc=5",
+   "source": "ChannelLife Australia",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-23T16:30:00Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
   },
   {
    "id": "f1ad34292135",
@@ -408,6 +518,23 @@
    ]
   },
   {
+   "id": "0df067c75a63",
+   "title": "Next data accessed in cyber breach",
+   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA1cXJudUFVSnMtUjFKTHBndEs2RjFSSGhrUGstQ0wxQzF5SndHaFBjaGlsUFhOYzhoYmJpYVdfRlhINlVMNnBuWXdLamFwSk9qT3pxSTYxczBMYVk?oc=5",
+   "source": "BBC",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-23T12:34:07Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
    "id": "759d50b40080",
    "title": "N-able Discloses Critical Mail Assure Vulnerability Found During Breach Investigation",
    "link": "https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html",
@@ -527,6 +654,25 @@
    ],
    "why": [
     "Real estate"
+   ]
+  },
+  {
+   "id": "7357cb390c39",
+   "title": "Australian AI Safety Standard: Enterprise LLM Playbook",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNam5QODk4SzNQaGJHYUZ1QnBoMnVGbjA2d2lZcjhSYWRXRlI0emxGN2htYzItTXI1ZTktWFZFWmhDbndTbURocURrbDRUZV9SZVFTUVlkUlVheTdxOFNLSTRJTDNwRkZiMWdDQm1fM09DdEFVZ3hhSjB3alZ1Y1dMaWRleXdYSGx3cTVEVmRLUW1rVjBJZzhQd1lCSU0tM3VoaEE?oc=5",
+   "source": "JournalArta",
+   "feed": "OAIC / Privacy news",
+   "region": "AU",
+   "published": "2026-11-23T09:38:59Z",
+   "summary": "",
+   "score": 11,
+   "tags": [
+    "Australia",
+    "AI threats"
+   ],
+   "why": [
+    "Australia",
+    "AI threats"
    ]
   },
   {
@@ -726,29 +872,6 @@
     "Vulnerability"
    ],
    "epss": 0.0035
-  },
-  {
-   "id": "8228bee34334",
-   "title": "KEPCO Data Breach Exposes 1.52 Million Records, Including Power Grid Procurement Files",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQM1FRUk5LZF9CUzQxRXVPM1cxaERaS18tV1RvaklqNEVVVXA5b3dYREpNdzVjMzFFUXFxZWxNMmd4S3YwVUpTZEx5MnhySzBCdThtWnBOdHBaZUpXS2hQN1dTMWw0SXVXZDZsZU9qbnRGRHVkWjZHdjRqNXBqbGd6NUZncVZEbEI5VjJTYlZCWlJWRFFGbGRKYXdDZEdSZw?oc=5",
-   "source": "Seoul Economic Daily",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-22T20:30:05Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ],
-   "also": [
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/south-koreas-power-giant-kepco-confirms-data-breach-impacting-15-million/"
-    }
-   ]
   },
   {
    "id": "de8cd31c4430",
@@ -976,6 +1099,23 @@
     "Microsoft 365",
     "Data breach",
     "Vulnerability"
+   ]
+  },
+  {
+   "id": "43ac47294e6e",
+   "title": "FBI hack update: Trump jokes about NCIC database breach as leak concerns grow | Hindustan Times",
+   "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQS1JkbGVOR1pIOWJIWVRDMUx3OFpJSE53NnFvMzhEMkgxMk9IY0xkSzVLRWFuQlpJeUR4d0V3cUIwRU9JV0R6SnJJUWw5b0JvTXBMeXl5Tk1DQ2lqaVFYUXpZN0tnX3F6R3h1VHJteWZVU01wMjIzQkJhX2hZY2M0X25xMU13Ni01QlkxcjhQSm5IZVl1MXplRFB4S1NwTUc4YXFIVjdfZXZwYVJfQ25SMHBjcF9KUHUwN1R2VGllTEw0OFpsTmVXck5LNjlERGVDbFBGM0wwOENGQ0huM3pxbEdqSU0zMUc4YXl2cUF4TWZaR3PSAfgBQVVfeXFMTUloWmpzTTZnbG5WNDM0dGQtSWFMUXZuX1E1U1FWU0RUT0NzQy1aZlFkZU0yWWRYVFY1Uk1iMVhBS0lDcVRVSWZhdkIxN1JScW1EM0Q1Umk3cEhTMk9aOVRFdVZLVzN3V2ZJOW1KbWd2aFNhS1JqNll0Yzd2Y1AzUlJPX3JWVFpBQzRqc2g0b2dIYUx1NW1MekZMejZTaUlxZWZrNWs5R21ZZ19KVXRkSFlXb3FCN3RhejY2MVEtdFhubzJYelBSaEZKVUdhb0NFdnAtUDNNYjZuZ0M5ZlhpVW04dmc5VU41TVVQZk9MS19vSC1CSHp2Zng?oc=5",
+   "source": "Hindustan Times",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-21T17:44:40Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
    ]
   },
   {
@@ -7151,130 +7291,6 @@
    "region": "Global",
    "published": "2026-11-11T15:01:11Z",
    "summary": "Linux eBPF rootkits can hide malicious activity and evade traditional detection methods without loading kernel modules. Flare reveals how these techniques are spreading through underground forums, where threat actors are sharing rootkit source code, tutorials, and exploits targeting Linux systems.…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "7fc0ff6aee2a",
-   "title": "Hackers Target Qlik Sense Servers With Reverse Shells, Stage ActiveMQ and Veeam Exploits",
-   "link": "https://thehackernews.com/2026/11/hackers-target-qlik-sense-servers-with.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-11T14:01:00Z",
-   "summary": "Threat actors have been observed targeting Qlik Sense servers to unsuccessfully deliver PowerShell reverse shell commands against multiple environments in October 2026. Cynet's CyOps and Research teams said they identified the suspicious activity in October 2026 against several E.U.-based…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "7ba871700f25",
-   "title": "Asus, Zoom Release Security Patches",
-   "link": "https://www.securityweek.com/asus-zoom-release-security-patches/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-11T13:58:38Z",
-   "summary": "Attackers could exploit them for command execution, memory overwrites, and privilege escalation. The post Asus, Zoom Release Security Patches appeared first on SecurityWeek .",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "60ccd3ca4d45",
-   "title": "Citrix, Ivanti Patch Critical and High-Severity Vulnerabilities",
-   "link": "https://www.securityweek.com/citrix-ivanti-patch-critical-and-high-severity-vulnerabilities/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-11T13:37:19Z",
-   "summary": "Attackers could exploit the bugs to tamper with certificate entries, achieve remote code execution, and compromise hosts. The post Citrix, Ivanti Patch Critical and High-Severity Vulnerabilities appeared first on SecurityWeek .",
-   "score": 5,
-   "tags": [
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "why": [
-    "Edge devices",
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "693679885746",
-   "title": "N-able releases security hotfixes for zero-day vulnerabilities",
-   "link": "https://www.bleepingcomputer.com/news/security/n-able-releases-security-hotfixes-for-zero-day-vulnerabilities/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-11T12:32:27Z",
-   "summary": "N-able released hotfixes to address zero-day bugs affecting its N-central remote monitoring and management (RMM) platform, which were publicly disclosed over the weekend and forced it to take vulnerable hosted environments offline. [...]",
-   "score": 5,
-   "tags": [
-    "Actively exploited"
-   ],
-   "why": [
-    "Actively exploited"
-   ]
-  },
-  {
-   "id": "6ef677aa3015",
-   "title": "Finite State Raises $27 Million to Secure Software and Firmware in Connected Devices",
-   "link": "https://www.securityweek.com/finite-state-raises-27-million-to-secure-software-and-firmware-in-connected-devices/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-11T12:24:33Z",
-   "summary": "The Series C round will fund international expansion and more autonomous features for the firm’s device security platform. The post Finite State Raises $27 Million to Secure Software and Firmware in Connected Devices appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "14caa111eec6",
-   "title": "Over 35,000 Grok-Built Apps Exposed Online, Some Leaking Confidential Data and Passwords",
-   "link": "https://thehackernews.com/2026/11/over-35000-grok-built-apps-exposed.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-11T12:19:40Z",
-   "summary": "Of the 37,571 Grok-built apps that security company Claroc found online, 35,578 were open to anyone without a sign-in, the researchers said yesterday. They included 24 apps built by staff at the social network X and at SpaceXSI, the company that makes the Grok AI assistant. Most of the open apps…",
-   "score": 7,
-   "tags": [
-    "Data breach",
-    "Identity"
-   ],
-   "why": [
-    "Data breach",
-    "Identity"
-   ]
-  },
-  {
-   "id": "de18400249b3",
-   "title": "We Built An Agent That Broke All of Our Security Rules. Here's What We Learned.",
-   "link": "https://thehackernews.com/2026/11/we-built-agent-that-broke-all-of-our.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-11T12:01:59Z",
-   "summary": "We tell customers three things about securing AI agents: they need their own identities, access that fits the job they’re given, and traceability that’s separate from any human’s. That was true for us at Token as well. Then, we built an agent that broke all three by default. This helped us think…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "21b7ddf6e1b0",
-   "title": "Bay Raises $50 Million to Control What Enterprise AI Agents Can Do",
-   "link": "https://www.securityweek.com/bay-raises-50-million-to-control-what-enterprise-ai-agents-can-do/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-11T11:30:00Z",
-   "summary": "Founded by three ex-IDF Unit 8200 intelligence officers, Bay is launched to provide a control plane for AI agents. The post Bay Raises $50 Million to Control What Enterprise AI Agents Can Do appeared first on SecurityWeek .",
    "score": 0,
    "tags": [],
    "why": []
