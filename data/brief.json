@@ -1,31 +1,29 @@
 {
- "date": "2026-11-23",
- "generated": "2026-11-22T23:42:46+00:00",
- "title": "Sec-Pulse brief - Mon 23 Nov",
+ "date": "2026-11-24",
+ "generated": "2026-11-24T04:00:21+00:00",
+ "title": "Sec-Pulse brief - Tue 24 Nov",
  "items": [
   {
-   "id": "1e1dbef95d66",
-   "title": "Microsoft Entra Connect Health flaw exploited to steal tenant data",
-   "link": "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/",
-   "source": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-21T18:01:58Z",
-   "score": 15,
+   "id": "7357cb390c39",
+   "title": "Australian AI Safety Standard: Enterprise LLM Playbook",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNam5QODk4SzNQaGJHYUZ1QnBoMnVGbjA2d2lZcjhSYWRXRlI0emxGN2htYzItTXI1ZTktWFZFWmhDbndTbURocURrbDRUZV9SZVFTUVlkUlVheTdxOFNLSTRJTDNwRkZiMWdDQm1fM09DdEFVZ3hhSjB3alZ1Y1dMaWRleXdYSGx3cTVEVmRLUW1rVjBJZzhQd1lCSU0tM3VoaEE?oc=5",
+   "source": "JournalArta",
+   "region": "AU",
+   "published": "2026-11-23T09:38:59Z",
+   "score": 11,
    "tags": [
-    "Real estate",
-    "Microsoft 365",
-    "Data breach",
-    "Vulnerability"
+    "Australia",
+    "AI threats"
    ],
-   "summary": "Microsoft is warning organizations that it suffered a data breach after attackers exploited a vulnerability in its Entra Connect Health service to gain unauthorized access to administrator email addresses and tenant configuration information. [...]"
+   "summary": ""
   },
   {
-   "id": "de8cd31c4430",
-   "title": "Oneida County real estate: See all residential properties sold, Nov. 9-15",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQVUpfd3VnWG4xR0RTYXNaUHBGNmh5ZDlEQmFVNVV6blRnT3RWcTY1UnZPUDdnSHNaNHhqeUlqNnprMzgzRzd5by1BVWJHZmozRjJHMFV0RzlPMG83eU1TYzVIX3Ria195U1ozUTJDNVJoSzJWQnJWbjV2dHpJOE5fSTU5S2RzWWt2VGwwLTdTWGtZUnV3SUVMRllMZkRfQmctX1VDUUVKN0VOYVBTR1FCaUhaemUtZDJ3WWpyWW5xcmJ6dw?oc=5",
-   "source": "Syracuse.com",
+   "id": "1ce23f24eebf",
+   "title": "Nationwide boosts cyber support for conveyancers, solicitors and mortgage intermediaries",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOUHBfNk1lMWVQT1hMb1QzNWtXcVVVRVl4cWZ4a2FOTG5RMXFMa1MyR3JxLU0xRHhNcEVZQlFmdHlGWV9oN2pWSE04NTJVdy15VnduNVM5X2VJQjZ3U0FGUXMyUXBuMk5OdnlFck12V2lPb195T2x0NVh4VFVMX1ZzSUp2V09KaEtMMk5tbTYza28zbEVXSzlGTi13YlRtYXhsN1lyRk82SmhxNU45cjczbGY2TFBMNDNsS3dwLTFUdW12MWhs?oc=5",
+   "source": "The Intermediary",
    "region": "Global",
-   "published": "2026-11-22T20:26:00Z",
+   "published": "2026-11-23T10:53:33Z",
    "score": 10,
    "tags": [
     "Real estate"
@@ -33,52 +31,55 @@
    "summary": ""
   },
   {
-   "id": "8228bee34334",
-   "title": "KEPCO Data Breach Exposes 1.52 Million Records, Including Power Grid Procurement Files",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQM1FRUk5LZF9CUzQxRXVPM1cxaERaS18tV1RvaklqNEVVVXA5b3dYREpNdzVjMzFFUXFxZWxNMmd4S3YwVUpTZEx5MnhySzBCdThtWnBOdHBaZUpXS2hQN1dTMWw0SXVXZDZsZU9qbnRGRHVkWjZHdjRqNXBqbGd6NUZncVZEbEI5VjJTYlZCWlJWRFFGbGRKYXdDZEdSZw?oc=5",
-   "source": "Seoul Economic Daily",
+   "id": "5d81d8091009",
+   "title": "CISA flags critical Cisco RCE flaw as actively exploited in attacks",
+   "link": "https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/",
+   "source": "BleepingComputer",
    "region": "Global",
-   "published": "2026-11-22T20:30:05Z",
-   "score": 7,
+   "published": "2026-11-23T07:44:19Z",
+   "score": 10,
    "tags": [
-    "Data breach"
+    "Actively exploited",
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "summary": "The US Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies that attackers are now exploiting a recently patched critical Cisco Expressway vulnerability in the wild. [...]"
+  },
+  {
+   "id": "76b5e595ffb3",
+   "title": "EIDL fraud — Kansas Real Estate Operator Indicted for $300K Scam and $500K Tax Evasion",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPNjlVc2tTekRONng0VklCMzl6SjZPSXlKVkstaFhOaTRVMFFrY3JrcElLdHhCUkwxZ0ZRdnZHQ1pOSGZxNkN4aFllZzdBRzNNaFhXWkZoelpLcFlRZXBJWm1aenE2QTU3blFWbWZfckw3TzVFOFRVTU56eDJTckdjblB6Mm12bWp3NEVjdGpaQnJlZEtH?oc=5",
+   "source": "The Korea Daily",
+   "region": "Global",
+   "published": "2026-11-23T05:45:54Z",
+   "score": 10,
+   "tags": [
+    "Real estate"
    ],
    "summary": ""
   },
   {
-   "id": "ea51b7bd2b69",
-   "title": "On the 22nd, President Lee Jae Myung repeatedly refuted the suspicion of breach of trust in the Daej..",
-   "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBlSUZvQ2ZzWnJ2ODNGdEJadEQ2SDVqR0duQ3ZfUWFZY0hhdTVBOHFVRVNKV2dhZ1ZFR0NmekgxZzhZNl9tdmhUMTFSblpsQmFVWU1j?oc=5",
-   "source": "매일경제",
+   "id": "a73df680ca27",
+   "title": "Nvidia confirms it is investigating possible third-party data breach, says it will 'continue to monitor the situation'",
+   "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNc0R3ZHJxQWkzbFAxc3NFV3ZsR0lOYjRpaDdySTVfTFNZcGJpb2xBdEtzLUwzZ3paZnBkUUZJZzdxdUxuZkdGc3hDQ3VXNTBFY2pmZHU5cF83OXlVYlVvRXJvbDdUYk5DeGFZajg0WkhGUTJtTGdyNGo4YWVlS1pNLXhPXy1ENUVCbU5RdzYyLVpJd0lRTG1ZUjh3MXZaOHpvakg2TkRDUmlrUk5nRDAtNmNKaWx6dlc1Y2JMdFcyX0NsNEx2anIwbE5vdUwxZ3lBY0VBeWxyUGM5cGhyVFNFT2dZb1VFbkpCN2c?oc=5",
+   "source": "TechRadar",
    "region": "Global",
-   "published": "2026-11-22T09:13:12Z",
-   "score": 7,
+   "published": "2026-11-23T17:05:00Z",
+   "score": 9,
    "tags": [
-    "Data breach"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "43303fd5c2cb",
-   "title": "Chase data breach lawsuit: can customers sue when a vendor attack may have exposed names and emails",
-   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNOVZ1c09ibklQNkJlUlhBN3F2a0ZGcElDRU9KanhBRnNTMmlMVVpsM3dZRFI1bWwwSHZMaExjWEY3Mkw0bmlTVl9SQUxoUVhMS3FTc0tQSGh2bXVFRmZJVldQNmFVV2NnVEZOb1g2VHVNN1ZQWVVOWWd3MU5tempkeElkYXVoOHEz?oc=5",
-   "source": "Hassan KOHEN",
-   "region": "Global",
-   "published": "2026-11-22T01:11:04Z",
-   "score": 7,
-   "tags": [
-    "Data breach"
+    "Data breach",
+    "SaaS / cloud"
    ],
    "summary": ""
   }
  ],
  "stats": {
-  "recent": 14,
-  "au": 0,
-  "kev": 0
+  "recent": 44,
+  "au": 1,
+  "kev": 2
  },
  "lesson": {
-  "id": "1.9",
-  "title": "Tooling: triaging an EDR detection"
+  "id": "1.10",
+  "title": "Tooling: secure email gateway workflows"
  }
 }
