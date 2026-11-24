@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-24T04:00:11Z",
+ "generated": "2026-11-24T13:46:29Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -16,7 +16,7 @@
   {
    "name": "ACSC (via Google News)",
    "ok": true,
-   "count": 1,
+   "count": 0,
    "error": null
   },
   {
@@ -34,13 +34,13 @@
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 6,
+   "count": 3,
    "error": null
   },
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 2,
+   "count": 1,
    "error": null
   },
   {
@@ -105,6 +105,217 @@
   }
  ],
  "items": [
+  {
+   "id": "a6ac99d677c5",
+   "title": "Anthropic Expands Enterprise Safeguards for Detecting AI Misuse",
+   "link": "https://www.securityweek.com/anthropic-expands-enterprise-safeguards-for-detecting-ai-misuse/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-24T13:30:23Z",
+   "summary": "EFS helps zero-retention customers spot Claude misuse spread across many requests while keeping conversation data in their own cloud. The post Anthropic Expands Enterprise Safeguards for Detecting AI Misuse appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "6085ef54790f",
+   "title": "Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap",
+   "link": "https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-24T12:42:09Z",
+   "summary": "Pinning GitHub Actions to an exact version of their code, known as SHA pinning, has become the go-to defense against software supply chain attacks. Attackers have already found a way around it. In March 2026, the hackers who hijacked Trivy, a widely used open-source security scanner, planted…",
+   "score": 2,
+   "tags": [
+    "SaaS / cloud"
+   ],
+   "why": [
+    "SaaS / cloud"
+   ]
+  },
+  {
+   "id": "bb2efaa9d0e6",
+   "title": "Google Researcher Shows How a Single Bit Change in .NET Files Bypassed Windows Code Integrity",
+   "link": "https://thehackernews.com/2026/11/google-researcher-shows-how-single-bit.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-24T12:02:00Z",
+   "summary": "A quirk in how the .NET Framework loads a program file let a local attacker run untrusted code past two separate protections on Windows built to block it, Google Project Zero researcher James Forshaw showed in a write-up published yesterday. The same loading behavior bypassed Oracle VirtualBox's…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "bb2aa84be511",
+   "title": "2027 SOC Budget Reset: 5 Priorities to Cut Costs and Reduce Cyber Risk",
+   "link": "https://thehackernews.com/2026/11/2027-soc-budget-reset-5-priorities-to.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-24T12:01:54Z",
+   "summary": "What if your biggest SOC budget problem isn't how much you spend, but how much analyst time you lose? According to ANY.RUN's estimates, SOC teams could recover 450 analyst hours per 1,000 investigated alerts through faster threat analysis and IOC research. That's a significant opportunity as…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "f3a43b39549f",
+   "title": "1.5 Million Impacted by Data Breach at South Korean Electric Company KEPCO",
+   "link": "https://www.securityweek.com/1-5-million-impacted-by-data-breach-at-south-korean-electric-company-kepco/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-24T11:50:21Z",
+   "summary": "Hackers stole personal information from the company’s customer portal and supplier relationship management platform. The post 1.5 Million Impacted by Data Breach at South Korean Electric Company KEPCO appeared first on SecurityWeek .",
+   "score": 4,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/south-koreas-power-giant-kepco-confirms-data-breach-impacting-15-million/"
+    },
+    {
+     "source": "Seoul Economic Daily",
+     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQM1FRUk5LZF9CUzQxRXVPM1cxaERaS18tV1RvaklqNEVVVXA5b3dYREpNdzVjMzFFUXFxZWxNMmd4S3YwVUpTZEx5MnhySzBCdThtWnBOdHBaZUpXS2hQN1dTMWw0SXVXZDZsZU9qbnRGRHVkWjZHdjRqNXBqbGd6NUZncVZEbEI5VjJTYlZCWlJWRFFGbGRKYXdDZEdSZw?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "15b8b568346d",
+   "title": "Elecbrakes Bluetooth Vulnerabilities Expose Trailers to Forced Braking",
+   "link": "https://www.securityweek.com/elecbrakes-bluetooth-vulnerabilities-expose-trailers-to-forced-braking/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-24T10:44:44Z",
+   "summary": "Critical Bluetooth flaws in Elecbrakes controllers could let nearby attackers force trailer braking, potentially causing accidents. The post Elecbrakes Bluetooth Vulnerabilities Expose Trailers to Forced Braking appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "20534b25c7da",
+   "title": "Peninsula Energy Halts Trading After Cyber Incident Hits US Uranium Mine",
+   "link": "https://www.securityweek.com/peninsula-energy-halts-trading-after-cyber-incident-hits-us-uranium-mine/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-24T10:35:04Z",
+   "summary": "The company told the ASX that a cybersecurity incident at its Wyoming uranium project would temporarily affect operations. The post Peninsula Energy Halts Trading After Cyber Incident Hits US Uranium Mine appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "06ddd1a68807",
+   "title": "WHMCS SQL Injection Could Expose Customer Data and Admin Password Hashes without Login",
+   "link": "https://thehackernews.com/2026/11/whmcs-sql-injection-flaw-could-expose.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-24T08:34:20Z",
+   "summary": "A flaw in WHMCS's shopping cart, the billing and automation platform many web hosting companies use to run their businesses, could allow anyone on the internet to retrieve customer records and administrator password hashes from an installation's database. No login is needed. The company disclosed…",
+   "score": 3,
+   "tags": [
+    "Identity"
+   ],
+   "why": [
+    "Identity"
+   ]
+  },
+  {
+   "id": "d1945c98e9c3",
+   "title": "Retail ranks among least-insured sectors as ransomware attacks peak",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPMmVSNUJYaWlTbWpmVUtielhKQUJEUThvX1BUbUYxZEpXTkc4R1lsanRYb2kwYzdQcGhLYlBLR1ZpMVFydGxON1dhV2VOR2lxNTNqWEdFUDVPc0tvWlZCVG9vODFVZXpTMDlxc1UySUNjeDktV0pjWWQ0Qks3bXJCVU53by1kLWZ5SktiTjBrUjFDSG9WWVh1dDA1YjdmM1VmQkJ4Q01LMEZvWUt1QlV2bzkwVFl1c2xUd0ZSWWNQZkw2aFQzUjRBR2dqVQ?oc=5",
+   "source": "Insurance Business",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-24T08:17:51Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
+  },
+  {
+   "id": "f81f8adf1410",
+   "title": "Clear Group adds London HNW and real estate broker Alexander Miller",
+   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNdUxpT0lLUFYtUWpTQVVLUGNUN2J2U0stTWRUZnlqZ1FxaTBvV1hUaEl3VG9VODB3S0c0TUpvUjg4RlAxdkg2Uklkc19aUkZsQ2YtZW9yU0VOQnBJVmQyUFRxZVpLQW9hOExTMXJBT3BlQjduMVp1OG5TZXFWeHM0NU9ySy0tVTB2NWRuMVRnTXgySDJFU2ppSkZwZnRHdmwwYXMwYkQ5cUJyRGZhWHZWdWFYM3VUNDBEcWJRTURidjVBa0NHM05rM0ZjdUd5X1hZWHNVOA?oc=5",
+   "source": "Insurance Business",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-24T07:17:28Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
+   "id": "a0a25e5ec068",
+   "title": "OpenAI and Cisco Unveil AI-Assisted Linux Security Tool to Block Exploits Before Patching",
+   "link": "https://thehackernews.com/2026/11/openai-and-cisco-unveil-ai-assisted.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-24T06:02:57Z",
+   "summary": "OpenAI and Cisco have teamed up to launch Shirudo (meaning \"shield\" in Japanese), an open-source Linux runtime that allows artificial intelligence (AI) agents to defend systems without downtime. \"It lets agents write dynamic eBPF controls to shield systems from exploits, giving defenders more time…",
+   "score": 8,
+   "tags": [
+    "Microsoft 365",
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "why": [
+    "Microsoft 365",
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "also": [
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/openai-cisco-unveil-open-source-tool-to-shield-unpatched-linux-systems/"
+    },
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/new-shirudo-tool-uses-ai-to-shield-unpatched-linux-systems-from-exploits/"
+    }
+   ]
+  },
+  {
+   "id": "14a00d8221c4",
+   "title": "Hackers Exploit N-able MailAssure Flaw While AI Agents Exploit MONAI Label Zero-Day",
+   "link": "https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-24T06:02:45Z",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday added two flaws impacting N-able MailAssure and MONAI Label to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The critical vulnerabilities are listed below - CVE-2026-134624 (CVSS…",
+   "score": 6,
+   "tags": [
+    "Actively exploited",
+    "Vulnerability"
+   ],
+   "why": [
+    "Actively exploited",
+    "Vulnerability"
+   ],
+   "epss": 0.0035
+  },
   {
    "id": "74976701e761",
    "title": "Scanning from Subnet 109.160.32.0/24, (Mon, Nov 23rd)",
@@ -181,33 +392,6 @@
    ]
   },
   {
-   "id": "9856865c98e6",
-   "title": "South Korea’s power giant KEPCO confirms data breach impacting 1.5 million",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQS3RGRXNXRkdWZGhsZTlPRVBjZWNjenNCc2VEZV9mSlV6bWlfaXpGa214b0ZGSmd6NVRRZk5UQzhkQ25iT1huVWNFaXBGNVZJSnprVktrSkVEUjdiR0Z3YlhITF9wX3NFTDhMX2VpaUdqQU5VM1FmV3lmYl9XSDNBZFk0am5KQVR3V242dG83VmJGOUxQeEVRMWZmdlR5SE1Qdko1MWpmLUJOTGEtR2ZzNVlWTFkwd2JHd3d5RQ?oc=5",
-   "source": "BleepingComputer",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-11-23T20:54:51Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ],
-   "also": [
-    {
-     "source": "Seoul Economic Daily",
-     "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQM1FRUk5LZF9CUzQxRXVPM1cxaERaS18tV1RvaklqNEVVVXA5b3dYREpNdzVjMzFFUXFxZWxNMmd4S3YwVUpTZEx5MnhySzBCdThtWnBOdHBaZUpXS2hQN1dTMWw0SXVXZDZsZU9qbnRGRHVkWjZHdjRqNXBqbGd6NUZncVZEbEI5VjJTYlZCWlJWRFFGbGRKYXdDZEdSZw?oc=5"
-    },
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/south-koreas-power-giant-kepco-confirms-data-breach-impacting-15-million/"
-    }
-   ]
-  },
-  {
    "id": "c01f8c41d8fc",
    "title": "US Cyber Director Pick Signals Shift Toward Expertise",
    "link": "https://www.darkreading.com/cybersecurity-operations/us-cyber-director-pick-signals-shift-toward-expertise",
@@ -262,6 +446,16 @@
     "Identity",
     "Vulnerability",
     "SaaS / cloud"
+   ],
+   "also": [
+    {
+     "source": "The Hacker News",
+     "url": "https://thehackernews.com/2026/11/microsoft-fixes-azure-api-management.html"
+    },
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/azure-flaw-exploited-to-target-secrets-at-norwegian-energy-firms/"
+    }
    ]
   },
   {
@@ -399,23 +593,6 @@
    ]
   },
   {
-   "id": "e101d52cda4a",
-   "title": "Azure Flaw Exploited to Target Secrets at Norwegian Energy Firms",
-   "link": "https://www.securityweek.com/azure-flaw-exploited-to-target-secrets-at-norwegian-energy-firms/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-23T15:47:40Z",
-   "summary": "Microsoft closed an Azure API Management flaw exploited to target secrets at Norwegian energy companies, with other sectors also affected. The post Azure Flaw Exploited to Target Secrets at Norwegian Energy Firms appeared first on SecurityWeek .",
-   "score": 3,
-   "tags": [
-    "SaaS / cloud"
-   ],
-   "why": [
-    "SaaS / cloud"
-   ]
-  },
-  {
    "id": "ca0d1bdeb307",
    "title": "⚡ Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble",
    "link": "https://thehackernews.com/2026/11/weekly-recap-vmware-0-day-java4shell.html",
@@ -492,6 +669,23 @@
     "Vulnerability"
    ],
    "epss": 0.0061
+  },
+  {
+   "id": "148cf18e71ca",
+   "title": "EU Commission confirms personal data leak after cyberattack, warns of further disruption",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNbXdRMXpNUlFrejl0RkRYQ2cyd1JhallXQVV6N0VaOWVPdUpJd3NZaDluU05Qd2J4QjZmX0c4OWRQME5IR00wN1EweDRGaE1WS0pZMDBvQ2w0ZHJqUFFPMWF3SXducktxUk5ZMUxhNUptOXk2QTdIcTFHWmUyYTgyVGRweEM5MUJPSlVxZjBjV2EwQXlIY2F0Q3hB?oc=5",
+   "source": "POLITICO.eu",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-23T13:08:00Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
   },
   {
    "id": "33d65726f50e",
@@ -620,6 +814,23 @@
      "source": "BleepingComputer",
      "url": "https://www.bleepingcomputer.com/news/security/badbox-30-botnet-returns-with-record-breaking-40-billion-daily-ad-requests/"
     }
+   ]
+  },
+  {
+   "id": "23ed756403f9",
+   "title": "BlackFog reports record third-quarter ransomware attacks",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNckw3ODJZUHlLTXIxSVZQSW5jcFV3M19zNGVTR3ZLOUxfSG15ZkRTMnNsNzFab1d3Y1FtSi01RUg4dnU3X3BLRUkzRGN0NFpaVDhic3F2X2tvcEtnTEE1MDRvZTlfYlhMblZkbVB6dWlxNVEwM3BfXzNMX0hHaFl2d2VzN0wxWVItd2ZRZXR5aEFoZjA4YVE?oc=5",
+   "source": "SecurityBrief Australia",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-23T11:37:00Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
    ]
   },
   {
@@ -1333,7 +1544,7 @@
    "feed": "Dark Reading",
    "region": "Global",
    "published": "2026-11-21T01:31:23Z",
-   "summary": "Identity, runtime, and development controls are converging as enterprises look for ways to keep agents within their assigned tasks. But vendors' approaches vary, so CISOs face a choice.",
+   "summary": "Identity, runtime, and development controls are converging as enterprises look for ways to keep agents within their assigned jobs. But vendors' approaches vary, so CISOs face a choice.",
    "score": 0,
    "tags": [],
    "why": []
@@ -1517,7 +1728,7 @@
   },
   {
    "id": "95e1986b820d",
-   "title": "In Security, Words Matter as Much as Tools, Maybe More",
+   "title": "In Security, Words Matter as Much as Tools — Maybe More",
    "link": "https://www.darkreading.com/cybersecurity-operations/security-words-matter",
    "source": "Dark Reading",
    "feed": "Dark Reading",
@@ -1763,7 +1974,7 @@
    "feed": "Dark Reading",
    "region": "Global",
    "published": "2026-11-20T13:51:30Z",
-   "summary": "Microsoft uses its Ignite technical conference to announce new AI agent security tools and transparency standards to protect enterprise systems.",
+   "summary": "At its Ignite technical conference, Microsoft announced AI agent security tools and transparency standards to protect enterprise systems.",
    "score": 0,
    "tags": [],
    "why": []
@@ -2262,13 +2473,26 @@
    ]
   },
   {
-   "id": "3acd3a7dfce1",
+   "id": "e60f53cef3c6",
+   "title": "ISC Stormcast For Friday, November 20th, 2026 https://isc.sans.edu/podcastdetail/10188, (Fri, Nov 20th)",
+   "link": "https://isc.sans.edu/diary/rss/33538",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-11-20T02:00:02Z",
+   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "9306f26c4757",
    "title": "Medicare breach review prompts AI collaboration demand",
-   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPMlpRVHk5dDJadHhaX2h5b3RubFo1NklXSmM2Y19rZVV2LVo2dFpoa2VUekdoUmMxTzJrVTFOT1ZpdUpQTVYzNS1HdHRSUXozV2k4SENQczdkRWI0YmUydnNENklDQzNxTk9YS3JyOWNmMlpJT3Fod3RiSzN5VWpGX0ZOamF0ZXM?oc=5",
-   "source": "inkl",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0tUC1SQ0ZRMVNMb284WVZZWjczbkZDZGxQUGpNZXpHM21GeDZ5S0pia0tpQWRSVE5kU2lodnBJV3hJS1lVWld3NnA5RTFqdVNfelhhek5GUnNINGcwd1MtSnhsMERpWmNkWEhWMFg1T1l2NFJqLVVSbXFUOUQyN0k?oc=5",
+   "source": "Yahoo News Australia",
    "feed": "ASD / ACSC in the news",
    "region": "AU",
-   "published": "2026-11-20T02:00:40Z",
+   "published": "2026-11-20T01:54:00Z",
    "summary": "",
    "score": 9,
    "tags": [
@@ -2284,23 +2508,10 @@
      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQSEdEWGhIMTBSZXRPUFdtNVUyd1pzYkpNUWltMDFiNzVUalZnSDhxUlRkV3BjdkNMV0hHMk45TnB2Q3NzOXM1cDFrZ0lNRFpWMW9wcGl0RWZCdVBwZ0FPSzRLX2owZElyWnFDOWRCUGFESTNxSkFFVUh1Z2RxNzRMQ2xBMnF5SXR4aHdfMVJtRQ?oc=5"
     },
     {
-     "source": "Yahoo News Australia",
-     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0tUC1SQ0ZRMVNMb284WVZZWjczbkZDZGxQUGpNZXpHM21GeDZ5S0pia0tpQWRSVE5kU2lodnBJV3hJS1lVWld3NnA5RTFqdVNfelhhek5GUnNINGcwd1MtSnhsMERpWmNkWEhWMFg1T1l2NFJqLVVSbXFUOUQyN0k?oc=5"
+     "source": "inkl",
+     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPMlpRVHk5dDJadHhaX2h5b3RubFo1NklXSmM2Y19rZVV2LVo2dFpoa2VUekdoUmMxTzJrVTFOT1ZpdUpQTVYzNS1HdHRSUXozV2k4SENQczdkRWI0YmUydnNENklDQzNxTk9YS3JyOWNmMlpJT3Fod3RiSzN5VWpGX0ZOamF0ZXM?oc=5"
     }
    ]
-  },
-  {
-   "id": "e60f53cef3c6",
-   "title": "ISC Stormcast For Friday, November 20th, 2026 https://isc.sans.edu/podcastdetail/10188, (Fri, Nov 20th)",
-   "link": "https://isc.sans.edu/diary/rss/33538",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-11-20T02:00:02Z",
-   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
-   "score": 1,
-   "tags": [],
-   "why": []
   },
   {
    "id": "5eeea3c7e1ab",
@@ -4226,23 +4437,6 @@
      "source": "The Hacker News",
      "url": "https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html"
     }
-   ]
-  },
-  {
-   "id": "6085ef54790f",
-   "title": "Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap",
-   "link": "https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-17T12:25:06Z",
-   "summary": "Pinning GitHub Actions to an exact version of their code, known as SHA pinning, has become the go-to defense against software supply chain attacks. Attackers have already found a way around it. In March 2026, the hackers who hijacked Trivy, a widely used open-source security scanner, planted…",
-   "score": 2,
-   "tags": [
-    "SaaS / cloud"
-   ],
-   "why": [
-    "SaaS / cloud"
    ]
   },
   {
@@ -7107,190 +7301,6 @@
    "region": "Global",
    "published": "2026-11-11T22:14:44Z",
    "summary": "この対策パッケージには、官民合同のサイバー対応チーム、経済省が主導するAI専門チーム、および政府の新たな能動的サイバー防衛権限の行使に関する裁量の拡大が含まれている。",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "bcbd3a3cc803",
-   "title": "Attackers Say 'Hello' to a Different Scale of Cloud Attack",
-   "link": "https://www.darkreading.com/cloud-security/attackers-hello-scale-cloud-attack",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-11-11T21:44:04Z",
-   "summary": "Researchers dubbed an attack chain \"Greeter\" after discovering that attackers deliberately covered their trail by leaving \"hello\" messages in logs.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "a4a34375ee4e",
-   "title": "eMudhra revokes 8 more CA certificates after private key mishap",
-   "link": "https://www.bleepingcomputer.com/news/security/emudhra-revokes-8-more-ca-certificates-after-private-key-mishap/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-11T21:27:40Z",
-   "summary": "Certificate authority eMudhra has revoked eight additional intermediate CA certificates after an investigation into its recent certificate security incident found improper handling of private keys during the certificate-generation process. [...]",
-   "score": 0,
-   "tags": [],
-   "why": [],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/11/emudhra-revokes-8-more-cas-it.html"
-    }
-   ]
-  },
-  {
-   "id": "c5c797f8dc87",
-   "title": "AI Raises the Stakes for Cyber Resilience",
-   "link": "https://www.darkreading.com/cyber-risk/ai-raises-stakes-cyber-resilience",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-11-11T21:20:41Z",
-   "summary": "An organization's ability to quickly recover from a business disruption will be a competitive advantage in an era of AI-driven threats and business enablement.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "3c5e2d75ed5c",
-   "title": "The global socket: how threat actors are weaponizing GSocket for stealthy C2",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/11/global-socket-how-threat-actors-weaponizing-gsocket-stealthy-c2/",
-   "source": "Microsoft Security Blog",
-   "feed": "Microsoft Security Blog",
-   "region": "Global",
-   "published": "2026-11-11T19:49:57Z",
-   "summary": "Threat actors are deploying GSocket on compromised Linux servers to keep encrypted remote access after the original vulnerability is patched. Learn how to detect, investigate, and remediate this activity. The post The global socket: how threat actors are weaponizing GSocket for stealthy C2…",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "6da26adf46a9",
-   "title": "Microsoft Patch Tuesday November 2026, (Tue, Nov 10th)",
-   "link": "https://isc.sans.edu/diary/rss/33508",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-11-11T18:28:43Z",
-   "summary": "Microsoft continues its AI-induced patch surge, addressing 1,260 different vulnerabilities this month. 68 of these vulnerabilities are considered critical. 167 of the vulnerabilities are Chromium issues affecting Microsoft Edge.",
-   "score": 3,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "8cdc4a0f74c8",
-   "title": "Who Runs the Ransomware Group Qilin?",
-   "link": "https://krebsonsecurity.com/2026/11/who-runs-the-ransomware-group-qilin/",
-   "source": "Krebs on Security",
-   "feed": "Krebs on Security",
-   "region": "Global",
-   "published": "2026-11-11T18:06:01Z",
-   "summary": "The cybercrime group Qilin has emerged as the world's most active ransomware affiliate program, claiming at least 365 victim organizations in the past three months alone. But even top Russian hackers make operational security mistakes, and the administrator of Qilin has made a few key missteps…",
-   "score": 5,
-   "tags": [
-    "Ransomware"
-   ],
-   "why": [
-    "Ransomware"
-   ]
-  },
-  {
-   "id": "f9a315b08895",
-   "title": "Today: CISO Forum Virtual Summit 2026 Day 2 – Join Cybersecurity Leaders Online",
-   "link": "https://www.securityweek.com/today-ciso-forum-virtual-summit-2026-join-global-cybersecurity-leaders/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-11T16:29:42Z",
-   "summary": "Designed for cybersecurity leaders, this immersive two-day virtual event is your premier destination to discuss, share, and learn innovative risk management and defense strategies defining the modern enterprise. The post Today: CISO Forum Virtual Summit 2026 Day 2 – Join Cybersecurity Leaders…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "4c32248b415f",
-   "title": "Maersk confirms data breach as WhiteArmor ransomware demands $5 million",
-   "link": "https://www.bleepingcomputer.com/news/security/maersk-confirms-data-breach-as-whitearmor-ransomware-demands-5-million/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-11T16:24:18Z",
-   "summary": "Maersk announced that a threat actor gained unauthorized access to a local legacy system inherited through an earlier acquisition and extracted data from it. [...]",
-   "score": 8,
-   "tags": [
-    "Ransomware",
-    "Data breach"
-   ],
-   "why": [
-    "Ransomware",
-    "Data breach"
-   ]
-  },
-  {
-   "id": "8b35f69eac70",
-   "title": "Critical Zoom Workplace Flaw Could Allow Unauthenticated Remote Privilege Escalation",
-   "link": "https://thehackernews.com/2026/11/critical-zoom-workplace-flaw-could.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-11T16:12:46Z",
-   "summary": "Zoom has released software updates to address two security flaws impacting Zoom Workplace for Windows, including a critical bug that could result in privilege escalation on affected systems. The vulnerabilities are listed below - CVE-2026-108186 (CVSS score: 9.6) - An improper input validation…",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.0051
-  },
-  {
-   "id": "9c9df925add3",
-   "title": "Hackers use AntiFox AI agents in AWS credential-theft attacks",
-   "link": "https://www.bleepingcomputer.com/news/security/hackers-use-antifox-ai-agents-in-aws-credential-theft-attacks/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-11T15:12:59Z",
-   "summary": "Attackers are using Alibaba Cloud to host self-managed instances of AntiFox, an open-source agentic penetration testing platform, to target web services and AWS environments. [...]",
-   "score": 6,
-   "tags": [
-    "Identity",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Identity",
-    "SaaS / cloud"
-   ],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html"
-    }
-   ]
-  },
-  {
-   "id": "a9021fd43362",
-   "title": "eBPF Rootkits: Why Underground Actors Are Taking Notice",
-   "link": "https://www.bleepingcomputer.com/news/security/ebpf-rootkits-why-underground-actors-are-taking-notice/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-11T15:01:11Z",
-   "summary": "Linux eBPF rootkits can hide malicious activity and evade traditional detection methods without loading kernel modules. Flare reveals how these techniques are spreading through underground forums, where threat actors are sharing rootkit source code, tutorials, and exploits targeting Linux systems.…",
    "score": 0,
    "tags": [],
    "why": []
