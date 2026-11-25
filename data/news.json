@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-25T02:40:39Z",
+ "generated": "2026-11-25T08:38:52Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,19 +28,19 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 5,
+   "count": 9,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 8,
+   "count": 9,
    "error": null
   },
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 3,
+   "count": 1,
    "error": null
   },
   {
@@ -105,6 +105,182 @@
   }
  ],
  "items": [
+  {
+   "id": "57a9de6dd641",
+   "title": "Cyber Insurers See New Divide: AI Defense 'Haves' & 'Have Nots'",
+   "link": "https://www.darkreading.com/cybersecurity-operations/cyber-insurers-see-new-ai-divide",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-25T08:38:52Z",
+   "summary": "Dark Reading Confidential Episode 23: Cyber insurers share their view of the AI-driven threat landscape and how mounting challenges are putting pressure on both sides of the policy, leaving the current model unsustainable.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "6a20b92f56aa",
+   "title": "Palo Alto Networks Patches Fragnesia Flaw Used to Root Firewalls",
+   "link": "https://www.securityweek.com/palo-alto-networks-patches-fragnesia-flaw-used-to-root-firewalls/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-25T08:12:24Z",
+   "summary": "A China-linked hacking group chained PHP2Shell with Fragnesia in AI-assisted attacks that hit 25 servers. The post Palo Alto Networks Patches Fragnesia Flaw Used to Root Firewalls appeared first on SecurityWeek .",
+   "score": 5,
+   "tags": [
+    "Edge devices",
+    "Vulnerability"
+   ],
+   "why": [
+    "Edge devices",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "f44f10d640ae",
+   "title": "Drupal Flaw Found by Anthropic Scanner Exploited in Attacks",
+   "link": "https://www.securityweek.com/drupal-flaw-found-by-anthropic-scanner-exploited-in-attacks/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-25T08:01:06Z",
+   "summary": "CISA has added the vulnerability to its KEV catalog and instructed federal agencies to patch it within three days. The post Drupal Flaw Found by Anthropic Scanner Exploited in Attacks appeared first on SecurityWeek .",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "be8229fa8688",
+   "title": "Hackers Compromise 24 Check Point Management Servers in Suspected AI-Driven Attack Campaign",
+   "link": "https://thehackernews.com/2026/11/hackers-compromise-24-check-point.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-25T06:50:19Z",
+   "summary": "An unknown threat actor has been using artificial intelligence (AI)-driven offensive tooling in a campaign targeting Check Point Security Management servers, impacting 22 distinct organizations across the world. The intrusion activity, tracked by GreyNoise under the moniker GreyNoise Threat 13…",
+   "score": 0,
+   "tags": [],
+   "why": [],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/hackers-compromise-check-point-servers-in-22-organizations/"
+    },
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/check-point-security-management-servers-hacked-in-ai-assisted-campaign/"
+    }
+   ]
+  },
+  {
+   "id": "7a5ea8907df3",
+   "title": "Com-Affiliated Hackers Hijack Cloud Accounts via Vishing for Data Theft and Extortion",
+   "link": "https://thehackernews.com/2026/11/com-affiliated-hackers-hijack-cloud.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-25T06:37:06Z",
+   "summary": "Palo Alto Networks Unit 42 has disclosed that it's tracking and has responded to \"numerous waves of vishing attacks\" orchestrated by Com-affiliated threat actors since August 2026 that have led to data theft and extortion attempts. The attacks have targeted financial services, healthcare, and…",
+   "score": 10,
+   "tags": [
+    "Phishing",
+    "Ransomware",
+    "Edge devices"
+   ],
+   "why": [
+    "Phishing",
+    "Ransomware",
+    "Edge devices"
+   ]
+  },
+  {
+   "id": "d52512d72b3d",
+   "title": "WordPress Blocks Six Backdoored WP Connect Plugins Before Malicious Releases Go Live",
+   "link": "https://thehackernews.com/2026/11/wordpress-blocks-six-backdoored-wp.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-25T06:21:12Z",
+   "summary": "WordPress has removed six WordPress plugins developed by WP Connect after they were backdoored on November 22, 2026, to enable arbitrary code execution on sites that have them installed, following a suspected compromise of the developer's account. The WordPress plugins team has independently…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "d180d897e515",
+   "title": "Personal information of over 11 million possibly leaked in September Keio hack",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPY2JZQzM1SGc2dlY4X0lxejR3ZWhUOWVlRmdnTDhzYUlXMFNKTWFRcHJjMHZQR3VXcDI4a2VwNF9odVAzQ1pQZVR4UGlBWV9LaFFZeERTYXozc3l1SHMyUkpGUENEWFFMUlBvMFFoc0I3X3dpQnJYOThqTmh5YWlzM05TNmc?oc=5",
+   "source": "The Japan Times",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-25T06:08:00Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "bc1d39c40a09",
+   "title": "Brocent flags gap between cyber breach & claim costs",
+   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOU1JGVENNU3NYNkQzWXh1UjFiUjN6bVRvR2tlTUhqMzhYU2lsakxrRjZIQnFzTHRCZE1pcTRpRnlybV9UZUxDQkt2OGdaeVF5ajYtMktmZkFGMkdPRHkta3ZFakZqaWtaSE8zTU5jSi1PNHoxRk9FeFFIdzY5b1U1bGJDaWJMZw?oc=5",
+   "source": "IT Brief Australia",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-25T04:03:00Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "c45cf856374b",
+   "title": "O'Brien Group Finds No Evidence of Lockbit Breach",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQTHhtRWpqLURidER0NVNERzVmRl9kdWlvakpzdzd1MHdwMVJocER3YzRUZ09kcDE0M0JCN01sZW4tcHRBblphTU1yTUQtcklOMGpuakRfT1dxeTNaS2MxX25DWEh6dlJwaGVlMnBWOVRiQ09UbzEwLU9jRVo0ZmZPYTdKSEJmMUN1?oc=5",
+   "source": "Wisevoter",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-25T03:51:53Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Ransomware",
+    "Data breach"
+   ],
+   "why": [
+    "Ransomware",
+    "Data breach"
+   ]
+  },
+  {
+   "id": "070b65b71bdf",
+   "title": "KEPCO Offers Free One-Year Identity Theft Protection After Data Breach",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPOVBtM28zM0lQek9DUnE5N1RWNFp2YlhwcThhV0VkLWpWSElaX2JzZ1lWYl93YzMzTHNVTnR6ZWhpSF83NExXOWNrRmU4anNNdVdwUzJjaDFocTJ6OXhRTG1WVHQtbGtxYnNxNmZKbzZhMzVLM29qRE0yODJ5YjVSa1hseHJLU3dyZE5hTXE0Y0JCNXFsSlpDSGM2UnBEaWRNQ2c?oc=5",
+   "source": "Seoul Economic Daily",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-25T03:23:35Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
   {
    "id": "f3fa36a7a7e1",
    "title": "ISC Stormcast For Wednesday, November 25th, 2026 https://isc.sans.edu/podcastdetail/10194, (Wed, Nov 25th)",
@@ -221,6 +397,37 @@
    "why": []
   },
   {
+   "id": "506189c62701",
+   "title": "US intelligence agencies CIA and ODNI hit by cybersecurity breach, unclassified data exposed: Report | Hindustan Times",
+   "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPbDZaci1wWDZwWGhnSXZxRU5famprYTV5UnZHdHR4RzlzUVBFellSTlBkQXQ2OXFCUGs4WVZjcXhtcDlxeWlvNzd4TW5aSXRJTkJuU2pVN1VRWG1pQ3J3T08wbW85WDVlVUdWTTBJNmpyd0QxQXVSMExHSEE1VTdKZlJJcjU2RERPVkVubk5nMFZpWVBoNkgzd0NCa09paVlSUlliTEFmUXBubkdvRzRsUURKeVh5dzMxZi1WQlNyaVh3QWNtMGRZQ0tNYmtVWXNPRzFxUFlhN2U3ZVJwMk8tSkZiX3YwamZUQ3pmTHQ1cGRVYUlySDV3Vk04aU04Z9IBgwJBVV95cUxPX2RsNGFsSjlFSWhUNGNHZkZDYnZDNW42NklKQm15UGYza05ZODFqMGlLa0hKUl8yLWJXTUJzN3ZMVlJoVzh1RWpBQnVpSmcwcEJuUWoyV1dQcjZrbmZmSFFBckE4aXA3bHdIdEFYSVpGbW1NYjI4NTU4cndNWDNkcFlJYVlzZEtabEhCbzFURUFOMVNDNXNMclNkMm9Xb3dfNkFBRF9YQi1hX0c0YXBsTllOY1FTTWhjTXJKRmU1Z1ZXMjdldkE3aEk3eHM0X1M2UnJoM0RVWmxPN3R4a21xak9iT0pOUG8yYWVud2UzRk5sSGpjV2UtNHFTMGtuZXIwWnl3?oc=5",
+   "source": "Hindustan Times",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-24T20:48:24Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ],
+   "also": [
+    {
+     "source": "The Boston Globe",
+     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQUVBjNU0tVXJIVEUzV1dheVoyRUo5ZTR6YWZrNUxDV3N0cUlvYk5VNS1HMlNFcGp1aUVZUVRDX3gwVEo2TVo5ZnhQVk1uNTllXzZVTzRhNl9KdTAyT1ZybXNrUk1TNUhRRC1yUHlvd3YySmhSQV9tZWo5QWdOZUt4YVNtWnRXSG9ILUE?oc=5"
+    },
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/an-unclassified-cia-system-was-breached-in-a-cyberattack-ap-source-says/"
+    },
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/hackers-reportedly-breached-cia-intelligence-analysis-system/"
+    }
+   ]
+  },
+  {
    "id": "c9a24388ebed",
    "title": "Security breach at Anmer Hall, Teen fights for life after Schoolies attack",
    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOQWw5N3NWTFAzWjJwTE0xd1VzcGtMUEhEaVY1dnFUbWV6SFlmSjFrNzFGb3BDT1g2WVR4TWlfaHdZMTJQbHU1WVZpX0VKeDNhSWdUQnNoRjJVUi1MWjZaRkVTN1FkYkdRZHd6Szl6SGJRTHVuNGs3WDdUUm1ESGRWLW1MZExXdjFWTUo1MmxsMk1qZmVyUGlXVk5tRkZNUTdra01EZkpkTVI4TnJzaFNlbGUyRURsdWhYTXQxSWhzaw?oc=5",
@@ -304,29 +511,6 @@
    "why": []
   },
   {
-   "id": "1a37f57e2eaa",
-   "title": "An unclassified CIA system was breached in a cyberattack, according to reports",
-   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQUVBjNU0tVXJIVEUzV1dheVoyRUo5ZTR6YWZrNUxDV3N0cUlvYk5VNS1HMlNFcGp1aUVZUVRDX3gwVEo2TVo5ZnhQVk1uNTllXzZVTzRhNl9KdTAyT1ZybXNrUk1TNUhRRC1yUHlvd3YySmhSQV9tZWo5QWdOZUt4YVNtWnRXSG9ILUE?oc=5",
-   "source": "The Boston Globe",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-24T16:41:00Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ],
-   "also": [
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/an-unclassified-cia-system-was-breached-in-a-cyberattack-ap-source-says/"
-    }
-   ]
-  },
-  {
    "id": "63399c74702a",
    "title": "ShinyHunters claims to return after FBI arrests, uses old PGP keys as proof",
    "link": "https://www.bleepingcomputer.com/news/security/shinyhunters-resurfaces-after-fbi-arrests-uses-old-pgp-keys-as-proof/",
@@ -365,25 +549,6 @@
     {
      "source": "SecurityWeek",
      "url": "https://www.securityweek.com/european-commission-uncovers-data-breach-in-cyberattack-investigation/"
-    }
-   ]
-  },
-  {
-   "id": "5ba708d91b20",
-   "title": "Hackers compromise Check Point Servers in 22 organizations",
-   "link": "https://www.bleepingcomputer.com/news/security/hackers-compromise-check-point-servers-in-22-organizations/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-24T16:15:23Z",
-   "summary": "Threat actors have exploited multiple vulnerabilities to compromise two dozen Check Point Security management servers in an ongoing campaign targeting 22 organizations. [...]",
-   "score": 0,
-   "tags": [],
-   "why": [],
-   "also": [
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/check-point-security-management-servers-hacked-in-ai-assisted-campaign/"
     }
    ]
   },
@@ -728,13 +893,13 @@
    ]
   },
   {
-   "id": "b141796041db",
+   "id": "d1945c98e9c3",
    "title": "Retail ranks among least-insured sectors as ransomware attacks peak",
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNRm41dGN5MkU0X0QxZU5KVVJfdU80X25OcGk1Wkw5VjNUazVxNGZqZF9wbkYtbGlxZE1SRjI2a3pub0VqRnRrN1BkLUV1ZE0yLUl4M3BacW1mMGJ2S05pcG1nUWRPX0hMenJBajNXMHN2bGNkLV9GZWxVNEM4dER2eWxtZU9icFc2cEtranNDcmxMZVpzZW95UC1aY2ZuUXhlNDF2VFNVZTFkOWNtN0tvZ1B2M3p1UDVNWVppZEhvb29rS0luTUxFSA?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPMmVSNUJYaWlTbWpmVUtielhKQUJEUThvX1BUbUYxZEpXTkc4R1lsanRYb2kwYzdQcGhLYlBLR1ZpMVFydGxON1dhV2VOR2lxNTNqWEdFUDVPc0tvWlZCVG9vODFVZXpTMDlxc1UySUNjeDktV0pjWWQ0Qks3bXJCVU53by1kLWZ5SktiTjBrUjFDSG9WWVh1dDA1YjdmM1VmQkJ4Q01LMEZvWUt1QlV2bzkwVFl1c2xUd0ZSWWNQZkw2aFQzUjRBR2dqVQ?oc=5",
    "source": "Insurance Business",
    "feed": "AU breach news",
    "region": "Global",
-   "published": "2026-11-24T08:15:08Z",
+   "published": "2026-11-24T08:17:51Z",
    "summary": "",
    "score": 6,
    "tags": [
@@ -827,6 +992,23 @@
    ],
    "why": [
     "Identity"
+   ]
+  },
+  {
+   "id": "36c32778b931",
+   "title": "The real cost of a cyber breach: What CFOs need to know",
+   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9YYmJJX3VlT0FxWVZnMzZ4MkR0bXlaUzNUTTNDZDlHamo1dlBKQnpQYjBfSndCMmFfblFsWEk1TzVENjdTN0YzVm1ya2JVRjlkUXhLM1dxVWxiMkYyczVRUmwxSEIyNTV5anRHMWx6Unk2TXExbEZZTUttdnA?oc=5",
+   "source": "RSM Global",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-24T02:54:24Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
    ]
   },
   {
@@ -7131,189 +7313,6 @@
    "score": 0,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "0215fb6873ae",
-   "title": "ThreatsDay: 59 Linux Kernel Bugs, Falcon Spyware, GSocket Backdoors + 17 More Stories",
-   "link": "https://thehackernews.com/2026/11/threatsday-59-linux-kernel-bugs-falcon.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-12T18:02:51Z",
-   "summary": "A search result isn't always safe. An access request isn't always harmless. And a familiar account doesn't always mean a familiar person is using it. Simple things to remember. Yet a surprising amount of this week's trouble starts right there. Attackers are using fake websites, stolen access, and…",
-   "score": 0,
-   "tags": [],
-   "why": [],
-   "also": [
-    {
-     "source": "Microsoft Security Blog",
-     "url": "https://www.microsoft.com/en-us/security/blog/2026/11/11/lessons-from-59-linux-kernel-bug-reports/"
-    }
-   ]
-  },
-  {
-   "id": "1acaa8e77a2e",
-   "title": "New SignDrop Zero-Day Exploit Turns Windows CLFS Security Feature Into SYSTEM Access",
-   "link": "https://thehackernews.com/2026/11/new-signdrop-zero-day-exploit-turns.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-12T17:50:27Z",
-   "summary": "Public exploit code released earlier this week claims that a local Windows user can gain SYSTEM privileges through the Common Log File System driver. The proof of concept, called SignDrop, targets a log-authentication feature added to the driver last year. It abuses how clfs.sys creates companion…",
-   "score": 5,
-   "tags": [
-    "Actively exploited"
-   ],
-   "why": [
-    "Actively exploited"
-   ]
-  },
-  {
-   "id": "a9b2747b83a3",
-   "title": "Trained to betray: How post-training supply chain attacks hijack coding agents",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/12/trained-to-betray-how-post-training-supply-chain-attacks-hijack-coding-agents/",
-   "source": "Microsoft Security Blog",
-   "feed": "Microsoft Security Blog",
-   "region": "Global",
-   "published": "2026-11-12T17:00:00Z",
-   "summary": "Microsoft Defender Research and the AI Red Team discuss how poisoned datasets and poisoned model checkpoints can trigger remote code execution and other malicious activities. The post Trained to betray: How post-training supply chain attacks hijack coding agents appeared first on Microsoft…",
-   "score": 8,
-   "tags": [
-    "Microsoft 365",
-    "Vulnerability",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Microsoft 365",
-    "Vulnerability",
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "0d7788c4db8d",
-   "title": "Notes from the Asia-Pacific region: What NZ's MMH breach reveals about accountability",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNeDlyN3UxTV9pV3luTVJnOTBNZHMwbUx5d1ZCeTFUckI3dW9DaS1SQ3ZDcHRZODVUY2I1ZmhpbG11dFRRTEtrTFFBZ3V4dGhXQ2tBLTdaSC16aDRrOEJtSUYzb2pYT0RFUmFDdjV4R2luLUxTR2s5Qzl5U1NRMVM4YmhfWXdXTWRpWVFrN05UdkRtNDdqN1phM0VoTDUwODFiV3ZhcHBOOVdlSmlq?oc=5",
-   "source": "IAPP",
-   "feed": "OAIC / Privacy news",
-   "region": "Global",
-   "published": "2026-11-12T16:59:23Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "ad9757975fce",
-   "title": "New Windows SignDrop zero-day gives hackers SYSTEM privileges",
-   "link": "https://www.bleepingcomputer.com/news/security/new-windows-signdrop-zero-day-gives-hackers-system-privileges/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-12T16:04:00Z",
-   "summary": "Security researcher Abdelhamid Naceri (also known as Nightmare Eclipse) has released a new Windows zero-day exploit that can let attackers gain SYSTEM privileges. [...]",
-   "score": 5,
-   "tags": [
-    "Actively exploited"
-   ],
-   "why": [
-    "Actively exploited"
-   ]
-  },
-  {
-   "id": "16b72427cf58",
-   "title": "Apache Patches Critical HTTP Server RCE Found by Anthropic, Google",
-   "link": "https://www.securityweek.com/apache-patches-critical-http-server-rce-found-by-anthropic-google/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-12T15:38:31Z",
-   "summary": "The mod_http2 race condition, CVE-2026-119618, could let unauthenticated attackers execute code on servers with HTTP/2 enabled. The post Apache Patches Critical HTTP Server RCE Found by Anthropic, Google appeared first on SecurityWeek .",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.1582,
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html"
-    }
-   ]
-  },
-  {
-   "id": "50b7d482cfd7",
-   "title": "186 Fake AI Domains Redirect Users to ClickFix Lures, Browser Malware, and Search Hijackers",
-   "link": "https://thehackernews.com/2026/11/186-fake-ai-domains-redirect-users-to.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-12T15:15:40Z",
-   "summary": "Cybersecurity researchers have found that lookalike domains masquerading as artificial intelligence (AI) tools are being used to serve ClickFix-style lures, browser-hijacking malware, and a set of extensions that hijack user searches. This delivery pattern has been codenamed TypoPrompting by…",
-   "score": 4,
-   "tags": [
-    "Phishing"
-   ],
-   "why": [
-    "Phishing"
-   ]
-  },
-  {
-   "id": "28ab9a11f837",
-   "title": "Your Endpoint Management Platform Could Be Your Biggest Security Risk",
-   "link": "https://www.bleepingcomputer.com/news/security/your-endpoint-management-platform-could-be-your-biggest-security-risk/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-12T15:00:10Z",
-   "summary": "Endpoint management platforms can become powerful attack tools when compromised, allowing hackers to deploy malware, execute commands, and disrupt thousands of devices. Action1 explains how customer-controlled cryptographic authorization can prevent attackers from abusing sensitive endpoint…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "7927f7b9de97",
-   "title": "Apify rotates API tokens, prompts 2FA resets after breach",
-   "link": "https://www.bleepingcomputer.com/news/security/apify-rotates-api-tokens-prompts-2fa-resets-after-breach/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-12T14:36:47Z",
-   "summary": "Apify has rotated critical internal secrets and revoked some third-party OAuth connections after detecting unauthorized access to its internal systems. [...]",
-   "score": 8,
-   "tags": [
-    "Data breach",
-    "Identity",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Data breach",
-    "Identity",
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "116311b70214",
-   "title": "Chrome, Firefox Updates Patch Over 180 Vulnerabilities",
-   "link": "https://www.securityweek.com/chrome-firefox-updates-patch-180-vulnerabilities/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-12T13:42:09Z",
-   "summary": "Google fixed 83 flaws with a new Chrome 157 release, and Mozilla addressed 99 bugs in Firefox 160. The post Chrome, Firefox Updates Patch Over 180 Vulnerabilities appeared first on SecurityWeek .",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
   }
  ]
 }
