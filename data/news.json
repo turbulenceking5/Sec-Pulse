@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-24T23:54:40Z",
+ "generated": "2026-11-25T02:40:39Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,19 +28,19 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 6,
+   "count": 5,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 9,
+   "count": 8,
    "error": null
   },
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 1,
+   "count": 3,
    "error": null
   },
   {
@@ -52,7 +52,7 @@
   {
    "name": "CISA KEV",
    "ok": true,
-   "count": 22,
+   "count": 16,
    "error": null
   },
   {
@@ -100,11 +100,24 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 36,
+   "count": 28,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "f3fa36a7a7e1",
+   "title": "ISC Stormcast For Wednesday, November 25th, 2026 https://isc.sans.edu/podcastdetail/10194, (Wed, Nov 25th)",
+   "link": "https://isc.sans.edu/diary/rss/33554",
+   "source": "SANS ISC",
+   "feed": "SANS ISC",
+   "region": "Global",
+   "published": "2026-11-25T02:00:03Z",
+   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
   {
    "id": "ac5a3294d776",
    "title": "Keio stock: Data breach may affect 10.63 million people",
@@ -137,29 +150,6 @@
    ],
    "why": [
     "Data breach"
-   ]
-  },
-  {
-   "id": "1a37f57e2eaa",
-   "title": "An unclassified CIA system was breached in a cyberattack, according to reports",
-   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQUVBjNU0tVXJIVEUzV1dheVoyRUo5ZTR6YWZrNUxDV3N0cUlvYk5VNS1HMlNFcGp1aUVZUVRDX3gwVEo2TVo5ZnhQVk1uNTllXzZVTzRhNl9KdTAyT1ZybXNrUk1TNUhRRC1yUHlvd3YySmhSQV9tZWo5QWdOZUt4YVNtWnRXSG9ILUE?oc=5",
-   "source": "The Boston Globe",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-24T22:12:52Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ],
-   "also": [
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/an-unclassified-cia-system-was-breached-in-a-cyberattack-ap-source-says/"
-    }
    ]
   },
   {
@@ -312,6 +302,29 @@
    "score": 0,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "1a37f57e2eaa",
+   "title": "An unclassified CIA system was breached in a cyberattack, according to reports",
+   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQUVBjNU0tVXJIVEUzV1dheVoyRUo5ZTR6YWZrNUxDV3N0cUlvYk5VNS1HMlNFcGp1aUVZUVRDX3gwVEo2TVo5ZnhQVk1uNTllXzZVTzRhNl9KdTAyT1ZybXNrUk1TNUhRRC1yUHlvd3YySmhSQV9tZWo5QWdOZUt4YVNtWnRXSG9ILUE?oc=5",
+   "source": "The Boston Globe",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-24T16:41:00Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ],
+   "also": [
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/an-unclassified-cia-system-was-breached-in-a-cyberattack-ap-source-says/"
+    }
+   ]
   },
   {
    "id": "63399c74702a",
@@ -715,13 +728,13 @@
    ]
   },
   {
-   "id": "d1945c98e9c3",
+   "id": "b141796041db",
    "title": "Retail ranks among least-insured sectors as ransomware attacks peak",
-   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPMmVSNUJYaWlTbWpmVUtielhKQUJEUThvX1BUbUYxZEpXTkc4R1lsanRYb2kwYzdQcGhLYlBLR1ZpMVFydGxON1dhV2VOR2lxNTNqWEdFUDVPc0tvWlZCVG9vODFVZXpTMDlxc1UySUNjeDktV0pjWWQ0Qks3bXJCVU53by1kLWZ5SktiTjBrUjFDSG9WWVh1dDA1YjdmM1VmQkJ4Q01LMEZvWUt1QlV2bzkwVFl1c2xUd0ZSWWNQZkw2aFQzUjRBR2dqVQ?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNRm41dGN5MkU0X0QxZU5KVVJfdU80X25OcGk1Wkw5VjNUazVxNGZqZF9wbkYtbGlxZE1SRjI2a3pub0VqRnRrN1BkLUV1ZE0yLUl4M3BacW1mMGJ2S05pcG1nUWRPX0hMenJBajNXMHN2bGNkLV9GZWxVNEM4dER2eWxtZU9icFc2cEtranNDcmxMZVpzZW95UC1aY2ZuUXhlNDF2VFNVZTFkOWNtN0tvZ1B2M3p1UDVNWVppZEhvb29rS0luTUxFSA?oc=5",
    "source": "Insurance Business",
    "feed": "AU breach news",
    "region": "Global",
-   "published": "2026-11-24T08:17:51Z",
+   "published": "2026-11-24T08:15:08Z",
    "summary": "",
    "score": 6,
    "tags": [
@@ -1294,6 +1307,23 @@
      "source": "SecurityWeek",
      "url": "https://www.securityweek.com/n-able-patches-critical-flaw-disclosed-after-mail-assure-cyberattack/"
     }
+   ]
+  },
+  {
+   "id": "1be621f9212c",
+   "title": "Mark Villar seeks to penalize malicious use of AI, deepfakes",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdDBrS3BkSTU5YzYwaVlaSGo3ei13aWcxOHdnVlo2Z1QwSVM1SWhhc3AzT3ZmWWlkSkRpaWRLd0ZwVnVfYTFmanVzVkp5ZjdheUJhcGE3anI3RUY4S2lTVFFSOWU4VTF4UzZWbUFHTmJqV1BtZ2Z0Qko1V1ZTcmF5RTh0eXdOaUd6OUJZdHBrYVpveGE0eHNmM1pHenJjanNyclo00gGjAUFVX3lxTE50MGtLcGRJNTljNjBpWVpIajd6LXdpZzE4d2dWWjZnVDBJUzVJaGFzcDNPdmZZaWRKRGlpZEt3RnBWdV9hMWZqdXNWSnlmN2F5QmFwYTdqcjdFRjhLaVNUUVI5ZThVMXhTNlZtQUdOYmpXUG1nZnRCSjVXVlNyYXlFOHR5d05pR3o5Qll0cGthWm94YTR4c2YzWkd6cmNqc3JyWjQ?oc=5",
+   "source": "Inquirer.net",
+   "feed": "OAIC / Privacy news",
+   "region": "Global",
+   "published": "2026-11-23T12:18:31Z",
+   "summary": "",
+   "score": 4,
+   "tags": [
+    "AI threats"
+   ],
+   "why": [
+    "AI threats"
    ]
   },
   {
@@ -7284,42 +7314,6 @@
    "why": [
     "Vulnerability"
    ]
-  },
-  {
-   "id": "7139bcf40a7d",
-   "title": "Attacker Targets 60,000 GitHub Repositories in Credential Theft Campaign",
-   "link": "https://www.securityweek.com/attacker-targets-60000-github-repositories-in-credential-theft-campaign/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-12T13:39:03Z",
-   "summary": "Using thousands of hijacked accounts, the wfx-loot campaign planted a CI secret stealer that ran in over 1,800 GitHub repositories. The post Attacker Targets 60,000 GitHub Repositories in Credential Theft Campaign appeared first on SecurityWeek .",
-   "score": 3,
-   "tags": [
-    "Identity"
-   ],
-   "why": [
-    "Identity"
-   ],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/11/4837-hijacked-github-accounts-ran-ci.html"
-    }
-   ]
-  },
-  {
-   "id": "0ea3d75301ac",
-   "title": "Daylight Lands $80 Million for AI-Powered Security Operations",
-   "link": "https://www.securityweek.com/daylight-lands-80-million-for-ai-powered-security-operations/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-12T13:12:11Z",
-   "summary": "The company plans to accelerate product development, hire new talent, expand its US presence, and enter new markets. The post Daylight Lands $80 Million for AI-Powered Security Operations appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
   }
  ]
 }
