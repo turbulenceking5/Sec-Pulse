@@ -1,57 +1,46 @@
 {
- "date": "2026-11-24",
- "generated": "2026-11-24T04:00:21+00:00",
- "title": "Sec-Pulse brief - Tue 24 Nov",
+ "date": "2026-11-25",
+ "generated": "2026-11-25T02:40:53+00:00",
+ "title": "Sec-Pulse brief - Wed 25 Nov",
  "items": [
   {
-   "id": "7357cb390c39",
-   "title": "Australian AI Safety Standard: Enterprise LLM Playbook",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNam5QODk4SzNQaGJHYUZ1QnBoMnVGbjA2d2lZcjhSYWRXRlI0emxGN2htYzItTXI1ZTktWFZFWmhDbndTbURocURrbDRUZV9SZVFTUVlkUlVheTdxOFNLSTRJTDNwRkZiMWdDQm1fM09DdEFVZ3hhSjB3alZ1Y1dMaWRleXdYSGx3cTVEVmRLUW1rVjBJZzhQd1lCSU0tM3VoaEE?oc=5",
-   "source": "JournalArta",
-   "region": "AU",
-   "published": "2026-11-23T09:38:59Z",
-   "score": 11,
-   "tags": [
-    "Australia",
-    "AI threats"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "1ce23f24eebf",
-   "title": "Nationwide boosts cyber support for conveyancers, solicitors and mortgage intermediaries",
-   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOUHBfNk1lMWVQT1hMb1QzNWtXcVVVRVl4cWZ4a2FOTG5RMXFMa1MyR3JxLU0xRHhNcEVZQlFmdHlGWV9oN2pWSE04NTJVdy15VnduNVM5X2VJQjZ3U0FGUXMyUXBuMk5OdnlFck12V2lPb195T2x0NVh4VFVMX1ZzSUp2V09KaEtMMk5tbTYza28zbEVXSzlGTi13YlRtYXhsN1lyRk82SmhxNU45cjczbGY2TFBMNDNsS3dwLTFUdW12MWhs?oc=5",
-   "source": "The Intermediary",
+   "id": "0c4445d4ccaf",
+   "title": "Okta Links ShinyHunters-Associated Vishing Group to New INCEPTION Data Leak Site",
+   "link": "https://thehackernews.com/2026/11/okta-links-shinyhunters-associated.html",
+   "source": "The Hacker News",
    "region": "Global",
-   "published": "2026-11-23T10:53:33Z",
-   "score": 10,
+   "published": "2026-11-24T13:28:21Z",
+   "score": 15,
    "tags": [
-    "Real estate"
+    "Phishing",
+    "Ransomware",
+    "Data breach",
+    "Identity"
    ],
-   "summary": ""
+   "summary": "A threat cluster previously assessed to be affiliated with the ShinyHunters extortion crew may have rebranded and continued operations under a new name called INCEPTION, according to Okta's Threat Intelligence team. The cluster, dubbed O-UNC-053, is characterized by the use of voice phishing (aka…"
   },
   {
-   "id": "5d81d8091009",
-   "title": "CISA flags critical Cisco RCE flaw as actively exploited in attacks",
-   "link": "https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/",
+   "id": "0bc0f9692115",
+   "title": "New Inception extortion gang launches large-scale vishing campaign",
+   "link": "https://www.bleepingcomputer.com/news/security/new-inception-extortion-gang-launches-large-scale-vishing-campaign/",
    "source": "BleepingComputer",
    "region": "Global",
-   "published": "2026-11-23T07:44:19Z",
+   "published": "2026-11-24T20:21:20Z",
    "score": 10,
    "tags": [
-    "Actively exploited",
-    "Edge devices",
-    "Vulnerability"
+    "Phishing",
+    "Ransomware",
+    "Identity"
    ],
-   "summary": "The US Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies that attackers are now exploiting a recently patched critical Cisco Expressway vulnerability in the wild. [...]"
+   "summary": "A newly formed data extortion group named 'Inception' has been linked to a large-scale campaign that targets single sign-on (SSO) credentials of multiple global brands and firms. [...]"
   },
   {
-   "id": "76b5e595ffb3",
-   "title": "EIDL fraud — Kansas Real Estate Operator Indicted for $300K Scam and $500K Tax Evasion",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPNjlVc2tTekRONng0VklCMzl6SjZPSXlKVkstaFhOaTRVMFFrY3JrcElLdHhCUkwxZ0ZRdnZHQ1pOSGZxNkN4aFllZzdBRzNNaFhXWkZoelpLcFlRZXBJWm1aenE2QTU3blFWbWZfckw3TzVFOFRVTU56eDJTckdjblB6Mm12bWp3NEVjdGpaQnJlZEtH?oc=5",
-   "source": "The Korea Daily",
+   "id": "8ab707fb9348",
+   "title": "Real estate fraud in Ontario region leaves victim out $70,000",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQdWt3SjZpNklWaXVESF9fYmZWWkhqVTdod2g5REtPdWQwMjNhZ0xKRzdWOV9OdXhJZDZIUHV1QWJka21PczFka0g1YXIxQm9jalFTTTlhbHV3MHVNTHFEVkJvTHRLaGFqYzdRNzJheGNiUzVtNDQzNFA4T29ZOWR2MFJFbXhFZWZBSDhrQg?oc=5",
+   "source": "insauga.com",
    "region": "Global",
-   "published": "2026-11-23T05:45:54Z",
+   "published": "2026-11-24T15:38:08Z",
    "score": 10,
    "tags": [
     "Real estate"
@@ -59,27 +48,39 @@
    "summary": ""
   },
   {
-   "id": "a73df680ca27",
-   "title": "Nvidia confirms it is investigating possible third-party data breach, says it will 'continue to monitor the situation'",
-   "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNc0R3ZHJxQWkzbFAxc3NFV3ZsR0lOYjRpaDdySTVfTFNZcGJpb2xBdEtzLUwzZ3paZnBkUUZJZzdxdUxuZkdGc3hDQ3VXNTBFY2pmZHU5cF83OXlVYlVvRXJvbDdUYk5DeGFZajg0WkhGUTJtTGdyNGo4YWVlS1pNLXhPXy1ENUVCbU5RdzYyLVpJd0lRTG1ZUjh3MXZaOHpvakg2TkRDUmlrUk5nRDAtNmNKaWx6dlc1Y2JMdFcyX0NsNEx2anIwbE5vdUwxZ3lBY0VBeWxyUGM5cGhyVFNFT2dZb1VFbkpCN2c?oc=5",
-   "source": "TechRadar",
+   "id": "1c4cdcd2e607",
+   "title": "Oshawa man and woman charged in alleged real estate scam",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPNmlrOEptQk1rSURWVjF5eG5salM5ZzB5dzlOYm5BZUw1UHlVQ3dvdFl1Y0V6YTBNcWRVa1VfWE5lMGxXWVRDSHFRNDJVb2puVk9wemN5SnpZSjQ5Ukk3ck1jSDZzR2hTdGYxTlNlajZ5aXl6UHc1UjM3MTV1bkRaaENGOFF6NGxYVk5YVV8wSURGOTdMUFRNZlo3S0E?oc=5",
+   "source": "CityNews Toronto",
    "region": "Global",
-   "published": "2026-11-23T17:05:00Z",
-   "score": 9,
+   "published": "2026-11-24T14:57:00Z",
+   "score": 10,
    "tags": [
-    "Data breach",
-    "SaaS / cloud"
+    "Real estate"
+   ],
+   "summary": ""
+  },
+  {
+   "id": "331ac2df7d66",
+   "title": "Housefishing could fool you with AI real estate photos",
+   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE11TWFRekdRQWN1UURyZ1pWMWh3SlN2VWxySkgyMDlWVWdWaWM1V1JYWmRmbkl3bmpZWm5aRmkzYi1UMWlFLW5vbG12a0d4bXNpQjlFQU9DNnJ4SmhsVW5kQnBtUEtqaVNlWERN?oc=5",
+   "source": "Kurt the CyberGuy",
+   "region": "Global",
+   "published": "2026-11-24T10:03:32Z",
+   "score": 10,
+   "tags": [
+    "Real estate"
    ],
    "summary": ""
   }
  ],
  "stats": {
-  "recent": 44,
-  "au": 1,
-  "kev": 2
+  "recent": 47,
+  "au": 0,
+  "kev": 3
  },
  "lesson": {
-  "id": "1.10",
-  "title": "Tooling: secure email gateway workflows"
+  "id": "2.1",
+  "title": "Asset discovery and vulnerability scanning"
  }
 }
