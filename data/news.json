@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-25T08:38:52Z",
+ "generated": "2026-11-25T19:18:46Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,13 +28,13 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 9,
+   "count": 8,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 9,
+   "count": 10,
    "error": null
   },
   {
@@ -52,7 +52,7 @@
   {
    "name": "CISA KEV",
    "ok": true,
-   "count": 16,
+   "count": 17,
    "error": null
   },
   {
@@ -82,7 +82,7 @@
   {
    "name": "Microsoft Security Blog",
    "ok": true,
-   "count": 9,
+   "count": 10,
    "error": null
   },
   {
@@ -106,17 +106,397 @@
  ],
  "items": [
   {
+   "id": "2bc53ab48fab",
+   "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Email Security",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/25/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-email-security/",
+   "source": "Microsoft Security Blog",
+   "feed": "Microsoft Security Blog",
+   "region": "Global",
+   "published": "2026-11-25T17:15:00Z",
+   "summary": "We're honored to share that Microsoft has been named a Leader in the 2026 Gartner® Magic Quadrant™ for Email Security, for the second consecutive year. The post Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Email Security appeared first on Microsoft Security Blog .",
+   "score": 1,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "8e9cb2b3ee51",
+   "title": "Meridian Capital Hit By Qilin Ransomware Cyberattack",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQOFBjdTZrSUoybHBTZDlIOEE1WWxrNFh5MHdLRk1ZdUszc2xobkppZmNuUF9reW5uS1JPdWlfcHF3a2RLMEVxa1RVd0U3Qy1NcFl0WTdWVjlUWmRVck1pOXZuZkQzaDh3RzkwemV1T0R6aGRiRDEyWmk2RWcyQjVmbXR2TXdCaWV3OUxyX2Zub2RxUVlqekVIUXBocWlCLWN6WjZuRFdBQnY2dGNwY3hvUzBPN0c3VXcyU3EtUzdJNHE?oc=5",
+   "source": "Bisnow",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-25T17:03:24Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
+  },
+  {
+   "id": "97df8d954787",
+   "title": "CISA warns of critical unpatched flaw in Danfoss refrigeration controllers",
+   "link": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-unpatched-flaw-in-danfoss-refrigeration-controllers/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-25T16:13:40Z",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) is warning about a critical vulnerability in Danfoss AK-SM 8xxA Series controllers used by food retailers to manage commercial refrigeration, HVAC, and lighting systems. [...]",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "75d3be5138a9",
+   "title": "Attackers Target .NET Developers With Poisoned Job Assessments",
+   "link": "https://www.darkreading.com/threat-intelligence/attackers-net-developers-poisoned-job-assessments",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-25T15:48:04Z",
+   "summary": "Researchers discovered 13 malicious NuGet packages as part of a fake recruitment campaign that spreads malware and gives attackers access to developers' machines.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "5265d3f089df",
+   "title": "It's a Bot World. We're Just Living in It",
+   "link": "https://www.darkreading.com/cyber-risk/bot-world-just-living",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-25T15:20:27Z",
+   "summary": "Bot detection has become a losing game. Security teams need to limit privileged access for humans and their machine counterparts equally.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "a3b682ce2592",
+   "title": "More Pentests Without More Pentesters: Where AI Safely Helps",
+   "link": "https://www.bleepingcomputer.com/news/security/more-pentests-without-more-pentesters-where-ai-safely-helps/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-25T15:00:10Z",
+   "summary": "Penetration testers spend a significant portion of their engagements on documentation, reporting, and other tasks outside of testing. PentestPad explains how AI can reduce this workload, help teams handle more engagements, and keep sensitive client data within their own infrastructure. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "5d8223f882df",
+   "title": "InfraTrust warns of exploited supply chain flaws in network appliances",
+   "link": "https://www.bleepingcomputer.com/news/security/infratrust-warns-of-exploited-supply-chain-flaws-in-network-appliances/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-25T15:00:00Z",
+   "summary": "Eclypsium's November InfraTrust report warns that most infrastructure security advisories addressing exploited vulnerabilities over the past month involve flaws in third-party software bundled into products rather than code developed by the vendors themselves. [...]",
+   "score": 3,
+   "tags": [
+    "SaaS / cloud"
+   ],
+   "why": [
+    "SaaS / cloud"
+   ]
+  },
+  {
    "id": "57a9de6dd641",
    "title": "Cyber Insurers See New Divide: AI Defense 'Haves' & 'Have Nots'",
    "link": "https://www.darkreading.com/cybersecurity-operations/cyber-insurers-see-new-ai-divide",
    "source": "Dark Reading",
    "feed": "Dark Reading",
    "region": "Global",
-   "published": "2026-11-25T08:38:52Z",
+   "published": "2026-11-25T15:00:00Z",
    "summary": "Dark Reading Confidential Episode 23: Cyber insurers share their view of the AI-driven threat landscape and how mounting challenges are putting pressure on both sides of the policy, leaving the current model unsustainable.",
    "score": 0,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "e13089d7b52c",
+   "title": "ShinyHunters Claims Comeback, New Inception Group Rejects Alleged Ties",
+   "link": "https://www.securityweek.com/shinyhunters-claims-comeback-new-inception-group-rejects-alleged-ties/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-25T14:15:25Z",
+   "summary": "An account tied to ShinyHunters announced the group’s return, as Okta spots possible links between Inception and ShinyHunters hackers. The post ShinyHunters Claims Comeback, New Inception Group Rejects Alleged Ties appeared first on SecurityWeek .",
+   "score": 6,
+   "tags": [
+    "Ransomware",
+    "Identity"
+   ],
+   "why": [
+    "Ransomware",
+    "Identity"
+   ]
+  },
+  {
+   "id": "97a6faf096d8",
+   "title": "Oshawa suspects accused by Durham cops of using real estate scheme to steal $70K",
+   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQWFJ1WTR0VHFfRldncHZjSDA1LU80WXh0TnB2RGNCczFMUWVHamMxWmZzOHA2UmZ4QUJ1YlV5ODJiTHpsWkF4N2FzYXpkRmVZcHVJOTlzUjhyZ0RVVDVnYW85M1hJazFFRDVUcUlCazk3YUJwZ3lIV3l4RnlmdjVCUW4wblVvX09zNlR1VUJHUU9Tc1BYd3RyR1BpTS1yc0VnNEhReElHR0RnTFNodEtsOVFtVnRuNzh2SU1fRFFyYnRXUW1MT3BzWWdMRDVZRWNmaTlrdHBIUmpVdw?oc=5",
+   "source": "DurhamRegion.com",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-25T14:13:00Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
+   "id": "7c0a30093497",
+   "title": "Latin America Sees Cyberattacks on Ports, Pipelines & Manufacturing",
+   "link": "https://www.darkreading.com/cyberattacks-data-breaches/latin-america-cyberattacks-ports-pipelines-manufacturing",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-25T14:00:00Z",
+   "summary": "From the Port of Santos in Brazil to a pipeline in Argentina, cyberattacks are increasingly affecting industrial systems throughout the region.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "bb4d635f16b7",
+   "title": "US Treasury’s FinCEN Disconnects Systems Following Cyber Incident",
+   "link": "https://www.securityweek.com/us-treasurys-fincen-disconnects-systems-following-cyber-incident/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-25T13:39:21Z",
+   "summary": "FinCEN has extended deadlines for filers affected by the disruptions while it is investigating the incident. The post US Treasury’s FinCEN Disconnects Systems Following Cyber Incident appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "5aac1dca0d01",
+   "title": "Ground Truth: CISO Matt Martin on Building a Real Security Program Without an Enterprise Budget",
+   "link": "https://www.securityweek.com/ground-truth-ciso-matt-martin-on-building-a-real-security-program-without-an-enterprise-budget/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-25T13:30:00Z",
+   "summary": "Matthew Martin is Chief Information Security and Privacy Officer at Western Carolina University. The post Ground Truth: CISO Matt Martin on Building a Real Security Program Without an Enterprise Budget appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "92db407f26f0",
+   "title": "Hackers Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains",
+   "link": "https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-25T12:48:54Z",
+   "summary": "Threat actors are actively exploiting two newly patched security flaws in GeoServer, according to watchTowr. The vulnerabilities in question are CVE-2026-120705 and CVE-2026-129243, details of which are below - CVE-2026-120705 (CVSS score: 8.6) - An arbitrary file read vulnerability that could…",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "also": [
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/two-newly-disclosed-geoserver-vulnerabilities-under-attack/"
+    }
+   ]
+  },
+  {
+   "id": "851806c24f2d",
+   "title": "U.S. Treasury's Financial Crimes Agency Takes Some Systems Offline After Cyber Intrusion",
+   "link": "https://thehackernews.com/2026/11/us-treasurys-fincen-takes-some-systems.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-25T12:30:08Z",
+   "summary": "The U.S. Treasury Department's Financial Crimes Enforcement Network (FinCEN) has been hit by a cybersecurity incident that resulted in \"unauthorized access to a limited subset of its systems,\" the bureau said on Tuesday. As a precaution, it has taken some systems offline. The bureau collects…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "9bfa59db6a00",
+   "title": "Duo manage to skim victim off $70,000 in real estate scam",
+   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQaTFRZGJjTklNRm10NHNQa2NIWW1ZUnQ4Q0VacTVsM2hCOGpEVkRmLVAySi1tcGUteWhEMGsycWlXWThkaVFPYVFHY1NOUnFNX3BBank1YnFDaVU2RTlSMnh1NWZKOUhCTU1yQWpLTlhNQmp5d29JaWZLMzN2YS1lcjNqRQ?oc=5",
+   "source": "Durham Post",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-25T12:01:55Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
+   "id": "6a8ceb0f7d1b",
+   "title": "Credential Remediation Is Slow When You Don’t Know What Will Break",
+   "link": "https://thehackernews.com/2026/11/credential-remediation-is-slow-when-you.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-25T11:51:48Z",
+   "summary": "TL;DR More than 64% still valid after four years: GitGuardian’s State of Secrets Sprawl 2026 found that most valid secrets discovered in 2022 still worked in January 2026, because teams stall on what a revoke will break. Validity-only triage misses 46% of critical secrets: Prioritize by impact…",
+   "score": 3,
+   "tags": [
+    "Identity"
+   ],
+   "why": [
+    "Identity"
+   ]
+  },
+  {
+   "id": "d52cc031d711",
+   "title": "Drupal Fail2Install Exploit Details Emerge as Critical RCE Flaw Faces Active Exploitation",
+   "link": "https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-25T11:23:26Z",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a critical flaw impacting Drupal to its Known Exploited Vulnerabilities (KEV) catalog, requiring federal agencies to apply the fixes by November 27, 2026. The vulnerability, tracked as CVE-2026-132165 aka…",
+   "score": 6,
+   "tags": [
+    "Actively exploited",
+    "Vulnerability"
+   ],
+   "why": [
+    "Actively exploited",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "bd8fc6246012",
+   "title": "Microsoft fixes Microsoft 365 bug blocking access to Office apps",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-blank-dialog-that-made-microsoft-365-office-apps-unusable/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-25T11:16:32Z",
+   "summary": "Earlier this week, Microsoft resolved a known issue that was preventing some Microsoft 365 customers from accessing Office applications. [...]",
+   "score": 4,
+   "tags": [
+    "Microsoft 365"
+   ],
+   "why": [
+    "Microsoft 365"
+   ]
+  },
+  {
+   "id": "3885183f3278",
+   "title": "Ex-OpenAI Employee Accused of Bugging Company Offices Granted $1 Million Bail",
+   "link": "https://thehackernews.com/2026/11/ex-openai-employee-accused-of-bugging.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-25T10:43:07Z",
+   "summary": "A former OpenAI employee accused of concealing a covert recording device at the company's San Francisco offices will be allowed to be released from jail on a $1 million bond, a San Francisco federal court judge ruled Tuesday. Abdulrahman Alfozan, a 35-year-old Saudi national, was arrested on…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "7d08c2d9b473",
+   "title": "Plagiarism Checker Turnitin Investigating Cyberattack",
+   "link": "https://www.securityweek.com/plagiarism-checker-turnitin-investigating-cyberattack/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-25T10:40:07Z",
+   "summary": "The edtech company says the systems are fully operational and safe to use while it investigates the incident. The post Plagiarism Checker Turnitin Investigating Cyberattack appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "7bb089ac45e5",
+   "title": "Hackers now exploit critical Drupal RCE flaw to hijack sites",
+   "link": "https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-25T10:10:20Z",
+   "summary": "The Drupal security team has confirmed that a critical vulnerability that lets attackers hijack unpatched sites has been actively exploited since at least Thursday. [...]",
+   "score": 6,
+   "tags": [
+    "Actively exploited",
+    "Vulnerability"
+   ],
+   "why": [
+    "Actively exploited",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "822cf72da8c8",
+   "title": "Bithumb Hack Exposed More Users Over Longer Period Than Disclosed",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOMmZzV0J6ZFRtT2VMeXc1dHRVWmFHRFM2RVR3Q2lINVJKM3p1RGlrcmhBeGxkWThzdzRXUnk1VWpaRVdPQUYwUVJDZnpNVWdZMjZDOExmd3VUUDRjVkQ5OHBkd01SZEh6bnNUOHZYdVMtUU5XWXV4cnkzQ2JTMzE4V2NReGoxUVVSS24ySmlHRXZ2eFlGbUZ0RVRBRQ?oc=5",
+   "source": "Seoul Economic Daily",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-25T09:38:52Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "916629091cfd",
+   "title": "Hackers Exploited CVSS 10.0 Hex.pm RCE Flaw to Compromise 6 Package Registry Servers",
+   "link": "https://thehackernews.com/2026/11/hackers-exploited-cvss-100-hexpm-rce.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-25T09:06:59Z",
+   "summary": "An attacker ran operating system commands on Monday on six production servers of Hex.pm, the package registry that Elixir and Erlang developers fetch their dependencies from. The flaw used in the attack had been in the registry's code since February 2016, and the team that maintains the service…",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "00f16364aca5",
+   "title": "Microsoft confirms authentication issues after November updates",
+   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-authentication-issues-after-november-updates/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-25T09:02:57Z",
+   "summary": "Microsoft has confirmed that customers may experience authentication issues after installing November security updates that address a high-severity remote code execution vulnerability. [...]",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
   },
   {
    "id": "6a20b92f56aa",
@@ -178,6 +558,23 @@
    ]
   },
   {
+   "id": "cbbfd175d78a",
+   "title": "Tech Outages Snarl Real Estate Closings Nationwide",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPekV5amVmbHY0RnM2RUg0bkxkTldpTWtrYnV1dzJibGVYeUtRbFJCdXphdkxNQ2tlUHI0b3dOUGhXcnlsZW50VU9fRU13dWtMMGVNaXlVZDlsWGdSbWFZQWlBMThxQm9QUnFaTjM2c3hMUXUtQ1VSa240MGlGUXB4MElybFY0dHFF?oc=5",
+   "source": "Wisevoter",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-25T06:47:45Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
    "id": "7a5ea8907df3",
    "title": "Com-Affiliated Hackers Hijack Cloud Accounts via Vishing for Data Theft and Extortion",
    "link": "https://thehackernews.com/2026/11/com-affiliated-hackers-hijack-cloud.html",
@@ -206,7 +603,7 @@
    "feed": "The Hacker News",
    "region": "Global",
    "published": "2026-11-25T06:21:12Z",
-   "summary": "WordPress has removed six WordPress plugins developed by WP Connect after they were backdoored on November 22, 2026, to enable arbitrary code execution on sites that have them installed, following a suspected compromise of the developer's account. The WordPress plugins team has independently…",
+   "summary": "WordPress has removed six WordPress plugins developed by WP Connect after they were backdoored on November 22, 2026, to enable arbitrary code execution on sites that have them installed, following a suspected compromise of the developer's account. The WordPress plugins team has proactively…",
    "score": 0,
    "tags": [],
    "why": []
@@ -246,6 +643,23 @@
    ]
   },
   {
+   "id": "26d0e43cf289",
+   "title": "Two Oshawa residents charged in $70,000 real estate investment fraud investigation",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSVNCYVlXX183TGZEZ054SHh4WDdpWGp4WVBQd0RCWWxRVUkteUlQSS1BRWRuNEM2bkJGU2ZBd0ExMU5SVVFSd1doWFdOSXRVY1pfeDl0VmRFV1FDcVdsLWdHU1BlRmNMS29ZUW5ZcHBzVUx1ZmZSem9CazF6R1k4akx5WExrQk0tai1FaHFaUjJ1WGRZMEpUbm8zSnRqdVlQcjA5Y0FwTzBzVWlySEhfOW5QRlI3Zw?oc=5",
+   "source": "Frequency News",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-25T03:53:50Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
    "id": "c45cf856374b",
    "title": "O'Brien Group Finds No Evidence of Lockbit Breach",
    "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQTHhtRWpqLURidER0NVNERzVmRl9kdWlvakpzdzd1MHdwMVJocER3YzRUZ09kcDE0M0JCN01sZW4tcHRBblphTU1yTUQtcklOMGpuakRfT1dxeTNaS2MxX25DWEh6dlJwaGVlMnBWOVRiQ09UbzEwLU9jRVo0ZmZPYTdKSEJmMUN1?oc=5",
@@ -282,6 +696,33 @@
    ]
   },
   {
+   "id": "2f963968c04b",
+   "title": "Oshawa man and woman charged in alleged real estate scam (Alain Sikapi Mgwanou & Elise Sikapi)",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNSFZKYnFhZXlueWY1QUhGOC1tTHV3N3FnWEVMZW9jMHFtSWxhZkFUX0pGWWU3dldmd3FaR0dxSkhQUThpV3l3VEtrNXdlVVJLdDdSR2R0UDlnQlZkY1I5QTJKTDNzNkc2bGRRRGVzTnphTzlhM002WWE1djM2VUhDSG5xZHZmbEtrTVdmZGFRUVNRMnczWXk3VmtUMTZXVzl6aGFJ?oc=5",
+   "source": "Reddit",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-25T02:32:58Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ],
+   "also": [
+    {
+     "source": "CityNews Toronto",
+     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPNmlrOEptQk1rSURWVjF5eG5salM5ZzB5dzlOYm5BZUw1UHlVQ3dvdFl1Y0V6YTBNcWRVa1VfWE5lMGxXWVRDSHFRNDJVb2puVk9wemN5SnpZSjQ5Ukk3ck1jSDZzR2hTdGYxTlNlajZ5aXl6UHc1UjM3MTV1bkRaaENGOFF6NGxYVk5YVV8wSURGOTdMUFRNZlo3S0E?oc=5"
+    },
+    {
+     "source": "Durham Radio News",
+     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9XNGJOYXh5WERTWTM5LS14TktFQnZnY05PUkhyVEFycEdpOHVqc3dfaEl0MFNiT0swekt2ZU04bFNnSFBfRGY1eHp4Y1hwcW0yZWt3MFZHMFFwRWM?oc=5"
+    }
+   ]
+  },
+  {
    "id": "f3fa36a7a7e1",
    "title": "ISC Stormcast For Wednesday, November 25th, 2026 https://isc.sans.edu/podcastdetail/10194, (Wed, Nov 25th)",
    "link": "https://isc.sans.edu/diary/rss/33554",
@@ -293,6 +734,26 @@
    "score": 1,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "375390acfceb",
+   "title": "CVE-2026-103406: Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router — Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router OS Command Injection Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-103406",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-11-25T00:00:00Z",
+   "summary": "Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router contain an OS command injection vulnerability that could allow a remote attacker to execute arbitrary commands as root via a specially crafted salt minion ID. CISA remediation due 2026-11-28.",
+   "score": 4,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0086
   },
   {
    "id": "ac5a3294d776",
@@ -340,6 +801,37 @@
    "score": 0,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "1a37f57e2eaa",
+   "title": "An unclassified CIA system was breached in a cyberattack, according to reports",
+   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQUVBjNU0tVXJIVEUzV1dheVoyRUo5ZTR6YWZrNUxDV3N0cUlvYk5VNS1HMlNFcGp1aUVZUVRDX3gwVEo2TVo5ZnhQVk1uNTllXzZVTzRhNl9KdTAyT1ZybXNrUk1TNUhRRC1yUHlvd3YySmhSQV9tZWo5QWdOZUt4YVNtWnRXSG9ILUE?oc=5",
+   "source": "The Boston Globe",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-24T21:50:06Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ],
+   "also": [
+    {
+     "source": "Hindustan Times",
+     "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPbDZaci1wWDZwWGhnSXZxRU5famprYTV5UnZHdHR4RzlzUVBFellSTlBkQXQ2OXFCUGs4WVZjcXhtcDlxeWlvNzd4TW5aSXRJTkJuU2pVN1VRWG1pQ3J3T08wbW85WDVlVUdWTTBJNmpyd0QxQXVSMExHSEE1VTdKZlJJcjU2RERPVkVubk5nMFZpWVBoNkgzd0NCa09paVlSUlliTEFmUXBubkdvRzRsUURKeVh5dzMxZi1WQlNyaVh3QWNtMGRZQ0tNYmtVWXNPRzFxUFlhN2U3ZVJwMk8tSkZiX3YwamZUQ3pmTHQ1cGRVYUlySDV3Vk04aU04Z9IBgwJBVV95cUxPX2RsNGFsSjlFSWhUNGNHZkZDYnZDNW42NklKQm15UGYza05ZODFqMGlLa0hKUl8yLWJXTUJzN3ZMVlJoVzh1RWpBQnVpSmcwcEJuUWoyV1dQcjZrbmZmSFFBckE4aXA3bHdIdEFYSVpGbW1NYjI4NTU4cndNWDNkcFlJYVlzZEtabEhCbzFURUFOMVNDNXNMclNkMm9Xb3dfNkFBRF9YQi1hX0c0YXBsTllOY1FTTWhjTXJKRmU1Z1ZXMjdldkE3aEk3eHM0X1M2UnJoM0RVWmxPN3R4a21xak9iT0pOUG8yYWVud2UzRk5sSGpjV2UtNHFTMGtuZXIwWnl3?oc=5"
+    },
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/an-unclassified-cia-system-was-breached-in-a-cyberattack-ap-source-says/"
+    },
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/hackers-reportedly-breached-cia-intelligence-analysis-system/"
+    }
+   ]
   },
   {
    "id": "7f8f5938b05b",
@@ -395,37 +887,6 @@
    "score": 0,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "506189c62701",
-   "title": "US intelligence agencies CIA and ODNI hit by cybersecurity breach, unclassified data exposed: Report | Hindustan Times",
-   "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPbDZaci1wWDZwWGhnSXZxRU5famprYTV5UnZHdHR4RzlzUVBFellSTlBkQXQ2OXFCUGs4WVZjcXhtcDlxeWlvNzd4TW5aSXRJTkJuU2pVN1VRWG1pQ3J3T08wbW85WDVlVUdWTTBJNmpyd0QxQXVSMExHSEE1VTdKZlJJcjU2RERPVkVubk5nMFZpWVBoNkgzd0NCa09paVlSUlliTEFmUXBubkdvRzRsUURKeVh5dzMxZi1WQlNyaVh3QWNtMGRZQ0tNYmtVWXNPRzFxUFlhN2U3ZVJwMk8tSkZiX3YwamZUQ3pmTHQ1cGRVYUlySDV3Vk04aU04Z9IBgwJBVV95cUxPX2RsNGFsSjlFSWhUNGNHZkZDYnZDNW42NklKQm15UGYza05ZODFqMGlLa0hKUl8yLWJXTUJzN3ZMVlJoVzh1RWpBQnVpSmcwcEJuUWoyV1dQcjZrbmZmSFFBckE4aXA3bHdIdEFYSVpGbW1NYjI4NTU4cndNWDNkcFlJYVlzZEtabEhCbzFURUFOMVNDNXNMclNkMm9Xb3dfNkFBRF9YQi1hX0c0YXBsTllOY1FTTWhjTXJKRmU1Z1ZXMjdldkE3aEk3eHM0X1M2UnJoM0RVWmxPN3R4a21xak9iT0pOUG8yYWVud2UzRk5sSGpjV2UtNHFTMGtuZXIwWnl3?oc=5",
-   "source": "Hindustan Times",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-24T20:48:24Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ],
-   "also": [
-    {
-     "source": "The Boston Globe",
-     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQUVBjNU0tVXJIVEUzV1dheVoyRUo5ZTR6YWZrNUxDV3N0cUlvYk5VNS1HMlNFcGp1aUVZUVRDX3gwVEo2TVo5ZnhQVk1uNTllXzZVTzRhNl9KdTAyT1ZybXNrUk1TNUhRRC1yUHlvd3YySmhSQV9tZWo5QWdOZUt4YVNtWnRXSG9ILUE?oc=5"
-    },
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/an-unclassified-cia-system-was-breached-in-a-cyberattack-ap-source-says/"
-    },
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/hackers-reportedly-breached-cia-intelligence-analysis-system/"
-    }
-   ]
   },
   {
    "id": "c9a24388ebed",
@@ -553,6 +1014,19 @@
    ]
   },
   {
+   "id": "53b9a53ef0e1",
+   "title": "How Southeastern University Got a Handle on Its Data",
+   "link": "https://www.darkreading.com/cybersecurity-operations/how-southeastern-university-handle-data",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-24T15:46:46Z",
+   "summary": "Data security posture management (DSPM) allowed the university to uncover sensitive information, tighten access controls, and lay the groundwork for safer AI adoption.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
    "id": "9f71c7065b82",
    "title": "Is the Counter Ransomware Initiative Keeping Up With Ransomware?",
    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxONDRBZTIxcUdtVTR3VmQyYllZX3pHTU4tSGVfcy0xWEdSUWVralBZem81OG5CS1pTMEVaemFSNE1FMDFiVzJwOTN5Ylp5TjhXSUxvLTZJa3VVU0V6VS10QmJSUXdWd1ZnUFhXaU1OU1l6WEltYnJiSmpSVkZXU0ZHM19EcVdsRjJNaDJqUHJYZkJuUkFlSEpZMXZYVTduLTZZSkE?oc=5",
@@ -616,29 +1090,6 @@
    "why": [
     "Vulnerability",
     "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "1c4cdcd2e607",
-   "title": "Oshawa man and woman charged in alleged real estate scam",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPNmlrOEptQk1rSURWVjF5eG5salM5ZzB5dzlOYm5BZUw1UHlVQ3dvdFl1Y0V6YTBNcWRVa1VfWE5lMGxXWVRDSHFRNDJVb2puVk9wemN5SnpZSjQ5Ukk3ck1jSDZzR2hTdGYxTlNlajZ5aXl6UHc1UjM3MTV1bkRaaENGOFF6NGxYVk5YVV8wSURGOTdMUFRNZlo3S0E?oc=5",
-   "source": "CityNews Toronto",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-24T14:57:00Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ],
-   "also": [
-    {
-     "source": "Durham Radio News",
-     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9XNGJOYXh5WERTWTM5LS14TktFQnZnY05PUkhyVEFycEdpOHVqc3dfaEl0MFNiT0swekt2ZU04bFNnSFBfRGY1eHp4Y1hwcW0yZWt3MFZHMFFwRWM?oc=5"
-    }
    ]
   },
   {
@@ -975,7 +1426,7 @@
     "Actively exploited",
     "Vulnerability"
    ],
-   "epss": 0.0062
+   "epss": 0.0179
   },
   {
    "id": "573c3eb87449",
@@ -1072,7 +1523,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0041
+   "epss": 0.0078
   },
   {
    "id": "bcdfeee02e85",
@@ -1092,7 +1543,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0061
+   "epss": 0.0429
   },
   {
    "id": "9705b45f3848",
@@ -1330,6 +1781,23 @@
    ]
   },
   {
+   "id": "be138bf98864",
+   "title": "DXC’s Xchanging Subsidiary Falls Prey to Ransomware Attack",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBNS3RzQUhseGVlT2U3TEc4dnVOS3VaMXVqMVVjRUVlYUlMdUV0YUY0S3ZybHYtS0JEUG9KMVk0MS04c05DVkdfY0RqRmRwRnpVVllMZjhVTHRUWXdTU1g5MWl30gFiQVVfeXFMUE1LdHNBSGx4ZWVPZTdMRzh2dU5LdVoxdWoxVWNFRWVhSUx1RXRhRjRLdnJsdi1LQkRQb0oxWTQxLThzTkNWR19jRGpGZHBGelVWWUxmOFVMdFRZd1NTWDkxaXc?oc=5",
+   "source": "CISO Mag",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-23T15:52:27Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
+  },
+  {
    "id": "ca0d1bdeb307",
    "title": "⚡ Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble",
    "link": "https://thehackernews.com/2026/11/weekly-recap-vmware-0-day-java4shell.html",
@@ -1405,7 +1873,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0061
+   "epss": 0.0213
   },
   {
    "id": "148cf18e71ca",
@@ -1440,7 +1908,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0117,
+   "epss": 0.0092,
    "also": [
     {
      "source": "SecurityWeek",
@@ -1483,7 +1951,7 @@
     "Data breach",
     "Vulnerability"
    ],
-   "epss": 0.0062,
+   "epss": 0.0179,
    "also": [
     {
      "source": "SecurityWeek",
@@ -1658,7 +2126,13 @@
     "Actively exploited",
     "Vulnerability"
    ],
-   "epss": 0.0061
+   "epss": 0.0429,
+   "also": [
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/hackers-exploit-unpatched-flaw-in-defunct-idunno-anticsrf-library/"
+    }
+   ]
   },
   {
    "id": "d0dd2916cf58",
@@ -1816,7 +2290,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.498
+   "epss": 0.2716
   },
   {
    "id": "ec74917988ec",
@@ -1836,7 +2310,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0062
+   "epss": 0.0179
   },
   {
    "id": "de8cd31c4430",
@@ -2194,23 +2668,6 @@
    ]
   },
   {
-   "id": "be138bf98864",
-   "title": "DXC’s Xchanging Subsidiary Falls Prey to Ransomware Attack",
-   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBNS3RzQUhseGVlT2U3TEc4dnVOS3VaMXVqMVVjRUVlYUlMdUV0YUY0S3ZybHYtS0JEUG9KMVk0MS04c05DVkdfY0RqRmRwRnpVVllMZjhVTHRUWXdTU1g5MWl30gFiQVVfeXFMUE1LdHNBSGx4ZWVPZTdMRzh2dU5LdVoxdWoxVWNFRWVhSUx1RXRhRjRLdnJsdi1LQkRQb0oxWTQxLThzTkNWR19jRGpGZHBGelVWWUxmOFVMdFRZd1NTWDkxaXc?oc=5",
-   "source": "CISO MAG",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-11-21T04:09:57Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Ransomware"
-   ],
-   "why": [
-    "Ransomware"
-   ]
-  },
-  {
    "id": "52d06926aff8",
    "title": "Think you know MFA? Challenge yourself with our quiz.",
    "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBaR2doZ29Hc05Kc19fNlJpVUN4elhNQllCeXk3NkNWWENrZkNRaGktUk5BZWZaMXpvblZvZXZfQ2pLT0ZHem53blhuVGZud1NEaFdJ?oc=5",
@@ -2470,7 +2927,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0048,
+   "epss": 0.0025,
    "also": [
     {
      "source": "SecurityWeek",
@@ -2746,7 +3203,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0019
+   "epss": 0.0031
   },
   {
    "id": "fc7b1a32d55e",
@@ -3014,7 +3471,7 @@
     "Edge devices",
     "Vulnerability"
    ],
-   "epss": 0.0219,
+   "epss": 0.0112,
    "also": [
     {
      "source": "SecurityWeek",
@@ -3040,7 +3497,7 @@
     "Actively exploited",
     "Vulnerability"
    ],
-   "epss": 0.0353
+   "epss": 0.0501
   },
   {
    "id": "09d3f14eaae7",
@@ -3250,7 +3707,7 @@
     "Edge devices",
     "Vulnerability"
    ],
-   "epss": 0.0219
+   "epss": 0.0112
   },
   {
    "id": "8c4a7c3d1402",
@@ -3270,7 +3727,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.4007
+   "epss": 0.2416
   },
   {
    "id": "5c82ea4b1c9d",
@@ -3290,7 +3747,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0353
+   "epss": 0.0501
   },
   {
    "id": "7f0512cdfd03",
@@ -3310,7 +3767,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.009
+   "epss": 0.011
   },
   {
    "id": "5e65458c080e",
@@ -3448,7 +3905,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.7311,
+   "epss": 0.8658,
    "also": [
     {
      "source": "BleepingComputer",
@@ -3679,7 +4136,7 @@
     "Edge devices",
     "Vulnerability"
    ],
-   "epss": 1.0
+   "epss": 0.4508
   },
   {
    "id": "937f390d6b18",
@@ -4140,7 +4597,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.447
+   "epss": 0.4559
   },
   {
    "id": "9c40ff9a7698",
@@ -4160,7 +4617,7 @@
     "Actively exploited",
     "Vulnerability"
    ],
-   "epss": 0.4007,
+   "epss": 0.2416,
    "also": [
     {
      "source": "BleepingComputer",
@@ -4448,7 +4905,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.1284
+   "epss": 0.1258
   },
   {
    "id": "4ccf67b96d4a",
@@ -4652,7 +5109,7 @@
     "Ransomware",
     "Vulnerability"
    ],
-   "epss": 0.0313
+   "epss": 0.0276
   },
   {
    "id": "2767467965fb",
@@ -4672,7 +5129,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.828
+   "epss": 0.2021
   },
   {
    "id": "816726b4adb7",
@@ -4692,7 +5149,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.3433
+   "epss": 0.1888
   },
   {
    "id": "ab9bbe7f3a56",
@@ -4712,7 +5169,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0587
+   "epss": 0.027
   },
   {
    "id": "0f91631aef35",
@@ -5481,7 +5938,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.1284
+   "epss": 0.1258
   },
   {
    "id": "a6c1fed3171b",
@@ -5934,7 +6391,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.9144
+   "epss": 0.0731
   },
   {
    "id": "a1dd8f56b81d",
@@ -6773,546 +7230,6 @@
      "url": "https://news.google.com/rss/articles/CBMisAJBVV95cUxNNGdVNVBlcUFrZFBaSXlIakRROXdlT1JrSWs4dnFOVUNnY2RIVDY4YlIxajBBUmxLUDZJNXpkNGpUVFFlbkIyYUlsNng3YXR4aGUycUhzZ2pSSGp5Uy1xTzNhaEJwWTRFcllrUFMtNlVBM3pnM05VVnlGVmx4ekJZMk9IUHVsMFJqZFFSTDFOaEVmcll3YjBUaEw2QkdFZ2gxeDBQUGk5bmxPaDVXTzlHNlNyMGhEQk1pR19nb09MM0JVN2FzemlBS3JtWWZKdTl0V1B6SkY1T2JyM1FVUzVsakc0ZVRseEQwRnpJdndZNUNaZ3dZQ1lQQ0c0YUlySDQwWTJxRWNKa0pNanNZNHlzeVR6Z0taWFRZaThETnlIUHJiWG1sWmNaMFprUjEzemlF?oc=5"
     }
    ]
-  },
-  {
-   "id": "fff233faf327",
-   "title": "Attackers in Binance Breach Targeted Known Weakness, Missing Controls",
-   "link": "https://www.darkreading.com/cybersecurity-operations/attackers-binance-breach-targeted-weakness-missing-controls",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-11-13T13:00:00Z",
-   "summary": "Blockchain complexities, such as attacker-deployed sweepers, hobble security controls designed to limit the damage of an exchange compromise.",
-   "score": 4,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "4084f96e5a59",
-   "title": "Apify Confirms Customer Data Accessed in Cyberattack",
-   "link": "https://www.securityweek.com/apify-confirms-customer-data-accessed-in-cyberattack/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-13T12:41:01Z",
-   "summary": "The web scraping company says an intruder accessed customer accounts and obtained personal information or stored data. The post Apify Confirms Customer Data Accessed in Cyberattack appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "293c69c9ee5b",
-   "title": "Microsoft says November security updates cause printing issues",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-says-november-security-updates-cause-printing-issues/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-13T12:27:40Z",
-   "summary": "Microsoft warned customers earlier this week that the November 2026 security updates may break printing for documents with complex formatting. [...]",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "527326996071",
-   "title": "SilentAir Hackers Intercept Calls, SMS From Inside Mobile Networks",
-   "link": "https://www.securityweek.com/silentair-hackers-intercept-calls-sms-from-inside-mobile-networks/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-13T12:20:28Z",
-   "summary": "Enea says SilentAir hijacked mobile network nodes to intercept calls and messages, with Taiwanese subscribers the primary targets. The post SilentAir Hackers Intercept Calls, SMS From Inside Mobile Networks appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": [],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/11/silentair-hijacks-asian-telecom.html"
-    }
-   ]
-  },
-  {
-   "id": "fe3ab0485c82",
-   "title": "When an AI Agent Goes Wrong, Can You Stop It?",
-   "link": "https://thehackernews.com/2026/11/when-ai-agent-goes-wrong-can-you-stop-it.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-13T11:52:31Z",
-   "summary": "Suppose an AI agent is asked to sort support tickets and look up account details. A ticket contains instructions that lead the agent to export records to an unfamiliar destination. The agent can make the request because its identity has access to the records and its connected tools allow the…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "5df4bf07aed5",
-   "title": "Operation Endgame Takes Down Gootloader, CastleRAT and StealC Servers, Seizes 6.4M Stolen Logins",
-   "link": "https://thehackernews.com/2026/11/operation-endgame-takes-down-gootloader.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-13T10:55:03Z",
-   "summary": "An international police operation took down servers behind Gootloader, CastleRAT and StealC this week. Criminals used the three malware tools to gain access to computers, steal passwords, and launch ransomware attacks. Police also seized about 6.4 million stolen logins belonging to more than…",
-   "score": 5,
-   "tags": [
-    "Ransomware",
-    "Identity"
-   ],
-   "why": [
-    "Ransomware",
-    "Identity"
-   ],
-   "also": [
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/law-enforcement-disrupts-gootloader-castlerat-and-stealc-infrastructure/"
-    },
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/police-dismantles-gootloader-castlerat-stealc-malware-infrastructure/"
-    }
-   ]
-  },
-  {
-   "id": "e49e186a5eab",
-   "title": "Check Point warns of zero-day flaw exploited for root access",
-   "link": "https://www.bleepingcomputer.com/news/security/check-point-patches-zero-day-that-lets-hackers-get-root-access/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-13T10:44:22Z",
-   "summary": "Check Point Software has released emergency hotfixes to address a high-severity flaw that hackers have been exploiting to gain root privileges and establish persistence on vulnerable devices since late October. [...]",
-   "score": 5,
-   "tags": [
-    "Actively exploited"
-   ],
-   "why": [
-    "Actively exploited"
-   ],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html"
-    },
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/php2shell-exploited-in-destructive-check-point-gateway-attacks/"
-    },
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/"
-    }
-   ]
-  },
-  {
-   "id": "d20b2da13e92",
-   "title": "Citrix Patches 10 Critical NetScaler Vulnerabilities",
-   "link": "https://www.securityweek.com/citrix-patches-10-critical-netscaler-vulnerabilities/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-13T09:36:56Z",
-   "summary": "Successful exploitation could lead to unexpected behavior or denial-of-service (DoS) conditions. The post Citrix Patches 10 Critical NetScaler Vulnerabilities appeared first on SecurityWeek .",
-   "score": 5,
-   "tags": [
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "why": [
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/11/citrix-patches-12-netscaler-and-secure.html"
-    }
-   ]
-  },
-  {
-   "id": "8762a201a24f",
-   "title": "Microsoft confirms Windows activation failures after November updates",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-windows-activation-failures-after-november-updates/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-13T09:36:18Z",
-   "summary": "Microsoft has confirmed that this month's Patch Tuesday security updates are causing Windows activation and licensing failures with 0x80041008 error codes. [...]",
-   "score": 1,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "e4b47e3b9b3e",
-   "title": "OpenAI Unveils Daybreak Red Team, Defense Factory Security Tools",
-   "link": "https://www.securityweek.com/openai-unveils-daybreak-red-team-defense-factory-security-tools/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-13T09:21:01Z",
-   "summary": "Daybreak Red Team pentests web applications with AI agents, while Defense Factory investigates security findings and prepares patches. The post OpenAI Unveils Daybreak Red Team, Defense Factory Security Tools appeared first on SecurityWeek .",
-   "score": 1,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "0b5efb819342",
-   "title": "Nightmare Eclipse Drops Windows Zero-Day Exploit ‘SignDrop’",
-   "link": "https://www.securityweek.com/nightmare-eclipse-drops-windows-zero-day-exploit-signdrop/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-13T08:50:36Z",
-   "summary": "It abuses CLFS and Windows Defender to trigger arbitrary file creation in the context of the antimalware process. The post Nightmare Eclipse Drops Windows Zero-Day Exploit ‘SignDrop’ appeared first on SecurityWeek .",
-   "score": 8,
-   "tags": [
-    "Actively exploited",
-    "Microsoft 365"
-   ],
-   "why": [
-    "Actively exploited",
-    "Microsoft 365"
-   ]
-  },
-  {
-   "id": "3ff055feac94",
-   "title": "Police arrest 354 suspects in dark web cybercrime crackdown",
-   "link": "https://www.bleepingcomputer.com/news/security/police-arrest-354-vendors-buyers-in-global-cybercrime-crackdown/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-13T08:34:20Z",
-   "summary": "Authorities arrested 354 suspects in a joint international operation targeting vendors and buyers on the Archetyp, Nemesis, Tor2Door, Bohemia, and Kingdom dark web marketplaces. [...]",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "76cf8ad9a547",
-   "title": "\"A 1,400-pyeong plot of land turns out to have 178 owners\"… Im Ye-jin fell victim to a planned real estate scam [Star Issue]",
-   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5fSFp4c2hTaU1mSXBtRlMyMncyb05NVzBKY2lXZlo4TlNSRG5HRkIwRHl2dGNkZ0ZYN18xdlZ3dVJVMDlKc0lHXzBMdkFZNjh5M3VDWktCVHFZOHlRa1BlVDFpR2JpTnNCZmotdzR6RmRTX2p2Q3hz?oc=5",
-   "source": "스타뉴스",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-13T07:40:25Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ]
-  },
-  {
-   "id": "9e0cc84d062d",
-   "title": "Hackers Exploit N-central Flaws to Infect 21 Servers, Including 19 Running Hotfix 2",
-   "link": "https://thehackernews.com/2026/11/hackers-exploit-n-central-flaws-to.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-13T05:43:28Z",
-   "summary": "N-able on Thursday said it's taking additional precautions in the wake of public disclosure of a new set of flaws tracked as 4EverAble2Shell and Agent2Shell. \"We are restricting certain N-central features and integrations,\" the company said in a Thursday update. \"These measures may affect some…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "6b2047aad824",
-   "title": "Macfinger ClickFix campaign sends DownTheDRAIN infostealer for macOS, (Fri, Nov 13th)",
-   "link": "https://isc.sans.edu/diary/rss/33518",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-11-13T03:41:41Z",
-   "summary": "Introduction",
-   "score": 4,
-   "tags": [
-    "Identity"
-   ],
-   "why": [
-    "Identity"
-   ]
-  },
-  {
-   "id": "589fccee67c2",
-   "title": "FBI Says US Seized $1.2 Billion Worth of Cryptocurrency Stolen From Binance",
-   "link": "https://www.securityweek.com/fbi-says-us-seized-1-2-billion-worth-of-cryptocurrency-stolen-from-binance/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-13T02:28:21Z",
-   "summary": "Also Thursday, the FBI blamed North Korea for a separate social engineering scheme that officials say resulted in the theft of $400 million worth of cryptocurrency. The post FBI Says US Seized $1.2 Billion Worth of Cryptocurrency Stolen From Binance appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "34edbf5084ab",
-   "title": "ISC Stormcast For Friday, November 13th, 2026 https://isc.sans.edu/podcastdetail/10178, (Fri, Nov 13th)",
-   "link": "https://isc.sans.edu/diary/rss/33516",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-11-13T02:00:03Z",
-   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
-   "score": 1,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "26d7ff7cc2c0",
-   "title": "Kakao Enterprise Says Email Bodies, Attachments Leaked in Breach",
-   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPLXI5dzg1S1Y2S0cxemNqNGZiZElZeEZMOHJUQ1lBY2R1VWFqU3ZTcTktaUVWSkI3YTROTVVyLU5rZFZTMk11UnB1ZUh1SDNjaGRnLXl1RnpXZkk2WW1oMFRGOWFEQ0ZBN0ZwZnZQZ25xVGZBTUFXcFpidVlhdTg1U1FoLXlvUFlRREk3d0Z6VDMtLXVqTE5WOGNqbzFmcTY0?oc=5",
-   "source": "Seoul Economic Daily",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-13T00:15:16Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "79fc68065bf3",
-   "title": "CVE-2026-123039: Check Point Multiple Products — Check Point Multiple Products Incorrect Permission Assignment for Critical Resource Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-123039",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-11-13T00:00:00Z",
-   "summary": "Check Point Firewall, Multi-Domain Security Management Server, Scalable Platforms, Security Gateway, and Security Management Server contain an incorrect permissions assignment for critical resources vulnerability when the Gaia OS DynamicCLI daemon runs as… CISA remediation due 2026-11-16.",
-   "score": 6,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "why": [
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "epss": 0.0327
-  },
-  {
-   "id": "dd9560d2d329",
-   "title": "CVE-2026-114713: UnrealIRCd UnrealIRCd — UnrealIRCd Improper Neutralization of Delimiters Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-114713",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-11-13T00:00:00Z",
-   "summary": "UnrealIRCd UnrealIRCd contains an improper neutralization of delimiters vulnerability that allows any user on a network with two or more linked servers to inject server-to-server commands that are executed with server authority. CISA remediation due 2026-11-16.",
-   "score": 4,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.0135
-  },
-  {
-   "id": "e9f16b1caffc",
-   "title": "Getting Past the Post-Quantum Cryptography Discovery Phase",
-   "link": "https://www.darkreading.com/cybersecurity-operations/getting-past-post-quantum-cryptography-discovery",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-11-12T22:46:05Z",
-   "summary": "Most organizations haven't sorted out their cryptographic estate enough to even know where they'd start with post-quantum cryptography (PQC).",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "55b74c42c28f",
-   "title": "Global Microsoft Outage Disrupts Outlook, Teams and Cloud Services as Company Works to Restore Servers",
-   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNWnJ4Mk9DaXhNLUJUZ2M0c2JVR2c5VGJONjhneUItdTljMjAwR1dkaUQ0aUlqNExxOGhuemhQZUJoeGtNMW1hUVhBOFkzYWtGZW0yU2U4QUktMlRwRGxzakpEUGpCRnFTeHVkZE1RellFdVBqcmxfQkxhdV90Y2tKYVkzMTlVdm50TUM3bXNUa0hNTW1ZRjJzNENrcmQyLUtjQnhHOUp1VTVXSUNrdHlPWDdLSFduNUpVejNERE1pbWpiXzFFZUtzN2JtQ3pwSjlCUGRLQ3Jpeks2bG9yVU1KRW8yNA?oc=5",
-   "source": "Australian Cyber Security Magazine",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-11-12T22:44:55Z",
-   "summary": "",
-   "score": 9,
-   "tags": [
-    "Microsoft 365",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Microsoft 365",
-    "SaaS / cloud"
-   ],
-   "also": [
-    {
-     "source": "iTnews",
-     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNVVNUcWRjeTdJbVVIWThoZ2VmY1E3Y0pubVVLLTVVem80S2Q5NzB3VnVKdjEwZDlIV1pId0Z0ZUhOMGNfeFpVaW9ydVVOb00xQ2dZZVpYV1UtT3JaRVhEV1lubEQ5ME1Md0J6eS1UWHVGM29waTNLaklZN1lFbWtJZjNTNzlmZkVfMWMtTjRR?oc=5"
-    },
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/microsoft-365-outage-disrupts-outlook-exchange-online-and-teams/"
-    },
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/microsoft/massive-microsoft-365-outage-disrupts-outlook-teams-copilot-worldwide/"
-    },
-    {
-     "source": "Forbes Australia",
-     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOSF96MnVFTzVDUmYxMkYtdkRNWHFmdXdSS1dpSzVwcUozSHdUSC1wbmJkSmZMbF91YnlCb3pWaThRcmxodUVPakgxZVU1aTJWdXhKNENjeHVUTktxX2tDcUtNb3lDTHlpN3ctNG91ZURjWFlyNks2eFc2VjNody1zZ194S1RKdTRlWmg4?oc=5"
-    },
-    {
-     "source": "ABC News & Headlines – Australian Broadcasting Corporation",
-     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE85YnlCLTZVeTRvd0R0c0JvQUJqTUlyT2xBanhqUkdTZEVfb2lhWlREUXRxMk1RemdyWmRsb1hoMzBsdDYxbWVYd2VqME9FRklZREJubmIwc0pfYmd4dlNQdm9fWkZHWDZBTWVWNGpTbVFsUnl1T21SeTJfWUtGQQ?oc=5"
-    },
-    {
-     "source": "Reuters",
-     "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPQWpWeUZnbllhcFk4WktZS0s3T1N6T3k3Vnhhd3pfSE9SWF9iRmRIQUljdHZXN0UtWS1uZS1rbUNZSlVPd1NXLXRtVUVtc3NQNTgxMVFMWjVnT3pPb09EX1g1YUx3WkF2VHk0bUMwWlhkRHdpT0JFRE5SQ3pQRkdmSnpUOHNXLUo1dXNSY3lFdkpSdU5laDdwSlhWRDVnNjBFcUh2Y0FwMXNldE8tSFpPaw?oc=5"
-    },
-    {
-     "source": "ABC News & Headlines – Australian Broadcasting Corporation",
-     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQa3d4WUpneFA2OVBxXy1NbkgyOFJZSzFZRTgtYjloejloV09jWGstNS1zcU9KM3JVNlpXeEYyVHRrOGZndVRrWktSNmVoaGNfUWVzd3RDd0wweVpWSHR4Y3YxTk9BNm9nLWZRU2p0VlBTNDZxSW5laFZZb3RCcWFvMjJBdk9ybnBWb3dTV2cxT3E?oc=5"
-    },
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/microsoft-struggles-to-restore-email-and-other-services-in-a-global-outage/"
-    }
-   ]
-  },
-  {
-   "id": "674c4b85088a",
-   "title": "Hackers compromise 4,800 GitHub accounts to steal cloud credentials",
-   "link": "https://www.bleepingcomputer.com/news/security/hackers-compromise-4-800-github-accounts-to-steal-cloud-credentials/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-12T22:25:30Z",
-   "summary": "A new campaign dubbed 'wfx-loot' has unfolded on GitHub where threat actors used 4,837 compromised accounts to probe 61,764 repositories, open pull requests, and push secrets-stealing malware. [...]",
-   "score": 3,
-   "tags": [
-    "Identity"
-   ],
-   "why": [
-    "Identity"
-   ]
-  },
-  {
-   "id": "39360acccba0",
-   "title": "Cyber Experts Weigh In: How to Fight Artex & AntiFox",
-   "link": "https://www.darkreading.com/cybersecurity-operations/cyber-experts-fight-artex-antifox",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-11-12T21:18:52Z",
-   "summary": "Cybercriminals using agentic pen-testing tools is a proverbial genie out of the bottle at this point, so enterprises need to get a defense plan in place right away.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "43b2bb31ce77",
-   "title": "Extortion Group Luna Moth Flits Into Law Firms a Second Time",
-   "link": "https://www.darkreading.com/data-privacy/extortion-luna-moth-law-firms-second-time",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-11-12T20:09:41Z",
-   "summary": "The cybercriminals are retargeting law firms that refused to pay its first ransom, with a social engineering con aimed at stealing Microsoft access tokens.",
-   "score": 4,
-   "tags": [
-    "Ransomware"
-   ],
-   "why": [
-    "Ransomware"
-   ]
-  },
-  {
-   "id": "5e7c3d53ea73",
-   "title": "New N-able \"4EverAble2Shell\" zero-day exploited hours after PoC released",
-   "link": "https://www.bleepingcomputer.com/news/security/new-n-able-4everable2shell-zero-day-exploited-hours-after-poc-released/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-12T19:51:16Z",
-   "summary": "Hackers are actively exploiting a newly disclosed N-able N-central zero-day vulnerability dubbed \"4EverAble2Shell\" to compromise servers and deploy cryptocurrency miners, with researchers reporting at least 21 affected systems, including 19 running the company's latest security update. [...]",
-   "score": 6,
-   "tags": [
-    "Actively exploited",
-    "Vulnerability"
-   ],
-   "why": [
-    "Actively exploited",
-    "Vulnerability"
-   ],
-   "also": [
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/hackers-exploit-new-n-central-zero-day-hours-after-poc-publication/"
-    }
-   ]
-  },
-  {
-   "id": "fac8887887ba",
-   "title": "Apache HTTP Server patches critical HTTP/2 remote code execution flaw",
-   "link": "https://www.bleepingcomputer.com/news/security/apache-http-server-patches-critical-http-2-remote-code-execution-flaw/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-12T19:12:55Z",
-   "summary": "A critical vulnerability in the HTTP/2 module of Apache HTTP Server could be exploited by an unauthenticated attacker to obtain remote code execution (RCE). [...]",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/11/ptc-patches-critical-windchill-and.html"
-    },
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/11/sap-patches-four-cvss-100-flaws.html"
-    }
-   ]
-  },
-  {
-   "id": "950205e16691",
-   "title": "Webinar: See How Identity Blind Spots Put Your SOC at Risk and How to Close Them",
-   "link": "https://thehackernews.com/2026/11/your-soc-sees-alert-but-does-it-know.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-12T18:07:15Z",
-   "summary": "Security teams have more alerts, logs, and monitoring tools than ever. Yet when an attack happens, one simple question can still take too long to answer: Who or what is behind this activity, and what can they access? A suspicious login might belong to an employee. An unusual API call could come…",
-   "score": 0,
-   "tags": [],
-   "why": []
   }
  ]
 }
