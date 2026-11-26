@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-26T03:35:44Z",
+ "generated": "2026-11-26T16:56:55Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,13 +28,13 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 5,
+   "count": 10,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 11,
+   "count": 7,
    "error": null
   },
   {
@@ -82,7 +82,7 @@
   {
    "name": "Microsoft Security Blog",
    "ok": true,
-   "count": 10,
+   "count": 9,
    "error": null
   },
   {
@@ -100,11 +100,339 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 37,
+   "count": 40,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "17ea7e9dd6a3",
+   "title": "Remus malware steals Gmail messages via fake Google Sheets extension",
+   "link": "https://www.bleepingcomputer.com/news/security/remus-malware-steals-gmail-messages-via-fake-google-sheets-extension/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-26T15:23:28Z",
+   "summary": "The Remus infostealer is stealing Gmail messages through a stealthy malicious Chrome extension, a capability the malware operators marketed as a zero-day exploit in Google's email service. [...]",
+   "score": 6,
+   "tags": [
+    "Actively exploited",
+    "Identity"
+   ],
+   "why": [
+    "Actively exploited",
+    "Identity"
+   ]
+  },
+  {
+   "id": "f5eee8a53f92",
+   "title": "North Korea-Linked PolinRider Poisons Over 7,600 GitHub Repositories to Spread Malware",
+   "link": "https://thehackernews.com/2026/11/north-korea-linked-polinrider-poisons.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-26T15:13:41Z",
+   "summary": "The threat actors behind the PolinRider campaign have been observed planting a Python loader in GitHub repositories, as evidence emerges that the activity may have started as far back as February 2025. \"The loader hides in a small utils package or in conftest.py,\" SafeDep said in a report…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "bb9d1e6ae562",
+   "title": "Critical Juniper Session Smart Conductor Flaw Exploited in Attacks",
+   "link": "https://www.securityweek.com/critical-juniper-session-smart-conductor-flaw-exploited-in-attacks/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-26T13:04:06Z",
+   "summary": "Tracked as CVE-2026-103406, the vulnerability allows remote attackers to execute arbitrary commands as root. The post Critical Juniper Session Smart Conductor Flaw Exploited in Attacks appeared first on SecurityWeek .",
+   "score": 1,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0154
+  },
+  {
+   "id": "23ec231ca044",
+   "title": "SYS010 malware abuses browser management to spy on Gmail, Outlook",
+   "link": "https://www.bleepingcomputer.com/news/security/sys010-malware-abuses-browser-management-to-spy-on-gmail-outlook/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-26T11:50:17Z",
+   "summary": "A new version of the SYS01 infostealer malware delivered through Meta ads is enrolling browsers into enterprise-style management to force the installation of an extension that steals sensitive data, including Gmail and Outlook emails. [...]",
+   "score": 6,
+   "tags": [
+    "Microsoft 365",
+    "Identity"
+   ],
+   "why": [
+    "Microsoft 365",
+    "Identity"
+   ]
+  },
+  {
+   "id": "84f25e464074",
+   "title": "Mitel MiCollab Zero-Days Exploited in Suspected AI-Assisted Attacks",
+   "link": "https://www.securityweek.com/mitel-micollab-zero-days-exploited-in-suspected-ai-assisted-attacks/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-26T11:35:25Z",
+   "summary": "Accenture says hackers exploited MiCollab flaws before Mitel’s advisory, likely aided by AI, in a suspected extortion campaign. The post Mitel MiCollab Zero-Days Exploited in Suspected AI-Assisted Attacks appeared first on SecurityWeek .",
+   "score": 8,
+   "tags": [
+    "Actively exploited",
+    "Ransomware"
+   ],
+   "why": [
+    "Actively exploited",
+    "Ransomware"
+   ]
+  },
+  {
+   "id": "6623a011bc06",
+   "title": "FIFA confirms cyberattack after ransomware threat from HBHC",
+   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1sclRJeEJkck9HQmNDTnVjV0ZkNFNtQzBfWUVvUHVrb2xRdjBndldweDRUM2h1VTBUNFNranFJUExINHplUmlPUkh2czJMR1dsUk9HQktRQW45T2JwaXZGbGhrM0FxOS11VS00TGY2V2ZRSEVGUDZ1Z0cwRy0?oc=5",
+   "source": "Ticker News",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-26T11:06:56Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
+  },
+  {
+   "id": "27c41b73faa5",
+   "title": "Most Wanted: The Phishing Kits and Techniques Getting Past Security Controls",
+   "link": "https://thehackernews.com/2026/11/most-wanted-phishing-kits-and.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-26T10:57:55Z",
+   "summary": "Every phishing attack has to get past email security, web filtering, and safe browsing before it reaches an employee. Some kits manage that far more often than others, and those are the kits that security teams need to know about. At Push Security, we measure this as breakthrough rate: The share…",
+   "score": 4,
+   "tags": [
+    "Phishing"
+   ],
+   "why": [
+    "Phishing"
+   ]
+  },
+  {
+   "id": "420627cd7e6f",
+   "title": "1Password Hacked, Customer Data and Source Code Stolen in GitHub Account Breach",
+   "link": "https://thehackernews.com/2026/11/1password-hacked-customer-data-and.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-26T10:57:25Z",
+   "summary": "Popular password management software 1Password on Wednesday disclosed a security incident involving its backend systems that led to the unauthorized access of some customer information, but emphasized that customer password vaults and other secrets were not accessed. \"While we took immediate steps…",
+   "score": 6,
+   "tags": [
+    "Data breach",
+    "Identity"
+   ],
+   "why": [
+    "Data breach",
+    "Identity"
+   ],
+   "also": [
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/1password-breach-exposes-customer-data-internal-source-code/"
+    },
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/1password-customer-data-stolen-after-employee-github-account-breach/"
+    }
+   ]
+  },
+  {
+   "id": "0eff2443bb70",
+   "title": "Black Friday ransomware spike exposes retail's cyber insurance gap",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPTU1wVzgzN0w5eXozcVpFN1hDUy1UaHZZVXllZVczOGtLVjEtSXkyaVhpTVdHWlpfSUtYdEVEZ1JiR0JpdkxHNVc5WlZLSXFBZnZzN0FCcDIxWmppUWRkQmM2TjdwSW9HUGFZazhzcUlnY2JKdUlYSTRpNXNRdEpoNWE2VWpKVTA2ODJNSVdGUExRNjVZZ1NjeHVEcmVodDMybUdfdEZJZHR3WU0xbENIOFF4UDJYYlBOYkhHckhGQkhBZzZrUV9v?oc=5",
+   "source": "Insurance Business",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-26T10:33:15Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
+  },
+  {
+   "id": "4e03976e396f",
+   "title": "New Danish data breach hits 11,000 despite security upgrades",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5kX0hHcTJrU1Noc1VfUFBWX1E5Uy1yRzBJLUh2eHVzZFZadVd1QXpnTS0tZFpLN3NsN216bUpLenR3MGxDSTlPcFppWS1iQjNpRDZGX0dlMkFsNnZEX0FNOG5UVDJTZlU2TjIxbnNPU2hPelFrcWc?oc=5",
+   "source": "Yahoo News Australia",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-26T09:46:56Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "37e152d36e89",
+   "title": "Drupal Installer Patch Left a Gap Attackers Are Already Exploiting",
+   "link": "https://www.securityweek.com/drupal-installer-patch-left-a-gap-attackers-are-already-exploiting/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-26T09:12:26Z",
+   "summary": "Drupal warns that its previous installer patch left some websites vulnerable to takeover, with attackers already exploiting the gap. The post Drupal Installer Patch Left a Gap Attackers Are Already Exploiting appeared first on SecurityWeek .",
+   "score": 2,
+   "tags": [
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "dd168b1ec489",
+   "title": "Cyprus Becomes Espionage Target for Iranian Hackers",
+   "link": "https://www.darkreading.com/cyberattacks-data-breaches/cyprus-espionage-target-iranian-hackers",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-26T08:00:00Z",
+   "summary": "A previously undocumented Iranian threat group called \"Volant Manticore\" is targeting Cypriot organizations as part of an intelligence-gathering effort for Tehran.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "457c08cf27ea",
+   "title": "Drupal Warns of New Highly Critical Site Takeover Vulnerability Under Active Exploitation",
+   "link": "https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-26T07:02:34Z",
+   "summary": "Drupal has warned of a new \"highly critical\" security flaw impacting Drupal core that it said has been exploited in the wild. The vulnerability, tracked as CVE-2026-136716 (CVSS score: N/A), has been described as a case of improper checking for unusual or exceptional conditions. It also relates to…",
+   "score": 6,
+   "tags": [
+    "Actively exploited",
+    "Vulnerability"
+   ],
+   "why": [
+    "Actively exploited",
+    "Vulnerability"
+   ],
+   "epss": 0.0101,
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites/"
+    }
+   ]
+  },
+  {
+   "id": "1d57aa7ac03a",
+   "title": "Hackers Exploit 10 Vulnerabilities Across Mitel, Juniper, Vates, and Danfoss Products",
+   "link": "https://thehackernews.com/2026/11/hackers-exploit-10-vulnerabilities.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-26T06:44:46Z",
+   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added 10 security flaws to its Known Exploited Vulnerabilities (KEV) catalog, including five vulnerabilities impacting Mitel MiCollab that were disclosed last week. The Mitel MiCollab vulnerabilities are listed below -…",
+   "score": 4,
+   "tags": [
+    "Actively exploited"
+   ],
+   "why": [
+    "Actively exploited"
+   ]
+  },
+  {
+   "id": "8af704020689",
+   "title": "RansomwareRadar — Real-Time Ransomware Tracker & Threat Intelligence",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1YNFJ1aWhUNmVnUjRkM2pyZ3FmOHhQS1NiNzAwRENXaGgxRnlfNG84bGhrcUNqZWwxdGU2U2o5WDVVS1RlbVd3WlBmWnYtZURUUlFKV0kwZkJNakI2amttV1ZyRnY?oc=5",
+   "source": "SOCRadar",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-26T06:26:07Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ]
+  },
+  {
+   "id": "476933662552",
+   "title": "Travel giant Flight Centre hit by cyber attack with customer passport details potentially exposed",
+   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPek1JVnZlMWViQi01elpNYVJqdTJYTVFKcjZRNVVWVGZyMzg3ZWxEOUFUSjZiVTlXUklxRUxmSlh1ZWg4NmgyMVRWZzhrZWVHNDk0QmpDNHVCMjRWQTFXd2VDb0Z0dHJZSHNpYTdsc3NNYTdpdC1BWG5aVTJTbW9MYVpnODdRYkJ4eFFMaFlfTmZacEx3RV9VSGlWbVNRelVPMVBRZWV3Y3J5RjJnU3FaS1VkUDljZHZyMHpQdmVzZGNBaUNoOXNHTVdKS2lzVVhpUE91OU9IUjUzWmw3alhIYtIB5gFBVV95cUxOdnNXLUdZYnBnVFpfTDdGSWk1bUc5RUx6cjN4WHM0dnFnY25OU1FXM2pnMkpkcTZXM2Y5LV9GNmlVSWRwR1FCNXZQM3hwazk2c0s3SHplN2dlMmRoTHc1X0FCY29DaFNEM2U1VkVCVHVEWnNNUlFObEx1UGtxaXVEallWSm9obHhZU19DeFhIdkUtdTRPaDBJajFrUmVXa1BGN0I4SDlMOVhLcUlrMFB3d3FHbThqZllZZ19yVWpWNEl5UU13M1RLSnMwR0txUndaM1JDQmo2MU1HRkJWZXM3ODB3RnhTQQ?oc=5",
+   "source": "7NEWS",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-26T05:02:00Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "98bf0c432201",
+   "title": "13 Malicious NuGet Packages Turn Fake .NET Job Assessments Into Malware Delivery Traps",
+   "link": "https://thehackernews.com/2026/11/13-malicious-nuget-packages-turn-fake.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-26T03:48:52Z",
+   "summary": "Cybersecurity researchers have discovered 13 malicious NuGet packages that are designed to target Windows .NET developers under the guise of a fake take-home job assessment. \"Most of the packages pose as WinUI 3 and WPF [Windows Presentation Foundation] button controls,\" Socket security researcher…",
+   "score": 0,
+   "tags": [],
+   "why": [],
+   "also": [
+    {
+     "source": "Dark Reading",
+     "url": "https://www.darkreading.com/threat-intelligence/attackers-net-developers-poisoned-job-assessments"
+    }
+   ]
+  },
+  {
+   "id": "41f69e73cc43",
+   "title": "Flight Centre Flags Breach in Booking System",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOMWY2LWpDakpQb1ZPZWtJRmVsMnNrNkxqOVFiLVUyeERoM0IyNFE3bEctVFNGOWcwMEI3WkFCMm1DSDEyckN6MDJac0FlR3pEWGNKOVRVZW5ORmF6eGYyMGVJTWdteXRfVnBZd2dOaEVNZHZ4UXNhNmUyWGJ2aEcxcWQxNEdUZ0x5cTRLR0VwQWd3TUpf?oc=5",
+   "source": "Wisevoter",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-26T02:18:08Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
   {
    "id": "50a53afadcff",
    "title": "Palo Alto Networks warns of Fragnesia flaw exploited in PAN-OS attacks",
@@ -128,23 +456,6 @@
      "source": "SecurityWeek",
      "url": "https://www.securityweek.com/palo-alto-networks-patches-fragnesia-flaw-used-to-root-firewalls/"
     }
-   ]
-  },
-  {
-   "id": "70f66acc3de7",
-   "title": "1Password customer data stolen after employee GitHub account breach",
-   "link": "https://www.bleepingcomputer.com/news/security/1password-customer-data-stolen-after-employee-github-account-breach/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-25T21:33:33Z",
-   "summary": "1Password has disclosed a data breach after a an employee's corporate GitHub account was hacked and used to deploy malicious code to the company's backend services to steal customer data. [...]",
-   "score": 4,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
    ]
   },
   {
@@ -178,6 +489,29 @@
    "why": []
   },
   {
+   "id": "5cf738968501",
+   "title": "Meridian Capital confirms intrusion after Qilin ransomware claim",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOM3V4QnNXU3N1REhib05faWRZd1BOZEJXaURmR0t6Zm5BUFJmZktWVnpvOVBzYjBVT2hTdFhPTVJIbzRsbTdjc1FxN3FDYkdHTGsxT1NUcUN6RjQ2R0QyVkE5NGJUSHRSaS1WNk5LdUtFNjJ3SGNiLXNBRHo1MXRIdjlLVXplQlFhTlc0WFhn?oc=5",
+   "source": "MLQ.ai",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-25T18:28:37Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Ransomware"
+   ],
+   "why": [
+    "Ransomware"
+   ],
+   "also": [
+    {
+     "source": "Bisnow",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQOFBjdTZrSUoybHBTZDlIOEE1WWxrNFh5MHdLRk1ZdUszc2xobkppZmNuUF9reW5uS1JPdWlfcHF3a2RLMEVxa1RVd0U3Qy1NcFl0WTdWVjlUWmRVck1pOXZuZkQzaDh3RzkwemV1T0R6aGRiRDEyWmk2RWcyQjVmbXR2TXdCaWV3OUxyX2Zub2RxUVlqekVIUXBocWlCLWN6WjZuRFdBQnY2dGNwY3hvUzBPN0c3VXcyU3EtUzdJNHE?oc=5"
+    }
+   ]
+  },
+  {
    "id": "fc1fe5cb80de",
    "title": "What defenders need to know about ARTEX, the agentic AI framework threat actors abuse",
    "link": "https://www.microsoft.com/en-us/security/blog/2026/11/25/what-defenders-need-to-know-artex-agentic-ai-framework-threat-actors-abuse/",
@@ -194,6 +528,23 @@
    "why": [
     "Microsoft 365",
     "Identity"
+   ]
+  },
+  {
+   "id": "3059a624d945",
+   "title": "WA buyer loses almost $200,000 in property settlement scam",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQRkRUMWlwOW1UTUJ5VXRwYWRBNjdfMFNMWnZsRkFZanJZSy1ZOURrV2FESjBIOUxtSGU1THdBMnZiOEp0bUpENTNCQ2lzMVVKcXhpNmtackVCT3c1ZUI5YmJybFEyczRwaTRQYWx0TEdGNVNzY2dkS05GdU5uQVZWTzVwakMxc1QxNjNrN2otWkhhQmhnY0FQdHYtR3dwRzdwT0w4TUQ1Q295SU9sdHBWZ1pB?oc=5",
+   "source": "REIWA",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-25T17:36:39Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
    ]
   },
   {
@@ -244,23 +595,6 @@
    "why": []
   },
   {
-   "id": "8e9cb2b3ee51",
-   "title": "Meridian Capital Hit By Qilin Ransomware Cyberattack",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQOFBjdTZrSUoybHBTZDlIOEE1WWxrNFh5MHdLRk1ZdUszc2xobkppZmNuUF9reW5uS1JPdWlfcHF3a2RLMEVxa1RVd0U3Qy1NcFl0WTdWVjlUWmRVck1pOXZuZkQzaDh3RzkwemV1T0R6aGRiRDEyWmk2RWcyQjVmbXR2TXdCaWV3OUxyX2Zub2RxUVlqekVIUXBocWlCLWN6WjZuRFdBQnY2dGNwY3hvUzBPN0c3VXcyU3EtUzdJNHE?oc=5",
-   "source": "Bisnow",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-25T17:03:24Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Ransomware"
-   ],
-   "why": [
-    "Ransomware"
-   ]
-  },
-  {
    "id": "97df8d954787",
    "title": "CISA warns of critical unpatched flaw in Danfoss refrigeration controllers",
    "link": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-unpatched-flaw-in-danfoss-refrigeration-controllers/",
@@ -276,19 +610,6 @@
    "why": [
     "Vulnerability"
    ]
-  },
-  {
-   "id": "75d3be5138a9",
-   "title": "Attackers Target .NET Developers With Poisoned Job Assessments",
-   "link": "https://www.darkreading.com/threat-intelligence/attackers-net-developers-poisoned-job-assessments",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-11-25T15:48:04Z",
-   "summary": "Researchers discovered 13 malicious NuGet packages as part of a fake recruitment campaign that spreads malware and gives attackers access to developers' machines.",
-   "score": 0,
-   "tags": [],
-   "why": []
   },
   {
    "id": "5265d3f089df",
@@ -525,7 +846,8 @@
    "why": [
     "Actively exploited",
     "Vulnerability"
-   ]
+   ],
+   "epss": 0.1105
   },
   {
    "id": "bd8fc6246012",
@@ -569,25 +891,6 @@
    "score": 0,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "7bb089ac45e5",
-   "title": "Hackers now exploit critical Drupal RCE flaw to hijack sites",
-   "link": "https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-25T10:10:20Z",
-   "summary": "The Drupal security team has confirmed that a critical vulnerability that lets attackers hijack unpatched sites has been actively exploited since at least Thursday. [...]",
-   "score": 6,
-   "tags": [
-    "Actively exploited",
-    "Vulnerability"
-   ],
-   "why": [
-    "Actively exploited",
-    "Vulnerability"
-   ]
   },
   {
    "id": "822cf72da8c8",
@@ -893,7 +1196,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0086
+   "epss": 0.0154
   },
   {
    "id": "e1ea85113595",
@@ -913,7 +1216,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.011
+   "epss": 0.3177
   },
   {
    "id": "572924241b90",
@@ -933,7 +1236,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0051
+   "epss": 0.0427
   },
   {
    "id": "9be7385a0d24",
@@ -953,7 +1256,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0108
+   "epss": 0.0185
   },
   {
    "id": "55254ad04764",
@@ -973,7 +1276,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0143
+   "epss": 0.0249
   },
   {
    "id": "2f79e0b49840",
@@ -993,7 +1296,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0041
+   "epss": 0.0083
   },
   {
    "id": "b1a94c395587",
@@ -1013,7 +1316,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0032
+   "epss": 0.0077
   },
   {
    "id": "eb7934885f30",
@@ -1033,7 +1336,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.004
+   "epss": 0.0098
   },
   {
    "id": "1c919f9755bd",
@@ -1053,7 +1356,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0052
+   "epss": 0.0133
   },
   {
    "id": "934910d42889",
@@ -1073,7 +1376,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0255
+   "epss": 0.0563
   },
   {
    "id": "ac5a3294d776",
@@ -1482,7 +1785,8 @@
      "source": "SecurityWeek",
      "url": "https://www.securityweek.com/vmware-updates-patch-critical-esx-vcenter-vulnerabilities/"
     }
-   ]
+   ],
+   "epss": 0.0061
   },
   {
    "id": "0c4445d4ccaf",
@@ -1843,7 +2147,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0078
+   "epss": 0.0106
   },
   {
    "id": "bcdfeee02e85",
@@ -1882,7 +2186,8 @@
    ],
    "why": [
     "Vulnerability"
-   ]
+   ],
+   "epss": 0.1105
   },
   {
    "id": "6a57f5edfd55",
@@ -3247,7 +3552,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0025,
+   "epss": 0.0048,
    "also": [
     {
      "source": "SecurityWeek",
@@ -6810,7 +7115,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0135
+   "epss": 0.102
   },
   {
    "id": "2b1b80c8b882",
@@ -6950,284 +7255,6 @@
      "source": "Arabian Business",
      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNYTJRazlTeEVnbDdCZ09fNjU2c0VsMGZLMjlkMGIzMVZ0d1RPUkNrLWJhQTdqekZvQVhEWXhkY2hXdFE2Z2tuLW5zeGJtRlA2MGhpS3M0MmVtbVBjSnh2N1ZvNzUwVy1kUkhnV0RsV09DbW5YSk1UTWpmczhRX2wxRFpKWjFRb0RtazFNYkVYbnhUTGs3YzRfakprV1NGcjByU2Flekl5Y2VQVWFVcmVSeDJ3QkJ2WHlTMERVS0JkTllIV0xIQmtQcFNNU2Zmc28?oc=5"
     }
-   ]
-  },
-  {
-   "id": "f159cf23a7b2",
-   "title": "Amazon Uncovers AI Agent Campaign Targeting LiteLLM, Dify, and Other Apps for API Keys",
-   "link": "https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-16T07:34:21Z",
-   "summary": "Attackers' AI agents have been hunting for weak spots in internet-exposed AI apps such as LiteLLM, One API, and Dify to steal the AI provider keys stored inside, according to the agents' own records. The records, which Amazon's threat intelligence team captured with decoy servers, describe stolen…",
-   "score": 3,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "1a13d7025b37",
-   "title": "BO Team Exploits Log4Shell in VMware vCenter, Compromises Russian Firm's Code-Signing Server",
-   "link": "https://thehackernews.com/2026/11/bo-team-exploits-log4shell-in-vmware.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-16T06:53:34Z",
-   "summary": "An investigation into suspicious activity within a Russian software developer's network has uncovered a months-long compromise of its development infrastructure and a software code-signing server. The activity, documented by Kaspersky's ICS CERT team after it was contacted by the affected…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "926480ee58cc",
-   "title": "Coles admits Cyberattack but denies any Customer Data Breach",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQcElyU19EUDhUdnE0cnV4OGk5eHZydWE5Y3BGNlh1eEk5YlFQUThubEtDMEY3NDdZVVdRdTMyTjZGY3hXak10anVodUk1YzZCMk1JZk40QVZLZ0dDN0pqRFJ0cmhtcEk1N0JDN1c3M20wM3BJWnZZNDBSVzZWejYzdUdTV3VMVW5QSTdJZXFyWnVONEYwNE9CQ3hZV1pMQS1NTXc?oc=5",
-   "source": "Cybersecurity Insiders",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-11-16T05:28:17Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "9869401c8599",
-   "title": "Bunjang Reports Data Breach at Outsourced Call Center",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQbU9MSjdrYXlMUmJUYll6N0thVW90b2tMR1dUM3NpdU96NWZJbFNJWWp5eFk0c1dvdFhicE5HMHpXamtlX292TGRvOVJSdEppY1p6ZW1rT2g0RVh5YkRKX3I1c0lYb0dMTlQ1djlqOVI0emZoSWVZMVFNUlR3ZWQ0Ulc4cEx5YnRhenhyTXFsVmg3eC1UQ3lHRVlXQWI?oc=5",
-   "source": "Seoul Economic Daily",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-16T04:32:00Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "201de7464188",
-   "title": "ISC Stormcast For Monday, November 16th, 2026 https://isc.sans.edu/podcastdetail/10180, (Mon, Nov 16th)",
-   "link": "https://isc.sans.edu/diary/rss/33520",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-11-16T02:00:05Z",
-   "summary": "(c) SANS Internet Storm Center. https://isc.sans.edu Creative Commons Attribution-Noncommercial 3.0 United States License.",
-   "score": 1,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "4201db3ac682",
-   "title": "FBI warns ARTEX AI hacking tool is powering global cyberattacks",
-   "link": "https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-15T18:29:53Z",
-   "summary": "The FBI is warning that hackers are using an AI-powered penetration testing framework called ARTEX to automate cyberattacks against organizations worldwide, including a recent ConnectWise supply-chain breach that compromised Microsoft 365 customer environments. [...]",
-   "score": 6,
-   "tags": [
-    "Microsoft 365",
-    "Data breach"
-   ],
-   "why": [
-    "Microsoft 365",
-    "Data breach"
-   ]
-  },
-  {
-   "id": "989c0561410e",
-   "title": "YARA-X 1.23.0 Release, (Sun, Nov 15th)",
-   "link": "https://isc.sans.edu/diary/rss/33496",
-   "source": "SANS ISC",
-   "feed": "SANS ISC",
-   "region": "Global",
-   "published": "2026-11-15T18:17:27Z",
-   "summary": "YARA-X&#x26;#39&#x26;#x3b;s 1.23.0 release brings 4 improvements and 16 bugfixes.",
-   "score": 1,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "bbb8a6727085",
-   "title": "TSMC employee data breach linked to cloud provider",
-   "link": "https://www.bleepingcomputer.com/news/security/tsmc-employee-data-breach-linked-to-cloud-provider/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-15T15:23:48Z",
-   "summary": "Taiwan Semiconductor Manufacturing Company (TSMC) confirmed that personal employee data has been leaked online after a threat actor put 6.9GB of information allegedly stolen from the company up for auction. [...]",
-   "score": 4,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "c8b26857299e",
-   "title": "Pentagon Renames CDAO ‘Super Intelligence Office’",
-   "link": "https://www.securityweek.com/pentagon-renames-cdao-super-intelligence-office/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-15T12:51:33Z",
-   "summary": "The move follows President Trump’s order to replace “artificial intelligence” with “super intelligence” in executive branch communications. The post Pentagon Renames CDAO ‘Super Intelligence Office’ appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "04c1c102f5a7",
-   "title": "Italy Fines Meta €805 Million Over Facebook's Android Gallery Access Without Explicit Consent",
-   "link": "https://thehackernews.com/2026/11/italy-fines-meta-805-million-over.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-15T11:27:31Z",
-   "summary": "Meta was fined €805 million in Italy yesterday over a Facebook for Android feature that suggests photos and videos from users' phone galleries for them to post. The Garante, Italy's data protection authority, found that the feature was enabled by default and that the app accessed Italian users'…",
-   "score": 0,
-   "tags": [],
-   "why": [],
-   "also": [
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/meta-fined-887-million-in-italy-over-android-gallery-photos-and-videos-on-facebook/"
-    }
-   ]
-  },
-  {
-   "id": "218548befcc9",
-   "title": "Real estate platform 'Peter Pan' hit by data breach, leaking names, phone numbers and emails",
-   "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1DRnoyUTROTXBmSDFXTDdpX0xfLTVaZXRrMDlsaVF1QU8yeTdWLUJ2RzlNdGFOM3owcWVLSlk1VXBIZzZ4dng1Q2RfX0ZBWkJWN3FpTlQ4Zw?oc=5",
-   "source": "헤럴드경제",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-15T05:24:50Z",
-   "summary": "",
-   "score": 14,
-   "tags": [
-    "Real estate",
-    "Data breach"
-   ],
-   "why": [
-    "Real estate",
-    "Data breach"
-   ],
-   "also": [
-    {
-     "source": "Chosunbiz",
-     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPMDNmcEpuM1RYMUZpNE1xRTV3bjh3YWtsTXFpZ2VTNnMyNUtBTElUT1czV1ROR1hwQXdpOGI1dnlwZDFEMUE3eXBRUkJRbTRSWnFmVGZOMWZpbWhhYWdXMUx6WUNMWC1jSG1EdHFJT0tKTXA5VjkzbzBtTnBneFlqVlh6X1nSAZgBQVVfeXFMUEQ4QkV1RXMwcVBjdlZLSUxvdFQyVEp6aTdPSVdQbmR1VXZlYlZwZFk4ZjNLSkZGRjdOV0FTbDRPeEFRR3dRMzRaYnIyU2MwMVpYbDhUQWQ1SEQ1ZWlPTVBuOUtJN3Njc1k0Q2V1SWo0MzZQLXV1YUxJdi1aZjhud0JoOVJ0MVlxc2MzeVJxX2JMV3RzOTJMM1I?oc=5"
-    },
-    {
-     "source": "재경일보",
-     "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFA5SC1aTTFlY1Y2RHQtbFF4TVQ2UzlCLW9iOUJ2Qm9mai1wMVRpOVlxeldWcHR6Y0xoV3pYSzVNMVg1S3pkWUV1X3RCNUlsZk1YSmdQSGtIM1FQYnFIZmJxVUpn?oc=5"
-    }
-   ]
-  },
-  {
-   "id": "32161bd81bcd",
-   "title": "Hanyang Cyber University to expand real estate graduate program with AI tracks",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQbnk0M0VBbUx0LU1iQUZVX21YelRiQmJ5ME1xYnBLTU45aF8ycW1RWkZzX1pVVlBEMFJRaEZuLXVJRXJISE1GS3otdG15bG1ad19ZYTQtMjk0TGhURXFsbGhCY2NoT2k2ZC1Zcm9kdXhQbEdPVE5SUmY5YzcwT05aVG9YTjU5TXRKMG5fMGZ2M0pFQVR20gGUAUFVX3lxTFBueTQzRUFtTHQtTWJBRlVfbVh6VGJCYnkwTXFicEtNTjloXzJxbVFaRnNfWlVWUEQwUlFoRm4tdUlFckhITUZLei10bXlsbVp3X1lhNC0yOTRMaFRFcWxsaEJjY2hPaTZkLVlyb2R1eFBsR09UTlJSZjljNzBPTlpUb1hONTlNdEowbl8wZnYzSkVBVHY?oc=5",
-   "source": "Chosunbiz",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-15T01:50:00Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ]
-  },
-  {
-   "id": "403e4bdfaeb6",
-   "title": "Cursor confirms security breach led to malicious Claude Code extension",
-   "link": "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-14T17:27:25Z",
-   "summary": "Cursor confirmed it suffered a security breach that let hackers distribute a malicious Claude Code extension through its marketplace after stealing credentials from AI infrastructure provider Fireworks AI. [...]",
-   "score": 6,
-   "tags": [
-    "Data breach",
-    "Identity"
-   ],
-   "why": [
-    "Data breach",
-    "Identity"
-   ],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html"
-    }
-   ]
-  },
-  {
-   "id": "e253199b5be0",
-   "title": "US disrupts North Korean campaign behind $400 million crypto theft",
-   "link": "https://www.bleepingcomputer.com/news/security/us-disrupts-north-korean-campaign-behind-400-million-crypto-theft/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-14T15:15:49Z",
-   "summary": "The U.S. government has disrupted a North Korean social engineering campaign called 'FaceStealer', responsible for stealing more than $400 million in cryptocurrency. [...]",
-   "score": 0,
-   "tags": [],
-   "why": [],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/11/fbi-says-north-korean-hackers-stole.html"
-    }
-   ]
-  },
-  {
-   "id": "3772cdf174b0",
-   "title": "Is AI Making Us Worse at Cybersecurity?",
-   "link": "https://www.securityweek.com/is-ai-making-us-worse-at-cybersecurity/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-14T14:00:00Z",
-   "summary": "Overreliance on AI could erode the creativity, clear communication, and critical thinking security teams need when there’s no playbook. The post Is AI Making Us Worse at Cybersecurity? appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "0c5acc0e47d3",
-   "title": "Inje University Reports Breach of 24,000 Personal Records",
-   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNbGlZZUo5ZlpSQ2lxNDdkN0FoZEFLRUlBSEZQc3RyLTVuTDJMNHBLcnhuRFluWHd3RXRrYjRvR0NTU0VMNnZWSVY1NUkzZzJuNDhIR3Rkd1RIdTlMRnY1UV8zVkVhWWxkNHBZYmxJNFJXdzNNVGg2SlkwUE5HVmVSU2ZycnAxeGIwU2dLS0p5TWl3VDRuX0pJZ2JZUWgxd0k?oc=5",
-   "source": "Seoul Economic Daily",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-14T12:54:01Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
    ]
   }
  ]
