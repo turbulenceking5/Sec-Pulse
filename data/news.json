@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-26T01:53:09Z",
+ "generated": "2026-11-26T03:35:44Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -22,19 +22,19 @@
   {
    "name": "ASD / ACSC in the news",
    "ok": true,
-   "count": 2,
+   "count": 1,
    "error": null
   },
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 7,
+   "count": 5,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 10,
+   "count": 11,
    "error": null
   },
   {
@@ -148,9 +148,9 @@
    ]
   },
   {
-   "id": "e30a0fea2030",
+   "id": "42ce7767d98a",
    "title": "KEPCO Offers Free Identity Theft Protection After Data Breach",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNTjNWOURnUHhEVFJEX1NTaUVGdWczME04NlhTUHE0N2dEOHJZclhMdnk3QVR0T0JOWTlidnUwYktCYzBVM1JkLS1UN3hHd0NOanN2c19YREVhQ2ltX0FkV0N5c1VNMjRzeklDSFVlVUVNcUpPd2JkRVZYZDJQdGh1NFhRME1OUFVkbjBOMkFBX2p5THB2cW9zLWh1VUhodw?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNWVhOQnhfMnJxQWVzY08xLWFJeTRWOHB2UGtfMGcxTW5nV2h2b2lHOEJXVnQza0FfU1Z0ZS11eFh5ZzZvYUZ0YXpEYkIwMXpaa3czQ1NJRXBGaFNqTHB1UWtWbV93MHI5LVYzRGhLNEtoZHVwZUF3MUNjb04zWC1oRFlBTmpUUzFGSlFRQWhZd3pkSkVMeFdITG9BbV8?oc=5",
    "source": "Seoul Economic Daily",
    "feed": "Real estate cyber news",
    "region": "Global",
@@ -194,6 +194,40 @@
    "why": [
     "Microsoft 365",
     "Identity"
+   ]
+  },
+  {
+   "id": "55197cc9ace5",
+   "title": "Bettina Equities Data Breach Lawsuit Investigation",
+   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPaEtXZ0VmS2dPdEpKUnpyb1pfRVl3ei1Kd2N3T3JhSU5qU1ljdUJTbFhvVzRnbHMwcmVwbVN0WnBmRnBYck52UHhOQmYzaXNoTXJNXzBMRW13aXZySkdhcDRPNk1uR1NMWk9yNEt1TkE3SmNtX09ydHZXV1E2SlVINQ?oc=5",
+   "source": "Claim Depot",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-25T17:19:22Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "c6bd1ec8646e",
+   "title": "Bettina Equities Data Breach Exposes Social Security Numbers",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1QN0ZiNEVvbl9ZdjQwNjdNSTE4VHNKbVpRbjhLZTYyOXFRTU56bDdMUDBKUm1Vc2lsZWFnMTNGb08xLVE1cS05X1U4bXl1eWZfTjZZUUVtc1hoWHYzcEh2a3RoVFc1ZWF5YnJSd203VEo?oc=5",
+   "source": "Claim Depot",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-25T17:19:22Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
    ]
   },
   {
@@ -1379,6 +1413,23 @@
    ]
   },
   {
+   "id": "331ac2df7d66",
+   "title": "Housefishing could fool you with AI real estate photos",
+   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE11TWFRekdRQWN1UURyZ1pWMWh3SlN2VWxySkgyMDlWVWdWaWM1V1JYWmRmbkl3bmpZWm5aRmkzYi1UMWlFLW5vbG12a0d4bXNpQjlFQU9DNnJ4SmhsVW5kQnBtUEtqaVNlWERN?oc=5",
+   "source": "Kurt the CyberGuy",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-24T14:38:00Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
    "id": "230a967c24e6",
    "title": "McDonald's Japan data breach exposes customer location information",
    "link": "https://www.bleepingcomputer.com/news/security/mcdonalds-japan-data-breach-exposes-customer-location-information/",
@@ -1594,23 +1645,6 @@
    "score": 0,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "331ac2df7d66",
-   "title": "Housefishing could fool you with AI real estate photos",
-   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE11TWFRekdRQWN1UURyZ1pWMWh3SlN2VWxySkgyMDlWVWdWaWM1V1JYWmRmbkl3bmpZWm5aRmkzYi1UMWlFLW5vbG12a0d4bXNpQjlFQU9DNnJ4SmhsVW5kQnBtUEtqaVNlWERN?oc=5",
-   "source": "Kurt the CyberGuy",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-24T10:03:32Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ]
   },
   {
    "id": "06ddd1a68807",
@@ -7194,56 +7228,6 @@
    ],
    "why": [
     "Data breach"
-   ]
-  },
-  {
-   "id": "b58e8e6c37ed",
-   "title": "Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection",
-   "link": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-14T12:38:35Z",
-   "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added a high-severity security flaw impacting UnrealIRCd, an open-source Internet Relay Chat (IRC) server, to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation. The vulnerability,…",
-   "score": 5,
-   "tags": [
-    "Actively exploited",
-    "Vulnerability"
-   ],
-   "why": [
-    "Actively exploited",
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "81d88180e85b",
-   "title": "New York Man Allegedly Gambled Using a $5.7M Real Estate Scam",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQXdvRDVieTlHdlozbEF4S0t0R21tMXJOeXo2UlZPYzVocWZGNG1YLWdId2FQUVZfa0hLbVM4eDN5VEV4b2c2ckZJRjA5SWIxa1BvMWJjS3htR1R0UmprZHhvVF8zN21abE5ZdGpSbjhSZFE2RnlCTlRCYTd4RGRZQ2hDVzFtVTFFSUV0MkJTQ20yakhnUkU2cHdFekVuclpKTEFlamtiblVVYnplUjVtNERyQkRoNFk?oc=5",
-   "source": "PokerNews",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-14T12:00:00Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ],
-   "also": [
-    {
-     "source": "News Mobile",
-     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOaXNrMUxIM1ROQjBiTXItRWxIaEJVUGYwYmxfV3NPQjNvNHFUampXa2x6QmdYelh4RFc0WHFfeklMS09VU2dXYkpjSkJpNGtFeF9ScEVndXNEVm81ZDAwUDFIUFFnajFyQTlIeDdnaHFPRHFhd3k3eW14V1VOT0E3WFd2SThiNHFLLVlsVTRwQUV6YnJSaVI0cjhTdVJ1cm5VaEJfRVU4S3BHYWY4T0ZKU2l1b056TExkQUxYZGFnOHc4UQ?oc=5"
-    },
-    {
-     "source": "The Real Deal",
-     "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPQkItdzc2emdfdi1hS092aVliUnUtcUFZZ1dPWmtGVGxWalVMQ1owVUwwLUJ3aVJTbXhSLXJmSHFBUmw2R0pmYUJyajRFVnd1ZDVSRHE1ZTlyZlNmU3JTNU5ULVgyUkp5VVl6Z2hLdFZ4X1BXdzc0X0dOUkhhUmNHcUF0WXBjaXZfSURMT0c1VlZWYmZlbk9fUFNkencwdm5EX19sYWZhQ0xVbDhhdjlmYXV3SQ?oc=5"
-    },
-    {
-     "source": "Daily Mail",
-     "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNd3l5U0NXVmNBaEFCN0hsSkFWMWhqMUZ5MTdJbkVqN201NFQ4UFMwd3lsYzZlWWVLdG1UbE1GdjFwRXgtUm02eGpFUk5vdE9Xb204ZzZWdnotQndZbFNQU3h2eC1JWG5namtaNElRRE1SR2F3c3dpaXpLc1VqQVhpWXpwbm14bUhEeDgwLWdDU2s3ODdNNHRtY19rSnBJeWwySlVoRtIBqgFBVV95cUxNNDZCZFJRZmxORG9ST2dzcmhTS3pneXJXNFQ5LU1VMmhtX19yYy1GV1NGa3RUdWtkZUhKWTRSUS1RZ1Rfc0JJSlJ6ME5Dd0tUaEpwR2h3MkFkT3QzZmpzNnl0VkdGXzBTclprMUZFN3FUTHZJVi1MYXFWNEZRWG1rVzBncUwzNzlyLU9iZVZMMDVHWEFUWGs1RXpzbTY0c1Q0bEtXeV9ZRVdhUQ?oc=5"
-    }
    ]
   }
  ]
