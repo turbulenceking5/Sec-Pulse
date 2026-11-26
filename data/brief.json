@@ -1,72 +1,69 @@
 {
- "date": "2026-11-25",
- "generated": "2026-11-25T02:40:53+00:00",
- "title": "Sec-Pulse brief - Wed 25 Nov",
+ "date": "2026-11-26",
+ "generated": "2026-11-26T01:53:19+00:00",
+ "title": "Sec-Pulse brief - Thu 26 Nov",
  "items": [
   {
-   "id": "0c4445d4ccaf",
-   "title": "Okta Links ShinyHunters-Associated Vishing Group to New INCEPTION Data Leak Site",
-   "link": "https://thehackernews.com/2026/11/okta-links-shinyhunters-associated.html",
+   "id": "97a6faf096d8",
+   "title": "Oshawa suspects accused by Durham cops of using real estate scheme to steal $70K",
+   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQWFJ1WTR0VHFfRldncHZjSDA1LU80WXh0TnB2RGNCczFMUWVHamMxWmZzOHA2UmZ4QUJ1YlV5ODJiTHpsWkF4N2FzYXpkRmVZcHVJOTlzUjhyZ0RVVDVnYW85M1hJazFFRDVUcUlCazk3YUJwZ3lIV3l4RnlmdjVCUW4wblVvX09zNlR1VUJHUU9Tc1BYd3RyR1BpTS1yc0VnNEhReElHR0RnTFNodEtsOVFtVnRuNzh2SU1fRFFyYnRXUW1MT3BzWWdMRDVZRWNmaTlrdHBIUmpVdw?oc=5",
+   "source": "DurhamRegion.com",
+   "region": "Global",
+   "published": "2026-11-25T14:13:00Z",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "summary": ""
+  },
+  {
+   "id": "9bfa59db6a00",
+   "title": "Duo manage to skim victim off $70,000 in real estate scam",
+   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQaTFRZGJjTklNRm10NHNQa2NIWW1ZUnQ4Q0VacTVsM2hCOGpEVkRmLVAySi1tcGUteWhEMGsycWlXWThkaVFPYVFHY1NOUnFNX3BBank1YnFDaVU2RTlSMnh1NWZKOUhCTU1yQWpLTlhNQmp5d29JaWZLMzN2YS1lcjNqRQ?oc=5",
+   "source": "Durham Post",
+   "region": "Global",
+   "published": "2026-11-25T12:01:55Z",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "summary": ""
+  },
+  {
+   "id": "cbbfd175d78a",
+   "title": "Tech Outages Snarl Real Estate Closings Nationwide",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPekV5amVmbHY0RnM2RUg0bkxkTldpTWtrYnV1dzJibGVYeUtRbFJCdXphdkxNQ2tlUHI0b3dOUGhXcnlsZW50VU9fRU13dWtMMGVNaXlVZDlsWGdSbWFZQWlBMThxQm9QUnFaTjM2c3hMUXUtQ1VSa240MGlGUXB4MElybFY0dHFF?oc=5",
+   "source": "Wisevoter",
+   "region": "Global",
+   "published": "2026-11-25T06:47:45Z",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "summary": ""
+  },
+  {
+   "id": "7a5ea8907df3",
+   "title": "Com-Affiliated Hackers Hijack Cloud Accounts via Vishing for Data Theft and Extortion",
+   "link": "https://thehackernews.com/2026/11/com-affiliated-hackers-hijack-cloud.html",
    "source": "The Hacker News",
    "region": "Global",
-   "published": "2026-11-24T13:28:21Z",
-   "score": 15,
-   "tags": [
-    "Phishing",
-    "Ransomware",
-    "Data breach",
-    "Identity"
-   ],
-   "summary": "A threat cluster previously assessed to be affiliated with the ShinyHunters extortion crew may have rebranded and continued operations under a new name called INCEPTION, according to Okta's Threat Intelligence team. The cluster, dubbed O-UNC-053, is characterized by the use of voice phishing (aka…"
-  },
-  {
-   "id": "0bc0f9692115",
-   "title": "New Inception extortion gang launches large-scale vishing campaign",
-   "link": "https://www.bleepingcomputer.com/news/security/new-inception-extortion-gang-launches-large-scale-vishing-campaign/",
-   "source": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-24T20:21:20Z",
+   "published": "2026-11-25T06:37:06Z",
    "score": 10,
    "tags": [
     "Phishing",
     "Ransomware",
-    "Identity"
+    "Edge devices"
    ],
-   "summary": "A newly formed data extortion group named 'Inception' has been linked to a large-scale campaign that targets single sign-on (SSO) credentials of multiple global brands and firms. [...]"
+   "summary": "Palo Alto Networks Unit 42 has disclosed that it's tracking and has responded to \"numerous waves of vishing attacks\" orchestrated by Com-affiliated threat actors since August 2026 that have led to data theft and extortion attempts. The attacks have targeted financial services, healthcare, and…"
   },
   {
-   "id": "8ab707fb9348",
-   "title": "Real estate fraud in Ontario region leaves victim out $70,000",
-   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQdWt3SjZpNklWaXVESF9fYmZWWkhqVTdod2g5REtPdWQwMjNhZ0xKRzdWOV9OdXhJZDZIUHV1QWJka21PczFka0g1YXIxQm9jalFTTTlhbHV3MHVNTHFEVkJvTHRLaGFqYzdRNzJheGNiUzVtNDQzNFA4T29ZOWR2MFJFbXhFZWZBSDhrQg?oc=5",
-   "source": "insauga.com",
+   "id": "26d0e43cf289",
+   "title": "Two Oshawa residents charged in $70,000 real estate investment fraud investigation",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSVNCYVlXX183TGZEZ054SHh4WDdpWGp4WVBQd0RCWWxRVUkteUlQSS1BRWRuNEM2bkJGU2ZBd0ExMU5SVVFSd1doWFdOSXRVY1pfeDl0VmRFV1FDcVdsLWdHU1BlRmNMS29ZUW5ZcHBzVUx1ZmZSem9CazF6R1k4akx5WExrQk0tai1FaHFaUjJ1WGRZMEpUbm8zSnRqdVlQcjA5Y0FwTzBzVWlySEhfOW5QRlI3Zw?oc=5",
+   "source": "Frequency News",
    "region": "Global",
-   "published": "2026-11-24T15:38:08Z",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "1c4cdcd2e607",
-   "title": "Oshawa man and woman charged in alleged real estate scam",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPNmlrOEptQk1rSURWVjF5eG5salM5ZzB5dzlOYm5BZUw1UHlVQ3dvdFl1Y0V6YTBNcWRVa1VfWE5lMGxXWVRDSHFRNDJVb2puVk9wemN5SnpZSjQ5Ukk3ck1jSDZzR2hTdGYxTlNlajZ5aXl6UHc1UjM3MTV1bkRaaENGOFF6NGxYVk5YVV8wSURGOTdMUFRNZlo3S0E?oc=5",
-   "source": "CityNews Toronto",
-   "region": "Global",
-   "published": "2026-11-24T14:57:00Z",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "331ac2df7d66",
-   "title": "Housefishing could fool you with AI real estate photos",
-   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE11TWFRekdRQWN1UURyZ1pWMWh3SlN2VWxySkgyMDlWVWdWaWM1V1JYWmRmbkl3bmpZWm5aRmkzYi1UMWlFLW5vbG12a0d4bXNpQjlFQU9DNnJ4SmhsVW5kQnBtUEtqaVNlWERN?oc=5",
-   "source": "Kurt the CyberGuy",
-   "region": "Global",
-   "published": "2026-11-24T10:03:32Z",
+   "published": "2026-11-25T03:53:50Z",
    "score": 10,
    "tags": [
     "Real estate"
@@ -75,12 +72,12 @@
   }
  ],
  "stats": {
-  "recent": 47,
+  "recent": 63,
   "au": 0,
-  "kev": 3
+  "kev": 10
  },
  "lesson": {
-  "id": "2.1",
-  "title": "Asset discovery and vulnerability scanning"
+  "id": "2.2",
+  "title": "Reading scan output and CVSS"
  }
 }
