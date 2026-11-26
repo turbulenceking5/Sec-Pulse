@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-25T19:18:46Z",
+ "generated": "2026-11-26T01:53:09Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,7 +28,7 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 8,
+   "count": 7,
    "error": null
   },
   {
@@ -40,7 +40,7 @@
   {
    "name": "OAIC / Privacy news",
    "ok": true,
-   "count": 1,
+   "count": 0,
    "error": null
   },
   {
@@ -52,7 +52,7 @@
   {
    "name": "CISA KEV",
    "ok": true,
-   "count": 17,
+   "count": 26,
    "error": null
   },
   {
@@ -70,7 +70,7 @@
   {
    "name": "Krebs on Security",
    "ok": true,
-   "count": 4,
+   "count": 3,
    "error": null
   },
   {
@@ -100,11 +100,102 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 28,
+   "count": 37,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "50a53afadcff",
+   "title": "Palo Alto Networks warns of Fragnesia flaw exploited in PAN-OS attacks",
+   "link": "https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-fragnesia-flaw-exploited-in-pan-os-attacks/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-25T22:05:09Z",
+   "summary": "Threat actors are chaining exploits for the PHP2Shell and Fragnesia vulnerabilities to target Palo Alto Networks devices with management interfaces exposed to the internet. [...]",
+   "score": 6,
+   "tags": [
+    "Data breach",
+    "Edge devices"
+   ],
+   "why": [
+    "Data breach",
+    "Edge devices"
+   ],
+   "also": [
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/palo-alto-networks-patches-fragnesia-flaw-used-to-root-firewalls/"
+    }
+   ]
+  },
+  {
+   "id": "70f66acc3de7",
+   "title": "1Password customer data stolen after employee GitHub account breach",
+   "link": "https://www.bleepingcomputer.com/news/security/1password-customer-data-stolen-after-employee-github-account-breach/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-25T21:33:33Z",
+   "summary": "1Password has disclosed a data breach after a an employee's corporate GitHub account was hacked and used to deploy malicious code to the company's backend services to steal customer data. [...]",
+   "score": 4,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "e30a0fea2030",
+   "title": "KEPCO Offers Free Identity Theft Protection After Data Breach",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNTjNWOURnUHhEVFJEX1NTaUVGdWczME04NlhTUHE0N2dEOHJZclhMdnk3QVR0T0JOWTlidnUwYktCYzBVM1JkLS1UN3hHd0NOanN2c19YREVhQ2ltX0FkV0N5c1VNMjRzeklDSFVlVUVNcUpPd2JkRVZYZDJQdGh1NFhRME1OUFVkbjBOMkFBX2p5THB2cW9zLWh1VUhodw?oc=5",
+   "source": "Seoul Economic Daily",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-25T21:26:09Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "63da0c2dc091",
+   "title": "Italy and Switzerland warn of autonomous AI-driven cyberattacks",
+   "link": "https://www.bleepingcomputer.com/news/security/italy-and-switzerland-warn-of-autonomous-ai-driven-cyberattacks/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-25T19:39:31Z",
+   "summary": "Swiss and Italian cybersecurity agencies are warning about automated cyberattacks powered by AI agents targeting organizations in the critical infrastructure sector. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "fc1fe5cb80de",
+   "title": "What defenders need to know about ARTEX, the agentic AI framework threat actors abuse",
+   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/25/what-defenders-need-to-know-artex-agentic-ai-framework-threat-actors-abuse/",
+   "source": "Microsoft Security Blog",
+   "feed": "Microsoft Security Blog",
+   "region": "Global",
+   "published": "2026-11-25T18:09:06Z",
+   "summary": "The AI-powered penetration testing framework ARTEX has been abused by threat actors like Storm-0940, Storm-3358, Onyx Sleet, Pearl Sleet, Crystal Typhoon, and Salt Typhoon to accelerate their existing workflows related to network reconnaissance, credential attacks, and web application…",
+   "score": 7,
+   "tags": [
+    "Microsoft 365",
+    "Identity"
+   ],
+   "why": [
+    "Microsoft 365",
+    "Identity"
+   ]
+  },
   {
    "id": "2bc53ab48fab",
    "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Email Security",
@@ -295,6 +386,23 @@
    "score": 0,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "149ecc0c13dd",
+   "title": "US Treasury hit with cyberattack hours after CIA breach",
+   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPckZHdXg4OEdvblU2QVdtZjVFTGE0b3hkVTdUdElueUZuODVVM2FLNmJZS2theEZ2MzNCRGlEV08xOUlNZGY1ZXdYRVRNcVRoM19WMDU2ODZ2MDRHaGtELUdZeTM1bzFMSjM1Uy1fSmdjWDBZT3prMmYxSy0zbHptRw?oc=5",
+   "source": "Cybernews",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-25T13:04:18Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
   },
   {
    "id": "92db407f26f0",
@@ -499,25 +607,6 @@
    ]
   },
   {
-   "id": "6a20b92f56aa",
-   "title": "Palo Alto Networks Patches Fragnesia Flaw Used to Root Firewalls",
-   "link": "https://www.securityweek.com/palo-alto-networks-patches-fragnesia-flaw-used-to-root-firewalls/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-25T08:12:24Z",
-   "summary": "A China-linked hacking group chained PHP2Shell with Fragnesia in AI-assisted attacks that hit 25 servers. The post Palo Alto Networks Patches Fragnesia Flaw Used to Root Firewalls appeared first on SecurityWeek .",
-   "score": 5,
-   "tags": [
-    "Edge devices",
-    "Vulnerability"
-   ],
-   "why": [
-    "Edge devices",
-    "Vulnerability"
-   ]
-  },
-  {
    "id": "f44f10d640ae",
    "title": "Drupal Flaw Found by Anthropic Scanner Exploited in Attacks",
    "link": "https://www.securityweek.com/drupal-flaw-found-by-anthropic-scanner-exploited-in-attacks/",
@@ -532,6 +621,23 @@
    ],
    "why": [
     "Vulnerability"
+   ]
+  },
+  {
+   "id": "3bc6f96dec95",
+   "title": "Hackers reportedly breached CIA intelligence analysis system",
+   "link": "https://www.bleepingcomputer.com/news/security/hackers-reportedly-breached-cia-intelligence-analysis-system/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-25T07:45:03Z",
+   "summary": "Unknown attackers have reportedly breached an open-source intelligence analysis system at the US Central Intelligence Agency (CIA) [...]",
+   "score": 4,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
    ]
   },
   {
@@ -754,6 +860,186 @@
     "Vulnerability"
    ],
    "epss": 0.0086
+  },
+  {
+   "id": "e1ea85113595",
+   "title": "CVE-2026-133469: Vates Xen Orchestra — Vates Xen Orchestra Improper Validation of Specified Type of Input Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-133469",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-11-25T00:00:00Z",
+   "summary": "Vates Xen Orchestra contains an improper validation of specified type of input vulnerability that could allow an unauthenticated attacker to bypass authentication and perform actions with administrative privileges via a specially crafted authentication token… CISA remediation due 2026-11-28.",
+   "score": 4,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.011
+  },
+  {
+   "id": "572924241b90",
+   "title": "CVE-2025-41450: Danfoss AK-SM 800A Series — Danfoss AK-SM 800A Series Improper Authentication Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2025-41450",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-11-25T00:00:00Z",
+   "summary": "Danfoss AK-SM 800A Series contains an improper authentication vulnerability that could allow an attacker to generate a web report exposing sensitive information, including internal IP addresses, usernames, and store names. CISA remediation due 2026-12-09.",
+   "score": 4,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0051
+  },
+  {
+   "id": "9be7385a0d24",
+   "title": "CVE-2023-25914: Danfoss AK-SM 800A Series — Danfoss AK-SM 800A Series Path Traversal Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-25914",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-11-25T00:00:00Z",
+   "summary": "Danfoss AK-SM 800A Series contains a path traversal vulnerability that could allow an attacker to access and read underlying server system files via the XML interface. CISA remediation due 2026-11-28.",
+   "score": 4,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0108
+  },
+  {
+   "id": "55254ad04764",
+   "title": "CVE-2023-25915: Danfoss AK-SM 800A Series — Danfoss AK-SM 800A Series Improper Input Validation Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2023-25915",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-11-25T00:00:00Z",
+   "summary": "Danfoss AK-SM 800A Series contains an improper input validation vulnerability that could allow a remote attacker to run arbitrary commands on the affected system. CISA remediation due 2026-11-28.",
+   "score": 4,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0143
+  },
+  {
+   "id": "2f79e0b49840",
+   "title": "CVE-2026-133324: Mitel MiCollab — Mitel MiCollab Not Failing Securely Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-133324",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-11-25T00:00:00Z",
+   "summary": "Mitel MiCollab contains a not failing securely vulnerability in the Audio, Web and Video Conferencing (AWV) component that could allow an unauthenticated attacker to bypass authentication controls and perform unauthorized actions. CISA remediation due 2026-11-28.",
+   "score": 4,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0041
+  },
+  {
+   "id": "b1a94c395587",
+   "title": "CVE-2026-133275: Mitel MiCollab — Mitel MiCollab Unrestricted Upload of File with Dangerous Type Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-133275",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-11-25T00:00:00Z",
+   "summary": "Mitel MiCollab contains an unrestricted upload of file with dangerous type vulnerability in the Audio, Web and Video Conferencing (AWV) component due to insufficient file type validation that could allow an unauthenticated attacker to upload arbitrary files. CISA remediation due 2026-11-28.",
+   "score": 4,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0032
+  },
+  {
+   "id": "eb7934885f30",
+   "title": "CVE-2026-133311: Mitel MiCollab — Mitel MiCollab Weak Authentication Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-133311",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-11-25T00:00:00Z",
+   "summary": "Mitel MiCollab contains a weak authentication vulnerability in the Audio, Web and Video Conferencing (AWV) component that could allow an unauthenticated attacker to access sensitive information using a specific system-generated random identifier or… CISA remediation due 2026-12-09.",
+   "score": 4,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.004
+  },
+  {
+   "id": "1c919f9755bd",
+   "title": "CVE-2026-133303: Mitel MiCollab — Mitel MiCollab XML Injection Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-133303",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-11-25T00:00:00Z",
+   "summary": "Mitel MiCollab contains an XML injection vulnerability in its Audio, Web, and Video Conferencing (AWV) component that could allow an unauthenticated attacker to execute arbitrary commands using pre-staged malicious content. CISA remediation due 2026-11-28.",
+   "score": 4,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0052
+  },
+  {
+   "id": "934910d42889",
+   "title": "CVE-2026-133323: Mitel MiCollab — Mitel MiCollab OS Command Injection Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-133323",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-11-25T00:00:00Z",
+   "summary": "Mitel MiCollab contains an improper neutralization of special elements used in an OS command (OS command injection) vulnerability in its Audio, Web, and Video Conferencing (AWV) component that could allow an unauthenticated attacker to execute arbitrary… CISA remediation due 2026-11-28.",
+   "score": 4,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ],
+   "epss": 0.0255
   },
   {
    "id": "ac5a3294d776",
@@ -6957,277 +7243,6 @@
     {
      "source": "Daily Mail",
      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNd3l5U0NXVmNBaEFCN0hsSkFWMWhqMUZ5MTdJbkVqN201NFQ4UFMwd3lsYzZlWWVLdG1UbE1GdjFwRXgtUm02eGpFUk5vdE9Xb204ZzZWdnotQndZbFNQU3h2eC1JWG5namtaNElRRE1SR2F3c3dpaXpLc1VqQVhpWXpwbm14bUhEeDgwLWdDU2s3ODdNNHRtY19rSnBJeWwySlVoRtIBqgFBVV95cUxNNDZCZFJRZmxORG9ST2dzcmhTS3pneXJXNFQ5LU1VMmhtX19yYy1GV1NGa3RUdWtkZUhKWTRSUS1RZ1Rfc0JJSlJ6ME5Dd0tUaEpwR2h3MkFkT3QzZmpzNnl0VkdGXzBTclprMUZFN3FUTHZJVi1MYXFWNEZRWG1rVzBncUwzNzlyLU9iZVZMMDVHWEFUWGs1RXpzbTY0c1Q0bEtXeV9ZRVdhUQ?oc=5"
-    }
-   ]
-  },
-  {
-   "id": "f694138aff43",
-   "title": "Apple Reveals How Secure Exclaves Shield Camera and Microphone Data",
-   "link": "https://www.securityweek.com/apple-reveals-how-secure-exclaves-shield-camera-and-microphone-data/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-14T11:00:00Z",
-   "summary": "The tech giant has detailed the architecture designed to isolate ambient sensor data from the main OS on HomeView and new iPhones. The post Apple Reveals How Secure Exclaves Shield Camera and Microphone Data appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "271096a5ff8c",
-   "title": "KOMSCO regional gift certificate platform \"Chak\" suffers personal data breach affecting 3,083 users",
-   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB5TmpBcHFoQmI0VTZpcklMOU8tRmZiNTRiN21vUWVCUnJfakd5dU00WlNHcGFDUFBrejFub01HWmJGNk1pTk1hMDQ2eUx2MDZieXYybnRYRHA4R1k3LTFWMDdn?oc=5",
-   "source": "재경일보",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-14T09:55:04Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "9cdb1de4d486",
-   "title": "No Signs of Hacking in FAA Ground Stop as FBI Reportedly Probes Software Update",
-   "link": "https://www.securityweek.com/no-signs-of-hacking-in-faa-ground-stop-as-fbi-reportedly-probes-software-update/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-14T08:40:22Z",
-   "summary": "Officials say there is no evidence of a cyberattack behind the nationwide FAA outage, which may have been caused by a software update. The post No Signs of Hacking in FAA Ground Stop as FBI Reportedly Probes Software Update appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "2cf87a19124d",
-   "title": "As Test Takers Turn to AI, Exam Security Plays Catch-Up",
-   "link": "https://www.darkreading.com/cybersecurity-operations/test-takers-ai-exam-security-catch-up",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-11-13T22:27:00Z",
-   "summary": "It's hard to detect whether someone is using artificial intelligence to cheat on IT certification exams, but new tools and processes are emerging to boost trust.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "11d7cc16194d",
-   "title": "FAA Ground Stop Issued Due to ‘Extraordinary Circumstances’",
-   "link": "https://www.securityweek.com/faa-ground-stop-issued-due-to-extraordinary-circumstances/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-13T21:33:27Z",
-   "summary": "Federal officials have yet to say what caused the communications disruption or whether they are investigating a possible cyberattack. The post FAA Ground Stop Issued Due to ‘Extraordinary Circumstances’ appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "78498214505c",
-   "title": "SCKit abuses ScreenConnect to deploy remote access and target technician sessions",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/13/sckit-abuses-screenconnect-deploy-remote-access-target-technician-sessions/",
-   "source": "Microsoft Security Blog",
-   "feed": "Microsoft Security Blog",
-   "region": "Global",
-   "published": "2026-11-13T21:31:44Z",
-   "summary": "SCKit abuses ScreenConnect to deploy unauthorized remote access and target technicians. Explore the attack chain, mitigations, and Microsoft Defender XDR hunting. The post SCKit abuses ScreenConnect to deploy remote access and target technician sessions appeared first on Microsoft Security Blog .",
-   "score": 4,
-   "tags": [
-    "Microsoft 365"
-   ],
-   "why": [
-    "Microsoft 365"
-   ],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/11/sckit-malware-targets-screenconnect.html"
-    },
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/new-worm-like-sckit-malware-targets-msps-in-screenconnect-attacks/"
-    }
-   ]
-  },
-  {
-   "id": "fa2dbd672e87",
-   "title": "Phillipsburg Police Warn Residents of Fake Rental Listing Scams on TikTok and Social Media",
-   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOUjdRRm9hSnBhUGhEOGo2VGRFdk5MdWJ0WG9aMHNQWGloLXA1YUIwYW1SZ29hVVZ1QjhyMW9EVG9ibnZwU2NBQ0tudW1CMllCM0lGeHl6b2ExdzMybDNkX3BwY0VuWjlFeVotMGFmbVlkZ2drUmtlUWpMZHZYNE4yaXNIb3JPdFRHVmhjZFRpVkM3cl9mVllJNmxTSk80MFQ2cTVWdkZmcGdfWnBRd3RsRkdicTlfTXF1VjZyVW5tSTd1MVU1V0FjNXVCYnpkaDltN3FOM0JDXzJCUQ?oc=5",
-   "source": "TAPinto",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-13T21:27:06Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ],
-   "also": [
-    {
-     "source": "Cleveland 19 News",
-     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQbWRob2F4SkhKMm96cHpUdEVnVC1CWGtrTWFKN1dUMzdQYXNtNE1PUXBuSEFyZUlMTWxrenBaUzNmR2ZwUlhSalZnNFlZNXpLYXFjVDdmcmM3Mm5EOFE2RHMxMGFYcno3LVZhV0Q1OERsY2o4ZHVSQ3l0bS02bUwtRzlGbTVWNnl4MnltQVJCaWdFcjktcklrRU9HUHN3MktTdk1pV1lQVHdNeUszTGhybk0wWnkxamltdGpubmR3SEprcVU?oc=5"
-    },
-    {
-     "source": "CTV News",
-     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVDczbWNJMFdWYWpOdEREM0IzeEdac2p6ZkZ1eGY3dVQ1czBmZ21hYTB0TlEtMFB6YlNtbF9MSDI4NUkwZzM3clA1M1JPVmkzZ3piRTZwUWFuMjk3MVBqdWlKbmhCSFZmcy02Z1VHY1FvSlY0MGxuMnZlVmpsUUM2a05ETGNiSThkR3M2cGtHWkcyVzdyUVdXX3JWNUx6NEVHalVv?oc=5"
-    },
-    {
-     "source": "Barrie News",
-     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPLTNWUkdyUk5DMzFWWnZiRVdFTUlXMjNHVlpLdFp5M1VRc2xFMDF2b3h1YjNzSDE2eVB2RWdFc25NTjlXZW5McWVTRUNSbE4yWk5raGtOZ3dQcUJ6MXcwQkxnRHk2Wk84eGJqdEE2QTJrVEhjSV9lRDZDVy1TU2hudGRTYklGSERsMGo4X3pvRkE1cG8xaV91c1ZGMy1pUTAycUo2YWVuSnBSdlFlRnc?oc=5"
-    },
-    {
-     "source": "MidlandToday.ca",
-     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOSnc3S1p4WVBhaElUd1JhRFMteTctOU8zNGNXWG9YcjFid3IzblU1ZkZDU193RmFJVGlmZHVrTTdINmMzdlpOMFZsN1NLYVhuLVJ1V01wbTc3N3kxVXJKcEdFaHJZQzhmcnRMWGRYOWNZR29mT3VmclZGb3pKbmF0OTI2WHEtZ2NkZzFqd0hpZFF6X2lSUW4wZS1HVW5sSkg3TWsweWtQS1J2NFBmdnc?oc=5"
-    }
-   ]
-  },
-  {
-   "id": "e12779d5806a",
-   "title": "ArcticRAT Cybercrime Gang Profiles Victim Finances With AI",
-   "link": "https://www.darkreading.com/mobile-security/arcticrat-cybercrime-gang-profiles-victim-finances-ai",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-11-13T20:20:27Z",
-   "summary": "The Android malware has expanded from focusing on cryptocurrency theft to full device control, and the attackers have added advanced analysis of stolen information.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "ee274201614e",
-   "title": "Trezor confirms crypto-stealing implants in three wallets, releases fix",
-   "link": "https://www.bleepingcomputer.com/news/cryptocurrency/trezor-confirms-crypto-stealing-implants-in-three-wallets-releases-fix/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-13T19:38:36Z",
-   "summary": "Cryptocurrency hardware wallet maker Trezor has confirmed that three Safe 5 devices sold by Southeast Asian reseller CryptoBilis contained malicious hardware implants designed to steal wallet recovery phrases and send them to attackers over cellular networks. [...]",
-   "score": 0,
-   "tags": [],
-   "why": [],
-   "also": [
-    {
-     "source": "The Hacker News",
-     "url": "https://thehackernews.com/2026/11/trezor-confirms-hidden-hardware.html"
-    }
-   ]
-  },
-  {
-   "id": "f6f4a6d64aa8",
-   "title": "German military drone operations disrupted by cyberattack",
-   "link": "https://www.bleepingcomputer.com/news/security/german-military-drone-operations-disrupted-by-cyberattack/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-13T17:31:56Z",
-   "summary": "German defense technology company Quantum Systems confirmed that it detected an incident in late October that was part of an active cyberattack by \"hostile actors.\" [...]",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "e05f7a78ce38",
-   "title": "PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE",
-   "link": "https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-13T16:53:08Z",
-   "summary": "A type confusion flaw in PostgreSQL lets a database user who can create objects run code on the server. Updates released yesterday fix it, along with 51 other security flaws. Full protection from this flaw also requires rebuilding any C-language extensions installed on the server. The flaw,…",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "fb5ac890be2a",
-   "title": "New Mior and Skyfall Attacks Let Rogue Cloud Hosts Steal Secrets From AMD SEV-SNP VMs",
-   "link": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-13T15:27:05Z",
-   "summary": "Two attacks made public this week allow a malicious host to read data inside AMD SEV-SNP-protected virtual machines (VMs), which are built to keep the server's operator out. One of them, Mior, can also modify a VM's memory and fake the signed report confirming which software it runs. Both need…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "c3cb9f990617",
-   "title": "In Other News: New CISA Director Nominee, Connected Car Hacking, Baker Tilly Data Breach",
-   "link": "https://www.securityweek.com/in-other-news-new-cisa-director-nominee-connected-car-hacking-baker-tilly-data-breach/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-13T15:20:00Z",
-   "summary": "Noteworthy stories that might have slipped under the radar: Siemens details security advisory policy, OpenAI Codex backdoor risk, Microsoft warns of model weight backdoors. The post In Other News: New CISA Director Nominee, Connected Car Hacking, Baker Tilly Data Breach appeared first on…",
-   "score": 4,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ],
-   "also": [
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/baker-tilly-notifies-clients-of-data-breach-at-third-party-provider/"
-    }
-   ]
-  },
-  {
-   "id": "db3fd3a5adb8",
-   "title": "How one AI agent exposed five critical enterprise security gaps",
-   "link": "https://www.bleepingcomputer.com/news/security/how-one-ai-agent-exposed-five-critical-enterprise-security-gaps/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-13T15:01:11Z",
-   "summary": "An AI agent built to automate invoice processing could be manipulated into changing vendor bank details through a malicious email, without triggering traditional security alerts. Token Security examines five critical AI agent security gaps and shares practical guidance from industry security…",
-   "score": 9,
-   "tags": [
-    "BEC / payment fraud",
-    "Data breach"
-   ],
-   "why": [
-    "BEC / payment fraud",
-    "Data breach"
-   ]
-  },
-  {
-   "id": "bd6202421982",
-   "title": "Waiter Says Contractor Scam Cost Him $40K, Then Builds Rentals With $13K Monthly Cash Flow. ‘I Don’t Want To Go Back To Being On The Hustle’",
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPYVNaLWpURWtvRVR3WHBxSzczWGtsLUVGTEgtc1pjcDNwZjVNanJmc3VZekVBYzNwTFd3T0FlUFc5VjhaLWRMZmFTTkdiclBuMU9QQlA0OW0wT0swUzN1dnc4RFh1QlhuN21zNC1mZVpZY3pOaUlwajg2d1NVREZ4S0Jlb3AxWEtYYldzempYRkEyRTdha0xDaS1n?oc=5",
-   "source": "Yahoo Finance",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-13T15:00:07Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ],
-   "also": [
-    {
-     "source": "Benzinga",
-     "url": "https://news.google.com/rss/articles/CBMisAJBVV95cUxNNGdVNVBlcUFrZFBaSXlIakRROXdlT1JrSWs4dnFOVUNnY2RIVDY4YlIxajBBUmxLUDZJNXpkNGpUVFFlbkIyYUlsNng3YXR4aGUycUhzZ2pSSGp5Uy1xTzNhaEJwWTRFcllrUFMtNlVBM3pnM05VVnlGVmx4ekJZMk9IUHVsMFJqZFFSTDFOaEVmcll3YjBUaEw2QkdFZ2gxeDBQUGk5bmxPaDVXTzlHNlNyMGhEQk1pR19nb09MM0JVN2FzemlBS3JtWWZKdTl0V1B6SkY1T2JyM1FVUzVsakc0ZVRseEQwRnpJdndZNUNaZ3dZQ1lQQ0c0YUlySDQwWTJxRWNKa0pNanNZNHlzeVR6Z0taWFRZaThETnlIUHJiWG1sWmNaMFprUjEzemlF?oc=5"
     }
    ]
   }
