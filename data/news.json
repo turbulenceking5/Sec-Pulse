@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-26T16:56:55Z",
+ "generated": "2026-11-27T01:44:53Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,13 +28,13 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 10,
+   "count": 9,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 7,
+   "count": 6,
    "error": null
   },
   {
@@ -70,7 +70,7 @@
   {
    "name": "Krebs on Security",
    "ok": true,
-   "count": 3,
+   "count": 2,
    "error": null
   },
   {
@@ -82,7 +82,7 @@
   {
    "name": "Microsoft Security Blog",
    "ok": true,
-   "count": 9,
+   "count": 8,
    "error": null
   },
   {
@@ -105,6 +105,180 @@
   }
  ],
  "items": [
+  {
+   "id": "052535ca7277",
+   "title": "Flight Centre investigates data breach linked to third-party booking system",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQRktWOHgzY2Zrekk3MmFCTjViRThZblVmcXhJSGkyQlZLNzl4TXNPWFczeWJoemlhWExZRG95TkJlczhEMjFvRFZCZ0RVLWlFSV9HNFZrM2FvR2s4cHJwMUZ3NW94dzk5MWJick5NUURNWmxCcDFTeTJHZWpTQXdMMHZ6WUZBYlpLS3owTkpxZFZvWGlyWUZpVDV5QXRIcFRlNWh5WnV2Tk9OMzZaWE1lRUcwcXBZem9scUxXRTZOajY?oc=5",
+   "source": "Australian Cyber Security Magazine",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-26T23:34:36Z",
+   "summary": "",
+   "score": 9,
+   "tags": [
+    "Data breach",
+    "SaaS / cloud"
+   ],
+   "why": [
+    "Data breach",
+    "SaaS / cloud"
+   ],
+   "also": [
+    {
+     "source": "Wisevoter",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOMWY2LWpDakpQb1ZPZWtJRmVsMnNrNkxqOVFiLVUyeERoM0IyNFE3bEctVFNGOWcwMEI3WkFCMm1DSDEyckN6MDJac0FlR3pEWGNKOVRVZW5ORmF6eGYyMGVJTWdteXRfVnBZd2dOaEVNZHZ4UXNhNmUyWGJ2aEcxcWQxNEdUZ0x5cTRLR0VwQWd3TUpf?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "cb98e5aed91f",
+   "title": "Break or breach? Small organisations need to understand their digital exposure first",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQbTVEeG1zdXpBWllraC1KTVhBNTY1bUs3bjhqVnhSZzY3Z3lxQ1RIVFRwbW5kOHFQNndvMlhXejNsS2lZZVB4LUVqTENKU3J3NGdYREMxZHpOWEpUU0VuMDljRjY2eV96UTVqVmRYc1BGT2lkbTQtc0FLaV9PTHh0VVl1Z0swZVFqYlhOQUFRZy1MSkt3QUJ5aU5DUm5YVktYNDkteUFLaWxWSUMzX0xfV042eG9DRXpoTVE?oc=5",
+   "source": "SecurityBrief Australia",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-26T21:45:00Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "98798961113d",
+   "title": "Standard Chartered's Crypto Unit Suffers Data Breach Just Weeks After Bank Agreed To Take Full Ownership",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPNXlFSlp5cVlDWWhUcnVqdmZrbzAxbnpMdnptVUZFa3FKQVBXdnlGNFI4QjFGQldoejhGNWJIVkx3Zm5tdEVobDNuM3hQZjAxdjVLVFJ1UndjV29NdGcwcXluSzg1TjdSSDA1UjhDWVpoUlNZaTREZXY0MUZqbTZGcXlKdkdiQzRwU1ZDNDRORWhQd2N6cXVKTnNiNmplV3B5eUhwaXgwSQ?oc=5",
+   "source": "Yahoo Finance",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-26T21:30:39Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "e0bf93ab8a32",
+   "title": "OpenAI warns GPT-6.2 Astra will hit usage limits 40% faster because it fixed a bug",
+   "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-warns-gpt-62-astra-will-hit-usage-limits-40-percent-faster-because-it-fixed-a-bug/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-26T21:06:22Z",
+   "summary": "OpenAI confirmed that it fixed a 'bug' that incorrectly discounted GPT-6.2 usage, which means you'll now hit GPT usage limits 40% faster than before. [...]",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "9d95fd2c0f1b",
+   "title": "Flight Centre investigating cyber incident that exposed personal data and passport details",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQZDVKUnF4b2w5TXlKTkhRM3BnQ1UtTFhJbk1UZ1BxcHZDMVM1RFpmZENiSllZOE53Mi1ZdmJfMHdobF9rYzZLM1VUYVhyOEV6WGdEM2NfOHo2bUFxSDJIOU1xUDFkc1Z6T1dRVVo1VjZTUWJpaXFORU51RVVwX3htUTNJOWRZa09XcklGTGR6WnZNbEJlM2pCbldUUWk1YUdyc296RUgwV1ZZeEkwelVqQjVlYWZfWWpVQ29MMkJfbmI5ZG9NWThNQ2JaWQ?oc=5",
+   "source": "RNZ",
+   "feed": "AU breach news",
+   "region": "Global",
+   "published": "2026-11-26T20:51:51Z",
+   "summary": "",
+   "score": 6,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ],
+   "also": [
+    {
+     "source": "7NEWS",
+     "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPek1JVnZlMWViQi01elpNYVJqdTJYTVFKcjZRNVVWVGZyMzg3ZWxEOUFUSjZiVTlXUklxRUxmSlh1ZWg4NmgyMVRWZzhrZWVHNDk0QmpDNHVCMjRWQTFXd2VDb0Z0dHJZSHNpYTdsc3NNYTdpdC1BWG5aVTJTbW9MYVpnODdRYkJ4eFFMaFlfTmZacEx3RV9VSGlWbVNRelVPMVBRZWV3Y3J5RjJnU3FaS1VkUDljZHZyMHpQdmVzZGNBaUNoOXNHTVdKS2lzVVhpUE91OU9IUjUzWmw3alhIYtIB5gFBVV95cUxOdnNXLUdZYnBnVFpfTDdGSWk1bUc5RUx6cjN4WHM0dnFnY25OU1FXM2pnMkpkcTZXM2Y5LV9GNmlVSWRwR1FCNXZQM3hwazk2c0s3SHplN2dlMmRoTHc1X0FCY29DaFNEM2U1VkVCVHVEWnNNUlFObEx1UGtxaXVEallWSm9obHhZU19DeFhIdkUtdTRPaDBJajFrUmVXa1BGN0I4SDlMOVhLcUlrMFB3d3FHbThqZllZZ19yVWpWNEl5UU13M1RLSnMwR0txUndaM1JDQmo2MU1HRkJWZXM3ODB3RnhTQQ?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "2cde4a64c5de",
+   "title": "ThreatsDay: 10M NGINX Services at Risk, 250+ Malicious Extensions, AI Server Hijacking + 17 More Stories",
+   "link": "https://thehackernews.com/2026/11/threatsday-250-rogue-extensions-10m.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-26T19:39:57Z",
+   "summary": "A website can look perfectly fine to the person running it. Log out, visit the same page, and things might look different. Something similar is happening with browser extensions, where even the way you find and install one can change what it does. Checking whether software works as expected only…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "95036b9af284",
+   "title": "1Password breach exposed account data, not vaults",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPYk84dmxMYXFrWGdhSmRST25DdFQ3ZHdBME9kUFpRVUV4TkIyaFc3YjB2MldLYUZsUVF2MG5nYm5DZ3MxU2ZGQjliT0RyY2Nvb3F3QTM3Zl93VC03aGNRR3lWdXlUdy1aOUhOLUxQT01lM2pHQmpfT3pIWEVrVUpaVDBnc3JaekhwUFpRbERQVF9hZw?oc=5",
+   "source": "Briefs Finance",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-26T18:15:00Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "1c0fdc3979bb",
+   "title": "NordVPN Black Friday Deal: Get 78% off VPN plans in 2026",
+   "link": "https://www.bleepingcomputer.com/news/security/nordvpn-black-friday-deal-get-78-percent-off-vpn-plans-in-2026/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-26T17:58:42Z",
+   "summary": "NordVPN's 2026 Black Friday and Cyber Monday deal is now live, offering savings of up to 78% on VPN subscriptions, plus three extra months of protection. [...]",
+   "score": 3,
+   "tags": [
+    "Edge devices"
+   ],
+   "why": [
+    "Edge devices"
+   ]
+  },
+  {
+   "id": "42756c94ced7",
+   "title": "Fake paid expert interviews impersonate brands to steal Google logins",
+   "link": "https://www.bleepingcomputer.com/news/apple/fake-paid-expert-interviews-impersonate-brands-to-steal-google-logins/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-26T17:15:27Z",
+   "summary": "An ongoing phishing campaign dubbed \"GoodGuys\" impersonates major brands, including Google, Nvidia, Accenture, and SpaceX, to steal corporate Google and Okta credentials using fake invitations to paid expert interviews and webinars. [...]",
+   "score": 5,
+   "tags": [
+    "Phishing",
+    "Identity"
+   ],
+   "why": [
+    "Phishing",
+    "Identity"
+   ]
+  },
+  {
+   "id": "8399c78e0a54",
+   "title": "FIFA Says It Has Been Victim of a Cyberattack Accessing ‘Personal and Business Information’",
+   "link": "https://www.securityweek.com/fifa-says-it-has-been-victim-of-a-cyberattack-accessing-personal-and-business-information/",
+   "source": "SecurityWeek",
+   "feed": "SecurityWeek",
+   "region": "Global",
+   "published": "2026-11-26T17:06:55Z",
+   "summary": "FIFA didn’t say when the cyberattack took place, or the precise nature of the hacked information. The post FIFA Says It Has Been Victim of a Cyberattack Accessing ‘Personal and Business Information’ appeared first on SecurityWeek .",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
   {
    "id": "17ea7e9dd6a3",
    "title": "Remus malware steals Gmail messages via fake Google Sheets extension",
@@ -381,23 +555,6 @@
    ]
   },
   {
-   "id": "476933662552",
-   "title": "Travel giant Flight Centre hit by cyber attack with customer passport details potentially exposed",
-   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPek1JVnZlMWViQi01elpNYVJqdTJYTVFKcjZRNVVWVGZyMzg3ZWxEOUFUSjZiVTlXUklxRUxmSlh1ZWg4NmgyMVRWZzhrZWVHNDk0QmpDNHVCMjRWQTFXd2VDb0Z0dHJZSHNpYTdsc3NNYTdpdC1BWG5aVTJTbW9MYVpnODdRYkJ4eFFMaFlfTmZacEx3RV9VSGlWbVNRelVPMVBRZWV3Y3J5RjJnU3FaS1VkUDljZHZyMHpQdmVzZGNBaUNoOXNHTVdKS2lzVVhpUE91OU9IUjUzWmw3alhIYtIB5gFBVV95cUxOdnNXLUdZYnBnVFpfTDdGSWk1bUc5RUx6cjN4WHM0dnFnY25OU1FXM2pnMkpkcTZXM2Y5LV9GNmlVSWRwR1FCNXZQM3hwazk2c0s3SHplN2dlMmRoTHc1X0FCY29DaFNEM2U1VkVCVHVEWnNNUlFObEx1UGtxaXVEallWSm9obHhZU19DeFhIdkUtdTRPaDBJajFrUmVXa1BGN0I4SDlMOVhLcUlrMFB3d3FHbThqZllZZ19yVWpWNEl5UU13M1RLSnMwR0txUndaM1JDQmo2MU1HRkJWZXM3ODB3RnhTQQ?oc=5",
-   "source": "7NEWS",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-11-26T05:02:00Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
    "id": "98bf0c432201",
    "title": "13 Malicious NuGet Packages Turn Fake .NET Job Assessments Into Malware Delivery Traps",
    "link": "https://thehackernews.com/2026/11/13-malicious-nuget-packages-turn-fake.html",
@@ -414,23 +571,6 @@
      "source": "Dark Reading",
      "url": "https://www.darkreading.com/threat-intelligence/attackers-net-developers-poisoned-job-assessments"
     }
-   ]
-  },
-  {
-   "id": "41f69e73cc43",
-   "title": "Flight Centre Flags Breach in Booking System",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOMWY2LWpDakpQb1ZPZWtJRmVsMnNrNkxqOVFiLVUyeERoM0IyNFE3bEctVFNGOWcwMEI3WkFCMm1DSDEyckN6MDJac0FlR3pEWGNKOVRVZW5ORmF6eGYyMGVJTWdteXRfVnBZd2dOaEVNZHZ4UXNhNmUyWGJ2aEcxcWQxNEdUZ0x5cTRLR0VwQWd3TUpf?oc=5",
-   "source": "Wisevoter",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-11-26T02:18:08Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
    ]
   },
   {
@@ -1780,13 +1920,13 @@
     "Actively exploited",
     "Vulnerability"
    ],
+   "epss": 0.0061,
    "also": [
     {
      "source": "SecurityWeek",
      "url": "https://www.securityweek.com/vmware-updates-patch-critical-esx-vcenter-vulnerabilities/"
     }
-   ],
-   "epss": 0.0061
+   ]
   },
   {
    "id": "0c4445d4ccaf",
@@ -5319,23 +5459,6 @@
    ]
   },
   {
-   "id": "dfcd48a830ee",
-   "title": "Russian APT Poses as Employee of Hacked Firm to Breach Another US Organization",
-   "link": "https://www.securityweek.com/russian-apt-poses-as-employee-of-hacked-firm-to-breach-another-us-organization/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-18T13:33:47Z",
-   "summary": "Star Blizzard weaponized data and identities stolen in late 2025 to phish and compromise a US organization. The post Russian APT Poses as Employee of Hacked Firm to Breach Another US Organization appeared first on SecurityWeek .",
-   "score": 4,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
    "id": "2c1ddb51a4dc",
    "title": "Last of Five Defendants Sentenced in US Scattered Spider Hacking Case",
    "link": "https://www.securityweek.com/last-of-five-defendants-sentenced-in-us-scattered-spider-hacking-case/",
@@ -5667,6 +5790,12 @@
    "why": [
     "Data breach",
     "SaaS / cloud"
+   ],
+   "also": [
+    {
+     "source": "SecurityWeek",
+     "url": "https://www.securityweek.com/russian-apt-poses-as-employee-of-hacked-firm-to-breach-another-us-organization/"
+    }
    ]
   },
   {
@@ -7129,133 +7258,6 @@
    "score": 0,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "9d8b7182f62b",
-   "title": "Uber Data Breach Impacts 150,000 People",
-   "link": "https://www.securityweek.com/uber-data-breach-impacts-150000-people/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-16T11:02:48Z",
-   "summary": "Hackers compromised a third-party services provider and stole names, addresses, and driver’s license numbers. The post Uber Data Breach Impacts 150,000 People appeared first on SecurityWeek .",
-   "score": 6,
-   "tags": [
-    "Data breach",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Data breach",
-    "SaaS / cloud"
-   ],
-   "also": [
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/uber-notifies-drivers-of-data-breach-affecting-nearly-150-000-people/"
-    }
-   ]
-  },
-  {
-   "id": "b9812e4ced01",
-   "title": "Anthropic’s Claude Fable 5.2 blocks fewer security tasks, while Mythos gets better at finding bugs",
-   "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropics-claude-fable-52-blocks-fewer-security-tasks-while-mythos-gets-better-at-finding-bugs/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-16T11:00:00Z",
-   "summary": "Anthropic recently rolled out Claude Mythos 5.2 to selected partners and Fable 5.2 to regular users, with improvements to coding and reasoning. But we also noticed some interesting cybersecurity changes. [...]",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "f0b3319bef62",
-   "title": "SANSAR Linux Cryptomining Malware Uses Modified NVIDIA Library to Hide GPU Activity",
-   "link": "https://thehackernews.com/2026/11/sansar-linux-cryptomining-malware-uses.html",
-   "source": "The Hacker News",
-   "feed": "The Hacker News",
-   "region": "Global",
-   "published": "2026-11-16T09:32:57Z",
-   "summary": "A financially motivated threat activity cluster tracked as REF3364 has been attributed to a Linux-focused cryptocurrency mining operation that tampers with the readings used to detect high GPU workloads. Central to the intrusion is a toolkit called SANSAR, a Rust-based orchestrator that receives…",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "7d4f6584a3c9",
-   "title": "New NoisyTCP vulnerability lets attackers crash Linux servers",
-   "link": "https://www.bleepingcomputer.com/news/linux/new-noisytcp-linux-kernel-flaw-lets-attackers-crash-servers/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-16T09:30:04Z",
-   "summary": "An 11-year-old Linux kernel vulnerability, dubbed NoisyTCP, affects almost all Linux distributions and lets attackers crash systems running Nginx, Apache, and SSH servers with default configurations. [...]",
-   "score": 2,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "aaca3d274aab",
-   "title": "Tor Updates DoS Defenses Again as Relay Attacks Continue",
-   "link": "https://www.securityweek.com/tor-updates-dos-defenses-again-as-relay-attacks-continue/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-16T08:55:32Z",
-   "summary": "Tor 0.4.9.17 patches several security issues, including one related to how built-in DoS protections deal with IPv6. The post Tor Updates DoS Defenses Again as Relay Attacks Continue appeared first on SecurityWeek .",
-   "score": 1,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "a60b8a453d05",
-   "title": "Microsoft pushes Windows emergency updates to fix activation failures",
-   "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-new-windows-emergency-updates-fix-activation-licensing-failures/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-16T08:26:52Z",
-   "summary": "Microsoft has released emergency out-of-band updates to fix Windows activation and licensing failures caused by this month's security updates. [...]",
-   "score": 1,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ]
-  },
-  {
-   "id": "47ca43e224a0",
-   "title": "Microsoft Rules Out Cyberattack in Outage, Warns of Phishing Campaign",
-   "link": "https://www.securityweek.com/microsoft-rules-out-cyberattack-in-outage-warns-of-phishing-campaign/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-16T08:15:12Z",
-   "summary": "Phishing emails posing as Microsoft 365 service notices referenced the real outage incident and threatened to delete held messages. The post Microsoft Rules Out Cyberattack in Outage, Warns of Phishing Campaign appeared first on SecurityWeek .",
-   "score": 7,
-   "tags": [
-    "Phishing",
-    "Microsoft 365"
-   ],
-   "why": [
-    "Phishing",
-    "Microsoft 365"
-   ],
-   "also": [
-    {
-     "source": "Arabian Business",
-     "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNYTJRazlTeEVnbDdCZ09fNjU2c0VsMGZLMjlkMGIzMVZ0d1RPUkNrLWJhQTdqekZvQVhEWXhkY2hXdFE2Z2tuLW5zeGJtRlA2MGhpS3M0MmVtbVBjSnh2N1ZvNzUwVy1kUkhnV0RsV09DbW5YSk1UTWpmczhRX2wxRFpKWjFRb0RtazFNYkVYbnhUTGs3YzRfakprV1NGcjByU2Flekl5Y2VQVWFVcmVSeDJ3QkJ2WHlTMERVS0JkTllIV0xIQmtQcFNNU2Zmc28?oc=5"
-    }
-   ]
   }
  ]
 }
