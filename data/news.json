@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-27T01:44:53Z",
+ "generated": "2026-11-27T01:51:31Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,7 +28,7 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 9,
+   "count": 6,
    "error": null
   },
   {
@@ -1209,10 +1209,10 @@
    ]
   },
   {
-   "id": "bc1d39c40a09",
+   "id": "a811a628df76",
    "title": "Brocent flags gap between cyber breach & claim costs",
-   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOU1JGVENNU3NYNkQzWXh1UjFiUjN6bVRvR2tlTUhqMzhYU2lsakxrRjZIQnFzTHRCZE1pcTRpRnlybV9UZUxDQkt2OGdaeVF5ajYtMktmZkFGMkdPRHkta3ZFakZqaWtaSE8zTU5jSi1PNHoxRk9FeFFIdzY5b1U1bGJDaWJMZw?oc=5",
-   "source": "IT Brief Australia",
+   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPakxrOTdFRWdGemFnRTNPd01EM3ptTDRxNWs5eGF5OHB4eUNRU3FsbE56OFcyT29Cc00wNmEyT2xHbUVidEFFNlNuZjhwa0JEQkVLdW5POGhwWXdZbGs1Zm0wdjNvbGJtLWl6M1N1eHBUXzItMnBVOEZJUWdDTkFEaC04a0pYNS1kT1RB?oc=5",
+   "source": "SecurityBrief Asia",
    "feed": "AU breach news",
    "region": "Global",
    "published": "2026-11-25T04:03:00Z",
@@ -1223,6 +1223,12 @@
    ],
    "why": [
     "Data breach"
+   ],
+   "also": [
+    {
+     "source": "IT Brief Australia",
+     "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOU1JGVENNU3NYNkQzWXh1UjFiUjN6bVRvR2tlTUhqMzhYU2lsakxrRjZIQnFzTHRCZE1pcTRpRnlybV9UZUxDQkt2OGdaeVF5ajYtMktmZkFGMkdPRHkta3ZFakZqaWtaSE8zTU5jSi1PNHoxRk9FeFFIdzY5b1U1bGJDaWJMZw?oc=5"
+    }
    ]
   },
   {
@@ -2108,13 +2114,13 @@
    ]
   },
   {
-   "id": "d1945c98e9c3",
+   "id": "b141796041db",
    "title": "Retail ranks among least-insured sectors as ransomware attacks peak",
-   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPMmVSNUJYaWlTbWpmVUtielhKQUJEUThvX1BUbUYxZEpXTkc4R1lsanRYb2kwYzdQcGhLYlBLR1ZpMVFydGxON1dhV2VOR2lxNTNqWEdFUDVPc0tvWlZCVG9vODFVZXpTMDlxc1UySUNjeDktV0pjWWQ0Qks3bXJCVU53by1kLWZ5SktiTjBrUjFDSG9WWVh1dDA1YjdmM1VmQkJ4Q01LMEZvWUt1QlV2bzkwVFl1c2xUd0ZSWWNQZkw2aFQzUjRBR2dqVQ?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNRm41dGN5MkU0X0QxZU5KVVJfdU80X25OcGk1Wkw5VjNUazVxNGZqZF9wbkYtbGlxZE1SRjI2a3pub0VqRnRrN1BkLUV1ZE0yLUl4M3BacW1mMGJ2S05pcG1nUWRPX0hMenJBajNXMHN2bGNkLV9GZWxVNEM4dER2eWxtZU9icFc2cEtranNDcmxMZVpzZW95UC1aY2ZuUXhlNDF2VFNVZTFkOWNtN0tvZ1B2M3p1UDVNWVppZEhvb29rS0luTUxFSA?oc=5",
    "source": "Insurance Business",
    "feed": "AU breach news",
    "region": "Global",
-   "published": "2026-11-24T08:17:51Z",
+   "published": "2026-11-24T08:15:08Z",
    "summary": "",
    "score": 6,
    "tags": [
