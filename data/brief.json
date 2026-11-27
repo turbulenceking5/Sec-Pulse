@@ -1,83 +1,83 @@
 {
- "date": "2026-11-26",
- "generated": "2026-11-26T01:53:19+00:00",
- "title": "Sec-Pulse brief - Thu 26 Nov",
+ "date": "2026-11-27",
+ "generated": "2026-11-27T01:51:40+00:00",
+ "title": "Sec-Pulse brief - Fri 27 Nov",
  "items": [
   {
-   "id": "97a6faf096d8",
-   "title": "Oshawa suspects accused by Durham cops of using real estate scheme to steal $70K",
-   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQWFJ1WTR0VHFfRldncHZjSDA1LU80WXh0TnB2RGNCczFMUWVHamMxWmZzOHA2UmZ4QUJ1YlV5ODJiTHpsWkF4N2FzYXpkRmVZcHVJOTlzUjhyZ0RVVDVnYW85M1hJazFFRDVUcUlCazk3YUJwZ3lIV3l4RnlmdjVCUW4wblVvX09zNlR1VUJHUU9Tc1BYd3RyR1BpTS1yc0VnNEhReElHR0RnTFNodEtsOVFtVnRuNzh2SU1fRFFyYnRXUW1MT3BzWWdMRDVZRWNmaTlrdHBIUmpVdw?oc=5",
-   "source": "DurhamRegion.com",
+   "id": "052535ca7277",
+   "title": "Flight Centre investigates data breach linked to third-party booking system",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQRktWOHgzY2Zrekk3MmFCTjViRThZblVmcXhJSGkyQlZLNzl4TXNPWFczeWJoemlhWExZRG95TkJlczhEMjFvRFZCZ0RVLWlFSV9HNFZrM2FvR2s4cHJwMUZ3NW94dzk5MWJick5NUURNWmxCcDFTeTJHZWpTQXdMMHZ6WUZBYlpLS3owTkpxZFZvWGlyWUZpVDV5QXRIcFRlNWh5WnV2Tk9OMzZaWE1lRUcwcXBZem9scUxXRTZOajY?oc=5",
+   "source": "Australian Cyber Security Magazine",
    "region": "Global",
-   "published": "2026-11-25T14:13:00Z",
-   "score": 10,
+   "published": "2026-11-26T23:34:36Z",
+   "score": 9,
    "tags": [
-    "Real estate"
+    "Data breach",
+    "SaaS / cloud"
    ],
    "summary": ""
   },
   {
-   "id": "9bfa59db6a00",
-   "title": "Duo manage to skim victim off $70,000 in real estate scam",
-   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQaTFRZGJjTklNRm10NHNQa2NIWW1ZUnQ4Q0VacTVsM2hCOGpEVkRmLVAySi1tcGUteWhEMGsycWlXWThkaVFPYVFHY1NOUnFNX3BBank1YnFDaVU2RTlSMnh1NWZKOUhCTU1yQWpLTlhNQmp5d29JaWZLMzN2YS1lcjNqRQ?oc=5",
-   "source": "Durham Post",
+   "id": "84f25e464074",
+   "title": "Mitel MiCollab Zero-Days Exploited in Suspected AI-Assisted Attacks",
+   "link": "https://www.securityweek.com/mitel-micollab-zero-days-exploited-in-suspected-ai-assisted-attacks/",
+   "source": "SecurityWeek",
    "region": "Global",
-   "published": "2026-11-25T12:01:55Z",
-   "score": 10,
+   "published": "2026-11-26T11:35:25Z",
+   "score": 8,
    "tags": [
-    "Real estate"
+    "Actively exploited",
+    "Ransomware"
+   ],
+   "summary": "Accenture says hackers exploited MiCollab flaws before Mitel’s advisory, likely aided by AI, in a suspected extortion campaign. The post Mitel MiCollab Zero-Days Exploited in Suspected AI-Assisted Attacks appeared first on SecurityWeek ."
+  },
+  {
+   "id": "98798961113d",
+   "title": "Standard Chartered's Crypto Unit Suffers Data Breach Just Weeks After Bank Agreed To Take Full Ownership",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPNXlFSlp5cVlDWWhUcnVqdmZrbzAxbnpMdnptVUZFa3FKQVBXdnlGNFI4QjFGQldoejhGNWJIVkx3Zm5tdEVobDNuM3hQZjAxdjVLVFJ1UndjV29NdGcwcXluSzg1TjdSSDA1UjhDWVpoUlNZaTREZXY0MUZqbTZGcXlKdkdiQzRwU1ZDNDRORWhQd2N6cXVKTnNiNmplV3B5eUhwaXgwSQ?oc=5",
+   "source": "Yahoo Finance",
+   "region": "Global",
+   "published": "2026-11-26T21:30:39Z",
+   "score": 7,
+   "tags": [
+    "Data breach"
    ],
    "summary": ""
   },
   {
-   "id": "cbbfd175d78a",
-   "title": "Tech Outages Snarl Real Estate Closings Nationwide",
-   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPekV5amVmbHY0RnM2RUg0bkxkTldpTWtrYnV1dzJibGVYeUtRbFJCdXphdkxNQ2tlUHI0b3dOUGhXcnlsZW50VU9fRU13dWtMMGVNaXlVZDlsWGdSbWFZQWlBMThxQm9QUnFaTjM2c3hMUXUtQ1VSa240MGlGUXB4MElybFY0dHFF?oc=5",
-   "source": "Wisevoter",
+   "id": "95036b9af284",
+   "title": "1Password breach exposed account data, not vaults",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPYk84dmxMYXFrWGdhSmRST25DdFQ3ZHdBME9kUFpRVUV4TkIyaFc3YjB2MldLYUZsUVF2MG5nYm5DZ3MxU2ZGQjliT0RyY2Nvb3F3QTM3Zl93VC03aGNRR3lWdXlUdy1aOUhOLUxQT01lM2pHQmpfT3pIWEVrVUpaVDBnc3JaekhwUFpRbERQVF9hZw?oc=5",
+   "source": "Briefs Finance",
    "region": "Global",
-   "published": "2026-11-25T06:47:45Z",
-   "score": 10,
+   "published": "2026-11-26T18:15:00Z",
+   "score": 7,
    "tags": [
-    "Real estate"
+    "Data breach"
    ],
    "summary": ""
   },
   {
-   "id": "7a5ea8907df3",
-   "title": "Com-Affiliated Hackers Hijack Cloud Accounts via Vishing for Data Theft and Extortion",
-   "link": "https://thehackernews.com/2026/11/com-affiliated-hackers-hijack-cloud.html",
-   "source": "The Hacker News",
+   "id": "cb98e5aed91f",
+   "title": "Break or breach? Small organisations need to understand their digital exposure first",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQbTVEeG1zdXpBWllraC1KTVhBNTY1bUs3bjhqVnhSZzY3Z3lxQ1RIVFRwbW5kOHFQNndvMlhXejNsS2lZZVB4LUVqTENKU3J3NGdYREMxZHpOWEpUU0VuMDljRjY2eV96UTVqVmRYc1BGT2lkbTQtc0FLaV9PTHh0VVl1Z0swZVFqYlhOQUFRZy1MSkt3QUJ5aU5DUm5YVktYNDkteUFLaWxWSUMzX0xfV042eG9DRXpoTVE?oc=5",
+   "source": "SecurityBrief Australia",
    "region": "Global",
-   "published": "2026-11-25T06:37:06Z",
-   "score": 10,
+   "published": "2026-11-26T21:45:00Z",
+   "score": 6,
    "tags": [
-    "Phishing",
-    "Ransomware",
-    "Edge devices"
-   ],
-   "summary": "Palo Alto Networks Unit 42 has disclosed that it's tracking and has responded to \"numerous waves of vishing attacks\" orchestrated by Com-affiliated threat actors since August 2026 that have led to data theft and extortion attempts. The attacks have targeted financial services, healthcare, and…"
-  },
-  {
-   "id": "26d0e43cf289",
-   "title": "Two Oshawa residents charged in $70,000 real estate investment fraud investigation",
-   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPSVNCYVlXX183TGZEZ054SHh4WDdpWGp4WVBQd0RCWWxRVUkteUlQSS1BRWRuNEM2bkJGU2ZBd0ExMU5SVVFSd1doWFdOSXRVY1pfeDl0VmRFV1FDcVdsLWdHU1BlRmNMS29ZUW5ZcHBzVUx1ZmZSem9CazF6R1k4akx5WExrQk0tai1FaHFaUjJ1WGRZMEpUbm8zSnRqdVlQcjA5Y0FwTzBzVWlySEhfOW5QRlI3Zw?oc=5",
-   "source": "Frequency News",
-   "region": "Global",
-   "published": "2026-11-25T03:53:50Z",
-   "score": 10,
-   "tags": [
-    "Real estate"
+    "Data breach"
    ],
    "summary": ""
   }
  ],
  "stats": {
-  "recent": 63,
+  "recent": 28,
   "au": 0,
-  "kev": 10
+  "kev": 0
  },
  "lesson": {
-  "id": "2.2",
-  "title": "Reading scan output and CVSS"
+  "id": "2.3",
+  "title": "Common vulnerability types"
  }
 }
