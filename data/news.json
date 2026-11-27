@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-27T12:26:35Z",
+ "generated": "2026-11-27T23:28:39Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -34,7 +34,7 @@
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 5,
+   "count": 6,
    "error": null
   },
   {
@@ -52,7 +52,7 @@
   {
    "name": "CISA KEV",
    "ok": true,
-   "count": 26,
+   "count": 29,
    "error": null
   },
   {
@@ -82,7 +82,7 @@
   {
    "name": "Microsoft Security Blog",
    "ok": true,
-   "count": 8,
+   "count": 7,
    "error": null
   },
   {
@@ -100,11 +100,207 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 41,
+   "count": 39,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "97d22e082dc5",
+   "title": "Donghang Lottery Loses Lawsuit to Overturn 750,000-User Data Breach Fine : Society : JKN",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE93ZC01Z3JVUWtfZjVYWUxOT1Rudk9oTjZWTGZPZHBrOGdyMFRCamNsYmd2WklteC1kSkJ6Tm14VmxLWnBzNjNzQjdzN05aN056Q3hOSmxLUkJuaUdnbk9JbThB?oc=5",
+   "source": "재경일보",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-27T23:00:00Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "c33ac200edb1",
+   "title": "pCloud confirms password manager hack after suspicious login alerts",
+   "link": "https://www.bleepingcomputer.com/news/security/pcloud-confirms-password-manager-hack-after-suspicious-login-alerts/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-27T19:26:04Z",
+   "summary": "The pCloud Pass password manager suffered a cyberattack, with users reporting that unknown devices had connected to their accounts even with two-factor authentication (2FA) enabled. [...]",
+   "score": 3,
+   "tags": [
+    "Identity"
+   ],
+   "why": [
+    "Identity"
+   ]
+  },
+  {
+   "id": "36f25d6514a8",
+   "title": "US military says it disabled another ship that tried to breach naval blockade on Iranian ports",
+   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBNZ21WeDU0YzRKczlrT0JHaGp1TTExRlZfTlBaVWNmYnlxaHd4ankyMC0teHpJRGtpU3hjSm1YelNXbDhvTjhGM2xBOUNHNjdMQ0xIUUdlSl8xdkdSNXN3R0tBLVRIZk1BVkhJdEJLWEhSZnVFdEF0bQ?oc=5",
+   "source": "The Boston Globe",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-27T19:06:57Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ],
+   "also": [
+    {
+     "source": "Hindustan Times",
+     "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPNjJQbDRxNDRKY2tvdkFEUnFuYjRlOE9qU2VJNkJQeXI0RkVRQmw1VngzSmstSDdGNU9zRjV6aXpkVmI2eDNCRWNOSkRfVkhYa1JpdndyNmVLYi1MRHhNQlFTRGxaWk5pNXJHWEdCaDRhODRGa082QjJyWVhyZUJMRkFxU0lhcUU0bVFONXhyaWt6ajhta0E2Z3VWQWo5REwxamJkbWQ1RGZJdFZZVjREejJtcjlPV0FZUjNlTmdPcU85TzVvOWpTZXI0WURzWHNUNHVUVHVaNGxTWS1naUtpTDE1ZjJyS2VBNGlfamhaOEtYdEnSAfMBQVVfeXFMTzYyUGw0cTQ0SmNrb3ZBRFJxbmI0ZThPalNlSTZCUHlyNEZFUUJsNVZ4M0prLUg3RjVPc0Y1eml6ZFZiNngzQkVjTkpEX1ZIWGtSaXZ3cjZlS2ItTER4TUJRU0RsWlpOaTVyR1hHQmg0YTg0RmtPNkIycllYcmVCTEZBcVNJYXFFNG1RTjV4cmlremo4bWtBNmd1VkFqOURMMWpiZG1kNURmSXRWWVY0RHoybXI5T1dBWVIzZU5nT3FPOU81bzlqU2VyNFlEc1hzVDR1VFR1WjRsU1ktZ2lLaUwxNWYycktlQTRpX2poWjhLWHRJ?oc=5"
+    }
+   ]
+  },
+  {
+   "id": "72cf1a5347d2",
+   "title": "New Boston Scientific data breach exposes personal, medical info",
+   "link": "https://www.bleepingcomputer.com/news/security/new-boston-scientific-data-breach-exposes-personal-medical-info/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-27T18:57:42Z",
+   "summary": "Medical technology company Boston Scientific is sending data breach notices to individuals affected by a cyberattack on the firm. [...]",
+   "score": 4,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "8b62149719af",
+   "title": "Unpatched Cacti zero-day with public PoC gives remote code execution",
+   "link": "https://www.bleepingcomputer.com/news/security/unpatched-cacti-zero-day-with-public-poc-gives-remote-code-execution/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-27T17:06:13Z",
+   "summary": "A zero-day vulnerability in the Cacti network monitoring platform has been publicly disclosed, along with a proof-of-concept exploit that lets unauthenticated attackers execute commands on vulnerable servers. [...]",
+   "score": 7,
+   "tags": [
+    "Actively exploited",
+    "Vulnerability"
+   ],
+   "why": [
+    "Actively exploited",
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "f01224df1f54",
+   "title": "Suspected Vietnam-Linked Hackers Target Southeast Asia in South China Sea Espionage Campaign",
+   "link": "https://thehackernews.com/2026/11/suspected-vietnam-linked-hackers-target.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-27T16:36:11Z",
+   "summary": "A Vietnam-sponsored hacking group has been attributed to attacks targeting Southeast Asian military, government, and legislative organizations with an aim to gather intelligence on South China Sea defense and military agreements. The previously undocumented incursion set, detailed by SOCRadar, has…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "47ba8e3fb16d",
+   "title": "Matters.AI Lands India’s Largest Cybersecurity Pre-Series A Round to Fight AI Data Risks",
+   "link": "https://www.darkreading.com/cyber-risk/matters-india-cybersecurity-pre-series-ai-data-risks",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-27T15:27:20Z",
+   "summary": "The security startup consolidates four legacy security tools into an autonomous platform that uses context-aware AI to trace sensitive data lineage, analyze user intent, and automatically remediate threats across enterprise environments.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "2778b393e634",
+   "title": "US Air Force cloud platform reportedly hacked in latest federal breach",
+   "link": "https://www.bleepingcomputer.com/news/security/us-air-force-cloud-platform-reportedly-hacked-in-latest-federal-breach/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-27T15:09:40Z",
+   "summary": "Hackers have reportedly breached the US Air Force's Cloud One computing platform, adding to a recent wave of cyberattacks affecting US government agencies, including the FBI, CIA, and Treasury Department. [...]",
+   "score": 4,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
+   "id": "96edb4ed0f1c",
+   "title": "Your Firewall Isn't Enough: The Hidden Risk of Unmanaged VMs",
+   "link": "https://www.bleepingcomputer.com/news/security/your-firewall-isnt-enough-the-hidden-risk-of-unmanaged-vms/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-27T15:00:10Z",
+   "summary": "Forgotten virtual machines, unpatched servers, and excessive access permissions can create security blind spots across IT infrastructure. ISPsystem explains how centralized infrastructure management, access controls, and resource lifecycle automation can help reduce these risks. [...]",
+   "score": 3,
+   "tags": [
+    "Edge devices"
+   ],
+   "why": [
+    "Edge devices"
+   ]
+  },
+  {
+   "id": "814d32c90295",
+   "title": "Malwarebytes Antivirus: Get 50% off during Black Friday 2026",
+   "link": "https://www.bleepingcomputer.com/news/security/malwarebytes-antivirus-get-50-percent-off-during-black-friday-2026/",
+   "source": "BleepingComputer",
+   "feed": "BleepingComputer",
+   "region": "Global",
+   "published": "2026-11-27T14:22:06Z",
+   "summary": "Malwarebytes' 2026 Black Friday and Cyber Monday sale is now live, offering 50% off security subscriptions for individuals, families, and small businesses, including its antivirus software, VPN, identity theft protection, and personal data removal services. [...]",
+   "score": 2,
+   "tags": [
+    "Edge devices"
+   ],
+   "why": [
+    "Edge devices"
+   ]
+  },
+  {
+   "id": "3b8d0a7e0d03",
+   "title": "'God Mode' Flaws Could Wreak Border-Control Havoc",
+   "link": "https://www.darkreading.com/vulnerabilities-threats/god-mode-flaws-wreak-border-control-havoc",
+   "source": "Dark Reading",
+   "feed": "Dark Reading",
+   "region": "Global",
+   "published": "2026-11-27T14:00:00Z",
+   "summary": "Attackers could have disrupted traveler entry into Nigeria, Ethiopia, Zambia, Sri Lanka, Fiji, and Ghana via several vulnerabilities in their online visa and immigration systems.",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
+  {
+   "id": "4895aa5a5bc0",
+   "title": "Microsoft Store App Found Delivering Vinci RAT Capable of Remote System Control",
+   "link": "https://thehackernews.com/2026/11/microsoft-store-app-found-delivering.html",
+   "source": "The Hacker News",
+   "feed": "The Hacker News",
+   "region": "Global",
+   "published": "2026-11-27T11:49:34Z",
+   "summary": "Cybersecurity researchers have disclosed details of a cyber attack in which a threat actor leveraged a Microsoft Store application to deliver a remote access trojan (RAT) called Vinci RAT. The intrusion, according to eSentire, begins with a redirection to a bogus site for a sniping tool…",
+   "score": 0,
+   "tags": [],
+   "why": []
+  },
   {
    "id": "7b714952d08e",
    "title": "Microsoft removes WSUS server role in Windows Server 2028",
@@ -151,6 +347,25 @@
    "why": []
   },
   {
+   "id": "9d9f2f6bd30d",
+   "title": "Dubai court finds landlord withholding Ejari in breach of tenancy contact",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQOFRyelp4LW5UZnZpakdsZ3VLQ0xxYndJcWFXZ3pXSWZzQi1TU2lPVmpNemN4MGNHM3NpYmVuZ3FBVkZMR0wzSmNmN2o4QW9fMWRBNXo1S0VIelFMaFVFdEpaYTFZR1ltNGRhSTZEODBnZC10dlNWWHlGSi1YT2FoMFoxamJlVEdPSVFhUC1YRjZ0QXZsS19ZREVXTGIwQ2l2amfSAaIBQVVfeXFMUDhUcnpaeC1uVGZ2aWpHbGd1S0NMcWJ3SXFhV2d6V0lmc0ItU1NpT1ZqTXpjeDBjRzNzaWJlbmdxQVZGTEdMM0pjZjdqOEFvXzFkQTV6NUtFSHpRTGhVRXRKWmExWUdZbTRkYUk2RDgwZ2QtdHZTVlh5RkotWE9haDBaMWpiZVRHT0lRYVAtWEY2dEF2bEtfWURFV0xiMENpdmpn?oc=5",
+   "source": "Khaleej Times",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-27T10:10:32Z",
+   "summary": "",
+   "score": 14,
+   "tags": [
+    "Real estate",
+    "Data breach"
+   ],
+   "why": [
+    "Real estate",
+    "Data breach"
+   ]
+  },
+  {
    "id": "30a43f231a87",
    "title": "Drupal warns of new site takeover flaw exploited in attacks",
    "link": "https://www.bleepingcomputer.com/news/security/drupal-warns-of-new-access-bypass-flaw-exploited-in-attacks/",
@@ -178,7 +393,7 @@
      "url": "https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites/"
     }
    ],
-   "epss": 0.0101
+   "epss": 0.0121
   },
   {
    "id": "34ba075e7282",
@@ -375,6 +590,66 @@
    ],
    "why": [
     "Data breach"
+   ]
+  },
+  {
+   "id": "351b5c2f56fb",
+   "title": "CVE-2026-136716: Drupal Core — Drupal Core Improper Check for Unusual or Exceptional Conditions Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-136716",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-11-27T00:00:00Z",
+   "summary": "Drupal Core contains an improper check for unusual or exceptional conditions vulnerability that allows an unauthenticated remote attacker to take over a site via the exposed Drupal installer when the site is in one of the affected unusual or incomplete… CISA remediation due 2026-11-30.",
+   "score": 7,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Data breach",
+    "Vulnerability"
+   ],
+   "why": [
+    "Data breach",
+    "Vulnerability"
+   ],
+   "epss": 0.0121
+  },
+  {
+   "id": "284a8dbee52e",
+   "title": "CVE-2026-120705: OSGeo GeoServer — OSGeo GeoServer XML Injection Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-120705",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-11-27T00:00:00Z",
+   "summary": "OsGeo GeoServer contains an XML injection vulnerability that allows an unauthenticated remote attacker to cause the server to read local text files accessible to the GeoServer process or fetch attacker-specified HTTP or HTTPS URLs via a crafted ID parameter… CISA remediation due 2026-11-30.",
+   "score": 4,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
+   ]
+  },
+  {
+   "id": "df885d426e95",
+   "title": "CVE-2026-129243: OSGeo GeoServer — OSGeo GeoServer Incorrect Authorization Vulnerability",
+   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-129243",
+   "source": "CISA KEV",
+   "feed": "CISA KEV",
+   "region": "Global",
+   "published": "2026-11-27T00:00:00Z",
+   "summary": "GeoServer contains an incorrect authorization vulnerability that allows an unauthenticated remote attacker to bypass service-level role checks and invoke operations protected solely by those checks via a request with a prefixed service parameter. This… CISA remediation due 2026-11-30.",
+   "score": 4,
+   "tags": [
+    "Actively exploited",
+    "KEV",
+    "Vulnerability"
+   ],
+   "why": [
+    "Vulnerability"
    ]
   },
   {
@@ -606,6 +881,23 @@
     "Vulnerability"
    ],
    "epss": 0.0154
+  },
+  {
+   "id": "2aa4459715d6",
+   "title": "1Password breach notification: what U.S. notice laws require and when breach lawsuits survive",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQTDNTQXotUEZwaVRCMlpMWWNDcjByaDF6d1kxMHBmcUlNZFdRcENKVzBFYk5kOHdqei1uREhjTTZ2RkRiMllJUVR4Z2ZNN1EtM09Mam5wM0JkUlplLXE2d2NncU9saG0xdWVlX0JFLXRHanJnMVBYZ2lTNmhtS05KX3o4OGJTQTJRS1BFNGJMRjF6UWc?oc=5",
+   "source": "Hassan KOHEN",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-26T13:02:43Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
   },
   {
    "id": "23ec231ca044",
@@ -1239,7 +1531,7 @@
     "Actively exploited",
     "Vulnerability"
    ],
-   "epss": 0.1105
+   "epss": 0.0838
   },
   {
    "id": "bd8fc6246012",
@@ -1897,19 +2189,6 @@
    ]
   },
   {
-   "id": "3b8d0a7e0d03",
-   "title": "'God Mode' Flaws Could Wreak Border-Control Havoc",
-   "link": "https://www.darkreading.com/vulnerabilities-threats/god-mode-flaws-wreak-border-control-havoc",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-11-24T21:36:11Z",
-   "summary": "Attackers could have disrupted traveler entry into Nigeria, Ethiopia, Zambia, Sri Lanka, Fiji, and Ghana via several vulnerabilities in their online visa and immigration systems.",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
    "id": "c9a24388ebed",
    "title": "Security breach at Anmer Hall, Teen fights for life after Schoolies attack",
    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOQWw5N3NWTFAzWjJwTE0xd1VzcGtMUEhEaVY1dnFUbWV6SFlmSjFrNzFGb3BDT1g2WVR4TWlfaHdZMTJQbHU1WVZpX0VKeDNhSWdUQnNoRjJVUi1MWjZaRkVTN1FkYkdRZHd6Szl6SGJRTHVuNGs3WDdUUm1ESGRWLW1MZExXdjFWTUo1MmxsMk1qZmVyUGlXVk5tRkZNUTdra01EZkpkTVI4TnJzaFNlbGUyRURsdWhYTXQxSWhzaw?oc=5",
@@ -2178,7 +2457,7 @@
     "Actively exploited",
     "Vulnerability"
    ],
-   "epss": 0.0061,
+   "epss": 0.0245,
    "also": [
     {
      "source": "SecurityWeek",
@@ -2565,7 +2844,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.0429
+   "epss": 0.0424
   },
   {
    "id": "9705b45f3848",
@@ -2585,7 +2864,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.1105
+   "epss": 0.0838
   },
   {
    "id": "6a57f5edfd55",
@@ -3149,7 +3428,7 @@
     "Actively exploited",
     "Vulnerability"
    ],
-   "epss": 0.0429,
+   "epss": 0.0424,
    "also": [
     {
      "source": "SecurityWeek",
@@ -5620,7 +5899,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.4559
+   "epss": 0.4613
   },
   {
    "id": "9c40ff9a7698",
@@ -5821,7 +6100,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.5927
+   "epss": 0.7254
   },
   {
    "id": "57cf485fa921",
@@ -5978,7 +6257,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.5927
+   "epss": 0.7254
   },
   {
    "id": "c5f6c87fa0f7",
@@ -6141,7 +6420,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.2021
+   "epss": 0.2063
   },
   {
    "id": "816726b4adb7",
@@ -6447,7 +6726,7 @@
    "why": [
     "Vulnerability"
    ],
-   "epss": 0.5927
+   "epss": 0.7254
   },
   {
    "id": "033b7c10af0d",
@@ -6988,286 +7267,6 @@
    "why": [
     "Australia",
     "Ransomware"
-   ]
-  },
-  {
-   "id": "60f99194645f",
-   "title": "Gemini AI agents repeatedly bypassed safeguards to attack real website",
-   "link": "https://www.bleepingcomputer.com/news/security/gemini-ai-agents-repeatedly-bypassed-safeguards-to-attack-real-website/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-16T22:54:00Z",
-   "summary": "Google's Gemini AI agents repeatedly attempted to hack a real organization's website during AI model safety testing, finding ways to circumvent increasingly restrictive security controls designed to prevent them from accessing live systems. [...]",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "e0623f01c193",
-   "title": "Alma Realty Data Breach Lawsuit Investigation",
-   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1MeDZuNzVMSktNTHdGajBIM0lWbExPZW1DbURRd0dDRlhqV2pEa2dXS0VLWGVwS242SU41WVRSSExpbVFDUk1JYzRBQk9nMS1mRDBxZHBJaGZIWmtpUFNKeGVWR1JUSEs0dk9GUFlzS1JSd0xOdkNPeUF3?oc=5",
-   "source": "Claim Depot",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-16T22:09:39Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "7d60008a7168",
-   "title": "Alma Realty Corp. Data Breach Exposes Sensitive Resident Data",
-   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA5THVkd2ZOS2VEZ2w5Q3FxVGh4R3BOdHEyR2loRUg4OFFqU1dIemp5YTh3ZWdlLU51UTNXMkc3TkNFMHRBUG5UZGNxSDJMNVMxRVE1enpwZjk3YWxJY1VYT09DWkkydnQzUFE?oc=5",
-   "source": "Claim Depot",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-16T22:04:39Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "8524328bfa48",
-   "title": "Serial Scam Suspect Accused Of Committing More Real Estate Fraud While On Bond: Report",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQdnJ3ZlFHZXNwdWV3T0kwNnc0cnJ1M2UyeXNLNFlTdnhYQjJIalhiQU4wSGhOV3RDTlEyMU9WNUg3YUthaENTVEdzU09teGJfWVg4clFmYmhZSUFUSUYtVEdUNE5mYnllUkxxUTN5MkxFYS1YV2tLYnViZlhQRTJ6ZFJyUFViX0hnZy15aGNIX19GVnRKcHZGaDB0TFJib0FJeXJrZkNCUG1JYmdvbklpMWU2bWfSAc4BQVVfeXFMT2xISV9aUEh0cnpQNWhwbXJMVlNZMWQ5UWNvZnFaYUFJTGpFckVpRlBHNnY1UksyT3JkQnpjSEM3dWpDMkFwbFFmQ1htUU5YNjBHemgwc3lJY254MG15Tkd3eTM1a3FYNnNkRkRaa3FOakpzREhzbkhINVdnenBCNk1MYUs1VDNDbXE0cDBNaDlDWkNVdmZWMlNRNXBTbkktY0k0M2RzR1JXRWRXMjBybmc1aWR3NEVab3k0V2xtOUlfbW1hVncweVNFTG5OeUE?oc=5",
-   "source": "Patch",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-16T21:50:47Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ]
-  },
-  {
-   "id": "6cd4bc50c4fa",
-   "title": "Google Project Zero cuts bug disclosures to 30 days amid AI threats",
-   "link": "https://www.bleepingcomputer.com/news/security/google-project-zero-cuts-bug-disclosure-deadline-to-30-days-amid-ai-threats/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-16T21:31:44Z",
-   "summary": "Google Project Zero will replace its \"90+30\" disclosure policy with shorter, fixed deadlines in response to AI-accelerated vulnerability discovery and exploitation. [...]",
-   "score": 1,
-   "tags": [
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "also": [
-    {
-     "source": "SecurityWeek",
-     "url": "https://www.securityweek.com/google-project-zero-sets-course-for-30-day-disclosure-deadline/"
-    },
-    {
-     "source": "Dark Reading",
-     "url": "https://www.darkreading.com/vulnerabilities-threats/google-project-zero-bug-disclosure-deadlines"
-    }
-   ]
-  },
-  {
-   "id": "216fe6e5abb4",
-   "title": "Australian businesses pay ransomware demands more often",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNM1pJTjd1cGlZNldmVG5BY0czU1JRanlLQU9US1hfNlRJSFdWYllNZ1diZ2NnWHYydWxzNUo4amxidGNYWk1iYWV2NkI0STQwOFlmeTZCdkZBekRkR0MxcGx2Y01JR0FRYXRuR3lxajZfTmw1SnVpcjV0TnZPQXdqRXRhZ0JneGJkeUxVd2lmWXNUQnNq?oc=5",
-   "source": "SecurityBrief Australia",
-   "feed": "AU breach news",
-   "region": "AU",
-   "published": "2026-11-16T21:00:00Z",
-   "summary": "",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "Ransomware"
-   ],
-   "why": [
-    "Australia",
-    "Ransomware"
-   ]
-  },
-  {
-   "id": "6fd5298e49ba",
-   "title": "Trump Administration Moves to Block China From Indirect Access to American AI Technology",
-   "link": "https://www.securityweek.com/trump-administration-moves-to-block-china-from-indirect-access-to-american-ai-technology/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-16T20:00:00Z",
-   "summary": "Under the new rule, overseas data centers that serve companies in countries including China, Russia, Iran and Cuba are required to identify their end users. The post Trump Administration Moves to Block China From Indirect Access to American AI Technology appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "f66e964ba9d3",
-   "title": "Barracuda links cloud breach to ARTEX AI-powered cyberattack",
-   "link": "https://www.bleepingcomputer.com/news/security/barracuda-links-cloud-breach-to-artex-ai-powered-cyberattack/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-16T19:57:13Z",
-   "summary": "Hackers who breached the cloud environment of network and email security company Barracuda earlier this month used a stolen cloud access key and the ARTEX AI penetration testing framework. [...]",
-   "score": 4,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "9899fc2c80e3",
-   "title": "Ransomware Attacks Increase Behind AI, but Payments Decline",
-   "link": "https://www.darkreading.com/threat-intelligence/ransomware-attacks-increase-ai-payments-decline",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-11-16T19:56:05Z",
-   "summary": "Large language models and other AI systems allow a growing number of ransomware groups to create convincing phishing emails and identify sensitive data quickly.",
-   "score": 7,
-   "tags": [
-    "Phishing",
-    "Ransomware"
-   ],
-   "why": [
-    "Phishing",
-    "Ransomware"
-   ]
-  },
-  {
-   "id": "9c11c754eaec",
-   "title": "'Sleeper Agent' Tactic Hides Payloads in Open-Weight AI Models",
-   "link": "https://www.darkreading.com/vulnerabilities-threats/sleeper-agent-tactic-payloads-open-weight-ai-models",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-11-16T19:10:03Z",
-   "summary": "Malware can lurk inside just 0.00001% of a neural network. How, then, can any user tell it's there?",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "072c49ec6b89",
-   "title": "Uber data breach exposes thousands of drivers’ license records",
-   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNWGZ4RzRtRXJGRmpMbjlNekxJbTZRaHgzV0xiVnhINnltb2RoeUkxMDQ5SVplcEZ2NURZWGd2SFNJd3ZUUTMwWm96R3d3UWN6cDJyNXI3akZlbkZUQzRwcWkwcXQ4dk5zVUItMG9VVGVXRTZHdmxfak5RRm5ELTdpTDhsX1NZXzh4WHpEVU1tSUQ5dw?oc=5",
-   "source": "Beinsure",
-   "feed": "AU breach news",
-   "region": "Global",
-   "published": "2026-11-16T17:26:54Z",
-   "summary": "",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "10d373a62ac2",
-   "title": "China-Nexus Actors Breach 10 Organizations in AI-Driven Attacks",
-   "link": "https://www.darkreading.com/cyberattacks-data-breaches/china-nexus-actors-breach-10-organizations-ai-driven-attacks",
-   "source": "Dark Reading",
-   "feed": "Dark Reading",
-   "region": "Global",
-   "published": "2026-11-16T16:36:55Z",
-   "summary": "Attackers used Cairn once again in autonomous attacks that targeted advanced manufacturing and defense sectors, as well as civil and human rights organizations.",
-   "score": 4,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
-  },
-  {
-   "id": "67c2edf75728",
-   "title": "Cursor Supply Chain Attack Started at Fireworks AI",
-   "link": "https://www.securityweek.com/cursor-supply-chain-attack-started-at-fireworks/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-16T15:45:43Z",
-   "summary": "The attacker stole an access key from Fireworks and used it to exfiltrate credentials that enabled them to push malicious Claude Code extension copies. The post Cursor Supply Chain Attack Started at Fireworks AI appeared first on SecurityWeek .",
-   "score": 5,
-   "tags": [
-    "Identity",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Identity",
-    "SaaS / cloud"
-   ],
-   "also": [
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-infects-major-brands-sites-with-malware/"
-    }
-   ]
-  },
-  {
-   "id": "0f4c5e346584",
-   "title": "Barracuda Hacked Amid Surge in Artex-Powered Cyberattacks",
-   "link": "https://www.securityweek.com/barracuda-hacked-amid-surge-in-artex-powered-cyberattacks/",
-   "source": "SecurityWeek",
-   "feed": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-16T15:07:32Z",
-   "summary": "Chinese threat actors are broadly adopting the agentic AI penetration testing framework to accelerate their attacks. The post Barracuda Hacked Amid Surge in Artex-Powered Cyberattacks appeared first on SecurityWeek .",
-   "score": 0,
-   "tags": [],
-   "why": []
-  },
-  {
-   "id": "3a77ece90e01",
-   "title": "Why Real Estate's Biggest AI Fans Keep The Tech On A Short Leash",
-   "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1vblk3cDg5MW1uY3hiQ1ZfdEotVWRVQ0x5T2phbmxqNWIxLXNzTThqTm80ZXdtTzZqbkRQYVNnZXJ4elVyWFZQM2I4TVY2Y1dzakQzbTFONGdlRGd0eVFTZjFhY05TZ1RvQThr?oc=5",
-   "source": "Inman Real Estate News",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-16T15:05:28Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ]
-  },
-  {
-   "id": "0e301630114f",
-   "title": "Coles supermarket cyber attack: Australia’s retailer investigates security breach",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQSXpFc19rczVHUHdEdjRyQ1NRNnl2andUaEV6UUdjVDUzaVR3SmtZSU5FR0VKQnpNTjd5Zm83SV9qaU1mN3ZIUXZZRGU1M1l5clpzMjNEYVFlWGo2RThRR2dleXdVSThYUjVwcmZVYUY0NVdTUTNuSmF3d1E0M3F6eHZtTXhUaklLMFE5dV8yUm9DcC1DT3E3RjhYSQ?oc=5",
-   "source": "Beinsure",
-   "feed": "AU breach news",
-   "region": "AU",
-   "published": "2026-11-16T15:04:44Z",
-   "summary": "",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "Data breach"
-   ],
-   "why": [
-    "Australia",
-    "Data breach"
    ]
   }
  ]
