@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-27T23:28:39Z",
+ "generated": "2026-11-28T01:33:30Z",
  "sources": [
   {
    "name": "ACSC Alerts",
@@ -28,13 +28,13 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 8,
+   "count": 4,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 6,
+   "count": 10,
    "error": null
   },
   {
@@ -52,7 +52,7 @@
   {
    "name": "CISA KEV",
    "ok": true,
-   "count": 29,
+   "count": 27,
    "error": null
   },
   {
@@ -100,11 +100,53 @@
   {
    "name": "FIRST EPSS",
    "ok": true,
-   "count": 39,
+   "count": 37,
    "error": null
   }
  ],
  "items": [
+  {
+   "id": "6459e8241f21",
+   "title": "Hackers breach U.S. Air Force flagship Cloud One computing platform",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQdXZsb00yNFF2UTdycjI3OFN2SGpJWGF4WkNtcVBzRlpYNVg4dXZ0ekFxNTJNRktPVlZteUlxUmIxY0dUWlh0WG5fTFRoVkgwSHYxbDhEcGxoMmR2S1lHWmVob2diaU5RMVU0T3NwQ0pLbjg0cFBYdjNDMWdVYXFQZVc0QlJDYzBBVXFTN3YtRWMxVlNOenVNR2VLaUpDZw?oc=5",
+   "source": "The Spokesman-Review",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-28T00:53:27Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ],
+   "also": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://www.bleepingcomputer.com/news/security/us-air-force-cloud-platform-reportedly-hacked-in-latest-federal-breach/"
+    }
+   ]
+  },
+  {
+   "id": "c49180134b79",
+   "title": "Veeam vs Rubrik vs Commvault for Australian Ransomware Recovery",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNN2VHUWxhNXRlY3VaNkM1WkNiNkxmTk9FUlR3b3h6OWJwdjdqSWtoT2xXZDJJaUZmdnAtR1pXM3pvUzRJZ1pCUm1VQ29lZ0dOcnBHZ1hDUnlpbUxMRi1TenMzV29lelFkZWo0N05XeXhhal9YQ1llUVBPVzZ1eWR5RnJnZ1pMZDRoYWp2dS1WdlRvbktrLVREVExjVGV6YWI0WlNwajh3?oc=5",
+   "source": "JournalArta",
+   "feed": "AU breach news",
+   "region": "AU",
+   "published": "2026-11-28T00:06:33Z",
+   "summary": "",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Ransomware"
+   ],
+   "why": [
+    "Australia",
+    "Ransomware"
+   ]
+  },
   {
    "id": "97d22e082dc5",
    "title": "Donghang Lottery Loses Lawsuit to Overturn 750,000-User Data Breach Fine : Society : JKN",
@@ -137,29 +179,6 @@
    ],
    "why": [
     "Identity"
-   ]
-  },
-  {
-   "id": "36f25d6514a8",
-   "title": "US military says it disabled another ship that tried to breach naval blockade on Iranian ports",
-   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBNZ21WeDU0YzRKczlrT0JHaGp1TTExRlZfTlBaVWNmYnlxaHd4ankyMC0teHpJRGtpU3hjSm1YelNXbDhvTjhGM2xBOUNHNjdMQ0xIUUdlSl8xdkdSNXN3R0tBLVRIZk1BVkhJdEJLWEhSZnVFdEF0bQ?oc=5",
-   "source": "The Boston Globe",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-27T19:06:57Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ],
-   "also": [
-    {
-     "source": "Hindustan Times",
-     "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPNjJQbDRxNDRKY2tvdkFEUnFuYjRlOE9qU2VJNkJQeXI0RkVRQmw1VngzSmstSDdGNU9zRjV6aXpkVmI2eDNCRWNOSkRfVkhYa1JpdndyNmVLYi1MRHhNQlFTRGxaWk5pNXJHWEdCaDRhODRGa082QjJyWVhyZUJMRkFxU0lhcUU0bVFONXhyaWt6ajhta0E2Z3VWQWo5REwxamJkbWQ1RGZJdFZZVjREejJtcjlPV0FZUjNlTmdPcU85TzVvOWpTZXI0WURzWHNUNHVUVHVaNGxTWS1naUtpTDE1ZjJyS2VBNGlfamhaOEtYdEnSAfMBQVVfeXFMTzYyUGw0cTQ0SmNrb3ZBRFJxbmI0ZThPalNlSTZCUHlyNEZFUUJsNVZ4M0prLUg3RjVPc0Y1eml6ZFZiNngzQkVjTkpEX1ZIWGtSaXZ3cjZlS2ItTER4TUJRU0RsWlpOaTVyR1hHQmg0YTg0RmtPNkIycllYcmVCTEZBcVNJYXFFNG1RTjV4cmlremo4bWtBNmd1VkFqOURMMWpiZG1kNURmSXRWWVY0RHoybXI5T1dBWVIzZU5nT3FPOU81bzlqU2VyNFlEc1hzVDR1VFR1WjRsU1ktZ2lLaUwxNWYycktlQTRpX2poWjhLWHRJ?oc=5"
-    }
    ]
   },
   {
@@ -212,6 +231,23 @@
    "why": []
   },
   {
+   "id": "bc2d07f09edd",
+   "title": "Last hours to snag $2,500 from $3.12 million data breach settlement — today is the deadline",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQOHotT1JXVDRwNUdTUERfUHVFVnQzQTF4eW0wTEJsVUtKVUhZZEJrOE1HTjY1OTRQRWw4dkhwSXV3QnFOdzhKbTI4cUoyelQ4UjJhLTc3UE9FaHJnZURJWjBKS08teWFHa2pVUXRaZFdNRm5rc3VrdWhaWmx0dURwRXBDYnZUd2V4eVpvNkln?oc=5",
+   "source": "Yahoo Finance",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-27T16:35:29Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
    "id": "47ba8e3fb16d",
    "title": "Matters.AI Lands India’s Largest Cybersecurity Pre-Series A Round to Fight AI Data Risks",
    "link": "https://www.darkreading.com/cyber-risk/matters-india-cybersecurity-pre-series-ai-data-risks",
@@ -223,23 +259,6 @@
    "score": 0,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "2778b393e634",
-   "title": "US Air Force cloud platform reportedly hacked in latest federal breach",
-   "link": "https://www.bleepingcomputer.com/news/security/us-air-force-cloud-platform-reportedly-hacked-in-latest-federal-breach/",
-   "source": "BleepingComputer",
-   "feed": "BleepingComputer",
-   "region": "Global",
-   "published": "2026-11-27T15:09:40Z",
-   "summary": "Hackers have reportedly breached the US Air Force's Cloud One computing platform, adding to a recent wave of cyberattacks affecting US government agencies, including the FBI, CIA, and Treasury Department. [...]",
-   "score": 4,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ]
   },
   {
    "id": "96edb4ed0f1c",
@@ -287,6 +306,29 @@
    "score": 0,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "36f25d6514a8",
+   "title": "US military says it disabled another ship that tried to breach naval blockade on Iranian ports",
+   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBNZ21WeDU0YzRKczlrT0JHaGp1TTExRlZfTlBaVWNmYnlxaHd4ankyMC0teHpJRGtpU3hjSm1YelNXbDhvTjhGM2xBOUNHNjdMQ0xIUUdlSl8xdkdSNXN3R0tBLVRIZk1BVkhJdEJLWEhSZnVFdEF0bQ?oc=5",
+   "source": "The Boston Globe",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-27T13:07:00Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ],
+   "also": [
+    {
+     "source": "Hindustan Times",
+     "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPNjJQbDRxNDRKY2tvdkFEUnFuYjRlOE9qU2VJNkJQeXI0RkVRQmw1VngzSmstSDdGNU9zRjV6aXpkVmI2eDNCRWNOSkRfVkhYa1JpdndyNmVLYi1MRHhNQlFTRGxaWk5pNXJHWEdCaDRhODRGa082QjJyWVhyZUJMRkFxU0lhcUU0bVFONXhyaWt6ajhta0E2Z3VWQWo5REwxamJkbWQ1RGZJdFZZVjREejJtcjlPV0FZUjNlTmdPcU85TzVvOWpTZXI0WURzWHNUNHVUVHVaNGxTWS1naUtpTDE1ZjJyS2VBNGlfamhaOEtYdEnSAfMBQVVfeXFMTzYyUGw0cTQ0SmNrb3ZBRFJxbmI0ZThPalNlSTZCUHlyNEZFUUJsNVZ4M0prLUg3RjVPc0Y1eml6ZFZiNngzQkVjTkpEX1ZIWGtSaXZ3cjZlS2ItTER4TUJRU0RsWlpOaTVyR1hHQmg0YTg0RmtPNkIycllYcmVCTEZBcVNJYXFFNG1RTjV4cmlremo4bWtBNmd1VkFqOURMMWpiZG1kNURmSXRWWVY0RHoybXI5T1dBWVIzZU5nT3FPOU81bzlqU2VyNFlEc1hzVDR1VFR1WjRsU1ktZ2lLaUwxNWYycktlQTRpX2poWjhLWHRJ?oc=5"
+    }
+   ]
   },
   {
    "id": "4895aa5a5bc0",
@@ -678,6 +720,23 @@
    ]
   },
   {
+   "id": "f93f83bbaaf5",
+   "title": "FIFA data breach: hackers accessed personal info",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPYmNCTEk5ZzFiVDRDelFjdkpfWE4tXzQwNWwtM3gwYWNOczFIek4zeUtPNTgtSDBCRXAzeC1LZkZvaS1tWWdyR2FsbTNDMFlQTWxOdjdWTU9tYVBOMnNxYUdtZ1ZnU1ZSUmRnTmhXU1pRalJ2cm9SVmtoQ0RpSUd6aUtha0ZNMVVLN2p0cUdxN3VhQQ?oc=5",
+   "source": "Briefs Finance",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-26T23:22:55Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ]
+  },
+  {
    "id": "4344e53c7996",
    "title": "Australian passports leaked in Flight Centre hack",
    "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPOW55VmcyeHdSdGhBZHJmZUJmcExtQl9wMEJwempoYjlRQWw0ODd0YXUtX1hDUmR4V0JFcVVLNWxJUWxGMlpfUUJubjNDZWpfczJMSW5SWDJuUGgwcHhFRXB4VGhLQUFCNDVNX2xFeklOVnlMZGxXU01QMHZiTFNWUnA4RGpkVVZWMmN5RXdmTE9hNDhLZXNSNkdtVHE0Ulhh0gGmAUFVX3lxTFBCVjk4MjE2eFZQMnZHUjJ3X3dISnlaZjZHbXpQa3hnRi0wbnNSM3RERzkwVVhKVEQ2LUUtLVo5WmVmMTJBazVERElXakpUZ3RIbHRuNWJOSGYtUHF6Umk3Y3lHVVd1VklBN0JmQllyQTBNOXFMVXFXWExxM0VGeTBGTWU3TDN3TlBDMzJ2M3ltMTVvekg1U0diYkFtR3BsOHBlUjJoWWc?oc=5",
@@ -1063,6 +1122,29 @@
    "score": 0,
    "tags": [],
    "why": []
+  },
+  {
+   "id": "5b02c8f70678",
+   "title": "Passport data exposed in travel giant data breach",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNZ0lLV0UtcWZVcTZVbHA5X2JpTkxQWUc5TkZKdjltY0drZEZvbVNQOTRydFEzcWFralFTYTB5OFk3NTJMczRhcTdOb1ZGenltSGJVbXhzYVlWdkRMbzN0SmZ2cjVjeGhQVXNMUGZ1MHYzeGxGQ0xaVk9JaDlUREhJRWRFNlZfWXFsWGtqWHhxNTY3TkR0MUliMHd3?oc=5",
+   "source": "The Courier | Ballarat, VIC",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-26T06:47:54Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ],
+   "also": [
+    {
+     "source": "7NEWS",
+     "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPek1JVnZlMWViQi01elpNYVJqdTJYTVFKcjZRNVVWVGZyMzg3ZWxEOUFUSjZiVTlXUklxRUxmSlh1ZWg4NmgyMVRWZzhrZWVHNDk0QmpDNHVCMjRWQTFXd2VDb0Z0dHJZSHNpYTdsc3NNYTdpdC1BWG5aVTJTbW9MYVpnODdRYkJ4eFFMaFlfTmZacEx3RV9VSGlWbVNRelVPMVBRZWV3Y3J5RjJnU3FaS1VkUDljZHZyMHpQdmVzZGNBaUNoOXNHTVdKS2lzVVhpUE91OU9IUjUzWmw3alhIYtIB5gFBVV95cUxOdnNXLUdZYnBnVFpfTDdGSWk1bUc5RUx6cjN4WHM0dnFnY25OU1FXM2pnMkpkcTZXM2Y5LV9GNmlVSWRwR1FCNXZQM3hwazk2c0s3SHplN2dlMmRoTHc1X0FCY29DaFNEM2U1VkVCVHVEWnNNUlFObEx1UGtxaXVEallWSm9obHhZU19DeFhIdkUtdTRPaDBJajFrUmVXa1BGN0I4SDlMOVhLcUlrMFB3d3FHbThqZllZZ19yVWpWNEl5UU13M1RLSnMwR0txUndaM1JDQmo2MU1HRkJWZXM3ODB3RnhTQQ?oc=5"
+    }
+   ]
   },
   {
    "id": "1d57aa7ac03a",
@@ -7176,97 +7258,6 @@
    ],
    "why": [
     "Real estate"
-   ]
-  },
-  {
-   "id": "3099ffeb8eda",
-   "title": "High volume phishing campaign uses Microsoft 365 outage lures to target multiple industry sectors",
-   "link": "https://www.microsoft.com/en-us/security/blog/2026/11/16/high-volume-phishing-campaign-uses-microsoft-365-outage-lures-target-multiple-industry-sectors-2/",
-   "source": "Microsoft Security Blog",
-   "feed": "Microsoft Security Blog",
-   "region": "Global",
-   "published": "2026-11-17T00:08:41Z",
-   "summary": "Microsoft Threat Intelligence observed a high-volume phishing campaign using Microsoft 365 outage-themed lures to target organizations across multiple sectors worldwide. The post High volume phishing campaign uses Microsoft 365 outage lures to target multiple industry sectors appeared first on…",
-   "score": 9,
-   "tags": [
-    "Phishing",
-    "Microsoft 365"
-   ],
-   "why": [
-    "Phishing",
-    "Microsoft 365"
-   ],
-   "also": [
-    {
-     "source": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-says-months-old-bug-caused-global-microsoft-365-outage/"
-    },
-    {
-     "source": "ABC News & Headlines – Australian Broadcasting Corporation",
-     "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQa3d4WUpneFA2OVBxXy1NbkgyOFJZSzFZRTgtYjloejloV09jWGstNS1zcU9KM3JVNlpXeEYyVHRrOGZndVRrWktSNmVoaGNfUWVzd3RDd0wweVpWSHR4Y3YxTk9BNm9nLWZRU2p0VlBTNDZxSW5laFZZb3RCcWFvMjJBdk9ybnBWb3dTV2cxT3E?oc=5"
-    },
-    {
-     "source": "The Guardian",
-     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORzFTSUdWUkpoWUk1Z2FULTd2ZmRRUmVINTBTZjNUVEdtT3BBNUxxck1ZcXFQenhma1F5RG5BZXIwVkItZWhaWGl2dHlzVWRTZkIza0Y3QWVyd1hlSUo0dUo0XzRzOTFiZnJYelhtakN2R1VJOU5oUzY2MHVGSko3MTF1ZXE2T0tRY1lCMWc5M1ZBeFpfZ0ZVbV8waldfVlByNlE?oc=5"
-    }
-   ]
-  },
-  {
-   "id": "7ca8ed11e02a",
-   "title": "CVE-2026-115731: Perforce Puppet Enterprise — Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability",
-   "link": "https://nvd.nist.gov/vuln/detail/CVE-2026-115731",
-   "source": "CISA KEV",
-   "feed": "CISA KEV",
-   "region": "Global",
-   "published": "2026-11-17T00:00:00Z",
-   "summary": "Perforce Puppet Enterprise contains a deserialization of untrusted data vulnerability in Puppet’s report-processing code that allows a client with any CA-signed agent certificate to execute arbitrary code on the Puppet Server as the service user by… CISA remediation due 2026-12-01.",
-   "score": 4,
-   "tags": [
-    "Actively exploited",
-    "KEV",
-    "Vulnerability"
-   ],
-   "why": [
-    "Vulnerability"
-   ],
-   "epss": 0.1258
-  },
-  {
-   "id": "a6c1fed3171b",
-   "title": "Infoblox launches Australia realm on AWS for regulated industries",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPWVRDRUQ5Wk9zazRCbnlWdWNwZnZhT18yUmdPZzRuRGdua2hjSFBDeHYxMXRRdm1taWpydDg0SDBDaWJ1R1VmWDJkT3VXaThuLUJGYmVTZHlkTmo5cDlQc0RMMkE3ZVpEWkxUbFVEYVgtQXFDODhEbDJRRmlRbktubVJrODByTWtiMHZnX1o4Qm85M1lSQnpjcjhpc2VkQ1EtbzdTbFhOUnNPRFBzdDRFbVdxdw?oc=5",
-   "source": "Australian Cyber Security Magazine",
-   "feed": "AU breach news",
-   "region": "AU",
-   "published": "2026-11-16T23:56:17Z",
-   "summary": "",
-   "score": 12,
-   "tags": [
-    "Australia",
-    "SaaS / cloud"
-   ],
-   "why": [
-    "Australia",
-    "SaaS / cloud"
-   ]
-  },
-  {
-   "id": "e4eeca90a4e3",
-   "title": "Dragos reports 20 Australian industrial ransomware incidents in Q3 2026",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNSEU3UTEzaDJ1WTdCYTdObXNzY2NnYjhTV0YxSEs1ejlSTzdXZ3Ffd1lJZzNzXzJ6LVR1QzVzcFZtUUlpei12djNGWlA2VUlFbUhxOHRGRGJTb0o2T2NGT1JGYnk5Q1lkcUEyNjBkbmRxTG5CQ0oxLXJmWGZCaXV2eVIwTURKdXZRWWdkT0xWZ0hLZGFMRXVBLUUzWHoxbjhqLU5JRGZoYXJvZlRVY1NJSk5OUXJuWnl3Uk4w?oc=5",
-   "source": "Australian Cyber Security Magazine",
-   "feed": "AU breach news",
-   "region": "AU",
-   "published": "2026-11-16T23:46:24Z",
-   "summary": "",
-   "score": 13,
-   "tags": [
-    "Australia",
-    "Ransomware"
-   ],
-   "why": [
-    "Australia",
-    "Ransomware"
    ]
   }
  ]
