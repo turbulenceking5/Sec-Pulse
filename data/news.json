@@ -1,17 +1,17 @@
 {
- "generated": "2026-11-28T01:33:30Z",
+ "generated": "2026-11-28T07:53:01Z",
  "sources": [
   {
    "name": "ACSC Alerts",
-   "ok": true,
-   "count": 1,
-   "error": null
+   "ok": false,
+   "count": 0,
+   "error": "TimeoutError: The read operation timed out"
   },
   {
    "name": "ACSC Advisories",
-   "ok": true,
+   "ok": false,
    "count": 0,
-   "error": null
+   "error": "TimeoutError: The read operation timed out"
   },
   {
    "name": "ACSC (via Google News)",
@@ -28,13 +28,13 @@
   {
    "name": "AU breach news",
    "ok": true,
-   "count": 4,
+   "count": 5,
    "error": null
   },
   {
    "name": "Real estate cyber news",
    "ok": true,
-   "count": 10,
+   "count": 8,
    "error": null
   },
   {
@@ -112,7 +112,7 @@
    "source": "The Spokesman-Review",
    "feed": "Real estate cyber news",
    "region": "Global",
-   "published": "2026-11-28T00:53:27Z",
+   "published": "2026-11-28T06:27:19Z",
    "summary": "",
    "score": 7,
    "tags": [
@@ -125,6 +125,10 @@
     {
      "source": "BleepingComputer",
      "url": "https://www.bleepingcomputer.com/news/security/us-air-force-cloud-platform-reportedly-hacked-in-latest-federal-breach/"
+    },
+    {
+     "source": "Dosya Haber",
+     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOUjAzZ2I3SHY2aFE5eU5YWlpBZ1VYay04NlZnYkplNGhaVERSMXZfdElXU2dYOWt6OE5iSWwtQ2FqNTJHSER0TXRUX1NSLXVMTXk2YlQwXzgxMEVENl85TGNHSE81OVJNaGxiZ0dzZUlxdjBUTC1KSDNmNXZ1MXpsUm5OUl8tOWkxSWVaNmlGVktQOW5reC1pQXdlWHNqWXhsdk10bnhxUQ?oc=5"
     }
    ]
   },
@@ -165,6 +169,23 @@
    ]
   },
   {
+   "id": "81a5b8ae86df",
+   "title": "Real estate investment firm chairman sentenced to 12 years for 20.2 billion won land scam : Society : JKN",
+   "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9id0gzQmxRNV9makFOY0w4d2ZVOW5BWGEzeEJ5Y3NneUh6alRTWWVpMmdZaFRmRG0tc0xiWktXUEk5ajR2TnJldlZnQU11c3hZUTVSTHZQMGpOejhfWl9zdDNB?oc=5",
+   "source": "재경일보",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-27T22:55:00Z",
+   "summary": "",
+   "score": 10,
+   "tags": [
+    "Real estate"
+   ],
+   "why": [
+    "Real estate"
+   ]
+  },
+  {
    "id": "c33ac200edb1",
    "title": "pCloud confirms password manager hack after suspicious login alerts",
    "link": "https://www.bleepingcomputer.com/news/security/pcloud-confirms-password-manager-hack-after-suspicious-login-alerts/",
@@ -196,6 +217,29 @@
    ],
    "why": [
     "Data breach"
+   ]
+  },
+  {
+   "id": "3743e298c4ef",
+   "title": "US military says it disabled another ship that tried to breach naval blockade on Iranian ports | World News",
+   "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPNjJQbDRxNDRKY2tvdkFEUnFuYjRlOE9qU2VJNkJQeXI0RkVRQmw1VngzSmstSDdGNU9zRjV6aXpkVmI2eDNCRWNOSkRfVkhYa1JpdndyNmVLYi1MRHhNQlFTRGxaWk5pNXJHWEdCaDRhODRGa082QjJyWVhyZUJMRkFxU0lhcUU0bVFONXhyaWt6ajhta0E2Z3VWQWo5REwxamJkbWQ1RGZJdFZZVjREejJtcjlPV0FZUjNlTmdPcU85TzVvOWpTZXI0WURzWHNUNHVUVHVaNGxTWS1naUtpTDE1ZjJyS2VBNGlfamhaOEtYdEnSAfMBQVVfeXFMTzYyUGw0cTQ0SmNrb3ZBRFJxbmI0ZThPalNlSTZCUHlyNEZFUUJsNVZ4M0prLUg3RjVPc0Y1eml6ZFZiNngzQkVjTkpEX1ZIWGtSaXZ3cjZlS2ItTER4TUJRU0RsWlpOaTVyR1hHQmg0YTg0RmtPNkIycllYcmVCTEZBcVNJYXFFNG1RTjV4cmlremo4bWtBNmd1VkFqOURMMWpiZG1kNURmSXRWWVY0RHoybXI5T1dBWVIzZU5nT3FPOU81bzlqU2VyNFlEc1hzVDR1VFR1WjRsU1ktZ2lLaUwxNWYycktlQTRpX2poWjhLWHRJ?oc=5",
+   "source": "Hindustan Times",
+   "feed": "Real estate cyber news",
+   "region": "Global",
+   "published": "2026-11-27T17:38:30Z",
+   "summary": "",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "why": [
+    "Data breach"
+   ],
+   "also": [
+    {
+     "source": "The Boston Globe",
+     "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBNZ21WeDU0YzRKczlrT0JHaGp1TTExRlZfTlBaVWNmYnlxaHd4ankyMC0teHpJRGtpU3hjSm1YelNXbDhvTjhGM2xBOUNHNjdMQ0xIUUdlSl8xdkdSNXN3R0tBLVRIZk1BVkhJdEJLWEhSZnVFdEF0bQ?oc=5"
+    }
    ]
   },
   {
@@ -306,29 +350,6 @@
    "score": 0,
    "tags": [],
    "why": []
-  },
-  {
-   "id": "36f25d6514a8",
-   "title": "US military says it disabled another ship that tried to breach naval blockade on Iranian ports",
-   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBNZ21WeDU0YzRKczlrT0JHaGp1TTExRlZfTlBaVWNmYnlxaHd4ankyMC0teHpJRGtpU3hjSm1YelNXbDhvTjhGM2xBOUNHNjdMQ0xIUUdlSl8xdkdSNXN3R0tBLVRIZk1BVkhJdEJLWEhSZnVFdEF0bQ?oc=5",
-   "source": "The Boston Globe",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-27T13:07:00Z",
-   "summary": "",
-   "score": 7,
-   "tags": [
-    "Data breach"
-   ],
-   "why": [
-    "Data breach"
-   ],
-   "also": [
-    {
-     "source": "Hindustan Times",
-     "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPNjJQbDRxNDRKY2tvdkFEUnFuYjRlOE9qU2VJNkJQeXI0RkVRQmw1VngzSmstSDdGNU9zRjV6aXpkVmI2eDNCRWNOSkRfVkhYa1JpdndyNmVLYi1MRHhNQlFTRGxaWk5pNXJHWEdCaDRhODRGa082QjJyWVhyZUJMRkFxU0lhcUU0bVFONXhyaWt6ajhta0E2Z3VWQWo5REwxamJkbWQ1RGZJdFZZVjREejJtcjlPV0FZUjNlTmdPcU85TzVvOWpTZXI0WURzWHNUNHVUVHVaNGxTWS1naUtpTDE1ZjJyS2VBNGlfamhaOEtYdEnSAfMBQVVfeXFMTzYyUGw0cTQ0SmNrb3ZBRFJxbmI0ZThPalNlSTZCUHlyNEZFUUJsNVZ4M0prLUg3RjVPc0Y1eml6ZFZiNngzQkVjTkpEX1ZIWGtSaXZ3cjZlS2ItTER4TUJRU0RsWlpOaTVyR1hHQmg0YTg0RmtPNkIycllYcmVCTEZBcVNJYXFFNG1RTjV4cmlremo4bWtBNmd1VkFqOURMMWpiZG1kNURmSXRWWVY0RHoybXI5T1dBWVIzZU5nT3FPOU81bzlqU2VyNFlEc1hzVDR1VFR1WjRsU1ktZ2lLaUwxNWYycktlQTRpX2poWjhLWHRJ?oc=5"
-    }
-   ]
   },
   {
    "id": "4895aa5a5bc0",
@@ -716,6 +737,10 @@
     {
      "source": "Wisevoter",
      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOMWY2LWpDakpQb1ZPZWtJRmVsMnNrNkxqOVFiLVUyeERoM0IyNFE3bEctVFNGOWcwMEI3WkFCMm1DSDEyckN6MDJac0FlR3pEWGNKOVRVZW5ORmF6eGYyMGVJTWdteXRfVnBZd2dOaEVNZHZ4UXNhNmUyWGJ2aEcxcWQxNEdUZ0x5cTRLR0VwQWd3TUpf?oc=5"
+    },
+    {
+     "source": "ABC News & Headlines – Australian Broadcasting Corporation",
+     "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPdkotY1hIaThlZmJpREIzNnIzQkU1aHI1YTlrYlBkVnZ0bEc3ajRUamtteEZBdExXUXh4eGtTN1I1WWpkWkNseng5UDBBUWl4c2RER18xMmdOZEt2d3lrTzAzLXhoZUxZV1NoM25PUlkxQ0Rkck1jUFo3UmZjZGo4aUtRc3ZZdVVzQXZDWWdWdC1FS0plSWdQa0JTRy1Mb2NnazF5OWM5R1UxV3c?oc=5"
     }
    ]
   },
@@ -7234,23 +7259,6 @@
    "feed": "Real estate cyber news",
    "region": "Global",
    "published": "2026-11-17T01:35:04Z",
-   "summary": "",
-   "score": 10,
-   "tags": [
-    "Real estate"
-   ],
-   "why": [
-    "Real estate"
-   ]
-  },
-  {
-   "id": "d7718b226137",
-   "title": "Real Estate Board monitors social media property advertisements",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxON2lfdDM4RDhZal9PV1N3VTU2YUVRdFNrZERNOGV1VDFmWjlnVnhkN0VVaHB1NHBsOVRTcW5SME5PTlNoNHJSRGJWN1FFRzR4cTdVWUtpaUJVS2FjUUI0ZE9rQ2VHSUczUDByTGs0UVM5REs1RTRHWDFRRTdtY2JEX2pBQUdpZ2hJNmtycnhKMERoWW1EZXNKcHZpdU1sc0VuUXZZOS1XTzVDbWYyRlJhRDd3?oc=5",
-   "source": "Jamaica Gleaner",
-   "feed": "Real estate cyber news",
-   "region": "Global",
-   "published": "2026-11-17T00:39:01Z",
    "summary": "",
    "score": 10,
    "tags": [
