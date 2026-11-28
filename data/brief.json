@@ -1,8 +1,63 @@
 {
- "date": "2026-11-27",
- "generated": "2026-11-27T01:51:40+00:00",
- "title": "Sec-Pulse brief - Fri 27 Nov",
+ "date": "2026-11-28",
+ "generated": "2026-11-28T01:33:41+00:00",
+ "title": "Sec-Pulse brief - Sat 28 Nov",
  "items": [
+  {
+   "id": "c49180134b79",
+   "title": "Veeam vs Rubrik vs Commvault for Australian Ransomware Recovery",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNN2VHUWxhNXRlY3VaNkM1WkNiNkxmTk9FUlR3b3h6OWJwdjdqSWtoT2xXZDJJaUZmdnAtR1pXM3pvUzRJZ1pCUm1VQ29lZ0dOcnBHZ1hDUnlpbUxMRi1TenMzV29lelFkZWo0N05XeXhhal9YQ1llUVBPVzZ1eWR5RnJnZ1pMZDRoYWp2dS1WdlRvbktrLVREVExjVGV6YWI0WlNwajh3?oc=5",
+   "source": "JournalArta",
+   "region": "AU",
+   "published": "2026-11-28T00:06:33Z",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Ransomware"
+   ],
+   "summary": ""
+  },
+  {
+   "id": "9d9f2f6bd30d",
+   "title": "Dubai court finds landlord withholding Ejari in breach of tenancy contact",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQOFRyelp4LW5UZnZpakdsZ3VLQ0xxYndJcWFXZ3pXSWZzQi1TU2lPVmpNemN4MGNHM3NpYmVuZ3FBVkZMR0wzSmNmN2o4QW9fMWRBNXo1S0VIelFMaFVFdEpaYTFZR1ltNGRhSTZEODBnZC10dlNWWHlGSi1YT2FoMFoxamJlVEdPSVFhUC1YRjZ0QXZsS19ZREVXTGIwQ2l2amfSAaIBQVVfeXFMUDhUcnpaeC1uVGZ2aWpHbGd1S0NMcWJ3SXFhV2d6V0lmc0ItU1NpT1ZqTXpjeDBjRzNzaWJlbmdxQVZGTEdMM0pjZjdqOEFvXzFkQTV6NUtFSHpRTGhVRXRKWmExWUdZbTRkYUk2RDgwZ2QtdHZTVlh5RkotWE9haDBaMWpiZVRHT0lRYVAtWEY2dEF2bEtfWURFV0xiMENpdmpn?oc=5",
+   "source": "Khaleej Times",
+   "region": "Global",
+   "published": "2026-11-27T10:10:32Z",
+   "score": 14,
+   "tags": [
+    "Real estate",
+    "Data breach"
+   ],
+   "summary": ""
+  },
+  {
+   "id": "4344e53c7996",
+   "title": "Australian passports leaked in Flight Centre hack",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPOW55VmcyeHdSdGhBZHJmZUJmcExtQl9wMEJwempoYjlRQWw0ODd0YXUtX1hDUmR4V0JFcVVLNWxJUWxGMlpfUUJubjNDZWpfczJMSW5SWDJuUGgwcHhFRXB4VGhLQUFCNDVNX2xFeklOVnlMZGxXU01QMHZiTFNWUnA4RGpkVVZWMmN5RXdmTE9hNDhLZXNSNkdtVHE0Ulhh0gGmAUFVX3lxTFBCVjk4MjE2eFZQMnZHUjJ3X3dISnlaZjZHbXpQa3hnRi0wbnNSM3RERzkwVVhKVEQ2LUUtLVo5WmVmMTJBazVERElXakpUZ3RIbHRuNWJOSGYtUHF6Umk3Y3lHVVd1VklBN0JmQllyQTBNOXFMVXFXWExxM0VGeTBGTWU3TDN3TlBDMzJ2M3ltMTVvekg1U0diYkFtR3BsOHBlUjJoWWc?oc=5",
+   "source": "Daily Mail",
+   "region": "AU",
+   "published": "2026-11-26T21:59:03Z",
+   "score": 13,
+   "tags": [
+    "Australia",
+    "Data breach"
+   ],
+   "summary": ""
+  },
+  {
+   "id": "6459e8241f21",
+   "title": "Hackers breach U.S. Air Force flagship Cloud One computing platform",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQdXZsb00yNFF2UTdycjI3OFN2SGpJWGF4WkNtcVBzRlpYNVg4dXZ0ekFxNTJNRktPVlZteUlxUmIxY0dUWlh0WG5fTFRoVkgwSHYxbDhEcGxoMmR2S1lHWmVob2diaU5RMVU0T3NwQ0pLbjg0cFBYdjNDMWdVYXFQZVc0QlJDYzBBVXFTN3YtRWMxVlNOenVNR2VLaUpDZw?oc=5",
+   "source": "The Spokesman-Review",
+   "region": "Global",
+   "published": "2026-11-28T00:53:27Z",
+   "score": 7,
+   "tags": [
+    "Data breach"
+   ],
+   "summary": ""
+  },
   {
    "id": "052535ca7277",
    "title": "Flight Centre investigates data breach linked to third-party booking system",
@@ -16,68 +71,15 @@
     "SaaS / cloud"
    ],
    "summary": ""
-  },
-  {
-   "id": "84f25e464074",
-   "title": "Mitel MiCollab Zero-Days Exploited in Suspected AI-Assisted Attacks",
-   "link": "https://www.securityweek.com/mitel-micollab-zero-days-exploited-in-suspected-ai-assisted-attacks/",
-   "source": "SecurityWeek",
-   "region": "Global",
-   "published": "2026-11-26T11:35:25Z",
-   "score": 8,
-   "tags": [
-    "Actively exploited",
-    "Ransomware"
-   ],
-   "summary": "Accenture says hackers exploited MiCollab flaws before Mitel’s advisory, likely aided by AI, in a suspected extortion campaign. The post Mitel MiCollab Zero-Days Exploited in Suspected AI-Assisted Attacks appeared first on SecurityWeek ."
-  },
-  {
-   "id": "98798961113d",
-   "title": "Standard Chartered's Crypto Unit Suffers Data Breach Just Weeks After Bank Agreed To Take Full Ownership",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPNXlFSlp5cVlDWWhUcnVqdmZrbzAxbnpMdnptVUZFa3FKQVBXdnlGNFI4QjFGQldoejhGNWJIVkx3Zm5tdEVobDNuM3hQZjAxdjVLVFJ1UndjV29NdGcwcXluSzg1TjdSSDA1UjhDWVpoUlNZaTREZXY0MUZqbTZGcXlKdkdiQzRwU1ZDNDRORWhQd2N6cXVKTnNiNmplV3B5eUhwaXgwSQ?oc=5",
-   "source": "Yahoo Finance",
-   "region": "Global",
-   "published": "2026-11-26T21:30:39Z",
-   "score": 7,
-   "tags": [
-    "Data breach"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "95036b9af284",
-   "title": "1Password breach exposed account data, not vaults",
-   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPYk84dmxMYXFrWGdhSmRST25DdFQ3ZHdBME9kUFpRVUV4TkIyaFc3YjB2MldLYUZsUVF2MG5nYm5DZ3MxU2ZGQjliT0RyY2Nvb3F3QTM3Zl93VC03aGNRR3lWdXlUdy1aOUhOLUxQT01lM2pHQmpfT3pIWEVrVUpaVDBnc3JaekhwUFpRbERQVF9hZw?oc=5",
-   "source": "Briefs Finance",
-   "region": "Global",
-   "published": "2026-11-26T18:15:00Z",
-   "score": 7,
-   "tags": [
-    "Data breach"
-   ],
-   "summary": ""
-  },
-  {
-   "id": "cb98e5aed91f",
-   "title": "Break or breach? Small organisations need to understand their digital exposure first",
-   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQbTVEeG1zdXpBWllraC1KTVhBNTY1bUs3bjhqVnhSZzY3Z3lxQ1RIVFRwbW5kOHFQNndvMlhXejNsS2lZZVB4LUVqTENKU3J3NGdYREMxZHpOWEpUU0VuMDljRjY2eV96UTVqVmRYc1BGT2lkbTQtc0FLaV9PTHh0VVl1Z0swZVFqYlhOQUFRZy1MSkt3QUJ5aU5DUm5YVktYNDkteUFLaWxWSUMzX0xfV042eG9DRXpoTVE?oc=5",
-   "source": "SecurityBrief Australia",
-   "region": "Global",
-   "published": "2026-11-26T21:45:00Z",
-   "score": 6,
-   "tags": [
-    "Data breach"
-   ],
-   "summary": ""
   }
  ],
  "stats": {
-  "recent": 28,
-  "au": 0,
-  "kev": 0
+  "recent": 41,
+  "au": 2,
+  "kev": 3
  },
  "lesson": {
-  "id": "2.3",
-  "title": "Common vulnerability types"
+  "id": "2.4",
+  "title": "Controls, mitigation and risk"
  }
 }
